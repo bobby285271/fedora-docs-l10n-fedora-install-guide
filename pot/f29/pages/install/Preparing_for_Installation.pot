@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-10-11 17:27+0000\n"
+"POT-Creation-Date: 2018-11-02 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -488,7 +488,8 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:160
 msgid ""
 "You can also choose a Fedora _Spin_ featuring favorite alternative desktops "
-"or tools for specialized tasks at link:++http://spins.fedoraproject.org++[]."
+"or tools for specialized tasks at "
+"link:++https://spins.fedoraproject.org++[]."
 msgstr ""
 
 #. type: Title ====
@@ -660,7 +661,9 @@ msgstr ""
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:245
 #, no-wrap
-msgid "$ shasum -a 256 -c *CHECKSUM\n"
+msgid ""
+"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
+"shasum -a 256 -c\n"
 msgstr ""
 
 #. type: Title ===
@@ -765,7 +768,7 @@ msgstr ""
 msgid "Creating a Boot CD or DVD"
 msgstr ""
 
-#. type: delimited block =
+#. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:293
 msgid ""
 "In addition to creating a bootable USB flash drive, you can also use the "
@@ -774,7 +777,7 @@ msgid ""
 "can not boot from USB."
 msgstr ""
 
-#. type: Plain text
+#. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:298
 msgid ""
 "The exact steps you need to take to burn a bootable CD or DVD from an ISO "
@@ -782,12 +785,12 @@ msgid ""
 "procedure only offers a general overview."
 msgstr ""
 
-#. type: delimited block =
+#. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:302
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
 msgstr ""
 
-#. type: delimited block =
+#. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:304
 msgid ""
 "Open your system's burning software - for example, [application]*Brasero* on "
@@ -798,14 +801,14 @@ msgid ""
 "left side of the window."
 msgstr ""
 
-#. type: delimited block =
+#. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:306
 msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
 
-#. type: delimited block =
+#. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:307
 msgid "Confirm your selection, and wait for the disc to be burned."
 msgstr ""

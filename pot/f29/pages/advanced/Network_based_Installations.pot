@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-10-11 17:27+0000\n"
+"POT-Creation-Date: 2018-11-02 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -402,7 +402,7 @@ msgid ""
 "menu default\n"
 "kernel f{PRODVER}/vmlinuz\n"
 "append initrd=f{PRODVER}/initrd.img "
-"inst.stage2=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
 "ip=dhcp\n"
 msgstr ""
 
@@ -415,24 +415,12 @@ msgid ""
 "menu default\n"
 "kernel f{PRODVER}/vmlinuz\n"
 "append initrd=f{PRODVER}/initrd.img "
-"inst.stage2=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
 "ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:188
-#, no-wrap
-msgid ""
-"label rescue\n"
-"menu label ^Rescue installed system\n"
-"kernel f{PRODVER}/vmlinuz\n"
-"append initrd=f{PRODVER}initrd.img ip=dhcp "
-"root=live:http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/LiveOS/squashfs.img "
-"rescue\n"
-msgstr ""
-
-#. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:192
+#: ./pages/advanced/Network_based_Installations.adoc:187
 #, no-wrap
 msgid ""
 "label local\n"
@@ -441,12 +429,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:195
+#: ./pages/advanced/Network_based_Installations.adoc:190
 msgid "Create a boot menu for UEFI clients at `/var/lib/tftpboot/pxelinux/uefi`."
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:205
+#: ./pages/advanced/Network_based_Installations.adoc:200
 #, no-wrap
 msgid ""
 "function load_video {\n"
@@ -459,7 +447,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:209
+#: ./pages/advanced/Network_based_Installations.adoc:204
 #, no-wrap
 msgid ""
 "load_video\n"
@@ -468,63 +456,50 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:214
+#: ./pages/advanced/Network_based_Installations.adoc:209
 #, no-wrap
 msgid ""
 "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux "
 "--class gnu --class os {\n"
 "\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp "
-"inst.repo=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
 "\tinitrdefi f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:219
+#: ./pages/advanced/Network_based_Installations.adoc:214
 #, no-wrap
 msgid ""
 "menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class "
 "gnu-linux --class gnu --class os {\n"
 "\tkernel f{PRODVER}/vmlinuz\n"
 "\tappend initrd=f{PRODVER}/initrd.img "
-"inst.repo=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
 "ip=dhcp "
 "ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 msgstr ""
 
-#. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:224
-#, no-wrap
-msgid ""
-"menuentry 'Rescue installed system'  --class fedora --class gnu-linux "
-"--class gnu --class os {\n"
-"\tkernel f{PRODVER}/vmlinuz\n"
-"\tappend f{PRODVER}/initrd=initrd.img "
-"root=live:http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/LiveOS/squashfs.img "
-"rescue\n"
-"}\n"
-msgstr ""
-
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:227
+#: ./pages/advanced/Network_based_Installations.adoc:218
 #, no-wrap
 msgid "Getting the kernel and initrd"
 msgstr ""
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:229
+#: ./pages/advanced/Network_based_Installations.adoc:220
 #, no-wrap
 msgid "Downloading the kernel and initrd"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:231
+#: ./pages/advanced/Network_based_Installations.adoc:222
 msgid "Create a directory for the files."
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:235
+#: ./pages/advanced/Network_based_Installations.adoc:226
 #, no-wrap
 msgid ""
 "# [command]#mkdir -p "
@@ -532,41 +507,41 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:238
+#: ./pages/advanced/Network_based_Installations.adoc:229
 msgid "Download the kernel."
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:242
+#: ./pages/advanced/Network_based_Installations.adoc:233
 #, no-wrap
 msgid ""
 "# wget "
-"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz "
+"https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz "
 "-O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:245
+#: ./pages/advanced/Network_based_Installations.adoc:236
 msgid "Download the initrd"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:249
+#: ./pages/advanced/Network_based_Installations.adoc:240
 #, no-wrap
 msgid ""
 "# wget "
-"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img "
+"https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img "
 "-O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 msgstr ""
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:252
+#: ./pages/advanced/Network_based_Installations.adoc:243
 #, no-wrap
 msgid "Providing repositories"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:255
+#: ./pages/advanced/Network_based_Installations.adoc:246
 msgid ""
 "The examples in this section use the public Fedora mirrors as the package "
 "source. For faster installations, installing to many systems, or more "
@@ -574,24 +549,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:257
+#: ./pages/advanced/Network_based_Installations.adoc:248
 msgid ""
 "Fedora Infrastructure maintains instructions for a configuring a local "
 "mirror at "
 "link:++https://fedoraproject.org/wiki/Infrastructure/Mirroring++[]. The "
 "preferred method for providing repositories is via HTTP, and you can refer "
 "to the [citetitle]_Fedora System Administrator's Guide_, available at "
-"link:++http://docs.fedoraproject.org/++[], to configure `httpd`."
+"link:++https://docs.fedoraproject.org/++[], to configure `httpd`."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:259
+#: ./pages/advanced/Network_based_Installations.adoc:250
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:262
+#: ./pages/advanced/Network_based_Installations.adoc:253
 msgid ""
 "For more complex environments, {PRODUCT} offers the [package]*cobbler* "
 "installation server. Tasks like managing kickstart configurtations, "
@@ -600,11 +575,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:263
+#: ./pages/advanced/Network_based_Installations.adoc:254
 msgid ""
 "While levaraging all of the features provided by cobbler can be relatively "
 "simple, the full functionality of this powerful tool is too broad to be "
 "documented in this guide. The cobbler community provides excellent "
-"documentation at link:++http://www.cobblerd.org/manuals/2.6.0/++[] to "
+"documentation at link:++http://www.cobblerd.org/category/manuals/++[] to "
 "accompany the packages in the Fedora repository."
 msgstr ""
