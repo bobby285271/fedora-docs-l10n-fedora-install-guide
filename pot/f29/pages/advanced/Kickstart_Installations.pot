@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-11-02 19:36+0000\n"
+"POT-Creation-Date: 2019-04-12 17:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid ""
 "The Kickstart file itself is a plain text file, containing keywords listed "
 "in "
-"xref:../appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
 "Syntax Reference], which serve as directions for the installation. Any text "
 "editor able to save files as ASCII text (such as [application]*Gedit* or "
 "[application]*vim* on Linux systems or [application]*Notepad* on Windows "
@@ -143,33 +143,36 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:43
+#, no-wrap
 msgid ""
-"The command section which contains actual Kickstart commands and options as "
-"listed in "
-"xref:../appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
+"** The command section which contains actual Kickstart commands and options "
+"as listed in "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
 "Syntax Reference]. Note that some commands, such as [command]#install#, are "
-"mandatory, but most commands are optional."
+"mandatory, but most commands are optional.\n"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:45
+#, no-wrap
 msgid ""
-"The [command]#%packages# section which contains a list of packages and "
+"** The [command]#%packages# section which contains a list of packages and "
 "package groups to be installed. See "
-"xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
-"(required) - Package Selection] for details."
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
+"(required) - Package Selection] for details.\n"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:47
+#, no-wrap
 msgid ""
-"The [command]#%pre# and [command]#%post# sections, containing a "
+"** The [command]#%pre# and [command]#%post# sections, containing a "
 "pre-installation and post-installation scripts. These two sections can be in "
 "any order and are not mandatory. See "
-"xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-preinstall[%pre "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-preinstall[%pre "
 "(optional) - Pre-installation Script] and "
-"xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall[%post "
-"(optional) - Post-installation Script] for details."
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall[%post "
+"(optional) - Post-installation Script] for details.\n"
 msgstr ""
 
 #. type: delimited block =
@@ -293,9 +296,9 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:99
 msgid ""
-"xref:Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
-"Installation Server] offers some additional information about preparing for "
-"a network-based installation."
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
+"Up an Installation Server] offers some additional information about "
+"preparing for a network-based installation."
 msgstr ""
 
 #. type: Title ===
@@ -313,5 +316,6 @@ msgid ""
 "option either in the boot menu (when booting from local media), or add this "
 "option to your PXE server configuration. For information about boot options "
 "used in Kickstart installations, see "
-"xref:Boot_Options.adoc#sect-boot-options-kickstart[Kickstart Boot Options]."
+"xref:advanced/Boot_Options.adoc#sect-boot-options-kickstart[Kickstart Boot "
+"Options]."
 msgstr ""
