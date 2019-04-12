@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-11-02 19:36+0000\n"
+"POT-Creation-Date: 2019-04-12 17:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgid ""
 "administrators, which modify the default behavior of the installation "
 "program by enabling or disabling certain functions. To use one or more boot "
 "options, you either have to boot from installation media and append these "
-"options at the boot menu (see xref:../install/Booting_the_Installation."
+"options at the boot menu (see xref:install/Booting_the_Installation."
 "adoc#sect-boot-menu[The Boot Menu]), or you must add them into your PXE "
 "server configuration file if you are booting from a network (see xref:"
-"Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
-"Installation Server])."
+"advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up "
+"an Installation Server])."
 msgstr ""
 
 #. type: Plain text
@@ -103,8 +103,8 @@ msgid ""
 "in the boot menu, before you begin the installation; if you are booting from "
 "a network using a PXE server, you must add boot options into the boot loader "
 "configuration file before you boot the installation system. For specific "
-"instructions, see xref:../install/Booting_the_Installation.adoc#sect-boot-"
-"menu[The Boot Menu] if you are booting from local media, and xref:"
+"instructions, see xref:install/Booting_the_Installation.adoc#sect-boot-"
+"menu[The Boot Menu] if you are booting from local media, and xref:advanced/"
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
@@ -153,22 +153,20 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:50
-msgid ""
-"an installable tree, which is a directory structure containing the "
-"installation program's images, packages and repodata as well as a valid `."
-"treeinfo` file"
+#, no-wrap
+msgid "** an installable tree, which is a directory structure containing the installation program's images, packages and repodata as well as a valid `.treeinfo` file\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:52
-msgid "a DVD (a physical disk present in the system's DVD drive)"
+#, no-wrap
+msgid "** a DVD (a physical disk present in the system's DVD drive)\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:54
-msgid ""
-"an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
-"or a network location accessible from the installation system"
+#, no-wrap
+msgid "** an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive or a network location accessible from the installation system\n"
 msgstr ""
 
 #. type: Plain text
@@ -184,11 +182,10 @@ msgstr ""
 msgid "Installation Sources"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:71
 #, no-wrap
 msgid ""
-"|===\n"
 "|Installation source|Option format\n"
 "|Any CD/DVD drive|[option]#inst.repo=cdrom#\n"
 "|Specific CD/DVD drive|[option]#inst.repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
@@ -198,7 +195,6 @@ msgid ""
 "|FTP Server|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:attributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
 "|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by default. To use a different version, add [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to _options_.]\n"
-"|===\n"
 msgstr ""
 
 #. type: Plain text
@@ -208,18 +204,20 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:76
-msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
+#, no-wrap
+msgid "** Kernel device name, for example `/dev/sda1` or `sdb2`\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:78
-msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
+#, no-wrap
+msgid "** File system label, for example `LABEL=Flash` or `LABEL=RHEL7`\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:80
-msgid ""
-"File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
+#, no-wrap
+msgid "** File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`\n"
 msgstr ""
 
 #. type: Plain text
@@ -400,14 +398,12 @@ msgstr ""
 msgid "Default Kickstart File Location"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:137
 #, no-wrap
 msgid ""
-"|===\n"
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
-"|===\n"
 msgstr ""
 
 #. type: Labeled list
@@ -527,11 +523,11 @@ msgstr ""
 msgid ""
 "Sets the language to be used during the installation. Language codes are the "
 "same as the ones used in the [command]#lang# Kickstart command as described "
-"in xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
-"commands-lang[lang (optional) - Configure Language During Installation]. On "
-"systems where the [package]*system-config-language* package is installed, a "
-"list of valid values can also be find in `/usr/share/system-config-language/"
-"locale-list`."
+"in xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"lang[lang (optional) - Configure Language During Installation]. On systems "
+"where the [package]*system-config-language* package is installed, a list of "
+"valid values can also be find in `/usr/share/system-config-language/locale-"
+"list`."
 msgstr ""
 
 #. type: Plain text
@@ -584,15 +580,13 @@ msgstr ""
 msgid "Valid Values for the inst.geoloc Option"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:183
 #, no-wrap
 msgid ""
-"|===\n"
 "|Disable geolocation|[option]#inst.geoloc=0#\n"
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
-"|===\n"
 msgstr ""
 
 #. type: Plain text
@@ -613,8 +607,8 @@ msgstr ""
 msgid ""
 "Specifies the keyboard layout to be used by the installation program. Layout "
 "codes are the same as the ones used in the [command]#keyboard# Kickstart "
-"command as described in xref:../appendixes/Kickstart_Syntax_Reference."
-"adoc#appe-kickstart-syntax-reference[Kickstart Syntax Reference]."
+"command as described in xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Kickstart Syntax Reference]."
 msgstr ""
 
 #. type: Labeled list
@@ -764,7 +758,7 @@ msgstr ""
 msgid ""
 "During the installation, the `root` account has no password by default. You "
 "can set a root password to be used during the installation with the "
-"[command]#sshpw# Kickstart command as described in xref:../appendixes/"
+"[command]#sshpw# Kickstart command as described in xref:appendixes/"
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
 "(optional) - Restrict ssh Access During Installation]."
 msgstr ""
@@ -824,18 +818,16 @@ msgstr ""
 msgid "Network Interface Configuration Formats"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:242
 #, no-wrap
 msgid ""
-"|===\n"
 "|Configuration Method|Option format\n"
 "|Automatic configuration of any interface|[option]#ip=pass:attributes[{blank}]_method_pass:attributes[{blank}]#\n"
 "|Automatic configuration of a specific interface|[option]#ip=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#\n"
 "|Static configuration|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:none#\n"
 "|Automatic configuration of a specific interface with an override\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the specified method of automatic configuration, such as `dhcp`, but overrides the automatically obtained IP address, gateway, netmask, hostname or other specified parameter. All parameters are optional; only specify the ones you wish to override and automatically obtained values will be used for the others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
-"|===\n"
 msgstr ""
 
 #. type: Plain text
@@ -849,17 +841,15 @@ msgstr ""
 msgid "Automatic Interface Configuration Methods"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:256
 #, no-wrap
 msgid ""
-"|===\n"
 "|Automatic configuration method|Value\n"
 "|DHCP|`dhcp`\n"
 "|IPv6 DHCP|`dhcp6`\n"
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
-"|===\n"
 msgstr ""
 
 #. type: delimited block =
@@ -994,17 +984,15 @@ msgstr ""
 msgid "VLAN Device Naming Conventions"
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:305
 #, no-wrap
 msgid ""
-"|===\n"
 "|Naming scheme|Example\n"
 "|VLAN_PLUS_VID|`vlan0005`\n"
 "|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
-"|===\n"
 msgstr ""
 
 #. type: Labeled list
@@ -1136,11 +1124,11 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:338
 msgid ""
-"See xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"manual-partitioning-recommended[Recommended Partitioning Scheme] for more "
-"information about GPT and MBR, and xref:../appendixes/Disk_Partitions."
-"adoc#sect-disk-partitioning-guid-partition-table[GUID Partition Table (GPT)] "
-"for more general information about GPT, MBR and disk partitioning in general."
+"See xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Recommended Partitioning Scheme] for more "
+"information about GPT and MBR, and xref:appendixes/Disk_Partitions.adoc#sect-"
+"disk-partitioning-guid-partition-table[GUID Partition Table (GPT)] for more "
+"general information about GPT, MBR and disk partitioning in general."
 msgstr ""
 
 #. type: Labeled list
@@ -1264,8 +1252,8 @@ msgid ""
 "off by default). If you use [option]#inst.kdump_addon=on#, a new screen, "
 "which allows you to configure the [application]*Kdump* kernel crash dumping "
 "mechanism, will appear in the main menu of the graphical or text interface "
-"(see xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"kdump[Kdump]). Enabling this add-on is also necessary to use the xref:../"
+"(see xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"kdump[Kdump]). Enabling this add-on is also necessary to use the xref:"
 "appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
 "kdump[%addon com_redhat_kdump (optional) - Configure kdump] Kickstart "
 "command."
@@ -1281,8 +1269,8 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:367
 msgid ""
 "The following options are necessary to configure [application]*Anaconda* for "
-"remote graphical installation. See xref:VNC_Installations.adoc#chap-vnc-"
-"installations[Installing Using VNC] for more details."
+"remote graphical installation. See xref:advanced/VNC_Installations.adoc#chap-"
+"vnc-installations[Installing Using VNC] for more details."
 msgstr ""
 
 #. type: Labeled list
@@ -1539,11 +1527,10 @@ msgid ""
 "values have been replaced with different options; see the table below."
 msgstr ""
 
-#. type: Table
+#. type: delimited block |
 #: pages/advanced/Boot_Options.adoc:447
 #, no-wrap
 msgid ""
-"|===\n"
 "|Value|Current behavior\n"
 "|Not present|All devices are attempted to be activated using `dhcp`, unless desired device and configuration is specified by [option]#ip=# option and/or the [option]#BOOTIF# option.\n"
 "|[option]#ksdevice=link#|Similar to the above, with the difference that network will always be activated in the initramfs, whether it is needed or not. The supported [option]#rd.neednet# option (provided by [application]*dracut*) should be used instead.\n"
@@ -1551,7 +1538,6 @@ msgid ""
 "|[option]#ksdevice=ibft#|Replaced with the [option]#ip=ibft# option\n"
 "|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|Replaced with [option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced by specifying the device name using the [option]#ip=# option.\n"
-"|===\n"
 msgstr ""
 
 #. type: delimited block =
@@ -1773,7 +1759,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:494
 msgid ""
 "Upgrades are done in a different way in current {PRODUCT} releases. For more "
-"information about upgrading your system, see xref:"
+"information about upgrading your system, see xref:advanced/"
 "Upgrading_Your_Current_System.adoc#chap-upgrading[Upgrading Your Current "
 "System]."
 msgstr ""
