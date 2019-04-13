@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-11-02 19:36+0000\n"
+"POT-Creation-Date: 2019-04-13 11:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
 msgid ""
 "This appendix describes commands and options available in Kickstart "
-"installations. For general information about Kickstart, see xref:../advanced/"
+"installations. For general information about Kickstart, see xref:advanced/"
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]."
 msgstr ""
@@ -530,7 +530,7 @@ msgstr ""
 msgid ""
 "This command will force the installation program to perform a media check "
 "before starting the installation, similarly to the [option]#rd.live.check# "
-"boot option (see xref:../advanced/Boot_Options.adoc#sect-boot-options-"
+"boot option (see xref:advanced/Boot_Options.adoc#sect-boot-options-"
 "mediacheck[Verifying Boot Media]. This command requires that installations "
 "be attended, so it is disabled by default."
 msgstr ""
@@ -887,30 +887,34 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:291
-msgid "`lvm`: The LVM partitioning scheme."
+#, no-wrap
+msgid "** `lvm`: The LVM partitioning scheme.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:293
-msgid "`btrfs`: The Btrfs partitioning scheme."
+#, no-wrap
+msgid "** `btrfs`: The Btrfs partitioning scheme.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:295
-msgid "`plain`: Regular partitions with no LVM or Btrfs."
+#, no-wrap
+msgid "** `plain`: Regular partitions with no LVM or Btrfs.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:297
-msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
+#, no-wrap
+msgid "** `thinp`: The LVM Thin Provisioning partitioning scheme.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:299
 msgid ""
 "The created partitioning scheme will follow the recommended scheme described "
-"at xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"manual-partitioning-recommended[Recommended Partitioning Scheme]."
+"at xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
 
 #. type: Labeled list
@@ -1061,7 +1065,7 @@ msgid ""
 "Some systems require a special partition for installing the boot loader. The "
 "type and size of this partition depends on whether the disk you are "
 "installing the boot loader to uses the _Master Boot Record_ (MBR) or a _GUID "
-"Partition Table_ (GPT) schema. For more information, see xref:../install/"
+"Partition Table_ (GPT) schema. For more information, see xref:install/"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-"
 "bootloader[Boot Loader Installation]."
 msgstr ""
@@ -1187,35 +1191,32 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:371
-msgid ""
-"`mbr` - The default option. Depends on whether the drive uses the Master "
-"Boot Record (MBR) or GUID Partition Table (GPT) scheme:"
+#, no-wrap
+msgid "** `mbr` - The default option. Depends on whether the drive uses the Master Boot Record (MBR) or GUID Partition Table (GPT) scheme:\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:373
-msgid ""
-"On a GPT-formatted disk, this option will install stage 1.5 of the boot "
-"loader into the BIOS boot partition."
+#, no-wrap
+msgid "*** On a GPT-formatted disk, this option will install stage 1.5 of the boot loader into the BIOS boot partition.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:375
-msgid ""
-"On an MBR-formatted disk, stage 1.5 will be installed into the empty space "
-"between the MBR and the first partition."
+#, no-wrap
+msgid "*** On an MBR-formatted disk, stage 1.5 will be installed into the empty space between the MBR and the first partition.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:377
-msgid ""
-"`partition` - Install the boot loader on the first sector of the partition "
-"containing the kernel."
+#, no-wrap
+msgid "** `partition` - Install the boot loader on the first sector of the partition containing the kernel.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:379
-msgid "`none` - Do not install the boot loader."
+#, no-wrap
+msgid "** `none` - Do not install the boot loader.\n"
 msgstr ""
 
 #. type: Plain text
@@ -2184,7 +2185,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:860
 msgid ""
 "For the swap sizes assigned by these commands, see the section describing "
-"swap in xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"swap in xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
 "manual-partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
 
@@ -2230,7 +2231,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:723
 msgid ""
 "Sets the file system type for the logical volume. Valid values are `xfs`, "
-"`ext2`, `ext3`, `ext4`, `swap`, and `vfat`. See xref:../install/"
+"`ext2`, `ext3`, `ext4`, `swap`, and `vfat`. See xref:install/"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "filesystems[Device, File System and RAID Types] for information about "
 "available file systems."
@@ -2355,7 +2356,7 @@ msgstr ""
 msgid ""
 "Use this option when creating a `swap` logical volume to determine the size "
 "of this volume automatically, based on your system's hardware. For details "
-"about the recommended scheme, see xref:../install/Installing_Using_Anaconda."
+"about the recommended scheme, see xref:install/Installing_Using_Anaconda."
 "adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
@@ -2685,9 +2686,9 @@ msgstr ""
 msgid ""
 "If the [option]#--size# value is too small, the installation will fail. Set "
 "the [option]#--size# value as the minimum amount of space you require. For "
-"size recommendations, see xref:../install/Installing_Using_Anaconda."
-"adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme]."
+"size recommendations, see xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Recommended Partitioning "
+"Scheme]."
 msgstr ""
 
 #. type: Plain text
@@ -2839,7 +2840,7 @@ msgid ""
 "partitions being already allocated), the partitioning process will fail. "
 "This option only makes sense when the disk uses a Master Boot Record (MBR); "
 "for GUID Partition Table (GPT)-labeled disks this option has no meaning. For "
-"information about primary (and extended) partitions, see xref:../install/"
+"information about primary (and extended) partitions, see xref:install/"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme]."
 msgstr ""
@@ -2869,9 +2870,9 @@ msgstr ""
 msgid ""
 "Sets the file system type for the partition. Valid values are `xfs`, `ext2`, "
 "`ext3`, `ext4`, `swap`, `vfat`, `efi` and `biosboot`. For information about "
-"supported file systems, see xref:../install/Installing_Using_Anaconda."
-"adoc#sect-installation-gui-manual-partitioning-filesystems[Device, File "
-"System and RAID Types]."
+"supported file systems, see xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Device, File System and "
+"RAID Types]."
 msgstr ""
 
 #. type: Plain text
@@ -2894,7 +2895,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:960
 msgid ""
 "Determine the size of the partition automatically. For details about the "
-"recommended scheme, see xref:../install/Installing_Using_Anaconda.adoc#sect-"
+"recommended scheme, see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme]."
 msgstr ""
@@ -2987,7 +2988,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:996
 msgid ""
-"RAID level to use (`0`, `1`, `4`, `5`, `6`, or `10`). See xref:../install/"
+"RAID level to use (`0`, `1`, `4`, `5`, `6`, or `10`). See xref:install/"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "filesystems[Device, File System and RAID Types] for information about "
 "various RAID types and their requirements."
@@ -3431,22 +3432,26 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1188
-msgid "[option]#--ssh#"
+#, no-wrap
+msgid "** [option]#--ssh#\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1190
-msgid "[option]#--smtp#"
+#, no-wrap
+msgid "** [option]#--smtp#\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1192
-msgid "[option]#--http#"
+#, no-wrap
+msgid "** [option]#--http#\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1194
-msgid "[option]#--ftp#"
+#, no-wrap
+msgid "** [option]#--ftp#\n"
 msgstr ""
 
 #. type: Plain text
@@ -3654,28 +3659,26 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1260
-msgid "the device name of the interface, for example, `em1`"
+#, no-wrap
+msgid "** the device name of the interface, for example, `em1`\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1262
-msgid "the MAC address of the interface, for example, `01:23:45:67:89:ab`"
+#, no-wrap
+msgid "** the MAC address of the interface, for example, `01:23:45:67:89:ab`\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1264
-msgid ""
-"the keyword `link`, which specifies the first interface with its link in the "
-"`up` state"
+#, no-wrap
+msgid "** the keyword `link`, which specifies the first interface with its link in the `up` state\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1266
-msgid ""
-"the keyword `bootif`, which uses the MAC address that "
-"[application]*pxelinux* set in the `BOOTIF` variable. Set `IPAPPEND 2` in "
-"your `pxelinux.cfg` file to have [application]*pxelinux* set the `BOOTIF` "
-"variable."
+#, no-wrap
+msgid "** the keyword `bootif`, which uses the MAC address that [application]*pxelinux* set in the `BOOTIF` variable. Set `IPAPPEND 2` in your `pxelinux.cfg` file to have [application]*pxelinux* set the `BOOTIF` variable.\n"
 msgstr ""
 
 #. type: delimited block -
@@ -4086,18 +4089,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1382
-msgid ""
-"If the name contains a dot (`.`), it must take the form of `pass:"
-"attributes[{blank}]_NAME_._ID_pass:attributes[{blank}]`. The _NAME_ is "
-"arbitrary, but the _ID_ must be the VLAN ID. For example: `em1.171` or `my-"
-"vlan.171`."
+#, no-wrap
+msgid "** If the name contains a dot (`.`), it must take the form of `pass:attributes[{blank}]_NAME_._ID_pass:attributes[{blank}]`. The _NAME_ is arbitrary, but the _ID_ must be the VLAN ID. For example: `em1.171` or `my-vlan.171`.\n"
 msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1384
-msgid ""
-"Names starting with `vlan` must take the form of `vlanpass:"
-"attributes[{blank}]_ID_pass:attributes[{blank}]` - for example, `vlan171`."
+#, no-wrap
+msgid "** Names starting with `vlan` must take the form of `vlanpass:attributes[{blank}]_ID_pass:attributes[{blank}]` - for example, `vlan171`.\n"
 msgstr ""
 
 #. type: Labeled list
@@ -5263,7 +5262,7 @@ msgid ""
 "For a fully automatic installation, you must either specify one of the "
 "available modes ([command]#graphical#, [command]#text#, or "
 "[command]#cmdline#) in the Kickstart file, or you must use the "
-"[option]#console=# boot option as described in xref:../advanced/Boot_Options."
+"[option]#console=# boot option as described in xref:advanced/Boot_Options."
 "adoc#sect-boot-options-display[Console, Environment and Display Options]. "
 "Otherwise the system will halt and ask you to choose a mode."
 msgstr ""
@@ -5394,7 +5393,7 @@ msgstr ""
 msgid ""
 "By default, the `ssh` server is not started during the installation. To make "
 "`ssh` available during the installation, boot the system with the kernel "
-"boot option [option]#inst.sshd#. See xref:../advanced/Boot_Options.adoc#sect-"
+"boot option [option]#inst.sshd#. See xref:advanced/Boot_Options.adoc#sect-"
 "boot-options-display[Console, Environment and Display Options] for details."
 msgstr ""
 
@@ -5477,8 +5476,8 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1873
 msgid ""
 "For more information about VNC installations, including instructions on how "
-"to connect to the installation system, see xref:../advanced/"
-"VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]."
+"to connect to the installation system, see xref:advanced/VNC_Installations."
+"adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
 
 #. type: Plain text
@@ -5646,8 +5645,8 @@ msgid ""
 "Determine whether the [application]*Initial Setup* application starts the "
 "first time the system is booted. If enabled, the [package]*initial-setup* "
 "package must be installed. If not specified, this option is disabled by "
-"default. For more information about [application]*Initial Setup*, see "
-"xref:../install/After_Installation.adoc#sect-initial-setup[Initial Setup]."
+"default. For more information about [application]*Initial Setup*, see xref:"
+"install/After_Installation.adoc#sect-initial-setup[Initial Setup]."
 msgstr ""
 
 #. type: delimited block -
