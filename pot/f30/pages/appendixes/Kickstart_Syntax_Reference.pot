@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-31 00:23+0200\n"
+"POT-Creation-Date: 2019-10-10 22:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -884,26 +884,22 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:293
-#, no-wrap
-msgid "** `lvm`: The LVM partitioning scheme.\n"
+msgid "`lvm`: The LVM partitioning scheme."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:295
-#, no-wrap
-msgid "** `btrfs`: The Btrfs partitioning scheme.\n"
+msgid "`btrfs`: The Btrfs partitioning scheme."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:297
-#, no-wrap
-msgid "** `plain`: Regular partitions with no LVM or Btrfs.\n"
+msgid "`plain`: Regular partitions with no LVM or Btrfs."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:299
-#, no-wrap
-msgid "** `thinp`: The LVM Thin Provisioning partitioning scheme.\n"
+msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
 msgstr ""
 
 #. type: Plain text
@@ -1243,40 +1239,35 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:387
-#, no-wrap
 msgid ""
-"** `mbr` - The default option. Depends on whether the drive uses the Master "
-"Boot Record (MBR) or GUID Partition Table (GPT) scheme:\n"
+"`mbr` - The default option. Depends on whether the drive uses the Master "
+"Boot Record (MBR) or GUID Partition Table (GPT) scheme:"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:389
-#, no-wrap
 msgid ""
-"*** On a GPT-formatted disk, this option will install stage 1.5 of the boot "
-"loader into the BIOS boot partition.\n"
+"On a GPT-formatted disk, this option will install stage 1.5 of the boot "
+"loader into the BIOS boot partition."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:391
-#, no-wrap
 msgid ""
-"*** On an MBR-formatted disk, stage 1.5 will be installed into the empty "
-"space between the MBR and the first partition.\n"
+"On an MBR-formatted disk, stage 1.5 will be installed into the empty space "
+"between the MBR and the first partition."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:393
-#, no-wrap
 msgid ""
-"** `partition` - Install the boot loader on the first sector of the "
-"partition containing the kernel.\n"
+"`partition` - Install the boot loader on the first sector of the partition "
+"containing the kernel."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:395
-#, no-wrap
-msgid "** `none` - Do not install the boot loader.\n"
+msgid "`none` - Do not install the boot loader."
 msgstr ""
 
 #. type: Plain text
@@ -3476,26 +3467,22 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1246
-#, no-wrap
-msgid "** [option]#--ssh#\n"
+msgid "[option]#--ssh#"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1248
-#, no-wrap
-msgid "** [option]#--smtp#\n"
+msgid "[option]#--smtp#"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1250
-#, no-wrap
-msgid "** [option]#--http#\n"
+msgid "[option]#--http#"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1252
-#, no-wrap
-msgid "** [option]#--ftp#\n"
+msgid "[option]#--ftp#"
 msgstr ""
 
 #. type: Plain text
@@ -3706,32 +3693,28 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1318
-#, no-wrap
-msgid "** the device name of the interface, for example, `em1`\n"
+msgid "the device name of the interface, for example, `em1`"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1320
-#, no-wrap
-msgid "** the MAC address of the interface, for example, `01:23:45:67:89:ab`\n"
+msgid "the MAC address of the interface, for example, `01:23:45:67:89:ab`"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1322
-#, no-wrap
 msgid ""
-"** the keyword `link`, which specifies the first interface with its link in "
-"the `up` state\n"
+"the keyword `link`, which specifies the first interface with its link in the "
+"`up` state"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1324
-#, no-wrap
 msgid ""
-"** the keyword `bootif`, which uses the MAC address that "
+"the keyword `bootif`, which uses the MAC address that "
 "[application]*pxelinux* set in the `BOOTIF` variable. Set `IPAPPEND 2` in "
 "your `pxelinux.cfg` file to have [application]*pxelinux* set the `BOOTIF` "
-"variable.\n"
+"variable."
 msgstr ""
 
 #. type: delimited block -
@@ -4146,21 +4129,19 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1440
-#, no-wrap
 msgid ""
-"** If the name contains a dot (`.`), it must take the form of "
+"If the name contains a dot (`.`), it must take the form of "
 "`pass:attributes[{blank}]_NAME_._ID_pass:attributes[{blank}]`. The _NAME_ is "
 "arbitrary, but the _ID_ must be the VLAN ID. For example: `em1.171` or "
-"`my-vlan.171`.\n"
+"`my-vlan.171`."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1442
-#, no-wrap
 msgid ""
-"** Names starting with `vlan` must take the form of "
+"Names starting with `vlan` must take the form of "
 "`vlanpass:attributes[{blank}]_ID_pass:attributes[{blank}]` - for example, "
-"`vlan171`.\n"
+"`vlan171`."
 msgstr ""
 
 #. type: Labeled list
