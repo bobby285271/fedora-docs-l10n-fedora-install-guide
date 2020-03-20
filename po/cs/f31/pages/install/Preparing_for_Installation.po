@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Josef Hruska <hrusjos@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-22 13:22+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-20 15:39+0000\n"
+"Last-Translator: Josef Hruska <hrusjos@gmail.com>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f31pagesinstallpreparing_for_installation/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:6
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Příprava na instalaci"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:9
@@ -31,12 +36,18 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Tato kapitola popisu nutné kroky před zahájením instalace. Ne každý krok je "
+"nutné přísně dodržet - např. plánujete-li využít možnosti výchozí instalace, "
+"nepotřebujete shromáždit informace o systému, jako jsou jmenovky diskových "
+"zařízení/UUID, nebo informace o síti, jako je adresa IP systému. Přesto "
+"byste si měli tuto kapitolu projít, neboť popisuje rovněž dostupné typy "
+"instalačních nosičů a jak připravit zaveditelné nosiče a instalační zdroje."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Přejít na novější verzi, nebo instalovat?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:14
@@ -44,12 +55,16 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Máte-li již Fedoru nainstalovanou z dříve a tuto instalaci chcete povýšit na "
+"vyšší (aktuální) verzi, existují dva základní způsoby, jak toho dosáhnout:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:15
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
 msgstr ""
+"Automatický přechod na vyšší verzi použitím příkazu [application]*dnf system "
+"upgrade*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:16
@@ -60,12 +75,17 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"Upřednostňovaným způsobem, jak povýšit systém na novou verzi je automatické "
+"povýšení pomocí pomocného programu [application]*dnf system upgrade*. "
+"Informace o automatickém přechodu na vyšší verzi viz "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[wiki stránka "
+"Fedory dnf system upgrade]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:17
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "Ruční reinstalace"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:18
@@ -79,6 +99,14 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"Na nejnovější verzi Fedory lze přejít i ručně, místo spoléhání se na "
+"application]*dnf system upgrade*. To zahrnuje zavedení instalačního programu "
+"do paměti, jako byste prováděli čistou instalaci, nechat ho nalézt "
+"existující systém Fedory a přepsat kořenový diskový oddíl s uchováním dat na "
+"ostatních oddílech a svazcích. V případě potřeby lze stejný proces použít "
+"pro opětovnou instalaci systému. Podrobné informace viz xref:advanced/"
+"Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall["
+"Ruční přechod na vyšší verzi nebo reinstalace systému]."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:22
@@ -86,12 +114,14 @@ msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
 msgstr ""
+"Před provedením přechodu na vyšší verzi nebo reinstalace systému si vždy "
+"vytvořte zálohu dat, bez ohledu na metodu, kterou si zvolíte."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Příprava zaveditelného nosiče"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:28
@@ -99,12 +129,15 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Obrazy Fedory jsou `hybridní obrazy ISO` a lze je použít k vytvoření "
+"instalačního nosiče jak z disku optického, tak USB, který lze zavést jak ze "
+"systému BIOS, tak UEFI."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:29
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writer"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:33
@@ -117,6 +150,13 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer* byl podstatně vylepšen a je nyní "
+"oficiálním, otestovaným a podporovaným způsobem, jak vytvořit zaveditelný "
+"nosič. [application]*Fedora Media Writer* podporuje Linux, Mac a Windows. "
+"Jedná se o jednoduchý způsob, jak vytvořit zaveditelný nosič USB pro "
+"instalaci Fedory (nebo jiného operačního systému). Použití [application]*"
+"Fedora Media Writeru* se velice doporučuje, ačkoliv jiný software pro tvorbu "
+"nosičů z USB může fungovat rovněž."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:35
@@ -127,6 +167,11 @@ msgid ""
 "the button below _Custom OS_. This offers a selection of various Fedora "
 "Spins, such as XFCE or Mate."
 msgstr ""
+"Některé z nových úprav [application]*Fedora Media Writeru* jsou příčinou, "
+"kdy Fedoru Workstation a Server lze snadno a rychle nalézt ve výběru na "
+"hlavní obrazovce. Další volby jsou k nalezení, pokud vyberete tlačítko pod "
+"_Vlastní obraz_, které nabídne výběr různých spinů Fedory, jako např. XFCE "
+"nebo Mate."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:37
@@ -137,6 +182,11 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Dříve byly oblíbeným způsobem tvorby instalačních USB z obrazů ISO určených "
+"pro optické nosiče univerzální nástroje pro tvorbu USB, jako např. "
+"[application]*Unetbootin*. Obvykle vytvoří souborový systém na disku USB "
+"rozbalením souborů z obrazu a zapsáním na něj zavaděče "
+"[application]*syslinux*."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:39
@@ -146,6 +196,10 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Tyto metody obchází nastavení zavaděče vestavěného v obrazech Fedory, které "
+"jsou diskově rozděleny a navrženy tak, aby se zavedli na systémech UEFI s "
+"povoleným SecureBoot, a rovněž na systémech BIOS, a proto neposkytují shodné "
+"výsledky s obrazy Fedory, zejména pak na systémech UEFI."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:41
@@ -153,6 +207,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"Nejlepší výsledky poskytují pomocné programy, které využívají metodu přímého "
+"zápisu a nepozměňují obraz Fedory."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:46
@@ -163,12 +219,17 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Vždy proveďte dvojitou kontrolu před tím, než zapíšete obraz na zařízení. "
+"Metody pro tvorbu nosičů popsané v této části jsou ničivé. Všechna data na "
+"disku USB jsou během procesu smazána, ujistěte se proto, že jste si data "
+"zazálohovali. Zkontrolujte dvakrát, že jste vybrali správné zařízení, na "
+"které se má obraz zapsat!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:48
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Instalace a spuštění Fedora Media Writeru"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:50

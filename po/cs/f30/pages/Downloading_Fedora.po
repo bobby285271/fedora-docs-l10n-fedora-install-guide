@@ -1,31 +1,33 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Josef Hruska <hrusjos@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:51+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-20 15:39+0000\n"
+"Last-Translator: Josef Hruska <hrusjos@gmail.com>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f30pagesdownloading_fedora/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: pages/Downloading_Fedora.adoc:6
 #, no-wrap
 msgid "Downloading Fedora"
-msgstr ""
+msgstr "Stažení Fedory"
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:8
 #, no-wrap
 msgid "Fedora Editions"
-msgstr ""
+msgstr "Edice Fedory"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:10
@@ -35,6 +37,10 @@ msgid ""
 "infrastructure, Fedora Server for organizational infrastructure, and Fedora "
 "Workstation for the developer and desktop user."
 msgstr ""
+"Fedora poskytuje 3 základní edice zaměřené na některé zvláštní případy "
+"užití. link:++https://getfedora.org++[] nabízí Fedoru Cloud pro "
+"škálovatelnou infrastrukturu, Fedoru Server pro infrastrukturu organizace a "
+"Fedoru Workstation pro vývojáře a uživatele stolních počítačů."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:12
@@ -42,6 +48,9 @@ msgid ""
 "For alternative desktop environments or media built for more niche purposes, "
 "check out link:++https://spins.fedoraproject.org++[Fedora Spins]."
 msgstr ""
+"Máte-li zájem o alternativní prostředí pracovní plochy nebo nosiče "
+"připravené pro méně používané účely, přejděte na "
+"link:++https://spins.fedoraproject.org++[Spiny Fedory]."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:14
@@ -51,12 +60,16 @@ msgid ""
 "for your needs. The installation process is the same for all spins and "
 "Editions, so you can use this guide for any choice you make."
 msgstr ""
+"Každá z těchto možností stažení poskytuje různou sadu výchozích balíčků, ale "
+"váš systém lze po původní instalaci uzpůsobit přidáním součástí tak, aby "
+"odpovídal vašim potřebám. Instalační proces je stejný pro všechny spiny a "
+"edice, proto lze tuto příručku použít pro kterýkoliv váš výběr."
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:15
 #, no-wrap
 msgid "Which Architecture Is My Computer?"
-msgstr ""
+msgstr "Jaké architektury je můj počítač?"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:17
@@ -65,6 +78,9 @@ msgid ""
 "manufactured after 2007, or you aren't sure, you probably have a `x86_64` "
 "system."
 msgstr ""
+"Většina moderních systémů je 64bitové x86 architektury. Byl-li váš počítač "
+"vyroben pro roce 2007, nebo nejste-li si jisti, pravděpodobně máte systém "
+"`x86_64`."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:19
@@ -76,12 +92,17 @@ msgid ""
 "+https://ark.intel.com/++[] or link:++https://products.amd.com/++[], if "
 "necessary."
 msgstr ""
+"Změna instalace Fedory z jedné architektury na druhou není podporována. "
+"Použijte následující tabulku, abyste určili architekturu svého počítače dle "
+"typu procesoru. Je-li to nezbytné, obraťte se na dokumentaci výrobce ohledně "
+"informací o vašem procesoru nebo zdroje jako např. link:++https://ark.intel."
+"com/++[] or link:++https://products.amd.com/++[]."
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:21
 #, no-wrap
 msgid "Processor and architecture types"
-msgstr ""
+msgstr "Typy procesorů a architektur"
 
 #. type: Table
 #: pages/Downloading_Fedora.adoc:29
@@ -92,12 +113,19 @@ msgid ""
 "|some Intel Atom, Core 2 series, Core i series and Xeon;\n"
 "\t\t\t\t\t\tAMD: Athlon 64, Athlon II, Sempron64, Phenom series, Fusion series, Bulldozer series and Opteron; Apple MacBook, MacBook Pro, and MacBook Air|`x86_64`\n"
 msgstr ""
+"|Výrobce procesoru a model|Typ architektury pro Fedoru\n"
+"|některé Intel Atom, Core série, Pentium 4, a poslední vintage Xeon; AMD "
+"Athlon, Duron, některé Semprony; a starší; VIA C3, C7|`i386` \n"
+"|některé Intel Atom, Core 2 série, Core i série a Xeon;\n"
+"\t\t\t\t\t\tAMD: Athlon 64, Athlon II, Sempron64, Phenom série, Fusion "
+"série, Bulldozer série a Opteron; Apple MacBook, MacBook Pro a MacBook "
+"Air|`x86_64`\n"
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:31
 #, no-wrap
 msgid "Media Types"
-msgstr ""
+msgstr "Typy nosičů"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:33
@@ -105,12 +133,14 @@ msgid ""
 "Several media types are available. Choose the one that best suits your "
 "requirements."
 msgstr ""
+"Je k dispozici několik typů nosičů. Vyberte si, který nejlépe odpovídá vašim "
+"požadavkům."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:34
 #, no-wrap
 msgid "Live Image"
-msgstr ""
+msgstr "Spustitelný obraz"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:35
@@ -120,6 +150,11 @@ msgid ""
 "you'll get after installation. Fedora Workstation and Fedora Spins are live "
 "images."
 msgstr ""
+"Spustitelné (též live neboli \"živé\") obrazy vám umožní si prohlédnout "
+"Fedoru před jejím nainstalováním. Místo zavedení přímo instalačního "
+"programu, spustitelný obraz zavede do paměti stejné prostředí, které "
+"obdržíte po instalaci. Fedora Workstation a Spiny Fedory jsou spustitelné "
+"obrazy."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:37
@@ -127,12 +162,14 @@ msgid ""
 "Use a live image to install your favorite system, test Fedora on new "
 "hardware, troubleshoot, or share with friends."
 msgstr ""
+"Použijte spustitelný obraz pro instalaci oblíbeného systému, otestování "
+"Fedory na novém hardwaru, řešení potíží nebo sdílení s přáteli."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:38
 #, no-wrap
 msgid "DVD Image"
-msgstr ""
+msgstr "DVD obraz"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:39
@@ -141,6 +178,9 @@ msgid ""
 "choose from a variety of packages that are provided with it. In Fedora 21, "
 "the DVD option is only available in the *Fedora Server* Edition."
 msgstr ""
+"DVD obrazy zavedou rovnou instalační prostředí a umožní výběr různých "
+"balíčků, které jsou s ním poskytovány. Ve Fedoře 21 je možnost DVD obrazu k "
+"dispozici pouze pro edici *Fedora Server*."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:41
@@ -148,12 +188,14 @@ msgid ""
 "Use the Fedora Server DVD image when you want customized Fedora Server "
 "installations using an offline installation source."
 msgstr ""
+"Použijte obraz DVD Fedory Server, chcete-li získat přizpůsobenou instalaci "
+"Fedora Serveru z off-line instalačního zdroje."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:42
 #, no-wrap
 msgid "netinstall Image"
-msgstr ""
+msgstr "Obraz pro instalaci po síti"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:43
@@ -163,6 +205,10 @@ msgid ""
 "a netinstall image, you can select a wide variety of packages to create a "
 "customized installation of Fedora."
 msgstr ""
+"Obraz pro instalaci po síti (netinstall) zavede rovnou instalační prostředí "
+"a jako instalační zdroje využívá on-line repozitáře balíčků Fedory. S "
+"obrazem pro instalaci po síti lze vybrat celou škálu balíčků, kterými si "
+"uzpůsobíte instalaci Fedory."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:45
@@ -170,12 +216,14 @@ msgid ""
 "The Fedora Server netinstall image is a universal one, and can be used to "
 "install any Fedora Edition or your own set of favorite packages."
 msgstr ""
+"Obraz pro instalaci po síti Fedory Server je univerzální a lze ho použít pro "
+"instalaci kterékoliv edice Fedory nebo vlastnímu souboru oblíbených balíčků."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:46
 #, no-wrap
 msgid "ARM images"
-msgstr ""
+msgstr "Obrazy pro ARM"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:47
@@ -184,6 +232,9 @@ msgid ""
 "the image to removable media and boot directly into a Fedora installation "
 "that's ready to use."
 msgstr ""
+"Pro mnoho systémů ARM poskytuje Fedora přednastavené obrazy souborových "
+"systémů. Zapiště obraz na vyměnitelný nosič a rovnou zaveďte instalaci "
+"Fedory, která je hned připravena k použití."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:49
@@ -192,12 +243,15 @@ msgid ""
 "this guide. Start learning about Fedora ARM at link:++https://fedoraproject."
 "org/wiki/Architectures/ARM++[]"
 msgstr ""
+"Zařízení ARM často vyžadují zvláštní postup nastavení, který není součástí "
+"této příručky. Chcete-li se dozvědět více o Fedoře ARM viz "
+"link:++https://fedoraproject.org/wiki/Architectures/ARM++[]"
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:50
 #, no-wrap
 msgid "Cloud Images"
-msgstr ""
+msgstr "Obrazy pro cloud"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:51
@@ -207,6 +261,10 @@ msgid ""
 "with cloud platforms, and are not intended to be used outside of cloud "
 "environments."
 msgstr ""
+"Obrazy Fedory Cloud jsou přednastavené obrazy souborových systémů, ve "
+"výchozím nastavení jen s několika málo nainstalovanými balíčky. Obsahují "
+"zvláštní nástroje pro interakci s cloudovými platformami a nejsou určeny pro "
+"používání mimo cloudová prostředí."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:53
@@ -225,12 +283,15 @@ msgid ""
 "in this guide. Get started using Fedora Cloud at link:++https://"
 "fedoraproject.org/wiki/Cloud++[]"
 msgstr ""
+"Obrazy pro cloud jsou přednastavené a nevyžadují instalaci popisovanou v "
+"této příručce. Pomoc s používáním Fedory Cloud viz "
+"link:++https://fedoraproject.org/wiki/Cloud++[]"
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:56
 #, no-wrap
 msgid "Boot Images"
-msgstr ""
+msgstr "Zaveditelné obrazy"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:57
@@ -240,9 +301,14 @@ msgid ""
 "media from Fedora's servers and directly loads an installation environment, "
 "like the netinstall ISO."
 msgstr ""
+"Drobné obrazy na stránce link:++https://boot.fedoraproject.org/++[] lze "
+"zapsat na CD, disk USB nebo dokonce disketu. Obrazy BFO natáhnou instalační "
+"nosič ze serverů Fedory a rovnou zavedou do paměti instalační prostředí, "
+"podobně jako obrazy ISO pro instalaci po síti."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:58
 msgid ""
 "BFO images work like PXE deployments, without having to set up a server."
 msgstr ""
+"Obrazy BFO fungují jako prostředí PXE, bez povinnosti nastavení serveru."
