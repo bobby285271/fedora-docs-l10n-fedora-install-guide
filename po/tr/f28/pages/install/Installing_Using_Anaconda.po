@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-04-09 17:40+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f28pagesinstallinstalling_using_anaconda/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Title =
 #: ./pages/install/Installing_Using_Anaconda.adoc:6
 #, no-wrap
 msgid "Installing Using Anaconda"
-msgstr ""
+msgstr "Anaconda Kullanarak Yükleme"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:9
@@ -30,11 +35,19 @@ msgid ""
 "limited in certain aspects (for example, custom partitioning is not possible "
 "in text mode)."
 msgstr ""
+"Bu bölümde, [application]*Anaconda* yükleyicisini kullanarak {PRODUCT} "
+"kurmak için adım adım talimatlar verilmektedir. Bu bölümün büyük bölümü, "
+"grafiksel kullanıcı arayüzünü kullanarak kurulumu açıklamaktadır. Grafiksel "
+"ekranı olmayan sistemler için bir metin modu da mevcuttur, ancak bu mod "
+"belirli yönlerden sınırlıdır (örneğin, metin modunda özel bölümlendirme "
+"mümkün değildir)."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:11
 msgid "If your system does not have the ability to use the graphical mode, you can:"
 msgstr ""
+"Sisteminizde grafiksel modu kullanamıyorsanız aşağıdakilerden birini "
+"yapabilirsiniz:"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:13
@@ -43,6 +56,9 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart]"
 msgstr ""
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Kickstart ile Kurulumu Otomatikleştirme] bölümünde açıklandığı gibi kurulumu "
+"otomatikleştirmek için Kickstart kullanın"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:15
@@ -53,12 +69,16 @@ msgid ""
 "xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
 "VNC]"
 msgstr ""
+"Grafiksel ekranlı olan başka bir bilgisayardan _VNC_ (Virtual Network "
+"Computing) protokolünü kullanarak kurulum sistemine bağlanarak grafiksel "
+"kurulumu uzaktan gerçekleştirin - xref:advanced/VNC_Installations.adoc#chap-"
+"vnc-installations[VNC Kullanarak Yükleme] bölümüne bakın"
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:17
 #, no-wrap
 msgid "Introduction to Anaconda"
-msgstr ""
+msgstr "Anaconda'ya Giriş"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:20
@@ -70,6 +90,11 @@ msgid ""
 "partitioning, etc. There is usually only one way to proceed at any given "
 "time."
 msgstr ""
+"{PRODUCT} yükleyicisi, [application]*Anaconda*, paralel yapısı nedeniyle "
+"diğer işletim sistemi kurulum programlarının çoğundan farklıdır. Çoğu "
+"yükleyici sabit bir yol izler: önce dilinizi seçmelisiniz, sonra ağı "
+"yapılandırırsınız, sonra kurulum türünü, sonra bölümlendirmeyi vs. Herhangi "
+"bir zamanda ilerlemenin genellikle tek bir yolu vardır."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:22
@@ -81,6 +106,12 @@ msgid ""
 "example, when installing from a network location, you must configure the "
 "network before you can select which packages to install."
 msgstr ""
+"[application]*Anaconda*'da önce sadece dilinizi ve yerel ayarınızı seçmeniz "
+"gereklidir ve ardından kurulumun çoğu yönünü istediğiniz sırayla "
+"yapılandırabileceğiniz merkezi bir ekran sunulmaktadır. Ancak bu, kurulum "
+"işleminin tüm bölümleri için geçerli değildir - örneğin, bir ağ konumundan "
+"kurulum yaparken, yüklenecek paketleri seçebilmeniz için önce ağı "
+"yapılandırmanız gerekmektedir."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:24
@@ -93,6 +124,12 @@ msgid ""
 "the actual installation process before you finish configuring these "
 "settings."
 msgstr ""
+"Bazı ekranlar donanımınıza ve kurulumu başlatmak için kullandığınız ortam "
+"türüne bağlı olarak otomatik olarak yapılandırılır. Yine de herhangi bir "
+"ekranda tespit edilen ayarları değiştirebilirsiniz. Otomatik olarak "
+"yapılandırılmamış ve bu nedenle kuruluma başlamadan önce ilgilenmenizi "
+"gerektiren ekranlar bir ünlem işareti ile işaretlenmiştir. Bu ayarları "
+"yapılandırmayı tamamlamadan asıl kurulum işlemini başlatamazsınız."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:26
@@ -101,6 +138,9 @@ msgid ""
 "partitioning process is very different from other Linux distributions. These "
 "differences are described in each screen's subsection."
 msgstr ""
+"Bazı ekranlarda ek farklılıklar görülür; özellikle özel bölümlendirme işlemi "
+"diğer Linux dağıtımlarından çok farklıdır. Bu farklılıklar her ekranın alt "
+"bölümünde açıklanmaktadır."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:28

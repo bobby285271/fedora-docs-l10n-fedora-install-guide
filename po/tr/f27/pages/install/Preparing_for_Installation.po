@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:52+0100\n"
-"PO-Revision-Date: 2020-04-06 12:40+0000\n"
+"PO-Revision-Date: 2020-04-09 17:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -48,7 +48,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Yükseltme veya Yükleme?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:14
@@ -56,6 +56,8 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Fedora zaten yüklüyse ve kurulumunuzu şu anki güncel sürüme yükseltmek "
+"istiyorsanız, bunu yapmanın iki temel yolu vardır:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:15
@@ -72,12 +74,16 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"Sisteminizi yükseltmenin tercih edilen yolu, [application]*dnf sistem "
+"yükseltme* aracını kullanarak otomatik bir yükseltme yapmaktır. Otomatik "
+"yükseltme yapma hakkında bilgi için, link:++https://fedoraproject.org/wiki/"
+"DNF_system_upgrade++[Fedora Wiki dnf sistem yükseltme] sayfasına bakın."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:17
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr "Manuel olarak yeniden yükleme"
+msgstr "Manuel olarak yeniden kurulum"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:18
@@ -91,6 +97,14 @@ msgid ""
 "xref:../advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"[application]*dnf sistem yükseltme* kullanmak yerine, Fedora'nın en son "
+"sürümüne manuel olarak yükseltebilirsiniz. Bu, yükleyiciyi baştan bir "
+"kurulum yapıyormuş gibi önyüklemeyi, mevcut Fedora sisteminizi algılamasını "
+"sağlamayı ve diğer bölümler ve birimlerdeki verilere dokunmadan kök "
+"bölümünün üzerine yazmayı içermektedir. Aynı işlem gerekirse sistemi yeniden "
+"kurmak için de kullanılabilir. Ayrıntılı bilgi için xref:../advanced/"
+"Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall["
+"Manuel Sistem Yükseltme veya Yeniden Kurulum] bölümüne bakın."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:22
@@ -99,13 +113,13 @@ msgid ""
 "system, no matter which method you choose."
 msgstr ""
 "Hangi yöntemi seçerseniz seçin, sisteminizi yükseltmeden veya yeniden "
-"yüklemeden önce her zaman verilerinizi yedekleyin."
+"kurmadan önce her zaman verilerinizi yedekleyin."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr ""
+msgstr "Önyükleme ve Kurulum Görüntülerini İndirme"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:28
@@ -119,6 +133,14 @@ msgid ""
 "type, or a direct installation booting method such as PXE; kickstarts are "
 "not supported with live images."
 msgstr ""
+"Fedora Projesi, bazı özel kullanım durumlarına göre uyarlanmış farklı "
+"sürümler sunmaktadır. Sizin için en uygun Fedora sürümünü seçebilir veya "
+"yükleme işleminden sonra özelleştirerek veya xref:../advanced/"
+"Kickstart_Installations.adoc#sect-kickstart-file-create[Kickstart Dosyası "
+"Oluşturma] bölümünde açıklandığı gibi bir kickstart dosyası kullanarak "
+"kendinize özel bir tane oluşturabilirsiniz. Kickstart kurulumu için "
+"`netinstall` ortam türü veya PXE gibi doğrudan kurulum önyükleme yöntemi "
+"gerekmektedir; kickstart canlı görüntülerle desteklenmez."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:30
@@ -127,6 +149,9 @@ msgid ""
 "available media types in "
 "xref:../Downloading_Fedora.adoc#chap-downloading-fedora[Downloading Fedora]."
 msgstr ""
+"Fedora Workstation, Fedora Cloud, Fedora Server ve kullanılabilir ortam "
+"türleri hakkında xref:../Downloading_Fedora.adoc#chap-downloading-fedora["
+"Fedora'yı İndirme] bölümünde daha fazla bilgi edinin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -134,12 +159,15 @@ msgid ""
 "You can also choose a Fedora _Spin_ featuring favorite alternative desktops "
 "or tools for specialized tasks at link:++http://spins.fedoraproject.org++[]."
 msgstr ""
+"Ayrıca favori alternatif masaüstü ortamınızı veya özel görevler için "
+"araçlarınızı içeren bir Fedora _Spinini_ "
+"link:++https://spins.fedoraproject.org++[] adresinde seçebilirsiniz."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:34
 #, no-wrap
 msgid "Verifying the Downloaded Image"
-msgstr ""
+msgstr "İndirilen Görüntüyü Doğrulama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:37
@@ -151,6 +179,12 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
+"Aktarım hataları veya diğer sorunlar indirdiğiniz Fedora görüntüsünü "
+"bozabileceğinden, dosyanın bütünlüğünü doğrulamak önemlidir. Görüntüler "
+"oluşturulduktan sonra, dosya üzerinde karmaşık bir matematik algoritması "
+"kullanarak `checksum` (sağlama toplamı) adı verilen bir değer üreten bir "
+"işlem gerçekleştirilmektedir. İşlem, orijinal dosyada yapılan *herhangi bir "
+"değişikliğin* farklı bir sağlama toplamı üreteceği kadar karmaşıktır."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:39
@@ -161,12 +195,17 @@ msgid ""
 "link:++https://fedoraproject.org/verify++[], and are [command]#gpg# signed "
 "to demonstrate their integrity."
 msgstr ""
+"Görüntünün `checksum` değerini kendi bilgisayarınızda hesaplayarak ve "
+"orijinal `checksum` değeriyle karşılaştırarak görüntünün değiştirilmediğini "
+"veya bozulmadığını doğrulayabilirsiniz. Orijinal sağlama toplamı değerleri "
+"link:++https://getfedora.org/security/++[] adresinde bulunmaktadır ve "
+"bütünlüklerini kanıtlamak için [command]#gpg# ile imzalanmışlardır."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:41 ./pages/install/Preparing_for_Installation.adoc:43
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
-msgstr ""
+msgstr "Windows sistemlerinde sağlama toplamlarını doğrulama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:45 ./pages/install/Preparing_for_Installation.adoc:97
@@ -175,16 +214,19 @@ msgid ""
 "link:++https://fedoraproject.org/get-fedora++[] and the corresponding "
 "checksum file from link:++https://fedoraproject.org/verify++[]"
 msgstr ""
+"Seçtiğiniz Fedora görüntüsünü link:++https://fedoraproject.org/get-fedora++[]"
+" adresinden ve karşılık gelen sağlama toplamı dosyasını "
+"link:++https://getfedora.org/security/++[] adresinden indirin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:47
 msgid "Open a [command]#powershell# session."
-msgstr ""
+msgstr "Bir [command]#powershell# oturumu açın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:49
 msgid "Change to the directory containing the downloaded files."
-msgstr ""
+msgstr "İndirilen dosyaları içeren dizine gidin."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:54
@@ -193,12 +235,14 @@ msgid ""
 "> cd $HOME\\Downloads\\\n"
 "> ls\n"
 msgstr ""
+"> cd $HOME\\Downloads\\\n"
+"> ls\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:56
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
-msgstr ""
+msgstr "Directory: C:\\Users\\Pete\\Downloads\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:61
@@ -211,11 +255,17 @@ msgid ""
 "-a---        11/25/2014  12:39 PM     2047868928  "
 "Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
+"Mode                LastWriteTime         Length  Name\n"
+"----                -------------         ------  ----\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
+"CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-"
+"DVD-x86_64-21.iso\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:65
 msgid "Load the resources required to calculate the checksum."
-msgstr ""
+msgstr "Sağlama toplamını hesaplamak için gereken kaynakları yükleyin."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:71
@@ -228,11 +278,19 @@ msgid ""
 "> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
 "$image) -split \" \")[0].ToLower()\n"
 msgstr ""
+"> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
+"> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography."
+"sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
+"$image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:74
 msgid "Calculate the downloaded image's checksum. This will take a while!"
 msgstr ""
+"İndirilen görüntünün sağlama toplamını hesaplayın. Bu işlem biraz zaman "
+"alacaktır!"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:77
@@ -242,11 +300,13 @@ msgid ""
 "[System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() "
 "-replace '-', ''\n"
 msgstr ""
+"> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([S"
+"ystem.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:80
 msgid "Compare the calculated checksum to the expected checksum."
-msgstr ""
+msgstr "Hesaplanan sağlama toplamını beklenen sağlama toplamıyla karşılaştırın."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:90
@@ -260,12 +320,19 @@ msgid ""
 "echo \"Checksum test failed.\"\n"
 "}\n"
 msgstr ""
+"> echo \"İndirilenin Sağlama Toplamı: $download_checksum\"\n"
+"> echo \"Beklenen Sağlama Toplamı: $expected_checksum\"\n"
+"> if ( $download_checksum -eq \"$expected_checksum\" ) {\n"
+"echo \"Sağlama toplamı testi geçti!\"\n"
+"} else {\n"
+"echo \"Sağlama toplamı testi başarısız oldu.\"\n"
+"}\n"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:93 ./pages/install/Preparing_for_Installation.adoc:95
 #, no-wrap
 msgid "Verifying checksums on Linux and OSX systems"
-msgstr ""
+msgstr "Linux ve OSX sistemlerinde sağlama toplamlarını doğrulama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:99
@@ -273,45 +340,46 @@ msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
 "files."
 msgstr ""
+"Bir terminal penceresi açın ve indirilen dosyaların bulunduğu dizine gidin."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:103
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
-msgstr ""
+msgstr "$ [command]#cd ~/İndirilenler#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:106
 msgid "Use the appropriate utility to verify the image checksum."
-msgstr ""
+msgstr "Görüntünün sağlama toplamını doğrulamak için uygun aracı kullanın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:108
 msgid "For Linux:"
-msgstr ""
+msgstr "Linux için:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:112
 #, no-wrap
 msgid "$ sha256sum -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ sha256sum -c *CHECKSUM\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:115
 msgid "For OSX:"
-msgstr ""
+msgstr "OSX için:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:119
 #, no-wrap
 msgid "$ shasum -a 256 -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ shasum -a 256 -c *CHECKSUM\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Önyükleme Ortamını Hazırlama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:125
@@ -319,12 +387,15 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora görüntüleri `Hibrit ISO` dosyalarıdır ve hem BIOS hem de UEFI "
+"sistemlerinde önyükleme yapmak için, optik ve USB disklerle kurulum ortamı "
+"oluşturmakta kullanılabilir."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:126
 #, no-wrap
 msgid "Fedora Media Writer and Universal USB Creators"
-msgstr ""
+msgstr "Fedora Media Writer ve Yaygın USB Oluşturucuları"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:132
@@ -336,6 +407,13 @@ msgid ""
 "Writer is strongly encouraged, other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer* önemli ölçüde iyileştirildi ve artık "
+"varsayılan önyüklenebilir ortam oluşturma yoludur. [application]*Fedora "
+"Media Writer* Linux, Mac ve Windows'u desteklemektedir. Fedora'yı (veya "
+"diğer işletim sistemlerini) yüklemek için önyüklenebilir USB ortamı "
+"oluşturmanın kolay bir yoludur. Diğer USB ortam oluşturma programları da "
+"düzgün çalışmaktadır, bununla birlikte [application]*Fedora Media Writer* "
+"kullanılması şiddetle önerilir."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:135
@@ -346,6 +424,11 @@ msgid ""
 "\"Custom OS\". Options like Fedora Spins will appear. Fedora Spins such as "
 "XFCE and Mate will be selectable."
 msgstr ""
+"[application]*Fedora Media Writer* için yeni özelliklerden bazıları, Fedora "
+"Workstation ve Server sürümlerinin ana ekrandaki ilk seçenekler olmasıdır. \""
+"Özel İşletim Sistemi\"nin altındaki düğmeyi seçerseniz başka seçenekler de "
+"mevcuttur. Fedora Spinleri gibi seçenekler görünecektir. Xfce veya Mate gibi "
+"Fedora Spinleri seçilebilir olacaktır."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:137
@@ -356,6 +439,11 @@ msgid ""
 "drive, extracting files from the image, and writing [application]*syslinux* "
 "bootloader to the device."
 msgstr ""
+"[application]*Unetbootin* gibi yaygın USB oluşturma araçları, optik ortamlar "
+"için tasarlanan ISO'lardan USB yükleyicileri oluşturmanın tarihsel olarak "
+"popüler bir yoludur. Genellikle USB sürücüde bir dosya sistemi oluşturarak, "
+"görüntüdeki dosyaları çıkararak ve [application]*syslinux* önyükleyicisini "
+"aygıta yazarak çalışırlar."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:139
@@ -365,6 +453,10 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems. They do not produce a consistent "
 "result with Fedora's images, especially for use with UEFI systems."
 msgstr ""
+"Bu yöntemler, SecureBoot etkinleştirilmiş UEFI sistemlerinin yanı sıra BIOS "
+"sistemlerinde de önyükleme yapmak üzere bölümlendirilmiş ve tasarlanmış olan "
+"Fedora görüntülerindeki önyükleyici ayarlarını atlar. Fedora görüntüleri "
+"ile, özellikle UEFI sistemlerinde tutarlı sonuçlar vermezler."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:141
@@ -372,11 +464,13 @@ msgid ""
 "Utilities that use a direct write method, and do not modify the Fedora "
 "image, will produce the most consistently successful results."
 msgstr ""
+"Doğrudan yazma yöntemi kullanan ve Fedora görüntüsünü değiştirmeyen araçlar "
+"en tutarlı şekilde başarılı sonuçlar verecektir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:145
 msgid "Be sure you choose the right device!"
-msgstr ""
+msgstr "Doğru aygıtı seçtiğinizden emin olun!"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:148
@@ -385,12 +479,15 @@ msgid ""
 "not need any data on the USB stick, and double check you have chosen the "
 "correct device before continuing."
 msgstr ""
+"Bu bölümdeki ortam oluşturma yöntemlerinin çoğu yıkıcıdır. USB bellekteki "
+"herhangi bir veriye ihtiyacınız olmadığından emin olun ve devam etmeden önce "
+"doğru aygıtı seçtiğinizi tekrar kontrol edin."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:151
 #, no-wrap
 msgid "Creating USB Media on Windows"
-msgstr ""
+msgstr "USB ortamını Windows'ta oluşturma"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:153
@@ -398,6 +495,9 @@ msgid ""
 "Download the latest Windows Installer file from Marin Briza's github page: "
 "link:++https://github.com/MartinBriza/MediaWriter/releases++[https://github.com/MartinBriza/MediaWriter/releases]."
 msgstr ""
+"Marin Briza'nın github sayfasından en son Windows Installer dosyasını "
+"indirin: link:++https://github.com/MartinBriza/MediaWriter/"
+"releases++[https://github.com/MartinBriza/MediaWriter/releases]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:155
@@ -406,6 +506,9 @@ msgid ""
 "the set-up wizard. The Wizard gives you the options to customize the "
 "software's installation if you choose to."
 msgstr ""
+"Çift tıklayarak kurulumu çalıştırın ve ardından kurulum sihirbazını takip "
+"ederek devam edin. Sihirbaz, isterseniz yazılımın kurulumunu "
+"özelleştirmenize izin vermektedir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:157
@@ -414,29 +517,33 @@ msgid ""
 "[application]*Fedora Media Writer*. Or in Windows 10, you can just type "
 "[application]*Fedora Media Writer* in the search box on the task bar."
 msgstr ""
+"Windows 8 ve 10'da uygulama, \"tüm uygulamalar\" altındaki [application]*"
+"Fedora Media Writer* için _F_ harfi altında olacaktır. Windows 10'da, görev "
+"çubuğundaki arama kutusuna [application]*Fedora Media Writer* yazmanız "
+"yeterlidir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:159 ./pages/install/Preparing_for_Installation.adoc:207 ./pages/install/Preparing_for_Installation.adoc:247
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
-msgstr ""
+msgstr "Önyüklenebilir bir USB sürücü yapmak istediğiniz Fedora sürümünü seçin."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:161 ./pages/install/Preparing_for_Installation.adoc:209 ./pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
-msgstr ""
+msgstr "Fedora Media Writer Ana Ekranı: Fedora Sürümünüzü Seçin"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:163 ./pages/install/Preparing_for_Installation.adoc:211 ./pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
-msgstr ""
+msgstr "Fedora Media Writer Ana Ekranının Görüntüsü"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:163 ./pages/install/Preparing_for_Installation.adoc:211 ./pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
-msgstr ""
+msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:167 ./pages/install/Preparing_for_Installation.adoc:215 ./pages/install/Preparing_for_Installation.adoc:255
@@ -448,24 +555,30 @@ msgid ""
 "architecture, such as 32bit if you select \"other architectures\". Otherwise "
 "select \"Create Live USB\" to proceed."
 msgstr ""
+"Fedora Workstation veya Server gibi varsayılan Fedora sürümlerinden birini "
+"seçerseniz, indirme ve USB oluşturma işlemine devam etmeden önce "
+"[application]*Fedora Media Writer* size bu konuda bilgi ve ayrıntılar "
+"verecektir. Fedora Workstation için, \"diğer mimariler\"i seçerseniz 32 bit "
+"gibi farklı bir mimari seçebilirsiniz. Aksi takdirde devam etmek için \""
+"Canlı USB Oluştur\"u seçin."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:169 ./pages/install/Preparing_for_Installation.adoc:217 ./pages/install/Preparing_for_Installation.adoc:257
 #, no-wrap
 msgid "Fedora Media Writer Distro Information"
-msgstr ""
+msgstr "Fedora Media Writer Dağıtım Bilgileri"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:171 ./pages/install/Preparing_for_Installation.adoc:219 ./pages/install/Preparing_for_Installation.adoc:259
 #, no-wrap
 msgid "Image of Fedora Media Writer Distro Information Screen"
-msgstr ""
+msgstr "Fedora Media Writer Dağıtım Bilgileri Ekranının Görüntüsü"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:171 ./pages/install/Preparing_for_Installation.adoc:219 ./pages/install/Preparing_for_Installation.adoc:259
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
-msgstr ""
+msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:174 ./pages/install/Preparing_for_Installation.adoc:222 ./pages/install/Preparing_for_Installation.adoc:262
@@ -474,24 +587,27 @@ msgid ""
 "all-ready have it in your Downloads directory it will be immediately "
 "available to use."
 msgstr ""
+"Fedora Media Writer, ISO dosyasını sizin için otomatik olarak indirecektir, "
+"ancak eğer İndirilenler dizininizde zaten varsa indirmek yerine onu "
+"kullanacaktır."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:176 ./pages/install/Preparing_for_Installation.adoc:224 ./pages/install/Preparing_for_Installation.adoc:264
 #, no-wrap
 msgid "Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Fedora Media Writer Otomatik İndirme"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:178 ./pages/install/Preparing_for_Installation.adoc:226 ./pages/install/Preparing_for_Installation.adoc:266
 #, no-wrap
 msgid "Image of Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Fedora Media Writer Otomatik İndirme Ekranının Görüntüsü"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:178 ./pages/install/Preparing_for_Installation.adoc:226 ./pages/install/Preparing_for_Installation.adoc:266
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
-msgstr ""
+msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:181 ./pages/install/Preparing_for_Installation.adoc:229 ./pages/install/Preparing_for_Installation.adoc:269
@@ -499,35 +615,38 @@ msgid ""
 "After the download completes, or when [application]*Fedora Media Writer* is "
 "ready. Plug in a USB drive you wish to use as a bootable media."
 msgstr ""
+"İndirme işlemi tamamlandıktan sonra veya [application]*Fedora Media Writer* "
+"hazır olduğunda, önyüklenebilir ortam olarak kullanmak istediğiniz bir USB "
+"sürücüsünü takın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:183 ./pages/install/Preparing_for_Installation.adoc:231 ./pages/install/Preparing_for_Installation.adoc:271
 msgid "Click the red \"Write to disk\" button."
-msgstr ""
+msgstr "Kırmızı \"Diske yaz\" düğmesine tıklayın."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:185 ./pages/install/Preparing_for_Installation.adoc:233 ./pages/install/Preparing_for_Installation.adoc:273
 #, no-wrap
 msgid "Fedora Media Writer Write to USB Device"
-msgstr ""
+msgstr "Fedora Media Writer USB Aygıta Yazma"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:187 ./pages/install/Preparing_for_Installation.adoc:235 ./pages/install/Preparing_for_Installation.adoc:275
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
-msgstr ""
+msgstr "Fedora Media Writer Aygıta Yazma Kırmızı Düğmesinin Görüntüsü"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:187 ./pages/install/Preparing_for_Installation.adoc:235 ./pages/install/Preparing_for_Installation.adoc:275
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:189
 #, no-wrap
 msgid "Creating USB Media with Fedora Media Writer."
-msgstr ""
+msgstr "USB ortamını Fedora Media Writer ile oluşturma."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:191
@@ -535,23 +654,26 @@ msgid ""
 "On Fedora 25 or later, you can download Fedora Media Writer with the "
 "command:"
 msgstr ""
+"Fedora 25 veya sonrasında, Fedora Media Writer'ı aşağıdaki komutla "
+"indirebilirsiniz:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:195
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:198
 msgid "You can call [application]*Fedora Media Writer* by issuing the command:"
 msgstr ""
+"[application]*Fedora Media Writer*'ı aşağıdaki komutla çalıştırabilirsiniz:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:202
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:205
@@ -559,12 +681,14 @@ msgid ""
 "or in [application]*Gnome 3* by selecting *Activities,* then selecting "
 "*Utilities*, and then selecting [application]*Fedora Media Writer*."
 msgstr ""
+"veya [application]*Gnome 3*'te *Etkinlikler*'i, ardından *Araçlar*'ı ve "
+"ardından [application]*Fedora Media Writer*'ı seçerek."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:237
 #, no-wrap
 msgid "Creating USB Media on Macintosh"
-msgstr ""
+msgstr "USB ortamını Macintosh'ta oluşturma"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:239
@@ -573,6 +697,10 @@ msgid ""
 "extension) from Marin Briza's github page: "
 "link:++https://github.com/MartinBriza/MediaWriter/releases++[https://github.com/MartinBriza/MediaWriter/releases]."
 msgstr ""
+"Marin Briza'nın github sayfasından en son Macintosh Disk Image dosyasını "
+"indirin (paket, .dmg uzantısına sahip olacaktır): link:++https://github.com/"
+"MartinBriza/MediaWriter/releases++[https://github.com/MartinBriza/"
+"MediaWriter/releases]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:241
@@ -580,6 +708,7 @@ msgid ""
 "Open the .dmg file and copy the mediawriter file into your applications "
 "folder."
 msgstr ""
+".dmg dosyasını açın mediawriter dosyasını uygulamalar klasörünüze kopyalayın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:243
@@ -587,6 +716,7 @@ msgid ""
 "Navigate to your applications directory, and then launch the mediawriter "
 "app."
 msgstr ""
+"Uygulamalar dizininize gidin ve ardından mediawriter uygulamasını başlatın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:245
@@ -594,12 +724,15 @@ msgid ""
 "Mac OS will then ask if you are sure you want to open the file (it is from "
 "the internet after all), select \"Open\" to run the program."
 msgstr ""
+"Mac OS daha sonra dosyayı açmak istediğinize emin olup olmadığınızı "
+"soracaktır (sonuçta internetten indirildi), programı çalıştırmak için \"Aç\" "
+"seçeneğini seçin."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:277
 #, no-wrap
 msgid "Creating USB media with [application]*GNOME Disks*"
-msgstr ""
+msgstr "USB ortamını [application]*GNOME Diskler* ile oluşturma"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:279
@@ -608,11 +741,13 @@ msgid ""
 "[package]*gnome-disk-utility* package installed, open `Disks` using the "
 "system menu."
 msgstr ""
+"[application]*GNOME* veya [package]*gnome-disk-utility* kurulu bir sistemde, "
+"sistem menüsünü kullanarak `Diskler` uygulamasını açın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:281
 msgid "Click your USB device in the left column."
-msgstr ""
+msgstr "Sol sütunda USB aygıtınıza tıklayın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:283
@@ -620,6 +755,8 @@ msgid ""
 "Click the menu icon in the upper right corner of the window, and choose the "
 "`Restore Disk Image` option."
 msgstr ""
+"Pencerenin sağ üst köşesindeki menü simgesini tıklayın ve `Disk Kalıbını "
+"Geri Yükle` seçeneğini seçin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:285
@@ -628,17 +765,20 @@ msgid ""
 "minutes, it will report the process is complete and your installation media "
 "will be ready to use."
 msgstr ""
+"Görüntü dosyanıza gidin ve `Geri Yüklemeyi Başlat` düğmesine tıklayın. "
+"Birkaç dakika sonra, işlemin tamamlandığını ve kurulum ortamınızın kullanıma "
+"hazır olduğunu bildirecektir."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:286
 #, no-wrap
 msgid "Creating USB Media on the Linux command line"
-msgstr ""
+msgstr "USB ortamını Linux komut satırında oluşturma"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:288
 msgid "Open a terminal window and insert the usb drive."
-msgstr ""
+msgstr "Bir terminal penceresi açın ve usb sürücüsünü takın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:290
@@ -646,6 +786,8 @@ msgid ""
 "Find the `device node` assigned to the drive. In the example below, the "
 "drive is given `sdd`."
 msgstr ""
+"Sürücüye atanan `aygıt düğümünü` bulun. Aşağıdaki örnekte, sürücüye `sdd` "
+"verilmiştir."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:304
@@ -665,6 +807,19 @@ msgid ""
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
+"$ [command]#dmesg|tail#\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
+"SerialNumber=2\n"
+"[288954.686559] usb 2-1.8: Product: USB Storage\n"
+"[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
+"[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
+"[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
+"[288954.712809] usbcore: registered new interface driver usb-storage\n"
+"[288954.716682] usbcore: registered new interface driver uas\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
+"9228 PQ: 0 ANSI: 0\n"
+"[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
+"[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:307
@@ -672,18 +827,22 @@ msgid ""
 "Use the [command]#dd# utility to write the image. *Make sure you have the "
 "right drive!*"
 msgstr ""
+"Görüntüyü yazmak için [command]#dd# komutunu kullanın. *Doğru sürücüyü "
+"belirttiğinizden emin olun!*"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:311
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 msgstr ""
+"# dd if=/görüntü-dosyasının-bulunduğu-yol/Fedora-Live-Security-x86_64-21.iso "
+"of=/dev/sdd\n"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:313
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
-msgstr ""
+msgstr "Önyükleme CD'si veya DVD'si oluşturma"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:315
@@ -693,6 +852,10 @@ msgid ""
 "approach may be necessary when installing {PRODUCT} on an older system which "
 "can not boot from USB."
 msgstr ""
+"Önyüklenebilir bir USB flash sürücü oluşturmaya ek olarak, sağlanan ISO "
+"görüntülerini önyüklenebilir optik ortam (CD veya DVD) oluşturmak için de "
+"kullanabilirsiniz. Bu yaklaşım, USB'den önyükleme yapamayan eski bir sisteme "
+"{PRODUCT} yüklerken gerekli olabilir."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:320
@@ -701,11 +864,14 @@ msgid ""
 "image will vary depending on what disc burning software you use. This "
 "procedure only offers a general overview."
 msgstr ""
+"Bir ISO görüntüsünden önyüklenebilir bir CD veya DVD yazmak için atmanız "
+"gereken kesin adımlar, kullandığınız disk yazma programına bağlı olarak "
+"değişecektir. Buradaki yöntem sadece genel bir bakış sunar."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:324
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
-msgstr ""
+msgstr "Sisteminizin CD veya DVD yazıcısına boş bir CD veya DVD yerleştirin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:326
@@ -717,6 +883,12 @@ msgid ""
 "[application]*Brasero*, this option is `Burn image` in the main menu on the "
 "left side of the window."
 msgstr ""
+"Sisteminizin yazma programını açın - örneğin, [application]*GNOME* masaüstü "
+"ortamına sahip {PRODUCT} sistemlerinde [application]*Brasero* veya Windows "
+"sistemlerinde [application]*Nero*. Programın ana menüsünde, diske bir ISO "
+"görüntüsü yazmanıza izin veren bir seçenek bulun. Örneğin, "
+"[application]*Brasero*'da, bu seçenek pencerenin sol tarafındaki ana "
+"menüdeki `Kalıp yazdır` seçeneğidir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:328
@@ -724,8 +896,10 @@ msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
+"İstendiğinde, yazdırılacak {PRODUCT} ürününün ISO görüntüsünü ve içinde boş "
+"bir disk bulunan CD veya DVD yazıcıyı (birden fazla sürücünüz varsa) seçin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:329
 msgid "Confirm your selection, and wait for the disc to be burned."
-msgstr ""
+msgstr "Seçiminizi doğrulayın ve diskin yazdırılmasını bekleyin."
