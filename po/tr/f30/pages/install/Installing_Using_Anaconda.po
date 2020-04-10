@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:51+0100\n"
-"PO-Revision-Date: 2020-04-09 17:41+0000\n"
+"PO-Revision-Date: 2020-04-10 18:31+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -23,7 +23,7 @@ msgstr ""
 #: ./pages/install/Installing_Using_Anaconda.adoc:6
 #, no-wrap
 msgid "Installing Using Anaconda"
-msgstr "Anaconda Kullanarak Yükleme"
+msgstr "Anaconda Kullanarak Kurma"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:9
@@ -72,7 +72,7 @@ msgstr ""
 "Grafiksel ekranlı olan başka bir bilgisayardan _VNC_ (Virtual Network "
 "Computing) protokolünü kullanarak kurulum sistemine bağlanarak grafiksel "
 "kurulumu uzaktan gerçekleştirin - xref:advanced/VNC_Installations.adoc#chap-"
-"vnc-installations[VNC Kullanarak Yükleme] bölümüne bakın"
+"vnc-installations[VNC Kullanarak Kurma] bölümüne bakın"
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:17
@@ -110,7 +110,7 @@ msgstr ""
 "gereklidir ve ardından kurulumun çoğu yönünü istediğiniz sırayla "
 "yapılandırabileceğiniz merkezi bir ekran sunulmaktadır. Ancak bu, kurulum "
 "işleminin tüm bölümleri için geçerli değildir - örneğin, bir ağ konumundan "
-"kurulum yaparken, yüklenecek paketleri seçebilmeniz için önce ağı "
+"kurulum yaparken, kurulacak paketleri seçebilmeniz için önce ağı "
 "yapılandırmanız gerekmektedir."
 
 #. type: Plain text
@@ -146,7 +146,7 @@ msgstr ""
 #: ./pages/install/Installing_Using_Anaconda.adoc:28
 #, no-wrap
 msgid "Consoles and Logging During the Installation"
-msgstr ""
+msgstr "Kurulum Sırasında Konsollar ve Günlük Kaydı"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:31
@@ -155,12 +155,15 @@ msgid ""
 "during the installation. This is useful when troubleshooting problems, but "
 "should not be necessary in most cases."
 msgstr ""
+"Aşağıdaki bölümlerde, kurulum sırasında günlüklere ve etkileşimli bir kabuğa "
+"nasıl erişileceği açıklanmaktadır. Bu, sorunları giderirken yararlıdır, "
+"ancak çoğu durumda gerekli olmamalıdır."
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:33
 #, no-wrap
 msgid "Accessing Consoles"
-msgstr ""
+msgstr "Konsollara Erişme"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:36
@@ -173,6 +176,14 @@ msgid ""
 "prompt with `root` privileges, unless this prompt was specifically disabled "
 "using a boot option or a Kickstart command."
 msgstr ""
+"{PRODUCT} yükleyicisi, ana arayüze ek olarak kullanabileceğiniz birkaç "
+"pencereyi görüntülemek ve kontrol etmek için [application]*tmux* terminal "
+"çoklayıcısını kullanmaktadır. Bu pencerelerin her biri farklı bir amaca "
+"hizmet eder - kurulum sırasında herhangi bir sorunu gidermek için "
+"kullanılabilecek birkaç farklı günlük kaydını görüntüler ve pencerelerden "
+"biri, bir önyükleme seçeneği veya Kickstart komutu kullanılarak özel olarak "
+"devre dışı bırakılmadığı sürece `root` ayrıcalıklarına sahip etkileşimli bir "
+"kabuk istemi sağlar."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:41
@@ -180,6 +191,8 @@ msgid ""
 "In general, there is no reason to leave the default graphical installation "
 "environment unless you need to diagnose an installation problem."
 msgstr ""
+"Genel olarak, bir kurulum sorununu teşhis etmeniz gerekmediği sürece "
+"varsayılan grafiksel kurulum ortamından ayrılmak için hiçbir neden yoktur."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:45
@@ -189,6 +202,10 @@ msgid ""
 "Alt + F1]. To go back to the main installation interface which runs in "
 "virtual console 6, press kbd:[Ctrl + Alt + F6]."
 msgstr ""
+"Terminal çoklayıcı sanal konsol 6'da çalışmaktadır. Gerçek kurulum "
+"ortamından [application]*tmux*'a geçmek için kbd:[Ctrl + Alt + F1] tuşlarına "
+"basın. Sanal konsol 1'de çalışan ana kurulum arayüzüne geri dönmek için kbd:["
+"Ctrl + Alt + F6] tuşlarına basın."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:50
@@ -197,6 +214,9 @@ msgid ""
 "([application]*tmux*), and switching to console 6 will open a shell prompt "
 "instead of a graphical interface."
 msgstr ""
+"Metin modunda kurulumu seçerseniz, sanal konsol 1'de ([application]*tmux*) "
+"başlayacaksınız ve konsol 6'ya geçtiğinizde, grafiksel arayüz yerine bir "
+"kabuk istemi açılacaktır."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:54
@@ -207,6 +227,11 @@ msgid ""
 "press kbd:[Ctrl + b], then release both keys, and press the number key for "
 "the window you want to use."
 msgstr ""
+"[application]*tmux*'u çalıştıran konsolda 5 pencere vardır; içerikleri, "
+"onlara erişmek için kullanılan klavye kısayollarıyla birlikte aşağıdaki "
+"tabloda açıklanmıştır. Klavye kısayollarının iki bölümden oluştuğunu "
+"unutmayın: önce kbd:[Ctrl + b] tuşlarına basın, ardından her iki tuşu da "
+"bırakın ve kullanmak istediğiniz pencerenin sayı tuşuna basın."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:56
@@ -214,12 +239,15 @@ msgid ""
 "You can also use kbd:[Ctrl + b] kbd:[n] and kbd:[Ctrl + b] kbd:[p] to switch "
 "to the next or previous [application]*tmux* window, respectively."
 msgstr ""
+"Sonraki veya önceki [application]*tmux* penceresine geçmek için, sırasıyla "
+"kbd:[Ctrl + b] kbd:[n] ve kbd:[Ctrl + b] kbd:[p] tuşlarını da "
+"kullanabilirsiniz."
 
 #. type: Block title
 #: ./pages/install/Installing_Using_Anaconda.adoc:58
 #, no-wrap
 msgid "Available tmux Windows"
-msgstr ""
+msgstr "Mevcut tmux pencereleri"
 
 #. type: Table
 #: ./pages/install/Installing_Using_Anaconda.adoc:68
@@ -237,6 +265,19 @@ msgid ""
 "|kbd:[Ctrl + b] kbd:[5]|Program log; displays messages from other system "
 "utilities, stored in `/tmp/program.log`.\n"
 msgstr ""
+"|Kısayol|İçerik\n"
+"|kbd:[Ctrl + b] kbd:[1]|Ana kurulum programı penceresi. Metin tabanlı "
+"istemler (metin modunda kurulum sırasında veya VNC doğrudan modunu "
+"kullanıyorsanız) ve ayrıca bazı hata ayıklama bilgilerini içerir.\n"
+"|kbd:[Ctrl + b] kbd:[2]|`root` ayrıcalıklarına sahip etkileşimli kabuk "
+"istemi.\n"
+"|kbd:[Ctrl + b] kbd:[3]|Kurulum günlük kaydı; `/tmp/anaconda.log` dosyasında "
+"saklanan mesajları görüntüler.\n"
+"|kbd:[Ctrl + b] kbd:[4]|Depolama günlük kaydı; `/tmp/storage.log` dosyasında "
+"saklanan, çekirdek ve sistem hizmetlerinden gelen depolama aygıtlarıyla "
+"ilgili mesajları görüntüler.\n"
+"|kbd:[Ctrl + b] kbd:[5]|Program günlük kaydı; `/tmp/program.log ` dosyasında "
+"saklanan, diğer sistem programlarından gelen mesajları görüntüler.\n"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:71
@@ -250,12 +291,20 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-troubleshooting-transferring-logs[Transferring "
 "Log Files from the Installation System]."
 msgstr ""
+"[application]*Anaconda*, tanılama bilgilerini [application]*tmux* "
+"pencerelerinde görüntülemenin yanı sıra, kurulum sisteminden başka bir yere "
+"aktarılabilen birkaç günlük kaydı dosyası oluşturur. Bu günlük kaydı "
+"dosyaları, xref:install/Troubleshooting.adoc#sect-troubleshooting-log-files["
+"Kurulum Sırasında Oluşturulan Günlük Kaydı Dosyaları] bölümünde "
+"açıklanmaktadır ve bunları kurulum sisteminden aktarma talimatları, xref:"
+"install/Troubleshooting.adoc#sect-troubleshooting-transferring-logs[Günlük "
+"Kaydı Dosyalarını Kurulum Sisteminden Aktarma] bölümünde mevcuttur."
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:73
 #, no-wrap
 msgid "Saving Screenshots"
-msgstr ""
+msgstr "Ekran Görüntülerini Kaydetme"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:76
@@ -264,6 +313,9 @@ msgid ""
 "installation to capture the current screen. These screenshots are saved to "
 "`/tmp/anaconda-screenshots`."
 msgstr ""
+"Geçerli ekranı yakalamak için grafiksel kurulum sırasında istediğiniz zaman "
+"kbd:[Shift + Print Screen] tuşlarına basabilirsiniz. Bu ekran görüntüleri `/"
+"tmp/anaconda-screenshots` dizinine kaydedilir."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:78
@@ -274,12 +326,17 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep "
 "(optional) - Go Through Every Screen] for details."
 msgstr ""
+"Ayrıca, kurulum işleminin her adımını otomatik olarak yakalamak ve kaydetmek "
+"için Kickstart dosyasında [command]#autostep --autoscreenshot# komutunu "
+"kullanabilirsiniz. Ayrıntılar için xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep ("
+"isteğe bağlı) - Her Ekrandan Geçin] bölümüne bakın."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:80
 #, no-wrap
 msgid "Installing in Text Mode"
-msgstr ""
+msgstr "Metin Modunda Kurma"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:83
@@ -290,6 +347,11 @@ msgid ""
 "before starting a text-based installation. Text mode is limited in the "
 "amount of choices you can make during the installation."
 msgstr ""
+"Metin modu kurulumu, {PRODUCT} kurmak için etkileşimli, grafiksel olmayan "
+"bir arayüz sunmaktadır. Bu, grafiksel özellikleri olmayan sistemlerde "
+"yararlı olabilir; ancak, metin tabanlı bir kuruluma başlamadan önce daima "
+"mevcut alternatifleri göz önünde bulundurmalısınız. Metin modu, kurulum "
+"sırasında yapabileceğiniz seçimler konusunda sınırlıdır."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:85
@@ -304,24 +366,32 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart])."
 msgstr ""
+"Metin modu için, kurulum sisteminde grafiksel bir ekran olmasa bile "
+"kullanılabilen iki tane alternatif vardır. Kurulum sistemine VNC kullanarak "
+"bağlanabilir ve uzaktan etkileşimli bir grafiksel kurulum "
+"gerçekleştirebilirsiniz (xref:advanced/VNC_Installations.adoc#chap-vnc-"
+"installations[VNC Kullanarak Kurma]) veya kurulumu otomatik olarak "
+"gerçekleştirmek için bir Kickstart dosyası oluşturabilirsiniz (xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart ile "
+"Kurulumu Otomatikleştirme])."
 
 #. type: Block title
 #: ./pages/install/Installing_Using_Anaconda.adoc:86
 #, no-wrap
 msgid "Text Mode Installation"
-msgstr ""
+msgstr "Metin Modunda Kurulum"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Installing_Using_Anaconda.adoc:88
 #, no-wrap
 msgid "The main menu in during a text-based installation."
-msgstr ""
+msgstr "Metin tabanlı kurulum sırasında ana menü."
 
 #. type: Target for macro image
 #: ./pages/install/Installing_Using_Anaconda.adoc:88
 #, no-wrap
 msgid "anaconda/SummaryHub_TextMode.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_TextMode.png"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:91
@@ -334,11 +404,18 @@ msgid ""
 "begin are marked with `[!]`. Available commands are displayed below the list "
 "of available options."
 msgstr ""
+"Metin modunda kurulum, grafiksel kuruluma benzer bir model izlemektedir: Tek "
+"bir sabit ilerleme süreci yoktur; ana durum ekranını kullanarak birçok ayarı "
+"istediğiniz sırada yapılandırabilirsiniz. Otomatik olarak veya sizin "
+"tarafınızdan yapılandırılmış olan ekranlar `[x]` ile işaretlenir, ve kurulum "
+"başlamadan önce ilgilenmenizi gerektiren ekranlar `[!]` ile işaretlenir. "
+"Kullanılabilecek komutlar, mevcut seçenekler listesinin altında "
+"görüntülenmektedir."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:93
 msgid "Limits of interactive text mode installation include:"
-msgstr ""
+msgstr "Etkileşimli metin modunda kurulumun kısıtlamaları:"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:95
@@ -348,6 +425,9 @@ msgid ""
 "these settings will only apply to the installed system, not to the "
 "installation."
 msgstr ""
+"Yükleyici her zaman İngilizce dilini ve ABD İngilizce klavye düzenini "
+"kullanacaktır. Dil ve klavye ayarlarınızı yapılandırabilirsiniz, ancak bu "
+"ayarlar sadece kurulacak sisteme uygulanacaktır, kuruluma değil."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:97
@@ -355,6 +435,8 @@ msgid ""
 "You can not configure any advanced storage methods (LVM, software RAID, "
 "FCoE, zFCP and iSCSI)."
 msgstr ""
+"Gelişmiş depolama yöntemlerini (LVM, yazılımsal RAID, FCoE, zFCP ve iSCSI) "
+"yapılandıramazsınız."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:99
@@ -363,6 +445,9 @@ msgid ""
 "automatic partitioning settings. You also cannot configure where the boot "
 "loader will be installed."
 msgstr ""
+"Özel bölümlendirme yapılandırmak mümkün değildir; otomatik bölümlendirme "
+"ayarlarından birini kullanmanız gerekmektedir. Önyükleyicinin nereye "
+"kurulacağını da yapılandıramazsınız."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:101
@@ -373,12 +458,18 @@ msgid ""
 "xref:install/Booting_the_Installation.adoc#chap-booting-the-installation[Booting "
 "the Installation] for information about booting and using boot options."
 msgstr ""
+"Metin modunda kurulumu başlatmak için, önyükleme menüsündeki önyükleme komut "
+"satırında veya PXE sunucusu yapılandırmanızda kullanılan [option]#inst.text# "
+"önyükleme seçeneğiyle kurulumu başlatın. Önyükleme ve önyükleme "
+"seçeneklerini kullanma hakkında bilgi için xref:install/"
+"Booting_the_Installation.adoc#chap-booting-the-installation[Kurulumu "
+"Önyükleme] bölümüne bakın."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:103
 #, no-wrap
 msgid "Installing in the Graphical User Interface"
-msgstr ""
+msgstr "Grafiksel Kullanıcı Arayüzünde Kurma"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:106
@@ -391,6 +482,13 @@ msgid ""
 "mode is used by default when you boot the system from local media (a CD, DVD "
 "or a USB flash drive)."
 msgstr ""
+"Grafiksel kurulum arayüzü, manuel olarak {PRODUCT} kurmak için tercih edilen "
+"yöntemdir. Özel bölümlendirme ve gelişmiş depolama yapılandırması da dahil "
+"olmak üzere mevcut tüm ayarlar üzerinde tam kontrol sahibi olmanızı sağlar "
+"ve ayrıca İngilizce dışındaki birçok dilde yerelleştirildiği için kurulumun "
+"tamamını farklı bir dilde gerçekleştirmenize izin verir. Grafiksel mod, "
+"sistemi yerel ortamdan (CD, DVD veya USB flash sürücü) önyüklediğinizde "
+"varsayılan olarak kullanılır."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:108
@@ -400,6 +498,9 @@ msgid ""
 "screens do not have to be completed in the order in which they are described "
 "here."
 msgstr ""
+"Aşağıdaki bölümlerde, kurulum işleminde mevcut tüm ekranlar açıklanmaktadır. "
+"Yükleyicinin paralel yapısı nedeniyle, ekranların çoğunun burada açıklandığı "
+"sırada tamamlanması gerekmediğini unutmayın."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:110
@@ -408,6 +509,9 @@ msgid ""
 "opens the [application]*Yelp* help browser displaying the section of the "
 "_{PRODUCT} Installation Guide_ relevant to the current screen."
 msgstr ""
+"Grafiksel arayüzdeki her ekran bir `Yardım` düğmesi içermektedir. Bu düğme, "
+"[application]*Yelp* yardım tarayıcısını açarak _{PRODUCT} Kurulum "
+"Kılavuzu_nun geçerli ekranla ilgili bölümünü görüntüler."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:112
@@ -420,6 +524,14 @@ msgid ""
 "be used to select or remove a highlighted item from selection and to expand "
 "and collapse drop-down menus."
 msgstr ""
+"Grafiksel yükleyiciyi klavyenizle de kontrol edebilirsiniz. Geçerli "
+"ekrandaki etkin kontrol ögeleri (düğmeler, onay kutuları vb.) arasında geçiş "
+"yapmak için kbd:[Tab] ve kbd:[Shift + Tab] tuşlarını, listeler arasında "
+"gezinmek için kbd:[Yukarı] ve kbd:[Aşağı], yatay araç çubukları veya tablo "
+"elemanları arasında gezinmek için kbd:[Sol] ve kbd:[Sağ] ok tuşlarını "
+"kullanın. kbd:[Space] veya kbd:[Enter], vurgulanan bir ögeyi seçmek veya "
+"seçimden kaldırmak ve açılır menüleri genişletmek ve daraltmak için "
+"kullanılabilir."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:114
@@ -429,6 +541,10 @@ msgid ""
 "the kbd:[Alt] key; to toggle that element, press kbd:[Alt + "
 "_X_pass:attributes[{blank}]], where _X_ is the highlighted letter."
 msgstr ""
+"Ayrıca, her bir ekrandaki ögeler ilgili kısayolları kullanılarak "
+"değiştirilebilir. Bu kısayollar, kbd:[Alt] tuşuna basılı tuttuğunuzda "
+"vurgulanır (altı çizilir); o ögeyi değiştirmek için kbd:[Alt + "
+"_X_pass:attributes[{blank}]] tuşlarına basın, burada _X_ vurgulanan harftir."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:116
@@ -439,3 +555,8 @@ msgid ""
 "(xref:Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-layout[Keyboard "
 "Layout]), you can switch between them by clicking the layout indicator."
 msgstr ""
+"Geçerli klavye düzeniniz sağ üst köşede görüntülenir. Varsayılan olarak "
+"yalnızca bir düzen yapılandırılmıştır; `Klavye Düzeni` ekranında "
+"(xref:Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-layout["
+"Klavye Düzeni]) birden fazlasını yapılandırırsanız, düzen göstergesine "
+"tıklayarak aralarında geçiş yapabilirsiniz."
