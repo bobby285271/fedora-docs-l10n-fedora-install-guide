@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:51+0100\n"
-"PO-Revision-Date: 2020-04-12 02:23+0000\n"
+"PO-Revision-Date: 2020-04-13 02:23+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f30pages_partialsinstallsourcespoke/tr/>"
@@ -56,7 +56,7 @@ msgstr ""
 "kullandığınız ortam türüne göre yükleyici bir kurulum kaynağı yapılandırmaya "
 "çalışacaktır. Tam {PRODUCT} Server DVD'si kaynağı yerel ortam olarak, "
 "netinst ISO görüntüsü ise en yakın ağ yansısı olarak vs. yapılandıracaktır. "
-"Bu işlem, özellikle varsayılan kaynak bir ağ yansısı ise biraz zaman alır. "
+"Bu işlem, özellikle ön tanımlı kaynak bir ağ yansısı ise biraz zaman alır. "
 "Özel bir kurulum kaynağı kullanmayı planlıyorsanız, başlangıç "
 "yapılandırmasını atlamak için [option]#inst.askmethod# önyükleme seçeneğini "
 "kullanın; bu seçenek, bu ekrana hemen girmenizi sağlayacaktır. Önyükleme "
@@ -98,7 +98,7 @@ msgid ""
 "media integrity."
 msgstr ""
 "Bu, yükleyiciyi canlı DVD gibi bir kurulum kaynağı içeren ortamdan "
-"başlattıysanız varsayılan olarak seçilen seçenektir. Ek yapılandırma "
+"başlattıysanız ön tanımlı olarak seçilen seçenektir. Ek yapılandırma "
 "gerekmez. Ortam bütünlüğünü kontrol etmek için `Doğrula` düğmesine "
 "tıklayabilirsiniz."
 
@@ -127,7 +127,7 @@ msgstr ""
 #: ./pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "Ağ üzerinde"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:27
@@ -136,6 +136,8 @@ msgid ""
 "instead of local media. This is the default selection on network "
 "installation media."
 msgstr ""
+"Kurulacak paketleri yerel ortam yerine bir ağ konumundan indirmek için bu "
+"seçeneği kullanın. Bu, ağ üzerinden kurulum ortamında ön tanımlı seçimdir."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:29
@@ -144,6 +146,9 @@ msgid ""
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
 msgstr ""
+"Çoğu durumda, protokol seçimi açılır menüsünde bulunan `En yakın yansı` "
+"seçeneği tercih edilmektedir. Bu seçenek seçilmişse, sisteminiz için "
+"paketler en uygun konumdan (yansı) indirilecektir."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:31
@@ -154,6 +159,11 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Ağ tabanlı bir kurulum kaynağını elle yapılandırmak için, paketleri "
+"indirirken kullanılacak protokolü belirtmek üzere açılır menüyü kullanın. Bu "
+"ayar, kullanmak istediğiniz sunucuya bağlıdır. Ardından, adres alanına "
+"sunucu adresini (protokol olmadan) yazın. NFS'yi seçerseniz, özel `NFS "
+"bağlama seçenekleri` belirtebileceğiniz ikinci bir giriş alanı görünecektir."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:36
@@ -161,12 +171,16 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Bir NFS kurulum kaynağı seçerken, sunucu adı ile yolu iki nokta karakteri "
+"(`:`) ile ayıracak şekilde adres belirtmeniz gerekmektedir. Örneğin:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/SourceSpoke.adoc:40
 #, no-wrap
 msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
 msgstr ""
+"`pass:attributes[{blank}]_sunucu.example.com_:pass:attributes[{blank}]_/"
+"dizinin/yolu_pass:attributes[{blank}]`\n"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:45
@@ -177,6 +191,12 @@ msgid ""
 "Authentication` and enter your user name and password. Click btn:[OK] to "
 "finish the configuration."
 msgstr ""
+"HTTP veya HTTPS kaynağı için bir vekil sunucu yapılandırmak için btn:[Vekil "
+"kurulumu] düğmesine tıklayın. `HTTP vekilini etkinleştir` seçeneğini "
+"işaretleyin ve URL'yi `Vekil URL'si` kutusuna yazın. Vekil sunucusu "
+"yetkilendirme gerektiriyorsa, `Yetkilendirme Kullan` seçeneğini işaretleyin "
+"ve kullanıcı adınızı ve parolanızı girin. Yapılandırmayı bitirmek için "
+"btn:[Tamam] düğmesine tıklayın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:47
@@ -184,6 +204,8 @@ msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
 msgstr ""
+"HTTP veya HTTPS URL'niz bir depo yansı listesini adres gösteriyorsa, adres "
+"alanının altındaki onay kutusunu işaretleyin."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:49
@@ -195,6 +217,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection[Software "
 "Selection] once you finish configuring the sources."
 msgstr ""
+"Ayrıca, daha fazla kurulum ortamına ve yazılım eklentisine erişmek için `Ek "
+"depolar` bölümünde ilave depolar belirtebilirsiniz. Kaynakları "
+"yapılandırmayı tamamladığınızda, tüm ortamlar ve eklentiler xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection["
+"Yazılım Seçimi] bölümünde seçmek için mevcut olacaktır."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:51
@@ -206,6 +233,12 @@ msgid ""
 "Source` screen. To activate or deactivate a repository, click the check box "
 "in the `Enabled` column at each entry in the list."
 msgstr ""
+"Bir depo eklemek için btn:[+] düğmesine tıklayın. Bir depoyu silmek için "
+"listeden birini seçin ve btn:[-] düğmesine tıklayın. Önceki depo listesine "
+"geri dönmek; örneğin geçerli ögeleri `Kurulum Kaynağı` ekranına girdiğiniz "
+"sırada mevcut olanlarla değiştirmek, için ok simgesine tıklayın. Bir depoyu "
+"etkinleştirmek veya devre dışı bırakmak için, listedeki her ögede bulunan "
+"`Etkin` sütunundaki onay kutusuna tıklayın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:53
@@ -214,6 +247,8 @@ msgid ""
 "primary repository on the network using the input fields on the right side "
 "of the section."
 msgstr ""
+"Ek deponuzu adlandırabilir ve bölümün sağ tarafındaki giriş alanlarını "
+"kullanarak ağ üzerindeki birincil depoyla aynı şekilde yapılandırabilirsiniz."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:54
@@ -223,3 +258,6 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Kurulum kaynağınızı seçtikten sonra, xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-installation-summary[Kurulum Özetine] dönmek için sol "
+"üst köşedeki `Bitti` düğmesine tıklayın."
