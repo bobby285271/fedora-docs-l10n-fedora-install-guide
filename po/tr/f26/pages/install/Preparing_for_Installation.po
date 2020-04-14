@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-16 18:52+0100\n"
-"PO-Revision-Date: 2020-04-13 02:23+0000\n"
+"PO-Revision-Date: 2020-04-14 02:23+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -38,10 +38,10 @@ msgid ""
 msgstr ""
 "Bu bölümde, kuruluma başlamadan önce atmanız gereken adımlar "
 "açıklanmaktadır. Her adımın kesinlikle takip edilmesi gerekmemektedir - "
-"örneğin, ön tanımlı kurulum ayarlarını kullanmayı planlıyorsanız, disk "
-"aygıtı etiketleri/UUID'leri gibi sistem bilgilerini veya sistemin IP adresi "
-"gibi ağ bilgilerini toplamanız gerekmez. Bununla birlikte, kullanılabilir "
-"kurulum ortamı türlerini ve önyükleme ortamı ve kurulum kaynaklarının nasıl "
+"örneğin, öntanımlı kurulum ayarlarını kullanmayı planlıyorsanız, disk aygıtı "
+"etiketleri/UUID'leri gibi sistem bilgilerini veya sistemin IP adresi gibi ağ "
+"bilgilerini toplamanız gerekmez. Bununla birlikte, kullanılabilir kurulum "
+"ortamı türlerini ve önyükleme ortamı ve kurulum kaynaklarının nasıl "
 "hazırlanacağını da açıkladığı için bu bölümü gözden geçirmeniz gerekmektedir."
 
 #. type: Title ====
@@ -119,7 +119,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr "Önyükleme ve Kurulum Görüntülerini İndirme"
+msgstr "Önyükleme ve Kurulum Kalıplarını İndirme"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:28
@@ -138,9 +138,9 @@ msgstr ""
 "kurulum işleminden sonra özelleştirerek veya xref:../advanced/"
 "Kickstart_Installations.adoc#sect-kickstart-file-create[Kickstart Dosyası "
 "Oluşturma] bölümünde açıklandığı gibi bir kickstart dosyası kullanarak "
-"kendinize özel bir tane oluşturabilirsiniz. Kickstart kurulumu için "
-"`netinstall` ortam türü veya PXE gibi doğrudan kurulum önyükleme yöntemi "
-"gerekmektedir; kickstart canlı görüntülerle desteklenmez."
+"kendinize özel bir tane oluşturabilirsiniz. Kickstart kurulumu için `ağ "
+"üzerinden kurulum` ortam türü veya PXE gibi doğrudan kurulum önyükleme "
+"yöntemi gerekmektedir; kickstart canlı kalıplarla desteklenmez."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:30
@@ -167,7 +167,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:34
 #, no-wrap
 msgid "Verifying the Downloaded Image"
-msgstr "İndirilen Görüntüyü Doğrulama"
+msgstr "İndirilen Kalıbı Doğrulama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:37
@@ -179,8 +179,8 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
-"Aktarım hataları veya diğer sorunlar indirdiğiniz Fedora görüntüsünü "
-"bozabileceğinden, dosyanın bütünlüğünü doğrulamak önemlidir. Görüntüler "
+"Aktarım hataları veya diğer sorunlar indirdiğiniz Fedora kalıbını "
+"bozabileceğinden, dosyanın bütünlüğünü doğrulamak önemlidir. Kalıplar "
 "oluşturulduktan sonra, dosya üzerinde karmaşık bir matematik algoritması "
 "kullanarak `checksum` (sağlama toplamı) adı verilen bir değer üreten bir "
 "işlem gerçekleştirilmektedir. İşlem, orijinal dosyada yapılan *herhangi bir "
@@ -195,9 +195,9 @@ msgid ""
 "link:++https://fedoraproject.org/verify++[], and are [command]#gpg# signed "
 "to demonstrate their integrity."
 msgstr ""
-"Görüntünün `checksum` değerini kendi bilgisayarınızda hesaplayarak ve "
-"orijinal `checksum` değeriyle karşılaştırarak görüntünün değiştirilmediğini "
-"veya bozulmadığını doğrulayabilirsiniz. Orijinal sağlama toplamı değerleri "
+"Kalıbın `checksum` değerini kendi bilgisayarınızda hesaplayarak ve orijinal "
+"`checksum` değeriyle karşılaştırarak kalıbın değiştirilmediğini veya "
+"bozulmadığını doğrulayabilirsiniz. Orijinal sağlama toplamı değerleri "
 "link:++https://getfedora.org/security/++[] adresinde bulunmaktadır ve "
 "bütünlüklerini kanıtlamak için [command]#gpg# ile imzalanmışlardır."
 
@@ -214,8 +214,8 @@ msgid ""
 "link:++https://fedoraproject.org/get-fedora++[] and the corresponding "
 "checksum file from link:++https://fedoraproject.org/verify++[]"
 msgstr ""
-"Seçtiğiniz Fedora görüntüsünü link:++https://fedoraproject.org/get-fedora++[]"
-" adresinden ve karşılık gelen sağlama toplamı dosyasını "
+"Seçtiğiniz Fedora kalıbını link:++https://fedoraproject.org/get-fedora++[] "
+"adresinden ve karşılık gelen sağlama toplamı dosyasını "
 "link:++https://getfedora.org/security/++[] adresinden indirin."
 
 #. type: Plain text
@@ -289,7 +289,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:74
 msgid "Calculate the downloaded image's checksum. This will take a while!"
 msgstr ""
-"İndirilen görüntünün sağlama toplamını hesaplayın. Bu işlem biraz zaman "
+"İndirilen kalıbın sağlama toplamını hesaplayın. Bu işlem biraz zaman "
 "alacaktır!"
 
 #. type: delimited block -
@@ -351,7 +351,7 @@ msgstr "$ [command]#cd ~/İndirilenler#\n"
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:106
 msgid "Use the appropriate utility to verify the image checksum."
-msgstr "Görüntünün sağlama toplamını doğrulamak için uygun aracı kullanın."
+msgstr "Kalıbın sağlama toplamını doğrulamak için uygun aracı kullanın."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:108
@@ -387,7 +387,7 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
-"Fedora görüntüleri `Hibrit ISO` dosyalarıdır ve hem BIOS hem de UEFI "
+"Fedora kalıpları `Hibrit ISO` kalıplarıdır ve hem BIOS hem de UEFI "
 "sistemlerinde önyükleme yapmak için, optik ve USB disklerle kurulum ortamı "
 "oluşturmakta kullanılabilir."
 
@@ -407,8 +407,8 @@ msgid ""
 "Writer is strongly encouraged, other USB media creation software can work as "
 "well."
 msgstr ""
-"[application]*Fedora Media Writer* önemli ölçüde iyileştirildi ve artık ön "
-"tanımlı önyüklenebilir ortam oluşturma yoludur. [application]*Fedora Media "
+"[application]*Fedora Media Writer* önemli ölçüde iyileştirildi ve artık "
+"öntanımlı önyüklenebilir ortam oluşturma yoludur. [application]*Fedora Media "
 "Writer* Linux, Mac ve Windows'u desteklemektedir. Fedora'yı (veya diğer "
 "işletim sistemlerini) kurmak için önyüklenebilir USB ortamı oluşturmanın "
 "kolay bir yoludur. Diğer USB ortam oluşturma programları da düzgün "
@@ -442,7 +442,7 @@ msgstr ""
 "[application]*Unetbootin* gibi yaygın USB oluşturma araçları, optik ortamlar "
 "için tasarlanan ISO'lardan USB yükleyicileri oluşturmanın tarihsel olarak "
 "popüler bir yoludur. Genellikle USB sürücüde bir dosya sistemi oluşturarak, "
-"görüntüdeki dosyaları çıkararak ve [application]*syslinux* önyükleyicisini "
+"kalıptaki dosyaları çıkararak ve [application]*syslinux* önyükleyicisini "
 "aygıta yazarak çalışırlar."
 
 #. type: delimited block =
@@ -455,8 +455,8 @@ msgid ""
 msgstr ""
 "Bu yöntemler, SecureBoot etkinleştirilmiş UEFI sistemlerinin yanı sıra BIOS "
 "sistemlerinde de önyükleme yapmak üzere bölümlendirilmiş ve tasarlanmış olan "
-"Fedora görüntülerindeki önyükleyici ayarlarını atlar. Fedora görüntüleri "
-"ile, özellikle UEFI sistemlerinde tutarlı sonuçlar vermezler."
+"Fedora kalıplarındaki önyükleyici ayarlarını atlar. Fedora kalıpları ile, "
+"özellikle UEFI sistemlerinde tutarlı sonuçlar vermezler."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:141
@@ -464,8 +464,8 @@ msgid ""
 "Utilities that use a direct write method, and do not modify the Fedora "
 "image, will produce the most consistently successful results."
 msgstr ""
-"Doğrudan yazma yöntemi kullanan ve Fedora görüntüsünü değiştirmeyen araçlar "
-"en tutarlı şekilde başarılı sonuçlar verecektir."
+"Doğrudan yazma yöntemi kullanan ve Fedora kalıbını değiştirmeyen araçlar en "
+"tutarlı şekilde başarılı sonuçlar verecektir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:145
@@ -555,7 +555,7 @@ msgid ""
 "architecture, such as 32bit if you select \"other architectures\". Otherwise "
 "select \"Create Live USB\" to proceed."
 msgstr ""
-"Fedora Workstation veya Server gibi ön tanımlı Fedora sürümlerinden birini "
+"Fedora Workstation veya Server gibi öntanımlı Fedora sürümlerinden birini "
 "seçerseniz, indirme ve USB oluşturma işlemine devam etmeden önce "
 "[application]*Fedora Media Writer* size bu konuda bilgi ve ayrıntılar "
 "verecektir. Fedora Workstation için, \"diğer mimariler\"i seçerseniz 32 bit "
@@ -765,9 +765,9 @@ msgid ""
 "minutes, it will report the process is complete and your installation media "
 "will be ready to use."
 msgstr ""
-"Görüntü dosyanıza gidin ve `Geri Yüklemeyi Başlat` düğmesine tıklayın. "
-"Birkaç dakika sonra, işlemin tamamlandığını ve kurulum ortamınızın kullanıma "
-"hazır olduğunu bildirecektir."
+"Kalıp dosyanıza gidin ve `Geri Yüklemeyi Başlat` düğmesine tıklayın. Birkaç "
+"dakika sonra, işlemin tamamlandığını ve kurulum ortamınızın kullanıma hazır "
+"olduğunu bildirecektir."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:286
@@ -827,7 +827,7 @@ msgid ""
 "Use the [command]#dd# utility to write the image. *Make sure you have the "
 "right drive!*"
 msgstr ""
-"Görüntüyü yazmak için [command]#dd# komutunu kullanın. *Doğru sürücüyü "
+"Kalıbı yazmak için [command]#dd# komutunu kullanın. *Doğru sürücüyü "
 "belirttiğinizden emin olun!*"
 
 #. type: delimited block -
@@ -853,7 +853,7 @@ msgid ""
 "can not boot from USB."
 msgstr ""
 "Önyüklenebilir bir USB flash sürücü oluşturmaya ek olarak, sağlanan ISO "
-"görüntülerini önyüklenebilir optik ortam (CD veya DVD) oluşturmak için de "
+"kalıplarını önyüklenebilir optik ortam (CD veya DVD) oluşturmak için de "
 "kullanabilirsiniz. Bu yaklaşım, USB'den önyükleme yapamayan eski bir sisteme "
 "{PRODUCT} kurarken gerekli olabilir."
 
@@ -864,7 +864,7 @@ msgid ""
 "image will vary depending on what disc burning software you use. This "
 "procedure only offers a general overview."
 msgstr ""
-"Bir ISO görüntüsünden önyüklenebilir bir CD veya DVD yazmak için atmanız "
+"Bir ISO kalıbından önyüklenebilir bir CD veya DVD yazmak için atmanız "
 "gereken kesin adımlar, kullandığınız disk yazma programına bağlı olarak "
 "değişecektir. Buradaki yöntem sadece genel bir bakış sunar."
 
@@ -886,7 +886,7 @@ msgstr ""
 "Sisteminizin yazma programını açın - örneğin, [application]*GNOME* masaüstü "
 "ortamına sahip {PRODUCT} sistemlerinde [application]*Brasero* veya Windows "
 "sistemlerinde [application]*Nero*. Programın ana menüsünde, diske bir ISO "
-"görüntüsü yazmanıza izin veren bir seçenek bulun. Örneğin, "
+"kalıbı yazmanıza izin veren bir seçenek bulun. Örneğin, "
 "[application]*Brasero*'da, bu seçenek pencerenin sol tarafındaki ana "
 "menüdeki `Kalıp yazdır` seçeneğidir."
 
@@ -896,8 +896,8 @@ msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
-"İstendiğinde, yazdırılacak {PRODUCT} ürününün ISO görüntüsünü ve içinde boş "
-"bir disk bulunan CD veya DVD yazıcıyı (birden fazla sürücünüz varsa) seçin."
+"İstendiğinde, yazdırılacak {PRODUCT} ürününün ISO kalıbını ve içinde boş bir "
+"disk bulunan CD veya DVD yazıcıyı (birden fazla sürücünüz varsa) seçin."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:329
