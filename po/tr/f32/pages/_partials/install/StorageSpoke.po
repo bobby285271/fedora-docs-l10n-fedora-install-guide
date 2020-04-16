@@ -2,17 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-15 02:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-04-16 02:25+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallstoragespoke/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4 ./pages/_partials/install/StorageSpoke.adoc:17
@@ -37,6 +42,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Linux'ta disk bölümlendirmenin arkasındaki teori ve kavramlar hakkında bilgi "
+"için, xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:14
@@ -56,7 +64,7 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "Kurulum Hedefi ekranı. Kullanılabilir iki yerel standart disk var"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -73,6 +81,11 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"Ekranın üst kısmında, yerel olarak kullanılabilir tüm depolama aygıtları ("
+"SATA, IDE ve SCSI sabit sürücüler, USB flash sürücüler vb.) `Yerel Standart "
+"Diskler` bölümünde görüntülenmektedir. Yerel diskler kurucu başlatıldığında "
+"algılanmaktadır - kurulum başladıktan sonra bağlanan depolama aygıtları "
+"gösterilmeyecektir."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
@@ -113,6 +126,11 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"{PRODUCT} kurmak için kullanılacak tüm depolama aygıtları, üzerinde beyaz "
+"bir onay işareti bulunan siyah bir daire simgesine sahiptir. Bu simgeyle "
+"işaretlenmeyen diskler kurulum sırasında kullanılmayacaktır - otomatik "
+"bölümlendirmeyi seçerseniz yok sayılacaktır ve elle bölümlendirmede "
+"kullanılamayacaktır."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33
@@ -257,6 +275,14 @@ msgid ""
 "information about how much space the system needs for at least a minimal "
 "installation and how much space you have reclaimed."
 msgstr ""
+"Otomatik bölümlendirmeyi ve `Ek alan sağlamak istiyorum` seçeneğini "
+"seçtiyseniz, veya seçtiğiniz sabit sürücülerde {PRODUCT} kurmak için yeterli "
+"boş alan yoksa, `Disk Alanı Kazan` iletişim penceresi görünecektir. Bu "
+"iletişim penceresi, yapılandırdığınız tüm disk aygıtlarını ve bu "
+"aygıtlardaki tüm bölümleri listeler. İletişim penceresinin sağ alt "
+"köşesinde, sistemin en azından asgari bir kurulum için ne kadar alana "
+"ihtiyaç duyduğu ve ne kadar alan geri kazandığınız hakkında bilgiler "
+"görüntülenir."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:69
@@ -279,6 +305,15 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"İlk olarak, görüntülenen kullanılabilir depolama aygıtları listesini gözden "
+"geçirin. `Geri Kazanılabilir Alan` sütunu, her bir ögeden ne kadar alan geri "
+"kazanılabileceğini gösterir. Alanı geri kazanmak için bir disk veya bölüm "
+"seçin ve bu bölümü (veya seçilen diskteki tüm bölümleri) silmek için `Sil` "
+"düğmesine basın, veya mevcut verileri korurken bölüm üzerindeki boş alanı "
+"kullanmak için `Küçült` düğmesine basın. Alternatif olarak, sağ alt köşedeki "
+"`Tümünü sil`düğmesine basabilirsiniz; bu, tüm disklerdeki tüm bölümleri "
+"silecek ve bu alanı {PRODUCT}'nın kullanımına sunacaktır, ancak bütün "
+"disklerdeki tüm veriler kaybolacaktır."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:75
