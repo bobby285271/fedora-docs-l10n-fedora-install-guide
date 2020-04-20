@@ -3,27 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Oğuz Ersen <oguzersen@protonmail.com>, 2020.
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-20 02:04+0000\n"
-"PO-Revision-Date: 2020-04-16 02:25+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/f32pages_partialsinstallsourcespoke/tr/>\n"
+"PO-Revision-Date: 2020-04-20 17:34+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallsourcespoke/tr/>"
+"\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Block title
 #: pages/_partials/install/SourceSpoke.adoc:5
 #: pages/_partials/install/SourceSpoke.adoc:16
 #, no-wrap
 msgid "Installation Source"
-msgstr ""
+msgstr "Kurulum Kaynağı"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:8
@@ -33,6 +35,10 @@ msgid ""
 "system. This screen will be configured automatically in most cases, but you "
 "can change your settings or add additional sources."
 msgstr ""
+"`Kurulum Kaynağı` ekranı, paketlerin sisteminize indirilip kurulacağı bir "
+"konum (yerel veya ağ üzerinde) belirtmenize olanak tanımaktadır. Bu ekran "
+"çoğu durumda otomatik olarak yapılandırılacaktır, ancak ayarlarınızı "
+"değiştirebilir veya ek kaynaklar ekleyebilirsiniz."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:13
@@ -48,18 +54,28 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for information about boot options."
 msgstr ""
+"Normalde, `Kurulum Özeti` ekranına ilk kez girdiğinizde, önyükleme için "
+"kullandığınız ortam türüne göre kurucu bir kurulum kaynağı yapılandırmaya "
+"çalışacaktır. Tam {PRODUCT} Server DVD'si kaynağı yerel ortam olarak, ağ "
+"üzerinden kurulum ISO kalıbı ise en yakın ağ yansısı olarak vs. "
+"yapılandıracaktır. Bu işlem, özellikle öntanımlı kaynak bir ağ yansısı ise "
+"biraz zaman alır. Özel bir kurulum kaynağı kullanmayı planlıyorsanız, "
+"başlangıç yapılandırmasını atlamak için [option]#inst.askmethod# önyükleme "
+"seçeneğini kullanın; bu seçenek, bu ekrana hemen girmenizi sağlayacaktır. "
+"Önyükleme seçenekleri hakkında bilgi için xref:advanced/Boot_Options.adoc"
+"#sect-boot-options-sources[Kurulum Kaynağını Belirtme] bölümüne bakın."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "The Installation Source screen"
-msgstr ""
+msgstr "Kurulum Kaynağı ekranı"
 
 #. type: Target for macro image
 #: pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/SourceSpoke.png"
-msgstr ""
+msgstr "anaconda/SourceSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:21
@@ -74,7 +90,7 @@ msgstr ""
 #: pages/_partials/install/SourceSpoke.adoc:22
 #, no-wrap
 msgid "Auto-detected installation media"
-msgstr ""
+msgstr "Otomatik algılanan kurulum ortamı"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:23
@@ -84,12 +100,16 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"Bu, kurucuyu canlı DVD gibi bir kurulum kaynağı içeren ortamdan "
+"başlattıysanız öntanımlı olarak seçilen seçenektir. Ek yapılandırma "
+"gerekmez. Ortam bütünlüğünü kontrol etmek için `Doğrula` düğmesine "
+"tıklayabilirsiniz."
 
 #. type: Labeled list
 #: pages/_partials/install/SourceSpoke.adoc:24
 #, no-wrap
 msgid "ISO file"
-msgstr ""
+msgstr "ISO dosyası"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:25
@@ -100,12 +120,17 @@ msgid ""
 "file's location on your system. You can click the `Verify` button to check "
 "the file's integrity."
 msgstr ""
+"Bu seçenek, kurulum programı önyükleme sırasında bağlanabilir dosya "
+"sistemlerine sahip bölümlendirilmiş bir sabit sürücü algıladığında "
+"görünecektir. Bu seçeneği seçin, btn:[Bir ISO seç] düğmesine tıklayın ve "
+"kurulum ISO dosyasının sisteminizdeki konumuna gidin. Dosyanın bütünlüğünü "
+"kontrol etmek için `Doğrula` düğmesine tıklayabilirsiniz."
 
 #. type: Labeled list
 #: pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "Ağ üzerinde"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:27
@@ -114,6 +139,8 @@ msgid ""
 "instead of local media. This is the default selection on network "
 "installation media."
 msgstr ""
+"Kurulacak paketleri yerel ortam yerine bir ağ konumundan indirmek için bu "
+"seçeneği kullanın. Bu, ağ üzerinden kurulum ortamında öntanımlı seçimdir."
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:29
@@ -122,6 +149,9 @@ msgid ""
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
 msgstr ""
+"Çoğu durumda, protokol seçimi açılır menüsünde bulunan `En yakın yansı` "
+"seçeneği tercih edilmektedir. Bu seçenek seçilmişse, sisteminiz için "
+"paketler en uygun konumdan (yansı) indirilecektir."
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:31
@@ -132,6 +162,11 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Ağ tabanlı bir kurulum kaynağını elle yapılandırmak için, paketleri "
+"indirirken kullanılacak protokolü belirtmek üzere açılır menüyü kullanın. Bu "
+"ayar, kullanmak istediğiniz sunucuya bağlıdır. Ardından, adres alanına "
+"sunucu adresini (protokol olmadan) yazın. NFS'yi seçerseniz, özel `NFS "
+"bağlama seçenekleri` belirtebileceğiniz ikinci bir giriş alanı görünecektir."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:36
@@ -139,12 +174,16 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Bir NFS kurulum kaynağı seçerken, sunucu adı ile yolu iki nokta karakteri "
+"(`:`) ile ayıracak şekilde adres belirtmeniz gerekmektedir. Örneğin:"
 
 #. type: delimited block -
 #: pages/_partials/install/SourceSpoke.adoc:40
 #, no-wrap
 msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
 msgstr ""
+"`pass:attributes[{blank}]_sunucu.example.com_:pass:attributes[{blank}]_/"
+"dizinin/yolu_pass:attributes[{blank}]`\n"
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:45
@@ -162,6 +201,8 @@ msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
 msgstr ""
+"HTTP veya HTTPS URL'niz bir depo yansı listesini adres gösteriyorsa, adres "
+"alanının altındaki onay kutusunu işaretleyin."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:49
@@ -197,6 +238,8 @@ msgid ""
 "primary repository on the network using the input fields on the right side "
 "of the section."
 msgstr ""
+"Ek deponuzu adlandırabilir ve bölümün sağ tarafındaki giriş alanlarını "
+"kullanarak ağ üzerindeki birincil depoyla aynı şekilde yapılandırabilirsiniz."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:54
@@ -205,3 +248,6 @@ msgid ""
 "left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Kurulum kaynağınızı seçtikten sonra, xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-installation-summary[Kurulum Özetine] dönmek için sol "
+"üst köşedeki `Bitti` düğmesine tıklayın."
