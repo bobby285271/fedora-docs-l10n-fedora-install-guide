@@ -3,27 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Oğuz Ersen <oguzersen@protonmail.com>, 2020.
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-20 02:04+0000\n"
-"PO-Revision-Date: 2020-04-16 02:25+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/f32pages_partialsinstallstoragespoke/tr/>\n"
+"PO-Revision-Date: 2020-04-20 17:36+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallstoragespoke/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
 #: pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "Kurulum Hedefi"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:7
@@ -33,6 +35,10 @@ msgid ""
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
 msgstr ""
+"`Kurulum Hedefi` ekranı, depolama seçeneklerini - yani {PRODUCT} kurulumunuz "
+"için kurulum hedefi olarak kullanılacak diskleri yapılandırmanıza olanak "
+"tanımaktadır. Kurulumun devam edebilmesi için her zaman en az bir disk "
+"seçilmelidir."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:9
@@ -56,6 +62,14 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"Üzerinde veriler bulunan bir disk kullanmayı planlıyorsanız - örneğin, "
+"mevcut bir Microsoft Windows bölümünü küçültmek ve ikinci bir sistem olarak "
+"{PRODUCT} kurmak istiyorsanız veya önceki bir {PRODUCT} sürümünü "
+"yükseltiyorsanız, ilk olarak önemli verileri yedeklediğinizden emin olun. "
+"Bölümleri değiştirmek her zaman bir risk taşır - işlem yarıda kesilir veya "
+"herhangi bir nedenle başarısız olursa (kurucu hatası, donanım arızası, "
+"elektrik kesintisi vb.), diskte bulunan verilerin kurtarılması imkansız "
+"olabilir."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:19
@@ -67,7 +81,7 @@ msgstr "Kurulum Hedefi ekranı. Kullanılabilir iki yerel standart disk var"
 #: pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:22
@@ -99,6 +113,19 @@ msgid ""
 "storage-partitioning[Installation Destination]; all detected disks including "
 "any new ones will be displayed in the `Local Standard Disks` section."
 msgstr ""
+"Ek yerel depolama aygıtlarını yapılandırmanız gerekiyorsa, `Bölümlendirmeyi "
+"yapılandıracağım` seçeneğini seçin ve xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning[Elle Bölümlendirme] bölümüne "
+"geçmek için `Bitti` düğmesine basın. Ardından, kurulum sırasında "
+"kullanılabilir olmasını istediğiniz yeni sabit sürücüleri bağlayın ve "
+"ekranın sol tarafındaki bağlama noktaları listesinin altındaki kontrol "
+"kümesinde dairesel bir okla işaretlenmiş düğmeye basın. Açılan iletişim "
+"penceresinde `Diskleri Yeniden Tara` düğmesine basın ve tarama işlemi "
+"tamamlanana kadar bekleyin. Ardından, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
+"Kurulum Hedefi] bölümüne dönmek için `Tamam` düğmesine basın; yenileri de "
+"dahil olmak üzere algılanan tüm diskler `Yerel Standart Diskler` bölümünde "
+"görüntülenecektir."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:26
@@ -113,6 +140,15 @@ msgid ""
 "show up in the `Specialized & Network Disks` the same way local disks are "
 "shown above."
 msgstr ""
+"Aşağıdaki `Özelleştirilmiş ve Ağ Diskleri` bölümü, yapılandırılmış olan "
+"gelişmiş ağ depolamasını (iSCSI ve FCoE diskleri gibi) göstermektedir. Bu "
+"ekranı ilk açtığınızda, otomatik olarak algılanamayacakları için böyle bir "
+"aygıt görüntülenmeyecektir; ağ depolama aygıtlarını aramak için `Disk ekle` "
+"düğmesine basın ve xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-destination[Kurulum Hedefi - Özelleştirilmiş ve Ağ Diskleri] "
+"bölümü ile devam edin. Yapılandırdığınız tüm ağ depolama alanları, yerel "
+"disklerin yukarıda gösterildiği gibi `Özelleştirilmiş ve Ağ Diskleri` "
+"bölümünde görünecektir."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:28
@@ -139,24 +175,32 @@ msgid ""
 "If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"Flash sürücüler ve harici diskler gibi USB depolama aygıtları da `Yerel "
+"Standart Diskler` bölümünde gösterilecek ve dahili sabit disklerle aynı "
+"şekilde seçilebileceklerdir. Gerçekten istemediğiniz sürece, kurulum hedefi "
+"olarak çıkarılabilir depolama alanı *seçmediğinizden* emin olun. {PRODUCT} "
+"kurmak için yanlışlıkla çıkarılabilir bir sürücü kullanır ve sonra onu "
+"çıkarırsanız, sisteminiz büyük olasılıkla kullanılamaz hale gelecektir."
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:36
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Seçili Olmayan ve Seçilen Disk"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:38
 #, no-wrap
 msgid "Disk selection in the Installation Destination screen. Two disks are displayed; only the one on the right side will be used"
 msgstr ""
+"Kurulum Hedefi ekranındaki disk seçimi. İki disk görüntülenmektedir; sadece "
+"sağ taraftaki kullanılacaktır"
 
 #. type: Target for macro image
 #: pages/_partials/install/StorageSpoke.adoc:38
 #, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:41
@@ -164,6 +208,8 @@ msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "two options in the `Other Storage Options` section:"
 msgstr ""
+"{PRODUCT} kurmak istediğiniz tüm diskleri seçtikten sonra, `Diğer Depolama "
+"Seçenekleri` bölümündeki iki seçenekten birini seçin:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:43
@@ -176,6 +222,13 @@ msgid ""
 "firmware, the total amount of free space on your disks, and the amount of "
 "RAM on your system (which determines the size of your swap space)."
 msgstr ""
+"`Bölümlendirmeyi otomatik olarak yapılandır` - Bu seçenek seçilirse, ekranın "
+"sol üst köşesinde `Bitti` düğmesine bastıktan sonra, kurucu seçilen tüm "
+"disklerdeki toplam alan miktarını belirleyecek ve sisteminize uygun bir `"
+"Mantıksal Birim Yönetimi_ (LVM) yerleşimi oluşturacaktır. Bu yerleşimin "
+"özellikleri, sisteminizin BIOS veya UEFI ürün yazılımı kullanmasına, "
+"disklerinizdeki toplam boş alan miktarına ve sisteminizdeki RAM miktarına ("
+"takas alanınızın boyutunu belirler) bağlıdır."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:45
@@ -188,6 +241,14 @@ msgid ""
 "The `Reclaim space` dialog which opens if this option is selected is "
 "described later in this section."
 msgstr ""
+"Otomatik bölümlendirme ile birlikte, aşağıdaki `Ek alan sağlamak istiyorum` "
+"seçeneğini de seçebilirsiniz. Varolan bir bölümlendirme yerleşiminden alan "
+"kazanmak istiyorsanız, örneğin, kullanmak istediğiniz bir diskte zaten "
+"farklı bir işletim sistemi varsa ve {PRODUCT} için daha fazla alana yer "
+"açmak amacıyla bu sistemin bölümlerini daha küçük hale getirmek "
+"istiyorsanız, bu seçeneği kullanın. Bu seçenek belirlenirse açılan `Disk "
+"alanı kazan` iletişim penceresi bu bölümün ilerleyen kısımlarında "
+"açıklanmaktadır."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:47
@@ -200,6 +261,13 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning]."
 msgstr ""
+"`Bölümlendirmeyi yapılandıracağım` - Sisteminizin bölümlendirme yerleşimini "
+"elle yapılandırmak için bu seçeneği seçin ve ekranın sol üst köşesindeki "
+"`Bitti` düğmesine basın. Bu, disk bölümlerinin ve ilgili kavramların "
+"arkasındaki teori hakkında biraz bilgi gerektirir, ancak sistemin nasıl "
+"kurulacağı üzerinde tam kontrol sağlamaktadır. Elle bölümlendirme "
+"talimatları için xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning[Elle Bölümlendirme] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:49
@@ -211,6 +279,12 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at link:++https://"
 "docs.fedoraproject.org/++[]."
 msgstr ""
+"Ayrıca, `Verilerimi şifrele`pass:attributes[{blank}] seçeneğini de "
+"seçebilirsiniz; bu, _Linux Unified Key Setup_ (LUKS) kullanarak sistemi "
+"önyüklemek için gerekli olanlar (`/boot` gibi) dışındaki tüm bölümleri "
+"şifreleyecektir. Sabit sürücünüzü şifrelemeniz önerilir. LUKS şifrelemesi "
+"hakkında ayrıntılı bilgi için, link:++https://docs.fedoraproject.org/++[] "
+"adresindeki [citetitle]_{PRODUCT} Güvenlik{nbsp}Kılavuzuna bakın."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:54
@@ -223,6 +297,13 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"LUKS parolasını kaybederseniz, şifrelenmiş bölümler ve üzerlerindeki veriler "
+"tamamen erişilemez hale gelecektir. Kayıp bir parolayı kurtarmanın bir yolu "
+"yoktur. Ancak, bir Kickstart kurulumu gerçekleştirirseniz, kurulum sırasında "
+"şifreleme parolalarını kaydedebilir ve yedek şifreleme parolaları "
+"oluşturabilirsiniz. Kickstart kurulumları hakkında bilgi için xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart ile "
+"Kurulumu Otomatikleştirme] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:58
@@ -245,6 +326,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"Depolama aygıtlarını seçtikten sonra, otomatik ve elle bölümlendirme "
+"arasında tercih yapın, şifrelemeyi ve önyükleyici konumunu yapılandırın, "
+"ekranın sol üst köşesindeki `Bitti` düğmesine basın. Ardından, ayarlarınıza "
+"bağlı olarak aşağıdakiler gerçekleşecektir:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:62
@@ -257,6 +342,12 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"Sabit sürücünüzü şifrelemeyi seçtiyseniz, `Disk Şifreleme Parolası` iletişim "
+"penceresi görünecektir. Seçtiğiniz parolayı `Parola` ve `Onayla` alanlarına "
+"girin. Bunu yaptığınızda, parola otomatik olarak değerlendirilecek ve kurucu "
+"zayıf olduğunu belirlerse, nasıl daha sağlam hale getirileceğine dair "
+"önerilerle birlikte sağlamlığı görüntülenecektir. Sağlam parolalar oluşturma "
+"hakkında bilgi için, [citetitle]_{PRODUCT} Güvenlik{nbsp}Kılavuzuna_ bakın."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:64
@@ -285,6 +376,9 @@ msgid ""
 "that partition will be lost. If you want to preserve your data, use the "
 "`Shrink` option, not the `Delete` option."
 msgstr ""
+"Bir bölümü *silmek* için `Disk Alanı Kazan` iletişim penceresini "
+"kullanırsanız, o bölümdeki tüm veriler kaybolacaktır. Verilerinizi korumak "
+"istiyorsanız, `Sil` seçeneğini değil, `Küçült` seçeneğini kullanın."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:73
@@ -315,6 +409,8 @@ msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
+"{PRODUCT} kurulumunuz için yeterli alan boşalttıktan sonra, işlemi bitirmek "
+"için `Alanı geri kazan` düğmesine basın."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:80
@@ -325,6 +421,11 @@ msgid ""
 "partitions for resizing or deletion, but no such action is performed "
 "immediately."
 msgstr ""
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Kurulum Özetinde] `Kuruluma Başla` düğmesine basana kadar hiçbir "
+"diskte değişiklik yapılmayacaktır. `Disk Alanı Kazan` iletişim penceresi "
+"sadece yeniden boyutlandırmak veya silmek için bölümleri *işaretler*, ancak "
+"bu tür bir eylem hemen gerçekleştirilmez."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:84
@@ -334,3 +435,7 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning] for further instructions."
 msgstr ""
+"`Bölümlendirmeyi yapılandıracağım` seçeneğini seçtiyseniz, `Bitti` düğmesine "
+"basıldığında `Elle Bölümlendirme` ekranı açılacaktır. Daha fazla yönlendirme "
+"için xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Elle Bölümlendirme] bölümüne bakın."
