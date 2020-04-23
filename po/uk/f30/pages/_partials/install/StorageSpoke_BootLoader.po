@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ====
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:5
+#, no-wrap
+msgid "Boot Loader Installation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:8
+msgid ""
+"{PRODUCT} uses [application]*GRUB2* (GRand Unified Bootloader version 2) as "
+"its boot loader. The boot loader is the first program that runs when the "
+"computer starts and is responsible for loading and transferring control to "
+"an operating system. [application]*GRUB2* can boot any compatible operating "
+"system (including Microsoft Windows) and can also use chain loading to "
+"transfer control to other boot loaders for unsupported operating systems."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:13
+msgid "Installing [application]*GRUB2* may overwrite your existing boot loader."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:17
+msgid ""
+"If you have other operating systems already installed, the {PRODUCT} "
+"installer will attempt to automatically detect and configure the boot loader "
+"to start them. You can manually configure any additional operating systems "
+"after you finish the installation, if they are not detected properly. For "
+"instructions on editing [application]*GRUB2* configuration, see the "
+"[citetitle]_{PRODUCT} System{nbsp}Administrator's{nbsp}Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:19
+msgid ""
+"If you are installing Fedora system with more than one disk, you may want to "
+"manually specify where the bootloader should be installed. Click the `Full "
+"disk summary and bootloader` link at the bottom of the `Installation "
+"Destination` screen. The `Selected Disks` dialog will appear. The bootloader "
+"will be installed on the device of your choice, or on a UEFI system, the "
+"`EFI system partition` will be created on that device during guided "
+"partitioning."
+msgstr ""
+
+#. type: Block title
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:20
+#, no-wrap
+msgid "Boot Device Selection"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
+#, no-wrap
+msgid "The Selected Disks dialog"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
+#, no-wrap
+msgid "anaconda/StorageSpoke_BootLoader.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:25
+msgid ""
+"In the `Boot` column, a \"tick\" icon marks one of the devices as the "
+"intended boot device. To change the boot device, select a device from the "
+"list and click the `Set as Boot Device` button to install the boot loader "
+"there instead. Only one device can be set as the boot device."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:27
+msgid ""
+"To decline installation of a new boot loader, select the device currently "
+"marked for boot and click the `Do not install bootloader` button. This will "
+"remove the tick and ensure [application]*GRUB2* is not installed on any "
+"device."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:32
+msgid ""
+"If you choose not to install a boot loader for any reason, you will not be "
+"able to boot the system directly, and you must use another boot method, such "
+"as a stand-alone commercial boot loader application. Use this option only if "
+"you are sure you have another way to boot your system."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:35
+msgid ""
+"The boot loader may also require a special partition to be created, "
+"depending on whether your system uses BIOS or UEFI firmware and also "
+"depending on whether the boot drive has a _GUID Partition Table_ (GPT) or a "
+"`Master Boot Record` (MBR, also known as msdos) label. If you use automatic "
+"partitioning, the installer will create this partition if needed. For "
+"details, see "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme]."
+msgstr ""
