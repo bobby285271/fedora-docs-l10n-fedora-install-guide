@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-23 02:05+0000\n"
+"POT-Creation-Date: 2020-04-23 22:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title =
-#: ./pages/advanced/Kickstart_Installations.adoc:6
+#: pages/advanced/Kickstart_Installations.adoc:6
 #, no-wrap
 msgid "Automating the Installation with Kickstart"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:9
+#: pages/advanced/Kickstart_Installations.adoc:9
 msgid ""
 "Kickstart installations offer a means to automate the installation process, "
 "either partially or fully. Kickstart files contain answers to all questions "
@@ -35,104 +35,104 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:11
+#: pages/advanced/Kickstart_Installations.adoc:11
 msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
 msgstr ""
 
 #. type: Title ==
-#: ./pages/advanced/Kickstart_Installations.adoc:13
+#: pages/advanced/Kickstart_Installations.adoc:13
 #, no-wrap
 msgid "How to Perform a Kickstart Installation"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:16
+#: pages/advanced/Kickstart_Installations.adoc:16
 msgid ""
 "Kickstart installations can be performed using a local DVD, a local hard "
 "drive, or via NFS, FTP, HTTP, or HTTPS."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:18
+#: pages/advanced/Kickstart_Installations.adoc:18
 msgid "To use Kickstart, you must:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:20
+#: pages/advanced/Kickstart_Installations.adoc:20
 msgid "Create a Kickstart file."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:22
+#: pages/advanced/Kickstart_Installations.adoc:22
 msgid ""
 "Create boot media or configure a network boot (PXE) server which will be "
 "used to begin the installation."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:24
+#: pages/advanced/Kickstart_Installations.adoc:24
 msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:26
+#: pages/advanced/Kickstart_Installations.adoc:26
 msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:28
+#: pages/advanced/Kickstart_Installations.adoc:28
 msgid "This chapter explains these steps in detail."
 msgstr ""
 
 #. type: Title ===
-#: ./pages/advanced/Kickstart_Installations.adoc:30
+#: pages/advanced/Kickstart_Installations.adoc:30
 #, no-wrap
 msgid "Creating a Kickstart File"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:33
+#: pages/advanced/Kickstart_Installations.adoc:33
 msgid ""
 "The Kickstart file itself is a plain text file, containing keywords listed "
-"in "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
-"Syntax Reference], which serve as directions for the installation. Any text "
-"editor able to save files as ASCII text (such as [application]*Gedit* or "
-"[application]*vim* on Linux systems or [application]*Notepad* on Windows "
-"systems) can be used to create and edit Kickstart files."
+"in xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-"
+"reference[Kickstart Syntax Reference], which serve as directions for the "
+"installation. Any text editor able to save files as ASCII text (such as "
+"[application]*Gedit* or [application]*vim* on Linux systems or "
+"[application]*Notepad* on Windows systems) can be used to create and edit "
+"Kickstart files."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:35
+#: pages/advanced/Kickstart_Installations.adoc:35
 msgid ""
 "The recommended approach to creating Kickstart files is to perform a manual "
 "installation on one system first. After the installation completes, all "
-"choices made during the installation are saved into a file named "
-"`anaconda-ks.cfg`, located in the `/root/` directory on the installed "
-"system. You can then copy this file, make any changes you need, and use the "
-"resulting configuration file in further installations."
+"choices made during the installation are saved into a file named `anaconda-"
+"ks.cfg`, located in the `/root/` directory on the installed system. You can "
+"then copy this file, make any changes you need, and use the resulting "
+"configuration file in further installations."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:37
+#: pages/advanced/Kickstart_Installations.adoc:37
 msgid "When creating a Kickstart file, keep in mind the following:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:39
+#: pages/advanced/Kickstart_Installations.adoc:39
 msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:41
+#: pages/advanced/Kickstart_Installations.adoc:41
 msgid ""
 "Sections must be specified *in order*. Items within the sections do not have "
 "to be in a specific order unless otherwise specified. The correct section "
@@ -140,38 +140,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:43
+#: pages/advanced/Kickstart_Installations.adoc:43
 msgid ""
 "The command section which contains actual Kickstart commands and options as "
-"listed in "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
-"Syntax Reference]. Note that some commands, such as [command]#install#, are "
-"mandatory, but most commands are optional."
+"listed in xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-"
+"syntax-reference[Kickstart Syntax Reference]. Note that some commands, such "
+"as [command]#install#, are mandatory, but most commands are optional."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:45
+#: pages/advanced/Kickstart_Installations.adoc:45
 msgid ""
 "The [command]#%packages# section which contains a list of packages and "
-"package groups to be installed. See "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
-"(required) - Package Selection] for details."
+"package groups to be installed. See xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
+"- Package Selection] for details."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:47
+#: pages/advanced/Kickstart_Installations.adoc:47
 msgid ""
-"The [command]#%pre# and [command]#%post# sections, containing a "
-"pre-installation and post-installation scripts. These two sections can be in "
-"any order and are not mandatory. See "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-preinstall[%pre "
-"(optional) - Pre-installation Script] and "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall[%post "
-"(optional) - Post-installation Script] for details."
+"The [command]#%pre# and [command]#%post# sections, containing a pre-"
+"installation and post-installation scripts. These two sections can be in any "
+"order and are not mandatory. See xref:appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-preinstall[%pre (optional) - Pre-installation Script] "
+"and xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"postinstall[%post (optional) - Post-installation Script] for details."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/advanced/Kickstart_Installations.adoc:52
+#: pages/advanced/Kickstart_Installations.adoc:52
 msgid ""
 "The [command]#%packages#, [command]#%pre# and [command]#%post# sections must "
 "end with [command]#%end#, otherwise the installation program will refuse the "
@@ -179,7 +177,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:56
+#: pages/advanced/Kickstart_Installations.adoc:56
 msgid ""
 "Omitting any required item results in the installation program prompting the "
 "user for an answer to the related item, just as the user would be prompted "
@@ -190,95 +188,96 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: ./pages/advanced/Kickstart_Installations.adoc:58
+#: pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:61
+#: pages/advanced/Kickstart_Installations.adoc:61
 msgid ""
 "When creating or customizing your kickstart file, it is useful to verify "
 "that it is valid before attempting to use it in an installation. {PRODUCT} "
 "includes the [application]*ksvalidator* command line utility which can be "
-"used to do this. This tool is a part of the [package]*pykickstart* "
-"package. To install this package, execute the following command:"
+"used to do this. This tool is a part of the [package]*pykickstart* package. "
+"To install this package, execute the following command:"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Kickstart_Installations.adoc:65
+#: pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:68
+#: pages/advanced/Kickstart_Installations.adoc:68
 msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/advanced/Kickstart_Installations.adoc:72
+#: pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:75
+#: pages/advanced/Kickstart_Installations.adoc:75
 msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:77
-msgid "For more information about this tool, see the `ksvalidator(1)` man page."
+#: pages/advanced/Kickstart_Installations.adoc:77
+msgid ""
+"For more information about this tool, see the `ksvalidator(1)` man page."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/advanced/Kickstart_Installations.adoc:82
+#: pages/advanced/Kickstart_Installations.adoc:82
 msgid ""
 "Keep in mind that the validation tool has its limitations. The Kickstart "
 "file can be very complicated; [application]*ksvalidator* can make sure the "
 "syntax is correct and that the file does not include removed options, but it "
 "cannot guarantee the installation will be successful. It also does not "
-"attempt to validate the [command]#%pre#, [command]#%post# and "
-"[command]#%packages# sections of the Kickstart file."
+"attempt to validate the [command]#%pre#, [command]#%post# and [command]#"
+"%packages# sections of the Kickstart file."
 msgstr ""
 
 #. type: Title ===
-#: ./pages/advanced/Kickstart_Installations.adoc:86
+#: pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:89
+#: pages/advanced/Kickstart_Installations.adoc:89
 msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:91
+#: pages/advanced/Kickstart_Installations.adoc:91
 msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:93
+#: pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:95
+#: pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:97
+#: pages/advanced/Kickstart_Installations.adoc:97
 msgid ""
 "Normally, a Kickstart file is copied to removable media or a hard drive, or "
 "made available on the network. Placing the file in a network location "
@@ -289,7 +288,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:99
+#: pages/advanced/Kickstart_Installations.adoc:99
 msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server] offers some additional information about "
@@ -297,20 +296,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: ./pages/advanced/Kickstart_Installations.adoc:101
+#: pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/advanced/Kickstart_Installations.adoc:103
+#: pages/advanced/Kickstart_Installations.adoc:103
 msgid ""
 "Once you have everything ready - you have created a valid Kickstart file and "
 "you have either local boot media or a PXE server available, you can start "
 "the Kickstart installation. You need to use the [option]#inst.ks=# boot "
 "option either in the boot menu (when booting from local media), or add this "
 "option to your PXE server configuration. For information about boot options "
-"used in Kickstart installations, see "
-"xref:advanced/Boot_Options.adoc#sect-boot-options-kickstart[Kickstart Boot "
-"Options]."
+"used in Kickstart installations, see xref:advanced/Boot_Options.adoc#sect-"
+"boot-options-kickstart[Kickstart Boot Options]."
 msgstr ""
