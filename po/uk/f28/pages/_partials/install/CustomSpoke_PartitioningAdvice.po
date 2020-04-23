@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-23 02:08+0000\n"
+"POT-Creation-Date: 2020-04-23 22:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title ====
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:6
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:6
 #, no-wrap
 msgid "Advice on Partitions"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:9
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:9
 msgid ""
 "There is no best way to partition every system; the optimal setup depends on "
 "how you plan to use the system being installed. However, the following tips "
@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:11
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:11
 msgid ""
 "Consider encrypting any partitions and volumes which might contain sensitive "
 "data. Encryption prevents unauthorized people from accessing the data on the "
@@ -39,19 +39,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:13
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:13
 msgid ""
-"In some cases, creating separate mount points for directories other than "
-"`/`, `/boot` and `/home` may be useful; for example, on a server running a "
-"[application]*MySQL* database, having a separate mount point for "
-"`/var/lib/mysql` will allow you to preserve the database during a "
-"reinstallation without having to restore it from backup afterwards. However, "
-"having unnecessary separate mount points will make storage administration "
-"more difficult."
+"In some cases, creating separate mount points for directories other than `/"
+"`, `/boot` and `/home` may be useful; for example, on a server running a "
+"[application]*MySQL* database, having a separate mount point for `/var/lib/"
+"mysql` will allow you to preserve the database during a reinstallation "
+"without having to restore it from backup afterwards. However, having "
+"unnecessary separate mount points will make storage administration more "
+"difficult."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:15
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:15
 msgid ""
 "Some special restrictions apply to certain directories with regards on which "
 "partitioning layouts can they be placed. Notably, the `/boot` directory must "
@@ -60,25 +60,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:17
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:17
 msgid ""
 "If you are new to Linux, consider reviewing the [citetitle]_Linux Filesystem "
-"Hierarchy Standard_ at "
-"link:++http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html++[] for "
-"information about various system directories and their contents."
+"Hierarchy Standard_ at link:++http://refspecs.linuxfoundation.org/FHS_2.3/"
+"fhs-2.3.html++[] for information about various system directories and their "
+"contents."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:19
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:19
 msgid ""
-"Each kernel installed on your system requires approximately 20 MB on the "
-"`/boot` partition. The default partition size of 500 MB for `/boot` should "
+"Each kernel installed on your system requires approximately 20 MB on the `/"
+"boot` partition. The default partition size of 500 MB for `/boot` should "
 "suffice for most common uses; increase the size of this partition if you "
 "plan to keep many kernels installed at the same time."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:21
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:21
 msgid ""
 "The `/var` directory holds content for a number of applications, including "
 "the [application]*Apache* web server, and is used by the [application]*DNF* "
@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:23
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:23
 msgid ""
 "The contents of the `/var` directory usually change very often. This may "
 "cause problems with older solid state drives (SSDs), as they can handle a "
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:25
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:25
 msgid ""
 "The `/usr` directory holds the majority of software on a typical {PRODUCT} "
 "installation. The partition or volume containing this directory should "
@@ -106,7 +106,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:27
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:27
 msgid ""
 "If `/usr` or `/var` is partitioned separately from the rest of the root "
 "volume, the boot process becomes much more complex because these directories "
@@ -117,7 +117,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:29
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:29
 msgid ""
 "This limitation only applies to `/usr` or `/var`, not to directories below "
 "them. For example, a separate partition for `/var/www` will work without "
@@ -125,27 +125,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:31
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:31
 msgid ""
-"Consider leaving a portion of the space in an LVM volume group "
-"unallocated. This unallocated space gives you flexibility if your space "
-"requirements change but you do not wish to remove data from other "
-"volumes. You can also select the `Thin provisioning` device type for the "
-"partition to have the unused space handled automatically by the volume."
+"Consider leaving a portion of the space in an LVM volume group unallocated. "
+"This unallocated space gives you flexibility if your space requirements "
+"change but you do not wish to remove data from other volumes. You can also "
+"select the `Thin provisioning` device type for the partition to have the "
+"unused space handled automatically by the volume."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:33
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:33
 msgid ""
 "The size of an `XFS` file system can not be reduced - if you need to make a "
 "partition or volume with this file system smaller, you must back up your "
-"data, destroy the file system, and create a new, smaller one in its "
-"place. Therefore, if you expect needing to manipulate your partitioning "
-"layout later, you should use the `ext4` file system instead."
+"data, destroy the file system, and create a new, smaller one in its place. "
+"Therefore, if you expect needing to manipulate your partitioning layout "
+"later, you should use the `ext4` file system instead."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:35
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:35
 msgid ""
 "Use Logical Volume Management (LVM) if you anticipate expanding your storage "
 "by adding more hard drives after the installation. With LVM, you can create "
@@ -155,23 +155,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
 msgid ""
 "Creating a BIOS Boot partition or an EFI System Partition may be necessary, "
 "depending on your system's firmware, boot drive size, and boot drive disk "
-"label. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme] for information about these partitions. Note that the "
-"graphical installer will not let you create a BIOS Boot or EFI System "
-"Partition if your system does *not* require one - in that case, they will be "
-"hidden from the menu."
+"label. See xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Recommended Partitioning Scheme] for information "
+"about these partitions. Note that the graphical installer will not let you "
+"create a BIOS Boot or EFI System Partition if your system does *not* require "
+"one - in that case, they will be hidden from the menu."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:38
+#: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:38
 msgid ""
 "If you need to make any changes to your storage configuration after the "
 "installation, {PRODUCT} repositories offer several different tools which can "
-"help you do this. If you prefer a command line tool, try "
-"[package]*system-storage-manager*."
+"help you do this. If you prefer a command line tool, try [package]*system-"
+"storage-manager*."
 msgstr ""
