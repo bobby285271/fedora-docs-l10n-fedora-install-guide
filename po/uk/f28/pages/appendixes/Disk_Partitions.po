@@ -1,0 +1,1140 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/appendixes/Disk_Partitions.adoc:6
+#, no-wrap
+msgid "An Introduction to Disk Partitions"
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:12
+msgid ""
+"This appendix is not necessarily applicable to architectures other than "
+"AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
+"apply."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:16
+msgid ""
+"This section discusses basic disk concepts, disk repartitioning strategies, "
+"the partition naming scheme used by Linux systems, and related topics."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:18
+msgid ""
+"If you are comfortable with disk partitions, you can skip ahead to "
+"xref:Disk_Partitions.adoc#sect-disk-partitions-making-room[Strategies for "
+"Disk Repartitioning] for more information on the process of freeing up disk "
+"space to prepare for a {PRODUCT} installation."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/appendixes/Disk_Partitions.adoc:20
+#, no-wrap
+msgid "Hard Disk Basic Concepts"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:23
+msgid ""
+"Hard disks perform a very simple function - they store data and reliably "
+"retrieve it on command."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:25
+msgid ""
+"When discussing issues such as disk partitioning, it is important to have a "
+"understanding of the underlying hardware; however, since the theory is very "
+"complicated and expansive, only the basic concepts will be explained "
+"here. This appendix uses a set of simplified diagrams of a disk drive to "
+"help explain what is the process and theory behind partitions."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:27
+msgid ""
+"xref:Disk_Partitions.adoc#figu-partitions-unused-drive[An Unused Disk "
+"Drive], shows a brand-new, unused disk drive."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:29
+#, no-wrap
+msgid "An Unused Disk Drive"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:31
+#, no-wrap
+msgid "Image of an unused disk drive."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:31
+#, no-wrap
+msgid "partitions/unused-drive.png"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:34
+#, no-wrap
+msgid "File Systems"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:37
+msgid ""
+"To store data on a disk drive, it is necessary to _format_ the disk drive "
+"first. Formatting (usually known as \"making a _file "
+"system_pass:attributes[{blank}]\") writes information to the drive, creating "
+"order out of the empty space in an unformatted drive."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:39
+#, no-wrap
+msgid "Disk Drive with a File System"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:41
+#, no-wrap
+msgid "Image of a formatted disk drive."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:41
+#, no-wrap
+msgid "partitions/formatted-drive.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:44
+msgid ""
+"As xref:Disk_Partitions.adoc#figu-partitions-formatted-drive[Disk Drive with "
+"a File System], implies, the order imposed by a file system involves some "
+"trade-offs:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:46
+msgid ""
+"A small percentage of the driver's available space is used to store file "
+"system-related data and can be considered as overhead."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:48
+msgid ""
+"A file system splits the remaining space into small, consistently-sized "
+"segments. For Linux, these segments are known as _blocks_ footnote:[Blocks "
+"really *are* consistently sized, unlike our illustrations. Keep in mind, "
+"also, that an average disk drive contains thousands of blocks. The picture "
+"is simplified for the purposes of this discussion.]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:50
+msgid ""
+"Note that there is no single, universal file system. As "
+"xref:Disk_Partitions.adoc#figu-partitions-different-file-system[Disk Drive "
+"with a Different File System], shows, a disk drive may have one of many "
+"different file systems written on it. Different file systems tend to be "
+"incompatible; that is, an operating system that supports one file system (or "
+"a handful of related file system types) may not support another. However, "
+"{PRODUCT} supports a wide variety of file systems (including many commonly "
+"used by other operating systems such as Microsoft Windows), making data "
+"interchange between different file systems easy."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:52
+#, no-wrap
+msgid "Disk Drive with a Different File System"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:54
+#, no-wrap
+msgid "Image of a disk drive with a different file system."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:54
+#, no-wrap
+msgid "partitions/other-formatted-drive.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:57
+msgid ""
+"Writing a file system to disk is only the first step. The goal of this "
+"process is to actually *store* and *retrieve* data. The figure below shows a "
+"drive disk after some data have been written to it:"
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:59
+#, no-wrap
+msgid "Disk Drive with Data Written to It"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:61
+#, no-wrap
+msgid "Image of a disk drive with data written to it."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:61
+#, no-wrap
+msgid "partitions/used-formatted-drive.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:64
+msgid ""
+"As xref:Disk_Partitions.adoc#figu-partitions-drive-with-data[Disk Drive with "
+"Data Written to It], shows, some of the previously-empty blocks are now "
+"holding data. However, by just looking at this picture, we cannot determine "
+"exactly how many files reside on this drive. There may only be one file or "
+"many, as all files use at least one block and some files use multiple "
+"blocks. Another important point to note is that the used blocks do not have "
+"to form a contiguous region; used and unused blocks may be "
+"interspersed. This is known as _fragmentation_. Fragmentation can play a "
+"part when attempting to resize an existing partition."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:66
+msgid ""
+"As with most computer-related technologies, disk drives changed over time "
+"after their introduction. In particular, they got bigger. Not larger in "
+"physical size, but bigger in their capacity to store information. And, this "
+"additional capacity drove a fundamental change in the way disk drives were "
+"used."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:68
+#, no-wrap
+msgid "Partitions: Turning One Drive Into Many"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:71
+msgid ""
+"Disk drives can be divided into _partitions_. Each partition can be accessed "
+"as if it was a separate disk. This is done through the addition of a "
+"_partition table_."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:73
+msgid ""
+"There are several reasons for allocating disk space into separate disk "
+"partitions, for example:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:75
+msgid "Logical separation of the operating system data from the user data"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:77
+msgid "Ability to use different file systems"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:79
+msgid "Ability to run multiple operating systems on one machine"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:81
+msgid ""
+"There are currently two partitioning layout standards for physical hard "
+"disks: Master Boot Record (*MBR*) and GUID Partition Table (*GPT*). *MBR* is "
+"an older method of disk partitioning used with BIOS-based computers. *GPT* "
+"is a newer partitioning layout that is a part of the Unified Extensible "
+"Firmware Interface (*UEFI*). This section and "
+"xref:Disk_Partitions.adoc#sect-disk-partitions-extended[Partitions Within "
+"Partitions - An Overview of Extended Partitions] mainly describe the _Master "
+"Boot Record_ (*MBR*) disk partitioning scheme. For information about the "
+"_GUID Partition Table_ (*GPT*) partitioning layout, see "
+"xref:Disk_Partitions.adoc#sect-disk-partitioning-guid-partition-table[GUID "
+"Partition Table (GPT)]."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:86
+msgid ""
+"While the diagrams in this chapter show the partition table as being "
+"separate from the actual disk drive, this is not entirely accurate. In "
+"reality, the partition table is stored at the very start of the disk, before "
+"any file system or user data. But for clarity, they are separate in our "
+"diagrams."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:90
+#, no-wrap
+msgid "Disk Drive with Partition Table"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:92
+#, no-wrap
+msgid "Image of an unused disk drive with a partition table."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:92
+#, no-wrap
+msgid "partitions/unused-partitioned-drive.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:95
+msgid ""
+"As xref:Disk_Partitions.adoc#figu-partitions-partition-table[Disk Drive with "
+"Partition Table] shows, the partition table is divided into four sections or "
+"four _primary_ partitions. A primary partition is a partition on a hard "
+"drive that can contain only one logical drive (or section). Each section can "
+"hold the information necessary to define a single partition, meaning that "
+"the partition table can define no more than four partitions."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:97
+msgid ""
+"Each partition table entry contains several important characteristics of the "
+"partition:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:99
+msgid "The points on the disk where the partition starts and ends"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:101
+msgid "Whether the partition is \"active\""
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:103
+msgid "The partition's type"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:105
+msgid ""
+"The starting and ending points define the partition's size and location on "
+"the disk. The \"active\" flag is used by some operating systems' boot "
+"loaders. In other words, the operating system in the partition that is "
+"marked \"active\" is booted."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:107
+msgid ""
+"The type is a number that identifies the partition's anticipated usage. Some "
+"operating systems use the partition type to denote a specific file system "
+"type, to flag the partition as being associated with a particular operating "
+"system, to indicate that the partition contains a bootable operating system, "
+"or some combination of the three."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:109
+msgid ""
+"See xref:Disk_Partitions.adoc#figu-partitions-single-part[Disk Drive With "
+"Single Partition] for an example of a disk drive with single partition."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:111
+#, no-wrap
+msgid "Disk Drive With Single Partition"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:113
+#, no-wrap
+msgid "Image of a disk drive with a single partition."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:113
+#, no-wrap
+msgid "partitions/dos-single-partition.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:116
+msgid ""
+"The single partition in this example is labeled as `DOS`. This label shows "
+"the *partition type*, with `DOS` being one of the most common ones. The "
+"table below shows a list of some of the commonly used partition types and "
+"hexadecimal numbers used to represent them."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:118
+#, no-wrap
+msgid "Partition Types"
+msgstr ""
+
+#. type: Table
+#: ./pages/appendixes/Disk_Partitions.adoc:143
+#, no-wrap
+msgid ""
+"|Partition Type|Value|Partition Type|Value\n"
+"|Empty|00|Novell Netware 386|65\n"
+"|DOS 12-bit FAT|01|PIC/IX|75\n"
+"|XENIX root|02|Old MINIX|80\n"
+"|XENIX usr|03|Linux/MINUX|81\n"
+"|DOS 16-bit <=32M|04|Linux swap|82\n"
+"|Extended|05|Linux native|83\n"
+"|DOS 16-bit >=32|06|Linux extended|85\n"
+"|OS/2 HPFS|07|Amoeba|93\n"
+"|AIX|08|Amoeba BBT|94\n"
+"|AIX bootable|09|BSD/386|a5\n"
+"|OS/2 Boot Manager|0a|OpenBSD|a6\n"
+"|Win95 FAT32|0b|NEXTSTEP|a7\n"
+"|Win95 FAT32 (LBA)|0c|BSDI fs|b7\n"
+"|Win95 FAT16 (LBA)|0e|BSDI swap|b8\n"
+"|Win95 Extended (LBA)|0f|Syrinx|c7\n"
+"|Venix 80286|40|CP/M|db\n"
+"|Novell|51|DOS access|e1\n"
+"|PReP Boot|41|DOS R/O|e3\n"
+"|GNU HURD|63|DOS secondary|f2\n"
+"|Novell Netware 286|64|BBT|ff\n"
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:146
+#, no-wrap
+msgid "Partitions Within Partitions - An Overview of Extended Partitions"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:149
+msgid ""
+"In case four partitions are insufficient for your needs, you can use "
+"_extended partitions_ to create up additional partitions. You do this by "
+"setting the type of a partition to \"Extended\"."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:151
+msgid ""
+"An extended partition is like a disk drive in its own right - it has its own "
+"partition table which points to one or more partitions (now called _logical "
+"partitions_, as opposed to the four _primary partitions_) contained entirely "
+"within the extended partition "
+"itself. xref:Disk_Partitions.adoc#figu-partitions-extended[Disk Drive With "
+"Extended Partition], shows a disk drive with one primary partition and one "
+"extended partition containing two logical partitions (along with some "
+"unpartitioned free space)."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:153
+#, no-wrap
+msgid "Disk Drive With Extended Partition"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:155
+#, no-wrap
+msgid "Image of a disk drive with an extended partition."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:155
+#, no-wrap
+msgid "partitions/extended-partitions.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:158
+msgid ""
+"As this figure implies, there is a difference between primary and logical "
+"partitions - there can only be four primary partitions, but there is no "
+"fixed limit to the number of logical partitions that can exist. However, due "
+"to the way in which partitions are accessed in Linux, no more than 12 "
+"logical partitions should be defined on a single disk drive."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:160
+#, no-wrap
+msgid "GUID Partition Table (GPT)"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:163
+msgid ""
+"GUID Partition Table (*GPT*) is a newer partitioning scheme based on using "
+"Globally Unique Identifiers (*GUID*). *GPT* was developed to cope with "
+"limitations of the *MBR* partition table, especially with the limited "
+"maximum addressable storage space of a disk. Unlike *MBR*, which is unable "
+"to address storage space larger than 2.2 terabytes, *GPT* can be used with "
+"hard disks larger than this; the maximum addressable disk size is 2.2 "
+"zettabytes. In addition, *GPT* by default supports creating up to 128 "
+"primary partitions. This number could be extended by allocating more space "
+"to the partition table."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:165
+#, no-wrap
+msgid ""
+"*GPT* disks use logical block addressing (LBA) and the partition layout is "
+"as follows:\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:167
+msgid ""
+"To preserve backward compatibility with MBR disks, the first sector (*LBA* "
+"0) of *GPT* is reserved for *MBR* data and it is called \"protective MBR\"."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:169
+msgid ""
+"The _primary *GPT* header_ begins on the second logical block (*LBA* 1) of "
+"the device. The header contains the disk GUID, the location of the primary "
+"partition table, the location of the secondary GPT header, and CRC32 "
+"checksums of itself and the primary partition table. It also specifies the "
+"number of partition entries of the table."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:171
+msgid ""
+"The _primary *GPT* table_ includes, by default, 128 partition entries, each "
+"with an entry size 128 bytes, its partition type GUID and unique partition "
+"GUID."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:173
+msgid ""
+"The _secondary *GPT* table_ is identical to the primary *GPT* table. It is "
+"used mainly as a backup table for recovery in case the primary partition "
+"table is corrupted."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:175
+msgid ""
+"The _secondary *GPT* header_ is located on the last logical sector of the "
+"disk and it can be used to recover *GPT* information in case the primary "
+"header is corrupted. It contains the disk GUID, the location of the "
+"secondary partition table and the primary *GPT* header, CRC32 checksums of "
+"itself and the secondary partition table, and the number of possible "
+"partition entries."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:180
+msgid ""
+"There must be a BIOS boot partition for the boot loader to be installed "
+"successfully onto a disk that contains a GPT (GUID Partition Table). This "
+"includes disks initialized by [application]*Anaconda*. If the disk already "
+"contains a BIOS boot partition, it can be reused."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/appendixes/Disk_Partitions.adoc:184
+#, no-wrap
+msgid "Strategies for Disk Repartitioning"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:187
+msgid ""
+"There are several different ways that a disk can be repartitioned. This "
+"section discusses the following possible approaches:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:189
+msgid "Unpartitioned free space is available"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:191
+msgid "An unused partition is available"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:193
+msgid "Free space in an actively used partition is available"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:195
+msgid ""
+"Note that this section discusses the aforementioned concepts only "
+"theoretically and it does not include any procedures showing how to perform "
+"disk repartitioning step-by-step. Such detailed information are beyond the "
+"scope of this document."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:200
+msgid ""
+"Keep in mind that the following illustrations are simplified in the interest "
+"of clarity and do not reflect the exact partition layout that you encounter "
+"when actually installing {PRODUCT}."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:204
+#, no-wrap
+msgid "Using Unpartitioned Free Space"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:207
+msgid ""
+"In this situation, the partitions already defined do not span the entire "
+"hard disk, leaving unallocated space that is not part of any defined "
+"partition. xref:Disk_Partitions.adoc#figu-partitions-unused-space[Disk Drive "
+"with Unpartitioned Free Space], shows what this might look like."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:209
+#, no-wrap
+msgid "Disk Drive with Unpartitioned Free Space"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:211
+#, no-wrap
+msgid "Image of a disk drive with unpartitioned free space"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:211
+#, no-wrap
+msgid "partitions/unpart-space.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:214
+msgid ""
+"In the above example, `1` represents an undefined partition with unallocated "
+"space and `2` represents a defined partition with allocated space."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:216
+msgid ""
+"An unused hard disk also falls into this category. The only difference is "
+"that *all* the space is not part of any defined partition."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:218
+msgid ""
+"In any case, you can create the necessary partitions from the unused "
+"space. Unfortunately, this scenario, although very simple, is not very "
+"likely (unless you have just purchased a new disk just for {PRODUCT}). Most "
+"pre-installed operating systems are configured to take up all available "
+"space on a disk drive (see "
+"xref:Disk_Partitions.adoc#sect-disk-partitions-active-partition[Using Free "
+"Space from an Active Partition])."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:220
+#, no-wrap
+msgid "Using Space from an Unused Partition"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:223
+msgid ""
+"In this case, maybe you have one or more partitions that you do not use any "
+"longer. xref:Disk_Partitions.adoc#figu-partitions-unused-partition[Disk "
+"Drive with an Unused Partition], illustrates such a situation."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:225
+#, no-wrap
+msgid "Disk Drive with an Unused Partition"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:227
+#, no-wrap
+msgid "Image of a disk drive with an unused partition"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:227
+#, no-wrap
+msgid "partitions/unused-partition.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:230
+msgid ""
+"In the above example, `1` represents an unused partition and `2` represents "
+"reallocating an unused partition for Linux."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:232
+msgid ""
+"In this situation, you can use the space allocated to the unused "
+"partition. You first must delete the partition and then create the "
+"appropriate Linux partition(s) in its place. You can delete the unused "
+"partition and manually create new partitions during the installation "
+"process."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:234
+#, no-wrap
+msgid "Using Free Space from an Active Partition"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:237
+msgid ""
+"This is the most common situation. It is also, unfortunately, the hardest to "
+"handle. The main problem is that, even if you have enough free space, it is "
+"presently allocated to a partition that is already in use. If you purchased "
+"a computer with pre-installed software, the hard disk most likely has one "
+"massive partition holding the operating system and data."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:239
+msgid "Aside from adding a new hard drive to your system, you have two choices:"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:240
+#, no-wrap
+msgid "*Destructive Repartitioning*"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:241
+msgid ""
+"In this case, the single large partition is deleted and several smaller ones "
+"are created instead. Any data held in the original partition is "
+"destroyed. This means that making a complete backup is necessary. It is "
+"highly recommended to make two backups, use verification (if available in "
+"your backup software), and try to read data from the backup *before* "
+"deleting the partition."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:246
+msgid ""
+"If an operating system was installed on that partition, it must be "
+"reinstalled if you want to use that system as well. Be aware that some "
+"computers sold with pre-installed operating systems may not include the "
+"installation media to reinstall the original operating system. You should "
+"check whether this applies to your system is *before* you destroy your "
+"original partition and its operating system installation."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:250
+msgid ""
+"After creating a smaller partition for your existing operating system, you "
+"can reinstall software, restore your data, and start the "
+"installation. "
+"xref:Disk_Partitions.adoc#figu-partitions-destructive-repartitioning[Disk "
+"Drive Being Destructively Repartitioned] shows this being done."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:252
+#, no-wrap
+msgid "Disk Drive Being Destructively Repartitioned"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:254
+#, no-wrap
+msgid "Image of a disk drive being destructively repartitioned"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:254
+#, no-wrap
+msgid "partitions/dstrct-reprt.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:257 ./pages/appendixes/Disk_Partitions.adoc:288 ./pages/appendixes/Disk_Partitions.adoc:302 ./pages/appendixes/Disk_Partitions.adoc:316
+msgid "In the above example, `1` represents before and `2` represents after."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:262
+msgid "Any data previously present in the original partition is lost."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:265
+#, no-wrap
+msgid "*Non-Destructive Repartitioning*"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:266
+msgid ""
+"With non-destructive repartitioning you execute a program that makes a big "
+"partition smaller without losing any of the files stored in that "
+"partition. This method is usually reliable, but can be very time-consuming "
+"on large drives."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:268
+msgid ""
+"While the process of non-destructive repartitioning is rather "
+"straightforward, there are three steps involved:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:270
+msgid "Compress and backup existing data"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:272
+msgid "Resize the existing partition"
+msgstr ""
+
+#. type: Title ====
+#: ./pages/appendixes/Disk_Partitions.adoc:274 ./pages/appendixes/Disk_Partitions.adoc:306
+#, no-wrap
+msgid "Create new partition(s)"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:276
+msgid "Each step is described further in more detail."
+msgstr ""
+
+#. type: Title ====
+#: ./pages/appendixes/Disk_Partitions.adoc:278
+#, no-wrap
+msgid "Compress Existing Data"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:281
+msgid ""
+"As the following figure shows, the first step is to compress the data in "
+"your existing partition. The reason for doing this is to rearrange the data "
+"such that it maximizes the available free space at the \"end\" of the "
+"partition."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:283
+#, no-wrap
+msgid "Disk Drive Being Compressed"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:285
+#, no-wrap
+msgid "Image of a disk drive being compressed"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:285
+#, no-wrap
+msgid "partitions/compression.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:290
+msgid ""
+"This step is crucial. Without it, the location of the data could prevent the "
+"partition from being resized to the extent desired. Note also that, for one "
+"reason or another, some data cannot be moved. If this is the case (and it "
+"severely restricts the size of your new partition(s)), you may be forced to "
+"destructively repartition your disk."
+msgstr ""
+
+#. type: Title ====
+#: ./pages/appendixes/Disk_Partitions.adoc:292
+#, no-wrap
+msgid "Resize the Existing Partition"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:295
+msgid ""
+"xref:Disk_Partitions.adoc#figu-partitions-resize-existing[Disk Drive with "
+"Partition Resized] shows the actual resizing process. While the actual "
+"result of the resizing operation varies depending on the software used, in "
+"most cases the newly freed space is used to create an unformatted partition "
+"of the same type as the original partition."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:297
+#, no-wrap
+msgid "Disk Drive with Partition Resized"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:299
+#, no-wrap
+msgid "Image of a disk drive with a resized partition"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:299
+#, no-wrap
+msgid "partitions/part-resize.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:304
+msgid ""
+"It is important to understand what the resizing software you use does with "
+"the newly freed space, so that you can take the appropriate steps. In the "
+"case illustrated here, it would be best to delete the new DOS partition and "
+"create the appropriate Linux partition(s)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:309
+msgid ""
+"As the previous step implied, it may or may not be necessary to create new "
+"partitions. However, unless your resizing software is Linux-aware, it is "
+"likely that you must delete the partition that was created during the "
+"resizing "
+"process. xref:Disk_Partitions.adoc#figu-partitions-final-configuration[Disk "
+"Drive with Final Partition Configuration], shows this being done."
+msgstr ""
+
+#. type: Block title
+#: ./pages/appendixes/Disk_Partitions.adoc:311
+#, no-wrap
+msgid "Disk Drive with Final Partition Configuration"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/appendixes/Disk_Partitions.adoc:313
+#, no-wrap
+msgid "Image of a disk drive with final partition configuration"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/appendixes/Disk_Partitions.adoc:313
+#, no-wrap
+msgid "partitions/nondestruct-fin.png"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/appendixes/Disk_Partitions.adoc:318
+#, no-wrap
+msgid "Partition Naming Schemes and Mount Points"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:321
+msgid ""
+"A common source of confusion for users unfamiliar with Linux is the matter "
+"of how partitions are used and accessed by the Linux operating system. In "
+"DOS/Windows, it is relatively simple: Each partition gets a \"drive "
+"letter.\" You then use the correct drive letter to refer to files and "
+"directories on its corresponding partition. This is entirely different from "
+"how Linux deals with partitions and, for that matter, with disk storage in "
+"general. This section describes the main principles of partition naming "
+"scheme and the way how partitions are accessed in {PRODUCT}."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:323
+#, no-wrap
+msgid "Partition Naming Scheme"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:326
+msgid ""
+"Linux uses a naming scheme that is file-based, with file names in the form "
+"of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:328
+msgid "Device and partition names consist of the following:"
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:329
+#, no-wrap
+msgid "`/dev/`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:330
+msgid ""
+"This is the name of the directory in which all device files reside. Because "
+"partitions reside on hard disks, and hard disks are devices, the files "
+"representing all possible partitions reside in `/dev/`."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:331
+#, no-wrap
+msgid "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:332
+msgid ""
+"The first two letters of the partition name indicate the type of device on "
+"which the partition resides, usually `sd`."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:333
+#, no-wrap
+msgid "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:334
+msgid ""
+"This letter indicates which device the partition is on. For example, "
+"`/dev/sda` for the first hard disk, `/dev/sdb` for the second, and so on."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/appendixes/Disk_Partitions.adoc:335
+#, no-wrap
+msgid "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:336
+msgid ""
+"The final number denotes the partition. The first four (primary or extended) "
+"partitions are numbered `1` through `4`. Logical partitions start at "
+"`5`. So, for example, `/dev/sda3` is the third primary or extended partition "
+"on the first hard disk, and `/dev/sdb6` is the second logical partition on "
+"the second hard disk."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Disk_Partitions.adoc:341
+msgid ""
+"Even if your system can identify and refer to all types of disk partitions, "
+"it might not be able to *read* the file system and therefore access stored "
+"data on every partition type. However, in many cases, it is possible to "
+"successfully access data on a partition dedicated to another operating "
+"system."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:345
+#, no-wrap
+msgid "Disk Partitions and Mount Points"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:348
+msgid ""
+"Each partition is used to form part of the storage necessary to support a "
+"single set of files and directories. This is done by associating a partition "
+"with a directory through a process known as _mounting_. Mounting a partition "
+"makes its storage available starting at the specified directory (known as a "
+"_mount point_)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:350
+msgid ""
+"For example, if partition `/dev/sda5` is mounted on `/usr/`, that would mean "
+"that all files and directories under `/usr/` physically reside on "
+"`/dev/sda5`. So the file `/usr/share/doc/FAQ/txt/Linux-FAQ` would be stored "
+"on `/dev/sda5`, while the file `/etc/gdm/custom.conf` would not."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:352
+msgid ""
+"Continuing the example, it is also possible that one or more directories "
+"below `/usr/` would be mount points for other partitions. For instance, a "
+"partition (say, `/dev/sda7`) could be mounted on `/usr/local/`, meaning that "
+"`/usr/local/man/whatis` would then reside on `/dev/sda7` rather than "
+"`/dev/sda5`."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/appendixes/Disk_Partitions.adoc:354
+#, no-wrap
+msgid "How Many Partitions?"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:357
+msgid ""
+"At this point in the process of preparing to install {PRODUCT}, you should "
+"give some consideration to the number and size of the partitions to be used "
+"by your new operating system. However, there is no one right answer to this "
+"question. It depends on your needs and requirements."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:359
+msgid ""
+"Unless you have a reason for doing otherwise, you should *at least* create a "
+"`/boot` partition and a `/` (root) partition. Depending on your system's "
+"hardware specifications, additional partitions may be necessary, such as "
+"`/boot/efi` for 64-bit AMD and Intel systems with UEFI firmware, a "
+"`biosboot` partition for AMD and Intel systems with a GUID Partition Table "
+"(GPT) label on the system disk, or a `PReP Boot` partition on IBM Power "
+"Systems servers."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Disk_Partitions.adoc:360
+msgid ""
+"See "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme] for more information about the recommended partitioning "
+"scheme."
+msgstr ""
