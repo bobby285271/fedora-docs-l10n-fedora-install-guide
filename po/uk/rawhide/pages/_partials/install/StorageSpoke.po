@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Block title
+#: ./pages/_partials/install/StorageSpoke.adoc:4 ./pages/_partials/install/StorageSpoke.adoc:17
+#, no-wrap
+msgid "Installation Destination"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:7
+msgid ""
+"The `Installation Destination` screen allows you to configure storage "
+"options - namely, which disks will be used as the installation target for "
+"your {PRODUCT} installation. At least one disk must always be selected for "
+"the installation to proceed."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:9
+msgid ""
+"For information about the theory and concepts behind disk partitioning in "
+"Linux, see "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme]."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke.adoc:14
+msgid ""
+"If you plan to use a disk which already contains some data - for example, if "
+"you want to shrink an existing Microsoft Windows partition and install "
+"{PRODUCT} as a second system or if you are upgrading a previous release of "
+"{PRODUCT}, make sure to back up any important data first. Manipulating "
+"partitions always carries a risk - if the process is interrupted or fails "
+"for any reason (installer error, hardware failure, power outage, etc.), any "
+"data already on the disk may become impossible to recover."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/StorageSpoke.adoc:19
+#, no-wrap
+msgid ""
+"The Installation Destination screen. There are two local standard disks "
+"available"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/StorageSpoke.adoc:19
+#, no-wrap
+msgid "anaconda/StorageSpoke.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:22
+msgid ""
+"In the top part of the screen, all locally available storage devices (SATA, "
+"IDE and SCSI hard drives, USB flash drives, etc.) are displayed in the "
+"`Local Standard Disks` section. Local disks are detected when the installer "
+"starts - any storage devices connected after the installation has started "
+"will not be shown."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:24
+msgid ""
+"If you need to configure additional local storage devices, select `I will "
+"configure partitioning` and press `Done` to move to "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
+"Partitioning]. Then, connect any new hard drives you want to make available "
+"during the installation, and press the button marked by a circular arrow in "
+"the set of controls below the list of mount points on the left side of the "
+"screen. In the dialog window that opens, press `Rescan Disks` and wait until "
+"the scanning process completes. Then, press `OK` to return to "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning[Installation "
+"Destination]; all detected disks including any new ones will be displayed in "
+"the `Local Standard Disks` section."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:26
+msgid ""
+"The `Specialized & Network Disks` section below shows advanced network "
+"storage (such as iSCSI and FCoE disks) currently configured. When you first "
+"open this screen, no such devices will be displayed because they can not be "
+"automatically detected; to search for network storage devices, press `Add a "
+"disk` button and proceed with "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
+"Destination - Specialized & Network Disks]. Any network storage you "
+"configure will then show up in the `Specialized & Network Disks` the same "
+"way local disks are shown above."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:28
+msgid ""
+"All storage devices which will be used to install {PRODUCT} have a black "
+"circle icon with a white check mark on them. Disks not marked by this icon "
+"will not be used during the installation - they will be ignored if you "
+"choose automatic partitioning, and they will not be available in manual "
+"partitioning."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke.adoc:33
+msgid ""
+"USB storage devices such as flash drives and external disks will be shown in "
+"the `Local Standard Disks` as well, and they will be available for selection "
+"the same way internal hard drives are. Make sure to *not* select any "
+"removable storage as installation targets unless you really want to do "
+"so. If you accidentally use a removable drive to install {PRODUCT} and then "
+"unplug it, your system will likely become unusable."
+msgstr ""
+
+#. type: Block title
+#: ./pages/_partials/install/StorageSpoke.adoc:36
+#, no-wrap
+msgid "Unselected and Selected Disk"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/StorageSpoke.adoc:38
+#, no-wrap
+msgid ""
+"Disk selection in the Installation Destination screen. Two disks are "
+"displayed; only the one on the right side will be used"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/StorageSpoke.adoc:38
+#, no-wrap
+msgid "anaconda/StorageSpoke_Selected.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:41
+msgid ""
+"After you select all disks you want to install {PRODUCT}, select one of the "
+"two options in the `Other Storage Options` section:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:43
+msgid ""
+"`Automatically configure partitioning` - If this option is selected, then "
+"after you press `Done` in the top left corner of the screen, the installer "
+"will determine the total amount of space on all selected disks, and it will "
+"create a _Logical Volume Management_ (LVM) layout suitable for your "
+"system. The specifics of this layout depend on whether your system uses BIOS "
+"or UEFI firmware, the total amount of free space on your disks, and the "
+"amount of RAM on your system (which determines the size of your swap space)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:45
+msgid ""
+"With automatic partitioning, you can also select the `I would like to make "
+"additional space available` option below. Use this option if you want to "
+"reclaim space from an existing partitioning layout - for example, if a disk "
+"you want to use already contains a different operating system, and you want "
+"to make this system's partitions smaller to allow more room for "
+"{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
+"is described later in this section."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:47
+msgid ""
+"`I will configure partitioning` - Select this option and press `Done` in the "
+"top left corner of the screen to configure your system's partitioning layout "
+"manually. This requires some knowledge of the theory behind disk partitions "
+"and related concepts, but gives you full control over the way the system "
+"will be installed. For instructions for manual partitioning, see "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
+"Partitioning]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:49
+msgid ""
+"Additionally, you can select `Encrypt my data`pass:attributes[{blank}]; this "
+"will encrypt all partitions except the ones needed to boot the system (such "
+"as `/boot`) using _Linux Unified Key Setup_ (LUKS). Encrypting your hard "
+"drive is recommended. For detailed information about LUKS encryption, see "
+"the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke.adoc:54
+msgid ""
+"If you lose the LUKS passphrase, any encrypted partitions and the data on "
+"them will become completely inaccessible. There is no way to recover a lost "
+"passphrase. However, if you perform a Kickstart installation, you can save "
+"encryption passphrases and create backup encryption passphrases during the "
+"installation. See "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
+"the Installation with Kickstart] for information about Kickstart "
+"installations."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:58
+msgid ""
+"To control which one of your selected storage devices will contain the _boot "
+"loader_, click the `Full disk summary and bootloader` link in the bottom "
+"left corner of the screen, and follow the instructions in "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-bootloader[Boot "
+"Loader Installation]. Note that while in most cases it is sufficient to "
+"leave the boot loader in the default location, some configurations (for "
+"example, systems which require _chain loading_ from another boot loader) "
+"will require the boot drive to be specified manually."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:60
+msgid ""
+"After you select storage devices, choose between automatic and manual "
+"partitioning, configure encryption and boot loader location, press `Done` in "
+"the top left corner of the screen. Then, depending on your settings, the "
+"following will happen:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:62
+msgid ""
+"If you chose to encrypt your hard drive, the `Disk Encryption Passphrase` "
+"dialog will appear. Enter your chosen passphrase into the `Passphrase` and "
+"`Confirm` fields. When you do so, the passphrase will be automatically "
+"evaluated and its strength will be displayed, along with suggestions on how "
+"to make it stronger if the installer has determined it to be weak. For "
+"information about creating strong passwords, see [citetitle]_{PRODUCT} "
+"Security{nbsp}Guide_."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:64
+msgid ""
+"If you selected automatic partitioning and the `I would like to make "
+"additional space available`, or if there is not enough free space on your "
+"selected hard drives to install {PRODUCT}, the `Reclaim Space` dialog will "
+"appear. This dialog lists all disk devices you have configured and all "
+"partitions on those devices. The bottom right corner of the dialog displays "
+"information about how much space the system needs for at least a minimal "
+"installation and how much space you have reclaimed."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke.adoc:69
+msgid ""
+"If you use the `Reclaim Space` dialog to *delete* a partition, all data on "
+"that partition will be lost. If you want to preserve your data, use the "
+"`Shrink` option, not the `Delete` option."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:73
+msgid ""
+"First, review the displayed list of available storage devices. The "
+"`Reclaimable Space` column shows how much space can be reclaimed from each "
+"entry. To reclaim space, select a disk or partition, and press either the "
+"`Delete` button to delete that partition (or all partitions on a selected "
+"disk), or `Shrink` to use free space on a partition while preserving "
+"existing data. Alternatively, you can press `Delete all` in the bottom right "
+"corner; this will delete all existing partitions on all disks and make this "
+"space available to {PRODUCT}, but all existing data on all disks will be "
+"lost."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:75
+msgid ""
+"After you free enough space for your {PRODUCT} installation, press `Reclaim "
+"space` to finish."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/StorageSpoke.adoc:80
+msgid ""
+"No changes to any disks will be made until you press `Begin Installation` in "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
+"Summary]. The `Reclaim Space` dialog only *marks* partitions for resizing or "
+"deletion, but no such action is performed immediately."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:84
+msgid ""
+"If you selected the `I will configure partitioning` option, pressing `Done` "
+"will open the `Manual Partitioning` screen. See "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
+"Partitioning] for further instructions."
+msgstr ""
