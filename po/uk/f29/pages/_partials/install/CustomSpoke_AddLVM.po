@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ====
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:5
+#, no-wrap
+msgid "Creating a Logical Volume Managament (LVM) Layout"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:8
+msgid ""
+"_Logical Volume Management_ (LVM) presents a simple logical view of "
+"underlying physical storage space, such as hard drives or LUNs. Partitions "
+"on physical storage are represented as _physical volumes_ that can be "
+"grouped together into _volume groups_. Each volume group can be divided into "
+"multiple _logical volumes_, each of which is analogous to a standard disk "
+"partition. Therefore, LVM logical volumes function as partitions which can "
+"span multiple physical disks."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:10
+msgid ""
+"See xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding "
+"LVM] for additional information about the concepts behind Logical Volume "
+"Management."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:15
+msgid ""
+"Some partition types - notably the `/boot` directory and the BIOS Boot and "
+"EFI partitions - can not be placed on logical volumes. Use standard physical "
+"volumes for them. See "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme] for more information."
+msgstr ""
+
+#. type: Block title
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:18
+#, no-wrap
+msgid "Create LVM Logical Volume"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
+#, no-wrap
+msgid "The Manual Partitioning screen"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
+#, no-wrap
+msgid "anaconda/CustomSpoke_AddLVM.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:23
+msgid "Follow the procedure below to create LVM logical volumes and volume groups."
+msgstr ""
+
+#. type: Block title
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:24
+#, no-wrap
+msgid "Creating LVM Logical Volumes and Groups"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:26
+msgid ""
+"Click the `+` button at the bottom of the list showing existing mount "
+"points. A new dialog window will open."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:28
+msgid ""
+"In the new dialog window, specify a mount point for which you want to create "
+"a separate logical volume - for example, `/`. Optionally, specify a size for "
+"the volume using standard units such as MB or GB (for example, "
+"`50GB`). Then, click `Add mount point` to add the volume and return to the "
+"main partitioning screen."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:33
+msgid ""
+"When creating a mount point for swap on LVM, specify the mount point as "
+"`swap`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:37
+msgid ""
+"The mount point has now been created using the default settings, which means "
+"it has been created as an LVM logical volume, and a volume group has been "
+"created to contain it. Select the newly created mount point in the left pane "
+"to configure it further. If you want to use thin provisioning for this "
+"volume, change the `Device Type` option to `LVM Thin Provisioning`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:39
+msgid ""
+"In the `Volume Group` menu, you can see that the volume has been assigned to "
+"an automatically created volume group, which is named after the {PRODUCT} "
+"variant you are installing (for example, `fedora-server`. Click the `Modify` "
+"button under the drop-down menu to access the volume group settings."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:41
+msgid ""
+"In the `Configure Volume Group` dialog, you can change the volume group's "
+"name, its `RAID level` (see "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
+"File System and RAID Types] for information about available RAID types), and "
+"you can also specify which physical devices (disks) this volume group should "
+"reside on. You can select one or more disks which will be used to hold this "
+"volume group by holding down kbd:[Ctrl] and clicking each disk in the list."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:46
+msgid ""
+"If you select a redundant RAID type (such as `RAID1 (Redundancy)`), the "
+"volume group will take up twice its actual size on your disks. A 5 GB volume "
+"group with RAID1 will take up 10 GB of space."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:50
+msgid ""
+"You can also make sure that the volume group is encrypted by selecting the "
+"`Encrypt` option; this will enable LUKS encryption for the entire volume "
+"group. See the [citetitle]_{PRODUCT} Security Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[], for information about LUKS disk "
+"encryption."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:52
+msgid ""
+"Additionally, you can set a fixed size for the volume group by selecting the "
+"`Fixed` option from the `Size policy` menu and entering a size for the "
+"volume group."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:54
+msgid ""
+"After you finish configuring the volume group settings, click `Save` to "
+"return to the main `Manual Partitioning` screen."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:59
+msgid ""
+"The configuration dialog does not allow you to specify the size of the "
+"volume group's _physical extents_. The size will always be set to the "
+"default value of 4 MiB. If you want to create a volume group with different "
+"physical extents, create it manually by switching to an interactive shell "
+"and using the [command]#vgcreate# command, or use a Kickstart file with the "
+"[command]#volgroup "
+"--pesize=pass:attributes[{blank}]_size_pass:attributes[{blank}]# command."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:63
+msgid ""
+"If you need to create more than one volume group, open the `Volume Group` "
+"drop-down menu and select the `Create a new volume group` option. A new "
+"dialog window will open, identical to the one described in the previous "
+"step. Again, select a name, storage devices, encryption settings, RAID level "
+"and size policy for the new group, and click `Save`. The new volume group "
+"will then become available in the `Volume Group` drop-down menu; you can "
+"then go through your existing mount points and change this setting to assign "
+"them to a different volume group."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:65
+msgid ""
+"Configure other settings specific to the logical volume - its `Mount Point`, "
+"`Desired Capacity`, `File System`, and `Name`. Press `Update Settings` to "
+"apply any changes to the configuration."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:67
+msgid ""
+"Repeat this procedure for any additional logical volumes you want to "
+"create. Note that when creating additional LVM logical volumes, a new volume "
+"group is not automatically created each time; instead, any additional "
+"volumes are assigned to an existing group."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:68
+msgid ""
+"For each mount point you create, review its settings and make sure that it "
+"is assigned to the correct group, that it has sufficient capacity, and that "
+"it has a descriptive name so you can identify the volume later if you need "
+"to."
+msgstr ""
