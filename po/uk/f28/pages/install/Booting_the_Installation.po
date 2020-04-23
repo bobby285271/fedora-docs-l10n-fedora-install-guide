@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/install/Booting_the_Installation.adoc:6
+#, no-wrap
+msgid "Booting the Installation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:9
+msgid ""
+"This chapter will explain how to boot the installer from local media or a "
+"network server as well as how to navigate the boot menu and use custom "
+"options."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Booting_the_Installation.adoc:11
+#, no-wrap
+msgid "Preparing to Boot"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:14
+msgid ""
+"After you have made a bootable USB flash drive or a CD or DVD using the "
+"steps described in "
+"xref:install/Preparing_for_Installation.adoc#sect-preparing-boot-media[Preparing "
+"Boot Media], you are ready to boot the installation. Note that the steps "
+"described below are generic and the exact steps will vary somewhat depending "
+"on your system - particularly on your motherboard manufacturer."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:19
+msgid ""
+"There are no separate media provided for BIOS and UEFI systems; all of them "
+"can boot from the same ISO image. However, once you install {PRODUCT}, you "
+"can not switch between UEFI and BIOS. The system must run on the same "
+"firmware it was installed on; if you, for example, perform the installation "
+"on an UEFI system in UEFI mode, and then switch it to BIOS compatibility "
+"mode, {PRODUCT} will no longer boot and will require a reinstallation."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:26
+msgid ""
+"{PRODUCT} does not support UEFI booting for 32-bit x86 systems. Only BIOS "
+"boot is supported on these systems."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:28
+msgid ""
+"Also note that {PRODUCT} only fully supports version 2.2 of the UEFI "
+"specification. Hardware that supports version 2.3 or later will boot and "
+"work normally, but the additional functionality defined by these later "
+"specifications will not be available. The UEFI specifications are available "
+"from link:++http://www.uefi.org/specs/agreement/++[]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:32
+msgid "To boot the {PRODUCT} installer, follow these steps:"
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/Booting_the_Installation.adoc:33
+#, no-wrap
+msgid "Booting the {PRODUCT} Installer"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:35
+msgid ""
+"Plug in the boot USB drive, or insert the boot CD or DVD into your "
+"computer's optical disc drive. Alternatively, if you plan on booting from a "
+"network boot (PXE) server, make sure that the network cable is plugged in."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:37
+msgid ""
+"Restart the system. Once it starts rebooting, it should display a prompt "
+"similar to the following (usually at the bottom of the screen):"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/install/Booting_the_Installation.adoc:41
+#, no-wrap
+msgid "Press F12 to select boot device, or Del to enter SETUP\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:44
+msgid ""
+"Follow the on-screen instructions to access the boot menu. If no "
+"instructions are displayed (some systems only display a graphical logo "
+"during early stages of boot), try pressing kbd:[F12], kbd:[F11], kbd:[F10] "
+"or kbd:[Del] several times; these are most commonly used keys. Note that "
+"there is usually a very short time window provided to access the menu; once "
+"it passes, you need to restart the system and try again."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:49
+msgid ""
+"Some older systems may not support choosing a boot device at startup. In "
+"that case, enter the system's SETUP (BIOS), and change the default boot "
+"order so that your boot media (CD, DVD, USB or network) has higher priority "
+"than internal hard drives."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:51
+msgid ""
+"On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
+"selection menu."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:55
+msgid ""
+"When your system's boot menu opens, select an entry such as `Boot from USB` "
+"if you created a bootable USB drive, `Boot from CD/DVD` if you are using an "
+"optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
+"from a network location."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:57
+msgid ""
+"Wait until the boot menu is displayed. The boot menu is described further in "
+"this chapter."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Booting_the_Installation.adoc:59
+#, no-wrap
+msgid "The Boot Menu"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:62
+msgid ""
+"In most cases, when you boot the {PRODUCT} installer from your prepared boot "
+"media or server, the boot menu will be the first thing that appears. From "
+"this menu, you can either start the actual installation, or you can use the "
+"boot media to rescue an existing system."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:64
+msgid ""
+"The way the boot menu will look and function will vary somewhat depending on "
+"your system's firmware - BIOS systems use the [application]*SYSLINUX* boot "
+"loader, and UEFI systems use [application]*GRUB2*. However, both of the "
+"menus described below function very similarly from a user's point of view."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:66
+msgid ""
+"Use arrow keys to select an entry in the menu, and kbd:[Enter] to confirm "
+"your selection. The first two entries in the list will both proceed with the "
+"installation; the first one will start the installer directly, and the "
+"second one will verify the integrity of the boot media before starting the "
+"installation."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:68
+msgid ""
+"The final entry in the list is `Troubleshooting`pass:attributes[{blank}]; "
+"this is a submenu. Selecting this entry and pressing kbd:[Enter] will "
+"display a new set of selections, where you can choose to install in basic "
+"graphics mode (useful if you want to do a manual graphical installation but "
+"your system has issues with the default graphical installer), rescue an "
+"existing system, or test your system's memory modules for errors (on BIOS "
+"systems only). The troubleshooting menu also allows you to exit the boot "
+"menu and boot normally from your system's hard drive via the `Boot from "
+"local drive` option."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:70
+msgid ""
+"Every menu entry in the list is a predefined set of boot options, and these "
+"options can be customized to change some aspects of the installer's "
+"behavior. To edit the default set of boot options, press kbd:[Tab] on BIOS "
+"systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
+"bottom of the screen."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:75
+msgid ""
+"Editing boot options in [application]*GRUB2* (on UEFI systems) will display "
+"the entire configuration for the selected entry. Actual boot options are "
+"configured on the line which starts with the `linux` (or `linux16` or "
+"`linuxefi`) keyword. Do not modify any other lines in the configuration."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Booting_the_Installation.adoc:77
+msgid ""
+"On systems with BIOS firmware, only the actual boot options are displayed "
+"when you press kbd:[Tab]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:81
+msgid ""
+"When editing the default set of options, you can change the existing ones as "
+"well as append additional ones. Once you finish, press kbd:[Enter] on BIOS "
+"or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
+"options."
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/Booting_the_Installation.adoc:82
+#, no-wrap
+msgid "Editing boot options on a system with BIOS firmware"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/install/Booting_the_Installation.adoc:84
+#, no-wrap
+msgid "The boot menu."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/install/Booting_the_Installation.adoc:84
+#, no-wrap
+msgid "boot/boot-menu.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Booting_the_Installation.adoc:86
+msgid ""
+"All available [application]*Anaconda* boot options are described in "
+"xref:advanced/Boot_Options.adoc#sect-boot-options-available[Available Boot "
+"Options]."
+msgstr ""
