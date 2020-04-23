@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ===
+#: ./pages/appendixes/Understanding_LVM.adoc:5
+#, no-wrap
+msgid "Understanding LVM"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Understanding_LVM.adoc:8
+msgid ""
+"LVM (Logical Volume Management) partitions provide a number of advantages "
+"over standard partitions. LVM partitions are formatted as _physical "
+"volumes_. One or more physical volumes are combined to form a _volume "
+"group_. Each volume group's total storage is then divided into one or more "
+"_logical volumes_. The logical volumes function much like standard "
+"partitions. They have a file system type, such as `ext4`, and a mount point."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Understanding_LVM.adoc:13
+msgid ""
+"The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
+"disk partition for your `/boot` partition."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/appendixes/Understanding_LVM.adoc:15
+msgid ""
+"By default, the installation process always creates the `/` and `swap` "
+"partitions within LVM volumes, with a separate `/boot` on a standard "
+"partition. See "
+"xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme] for details."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Understanding_LVM.adoc:19
+msgid ""
+"To understand LVM better, imagine the physical volume as a pile of "
+"_blocks_. A block is a storage unit used to store data. Several piles of "
+"blocks can be combined to make a much larger pile, just as physical volumes "
+"are combined to make a volume group. The resulting pile can be subdivided "
+"into several smaller piles of arbitrary size, just as a volume group is "
+"allocated to several logical volumes."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Understanding_LVM.adoc:21
+msgid ""
+"An administrator may grow or shrink logical volumes without destroying data, "
+"unlike standard disk partitions. If the physical volumes in a volume group "
+"are on separate drives or RAID arrays then administrators may also spread a "
+"logical volume across the storage devices."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/appendixes/Understanding_LVM.adoc:22
+msgid ""
+"You may lose data if you shrink a logical volume to a smaller capacity than "
+"the data on the volume requires. To ensure maximum flexibility, create "
+"logical volumes to meet your current needs, and leave excess storage "
+"capacity unallocated. You may safely grow logical volumes to use unallocated "
+"space, as your needs dictate."
+msgstr ""
