@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/advanced/VNC_Installations.adoc:6
+#, no-wrap
+msgid "Installing Using VNC"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:9
+msgid ""
+"The graphical installation interface is the recommended method of installing "
+"{PRODUCT}. However, in some cases, accessing the graphical interface "
+"directly is difficult or impossible. Some systems lack the capability to "
+"connect a display and a keyboard, making VNC a necessity for manual "
+"(non-Kickstart) installations."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:11
+msgid ""
+"To allow manual installations on _headless systems_ (systems without a "
+"directly connected display, keyboard and mouse), the [application]*Anaconda* "
+"installation program includes a _Virtual Network Computing_ (VNC) mode which "
+"allows the graphical mode of the installation program to run locally, but "
+"display on another system connected to the network. The VNC installation "
+"provides you with the full range of installation options."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:13
+msgid ""
+"This chapter provides instructions on activating VNC mode on the "
+"installation system and connecting to it using a VNC viewer."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/advanced/VNC_Installations.adoc:15
+#, no-wrap
+msgid "Installing a VNC Viewer"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:18
+msgid ""
+"Performing a VNC installation requires a VNC viewer running on your "
+"workstation or another terminal computer. VNC viewers are available in the "
+"repositories of most Linux distributions; free VNC viewers are also "
+"available for other operating systems such as Windows. On Linux systems, use "
+"your package manager to search for a viewer for your distribution."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:20
+msgid "The following VNC viewers are available in {PRODUCT}:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:22
+msgid ""
+"[application]*TigerVNC* - A basic viewer independent of your desktop "
+"environment. Installed as the [package]*tigervnc* package."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:24
+msgid ""
+"[application]*Vinagre* - A viewer for the [application]*GNOME* desktop "
+"environment. Installed as the [package]*vinagre* package."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:26
+msgid ""
+"[application]*KRDC* - A viewer integrated with the [application]*KDE* "
+"desktop environment. Installed as the [package]*kdenetwork-krdc* package."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:28
+msgid ""
+"To install any of the viewers listed above, execute the following command as "
+"`root`:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:32
+#, no-wrap
+msgid "# dnf install package\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:35
+msgid ""
+"Replace _package_ with the package name of the viewer you want to use (for "
+"example, [package]*tigervnc*)."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/advanced/VNC_Installations.adoc:40
+msgid ""
+"Procedures in this chapter assume you are using [application]*TigerVNC* as "
+"your VNC viewer. Specific instructions for other viewers may differ, but the "
+"general principles still apply."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/advanced/VNC_Installations.adoc:44
+#, no-wrap
+msgid "Performing a VNC Installation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:47
+msgid ""
+"The [application]*Anaconda* installation program offers two modes for VNC "
+"installation: _Direct mode_ and _Connect mode_. The modes differ in the way "
+"the connection between the server and viewer is established. After you "
+"successfully connect, the installation will progress the same way regardless "
+"of the mode you used."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/advanced/VNC_Installations.adoc:48
+#, no-wrap
+msgid "Direct Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:49
+msgid ""
+"In this mode, [application]*Anaconda* is configured to start the "
+"installation and wait for an incoming connection from VNC viewer before "
+"proceeding. While waiting for an incoming connection, the system's IP "
+"address and the port on which the installer expects the connection is "
+"displayed on the display or console if available; this implies that you need "
+"at least a serial console to connect using this mode, but you can work "
+"around this limitation if you know the default VNC port and the system's IP "
+"address."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/advanced/VNC_Installations.adoc:50
+#, no-wrap
+msgid "Connect Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:51
+msgid ""
+"In this mode, the VNC viewer is started on the remote system in _listening "
+"mode_. The VNC viewer waits for an incoming connection on a specified "
+"port. Then, [application]*Anaconda* is started and the host name/IP address "
+"and port number of the viewer are provided using a boot option or a "
+"Kickstart command. When the installation begins, the installation program "
+"establishes a connection with the listening VNC viewer using the specified "
+"host name/IP address and port number. Connect mode is therefore easier to "
+"use on systems with no local display or console, but it also may require "
+"additional preparation, because the viewer system must be able to accept "
+"incoming connections on the specified port, which usually requires changing "
+"firewall settings."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/advanced/VNC_Installations.adoc:53
+#, no-wrap
+msgid "Choosing a VNC Installation Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:56
+msgid "Visual and Interactive access to the system"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:58
+msgid ""
+"If visual and interactive access to the system being installed is not "
+"available, then you should use Connect Mode."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:60
+msgid "Network Connection Rules and Firewalls"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:62
+msgid ""
+"If the system being installed is not allowed inbound connections by a "
+"firewall, then you must use Connect Mode or disable the firewall. Disabling "
+"a firewall may have security implications."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:64
+msgid ""
+"If the remote system running the VNC viewer is not allowed incoming "
+"connections by a firewall, then you must use Direct Mode, or disable the "
+"firewall. Disabling a firewall may have security implications."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/advanced/VNC_Installations.adoc:66
+#, no-wrap
+msgid "Installing in VNC Direct Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:69
+msgid ""
+"VNC Direct Mode is when the VNC viewer initiates a connection to the system "
+"being installed. [application]*Anaconda* will tell you when to initiate this "
+"connection."
+msgstr ""
+
+#. type: Block title
+#: ./pages/advanced/VNC_Installations.adoc:71
+#, no-wrap
+msgid "Starting VNC in Direct Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:73
+msgid ""
+"Open the VNC viewer (for example, [application]*TigerVNC*) on the "
+"workstation you will be using to connect to the system being installed. A "
+"window similar to "
+"xref:VNC_Installations.adoc#figu-vnc-installations-connection-details[TigerVNC "
+"Connection Details] will be displayed with an input field allowing you to "
+"specify an IP address."
+msgstr ""
+
+#. type: Block title
+#: ./pages/advanced/VNC_Installations.adoc:75
+#, no-wrap
+msgid "TigerVNC Connection Details"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/advanced/VNC_Installations.adoc:77
+#, no-wrap
+msgid "TigerVNC after startup"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/advanced/VNC_Installations.adoc:77
+#, no-wrap
+msgid "vnc/connection-details.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:80
+msgid ""
+"Boot the installation system and wait for the boot menu to appear. In the "
+"menu, edit boot options (see "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu]) "
+"and append the [option]#inst.vnc# option to the end of the command line."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:82
+msgid ""
+"Optionally, if you want to restrict VNC access to the installation system, "
+"add the "
+"[option]#inst.vncpassword=pass:attributes[{blank}]_PASSWORD_pass:attributes[{blank}]# "
+"boot option as well. Replace _PASSWORD_ with the password you want to use "
+"for the installation. The VNC password must be between 6 and 8 characters "
+"long."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/advanced/VNC_Installations.adoc:87
+msgid ""
+"Use a temporary password for the [option]#inst.vncpassword=# option. It "
+"should not be a real or root password you use on any system."
+msgstr ""
+
+#. type: Block title
+#: ./pages/advanced/VNC_Installations.adoc:91
+#, no-wrap
+msgid "Adding VNC Boot Options"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/advanced/VNC_Installations.adoc:93
+#, no-wrap
+msgid "Editing boot options to activate VNC"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/advanced/VNC_Installations.adoc:93
+#, no-wrap
+msgid "boot/vnc-options.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:96
+msgid ""
+"Start the installation using the edited options. The system will initialize "
+"the installation program and start the necessary services. When the system "
+"is ready, you will see a message on the screen similar to the following:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:100
+#, no-wrap
+msgid ""
+"`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to "
+"begin the install.`\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:103
+msgid ""
+"Note the IP address and port number (in the above example, "
+"`192.168.100.131:5901`)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:105
+msgid ""
+"On the system running the VNC Viewer, enter the IP address and port number "
+"obtained in the previous step into the `Connection Details` dialog in the "
+"same format as it was displayed on the screen by the installer. Then, click "
+"`Connect`. The VNC viewer will now connect to the installation system. If "
+"you set up a VNC password, enter it when prompted and press `OK`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:107 ./pages/advanced/VNC_Installations.adoc:159
+msgid ""
+"When the connection is successfully established, a new window will open on "
+"the system running the VNC viewer, displaying the installation menu. This "
+"window will provide full remote access to the installer until the "
+"installation finishes and the system reboots for the first time."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:109 ./pages/advanced/VNC_Installations.adoc:161
+msgid ""
+"You can then proceed with "
+"xref:install/Installing_Using_Anaconda.adoc#chap-installing-using-anaconda[Installing "
+"Using Anaconda]."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/advanced/VNC_Installations.adoc:111
+#, no-wrap
+msgid "Installing in VNC Connect Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:114
+msgid ""
+"VNC connect mode is when the system being installed initiates a connection "
+"to the VNC viewer running on a remote system. Before you start, make sure "
+"the remote system is configured to accept incoming connection on the port "
+"you want to use for VNC. The exact way to make sure the connection will not "
+"be blocked depends on your network and on your workstation's "
+"configuration. Information about configuring the firewall in {PRODUCT} is "
+"available in the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: Block title
+#: ./pages/advanced/VNC_Installations.adoc:116
+#, no-wrap
+msgid "Starting VNC in Connect Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:118
+msgid ""
+"Start the VNC viewer on the client system in listening mode. For example, on "
+"{PRODUCT} using [application]*TigerVNC*, execute the following command:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:122
+#, no-wrap
+msgid "$ [command]#vncviewer -listen _PORT_#\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:125
+msgid "Replace _PORT_ with the port number you want to use for the connection."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:127
+msgid "The terminal will display a message similar to the following example:"
+msgstr ""
+
+#. type: Block title
+#: ./pages/advanced/VNC_Installations.adoc:129
+#, no-wrap
+msgid "TigerVNC Viewer Listening"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:138
+#, no-wrap
+msgid ""
+"TigerVNC Viewer 64-bit v1.3.0 (20130924)\n"
+"Built on Sep 24 2013 at 16:32:56\n"
+"Copyright (C) 1999-2011 TigerVNC Team and many others (see README.txt)\n"
+"See https://tigervnc.org/ for information on TigerVNC.\n"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:141
+#, no-wrap
+msgid ""
+"Thu Feb 20 15:23:54 2014\n"
+"main:        Listening on port 5901\n"
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/advanced/VNC_Installations.adoc:146
+msgid ""
+"When this message is displayed, the VNC viewer is ready and waiting for an "
+"incoming connection from the installation system."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/advanced/VNC_Installations.adoc:148
+msgid ""
+"Boot the installation system and wait for the boot menu to appear. In the "
+"menu, edit boot options (see "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu]) "
+"and append the following options to the end of the command line:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/advanced/VNC_Installations.adoc:152
+#, no-wrap
+msgid ""
+"[option]#inst.vnc "
+"inst.vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORT_#\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:155
+msgid ""
+"Replace _HOST_ with the IP address of the system running the listening VNC "
+"viewer, and _PORT_ with the port number that the VNC viewer is listening on."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:157
+msgid ""
+"Start the installation. The system will initialize the installation program "
+"and start the necessary services. Once the initialization is finished, "
+"[application]*Anaconda* will attempt to connect to the IP address and port "
+"you provided in the previous step."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/advanced/VNC_Installations.adoc:163
+#, no-wrap
+msgid "Kickstart Considerations"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:166
+msgid ""
+"Commands for using a VNC installation are also available in Kickstart "
+"installations. Using just the [command]#vnc# command will set up an "
+"installation using Direct Mode. Options are available to set up an "
+"installation using Connect Mode. For more information about the "
+"[command]#vnc# command and options used in Kickstart files, see "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
+"Syntax Reference]."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/advanced/VNC_Installations.adoc:168
+#, no-wrap
+msgid "Considerations for Headless Systems"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:171
+msgid ""
+"When installing headless systems, the only choices are an automated "
+"Kickstart installation or an interactive VNC installation using connect "
+"mode. For more information about automated Kickstart installation, see "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Kickstart "
+"Syntax Reference]. The general process for an interactive VNC installation "
+"is described below."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:173
+msgid ""
+"Set up a PXE server that will be used to start the installation. Information "
+"about installing and performing basic configurating of a PXE server can be "
+"found in "
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
+"Up an Installation Server]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:175
+msgid ""
+"Configure the PXE server to use the boot options for a connect mode VNC "
+"installation. For information on these boot options, see "
+"xref:VNC_Installations.adoc#sect-vnc-installations-connect-mode[Installing "
+"in VNC Connect Mode]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/advanced/VNC_Installations.adoc:176
+msgid ""
+"Follow the procedure for a VNC Installation using connect mode as described "
+"in the "
+"xref:VNC_Installations.adoc#proc-vnc-installations-connect-mode[Starting VNC "
+"in Connect Mode]. However, when directed to boot the system, boot it from "
+"the PXE server."
+msgstr ""
