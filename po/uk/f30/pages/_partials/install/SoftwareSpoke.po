@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Block title
+#: ./pages/_partials/install/SoftwareSpoke.adoc:5 ./pages/_partials/install/SoftwareSpoke.adoc:20
+#, no-wrap
+msgid "Software Selection"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:8
+msgid ""
+"The `Software Selection` screen allows you to choose a _Base Environment_ "
+"and _Add-ons_. These options control which software packages will be "
+"installed on your system during the installation process."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:10
+msgid ""
+"This screen is only available if "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-source[Installation "
+"Source] is properly configured and only after the installer has downloaded "
+"package metadata from the source."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SoftwareSpoke.adoc:15
+msgid ""
+"It is not possible to select specific packages during a manual "
+"installation. You can only select pre-defined environments and add-ons. If "
+"you need to control exactly which packages are installed, you must use a "
+"Kickstart file and define the packages in the [command]#%packages# "
+"section. See "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
+"the Installation with Kickstart] for information about Kickstart "
+"installations."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:19
+msgid ""
+"The availability of environments and add-ons depends on your installation "
+"source. By default, the selection depends on the installation media you used "
+"to start the installation; Fedora{nbsp}Server installation image will have "
+"different environments and add-ons available for selection than, for "
+"example, the Fedora{nbsp}Cloud image. You can change this by configuring a "
+"different installation source containing different environments."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#, no-wrap
+msgid "The Software Selection screen. On the left side"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#, no-wrap
+msgid "anaconda/SoftwareSpoke.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:25
+msgid ""
+"To configure your software selection, first choose an environment on the "
+"left side of the screen. Only one environment can be chosen, even if more "
+"are available. Then, on the right side of the screen, select one or more "
+"add-ons which you want to install by marking the check boxes next to each "
+"add-on."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:27
+msgid ""
+"The list of add-ons is divided into two parts by a horizontal line. Add-ons "
+"above this line are defined as part of your chosen environment; if you "
+"select a different environment, the add-ons available here will change. The "
+"add-ons displayed below the separator are not specific to your chosen "
+"environment."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:29
+msgid ""
+"Environments and add-ons are defined using a `comps.xml` file in your "
+"installation source (for example, in the `repodata/` directory on the full "
+"Fedora{nbsp}Server installation DVD). Review this file to see exactly which "
+"packages will be installed as part of a certain environment or add-on. For "
+"more information about the `comps.xml` file, see "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
+"(required) - Package Selection]."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SoftwareSpoke.adoc:30
+msgid ""
+"After you finish configuring your software selection, click `Done` in the "
+"top left corner to return to "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
+"Summary]."
+msgstr ""
