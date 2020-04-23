@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-23 02:09+0000\n"
+"POT-Creation-Date: 2020-04-23 22:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,101 +15,100 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:6
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:6
 msgid "====== Creating a Btrfs Layout"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:8
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:8
 msgid ""
 "_Btrfs_ is a type of file system, but it has several features characteristic "
 "of a storage device. It is designed to make the file system tolerant of "
 "errors, and to facilitate the detection and repair of errors when they "
 "occur. It uses checksums to ensure the validity of data and metadata, and "
-"maintains snapshots of the file system that can be used for backup or "
-"repair."
+"maintains snapshots of the file system that can be used for backup or repair."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:10
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:10
 msgid ""
-"Creating a Btrfs layout is somewhat similar to LVM (described in "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-lvm[Creating "
-"a Logical Volume Managament (LVM) Layout]) with slightly different "
-"terminology. A Btrfs _volume_ is the equivalent of an LVM volume group, and "
-"a Btrfs _subvolume_ is similar to a LVM logical volume. An important "
-"difference to note is how [application]*Anaconda* reports sizes for separate "
-"mount points: For LVM, the exact size of each logical volume is shown next "
-"to each mount point in the left pane, while with Btrfs, the total size of "
-"the entire volume is shown next to each subvolume."
+"Creating a Btrfs layout is somewhat similar to LVM (described in xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"lvm[Creating a Logical Volume Managament (LVM) Layout]) with slightly "
+"different terminology. A Btrfs _volume_ is the equivalent of an LVM volume "
+"group, and a Btrfs _subvolume_ is similar to a LVM logical volume. An "
+"important difference to note is how [application]*Anaconda* reports sizes "
+"for separate mount points: For LVM, the exact size of each logical volume is "
+"shown next to each mount point in the left pane, while with Btrfs, the total "
+"size of the entire volume is shown next to each subvolume."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:15
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:15
 msgid ""
 "Some partition types - notably the `/boot` and `/usr` directories and the "
 "BIOS Boot and EFI partitions - can not be placed on Btrfs subvolumes. Use "
-"standard physical volumes for them (or an LVM logical volume for "
-"`/usr`). See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme] for more information."
+"standard physical volumes for them (or an LVM logical volume for `/usr`). "
+"See xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Recommended Partitioning Scheme] for more "
+"information."
 msgstr ""
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
 #, no-wrap
 msgid "Create Btrfs Subvolume"
 msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
 #, no-wrap
 msgid "The Manual Partitioning screen"
 msgstr ""
 
 #. type: Target for macro image
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddBtrfs.png"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:23
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:23
 msgid "Follow the procedure below to create Btrfs volumes and subvolumes:"
 msgstr ""
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
 #, no-wrap
 msgid "Creating Btrfs Subvolumes and Volumes"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:28
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:28
 msgid ""
 "In the new dialog window, specify a mount point for which you want to create "
 "a separate logical volume - for example, `/`. Optionally, specify a size for "
-"the volume using standard units such as MB or GB (for example, "
-"`50GB`). Then, click `Add mount point` to add the volume and return to the "
-"main partitioning screen."
+"the volume using standard units such as MB or GB (for example, `50GB`). "
+"Then, click `Add mount point` to add the volume and return to the main "
+"partitioning screen."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:33
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:33
 msgid ""
 "When creating a mount point for swap on Btrfs, specify the mount point as "
 "`swap`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
 msgid ""
 "The mount point has now been created using the default settings, which means "
 "it has been created as an LVM logical volume. Select the newly created mount "
@@ -119,7 +118,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:39
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:39
 msgid ""
 "In the `Volume` menu, you can see that the subvolume has been assigned to an "
 "automatically created volume, which is named after the {PRODUCT} variant you "
@@ -128,19 +127,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:41
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:41
 msgid ""
 "In the `Configure Volume` dialog, you can change the volume's name, its "
-"`RAID level` (see "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
-"File System and RAID Types] for information about available RAID types), and "
-"you can also specify which physical devices (disks) this volume should "
-"reside on. You can select one or more disks which will be used to hold this "
-"volume by holding down kbd:[Ctrl] and clicking each disk in the list."
+"`RAID level` (see xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-filesystems[Device, File System and RAID Types] for "
+"information about available RAID types), and you can also specify which "
+"physical devices (disks) this volume should reside on. You can select one or "
+"more disks which will be used to hold this volume by holding down kbd:[Ctrl] "
+"and clicking each disk in the list."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:46
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:46
 msgid ""
 "If you select a redundant RAID type (such as `RAID1 (Redundancy)`), the "
 "volume will take up twice its actual size on your disks. A 5 GB volume with "
@@ -148,17 +147,16 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
 msgid ""
 "You can also make sure that the volume is encrypted by selecting the "
-"`Encrypt` option; this will enable LUKS encryption for the entire "
-"volume. See the [citetitle]_{PRODUCT} Security Guide_, available at "
-"link:++http://docs.fedoraproject.org/++[], for information about LUKS disk "
-"encryption."
+"`Encrypt` option; this will enable LUKS encryption for the entire volume. "
+"See the [citetitle]_{PRODUCT} Security Guide_, available at link:++http://"
+"docs.fedoraproject.org/++[], for information about LUKS disk encryption."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:52
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:52
 msgid ""
 "Additionally, you can set a fixed size for the volume by selecting the "
 "`Fixed` option from the `Size policy` menu and entering a size for the "
@@ -166,27 +164,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
 msgid ""
 "After you finish configuring the Btrfs volume settings, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:56
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:56
 msgid ""
-"If you need to create more than one Btrfs volume, open the `Volume` "
-"drop-down menu and select the `Create a new volume group` option. A new "
-"dialog window will open, identical to the one described in the previous "
-"step. Again, select a name, storage devices, encryption settings, RAID level "
-"and size policy for the new volume, and click `Save`. The new volume will "
-"then become available in the `Volume Group` drop-down menu; you can then go "
+"If you need to create more than one Btrfs volume, open the `Volume` drop-"
+"down menu and select the `Create a new volume group` option. A new dialog "
+"window will open, identical to the one described in the previous step. "
+"Again, select a name, storage devices, encryption settings, RAID level and "
+"size policy for the new volume, and click `Save`. The new volume will then "
+"become available in the `Volume Group` drop-down menu; you can then go "
 "through your existing mount points and change this setting to assign them to "
 "a different volume."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:58
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:58
 msgid ""
 "Configure other settings specific to the subvolume - its `Mount Point`, "
 "`Desired Capacity`, `File System`, and `Name`. Press `Update Settings` to "
@@ -194,7 +192,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:60
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:60
 msgid ""
 "Repeat this procedure for any additional Btrfs subvolumes you want to "
 "create. Note that when creating additional subvolumes, a new volume is not "
@@ -203,7 +201,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:61
+#: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:61
 msgid ""
 "For each mount point you create, review its settings and make sure that it "
 "is assigned to the correct volume, that it has sufficient capacity, and that "
