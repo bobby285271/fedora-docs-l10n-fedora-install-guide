@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-23 02:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Block title
+#: ./pages/_partials/install/InitialSetupHub.adoc:5 ./pages/_partials/install/InitialSetupHub.adoc:17
+#, no-wrap
+msgid "Initial Setup"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:8
+msgid ""
+"The `Initial Setup` screen is shown after the installation finishes and the "
+"installed system boots for the first time, before the first login, assuming "
+"the following conditions have been met:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:10
+msgid ""
+"Your software selection contained a graphical environment (for example, you "
+"installed the system using a {PRODUCT} Workstation live image)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:12
+msgid ""
+"The graphical environment you have installed is *not* [application]*GNOME "
+"Desktop Environment* (it provides its own initial setup utility which is "
+"described in xref:After_Installation.adoc#sect-gnome-initial-setup[GNOME "
+"Initial Setup])."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:14
+msgid "The [package]*initial-setup* package has been installed."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:16
+msgid "You have not configured every screen available in the graphical installer."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/InitialSetupHub.adoc:19
+#, no-wrap
+msgid ""
+"The main Initial Setup screen. This example shows all options; not all of "
+"them may be shown"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/InitialSetupHub.adoc:19
+#, no-wrap
+msgid "anaconda/InitialSetupHub.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:22
+msgid ""
+"[application]*Initial Setup* allows you to configure several system "
+"settings. All of these can also be configured during the installation, but "
+"they are not required to finish it. Only the settings which have *not* been "
+"configured during the installation will be shown; for example, if you did "
+"not create a non-`root` user account during the installation, "
+"[application]*Initial Setup* will start after the first reboot, and you will "
+"be able to configure one. If you configured all available options during the "
+"instalaltion, [application]*Initial Setup* will not be displayed at all."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:24
+msgid ""
+"To configure any aspect of the system available in the utility, click any of "
+"the links available in the main window (for example, `Create User`). Each "
+"link leads to a separate screen with separate options; these screens are the "
+"same ones which were available during the graphical installation. If you "
+"need help, press `Help` in the top left corner to open a new window "
+"containing directions for that screen."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:26
+msgid ""
+"After you finish configuring any screen, press the `Done` button in the top "
+"left corner to return to the main [application]*Initial Setup* menu. After "
+"you finish configuring all settings, click `Finish Configuration` in the "
+"bottom right corner to save all configured settings. The configuration "
+"utility will close and you will be able to log in to the system."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/InitialSetupHub.adoc:31
+msgid ""
+"It is possible to configure [application]*Initial Setup* to display all "
+"available options, even if they have been already configured during the "
+"installation. To do so, you must use a Kickstart file at the start of the "
+"installation, and this file must contain the following command:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/_partials/install/InitialSetupHub.adoc:35
+#, no-wrap
+msgid "firstboot --enable --reconfig\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:38
+msgid ""
+"The [option]#--reconfig# option specifies that all options should be "
+"displayed. See "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
+"the Installation with Kickstart] for information about Kickstart "
+"installations."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:45
+msgid ""
+"Normally, it is not possible to return to [application]*Initial Setup* after "
+"you close it and log in to the system. You can make it display again (after "
+"the next reboot, before a login prompt is displayed), by executing the "
+"following command as `root`:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/_partials/install/InitialSetupHub.adoc:49
+#, no-wrap
+msgid "# systemctl enable initial-setup-graphical.service\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/InitialSetupHub.adoc:52
+msgid "Then, reboot your system."
+msgstr ""
