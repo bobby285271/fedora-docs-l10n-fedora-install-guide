@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-25 22:09+0000\n"
+"POT-Creation-Date: 2020-04-26 22:08+0000\n"
 "PO-Revision-Date: 2020-04-26 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -322,10 +322,9 @@ msgid ""
 "+[GetFedora.org]. The server automatically detects the running system and "
 "offers you the correct installation file for your Windows version."
 msgstr ""
-"Unduh berkas Penginstal Windows terbaru dari "
-"link:++https://getfedora.org++[GetFedora.org]. Server secara otomatis "
-"mendeteksi sistem yang berjalan dan menawarkan Anda berkas instalasi yang "
-"benar untuk versi Windows Anda."
+"Unduh berkas Penginstal Windows terbaru dari link:++https://getfedora.org+"
+"+[GetFedora.org]. Server secara otomatis mendeteksi sistem yang berjalan dan "
+"menawarkan Anda berkas instalasi yang benar untuk versi Windows Anda."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:91
@@ -607,8 +606,8 @@ msgid ""
 "or tools for specialized tasks at link:++https://spins.fedoraproject.org++[]."
 msgstr ""
 "Anda juga dapat memilih Fedora _Spin_ yang menampilkan desktop alternatif "
-"favorit atau alat untuk tugas khusus di "
-"link:++https://spins.fedoraproject.org++[]."
+"favorit atau alat untuk tugas khusus di link:++https://spins.fedoraproject."
+"org++[]."
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:162
@@ -695,10 +694,8 @@ msgid ""
 msgstr ""
 "Mode                LastWriteTime         Length  Name\n"
 "----                -------------         ------  ----\n"
-"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
-"CHECKSUM\n"
-"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-"
-"DVD-x86_64-21.iso\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:192
@@ -716,10 +713,8 @@ msgid ""
 msgstr ""
 "> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
 "> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
-"> $sha256 = New-Object -TypeName System.Security.Cryptography."
-"sha256CryptoServiceProvider\n"
-"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
-"$image) -split \" \")[0].ToLower()\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:201
@@ -730,9 +725,7 @@ msgstr "Hitung checksum image yang diunduh. Ini akan memakan waktu lama!"
 #: pages/install/Preparing_for_Installation.adoc:204
 #, no-wrap
 msgid "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
-msgstr ""
-"> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([S"
-"ystem.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
+msgstr "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:207
@@ -805,9 +798,7 @@ msgstr "Untuk OSX:"
 #: pages/install/Preparing_for_Installation.adoc:245
 #, no-wrap
 msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
-msgstr ""
-"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
-"shasum -a 256 -c\n"
+msgstr "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:247
@@ -892,16 +883,14 @@ msgid ""
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
 "$ [command]#dmesg|tail#\n"
-"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
-"SerialNumber=2\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, SerialNumber=2\n"
 "[288954.686559] usb 2-1.8: Product: USB Storage\n"
 "[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
 "[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
 "[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
 "[288954.712809] usbcore: registered new interface driver usb-storage\n"
 "[288954.716682] usbcore: registered new interface driver uas\n"
-"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
-"9228 PQ: 0 ANSI: 0\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   9228 PQ: 0 ANSI: 0\n"
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
