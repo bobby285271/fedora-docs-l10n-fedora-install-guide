@@ -5,12 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-15 02:04+0000\n"
+"POT-Creation-Date: 2020-04-27 22:05+0000\n"
 "PO-Revision-Date: 2020-04-27 22:35+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f32pagesappendixesunderstanding_lvm/fr/>"
-"\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/f32pagesappendixesunderstanding_lvm/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,13 +18,13 @@ msgstr ""
 "X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
-#: ./pages/appendixes/Understanding_LVM.adoc:5
+#: pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
 msgstr "Comprendre LVM"
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:8
+#: pages/appendixes/Understanding_LVM.adoc:8
 msgid ""
 "LVM (Logical Volume Management) partitions provide a number of advantages "
 "over standard partitions. LVM partitions are formatted as _physical "
@@ -34,8 +33,8 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
-"Les partitions LVM (Logical Volume Management) offrent un certain nombre d’"
-"avantages par rapport aux partitions standards. Les partitions LVM sont "
+"Les partitions LVM (Logical Volume Management) offrent un certain nombre "
+"d’avantages par rapport aux partitions standards. Les partitions LVM sont "
 "formatées en tant que _volumes physiques_. Un ou plusieurs volumes physiques "
 "sont combinés pour former un groupe de _volumes_. Le stockage total de "
 "chaque groupe de volumes est ensuite divisé en un ou plusieurs _volumes "
@@ -44,7 +43,7 @@ msgstr ""
 "point de montage."
 
 #. type: delimited block =
-#: ./pages/appendixes/Understanding_LVM.adoc:13
+#: pages/appendixes/Understanding_LVM.adoc:13
 msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
@@ -53,13 +52,13 @@ msgstr ""
 "une partition de disque standard, non LVM, pour votre partition `/boot`."
 
 #. type: delimited block =
-#: ./pages/appendixes/Understanding_LVM.adoc:15
+#: pages/appendixes/Understanding_LVM.adoc:15
 msgid ""
 "By default, the installation process always creates the `/` and `swap` "
 "partitions within LVM volumes, with a separate `/boot` on a standard "
-"partition. See "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme] for details."
+"partition. See xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-recommended[Recommended Partitioning Scheme] for "
+"details."
 msgstr ""
 "Par défaut, le processus d’installation crée toujours les partitions `/` et "
 "`swap` dans des volumes LVM, avec un `/boot` séparé sur une partition "
@@ -68,14 +67,14 @@ msgstr ""
 "pour plus de détails."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:19
+#: pages/appendixes/Understanding_LVM.adoc:19
 msgid ""
-"To understand LVM better, imagine the physical volume as a pile of "
-"_blocks_. A block is a storage unit used to store data. Several piles of "
-"blocks can be combined to make a much larger pile, just as physical volumes "
-"are combined to make a volume group. The resulting pile can be subdivided "
-"into several smaller piles of arbitrary size, just as a volume group is "
-"allocated to several logical volumes."
+"To understand LVM better, imagine the physical volume as a pile of _blocks_. "
+"A block is a storage unit used to store data. Several piles of blocks can be "
+"combined to make a much larger pile, just as physical volumes are combined "
+"to make a volume group. The resulting pile can be subdivided into several "
+"smaller piles of arbitrary size, just as a volume group is allocated to "
+"several logical volumes."
 msgstr ""
 "Pour mieux comprendre LVM, imaginez le volume physique comme une pile de "
 "_blocs_. Un bloc est une unité de stockage utilisée pour stocker des "
@@ -86,7 +85,7 @@ msgstr ""
 "un groupe de volumes est attribué à plusieurs volumes logiques."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:21
+#: pages/appendixes/Understanding_LVM.adoc:21
 msgid ""
 "An administrator may grow or shrink logical volumes without destroying data, "
 "unlike standard disk partitions. If the physical volumes in a volume group "
@@ -100,7 +99,7 @@ msgstr ""
 "un volume logique sur les périphériques de stockage."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:22
+#: pages/appendixes/Understanding_LVM.adoc:22
 msgid ""
 "You may lose data if you shrink a logical volume to a smaller capacity than "
 "the data on the volume requires. To ensure maximum flexibility, create "
