@@ -1,26 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-15 02:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-04-27 22:35+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pagesappendixesunderstanding_lvm/fr/>"
+"\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "Comprendre LVM"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -32,6 +34,14 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"Les partitions LVM (Logical Volume Management) offrent un certain nombre d’"
+"avantages par rapport aux partitions standards. Les partitions LVM sont "
+"formatées en tant que _volumes physiques_. Un ou plusieurs volumes physiques "
+"sont combinés pour former un groupe de _volumes_. Le stockage total de "
+"chaque groupe de volumes est ensuite divisé en un ou plusieurs _volumes "
+"logiques_. Les volumes logiques fonctionnent à peu près comme des partitions "
+"standards. Ils ont un type de système de fichiers, tel que `ext4`, et un "
+"point de montage."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -39,6 +49,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"Le chargeur d’amorçage ne peut pas lire les volumes LVM. Vous devez créer "
+"une partition de disque standard, non LVM, pour votre partition `/boot`."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -49,6 +61,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"Par défaut, le processus d’installation crée toujours les partitions `/` et "
+"`swap` dans des volumes LVM, avec un `/boot` séparé sur une partition "
+"standard. Voir xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-recommended[Schéma de partitionnement recommandé] "
+"pour plus de détails."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -60,6 +77,13 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"Pour mieux comprendre LVM, imaginez le volume physique comme une pile de "
+"_blocs_. Un bloc est une unité de stockage utilisée pour stocker des "
+"données. Plusieurs piles de blocs peuvent être combinées pour former une "
+"pile beaucoup plus importante, tout comme les volumes physiques sont "
+"combinés pour former un groupe de volumes. La pile résultante peut être "
+"subdivisée en plusieurs piles plus petites de taille arbitraire, tout comme "
+"un groupe de volumes est attribué à plusieurs volumes logiques."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -69,6 +93,11 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"Un administrateur peut augmenter ou réduire les volumes logiques sans "
+"détruire les données, contrairement aux partitions de disque standard. Si "
+"les volumes physiques d’un groupe de volumes se trouvent sur des disques "
+"séparés ou des matrices RAID, les administrateurs peuvent également répartir "
+"un volume logique sur les périphériques de stockage."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -79,3 +108,9 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"Vous risquez de perdre des données si vous réduisez un volume logique à une "
+"capacité inférieure à celle que nécessitent les données sur le volume. Pour "
+"garantir une flexibilité maximale, créez des volumes logiques pour répondre "
+"à vos besoins actuels et laissez la capacité de stockage excédentaire non "
+"allouée. Vous pouvez en toute sécurité augmenter les volumes logiques pour "
+"utiliser l’espace non alloué, selon vos besoins."

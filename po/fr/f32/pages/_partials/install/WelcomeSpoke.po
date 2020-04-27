@@ -1,26 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-15 02:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-04-27 22:35+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallwelcomespoke/fr/"
+">\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title ===
 #: ./pages/_partials/install/WelcomeSpoke.adoc:5
 #, no-wrap
 msgid "Welcome Screen and Language Selection"
-msgstr ""
+msgstr "Écran de bienvenue et de sélection de la langue"
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:8
@@ -28,24 +30,28 @@ msgid ""
 "The first screen displayed immediately after the graphical installer starts "
 "is the Welcome screen."
 msgstr ""
+"Le premier écran affiché immédiatement après le démarrage de l’installateur "
+"graphique est l’écran de bienvenue."
 
 #. type: Block title
 #: ./pages/_partials/install/WelcomeSpoke.adoc:9
 #, no-wrap
 msgid "Welcome Screen"
-msgstr ""
+msgstr "Écran de bienvenue"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/WelcomeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Welcome screen showing language selection options."
 msgstr ""
+"Capture d’écran de l’écran de bienvenue montrant les options de sélection de "
+"langue."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/WelcomeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/WelcomeSpoke.png"
-msgstr ""
+msgstr "anaconda/WelcomeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:14
@@ -55,6 +61,10 @@ msgid ""
 "input field in the bottom left corner to search for your language instead of "
 "looking for it in the full list of more than 70 languages."
 msgstr ""
+"Tout d’abord, sélectionnez votre langue préférée dans la colonne de gauche, "
+"puis sélectionnez votre région dans la colonne de droite. Vous pouvez "
+"utiliser le champ de saisie de texte en bas à gauche pour rechercher votre "
+"langue au lieu de la chercher dans la liste comportant plus de 70 langues."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:16
@@ -65,6 +75,12 @@ msgid ""
 "on this screen, you will not be able to go back and change the language used "
 "inside the installer itself."
 msgstr ""
+"La langue que vous sélectionnez sur cet écran sera utilisée lors de l’"
+"installation, et sera également utilisée par défaut sur le système installé. "
+"Vous pouvez changer la langue du système installé plus tard, mais une fois "
+"que vous aurez cliqué sur `Continuer` sur cet écran, vous ne pourrez plus "
+"revenir en arrière pour changer la langue utilisée à l’intérieur de l’"
+"installateur lui-même."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:18
@@ -77,6 +93,14 @@ msgid ""
 "boot command line or in your PXE server configuration, this language will be "
 "selected by default, but you will still be able to change it."
 msgstr ""
+"Une langue est présélectionnée par défaut en haut de la liste. Si l’accès au "
+"réseau est configuré à ce stade (par exemple, si vous avez démarré à partir "
+"d’un serveur réseau au lieu d’un média local), la langue présélectionnée "
+"sera déterminée en fonction de la détection automatique de la localisation à "
+"l’aide du module GeoIP. Sinon, si vous avez utilisé l’option "
+"[option]#inst.lang=# à la ligne de commande de démarrage ou dans la "
+"configuration de votre serveur PXE, cette langue sera sélectionnée par "
+"défaut, mais vous pouvez toujours la modifier."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:20
@@ -86,6 +110,10 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Après avoir sélectionné votre langue et votre région, cliquez sur `Continuer`"
+" pour confirmer votre sélection et passez à "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Résumé de l’installation]."
 
 #. type: delimited block =
 #: ./pages/_partials/install/WelcomeSpoke.adoc:25
@@ -96,3 +124,8 @@ msgid ""
 "installation, or `Get me out of here` to quit the installation and reboot "
 "your system."
 msgstr ""
+"Si vous installez une préversion de {PRODUCT}, un message sera affiché après "
+"que vous aurez cliqué sur `Continuer` pour vous avertir du statut de "
+"préversion de votre support d’installation. Cliquez sur `J’accepte mon "
+"destin` pour continuer l’installation, ou sur `Sortez-moi de là` pour "
+"quitter l’installation et redémarrer votre système."

@@ -1,26 +1,27 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-15 02:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-04-27 22:35+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstalluserspoke/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/UserSpoke.adoc:5 ./pages/_partials/install/UserSpoke.adoc:16
 #, no-wrap
 msgid "Create User"
-msgstr ""
+msgstr "Créer un utilisateur"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:8
@@ -33,6 +34,14 @@ msgid ""
 "utility for managing user accounts (for example, the `Users` screen in the "
 "Settings menu in [application]*GNOME*)."
 msgstr ""
+"L’écran `Créer un utilisateur` peut être utilisé pour créer et configurer un "
+"compte utilisateur normal (non `root`) pendant l’installation. Un seul "
+"compte d’utilisateur peut être configuré ici ; si vous avez besoin de "
+"plusieurs comptes, attendez que l’installation soit terminée, redémarrez "
+"votre système et créez ensuite d’autres comptes en utilisant soit la "
+"commande [command]#useradd# dans un terminal, soit un utilitaire graphique "
+"pour gérer les comptes d’utilisateurs (par exemple, l’écran `Utilisateurs` "
+"dans le menu Paramètres de [application]*GNOME*)."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:13
@@ -41,6 +50,10 @@ msgid ""
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
 msgstr ""
+"Il n’est pas nécessaire de créer un compte d’utilisateur normal pour "
+"terminer l’installation ; cependant, cela est fortement recommandé. Si vous "
+"n’en créez pas, vous devrez vous connecter directement au système en tant "
+"que `root`, ce qui est *non* recommandé."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/UserSpoke.adoc:18
@@ -49,12 +62,14 @@ msgid ""
 "The Create screen. Use the text input fields to create a user account and "
 "configure its settings."
 msgstr ""
+"L’écran Créer. Utilisez les champs de saisie de texte pour créer un compte "
+"utilisateur et configurer ses paramètres."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/UserSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
-msgstr ""
+msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:21
@@ -64,6 +79,11 @@ msgid ""
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
+"Pour configurer un compte utilisateur, remplissez le `Nom complet` (par "
+"exemple, `Jean Dupont`) et le `Nom d’utilisateur` (par exemple, `jdupont`). "
+"Le `nom d’utilisateur` sera utilisé pour se connecter à partir d’une ligne "
+"de commande ; si vous installez un environnement graphique, alors votre "
+"gestionnaire de connexion graphique utilisera le `nom complet`."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:23
@@ -75,6 +95,13 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
+"Veuillez vous assurez que la case `Demander un mot de passe pour utiliser ce "
+"compte` est cochée, entrez le mot de passe que vous souhaitez utiliser pour "
+"ce compte dans le champ `Mot de passe`. Les caractères que vous entrez "
+"seront affichés sous forme de points pour des raisons de sécurité. Ensuite, "
+"répétez le même mot de passe dans le champ `Confirmer le mot de passe` en "
+"dessous pour vous assurer que vous l’avez entré correctement. Les deux mots "
+"de passe saisis doivent être identiques."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:25
@@ -84,6 +111,11 @@ msgid ""
 "weak, a message will appear at the bottom of the screen, explaining which "
 "aspect of your chosen password is considered insuficient. For example:"
 msgstr ""
+"Au fur et à mesure que vous entrez le mot de passe, il sera évalué et l’"
+"installateur déterminera la force du mot de passe. Si l’installateur "
+"considère que votre mot de passe est faible, un message apparaitra en bas de "
+"l’écran, expliquant quel aspect du mot de passe choisi est considéré comme "
+"insuffisant. Par exemple :"
 
 #. type: delimited block -
 #: ./pages/_partials/install/UserSpoke.adoc:29
@@ -92,6 +124,8 @@ msgid ""
 "`The password you have provided is weak:` `The password is shorter than 5 "
 "characters.`\n"
 msgstr ""
+"`Le mot de passe que vous avez fourni est faible :` `Le mot de passe fait "
+"moins de 5 caractères.`\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:32
@@ -99,6 +133,8 @@ msgid ""
 "If a message similar to the above appears, it is highly recommended to "
 "choose a different, stronger password."
 msgstr ""
+"Si un message similaire à celui ci-dessus apparait, il est fortement "
+"recommandé de choisir un mot de passe différent et plus fort."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:34
@@ -109,6 +145,13 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
+"La case à cocher `Faire de cet utilisateur un administrateur` donne à l’"
+"utilisateur que vous créez des droits d’administration (en ajoutant cet "
+"utilisateur dans le groupe `wheel`), permettant à cet utilisateur d’utiliser "
+"la commande [command]#sudo# pour effectuer des tâches normalement réservées "
+"à `root` en utilisant uniquement le mot de passe de l’utilisateur, au lieu "
+"du mot de passe `root`. Cela peut être plus pratique, mais peut aussi poser "
+"un risque de sécurité."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:39
@@ -117,6 +160,10 @@ msgid ""
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
 msgstr ""
+"Si vous donnez des privilèges d’administrateur à un utilisateur, assurez-"
+"vous que le compte est protégé par un mot de passe fort. Ne donnez jamais à "
+"un utilisateur des privilèges d’administrateur sans exiger un mot de passe "
+"pour le compte."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:41
@@ -125,6 +172,10 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
+"Voir le [citetitle]_Guide de sécurité de {PRODUCT}_, disponible sur le lien "
+"suivant : ++https://docs.fedoraproject.org/++[], pour des informations "
+"détaillées sur la sécurité des mots de passe, ainsi que des directives pour "
+"la sélection de mots de passe forts."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:45
@@ -133,12 +184,16 @@ msgid ""
 "fields. A new dialog window titled `Advanced User Configuration` will "
 "open. This dialog is described in the following section."
 msgstr ""
+"Pour configurer des paramètres supplémentaires, cliquez sur le bouton "
+"`Avancé` situé sous les champs de saisie du mot de passe. Une nouvelle "
+"fenêtre de dialogue intitulée `Configuration avancée de l’utilisateur` s’"
+"ouvrira. Cette fenêtre est décrite dans la section suivante."
 
 #. type: Block title
 #: ./pages/_partials/install/UserSpoke.adoc:47 ./pages/_partials/install/UserSpoke.adoc:51
 #, no-wrap
 msgid "Advanced User Configuration"
-msgstr ""
+msgstr "Configuration avancée de l’utilisateur"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:50
@@ -146,18 +201,20 @@ msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr ""
+"La boite de dialogue `Configuration avancée de l’utilisateur` vous permet de "
+"modifier les paramètres suivants pour le nouveau compte utilisateur."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "Advanced settings for the new user account."
-msgstr ""
+msgstr "Paramètres avancés pour le nouveau compte utilisateur."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
-msgstr ""
+msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:56
@@ -166,6 +223,8 @@ msgid ""
 "(`/home/pass:attributes[{blank}]_username_pass:attributes[{blank}]` by "
 "default)."
 msgstr ""
+"Le dossier `Home` de l'utilisateur (`/home/"
+"pass:attributes[{blank}]_username_pass:attributes[{blank}]` par défaut)."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:58
@@ -173,6 +232,9 @@ msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they can not be assigned to an user."
 msgstr ""
+"L’ID de l’utilisateur (UID). La valeur par défaut est 1000. Les UID de 0 à "
+"999 sont réservés par le système et ne peuvent donc pas être attribués à un "
+"utilisateur."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:60
@@ -181,6 +243,10 @@ msgid ""
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
 "are reserved by the system so they can not be assigned to an user's group."
 msgstr ""
+"L’ID de groupe (GID) du groupe par défaut de l’utilisateur. Le nom du groupe "
+"par défaut sera le même que le nom de l’utilisateur, et son GID par défaut "
+"est 1000. Les GID de 0 à 999 sont réservés par le système et ne peuvent donc "
+"pas être attribués à un groupe d’utilisateurs."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:61
@@ -193,3 +259,12 @@ msgid ""
 "them in parentheses. If you do not specify a custom GID for a new group, it "
 "will be assigned automatically."
 msgstr ""
+"L’appartenance à un groupe de l’utilisateur. Le compte utilisateur que vous "
+"créez aura toujours une appartenance de groupe par défaut (le groupe par "
+"défaut de l’utilisateur avec un ID défini dans le champ `Spécifier un ID de "
+"groupe manuellement`). Dans le champ `Membres des groupes`, vous pouvez "
+"spécifier des groupes supplémentaires sous la forme d’une liste séparée par "
+"des virgules. Les groupes qui n’existent pas encore seront créés ; vous "
+"pouvez spécifier des GID personnalisés pour eux entre parenthèses. Si vous "
+"ne spécifiez pas de GID personnalisé pour un nouveau groupe, celui-ci sera "
+"attribué automatiquement."

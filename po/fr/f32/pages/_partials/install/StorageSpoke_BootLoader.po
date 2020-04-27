@@ -1,26 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-15 02:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-04-27 22:35+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f32pages_partialsinstallstoragespoke_bootloader/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:5
 #, no-wrap
 msgid "Boot Loader Installation"
-msgstr ""
+msgstr "Installation du chargeur d’amorçage"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:8
@@ -32,11 +34,21 @@ msgid ""
 "system (including Microsoft Windows) and can also use chain loading to "
 "transfer control to other boot loaders for unsupported operating systems."
 msgstr ""
+"{PRODUCT} utilise [application]*GRUB2* (GRand Unified Bootloader version 2) "
+"comme chargeur d’amorçage. Le chargeur d’amorçage est le premier programme "
+"qui s’exécute au démarrage de l’ordinateur et qui est responsable du "
+"chargement et du transfert du contrôle vers un système d’exploitation. "
+"[application]*GRUB2* peut démarrer tout système d’exploitation compatible (y "
+"compris Microsoft Windows) et peut également utiliser le chargement en "
+"chaine pour transférer le contrôle à d’autres chargeurs d’amorçage pour les "
+"systèmes d’exploitation non pris en charge."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:13
 msgid "Installing [application]*GRUB2* may overwrite your existing boot loader."
 msgstr ""
+"L’installation de [application]*GRUB2* peut écraser votre chargeur d’"
+"amorçage existant."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:17
@@ -49,6 +61,14 @@ msgid ""
 "[citetitle]_{PRODUCT} System{nbsp}Administrator's{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]"
 msgstr ""
+"Si vous avez d’autres systèmes d’exploitation déjà installés, le programme d’"
+"installation de {PRODUCT} tentera de détecter et de configurer "
+"automatiquement le chargeur d’amorçage pour les démarrer. Vous pouvez "
+"configurer manuellement tout système d’exploitation supplémentaire après "
+"avoir terminé l’installation, s’il n’est pas détecté correctement. Pour des "
+"instructions sur l’édition de la configuration de [application]*GRUB2*, voir "
+"le [citetitle]_Guide de l’administrateur système de {PRODUCT}_, disponible "
+"sur link:++https://docs.fedoraproject.org/++[]"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:19
@@ -61,24 +81,32 @@ msgid ""
 "`EFI system partition` will be created on that device during guided "
 "partitioning."
 msgstr ""
+"Si vous installez le système Fedora avec plus d’un disque, vous pouvez "
+"spécifier manuellement l’endroit où le chargeur d’amorçage doit être "
+"installé. Cliquez sur le lien `Résumé complet du disque et chargeur "
+"d’amorçage` en bas de l’écran `Destination de l’installation`. La boite de "
+"dialogue `Disques sélectionnés` apparaitra. Le chargeur d’amorçage sera "
+"installé sur le périphérique de votre choix, ou sur un système UEFI, la `"
+"partition EFI système` sera créée sur ce périphérique lors du "
+"partitionnement guidé."
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:20
 #, no-wrap
 msgid "Boot Device Selection"
-msgstr ""
+msgstr "Sélection du périphérique d’amorçage"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "The Selected Disks dialog"
-msgstr ""
+msgstr "La boite de dialogue Disques sélectionnés"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "anaconda/StorageSpoke_BootLoader.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_BootLoader.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:25
@@ -88,6 +116,12 @@ msgid ""
 "list and click the `Set as Boot Device` button to install the boot loader "
 "there instead. Only one device can be set as the boot device."
 msgstr ""
+"Dans la colonne `Amorçage`, une icône `coche` marque l’un des périphériques "
+"comme étant le périphérique de démarrage prévu. Pour changer de périphérique "
+"d’amorçage, sélectionnez un périphérique dans la liste et cliquez sur le "
+"bouton `Définir comme périphérique d’amorçage` pour y installer le chargeur "
+"d’amorçage à la place. Un seul périphérique peut être défini comme "
+"périphérique d’amorçage."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:27
@@ -97,6 +131,10 @@ msgid ""
 "remove the tick and ensure [application]*GRUB2* is not installed on any "
 "device."
 msgstr ""
+"Pour refuser l’installation d’un nouveau chargeur d’amorçage, sélectionnez "
+"le périphérique actuellement marqué pour l’amorçage et cliquez sur le bouton "
+"`Ne pas installer le chargeur d’amorçage`. Ceci enlèvera la coche et "
+"assurera que [application]*GRUB2* ne soit installé sur aucun périphérique."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:32
@@ -106,6 +144,11 @@ msgid ""
 "as a stand-alone commercial boot loader application. Use this option only if "
 "you are sure you have another way to boot your system."
 msgstr ""
+"Si vous choisissez de ne pas installer de chargeur d’amorçage pour une "
+"raison quelconque, vous ne pourrez pas démarrer le système directement et "
+"vous devrez utiliser une autre méthode d’amorçage, telle qu’un chargeur d’"
+"amorçage commercial autonome. N’utilisez cette option que si vous êtes sûr "
+"de disposer d’une autre méthode pour amorcer votre système."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:35
@@ -119,3 +162,11 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Le chargeur d’amorçage peut également nécessiter la création d’une partition "
+"spéciale, selon que votre système utilise un BIOS ou un micrologiciel UEFI "
+"et selon que le disque d’amorçage possède une étiquette _Table de partition "
+"GUID_ (GPT) ou `Master Boot Record` (MBR, également connu sous le nom de "
+"msdos). Si vous utilisez le partitionnement automatique, l’installateur "
+"créera cette partition si nécessaire. Pour plus de détails, référez-vous à "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Schéma de partitionnement recommandé]."
