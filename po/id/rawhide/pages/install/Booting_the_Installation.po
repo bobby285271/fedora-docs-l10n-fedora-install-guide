@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-28 22:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-04-29 22:35+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"rawhidepagesinstallbooting_the_installation/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/install/Booting_the_Installation.adoc:6
 #, no-wrap
 msgid "Booting the Installation"
-msgstr ""
+msgstr "Mem-boot Instalasi"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:9
@@ -27,12 +32,15 @@ msgid ""
 "network server as well as how to navigate the boot menu and use custom "
 "options."
 msgstr ""
+"Bab ini akan menjelaskan bagaimana untuk mem-boot installer dari media lokal "
+"atau server jaringan serta bagaimana untuk menavigasi menu boot dan "
+"menggunakan pilihan ubahan."
 
 #. type: Title ==
 #: pages/install/Booting_the_Installation.adoc:11
 #, no-wrap
 msgid "Preparing to Boot"
-msgstr ""
+msgstr "Bersiap untuk Boot"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:14
@@ -44,6 +52,13 @@ msgid ""
 "steps will vary somewhat depending on your system - particularly on your "
 "motherboard manufacturer."
 msgstr ""
+"Setelah Anda membuat flash drive USB yang dapat di-boot atau CD atau DVD "
+"menggunakan langkah yang dijelaskan dalam xref:install/"
+"Preparing_for_Installation.adoc#sect-preparing-boot-media[Mempersiapkan "
+"Media Boot], Anda siap untuk mem-boot instalasi. Perhatikan bahwa langkah "
+"yang dijelaskan di bawah ini adalah generik dan langkah yang tepat akan agak "
+"bervariasi tergantung pada sistem Anda - terutama pada produsen motherboard "
+"Anda."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:19
@@ -55,6 +70,13 @@ msgid ""
 "on an UEFI system in UEFI mode, and then switch it to BIOS compatibility "
 "mode, {PRODUCT} will no longer boot and will require a reinstallation."
 msgstr ""
+"Tidak ada media terpisah yang disediakan untuk sistem BIOS dan UEFI; mereka "
+"semua dapat di-boot dari image ISO yang sama. Namun, setelah Anda menginstal "
+"{PRODUCT}, Anda tidak dapat beralih antara UEFI dan BIOS. Sistem harus "
+"dijalankan pada firmware yang sama dengan tempatnya diinstal; jika Anda, "
+"misalnya, melakukan instalasi pada sistem UEFI dalam mode UEFI, dan kemudian "
+"beralih ke mode kompatibilitas BIOS, {PRODUCT} tidak akan boot lagi dan akan "
+"memerlukan penginstalan ulang."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:26
@@ -62,6 +84,8 @@ msgid ""
 "{PRODUCT} does not support UEFI booting for 32-bit x86 systems. Only BIOS "
 "boot is supported on these systems."
 msgstr ""
+"{PRODUCT} tidak mendukung boot UEFI untuk sistem x86 32-bit. Hanya boot BIOS "
+"yang didukung pada sistem ini."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:28
@@ -72,17 +96,23 @@ msgid ""
 "specifications will not be available. The UEFI specifications are available "
 "from link:++https://www.uefi.org/specs/agreement/++[]."
 msgstr ""
+"Perhatikan juga bahwa {PRODUCT} hanya mendukung sepenuhnya versi 2.2 dari "
+"spesifikasi UEFI. Perangkat keras yang mendukung versi 2.3 atau yang lebih "
+"baru akan boot dan bekerja secara normal, tetapi fungsi tambahan yang "
+"ditentukan oleh spesifikasi yang lebih baru ini tidak akan tersedia. "
+"Spesifikasi UEFI tersedia dari link:++https://www.uefi.org/specs/agreement/"
+"++[]."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:32
 msgid "To boot the {PRODUCT} installer, follow these steps:"
-msgstr ""
+msgstr "Untuk mem-boot installer {PRODUCT}, ikuti langkah-langkah berikut:"
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:33
 #, no-wrap
 msgid "Booting the {PRODUCT} Installer"
-msgstr ""
+msgstr "Mem-boot Installer {PRODUCT}"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:35
@@ -91,6 +121,9 @@ msgid ""
 "computer's optical disc drive. Alternatively, if you plan on booting from a "
 "network boot (PXE) server, make sure that the network cable is plugged in."
 msgstr ""
+"Tancapkan drive USB boot, atau masukkan CD atau DVD boot ke drive disk optik "
+"komputer Anda. Selain itu, jika Anda berencana untuk boot dari server boot "
+"jaringan (PXE), pastikan bahwa kabel jaringan dicolokkan."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:37
@@ -98,12 +131,14 @@ msgid ""
 "Restart the system. Once it starts rebooting, it should display a prompt "
 "similar to the following (usually at the bottom of the screen):"
 msgstr ""
+"Mulai ulang sistem. Setelah memulai reboot, itu harus menampilkan prompt "
+"mirip dengan berikut (biasanya di bagian bawah layar):"
 
 #. type: delimited block -
 #: pages/install/Booting_the_Installation.adoc:41
 #, no-wrap
 msgid "Press F12 to select boot device, or Del to enter SETUP\n"
-msgstr ""
+msgstr "Tekan F12 untuk memilih perangkat boot, atau Del untuk masuk ke SETUP\n"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:44
@@ -115,6 +150,13 @@ msgid ""
 "there is usually a very short time window provided to access the menu; once "
 "it passes, you need to restart the system and try again."
 msgstr ""
+"Ikuti petunjuk di layar untuk mengakses menu boot. Jika tidak ada instruksi "
+"yang ditampilkan (beberapa sistem hanya menampilkan logo grafis selama tahap "
+"awal boot), coba tekan kbd:[F12], kbd:[F11], kbd:[F10], atau kbd:[Del] "
+"beberapa kali; ini adalah tombol yang paling umum digunakan. Perhatikan "
+"bahwa biasanya ada selang waktu yang sangat singkat yang disediakan untuk "
+"mengakses menu; setelah itu berlalu, Anda perlu me-restart sistem dan "
+"mencoba lagi."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:49
@@ -124,6 +166,10 @@ msgid ""
 "order so that your boot media (CD, DVD, USB or network) has higher priority "
 "than internal hard drives."
 msgstr ""
+"Beberapa sistem yang lebih tua mungkin tidak mendukung pemilihan perangkat "
+"boot saat startup. Dalam hal ini, masuklah ke sistem SETUP (BIOS), dan ubah "
+"urutan boot default sehingga media boot (CD, DVD, USB, atau jaringan) "
+"memiliki prioritas yang lebih tinggi daripada hard drive internal."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:51
@@ -131,6 +177,8 @@ msgid ""
 "On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
 "selection menu."
 msgstr ""
+"Pada perangkat keras Mac, tahan tombol kbd:[Option] untuk masuk ke menu "
+"pemilihan media boot."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:55
@@ -140,6 +188,10 @@ msgid ""
 "optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
 "from a network location."
 msgstr ""
+"Ketika menu boot sistem Anda terbuka, pilih entri seperti `Boot dari USB` "
+"jika Anda membuat USB drive yang dapat di-boot, `Boot dari CD/DVD` jika Anda "
+"menggunakan disk optik untuk menginstal {PRODUCT}, atau `Boot dari PXE` jika "
+"Anda ingin boot dari lokasi jaringan."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:57
@@ -147,12 +199,14 @@ msgid ""
 "Wait until the boot menu is displayed. The boot menu is described further in "
 "this chapter."
 msgstr ""
+"Tunggu sampai menu boot ditampilkan. Menu boot dijelaskan lebih lanjut dalam "
+"bab ini."
 
 #. type: Title ==
 #: pages/install/Booting_the_Installation.adoc:59
 #, no-wrap
 msgid "The Boot Menu"
-msgstr ""
+msgstr "Menu Boot"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:62
@@ -162,6 +216,10 @@ msgid ""
 "this menu, you can either start the actual installation, or you can use the "
 "boot media to rescue an existing system."
 msgstr ""
+"Dalam kebanyakan kasus, ketika Anda mem-boot installer {PRODUCT} dari media "
+"boot yang Anda siapkan atau server, menu boot akan menjadi hal pertama yang "
+"muncul. Dari menu ini, Anda dapat memulai instalasi aktual, atau Anda dapat "
+"menggunakan media boot untuk menyelamatkan sistem yang sudah ada."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:64
@@ -171,6 +229,11 @@ msgid ""
 "loader, and UEFI systems use [application]*GRUB2*. However, both of the "
 "menus described below function very similarly from a user's point of view."
 msgstr ""
+"Cara menu boot akan terlihat dan berfungsi akan bervariasi tergantung pada "
+"firmware sistem Anda - sistem BIOS menggunakan boot loader "
+"[application]*SYSLINUX*, dan sistem UEFI menggunakan [application]*GRUB2*. "
+"Namun, kedua menu yang dijelaskan di bawah ini berfungsi sangat mirip dari "
+"sudut pandang pengguna."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:66
@@ -181,6 +244,11 @@ msgid ""
 "second one will verify the integrity of the boot media before starting the "
 "installation."
 msgstr ""
+"Gunakan tombol panah untuk memilih entri dalam menu, dan kbd:[Enter] untuk "
+"mengkonfirmasi pilihan Anda. Dua entri pertama dalam daftar akan melanjutkan "
+"dengan instalasi; yang pertama akan memulai installer secara langsung, dan "
+"yang kedua akan memverifikasi integritas media boot sebelum memulai "
+"instalasi."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:68
@@ -195,6 +263,15 @@ msgid ""
 "menu and boot normally from your system's hard drive via the `Boot from "
 "local drive` option."
 msgstr ""
+"Entri terakhir dalam daftar adalah `Troubleshooting`pass:attributes[{blank}];"
+" ini adalah sub menu. Memilih entri ini dan menekan kbd:[Enter] akan "
+"menampilkan serangkaian pilihan baru, dimana Anda dapat memilih untuk "
+"menginstal dalam mode grafis dasar (berguna jika Anda ingin melakukan "
+"instalasi grafis manual tetapi sistem Anda memiliki masalah dengan installer "
+"grafis default), menyelamatkan sistem yang ada, atau menguji modul memori "
+"sistem Anda untuk kesalahan (pada sistem BIOS saja). Menu pemecahan masalah "
+"juga memungkinkan Anda untuk keluar dari menu boot dan boot normal dari hard "
+"drive sistem Anda melalui opsi `Boot dari drive lokal`."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:70
@@ -205,6 +282,11 @@ msgid ""
 "systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
 "bottom of the screen."
 msgstr ""
+"Setiap entri menu dalam daftar adalah suatu set standar opsi booting, dan "
+"opsi ini dapat disesuaikan untuk mengubah beberapa aspek perilaku "
+"penginstal. Untuk menyunting set default opsi boot, tekan kbd:[Tab] pada "
+"sistem BIOS, atau kbd:[e] pada sistem UEFI. Tombol yang digunakan juga "
+"ditampilkan di bagian bawah layar."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:75
@@ -214,6 +296,10 @@ msgid ""
 "configured on the line which starts with the `linux` (or `linux16` or "
 "`linuxefi`) keyword. Do not modify any other lines in the configuration."
 msgstr ""
+"Menyunting opsi boot di [application]*GRUB2* (pada sistem UEFI) akan "
+"menampilkan seluruh konfigurasi untuk entri yang dipilih. Opsi boot aktual "
+"dikonfigurasi pada baris yang diawali dengan kata kunci `linux` (atau "
+"`linux16` atau `linuxefi`). Jangan mengubah baris lain dalam konfigurasi."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:77
@@ -221,6 +307,8 @@ msgid ""
 "On systems with BIOS firmware, only the actual boot options are displayed "
 "when you press kbd:[Tab]."
 msgstr ""
+"Pada sistem dengan firmware BIOS, hanya opsi boot aktual yang ditampilkan "
+"saat Anda menekan kbd:[Tab]."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:81
@@ -230,24 +318,28 @@ msgid ""
 "or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
 "options."
 msgstr ""
+"Ketika menyunting set default pilihan, Anda dapat mengubah yang sudah ada "
+"serta menambahkan yang lain. Setelah Anda selesai, tekan kbd:[Enter] pada "
+"BIOS atau kbd:[Ctrl + X] pada UEFI untuk mem-boot installer menggunakan opsi "
+"ubahan Anda."
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:82
 #, no-wrap
 msgid "Editing boot options on a system with BIOS firmware"
-msgstr ""
+msgstr "Menyunting opsi boot pada sistem dengan firmware BIOS"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "The boot menu."
-msgstr ""
+msgstr "Menu boot."
 
 #. type: Target for macro image
 #: pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "boot/boot-menu.png"
-msgstr ""
+msgstr "boot/boot-menu.png"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:86
@@ -256,3 +348,6 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-available[Available Boot "
 "Options]."
 msgstr ""
+"Semua opsi boot [application]*Anaconda* yang tersedia dijelaskan dalam xref:"
+"advanced/Boot_Options.adoc#sect-boot-options-available[Opsi Boot yang "
+"Tersedia]."
