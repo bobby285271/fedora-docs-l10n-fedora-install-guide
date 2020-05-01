@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-29 22:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-05-01 22:35+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f28pagesinstallinstalling_using_anaconda/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/install/Installing_Using_Anaconda.adoc:6
 #, no-wrap
 msgid "Installing Using Anaconda"
-msgstr ""
+msgstr "Instalasi Menggunakan Anaconda"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:9
@@ -30,12 +35,19 @@ msgid ""
 "limited in certain aspects (for example, custom partitioning is not possible "
 "in text mode)."
 msgstr ""
+"Bab ini memberikan petunjuk langkah demi langkah untuk menginstal {PRODUCT} "
+"menggunakan penginstal [application]*Anaconda*. Sebagian besar bab ini "
+"menjelaskan instalasi menggunakan antarmuka pengguna grafis. Mode teks juga "
+"tersedia untuk sistem tanpa tampilan grafis, tetapi mode ini terbatas pada "
+"aspek tertentu (misalnya, partisi kustom tidak mungkin dalam mode teks)."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:11
 msgid ""
 "If your system does not have the ability to use the graphical mode, you can:"
 msgstr ""
+"Jika sistem Anda tidak memiliki kemampuan untuk menggunakan mode grafis, "
+"Anda dapat:"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:13
@@ -44,6 +56,9 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]"
 msgstr ""
+"Menggunakan Kickstart untuk mengotomatisasi instalasi seperti yang "
+"dijelaskan dalam xref:advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installation[Mengotomatisasi Instalasi dengan Kickstart]"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:15
@@ -53,12 +68,16 @@ msgid ""
 "_VNC_ (Virtual Network Computing) protocol - see xref:advanced/"
 "VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]"
 msgstr ""
+"Melakukan instalasi grafis dari jarak jauh dengan menghubungkan ke sistem "
+"instalasi dari komputer lain dengan tampilan grafis menggunakan protokol "
+"_VNC_ (Virtual Network Computing) - Lihat xref:advanced/"
+"VNC_Installations.adoc#chap-vnc-installation[Instalasi Menggunakan VNC]"
 
 #. type: Title ==
 #: pages/install/Installing_Using_Anaconda.adoc:17
 #, no-wrap
 msgid "Introduction to Anaconda"
-msgstr ""
+msgstr "Pengantar Anaconda"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:20
@@ -69,6 +88,12 @@ msgid ""
 "then you configure network, then installation type, then partitioning, etc. "
 "There is usually only one way to proceed at any given time."
 msgstr ""
+"Installer {PRODUCT}, [application]*Anaconda*, berbeda dari kebanyakan "
+"program instalasi sistem operasi lain karena sifatnya yang paralel. "
+"Kebanyakan installer mengikuti jalur tetap: Anda harus memilih bahasa Anda "
+"terlebih dahulu, kemudian Anda mengkonfigurasi jaringan, kemudian jenis "
+"instalasi, kemudian partisi, dll. Biasanya hanya ada satu cara untuk "
+"melanjutkan pada waktu tertentu."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:22
@@ -80,6 +105,13 @@ msgid ""
 "example, when installing from a network location, you must configure the "
 "network before you can select which packages to install."
 msgstr ""
+"Dalam [application]*Anaconda* Anda pertama hanya diminta untuk memilih "
+"bahasa dan lokal, dan kemudian Anda disajikan dengan layar utama, di mana "
+"Anda dapat mengkonfigurasi sebagian besar aspek instalasi dalam urutan "
+"apapun yang Anda suka. Hal ini tidak berlaku untuk semua bagian dari proses "
+"instalasi, namun - misalnya, ketika menginstal dari lokasi jaringan, Anda "
+"harus mengkonfigurasi jaringan sebelum Anda dapat memilih paket untuk "
+"menginstal."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:24
@@ -91,6 +123,13 @@ msgid ""
 "begin the installation, are marked by an exclamation mark. You can not start "
 "the actual installation process before you finish configuring these settings."
 msgstr ""
+"Beberapa layar akan dikonfigurasi secara otomatis tergantung pada perangkat "
+"keras Anda dan jenis media yang Anda gunakan untuk memulai penginstalan. "
+"Anda masih dapat mengubah setelan yang terdeteksi di layar apa pun. Layar "
+"yang belum dikonfigurasi secara otomatis, dan karena itu memerlukan "
+"perhatian Anda sebelum Anda memulai instalasi, ditandai dengan tanda seru. "
+"Anda tidak dapat memulai proses instalasi aktual sebelum Anda selesai "
+"mengkonfigurasi pengaturan ini."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:26
@@ -99,12 +138,15 @@ msgid ""
 "partitioning process is very different from other Linux distributions. These "
 "differences are described in each screen's subsection."
 msgstr ""
+"Perbedaan tambahan muncul di layar tertentu; terutama proses partisi kustom "
+"sangat berbeda dari distribusi Linux lainnya. Perbedaan ini dijelaskan dalam "
+"sub bagian layar."
 
 #. type: Title ==
 #: pages/install/Installing_Using_Anaconda.adoc:28
 #, no-wrap
 msgid "Consoles and Logging During the Installation"
-msgstr ""
+msgstr "Konsol dan Pencatatan Log selama Instalasi"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:31
@@ -113,12 +155,15 @@ msgid ""
 "during the installation. This is useful when troubleshooting problems, but "
 "should not be necessary in most cases."
 msgstr ""
+"Bagian berikut ini menjelaskan cara mengakses log dan shell interaktif "
+"selama penginstalan. Hal ini berguna ketika memecahkan masalah, tetapi "
+"seharusnya tidak diperlukan dalam banyak kasus."
 
 #. type: Title ===
 #: pages/install/Installing_Using_Anaconda.adoc:33
 #, no-wrap
 msgid "Accessing Consoles"
-msgstr ""
+msgstr "Mengakses Konsol"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:36
@@ -131,6 +176,14 @@ msgid ""
 "prompt with `root` privileges, unless this prompt was specifically disabled "
 "using a boot option or a Kickstart command."
 msgstr ""
+"Installer {PRODUCT} menggunakan terminal multiplexer [application]*tmux* "
+"untuk menampilkan dan mengontrol beberapa jendela yang dapat Anda gunakan "
+"selain antarmuka utama. Setiap jendela ini melayani tujuan yang berbeda - "
+"mereka menampilkan beberapa log yang berbeda, yang dapat digunakan untuk "
+"memecahkan masalah apapun selama instalasi, dan salah satu jendela "
+"menyediakan prompt shell interaktif dengan hak `root`, kecuali prompt ini "
+"secara khusus dinonaktifkan dengan menggunakan suatu opsi boot atau suatu "
+"perintah Kickstart."
 
 #. type: delimited block =
 #: pages/install/Installing_Using_Anaconda.adoc:41
@@ -138,6 +191,8 @@ msgid ""
 "In general, there is no reason to leave the default graphical installation "
 "environment unless you need to diagnose an installation problem."
 msgstr ""
+"Secara umum, tidak ada alasan untuk meninggalkan lingkungan instalasi grafis "
+"default kecuali jika Anda perlu untuk mendiagnosa masalah instalasi."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:45
@@ -147,6 +202,10 @@ msgid ""
 "Alt + F1]. To go back to the main installation interface which runs in "
 "virtual console 6, press kbd:[Ctrl + Alt + F6]."
 msgstr ""
+"Terminal multiplexer berjalan di konsol virtual 1. Untuk beralih dari "
+"lingkungan instalasi aktual ke [application]*tmux*, tekan kbd:[Ctrl + Alt + "
+"F1]. Untuk kembali ke antarmuka instalasi utama yang berjalan di konsol "
+"virtual 6, tekan kbd:[Ctrl + Alt + F6]."
 
 #. type: delimited block =
 #: pages/install/Installing_Using_Anaconda.adoc:50
@@ -155,6 +214,9 @@ msgid ""
 "([application]*tmux*), and switching to console 6 will open a shell prompt "
 "instead of a graphical interface."
 msgstr ""
+"Jika Anda memilih instalasi mode teks, Anda akan mulai di konsol virtual 1 "
+"([application]*tmux*), dan beralih ke konsol 6 akan membuka prompt shell "
+"bukan antarmuka grafis."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:54
@@ -165,6 +227,11 @@ msgid ""
 "press kbd:[Ctrl + b], then release both keys, and press the number key for "
 "the window you want to use."
 msgstr ""
+"Konsol yang menjalankan [application]*tmux* memiliki 5 jendela yang tersedia;"
+" isinya dijelaskan dalam tabel di bawah ini, bersama dengan pintasan papan "
+"tik yang digunakan untuk mengaksesnya. Perhatikan bahwa pintasan papan tik "
+"punya dua bagian: pertama tekan kbd:[Ctrl + b], kemudian lepaskan kedua "
+"tombol, dan tekan tombol angka untuk jendela yang ingin Anda gunakan."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:56
@@ -172,12 +239,14 @@ msgid ""
 "You can also use kbd:[Ctrl + b] kbd:[n] and kbd:[Ctrl + b] kbd:[p] to switch "
 "to the next or previous [application]*tmux* window, respectively."
 msgstr ""
+"Anda juga dapat menggunakan kbd:[Ctrl + b] kbd:[n] dan kbd:[Ctrl + b] kbd:[p]"
+" untuk beralih ke jendela [application]*tmux* berikutnya atau sebelumnya."
 
 #. type: Block title
 #: pages/install/Installing_Using_Anaconda.adoc:58
 #, no-wrap
 msgid "Available tmux Windows"
-msgstr ""
+msgstr "Jendela tmux yang Tersedia"
 
 #. type: Table
 #: pages/install/Installing_Using_Anaconda.adoc:68
@@ -190,6 +259,18 @@ msgid ""
 "|kbd:[Ctrl + b] kbd:[4]|Storage log; displays messages related storage devices from kernel and system services, stored in `/tmp/storage.log`.\n"
 "|kbd:[Ctrl + b] kbd:[5]|Program log; displays messages from other system utilities, stored in `/tmp/program.log`.\n"
 msgstr ""
+"|Pintasan|Isi\n"
+"|kbd:[Ctrl + b] kbd:[1]|Jendela program instalasi utama. Berisi prompt "
+"berbasis teks (selama instalasi mode teks atau jika Anda menggunakan mode "
+"langsung VNC), dan juga beberapa informasi debug.\n"
+"|kbd:[Ctrl + b] kbd:[2]|Prompt shell interaktif dengan hak `root`.\n"
+"|kbd:[Ctrl + b] kbd:[3]|Log instalasi; menampilkan pesan yang disimpan di `/"
+"tmp/anaconda.log`.\n"
+"|kbd:[Ctrl + b] kbd:[4]|Log penyimpanan; menampilkan pesan yang terkait "
+"perangkat penyimpanan dari kernel dan layanan sistem, disimpan dalam `/tmp/"
+"storage.log`.\n"
+"|kbd:[Ctrl + b] kbd:[5]|Log program; menampilkan pesan dari utilitas sistem "
+"lain, disimpan dalam `/tmp/program.log`.\n"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:71
@@ -203,12 +284,20 @@ msgid ""
 "Troubleshooting.adoc#sect-troubleshooting-transferring-logs[Transferring Log "
 "Files from the Installation System]."
 msgstr ""
+"Selain menampilkan informasi diagnostik dalam jendela [application]*tmux*, "
+"[application]*Anaconda* juga menghasilkan beberapa berkas log, yang dapat "
+"ditransfer dari sistem instalasi. Berkas log ini dijelaskan dalam xref:"
+"install/troubleshooting.adoc#sect-troubleshooting-log-files[Berkas Log yang "
+"Dihasilkan Selama Instalasi], dan arahan untuk mentransfer mereka dari "
+"sistem instalasi tersedia di xref:install/troubleshooting.adoc# sect-"
+"troubleshooting-mentransferring-log[Mentransfer Berkas Log dari Sistem "
+"Instalasi]."
 
 #. type: Title ===
 #: pages/install/Installing_Using_Anaconda.adoc:73
 #, no-wrap
 msgid "Saving Screenshots"
-msgstr ""
+msgstr "Menyimpan Tangkapan Layar"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:76
@@ -217,6 +306,9 @@ msgid ""
 "installation to capture the current screen. These screenshots are saved to `/"
 "tmp/anaconda-screenshots`."
 msgstr ""
+"Anda dapat menekan kbd:[Shift + Print Screen] setiap saat selama instalasi "
+"grafis untuk menangkap layar saat ini. Tangkapan layar ini disimpan ke `/tmp/"
+"anaconda-screenshots`."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:78
@@ -227,12 +319,17 @@ msgid ""
 "kickstart-commands-autostep[autostep (optional) - Go Through Every Screen] "
 "for details."
 msgstr ""
+"Selain itu, Anda dapat menggunakan perintah [command]#autostep "
+"--autoscreenshot# di berkas Kickstart untuk menangkap dan menyimpan setiap "
+"langkah instalasi secara otomatis. Lihat xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep "
+"(opsional) - Pergi Melalui Setiap Layar] untuk rincian."
 
 #. type: Title ==
 #: pages/install/Installing_Using_Anaconda.adoc:80
 #, no-wrap
 msgid "Installing in Text Mode"
-msgstr ""
+msgstr "Instalasi dalam Mode Teks"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:83
@@ -243,6 +340,11 @@ msgid ""
 "before starting a text-based installation. Text mode is limited in the "
 "amount of choices you can make during the installation."
 msgstr ""
+"Penginstalan mode teks menawarkan antarmuka interaktif dan non-grafis untuk "
+"menginstal {PRODUCT}. Ini mungkin berguna pada sistem tanpa kemampuan grafis;"
+" namun, Anda harus selalu mempertimbangkan alternatif yang tersedia sebelum "
+"memulai instalasi berbasis teks. Mode teks terbatas dalam jumlah pilihan "
+"yang dapat Anda buat selama instalasi."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:85
@@ -256,24 +358,32 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart])."
 msgstr ""
+"Ada dua alternatif untuk mode teks yang keduanya dapat digunakan bahkan jika "
+"sistem instalasi tidak memiliki tampilan grafis. Anda dapat terhubung ke "
+"sistem instalasi menggunakan VNC dan melakukan instalasi grafis interaktif "
+"dari jarak jauh (lihat xref:advanced/VNC_Installations.adoc#chap-vnc-"
+"installation[Instalasi Menggunakan VNC]), atau Anda dapat membuat berkas "
+"Kickstart untuk melakukan instalasi secara otomatis (lihat xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installation[Mengotomatisasi "
+"Instalasi dengan Kickstart])."
 
 #. type: Block title
 #: pages/install/Installing_Using_Anaconda.adoc:86
 #, no-wrap
 msgid "Text Mode Installation"
-msgstr ""
+msgstr "Instalasi Mode Teks"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Installing_Using_Anaconda.adoc:88
 #, no-wrap
 msgid "The main menu in during a text-based installation."
-msgstr ""
+msgstr "Menu utama selama instalasi berbasis teks."
 
 #. type: Target for macro image
 #: pages/install/Installing_Using_Anaconda.adoc:88
 #, no-wrap
 msgid "anaconda/SummaryHub_TextMode.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_TextMode.png"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:91
@@ -286,11 +396,18 @@ msgid ""
 "begin are marked with `[!]`. Available commands are displayed below the list "
 "of available options."
 msgstr ""
+"Instalasi dalam mode teks mengikuti pola yang mirip dengan instalasi grafis: "
+"Tidak ada satu kemajuan yang tetap; Anda dapat mengonfigurasi banyak "
+"pengaturan dalam urutan apa pun yang Anda inginkan menggunakan layar status "
+"utama. Layar yang telah dikonfigurasi, baik secara otomatis atau oleh Anda, "
+"ditandai sebagai `[x]`, dan layar yang memerlukan perhatian Anda sebelum "
+"instalasi dapat mulai ditandai dengan `[!]`. Perintah yang tersedia "
+"ditampilkan di bawah daftar opsi yang tersedia."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:93
 msgid "Limits of interactive text mode installation include:"
-msgstr ""
+msgstr "Batas penginstalan mode teks interaktif meliputi:"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:95
@@ -300,6 +417,10 @@ msgid ""
 "these settings will only apply to the installed system, not to the "
 "installation."
 msgstr ""
+"Penginstal akan selalu menggunakan bahasa Inggris dan tata letak papan tik "
+"bahasa Inggris AS. Anda dapat mengonfigurasi setelan bahasa dan papan ketik, "
+"namun setelan ini hanya akan diterapkan ke sistem yang terinstal, bukan ke "
+"penginstalan."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:97
@@ -307,6 +428,8 @@ msgid ""
 "You can not configure any advanced storage methods (LVM, software RAID, "
 "FCoE, zFCP and iSCSI)."
 msgstr ""
+"Anda tidak dapat mengkonfigurasi metode penyimpanan canggih (LVM, perangkat "
+"lunak RAID, FCoE, zFCP, dan iSCSI)."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:99
@@ -315,6 +438,9 @@ msgid ""
 "automatic partitioning settings. You also cannot configure where the boot "
 "loader will be installed."
 msgstr ""
+"Tidak mungkin untuk mengkonfigurasi partisi kustom; Anda harus menggunakan "
+"salah satu pengaturan partisi otomatis. Anda juga tidak dapat "
+"mengkonfigurasi dimana boot loader akan diinstal."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:101
@@ -325,12 +451,17 @@ msgid ""
 "Booting_the_Installation.adoc#chap-booting-the-installation[Booting the "
 "Installation] for information about booting and using boot options."
 msgstr ""
+"Untuk memulai instalasi mode teks, boot instalasi dengan opsi boot "
+"[option]#inst.text# yang digunakan baik pada baris perintah boot di menu "
+"boot, atau dalam konfigurasi server PXE Anda. Lihat xref:install/"
+"Booting_the_Installation.adoc#chap-boot-the-installation[Mem-boot Instalasi] "
+"untuk informasi tentang booting dan menggunakan opsi boot."
 
 #. type: Title ==
 #: pages/install/Installing_Using_Anaconda.adoc:103
 #, no-wrap
 msgid "Installing in the Graphical User Interface"
-msgstr ""
+msgstr "Instalasi di Antarmuka Pengguna Grafis"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:106
@@ -343,6 +474,13 @@ msgid ""
 "mode is used by default when you boot the system from local media (a CD, DVD "
 "or a USB flash drive)."
 msgstr ""
+"Antarmuka instalasi grafis adalah metode yang disukai secara manual "
+"menginstal {PRODUCT}. Hal ini memungkinkan Anda kontrol penuh atas semua "
+"pengaturan yang tersedia, termasuk partisi kustom dan konfigurasi "
+"penyimpanan canggih, dan juga dilokalkan untuk banyak bahasa selain bahasa "
+"Inggris, memungkinkan Anda untuk melakukan seluruh instalasi dalam bahasa "
+"yang berbeda. Mode grafis digunakan secara default ketika Anda boot sistem "
+"dari media lokal (CD, DVD, atau USB flash drive)."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:108
@@ -352,6 +490,9 @@ msgid ""
 "screens do not have to be completed in the order in which they are described "
 "here."
 msgstr ""
+"Bagian di bawah ini mendiskusikan setiap layar yang tersedia dalam proses "
+"instalasi. Catatan bahwa karena paralelnya installer, sebagian besar layar "
+"tidak harus diselesaikan dalam urutan yang dijelaskan di sini."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:110
@@ -360,6 +501,9 @@ msgid ""
 "opens the [application]*Yelp* help browser displaying the section of the "
 "_{PRODUCT} Installation Guide_ relevant to the current screen."
 msgstr ""
+"Setiap layar dalam antarmuka grafis berisi tombol `Help`. Tombol ini membuka "
+"peramban bantuan [application]*Yelp* yang menampilkan bagian dari _Panduan "
+"Instalasi {PRODUCT}_ yang relevan dengan layar saat ini."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:112
@@ -372,6 +516,13 @@ msgid ""
 "be used to select or remove a highlighted item from selection and to expand "
 "and collapse drop-down menus."
 msgstr ""
+"Anda juga dapat mengontrol penginstal grafis dengan papan tik. Gunakan "
+"kbd:[Tab] dan kbd:[Shift + Tab] untuk siklus melalui elemen kontrol aktif ("
+"tombol, kotak centang, dll) pada layar saat ini, tombol panah kbd:[Up] dan "
+"kbd:[Down] untuk menggulir daftar, dan kbd:[Left] dan kbd:[Right] untuk "
+"menggulir melalui bilah alat horisontal atau entri tabel. kbd:[Space] atau "
+"kbd:[Enter] dapat digunakan untuk memilih atau menghapus butir yang disorot "
+"dari pilihan dan untuk mengembang dan menguncupkan menu drop-down."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:114
@@ -381,6 +532,10 @@ msgid ""
 "the kbd:[Alt] key; to toggle that element, press kbd:[Alt + _X_pass:"
 "attributes[{blank}]], where _X_ is the highlighted letter."
 msgstr ""
+"Selain itu, elemen di setiap layar dapat dijungkitkan menggunakan pintasan "
+"masing-masing. Pintasan ini disorot (digarisbawahi) saat Anda menekan tombol "
+"kbd:[Alt]; untuk menjungkit elemen tersebut, tekan kbd:[Alt + "
+"_X_pass:attributes[{blank}]], dimana _X_ adalah huruf yang disorot."
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:116
@@ -391,3 +546,9 @@ msgid ""
 "installation-gui-keyboard-layout[Keyboard Layout]), you can switch between "
 "them by clicking the layout indicator."
 msgstr ""
+"Tata letak papan tik Anda saat ini ditampilkan di sudut kanan atas. Hanya "
+"satu tata letak yang dikonfigurasi secara default; jika Anda mengkonfigurasi "
+"lebih dari tata letak di layar `Tata Letak Papan Tik` "
+"(xref:Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-layout["
+"Tata Letak Papan Tik]), Anda dapat beralih di antara mereka dengan mengklik "
+"indikator tata letak."

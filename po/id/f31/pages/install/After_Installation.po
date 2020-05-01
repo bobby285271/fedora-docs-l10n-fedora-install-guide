@@ -2,23 +2,27 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-29 22:07+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-05-01 22:36+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f31pagesinstallafter_installation/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #. type: Title =
 #: pages/install/After_Installation.adoc:6
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "Setelah Instalasi"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:9
@@ -26,6 +30,8 @@ msgid ""
 "This chapter describes the initial setup tools which open after you finish "
 "the installation, reboot the system, and log in for the first time."
 msgstr ""
+"Bab ini menjelaskan alat pengaturan awal yang terbuka setelah Anda "
+"menyelesaikan instalasi, me-reboot sistem, dan masuk untuk pertama kalinya."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:11
@@ -37,6 +43,12 @@ msgid ""
 "graphical environments, the [application]*Initial Setup* tool serves the "
 "same purpose."
 msgstr ""
+"Dua alat konfigurasi terpisah adalah bagian dari {PRODUCT}. Jika Anda "
+"menginstal lingkungan desktop [application]*GNOME* (lingkungan default "
+"{PRODUCT}, yang diinstal misalnya sebagai bagian dari edisi {PRODUCT}) "
+"Workstation, utilitas [application]*Penyiapan Awal GNOME* akan terbuka; "
+"untuk semua lingkungan grafis lainnya, alat [application]*Penyiapan Awal* "
+"melayani tujuan yang sama."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:13
@@ -50,13 +62,21 @@ msgid ""
 "installation finished, you will not be prompted to do so again after the "
 "installation completes."
 msgstr ""
+"Kedua alat ini akan memungkinkan Anda untuk mengkonfigurasi pengaturan "
+"pengguna khusus yang belum dikonfigurasi selama instalasi. Beberapa "
+"pengaturan yang tersedia baik dalam installer grafis (atau sebagai perintah "
+"Kickstart) serta di utilitas penyiapan-awal; dalam hal ini, mereka hanya "
+"akan ditampilkan setelah reboot pertama jika Anda melewatkan mereka selama "
+"instalasi. Ini berarti bahwa, misalnya, jika Anda mengonfigurasi akun "
+"pengguna sebelum penginstalan selesai, Anda tidak akan diminta untuk "
+"melakukannya lagi setelah penginstalan selesai."
 
 #. type: Block title
 #: pages/install/After_Installation.adoc:17
 #: pages/install/After_Installation.adoc:21
 #, no-wrap
 msgid "GNOME Initial Setup"
-msgstr ""
+msgstr "Penyiapan Awal GNOME"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:20
@@ -65,18 +85,21 @@ msgid ""
 "log in for the first time with any user account, as long as your first login "
 "is in the [application]*GNOME* desktop environment."
 msgstr ""
+"Utilitas [application]*Penyiapan Awal GNOME* akan ditampilkan setelah Anda "
+"masuk untuk pertama kalinya dengan setiap akun pengguna, selama login "
+"pertama Anda adalah dalam lingkungan desktop [application]*GNOME*."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "GNOME Initial Setup with language selection displayed."
-msgstr ""
+msgstr "Penyiapan Awal GNOME dengan pemilihan bahasa ditampilkan."
 
 #. type: Target for macro image
 #: pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "afterinstall/gnome-initial-setup.png"
-msgstr ""
+msgstr "afterinstall/gnome-initial-setup.png"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:26
@@ -87,6 +110,12 @@ msgid ""
 "Some screens (`Configure online accounts` in particular) are optional and "
 "can be skipped using the `Skip` button in the top right corner."
 msgstr ""
+"Utilitas ini memungkinkan Anda untuk mengkonfigurasi beberapa pengaturan "
+"khusus pengguna, seperti bahasa sistem atau tata letak papan tik default. "
+"Gunakan tombol `Selanjutnya` dan `Sebelumnya` di bagian atas jendela untuk "
+"menavigasi antar layar. Beberapa layar (`Konfigurasi akun daring` secara "
+"khusus) bersifat opsional dan dapat dilewati menggunakan tombol `Lewati` di "
+"pojok kanan atas."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:28
@@ -96,12 +125,16 @@ msgid ""
 "displayed, and you can either browse the help content, or close it and start "
 "using your desktop."
 msgstr ""
+"Setelah Anda selesai mengonfigurasi semua layar, klik `Mulai menggunakan "
+"Fedora` untuk keluar dari utilitas. Setelah itu, halaman `Memulai` dari "
+"bantuan GNOME akan ditampilkan, dan Anda dapat meramban konten bantuan, atau "
+"menutupnya dan mulai menggunakan desktop Anda."
 
 #. type: Title ==
 #: pages/install/After_Installation.adoc:30
 #, no-wrap
 msgid "Common Post-installation Tasks"
-msgstr ""
+msgstr "Tugas Pasca-instalasi Umum"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:33
@@ -113,12 +146,19 @@ msgid ""
 "system. The list below describes some of the more common tasks usually "
 "performed immediately after a new installation."
 msgstr ""
+"Setelah Anda menyelesaikan instalasi dan pergi melalui salah satu utilitas "
+"penyiapan awal yang dijelaskan di atas, sistem Anda siap untuk digunakan. "
+"Namun, tugas administratif lainnya yang tidak tercakup oleh penginstal atau "
+"utilitas penyiapan awal mungkin masih diperlukan, tergantung pada bagaimana "
+"Anda berencana untuk menggunakan sistem Anda. Daftar di bawah ini "
+"menjelaskan beberapa tugas yang lebih umum biasanya dilakukan segera setelah "
+"instalasi baru."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:34
 #, no-wrap
 msgid "Recover a lost `root` password"
-msgstr ""
+msgstr "Memulihkan kata sandi `root` yang hilang"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:35
@@ -130,12 +170,19 @@ msgid ""
 "following the steps described in xref:install/Troubleshooting.adoc#sect-"
 "trouble-after-reset-root-password[Resetting the Root Password]."
 msgstr ""
+"Kata sandi `root`, yang dikonfigurasi selama instalasi, diperlukan untuk "
+"mengakses sistem sebagai pengguna `root`. Tanpa kata sandi ini Anda tidak "
+"akan dapat mengkonfigurasi sistem Anda atau menginstal perangkat lunak "
+"tambahan. Jika Anda kehilangan atau lupa kata sandi `root`, Anda dapat "
+"mengatur ulang dengan mengikuti langkah yang dijelaskan dalam xref:install/"
+"Troubleshooting.adoc#sect-trouble-after-reset-root-password[Mereset Kata "
+"Sandi Root]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:36
 #, no-wrap
 msgid "Configure the network"
-msgstr ""
+msgstr "Mengkonfigurasi jaringan"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:37
@@ -150,12 +197,21 @@ msgid ""
 "[citetitle]_{PRODUCT} Networking Guide_, available at link:++https://docs."
 "fedoraproject.org/++[]."
 msgstr ""
+"Dalam kebanyakan kasus, akses jaringan dikonfigurasi selama proses "
+"instalasi, baik dalam program instalasi [application]*Anaconda* (lihat xref:"
+"instal/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[Jaringan & Nama Host]) atau dalam berkas Kickstart (lihat xref:"
+"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-network["
+"jaringan (opsional) - Mengkonfigurasi Antarmuka Jaringan]). Untuk informasi "
+"tentang konfigurasi jaringan setelah instalasi, lihat jaringan [citetitle]"
+"_Panduan Jaringan {PRODUCT}_, tersedia di link:++https://docs.fedoraproject."
+"org/++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:38
 #, no-wrap
 msgid "Perform an initial system update"
-msgstr ""
+msgstr "Melakukan pembaruan sistem awal"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:39
@@ -167,6 +223,12 @@ msgid ""
 "installed packages are updated to their latest available versions. Updates "
 "to packages provide security fixes, bug fixes and enhancements."
 msgstr ""
+"Jika Anda menginstal {PRODUCT} dari image ISO instalasi penuh (seperti image "
+"Workstation live atau DVD Server penuh), disarankan untuk melakukan "
+"pembaruan sistem awal, karena media instalasi Anda mungkin berisi versi "
+"paket perangkat lunak yang lebih lama. Selama pembaruan awal, semua paket "
+"yang diinstal dimutakhirkan ke versi terbaru mereka yang tersedia. Pembaruan "
+"paket menyediakan perbaikan keamanan, perbaikan bug, dan penyempurnaan."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:41
@@ -176,12 +238,16 @@ msgid ""
 "[application]*DNF*, see the [citetitle]_{PRODUCT} System Administrator's "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Manajer paket [application]*DNF* digunakan untuk memperbarui paket yang "
+"terpasang. Untuk informasi selengkapnya tentang memperbarui sistem Anda "
+"dengan [application]*DNF*, lihat [citetitle]_Panduan Administrator Sistem "
+"{PRODUCT}_, tersedia di link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "Menginstal pemutakhiran driver"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:43
@@ -191,6 +257,11 @@ msgid ""
 "support for devices that have been released recently could be missing. In "
 "these cases, a driver update enabling your device may be available."
 msgstr ""
+"Biasanya, driver untuk perangkat sistem sudah didukung di kernel yang "
+"disediakan oleh Red{nbsp}Hat Enterprise{nbsp}Linux. Namun, terkadang, "
+"dukungan untuk perangkat yang telah dirilis baru-baru ini dapat hilang. "
+"Dalam kasus ini, pembaruan driver yang memungkinkan perangkat Anda mungkin "
+"tersedia."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:45
@@ -204,12 +275,20 @@ msgid ""
 "the [citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
 "+https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Perangkat yang diperlukan untuk menyelesaikan instalasi dapat memiliki "
+"update driver yang disediakan sebelum instalasi dimulai. Jika perangkat "
+"kekurangan driver, tetapi tidak penting selama instalasi, dianjurkan untuk "
+"menunggu sampai setelah instalasi selesai, dan menginstal driver tambahan "
+"sesudahnya. Untuk petunjuk tentang cara menginstal dan mengaktifkan driver "
+"tambahan pada sistem diinstal menggunakan [application]*RPM* dan "
+"[application]*DNF*, lihat [citetitle]_Panduan Administrator Sistem {PRODUCT}"
+"_, tersedia di link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "Mengkonfigurasi repositori tambahan"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:47
@@ -222,6 +301,13 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"Perangkat lunak baru diinstal dari _repositori paket_. Repositori paket "
+"adalah set perangkat lunak dan metadata terorganisasi yang dapat diakses "
+"oleh manajer paket [application]*DNF*. Secara default, beberapa repositori "
+"pembaruan yang disediakan oleh {PRODUCT} dikonfigurasi secara otomatis dan "
+"Anda dapat menginstal pembaruan dan perangkat lunak tambahan dari mereka. "
+"Namun, jika Anda ingin menyiapkan repositori tambahan, misalnya yang berisi "
+"perangkat lunak Anda sendiri, beberapa langkah tambahan diperlukan."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:49
@@ -230,12 +316,15 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
 "+https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Untuk informasi tentang cara mengonfigurasi repositori perangkat lunak "
+"tambahan, lihat [citetitle]_Panduan Administrator Sistem {PRODUCT}_, "
+"tersedia di link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:50
 #, no-wrap
 msgid "Install additional packages"
-msgstr ""
+msgstr "Menginstal paket tambahan"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:51
@@ -250,12 +339,21 @@ msgid ""
 "available at link:++https://docs.fedoraproject.org/++[], for more "
 "information."
 msgstr ""
+"Anda dapat mengontrol paket mana yang akan diinstal dengan memilih "
+"lingkungan dalam dialog `Pemilihan Perangkat Lunak` di instalasi grafis ("
+"lihat xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"software-selection[Pemilihan Perangkat Lunak]). Dialog ini tidak menyediakan "
+"cara untuk memilih paket individual, hanya set terpradefinisi. Namun, Anda "
+"dapat menggunakan manajer paket [application]*DNF* untuk menginstal paket "
+"tambahan setelah penginstalan. Lihat [citetitle]_Panduan Administrator "
+"Sistem {PRODUCT}_, tersedia di link:++https://docs.fedoraproject.org/++[], "
+"untuk informasi lebih lanjut."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:52
 #, no-wrap
 msgid "Switch to a graphical login"
-msgstr ""
+msgstr "Beralih ke login grafis"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:53
@@ -267,6 +365,12 @@ msgid ""
 "[application]*X Window System* and your preferred desktop environment "
 "(either [application]*GNOME* or [application]*KDE*)."
 msgstr ""
+"Tergantung pada pilihan yang Anda pilih selama proses instalasi, adalah "
+"mungkin bahwa sistem Anda tidak memiliki antarmuka grafis, melainkan hanya "
+"menawarkan prompt berbasis teks. Jika hal ini terjadi dan Anda ingin "
+"mengaktifkan desktop grafis setelah instalasi, Anda harus menginstal "
+"[application]*X Window System* dan lingkungan desktop pilihan Anda (baik "
+"[application]*GNOME* atau [application]*KDE*)."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:54
@@ -279,3 +383,11 @@ msgid ""
 "default, see xref:install/Troubleshooting.adoc#sect-trouble-after-graphical-"
 "login[Booting into a Graphical Environment]."
 msgstr ""
+"Seperti semua perangkat lunak lainnya, paket ini dapat diinstal menggunakan "
+"manajer paket [application]*DNF*. Untuk informasi tentang menggunakan "
+"[application]*DNF* untuk menginstal paket baru, lihat [citetitle]_Panduan "
+"Administrator Sistem {PRODUCT}_, tersedia di "
+"link:++https://docs.fedoraproject.org/++[]. Untuk informasi tentang cara "
+"mengaktifkan login grafis secara default, lihat xref:install/"
+"Troubleshooting.adoc#sect-trouble-after-graphical-login[Mem-boot ke dalam "
+"Lingkungan Grafis]."
