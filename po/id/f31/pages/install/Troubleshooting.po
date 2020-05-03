@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-02 22:06+0000\n"
-"PO-Revision-Date: 2020-05-02 22:35+0000\n"
+"PO-Revision-Date: 2020-05-03 22:33+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesinstalltroubleshooting/id/>\n"
@@ -309,6 +309,9 @@ msgid ""
 "accessing it and listing its contents - the list should match what you "
 "expect to be on the drive."
 msgstr ""
+"Anda sekarang dapat memverifikasi bahwa Anda memasang perangkat dan partisi "
+"yang benar dengan mengaksesnya dan menampilkan isinya - daftar harus sesuai "
+"dengan apa yang Anda harapkan untuk berada di drive."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:92
@@ -325,7 +328,7 @@ msgstr "# ls\n"
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:100
 msgid "Copy the log files to the mounted device."
-msgstr ""
+msgstr "Salin berkas log ke peranti terpasang."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:104
@@ -340,6 +343,9 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"Lepas kait USB flash drive. Jika Anda mendapatkan pesan kesalahan yang "
+"mengatakan bahwa target sedang sibuk, ubah direktori kerja Anda ke luar kait "
+"(misalnya, `/`)."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:111
@@ -351,18 +357,18 @@ msgstr "# umount /mnt/usb\n"
 #: pages/install/Troubleshooting.adoc:114
 msgid ""
 "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "Berkas log dari instalasi sekarang disimpan pada USB flash drive."
 
 #. type: Title ====
 #: pages/install/Troubleshooting.adoc:116
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "Mentransfer Berkas Log Melalui Jaringan"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "Beralihlah ke direktori `/tmp` tempat berkas log terletak:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:125
@@ -376,6 +382,8 @@ msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
 msgstr ""
+"Salin berkas log ke sistem lain pada jaringan menggunakan perintah "
+"[command]#scp#:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:132
@@ -393,6 +401,12 @@ msgid ""
 "the log files into the `/home/john/logs/` directory on that system, the "
 "command will have the following form:"
 msgstr ""
+"Gantikan _user_ dengan nama pengguna yang valid pada sistem target, "
+"_address_ dengan alamat sistem target atau nama host, dan _path_ dengan path "
+"ke direktori tempat Anda ingin menyimpan berkas log. Misalnya, jika Anda "
+"ingin masuk sebagai `john` ke sistem dengan alamat IP `192.168.0.122` dan "
+"menempatkan berkas log ke dalam direktori `/home/john/logs/` pada sistem "
+"tersebut, perintah akan memiliki bentuk berikut:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:139
@@ -406,6 +420,8 @@ msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
 msgstr ""
+"Saat menyambung ke sistem target untuk yang pertama kalinya, Anda mungkin "
+"menemui pesan yang mirip dengan berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:149
@@ -415,6 +431,10 @@ msgid ""
 "`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
+"established.`\n"
+"`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Are you sure you want to continue connecting (yes/no)?`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:153
@@ -423,6 +443,9 @@ msgid ""
 "when prompted. The files will start transferring to the specified directory "
 "on the target system."
 msgstr ""
+"Ketik `yes` dan tekan kbd:[Enter] untuk melanjutkan. Kemudian, berikan kata "
+"sandi yang valid saat diminta. Berkas akan mulai ditransfer ke direktori "
+"yang ditentukan pada sistem target."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:155
@@ -430,18 +453,20 @@ msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
 msgstr ""
+"Berkas log dari instalasi sekarang disimpan secara permanen pada sistem "
+"target dan tersedia untuk ditinjau."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:157
 #, no-wrap
 msgid "Trouble Beginning the Installation"
-msgstr ""
+msgstr "Masalah Memulai Instalasi"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:159
 #, no-wrap
 msgid "Problems with Booting into the Graphical Installation"
-msgstr ""
+msgstr "Masalah dengan Boot ke Instalasi Grafis"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:162
@@ -451,6 +476,11 @@ msgid ""
 "default settings, it attempts to run in a lower resolution mode. If that "
 "still fails, the installation program attempts to run in text mode."
 msgstr ""
+"Sistem dengan beberapa kartu video mengalami kesulitan boot ke program "
+"instalasi grafis. Jika program penginstalan tidak berjalan menggunakan "
+"pengaturan default, itu mencoba untuk menjalankan dalam mode resolusi yang "
+"lebih rendah. Jika yang masih gagal, program penginstalan mencoba untuk "
+"menjalankan dalam mode teks."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:164
@@ -460,12 +490,16 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-installer[Configuring the "
 "Installation System at the Boot Menu]."
 msgstr ""
+"Ada beberapa kemungkinan solusi untuk menampilkan masalah, sebagian besar "
+"yang melibatkan menentukan pilihan boot ubahan. Untuk informasi lebih "
+"lanjut, lihat xref:advanced/Boot_Options.adoc#sect-boot-options-installer["
+"Mengonfigurasi Sistem Instalasi pada Menu Boot]."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:165
 #, no-wrap
 msgid "Use the basic graphics mode"
-msgstr ""
+msgstr "Menggunakan mode grafis dasar"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:166
@@ -474,12 +508,15 @@ msgid ""
 "To do this, edit the installation program's boot options and append "
 "[option]#inst.xdriver=vesa# at the end of the command line."
 msgstr ""
+"Anda dapat mencoba untuk melakukan instalasi menggunakan driver grafis "
+"dasar. Untuk melakukannya, sunting opsi boot program penginstalan dan "
+"tambahkan [option]#inst.xdriver=vesa# di akhir baris perintah."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:167
 #, no-wrap
 msgid "Specify the display resolution manually"
-msgstr ""
+msgstr "Menyatakan resolusi layar secara manual"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:168
@@ -490,12 +527,18 @@ msgid ""
 "attributes[{blank}]# option at the boot menu, where _x_ is your display's "
 "resolution (for example, `1024x768`)."
 msgstr ""
+"Jika program penginstalan gagal mendeteksi resolusi layar, Anda dapat "
+"menimpa deteksi otomatis dan menentukan secara manual. Untuk melakukannya, "
+"tambahkan opsi "
+"[option]#inst.resolution=pass:attributes[{blank}]_x_pass:attributes[{blank}]#"
+" pada menu boot, dimana _x_ adalah resolusi layar Anda (misalnya, "
+"`1024x768`)."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:169
 #, no-wrap
 msgid "Use an alternate video driver"
-msgstr ""
+msgstr "Menggunakan driver video alternatif"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:170
@@ -506,6 +549,11 @@ msgid ""
 "option, where _x_ is the device driver you want to use (for example, "
 "`nouveau`)."
 msgstr ""
+"Anda juga dapat mencoba untuk menentukan driver video ubahan, menimpa "
+"deteksi otomatis program instalasi. Untuk menentukan driver, gunakan opsi "
+"[option]#inst.xdriver=pass:attributes[{blank}]_x_pass:attributes[{blank}]#, "
+"dimana _x_ adalah driver perangkat yang ingin Anda gunakan (misalnya, "
+"`nouveau`)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:175
@@ -515,12 +563,17 @@ msgid ""
 "component. [application]*Anaconda* should be able to detect your hardware "
 "automatically and use the appropriate driver without your intervention."
 msgstr ""
+"Jika menentukan driver video ubahan memecahkan masalah Anda, Anda harus "
+"melaporkannya sebagai bug di link:++https://bugzilla.redhat.com++[] di bawah "
+"komponen `anaconda`. [application]*Anaconda* harus dapat mendeteksi "
+"perangkat keras Anda secara otomatis dan menggunakan driver yang sesuai "
+"tanpa intervensi Anda."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:178
 #, no-wrap
 msgid "Perform the installation using VNC"
-msgstr ""
+msgstr "Melakukan instalasi menggunakan VNC"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:179
@@ -530,12 +583,17 @@ msgid ""
 "Computing_ (VNC) protocol. For details on installing using VNC, see xref:"
 "advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
+"Jika opsi di atas gagal, Anda dapat menggunakan sistem terpisah untuk "
+"mengakses instalasi grafis melalui jaringan, menggunakan protokol _Virtual "
+"Network Computing_ (VNC). Untuk rincian tentang menginstal menggunakan VNC, "
+"lihat xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Instalasi "
+"Menggunakan VNC]."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:180
 #, no-wrap
 msgid "Serial Console Not Detected"
-msgstr ""
+msgstr "Konsol Serial Tidak Terdeteksi"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:183
@@ -546,6 +604,12 @@ msgid ""
 "detects a graphics card, it will attempt to use it for a display, even if no "
 "display is connected."
 msgstr ""
+"Dalam beberapa kasus, mencoba untuk menginstal dalam mode teks menggunakan "
+"konsol serial akan menghasilkan tidak ada keluaran pada konsol. Hal ini "
+"terjadi pada sistem yang memiliki kartu grafis, tapi tidak ada monitor yang "
+"terhubung. Jika [application]*Anaconda* mendeteksi kartu grafis, itu akan "
+"mencoba untuk menggunakannya untuk tampilan, bahkan jika tidak ada layar "
+"terhubung."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:185
@@ -555,18 +619,22 @@ msgid ""
 "advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot Options] for more "
 "details."
 msgstr ""
+"Jika Anda ingin melakukan instalasi berbasis teks pada konsol serial, "
+"gunakan opsi boot [option]#inst.text# dan [option]#console=#. Lihat xref:"
+"advanced/Boot_Options.adoc#chap-anaconda-boot-options[Opsi Boot] untuk lebih "
+"jelasnya."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:187
 #, no-wrap
 msgid "Trouble During the Installation"
-msgstr ""
+msgstr "Masalah Selama Instalasi"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:190
 #, no-wrap
 msgid "No Disks Detected"
-msgstr ""
+msgstr "Tidak Ada Disk Terdeteksi"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:193
@@ -575,6 +643,9 @@ msgid ""
 "appear at the bottom: `No disks detected. Please shut down the computer, "
 "connect at least one disk, and restart to complete installation`."
 msgstr ""
+"Di layar `Tujuan Instalasi`, pesan galat berikut mungkin muncul di bagian "
+"bawah: `Tidak ada disk terdeteksi. Silakan matikan komputer, hubungkan "
+"setidaknya satu disk, dan restart untuk menyelesaikan instalasi`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:195
@@ -583,6 +654,10 @@ msgid ""
 "storage devices to install to. In that case, first make sure that your "
 "system does have at least one storage device attached."
 msgstr ""
+"Pesan menunjukkan bahwa [application]*Anaconda* tidak menemukan perangkat "
+"penyimpanan yang dapat ditulis untuk menginstal. Dalam hal ini, pertama-tama "
+"pastikan bahwa sistem Anda memiliki setidaknya satu perangkat penyimpanan "
+"terpasang."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:197
@@ -591,6 +666,9 @@ msgid ""
 "is properly configured and working. See your controller's documentation for "
 "instructions."
 msgstr ""
+"Jika sistem Anda menggunakan pengontrol RAID perangkat keras, verifikasikan "
+"bahwa pengontrol dikonfigurasi dengan benar dan berfungsi. Lihat dokumentasi "
+"pengontrol Anda untuk mendapatkan petunjuk."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:199
@@ -600,6 +678,10 @@ msgid ""
 "Unit Numbers_) are being presented to the appropriate HBA (_Host Bus "
 "Adapter_)."
 msgstr ""
+"Jika Anda menginstal ke satu atau lebih perangkat iSCSI dan tidak ada "
+"penyimpanan lokal yang ada pada sistem, pastikan bahwa semua LUN (_Logical "
+"Unit Numbers_) yang diperlukan disajikan ke HBA (_Host Bus Adapter_) yang "
+"sesuai."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:201
@@ -610,19 +692,25 @@ msgid ""
 "the storage. In most cases this message appears when you attempt to install "
 "on an SCSI device which has not been recognized by the installation program."
 msgstr ""
+"Jika Anda memastikan bahwa perangkat penyimpanan Anda telah terhubung dan "
+"dikonfigurasi dengan benar dan pesan masih muncul setelah Anda reboot sistem "
+"dan memulai instalasi lagi, itu berarti bahwa program instalasi gagal untuk "
+"mendeteksi penyimpanan. Dalam kebanyakan kasus pesan ini muncul ketika Anda "
+"mencoba untuk menginstal pada perangkat SCSI yang belum dikenali oleh "
+"program penginstalan."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:203
 #, no-wrap
 msgid "Problems After Installation"
-msgstr ""
+msgstr "Masalah Setelah Instalasi"
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:206
 #: pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
-msgstr ""
+msgstr "Mereset Kata Sandi Root"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:209
@@ -630,17 +718,22 @@ msgid ""
 "If you lost the root password to the system and you have access to the boot "
 "loader, you can reset the password by editing the GRUB2 configuration."
 msgstr ""
+"Jika Anda kehilangan kata sandi root untuk sistem dan Anda memiliki akses ke "
+"boot loader, Anda dapat me-reset kata sandi dengan menyunting konfigurasi "
+"GRUB2."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:212
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "Boot sistem Anda dan tunggu sampai menu GRUB2 muncul."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:214
 msgid ""
 "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
 msgstr ""
+"Dalam menu boot loader, sorot sebarang entri dan tekan kbd:[e] untuk "
+"menyuntingnya."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:216
@@ -648,6 +741,8 @@ msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
 msgstr ""
+"Cari baris yang diawali dengan `linux`. Pada akhir baris ini, tambahkan yang "
+"berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:220
@@ -661,6 +756,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
 msgstr ""
+"Tekan kbd:[F10] atau kbd:[Ctrl + X] untuk mem-boot sistem menggunakan opsi "
+"yang baru saja Anda sunting."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:225
@@ -668,6 +765,8 @@ msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
 msgstr ""
+"Setelah sistem boot, Anda akan disajikan dengan prompt shell tanpa harus "
+"memasukkan nama pengguna atau kata sandi:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:229
@@ -678,7 +777,7 @@ msgstr "pass:quotes[`sh-4.2#`]\n"
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:232
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "Memuat kebijakan SELinux yang terinstal:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:236
@@ -689,7 +788,7 @@ msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:239
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "Jalankan perintah berikut untuk mengait ulang partisi root Anda:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:243
@@ -700,7 +799,7 @@ msgstr "sh4.2# mount -o remount,rw /\n"
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:246
 msgid "Reset the root password:"
-msgstr ""
+msgstr "Mereset kata sandi root:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:250
@@ -717,11 +816,16 @@ msgid ""
 "match, a message informing you of a successful root password change will "
 "appear."
 msgstr ""
+"Saat diminta, masukkan kata sandi root baru Anda dan konfirmasikan dengan "
+"menekan tombol kbd:[Enter]. Masukkan kata sandi untuk kedua kalinya untuk "
+"memastikan Anda mengetiknya dengan benar dan konfirmasikan dengan kbd:[Enter]"
+" lagi. Jika kedua kata sandi cocok, pesan yang memberitahukan Anda tentang "
+"perubahan kata sandi root yang berhasil akan muncul."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:255
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "Kaitkan ulang partisi root lagi, kali ini hanya-baca:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:259
@@ -735,12 +839,14 @@ msgid ""
 "Reboot the system. From now on, you will be able to log in as the root user "
 "using the new password set up during this procedure."
 msgstr ""
+"Reboot sistem. Mulai sekarang, Anda akan dapat login sebagai pengguna root "
+"menggunakan kata sandi baru yang diatur selama prosedur ini."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:264
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "Anda Tidak Bisa Boot dengan Kartu RAID Anda?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:267
@@ -748,6 +854,9 @@ msgid ""
 "If you have performed an installation and cannot boot your system properly, "
 "you may need to reinstall and partition your system's storage differently."
 msgstr ""
+"Jika Anda telah melakukan instalasi dan tidak dapat mem-boot sistem Anda "
+"dengan benar, Anda mungkin perlu menginstal ulang dan mempartisi penyimpanan "
+"sistem Anda secara berbeda."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:269
@@ -759,6 +868,12 @@ msgid ""
 "system and move your `/boot` partition and the boot loader outside the RAID "
 "array. The `/boot` partition and the boot loader must be on the same drive."
 msgstr ""
+"Beberapa jenis BIOS tidak mendukung boot dari kartu RAID. Setelah Anda "
+"menyelesaikan instalasi dan reboot sistem untuk pertama kalinya, layar "
+"berbasis teks yang menunjukkan prompt boot loader (misalnya, `grub>`) dan "
+"mungkin yang muncul hanya kursor berkedip. Jika demikian, Anda harus "
+"mempartisi ulang sistem dan memindahkan partisi `/boot` dan boot loader di "
+"luar larik RAID. Partisi `/boot` dan boot loader harus pada drive yang sama."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:271
@@ -1058,6 +1173,17 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"Sistem berkas                             Ukuran Pakai  Sisa Guna% Dikait "
+"pada\n"
+"/dev/mapper/vg_rhel-root                     20G  6.0G   13G   32% /\n"
+"devtmpfs                                    1.8G     0  1.8G    0% /dev\n"
+"tmpfs                                       1.8G  2.7M  1.8G    1% /dev/shm\n"
+"tmpfs                                       1.8G 1012K  1.8G    1% /run\n"
+"tmpfs                                       1.8G     0  1.8G    0% /sys/fs/"
+"cgroup\n"
+"tmpfs                                       1.8G  2.6M  1.8G    1% /tmp\n"
+"/dev/sda1                                   976M  150M  760M   17% /boot\n"
+"/dev/dm-4                                    90G   90G     0  100% /home\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:380
