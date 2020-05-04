@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-03 22:11+0000\n"
-"PO-Revision-Date: 2020-05-03 22:33+0000\n"
+"PO-Revision-Date: 2020-05-04 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f26pagesinstalltroubleshooting/id/>\n"
@@ -165,10 +165,12 @@ msgid ""
 "|`/tmp/syslog`|hardware-related system messages\n"
 msgstr ""
 "|Berkas log|Isi\n"
-"|`/tmp/qnaconda.log`|pesan umum [application]*Anaconda*\n"
-"|`/tmp/program.log`|semua program eksternal yang dijalankan selama instalasi\n"
-"|`/tmp/wtorage.log`|informasi modul penyimpanan ekstensif\n"
-"|`/tmp/packaging.log`|pesan instalasi paket [application]*DNF* dan [application]*rpm*\n"
+"|`/tmp/anaconda.log`|pesan umum [application]*Anaconda*\n"
+"|`/tmp/program.log`|semua program eksternal yang dijalankan selama "
+"instalasi\n"
+"|`/tmp/storage.log`|informasi modul penyimpanan ekstensif\n"
+"|`/tmp/packaging.log`|pesan instalasi paket [application]*dnf* dan "
+"[application]*rpm*\n"
 "|`/tmp/syslog`|pesan sistem yang terkait dengan perangkat keras\n"
 
 #. type: Plain text
@@ -855,7 +857,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:273
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "Masalah Dengan Urutan Boot Grafis"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:276
@@ -868,12 +870,19 @@ msgid ""
 "sequence; to solve this issue, you must disable graphical boot. To do this, "
 "temporarily alter the setting at boot time before changing it permanently."
 msgstr ""
+"Setelah Anda menyelesaikan instalasi dan reboot sistem Anda untuk pertama "
+"kalinya, ada kemungkinan bahwa sistem berhenti merespons selama urutan boot "
+"grafis, memerlukan reset. Dalam hal ini, boot loader berhasil ditampilkan, "
+"tetapi memilih entri apa pun dan mencoba untuk boot membuat sistem berhenti. "
+"Ini biasanya berarti masalah dengan urutan boot grafis; untuk memecahkan "
+"masalah ini, Anda harus menonaktifkan boot grafis. Untuk melakukan ini, "
+"sementara ubah pengaturan pada saat boot sebelum mengubahnya secara permanen."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:277
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "Menonaktifkan Boot Grafis Untuk Sementara"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:279
@@ -883,6 +892,9 @@ msgid ""
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
 "it."
 msgstr ""
+"Mulai komputer Anda dan tunggu hingga menu boot loader muncul. Jika Anda "
+"menetapkan periode waktu habis boot loader Anda ke 0, tahan tombol kbd:[Esc] "
+"untuk mengaksesnya."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:281
@@ -892,6 +904,9 @@ msgid ""
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
 "options."
 msgstr ""
+"Ketika menu boot loader muncul, gunakan tombol kursor Anda untuk menyorot "
+"entri yang ingin Anda boot dan tekan tombol kbd:[e] untuk menyunting opsi "
+"entri ini."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:283
@@ -901,6 +916,11 @@ msgid ""
 "this line, locate the `rhgb` option and delete it. The option may not be "
 "immediately visible; use the cursor keys to scroll up and down."
 msgstr ""
+"Dalam daftar pilihan, cari baris kernel - yaitu, baris yang diawali dengan "
+"kata kunci `linux` (atau, dalam beberapa kasus, `linux16` atau `linuxefi`). "
+"Pada baris ini, Cari opsi `rhgb` dan hapus itu. Opsi ini mungkin tidak "
+"langsung terlihat; gunakan tombol kursor untuk menggulir ke atas dan ke "
+"bawah."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:285
@@ -909,6 +929,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
 msgstr ""
+"Tekan kbd:[F10] atau kbd:[Ctrl + X] untuk mem-boot sistem Anda dengan opsi "
+"yang disunting."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:287
@@ -918,17 +940,21 @@ msgid ""
 "perform the previous procedure every time the system boots. To permanently "
 "change boot options, do the following."
 msgstr ""
+"Jika sistem berhasil dimulai, Anda dapat masuk secara normal. Kemudian Anda "
+"akan perlu untuk menonaktifkan boot grafis secara permanen - jika tidak, "
+"Anda akan harus melakukan prosedur sebelumnya setiap kali sistem boot. Untuk "
+"secara permanen mengubah opsi boot, lakukan hal berikut."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:288
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "Menonaktifkan Boot Grafis Secara Permanen"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:290
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "Masuk ke akun `root` menggunakan perintah [command]#su-#:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:294
@@ -942,6 +968,8 @@ msgid ""
 "Open the `/etc/default/grub` configuration file using a plain text editor "
 "such as [application]*vim*."
 msgstr ""
+"Buka berkas konfigurasi `/etc/default/grub` menggunakan penyunting teks "
+"biasa seperti [application]*vim*."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:299
@@ -949,6 +977,8 @@ msgid ""
 "Within the `grub` file, locate the line beginning with `GRUB_CMDLINE_LINUX`. "
 "The line should look similar to the following:"
 msgstr ""
+"Dalam berkas `grub`, cari baris yang diawali dengan `GRUB_CMDLINE_LINUX`. "
+"Baris akan terlihat mirip dengan berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:303
@@ -959,18 +989,18 @@ msgstr "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:307
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "Pada baris ini, hapus opsi `rhgb`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:309
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "Simpan berkas konfigurasi yang disunting."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:311
 msgid ""
 "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "Segarkan konfigurasi boot loader dengan mengeksekusi perintah berikut:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:315
@@ -988,6 +1018,11 @@ msgid ""
 "`GRUB_CMDLINE_LINUX` line in the `/etc/default/grub` file and refresh the "
 "boot loader configuration again using the [command]#grub2-mkconfig# command."
 msgstr ""
+"Setelah Anda menyelesaikan prosedur ini, Anda dapat me-reboot komputer Anda. "
+"{PRODUCT} tidak akan menggunakan urutan boot grafis lagi. Jika Anda ingin "
+"mengaktifkan boot grafis, ikuti prosedur yang sama, tambahkan opsi `rhgb` ke "
+"baris `GRUB_CMDLINE_LINUX` di berkas `/etc/default/grub` dan segarkan "
+"konfigurasi boot loader lagi menggunakan perintah [command]#grub2-mkconfig#."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:320
@@ -1002,7 +1037,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "Mem-booti ke Lingkungan Grafis"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:325
@@ -1013,6 +1048,12 @@ msgid ""
 "using the [command]#startx# command. Note, however, that this is just a one-"
 "time fix and does not change the log in process for future log ins."
 msgstr ""
+"Jika Anda telah menginstal [application]*X Window System* dan lingkungan "
+"desktop seperti [application]*GNOME*, tetapi tidak melihat lingkungan "
+"desktop grafis setelah Anda masuk ke sistem Anda, Anda dapat memulainya "
+"secara manual menggunakan perintah [command]#startx#. Namun, perhatikan "
+"bahwa ini hanyalah perbaikan satu kali dan tidak mengubah login dalam proses "
+"untuk login mendatang."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:327
@@ -1022,12 +1063,16 @@ msgid ""
 "target`. When you are finished, reboot the computer. You will presented with "
 "a graphical login prompt after the system restarts."
 msgstr ""
+"Untuk mengatur sistem Anda sehingga Anda dapat log in pada layar grafis "
+"login, Anda harus mengubah target baku [application]*systemd* ke "
+"`graphical.target`. Ketika Anda selesai, reboot komputer. Anda akan "
+"disajikan dengan prompt login grafis setelah sistem restart."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "Menata Login Grafis sebagai Baku"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:330
@@ -1035,6 +1080,8 @@ msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
 msgstr ""
+"Buka prompt shell. Jika Anda berada di akun pengguna Anda, jadilah root "
+"dengan mengetikkan perintah [command]#su -#."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:332
@@ -1042,6 +1089,8 @@ msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
 msgstr ""
+"Ubah target baku ke `graphical.target`. Untuk melakukannya, jalankan "
+"perintah berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:336
@@ -1057,6 +1106,10 @@ msgid ""
 "change and keep using the text-based login prompt, execute the following "
 "command as `root`:"
 msgstr ""
+"Login grafis sekarang diaktifkan secara baku - Anda akan disajikan dengan "
+"prompt login grafis setelah reboot berikutnya. Jika Anda ingin membalikkan "
+"perubahan ini dan tetap menggunakan prompt login berbasis teks, jalankan "
+"perintah berikut sebagai `root`:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:343
@@ -1076,7 +1129,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:348
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "Tidak Ada Antarmuka Pengguna Grafis"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:351
@@ -1087,6 +1140,11 @@ msgid ""
 "installation, such as `Minimal install` or `Web Server`, do not include a "
 "graphical interface - it has to be installed manually."
 msgstr ""
+"Jika Anda mengalami kesulitan memulai [application]*X* ([application]*X "
+"Window System*), mungkin bahwa itu belum terinstal. Beberapa lingkungan "
+"dasar preset yang dapat Anda pilih selama instalasi, seperti `Instalasi "
+"minimal` atau `Server Web`, tidak termasuk antarmuka grafis - itu harus "
+"diinstal secara manual."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:353
@@ -1096,12 +1154,16 @@ msgid ""
 "to install [application]*GNOME*, use [command]#dnf install gnome-shell# as "
 "`root`."
 msgstr ""
+"Jika Anda ingin [application]*X*, Anda dapat menginstal paket yang "
+"diperlukan setelah instalasi menggunakan manajer paket [application]*DNF*. "
+"Misalnya, untuk memasang [application]*GNOME*, gunakan [command]#dnf install "
+"gnome-shell# sebagai `root`."
 
 #. type: Title =====
 #: pages/install/Troubleshooting.adoc:354
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "Server X Crash Setelah Pengguna Log In"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:357
@@ -1111,6 +1173,10 @@ msgid ""
 "To verify that this is the problem you are experiencing, execute the "
 "following command:"
 msgstr ""
+"Jika Anda mengalami masalah server [application]*X* crash ketika pengguna "
+"log in, satu atau lebih dari sistem berkas Anda mungkin penuh (atau hampir "
+"penuh). Untuk memverifikasi bahwa ini adalah masalah yang Anda alami, "
+"jalankan perintah berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:361
@@ -1125,6 +1191,9 @@ msgid ""
 "the problem will be on the `/home` partition. A sample output of the "
 "[command]#df# command may look similar to the following:"
 msgstr ""
+"Keluaran akan membantu Anda mendiagnosis partisi yang penuh - dalam "
+"kebanyakan kasus, masalahnya akan berada di partisi `/home`. Contoh keluaran "
+"perintah [command]#df# mungkin terlihat seperti berikut ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:376
@@ -1158,6 +1227,11 @@ msgid ""
 "unneeded files. After you free up some disk space, start [application]*X* "
 "using the [command]#startx# command."
 msgstr ""
+"Dalam contoh di atas, Anda dapat melihat bahwa partisi `/home` penuh, yang "
+"menyebabkan crash. Anda dapat membuat sebagian ruang pada partisi dengan "
+"menghapus berkas-berkas yang tidak dibutuhkan. Setelah Anda mengosongkan "
+"sebagian ruang disk, jalankan [application]*X* menggunakan perintah "
+"[command]#startx#."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:382
@@ -1166,12 +1240,15 @@ msgid ""
 "options available (such as the [option]#-h# option used in this example), "
 "see the `df(1)` man page."
 msgstr ""
+"Untuk informasi tambahan tentang [command]#df# dan penjelasan tentang "
+"pilihan yang tersedia (seperti opsi [option]#-h# yang digunakan dalam contoh "
+"ini), lihat halaman manual `df(1)`."
 
 #. type: Title =====
 #: pages/install/Troubleshooting.adoc:384
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "Apakah RAM Anda Tidak Dikenali?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:387
@@ -1193,6 +1270,10 @@ msgid ""
 "3.5GB or 3.7GB, you have probably installed a 32-bit version of {PRODUCT} on "
 "a 64bit kernel. For modern systems, use the 64-bit (x86_64) version."
 msgstr ""
+"Jika Anda memiliki memori 4GB atau lebih terinstal, tapi {PRODUCT} hanya "
+"menampilkan sekitar 3,5 GB atau 3,7 GB, Anda mungkin telah menginstal versi "
+"32-bit dari {PRODUCT} pada kernel 64bit. Untuk sistem modern, gunakan versi "
+"64-bit (x86_64)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:394
@@ -1203,6 +1284,12 @@ msgid ""
 "with 4{nbsp}GB of RAM and an integrated Intel graphics card will show only "
 "roughly 3.7{nbsp}GB of available memory, even with a 64-bit system."
 msgstr ""
+"Beberapa konfigurasi perangkat keras memiliki bagian dari RAM sistem yang "
+"dicadangkan dan tidak tersedia untuk sistem utama. Terutama, komputer laptop "
+"dengan kartu grafis terintegrasi akan mencadangkan beberapa memori untuk "
+"GPU. Sebagai contoh, sebuah laptop dengan RAM 4{nbsp}GB dan kartu grafis "
+"Intel terintegrasi hanya akan menampilkan sekitar 3,7{nbsp}GB memori yang "
+"tersedia, bahkan dengan sistem 64-bit."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:396
@@ -1222,12 +1309,15 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"Jika Anda memastikan bahwa memori Anda tidak memiliki masalah, Anda dapat "
+"mencoba dan mengatur jumlah memori secara manual menggunakan opsi kernel "
+"[option]#mem=#."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:401
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "Mengonfigurasi Memori Secara Manual"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:407
@@ -1236,6 +1326,9 @@ msgid ""
 "with the keyword `linux` (or, in some cases, `linux16`). Append the "
 "following option to the end of this line:"
 msgstr ""
+"Dalam daftar pilihan, cari baris kernel - yaitu, baris yang diawali dengan "
+"kata kunci `linux` (atau, dalam beberapa kasus, `linux16`). Tambahkan opsi "
+"berikut ke akhir baris ini:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:411
@@ -1248,7 +1341,7 @@ msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 #: pages/install/Troubleshooting.adoc:414
 #: pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
-msgstr ""
+msgstr "Ganti _xx_ dengan jumlah RAM yang Anda miliki dalam megabyte."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:418
@@ -1259,6 +1352,11 @@ msgid ""
 "the line beginning with `GRUB_CMDLINE_LINUX` in the `/etc/default/grub` file "
 "to make the change permanent:"
 msgstr ""
+"Tunggu hingga sistem boot dan masuk. Kemudian, buka baris perintah dan "
+"jalankan perintah [command]#free -m# lagi. Jika jumlah total RAM yang "
+"ditampilkan oleh perintah sesuai dengan harapan Anda, tambahkan yang berikut "
+"ke baris yang diawali dengan `GRUB_CMDLINE_LINUX` dalam berkas `/etc/default/"
+"grub` untuk membuat perubahan permanen:"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:427
@@ -1267,6 +1365,9 @@ msgid ""
 "configuration so that the change will take effect. Run the following command "
 "with root privileges:"
 msgstr ""
+"Setelah Anda memperbarui berkas dan menyimpannya, segarkan konfigurasi boot "
+"loader sehingga perubahan akan berlaku. Jalankan perintah berikut dengan hak "
+"akses root:"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:434
@@ -1274,6 +1375,7 @@ msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
 msgstr ""
+"Dalam `/etc/default/grub`, contoh di atas akan terlihat seperti berikut:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:444
@@ -1287,3 +1389,12 @@ msgid ""
 "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd.lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 "
+"rd.lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"
