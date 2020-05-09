@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-08 22:10+0000\n"
-"PO-Revision-Date: 2020-05-04 22:35+0000\n"
+"PO-Revision-Date: 2020-05-09 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pages_partialsinstalldatetimespoke/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.3\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #. type: Block title
 #: pages/_partials/install/DateTimeSpoke.adoc:6
@@ -36,18 +36,24 @@ msgid ""
 "change your date, time and location settings before you begin the "
 "installation."
 msgstr ""
+"Layar `Tanggal & Waktu` memungkinkan Anda mengonfigurasi pengaturan terkait "
+"waktu dan tanggal untuk sistem Anda. Layar ini secara otomatis dikonfigurasi "
+"berbasis pengaturan yang Anda pilih dalam xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-welcome[Layar Selamat Datang dan Pemilihan Bahasa], "
+"tapi Anda dapat mengubah pengaturan tanggal, waktu, dan lokasi sebelum Anda "
+"memulai instalasi."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/DateTimeSpoke.adoc:12
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "Tangkapan Layar dari layar Tanggal & Waktu"
 
 #. type: Target for macro image
 #: pages/_partials/install/DateTimeSpoke.adoc:12
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:15
@@ -58,6 +64,11 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"Pertama, pilih `Wilayah` Anda memakai menu drop down di pojok kiri atas "
+"layar. Kemudian, pilih `Kota` Anda, atau kota terdekat ke lokasi Anda di "
+"zona waktu yang sama. Memilih suatu lokasi spesifik membantu {PRODUCTS} "
+"memastikan bahwa waktu Anda selalu ditata dengan benar termasuk perubahan "
+"waktu otomatis untuk daylight savings time bila berlaku."
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:17
@@ -66,6 +77,9 @@ msgid ""
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
 msgstr ""
+"Anda juga dapat memilih suatu zona waktu relatif to Greenwich Mean Time (GMT)"
+" tanpa menata lokasi Anda ke suatu wilayah spesifik. Untuk melakukan itu, "
+"pilih `Etc` sebagai wilayah Anda."
 
 #. type: delimited block =
 #: pages/_partials/install/DateTimeSpoke.adoc:22
@@ -87,24 +101,32 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"Saklar berlabel `Waktu Jaringan` di pojok kanan atas layar dapat dipakai "
+"untuk memfungsikan atau menonaktifkan sinkronisasi waktu memakai Network "
+"Time Protocol (NTP). Memfungsikan opsi ini akan menjaga waktu sistem Anda "
+"benar selama sistem dapat mengakses internet. Secara baku, empat _pool_ NTP "
+"dikonfigurasi; Anda dapat menambahkan yang lain dan menonaktifkan atau "
+"menghapus yang baku dengan mengklik tombol roda gerigi di sebelah saklar."
 
 #. type: Block title
 #: pages/_partials/install/DateTimeSpoke.adoc:27
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "Dialog tambah dan menandai untuk penggunaan server NTP"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/DateTimeSpoke.adoc:29
 #, no-wrap
 msgid "A dialog window allowing you to add or remove NTP pools from your system configuration"
 msgstr ""
+"Suatu jendela dialog yang mengizinkan Anda menambah atau menghapus pool NTP "
+"dari konfigurasi sistem Anda"
 
 #. type: Target for macro image
 #: pages/_partials/install/DateTimeSpoke.adoc:29
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:32
@@ -113,6 +135,9 @@ msgid ""
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
 msgstr ""
+"Bila Anda menonaktifkan sinkronisasi waktu jaringan, kendali di dasar layar "
+"akan menjadi aktif, dan Anda akan dapat menata waktu dan tanggal saat ini "
+"secara manual."
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:33
@@ -121,3 +146,7 @@ msgid ""
 "the top left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Setelah mengonfigurasi pengaturan waktu dan tanggal Anda, tekan tombol "
+"`Selesai` di pojok kiri atas untuk kembali ke "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Ringkasan Instalasi]."
