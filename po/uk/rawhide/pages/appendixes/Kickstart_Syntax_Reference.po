@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-05-10 22:05+0000\n"
+"POT-Creation-Date: 2020-05-11 22:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1480,8 +1480,8 @@ msgstr ""
 msgid ""
 "One or more partitions can be specified in _partitions_. When specifying "
 "more than one partitions, the entries must be separated by a single space. "
-"See xref:Kickstart_Syntax_Reference.adoc#exam-kickstart-create-"
-"btrfs[Creating Btrfs Volumes and Subvolumes] for a demonstration."
+"See xref:exam-kickstart-create-btrfs[Creating Btrfs Volumes and Subvolumes] "
+"for a demonstration."
 msgstr ""
 
 #. type: Plain text
@@ -1652,8 +1652,8 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:496
 msgid ""
 "For a detailed example of partitioning including the [command]#clearpart# "
-"command, see xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-example-"
-"advanced-partitioning[Advanced Partitioning Example]."
+"command, see xref:sect-kickstart-example-advanced-partitioning[Advanced "
+"Partitioning Example]."
 msgstr ""
 
 #. type: Labeled list
@@ -2020,10 +2020,10 @@ msgstr ""
 msgid ""
 "Specifies additional iSCSI storage to be attached during installation. If "
 "you use the [command]#iscsi# command, you must also assign a name to the "
-"iSCSI node, using the [command]#iscsiname# command (see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-iscsiname[iscsiname "
-"(optional) - Assign Name to iSCSI Device]. The [command]#iscsiname# command "
-"must appear before the [command]#iscsi# command in the Kickstart file."
+"iSCSI node, using the [command]#iscsiname# command (see xref:sect-kickstart-"
+"commands-iscsiname[iscsiname (optional) - Assign Name to iSCSI Device]. The "
+"[command]#iscsiname# command must appear before the [command]#iscsi# command "
+"in the Kickstart file."
 msgstr ""
 
 #. type: Plain text
@@ -2154,10 +2154,9 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:681
 msgid ""
 "Assigns a name to an iSCSI node specified by the [command]#iscsi# command "
-"(xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-iscsi[iscsi "
-"(optional) - Configure iSCSI Devices]). This command is mandatory if you use "
-"the [command]#iscsi# command, and it must be specified *before* you use "
-"[command]#iscsi#."
+"(xref:sect-kickstart-commands-iscsi[iscsi (optional) - Configure iSCSI "
+"Devices]). This command is mandatory if you use the [command]#iscsi# "
+"command, and it must be specified *before* you use [command]#iscsi#."
 msgstr ""
 
 #. type: delimited block -
@@ -2207,9 +2206,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:707
 msgid ""
-"For a detailed example of [command]#logvol# in action, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
-"partitioning[Advanced Partitioning Example]."
+"For a detailed example of [command]#logvol# in action, see xref:sect-"
+"kickstart-example-advanced-partitioning[Advanced Partitioning Example]."
 msgstr ""
 
 #. type: Labeled list
@@ -2654,11 +2652,10 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:827
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1166
 msgid ""
-"Create one or more partitions first using xref:Kickstart_Syntax_Reference."
-"adoc#sect-kickstart-commands-part[part (required) - Create Physical "
-"Partition], create the logical volume group (xref:Kickstart_Syntax_Reference."
-"adoc#sect-kickstart-commands-volgroup[volgroup (optional) - Create LVM "
-"Volume Group]), and then create logical volumes. For example:"
+"Create one or more partitions first using xref:sect-kickstart-commands-"
+"part[part (required) - Create Physical Partition], create the logical volume "
+"group (xref:sect-kickstart-commands-volgroup[volgroup (optional) - Create "
+"LVM Volume Group]), and then create logical volumes. For example:"
 msgstr ""
 
 #. type: delimited block -
@@ -2685,9 +2682,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:843
 msgid ""
-"For a detailed example of [command]#part# in action, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
-"partitioning[Advanced Partitioning Example]."
+"For a detailed example of [command]#part# in action, see xref:sect-kickstart-"
+"example-advanced-partitioning[Advanced Partitioning Example]."
 msgstr ""
 
 #. type: delimited block -
@@ -2749,8 +2745,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:894
 msgid ""
-"The partition is used for LVM (see xref:Kickstart_Syntax_Reference.adoc#sect-"
-"kickstart-commands-part[part (required) - Create Physical Partition])."
+"The partition is used for LVM (see xref:sect-kickstart-commands-part[part "
+"(required) - Create Physical Partition])."
 msgstr ""
 
 #. type: Labeled list
@@ -2765,8 +2761,8 @@ msgid ""
 "The partition will be used for a BIOS Boot partition. A 1 MB BIOS boot "
 "partition is necessary on BIOS-based systems using a _GUID Partition Table_ "
 "(GPT); the boot loader will be installed into it. It is not necessary on "
-"UEFI systems. Also see xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-"
-"commands-part[part (required) - Create Physical Partition]."
+"UEFI systems. Also see xref:sect-kickstart-commands-part[part (required) - "
+"Create Physical Partition]."
 msgstr ""
 
 #. type: Labeled list
@@ -2780,9 +2776,8 @@ msgstr ""
 msgid ""
 "An EFI System Partition. An EFI partition at least 50 MB in size is "
 "necessary on UEFI-based systems; the recommended size is 200 MB. It is not "
-"necessary on BIOS systems. Also see xref:Kickstart_Syntax_Reference."
-"adoc#sect-kickstart-commands-part[part (required) - Create Physical "
-"Partition]."
+"necessary on BIOS systems. Also see xref:sect-kickstart-commands-part[part "
+"(required) - Create Physical Partition]."
 msgstr ""
 
 #. type: Plain text
@@ -3073,9 +3068,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1036
 msgid ""
-"For a detailed example of [command]#raid# in action, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
-"partitioning[Advanced Partitioning Example]."
+"For a detailed example of [command]#raid# in action, see xref:sect-kickstart-"
+"example-advanced-partitioning[Advanced Partitioning Example]."
 msgstr ""
 
 #. type: Plain text
@@ -3284,8 +3278,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1154
 msgid ""
 "For a detailed partitioning example including [command]#volgroup#, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
-"partitioning[Advanced Partitioning Example]."
+"sect-kickstart-example-advanced-partitioning[Advanced Partitioning Example]."
 msgstr ""
 
 #. type: Plain text
@@ -4787,8 +4780,8 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1643
 msgid ""
 "This command must be used inside the [command]#%anaconda# section. See xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-anaconda[%anaconda "
-"(optional) - Additional Anaconda Configuration] for details."
+"sect-kickstart-commands-anaconda[%anaconda (optional) - Additional Anaconda "
+"Configuration] for details."
 msgstr ""
 
 #. type: Labeled list
@@ -5152,8 +5145,7 @@ msgid ""
 "Use this command to add a specified `SSH` key to an user's `authorized_keys` "
 "file. The specified user must either be `root`, or it must be created in the "
 "Kickstart file - either automatically by an installed package, or using xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-user[user (optional) "
-"- Create User Account]."
+"sect-kickstart-commands-user[user (optional) - Create User Account]."
 msgstr ""
 
 #. type: delimited block -
@@ -5230,8 +5222,8 @@ msgstr ""
 msgid ""
 "In addition to the default group, a comma separated list of group names the "
 "user should belong to. The groups must exist before the user account is "
-"created. See xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
-"group[group (optional) - Create User Group]."
+"created. See xref:sect-kickstart-commands-group[group (optional) - Create "
+"User Group]."
 msgstr ""
 
 #. type: Labeled list
@@ -5643,8 +5635,8 @@ msgstr ""
 msgid ""
 "The syntax for this command is unusual because it is an add-on rather than a "
 "built-in Kickstart command. For more information about add-ons, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-addon[%addon "
-"(optional) - Include an Anaconda Add-on]."
+"sect-kickstart-commands-addon[%addon (optional) - Include an Anaconda Add-"
+"on]."
 msgstr ""
 
 #. type: Plain text
@@ -5872,9 +5864,9 @@ msgstr ""
 msgid ""
 "Reboot after the installation is successfully completed. If you are "
 "installing {PRODUCT} on IBM System{nbsp}z in command line mode (using xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-cmdline[cmdline "
-"(optional) - Perform Installation in Command Line Mode]), this command is "
-"necessary for a fully automated installation."
+"sect-kickstart-commands-cmdline[cmdline (optional) - Perform Installation in "
+"Command Line Mode]), this command is necessary for a fully automated "
+"installation."
 msgstr ""
 
 #. type: Plain text
@@ -5992,10 +5984,9 @@ msgid ""
 "This section, introduced in {PRODUCT} 22, is used to specify additional "
 "configuration options for the installer. Commands inside this section only "
 "control the behavior during installation, not on the installed system. The "
-"only command currently available inside this section is xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-pwpolicy[pwpolicy "
-"(optional) - Change the Default Password Policy]. The [command]#%anaconda# "
-"section must end with `%end`."
+"only command currently available inside this section is xref:sect-kickstart-"
+"commands-pwpolicy[pwpolicy (optional) - Change the Default Password Policy]. "
+"The [command]#%anaconda# section must end with `%end`."
 msgstr ""
 
 #. type: Plain text
@@ -6040,11 +6031,11 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2074
 msgid ""
 "The [command]#%ksappend _url_pass:attributes[{blank}]# directive is very "
-"similar to xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
-"include[%include (optional) - Include Contents of Another File] in that it "
-"is used to include the contents of additional files as though they were at "
-"the location of the [command]#%ksappend# command. The difference is in when "
-"the two directives are processed."
+"similar to xref:sect-kickstart-commands-include[%include (optional) - "
+"Include Contents of Another File] in that it is used to include the contents "
+"of additional files as though they were at the location of the [command]#"
+"%ksappend# command. The difference is in when the two directives are "
+"processed."
 msgstr ""
 
 #. type: Plain text
@@ -6123,10 +6114,10 @@ msgid ""
 "System* were included in the installation and graphical login was enabled. "
 "This means that by default, no users except for `root` will be created. You "
 "can either create a user with the [option]#user# option in the Kickstart "
-"file before installing additional systems from it (see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-user[user (optional) "
-"- Create User Account] for details) or log into the installed system with a "
-"virtual console as `root` and add users with the [command]#useradd# command."
+"file before installing additional systems from it (see xref:sect-kickstart-"
+"commands-user[user (optional) - Create User Account] for details) or log "
+"into the installed system with a virtual console as `root` and add users "
+"with the [command]#useradd# command."
 msgstr ""
 
 #. type: Block title
@@ -6535,9 +6526,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2250
 msgid ""
-"For an example of a pre-installation script, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-pre-script[Example "
-"Pre-installation Script]."
+"For an example of a pre-installation script, see xref:sect-kickstart-example-"
+"pre-script[Example Pre-installation Script]."
 msgstr ""
 
 #. type: Title ====
@@ -6675,9 +6665,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2315
 msgid ""
-"For an example of a post-installation script, see xref:"
-"Kickstart_Syntax_Reference.adoc#sect-kickstart-example-post-script[Example "
-"Post-installation Script]."
+"For an example of a post-installation script, see xref:sect-kickstart-"
+"example-post-script[Example Post-installation Script]."
 msgstr ""
 
 #. type: Title ==
