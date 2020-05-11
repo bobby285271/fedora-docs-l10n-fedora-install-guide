@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-05-10 22:05+0000\n"
+"POT-Creation-Date: 2020-05-11 22:04+0000\n"
 "PO-Revision-Date: 2020-05-04 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -44,10 +44,10 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:18
 msgid ""
-"If you are comfortable with disk partitions, you can skip ahead to xref:"
-"Disk_Partitions.adoc#sect-disk-partitions-making-room[Strategies for Disk "
-"Repartitioning] for more information on the process of freeing up disk space "
-"to prepare for a {PRODUCT} installation."
+"If you are comfortable with disk partitions, you can skip ahead to xref:sect-"
+"disk-partitions-making-room[Strategies for Disk Repartitioning] for more "
+"information on the process of freeing up disk space to prepare for a "
+"{PRODUCT} installation."
 msgstr ""
 
 #. type: Title ==
@@ -76,8 +76,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:27
 msgid ""
-"xref:Disk_Partitions.adoc#figu-partitions-unused-drive[An Unused Disk "
-"Drive], shows a brand-new, unused disk drive."
+"xref:figu-partitions-unused-drive[An Unused Disk Drive], shows a brand-new, "
+"unused disk drive."
 msgstr ""
 
 #. type: Block title
@@ -134,9 +134,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:44
 msgid ""
-"As xref:Disk_Partitions.adoc#figu-partitions-formatted-drive[Disk Drive with "
-"a File System], implies, the order imposed by a file system involves some "
-"trade-offs:"
+"As xref:figu-partitions-formatted-drive[Disk Drive with a File System], "
+"implies, the order imposed by a file system involves some trade-offs:"
 msgstr ""
 
 #. type: Plain text
@@ -159,15 +158,15 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:50
 msgid ""
-"Note that there is no single, universal file system. As xref:Disk_Partitions."
-"adoc#figu-partitions-different-file-system[Disk Drive with a Different File "
-"System], shows, a disk drive may have one of many different file systems "
-"written on it. Different file systems tend to be incompatible; that is, an "
-"operating system that supports one file system (or a handful of related file "
-"system types) may not support another. However, {PRODUCT} supports a wide "
-"variety of file systems (including many commonly used by other operating "
-"systems such as Microsoft Windows), making data interchange between "
-"different file systems easy."
+"Note that there is no single, universal file system. As xref:figu-partitions-"
+"different-file-system[Disk Drive with a Different File System], shows, a "
+"disk drive may have one of many different file systems written on it. "
+"Different file systems tend to be incompatible; that is, an operating system "
+"that supports one file system (or a handful of related file system types) "
+"may not support another. However, {PRODUCT} supports a wide variety of file "
+"systems (including many commonly used by other operating systems such as "
+"Microsoft Windows), making data interchange between different file systems "
+"easy."
 msgstr ""
 
 #. type: Block title
@@ -217,15 +216,15 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:64
 msgid ""
-"As xref:Disk_Partitions.adoc#figu-partitions-drive-with-data[Disk Drive with "
-"Data Written to It], shows, some of the previously-empty blocks are now "
-"holding data. However, by just looking at this picture, we cannot determine "
-"exactly how many files reside on this drive. There may only be one file or "
-"many, as all files use at least one block and some files use multiple "
-"blocks. Another important point to note is that the used blocks do not have "
-"to form a contiguous region; used and unused blocks may be interspersed. "
-"This is known as _fragmentation_. Fragmentation can play a part when "
-"attempting to resize an existing partition."
+"As xref:figu-partitions-drive-with-data[Disk Drive with Data Written to It], "
+"shows, some of the previously-empty blocks are now holding data. However, by "
+"just looking at this picture, we cannot determine exactly how many files "
+"reside on this drive. There may only be one file or many, as all files use "
+"at least one block and some files use multiple blocks. Another important "
+"point to note is that the used blocks do not have to form a contiguous "
+"region; used and unused blocks may be interspersed. This is known as "
+"_fragmentation_. Fragmentation can play a part when attempting to resize an "
+"existing partition."
 msgstr ""
 
 #. type: Plain text
@@ -281,12 +280,12 @@ msgid ""
 "disks: Master Boot Record (*MBR*) and GUID Partition Table (*GPT*). *MBR* is "
 "an older method of disk partitioning used with BIOS-based computers. *GPT* "
 "is a newer partitioning layout that is a part of the Unified Extensible "
-"Firmware Interface (*UEFI*). This section and xref:Disk_Partitions.adoc#sect-"
-"disk-partitions-extended[Partitions Within Partitions - An Overview of "
-"Extended Partitions] mainly describe the _Master Boot Record_ (*MBR*) disk "
-"partitioning scheme. For information about the _GUID Partition Table_ "
-"(*GPT*) partitioning layout, see xref:Disk_Partitions.adoc#sect-disk-"
-"partitioning-guid-partition-table[GUID Partition Table (GPT)]."
+"Firmware Interface (*UEFI*). This section and xref:sect-disk-partitions-"
+"extended[Partitions Within Partitions - An Overview of Extended Partitions] "
+"mainly describe the _Master Boot Record_ (*MBR*) disk partitioning scheme. "
+"For information about the _GUID Partition Table_ (*GPT*) partitioning "
+"layout, see xref:sect-disk-partitioning-guid-partition-table[GUID Partition "
+"Table (GPT)]."
 msgstr ""
 
 #. type: delimited block =
@@ -320,12 +319,12 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:95
 msgid ""
-"As xref:Disk_Partitions.adoc#figu-partitions-partition-table[Disk Drive with "
-"Partition Table] shows, the partition table is divided into four sections or "
-"four _primary_ partitions. A primary partition is a partition on a hard "
-"drive that can contain only one logical drive (or section). Each section can "
-"hold the information necessary to define a single partition, meaning that "
-"the partition table can define no more than four partitions."
+"As xref:figu-partitions-partition-table[Disk Drive with Partition Table] "
+"shows, the partition table is divided into four sections or four _primary_ "
+"partitions. A primary partition is a partition on a hard drive that can "
+"contain only one logical drive (or section). Each section can hold the "
+"information necessary to define a single partition, meaning that the "
+"partition table can define no more than four partitions."
 msgstr ""
 
 #. type: Plain text
@@ -372,8 +371,8 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:109
 msgid ""
-"See xref:Disk_Partitions.adoc#figu-partitions-single-part[Disk Drive With "
-"Single Partition] for an example of a disk drive with single partition."
+"See xref:figu-partitions-single-part[Disk Drive With Single Partition] for "
+"an example of a disk drive with single partition."
 msgstr ""
 
 #. type: Block title
@@ -456,10 +455,10 @@ msgid ""
 "An extended partition is like a disk drive in its own right - it has its own "
 "partition table which points to one or more partitions (now called _logical "
 "partitions_, as opposed to the four _primary partitions_) contained entirely "
-"within the extended partition itself. xref:Disk_Partitions.adoc#figu-"
-"partitions-extended[Disk Drive With Extended Partition], shows a disk drive "
-"with one primary partition and one extended partition containing two logical "
-"partitions (along with some unpartitioned free space)."
+"within the extended partition itself. xref:figu-partitions-extended[Disk "
+"Drive With Extended Partition], shows a disk drive with one primary "
+"partition and one extended partition containing two logical partitions "
+"(along with some unpartitioned free space)."
 msgstr ""
 
 #. type: Block title
@@ -625,8 +624,8 @@ msgstr ""
 msgid ""
 "In this situation, the partitions already defined do not span the entire "
 "hard disk, leaving unallocated space that is not part of any defined "
-"partition. xref:Disk_Partitions.adoc#figu-partitions-unused-space[Disk Drive "
-"with Unpartitioned Free Space], shows what this might look like."
+"partition. xref:figu-partitions-unused-space[Disk Drive with Unpartitioned "
+"Free Space], shows what this might look like."
 msgstr ""
 
 #. type: Block title
@@ -668,8 +667,8 @@ msgid ""
 "Unfortunately, this scenario, although very simple, is not very likely "
 "(unless you have just purchased a new disk just for {PRODUCT}). Most pre-"
 "installed operating systems are configured to take up all available space on "
-"a disk drive (see xref:Disk_Partitions.adoc#sect-disk-partitions-active-"
-"partition[Using Free Space from an Active Partition])."
+"a disk drive (see xref:sect-disk-partitions-active-partition[Using Free "
+"Space from an Active Partition])."
 msgstr ""
 
 #. type: Title ===
@@ -682,8 +681,8 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:223
 msgid ""
 "In this case, maybe you have one or more partitions that you do not use any "
-"longer. xref:Disk_Partitions.adoc#figu-partitions-unused-partition[Disk "
-"Drive with an Unused Partition], illustrates such a situation."
+"longer. xref:figu-partitions-unused-partition[Disk Drive with an Unused "
+"Partition], illustrates such a situation."
 msgstr ""
 
 #. type: Block title
@@ -775,8 +774,8 @@ msgstr ""
 msgid ""
 "After creating a smaller partition for your existing operating system, you "
 "can reinstall software, restore your data, and start the installation. xref:"
-"Disk_Partitions.adoc#figu-partitions-destructive-repartitioning[Disk Drive "
-"Being Destructively Repartitioned] shows this being done."
+"figu-partitions-destructive-repartitioning[Disk Drive Being Destructively "
+"Repartitioned] shows this being done."
 msgstr ""
 
 #. type: Block title
@@ -906,11 +905,11 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:295
 msgid ""
-"xref:Disk_Partitions.adoc#figu-partitions-resize-existing[Disk Drive with "
-"Partition Resized] shows the actual resizing process. While the actual "
-"result of the resizing operation varies depending on the software used, in "
-"most cases the newly freed space is used to create an unformatted partition "
-"of the same type as the original partition."
+"xref:figu-partitions-resize-existing[Disk Drive with Partition Resized] "
+"shows the actual resizing process. While the actual result of the resizing "
+"operation varies depending on the software used, in most cases the newly "
+"freed space is used to create an unformatted partition of the same type as "
+"the original partition."
 msgstr ""
 
 #. type: Block title
@@ -946,9 +945,8 @@ msgid ""
 "As the previous step implied, it may or may not be necessary to create new "
 "partitions. However, unless your resizing software is Linux-aware, it is "
 "likely that you must delete the partition that was created during the "
-"resizing process. xref:Disk_Partitions.adoc#figu-partitions-final-"
-"configuration[Disk Drive with Final Partition Configuration], shows this "
-"being done."
+"resizing process. xref:figu-partitions-final-configuration[Disk Drive with "
+"Final Partition Configuration], shows this being done."
 msgstr ""
 
 #. type: Block title
