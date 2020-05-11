@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-10 22:09+0000\n"
-"PO-Revision-Date: 2020-05-04 22:35+0000\n"
+"PO-Revision-Date: 2020-05-11 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.3\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #. type: Title =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
@@ -47,7 +47,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:18
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:21
@@ -61,6 +61,9 @@ msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:30
@@ -85,7 +88,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:38
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:41
@@ -145,7 +148,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:64
 #, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:67
@@ -158,7 +161,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:68
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[option]#--opts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:69
@@ -169,7 +172,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:72
 #, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:75
@@ -191,7 +194,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:82
 #, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
@@ -211,13 +214,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:89
 #, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:91
 #, no-wrap
 msgid "[option]#--source=#"
-msgstr ""
+msgstr "[option]#--source=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:92
@@ -231,24 +234,31 @@ msgstr ""
 #, no-wrap
 msgid "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/"
+"dd.img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:101
 #, no-wrap
 msgid "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/"
+"dd.img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:106
 #, no-wrap
 msgid "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:108
 #, no-wrap
 msgid "[option]#--biospart=#"
-msgstr ""
+msgstr "[option]#--biospart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:109
@@ -277,6 +287,8 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:124
@@ -287,7 +299,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:125
 #, no-wrap
 msgid "[command]#cdrom#"
-msgstr ""
+msgstr "[command]#cdrom#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:126
@@ -298,7 +310,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:127
 #, no-wrap
 msgid "[command]#harddrive#"
-msgstr ""
+msgstr "[command]#harddrive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:128
@@ -316,12 +328,14 @@ msgid ""
 "[command]#install#\n"
 "[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:137
 #, no-wrap
 msgid "[option]#--partition=#:"
-msgstr ""
+msgstr "[option]#--partition=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:138
@@ -332,7 +346,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:139
 #, no-wrap
 msgid "[option]#--biospart=#:"
-msgstr ""
+msgstr "[option]#--biospart=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:140
@@ -344,7 +358,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:175
 #, no-wrap
 msgid "[option]#--dir=#:"
-msgstr ""
+msgstr "[option]#--dir=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:142
@@ -356,7 +370,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:143
 #, no-wrap
 msgid "[command]#liveimg#"
-msgstr ""
+msgstr "[command]#liveimg#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:144
@@ -382,13 +396,15 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:155
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:189
 #, no-wrap
 msgid "[option]#--url=#:"
-msgstr ""
+msgstr "[option]#--url=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:156
