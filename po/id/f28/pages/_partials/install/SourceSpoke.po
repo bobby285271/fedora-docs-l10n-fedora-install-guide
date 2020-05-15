@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-13 22:09+0000\n"
-"PO-Revision-Date: 2020-05-12 22:37+0000\n"
+"PO-Revision-Date: 2020-05-15 05:40+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f28pages_partialsinstallsourcespoke/id/"
-">\n"
+"fedora-docs-l10nfedora-install-guide/f28pages_partialsinstallsourcespoke/id/>"
+"\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,6 +161,12 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Untuk mengonfigurasi secara manual suatu sumber instalasi berbasis jaringan, "
+"gunakan menu drop down untuk menyatakan protokol yang akan dipakai ketika "
+"mengunduh paket. Pengaturan ini bergantung pada server yang ingin Anda "
+"pakai. Lalu, ketikkan alamat server (tanpa protokol) ke dalam ruas alamat. "
+"Bila Anda memilih NFS, ruas masukan ke dua akan muncul dimana Anda dapat "
+"menyatakan `opsi mount NFS` ubahan."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:37
@@ -168,12 +174,17 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Ketika memilih suatu sumber instalasi NFS, Anda mesti menyatakan alamat "
+"dengan karakter titik dua (`:`) yang memisahkan nama host dari path. Sebagai "
+"contoh:"
 
 #. type: delimited block -
 #: pages/_partials/install/SourceSpoke.adoc:41
 #, no-wrap
 msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
 msgstr ""
+"`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/"
+"to/directory_pass:attributes[{blank}]`\n"
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:46
@@ -184,6 +195,11 @@ msgid ""
 "Authentication` and enter your user name and password. Click btn:[OK] to "
 "finish the configuration."
 msgstr ""
+"Untuk mengonfigurasi suatu proksi bagi sumber HTTP atau HTTPS, klik tombol "
+"btn:[Penyiapan proksi]. Centang `Fungsikan proksi HTTP` dan ketikkan URL ke "
+"dalam kotak `URL Proksi`. Bila server proksi memerlukan autentikasi, centang "
+"`Gunakan Autentikasi` dan masukkan nama pengguna dan kata sandi Anda. Klik "
+"btn:[OK] untuk menyelesaikan konfigurasi."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:48
@@ -191,6 +207,8 @@ msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
 msgstr ""
+"Bila URL HTTP atau HTTPS Anda mengacu ke sebuah daftar cermin, tandai kotak "
+"centang di bawah ruas alamat."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:50
@@ -202,6 +220,12 @@ msgid ""
 "gui-software-selection[Software Selection] once you finish configuring the "
 "sources."
 msgstr ""
+"Anda juga dapat menyatakan repositori tambahan dalam bagian `Repositori "
+"tambahan` untuk mendapatkan akses ke lebih banyak lingkungan instalasi dan "
+"add on perangkat lunak. Semua lingkungan dan add-on akan tersedia untuk "
+"dipilih dalam xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-software-selection[Pemilihan Perangkat Lunak] setelah Anda selesai "
+"mengonfigurasi sumber."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:52
@@ -213,6 +237,12 @@ msgid ""
 "Source` screen. To activate or deactivate a repository, click the check box "
 "in the `Enabled` column at each entry in the list."
 msgstr ""
+"Untuk menambahkan repositori, klik tombol btn:[+]. Untuk menghapus sebuah "
+"repositori, pilih satu dalam daftar dan klik tombol btn:[-]. Klik ikon panah "
+"untuk memulihkan ke daftar repositori sebelumnya, yaitu mengganti entri saat "
+"ini dengan yang ada pada saat Anda masuk layar `Sumber Instalasi`. Untuk "
+"mengaktifkan atau menonaktifkan sebuah repositori, klik kotak centang dalam "
+"kolom `Difungsikan` pada setiap entri dalam daftar."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:54
@@ -221,6 +251,9 @@ msgid ""
 "primary repository on the network using the input fields on the right side "
 "of the section."
 msgstr ""
+"Anda dapat menamai repositori tambahan Anda dan mengonfigurnya dengan cara "
+"yang sama dengan repositori primer pada jaringan memakai ruas masukan pada "
+"sisi kanan bagian."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:55
