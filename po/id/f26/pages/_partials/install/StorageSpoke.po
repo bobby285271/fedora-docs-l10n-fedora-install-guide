@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-16 22:14+0000\n"
-"PO-Revision-Date: 2020-05-16 22:39+0000\n"
+"PO-Revision-Date: 2020-05-17 22:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f26pages_partialsinstallstoragespoke/id/"
@@ -237,6 +237,13 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning]."
 msgstr ""
+"`Saya akan mengkonfigurasi partisi` - Pilih opsi ini dan tekan `Selesai` di "
+"sudut kiri atas layar untuk mengkonfigurasi tata letak partisi sistem Anda "
+"secara manual. Ini membutuhkan pengetahuan tentang teori di balik partisi "
+"disk dan konsep terkait, tetapi memberi Anda kontrol penuh atas cara sistem "
+"akan diinstal. Untuk instruksi untuk mempartisi manual, lihat "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Pemartisian Manual]."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:50
@@ -282,6 +289,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"Setelah Anda memilih perangkat penyimpanan, pilih antara partisi otomatis "
+"dan manual, konfigurasikan lokasi enkripsi dan boot loader, tekan `Selesai` "
+"di sudut kiri atas layar. Kemudian, tergantung pada pengaturan Anda, hal "
+"berikut akan terjadi:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:63
@@ -294,6 +305,13 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"Jika Anda memilih untuk mengenkripsi hard drive Anda, dialog `Frasa Sandi "
+"Enkripsi Disk` akan muncul. Masukkan frasa sandi yang Anda pilih ke dalam "
+"bidang `Frasa Sandi` dan` Konfirmasi`. Ketika Anda melakukannya, frasa sandi "
+"akan dievaluasi secara otomatis dan kekuatannya akan ditampilkan, bersama "
+"dengan saran tentang bagaimana membuatnya lebih kuat jika penginstal telah "
+"menilainya lemah. Untuk informasi tentang membuat kata sandi yang kuat, "
+"lihat [citetitle]_Panduan{nbsp}Keamanan {PRODUCT}_."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:65
@@ -306,6 +324,13 @@ msgid ""
 "information about how much space the system needs for at least a minimal "
 "installation and how much space you have reclaimed."
 msgstr ""
+"Jika Anda memilih partisi otomatis dan `Saya ingin menyediakan ruang "
+"tambahan`, atau jika tidak ada cukup ruang kosong pada hard drive yang Anda "
+"pilih untuk menginstal {PRODUCT}, dialog` Bebaskan Ruang` akan muncul. "
+"Dialog ini mencantumkan semua perangkat disk yang telah Anda konfigurasi dan "
+"semua partisi pada perangkat tersebut. Sudut kanan bawah dialog menampilkan "
+"informasi tentang berapa banyak ruang yang dibutuhkan sistem untuk "
+"setidaknya instalasi minimal dan berapa banyak ruang yang Anda reklamasi."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:70
@@ -314,6 +339,9 @@ msgid ""
 "that partition will be lost. If you want to preserve your data, use the "
 "`Shrink` option, not the `Delete` option."
 msgstr ""
+"Bila Anda memakai dialog `Bebaskan Ruang` untuk *menghapus* suatu partisi, "
+"semua data pada partisi itu akan hilang. Bila Anda ingin mempertahankan data "
+"Anda, gunakan opsi `Perkecil`, bukan opsi `Hapus`."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:74
@@ -328,6 +356,15 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"Pertama, tinjau daftar perangkat penyimpanan yang tersedia yang ditampilkan. "
+"Kolom `Ruang Yang Dapat Dibebaskan` menunjukkan berapa banyak ruang yang "
+"dapat direklamasi dari setiap entri. Untuk mendapatkan kembali ruang, pilih "
+"disk atau partisi, dan tekan tombol `Hapus` untuk menghapus partisi itu ("
+"atau semua partisi pada disk yang dipilih), atau `Kecilkan` untuk "
+"menggunakan ruang kosong pada partisi sambil menjaga data yang ada. Atau, "
+"Anda dapat menekan `Hapus semua` di sudut kanan bawah; ini akan menghapus "
+"semua partisi yang ada di semua disk dan membuat ruang ini tersedia untuk "
+"{PRODUCT}, tetapi seluruh data yang ada di semua disk akan hilang."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:76
@@ -335,6 +372,8 @@ msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
+"Setelah Anda mengosongkan cukup ruang untuk instalasi {PRODUCT} Anda, tekan `"
+"Bebaskan ruang` untuk menyelesaikan."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:81
@@ -345,6 +384,11 @@ msgid ""
 "partitions for resizing or deletion, but no such action is performed "
 "immediately."
 msgstr ""
+"Tidak ada perubahan pada disk apa pun yang akan dilakukan sampai Anda "
+"menekan `Mulai Instalasi` di xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[Ringkasan Instalasi]. Dialog `Bebaskan "
+"Ruang` hanya *menandai* partisi untuk mengubah ukuran atau menghapus, tetapi "
+"tidak ada tindakan yang dilakukan seketika."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:85
@@ -354,3 +398,7 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning] for further instructions."
 msgstr ""
+"Jika Anda memilih opsi `Saya akan mengkonfigurasi partisi`, menekan` Selesai`"
+" akan membuka layar `Partisi Manual`. Lihat "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Pemartisian Manual] untuk instruksi lebih lanjut."
