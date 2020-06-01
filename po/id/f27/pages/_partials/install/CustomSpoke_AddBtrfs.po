@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-05-31 22:10+0000\n"
-"PO-Revision-Date: 2020-05-24 03:40+0000\n"
+"PO-Revision-Date: 2020-06-01 06:41+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -58,6 +58,11 @@ msgid ""
 "partitioning-recommended[Recommended Partitioning Scheme] for more "
 "information."
 msgstr ""
+"Beberapa jenis partisi - terutama direktori `/boot` dan `/usr` dan partisi "
+"boot BIOS dan EFI - tidak dapat ditempatkan pada sub volume Btrfs. Gunakan "
+"volume fisik standar untuk mereka (atau volume lojik LVM untuk `/usr`). "
+"Lihat xref:sect-installation-gui-manual-partitioning-recommended[Skema "
+"Partisi Yang Direkomendasikan] untuk informasi lebih lanjut."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
@@ -118,6 +123,8 @@ msgid ""
 "When creating a mount point for swap on Btrfs, specify the mount point as "
 "`swap`."
 msgstr ""
+"Saat membuat titik kait untuk swap pada Btrfs, tentukan titik kait sebagai "
+"`swap`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
@@ -142,6 +149,10 @@ msgid ""
 "are installing (for example, `fedora-server00`. Click the `Modify` button "
 "under the drop-down menu to access the volume settings."
 msgstr ""
+"Di menu `Volume`, Anda dapat melihat bahwa sub volume telah ditetapkan ke "
+"volume yang dibuat secara otomatis, yang dinamai mengikuti varian {PRODUCT} "
+"yang Anda pasang (misalnya, `fedora-server00`. Klik tombol `Ubah` di bawah "
+"menu drop-down untuk mengakses pengaturan volume."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:41
@@ -154,6 +165,13 @@ msgid ""
 "more disks which will be used to hold this volume by holding down kbd:[Ctrl] "
 "and clicking each disk in the list."
 msgstr ""
+"Dalam dialog `Konfigurasi Grup Volume`, Anda dapat mengubah nama volume, `"
+"Level RAID` (Lihat xref:sect-installation-gui-manual-partitioning-"
+"filesystems[Peranti, Sistem Berkas, dan Tipe RAID] untuk informasi tentang "
+"tipe RAID yang tersedia), dan Anda juga dapat menentukan perangkat fisik "
+"mana (disk) tempat volume ini. Anda dapat memilih satu atau lebih disk yang "
+"akan digunakan untuk menyimpan volume ini dengan menekan kbd:[Ctrl] dan "
+"mengklik setiap disk dalam daftar."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:46
@@ -162,6 +180,9 @@ msgid ""
 "volume will take up twice its actual size on your disks. A 5 GB volume with "
 "RAID1 will take up 10 GB of space."
 msgstr ""
+"Jika Anda memilih tipe RAID redundan (seperti `RAID1 (redundansi)`), volume "
+"akan mengambil dua kali ukuran sebenarnya pada disk Anda. Sebuah volume 5 GB "
+"dengan RAID1 akan memakan ruang 10 GB."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
@@ -179,6 +200,9 @@ msgid ""
 "`Fixed` option from the `Size policy` menu and entering a size for the "
 "volume group."
 msgstr ""
+"Selain itu, Anda dapat menetapkan ukuran tetap untuk volume dengan memilih "
+"opsi `Tetap` dari menu `Kebijakan ukuran` dan memasukkan ukuran untuk grup "
+"volume."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
@@ -201,6 +225,14 @@ msgid ""
 "through your existing mount points and change this setting to assign them to "
 "a different volume."
 msgstr ""
+"Jika Anda perlu membuat lebih dari satu volume Btrfs, buka menu drop-down "
+"`Volume` dan pilih opsi `Buat grup volume baru`. Sebuah jendela dialog baru "
+"akan terbuka, identik dengan yang dijelaskan pada langkah sebelumnya. Sekali "
+"lagi, pilih nama, perangkat penyimpanan, pengaturan enkripsi, tingkat RAID, "
+"dan kebijakan ukuran untuk grup baru, dan klik `Simpan`. Volume baru akan "
+"tersedia di menu drop-down `Grup Volume`; Anda kemudian dapat melewati titik "
+"kait yang ada dan mengubah setelan ini untuk menetapkannya ke volume yang "
+"berbeda."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:58
@@ -221,6 +253,10 @@ msgid ""
 "automatically created each time; instead, any additional subvolumes are "
 "assigned to an existing volume."
 msgstr ""
+"Ulangi prosedur ini untuk setiap sub volume Btrfs tambahan yang ingin Anda "
+"buat. Perhatikan bahwa ketika membuat sub volume tambahan, volume baru tidak "
+"secara otomatis dibuat setiap saat; sebaliknya, sebarang sub volume tambahan "
+"ditetapkan ke grup yang ada."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:61
@@ -230,3 +266,7 @@ msgid ""
 "it has a descriptive name so you can identify the subvolume later if you "
 "need to."
 msgstr ""
+"Untuk setiap titik kait yang Anda buat, tinjau setelannya dan pastikan itu "
+"ditetapkan ke volume yang benar, bahwa itu memiliki kapasitas yang cukup, "
+"dan memiliki nama deskriptif sehingga Anda dapat mengidentifikasi volume "
+"nanti jika perlu."
