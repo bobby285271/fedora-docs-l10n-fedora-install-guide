@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-08-26 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-08-27 22:29+0000\n"
+"Last-Translator: Daniel Lara Souza <daniellarasouza@yahoo.com.br>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f28pagesappendixeskickstart_syntax_reference/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2.1\n"
 
 #. type: Title =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "Referência de sintaxe do kickstart"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -37,25 +42,32 @@ msgid ""
 "device node name (such as `sda`), you can instead use any item from `/dev/"
 "disk`. For example, instead of:"
 msgstr ""
+"Não há garantia de que os nomes dos dispositivos sejam consistentes nas "
+"reinicializações, o que pode complicar o uso dos scripts do Kickstart. "
+"Quando uma opção do Kickstart chama um nome de nó de dispositivo (como `sda`)"
+", você pode usar qualquer item de`/dev/disk`. Por exemplo, em vez de:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:18
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:21
 msgid "You could use an entry similar to one of the following:"
-msgstr ""
+msgstr "Você pode usar uma entrada semelhante a uma das seguintes:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:30
@@ -63,6 +75,9 @@ msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
 msgstr ""
+"Isso fornece uma maneira consistente de se referir a discos que é mais "
+"significativo do que apenas `sda`. Isso é especialmente útil em grandes "
+"ambientes de armazenamento."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:34
@@ -75,12 +90,19 @@ msgid ""
 "in syntax between Fedora{nbsp}{PREVVER} and {PRODVER}, use the following "
 "command:"
 msgstr ""
+"Embora os princípios gerais das instalações do Kickstart tendam a permanecer "
+"os mesmos, os comandos e opções podem mudar entre as versões principais. "
+"Você pode usar o comando [command] # ksverdiff # para exibir as diferenças "
+"entre as duas versões da sintaxe do Kickstart. Isso é útil ao atualizar um "
+"arquivo Kickstart existente para ser usado com uma nova versão. Para exibir "
+"uma lista de alterações na sintaxe entre o Fedora {nbsp} {PREVVER} e "
+"{PRODVER}, use o seguinte comando:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:41
@@ -92,6 +114,13 @@ msgid ""
 "system - the version of [package]*pykickstart* on Fedora{nbsp}{PREVVER} can "
 "not display changes in Fedora{nbsp}{PRODVER}."
 msgstr ""
+"A opção [opção] # - f # especifica a versão com a qual iniciar a comparação, "
+"e a opção [opção] # - t # para especificar a versão com a qual terminar. "
+"Para obter informações adicionais, consulte a página do manual `ksverdiff "
+"(1)`. Observe também que você não pode usar isso para exibir alterações em "
+"uma versão mais recente que o seu sistema - a versão do [pacote] * "
+"pykickstart * no Fedora {nbsp} {ANTERIOR} não pode exibir alterações no "
+"Fedora {nbsp} {PRODVER} ."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:43
@@ -100,6 +129,9 @@ msgid ""
 "Notes_, available at link:++http://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Além disso, você pode revisar as notas de lançamento do [citetitle] _Fedora "
+"{nbsp} {PRODVER }_, disponíveis no link: ++ http: //docs.fedoraproject.org/++"
+" [], para obter uma lista de mudanças."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:48
@@ -108,23 +140,26 @@ msgid ""
 "a value must be specified after it. In the example commands, options in "
 "square brackets (`[ ]`) are optional arguments for the command."
 msgstr ""
+"Nas seções a seguir, se uma opção for seguida por uma marca de igual (`=`), "
+"um valor deve ser especificado depois dela. Nos comandos de exemplo, as "
+"opções entre colchetes (`[]`) são argumentos opcionais para o comando."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:52
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr ""
+msgstr "Métodos e fontes de instalação"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:55
 msgid "The following commands control the way Fedora will be installed."
-msgstr ""
+msgstr "Os comandos a seguir controlam a maneira como o Fedora será instalado."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:57
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr ""
+msgstr "dispositivo (opcional) - Instalar drivers de dispositivos extras"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:60
@@ -135,12 +170,17 @@ msgid ""
 "command, which tells the installation program to install extra modules, uses "
 "the following format:"
 msgstr ""
+"Na maioria dos sistemas PCI, o programa de instalação detecta "
+"automaticamente as placas Ethernet e SCSI. No entanto, em sistemas mais "
+"antigos e alguns sistemas PCI, o Kickstart requer uma dica para encontrar os "
+"dispositivos adequados. O comando [command] # device #, que informa ao "
+"programa de instalação para instalar módulos extras, usa o seguinte formato:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:64
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:67
@@ -148,29 +188,30 @@ msgid ""
 "Replace _moduleName_ with the name of the kernel module which should be "
 "installed."
 msgstr ""
+"Substitua _moduleName_ pelo nome do módulo do kernel que deve ser instalado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:68
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[option]#--opts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:69
 msgid "Options to pass to the installed kernel module. For example:"
-msgstr ""
+msgstr "Opções para passar para o módulo de kernel instalado. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:72
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:75
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr ""
+msgstr "driverdisk (opcional) - Use um disco de driver"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:78
@@ -181,18 +222,24 @@ msgid ""
 "Then, you must use the [command]#driverdisk# command to specify that the "
 "installation program should look for a driver disk and its location."
 msgstr ""
+"Os discos de driver podem ser usados durante as instalações do Kickstart "
+"para fornecer drivers adicionais não incluídos por padrão. Você deve copiar "
+"o conteúdo dos discos de driver para o diretório raiz de uma partição no "
+"disco rígido do sistema. Em seguida, você deve usar o comando [command] # "
+"driverdisk # para especificar que o programa de instalação deve procurar um "
+"disco de driver e sua localização."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:82
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "_partition_"
-msgstr ""
+msgstr "_partition_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:85
@@ -201,18 +248,21 @@ msgid ""
 "with the name of the partition containing the driver disk. Note that the "
 "partition must be specified as a full path. For example:"
 msgstr ""
+"Procure a imagem do disco de driver em uma partição local. Substitua "
+"_partition_ pelo nome da partição que contém o disco do driver. Observe que "
+"a partição deve ser especificada como um caminho completo. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:89
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:91
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[option]#--source=#"
-msgstr ""
+msgstr "[option]#--source=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:92
@@ -220,41 +270,50 @@ msgid ""
 "Search for the driver disk in a network location instead of a local "
 "partition. For example:"
 msgstr ""
+"Procure o disco de driver em um local de rede em vez de uma partição local. "
+"Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:96
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:101
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:106
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[option]#--biospart=#"
-msgstr ""
+msgstr "[option]#--biospart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:109
 msgid "BIOS partition containing the driver disk (for example, `82p2`)."
-msgstr ""
+msgstr "Partição BIOS contendo o disco de driver (por exemplo, `82p2`)."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:111
 #, no-wrap
 msgid "install (required) - Configure Installation Method"
-msgstr ""
+msgstr "instalar (obrigatório) - Configurar Método de Instalação"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:114
