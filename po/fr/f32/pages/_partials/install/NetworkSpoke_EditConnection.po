@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-15 02:04+0000\n"
+"POT-Creation-Date: 2020-08-29 22:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title ====
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:5
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:5
 #, no-wrap
 msgid "Editing Network Interface Configuration"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:8
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:8
 msgid ""
 "This section only details the most important settings for a typical wired "
 "connection used during installation. Many of the available options do not "
@@ -31,12 +31,12 @@ msgid ""
 "to the installed system. Configuration of other types of networks is broadly "
 "similar, although the specific configuration parameters may be different. To "
 "learn more about network configuration after installation, see the "
-"[citetitle]_{PRODUCT} Networking{nbsp}Guide_, available at "
-"link:++https://docs.fedoraproject.org/++[]."
+"[citetitle]_{PRODUCT} Networking{nbsp}Guide_, available at link:++https://"
+"docs.fedoraproject.org/++[]."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:10
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:10
 msgid ""
 "To configure a network connection manually, select that connection in the "
 "list on the left side of the screen, and click the `Configure` button. A "
@@ -45,25 +45,26 @@ msgid ""
 "available options will be slightly different depending on whether it is a "
 "physical interface (wired or wireless network interface controller) or a "
 "virtual interface (Bond, Team or Vlan) which you previously configured in "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-virtual-interface[Adding "
-"a Virtual Network Interface].. A full description of all configuration "
-"settings for all connection types is beyond the scope of this document; see "
-"the [citetitle]_Networking Guide_ for details."
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration-virtual-interface[Adding a Virtual Network Interface].. A full "
+"description of all configuration settings for all connection types is beyond "
+"the scope of this document; see the [citetitle]_Networking Guide_ for "
+"details."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:12
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:12
 msgid "The most common and useful options in the configuration dialog are:"
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:13
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:13
 #, no-wrap
 msgid "Enable or disable the connection by default"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:14
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:14
 msgid ""
 "In the `General` tab of the configuration dialog, you can select or unselect "
 "the `Automatically connect to this network when it is available` check box "
@@ -75,7 +76,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:16
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:16
 msgid ""
 "Additionally, you can allow or disallow all users on the system from "
 "connecting to this network using the `All users may connect to this network` "
@@ -84,7 +85,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:21
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:21
 msgid ""
 "It is not possible to only allow a specific user other than `root` to use "
 "this interface, because no other users are created at this point during the "
@@ -93,13 +94,13 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:24
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:24
 #, no-wrap
 msgid "Set up static IPv4 or IPv6 settings"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:25
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:25
 msgid ""
 "By default, both `IPv4` and `IPv6` are set to automatic configuration "
 "depending on current network settings. This means that addresses such as the "
@@ -110,7 +111,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:27
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:27
 msgid ""
 "To set static network configuration, navigate to one of the settings tabs "
 "and select a method other than `Automatic` (for example, `Manual`) from the "
@@ -118,28 +119,28 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:32
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:32
 msgid ""
 "In the `IPv6 Settings` tab, you can also set the method to `Ignore` to "
 "disable `IPv6` on this interface."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:36
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:36
 msgid ""
 "Then, click `Add` on the right side and add a set of settings: `Address`, "
 "`Netmask` (for `IPv4`), `Prefix` (for `IPv6`), and `Gateway`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:38
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:38
 msgid ""
 "The `DNS servers` field accepts one or more IP addresses of DNS servers - "
 "for example, `10.0.0.1,10.0.0.8`."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:40
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:40
 msgid ""
 "The final option in both tabs is `Require IPvpass:attributes[{blank}]_X_ "
 "addressing for this connection to complete`. Select this option in the "
@@ -150,13 +151,13 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:41
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:41
 #, no-wrap
 msgid "Configure routes"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:42
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:42
 msgid ""
 "In the `IPv4 Settings` and `IPv4 Settings` tabs, click the `Routes` button "
 "in the bottom right corner to configure routing settings for a specific IP "
@@ -165,7 +166,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:44
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:44
 msgid ""
 "If you confire at least one static route, you can disallow all routes not "
 "specifically configured here by enabling the `Ignore automatically obtained "
@@ -173,32 +174,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:46
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:46
 msgid ""
 "Select `Use this connection only for resources on its network` to prevent "
 "this connection from becoming the default route. This option can be selected "
 "even if you did not configure any static routes. Enabling this option means "
 "that this route will only be used when necessary to access certain "
-"resources, such as intranet pages which require a local or VPN "
-"connection. Another (default) route will be used for publicly available "
-"resources if possible. Note that unlike the additional routes configured in "
-"this dialog, this setting will be transferred to the installed system. Also "
-"note that this option is only useful when more than one interface is "
-"configured."
+"resources, such as intranet pages which require a local or VPN connection. "
+"Another (default) route will be used for publicly available resources if "
+"possible. Note that unlike the additional routes configured in this dialog, "
+"this setting will be transferred to the installed system. Also note that "
+"this option is only useful when more than one interface is configured."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:48
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:48
 msgid ""
 "When you finish configuring the interface's routing settings, click `OK` to "
 "return to the configuration dialog."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:49
+#: pages/_partials/install/NetworkSpoke_EditConnection.adoc:49
 msgid ""
 "Once you finish configuring the interface, click `Save` in the configuration "
-"window's bottom right corner to save your settings and return to "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration[Network "
-"& Hostname]."
+"window's bottom right corner to save your settings and return to xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[Network & Hostname]."
 msgstr ""
