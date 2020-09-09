@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-09-08 22:02+0000\n"
+"POT-Creation-Date: 2020-09-09 22:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,17 +80,10 @@ msgstr ""
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
 msgid ""
-"If you need to configure additional local storage devices, select `I will "
-"configure partitioning` and press `Done` to move to "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
-"Partitioning]. Then, connect any new hard drives you want to make available "
-"during the installation, and press the button marked by a circular arrow in "
-"the set of controls below the list of mount points on the left side of the "
-"screen. In the dialog window that opens, press `Rescan Disks` and wait until "
-"the scanning process completes. Then, press `OK` to return to "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning[Installation "
-"Destination]; all detected disks including any new ones will be displayed in "
-"the `Local Standard Disks` section."
+"If you need to configure additional local storage devices, select `Refresh` "
+"on the lower-right corner. Follow the instructions in the dialog that "
+"opens. All detected disks, including any new ones, will be displayed in the "
+"`Local Standard Disks` section."
 msgstr ""
 
 #. type: Plain text
@@ -152,19 +145,19 @@ msgstr ""
 #: ./pages/_partials/install/StorageSpoke.adoc:41
 msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
-"two options in the `Other Storage Options` section:"
+"three options in the `Storage Configuration` section:"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:43
 msgid ""
-"`Automatically configure partitioning` - If this option is selected, then "
-"after you press `Done` in the top left corner of the screen, the installer "
-"will determine the total amount of space on all selected disks, and it will "
-"create a _Logical Volume Management_ (LVM) layout suitable for your "
-"system. The specifics of this layout depend on whether your system uses BIOS "
-"or UEFI firmware, the total amount of free space on your disks, and the "
-"amount of RAM on your system (which determines the size of your swap space)."
+"`Automatic` - If this option is selected, then after you press `Done` in the "
+"top left corner of the screen, the installer will determine the total amount "
+"of space on all selected disks, and it will create a Btrfs layout suitable "
+"for your system. The specifics of this layout depend on whether your system "
+"uses BIOS or UEFI firmware, and the total amount of free space on your "
+"disks. A disk-based swap partition is not created, ZRAM-based swap is used "
+"instead."
 msgstr ""
 
 #. type: Plain text
@@ -182,17 +175,26 @@ msgstr ""
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:47
 msgid ""
-"`I will configure partitioning` - Select this option and press `Done` in the "
-"top left corner of the screen to configure your system's partitioning layout "
-"manually. This requires some knowledge of the theory behind disk partitions "
-"and related concepts, but gives you full control over the way the system "
-"will be installed. For instructions for manual partitioning, see "
+"`Custom` - Select this option and press `Done` in the top left corner of the "
+"screen to configure your system's partitioning layout semi-manually. This "
+"requires some knowledge of the theory behind disk partitions and related "
+"concepts, but provides recommendations over the way the system will be "
+"installed. For instructions for Custom partitioning, see "
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning]."
 msgstr ""
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:49
+msgid ""
+"`Advanced-Custom (Blivet-GUI)` - Select this option and press `Done` in the "
+"top left corner of the screen to configure your system's partitioning "
+"completely manually. This requires advanced knowledge of the theory behind "
+"disk partitions and related concepts. There are no guardrails."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/StorageSpoke.adoc:51
 msgid ""
 "Additionally, you can select `Encrypt my data`pass:attributes[{blank}]; this "
 "will encrypt all partitions except the ones needed to boot the system (such "
@@ -203,7 +205,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/StorageSpoke.adoc:54
+#: ./pages/_partials/install/StorageSpoke.adoc:56
 msgid ""
 "If you lose the LUKS passphrase, any encrypted partitions and the data on "
 "them will become completely inaccessible. There is no way to recover a lost "
@@ -216,7 +218,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:58
+#: ./pages/_partials/install/StorageSpoke.adoc:60
 msgid ""
 "To control which one of your selected storage devices will contain the _boot "
 "loader_, click the `Full disk summary and bootloader` link in the bottom "
@@ -229,7 +231,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:60
+#: ./pages/_partials/install/StorageSpoke.adoc:62
 msgid ""
 "After you select storage devices, choose between automatic and manual "
 "partitioning, configure encryption and boot loader location, press `Done` in "
@@ -238,7 +240,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:62
+#: ./pages/_partials/install/StorageSpoke.adoc:64
 msgid ""
 "If you chose to encrypt your hard drive, the `Disk Encryption Passphrase` "
 "dialog will appear. Enter your chosen passphrase into the `Passphrase` and "
@@ -250,7 +252,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:64
+#: ./pages/_partials/install/StorageSpoke.adoc:66
 msgid ""
 "If you selected automatic partitioning and the `I would like to make "
 "additional space available`, or if there is not enough free space on your "
@@ -262,7 +264,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/StorageSpoke.adoc:69
+#: ./pages/_partials/install/StorageSpoke.adoc:71
 msgid ""
 "If you use the `Reclaim Space` dialog to *delete* a partition, all data on "
 "that partition will be lost. If you want to preserve your data, use the "
@@ -270,7 +272,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:73
+#: ./pages/_partials/install/StorageSpoke.adoc:75
 msgid ""
 "First, review the displayed list of available storage devices. The "
 "`Reclaimable Space` column shows how much space can be reclaimed from each "
@@ -284,14 +286,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:75
+#: ./pages/_partials/install/StorageSpoke.adoc:77
 msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/StorageSpoke.adoc:80
+#: ./pages/_partials/install/StorageSpoke.adoc:82
 msgid ""
 "No changes to any disks will be made until you press `Begin Installation` in "
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
@@ -300,10 +302,10 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/StorageSpoke.adoc:84
+#: ./pages/_partials/install/StorageSpoke.adoc:86
 msgid ""
-"If you selected the `I will configure partitioning` option, pressing `Done` "
-"will open the `Manual Partitioning` screen. See "
+"If you selected the `Custom` option, pressing `Done` will open the `Manual "
+"Partitioning` screen. See "
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning] for further instructions."
 msgstr ""
