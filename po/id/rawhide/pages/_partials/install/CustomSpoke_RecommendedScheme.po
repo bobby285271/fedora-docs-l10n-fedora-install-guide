@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-09-09 22:02+0000\n"
-"PO-Revision-Date: 2020-09-06 22:29+0000\n"
+"PO-Revision-Date: 2020-09-10 18:36+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -34,20 +34,12 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
-#, fuzzy, no-wrap
-#| msgid "`/boot` - 500 MB"
+#, no-wrap
 msgid "`/boot` - 1 GB"
-msgstr "`/boot` - 500 MB"
+msgstr "`/boot` - 1 GB"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
-#, fuzzy
-#| msgid ""
-#| "This partition contains the operating system kernel, which allows "
-#| "{PRODUCT} to boot. It also contains other files used during the bootstrap "
-#| "process. Due to the limitations of most firmware, creating a separate, "
-#| "small standard partition for this directory is recommended. In most "
-#| "scenarios, a 500 MB `/boot` partition is adequate."
 msgid ""
 "This partition contains the operating system kernel, which allows {PRODUCT} "
 "to boot. It also contains other files used during the bootstrap process. Due "
@@ -59,7 +51,7 @@ msgstr ""
 "boot. Ini juga berisi berkas lain yang digunakan selama proses bootstrap. "
 "Karena keterbatasan kebanyakan firmware, dianjurkan untuk menciptakan "
 "partisi standar kecil terpisah untuk direktori ini. Dalam kebanyakan "
-"skenario, partisi `/boot` 500 MB cukup."
+"skenario, partisi `/boot` 1 GB cukup."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
@@ -76,23 +68,18 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
-#, fuzzy
-#| msgid ""
-#| "Also note that the `/boot` directory can not be placed on a LVM logical "
-#| "volume or a Btrfs subvolume. Use a standard partition."
 msgid ""
 "Also note that the `/boot` directory can not be placed on a LVM logical "
 "volume. Use a standard partition."
 msgstr ""
 "Juga perhatikan bahwa direktori `/boot` tidak dapat ditempatkan pada volume "
-"logis LVM atau sub volume Btrfs. Gunakan partisi standar."
+"logis LVM. Gunakan partisi standar."
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
-#, fuzzy, no-wrap
-#| msgid "`/` (root) - 10 GB"
+#, no-wrap
 msgid "`/` (root) - 25 GB"
-msgstr "`/` (root) - 10 GB"
+msgstr "`/` (root) - 25 GB"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
@@ -113,21 +100,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
-#, fuzzy
-#| msgid ""
-#| "For a minimal installation, a 5 GB root partition will be sufficient. "
-#| "However, for most common installations which include extra packages and a "
-#| "graphical user interface, the root partition should be at least 10 GB; "
-#| "with 20 GB being sufficient for most common use cases."
 msgid ""
 "For a minimal installation, a 10 GB root partition will be sufficient. "
 "However, for most common installations which include extra packages and a "
 "graphical user interface, the root partition should be at least 25 GB; with "
 "75 GB being sufficient for most common use cases."
 msgstr ""
-"Untuk instalasi minimal, partisi root 5 GB akan cukup. Namun, untuk "
+"Untuk instalasi minimal, partisi root 10 GB akan cukup. Namun, untuk "
 "instalasi yang paling umum yang mencakup paket tambahan dan antarmuka "
-"pengguna grafis, partisi root harus minimal 10 GB; dengan 20 GB yang cukup "
+"pengguna grafis, partisi root harus minimal 25 GB; dengan 75 GB yang cukup "
 "untuk kasus penggunaan yang paling umum."
 
 #. type: delimited block =
@@ -233,6 +214,12 @@ msgid ""
 "disk-based swap, you will have two swap devices: disk-based with a lower "
 "priority, and ZRAM-based with a higher priority."
 msgstr ""
+"Mulai dengan Fedora 33, swap berbasis disk tidak lagi dibuat secara baku. "
+"Sebagai pengganti, swap berbasis ZRAM dipakai secara otomatis. Lihat `man "
+"zram-generator` dan `man zram-generator.conf` untuk informasi. Bila Anda "
+"memilih untuk membuat swap berbasis disk, Anda akan memiliki dua peranti "
+"swap: berbasis disk dengan prioritas lebih rendah, dan berbasis ZRAM dengan "
+"prioritas lebih tinggi."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:47
