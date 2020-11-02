@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-01 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-02 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallcustomspoke/id/>"
+"\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:5
 #: ./pages/_partials/install/CustomSpoke.adoc:20
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "Pemartisian Manual"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:8
@@ -29,6 +33,9 @@ msgid ""
 "configuration for your {PRODUCT} system manually, giving you a greater "
 "control over your system's storage."
 msgstr ""
+"Layar `Pemartisian Manual` memungkinkan Anda membuat konfigurasi penyimpanan "
+"untuk sistem {PRODUCT} secara manual, memberi Anda kontrol lebih besar atas "
+"penyimpanan sistem Anda."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:10
@@ -40,6 +47,12 @@ msgid ""
 "top of logical volumes, and the last step is usually assigning a mount point "
 "to each volume as needed."
 msgstr ""
+"Dalam kebanyakan installer lain untuk Linux dan sistem operasi lainnya, "
+"partisi disk biasanya mengambil pendekatan \"bottom-up\". Dalam installer "
+"ini, Anda pertama kali membuat perangkat yang mendasari seperti volume fisik "
+"LVM, lalu Anda membuat tata letak seperti LVM di atas mereka, lalu Anda "
+"membuat sistem berkas di atas volume logis, dan langkah terakhir biasanya "
+"menetapkan titik kait untuk setiap volume yang diperlukan."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:12
@@ -50,6 +63,11 @@ msgid ""
 "where the volume group will reside) is performed automatically. You can then "
 "adjust the automatic settings as you require."
 msgstr ""
+"[application]*Anaconda* menggunakan pendekatan yang berlawanan. Pertama, "
+"Anda membuat semua titik kait terpisah yang Anda butuhkan, dan semua yang "
+"diperlukan untuk membuatnya (membuat grup volume, volume logis di dalamnya, "
+"dan volume fisik di mana grup volume akan berada) dilakukan secara otomatis. "
+"Anda kemudian dapat menyesuaikan pengaturan otomatis yang Anda butuhkan."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:17
@@ -60,18 +78,22 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Tidak ada perubahan permanen akan dibuat untuk disk Anda selama proses "
+"partisi yang sebenarnya. Konfigurasi yang telah Anda pilih hanya akan "
+"ditulis ke sistem Anda setelah Anda menekan tombol `Mulai instalasi` di xref"
+":sect-installation-gui-installation-summary[Ringkasan Instalasi]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr ""
+msgstr "Layar Pemartisian Manual. Pada titik ini"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/CustomSpoke.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:25
@@ -84,6 +106,12 @@ msgid ""
 "partitions, then a message informing you that no mount points currently "
 "exist will appear."
 msgstr ""
+"Ketika Anda pertama kali membuka layar `Pemartisian Manual`, kolom di sisi "
+"kiri akan menampilkan semua partisi yang sudah ada sebelumnya di semua drive "
+"yang Anda pilih sebagai target instalasi di xref:sect-installation-gui-"
+"storage-partitioning[Tujuan Instalasi]. Jika tidak ada drive yang dipilih "
+"yang berisi partisi yang ada, maka akan muncul pesan yang memberitahukan "
+"Anda bahwa tidak ada titik kait yang saat ini ada."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:27
@@ -97,6 +125,13 @@ msgid ""
 "partition/volume sizes are determined automatically based on the total "
 "amount of available space."
 msgstr ""
+"Di sini, Anda dapat memilih skema partisi seperti `LVM` atau `BTRFS` dan "
+"klik `Klik di sini untuk membuatnya secara otomatis` untuk meminta installer "
+"untuk membuat tata letak partisi dasar; tata letak ini mengikuti panduan "
+"yang dijelaskan dalam xref:sect-installation-gui-manual-partitioning-"
+"recommended[Skema Partisi Yang Direkomendasikan]. Tata letak yang dibuat "
+"adalah tata letak dasar di mana ukuran partisi/volume ditentukan secara "
+"otomatis berdasarkan jumlah total ruang yang tersedia."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:29
@@ -111,6 +146,15 @@ msgid ""
 "be created as a logical volume, and a new volume group will be created for "
 "it unless one already exists."
 msgstr ""
+"Klik tombol `+` untuk menambahkan titik kait. Pada jendela dialog yang "
+"terbuka, pilih titik kait seperti `/` atau `/home`, dan kapasitas yang "
+"diinginkan untuk titik kait (seperti `10GB` atau `500MB`). Perhatikan bahwa "
+"menentukan titik kait wajib, tetapi Anda tidak perlu menentukan kapasitas "
+"pada titik ini; ini berguna saat menambahkan titik kait yang ingin Anda buat "
+"lebih besar dari izin ruang yang tersedia saat ini. Kemudian, klik `"
+"Tambahkan titik kait` untuk menambahkannya ke daftar menggunakan pengaturan "
+"default, yang berarti akan dibuat sebagai volume logis, dan grup volume baru "
+"akan dibuat untuk itu kecuali bila sudah ada."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:31
@@ -123,6 +167,13 @@ msgid ""
 "you can now create another mount point, or select a different existing one "
 "and adjust its settings as well."
 msgstr ""
+"Kemudian, pilih titik kait yang baru dibuat dalam daftar di sebelah kiri. "
+"Satu set kontrol akan ditampilkan di sisi kanan layar, memungkinkan Anda "
+"untuk mengubah titik kait, perangkat yang secara fisik akan ditempati, "
+"kapasitas, sistem berkas, dll. Ketika Anda mengubah pengaturan, tekan `"
+"Perbarui Pengaturan` di kanan bawah. Ini akan menyimpan konfigurasi yang "
+"disesuaikan; Anda sekarang dapat membuat titik kait lain, atau memilih yang "
+"ada yang berbeda dan menyesuaikan pengaturannya juga."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:36
@@ -131,6 +182,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types]."
 msgstr ""
+"Untuk keterangan tentang jenis sistem berkas dan perangkat yang tersedia, "
+"lihat xref:sect-installation-gui-manual-partitioning-filesystems[Perangkat, "
+"Sistem Berkas, dan Tipe RAID]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:40
@@ -138,6 +192,7 @@ msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
 msgstr ""
+"Untuk menghapus titik kait, pilih dalam daftar dan tekan tombol `-` di bawah."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:42
@@ -151,6 +206,13 @@ msgid ""
 "on Partitions] for a list of requirements and tips for partitioning your "
 "disks for {PRODUCT}."
 msgstr ""
+"Langkah yang tepat untuk mengonfigurasi penyimpanan Anda bergantung pada "
+"kebutuhan khusus dan konfigurasi sistem Anda. Prosedur untuk membuat tata "
+"letak tertentu dijelaskan lebih lanjut dalam bab ini. Sebelum memulai, Anda "
+"juga harus meninjau xref:sect-installation-gui-manual-partitioning-"
+"recommended[Skema Partisi Yang Direkomendasikan] dan xref:sect-installation-"
+"gui-manual-partitioning-advice[Saran tentang Partisi] untuk daftar kebutuhan "
+"dan tips untuk partisi disk Anda bagi {PRODUCT}."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:44
@@ -159,6 +221,9 @@ msgid ""
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
+"Di bawah daftar titik kait yang ada adalah dua ruas, menunjukkan berapa "
+"banyak ruang kosong yang tersisa di perangkat penyimpanan Anda dan berapa "
+"banyak ruang total yang mereka miliki."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:46
@@ -171,6 +236,13 @@ msgid ""
 "Destination]. If you want to add or remove any storage devices from your "
 "configuration, return to that screen and change your selection."
 msgstr ""
+"Klik `pass:attributes[{blank}]_XX_ perangkat penyimpanan yang dipilih` untuk "
+"melihat ringkasan perangkat penyimpanan yang saat ini dipilih; ini dapat "
+"membantu Anda dengan orientasi dalam skema penyimpanan yang lebih rumit. "
+"Perangkat yang ditampilkan di sini adalah orang yang telah Anda pilih di xref"
+":sect-installation-gui-storage-partitioning[Tujuan Instalasi]. Jika Anda "
+"ingin menambahkan atau menghapus perangkat penyimpanan dari konfigurasi, "
+"kembali ke layar tersebut dan ubah pilihan Anda."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:48
@@ -183,6 +255,13 @@ msgid ""
 "discarding only the changes you have made recently, not all changes to the "
 "storage configuration since you booted the installer."
 msgstr ""
+"Anda dapat menekan tombol `Reset Semua` di sudut kanan bawah setiap saat "
+"untuk me-reset konfigurasi penyimpanan ke keadaan ketika Anda terakhir "
+"membuka layar `Pemartisian Manual`. Ini berarti bahwa jika Anda memodifikasi "
+"konfigurasi penyimpanan, meninggalkan layar, dan kemudian kembali, tombol "
+"reset akan me-reset konfigurasi kembali ke keadaan yang sudah dimodifikasi, "
+"membuang hanya perubahan yang telah Anda buat baru-baru ini, bukan semua "
+"perubahan konfigurasi penyimpanan sejak Anda mem-boot installer."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:50
@@ -197,24 +276,33 @@ msgid ""
 "Destination]; all detected disks including any new ones will be displayed in "
 "the `Local Standard Disks` section."
 msgstr ""
+"Untuk membuang semua perubahan, dan juga mendeteksi setiap drive baru yang "
+"belum terdeteksi ketika installer mulai (biasanya ketika Anda melampirkan "
+"drive baru setelah Anda mulai), tekan tombol ditandai dengan panah melingkar "
+"di set kontrol di bawah daftar titik pasang di sisi kiri layar. Pada jendela "
+"dialog yang terbuka, tekan `Pindai Ulang Disk` dan tunggu sampai proses "
+"pemindaian selesai. Kemudian, tekan `OK` untuk kembali ke xref:sect-"
+"installation-gui-storage-partitioning[Tujuan Instalasi]; Semua disk yang "
+"terdeteksi termasuk yang baru akan ditampilkan di bagian `Disk Standar "
+"Lokal`."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:51
 #, no-wrap
 msgid "Rescan Disks"
-msgstr ""
+msgstr "Pindai Ulang Disk"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr ""
+msgstr "Dialog Pindai Ulang Disk"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:56
@@ -228,6 +316,14 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Setelah Anda selesai mengonfigurasi penyimpanan sistem Anda, tekan `Selesai` "
+"di pojok kiri atas untuk menyimpan konfigurasi dan kembali ke layar `"
+"Ringkasan Instalasi`. Pada titik ini, penginstal akan memeriksa apakah "
+"konfigurasi penyimpanan Anda valid. Jika kesalahan terdeteksi, pesan akan "
+"ditampilkan di bagian bawah layar. Klik pesan untuk membuka jendela dialog "
+"yang menjelaskan apa jenis kesalahan telah terdeteksi (misalnya, Anda "
+"menempatkan `/boot` pada subvolume Btrfs, atau Anda tidak membuat partisi "
+"boot BIOS ketika sistem Anda membutuhkannya)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:58
@@ -238,6 +334,11 @@ msgid ""
 "Summary` anyway, but a storage configuration error will prevent you from "
 "starting the actual installation process."
 msgstr ""
+"Jika pesan tersebut ditampilkan, kembali dan perbaiki masalah yang ditemukan "
+"oleh penginstal; jika tidak, Anda tidak akan dapat melanjutkan dengan "
+"instalasi. Anda juga dapat menekan `Selesai` lagi untuk kembali ke `"
+"Ringkasan Instalasi` pula, tetapi kesalahan konfigurasi penyimpanan akan "
+"mencegah Anda dari memulai proses instalasi yang sebenarnya."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:60
@@ -250,3 +351,9 @@ msgid ""
 "Summary], or click `Cancel & Return to Custom Partitioning` if you want to "
 "make any more changes."
 msgstr ""
+"Jika tidak ada pesan kesalahan ditampilkan dan jika Anda membuat perubahan "
+"sejak terakhir kali Anda mengunjungi layar ini, dialog ringkasan akan "
+"muncul, menampilkan daftar detail perubahan yang Anda buat. Tinjau daftar "
+"dan klik `Terima Perubahan` untuk melanjutkan dengan xref:sect-installation-"
+"gui-installation-summary[Ringkasan Instalasi], atau klik `Batalkan & Kembali "
+"ke Pemartisian Ubahan` jika Anda ingin membuat perubahan lagi."
