@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-02 22:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/install/After_Installation.adoc:6
+#, no-wrap
+msgid "After the Installation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:9
+msgid ""
+"This chapter describes the initial setup tools which open after you finish "
+"the installation, reboot the system, and log in for the first time."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:11
+msgid ""
+"Two separate configuration tools are part of {PRODUCT}. If you installed the "
+"[application]*GNOME* desktop environment (the default {PRODUCT} environment, "
+"installed for example as part of the {PRODUCT} Workstation Edition), the "
+"[application]*GNOME Initial Setup* utility will open; for all other "
+"graphical environments, the [application]*Initial Setup* tool serves the "
+"same purpose."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:13
+msgid ""
+"Both of these tools will allow you to configure user-specific settings which "
+"have not been configured during the installation. Some of the settings are "
+"available both in the graphical installer (or as Kickstart commands) as well "
+"as in the initial-setup utilities; in that case, they will only be displayed "
+"after the first reboot if you skipped them during the installation. This "
+"means that, for example, if you configured a user account before the "
+"installation finished, you will not be prompted to do so again after the "
+"installation completes."
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/After_Installation.adoc:17
+#: ./pages/install/After_Installation.adoc:21
+#, no-wrap
+msgid "GNOME Initial Setup"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:20
+msgid ""
+"The [application]*GNOME Initial Setup* utility will be displayed after you "
+"log in for the first time with any user account, as long as your first login "
+"is in the [application]*GNOME* desktop environment."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/install/After_Installation.adoc:23
+#, no-wrap
+msgid "GNOME Initial Setup with language selection displayed."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/install/After_Installation.adoc:23
+#, no-wrap
+msgid "afterinstall/gnome-initial-setup.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:26
+msgid ""
+"This utility allows you to configure several user-specific settings, such as "
+"system language or the default keyboard layout. Use the `Next` and "
+"`Previous` buttons at the top of the window to navigate between "
+"screens. Some screens (`Configure online accounts` in particular) are "
+"optional and can be skipped using the `Skip` button in the top right corner."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:28
+msgid ""
+"After you finish configuring all screens, click `Start using Fedora` to exit "
+"the utility. After that, the `Getting Started` page from GNOME help will be "
+"displayed, and you can either browse the help content, or close it and start "
+"using your desktop."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/After_Installation.adoc:30
+#, no-wrap
+msgid "Common Post-installation Tasks"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:33
+msgid ""
+"After you finish the installation and go through one of the initial setup "
+"utilities described above, your system is ready for use. However, other "
+"administrative tasks not covered by the installer or the initial setup "
+"utilities may still be necessary, depending on how you plan to use your "
+"system. The list below describes some of the more common tasks usually "
+"performed immediately after a new installation."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:34
+#, no-wrap
+msgid "Recover a lost `root` password"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:35
+msgid ""
+"The `root` password, which is configured during the installation, is "
+"required for accessing the system as the `root` user. Without this password "
+"you will not be able to configure your system or install additional "
+"software. If you lost or forgot your `root` password, you can reset it by "
+"following the steps described in "
+"xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-password[Resetting "
+"the Root Password]."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:36
+#, no-wrap
+msgid "Configure the network"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:37
+msgid ""
+"In most cases, network access is configured during the installation process, "
+"either in the [application]*Anaconda* installation program (see "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration[Network "
+"& Hostname]) or in a Kickstart file (see "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-network[network "
+"(optional) - Configure Network Interfaces]). For information on configuring "
+"the network after the installation, see the [citetitle]_{PRODUCT} Networking "
+"Guide_, available at link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:38
+#, no-wrap
+msgid "Perform an initial system update"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:39
+msgid ""
+"If you installed {PRODUCT} from a full installation ISO image (such as the "
+"Workstation live image or full Server DVD), it is recommended to perform an "
+"initial system update, because your installation media likely contained "
+"older versions of software packages. During the initial update, all "
+"installed packages are updated to their latest available versions. Updates "
+"to packages provide security fixes, bug fixes and enhancements."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:41
+msgid ""
+"The [application]*DNF* package manager is used for updating installed "
+"packages. For more information about updating your system with "
+"[application]*DNF*, see the [citetitle]_{PRODUCT} System Administrator's "
+"Guide_, available at link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:42
+#, no-wrap
+msgid "Install driver updates"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:43
+msgid ""
+"Usually, drivers for system devices are already supported in the kernel "
+"provided by Red{nbsp}Hat Enterprise{nbsp}Linux. However, occasionally, "
+"support for devices that have been released recently could be missing. In "
+"these cases, a driver update enabling your device may be available."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:45
+msgid ""
+"Devices necessary to complete the installation can have driver updates "
+"provided before the installation begins. If a device is missing a driver, "
+"but it is not essential during the installation, it is recommended to wait "
+"until after the installation completes, and install additional drivers "
+"afterwards. For instructions on installing and enabling additional drivers "
+"on the installed system using [application]*RPM* and [application]*DNF*, see "
+"the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:46
+#, no-wrap
+msgid "Configure additional repositories"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:47
+msgid ""
+"New software is installed from _package repositories_. Package repositories "
+"are organized sets of software and metadata that can be accessed by the "
+"[application]*DNF* package manager. By default, several update repositories "
+"provided by {PRODUCT} are configured automatically and you can install "
+"updates and additional software from those. However, if you want to set up "
+"additional repositories, for example ones containing your own software, some "
+"extra steps are needed."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:49
+msgid ""
+"For information about configuring additional software repositories, see the "
+"[citetitle]_{PRODUCT} System Administrator's Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:50
+#, no-wrap
+msgid "Install additional packages"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:51
+msgid ""
+"You can control which packages will be installed by selecting an environment "
+"in the `Software Selection` dialog in the graphical installation (see "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection[Software "
+"Selection]). This dialog does not provide a way to choose individual "
+"packages, only predefined sets. However, you can use the [application]*DNF* "
+"package manager to install additional packages after the installation. See "
+"the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[], for more information."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/install/After_Installation.adoc:52
+#, no-wrap
+msgid "Switch to a graphical login"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:53
+msgid ""
+"Depending on the options you chose during the installation process, it is "
+"possible that your system does not have a graphical interface, instead "
+"offering only a text-based prompt. If this is the case and you wish to "
+"enable a graphical desktop after the installation, you must install the "
+"[application]*X Window System* and your preferred desktop environment "
+"(either [application]*GNOME* or [application]*KDE*)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/After_Installation.adoc:54
+msgid ""
+"As with all other software, these packages can be installed using the "
+"[application]*DNF* package manager. For information about using "
+"[application]*DNF* to install new packages, see the [citetitle]_{PRODUCT} "
+"System Administrator's Guide_, available at "
+"link:++https://docs.fedoraproject.org/++[]. For information on how to enable "
+"graphical login by default, see "
+"xref:install/Troubleshooting.adoc#sect-trouble-after-graphical-login[Booting "
+"into a Graphical Environment]."
+msgstr ""
