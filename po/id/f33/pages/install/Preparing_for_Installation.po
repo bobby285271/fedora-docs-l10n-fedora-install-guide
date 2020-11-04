@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-02 22:03+0000\n"
+"POT-Creation-Date: 2020-11-04 22:04+0000\n"
 "PO-Revision-Date: 2020-11-04 22:34+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Title =
-#: ./pages/install/Preparing_for_Installation.adoc:6
+#: pages/install/Preparing_for_Installation.adoc:6
 #, no-wrap
 msgid "Preparing for Installation"
 msgstr "Mempersiapkan Instalasi"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:9
+#: pages/install/Preparing_for_Installation.adoc:9
 msgid ""
 "This chapter describes the steps you need take before you begin the "
 "installation. Not every step must be strictly followed - for example, if you "
@@ -45,13 +45,13 @@ msgstr ""
 "tersedia dan bagaimana mempersiapkan media boot dan sumber instalasi."
 
 #. type: Title ==
-#: ./pages/install/Preparing_for_Installation.adoc:11
+#: pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
 msgstr "Tingkatkan atau Pasang Baru?"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:14
+#: pages/install/Preparing_for_Installation.adoc:14
 msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
@@ -60,43 +60,41 @@ msgstr ""
 "versi saat ini, ada dua cara dasar untuk melakukannya:"
 
 #. type: Labeled list
-#: ./pages/install/Preparing_for_Installation.adoc:15
+#: pages/install/Preparing_for_Installation.adoc:15
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
 msgstr "Upgrade otomatis menggunakan [application]*dnf system upgrade*"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:16
+#: pages/install/Preparing_for_Installation.adoc:16
 msgid ""
 "The preferred way to upgrade your system is an automatic upgrade using the "
 "[application]*dnf system upgrade* utility. For information on performing an "
-"automatic upgrade, see "
-"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
-"system upgrade]."
+"automatic upgrade, see link:++https://fedoraproject.org/wiki/"
+"DNF_system_upgrade++[Fedora Wiki dnf system upgrade]."
 msgstr ""
 "Cara yang lebih disukai untuk meningkatkan sistem Anda adalah upgrade "
 "otomatis menggunakan utilitas [application]*dnf system upgrade*. Untuk "
-"informasi tentang melakukan upgrade otomatis, lihat "
-"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[dnf system "
-"upgrade Wiki Fedora]."
+"informasi tentang melakukan upgrade otomatis, lihat link:++https://"
+"fedoraproject.org/wiki/DNF_system_upgrade++[dnf system upgrade Wiki Fedora]."
 
 #. type: Labeled list
-#: ./pages/install/Preparing_for_Installation.adoc:17
+#: pages/install/Preparing_for_Installation.adoc:17
 #, no-wrap
 msgid "Manual Reinstallation"
 msgstr "Instalasi Ulang Manual"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:18
+#: pages/install/Preparing_for_Installation.adoc:18
 msgid ""
 "You can upgrade to the latest version of Fedora manually instead of relying "
 "on [application]*dnf system upgrade*. This involves booting the installer as "
 "if you were performing a clean installation, letting it detect your existing "
 "Fedora system, and overwriting the root partition while preserving data on "
 "other partitions and volumes. The same process can also be used to reinstall "
-"the system, if you need to. For detailed information, see "
-"xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
-"System Upgrade or Reinstallation]."
+"the system, if you need to. For detailed information, see xref:advanced/"
+"Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-"
+"reinstall[Manual System Upgrade or Reinstallation]."
 msgstr ""
 "Anda dapat meningkatkan ke versi terakhir Fedora secara manual alih-alih "
 "mengandalkan [application]*dnf system upgrade*. Ini melibatkan mem-boot "
@@ -109,7 +107,7 @@ msgstr ""
 "Ulang]."
 
 #. type: delimited block =
-#: ./pages/install/Preparing_for_Installation.adoc:22
+#: pages/install/Preparing_for_Installation.adoc:22
 msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
@@ -118,13 +116,13 @@ msgstr ""
 "sistem Anda, apa pun metode yang Anda pilih."
 
 #. type: Title ==
-#: ./pages/install/Preparing_for_Installation.adoc:25
+#: pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Preparing Boot Media"
 msgstr "Mempersiapkan Media Boot"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:28
+#: pages/install/Preparing_for_Installation.adoc:28
 msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
@@ -133,32 +131,31 @@ msgstr ""
 "instalasi dengan disk optik dan USB, untuk boot pada sistem BIOS dan UEFI."
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:29
+#: pages/install/Preparing_for_Installation.adoc:29
 #, no-wrap
 msgid "Fedora Media Writer"
 msgstr "Penulis Media Fedora"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:33
+#: pages/install/Preparing_for_Installation.adoc:33
 msgid ""
 "[application]*Fedora Media Writer* has been significantly improved and is "
-"now the official, tested and supported way to make bootable "
-"media. [application]*Fedora Media Writer* supports Linux, Mac, and "
-"Windows. It is an easy way to make bootable USB media to install Fedora (or "
-"other operating systems). Using [application]*Fedora Media Writer* is "
-"strongly encouraged, although other USB media creation software can work as "
-"well."
+"now the official, tested and supported way to make bootable media. "
+"[application]*Fedora Media Writer* supports Linux, Mac, and Windows. It is "
+"an easy way to make bootable USB media to install Fedora (or other operating "
+"systems). Using [application]*Fedora Media Writer* is strongly encouraged, "
+"although other USB media creation software can work as well."
 msgstr ""
 "[application]*Fedora Media Writer* telah meningkat secara signifikan dan "
 "sekarang menjadi resmi, diuji dan didukung cara untuk membuat media "
 "bootable. [application]*Fedora Media Writer* mendukung Linux, Mac, dan "
 "Windows. Ini adalah cara mudah untuk membuat media USB bootable untuk "
-"menginstal Fedora (atau sistem operasi lain). Menggunakan [application]*"
-"Fedora Media Writer* sangat dianjurkan, meskipun perangkat lunak pembuatan "
-"media USB lainnya dapat bekerja dengan baik."
+"menginstal Fedora (atau sistem operasi lain). Menggunakan "
+"[application]*Fedora Media Writer* sangat dianjurkan, meskipun perangkat "
+"lunak pembuatan media USB lainnya dapat bekerja dengan baik."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:35
+#: pages/install/Preparing_for_Installation.adoc:35
 msgid ""
 "Some of the new additions to [application]*Fedora Media Writer* are that "
 "Fedora Workstation and Server are easily and quickly accessible from the "
@@ -173,7 +170,7 @@ msgstr ""
 "atau Mate."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:37
+#: pages/install/Preparing_for_Installation.adoc:37
 msgid ""
 "Historically, universal USB creation tools, such as "
 "[application]*Unetbootin*, are a popular way to create USB installers from "
@@ -181,14 +178,14 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
-"Secara historis, alat kreasi USB universal, seperti [application]*Unetbootin*"
-", adalah cara yang populer untuk membuat penginstal USB dari ISO yang "
-"ditujukan untuk media optik. Mereka biasanya membuat sistem berkas pada "
-"drive USB dengan mengekstrak berkas dari image, dan menulis bootloader "
-"[application]*syslinux* ke perangkat."
+"Secara historis, alat kreasi USB universal, seperti "
+"[application]*Unetbootin*, adalah cara yang populer untuk membuat penginstal "
+"USB dari ISO yang ditujukan untuk media optik. Mereka biasanya membuat "
+"sistem berkas pada drive USB dengan mengekstrak berkas dari image, dan "
+"menulis bootloader [application]*syslinux* ke perangkat."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:39
+#: pages/install/Preparing_for_Installation.adoc:39
 msgid ""
 "These methods circumvent the boot-loader configuration built into Fedora "
 "images, which are pre-partitioned and designed to boot on UEFI systems with "
@@ -202,7 +199,7 @@ msgstr ""
 "sistem UEFI."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:41
+#: pages/install/Preparing_for_Installation.adoc:41
 msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
@@ -211,7 +208,7 @@ msgstr ""
 "langsung dan tidak memodifikasi image Fedora."
 
 #. type: delimited block =
-#: ./pages/install/Preparing_for_Installation.adoc:46
+#: pages/install/Preparing_for_Installation.adoc:46
 msgid ""
 "Always think twice before writing an image to the device. The media creation "
 "methods described in this article are destructive.  All data on the USB "
@@ -226,19 +223,19 @@ msgstr ""
 "perangkat yang benar tempat menulis image!"
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:48
+#: pages/install/Preparing_for_Installation.adoc:48
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
 msgstr "Menginstal dan menjalankan Fedora Media Writer"
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:50
+#: pages/install/Preparing_for_Installation.adoc:50
 #, no-wrap
 msgid "On Fedora"
 msgstr "Pada Fedora"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:54
+#: pages/install/Preparing_for_Installation.adoc:54
 msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
@@ -248,30 +245,30 @@ msgstr ""
 "menginstal paket."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:56
+#: pages/install/Preparing_for_Installation.adoc:56
 msgid "To install the [application]*Fedora Media Writer* using:"
 msgstr "Untuk menginstal [application]*Fedora Media Writer* menggunakan:"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:60
+#: pages/install/Preparing_for_Installation.adoc:60
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
 msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:63
+#: pages/install/Preparing_for_Installation.adoc:63
 msgid "Run the [application]*Fedora Media Writer*:"
 msgstr "Jalankan [application]*Fedora Media Writer*:"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:67
-#: ./pages/install/Preparing_for_Installation.adoc:84
+#: pages/install/Preparing_for_Installation.adoc:67
+#: pages/install/Preparing_for_Installation.adoc:84
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
 msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:70
+#: pages/install/Preparing_for_Installation.adoc:70
 msgid ""
 "or in [application]*Gnome 3* select *Activities* and then click on "
 "[application]*Fedora Media Writer*."
@@ -280,26 +277,26 @@ msgstr ""
 "[application]*Fedora Media Writer*."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:72
+#: pages/install/Preparing_for_Installation.adoc:72
 #, no-wrap
 msgid "On other Linux distributions"
 msgstr "Pada distribusi Linux lainnya"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:76
+#: pages/install/Preparing_for_Installation.adoc:76
 msgid ""
 "The best way to install [application]*Fedora Media Writer* on various Linux "
 "distributions is to use the pre-built _Flatpak_ package.  The package can be "
-"obtained from the official Flatpak repository "
-"https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
+"obtained from the official Flatpak repository https://flathub.org/apps/"
+"details/org.fedoraproject.MediaWriter[Flathub.org]."
 msgstr ""
 "Cara terbaik untuk menginstal [application]*Fedora Media Writer* pada "
 "berbagai distribusi Linux adalah dengan menggunakan paket pre-built "
-"_Flatpak_.  Paket ini dapat diperoleh dari repositori resmi Flatpak "
-"https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
+"_Flatpak_.  Paket ini dapat diperoleh dari repositori resmi Flatpak https://"
+"flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:78
+#: pages/install/Preparing_for_Installation.adoc:78
 msgid ""
 "To setup *Flatpak* on your Linux system, follow the guidelines on the "
 "https://flatpak.org/setup/[Flatpak documentation] page."
@@ -308,30 +305,29 @@ msgstr ""
 "halaman https://flatpak.org/setup/[Dokumentasi Flatpak]."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:80
+#: pages/install/Preparing_for_Installation.adoc:80
 msgid "Run the application:"
 msgstr "Jalankan aplikasi:"
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:86
+#: pages/install/Preparing_for_Installation.adoc:86
 #, no-wrap
 msgid "On Windows"
 msgstr "Pada Windows"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:89
+#: pages/install/Preparing_for_Installation.adoc:89
 msgid ""
-"Download the latest Windows Installer file from "
-"link:++https://getfedora.org++[GetFedora.org]. The server automatically "
-"detects the running system and offers you the correct installation file for "
-"your Windows version."
+"Download the latest Windows Installer file from link:++https://getfedora.org+"
+"+[GetFedora.org]. The server automatically detects the running system and "
+"offers you the correct installation file for your Windows version."
 msgstr ""
-"Unduh berkas Penginstal Windows terbaru dari link:++https://getfedora."
-"org++[GetFedora.org]. Server secara otomatis mendeteksi sistem yang berjalan "
-"dan menawarkan Anda berkas instalasi yang benar untuk versi Windows Anda."
+"Unduh berkas Penginstal Windows terbaru dari link:++https://getfedora.org+"
+"+[GetFedora.org]. Server secara otomatis mendeteksi sistem yang berjalan dan "
+"menawarkan Anda berkas instalasi yang benar untuk versi Windows Anda."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:91
+#: pages/install/Preparing_for_Installation.adoc:91
 msgid ""
 "Run the installation by double clicking the installer, and then continue "
 "through the set-up wizard. The Wizard lets you customize the software's "
@@ -342,12 +338,12 @@ msgstr ""
 "perangkat lunak jika Anda memilih untuk itu."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:93
+#: pages/install/Preparing_for_Installation.adoc:93
 msgid "Run the application by clicking on a launcher."
 msgstr "Jalankan aplikasi dengan mengklik pada peluncur."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:95
+#: pages/install/Preparing_for_Installation.adoc:95
 msgid ""
 "In Windows 8 and 10, the [application]*Fedora Media Writer* launcher will be "
 "placed in the _All apps_ menu under _F_. In Windows 10, you can just type "
@@ -359,13 +355,13 @@ msgstr ""
 "pada bilah tugas."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:97
+#: pages/install/Preparing_for_Installation.adoc:97
 #, no-wrap
 msgid "On MacOS"
 msgstr "Pada MacOS"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:100
+#: pages/install/Preparing_for_Installation.adoc:100
 msgid ""
 "Download the latest Macintosh Disk Image (the package will have a .dmg "
 "extension) from link:++https://getfedora.org++[GetFedora.org]. The server "
@@ -378,7 +374,7 @@ msgstr ""
 "Anda."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:102
+#: pages/install/Preparing_for_Installation.adoc:102
 msgid ""
 "Open the `.dmg` file and copy the `mediawriter` file into your applications "
 "folder."
@@ -386,7 +382,7 @@ msgstr ""
 "Buka berkas `.dmg` dan salin berkas `mediawriter` ke folder aplikasi Anda."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:104
+#: pages/install/Preparing_for_Installation.adoc:104
 msgid ""
 "Navigate to your applications directory, and then launch the "
 "[application]*Fedora Media Writer* application."
@@ -395,7 +391,7 @@ msgstr ""
 "[application]*Fedora Media Writer*."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:106
+#: pages/install/Preparing_for_Installation.adoc:106
 msgid ""
 "Select \"Open\" to run the program, when MacOS will ask you to confirm the "
 "action."
@@ -404,36 +400,36 @@ msgstr ""
 "untuk mengkonfirmasi tindakan."
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:107
+#: pages/install/Preparing_for_Installation.adoc:107
 #, no-wrap
 msgid "Writing the ISO image to the USB Media."
 msgstr "Menulis image ISO ke Media USB."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:109
+#: pages/install/Preparing_for_Installation.adoc:109
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
 msgstr "Pilih Fedora Edition yang Anda ingin buat bootable USB drive-nya."
 
 #. type: Block title
-#: ./pages/install/Preparing_for_Installation.adoc:111
+#: pages/install/Preparing_for_Installation.adoc:111
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
 msgstr "Layar Utama Fedora Media Writer: Pilih Edisi Fedora Anda"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/install/Preparing_for_Installation.adoc:113
+#: pages/install/Preparing_for_Installation.adoc:113
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
 msgstr "Gambar Layar Utama Fedora Media Writer"
 
 #. type: Target for macro image
-#: ./pages/install/Preparing_for_Installation.adoc:113
+#: pages/install/Preparing_for_Installation.adoc:113
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
 msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:116
+#: pages/install/Preparing_for_Installation.adoc:116
 msgid ""
 "The main selection lets you choose one of the default Fedora editions, "
 "Fedora *Workstation* or *Server*. [application]*Fedora Media Writer* "
@@ -448,30 +444,30 @@ msgstr ""
 "arsitektur yang berbeda, jika Anda memilih _Varian lain_."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:118
+#: pages/install/Preparing_for_Installation.adoc:118
 msgid "Select \"Create Live USB\" to proceed."
 msgstr "Pilih \"Buat Live USB\" untuk melanjutkan."
 
 #. type: Block title
-#: ./pages/install/Preparing_for_Installation.adoc:120
+#: pages/install/Preparing_for_Installation.adoc:120
 #, no-wrap
 msgid "Fedora Media Writer Distro Information"
 msgstr "Informasi Distro Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/install/Preparing_for_Installation.adoc:122
+#: pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "Image of Fedora Media Writer Distro Information Screen"
 msgstr "Gambar Layar Informasi Distro Fedora Media Writer"
 
 #. type: Target for macro image
-#: ./pages/install/Preparing_for_Installation.adoc:122
+#: pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
 msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:125
+#: pages/install/Preparing_for_Installation.adoc:125
 msgid ""
 "Fedora Media Writer will automatically download the ISO for you. If you have "
 "downloaded the ISO before and placed it in the _Downloads_ directory, it "
@@ -482,59 +478,60 @@ msgstr ""
 "maka akan seketika tersedia untuk digunakan."
 
 #. type: Block title
-#: ./pages/install/Preparing_for_Installation.adoc:127
+#: pages/install/Preparing_for_Installation.adoc:127
 #, no-wrap
 msgid "Fedora Media Writer Automatic Download"
 msgstr "Unduh Otomatis Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/install/Preparing_for_Installation.adoc:129
+#: pages/install/Preparing_for_Installation.adoc:129
 #, no-wrap
 msgid "Image of Fedora Media Writer Automatic Download"
 msgstr "Gambar Unduh Otomatis Fedora Media Writer"
 
 #. type: Target for macro image
-#: ./pages/install/Preparing_for_Installation.adoc:129
+#: pages/install/Preparing_for_Installation.adoc:129
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
 msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:132
+#: pages/install/Preparing_for_Installation.adoc:132
 msgid "Plug in a USB drive on which you want to create the bootable media."
 msgstr "Tancapkan drive USB yang Anda inginkan untuk membuat media bootable."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:134
-msgid "To write the image onto the media, click the red btn:[Write to disk] button."
+#: pages/install/Preparing_for_Installation.adoc:134
+msgid ""
+"To write the image onto the media, click the red btn:[Write to disk] button."
 msgstr "Untuk menulis image ke media, klik tombol merah btn:[Tulis ke disk]."
 
 #. type: Block title
-#: ./pages/install/Preparing_for_Installation.adoc:136
+#: pages/install/Preparing_for_Installation.adoc:136
 #, no-wrap
 msgid "Fedora Media Writer Write to USB Device"
 msgstr "Fedora Media Writer Menulis ke Perangkat USB"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/install/Preparing_for_Installation.adoc:138
+#: pages/install/Preparing_for_Installation.adoc:138
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
 msgstr "Gambar Fedora Media Writer menulis ke perangkat tombol merah"
 
 #. type: Target for macro image
-#: ./pages/install/Preparing_for_Installation.adoc:138
+#: pages/install/Preparing_for_Installation.adoc:138
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
 msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:140
+#: pages/install/Preparing_for_Installation.adoc:140
 #, no-wrap
 msgid "Other methods to create a live USB"
 msgstr "Metode lain untuk membuat live USB"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:143
+#: pages/install/Preparing_for_Installation.adoc:143
 msgid ""
 "Using the *Fedora Media Writer* is highly recommended for everybody, because "
 "it offers a reliable way to create a live USB stick for Fedora installation."
@@ -544,7 +541,7 @@ msgstr ""
 "instalasi Fedora."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:145
+#: pages/install/Preparing_for_Installation.adoc:145
 msgid ""
 "However, some experienced users may prefer to go through the creation "
 "process manually. If you decide to do so, you have to download the "
@@ -556,7 +553,7 @@ msgstr ""
 "untuk menulis mereka ke USB stick."
 
 #. type: delimited block =
-#: ./pages/install/Preparing_for_Installation.adoc:149
+#: pages/install/Preparing_for_Installation.adoc:149
 msgid ""
 "If you have downloaded and verified the installation images manually, you "
 "still can write them onto the USB stick using *Fedora Media Writer*."
@@ -566,22 +563,21 @@ msgstr ""
 "Writer*."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:153
+#: pages/install/Preparing_for_Installation.adoc:153
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
 msgstr "Mengunduh Image Boot dan Instalasi"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:156
+#: pages/install/Preparing_for_Installation.adoc:156
 msgid ""
 "The Fedora Project offers different Editions tailored for some specific use "
 "cases. Choose the Fedora Edition best for you, or you can build your own by "
 "customizing after the installation, or by using a kickstart file as "
-"described in "
-"xref:advanced/Kickstart_Installations.adoc#sect-kickstart-file-create[Creating "
-"a Kickstart File]. Kickstart installation requires the `netinstall` media "
-"type, or a direct installation booting method such as PXE; kickstarts are "
-"not supported with live images."
+"described in xref:advanced/Kickstart_Installations.adoc#sect-kickstart-file-"
+"create[Creating a Kickstart File]. Kickstart installation requires the "
+"`netinstall` media type, or a direct installation booting method such as "
+"PXE; kickstarts are not supported with live images."
 msgstr ""
 "Proyek Fedora menawarkan edisi yang berbeda disesuaikan untuk beberapa kasus "
 "penggunaan tertentu. Pilih edisi Fedora terbaik untuk Anda, atau Anda dapat "
@@ -593,35 +589,34 @@ msgstr ""
 "dengan image live."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:158
+#: pages/install/Preparing_for_Installation.adoc:158
 msgid ""
 "Read more about Fedora Workstation, Fedora Cloud, Fedora Server and the "
-"available media types in "
-"xref:Downloading_Fedora.adoc#chap-downloading-fedora[Downloading Fedora]."
+"available media types in xref:Downloading_Fedora.adoc#chap-downloading-"
+"fedora[Downloading Fedora]."
 msgstr ""
 "Baca lebih lanjut tentang Fedora Workstation, Fedora Cloud, Fedora Server, "
 "dan tipe-tipe media yang tersedia di xref:Downloading_Fedora.adoc#chap-"
 "downloading-fedora[Mengunduh Fedora]."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:160
+#: pages/install/Preparing_for_Installation.adoc:160
 msgid ""
 "You can also choose a Fedora _Spin_ featuring favorite alternative desktops "
-"or tools for specialized tasks at "
-"link:++https://spins.fedoraproject.org++[]."
+"or tools for specialized tasks at link:++https://spins.fedoraproject.org++[]."
 msgstr ""
 "Anda juga dapat memilih Fedora _Spin_ yang menampilkan desktop alternatif "
 "favorit atau alat untuk tugas khusus di link:++https://spins.fedoraproject."
 "org++[]."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:162
+#: pages/install/Preparing_for_Installation.adoc:162
 #, no-wrap
 msgid "Verifying the Downloaded Image"
 msgstr "Memverifikasi Image yang Diunduh"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:165
+#: pages/install/Preparing_for_Installation.adoc:165
 msgid ""
 "Because transmission errors or other problems may corrupt the Fedora image "
 "you have downloaded, it is important to verify the file's integrity. After "
@@ -638,50 +633,50 @@ msgstr ""
 "akan menghasilkan checksum yang berbeda."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:167
+#: pages/install/Preparing_for_Installation.adoc:167
 msgid ""
 "By calculating the image's `checksum` on your own computer and comparing it "
 "to the original `checksum`, you can verify the image has not been tampered "
-"with or corrupted. The original checksum values are provided at "
-"link:++https://getfedora.org/security/++[], and are [command]#gpg# signed to "
+"with or corrupted. The original checksum values are provided at link:+"
+"+https://getfedora.org/security/++[], and are [command]#gpg# signed to "
 "demonstrate their integrity."
 msgstr ""
 "Dengan menghitung `checksum` image pada komputer Anda sendiri dan "
 "membandingkannya dengan `checksum` asli, Anda dapat memverifikasi image "
-"belum diubah atau rusak. Nilai checksum asli disediakan di "
-"link:++https://getfedora.org/security/++[], dan ditandatangani [command]#gpg#"
-" untuk menunjukkan integritasnya."
+"belum diubah atau rusak. Nilai checksum asli disediakan di link:++https://"
+"getfedora.org/security/++[], dan ditandatangani [command]#gpg# untuk "
+"menunjukkan integritasnya."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:169
+#: pages/install/Preparing_for_Installation.adoc:169
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
 msgstr "Memverifikasi checksum pada sistem Windows"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:172
-#: ./pages/install/Preparing_for_Installation.adoc:223
+#: pages/install/Preparing_for_Installation.adoc:172
+#: pages/install/Preparing_for_Installation.adoc:223
 msgid ""
-"Download the Fedora image of your choice from "
-"link:++https://fedoraproject.org/get-fedora++[] and the corresponding "
-"checksum file from link:++https://getfedora.org/security/++[]"
+"Download the Fedora image of your choice from link:++https://fedoraproject."
+"org/get-fedora++[] and the corresponding checksum file from link:++https://"
+"getfedora.org/security/++[]"
 msgstr ""
 "Unduh image Fedora pilihan Anda dari link:++https://fedoraproject.org/get-"
 "fedora++[] dan berkas checksum yang sesuai dari link:++https://getfedora.org/"
 "security/++[]"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:174
+#: pages/install/Preparing_for_Installation.adoc:174
 msgid "Open a [command]#powershell# session."
 msgstr "Buka sesi [command]#powershell#."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:176
+#: pages/install/Preparing_for_Installation.adoc:176
 msgid "Change to the directory containing the downloaded files."
 msgstr "Pindah ke direktori yang berisi berkas yang diunduh."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:181
+#: pages/install/Preparing_for_Installation.adoc:181
 #, no-wrap
 msgid ""
 "> cd $HOME\\Downloads\\\n"
@@ -691,76 +686,62 @@ msgstr ""
 "> ls\n"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:183
+#: pages/install/Preparing_for_Installation.adoc:183
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
 msgstr "Direktori: C:\\Users\\Pete\\Downloads\n"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:188
+#: pages/install/Preparing_for_Installation.adoc:188
 #, no-wrap
 msgid ""
 "Mode                LastWriteTime         Length  Name\n"
 "----                -------------         ------  ----\n"
-"-a---        11/25/2014  12:39 PM            272  "
-"Fedora-Server-21-x86_64-CHECKSUM\n"
-"-a---        11/25/2014  12:39 PM     2047868928  "
-"Fedora-Server-DVD-x86_64-21.iso\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
 "Mode                LastWriteTime         Length  Name\n"
 "----                -------------         ------  ----\n"
-"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
-"CHECKSUM\n"
-"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
-".iso\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:192
+#: pages/install/Preparing_for_Installation.adoc:192
 msgid "Load the resources required to calculate the checksum."
 msgstr "Muat sumber daya yang diperlukan untuk menghitung checksum."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:198
+#: pages/install/Preparing_for_Installation.adoc:198
 #, no-wrap
 msgid ""
 "> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
 "> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
-"> $sha256 = New-Object -TypeName "
-"System.Security.Cryptography.sha256CryptoServiceProvider\n"
-"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
-"$image) -split \" \")[0].ToLower()\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 msgstr ""
 "> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
 "> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
-"> $sha256 = New-Object -TypeName System.Security.Cryptography."
-"sha256CryptoServiceProvider\n"
-"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
-"$image) -split \" \")[0].ToLower()\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:201
+#: pages/install/Preparing_for_Installation.adoc:201
 msgid "Calculate the downloaded image's checksum. This will take a while!"
 msgstr "Hitung checksum image yang diunduh. Ini akan memakan waktu lama!"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:204
+#: pages/install/Preparing_for_Installation.adoc:204
 #, no-wrap
-msgid ""
-"> $download_checksum = "
-"[System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() "
-"-replace '-', ''\n"
-msgstr ""
-"> $download_checksum = [System.BitConverter]::ToString($sha256."
-"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
-"replace '-', ''\n"
+msgid "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
+msgstr "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:207
+#: pages/install/Preparing_for_Installation.adoc:207
 msgid "Compare the calculated checksum to the expected checksum."
 msgstr "Bandingkan checksum yang dihitung ke checksum yang diharapkan."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:217
+#: pages/install/Preparing_for_Installation.adoc:217
 #, no-wrap
 msgid ""
 "> echo \"Download Checksum: $download_checksum\"\n"
@@ -780,13 +761,13 @@ msgstr ""
 "}\n"
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:220
+#: pages/install/Preparing_for_Installation.adoc:220
 #, no-wrap
 msgid "Verifying checksums on Linux and OSX systems"
 msgstr "Memverifikasi checksum pada sistem Linux dan OSX"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:225
+#: pages/install/Preparing_for_Installation.adoc:225
 msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
 "files."
@@ -795,71 +776,66 @@ msgstr ""
 "diunduh."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:229
+#: pages/install/Preparing_for_Installation.adoc:229
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
 msgstr "$ [command]#cd ~/Downloads#\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:232
+#: pages/install/Preparing_for_Installation.adoc:232
 msgid "Use the appropriate utility to verify the image checksum."
 msgstr "Gunakan utilitas yang sesuai untuk memverifikasi checksum image."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:234
+#: pages/install/Preparing_for_Installation.adoc:234
 msgid "For Linux:"
 msgstr "Untuk Linux:"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:238
+#: pages/install/Preparing_for_Installation.adoc:238
 #, no-wrap
 msgid "$ sha256sum -c *CHECKSUM\n"
 msgstr "$ sha256sum -c *CHECKSUM\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:241
+#: pages/install/Preparing_for_Installation.adoc:241
 msgid "For OSX:"
 msgstr "Untuk OSX:"
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:245
+#: pages/install/Preparing_for_Installation.adoc:245
 #, no-wrap
-msgid ""
-"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
-"shasum -a 256 -c\n"
-msgstr ""
-"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
-"shasum -a 256 -c\n"
+msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
+msgstr "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:247
+#: pages/install/Preparing_for_Installation.adoc:247
 #, no-wrap
 msgid "Writing the images to USB media"
 msgstr "Menulis image ke media USB"
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:249
+#: pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "Creating USB media with [application]*GNOME Disks*"
 msgstr "Membuat media USB dengan [application]*GNOME Disks*"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:251
+#: pages/install/Preparing_for_Installation.adoc:251
 msgid ""
-"On a system with [application]*GNOME*, or with the "
-"[package]*gnome-disk-utility* package installed, open `Disks` using the "
-"system menu."
+"On a system with [application]*GNOME*, or with the [package]*gnome-disk-"
+"utility* package installed, open `Disks` using the system menu."
 msgstr ""
 "Pada sistem dengan [application]*GNOME*, atau dengan paket [package]*gnome-"
 "disk-utility* terinstal, buka `Disks` menggunakan menu sistem."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:253
+#: pages/install/Preparing_for_Installation.adoc:253
 msgid "Click your USB device in the left column."
 msgstr "Klik perangkat USB Anda di kolom sebelah kiri."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:255
+#: pages/install/Preparing_for_Installation.adoc:255
 msgid ""
 "Click the menu icon in the upper right corner of the window, and choose the "
 "`Restore Disk Image` option."
@@ -868,7 +844,7 @@ msgstr ""
 "Diska`."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:257
+#: pages/install/Preparing_for_Installation.adoc:257
 msgid ""
 "Navigate to your image file and click `Start Restoring`. After a few "
 "minutes, it will report the process is complete and your installation media "
@@ -879,18 +855,18 @@ msgstr ""
 "untuk digunakan."
 
 #. type: Title ====
-#: ./pages/install/Preparing_for_Installation.adoc:258
+#: pages/install/Preparing_for_Installation.adoc:258
 #, no-wrap
 msgid "Creating USB Media on the Linux command line"
 msgstr "Membuat USB media pada baris perintah Linux"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:260
+#: pages/install/Preparing_for_Installation.adoc:260
 msgid "Open a terminal window and insert the usb drive."
 msgstr "Buka jendela terminal dan masukkan drive USB."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:262
+#: pages/install/Preparing_for_Installation.adoc:262
 msgid ""
 "Find the `device node` assigned to the drive. In the example below, the "
 "drive is given `sdd`."
@@ -899,50 +875,46 @@ msgstr ""
 "ini, drive diberikan `sdd`."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:276
+#: pages/install/Preparing_for_Installation.adoc:276
 #, no-wrap
 msgid ""
 "$ [command]#dmesg|tail#\n"
-"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
-"SerialNumber=2\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, SerialNumber=2\n"
 "[288954.686559] usb 2-1.8: Product: USB Storage\n"
 "[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
 "[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
 "[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
 "[288954.712809] usbcore: registered new interface driver usb-storage\n"
 "[288954.716682] usbcore: registered new interface driver uas\n"
-"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
-"9228 PQ: 0 ANSI: 0\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   9228 PQ: 0 ANSI: 0\n"
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
 "$ [command]#dmesg|tail#\n"
-"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
-"SerialNumber=2\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, SerialNumber=2\n"
 "[288954.686559] usb 2-1.8: Product: USB Storage\n"
 "[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
 "[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
 "[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
 "[288954.712809] usbcore: registered new interface driver usb-storage\n"
 "[288954.716682] usbcore: registered new interface driver uas\n"
-"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
-"9228 PQ: 0 ANSI: 0\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   9228 PQ: 0 ANSI: 0\n"
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:279
+#: pages/install/Preparing_for_Installation.adoc:279
 msgid "Use the [command]#dd# utility to write the image."
 msgstr "Gunakan utilitas [command]#dd# untuk menulis image."
 
 #. type: delimited block -
-#: ./pages/install/Preparing_for_Installation.adoc:283
+#: pages/install/Preparing_for_Installation.adoc:283
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 msgstr "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 
 #. type: delimited block =
-#: ./pages/install/Preparing_for_Installation.adoc:289
+#: pages/install/Preparing_for_Installation.adoc:289
 msgid ""
 "Pay extreme attention to the source (`if=`) and target (`of=`) device. The "
 "`dd` command destroys all data on the target device. If you made a mistake, "
@@ -953,13 +925,13 @@ msgstr ""
 "Jika Anda membuat kesalahan, Anda bisa kehilangan data penting."
 
 #. type: Title ===
-#: ./pages/install/Preparing_for_Installation.adoc:291
+#: pages/install/Preparing_for_Installation.adoc:291
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
 msgstr "Membuat CD atau DVD Boot"
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:293
+#: pages/install/Preparing_for_Installation.adoc:293
 msgid ""
 "In addition to creating a bootable USB flash drive, you can also use the "
 "provided ISO images to create bootable optical media (a CD or DVD). This "
@@ -972,7 +944,7 @@ msgstr ""
 "yang lebih tua yang tidak dapat boot dari USB."
 
 #. type: delimited block =
-#: ./pages/install/Preparing_for_Installation.adoc:298
+#: pages/install/Preparing_for_Installation.adoc:298
 msgid ""
 "The exact steps you need to take to burn a bootable CD or DVD from an ISO "
 "image will vary depending on what disc burning software you use. This "
@@ -984,12 +956,12 @@ msgstr ""
 "umum."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:302
+#: pages/install/Preparing_for_Installation.adoc:302
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
 msgstr "Masukkan CD atau DVD kosong ke pembakar CD atau DVD sistem Anda."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:304
+#: pages/install/Preparing_for_Installation.adoc:304
 msgid ""
 "Open your system's burning software - for example, [application]*Brasero* on "
 "{PRODUCT} systems with [application]*GNOME* desktop environment, or "
@@ -1006,7 +978,7 @@ msgstr ""
 "adalah `Bakar image` di menu utama pada sisi kiri jendela."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:306
+#: pages/install/Preparing_for_Installation.adoc:306
 msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
@@ -1016,6 +988,6 @@ msgstr ""
 "satu drive)."
 
 #. type: Plain text
-#: ./pages/install/Preparing_for_Installation.adoc:307
+#: pages/install/Preparing_for_Installation.adoc:307
 msgid "Confirm your selection, and wait for the disc to be burned."
 msgstr "Konfirmasikan pilihan Anda, dan tunggu hingga disk dibakar."

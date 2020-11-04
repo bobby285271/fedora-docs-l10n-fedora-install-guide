@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-02 22:03+0000\n"
+"POT-Creation-Date: 2020-11-04 22:04+0000\n"
 "PO-Revision-Date: 2020-11-04 22:34+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f33pagesappendixesunderstanding_lvm/id/>"
-"\n"
+"fedora-docs-l10nfedora-install-guide/f33pagesappendixesunderstanding_lvm/id/"
+">\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Title =
-#: ./pages/appendixes/Understanding_LVM.adoc:5
+#: pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
 msgstr "Memahami LVM"
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:8
+#: pages/appendixes/Understanding_LVM.adoc:8
 msgid ""
 "LVM (Logical Volume Management) partitions provide a number of advantages "
 "over standard partitions. LVM partitions are formatted as _physical "
@@ -43,7 +43,7 @@ msgstr ""
 "memiliki tipe sistem berkas, seperti `ext4`, dan titik mount."
 
 #. type: delimited block =
-#: ./pages/appendixes/Understanding_LVM.adoc:13
+#: pages/appendixes/Understanding_LVM.adoc:13
 msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
@@ -52,13 +52,13 @@ msgstr ""
 "non-LVM standar untuk partisi `/boot` Anda."
 
 #. type: delimited block =
-#: ./pages/appendixes/Understanding_LVM.adoc:15
+#: pages/appendixes/Understanding_LVM.adoc:15
 msgid ""
 "By default, the installation process always creates the `/` and `swap` "
 "partitions within LVM volumes, with a separate `/boot` on a standard "
-"partition. See "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme] for details."
+"partition. See xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-recommended[Recommended Partitioning Scheme] for "
+"details."
 msgstr ""
 "Secara default, proses instalasi selalu membuat partisi `/` dan `swap` dalam "
 "volume LVM, dengan`/boot` terpisah pada partisi standar. Lihat xref:sect-"
@@ -66,14 +66,14 @@ msgstr ""
 "Dianjurkan] untuk detailnya."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:19
+#: pages/appendixes/Understanding_LVM.adoc:19
 msgid ""
-"To understand LVM better, imagine the physical volume as a pile of "
-"_blocks_. A block is a storage unit used to store data. Several piles of "
-"blocks can be combined to make a much larger pile, just as physical volumes "
-"are combined to make a volume group. The resulting pile can be subdivided "
-"into several smaller piles of arbitrary size, just as a volume group is "
-"allocated to several logical volumes."
+"To understand LVM better, imagine the physical volume as a pile of _blocks_. "
+"A block is a storage unit used to store data. Several piles of blocks can be "
+"combined to make a much larger pile, just as physical volumes are combined "
+"to make a volume group. The resulting pile can be subdivided into several "
+"smaller piles of arbitrary size, just as a volume group is allocated to "
+"several logical volumes."
 msgstr ""
 "Untuk memahami LVM dengan lebih baik, bayangkan volume fisik sebagai "
 "tumpukan _blok_. Blok adalah unit penyimpanan yang digunakan untuk menyimpan "
@@ -84,7 +84,7 @@ msgstr ""
 "dialokasikan ke beberapa volume logis."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:21
+#: pages/appendixes/Understanding_LVM.adoc:21
 msgid ""
 "An administrator may grow or shrink logical volumes without destroying data, "
 "unlike standard disk partitions. If the physical volumes in a volume group "
@@ -97,7 +97,7 @@ msgstr ""
 "dapat menyebar volume logis di seluruh perangkat penyimpanan."
 
 #. type: Plain text
-#: ./pages/appendixes/Understanding_LVM.adoc:22
+#: pages/appendixes/Understanding_LVM.adoc:22
 msgid ""
 "You may lose data if you shrink a logical volume to a smaller capacity than "
 "the data on the volume requires. To ensure maximum flexibility, create "
