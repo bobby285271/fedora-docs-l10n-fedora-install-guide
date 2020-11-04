@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-02 22:03+0000\n"
-"PO-Revision-Date: 2020-05-26 22:36+0000\n"
+"PO-Revision-Date: 2020-11-04 22:34+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Block title
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:5
@@ -34,6 +34,10 @@ msgid ""
 "of these steps may require a user name and password for _Challenge Handshake "
 "Authentication Protocol_ (CHAP) authentication."
 msgstr ""
+"Untuk menggunakan perangkat penyimpanan iSCSI, penginstal harus dapat "
+"menemukannya sebagai _target iSCSI_ dan dapat membuat sesi iSCSI untuk "
+"mengaksesnya. Kedua langkah ini mungkin memerlukan nama pengguna dan sandi "
+"untuk otentikasi _Challenge Handshake Authentication Protocol_ (CHAP)."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:10
@@ -46,12 +50,20 @@ msgid ""
 "password are different for CHAP authentication and reverse CHAP "
 "authentication."
 msgstr ""
+"Anda juga dapat mengonfigurasi target iSCSI untuk mengautentikasi inisiator "
+"iSCSI pada sistem tempat target dipasang (_reverse CHAP_), baik untuk "
+"pencarian maupun untuk sesi. Digunakan bersama, CHAP dan reverse CHAP "
+"disebut _mutual CHAP_ atau _two-way CHAP_. Mutual CHAP memberikan tingkat "
+"keamanan tertinggi untuk koneksi iSCSI, terutama jika nama pengguna dan kata "
+"sandi berbeda untuk otentikasi CHAP dan otentikasi CHAP terbalik."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:12
 msgid ""
 "Follow the procedure below to add an iSCSI storage target to your system."
 msgstr ""
+"Ikuti prosedur di bawah untuk menambahkan target penyimpanan iSCSI ke sistem "
+"Anda."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:16
@@ -61,12 +73,16 @@ msgid ""
 "destination[Installation Destination - Specialized & Network Disks] screen. "
 "A new dialog window titled `Add iSCSI Storage Target` will open."
 msgstr ""
+"Klik tombol `Tambah Target iSCSI` di pojok kanan bawah dari layar "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Tujuan Instalasi - Disk Khusus & Jaringan]. Sebuah jendela "
+"dialog baru berjudul `Tambah Target Penyimpanan iSCSI` akan terbuka."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
 msgid ""
 "Enter the IP address of the iSCSI target in the `Target IP Address` field."
-msgstr ""
+msgstr "Masukkan alamat IP dari target iSCSI dalam ruas `Alamat IP Target`."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
@@ -74,11 +90,14 @@ msgid ""
 "Provide a name in the `iSCSI Initiator Name` field for the iSCSI initiator "
 "in _iSCSI Qualified Name_ (IQN) format. A valid IQN entry contains:"
 msgstr ""
+"Berikan suatu nama dalam ruas `Nama Inisiator iSCSI` bagi inisiator iSCSI "
+"dalam format _iSCSI Qualified Name_ (IQN). Suatu entri IQN yang valid "
+"mengandung:"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
 msgid "The string `iqn.` (including the period)."
-msgstr ""
+msgstr "String `iqn.` (termasuk titik)."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:24
@@ -88,6 +107,10 @@ msgid ""
 "for the year, a dash, and two digits for the month, followed by a period. "
 "For example, represent September 2010 as `2010-09.`"
 msgstr ""
+"Kode tanggal yang menentukan tahun dan bulan di mana domain Internet atau "
+"nama subdomain organisasi Anda didaftarkan, direpresentasikan sebagai empat "
+"digit untuk tahun, satu tanda hubung, dan dua digit untuk bulan, diikuti "
+"dengan titik. Misalnya, wakili September 2010 sebagai `2010-09.`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:26
@@ -96,6 +119,9 @@ msgid ""
 "*reverse* order (with the top-level domain first). For example, represent "
 "the subdomain storage.example.com as `com.example.storage`."
 msgstr ""
+"Nama domain atau subdomain Internet organisasi Anda, disajikan dalam urutan "
+"*terbalik* (dengan domain level teratas lebih dulu). Misalnya, gambarkan "
+"subdomain storage.example.com sebagai `com.example.storage`."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:28
@@ -104,17 +130,20 @@ msgid ""
 "iSCSI initiator within your domain or subdomain. For example, `:diskarrays-"
 "sn-a8675309`"
 msgstr ""
+"Titik dua (`:`) diikuti dengan string yang secara unik mengidentifikasi "
+"inisiator iSCSI ini dalam domain atau subdomain Anda. Misalnya, `:diskarrays-"
+"sn-a8675309`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
 msgid "A complete IQN will therefore look as follows:"
-msgstr ""
+msgstr "Oleh karena itu, IQN lengkap akan terlihat sebagai berikut:"
 
 #. type: delimited block -
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
 #, no-wrap
 msgid "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
-msgstr ""
+msgstr "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:37
@@ -122,6 +151,8 @@ msgid ""
 "An example using the correct format is also displayed below the input field "
 "for reference."
 msgstr ""
+"Contoh menggunakan format yang benar juga ditampilkan di bawah kolom input "
+"untuk referensi."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:39
@@ -133,6 +164,12 @@ msgid ""
 "Computer Systems Interface (iSCSI) Naming and Discovery_, available from "
 "link:++https://tools.ietf.org/html/rfc3721#section-1++[]."
 msgstr ""
+"Untuk informasi lebih lanjut tentang IQN, lihat [citetitle] _3.2.6. iSCSI "
+"Names in RFC 3720 - Internet Small Computer Systems Interface (iSCSI) _, "
+"tersedia dari tautan:++https://tools.ietf.org/html/rfc3720#section-3.2.6++[] "
+"dan [citetitle]_1. iSCSI Names and Addresses in RFC 3721 - Internet Small "
+"Computer Systems Interface (iSCSI) Naming and Discovery_, tersedia dari "
+"tautan:++https: //tools.ietf.org/html/rfc3721#section-1++[]."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:41
@@ -143,6 +180,11 @@ msgid ""
 "Username` and `CHAP Password` may then become visible. Fill in your "
 "authentication credentials; these should be provided by your organization."
 msgstr ""
+"Tentukan jenis otentikasi yang akan digunakan untuk penemuan iSCSI "
+"menggunakan menu tarik-turun `Jenis Otentikasi Pencarian`. Bergantung pada "
+"jenis otentikasi yang Anda pilih, bidang masukan tambahan (seperti `Nama "
+"Pengguna CHAP` dan `Kata Sandi CHAP` mungkin akan terlihat. Isi kredensial "
+"otentikasi Anda; ini harus disediakan oleh organisasi Anda."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:43
@@ -153,6 +195,11 @@ msgid ""
 "the credentials you provided. This process may take some time (generally "
 "less than 30 seconds), depending on your network."
 msgstr ""
+"Klik tombol `Mulai Pencarian`. Pemasang sekarang akan mencoba menemukan "
+"target iSCSI berdasarkan informasi yang Anda berikan, dan jika target "
+"memerlukan otentikasi CHAP atau reverse CHAP, itu akan mencoba menggunakan "
+"kredensial yang Anda berikan. Proses ini mungkin memakan waktu (biasanya "
+"kurang dari 30 detik), tergantung pada jaringan Anda."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:45
@@ -164,6 +211,12 @@ msgid ""
 "error, make sure you entered all CHAP and reverse CHAP credentials correctly "
 "and that you have access to the iSCSI target."
 msgstr ""
+"Jika pencarian itu *tidak* berhasil, pesan kesalahan akan ditampilkan di "
+"jendela dialog. Pesan ini akan bervariasi berdasarkan bagian mana dari "
+"pencarian yang gagal. Jika penginstal tidak menemukan target yang Anda "
+"tentukan sama sekali, Anda harus memeriksa alamat IP; jika masalahnya adalah "
+"kesalahan otentikasi, pastikan Anda memasukkan semua kredensial CHAP dan "
+"reverse CHAP dengan benar dan Anda memiliki akses ke target iSCSI."
 
 #. type: delimited block =
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
@@ -172,12 +225,18 @@ msgid ""
 "address you specified are already configured. During discovery, "
 "[application]*Anaconda* ignores nodes which have already been added."
 msgstr ""
+"Pesan kesalahan `Tidak ada simpul yang ditemukan` mungkin juga berarti bahwa "
+"semua simpul di alamat yang Anda tentukan sudah dikonfigurasi. Selama "
+"pencarian, [application]*Anaconda* mengabaikan simpul-simpul yang telah "
+"ditambahkan."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
 msgid ""
 "If the discovery was successful, you will see a list of all discovered nodes."
 msgstr ""
+"Jika pencarian berhasil, Anda akan melihat daftar semua simpul yang "
+"ditemukan."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:56
@@ -189,6 +248,12 @@ msgid ""
 "name and password you used to discover the target are also valid for logging "
 "in to it."
 msgstr ""
+"Pilih satu atau lebih simpul yang ingin Anda masuki dengan menandai atau "
+"menghapus tanda kotak centang di sebelah setiap simpul yang ditemukan pada "
+"target. Di bawah daftar, pilih lagi jenis otentikasi yang ingin Anda gunakan;"
+" Anda juga dapat memilih opsi ʻGunakan kredensial dari pencarian` jika nama "
+"pengguna dan sandi CHAP/reverse CHAP yang Anda gunakan untuk menemukan "
+"target juga valid untuk masuk ke sana."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:58
@@ -201,6 +266,13 @@ msgid ""
 "adoc#sect-installation-gui-installation-destination[Installation Destination "
 "- Specialized & Network Disks]."
 msgstr ""
+"Setelah memilih semua simpul yang ingin Anda gunakan, klik `Log Masuk` untuk "
+"memulai sesi iSCSI. [application]*Anaconda* akan mencoba masuk ke semua "
+"simpul yang dipilih. Jika proses log masuk berhasil, dialog `Tambahkan "
+"Target Penyimpanan iSCSI` akan ditutup, dan semua simpul yang telah Anda "
+"konfigurasikan sekarang akan ditampilkan dalam daftar disk jaringan di "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Tujuan Instalasi - Disk Khusus & Jaringan]."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
@@ -211,3 +283,9 @@ msgid ""
 "able to change the `iSCSI Initiator Name`. If you made an error when "
 "configuring the initiator name, you must restart the installation."
 msgstr ""
+"Anda dapat mengulangi prosedur ini untuk menemukan target iSCSI tambahan, "
+"atau untuk menambahkan lebih banyak simpul dari target yang dikonfigurasi "
+"sebelumnya. Namun demikian, perhatikan bahwa setelah Anda mengklik tombol `"
+"Mulai Pencarian` untuk pertama kalinya, Anda tidak akan dapat mengubah `Nama "
+"Inisiator iSCSI`. Jika Anda membuat kesalahan saat mengkonfigurasi nama "
+"inisiator, Anda harus memulai ulang penginstalan."

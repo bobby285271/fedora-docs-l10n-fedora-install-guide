@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-02 22:03+0000\n"
-"PO-Revision-Date: 2020-05-04 22:35+0000\n"
+"PO-Revision-Date: 2020-11-04 22:34+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.3\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Title ====
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:5
@@ -31,12 +31,14 @@ msgid ""
 "The following procedure explains how to add _Fibre Channel over Ethernet_ "
 "(FCoE) storage devices and make them available during the installation:"
 msgstr ""
+"Prosedur berikut menjelaskan cara menambahkan perangkat penyimpanan _Fibre "
+"Channel over Ethernet_ (FCoE) dan membuatnya tersedia selama penginstalan:"
 
 #. type: Block title
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:10
 #, no-wrap
 msgid "Add FCoE Target"
-msgstr ""
+msgstr "Menambahkan Target FCoE"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:12
@@ -46,6 +48,10 @@ msgid ""
 "destination[Installation Destination - Specialized & Network Disks]. A new "
 "dialog window will open."
 msgstr ""
+"Klik tombol `Tambahkan SAN FCoE` di sudut kanan bawah "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Tujuan Penginstalan - Disk Khusus & Jaringan]. Jendela dialog "
+"baru akan terbuka."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:14
@@ -55,17 +61,21 @@ msgid ""
 "and connected - see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-network-configuration[Network & Hostname]."
 msgstr ""
+"Pilih antarmuka jaringan (`NIC`) yang terhubung ke switch FCoE Anda dari "
+"menu tarik-turun. Perhatikan bahwa antarmuka jaringan ini harus "
+"dikonfigurasi dan dihubungkan - lihat xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-network-configuration[Jaringan & Nama Host]."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:16
 msgid "Below the `NIC` drop-down menu are two choices:"
-msgstr ""
+msgstr "Ada dua pilihan di bawah menu tarik-turun `NIC`:"
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:17
 #, no-wrap
 msgid "`Use DCB`"
-msgstr ""
+msgstr "`Pakai DCB`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:18
@@ -77,12 +87,18 @@ msgid ""
 "interfaces that implement a hardware DCBX client should leave this check box "
 "empty."
 msgstr ""
+"_Data Center Bridging_ (DCB) adalah seperangkat penyempurnaan protokol "
+"Ethernet yang dirancang untuk meningkatkan efisiensi koneksi Ethernet di "
+"jaringan penyimpanan dan cluster. Opsi ini hanya boleh diaktifkan untuk "
+"antarmuka jaringan yang memerlukan klien DCBX berbasis host. Konfigurasi "
+"pada antarmuka yang menerapkan klien DCBX perangkat keras harus mengosongkan "
+"kotak centang ini."
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:19
 #, no-wrap
 msgid "`Use auto vlan`"
-msgstr ""
+msgstr "`Pakai auto vlan`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:20
@@ -94,6 +110,12 @@ msgid ""
 "any discovered FCoE VLANs will be automatically created and FCoE instances "
 "will be created on the VLAN interfaces. This option is enabled by default."
 msgstr ""
+"Opsi ini menunjukkan apakah pencarian VLAN harus dilakukan. Jika kotak ini "
+"dicentang, protokol penemuan VLAN _FCoE Initiation Protocol_ (FIP) akan "
+"berjalan di antarmuka Ethernet setelah konfigurasi tautan divalidasi. Jika "
+"belum dikonfigurasi, antarmuka jaringan untuk VLAN FCoE yang ditemukan akan "
+"dibuat secara otomatis dan instance FCoE akan dibuat di antarmuka VLAN. Opsi "
+"ini diaktifkan secara bawaan."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:21
@@ -104,3 +126,8 @@ msgid ""
 "gui-installation-destination[Installation Destination - Specialized & "
 "Network Disks]."
 msgstr ""
+"Setelah Anda memilih antarmuka dan opsi yang akan digunakan, klik `Tambahkan "
+"Disk FCoE`. Perangkat penyimpanan FCoE yang ditemukan akan ditampilkan di "
+"bawah tab `Peranti SAN Lain` di xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-destination[Tujuan Penginstalan - Disk Khusus "
+"& Jaringan]."

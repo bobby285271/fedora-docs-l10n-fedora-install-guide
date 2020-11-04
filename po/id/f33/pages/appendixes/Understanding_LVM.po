@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-02 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-04 22:34+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f33pagesappendixesunderstanding_lvm/id/>"
+"\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "Memahami LVM"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -31,6 +35,12 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"Partisi LVM (Logical Volume Management) memberikan sejumlah keunggulan "
+"dibandingkan partisi standar. Partisi LVM diformat sebagai _volume fisik_. "
+"Satu atau lebih volume fisik digabungkan untuk membentuk _grup volume_. "
+"Total penyimpanan setiap grup volume kemudian dibagi menjadi satu atau lebih "
+"_volume lojik_. Volume logis berfungsi seperti partisi standar. Mereka "
+"memiliki tipe sistem berkas, seperti `ext4`, dan titik mount."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +48,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"Boot loader tidak dapat membaca volume LVM. Anda harus membuat partisi disk "
+"non-LVM standar untuk partisi `/boot` Anda."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -48,6 +60,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"Secara default, proses instalasi selalu membuat partisi `/` dan `swap` dalam "
+"volume LVM, dengan`/boot` terpisah pada partisi standar. Lihat xref:sect-"
+"installation-gui-manual-partitioning-recommended[Skema Partisi yang "
+"Dianjurkan] untuk detailnya."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -59,6 +75,13 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"Untuk memahami LVM dengan lebih baik, bayangkan volume fisik sebagai "
+"tumpukan _blok_. Blok adalah unit penyimpanan yang digunakan untuk menyimpan "
+"data. Beberapa tumpukan blok dapat digabungkan untuk membuat tumpukan yang "
+"jauh lebih besar, sama seperti volume fisik digabungkan untuk membuat "
+"kelompok volume. Tumpukan yang dihasilkan dapat dibagi lagi menjadi beberapa "
+"tumpukan yang lebih kecil dari ukuran sebarang, seperti halnya grup volume "
+"dialokasikan ke beberapa volume logis."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -68,6 +91,10 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"Administrator dapat menumbuhkan atau mengecilkan volume logis tanpa merusak "
+"data, tidak seperti partisi disk standar. Jika volume fisik dalam grup "
+"volume berada di drive atau array RAID yang berbeda maka administrator juga "
+"dapat menyebar volume logis di seluruh perangkat penyimpanan."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -78,3 +105,9 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"Anda dapat kehilangan data jika Anda mengecilkan volume logis ke kapasitas "
+"yang lebih kecil daripada data pada volume yang dibutuhkan. Untuk memastikan "
+"fleksibilitas maksimum, buat volume logis untuk memenuhi kebutuhan Anda saat "
+"ini, dan biarkan kapasitas penyimpanan berlebih tidak teralokasi. Anda dapat "
+"dengan aman menumbuhkan volume logis untuk menggunakan ruang yang tidak "
+"terisi, sesuai dengan kebutuhan Anda."
