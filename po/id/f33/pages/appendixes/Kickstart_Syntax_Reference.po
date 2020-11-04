@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-02 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-04 02:51+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pagesappendixeskickstart_syntax_reference/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Title =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "Referensi Sintaks Kickstart"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -43,7 +47,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:20
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:23
@@ -59,6 +63,9 @@ msgid ""
 "part / --fstype=xfs "
 "--onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:32
@@ -83,7 +90,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:40
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:43
@@ -143,7 +150,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:66
 #, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:69
@@ -156,7 +163,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:70
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[option]#--opts=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:71
@@ -167,7 +174,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:74
 #, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:77
@@ -189,7 +196,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:84
 #, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:86
@@ -209,13 +216,13 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:91
 #, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:93
 #, no-wrap
 msgid "[option]#--source=#"
-msgstr ""
+msgstr "[option]#--source=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:94
@@ -231,6 +238,8 @@ msgid ""
 "[command]#driverdisk "
 "--source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:103
@@ -239,6 +248,8 @@ msgid ""
 "[command]#driverdisk "
 "--source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:108
@@ -247,12 +258,15 @@ msgid ""
 "[command]#driverdisk "
 "--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:110
 #, no-wrap
 msgid "[option]#--biospart=#"
-msgstr ""
+msgstr "[option]#--biospart=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:111
@@ -281,6 +295,8 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:126
@@ -291,7 +307,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:127
 #, no-wrap
 msgid "[command]#cdrom#"
-msgstr ""
+msgstr "[command]#cdrom#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:128
@@ -302,7 +318,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:129
 #, no-wrap
 msgid "[command]#harddrive#"
-msgstr ""
+msgstr "[command]#harddrive#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:130
@@ -320,12 +336,14 @@ msgid ""
 "[command]#install#\n"
 "[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:139
 #, no-wrap
 msgid "[option]#--partition=#:"
-msgstr ""
+msgstr "[option]#--partition=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:140
@@ -336,7 +354,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:141
 #, no-wrap
 msgid "[option]#--biospart=#:"
-msgstr ""
+msgstr "[option]#--biospart=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:142
@@ -348,7 +366,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:177
 #, no-wrap
 msgid "[option]#--dir=#:"
-msgstr ""
+msgstr "[option]#--dir=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:144
@@ -360,7 +378,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:145
 #, no-wrap
 msgid "[command]#liveimg#"
-msgstr ""
+msgstr "[command]#liveimg#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:146
@@ -386,13 +404,15 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:157
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:191
 #, no-wrap
 msgid "[option]#--url=#:"
-msgstr ""
+msgstr "[option]#--url=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:158
@@ -482,7 +502,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:179
 #, no-wrap
 msgid "[option]#--opts=#:"
-msgstr ""
+msgstr "[option]#--opts=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:180
@@ -584,7 +604,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:267
 #, no-wrap
 msgid "[option]#--url=#"
-msgstr ""
+msgstr "[option]#--url=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:214
@@ -2270,7 +2290,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:867
 #, no-wrap
 msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:711
@@ -3506,7 +3526,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1216
 #, no-wrap
 msgid "Network Configuration"
-msgstr ""
+msgstr "Konfigurasi Jaringan"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1219
@@ -4040,6 +4060,12 @@ msgid ""
 "connected systems with a domain name; to allow the `DHCP` service to assign "
 "the domain name to this machine, only specify the short host name."
 msgstr ""
+"Nama host untuk sistem yang diinstal. Nama host dapat berupa _fully-"
+"qualified domain name_ (FQDN) dalam format _namahost_._namadomain_, atau "
+"nama host pendek tanpa nama domain. Banyak jaringan memiliki layanan "
+"_Dynamic Host Configuration Protocol_ (`DHCP`) yang secara otomatis memasok "
+"sistem yang terhubung dengan nama domain; untuk mengizinkan layanan `DHCP` "
+"menetapkan nama domain ke mesin ini, hanya nyatakan nama host pendek."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1383
@@ -5715,7 +5741,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1939
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "Setelah Instalasi"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1942

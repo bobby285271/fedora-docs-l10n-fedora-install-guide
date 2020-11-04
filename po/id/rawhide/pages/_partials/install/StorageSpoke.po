@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-02 22:02+0000\n"
-"PO-Revision-Date: 2020-05-30 22:37+0000\n"
+"PO-Revision-Date: 2020-11-04 02:51+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
@@ -106,6 +106,10 @@ msgid ""
 "All detected disks, including any new ones, will be displayed in the `Local "
 "Standard Disks` section."
 msgstr ""
+"Bila Anda perlu mengonfigurasi peranti penyimpanan lokal tambaha, pilih "
+"`Segarkan` pada pojok kanan bawah. Ikuti instruksi dalam dialog yang "
+"terbuka. Semua disk yang terdeteksi, termasuk sebarang yang baru, akan "
+"ditampilkan dalam bagian `Disk Standar Lokal`."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:26
@@ -184,29 +188,15 @@ msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:41
-#, fuzzy
-#| msgid ""
-#| "After you select all disks you want to install {PRODUCT}, select one of "
-#| "the two options in the `Other Storage Options` section:"
 msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "three options in the `Storage Configuration` section:"
 msgstr ""
 "Setelah Anda memilih semua disk yang ingin Anda pasangi {PRODUCT}, pilih "
-"satu dari dua opsi dalam bagian `Opsi Penyimpanan Lain`:"
+"satu dari tiga opsi dalam bagian `Konfigurasi Penyimpanan`:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:43
-#, fuzzy
-#| msgid ""
-#| "`Automatically configure partitioning` - If this option is selected, then "
-#| "after you press `Done` in the top left corner of the screen, the "
-#| "installer will determine the total amount of space on all selected disks, "
-#| "and it will create a _Logical Volume Management_ (LVM) layout suitable "
-#| "for your system. The specifics of this layout depend on whether your "
-#| "system uses BIOS or UEFI firmware, the total amount of free space on your "
-#| "disks, and the amount of RAM on your system (which determines the size of "
-#| "your swap space)."
 msgid ""
 "`Automatic` - If this option is selected, then after you press `Done` in the "
 "top left corner of the screen, the installer will determine the total amount "
@@ -216,14 +206,13 @@ msgid ""
 "disks. A disk-based swap partition is not created, ZRAM-based swap is used "
 "instead."
 msgstr ""
-"`Secara otomatis mengkonfigurasi partisi` - Jika opsi ini dipilih, maka "
-"setelah Anda menekan`Selesai` di sudut kiri atas layar, penginstal akan "
-"menentukan jumlah total ruang pada semua disk yang dipilih, dan itu akan "
-"membuat tata letak _Logical Volume Management_ (LVM) yang cocok untuk sistem "
-"Anda. Spesifikasi tata letak ini tergantung pada apakah sistem Anda "
-"menggunakan firmware UEFI atau BIOS, jumlah total ruang kosong pada disk "
-"Anda, dan jumlah RAM pada sistem Anda (yang menentukan ukuran ruang swap "
-"Anda)."
+"`Otomatis` - Jika opsi ini dipilih, maka setelah Anda menekan`Selesai` di "
+"sudut kiri atas layar, penginstal akan menentukan jumlah total ruang pada "
+"semua disk yang dipilih, dan itu akan membuat tata letak Btrfs yang cocok "
+"untuk sistem Anda. Tata letak spesifik ini tergantung pada apakah sistem "
+"Anda menggunakan firmware UEFI atau BIOS, dan jumlah total ruang kosong pada "
+"disk Anda. Partisi swap berbasis disk tidak dibuat, swap berbasis ZRAM "
+"dipakai sebagai penganti."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:45
@@ -246,15 +235,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:47
-#, fuzzy
-#| msgid ""
-#| "`I will configure partitioning` - Select this option and press `Done` in "
-#| "the top left corner of the screen to configure your system's partitioning "
-#| "layout manually. This requires some knowledge of the theory behind disk "
-#| "partitions and related concepts, but gives you full control over the way "
-#| "the system will be installed. For instructions for manual partitioning, "
-#| "see xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-#| "partitioning[Manual Partitioning]."
 msgid ""
 "`Custom` - Select this option and press `Done` in the top left corner of the "
 "screen to configure your system's partitioning layout semi-manually. This "
@@ -264,36 +244,25 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning]."
 msgstr ""
-"`Saya akan mengkonfigurasi partisi` - Pilih opsi ini dan tekan `Selesai` di "
-"sudut kiri atas layar untuk mengkonfigurasi tata letak partisi sistem Anda "
-"secara manual. Ini membutuhkan pengetahuan tentang teori di balik partisi "
-"disk dan konsep terkait, tetapi memberi Anda kontrol penuh atas cara sistem "
-"akan diinstal. Untuk instruksi untuk mempartisi manual, lihat xref:sect-"
-"installation-gui-manual-partitioning[Pemartisian Manual]."
+"`Ubahan` - Pilih opsi ini dan tekan `Selesai` di sudut kiri atas layar untuk "
+"mengkonfigurasi tata letak partisi sistem Anda secara manual sebagian. Ini "
+"membutuhkan pengetahuan tentang teori di balik partisi disk dan konsep "
+"terkait, tetapi menyediakan saran atas cara sistem akan diinstal. Untuk "
+"instruksi bagi partisi ubahan, lihat xref:sect-installation-gui-manual-"
+"partitioning[Pemartisian Manual]."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:49
-#, fuzzy
-#| msgid ""
-#| "`I will configure partitioning` - Select this option and press `Done` in "
-#| "the top left corner of the screen to configure your system's partitioning "
-#| "layout manually. This requires some knowledge of the theory behind disk "
-#| "partitions and related concepts, but gives you full control over the way "
-#| "the system will be installed. For instructions for manual partitioning, "
-#| "see xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-#| "partitioning[Manual Partitioning]."
 msgid ""
 "`Advanced-Custom (Blivet-GUI)` - Select this option and press `Done` in the "
 "top left corner of the screen to configure your system's partitioning "
 "completely manually. This requires advanced knowledge of the theory behind "
 "disk partitions and related concepts. There are no guardrails."
 msgstr ""
-"`Saya akan mengkonfigurasi partisi` - Pilih opsi ini dan tekan `Selesai` di "
+"`Ubahan-Tingkat Lanjut (Blivet-GUI)` - Pilih opsi ini dan tekan `Selesai` di "
 "sudut kiri atas layar untuk mengkonfigurasi tata letak partisi sistem Anda "
-"secara manual. Ini membutuhkan pengetahuan tentang teori di balik partisi "
-"disk dan konsep terkait, tetapi memberi Anda kontrol penuh atas cara sistem "
-"akan diinstal. Untuk instruksi untuk mempartisi manual, lihat xref:sect-"
-"installation-gui-manual-partitioning[Pemartisian Manual]."
+"sepenuhnya secara manual. Ini membutuhkan pengetahuan tingkat lanjut tentang "
+"teori di balik partisi disk dan konsep terkait. Tidak ada jaring pengaman."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:51
@@ -463,21 +432,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:86
-#, fuzzy
-#| msgid ""
-#| "If you selected the `I will configure partitioning` option, pressing "
-#| "`Done` will open the `Manual Partitioning` screen. See xref:"
-#| "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-#| "partitioning[Manual Partitioning] for further instructions."
 msgid ""
 "If you selected the `Custom` option, pressing `Done` will open the `Manual "
 "Partitioning` screen. See xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-manual-partitioning[Manual Partitioning] for further "
 "instructions."
 msgstr ""
-"Jika Anda memilih opsi `Saya akan mengkonfigurasi partisi`, menekan "
-"`Selesai` akan membuka layar `Partisi Manual`. Lihat xref:sect-installation-"
-"gui-manual-partitioning[Pemartisian Manual] untuk instruksi lebih lanjut."
+"Jika Anda memilih opsi `Ubahan`, menekan `Selesai` akan membuka layar `"
+"Partisi Manual`. Lihat xref:sect-installation-gui-manual-partitioning["
+"Pemartisian Manual] untuk instruksi lebih lanjut."
 
 #~ msgid ""
 #~ "If you need to configure additional local storage devices, select `I will "
