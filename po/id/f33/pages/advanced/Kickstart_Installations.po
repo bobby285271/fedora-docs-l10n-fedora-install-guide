@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-04 22:04+0000\n"
-"PO-Revision-Date: 2020-11-04 02:51+0000\n"
+"PO-Revision-Date: 2020-11-05 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f33pagesadvancedkickstart_installations/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title =
 #: pages/advanced/Kickstart_Installations.adoc:6
@@ -38,6 +38,15 @@ msgid ""
 "especially useful when deploying {PRODUCT} on a large number of systems at "
 "once."
 msgstr ""
+"Instalasi Kickstart menawarkan sarana untuk mengotomatiskan proses "
+"instalasi, baik sebagian atau seluruhnya. BerkasKickstart berisi jawaban "
+"atas semua pertanyaan yang biasanya diajukan oleh program instalasi, seperti "
+"zona waktu apa yang Anda ingin sistem gunakan, bagaimana drive harus "
+"dipartisi atau paket mana yang harus diinstal. Oleh karena itu, menyediakan "
+"berkas Kickstart yang telah disiapkan saat penginstalan dimulai memungkinkan "
+"Anda untuk melakukan penginstalan secara otomatis, tanpa perlu campur tangan "
+"pengguna. Ini sangat berguna saat menerapkan {PRODUCT} pada sejumlah besar "
+"sistem sekaligus."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:11
@@ -45,12 +54,14 @@ msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
 msgstr ""
+"Semua skrip Kickstart dan berkas log dari pelaksanaannya disimpan di "
+"direktori `/tmp` untuk membantu pengawakutuan masalah penginstalan."
 
 #. type: Title ==
 #: pages/advanced/Kickstart_Installations.adoc:13
 #, no-wrap
 msgid "How to Perform a Kickstart Installation"
-msgstr ""
+msgstr "Bagaimana Melakukan Instalasi Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:16
@@ -58,16 +69,18 @@ msgid ""
 "Kickstart installations can be performed using a local DVD, a local hard "
 "drive, or via NFS, FTP, HTTP, or HTTPS."
 msgstr ""
+"Instalasi Kickstart dapat dilakukan memakai DVD lokal, hard disk lokal, atau "
+"melalui NFS, FTP, HTTP, atau HTTPS."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:18
 msgid "To use Kickstart, you must:"
-msgstr ""
+msgstr "Untuk memakai Kickstart, Anda mesti:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:20
 msgid "Create a Kickstart file."
-msgstr ""
+msgstr "Membuat sebuah berkas Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:22
@@ -75,6 +88,8 @@ msgid ""
 "Create boot media or configure a network boot (PXE) server which will be "
 "used to begin the installation."
 msgstr ""
+"Membuat media boot atau mengonfigurasi sebuah server boot jaringan (PXE) "
+"yang akan dipakai untuk memulai instalasi."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:24
@@ -82,6 +97,8 @@ msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
 msgstr ""
+"Membuat berkas Kickstart tersedia pada media lepasan, hard disk, atau suatu "
+"lokasi jaringan."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:26
@@ -89,17 +106,20 @@ msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
 msgstr ""
+"Memulai instalasi Kickstart dengan mem-boot penginstall dan memakai suatu "
+"opsi boot untuk memberitahu penginstall di mana dapat menemukan berkas "
+"Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:28
 msgid "This chapter explains these steps in detail."
-msgstr ""
+msgstr "Bab ini menjelaskan langkah-langkah ini secara rinci."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:30
 #, no-wrap
 msgid "Creating a Kickstart File"
-msgstr ""
+msgstr "Membuat suatu Berkas Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:33
@@ -112,6 +132,13 @@ msgid ""
 "[application]*Notepad* on Windows systems) can be used to create and edit "
 "Kickstart files."
 msgstr ""
+"Berkas Kickstart itu sendiri adalah berkas teks biasa, berisi kata kunci "
+"yang terdaftar di xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Referensi Sintaks Kickstart], yang berfungsi "
+"sebagai petunjuk untuk penginstalan. Semua penyunting teks yang dapat "
+"menyimpan berkas sebagai teks ASCII (seperti [application]*Gedit* atau "
+"[application]*vim* pada sistem Linux atau [application]*Notepad* pada sistem "
+"Windows) dapat digunakan untuk membuat dan menyunting berkas Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:35
@@ -123,11 +150,18 @@ msgid ""
 "then copy this file, make any changes you need, and use the resulting "
 "configuration file in further installations."
 msgstr ""
+"Pendekatan yang disarankan untuk membuat berkas Kickstart adalah melakukan "
+"instalasi manual pada satu sistem terlebih dahulu. Setelah penginstalan "
+"selesai, semua pilihan yang dibuat selama penginstalan disimpan ke dalam "
+"berkas bernama `anaconda-ks.cfg`, yang terletak di direktori `/root/` pada "
+"sistem yang diinstal. Anda kemudian dapat menyalin berkas ini, membuat "
+"perubahan apa pun yang Anda perlukan, dan menggunakan berkas konfigurasi "
+"yang dihasilkan untuk penginstalan lebih lanjut."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:37
 msgid "When creating a Kickstart file, keep in mind the following:"
-msgstr ""
+msgstr "Ketika membuat sebuah berkas Kickstart, harap diingat yang berikut:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:39
@@ -135,6 +169,8 @@ msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
 msgstr ""
+"Baris yang diawali dengan tanda pagar (`#`) diperlakukan sebagai komentar "
+"dan diabaikan."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:41
@@ -143,6 +179,9 @@ msgid ""
 "to be in a specific order unless otherwise specified. The correct section "
 "order is:"
 msgstr ""
+"Bagian-bagian mesti dinyatakan *secara urut*. Butir-butir dalam bagian tidak "
+"harus dalam urutan tertentu kecuali dinyatakan lain. Urutan bagian yang "
+"benar adalah:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:43
@@ -196,7 +235,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr ""
+msgstr "Memverifikasi Berkas Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:61
@@ -212,7 +251,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
-msgstr ""
+msgstr "# dnf install pykickstart\n"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:68
@@ -225,7 +264,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
-msgstr ""
+msgstr "$ [command]#ksvalidator _/path/ke/kickstart.ks_#\n"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:75
