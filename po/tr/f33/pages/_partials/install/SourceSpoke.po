@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-05 22:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Block title
+#: ./pages/_partials/install/SourceSpoke.adoc:5
+#: ./pages/_partials/install/SourceSpoke.adoc:16
+#, no-wrap
+msgid "Installation Source"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:8
+msgid ""
+"The `Installation Source` screen allows you to specify a location (local or "
+"on the network) from which packages will be downloaded and installed on your "
+"system. This screen will be configured automatically in most cases, but you "
+"can change your settings or add additional sources."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:13
+msgid ""
+"Normally, when you first enter the `Installation Summary` screen, the "
+"installer will attempt to configure an installation source based on the type "
+"of media you used to boot. The full {PRODUCT} Server DVD will configure the "
+"source as local media, the netinst ISO image will configure the closest "
+"network mirror, etc. This process takes some time, especially if the default "
+"source is a network mirror. If you plan to use a custom installation source, "
+"use the [option]#inst.askmethod# boot option to skip the initial "
+"configuration; this will allow you to enter this screen immediately. See "
+"xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
+"Installation Source] for information about boot options."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/_partials/install/SourceSpoke.adoc:18
+#, no-wrap
+msgid "The Installation Source screen"
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/_partials/install/SourceSpoke.adoc:18
+#, no-wrap
+msgid "anaconda/SourceSpoke.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:21
+msgid ""
+"The following options are available. Note that not all of them may be "
+"displayed."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/_partials/install/SourceSpoke.adoc:22
+#, no-wrap
+msgid "Auto-detected installation media"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:23
+msgid ""
+"This is the option selected by default if you started the installer from "
+"media containing an installation source, such as a live DVD. No additional "
+"configuration is necessary. You can click the `Verify` button check the "
+"media integrity."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/_partials/install/SourceSpoke.adoc:24
+#, no-wrap
+msgid "ISO file"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:25
+msgid ""
+"This option will appear if the installation program detected a partitioned "
+"hard drive with mountable file systems during boot. Select this option, "
+"click the btn:[Choose an ISO] button, and browse to the installation ISO "
+"file's location on your system. You can click the `Verify` button to check "
+"the file's integrity."
+msgstr ""
+
+#. type: Labeled list
+#: ./pages/_partials/install/SourceSpoke.adoc:26
+#, no-wrap
+msgid "On the network"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:27
+msgid ""
+"Use this option to download packages to be installed from a network location "
+"instead of local media. This is the default selection on network "
+"installation media."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:29
+msgid ""
+"In most cases, the `Closest mirror` option available from the protocol "
+"selection drop-down menu is preferable. If this option is selected, packages "
+"for your system will be downloaded from the most suitable location (mirror)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/SourceSpoke.adoc:31
+msgid ""
+"To manually configure a network-based installation source, use the drop-down "
+"menu to specify the protocol to be used when downloading packages. This "
+"setting depends on the server you want to use. Then, type the server address "
+"(without the protocol) into the address field. If you choose NFS, a second "
+"input field will appear where you can specify custom `NFS mount options`."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:36
+msgid ""
+"When selecting an NFS installation source, you must specify the address with "
+"a colon (`:`) character separating the host name from the path. For example:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/_partials/install/SourceSpoke.adoc:40
+#, no-wrap
+msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:45
+msgid ""
+"To configure a proxy for an HTTP or HTTPS source, click the btn:[Proxy "
+"setup] button. Check `Enable HTTP proxy` and type the URL into the `Proxy "
+"URL` box. If the proxy server requires authentication, check `Use "
+"Authentication` and enter your user name and password. Click btn:[OK] to "
+"finish the configuration."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:47
+msgid ""
+"If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
+"box under the address field."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:49
+msgid ""
+"You can also specify additional repositories in the `Additional "
+"repositories` section to gain access to more installation environments and "
+"software add-ons. All environments and add-ons will be available for "
+"selection in "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection[Software "
+"Selection] once you finish configuring the sources."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:51
+msgid ""
+"To add a repository, click the btn:[+] button. To delete a repository, "
+"select one in the list and click the btn:[-] button. Click the arrow icon to "
+"revert to the previous list of repositories, i.e. to replace current entries "
+"with those that were present at the time you entered the `Installation "
+"Source` screen. To activate or deactivate a repository, click the check box "
+"in the `Enabled` column at each entry in the list."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:53
+msgid ""
+"You can name your additional repository and configure it the same way as the "
+"primary repository on the network using the input fields on the right side "
+"of the section."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/_partials/install/SourceSpoke.adoc:54
+msgid ""
+"Once you have selected your installation source, click `Done` in the top "
+"left corner to return to "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
+"Summary]."
+msgstr ""
