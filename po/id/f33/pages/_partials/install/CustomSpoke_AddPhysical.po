@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallcustomspoke_addphysical/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:5
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:17
 #, no-wrap
 msgid "Creating Standard Partitions"
-msgstr ""
+msgstr "Membuat Partisi Standar"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:8
@@ -33,6 +37,13 @@ msgid ""
 "standard partition with the BIOS Boot or EFI System file system to store the "
 "boot loader."
 msgstr ""
+"_Partisi standard_ adalah jenis partisi yang paling umum, dengan dukungan "
+"terluas di seluruh sistem operasi. Sebagai contoh, Microsoft Windows "
+"menggunakan partisi fisik secara eksklusif dan tidak dapat bekerja secara "
+"native dengan LVM atau Btrfs. Sebagian besar penyiapan partisi {PRODUCT} "
+"juga akan memerlukan setidaknya satu partisi standar untuk direktori `/boot`"
+", dan mungkin juga partisi standar lain dengan sistem berkas boot BIOS atau "
+"Sistem EFI untuk menyimpan boot loader."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:10
@@ -41,24 +52,27 @@ msgid ""
 "Introduction to Disk Partitions] for additional information about the "
 "concepts behind physical partitions."
 msgstr ""
+"Lihat xref:appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview["
+"Pengenalan ke Partisi Disk] untuk informasi tambahan tentang konsep di balik "
+"partisi fisik."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:11
 #, no-wrap
 msgid "Create Standard Partition"
-msgstr ""
+msgstr "Membuat Partisi Standar"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr ""
+msgstr "Layar Pemartisian Manual"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddPhysical.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddPhysical.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:16
@@ -66,6 +80,8 @@ msgid ""
 "Follow the procedure below to create mount points on standard physical "
 "partitions:"
 msgstr ""
+"Ikuti prosedur di bawah ini untuk membuat titik kait pada partisi fisik "
+"standar:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:19
@@ -73,6 +89,8 @@ msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
+"Klik tombol `+` di bagian bawah daftar yang menunjukkan titik kait yang ada. "
+"Jendela dialog baru akan terbuka."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:21
@@ -83,6 +101,10 @@ msgid ""
 "`50GB`). Then, click `Add mount point` to add the mount point and return to "
 "the main partitioning screen."
 msgstr ""
+"Di jendela dialog baru, tentukan titik kait yang ingin Anda buat titik kait "
+"terpisah - misalnya, `/`. Opsional, tentukan ukuran partisi menggunakan unit "
+"standar seperti MB atau GB (misalnya, `50GB`). Kemudian, klik `Tambahkan "
+"titik kait` untuk menambahkan titik kait dan kembali ke layar partisi utama."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
@@ -91,6 +113,8 @@ msgid ""
 "BIOS Boot partition, use `biosboot`. For an EFI System Partition, use "
 "`/boot/efi`."
 msgstr ""
+"Saat membuat partisi swap, tentukan titik kait sebagai `swap`. Untuk partisi "
+"Boot BIOS, gunakan `biosboot`. Untuk Partisi Sistem EFI, gunakan `/boot/efi`."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
@@ -99,6 +123,8 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Untuk informasi tentang tipe-tipe partisi ini, lihat xref:sect-installation-"
+"gui-manual-partitioning-recommended[Skema Pemartisian yang Direkomendasikan]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
@@ -110,6 +136,12 @@ msgid ""
 "Partition`. Then, click `Update Settings` in the bottom right corner of the "
 "screen."
 msgstr ""
+"Titik kait sekarang telah dibuat dengan menggunakan pengaturan default, yang "
+"berarti telah dibuat sebagai volume logis LVM. Pilih titik kait yang baru "
+"dibuat di panel kiri untuk mengonfigurasinya lebih jauh, dan mengubahnya "
+"menjadi partisi fisik dengan mengubah pilihan `Tipe Peranti` menjadi `"
+"Partisi Standar`. Kemudian, klik `Perbarui Pengaturan` di sudut kanan bawah "
+"layar."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
@@ -118,6 +150,9 @@ msgid ""
 "the partition has been assigned to one or more hard drives. Click the "
 "`Modify` button to configure on which drive this partition will be created."
 msgstr ""
+"Di bagian `Peranti` di sisi kanan layar, Anda dapat melihat bahwa partisi "
+"telah ditetapkan ke satu atau beberapa hard drive. Klik tombol `Ubah` untuk "
+"mengonfigurasi pada drive mana partisi ini akan dibuat."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
@@ -131,6 +166,15 @@ msgid ""
 "want to make sure that this partition is placed on a specific hard drive, "
 "select only that drive and unselect all others."
 msgstr ""
+"Dalam dialog `Konfigurasi Titik Kait`, Anda dapat menentukan volume ini "
+"*boleh* berada di perangkat fisik mana (disk). Anda dapat memilih satu atau "
+"lebih disk yang akan digunakan untuk meyimpan volume ini dengan menekan "
+"kbd:[Ctrl] dan mengklik setiap disk dalam daftar. Jika Anda memilih beberapa "
+"disk di sini, [application]*Anaconda* akan menentukan di mana tepatnya "
+"partisi harus dibuat berdasarkan bagaimana Anda mengkonfigurasi sisa "
+"instalasi. Jika Anda ingin memastikan bahwa partisi ini ditempatkan pada "
+"hard drive tertentu, pilih hanya drive itu dan membatalkan pilihan semua "
+"orang lain."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
@@ -138,6 +182,8 @@ msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Setelah Anda selesai mengkonfigurasi lokasi partisi, klik `Simpan` untuk "
+"kembali ke layar utama `Pemartisian Manual`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
@@ -146,6 +192,9 @@ msgid ""
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
+"Konfigurasikan pengaturan lain khusus untuk partisi - `Titik Kait`, `"
+"Kapasitas yang Diinginkan`, dan `Sistem Berkas`. Tekan `Perbarui Pengaturan` "
+"untuk menerapkan perubahan konfigurasi."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
@@ -153,3 +202,5 @@ msgid ""
 "Repeat this procedure for any additional standard partitions you want to "
 "create."
 msgstr ""
+"Ulangi prosedur ini untuk setiap partisi standar tambahan yang ingin Anda "
+"buat."

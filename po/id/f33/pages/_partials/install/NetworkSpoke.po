@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallnetworkspoke/id/"
+">\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/NetworkSpoke.adoc:5
 #: ./pages/_partials/install/NetworkSpoke.adoc:16
 #, no-wrap
 msgid "Network & Hostname"
-msgstr ""
+msgstr "Jaringan & Nama Host"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:8
@@ -30,6 +34,10 @@ msgid ""
 "installation (if needed for tasks such as downloading packages from a remote "
 "location) and on the installed system."
 msgstr ""
+"Layar `Jaringan & Nama Host` digunakan untuk mengkonfigurasi antarmuka "
+"jaringan. Opsi yang dipilih di sini akan tersedia selama instalasi (jika "
+"diperlukan untuk tugas-tugas seperti mengunduh paket dari lokasi yang jauh) "
+"dan pada sistem yang diinstal."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke.adoc:13
@@ -41,18 +49,23 @@ msgid ""
 "Networking{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Konfigurasi jaringan adalah topik yang luas dan banyak opsi yang tersedia "
+"selama instalasi berada di luar cakupan dokumen ini. Untuk informasi "
+"terperinci tentang jaringan, termasuk topik teoretis dan petunjuk serta "
+"contoh spesifik, lihat [citetitle]_Panduan{nbsp}Jaringan {PRODUCT}_, "
+"tersedia di link:++https://docs.fedoraproject.org/++[ ]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
-msgstr ""
+msgstr "Layar Jaringan & Nama Host. Dalam panel kiri"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/NetworkSpoke.png"
-msgstr ""
+msgstr "anaconda/NetworkSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:21
@@ -63,6 +76,11 @@ msgid ""
 "display its current configuration (such as IP and DNS address); the details "
 "are displayed on the right side of the screen."
 msgstr ""
+"Antarmuka yang dapat diakses secara lokal terdeteksi secara otomatis oleh "
+"program instalasi dan tidak dapat ditambahkan atau dihapus secara manual. "
+"Semua antarmuka yang terdeteksi tercantum di sisi kiri layar. Klik sebuah "
+"antarmuka dalam daftar untuk menampilkan konfigurasi saat ini (seperti "
+"alamat IP dan DNS); detailnya ditampilkan di sisi kanan layar."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:23
@@ -73,6 +91,11 @@ msgid ""
 "a Virtual Network Interface]. To remove a previously created virtual "
 "interface, select it in the list and click the `-` button."
 msgstr ""
+"Di bawah daftar antarmuka ada dua tombol. Gunakan tombol `+` untuk "
+"menambahkan antarmuka jaringan virtual (Team, Bond, atau VLAN) seperti yang "
+"dijelaskan dalam xref:sect-installation-gui-network-configuration-virtual-"
+"interface[Menambahkan Antarmuka Jaringan Virtual]. Untuk menghapus antarmuka "
+"virtual yang sebelumnya dibuat, pilih di daftar dan klik tombol `-`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:25
@@ -84,6 +107,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"Untuk mengubah pengaturan seperti alamat IP, server DNS, atau konfigurasi "
+"routing untuk antarmuka yang ada (baik virtual dan fisik), pilih antarmuka "
+"di panel kiri dan klik `Konfigurasi` di sudut kanan bawah layar. Pengaturan "
+"yang tersedia dijelaskan dalam xref:sect-installation-gui-network-"
+"configuration-advanced[Menyunting Konfigurasi Antarmuka Jaringan]."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:27
@@ -91,6 +119,9 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
+"Gunakan saklar `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` di "
+"pojok kanan atas untuk memfungsikan atau menonaktifkan antarmuka yang saat "
+"ini dipilih."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:29
@@ -103,3 +134,10 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
+"Di bawah daftar koneksi, masukkan nama host untuk komputer ini di ruas "
+"masukan `Nama Host`. Nama host dapat berupa _fully-qualified domain name_ "
+"(FQDN) dalam format _namahost_._namadomain_, atau nama host pendek tanpa "
+"nama domain. Banyak jaringan memiliki layanan _Dynamic Host Configuration "
+"Protocol_ (`DHCP`) yang secara otomatis memasok sistem yang terhubung dengan "
+"nama domain; untuk mengizinkan layanan `DHCP` menetapkan nama domain ke "
+"mesin ini, hanya nyatakan nama host pendek."

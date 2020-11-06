@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallsourcespoke/id/>"
+"\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SourceSpoke.adoc:5
 #: ./pages/_partials/install/SourceSpoke.adoc:16
 #, no-wrap
 msgid "Installation Source"
-msgstr ""
+msgstr "Sumber Instalasi"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:8
@@ -30,6 +34,10 @@ msgid ""
 "system. This screen will be configured automatically in most cases, but you "
 "can change your settings or add additional sources."
 msgstr ""
+"Layar `Sumber Instalasi` memungkinkan Anda untuk menyatakan suatu lokasi ("
+"lokal atau pada jaringan) dari mana paket akan diunduh dan dipasang pada "
+"sistem Anda. Layar ini akan dikonfigurasi secara otomatis pada kebanyakan "
+"kasus, tapi Anda dapat mengubah pengaturan Anda atau menambahkan sumber."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:13
@@ -45,18 +53,28 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for information about boot options."
 msgstr ""
+"Secara normal, ketika pertama Anda memasuki layar `Ringkasan Instalasi`, "
+"installer akan mencoba mengonfigurasi suatu sumber instalasi berbasis pada "
+"tipe media yang Anda pakai untuk boot. DVD Server {PRODUCT} lengkap akan "
+"mengonfigur sumber sebagai media lokal, image ISO netinst akan mengonfigur "
+"cermin jaringan terdekat, dsb. Proses ini makan waktu, khususnya bila sumber "
+"baku adalah sebuah cermin jaringan. Bila Anda berrencana memakai suatu "
+"sumber instalasi ubahan, gunakan opsi boot [option]#inst.askmethod# untuk "
+"melewati konfigurasi awal; ini akan mengizinkan Anda seketika masuk ke layar "
+"ini. Lihat xref:advanced/Boot_Options.adoc#sect-boot-options-sources["
+"Menyatakan Sumber Instalasi] untuk informasi tentang opsi-opsi boot."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "The Installation Source screen"
-msgstr ""
+msgstr "Layar Sumber Instalasi"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/SourceSpoke.png"
-msgstr ""
+msgstr "anaconda/SourceSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:21
@@ -64,12 +82,13 @@ msgid ""
 "The following options are available. Note that not all of them may be "
 "displayed."
 msgstr ""
+"Opsi-opsi berikut tersedia. Catat bahwa tidak semua mungkin ditampilkan."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:22
 #, no-wrap
 msgid "Auto-detected installation media"
-msgstr ""
+msgstr "Media instalasi yang terdeteksi otomatis"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:23
@@ -79,12 +98,16 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"Opsi ini dipilih secara baku bila Anda memulai installer dari media yang "
+"memuat suatu sumber instalasi, seperti misalnya DVD live. Tidak ada "
+"konfigurasi tambahan yang diperlukan. Anda dapat mengklik tombol `Verifikasi`"
+"untuk memeriksa integritas media."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:24
 #, no-wrap
 msgid "ISO file"
-msgstr ""
+msgstr "Berkas ISO"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:25
@@ -95,12 +118,17 @@ msgid ""
 "file's location on your system. You can click the `Verify` button to check "
 "the file's integrity."
 msgstr ""
+"Opsi ini akan muncul bila program instalasi mendeteksi sebuah hard disk yang "
+"terpartisi dengan sistem berkas yang dapat dikait selama boot. Pilih opsi "
+"ini, klik tombol btn:[Pilih sebuah ISO], dan ramban ke lokasi berkas ISO "
+"instalasi pada sistem Anda. Anda dapat mengklik tombol `Verifikasi` untuk "
+"memeriksa integritas berkas."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "Pada jaringan"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:27
@@ -109,6 +137,9 @@ msgid ""
 "instead of local media. This is the default selection on network "
 "installation media."
 msgstr ""
+"Gunakan opsi ini untuk mengunduh paket-paket yang akan dipasang dari lokasi "
+"jaringan sebagai pengganti media lokal. Ini adalah pilihan baku pada media "
+"instalasi jaringan."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:29
@@ -117,6 +148,9 @@ msgid ""
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
 msgstr ""
+"Dalam kebanyakan kasus, opsi `Cermin terdekat` yang tersedia dari menu drop "
+"down pemilihan protokol lebih disukai. Bila opsi ini dipilih, paket-paket "
+"bagi sistem Anda akan diunduh dari lokasi (cermin) yang paling cocok."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:31
@@ -127,6 +161,12 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Untuk mengonfigurasi secara manual suatu sumber instalasi berbasis jaringan, "
+"gunakan menu drop down untuk menyatakan protokol yang akan dipakai ketika "
+"mengunduh paket. Pengaturan ini bergantung pada server yang ingin Anda "
+"pakai. Lalu, ketikkan alamat server (tanpa protokol) ke dalam ruas alamat. "
+"Bila Anda memilih NFS, ruas masukan ke dua akan muncul dimana Anda dapat "
+"menyatakan `opsi mount NFS` ubahan."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:36
@@ -134,12 +174,17 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Ketika memilih suatu sumber instalasi NFS, Anda mesti menyatakan alamat "
+"dengan karakter titik dua (`:`) yang memisahkan nama host dari path. Sebagai "
+"contoh:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/SourceSpoke.adoc:40
 #, no-wrap
 msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
 msgstr ""
+"`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/"
+"to/directory_pass:attributes[{blank}]`\n"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:45
@@ -150,6 +195,11 @@ msgid ""
 "Authentication` and enter your user name and password. Click btn:[OK] to "
 "finish the configuration."
 msgstr ""
+"Untuk mengonfigurasi suatu proksi bagi sumber HTTP atau HTTPS, klik tombol "
+"btn:[Penyiapan proksi]. Centang `Fungsikan proksi HTTP` dan ketikkan URL ke "
+"dalam kotak `URL Proksi`. Bila server proksi memerlukan autentikasi, centang "
+"`Gunakan Autentikasi` dan masukkan nama pengguna dan kata sandi Anda. Klik "
+"btn:[OK] untuk menyelesaikan konfigurasi."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:47
@@ -157,6 +207,8 @@ msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
 msgstr ""
+"Bila URL HTTP atau HTTPS Anda mengacu ke sebuah daftar cermin, tandai kotak "
+"centang di bawah ruas alamat."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:49
@@ -168,6 +220,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection[Software "
 "Selection] once you finish configuring the sources."
 msgstr ""
+"Anda juga dapat menyatakan repositori tambahan dalam bagian `Repositori "
+"tambahan` untuk mendapatkan akses ke lebih banyak lingkungan instalasi dan "
+"add on perangkat lunak. Semua lingkungan dan add-on akan tersedia untuk "
+"dipilih dalam xref:sect-installation-gui-software-selection[Pemilihan "
+"Perangkat Lunak] setelah Anda selesai mengonfigurasi sumber."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:51
@@ -179,6 +236,12 @@ msgid ""
 "Source` screen. To activate or deactivate a repository, click the check box "
 "in the `Enabled` column at each entry in the list."
 msgstr ""
+"Untuk menambahkan repositori, klik tombol btn:[+]. Untuk menghapus sebuah "
+"repositori, pilih satu dalam daftar dan klik tombol btn:[-]. Klik ikon panah "
+"untuk memulihkan ke daftar repositori sebelumnya, yaitu mengganti entri saat "
+"ini dengan yang ada pada saat Anda masuk layar `Sumber Instalasi`. Untuk "
+"mengaktifkan atau menonaktifkan sebuah repositori, klik kotak centang dalam "
+"kolom `Difungsikan` pada setiap entri dalam daftar."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:53
@@ -187,6 +250,9 @@ msgid ""
 "primary repository on the network using the input fields on the right side "
 "of the section."
 msgstr ""
+"Anda dapat menamai repositori tambahan Anda dan mengonfigurnya dengan cara "
+"yang sama dengan repositori primer pada jaringan memakai ruas masukan pada "
+"sisi kanan bagian."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:54
@@ -196,3 +262,6 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Sekali Anda telah membuat pilihan, klik `Selesai` di pojok kiri atas untuk "
+"kembali ke xref:sect-installation-gui-installation-summary[Ringkasan "
+"Instalasi]."

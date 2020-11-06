@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: 2020-11-05 22:32+0000\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f32pagesadvancedkickstart_installations/"
@@ -191,6 +191,11 @@ msgid ""
 "syntax-reference[Kickstart Syntax Reference]. Note that some commands, such "
 "as [command]#install#, are mandatory, but most commands are optional."
 msgstr ""
+"Bagian perintah yang berisi perintah dan opsi Kickstart aktual seperti yang "
+"tercantum dalam xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Referensi Sintaks Kickstart]. Perhatikan bahwa "
+"beberapa perintah, seperti [command]#install#, bersifat wajib, tetapi "
+"sebagian besar perintah bersifat opsional."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:45
@@ -200,6 +205,9 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection] for details."
 msgstr ""
+"Bagian [command]#%packages# memuat suatu daftar paket dan grup paket yang "
+"akan dipasang. Lihat xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-"
+"kickstart-packages[%packages (required) - Pemilihan Paket] untuk rinciannya."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:47
@@ -211,6 +219,12 @@ msgid ""
 "and xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
 "postinstall[%post (optional) - Post-installation Script] for details."
 msgstr ""
+"Bagian [command]#%pre# dan [command]#%post#, memuat skrip pra instalasi dan "
+"pasca instalasi. Dua bagian ini bisa dalam urutan sebarang dan tidak wajib. "
+"Lihat xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"preinstall[%pre (optional) - Skrip Pra Instalasi] dan xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall[%post (optional) -"
+" Skrip Pasca Instalasi] untuk rinciannya."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:52
@@ -219,6 +233,10 @@ msgid ""
 "end with [command]#%end#, otherwise the installation program will refuse the "
 "Kickstart file. The main command section has no special ending statement."
 msgstr ""
+"Bagian [command]#%packages#, [command]#%pre# dan [command]#%post# mesti "
+"diakhiri dengan [command]#%end#, bila tidak, program instalasi akan menolak "
+"berkas Kickstart tersebut. Bagian perintah utama tidak punya pernyataan "
+"akhir khusus."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:56
@@ -230,6 +248,12 @@ msgid ""
 "you will not be able to see the prompt, and the installation will appear to "
 "have failed."
 msgstr ""
+"Menghilangkan sebarang butir yang diperlukan menyebabkan program "
+"penginstalan yang meminta pengguna untuk menjawab butir terkait, sama "
+"seperti pengguna akan diminta selama penginstalan biasa. Setelah jawaban "
+"diberikan, penginstalan akan dilanjutkan. Perhatikan bahwa jika sistem yang "
+"Anda instal tidak memiliki tampilan, Anda tidak akan dapat melihat prompt, "
+"dan penginstalan akan tampak gagal."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:58
@@ -246,6 +270,12 @@ msgid ""
 "used to do this. This tool is a part of the [package]*pykickstart* package. "
 "To install this package, execute the following command:"
 msgstr ""
+"Saat membuat atau menyesuaikan berkas kickstart Anda, ada gunanya untuk "
+"memverifikasi bahwa itu valid sebelum mencoba menggunakannya dalam "
+"instalasi. {PRODUCT} menyertakan utilitas baris perintah "
+"[application]*ksvalidator* yang dapat digunakan untuk melakukan ini. Alat "
+"ini adalah bagian dari paket [package]*pykickstart*. Untuk menginstal paket "
+"ini, jalankan perintah berikut:"
 
 #. type: delimited block -
 #: pages/advanced/Kickstart_Installations.adoc:65
@@ -259,6 +289,8 @@ msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
 msgstr ""
+"Setelah memasang paket, Anda dapat memvalidasi suatu berkas Kickstart "
+"memakai perintah berikut:"
 
 #. type: delimited block -
 #: pages/advanced/Kickstart_Installations.adoc:72
@@ -272,12 +304,14 @@ msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
 msgstr ""
+"Gantikan _/path/ke/kickstart.ks_ dengan path ke berkas Kickstart yang ingin "
+"Anda verifikasi."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:77
 msgid ""
 "For more information about this tool, see the `ksvalidator(1)` man page."
-msgstr ""
+msgstr "Untuk informasi tentang alat ini, lihat halaman man `ksvalidator(1)`."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:82
@@ -289,12 +323,18 @@ msgid ""
 "attempt to validate the [command]#%pre#, [command]#%post# and [command]#"
 "%packages# sections of the Kickstart file."
 msgstr ""
+"Perlu diingat bahwa alat validasi memiliki batasannya. Berkas Kickstart bisa "
+"sangat rumit; [application]*ksvalidator* dapat memastikan sintaks sudah "
+"benar dan bahwa berkas tidak menyertakan opsi yang dihapus, tetapi tidak "
+"dapat menjamin penginstalan berhasil. Ini juga tidak mencoba untuk "
+"memvalidasi bagian [command]#%pre#, [command]#%post# dan [command]#%packages#"
+" dari berkas Kickstart."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr ""
+msgstr "Membuat Berkas Kickstart Tersedia"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:89
@@ -302,6 +342,8 @@ msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
 msgstr ""
+"Sekali Anda membuat berkas Kickstart, Anda dapat meletakkannya pada satu "
+"dari lokasi-lokasi berikut:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:91
@@ -309,16 +351,18 @@ msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
 msgstr ""
+"Pada *media lepasan*, seperti DVD atau flash disk USB yang disambungkan ke "
+"sistem instalasi"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
-msgstr ""
+msgstr "Pada suatu *hard disk* yang tersambung ke sistem instalasi"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
-msgstr ""
+msgstr "Pada suatu *share jaringan* yang dapat dicapai dari sistem instalasi"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:97
@@ -330,6 +374,12 @@ msgid ""
 "is downloaded from a network share, and software packages specified in the "
 "file are downloaded from remote repositories."
 msgstr ""
+"Biasanya, berkas Kickstart disalin ke media lepasan atau hard disk, atau "
+"tersedia di jaringan. Menempatkan berkas di lokasi jaringan melengkapi "
+"pendekatan biasa untuk penginstalan Kickstart, yang juga berbasis jaringan: "
+"sistem di-boot menggunakan server PXE, berkas Kickstart diunduh dari share "
+"jaringan, dan paket perangkat lunak yang ditentukan dalam berkas diunduh "
+"dari repositori jarak jauh."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:99
@@ -338,12 +388,15 @@ msgid ""
 "Up an Installation Server] offers some additional information about "
 "preparing for a network-based installation."
 msgstr ""
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup["
+"Menyiapkan Server Instalasi] menawarkan beberapa informasi tambahan tentang "
+"mempersiapkan penginstalan berbasis jaringan."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr ""
+msgstr "Memulai Instalasi Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:103
@@ -356,3 +409,10 @@ msgid ""
 "used in Kickstart installations, see xref:advanced/Boot_Options.adoc#sect-"
 "boot-options-kickstart[Kickstart Boot Options]."
 msgstr ""
+"Setelah semuanya siap - Anda telah membuat berkas Kickstart yang valid dan "
+"Anda memiliki media boot lokal atau server PXE yang tersedia, Anda dapat "
+"memulai penginstalan Kickstart. Anda perlu menggunakan opsi boot "
+"[option]#inst.ks=# baik di menu boot (saat boot dari media lokal), atau "
+"menambahkan opsi ini ke konfigurasi server PXE Anda. Untuk informasi tentang "
+"opsi boot yang digunakan dalam penginstalan Kickstart, lihat xref:advanced/"
+"Boot_Options.adoc#sect-boot-options-kickstart[Opsi Boot Kickstart]."

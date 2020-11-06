@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallstoragespoke/id/"
+">\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4
 #: ./pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "Tujuan Instalasi"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:7
@@ -30,6 +34,10 @@ msgid ""
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
 msgstr ""
+"Layar `Tujuan Instalasi` memungkinkan Anda mengonfigurasi opsi penyimpanan - "
+"yaitu, disk mana saja yang akan dipakai sebagai target instalasi untuk "
+"instalasi {PRODUCT} Anda. Paling tidak satu disk mesti selalu dipilih agar "
+"instalasi dapat berlanjut."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:9
@@ -39,6 +47,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Untuk informasi tentang teori dan konsep di belakang pemartisian disk dalam "
+"Linux, lihat xref:sect-installation-gui-manual-partitioning-recommended["
+"Skema Pemartisian yang Direkomendasikan]."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:14
@@ -51,6 +62,14 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"Jika Anda berencana untuk menggunakan disk yang sudah berisi sebagian data - "
+"misalnya, jika Anda ingin mengecilkan partisi Microsoft Windows yang ada dan "
+"menginstal {PRODUCT} sebagai sistem kedua atau jika Anda memutakhirkan rilis "
+"{PRODUCT} sebelumnya, pastikan untuk membuat cadangan data penting terlebih "
+"dahulu. Memanipulasi partisi selalu membawa risiko - jika prosesnya terputus "
+"atau gagal karena alasan apa pun (kesalahan penginstal, kegagalan perangkat "
+"keras, pemadaman listrik, dll.), data apa pun yang sudah ada di disk bisa "
+"menjadi tidak mungkin untuk dipulihkan."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -58,13 +77,13 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "Layar Tujuan Instalasi. Tersedia dua disk standar lokal"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:22
@@ -75,6 +94,11 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"Di bagian atas layar, semua perangkat penyimpanan yang tersedia secara lokal "
+"(hard drive SATA, IDE, dan SCSI, USB flash drive, dll.) ditampilkan di "
+"bagian `Disk Standar Lokal`. Disk lokal terdeteksi ketika penginstal dimulai "
+"- semua perangkat penyimpanan yang terhubung setelah penginstalan dimulai "
+"tidak akan ditampilkan."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
@@ -84,6 +108,10 @@ msgid ""
 "opens. All detected disks, including any new ones, will be displayed in the "
 "`Local Standard Disks` section."
 msgstr ""
+"Bila Anda perlu mengonfigurasi peranti penyimpanan lokal tambaha, pilih "
+"`Segarkan` pada pojok kanan bawah. Ikuti instruksi dalam dialog yang "
+"terbuka. Semua disk yang terdeteksi, termasuk sebarang yang baru, akan "
+"ditampilkan dalam bagian `Disk Standar Lokal`."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:26
@@ -98,6 +126,16 @@ msgid ""
 "configure will then show up in the `Specialized & Network Disks` the same "
 "way local disks are shown above."
 msgstr ""
+"Bagian `Disk Jaringan & Terspesialisasi` di bawah ini menunjukkan "
+"penyimpanan jaringan tingkat lanjut (seperti disk iSCSI dan FCoE) yang saat "
+"ini dikonfigurasi. Ketika Anda pertama kali membuka layar ini, tidak ada "
+"perangkat yang akan ditampilkan karena mereka tidak dapat dideteksi secara "
+"otomatis; untuk mencari perangkat penyimpanan jaringan, tekan tombol `"
+"Tambahkan disk` dan lanjutkan dengan xref:sect-installation-gui-installation-"
+"destination[Tujuan Instalasi - Disk Jaringan & Terspesialisasi]. Setiap "
+"penyimpanan jaringan yang Anda konfigurasi kemudian akan muncul di `Disk "
+"Jaringan & Terspesialisasi` dengan cara yang sama seperti disk lokal yang "
+"ditampilkan di atas."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:28
@@ -108,6 +146,11 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"Semua perangkat penyimpanan yang akan digunakan untuk menginstal {PRODUCT} "
+"memiliki ikon lingkaran hitam dengan tanda centang putih. Disk yang tidak "
+"ditandai oleh ikon ini tidak akan digunakan selama instalasi - mereka akan "
+"diabaikan jika Anda memilih partisi otomatis, dan mereka tidak akan tersedia "
+"di partisi manual."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33
@@ -119,12 +162,19 @@ msgid ""
 "so. If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"Perangkat penyimpanan USB seperti flash drive dan disk eksternal akan "
+"ditampilkan di `Disk Standar Lokal`, dan mereka akan tersedia untuk "
+"pemilihan dengan cara yang sama seperti hard drive internal. Pastikan untuk "
+"*tidak* memilih penyimpanan yang dapat dilepas sebagai target instalasi "
+"kecuali Anda benar-benar ingin melakukannya. Jika Anda secara tidak sengaja "
+"menggunakan drive yang dapat dilepas untuk menginstal {PRODUCT} dan "
+"mencabutnya, sistem Anda kemungkinan akan menjadi tidak dapat digunakan."
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:36
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Disk yang Dipilih dan Tidak Dipilih"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:38
@@ -133,12 +183,14 @@ msgid ""
 "Disk selection in the Installation Destination screen. Two disks are "
 "displayed; only the one on the right side will be used"
 msgstr ""
+"Pemilihan disk dalam layar Tujuan Instalasi. Dua disk ditampilkan; hanya "
+"satu yang di sisi kanan akan dipakai"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:38
 #, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:41
@@ -146,6 +198,8 @@ msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "three options in the `Storage Configuration` section:"
 msgstr ""
+"Setelah Anda memilih semua disk yang ingin Anda pasangi {PRODUCT}, pilih "
+"satu dari tiga opsi dalam bagian `Konfigurasi Penyimpanan`:"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:43
@@ -158,6 +212,13 @@ msgid ""
 "disks. A disk-based swap partition is not created, ZRAM-based swap is used "
 "instead."
 msgstr ""
+"`Otomatis` - Jika opsi ini dipilih, maka setelah Anda menekan`Selesai` di "
+"sudut kiri atas layar, penginstal akan menentukan jumlah total ruang pada "
+"semua disk yang dipilih, dan itu akan membuat tata letak Btrfs yang cocok "
+"untuk sistem Anda. Tata letak spesifik ini tergantung pada apakah sistem "
+"Anda menggunakan firmware UEFI atau BIOS, dan jumlah total ruang kosong pada "
+"disk Anda. Partisi swap berbasis disk tidak dibuat, swap berbasis ZRAM "
+"dipakai sebagai penganti."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:45
@@ -170,6 +231,13 @@ msgid ""
 "{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
 "is described later in this section."
 msgstr ""
+"Dengan pemartisian otomatis, Anda juga dapat memilih opsi `Saya ingin "
+"menyediakan ruang tambahan` di bawah. Gunakan opsi ini jika Anda ingin "
+"mendapatkan kembali ruang dari tata letak partisi yang ada - misalnya, jika "
+"disk yang ingin Anda gunakan sudah berisi sistem operasi yang berbeda, dan "
+"Anda ingin membuat partisi sistem ini lebih kecil untuk memberikan lebih "
+"banyak ruang untuk {PRODUCT}. Dialog `Bebaskan ruang` yang terbuka jika opsi "
+"ini dipilih dijelaskan nanti di bagian ini."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:47
@@ -182,6 +250,12 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning]."
 msgstr ""
+"`Ubahan` - Pilih opsi ini dan tekan `Selesai` di sudut kiri atas layar untuk "
+"mengkonfigurasi tata letak partisi sistem Anda secara manual sebagian. Ini "
+"membutuhkan pengetahuan tentang teori di balik partisi disk dan konsep "
+"terkait, tetapi menyediakan saran atas cara sistem akan diinstal. Untuk "
+"instruksi bagi partisi ubahan, lihat xref:sect-installation-gui-manual-"
+"partitioning[Pemartisian Manual]."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:49
@@ -191,6 +265,10 @@ msgid ""
 "completely manually. This requires advanced knowledge of the theory behind "
 "disk partitions and related concepts. There are no guardrails."
 msgstr ""
+"`Ubahan-Tingkat Lanjut (Blivet-GUI)` - Pilih opsi ini dan tekan `Selesai` di "
+"sudut kiri atas layar untuk mengkonfigurasi tata letak partisi sistem Anda "
+"sepenuhnya secara manual. Ini membutuhkan pengetahuan tingkat lanjut tentang "
+"teori di balik partisi disk dan konsep terkait. Tidak ada jaring pengaman."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:51
@@ -202,6 +280,12 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Selain itu, Anda dapat memilih `Enkripsi data saya`pass:attributes[{blank}]; "
+"ini akan mengenkripsi semua partisi kecuali yang diperlukan untuk mem-boot "
+"sistem (seperti `/boot`) menggunakan _Linux Unified Key Setup_ (LUKS). "
+"Mengenkripsi hard drive Anda disarankan. Untuk informasi terperinci tentang "
+"enkripsi LUKS, lihat [citetitle]_Panduan{nbsp}Keamanan {PRODUCT}_, tersedia "
+"di link:++https://docs.fedoraproject.org/++[]."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:56
@@ -215,6 +299,13 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"Jika Anda kehilangan frasa sandi LUKS, setiap partisi terenkripsi dan data "
+"pada mereka akan menjadi sepenuhnya tidak dapat diakses. Tidak ada cara "
+"untuk memulihkan kata sandi yang hilang. Namun, jika Anda melakukan "
+"instalasi Kickstart, Anda dapat menyimpan frasa sandi enkripsi dan membuat "
+"frasa sandi enkripsi cadangan selama instalasi. Lihat xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Mengotomasi "
+"Instalasi dengan Kickstart] untuk informasi tentang instalasi Kickstart."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:60
@@ -228,6 +319,14 @@ msgid ""
 "example, systems which require _chain loading_ from another boot loader) "
 "will require the boot drive to be specified manually."
 msgstr ""
+"Untuk mengontrol mana dari perangkat penyimpanan pilihan Anda yang akan "
+"berisi _boot loader_, klik tautan `Ringkasan disk lengkap dan bootloader` di "
+"sudut kiri bawah layar, dan ikuti instruksi di xref:sect-installation-gui-"
+"storage-partitioning-bootloader[Instalasi Boot Loader]. Perhatikan bahwa "
+"meskipun dalam kebanyakan kasus cukup untuk membiarkan boot loader berada di "
+"lokasi default, beberapa konfigurasi (misalnya, sistem yang memerlukan "
+"_chain loading_ dari boot loader lain) akan mengharuskan boot drive "
+"ditentukan secara manual."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:62
@@ -237,6 +336,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"Setelah Anda memilih perangkat penyimpanan, pilih antara partisi otomatis "
+"dan manual, konfigurasikan lokasi enkripsi dan boot loader, tekan `Selesai` "
+"di sudut kiri atas layar. Kemudian, tergantung pada pengaturan Anda, hal "
+"berikut akan terjadi:"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:64
@@ -249,6 +352,13 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"Jika Anda memilih untuk mengenkripsi hard drive Anda, dialog `Frasa Sandi "
+"Enkripsi Disk` akan muncul. Masukkan frasa sandi yang Anda pilih ke dalam "
+"bidang `Frasa Sandi` dan` Konfirmasi`. Ketika Anda melakukannya, frasa sandi "
+"akan dievaluasi secara otomatis dan kekuatannya akan ditampilkan, bersama "
+"dengan saran tentang bagaimana membuatnya lebih kuat jika penginstal telah "
+"menilainya lemah. Untuk informasi tentang membuat kata sandi yang kuat, "
+"lihat [citetitle]_Panduan{nbsp}Keamanan {PRODUCT}_."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:66
@@ -261,6 +371,13 @@ msgid ""
 "information about how much space the system needs for at least a minimal "
 "installation and how much space you have reclaimed."
 msgstr ""
+"Jika Anda memilih partisi otomatis dan `Saya ingin menyediakan ruang "
+"tambahan`, atau jika tidak ada cukup ruang kosong pada hard drive yang Anda "
+"pilih untuk menginstal {PRODUCT}, dialog` Bebaskan Ruang` akan muncul. "
+"Dialog ini mencantumkan semua perangkat disk yang telah Anda konfigurasi dan "
+"semua partisi pada perangkat tersebut. Sudut kanan bawah dialog menampilkan "
+"informasi tentang berapa banyak ruang yang dibutuhkan sistem untuk "
+"setidaknya instalasi minimal dan berapa banyak ruang yang Anda reklamasi."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:71
@@ -269,6 +386,9 @@ msgid ""
 "that partition will be lost. If you want to preserve your data, use the "
 "`Shrink` option, not the `Delete` option."
 msgstr ""
+"Bila Anda memakai dialog `Bebaskan Ruang` untuk *menghapus* suatu partisi, "
+"semua data pada partisi itu akan hilang. Bila Anda ingin mempertahankan data "
+"Anda, gunakan opsi `Perkecil`, bukan opsi `Hapus`."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:75
@@ -283,6 +403,15 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"Pertama, tinjau daftar perangkat penyimpanan yang tersedia yang ditampilkan. "
+"Kolom `Ruang Yang Dapat Dibebaskan` menunjukkan berapa banyak ruang yang "
+"dapat direklamasi dari setiap entri. Untuk mendapatkan kembali ruang, pilih "
+"disk atau partisi, dan tekan tombol `Hapus` untuk menghapus partisi itu ("
+"atau semua partisi pada disk yang dipilih), atau `Kecilkan` untuk "
+"menggunakan ruang kosong pada partisi sambil menjaga data yang ada. Atau, "
+"Anda dapat menekan `Hapus semua` di sudut kanan bawah; ini akan menghapus "
+"semua partisi yang ada di semua disk dan membuat ruang ini tersedia untuk "
+"{PRODUCT}, tetapi seluruh data yang ada di semua disk akan hilang."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:77
@@ -290,6 +419,8 @@ msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
+"Setelah Anda mengosongkan cukup ruang untuk instalasi {PRODUCT} Anda, tekan `"
+"Bebaskan ruang` untuk menyelesaikan."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:82
@@ -299,6 +430,11 @@ msgid ""
 "Summary]. The `Reclaim Space` dialog only *marks* partitions for resizing or "
 "deletion, but no such action is performed immediately."
 msgstr ""
+"Tidak ada perubahan pada disk apa pun yang akan dilakukan sampai Anda "
+"menekan `Mulai Instalasi` di xref:sect-installation-gui-installation-summary["
+"Ringkasan Instalasi]. Dialog `Bebaskan Ruang` hanya *menandai* partisi untuk "
+"mengubah ukuran atau menghapus, tetapi tidak ada tindakan yang dilakukan "
+"seketika."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:86
@@ -308,3 +444,6 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning] for further instructions."
 msgstr ""
+"Jika Anda memilih opsi `Ubahan`, menekan `Selesai` akan membuka layar `"
+"Partisi Manual`. Lihat xref:sect-installation-gui-manual-partitioning["
+"Pemartisian Manual] untuk instruksi lebih lanjut."

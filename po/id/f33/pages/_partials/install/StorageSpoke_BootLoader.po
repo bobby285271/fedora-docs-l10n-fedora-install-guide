@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallstoragespoke_bootloader/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:5
 #, no-wrap
 msgid "Boot Loader Installation"
-msgstr ""
+msgstr "Instalasi Boot Loader"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:8
@@ -31,11 +35,19 @@ msgid ""
 "system (including Microsoft Windows) and can also use chain loading to "
 "transfer control to other boot loaders for unsupported operating systems."
 msgstr ""
+"{PRODUCT} memakai [application]*GRUB2* (GRand Unified Bootloader version 2) "
+"sebagai boot loader. Boot loader adalah program pertama yang berjalan ketika "
+"komputer mulai dan bertanggung jawab memuat dan memindah kendali ke suatu "
+"sistem operasi. [application]*GRUB2* bisa mem-boot sebarang sistem operasi "
+"yang kompatibel (termasuk Microsoft Windows) dan juga dapat memakai chain "
+"loading untuk menransfer kendali ke boot loader lain untuk sistem operasi "
+"yang tidak didukung."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:13
 msgid "Installing [application]*GRUB2* may overwrite your existing boot loader."
 msgstr ""
+"Memasang [application]*GRUB2* mungkin menimpa boot loader Anda yang ada."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:17
@@ -48,6 +60,13 @@ msgid ""
 "[citetitle]_{PRODUCT} System{nbsp}Administrator's{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]"
 msgstr ""
+"Bila sistem operasi lain sudah terpasang, installer {PRODUCT} akan mencoba "
+"mendeteksi dan mengonfigurasi boot loader agar secara otomatis memulai "
+"mereka. Anda dapat secara manuan mengonfigurasi sebarang sistem operasi "
+"tambahan setelah Anda menyelesaikan instalasi, bila mereka tidak terdeteksi "
+"secara benar. Untuk instruksi tentang menyunting konfigurasi "
+"[application]*GRUB2*, lihat [citetitle]_Panduan{nbsp}Administrasi{nbsp}"
+"Sistem {PRODUCT}_, tersedia di link:++https://docs.fedoraproject.org/++[]"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:19
@@ -60,24 +79,30 @@ msgid ""
 "`EFI system partition` will be created on that device during guided "
 "partitioning."
 msgstr ""
+"Bila Anda memasang sistem Fedora dengan lebih dari satu disk, Anda mungkin "
+"ingin menyatakan secara manual di mana boot loader mesti dipasang. Klik "
+"tautan `Ringkasan disk lengkap dan boot loader` di dasar layar `Tujuan "
+"Instalasi`. Dialog `Disk yang Dipilih` akan muncul. Boot loader akan "
+"dipasang pada peranti pilihan Anda, atau pada suatu sistem UEFI, `Partisi "
+"sistem EFI` akan dibuat pada peranti itu selama pemartisian terpandu."
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:20
 #, no-wrap
 msgid "Boot Device Selection"
-msgstr ""
+msgstr "Pemilihan Perangkat Boot"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "The Selected Disks dialog"
-msgstr ""
+msgstr "Dialog Disk yang Dipilih"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "anaconda/StorageSpoke_BootLoader.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_BootLoader.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:25
@@ -87,6 +112,11 @@ msgid ""
 "list and click the `Set as Boot Device` button to install the boot loader "
 "there instead. Only one device can be set as the boot device."
 msgstr ""
+"Dalam kolom `Boot`, ikon \"centang\" menandai satu dari perangkat yang "
+"dimaksudkan sebagai peranti boot. Untuk mengubah peranti boot, pilih suatu "
+"peranti dari daftar dan klik tombol `Jadikan Peranti Boot` untuk memasang "
+"boot loader di sana sebagai pengganti. Hanya satu peranti yang dapat ditata "
+"sebagai peranti boot."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:27
@@ -96,6 +126,10 @@ msgid ""
 "remove the tick and ensure [application]*GRUB2* is not installed on any "
 "device."
 msgstr ""
+"Untuk menolak instalasi boot loader baru, pilih peranti yang saat ini "
+"ditandai untuk boot dan klik tombol `Jangan pasang boot loader`. Ini akan "
+"menghapus centang dan memastikan [application]*GRUB2* tidak dipasang di "
+"perangkat mana pun."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:32
@@ -105,6 +139,11 @@ msgid ""
 "as a stand-alone commercial boot loader application. Use this option only if "
 "you are sure you have another way to boot your system."
 msgstr ""
+"Bila Anda memilih untuk tidak memasang boot loader dengan alasan apa pun, "
+"Anda tidak akan bisa boot ke sistem secara langsung, dan Anda mesti memakai "
+"metoda boot lain, seperti misalnya aplikasi boot loader komersial yang "
+"berdiri sendiri. Gunakan opsi ini hanya bila Anda yakin bahwa Anda punya "
+"cara lain untuk mem-boot sistem Anda."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:35
@@ -118,3 +157,10 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Boot loader mungkin juga perlu dibuatkan suatu partisi khusus, bergantung "
+"pada apakah sistem Anda memakai BIOS atau firmware UEFI dan juga bergantung "
+"pada apakah drive boot memiliki _GUID Partition Table_ (GPT) atau `Master "
+"Boot Record` (MBR, juga dikenal sebagai msdos). Bila Anda memakai "
+"pemartisian otomatis, installer akan membuat partisi ini bila diperlukan. "
+"Untuk rincian, lihat xref:sect-installation-gui-manual-partitioning-"
+"recommended[Skema Pemartisian yang Disarankan]."

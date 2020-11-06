@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallcustomspoke_filesystems/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "Peranti, Sistem Berkas, dan Tipe RAID"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -28,6 +32,9 @@ msgid ""
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
 msgstr ""
+"{PRODUCT} mendukung beberapa jenis perangkat dan sistem berkas. Daftar di "
+"bawah ini menawarkan deskripsi singkat dari masing-masing perangkat yang "
+"tersedia, sistem berkas dan tipe RAID serta catatan tentang penggunaannya."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -40,6 +47,12 @@ msgid ""
 "`Update Settings` and repeat this process for all mount points you want to "
 "modify."
 msgstr ""
+"Untuk memilih jenis perangkat atau sistem berkas partisi atau volume logis, "
+"pilih dalam daftar di xref:sect-installation-gui-manual-partitioning["
+"Pemartisian Manual] dan pilih `Tipe Peranti` dan`Sistem Berkas` dari masing-"
+"masing drop-down menu di sisi kanan layar. Kemudian, klik `Perbarui "
+"Pengaturan` dan ulangi proses ini untuk semua titik kait yang ingin Anda "
+"ubah."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -57,12 +70,23 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-swraid[Creating "
 "Software RAID] as needed."
 msgstr ""
+"Untuk mengonfigurasi RAID perangkat lunak, pastikan Anda memiliki cukup hard "
+"disk fisik yang dipilih sebagai target penginstalan (jumlah drive terpisah "
+"yang diperlukan untuk setiap jenis RAID dicatat dalam deskripsinya). "
+"Kemudian, pilih tingkat RAID saat membuat atau memodifikasi volume Btrfs "
+"atau grup volume LVM, atau pilih `RAID Perangkat Lunak` sebagai jenis "
+"perangkat untuk membuat RAID perangkat lunak dengan partisi standar. Untuk "
+"petunjuk rinci, lihat xref:sect-installation-gui-manual-partitioning-btrfs["
+"Membuat Tata Letak Btrfs], xref:sect-installation-gui-manual-partitioning-"
+"lvm[Membuat Tata Letak Logical Volume Managament (LVM)], dan xref:sect-"
+"installation-gui-manual-partitioning-swraid[Membuat RAID Perangkat Lunak] "
+"sesuai kebutuhan."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:13
 #, no-wrap
 msgid "Device Types"
-msgstr ""
+msgstr "Tipe Peranti"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:16
@@ -75,6 +99,12 @@ msgid ""
 "Introduction to Disk Partitions] for additional information about the "
 "concepts behind physical partitions."
 msgstr ""
+"`Partisi Standar` - Sebuah partisi standar dapat berisi sistem berkas atau "
+"ruang swap. Partisi standar paling sering digunakan untuk `/boot` dan boot "
+"BIOS dan partisi Sistem EFI. Volume logis LVM atau subvolume Btrfs "
+"direkomendasikan untuk sebagian besar kegunaan lainnya. Lihat xref:"
+"appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview[Pengenalan ke "
+"Partisi Disk] untuk informasi tambahan tentang konsep di balik partisi fisik."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:18
@@ -90,6 +120,15 @@ msgid ""
 "xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding LVM] "
 "for some additional information about LVM in general."
 msgstr ""
+"`LVM` - Memilih `LVM` sebagai `Tipe Peranti` membuat volume logis LVM dan "
+"sebuah grup volume untuk memuatnya (kecuali yang sudah ada, dalam hal ini "
+"volume baru ditugaskan ke grup yang ada). LVM dapat meningkatkan kinerja "
+"ketika menggunakan disk fisik dan memungkinkan Anda untuk menggunakan "
+"beberapa disk untuk satu titik kait. Untuk informasi tentang cara membuat "
+"volume logis, lihat sect-installation-gui-manual-partitioning-lvm[Membuat "
+"Tata Letak Logical Volume Managament (LVM)]. Lihat juga xref:appendixes/"
+"Understanding_LVM.adoc#appe-lvm-overview[Memahami LVM] untuk beberapa "
+"informasi tambahan tentang LVM pada umumnya."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:20
@@ -100,6 +139,11 @@ msgid ""
 "be expanded dynamically when needed for cost-effective allocation of storage "
 "space."
 msgstr ""
+"`LVM Thin Provisioning` - Menggunakan thin provisioning, Anda dapat "
+"mengelola pool penyimpanan ruang bebas, yang dikenal sebagai _thin pool_, "
+"yang dapat dialokasikan untuk sebarang banyaknya perangkat bila diperlukan "
+"oleh aplikasi. Thin pool dapat diperluas secara dinamis bila diperlukan "
+"untuk alokasi ruang penyimpanan yang hemat biaya."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:22
@@ -110,6 +154,11 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-swraid[Creating "
 "Software RAID] for instructions on creating software RAID."
 msgstr ""
+"`RAID` - Membuat dua atau lebih perangkat lunak partisi RAID memungkinkan "
+"Anda untuk membuat perangkat RAID perangkat lunak. Satu partisi RAID "
+"ditetapkan ke setiap disk pada sistem. Lihat xref:sect-installation-gui-"
+"manual-partitioning-swraid[Membuat RAID Perangkat Lunak] untuk petunjuk "
+"tentang cara membuat RAID perangkat lunak."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:24
@@ -120,12 +169,18 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-btrfs[Creating "
 "a Btrfs Layout] for more information about creating Btrfs volumes."
 msgstr ""
+"`BTRFS` - Btrfs adalah sistem berkas dengan beberapa fitur seperti "
+"perangkat. Hal ini mampu menangani dan mengelola lebih banyak berkas, berkas "
+"yang lebih besar, dan volume yang lebih besar daripada sistem berkas ext2, "
+"ext3, dan ext4. Lihat xref:sect-installation-gui-manual-partitioning-btrfs["
+"Membuat Tata Letak Btrfs] untuk informasi lebih lanjut tentang membuat "
+"volume Btrfs."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:25
 #, no-wrap
 msgid "File Systems"
-msgstr ""
+msgstr "Sistem Berkas"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:28
@@ -138,6 +193,14 @@ msgid ""
 "file system used by {PRODUCT} Workstation and Cloud. The maximum supported "
 "size of a single ext4 file system is 50 TB."
 msgstr ""
+"`ext4` - Sistem berkas ext4 didasarkan pada sistem berkas ext3 dan sejumlah "
+"perbaikan. Ini termasuk dukungan untuk sistem berkas yang lebih besar dan "
+"berkas yang lebih besar, lebih cepat, dan lebih efisien alokasi ruang disk, "
+"tidak ada batasan pada jumlah subdirektori dalam direktori, pemeriksaan "
+"sistem berkas yang lebih cepat, dan jurnal yang lebih kuat. Ext4 adalah "
+"sistem berkas baku dan direkomendasikan untuk digunakan oleh {PRODUCT} "
+"Workstation dan Cloud. Ukuran maksimum yang didukung dari satu sistem berkas "
+"ext4 adalah 50 TB."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:30
@@ -148,6 +211,11 @@ msgid ""
 "the file system for metadata consistency by running the [command]#fsck# "
 "utility every time a crash occurs."
 msgstr ""
+"`ext3` - Sistem berkas ext3 didasarkan pada sistem berkas ext2 dan memiliki "
+"satu keuntungan utama - jurnal. Menggunakan sistem berkas jurnal mengurangi "
+"waktu yang dihabiskan untuk memulihkan berkas sistem setelah crash, karena "
+"tidak perlu untuk memeriksa sistem berkas untuk konsistensi metadata dengan "
+"menjalankan utilitas [command]#fsck# setiap kali terjadi crash."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:32
@@ -156,6 +224,9 @@ msgid ""
 "regular files, directories, or symbolic links. It provides the ability to "
 "assign long file names, up to 255 characters."
 msgstr ""
+"`ext2` - Sebuah sistem berkas ext2 mendukung tipe berkas Unix standar, "
+"termasuk berkas biasa, direktori, atau taut simbolik. Ini menyediakan "
+"kemampuan untuk menetapkan nama berkas yang panjang, hingga 255 karakter."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:34
@@ -167,6 +238,11 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details such as the recommended size."
 msgstr ""
+"`swap` - Partisi swap digunakan untuk mendukung memori virtual. Dengan kata "
+"lain, data ditulis ke partisi swap ketika tidak cukup RAM untuk menyimpan "
+"data yang diproses sistem Anda. Sebuah partisi swap harus selalu dibuat; "
+"lihat xref:sect-installation-gui-manual-partitioning-recommended[Skema "
+"Partisi Yang Direkomendasikan] untuk rincian seperti ukuran yang disarankan."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:36
@@ -180,6 +256,14 @@ msgid ""
 "{PRODUCT}{nbsp}22, XFS is the default and recommended file system on "
 "{PRODUCT} Server."
 msgstr ""
+"`xfs` - XFS adalah sistem berkas yang sangat mampu diperbesar, berkinerja "
+"tinggi yang mendukung sistem berkas hingga 16 exabyte (sekitar 16 juta "
+"terabyte), berkas hingga 8 exabyte (sekitar 8 juta terabyte), dan struktur "
+"direktori yang berisi puluhan juta entri. XFS juga mendukung jurnal "
+"metadata, yang memfasilitasi pemulihan crash yang lebih cepat. Ukuran "
+"maksimum yang didukung dari satu sistem berkas XFS adalah 500 TB. Dimulai "
+"dengan {PRODUCT}{nbsp}22, XFS adalah sistem berkas baku dan direkomendasikan "
+"di server {PRODUCT}."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:41
@@ -189,6 +273,11 @@ msgid ""
 "will need to adjust the sizes of your file systems often, using XFS is not "
 "recommended, as it makes administration substantially more time-consuming."
 msgstr ""
+"Perhatikan bahwa ukuran sistem berkas XFS saat ini tidak dapat dikurangi "
+"tanpa merusak dan menciptakan ulang sistem berkas. Jika Anda berharap bahwa "
+"Anda akan perlu untuk sering menyesuaikan ukuran sistem berkas Anda, "
+"menggunakan XFS tidak dianjurkan, karena membuat administrasi secara "
+"substansial lebih memakan waktu."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:45
@@ -196,6 +285,8 @@ msgid ""
 "`vfat` - The VFAT file system is a Linux file system that is compatible with "
 "Microsoft Windows long file names on the FAT file system."
 msgstr ""
+"`vfat` - Sistem berkas VFAT adalah sistem berkas Linux yang kompatibel "
+"dengan nama berkas panjang Microsoft Windows pada sistem berkas FAT."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:47
@@ -206,6 +297,11 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"`Boot BIOS` - Partisi yang sangat kecil yang diperlukan untuk boot dari "
+"perangkat dengan tabel partisi GUID (GPT) pada sistem BIOS dan sistem UEFI "
+"dalam mode kompatibilitas BIOS. Lihat xref:sect-installation-gui-manual-"
+"partitioning-recommended[Skema Pemartisian Yang Direkomendasikan] untuk "
+"rincian."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:49
@@ -215,12 +311,16 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"`Partisi Sistem EFI` - Sebuah partisi kecil yang diperlukan untuk boot "
+"perangkat dengan tabel partisi GUID (GPT) pada sistem UEFI. Lihat xref:sect-"
+"installation-gui-manual-partitioning-recommended[Skema Pemartisian Yang "
+"Direkomendasikan] untuk rincian."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:50
 #, no-wrap
 msgid "Software RAID Types"
-msgstr ""
+msgstr "Tipe-tipe RAID Perangkat Lunak"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:53
@@ -231,6 +331,12 @@ msgid ""
 "Level 0 RAIDs offer no redundancy and that the failure of one device in the "
 "array destroys data in the entire array. RAID 0 requires at least two disks."
 msgstr ""
+"`RAID0 (Kinerja)` - Mendistribusikan data di beberapa disk. RAID Level 0 "
+"menawarkan peningkatan kinerja melalui partisi standar dan dapat digunakan "
+"untuk pool penyimpanan beberapa disk ke dalam satu perangkat virtual yang "
+"besar. Perhatikan bahwa RAID Level 0 tidak menawarkan redundansi dan bahwa "
+"kegagalan satu perangkat dalam larik menghancurkan data di seluruh larik. "
+"RAID 0 memerlukan setidaknya dua disk."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:55
@@ -239,6 +345,9 @@ msgid ""
 "other disks. Additional devices in the array provide increasing levels of "
 "redundancy. RAID 1 requires at least two disks."
 msgstr ""
+"`RAID1 (Redundansi)` - Mencermin semua data dari satu partisi ke satu atau "
+"lebih disk lainnya. Perangkat tambahan dalam larik menyediakan peningkatan "
+"tingkat redundansi. RAID 1 memerlukan setidaknya dua disk."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:57
@@ -249,6 +358,11 @@ msgid ""
 "stored on one disk, access to this disk creates a \"bottleneck\" in the "
 "array's performance. Level 4 RAID requires at least three disks."
 msgstr ""
+"`RAID4 (Pemeriksaan Kesalahan)` - Mendistribusikan data di beberapa disk dan "
+"menggunakan satu disk dalam larik untuk menyimpan informasi paritas yang "
+"melindungi larik dalam kasus disk dalam larik gagal. Karena semua informasi "
+"paritas disimpan di satu disk, akses ke disk ini akan membuat \"bottleneck\" "
+"dalam kinerja larik. RAID level 4 memerlukan setidaknya tiga disk."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:59
@@ -260,6 +374,11 @@ msgid ""
 "information is also distributed through the array. RAID 5 requires at least "
 "three disks."
 msgstr ""
+"`RAID5 (Pemeriksaan Kesalahan Terdistribusi)` - Mendistribusikan data dan "
+"informasi paritas di beberapa disk. Oleh karena itu, RAID Level 5 menawarkan "
+"keunggulan kinerja mendistribusikan data di beberapa disk, tetapi tidak "
+"berbagi hambatan kinerja RAID level 4 karena informasi paritas juga "
+"didistribusikan melalui larik. RAID 5 memerlukan setidaknya tiga disk."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:61
@@ -268,6 +387,9 @@ msgid ""
 "RAIDs, but instead of storing only one set of parity data, they store two "
 "sets. RAID 6 requires at least four disks."
 msgstr ""
+"`RAID6 (Pemeriksaan Kesalahan Redundan)` - RAID Level 6 mirip dengan RAID "
+"Level 5, tapi bukan hanya menyimpan satu set data paritas, mereka menyimpan "
+"dua set. RAID 6 memerlukan setidaknya empat disk."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:62
@@ -278,3 +400,8 @@ msgid ""
 "partitions consists of two mirrored pairs of striped partitions. RAID 10 "
 "requires at least four disks."
 msgstr ""
+"`RAID10 (Kinerja, Redundansi)` - RAID Level 10 adalah RAID bersarang atau "
+"RAID hibrida. Mereka dibangun dengan mendistribusikan data melalui cermin "
+"set disk. Misalnya, jajaran RAID level 10 dibuat dari empat partisi RAID "
+"yang terdiri dari dua pasang cermin dari partisi striped. RAID 10 memerlukan "
+"setidaknya empat disk."

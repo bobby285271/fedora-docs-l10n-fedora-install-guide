@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallnetworkspoke_editconnection/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:5
 #, no-wrap
 msgid "Editing Network Interface Configuration"
-msgstr ""
+msgstr "Menyunting Konfigurasi Antarmuka Jaringan"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:8
@@ -33,6 +37,14 @@ msgid ""
 "[citetitle]_{PRODUCT} Networking{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Bagian ini hanya merinci pengaturan yang paling penting untuk koneksi kabel "
+"umum yang digunakan selama instalasi. Banyak pilihan yang tersedia tidak "
+"harus diubah dalam kebanyakan skenario instalasi dan tidak dibawa ke sistem "
+"yang diinstal. Konfigurasi jenis jaringan lain kurang lebih sama, meskipun "
+"parameter konfigurasi tertentu mungkin berbeda. Untuk mempelajari lebih "
+"lanjut tentang konfigurasi jaringan setelah instalasi, lihat "
+"[citetitle]_Panduan{nbsp}Jaringan {PRODUCT}_, tersedia di link:++https://docs"
+".fedoraproject.org/++[]."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:10
@@ -49,17 +61,28 @@ msgid ""
 "settings for all connection types is beyond the scope of this document; see "
 "the [citetitle]_Networking Guide_ for details."
 msgstr ""
+"Untuk mengonfigurasi koneksi jaringan secara manual, pilih koneksi tersebut "
+"di daftar di sisi kiri layar, dan klik tombol `Konfigurasi`. Sebuah dialog "
+"akan muncul yang memungkinkan Anda untuk mengkonfigurasi koneksi yang "
+"dipilih. Opsi konfigurasi yang disajikan tergantung pada jenis koneksi - "
+"pilihan yang tersedia akan sedikit berbeda tergantung pada apakah itu adalah "
+"antarmuka fisik (pengendali antarmuka jaringan kabel atau nirkabel) atau "
+"antarmuka virtual (Bond, Team, atau VLAN) yang sebelumnya Anda dikonfigurasi "
+"di xref:sect-installation-gui-network-configuration-virtual-interface["
+"Menambahkan Antarmuka Jaringan Virtual].. Deskripsi lengkap dari semua "
+"pengaturan konfigurasi untuk setiap jenis koneksi berada di luar cakupan "
+"dokumen ini; lihat [citetitle]_Panduan Jaringan_ untuk rinciannya."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:12
 msgid "The most common and useful options in the configuration dialog are:"
-msgstr ""
+msgstr "Pilihan yang paling umum dan berguna dalam dialog konfigurasi adalah:"
 
 #. type: Labeled list
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:13
 #, no-wrap
 msgid "Enable or disable the connection by default"
-msgstr ""
+msgstr "Memfungsikan atau menonaktifkan koneksi secara default"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:14
@@ -72,6 +95,13 @@ msgid ""
 "means that the interface will attempt to connect to any known wireless "
 "networks in range."
 msgstr ""
+"Di tab `Umum` pada dialog konfigurasi, Anda dapat memilih atau membatalkan "
+"pilihan kotak centang `Secara otomatis tersambung ke jaringan ini saat "
+"tersedia` untuk membolehkan atau menolak sambungan ini agar tersambung "
+"secara default. Ketika diaktifkan pada koneksi kabel, ini berarti sistem "
+"biasanya akan menghubungkan selama startup (kecuali jika Anda mencabut kabel "
+"jaringan); pada koneksi nirkabel, itu berarti bahwa antarmuka akan mencoba "
+"untuk terhubung ke jaringan nirkabel yang dikenal dalam jangkauan."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:16
@@ -81,6 +111,10 @@ msgid ""
 "option. If you disable this option, only `root` will be able to connect to "
 "this network."
 msgstr ""
+"Selain itu, Anda dapat mengizinkan atau melarang semua pengguna pada sistem "
+"menyambung ke jaringan ini menggunakan opsi `Semua pengguna dapat menyambung "
+"ke jaringan ini`. Jika Anda menonaktifkan opsi ini, hanya `root` yang dapat "
+"terhubung ke jaringan ini."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:21
@@ -90,12 +124,16 @@ msgid ""
 "installation. If you need a connection for a different user, you must "
 "configure it after the installation."
 msgstr ""
+"Tidak mungkin untuk hanya memungkinkan pengguna tertentu selain `root` untuk "
+"menggunakan antarmuka ini, karena tidak ada pengguna lain yang dibuat pada "
+"saat ini selama instalasi. Jika Anda memerlukan koneksi untuk pengguna yang "
+"berbeda, Anda harus mengkonfigurasinya setelah instalasi."
 
 #. type: Labeled list
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:24
 #, no-wrap
 msgid "Set up static IPv4 or IPv6 settings"
-msgstr ""
+msgstr "Menyiapkan pengaturan IPv4 atau IPv6 statis"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:25
@@ -107,6 +145,12 @@ msgid ""
 "this is sufficient, but you can also provide static configuration in the "
 "`IPv4 Settings` and `IPv6 Settings`, respectively."
 msgstr ""
+"Secara default, `IPv4` dan `IPv6` diatur ke konfigurasi otomatis tergantung "
+"pada pengaturan jaringan saat ini. Ini berarti bahwa alamat seperti alamat "
+"IP lokal, alamat DNS, dan pengaturan lainnya akan dideteksi secara otomatis "
+"setiap kali antarmuka terhubung ke jaringan. Dalam banyak kasus, ini cukup, "
+"tetapi Anda juga dapat memberikan konfigurasi statis masing-masing di `"
+"Pengaturan IPv4` dan `Pengaturan IPv6`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:27
@@ -115,6 +159,9 @@ msgid ""
 "and select a method other than `Automatic` (for example, `Manual`) from the "
 "`Method` drop-down menu. This will enable the `Addresses` field below."
 msgstr ""
+"Untuk mengatur konfigurasi jaringan statis, navigasikan ke salah satu tab "
+"pengaturan dan pilih metode selain `Otomatis` (misalnya, `Manual`) dari menu "
+"drop-down `Metode`. Ini akan memfungsikan ruas `Alamat` di bawah ini."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:32
@@ -122,6 +169,8 @@ msgid ""
 "In the `IPv6 Settings` tab, you can also set the method to `Ignore` to "
 "disable `IPv6` on this interface."
 msgstr ""
+"Dalam tab `Pengaturan IPv6`, Anda juga dapat mengatur metode menjadi "
+"`Abaikan` untuk menonaktifkan `IPv6` pada antarmuka ini."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:36
@@ -129,6 +178,8 @@ msgid ""
 "Then, click `Add` on the right side and add a set of settings: `Address`, "
 "`Netmask` (for `IPv4`), `Prefix` (for `IPv6`), and `Gateway`."
 msgstr ""
+"Kemudian, klik `Tambah` di sisi kanan dan tambahkan satu set pengaturan: "
+"`Alamat`, `Netmask` (untuk `IPv4`), `Prefiks` (untuk `IPv6`), dan `Gateway`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:38
@@ -136,6 +187,8 @@ msgid ""
 "The `DNS servers` field accepts one or more IP addresses of DNS servers - "
 "for example, `10.0.0.1,10.0.0.8`."
 msgstr ""
+"Ruas `Server DNS` menerima satu atau beberapa alamat IP server DNS - "
+"misalnya, `9.9.9.9,8.8.4.4`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:40
@@ -147,12 +200,18 @@ msgid ""
 "disabled for both `IPv4` and `IPv6`, the interface will be able to connect "
 "if configuration succeeds on either IP protocol."
 msgstr ""
+"Opsi terakhir di kedua tab adalah `Memerlukan pengalamatan "
+"IPvpass:attributes[{blank}]_X_ untuk sambungan ini agar lengkap`. Pilih opsi "
+"ini di tab `IPv4` untuk hanya mengizinkan koneksi ini jika `IPv4` berhasil; "
+"prinsip yang sama berlaku untuk pengaturan ini di tab `IPv6`. Jika opsi ini "
+"tetap dinonaktifkan untuk `IPv4` dan `IPv6`, antarmuka akan dapat terhubung "
+"jika konfigurasi berhasil pada salah satu protokol IP."
 
 #. type: Labeled list
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:41
 #, no-wrap
 msgid "Configure routes"
-msgstr ""
+msgstr "Mengonfigurasi rute"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:42
@@ -162,6 +221,10 @@ msgid ""
 "protocol on an interface. A new dialog will open, allowing you to `Add` a "
 "specific route."
 msgstr ""
+"Pada tab `Pengaturan IPv4` dan `Pengaturan IPv6`, klik tombol `Rute` di "
+"pojok kanan bawah untuk mengonfigurasi pengaturan perutean untuk protokol IP "
+"tertentu pada sebuah antarmuka. Sebuah dialog baru akan terbuka, "
+"memungkinkan Anda untuk `Menambah` rute tertentu."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:44
@@ -170,6 +233,9 @@ msgid ""
 "specifically configured here by enabling the `Ignore automatically obtained "
 "routes`."
 msgstr ""
+"Jika Anda mengonfigurasi setidaknya satu rute statis, Anda dapat menolak "
+"semua rute yang tidak dikonfigurasi secara khusus di sini dengan "
+"mengaktifkan `Abaikan rute yang diperoleh secara otomatis`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:46
@@ -185,6 +251,16 @@ msgid ""
 "note that this option is only useful when more than one interface is "
 "configured."
 msgstr ""
+"Pilih `Gunakan sambungan ini hanya untuk sumber daya pada jaringan` untuk "
+"mencegah sambungan ini menjadi rute default. Pilihan ini dapat dipilih "
+"bahkan jika Anda tidak mengkonfigurasi rute statis. Mengaktifkan opsi ini "
+"berarti bahwa rute ini hanya akan digunakan bila diperlukan untuk mengakses "
+"sumber daya tertentu, seperti halaman intranet yang memerlukan koneksi lokal "
+"atau VPN. Rute (default) lain akan digunakan untuk sumber daya yang tersedia "
+"untuk umum jika memungkinkan. Perhatikan bahwa tidak seperti rute tambahan "
+"yang dikonfigurasi dalam dialog ini, pengaturan ini akan ditransfer ke "
+"sistem diinstal. Perhatikan juga bahwa opsi ini hanya berguna bila lebih "
+"dari satu antarmuka dikonfigurasi."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:48
@@ -192,6 +268,8 @@ msgid ""
 "When you finish configuring the interface's routing settings, click `OK` to "
 "return to the configuration dialog."
 msgstr ""
+"Setelah selesai mengonfigurasi setelan perutean antarmuka, klik `OK` untuk "
+"kembali ke dialog konfigurasi."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:49
@@ -201,3 +279,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration[Network "
 "& Hostname]."
 msgstr ""
+"Setelah Anda selesai mengkonfigurasi antarmuka, klik `Simpan` di jendela "
+"konfigurasi pojok kanan bawah untuk menyimpan pengaturan Anda dan kembali ke "
+"[Jaringan & Nama Host]."

@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-05 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-06 22:32+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallcustomspoke_partitioningadvice/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:5
 #, no-wrap
 msgid "Advice on Partitions"
-msgstr ""
+msgstr "Saran tentang Partisi"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:8
@@ -28,6 +32,10 @@ msgid ""
 "how you plan to use the system being installed. However, the following tips "
 "may help you find the optimal layout for your needs:"
 msgstr ""
+"Tidak ada cara terbaik untuk mempartisi setiap sistem; penyiapan optimal "
+"bergantung kepada bagaimana Anda berrencana untuk memakai sistem yang sedang "
+"diinstal. Namun, tips berikut mungkin membantu Anda menemukan tata letak "
+"optimal bagi kebutuhan Anda:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:10
@@ -38,6 +46,11 @@ msgid ""
 "cases, you should at least encrypt the `/home` partition, which contains "
 "user data."
 msgstr ""
+"Pertimbangkan untuk mengenkripsi sebarang partisi dan volume yang mungkin "
+"memuat data sensitif. Enkripsi mencegah orang tanpa otorisasi mengakses data "
+"pada partisi, bahkan bila mereka punya akses ke peranti penyimpanan fisik. "
+"Dalam kebanyakan kasus, Anda mesti paling tidak mengenkripsi partisi `/home`"
+", yang memuat data pengguna."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:12
@@ -50,6 +63,13 @@ msgid ""
 "having unnecessary separate mount points will make storage administration "
 "more difficult."
 msgstr ""
+"Dalam beberapa kasus, membuat titik kait terpisah untuk direktori selain `/`"
+", `/boot`, dan `/home` mungkin berguna; sebagai contoh, pada suatu server "
+"yang menjalankan sebuah basis data [application]*MySQL*, memiliki suatu "
+"titik kait terpisah untuk `/var/lib/mysql` memungkinkan Anda mempertahankan "
+"basis data selama instalasi ulang tanpa mesti memulihkan dari cadangan "
+"setelahnya. Namun, memiliki titik kait terpisah yang tidak perlu akan "
+"membuat administrasi penyimpanan lebih sulit."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14
@@ -59,6 +79,10 @@ msgid ""
 "always be on a physical partition (not on an LVM volume or a Btrfs "
 "subvolume), and `/usr` can not be on a Btrfs subvolume."
 msgstr ""
+"Beberapa pembatasan khusus berlaku ke direktori tertentu terkait tata letak "
+"pemartisian mana mereka dapat ditempatkan. Khususnya, direktori `/boot` "
+"harus selalu ada pada suatu partisi fisik (bukan pada volume LVM atau sub "
+"volume Btrfs), dan `/usr` tidak bisa berada pada suatu sub volume Btrfs."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:16
@@ -68,6 +92,10 @@ msgid ""
 "link:++https://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html++[] for "
 "information about various system directories and their contents."
 msgstr ""
+"Bila Anda baru memakai Linux, pertimbangkan untuk membaca [citetitle]_Linux "
+"Filesystem Hierarchy Standard_ di link:++https://refspecs.linuxfoundation."
+"org/FHS_2.3/fhs-2.3.html++[] untuk informasi tentang berbagai direktori "
+"sistem dan isi mereka."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:18
@@ -77,6 +105,11 @@ msgid ""
 "suffice for most common uses; increase the size of this partition if you "
 "plan to keep many kernels installed at the same time."
 msgstr ""
+"Setiap kernel yang terpasang pada sistem Anda memerlukan kira-kira 20 MB "
+"pada partisi `/boot`. Ukuran partisi baku sebesar 500 MB untuk `/boot` "
+"mestinya cukup untuk kebanyakan penggunaan umum; naikkan ukuran partisi ini "
+"bila Anda berrencana untuk menyimpan banyak kernel yang terpasang pada saat "
+"yang sama."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:20
@@ -86,6 +119,10 @@ msgid ""
 "package manager to temporarily store downloaded package updates. Make sure "
 "that the partition or volume containing `/var` has at least 3 GB."
 msgstr ""
+"Direktori `/var` menyimpan isi untuk sejumlah aplikasi, termasuk server web "
+"[application]*Apache*, dan dipakai oleh manajer paket [application]*DNF* "
+"untuk menyimpan sementara pembaruan paket yang diunduh. Pastikan bahwa "
+"partisi atau volume yang memuat `/var` punya paling tidak 3 GB."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:22
@@ -96,6 +133,11 @@ msgid ""
 "root is on an SSD, consider creating a separate mount point for `/var` on a "
 "classic (platter) HDD."
 msgstr ""
+"Isi direktori `/var` biasanya sangat sering berubah. Ini dapat menyebabkan "
+"masalah dengan solid state drive (SSD) yang lebih tua, karena mereka dapat "
+"menangani sejumlah lebih sedikit siklus baca/tulis sebelum menjadi tak bisa "
+"dipakai. Bila root sistem Anda ada pada SSD, pertimbangkan untuk membuat "
+"titik kait terpisah untuk `/var` pada HDD (magnetik) klasik."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:24
@@ -105,6 +147,10 @@ msgid ""
 "therefore be at least 5 GB for minimal installations, and at least 10 GB for "
 "installations with a graphical environment."
 msgstr ""
+"Direktori `/usr` memuat mayoritas perangkat lunak pada suatu instalasi "
+"{PRODUCT} umum. Maka partisi atau volume yang memuat direktori ini mesti "
+"paling tidak 5 GB untuk instalasi minimal, dan paling tidak 10 GB untuk "
+"instalasi dengan lingkungan grafis."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:26
@@ -116,6 +162,12 @@ msgid ""
 "either be unable to boot, or it may hang with a `Device is busy` error when "
 "powering off or rebooting."
 msgstr ""
+"Bila `/usr` atau `/var` dipartisi terpisah dari sisa volume root, proses "
+"boot menjadi lebih kompleks karena direktori-direktori ini memuat komponen "
+"yang kritis untuk boot. Dalam beberapa situasi, seperti misalnya ketika "
+"direktori ini ditempatkan pada drive iSCSI atau lokasi FCoE, sistem mungkin "
+"tidak bisa boot, atau mungkin hang dengan kesalahan `Peranti sibuk` ketika "
+"dimatikan atau reboot."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:28
@@ -124,6 +176,9 @@ msgid ""
 "them. For example, a separate partition for `/var/www` will work without "
 "issues."
 msgstr ""
+"Keterbatasan ini hanya berlaku untuk `/usr` atau `/var`, tidak ke direktori "
+"di bawah mereka. Sebagai contoh, suatu partisi terpisah untuk `/var/www` "
+"akan bekerja tanpa masalah."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:30
@@ -134,6 +189,11 @@ msgid ""
 "volumes. You can also select the `Thin provisioning` device type for the "
 "partition to have the unused space handled automatically by the volume."
 msgstr ""
+"Pertimbangkan untuk membiarkan sebagian ruang dalam suatu grup volume LVM "
+"tidak dialokasikan. Ruang tak dialokasikan ini memberi Anda fleksibilitas "
+"bila kebutuhan ruang Anda berubah tapi Anda tidak ingin menghapus data dari "
+"volume lain. Anda juga dapat memilih tipe peranti `Thin provisioning` untuk "
+"partisi agar ruang yang tidak terpakai ditangani secara otomatis oleh volume."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:32
@@ -144,6 +204,12 @@ msgid ""
 "place. Therefore, if you expect needing to manipulate your partitioning "
 "layout later, you should use the `ext4` file system instead."
 msgstr ""
+"Ukuran dari sistem berkas `XFS` tidak dapat dikurangi - bila Anda perlu "
+"membuat suatu partisi atau volume dengan sistem berkas ini yang lebih kecil, "
+"Anda mesti membackup data Anda, merusak sistem berkas, dan membuat yang baru "
+"yang lebih kecil menggantikannya. Maka, bila Anda berrencana untuk perlu "
+"memanipulasi pemartisian Anda nanti, Anda mesti memakai sistem berkas `ext4` "
+"sebagai gantinya."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:34
@@ -154,6 +220,13 @@ msgid ""
 "and logical volume as you see fit - for example, you can easily expand your "
 "system's `/home` (or any other directory residing on a logical volume)."
 msgstr ""
+"Gunakan Logical Volume Management (LVM) bila Anda mengantisipasi "
+"mengekspansi penyimpanan Anda dengan menambah lebih banyak hard disk setelah "
+"instalasi. Dengan LVM, Anda dapat membuat volume fisik pada drive baru, dan "
+"kemudian menugaskan mereka ke sebarang grup volume dan volume lojik sesuai "
+"kebutuhan - sebagai contoh, Anda dapat dengan mudah mengekspansi `/home` "
+"sistem Anda (atau sebarang direktori lain yang berada pada suatu volume "
+"lojik)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:36
@@ -167,6 +240,13 @@ msgid ""
 "Partition if your system does *not* require one - in that case, they will be "
 "hidden from the menu."
 msgstr ""
+"Membuat suatu partisi Boot BIOS atau suatu Partisi Sistem EFI mungkin perlu, "
+"bergantung pada firmware sistem Anda, ukuran drive boot, dan label disk "
+"drive boot. Lihat xref:sect-installation-gui-manual-partitioning-recommended["
+"Skema Pemartisian Yang Disarankan] untuk informasi tentang partisi ini. "
+"Perhatikan bahwa installer grafis tidak akan membiarkan Anda membuat Boot "
+"BIOS atau Partisi Sistem EFI bila sistem Anda *tidak* memerlukannya - dalam "
+"kasus itu, mereka akan disembunyikan dari menu."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
@@ -176,3 +256,7 @@ msgid ""
 "help you do this. If you prefer a command line tool, try "
 "[package]*system-storage-manager*."
 msgstr ""
+"Bila Anda perlu membuat sebarang perubahan ke konfigurasi penyimpanan Anda "
+"setelah instalasi, repositori {PRODUCT} menyediakan beberapa alat berbeda "
+"yang dapat membantu Anda melakukan ini. Bila Anda lebih suka alat baris "
+"perintah, cobalah [package]*system-storage-manager*."
