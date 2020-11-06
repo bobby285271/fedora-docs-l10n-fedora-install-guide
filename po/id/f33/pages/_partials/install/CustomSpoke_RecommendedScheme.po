@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-05 22:03+0000\n"
+"POT-Creation-Date: 2020-11-06 22:03+0000\n"
 "PO-Revision-Date: 2020-11-06 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,31 +20,32 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
 #, no-wrap
 msgid "Recommended Partitioning Scheme"
 msgstr "Skema Pemartisian Yang Direkomendasikan"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
-msgid "In most cases, at least the following mount points should always be created:"
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
+msgid ""
+"In most cases, at least the following mount points should always be created:"
 msgstr ""
 "Dalam kebanyakan kasus, setidaknya titik kait berikut harus selalu dibuat:"
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
 #, no-wrap
 msgid "`/boot` - 1 GB"
 msgstr "`/boot` - 1 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
 msgid ""
 "This partition contains the operating system kernel, which allows {PRODUCT} "
 "to boot. It also contains other files used during the bootstrap process. Due "
 "to the limitations of most firmware, creating a separate, small standard "
-"partition for this directory is recommended. In most scenarios, a 1 GB "
-"`/boot` partition is adequate."
+"partition for this directory is recommended. In most scenarios, a 1 GB `/"
+"boot` partition is adequate."
 msgstr ""
 "Partisi ini berisi kernel sistem operasi, yang memungkinkan {PRODUCT} untuk "
 "boot. Ini juga berisi berkas lain yang digunakan selama proses bootstrap. "
@@ -53,7 +54,7 @@ msgstr ""
 "skenario, partisi `/boot` 1 GB cukup."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
 msgid ""
 "If your system has a hardware RAID controller, be aware that some BIOS types "
 "do not support booting from it. In that case, the `/boot` partition must be "
@@ -66,7 +67,7 @@ msgstr ""
 "hard drive terpisah."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
 msgid ""
 "Also note that the `/boot` directory can not be placed on a LVM logical "
 "volume. Use a standard partition."
@@ -75,13 +76,13 @@ msgstr ""
 "logis LVM. Gunakan partisi standar."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
 #, no-wrap
 msgid "`/` (root) - 25 GB"
 msgstr "`/` (root) - 25 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
 msgid ""
 "This is where the root directory is located. The root directory is the top "
 "level of the directory structure. By default, all files are written to this "
@@ -98,12 +99,12 @@ msgstr ""
 "paket perangkat lunak akan diinstal."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
 msgid ""
-"For a minimal installation, a 10 GB root partition will be "
-"sufficient. However, for most common installations which include extra "
-"packages and a graphical user interface, the root partition should be at "
-"least 25 GB; with 75 GB being sufficient for most common use cases."
+"For a minimal installation, a 10 GB root partition will be sufficient. "
+"However, for most common installations which include extra packages and a "
+"graphical user interface, the root partition should be at least 25 GB; with "
+"75 GB being sufficient for most common use cases."
 msgstr ""
 "Untuk instalasi minimal, partisi root 10 GB akan cukup. Namun, untuk "
 "instalasi yang paling umum yang mencakup paket tambahan dan antarmuka "
@@ -111,13 +112,12 @@ msgstr ""
 "untuk kasus penggunaan yang paling umum."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
 msgid ""
 "The `/` mount point is the top of the Linux Filesystem Hierarchy, and is "
 "referred to as the _root file system_, or root. The `/root` directory, "
-"sometimes pronounced "
-"\"pass:attributes[{blank}]_slash-root_pass:attributes[{blank}]\", is the "
-"home directory for the `root` user."
+"sometimes pronounced \"pass:attributes[{blank}]_slash-root_pass:"
+"attributes[{blank}]\", is the home directory for the `root` user."
 msgstr ""
 "Titik kait `/` adalah puncak dari Linux Filesystem Hierarchy, dan disebut "
 "sebagai _sistem berkas root_, atau root. Direktori `/root`, terkadang "
@@ -125,13 +125,13 @@ msgstr ""
 "adalah direktori home untuk pengguna `root`."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
 #, no-wrap
 msgid "`/home` - at least 10 GB"
 msgstr "`/home` - minimal 10 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
 msgid ""
 "To store user data separately from system data, create a dedicated mount "
 "point for the `/home` directory. This partition should be sized based on the "
@@ -149,7 +149,7 @@ msgstr ""
 "untuk instalasi {PRODUCT} Anda."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
 msgid ""
 "When using {PRODUCT} as a workstation for normal use with a graphical "
 "environment, this mount point should have the most disk space assigned to "
@@ -162,22 +162,22 @@ msgstr ""
 "pengguna, gambar, video, dll)."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
 msgstr "swap - berdasarkan parameter sistem Anda"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
 msgid ""
 "Swap partitions support virtual memory; data is written to them when there "
 "is not enough RAM to store the data your system is processing. This "
 "partition's size is a function of system memory workload, not total system "
-"memory, and therefore is not equal to the total system memory "
-"size. Therefore, it is important to analyze what applications a system will "
-"be running and the load those applications will serve in order to determine "
-"the system memory workload. Application providers and developers should be "
-"able to provide some guidance."
+"memory, and therefore is not equal to the total system memory size. "
+"Therefore, it is important to analyze what applications a system will be "
+"running and the load those applications will serve in order to determine the "
+"system memory workload. Application providers and developers should be able "
+"to provide some guidance."
 msgstr ""
 "Partisi swap mendukung memori virtual; data ditulis ke sana ketika tidak "
 "cukup RAM untuk menyimpan data yang sedang diproses oleh sistem. Ukuran "
@@ -189,14 +189,14 @@ msgstr ""
 "pengembang harus dapat memberikan beberapa panduan."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
 msgid ""
 "When the system runs out of swap space, the kernel terminates processes as "
 "the system RAM memory is exhausted. Configuring too much swap space results "
-"in storage devices being allocated but idle and is a poor use of "
-"resources. Too much swap space can also hide memory leaks. The maximum size "
-"for a swap partition and other additional information can be found in the "
-"`mkswap(8)` man page."
+"in storage devices being allocated but idle and is a poor use of resources. "
+"Too much swap space can also hide memory leaks. The maximum size for a swap "
+"partition and other additional information can be found in the `mkswap(8)` "
+"man page."
 msgstr ""
 "Ketika sistem kehabisan ruang swap, kernel mengakhiri proses karena memori "
 "RAM sistem habis. Mengonfigurasi terlalu banyak ruang swap menyebabkan "
@@ -206,13 +206,13 @@ msgstr ""
 "informasi tambahan lainnya dapat ditemukan di halaman manual `mkswap(8)`."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:43
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:43
 msgid ""
-"Beginning with Fedora 33, disk-based swap is no longer created by "
-"default. Instead, ZRAM-based swap is automatically used. See `man "
-"zram-generator` and `man zram-generator.conf` for more information. Should "
-"you choose to create disk-based swap, you will have two swap devices: "
-"disk-based with a lower priority, and ZRAM-based with a higher priority."
+"Beginning with Fedora 33, disk-based swap is no longer created by default. "
+"Instead, ZRAM-based swap is automatically used. See `man zram-generator` and "
+"`man zram-generator.conf` for more information. Should you choose to create "
+"disk-based swap, you will have two swap devices: disk-based with a lower "
+"priority, and ZRAM-based with a higher priority."
 msgstr ""
 "Mulai dengan Fedora 33, swap berbasis disk tidak lagi dibuat secara baku. "
 "Sebagai pengganti, swap berbasis ZRAM dipakai secara otomatis. Lihat `man "
@@ -222,7 +222,7 @@ msgstr ""
 "prioritas lebih tinggi."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:47
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:47
 msgid ""
 "The table below provides the recommended size of a swap partition depending "
 "on the amount of RAM in your system and whether you want sufficient memory "
@@ -247,31 +247,29 @@ msgstr ""
 "menyunting tata letak partisi secara manual."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:48
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:48
 #, no-wrap
 msgid "Recommended System Swap Space"
 msgstr "Ruang Swap Sistem yang Direkomendasikan"
 
 #. type: Table
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
 #, no-wrap
 msgid ""
-"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
-"if allowing for hibernation\n"
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space if allowing for hibernation\n"
 "|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
 "|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
-"|Banyaknya RAM dalam sistem|Ruang swap yang direkomendasikan|Ruang swap yang "
-"direkomendasikan jika mengizinkan hibernasi\n"
+"|Banyaknya RAM dalam sistem|Ruang swap yang direkomendasikan|Ruang swap yang direkomendasikan jika mengizinkan hibernasi\n"
 "|kurang dari 2 GB|2 kali besar RAM|3 kali besar RAM\n"
 "|2 GB-8 GB|Sama dengan besar RAM |2 kali besar RAM\n"
 "|8 GB-64 GB|0,5 kali besar RAM|1,5 kali besar RAM\n"
 "|lebih dari 64 GB|tergantung beban kerja|hibernasi tidak dianjurkan\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
 msgid ""
 "At the border between each range listed above (for example, a system with 2 "
 "GB, 8 GB, or 64 GB of system RAM), discretion can be exercised with regard "
@@ -285,7 +283,7 @@ msgstr ""
 "yang lebih baik."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:62
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:62
 msgid ""
 "Distributing swap space over multiple storage devices - particularly on "
 "systems with fast drives, controllers and interfaces - also improves swap "
@@ -296,18 +294,18 @@ msgstr ""
 "meningkatkan kinerja ruang swap."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
 #, no-wrap
 msgid "BIOS Boot (1 MB) or EFI System Partition (200 MB)"
 msgstr "Boot BIOS (1 MB) atau Partisi Sistem EFI (200 MB)"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:64
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:64
 msgid ""
 "The [application]*GRUB2* boot loader can be installed either in the _Master "
-"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot "
-"device. In order to determine which of these methods to use, the "
-"installation program considers the following variations:"
+"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot device. "
+"In order to determine which of these methods to use, the installation "
+"program considers the following variations:"
 msgstr ""
 "Boot loader [application]*GRUB2* dapat diinstal baik dalam _Master Boot "
 "Record_ (MBR) atau _GUID Partition Table_ (GPT) dari perangkat boot. Untuk "
@@ -315,14 +313,13 @@ msgstr ""
 "variasi berikut:"
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
 #, no-wrap
 msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
-msgstr ""
-"Sistem dengan firmware BIOS dan sistem UEFI dalam mode kompatibilitas BIOS:"
+msgstr "Sistem dengan firmware BIOS dan sistem UEFI dalam mode kompatibilitas BIOS:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
 msgid ""
 "If the disk is already formatted, the partitioning scheme is retained. If "
 "the disk is not formatted, or you have erased all existing partitions from "
@@ -333,37 +330,35 @@ msgstr ""
 "installer akan memilih berikut:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
 msgid "MBR if the size of the disk is less than 2 TB (terabytes)"
 msgstr "MBR jika ukuran disk kurang dari 2 TB (terabyte)"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:70
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:70
 msgid "GPT if the size of the disk is more than 2 TB"
 msgstr "GPT jika ukuran disk lebih dari 2 TB"
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:75
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:75
 msgid ""
 "You can force the installer to use GPT on disks smaller than 2 TB by using "
-"the [option]#inst.gpt# boot option as described in "
-"xref:advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot "
-"Options]. However, the opposite is not possible - you can not use MBR on "
-"disks larger than 2 TB."
+"the [option]#inst.gpt# boot option as described in xref:advanced/"
+"Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
+"opposite is not possible - you can not use MBR on disks larger than 2 TB."
 msgstr ""
 "Anda dapat memaksa penginstal untuk menggunakan GPT pada disk yang lebih "
 "kecil dari 2 TB dengan menggunakan opsi boot [option]#inst.gpt# seperti yang "
-"dijelaskan dalam xref:advanced/Boot_Options.adoc#chap-anaconda-boot-options["
-"Opsi Boot]. Namun, yang sebaliknya tidak mungkin - Anda tidak dapat "
+"dijelaskan dalam xref:advanced/Boot_Options.adoc#chap-anaconda-boot-"
+"options[Opsi Boot]. Namun, yang sebaliknya tidak mungkin - Anda tidak dapat "
 "menggunakan MBR pada disk yang lebih besar dari 2 TB."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:79
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:79
 msgid ""
 "You need to create a _BIOS Boot_ partition with a size of 1 MB to install on "
-"a system with BIOS firmware if the disk containing the boot loader uses "
-"GPT. If the disk uses a MBR, no special partition is necessary on a BIOS "
-"system."
+"a system with BIOS firmware if the disk containing the boot loader uses GPT. "
+"If the disk uses a MBR, no special partition is necessary on a BIOS system."
 msgstr ""
 "Anda perlu membuat partisi _Boot BIOS_ dengan ukuran 1 MB untuk menginstal "
 "pada sistem dengan firmware BIOS jika disk yang berisi boot loader "
@@ -371,13 +366,13 @@ msgstr ""
 "pada sistem BIOS."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:80
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:80
 #, no-wrap
 msgid "Systems with UEFI firmware:"
 msgstr "Sistem dengan firmware UEFI:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
 msgid ""
 "Only GPT is allowed on UEFI systems. In order to install on a formatted disk "
 "with a MBR, it must be reformated and relabeled. All data currently on the "
@@ -388,16 +383,16 @@ msgstr ""
 "data saat ini pada disk akan hilang."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
 msgid ""
 "UEFI-based systems require an _EFI System Partition_ at least 50 MB in size "
 "(recommended size is 200 MB), regardless of the partitioning scheme."
 msgstr ""
-"Sistem berbasis UEFI memerlukan _Partisi Sistem EFI_ setidaknya 50 MB ("
-"ukuran yang disarankan adalah 200 MB), terlepas dari skema partisi."
+"Sistem berbasis UEFI memerlukan _Partisi Sistem EFI_ setidaknya 50 MB "
+"(ukuran yang disarankan adalah 200 MB), terlepas dari skema partisi."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:88
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:88
 msgid ""
 "If your system requires either a BIOS Boot partition or an EFI System "
 "Partition based on the requirements detailed above, this partition must be "
@@ -410,7 +405,7 @@ msgstr ""
 "sub volume Btrfs."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:90
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:90
 msgid ""
 "Also note that if your system does not require any of these partitions, they "
 "will not be shown in the `File System` menu in mount point options."
@@ -419,12 +414,12 @@ msgstr ""
 "tidak akan ditampilkan dalam menu `Sistem Berkas` di opsi titik kait."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:94
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:94
 msgid ""
 "Many systems have more partitions than the minimum listed above. Choose "
-"partitions based on your particular needs. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-advice[Advice "
-"on Partitions] for additional information and advice."
+"partitions based on your particular needs. See xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"advice[Advice on Partitions] for additional information and advice."
 msgstr ""
 "Banyak sistem memiliki partisi lebih dari minimum yang tercantum di atas. "
 "Pilih partisi berdasarkan kebutuhan khusus Anda. Lihat xref:sect-"
@@ -432,24 +427,22 @@ msgstr ""
 "informasi tambahan dan saran."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:99
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:99
 msgid ""
-"Only assign storage capacity to those partitions you require "
-"immediately. You may allocate free space at any time, to meet needs as they "
-"occur."
+"Only assign storage capacity to those partitions you require immediately. "
+"You may allocate free space at any time, to meet needs as they occur."
 msgstr ""
 "Hanya tetapkan kapasitas penyimpanan untuk partisi yang Anda butuhkan "
 "segera. Anda dapat mengalokasikan ruang bebas setiap saat, untuk memenuhi "
 "kebutuhan ketika mereka terjadi."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:102
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:102
 msgid ""
 "If you are not sure how best to configure the partitions for your computer, "
 "accept the automatic default partition layout provided by the installation "
-"program as described in "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning[Installation "
-"Destination]."
+"program as described in xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
 "Jika Anda tidak yakin bagaimana cara terbaik untuk mengkonfigurasi partisi "
 "untuk komputer Anda, terima tata letak partisi default otomatis yang "

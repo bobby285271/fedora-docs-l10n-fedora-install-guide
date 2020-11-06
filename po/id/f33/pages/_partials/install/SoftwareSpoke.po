@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-05 22:04+0000\n"
+"POT-Creation-Date: 2020-11-06 22:03+0000\n"
 "PO-Revision-Date: 2020-11-06 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,14 +20,14 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
-#: ./pages/_partials/install/SoftwareSpoke.adoc:5
-#: ./pages/_partials/install/SoftwareSpoke.adoc:20
+#: pages/_partials/install/SoftwareSpoke.adoc:5
+#: pages/_partials/install/SoftwareSpoke.adoc:20
 #, no-wrap
 msgid "Software Selection"
 msgstr "Pemilihan Perangkat Lunak"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:8
+#: pages/_partials/install/SoftwareSpoke.adoc:8
 msgid ""
 "The `Software Selection` screen allows you to choose a _Base Environment_ "
 "and _Add-ons_. These options control which software packages will be "
@@ -39,28 +39,27 @@ msgstr ""
 "instalasi."
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:10
+#: pages/_partials/install/SoftwareSpoke.adoc:10
 msgid ""
-"This screen is only available if "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-source[Installation "
-"Source] is properly configured and only after the installer has downloaded "
-"package metadata from the source."
+"This screen is only available if xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-source[Installation Source] is properly "
+"configured and only after the installer has downloaded package metadata from "
+"the source."
 msgstr ""
-"Layar ini hanya tersedia bila xref:sect-installation-gui-installation-source["
-"Sumber Instalasi] dikonfigurasi secara benar dan hanya setelah installer "
-"mengunduh metadata paket dari sumber."
+"Layar ini hanya tersedia bila xref:sect-installation-gui-installation-"
+"source[Sumber Instalasi] dikonfigurasi secara benar dan hanya setelah "
+"installer mengunduh metadata paket dari sumber."
 
 #. type: delimited block =
-#: ./pages/_partials/install/SoftwareSpoke.adoc:15
+#: pages/_partials/install/SoftwareSpoke.adoc:15
 msgid ""
-"It is not possible to select specific packages during a manual "
-"installation. You can only select pre-defined environments and add-ons. If "
-"you need to control exactly which packages are installed, you must use a "
-"Kickstart file and define the packages in the [command]#%packages# "
-"section. See "
-"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
-"the Installation with Kickstart] for information about Kickstart "
-"installations."
+"It is not possible to select specific packages during a manual installation. "
+"You can only select pre-defined environments and add-ons. If you need to "
+"control exactly which packages are installed, you must use a Kickstart file "
+"and define the packages in the [command]#%packages# section. See xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[Automating the Installation with Kickstart] for information "
+"about Kickstart installations."
 msgstr ""
 "Tidak mungkin untuk memilih paket spesifik selama suatu instalasi manual. "
 "Anda hanya dapat memilih lingkungan terpradefinisi dan add-on. Bila Anda "
@@ -71,7 +70,7 @@ msgstr ""
 "informasi tentang instalasi Kickstart."
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:19
+#: pages/_partials/install/SoftwareSpoke.adoc:19
 msgid ""
 "The availability of environments and add-ons depends on your installation "
 "source. By default, the selection depends on the installation media you used "
@@ -88,25 +87,24 @@ msgstr ""
 "sumber instalasi lain yang memuat lingkungan yang berbeda."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
 msgstr "Layar Pemilihan Perangkat Lunak. Pada sisi kiri"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/SoftwareSpoke.png"
 msgstr "anaconda/SoftwareSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:25
+#: pages/_partials/install/SoftwareSpoke.adoc:25
 msgid ""
 "To configure your software selection, first choose an environment on the "
 "left side of the screen. Only one environment can be chosen, even if more "
-"are available. Then, on the right side of the screen, select one or more "
-"add-ons which you want to install by marking the check boxes next to each "
-"add-on."
+"are available. Then, on the right side of the screen, select one or more add-"
+"ons which you want to install by marking the check boxes next to each add-on."
 msgstr ""
 "Untuk mengonfigurasi pemilihan perangkat lunak Anda, pertama pilih suatu "
 "lingkungan pada sisi kiri layar. Hanya satu lingkungan yang dapat dipilih, "
@@ -115,7 +113,7 @@ msgstr ""
 "setiap add-on."
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:27
+#: pages/_partials/install/SoftwareSpoke.adoc:27
 msgid ""
 "The list of add-ons is divided into two parts by a horizontal line. Add-ons "
 "above this line are defined as part of your chosen environment; if you "
@@ -130,31 +128,30 @@ msgstr ""
 "ke lingkungan yang Anda pilih."
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:29
+#: pages/_partials/install/SoftwareSpoke.adoc:29
 msgid ""
 "Environments and add-ons are defined using a `comps.xml` file in your "
 "installation source (for example, in the `repodata/` directory on the full "
 "Fedora{nbsp}Server installation DVD). Review this file to see exactly which "
 "packages will be installed as part of a certain environment or add-on. For "
-"more information about the `comps.xml` file, see "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
-"(required) - Package Selection]."
+"more information about the `comps.xml` file, see xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
+"- Package Selection]."
 msgstr ""
 "Lingkungan dan add-on didefinisikan memakai sebuah berkas `comps.xml` dalam "
 "sumber instalasi Anda (misalnya, dalam direktori `repodata/` pada DVD "
 "instalasi Fedora{nbsp}Server penuh. Tinjau berkas ini untuk melihat secara "
 "eksak paket mana yang akan dipasang sebagai bagian dari lingkungan atau add-"
 "on tertentu. Untuk informasi lebih jauh tentang berkas `comps.xml`, lihat "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages["
-"%packages (diperlukan) - Pemilihan Paket]."
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"packages[%packages (diperlukan) - Pemilihan Paket]."
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:30
+#: pages/_partials/install/SoftwareSpoke.adoc:30
 msgid ""
 "After you finish configuring your software selection, click `Done` in the "
-"top left corner to return to "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
-"Summary]."
+"top left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[Installation Summary]."
 msgstr ""
 "Setelah Anda selesai mengonfigurasi tata letak papan tik dan pergantian, "
 "klik `Selesai` di pojok kiri atas untuk kembali ke xref:sect-installation-"

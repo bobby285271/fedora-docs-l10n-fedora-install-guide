@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-02 22:03+0000\n"
+"POT-Creation-Date: 2020-11-06 22:03+0000\n"
 "PO-Revision-Date: 2020-11-06 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,30 +20,31 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:5
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:31
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:5
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:31
 #, no-wrap
 msgid "Creating Software RAID"
 msgstr "Membuat RAID Perangkat Lunak"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:8
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:8
 msgid ""
 "_Redundant arrays of independent disks_ (RAIDs) are constructed from "
 "multiple storage devices that are arranged to provide increased performance "
-"and, in some configurations, greater fault tolerance. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
-"File System and RAID Types] a description of different kinds of RAIDs."
+"and, in some configurations, greater fault tolerance. See xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"filesystems[Device, File System and RAID Types] a description of different "
+"kinds of RAIDs."
 msgstr ""
 "_Redundant array of independent disks_ (RAID) dibuat dari beberapa perangkat "
 "penyimpanan yang diatur untuk memberikan peningkatan kinerja dan, dalam "
-"beberapa konfigurasi, toleransi kesalahan yang lebih besar. Lihat "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-filesystems[Perangkat, Sistem Berkas, dan Jenis RAID] "
-"penjelasan tentang berbagai jenis RAID."
+"beberapa konfigurasi, toleransi kesalahan yang lebih besar. Lihat xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"filesystems[Perangkat, Sistem Berkas, dan Jenis RAID] penjelasan tentang "
+"berbagai jenis RAID."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:10
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:10
 msgid ""
 "A RAID device is created in one step, and disks are added or removed as "
 "necessary. One RAID partition per physical disk is allowed for each device, "
@@ -61,69 +62,69 @@ msgstr ""
 "memerlukan 4 partisi terpisah."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:15
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:15
 msgid ""
 "This section only explains how to create software RAID with standard "
 "(physical) partitions. However, you can also configure LVM volume groups and "
 "Btrfs volumes to use RAID and place their logical volumes or Btrfs "
-"subvolumes on top of this RAID array. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-lvm[Creating "
-"a Logical Volume Managament (LVM) Layout] and "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-btrfs[Creating "
-"a Btrfs Layout] for instructions on creating RAID in LVM and Btrfs."
+"subvolumes on top of this RAID array. See xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-lvm[Creating a Logical Volume "
+"Managament (LVM) Layout] and xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-btrfs[Creating a Btrfs Layout] for "
+"instructions on creating RAID in LVM and Btrfs."
 msgstr ""
 "Bagian ini hanya menjelaskan cara membuat RAID perangkat lunak dengan "
 "partisi standar (fisik). Namun, Anda juga dapat mengkonfigurasi grup volume "
 "LVM dan volume Btrfs untuk menggunakan RAID dan menempatkan volume logis "
-"atau subvolume Btrfs mereka di atas larik RAID ini. Lihat "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-lvm[Membuat Tata Letak Logical Volume Managament (LVM)] dan "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-btrfs[Membuat Tata Letak Btrfs] untuk instruksi tentang cara "
-"membuat RAID di LVM dan Btrfs."
+"atau subvolume Btrfs mereka di atas larik RAID ini. Lihat xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"lvm[Membuat Tata Letak Logical Volume Managament (LVM)] dan xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"btrfs[Membuat Tata Letak Btrfs] untuk instruksi tentang cara membuat RAID di "
+"LVM dan Btrfs."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:18
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:18
 #, no-wrap
 msgid "Create Software RAID"
 msgstr "Membuat RAID Perangkat Lunak"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
 #, no-wrap
 msgid "The Manual Partitioning screen"
 msgstr "Layar Pemartisian Manual"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_SoftwareRAID.png"
 msgstr "anaconda/CustomSpoke_SoftwareRAID.png"
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:26
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:26
 msgid ""
 "RAID configuration options are only visible if you have selected two or more "
 "disks for installation. At least two disks are required to create a RAID "
 "device, and some RAID layouts will require more. Requirements for different "
-"types of RAID are described in "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
-"File System and RAID Types]."
+"types of RAID are described in xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Device, File System and "
+"RAID Types]."
 msgstr ""
 "Opsi konfigurasi RAID hanya terlihat jika Anda telah memilih dua atau lebih "
 "disk untuk penginstalan. Setidaknya dua disk diperlukan untuk membuat "
 "perangkat RAID, dan beberapa tata letak RAID akan membutuhkan lebih banyak. "
-"Persyaratan untuk berbagai jenis RAID dijelaskan di "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-filesystems[Perangkat, Sistem Berkas, dan Jenis RAID]."
+"Persyaratan untuk berbagai jenis RAID dijelaskan di xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"filesystems[Perangkat, Sistem Berkas, dan Jenis RAID]."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:30
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:30
 msgid "Follow the procedure below to create software RAID:"
 msgstr "Ikuti prosedur di bawah untuk membuat RAID perangkat lunak:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:33
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:33
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
@@ -132,7 +133,7 @@ msgstr ""
 "Jendela dialog baru akan terbuka."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:35
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:35
 msgid ""
 "In the new dialog window, specify a mount point for which you want to create "
 "a separate software RAID partition - for example, `/`. Optionally, specify a "
@@ -147,7 +148,7 @@ msgstr ""
 "kembali ke layar partisi utama."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:40
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:40
 msgid ""
 "When creating a mount point for swap on software RAID, specify the mount "
 "point as `swap`."
@@ -156,7 +157,7 @@ msgstr ""
 "kait sebagai `swap`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:44
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:44
 msgid ""
 "The mount point has now been created using the default settings, which means "
 "it has been created as an LVM logical volume. Select the newly created mount "
@@ -169,20 +170,20 @@ msgstr ""
 "RAID perangkat lunak dengan mengubah opsi `Jenis Perangkat` ke` RAID`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:46
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:46
 msgid ""
 "Choose a RAID type from the `RAID Level` drop-down menu. Available RAID "
-"types and their requirements are described in "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
-"File System and RAID Types]."
+"types and their requirements are described in xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-filesystems[Device, File "
+"System and RAID Types]."
 msgstr ""
 "Pilih jenis RAID dari menu tarik-turun `Tingkat RAID`. Jenis RAID yang "
-"tersedia dan persyaratannya dijelaskan di xref:Installing_Using_Anaconda.adoc"
-"#sect-installation-gui-manual-partitioning-filesystems[Perangkat, Sistem "
+"tersedia dan persyaratannya dijelaskan di xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-filesystems[Perangkat, Sistem "
 "Berkas, dan Jenis RAID]."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:48
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:48
 msgid ""
 "In the `Device(s)` section on the right side of the screen, you can see that "
 "the partition has been assigned to several physical disks. Click the "
@@ -193,7 +194,7 @@ msgstr ""
 "mengonfigurasi pada drive mana partisi ini akan dibuat."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:50
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:50
 msgid ""
 "In the `Configure Mount Point` dialog, you can specify which physical "
 "devices (disks) this partition *may* reside on. You can select one or more "
@@ -210,7 +211,7 @@ msgstr ""
 "tertentu, pilih hanya drive tersebut dan batalkan pilihan lainnya."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:52
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:52
 msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
@@ -219,18 +220,18 @@ msgstr ""
 "kembali ke layar utama `Pemartisian Manual`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:54
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:54
 msgid ""
 "Configure other settings specific to the partition - its `Mount Point`, "
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
-"Konfigurasikan pengaturan lain khusus untuk partisi - `Titik Kait`, `"
-"Kapasitas yang Diinginkan`, dan `Sistem Berkas`. Tekan `Perbarui Pengaturan` "
-"untuk menerapkan perubahan konfigurasi."
+"Konfigurasikan pengaturan lain khusus untuk partisi - `Titik Kait`, "
+"`Kapasitas yang Diinginkan`, dan `Sistem Berkas`. Tekan `Perbarui "
+"Pengaturan` untuk menerapkan perubahan konfigurasi."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:55
+#: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:55
 msgid ""
 "Repeat this procedure for any additional standard partitions with software "
 "RAID you want to create."

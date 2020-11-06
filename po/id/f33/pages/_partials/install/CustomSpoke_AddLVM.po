@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-10-28 22:03+0000\n"
+"POT-Creation-Date: 2020-11-06 22:03+0000\n"
 "PO-Revision-Date: 2020-11-06 22:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ====
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:5
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:5
 #, no-wrap
 msgid "Creating a Logical Volume Managament (LVM) Layout"
 msgstr "Membuat suatu Tata Letak Logical Volume Management (LVM)"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:8
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:8
 msgid ""
 "_Logical Volume Management_ (LVM) presents a simple logical view of "
 "underlying physical storage space, such as hard drives or LUNs. Partitions "
@@ -45,7 +45,7 @@ msgstr ""
 "yang dapat merentang ke beberapa disk fisik."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:10
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:10
 msgid ""
 "See xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding "
 "LVM] for additional information about the concepts behind Logical Volume "
@@ -55,13 +55,13 @@ msgstr ""
 "untuk informasi tambahan tentang konsep di balik manajemen volume logis."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:15
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:15
 msgid ""
 "Some partition types - notably the `/boot` directory and the BIOS Boot and "
 "EFI partitions - can not be placed on logical volumes. Use standard physical "
-"volumes for them. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme] for more information."
+"volumes for them. See xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-recommended[Recommended Partitioning Scheme] for "
+"more information."
 msgstr ""
 "Beberapa jenis partisi - terutama direktori `/boot` dan boot BIOS dan "
 "partisi EFI - tidak dapat ditempatkan pada volume logis. Gunakan volume "
@@ -70,37 +70,38 @@ msgstr ""
 "informasi lebih lanjut."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:18
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:18
 #, no-wrap
 msgid "Create LVM Logical Volume"
 msgstr "Buat Volume Logis LVM"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:20
 #, no-wrap
 msgid "The Manual Partitioning screen"
 msgstr "Layar Pemartisian Manual"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddLVM.png"
 msgstr "anaconda/CustomSpoke_AddLVM.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:23
-msgid "Follow the procedure below to create LVM logical volumes and volume groups."
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:23
+msgid ""
+"Follow the procedure below to create LVM logical volumes and volume groups."
 msgstr ""
 "Ikuti prosedur di bawah ini untuk membuat volume lojik LVM dan grup volume."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:24
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:24
 #, no-wrap
 msgid "Creating LVM Logical Volumes and Groups"
 msgstr "Membuat Grup dan Volume Lojik LVM"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:26
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:26
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
@@ -109,22 +110,22 @@ msgstr ""
 "Jendela dialog baru akan terbuka."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:28
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:28
 msgid ""
 "In the new dialog window, specify a mount point for which you want to create "
 "a separate logical volume - for example, `/`. Optionally, specify a size for "
-"the volume using standard units such as MB or GB (for example, "
-"`50GB`). Then, click `Add mount point` to add the volume and return to the "
-"main partitioning screen."
+"the volume using standard units such as MB or GB (for example, `50GB`). "
+"Then, click `Add mount point` to add the volume and return to the main "
+"partitioning screen."
 msgstr ""
 "Di jendela dialog baru, tentukan titik kait yang ingin Anda buat volume "
 "lojik terpisah - misalnya, `/`. Opsional, tentukan ukuran volume menggunakan "
-"unit standar seperti MB atau GB (misalnya, `50GB`). Kemudian, klik `"
-"Tambahkan titik kait` untuk menambahkan volume dan kembali ke layar partisi "
+"unit standar seperti MB atau GB (misalnya, `50GB`). Kemudian, klik "
+"`Tambahkan titik kait` untuk menambahkan volume dan kembali ke layar partisi "
 "utama."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:33
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:33
 msgid ""
 "When creating a mount point for swap on LVM, specify the mount point as "
 "`swap`."
@@ -133,7 +134,7 @@ msgstr ""
 "`swap`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:37
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:37
 msgid ""
 "The mount point has now been created using the default settings, which means "
 "it has been created as an LVM logical volume, and a volume group has been "
@@ -148,7 +149,7 @@ msgstr ""
 "untuk volume ini, Ubah opsi `Tipe Peranti` menjadi `LVM Thin provisioning`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:39
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:39
 msgid ""
 "In the `Volume Group` menu, you can see that the volume has been assigned to "
 "an automatically created volume group, which is named after the {PRODUCT} "
@@ -161,26 +162,26 @@ msgstr ""
 "bawah menu drop-down untuk mengakses pengaturan grup volume."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:41
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:41
 msgid ""
 "In the `Configure Volume Group` dialog, you can change the volume group's "
-"name, its `RAID level` (see "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
-"File System and RAID Types] for information about available RAID types), and "
-"you can also specify which physical devices (disks) this volume group should "
-"reside on. You can select one or more disks which will be used to hold this "
-"volume group by holding down kbd:[Ctrl] and clicking each disk in the list."
+"name, its `RAID level` (see xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Device, File System and "
+"RAID Types] for information about available RAID types), and you can also "
+"specify which physical devices (disks) this volume group should reside on. "
+"You can select one or more disks which will be used to hold this volume "
+"group by holding down kbd:[Ctrl] and clicking each disk in the list."
 msgstr ""
 "Dalam dialog `Konfigurasi Grup Volume`, Anda dapat mengubah nama grup "
 "volume, `Level RAID` (Lihat xref:sect-installation-gui-manual-partitioning-"
 "filesystems[Peranti, Sistem Berkas, dan Tipe RAID] untuk informasi tentang "
 "tipe RAID yang tersedia), dan Anda juga dapat menentukan perangkat fisik "
 "mana (disk) tempat grup volume ini. Anda dapat memilih satu atau lebih disk "
-"yang akan digunakan untuk menyimpan grup volume ini dengan menekan kbd:[Ctrl]"
-" dan mengklik setiap disk dalam daftar."
+"yang akan digunakan untuk menyimpan grup volume ini dengan menekan kbd:"
+"[Ctrl] dan mengklik setiap disk dalam daftar."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:46
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:46
 msgid ""
 "If you select a redundant RAID type (such as `RAID1 (Redundancy)`), the "
 "volume group will take up twice its actual size on your disks. A 5 GB volume "
@@ -191,22 +192,22 @@ msgstr ""
 "volume 5 GB dengan RAID1 akan memakan ruang 10 GB."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:50
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:50
 msgid ""
 "You can also make sure that the volume group is encrypted by selecting the "
 "`Encrypt` option; this will enable LUKS encryption for the entire volume "
-"group. See the [citetitle]_{PRODUCT} Security Guide_, available at "
-"link:++https://docs.fedoraproject.org/++[], for information about LUKS disk "
+"group. See the [citetitle]_{PRODUCT} Security Guide_, available at link:+"
+"+https://docs.fedoraproject.org/++[], for information about LUKS disk "
 "encryption."
 msgstr ""
 "Anda juga dapat memastikan bahwa grup volume dienkripsi dengan memilih opsi "
 "`Enkripsi`; ini akan memungkinkan enkripsi LUKS untuk seluruh kelompok "
-"volume. Lihat [citetitle]_Panduan Keamanan {PRODUCT}_, tersedia di "
-"link:++https://docs.fedoraproject.org/++[], untuk informasi tentang enkripsi "
-"disk LUKS."
+"volume. Lihat [citetitle]_Panduan Keamanan {PRODUCT}_, tersedia di link:+"
+"+https://docs.fedoraproject.org/++[], untuk informasi tentang enkripsi disk "
+"LUKS."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:52
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:52
 msgid ""
 "Additionally, you can set a fixed size for the volume group by selecting the "
 "`Fixed` option from the `Size policy` menu and entering a size for the "
@@ -217,7 +218,7 @@ msgstr ""
 "untuk grup volume."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:54
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:54
 msgid ""
 "After you finish configuring the volume group settings, click `Save` to "
 "return to the main `Manual Partitioning` screen."
@@ -226,26 +227,26 @@ msgstr ""
 "untuk kembali ke layar utama `Pemartisian Manual`."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:59
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:59
 msgid ""
 "The configuration dialog does not allow you to specify the size of the "
 "volume group's _physical extents_. The size will always be set to the "
 "default value of 4 MiB. If you want to create a volume group with different "
 "physical extents, create it manually by switching to an interactive shell "
 "and using the [command]#vgcreate# command, or use a Kickstart file with the "
-"[command]#volgroup "
-"--pesize=pass:attributes[{blank}]_size_pass:attributes[{blank}]# command."
+"[command]#volgroup --pesize=pass:attributes[{blank}]_size_pass:"
+"attributes[{blank}]# command."
 msgstr ""
 "Dialog konfigurasi tidak memperbolehkan Anda untuk menentukan ukuran "
 "_physical extent_ grup volume. Ukuran akan selalu ditetapkan ke nilai asali "
 "4 MiB. Jika Anda ingin membuat grup volume dengan berbagai variasi fisik, "
 "Buatlah secara manual dengan beralih ke shell interaktif dan menggunakan "
 "perintah [command]#vgcreate#, atau gunakan berkas Kickstart dengan perintah "
-"[command]#volgroup "
-"--pesize=pass:attributes[{blank}]_size_pass:attributes[{blank}]#."
+"[command]#volgroup --pesize=pass:attributes[{blank}]_size_pass:"
+"attributes[{blank}]#."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:63
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:63
 msgid ""
 "If you need to create more than one volume group, open the `Volume Group` "
 "drop-down menu and select the `Create a new volume group` option. A new "
@@ -256,8 +257,8 @@ msgid ""
 "then go through your existing mount points and change this setting to assign "
 "them to a different volume group."
 msgstr ""
-"Jika Anda perlu membuat lebih dari satu grup volume, buka menu drop-down `"
-"Grup Volume` dan pilih opsi `Buat grup volume baru`. Sebuah jendela dialog "
+"Jika Anda perlu membuat lebih dari satu grup volume, buka menu drop-down "
+"`Grup Volume` dan pilih opsi `Buat grup volume baru`. Sebuah jendela dialog "
 "baru akan terbuka, identik dengan yang dijelaskan pada langkah sebelumnya. "
 "Sekali lagi, pilih nama, perangkat penyimpanan, pengaturan enkripsi, tingkat "
 "RAID, dan kebijakan ukuran untuk grup baru, dan klik `Simpan`. Grup volume "
@@ -266,23 +267,23 @@ msgstr ""
 "grup volume yang berbeda."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:65
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:65
 msgid ""
 "Configure other settings specific to the logical volume - its `Mount Point`, "
 "`Desired Capacity`, `File System`, and `Name`. Press `Update Settings` to "
 "apply any changes to the configuration."
 msgstr ""
-"Konfigurasikan pengaturan lain khusus untuk volume lojik - `Titik Kait`, `"
-"Kapasitas yang Diinginkan`, dan `Sistem Berkas`. Tekan `Perbarui Pengaturan` "
-"untuk menerapkan perubahan konfigurasi."
+"Konfigurasikan pengaturan lain khusus untuk volume lojik - `Titik Kait`, "
+"`Kapasitas yang Diinginkan`, dan `Sistem Berkas`. Tekan `Perbarui "
+"Pengaturan` untuk menerapkan perubahan konfigurasi."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:67
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:67
 msgid ""
-"Repeat this procedure for any additional logical volumes you want to "
-"create. Note that when creating additional LVM logical volumes, a new volume "
-"group is not automatically created each time; instead, any additional "
-"volumes are assigned to an existing group."
+"Repeat this procedure for any additional logical volumes you want to create. "
+"Note that when creating additional LVM logical volumes, a new volume group "
+"is not automatically created each time; instead, any additional volumes are "
+"assigned to an existing group."
 msgstr ""
 "Ulangi prosedur ini untuk setiap volume lojik tambahan yang ingin Anda buat. "
 "Perhatikan bahwa ketika membuat volume lojik LVM tambahan, grup volume baru "
@@ -290,7 +291,7 @@ msgstr ""
 "ditetapkan ke grup yang ada."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:68
+#: pages/_partials/install/CustomSpoke_AddLVM.adoc:68
 msgid ""
 "For each mount point you create, review its settings and make sure that it "
 "is assigned to the correct group, that it has sufficient capacity, and that "
