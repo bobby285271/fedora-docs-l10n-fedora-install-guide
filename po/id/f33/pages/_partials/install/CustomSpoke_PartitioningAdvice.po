@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-05 22:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ====
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:5
+#, no-wrap
+msgid "Advice on Partitions"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:8
+msgid ""
+"There is no best way to partition every system; the optimal setup depends on "
+"how you plan to use the system being installed. However, the following tips "
+"may help you find the optimal layout for your needs:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:10
+msgid ""
+"Consider encrypting any partitions and volumes which might contain sensitive "
+"data. Encryption prevents unauthorized people from accessing the data on the "
+"partitions, even if they have access to the physical storage device. In most "
+"cases, you should at least encrypt the `/home` partition, which contains "
+"user data."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:12
+msgid ""
+"In some cases, creating separate mount points for directories other than "
+"`/`, `/boot` and `/home` may be useful; for example, on a server running a "
+"[application]*MySQL* database, having a separate mount point for "
+"`/var/lib/mysql` will allow you to preserve the database during a "
+"reinstallation without having to restore it from backup afterwards. However, "
+"having unnecessary separate mount points will make storage administration "
+"more difficult."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14
+msgid ""
+"Some special restrictions apply to certain directories with regards on which "
+"partitioning layouts can they be placed. Notably, the `/boot` directory must "
+"always be on a physical partition (not on an LVM volume or a Btrfs "
+"subvolume), and `/usr` can not be on a Btrfs subvolume."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:16
+msgid ""
+"If you are new to Linux, consider reviewing the [citetitle]_Linux Filesystem "
+"Hierarchy Standard_ at "
+"link:++https://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html++[] for "
+"information about various system directories and their contents."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:18
+msgid ""
+"Each kernel installed on your system requires approximately 20 MB on the "
+"`/boot` partition. The default partition size of 500 MB for `/boot` should "
+"suffice for most common uses; increase the size of this partition if you "
+"plan to keep many kernels installed at the same time."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:20
+msgid ""
+"The `/var` directory holds content for a number of applications, including "
+"the [application]*Apache* web server, and is used by the [application]*DNF* "
+"package manager to temporarily store downloaded package updates. Make sure "
+"that the partition or volume containing `/var` has at least 3 GB."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:22
+msgid ""
+"The contents of the `/var` directory usually change very often. This may "
+"cause problems with older solid state drives (SSDs), as they can handle a "
+"lower number of read/write cycles before becoming unusable. If your system "
+"root is on an SSD, consider creating a separate mount point for `/var` on a "
+"classic (platter) HDD."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:24
+msgid ""
+"The `/usr` directory holds the majority of software on a typical {PRODUCT} "
+"installation. The partition or volume containing this directory should "
+"therefore be at least 5 GB for minimal installations, and at least 10 GB for "
+"installations with a graphical environment."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:26
+msgid ""
+"If `/usr` or `/var` is partitioned separately from the rest of the root "
+"volume, the boot process becomes much more complex because these directories "
+"contain boot-critical components. In some situations, such as when these "
+"directories are placed on an iSCSI drive or an FCoE location, the system may "
+"either be unable to boot, or it may hang with a `Device is busy` error when "
+"powering off or rebooting."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:28
+msgid ""
+"This limitation only applies to `/usr` or `/var`, not to directories below "
+"them. For example, a separate partition for `/var/www` will work without "
+"issues."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:30
+msgid ""
+"Consider leaving a portion of the space in an LVM volume group "
+"unallocated. This unallocated space gives you flexibility if your space "
+"requirements change but you do not wish to remove data from other "
+"volumes. You can also select the `Thin provisioning` device type for the "
+"partition to have the unused space handled automatically by the volume."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:32
+msgid ""
+"The size of an `XFS` file system can not be reduced - if you need to make a "
+"partition or volume with this file system smaller, you must back up your "
+"data, destroy the file system, and create a new, smaller one in its "
+"place. Therefore, if you expect needing to manipulate your partitioning "
+"layout later, you should use the `ext4` file system instead."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:34
+msgid ""
+"Use Logical Volume Management (LVM) if you anticipate expanding your storage "
+"by adding more hard drives after the installation. With LVM, you can create "
+"physical volumes on the new drives, and then assign them to any volume group "
+"and logical volume as you see fit - for example, you can easily expand your "
+"system's `/home` (or any other directory residing on a logical volume)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:36
+msgid ""
+"Creating a BIOS Boot partition or an EFI System Partition may be necessary, "
+"depending on your system's firmware, boot drive size, and boot drive disk "
+"label. See "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
+"Partitioning Scheme] for information about these partitions. Note that the "
+"graphical installer will not let you create a BIOS Boot or EFI System "
+"Partition if your system does *not* require one - in that case, they will be "
+"hidden from the menu."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
+msgid ""
+"If you need to make any changes to your storage configuration after the "
+"installation, {PRODUCT} repositories offer several different tools which can "
+"help you do this. If you prefer a command line tool, try "
+"[package]*system-storage-manager*."
+msgstr ""
