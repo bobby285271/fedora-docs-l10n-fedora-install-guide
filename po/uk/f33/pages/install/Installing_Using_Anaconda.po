@@ -1,0 +1,402 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-06 22:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title =
+#: ./pages/install/Installing_Using_Anaconda.adoc:6
+#, no-wrap
+msgid "Installing Using Anaconda"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:9
+msgid ""
+"This chapter provides step-by-step instructions for installing {PRODUCT} "
+"using the [application]*Anaconda* installer. The bulk of this chapter "
+"describes installation using the graphical user interface. A text mode is "
+"also available for systems with no graphical display, but this mode is "
+"limited in certain aspects (for example, custom partitioning is not possible "
+"in text mode)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:11
+msgid "If your system does not have the ability to use the graphical mode, you can:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:13
+msgid ""
+"Use Kickstart to automate the installation as described in "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
+"the Installation with Kickstart]"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:15
+msgid ""
+"Perform the graphical installation remotely by connecting to the "
+"installation system from another computer with a graphical display using the "
+"_VNC_ (Virtual Network Computing) protocol - see "
+"xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
+"VNC]"
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Installing_Using_Anaconda.adoc:17
+#, no-wrap
+msgid "Introduction to Anaconda"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:20
+msgid ""
+"The {PRODUCT} installer, [application]*Anaconda*, is different from most "
+"other operating system installation programs due to its parallel "
+"nature. Most installers follow a fixed path: you must choose your language "
+"first, then you configure network, then installation type, then "
+"partitioning, etc. There is usually only one way to proceed at any given "
+"time."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:22
+msgid ""
+"In [application]*Anaconda* you are only required to select your language and "
+"locale first, and then you are presented with a central screen, where you "
+"can configure most aspects of the installation in any order you like. This "
+"does not apply to all parts of the installation process, however - for "
+"example, when installing from a network location, you must configure the "
+"network before you can select which packages to install."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:24
+msgid ""
+"Some screens will be automatically configured depending on your hardware and "
+"the type of media you used to start the installation. You can still change "
+"the detected settings in any screen. Screens which have not been "
+"automatically configured, and therefore require your attention before you "
+"begin the installation, are marked by an exclamation mark. You can not start "
+"the actual installation process before you finish configuring these "
+"settings."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:26
+msgid ""
+"Additional differences appear in certain screens; notably the custom "
+"partitioning process is very different from other Linux distributions. These "
+"differences are described in each screen's subsection."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Installing_Using_Anaconda.adoc:28
+#, no-wrap
+msgid "Consoles and Logging During the Installation"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:31
+msgid ""
+"The following sections describe how to access logs and an interactive shell "
+"during the installation. This is useful when troubleshooting problems, but "
+"should not be necessary in most cases."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/install/Installing_Using_Anaconda.adoc:33
+#, no-wrap
+msgid "Accessing Consoles"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:36
+msgid ""
+"The {PRODUCT} installer uses the [application]*tmux* terminal multiplexer to "
+"display and control several windows you can use in addition to the main "
+"interface. Each of these windows serves a different purpose - they display "
+"several different logs, which can be used to troubleshoot any issues during "
+"the installation, and one of the windows provides an interactive shell "
+"prompt with `root` privileges, unless this prompt was specifically disabled "
+"using a boot option or a Kickstart command."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Installing_Using_Anaconda.adoc:41
+msgid ""
+"In general, there is no reason to leave the default graphical installation "
+"environment unless you need to diagnose an installation problem."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:45
+msgid ""
+"The terminal multiplexer is running in virtual console 1. To switch from the "
+"actual installation environment to [application]*tmux*, press kbd:[Ctrl + "
+"Alt + F1]. To go back to the main installation interface which runs in "
+"virtual console 6, press kbd:[Ctrl + Alt + F6]."
+msgstr ""
+
+#. type: delimited block =
+#: ./pages/install/Installing_Using_Anaconda.adoc:50
+msgid ""
+"If you choose text mode installation, you will start in virtual console 1 "
+"([application]*tmux*), and switching to console 6 will open a shell prompt "
+"instead of a graphical interface."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:54
+msgid ""
+"The console running [application]*tmux* has 5 available windows; their "
+"contents are described in the table below, along with keyboard shortcuts "
+"used to access them. Note that the keyboard shortcuts are two-part: first "
+"press kbd:[Ctrl + b], then release both keys, and press the number key for "
+"the window you want to use."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:56
+msgid ""
+"You can also use kbd:[Ctrl + b] kbd:[n] and kbd:[Ctrl + b] kbd:[p] to switch "
+"to the next or previous [application]*tmux* window, respectively."
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/Installing_Using_Anaconda.adoc:58
+#, no-wrap
+msgid "Available tmux Windows"
+msgstr ""
+
+#. type: Table
+#: ./pages/install/Installing_Using_Anaconda.adoc:68
+#, no-wrap
+msgid ""
+"|Shortcut|Contents\n"
+"|kbd:[Ctrl + b] kbd:[1]|Main installation program window. Contains "
+"text-based prompts (during text mode installation or if you use VNC direct "
+"mode), and also some debugging information.\n"
+"|kbd:[Ctrl + b] kbd:[2]|Interactive shell prompt with `root` privileges.\n"
+"|kbd:[Ctrl + b] kbd:[3]|Installation log; displays messages stored in "
+"`/tmp/anaconda.log`.\n"
+"|kbd:[Ctrl + b] kbd:[4]|Storage log; displays messages related storage "
+"devices from kernel and system services, stored in `/tmp/storage.log`.\n"
+"|kbd:[Ctrl + b] kbd:[5]|Program log; displays messages from other system "
+"utilities, stored in `/tmp/program.log`.\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:71
+msgid ""
+"In addition to displaying diagnostic information in [application]*tmux* "
+"windows, [application]*Anaconda* also generates several log files, which can "
+"be transferred from the installation system. These log files are described "
+"in xref:install/Troubleshooting.adoc#sect-troubleshooting-log-files[Log "
+"Files Generated During the Installation], and directions for transferring "
+"them from the installation system are available in "
+"xref:install/Troubleshooting.adoc#sect-troubleshooting-transferring-logs[Transferring "
+"Log Files from the Installation System]."
+msgstr ""
+
+#. type: Title ===
+#: ./pages/install/Installing_Using_Anaconda.adoc:73
+#, no-wrap
+msgid "Saving Screenshots"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:76
+msgid ""
+"You can press kbd:[Shift + Print Screen] at any time during the graphical "
+"installation to capture the current screen. These screenshots are saved to "
+"`/tmp/anaconda-screenshots`."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:78
+msgid ""
+"Additionally, you can use the [command]#autostep --autoscreenshot# command "
+"in a Kickstart file to capture and save each step of the installation "
+"automatically. See "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep "
+"(optional) - Go Through Every Screen] for details."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Installing_Using_Anaconda.adoc:80
+#, no-wrap
+msgid "Installing in Text Mode"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:83
+msgid ""
+"Text mode installation offers an interactive, non-graphical interface for "
+"installing {PRODUCT}. This may be useful on systems with no graphical "
+"capabilities; however, you should always consider the available alternatives "
+"before starting a text-based installation. Text mode is limited in the "
+"amount of choices you can make during the installation."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:85
+msgid ""
+"There are two alternatives to text mode which can both be used even if the "
+"installation system does not have a graphical display. You can either "
+"connect to the installation system using VNC and perform an interactive "
+"graphical installation remotely (see "
+"xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
+"VNC]), or you can create a Kickstart file to perform the installation "
+"automatically (see "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
+"the Installation with Kickstart])."
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/Installing_Using_Anaconda.adoc:86
+#, no-wrap
+msgid "Text Mode Installation"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: ./pages/install/Installing_Using_Anaconda.adoc:88
+#, no-wrap
+msgid "The main menu in during a text-based installation."
+msgstr ""
+
+#. type: Target for macro image
+#: ./pages/install/Installing_Using_Anaconda.adoc:88
+#, no-wrap
+msgid "anaconda/SummaryHub_TextMode.png"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:91
+msgid ""
+"Installation in text mode follows a pattern similar to the graphical "
+"installation: There is no single fixed progression; you can configure many "
+"settings in any order you want using the main status screen. Screens which "
+"have already been configured, either automatically or by you, are marked as "
+"`[x]`, and screens which require your attention before the installation can "
+"begin are marked with `[!]`. Available commands are displayed below the list "
+"of available options."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:93
+msgid "Limits of interactive text mode installation include:"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:95
+msgid ""
+"The installer will always use the English language and the US English "
+"keyboard layout. You can configure your language and keyboard settings, but "
+"these settings will only apply to the installed system, not to the "
+"installation."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:97
+msgid ""
+"You can not configure any advanced storage methods (LVM, software RAID, "
+"FCoE, zFCP and iSCSI)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:99
+msgid ""
+"It is not possible to configure custom partitioning; you must use one of the "
+"automatic partitioning settings. You also cannot configure where the boot "
+"loader will be installed."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:101
+msgid ""
+"To start a text mode installation, boot the installation with the "
+"[option]#inst.text# boot option used either at the boot command line in the "
+"boot menu, or in your PXE server configuration. See "
+"xref:install/Booting_the_Installation.adoc#chap-booting-the-installation[Booting "
+"the Installation] for information about booting and using boot options."
+msgstr ""
+
+#. type: Title ==
+#: ./pages/install/Installing_Using_Anaconda.adoc:103
+#, no-wrap
+msgid "Installing in the Graphical User Interface"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:106
+msgid ""
+"The graphical installation interface is the preferred method of manually "
+"installing {PRODUCT}. It allows you full control over all available "
+"settings, including custom partitioning and advanced storage configuration, "
+"and it is also localized to many languages other than English, allowing you "
+"to perform the entire installation in a different language. The graphical "
+"mode is used by default when you boot the system from local media (a CD, DVD "
+"or a USB flash drive)."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:108
+msgid ""
+"The sections below discuss each screen available in the installation "
+"process. Note that due to the installer's parallel nature, most of the "
+"screens do not have to be completed in the order in which they are described "
+"here."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:110
+msgid ""
+"Each screen in the graphical interface contains a `Help` button. This button "
+"opens the [application]*Yelp* help browser displaying the section of the "
+"_{PRODUCT} Installation Guide_ relevant to the current screen."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:112
+msgid ""
+"You can also control the graphical installer with your keyboard. Use "
+"kbd:[Tab] and kbd:[Shift + Tab] to cycle through active control elements "
+"(buttons, check boxes, etc.) on the current screen, kbd:[Up] and kbd:[Down] "
+"arrow keys to scroll through lists, and kbd:[Left] and kbd:[Right] to scroll "
+"through horizontal toolbars or table entries. kbd:[Space] or kbd:[Enter] can "
+"be used to select or remove a highlighted item from selection and to expand "
+"and collapse drop-down menus."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:114
+msgid ""
+"Additionally, elements in each screen can be toggled using their respective "
+"shortcuts. These shortcuts are highlighted (underlined) when you hold down "
+"the kbd:[Alt] key; to toggle that element, press kbd:[Alt + "
+"_X_pass:attributes[{blank}]], where _X_ is the highlighted letter."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Installing_Using_Anaconda.adoc:116
+msgid ""
+"Your current keyboard layout is displayed in the top right hand corner. Only "
+"one layout is configured by default; if you configure more than layout in "
+"the `Keyboard Layout` screen "
+"(xref:sect-installation-gui-keyboard-layout[Keyboard Layout]), you can "
+"switch between them by clicking the layout indicator."
+msgstr ""
