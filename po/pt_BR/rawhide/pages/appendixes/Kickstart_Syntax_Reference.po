@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-29 22:03+0000\n"
-"PO-Revision-Date: 2020-12-01 16:36+0000\n"
+"PO-Revision-Date: 2020-12-05 01:36+0000\n"
 "Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
 "roberto97@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -35,6 +35,10 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]."
 msgstr ""
+"Este apêndice descreve comandos e opções disponíveis em instalações "
+"Kickstart. Para informações gerais sobre o Kickstart, veja xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Automatizando a "
+"Instalação com o Kickstart]."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:16
@@ -62,12 +66,13 @@ msgstr "Você pode usar uma entrada semelhante a uma das seguintes:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
-"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
@@ -101,7 +106,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:40
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
@@ -130,6 +135,9 @@ msgid ""
 "Notes_, available at link:++https://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Além disso, você pode revisar as notas de lançamento do [citetitle] _Fedora "
+"{nbsp} {PRODVER }_, disponíveis no link: ++ http: //docs.fedoraproject.org/++"
+" [], para obter uma lista de mudanças."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:50
@@ -176,7 +184,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:66
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
 msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
@@ -190,7 +198,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:70
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--opts=#"
 msgstr "[option]#--opts=#"
 
@@ -201,7 +209,7 @@ msgstr "Opções para passar para o módulo de kernel instalado. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:74
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
@@ -229,13 +237,13 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:86
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "_partition_"
 msgstr "_partition_"
 
@@ -252,13 +260,13 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:91
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
 msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:93
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--source=#"
 msgstr "[option]#--source=#"
 
@@ -273,25 +281,32 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:98
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
-msgstr "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
+msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:103
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
-msgstr "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
+msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:108
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
-msgstr "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
+msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:110
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--biospart=#"
 msgstr "[option]#--biospart=#"
 
@@ -314,6 +329,10 @@ msgid ""
 "[command]#install# command and the installation method command must be on "
 "separate lines. For example:"
 msgstr ""
+"O modo de instalação padrão. Você deve especificar o tipo de instalação a "
+"partir de `cdrom`, `harddrive`, `nfs`, `liveimg` ou `url`. O comando "
+"[command]#install# e o comando do método de instalação devem estar em linhas "
+"separadas. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:122
@@ -322,28 +341,30 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=file:///images/install/squashfs.img --noverifyssl#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:126
 msgid "The installation method commands are:"
-msgstr ""
+msgstr "Os comandos do método de instalação são:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:127
 #, no-wrap
 msgid "[command]#cdrom#"
-msgstr ""
+msgstr "[command]#cdrom#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:128
 msgid "Install from the first optical (DVD) drive on the system."
-msgstr ""
+msgstr "Instala a partir do primeiro drive óptico (DVD) no sistema."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:129
 #, no-wrap
 msgid "[command]#harddrive#"
-msgstr ""
+msgstr "[command]#harddrive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:130
@@ -353,6 +374,10 @@ msgid ""
 "installation environment. Supported file systems are `ext2`, `ext3`, `ext4`, "
 "`vfat`, or `xfs`."
 msgstr ""
+"Instala a partir de uma árvore ou de imagem ISO de instalação completa no "
+"disco rígido local. A árvore ou imagem ISO deve estar num sistema de "
+"arquivos que seja montável no ambiente de instalação. Arquivos de sistema "
+"suportados são `ext2`, `ext3`, `ext4`, `vfat` ou `xfs`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:136
@@ -361,47 +386,49 @@ msgid ""
 "[command]#install#\n"
 "[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#harddrive --partition= | --biospart= [--dir=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:139
 #, no-wrap
 msgid "[option]#--partition=#:"
-msgstr ""
+msgstr "[option]#--partition=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:140
 msgid "Partition to install from (such as `sdb2`)."
-msgstr ""
+msgstr "Partição para instalar a partir de (tal como `sdb2`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:141
 #, no-wrap
 msgid "[option]#--biospart=#:"
-msgstr ""
+msgstr "[option]#--biospart=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:142
 msgid "BIOS partition to install from (such as `82p2`)."
-msgstr ""
+msgstr "Partição BIOS para instalar a partir de (tal como `82p2`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:143
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:177
 #, no-wrap
 msgid "[option]#--dir=#:"
-msgstr ""
+msgstr "[option]#--dir=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:144
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:178
 msgid "Directory containing the installation tree or ISO image."
-msgstr ""
+msgstr "Diretório contendo a árvore de instalação ou imagem ISO."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:145
 #, no-wrap
 msgid "[command]#liveimg#"
-msgstr ""
+msgstr "[command]#liveimg#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:146
@@ -411,6 +438,10 @@ msgid ""
 "installation media can mount. Supported file systems are `ext2`, `ext3`, "
 "`ext4`, `vfat`, and `xfs`."
 msgstr ""
+"Instala a partir de uma imagem de disco ao invés de pacotes. A imagem pode "
+"ser o arquivo `squashfs.img` de uma imagem ISO live, ou qualquer sistema de "
+"arquivos que a mídia de instalação possa montar. Arquivos de sistema "
+"suportados são `ext2`, `ext3`, `ext4`, `vfat` e `xfs`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:148
@@ -419,6 +450,9 @@ msgid ""
 "system. In that case, the file name must end with `.tar`, `.tbz`, `.tgz`, `."
 "txz`, `.tar.bz2`, `tar.gz`, or `tar.xz`."
 msgstr ""
+"Este comando também suporta a instalação de arquivos tar do sistema de "
+"arquivos raiz. Nesse caso, o nome do arquivo deve terminar com `.tar`, `.tbz`"
+", `.tgz`, `.txz`, `.tar.bz2`, `tar.gz` ou `tar.xz`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:154
@@ -427,13 +461,15 @@ msgid ""
 "[command]#install#\n"
 "[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#liveimg --url=  [--proxy= | --checksum= | --noverifyssl=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:157
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:191
 #, no-wrap
 msgid "[option]#--url=#:"
-msgstr ""
+msgstr "[option]#--url=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:158
@@ -517,7 +553,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:176
 msgid "Host name of the server."
-msgstr ""
+msgstr "Nome do servidor."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:179
@@ -3496,7 +3532,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1216
 #, no-wrap
 msgid "Network Configuration"
-msgstr ""
+msgstr "Configuração de rede"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1219
@@ -3544,7 +3580,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1233
 msgid "Disable the firewall."
-msgstr ""
+msgstr "Desabilitar o firewall."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1234
