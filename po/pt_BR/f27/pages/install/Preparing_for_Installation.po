@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
+# Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-29 22:09+0000\n"
-"PO-Revision-Date: 2020-07-15 19:28+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2020-12-08 05:35+0000\n"
+"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
+"roberto97@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f27pagesinstallpreparing_for_installation/pt_BR/>\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:6
@@ -145,7 +147,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:34
 #, no-wrap
 msgid "Verifying the Downloaded Image"
-msgstr ""
+msgstr "Verificando a imagem baixada"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:37
@@ -173,7 +175,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:43
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
-msgstr ""
+msgstr "Verificando checksums em sistemas Windows"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:45
@@ -201,12 +203,14 @@ msgid ""
 "> cd $HOME\\Downloads\\\n"
 "> ls\n"
 msgstr ""
+"> cd $HOME\\Downloads\\\n"
+"> ls\n"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:56
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
-msgstr ""
+msgstr "Diretório: C:\\Usuários\\Pete\\Downloads\n"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:61
@@ -217,6 +221,12 @@ msgid ""
 "-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
 "-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
+"Modo                LastWriteTime         Tamanho  Nome\n"
+"----                -------------         ------  ----\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
+"CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
+".iso\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:65
@@ -232,6 +242,12 @@ msgid ""
 "> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
 "> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 msgstr ""
+"> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
+"> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography."
+"sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
+"$image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:74
@@ -243,6 +259,9 @@ msgstr ""
 #, no-wrap
 msgid "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 msgstr ""
+"> $download_checksum = [System.BitConverter]::ToString($sha256."
+"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
+"replace '-', ''\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:80
@@ -261,6 +280,13 @@ msgid ""
 "echo \"Checksum test failed.\"\n"
 "}\n"
 msgstr ""
+"> echo \"Download Checksum: $download_checksum\"\n"
+"> echo \"Expected Checksum: $expected_checksum\"\n"
+"> if ( $download_checksum -eq \"$expected_checksum\" ) {\n"
+"echo \"Checksum test passed!\"\n"
+"} else {\n"
+"echo \"Checksum test failed.\"\n"
+"}\n"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:93
@@ -280,7 +306,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:103
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
-msgstr ""
+msgstr "$ [command]#cd ~/Downloads#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:106
@@ -290,18 +316,18 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:108
 msgid "For Linux:"
-msgstr ""
+msgstr "Para Linux:"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:112
 #, no-wrap
 msgid "$ sha256sum -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ sha256sum -c *CHECKSUM\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:115
 msgid "For OSX:"
-msgstr ""
+msgstr "Para OSX:"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:119
@@ -427,6 +453,8 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:247
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
 msgstr ""
+"Selecione a Edição do Fedora para a qual você deseja criar uma unidade USB "
+"inicializável."
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:161
@@ -434,7 +462,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
-msgstr ""
+msgstr "Tela principal do Fedora Media Writer: Escolha sua Edição do Fedora"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Preparing_for_Installation.adoc:163
@@ -442,7 +470,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
-msgstr ""
+msgstr "Imagem da tela principal do Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:163
@@ -450,7 +478,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
-msgstr ""
+msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:167
@@ -487,7 +515,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:259
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
-msgstr ""
+msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:174
@@ -521,7 +549,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:266
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
-msgstr ""
+msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:181
@@ -561,7 +589,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:275
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:189
@@ -579,7 +607,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:195
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:198
@@ -590,7 +618,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:202
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:205
@@ -638,7 +666,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:277
 #, no-wrap
 msgid "Creating USB media with [application]*GNOME Disks*"
-msgstr ""
+msgstr "Criando mídia USB com o [application]*GNOME Discos*"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:279
@@ -713,13 +741,13 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:311
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
-msgstr ""
+msgstr "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:313
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
-msgstr ""
+msgstr "Criando um CD ou DVD de inicialização"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:315
@@ -741,7 +769,7 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:324
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
-msgstr ""
+msgstr "Insira um CD ou DVD virgem no gravador de CD ou DVD do seu sistema."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:326
@@ -764,4 +792,4 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:329
 msgid "Confirm your selection, and wait for the disc to be burned."
-msgstr ""
+msgstr "Confirme sua seleção e espere até que o disco seja gravado."

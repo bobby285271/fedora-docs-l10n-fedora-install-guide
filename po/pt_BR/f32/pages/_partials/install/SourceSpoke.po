@@ -2,24 +2,30 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-29 22:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-08 05:35+0000\n"
+"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
+"roberto97@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f32pages_partialsinstallsourcespoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. type: Block title
 #: pages/_partials/install/SourceSpoke.adoc:5
 #: pages/_partials/install/SourceSpoke.adoc:16
 #, no-wrap
 msgid "Installation Source"
-msgstr ""
+msgstr "Fonte de Instalação"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:8
@@ -29,6 +35,10 @@ msgid ""
 "system. This screen will be configured automatically in most cases, but you "
 "can change your settings or add additional sources."
 msgstr ""
+"A tela `Fonte de Instalação` permite que você especifique uma localização ("
+"local ou na rede) da qual os pacotes serão baixados e instalados no seu "
+"sistema. A tela será configurada automaticamente na maioria dos casos, mas "
+"você pode mudar suas configurações ou adicionar fontes adicionais."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:13
@@ -44,18 +54,29 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for information about boot options."
 msgstr ""
+"Normalmente, quando você entra pela primeira vez na tela `Resumo da "
+"Instalação`, o instalador tentará configurar uma fonte de instalação baseada "
+"no tipo de mídia que você usou para inicializar. O DVD completo do {PRODUCT} "
+"Server configurará a fonte como mídia local, a imagem ISO netinst "
+"configurará o espelho de rede mais próximo, etc. Este processo leva algum "
+"tempo, especialmente se a fonte padrão é um espelho de rede. Se você planeja "
+"usar uma fonte de instalação personalizada, use a opção de inicialização "
+"[option]#inst.askmethod# para pular a configuração inicial; isto permitirá "
+"que você entre nesta tela imediatamente. Veja xref:advanced/Boot_Options.adoc"
+"#sect-boot-options-sources[Especificando a Fonte de Instalação] para "
+"informações sobre opções de inicialização."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "The Installation Source screen"
-msgstr ""
+msgstr "A tela Fonte de Instalação"
 
 #. type: Target for macro image
 #: pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/SourceSpoke.png"
-msgstr ""
+msgstr "anaconda/SourceSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:21
@@ -63,12 +84,14 @@ msgid ""
 "The following options are available. Note that not all of them may be "
 "displayed."
 msgstr ""
+"As opções a seguir estão disponíveis. Note que nem todas elas podem ser "
+"exibidas."
 
 #. type: Labeled list
 #: pages/_partials/install/SourceSpoke.adoc:22
 #, no-wrap
 msgid "Auto-detected installation media"
-msgstr ""
+msgstr "Detectar automaticamente a mídia de instalação"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:23
@@ -78,12 +101,16 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"Esta é a opção selecionada por padrão se você iniciar o instalador a partir "
+"de uma mídia contendo uma fonte de instalação, como um DVD live. Nenhuma "
+"configuração adicional é necessária. Você pode clicar no botão `Verificar` "
+"para checar a integridade da mídia."
 
 #. type: Labeled list
 #: pages/_partials/install/SourceSpoke.adoc:24
 #, no-wrap
 msgid "ISO file"
-msgstr ""
+msgstr "Arquivo ISO"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:25
@@ -94,12 +121,17 @@ msgid ""
 "file's location on your system. You can click the `Verify` button to check "
 "the file's integrity."
 msgstr ""
+"Esta opção aparecerá se o programa de instalação detectar uma unidade de "
+"disco rígido com um sistema de arquivo montável durante a inicialização. "
+"Selecione esta opção, clique no botão btn:[Escolher uma ISO], e procure "
+"pelos arquivos ISO de instalação localizados no seu sistema. Você pode "
+"clicar no botão `Verificar` para chegar a integridade dos arquivos."
 
 #. type: Labeled list
 #: pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "Na rede"
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:27
@@ -108,6 +140,9 @@ msgid ""
 "instead of local media. This is the default selection on network "
 "installation media."
 msgstr ""
+"Use esta opção para baixar pacotes para serem instalados a partir de uma "
+"rede em vez de uma mídia local. Esta é a seleção padrão na mídia de "
+"instalação de rede."
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:29
@@ -116,6 +151,10 @@ msgid ""
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
 msgstr ""
+"Na maioria dos casos, a opção `Espelho mais próximo` disponível pelo menu "
+"suspenso de seleção de protocolo é preferível. Se essa opção está "
+"selecionada, os pacotes para seu sistema serão baixados a partir do local "
+"mais adequado (espelho)."
 
 #. type: Plain text
 #: pages/_partials/install/SourceSpoke.adoc:31
@@ -126,6 +165,12 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Para configurar manualmente um fonte de instalação baseada em rede, use o "
+"menu suspenso para especificar o protocolo a ser usado quando estiver "
+"baixando pacotes. Esta configuração depende do servidor que você quer usar. "
+"Então, digite o endereço do servidor (sem o protocolo) no campo endereço. Se "
+"você escolher NFS, um segundo campo de entrada aparecerá, onde você pode "
+"especificar `opções de montagem NFS` personalizadas."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:36
@@ -133,12 +178,17 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Quando selecionar uma fonte de instalação NFS, você deve especificar o "
+"endereço com o caractere dois pontos (`:`) separando o nome de host do "
+"caminho. Por exemplo:"
 
 #. type: delimited block -
 #: pages/_partials/install/SourceSpoke.adoc:40
 #, no-wrap
 msgid "`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/path/to/directory_pass:attributes[{blank}]`\n"
 msgstr ""
+"`pass:attributes[{blank}]_server.example.com_:pass:attributes[{blank}]_/"
+"caminho/do/diretorio_pass:attributes[{blank}]`\n"
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:45
@@ -149,6 +199,11 @@ msgid ""
 "Authentication` and enter your user name and password. Click btn:[OK] to "
 "finish the configuration."
 msgstr ""
+"Para configurar um proxy para uma fonte HTTP ou HTTPS, clique no botão btn:["
+"Configurar proxy] . Marque `Habilitar proxy HTTP` e digite o URL na caixa `"
+"Proxy URL`. Se o servidor proxy requer autenticação, marque `Usar "
+"Autenticação` e digite seu nome de usuário e senha. Clique em btn:[OK] para "
+"finalizar a configuração."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:47
@@ -156,6 +211,8 @@ msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
 msgstr ""
+"Se o seu URL HTTP ou HTTPS refere-se a uma lista de espelhos de repositório, "
+"marque a caixa de seleção sob o campo de endereço."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:49
@@ -167,6 +224,12 @@ msgid ""
 "gui-software-selection[Software Selection] once you finish configuring the "
 "sources."
 msgstr ""
+"Você também pode especificar repositórios adicionais na seção `Repositórios "
+"adicionais` para obter acesso a mais ambientes de instalação e add-ons de "
+"software. Todos os ambientes e add-ons estarão disponíveis para seleção em "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-"
+"selection[Seleção de Software] uma vez que você termine de configurar as "
+"fontes."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:51
@@ -178,6 +241,13 @@ msgid ""
 "Source` screen. To activate or deactivate a repository, click the check box "
 "in the `Enabled` column at each entry in the list."
 msgstr ""
+"Para adicionar um repositório, clique no botão btn:[+]. Para excluir um "
+"repositório, selecione um na lista e clique no botão btn:[-]. Clique no "
+"ícone de seta para reverter para a última lista de repositórios, por "
+"exemplo, para substituir entradas atuais com aquelas que estavam presentes "
+"no momento que você entrou na tela `Fonte de Instalação`. Para ativar ou "
+"desativar um repositório, clique a caixa de seleção na coluna `Habilitado` "
+"em cada entrada da lista."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:53
@@ -186,6 +256,9 @@ msgid ""
 "primary repository on the network using the input fields on the right side "
 "of the section."
 msgstr ""
+"Você pode nomear seu repositório adicional e configurá-lo da mesma maneira "
+"que o repositório primário na rede usando os campos de entrada no lado "
+"direito da seção."
 
 #. type: delimited block =
 #: pages/_partials/install/SourceSpoke.adoc:54
@@ -194,3 +267,7 @@ msgid ""
 "left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Uma vez que você tenha selecionado sua fonte de instalação, clique em "
+"`Pronto` no canto superior esquerdo para retornar ao "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Resumo da Instalação]."
