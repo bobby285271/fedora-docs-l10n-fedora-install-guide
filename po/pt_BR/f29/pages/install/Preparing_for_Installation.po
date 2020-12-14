@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-29 22:08+0000\n"
+"POT-Creation-Date: 2020-12-14 22:07+0000\n"
 "PO-Revision-Date: 2020-12-14 22:35+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -320,10 +320,10 @@ msgid ""
 "+[GetFedora.org]. The server automatically detects the running system and "
 "offers you the correct installation file for your Windows version."
 msgstr ""
-"Baixe o último arquivo Instalador do Windows a partir do "
-"link:++https://getfedora.org++[GetFedora.org]. O servidor detecta "
-"automaticamente o sistema atual e oferece a você o arquivo de instalação "
-"correto para sua versão do Windows."
+"Baixe o último arquivo Instalador do Windows a partir do link:++https://"
+"getfedora.org++[GetFedora.org]. O servidor detecta automaticamente o sistema "
+"atual e oferece a você o arquivo de instalação correto para sua versão do "
+"Windows."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:91
@@ -520,8 +520,7 @@ msgstr "Escrita do Fedora Media Writer para um dispositivo USB"
 #: pages/install/Preparing_for_Installation.adoc:138
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
-msgstr ""
-"Imagem do botão vermelho de escrita para dispositivo do Fedora Media Writer"
+msgstr "Imagem do botão vermelho de escrita para dispositivo do Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:138
@@ -676,10 +675,8 @@ msgid ""
 msgstr ""
 "Modo                LastWriteTime         Tamanho  Nome\n"
 "----                -------------         ------  ----\n"
-"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
-"CHECKSUM\n"
-"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
-".iso\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:192
@@ -697,10 +694,8 @@ msgid ""
 msgstr ""
 "> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
 "> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
-"> $sha256 = New-Object -TypeName System.Security.Cryptography."
-"sha256CryptoServiceProvider\n"
-"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
-"$image) -split \" \")[0].ToLower()\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:201
@@ -711,10 +706,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:204
 #, no-wrap
 msgid "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
-msgstr ""
-"> $download_checksum = [System.BitConverter]::ToString($sha256."
-"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
-"replace '-', ''\n"
+msgstr "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:207
@@ -785,9 +777,7 @@ msgstr "Para OSX:"
 #: pages/install/Preparing_for_Installation.adoc:245
 #, no-wrap
 msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
-msgstr ""
-"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
-"shasum -a 256 -c\n"
+msgstr "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:247
