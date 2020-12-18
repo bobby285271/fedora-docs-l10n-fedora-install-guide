@@ -13,7 +13,7 @@ function clean_tmp() {
 
 trap clean_tmp exit
 
-for staged in $(git status --porcelain); do
+for staged in $(git diff --name-only --cached); do
     if [ "${staged##*.}" == "pot" ] ; then
         echo "$staged"
         git diff --no-ext-diff --cached --patch-with-raw --output="$output" "$staged"
@@ -25,7 +25,12 @@ for staged in $(git status --porcelain); do
 
         if [ "$countChanges" -eq $(("$countDateAdd" + "$countDateRem")) ] ; then
             echo "the file $staged only contains POT-Creation-Date"
-            git rm --cached "$staged"
+            git reset -q HEAD "$staged"
         fi
     fi
 done
+
+if [ $(git diff --name-only --cached | wc -l) -eq 0 ]; then
+	echo "nothing to commit, aborting..."
+	exit 1
+fi
