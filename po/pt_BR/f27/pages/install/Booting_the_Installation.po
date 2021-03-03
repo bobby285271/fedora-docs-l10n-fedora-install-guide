@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-03 23:33+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f27pagesinstallbooting_the_installation/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title ===
 #: pages/install/Booting_the_Installation.adoc:6
 #, no-wrap
 msgid "Booting the Installation"
-msgstr ""
+msgstr "Inicializando a instalação"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:9
@@ -27,12 +32,15 @@ msgid ""
 "network server as well as how to navigate the boot menu and use custom "
 "options."
 msgstr ""
+"Este capítulo explicará como inicializar o instalador a partir da mídia "
+"local ou de um servidor de rede, bem como navegar no menu de inicialização e "
+"usar opções personalizadas."
 
 #. type: Title ====
 #: pages/install/Booting_the_Installation.adoc:11
 #, no-wrap
 msgid "Preparing to Boot"
-msgstr ""
+msgstr "Preparando para inicializar"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:14
@@ -55,6 +63,13 @@ msgid ""
 "on an UEFI system in UEFI mode, and then switch it to BIOS compatibility "
 "mode, {PRODUCT} will no longer boot and will require a reinstallation."
 msgstr ""
+"Não há mídia separada fornecida para sistemas BIOS e UEFI; todos eles podem "
+"inicializar a partir da mesma imagem ISO. No entanto, depois de instalar o "
+"{PRODUCT}, você não pode alternar entre UEFI e BIOS. O sistema deve ser "
+"executado no mesmo firmware em que foi instalado; se você, por exemplo, "
+"executar a instalação em um sistema UEFI no modo UEFI e, em seguida, alterná-"
+"lo para o modo de compatibilidade do BIOS, o {PRODUCT} não inicializará mais "
+"e exigirá uma reinstalação."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:26
@@ -62,6 +77,8 @@ msgid ""
 "{PRODUCT} does not support UEFI booting for 32-bit x86 systems. Only BIOS "
 "boot is supported on these systems."
 msgstr ""
+"{PRODUCT} não tem suporte a inicialização UEFI para sistemas x86 de 32 bits. "
+"Apenas a inicialização do BIOS é compatível com esses sistemas."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:28
@@ -76,13 +93,13 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:32
 msgid "To boot the {PRODUCT} installer, follow these steps:"
-msgstr ""
+msgstr "Para inicializar o instalador do {PRODUCT}, siga estas etapas:"
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:33
 #, no-wrap
 msgid "Booting the {PRODUCT} Installer"
-msgstr ""
+msgstr "Inicializando o instalador do {PRODUCT}"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:35
@@ -91,6 +108,10 @@ msgid ""
 "computer's optical disc drive. Alternatively, if you plan on booting from a "
 "network boot (PXE) server, make sure that the network cable is plugged in."
 msgstr ""
+"Conecte a unidade USB de inicialização ou insira o CD ou DVD de "
+"inicialização na unidade de disco óptico do computador. Como alternativa, se "
+"você planeja inicializar a partir de um servidor de inicialização de rede "
+"(PXE), certifique-se de que o cabo de rede esteja conectado."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:37
@@ -98,12 +119,14 @@ msgid ""
 "Restart the system. Once it starts rebooting, it should display a prompt "
 "similar to the following (usually at the bottom of the screen):"
 msgstr ""
+"Reinicie o sistema. Assim que iniciar a reinicialização, ele deverá exibir "
+"um prompt semelhante ao seguinte (geralmente na parte inferior da tela):"
 
 #. type: delimited block -
 #: pages/install/Booting_the_Installation.adoc:41
 #, no-wrap
 msgid "Press F12 to select boot device, or Del to enter SETUP\n"
-msgstr ""
+msgstr "Press F12 to select boot device, or Del to enter SETUP\n"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:44
@@ -115,6 +138,13 @@ msgid ""
 "there is usually a very short time window provided to access the menu; once "
 "it passes, you need to restart the system and try again."
 msgstr ""
+"Siga as instruções na tela para acessar o menu de inicialização. Se nenhuma "
+"instrução for exibida (alguns sistemas exibem apenas um logotipo gráfico "
+"durante os estágios iniciais da inicialização), tente pressionar kbd:[F12], "
+"kbd:[F11], kbd:[F10] ou kbd:[Del] várias vezes; essas são as chaves mais "
+"comumente usadas. Observe que geralmente há uma janela de tempo muito curta "
+"fornecida para acessar o menu; assim que passar, você precisará reiniciar o "
+"sistema e tentar novamente."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:49
@@ -124,6 +154,11 @@ msgid ""
 "order so that your boot media (CD, DVD, USB or network) has higher priority "
 "than internal hard drives."
 msgstr ""
+"Alguns sistemas mais antigos podem não ter suporta à escolha de um "
+"dispositivo de inicialização na inicialização. Nesse caso, entre no SETUP do "
+"sistema (BIOS) e altere a ordem de inicialização padrão para que a mídia de "
+"inicialização (CD, DVD, USB ou rede) tenha prioridade mais alta do que os "
+"discos rígidos internos."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:51
@@ -131,6 +166,8 @@ msgid ""
 "On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
 "selection menu."
 msgstr ""
+"No hardware do Mac, mantenha pressionada a tecla kbd:[Opção] para entrar no "
+"menu de seleção da mídia de inicialização."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:55
@@ -140,6 +177,10 @@ msgid ""
 "optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
 "from a network location."
 msgstr ""
+"Quando o menu de inicialização do seu sistema abrir, selecione uma entrada "
+"como `Boot from USB` se você criou uma unidade USB inicializável,`Boot from "
+"CD/DVD` se você estiver usando um disco óptico para instalar {PRODUCT} ou `"
+"Boot from PXE` se você deseja inicializar de um local de rede."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:57
@@ -147,12 +188,14 @@ msgid ""
 "Wait until the boot menu is displayed. The boot menu is described further in "
 "this chapter."
 msgstr ""
+"Aguarde até que o menu de inicialização seja exibido. O menu de "
+"inicialização é descrito posteriormente neste capítulo."
 
 #. type: Title ====
 #: pages/install/Booting_the_Installation.adoc:59
 #, no-wrap
 msgid "The Boot Menu"
-msgstr ""
+msgstr "O menu de inicialização"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:62
@@ -162,6 +205,11 @@ msgid ""
 "this menu, you can either start the actual installation, or you can use the "
 "boot media to rescue an existing system."
 msgstr ""
+"Na maioria dos casos, quando você inicializa o instalador do {PRODUCT} a "
+"partir de sua mídia de inicialização ou servidor preparado, o menu de "
+"inicialização será a primeira coisa a aparecer. A partir deste menu, você "
+"pode iniciar a instalação real ou usar a mídia de inicialização para "
+"recuperar um sistema existente."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:64
@@ -171,6 +219,11 @@ msgid ""
 "loader, and UEFI systems use [application]*GRUB2*. However, both of the "
 "menus described below function very similarly from a user's point of view."
 msgstr ""
+"A aparência e função do menu de inicialização variam um pouco dependendo do "
+"firmware do sistema - os sistemas BIOS usam o carregador de inicialização "
+"[application]*SYSLINUX* e os sistemas UEFI usam [application]*GRUB2*. No "
+"entanto, os dois menus descritos a seguir funcionam de maneira muito "
+"semelhante, do ponto de vista do usuário."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:66
@@ -181,6 +234,11 @@ msgid ""
 "second one will verify the integrity of the boot media before starting the "
 "installation."
 msgstr ""
+"Use as teclas de seta para selecionar uma entrada no menu e kbd:[Enter] para "
+"confirmar sua seleção. As duas primeiras entradas da lista continuarão com a "
+"instalação; o primeiro iniciará o instalador diretamente e o segundo "
+"verificará a integridade da mídia de inicialização antes de iniciar a "
+"instalação."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:68
@@ -195,6 +253,16 @@ msgid ""
 "menu and boot normally from your system's hard drive via the `Boot from "
 "local drive` option."
 msgstr ""
+"A entrada final na lista está Troubleshooting pass:attributes[{blank}]; este "
+"é um submenu para solução de problemas. Selecionando esta entrada e "
+"pressionando kbd:[Enter] irá exibir um novo conjunto de seleções, onde você "
+"pode escolher instalar no modo gráfico básico (útil se você deseja fazer uma "
+"instalação gráfica manual, mas seu sistema tem problemas com o instalador "
+"gráfico padrão), recuperar um sistema existente ou testar os módulos de "
+"memória do sistema em busca de erros (apenas em sistemas BIOS). O menu de "
+"\"troubleshooting\" também permite que você saia do menu de inicialização e "
+"inicialize normalmente a partir do disco rígido do sistema através da opção `"
+"Boot from local drive`."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:70
@@ -205,6 +273,12 @@ msgid ""
 "systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
 "bottom of the screen."
 msgstr ""
+"Cada entrada de menu na lista é um conjunto predefinido de opções de "
+"inicialização e essas opções podem ser personalizadas para alterar alguns "
+"aspectos do comportamento do instalador. Para editar o conjunto padrão de "
+"opções de inicialização, pressione kbd:[Tab] em sistemas BIOS ou kbd:[e] em "
+"sistemas UEFI. A chave a ser usada também é exibida na parte inferior da "
+"tela."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:75
@@ -214,6 +288,11 @@ msgid ""
 "configured on the line which starts with the `linux` (or `linux16` or "
 "`linuxefi`) keyword. Do not modify any other lines in the configuration."
 msgstr ""
+"A edição das opções de inicialização em [application]*GRUB2* (em sistemas "
+"UEFI) exibirá toda a configuração da entrada selecionada. As opções reais de "
+"inicialização são configuradas na linha que começa com a palavra-chave "
+"`linux` (ou `linux16` ou `linuxefi`). Não modifique nenhuma outra linha na "
+"configuração."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:77
@@ -221,6 +300,8 @@ msgid ""
 "On systems with BIOS firmware, only the actual boot options are displayed "
 "when you press kbd:[Tab]."
 msgstr ""
+"Em sistemas com firmware BIOS, apenas as opções de inicialização reais são "
+"exibidas quando você pressiona kbd:[Tab]."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:81
@@ -230,18 +311,22 @@ msgid ""
 "or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
 "options."
 msgstr ""
+"Ao editar o conjunto padrão de opções, você pode alterar as existentes, bem "
+"como adicionar outras. Quando terminar, pressione kbd:[Enter] no BIOS ou "
+"kbd:[Ctrl + X] no UEFI para inicializar o instalador usando suas opções "
+"personalizadas."
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:82
 #, no-wrap
 msgid "Editing boot options on a system with BIOS firmware"
-msgstr ""
+msgstr "Editando opções de inicialização em um sistema com firmware BIOS"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "The boot menu."
-msgstr ""
+msgstr "O menu de inicialização."
 
 #. type: Target for macro image
 #: pages/install/Booting_the_Installation.adoc:84
