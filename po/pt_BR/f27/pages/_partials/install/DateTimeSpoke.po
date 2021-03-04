@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
 "PO-Revision-Date: 2021-03-04 18:01+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f27pages_partialsinstalldatetimespoke/pt_BR/>\n"
@@ -24,7 +25,7 @@ msgstr ""
 #: pages/_partials/install/DateTimeSpoke.adoc:9
 #, no-wrap
 msgid "Date & Time"
-msgstr ""
+msgstr "Data & hora"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:8
@@ -36,18 +37,24 @@ msgid ""
 "change your date, time and location settings before you begin the "
 "installation."
 msgstr ""
+"A tela `Hora & data` permite que você defina as configurações relacionadas à "
+"data e hora para o seu sistema. Esta tela é configurada automaticamente com "
+"base nas configurações que você selecionou em xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-welcome[Tela de boas-vindas e seleção de idioma], "
+"mas você pode alterar suas configurações de data, hora e local antes de "
+"iniciar a instalação."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "Captura de tela da tela de Hora & data"
 
 #. type: Target for macro image
 #: pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:14
@@ -58,6 +65,12 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"Primeiro, selecione sua `Região` usando o menu suspenso no canto superior "
+"esquerdo da tela. Em seguida, selecione sua `Cidade`, ou a cidade mais "
+"próxima de sua localização no mesmo fuso horário. Selecionar um local "
+"específico ajuda o {PRODUCT} a garantir que seu horário seja sempre definido "
+"corretamente, incluindo mudanças automáticas de horário de verão, se "
+"aplicável."
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:16
@@ -66,6 +79,9 @@ msgid ""
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
 msgstr ""
+"Você também pode selecionar um fuso horário relativo ao Horário de Greenwich "
+"(GMT) sem definir sua localização para uma região específica. Para fazer "
+"isso, selecione `Etc` como sua região."
 
 #. type: delimited block =
 #: pages/_partials/install/DateTimeSpoke.adoc:21
@@ -92,24 +108,32 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"A chave chamada `Horário da Rede` no canto superior direito da tela pode ser "
+"usada para habilitar ou desabilitar a sincronização de hora da rede usando o "
+"Network Time Protocol (NTP). Ativar esta opção manterá a hora do sistema "
+"correta, desde que o sistema possa acessar a Internet. Por padrão, quatro "
+"_pools_ NTP são configurados; você pode adicionar outros e desativar ou "
+"remover os padrão clicando no botão de roda dentada ao lado do botão."
 
 #. type: Block title
 #: pages/_partials/install/DateTimeSpoke.adoc:26
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "A caixa de diálogo Adicionar e marcar servidores NTP para uso"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/DateTimeSpoke.adoc:28
 #, no-wrap
 msgid "A dialog window allowing you to add or remove NTP pools from your system configuration"
 msgstr ""
+"Uma janela de diálogo que lhe permite adicionar ou remover pools NTP da "
+"configuração do seu sistema"
 
 #. type: Target for macro image
 #: pages/_partials/install/DateTimeSpoke.adoc:28
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:31
@@ -118,6 +142,9 @@ msgid ""
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
 msgstr ""
+"Se você desativar a sincronização de horário da rede, os controles na parte "
+"inferior da tela ficarão ativos e você poderá definir a hora e a data atuais "
+"manualmente."
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:32
@@ -126,3 +153,6 @@ msgid ""
 "the top left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Depois de definir as configurações de data e hora, pressione o botão `Pronto`"
+" no canto superior esquerdo para retornar a xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-summary[Resumo da Instalação]."

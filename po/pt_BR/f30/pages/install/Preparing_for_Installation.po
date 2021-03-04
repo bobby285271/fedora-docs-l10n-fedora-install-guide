@@ -2,13 +2,13 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-27 21:07+0000\n"
-"PO-Revision-Date: 2020-12-14 22:35+0000\n"
+"PO-Revision-Date: 2021-03-04 18:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title =
 #: pages/install/Preparing_for_Installation.adoc:5
@@ -262,10 +262,9 @@ msgstr "Execute o [application]*Fedora Media Writer*:"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:66
-#, fuzzy, no-wrap
-#| msgid "$ [command]#sudo mediawriter#\n"
+#, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr "$ [command]#sudo mediawriter#\n"
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:69
@@ -573,7 +572,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:152
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr ""
+msgstr "Baixando imagens de inicialização e de instalação"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:155
@@ -586,6 +585,14 @@ msgid ""
 "`netinstall` media type, or a direct installation booting method such as "
 "PXE; kickstarts are not supported with live images."
 msgstr ""
+"O Projeto Fedora oferece diferentes edições feitas sob medida para alguns "
+"casos de uso específicos. Escolha a melhor edição do Fedora para você, ou "
+"você pode construir sua própria personalizando após a instalação, ou usando "
+"um arquivo kickstart conforme descrito em xref:advanced/"
+"Kickstart_Installations.adoc#sect-kickstart-file-create[Criando um arquivo "
+"Kickstart] . A instalação Kickstart requer o tipo de mídia `netinstall` ou "
+"um método de inicialização de instalação direta, como PXE; kickstarts não "
+"são suportados com imagens live."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:157
@@ -594,6 +601,9 @@ msgid ""
 "available media types in xref:Downloading_Fedora.adoc#chap-downloading-"
 "fedora[Downloading Fedora]."
 msgstr ""
+"Leia mais sobre Fedora Workstation, Fedora Cloud, Fedora Server e os tipos "
+"de mídia disponíveis em xref:Downloading_Fedora.adoc#chap-downloading-fedora["
+"Baixando o Fedora]."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:159
@@ -601,6 +611,9 @@ msgid ""
 "You can also choose a Fedora _Spin_ featuring favorite alternative desktops "
 "or tools for specialized tasks at link:++https://spins.fedoraproject.org++[]."
 msgstr ""
+"Você também pode escolher um Fedora _Spin_ apresentando desktops "
+"alternativos favoritos ou ferramentas para tarefas especializadas em "
+"link:++https://spins.fedoraproject.org++[]."
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:161
@@ -618,6 +631,13 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
+"Como erros de transmissão ou outros problemas podem corromper a imagem do "
+"Fedora que você baixou, é importante verificar a integridade do arquivo. "
+"Depois que as imagens são criadas, uma operação é realizada no arquivo que "
+"produz um valor chamado `soma de verificação`, ou \"checksum\", usando um "
+"algoritmo matemático complexo. A operação é suficientemente complexa para "
+"que *qualquer alteração* no arquivo original produza uma soma de verificação "
+"diferente."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:166
@@ -628,6 +648,11 @@ msgid ""
 "+https://getfedora.org/security/++[], and are [command]#gpg# signed to "
 "demonstrate their integrity."
 msgstr ""
+"Calculando a `soma de verificação` da imagem em seu próprio computador e "
+"comparando-o com a `soma de verificação` original, você pode verificar se a "
+"imagem não foi adulterada ou corrompida. Os valores de soma de verificação "
+"originais são fornecidos em link:++https://getfedora.org/security/++[], e "
+"são assinados com [command]#gpg# para demonstrar sua integridade."
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:168
@@ -643,16 +668,19 @@ msgid ""
 "org/get-fedora++[] and the corresponding checksum file from link:++https://"
 "getfedora.org/security/++[]"
 msgstr ""
+"Baixe a imagem do Fedora de sua escolha no link:++https://fedoraproject.org/"
+"get-fedora++[] e o arquivo de soma de verificação correspondente em "
+"link:++https://getfedora.org/security/++[]"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:173
 msgid "Open a [command]#powershell# session."
-msgstr ""
+msgstr "Abra uma sessão do [command]#powershell#."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:175
 msgid "Change to the directory containing the downloaded files."
-msgstr ""
+msgstr "Mude para o diretório que contém os arquivos baixados."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:180
@@ -687,7 +715,7 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:191
 msgid "Load the resources required to calculate the checksum."
-msgstr ""
+msgstr "Carregue os recursos necessários para calcular a soma de verificação."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:197
@@ -707,6 +735,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:200
 msgid "Calculate the downloaded image's checksum. This will take a while!"
 msgstr ""
+"Calcule a soma de verificação da imagem baixada. Isso vai demorar um pouco!"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:203
@@ -718,6 +747,7 @@ msgstr "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHa
 #: pages/install/Preparing_for_Installation.adoc:206
 msgid "Compare the calculated checksum to the expected checksum."
 msgstr ""
+"Compare a soma de verificação calculada com a soma de verificação esperada."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:216
@@ -743,7 +773,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:219
 #, no-wrap
 msgid "Verifying checksums on Linux and OSX systems"
-msgstr ""
+msgstr "Verificando somas de verificação em sistemas Linux e OSX"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:224
@@ -751,6 +781,8 @@ msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
 "files."
 msgstr ""
+"Abra uma janela de terminal e navegue até o diretório com os arquivos "
+"baixados."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:228
@@ -762,6 +794,7 @@ msgstr "$ [command]#cd ~/Downloads#\n"
 #: pages/install/Preparing_for_Installation.adoc:231
 msgid "Use the appropriate utility to verify the image checksum."
 msgstr ""
+"Use o utilitário apropriado para verificar a soma de verificação da imagem."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:233
@@ -803,11 +836,13 @@ msgid ""
 "On a system with [application]*GNOME*, or with the [package]*gnome-disk-"
 "utility* package installed, open `Disks` using the system menu."
 msgstr ""
+"Em um sistema com [application]*GNOME*, ou com o pacote [package]*gnome-disk-"
+"utility* instalado, abra `Discos` usando o menu do sistema."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:252
 msgid "Click your USB device in the left column."
-msgstr ""
+msgstr "Clique em seu dispositivo USB na coluna da esquerda."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:254
@@ -815,6 +850,8 @@ msgid ""
 "Click the menu icon in the upper right corner of the window, and choose the "
 "`Restore Disk Image` option."
 msgstr ""
+"Clique no ícone de menu no canto superior direito da janela e escolha a "
+"opção `Restaurar imagem de disco`."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:256
@@ -823,17 +860,20 @@ msgid ""
 "minutes, it will report the process is complete and your installation media "
 "will be ready to use."
 msgstr ""
+"Navegue até o arquivo de imagem e clique em `Iniciar restauração`. Após "
+"alguns minutos, ele relatará que o processo foi concluído e sua mídia de "
+"instalação estará pronta para uso."
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:257
 #, no-wrap
 msgid "Creating USB Media on the Linux command line"
-msgstr ""
+msgstr "Criando uma mídia USB na linha de comando do Linux"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:259
 msgid "Open a terminal window and insert the usb drive."
-msgstr ""
+msgstr "Abra uma janela de terminal e insira a unidade USB."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:261
@@ -841,6 +881,8 @@ msgid ""
 "Find the `device node` assigned to the drive. In the example below, the "
 "drive is given `sdd`."
 msgstr ""
+"Encontre o `nó de dispositivo` atribuído à unidade. No exemplo abaixo, a "
+"unidade recebe `sdd`."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:275
@@ -858,6 +900,19 @@ msgid ""
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
+"$ [command]#dmesg|tail#\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
+"SerialNumber=2\n"
+"[288954.686559] usb 2-1.8: Product: USB Storage\n"
+"[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
+"[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
+"[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
+"[288954.712809] usbcore: registered new interface driver usb-storage\n"
+"[288954.716682] usbcore: registered new interface driver uas\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
+"9228 PQ: 0 ANSI: 0\n"
+"[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
+"[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:278
@@ -877,6 +932,9 @@ msgid ""
 "`dd` command destroys all data on the target device. If you made a mistake, "
 "you could lose important data."
 msgstr ""
+"Preste muita atenção aos dispositivos de origem (`if=`) e de destino (`of=`)"
+". O comando `dd` destrói todos os dados no dispositivo de destino. Se você "
+"cometer um erro, poderá perder dados importantes."
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:290
@@ -892,6 +950,10 @@ msgid ""
 "approach may be necessary when installing {PRODUCT} on an older system which "
 "can not boot from USB."
 msgstr ""
+"Além de criar uma unidade flash USB inicializável, você também pode usar as "
+"imagens ISO fornecidas para criar mídia ótica inicializável (um CD ou DVD). "
+"Esta abordagem pode ser necessária ao instalar {PRODUCT} em um sistema mais "
+"antigo que não pode inicializar a partir de USB."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:297
@@ -900,6 +962,10 @@ msgid ""
 "image will vary depending on what disc burning software you use. This "
 "procedure only offers a general overview."
 msgstr ""
+"As etapas exatas que você precisa seguir para gravar um CD ou DVD "
+"inicializável a partir de uma imagem ISO variam dependendo do software de "
+"gravação de disco que você usa. Este procedimento oferece apenas uma visão "
+"geral."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:301
@@ -916,6 +982,12 @@ msgid ""
 "[application]*Brasero*, this option is `Burn image` in the main menu on the "
 "left side of the window."
 msgstr ""
+"Abra o software de gravação do seu sistema - por exemplo, "
+"[application]*Brasero* em sistemas {PRODUCT} com ambiente gráfico "
+"[application]*GNOME*, ou [application]*Nero* em sistemas Windows. No menu "
+"principal do software, encontre uma opção que permite gravar uma imagem ISO "
+"em um disco. Por exemplo, no [application]*Brasero*, esta opção é `Gravar "
+"imagem` no menu principal do lado esquerdo da janela."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:305
@@ -923,6 +995,9 @@ msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
+"Quando solicitado, selecione a imagem ISO do {PRODUCT} a ser gravada e o "
+"gravador de CD ou DVD com um disco vazio dentro (se você tiver mais de uma "
+"unidade)."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:306
