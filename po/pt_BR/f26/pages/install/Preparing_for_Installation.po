@@ -4,12 +4,13 @@
 # Weblate <noreply@weblate.org>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2020-12-14 22:35+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-03-04 18:01+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f26pagesinstallpreparing_for_installation/pt_BR/>\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:6
@@ -89,6 +90,7 @@ msgstr "Reinstalação manual"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:18
+#, fuzzy
 msgid ""
 "You can upgrade to the latest version of Fedora manually instead of relying "
 "on [application]*dnf system upgrade*. This involves booting the installer as "
@@ -99,6 +101,15 @@ msgid ""
 "Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-"
 "reinstall[Manual System Upgrade or Reinstallation]."
 msgstr ""
+"Você pode atualizar para a versão mais recente do Fedora manualmente, em vez "
+"de confiar no [application]*dnf system upgrade*. Isso envolve inicializar o "
+"instalador como se você estivesse executando uma instalação limpa, "
+"permitindo detectar o sistema Fedora existente e substituindo a partição "
+"raiz, preservando dados em outras partições e volumes. O mesmo processo "
+"também pode ser usado para reinstalar o sistema, se necessário. Para obter "
+"informações detalhadas, consulte xref:advanced/Upgrading_Your_Current_System."
+"adoc#sect-upgradeing-fedora-manual-uninstall[Atualização ou reinstalação "
+"manual do sistema]."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:22
@@ -325,7 +336,7 @@ msgstr "Para OSX:"
 #: pages/install/Preparing_for_Installation.adoc:119
 #, no-wrap
 msgid "$ shasum -a 256 -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ shasum -a 256 -c *CHECKSUM\n"
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:122
@@ -351,6 +362,7 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:132
+#, fuzzy
 msgid ""
 "[application]*Fedora Media Writer* has been improved and is now the default "
 "way to make bootable media. [application]*Fedora Media Writer* supports "
@@ -359,6 +371,13 @@ msgid ""
 "Writer is strongly encouraged, other USB media creation software can work as "
 "well."
 msgstr ""
+"O [application]*Fedora Media Writer* foi melhorado significativamente e é "
+"agora a maneira oficial, testada e suportada para fazer mídias "
+"inicializáveis. O [application]*Fedora Media Writer* suporta Linux, Mac e "
+"Windows. É uma maneira fácil de criar mídia USB inicializável para instalar "
+"o Fedora (ou outros sistemas operacionais). Usar o [application]*Fedora "
+"Media Writer* é fortemente recomendado, apesar de outro software de criação "
+"de mídia USB possa funcionar também."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:135
@@ -372,6 +391,7 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:137
+#, fuzzy
 msgid ""
 "Universal USB creation tools such as [application]*Unetbootin* are a "
 "historically popular way to create USB installers from ISOs intended for "
@@ -379,15 +399,27 @@ msgid ""
 "drive, extracting files from the image, and writing [application]*syslinux* "
 "bootloader to the device."
 msgstr ""
+"Historicamente, as ferramentas universais de criação de USB, como o "
+"[application]*Unetbootin*, são uma maneira popular de criar instaladores USB "
+"a partir de ISOs destinadas para mídia óptica. Elas normalmente criam um "
+"sistema de arquivos na unidade USB extraindo arquivos de uma imagem e "
+"gravando o carregador de inicialização [application]*syslinux* no "
+"dispositivo."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:139
+#, fuzzy
 msgid ""
 "These methods circumvent the boot-loader configuration built into Fedora "
 "images, which are pre-partitioned and designed to boot on UEFI systems with "
 "SecureBoot enabled as well as BIOS systems. They do not produce a consistent "
 "result with Fedora's images, especially for use with UEFI systems."
 msgstr ""
+"Estes métodos contornam a configuração do carregador de inicialização "
+"embutida nas imagens do Fedora, que são pré-particionadas e projetadas para "
+"inicializar em sistemas UEFI com SecureBoot habilitado, bem como em sistemas "
+"BIOS, e, portanto, não produzem resultados consistentes com imagens do "
+"Fedora, especialmente em sistemas UEFI."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:141
@@ -636,10 +668,13 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:241
+#, fuzzy
 msgid ""
 "Open the .dmg file and copy the mediawriter file into your applications "
 "folder."
 msgstr ""
+"Abra o arquivo `.dmg` e copie o arquivo `mediawriter` para a pasta de seus "
+"aplicativos."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:243

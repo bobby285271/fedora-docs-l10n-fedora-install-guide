@@ -2,17 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-04 18:01+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f26pagesinstallinstalling_using_anaconda/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Title ===
 #: pages/install/Installing_Using_Anaconda.adoc:6
@@ -39,20 +44,29 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:13
+#, fuzzy
 msgid ""
 "Use Kickstart to automate the installation as described in xref:../advanced/"
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]"
 msgstr ""
+"Use o Kickstart para automatizar a instalação conforme descrito em xref:../"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-installation["
+"Automatizando a instalação com o Kickstart]"
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:15
+#, fuzzy
 msgid ""
 "Perform the graphical installation remotely by connecting to the "
 "installation system from another computer with a graphical display using the "
 "_VNC_ (Virtual Network Computing) protocol - see xref:../advanced/"
 "VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]"
 msgstr ""
+"Execute a instalação gráfica remotamente conectando-se ao sistema de "
+"instalação de outro computador com um display gráfico usando o protocolo "
+"_VNC_ (Virtual Network Computing) - consulte xref:../advanced/"
+"VNC_Installations.adoc#chap-vnc-installation[Instalando usando VNC]"
 
 #. type: Title ====
 #: pages/install/Installing_Using_Anaconda.adoc:17
@@ -193,6 +207,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:71
+#, fuzzy
 msgid ""
 "In addition to displaying diagnostic information in [application]*tmux* "
 "windows, [application]*Anaconda* also generates several log files, which can "
@@ -203,6 +218,14 @@ msgid ""
 "troubleshooting-transferring-logs[Transferring Log Files from the "
 "Installation System]."
 msgstr ""
+"Além de exibir informações de diagnóstico em [application]*tmux* windows, "
+"[application]*Anaconda* também gera vários arquivos de log, que podem ser "
+"transferidos do sistema de instalação. Esses arquivos de log são descritos "
+"em xref:Troubleshooting.adoc#sect-troubleshooting-log-files[Arquivos de log "
+"gerados durante a instalação] e as instruções para transferi-los do sistema "
+"de instalação estão disponíveis em xref:Troubleshooting.adoc#sect-"
+"troubleshooting- transferring-logs[Transferindo Arquivos de Log do Sistema "
+"de Instalação]."
 
 #. type: Title =====
 #: pages/install/Installing_Using_Anaconda.adoc:73
@@ -220,6 +243,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:78
+#, fuzzy
 msgid ""
 "Additionally, you can use the [command]#autostep --autoscreenshot# command "
 "in a Kickstart file to capture and save each step of the installation "
@@ -227,6 +251,11 @@ msgid ""
 "kickstart-commands-autostep[autostep (optional) - Go Through Every Screen] "
 "for details."
 msgstr ""
+"Além disso, você pode usar o comando [command]#autostep --autoscreenshot# em "
+"um arquivo Kickstart para capturar e salvar cada etapa da instalação "
+"automaticamente. Consulte xref:../appendixes/Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-comandos-autostep[autostep (opcional) - Percorrer todas as "
+"telas] para obter detalhes."
 
 #. type: Title ====
 #: pages/install/Installing_Using_Anaconda.adoc:80
@@ -246,6 +275,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:85
+#, fuzzy
 msgid ""
 "There are two alternatives to text mode which can both be used even if the "
 "installation system does not have a graphical display. You can either "
@@ -256,6 +286,14 @@ msgid ""
 "advanced/Kickstart_Installations.adoc#chap-kickstart-"
 "installations[Automating the Installation with Kickstart])."
 msgstr ""
+"Existem duas alternativas para o modo de texto que podem ser usadas mesmo se "
+"o sistema de instalação não tiver um display gráfico. Você pode se conectar "
+"ao sistema de instalação usando VNC e realizar uma instalação gráfica "
+"interativa remotamente (consulte xref:../advanced/VNC_Installations.adoc"
+"#chap-vnc-installation[Instalando usando VNC]) ou pode criar um arquivo "
+"Kickstart para execute a instalação automaticamente (veja xref:./advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installation[Automatizando a "
+"instalação com o Kickstart])."
 
 #. type: Block title
 #: pages/install/Installing_Using_Anaconda.adoc:86
@@ -318,6 +356,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:101
+#, fuzzy
 msgid ""
 "To start a text mode installation, boot the installation with the "
 "[option]#inst.text# boot option used either at the boot command line in the "
@@ -325,6 +364,12 @@ msgid ""
 "Booting_the_Installation.adoc#chap-booting-the-installation[Booting the "
 "Installation] for information about booting and using boot options."
 msgstr ""
+"Para iniciar uma instalação em modo texto, inicialize a instalação com a "
+"[option]#inst.text# opção de inicialização usada na linha de comando de "
+"inicialização do menu de inicialização ou na configuração do servidor PXE. "
+"Veja xref:Booting_the_Installation.adoc#chap-booting-the-installation["
+"Iniciando a Instalação] para informações sobre como inicializar e usar as "
+"opções de boot."
 
 #. type: Title ====
 #: pages/install/Installing_Using_Anaconda.adoc:103
@@ -384,6 +429,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Installing_Using_Anaconda.adoc:116
+#, fuzzy
 msgid ""
 "Your current keyboard layout is displayed in the top right hand corner. Only "
 "one layout is configured by default; if you configure more than layout in "
@@ -391,3 +437,8 @@ msgid ""
 "installation-gui-keyboard-layout[Keyboard Layout]), you can switch between "
 "them by clicking the layout indicator."
 msgstr ""
+"O layout do teclado atual é exibido no canto superior direito. Apenas um "
+"layout é configurado por padrão; se você configurar mais do que layout na "
+"tela `Layout do Teclado` (xref:Connecting_Using_Anaconda.adoc#sect-"
+"installation-gui-keyboard-layout[Layout do teclado]), você pode alternar "
+"entre eles clicando no indicador de layout."
