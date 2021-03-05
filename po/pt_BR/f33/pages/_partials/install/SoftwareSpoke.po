@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-05 20:01+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallsoftwarespoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. type: Block title
 #: pages/_partials/install/SoftwareSpoke.adoc:5
 #: pages/_partials/install/SoftwareSpoke.adoc:20
 #, no-wrap
 msgid "Software Selection"
-msgstr ""
+msgstr "Seleção de programas"
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:8
@@ -29,6 +33,9 @@ msgid ""
 "and _Add-ons_. These options control which software packages will be "
 "installed on your system during the installation process."
 msgstr ""
+"A tela `Seleção de programas` permite que você escolha um _Ambiente base_ e "
+"_Complementos_. Essas opções controlam quais pacotes de software serão "
+"instalados em seu sistema durante o processo de instalação."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:10
@@ -38,6 +45,10 @@ msgid ""
 "configured and only after the installer has downloaded package metadata from "
 "the source."
 msgstr ""
+"Esta tela está disponível apenas se xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-source[Fonte de instalação] está configurada "
+"corretamente e somente após o instalador ter baixado os metadados do pacote "
+"da fonte."
 
 #. type: delimited block =
 #: pages/_partials/install/SoftwareSpoke.adoc:15
@@ -50,6 +61,13 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"Não é possível selecionar pacotes específicos durante uma instalação manual. "
+"Você só pode selecionar ambientes e complementos predefinidos. Se você "
+"precisa controlar exatamente quais pacotes são instalados, você deve usar um "
+"arquivo Kickstart e definir os pacotes na seção [command]#%packages#. Veja "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Automatizando a Instalação com o Kickstart] para informações sobre as "
+"instalações do Kickstart."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:19
@@ -61,18 +79,24 @@ msgid ""
 "example, the Fedora{nbsp}Cloud image. You can change this by configuring a "
 "different installation source containing different environments."
 msgstr ""
+"A disponibilidade de ambientes e complementos depende de sua fonte de "
+"instalação. Por padrão, a seleção depende da mídia de instalação usada para "
+"iniciar a instalação; A imagem de instalação do Fedora{nbsp}Server terá "
+"diferentes ambientes e complementos disponíveis para seleção do que, por "
+"exemplo, a imagem da Fedora{nbsp}Cloud. Você pode alterar isso configurando "
+"uma fonte de instalação diferente contendo ambientes diferentes."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
-msgstr ""
+msgstr "A tela Seleção de programas. No lado esquerdo"
 
 #. type: Target for macro image
 #: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/SoftwareSpoke.png"
-msgstr ""
+msgstr "anaconda/SourceSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:25
@@ -82,6 +106,11 @@ msgid ""
 "are available. Then, on the right side of the screen, select one or more add-"
 "ons which you want to install by marking the check boxes next to each add-on."
 msgstr ""
+"Para configurar sua seleção de programas, primeiro escolha um ambiente no "
+"lado esquerdo da tela. Apenas um ambiente pode ser escolhido, mesmo se "
+"houver mais disponíveis. Em seguida, no lado direito da tela, selecione um "
+"ou mais complementos que deseja instalar marcando as caixas de seleção ao "
+"lado de cada complemento."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:27
@@ -92,6 +121,11 @@ msgid ""
 "add-ons displayed below the separator are not specific to your chosen "
 "environment."
 msgstr ""
+"A lista de complementos é dividida em duas partes por uma linha horizontal. "
+"Os complementos acima desta linha são definidos como parte do ambiente "
+"escolhido; se você selecionar um ambiente diferente, os complementos "
+"disponíveis aqui serão alterados. Os complementos exibidos abaixo do "
+"separador não são específicos para o ambiente escolhido."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:29
@@ -104,6 +138,13 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection]."
 msgstr ""
+"Ambientes e complementos são definidos usando um arquivo `comps.xml` em sua "
+"fonte de instalação (por exemplo, no diretório`repodata/`no DVD de "
+"instalação do Fedora{nbsp}Server completo). Revise este arquivo para ver "
+"exatamente quais pacotes serão instalados como parte de um determinado "
+"ambiente ou complemento. Para obter mais informações sobre o arquivo `comps."
+"xml`, consulte xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-"
+"kickstart-packages[%packages (obrigatório) - Seleção de pacotes]."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:30
@@ -112,3 +153,7 @@ msgid ""
 "top left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Uma vez que você tenha finalizado a configuração da seleção de programas, "
+"clique em `Pronto` no canto superior esquerdo para retornar ao "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Resumo da Instalação]."
