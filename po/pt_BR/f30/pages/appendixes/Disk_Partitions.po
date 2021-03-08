@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-08 18:01+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f30pagesappendixesdisk_partitions/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Title =
 #: pages/appendixes/Disk_Partitions.adoc:6
 #, no-wrap
 msgid "An Introduction to Disk Partitions"
-msgstr ""
+msgstr "Uma introdução às partições de disco"
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:12
@@ -27,6 +32,9 @@ msgid ""
 "AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
 "apply."
 msgstr ""
+"Este apêndice não é necessariamente aplicável a arquiteturas diferentes de "
+"AMD64 e Intel{nbsp}64. No entanto, os conceitos gerais mencionados aqui "
+"podem ser aplicáveis."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:16
@@ -34,6 +42,9 @@ msgid ""
 "This section discusses basic disk concepts, disk repartitioning strategies, "
 "the partition naming scheme used by Linux systems, and related topics."
 msgstr ""
+"Esta seção discute conceitos básicos de disco, estratégias de "
+"reparticionamento de disco, o esquema de nomenclatura de partição usado por "
+"sistemas Linux e tópicos relacionados."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:18
@@ -48,7 +59,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:20
 #, no-wrap
 msgid "Hard Disk Basic Concepts"
-msgstr ""
+msgstr "Conceitos básicos de disco rígido"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:23
@@ -56,6 +67,8 @@ msgid ""
 "Hard disks perform a very simple function - they store data and reliably "
 "retrieve it on command."
 msgstr ""
+"Os discos rígidos executam uma função muito simples - eles armazenam dados e "
+"os recuperam de forma confiável sob comando."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:25
@@ -66,6 +79,11 @@ msgid ""
 "This appendix uses a set of simplified diagrams of a disk drive to help "
 "explain what is the process and theory behind partitions."
 msgstr ""
+"Ao discutir questões como particionamento de disco, é importante entender o "
+"hardware subjacente; entretanto, como a teoria é muito complicada e extensa, "
+"apenas os conceitos básicos serão explicados aqui. Este apêndice usa um "
+"conjunto de diagramas simplificados de uma unidade de disco para ajudar a "
+"explicar o que é o processo e a teoria por trás das partições."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:27
@@ -78,25 +96,25 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:29
 #, no-wrap
 msgid "An Unused Disk Drive"
-msgstr ""
+msgstr "Uma unidade de disco não usada"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "Image of an unused disk drive."
-msgstr ""
+msgstr "Imagem de uma unidade de disco não usada."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "partitions/unused-drive.png"
-msgstr ""
+msgstr "partitions/unused-drive.png"
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:34
 #, no-wrap
 msgid "File Systems"
-msgstr ""
+msgstr "Sistemas de arquivos"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:37
@@ -106,24 +124,28 @@ msgid ""
 "attributes[{blank}]\") writes information to the drive, creating order out "
 "of the empty space in an unformatted drive."
 msgstr ""
+"Para armazenar dados em uma unidade de disco, é necessário _formatar_ a "
+"unidade de disco primeiro. A formatação (normalmente conhecida como \"criar "
+"um _sistema de arquivos_pass:attributes[{blank}]\") escreve as informações "
+"na unidade, criando ordem no espaço vazio em uma unidade não formatada."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:39
 #, no-wrap
 msgid "Disk Drive with a File System"
-msgstr ""
+msgstr "Unidade de disco com um sistema de arquivos"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "Image of a formatted disk drive."
-msgstr ""
+msgstr "Imagem de uma unidade de disco formatada."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "partitions/formatted-drive.png"
-msgstr ""
+msgstr "partitions/formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:44
@@ -139,6 +161,9 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"Uma pequena porcentagem do espaço disponível da unidade é usada para "
+"armazenar dados relacionados ao sistema de arquivos e pode ser considerada "
+"uma sobrecarga."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:48
@@ -149,6 +174,12 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"Um sistema de arquivos divide o espaço restante em segmentos pequenos e de "
+"tamanho consistente. Para Linux, esses segmentos são conhecidos como "
+"_blocos_ footnote:[Os blocos realmente *têm* tamanhos consistentes, ao "
+"contrário de nossas ilustrações. Lembre-se também de que uma unidade de "
+"disco comum contém milhares de blocos. A imagem é simplificada para os fins "
+"desta discussão.]."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:50
@@ -168,19 +199,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:52
 #, no-wrap
 msgid "Disk Drive with a Different File System"
-msgstr ""
+msgstr "Unidade de disco com um sistema de arquivos diferente"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "Image of a disk drive with a different file system."
-msgstr ""
+msgstr "Imagem de uma unidade de disco com um sistema de arquivos diferente."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "partitions/other-formatted-drive.png"
-msgstr ""
+msgstr "partitions/other-formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:57
@@ -189,24 +220,28 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"Escrever um sistema de arquivos no disco é apenas a primeira etapa. O "
+"objetivo deste processo é realmente *armazenar* e *recuperar* dados. A "
+"figura abaixo mostra um disco de unidade depois que alguns dados foram "
+"escritos nele:"
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:59
 #, no-wrap
 msgid "Disk Drive with Data Written to It"
-msgstr ""
+msgstr "Unidade de disco com dados escritos"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "Image of a disk drive with data written to it."
-msgstr ""
+msgstr "Imagem de uma unidade de disco com dados escritos nela."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "partitions/used-formatted-drive.png"
-msgstr ""
+msgstr "partitions/used-formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:64
@@ -231,12 +266,17 @@ msgid ""
 "additional capacity drove a fundamental change in the way disk drives were "
 "used."
 msgstr ""
+"Como acontece com a maioria das tecnologias relacionadas a computadores, as "
+"unidades de disco mudaram com o tempo após sua introdução. Em particular, "
+"eles ficaram maiores. Não é maior em tamanho físico, mas maior em sua "
+"capacidade de armazenar informações. E essa capacidade adicional levou a uma "
+"mudança fundamental na maneira como as unidades de disco eram usadas."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:68
 #, no-wrap
 msgid "Partitions: Turning One Drive Into Many"
-msgstr ""
+msgstr "Partições: transformando uma unidade em muitas"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:71
@@ -245,6 +285,9 @@ msgid ""
 "as if it was a separate disk. This is done through the addition of a "
 "_partition table_."
 msgstr ""
+"As unidades de disco podem ser divididas em _partições_. Cada partição pode "
+"ser acessada como se fosse um disco separado. Isso é feito através da adição "
+"de uma _tabela de partição_."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:73
@@ -252,21 +295,23 @@ msgid ""
 "There are several reasons for allocating disk space into separate disk "
 "partitions, for example:"
 msgstr ""
+"Existem vários motivos para alocar espaço em disco em partições de disco "
+"separadas, por exemplo:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:75
 msgid "Logical separation of the operating system data from the user data"
-msgstr ""
+msgstr "Separação lógica dos dados do sistema operacional dos dados do usuário"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:77
 msgid "Ability to use different file systems"
-msgstr ""
+msgstr "Capacidade de usar diferentes sistemas de arquivos"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:79
 msgid "Ability to run multiple operating systems on one machine"
-msgstr ""
+msgstr "Capacidade de executar vários sistemas operacionais em uma máquina"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:81
@@ -292,24 +337,29 @@ msgid ""
 "any file system or user data. But for clarity, they are separate in our "
 "diagrams."
 msgstr ""
+"Embora os diagramas neste capítulo mostrem a tabela de partição separada da "
+"unidade de disco real, isso não é totalmente preciso. Na realidade, a tabela "
+"de partição é armazenada bem no início do disco, antes de qualquer sistema "
+"de arquivos ou dados do usuário. Mas, para maior clareza, eles estão "
+"separados em nossos diagramas."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:90
 #, no-wrap
 msgid "Disk Drive with Partition Table"
-msgstr ""
+msgstr "Unidade de disco com tabela de partição"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "Image of an unused disk drive with a partition table."
-msgstr ""
+msgstr "Imagem de uma unidade de disco não usada com uma tabela de partição."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "partitions/unused-partitioned-drive.png"
-msgstr ""
+msgstr "partitions/unused-partitioned-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:95
@@ -328,21 +378,23 @@ msgid ""
 "Each partition table entry contains several important characteristics of the "
 "partition:"
 msgstr ""
+"Cada entrada da tabela de partição contém várias características importantes "
+"da partição:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:99
 msgid "The points on the disk where the partition starts and ends"
-msgstr ""
+msgstr "Os pontos do disco onde a partição começa e termina"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:101
 msgid "Whether the partition is \"active\""
-msgstr ""
+msgstr "Se a partição está \"ativa\""
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:103
 msgid "The partition's type"
-msgstr ""
+msgstr "O tipo da partição"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:105
@@ -352,6 +404,10 @@ msgid ""
 "loaders. In other words, the operating system in the partition that is "
 "marked \"active\" is booted."
 msgstr ""
+"Os pontos inicial e final definem o tamanho e a localização da partição no "
+"disco. O sinalizador \"ativo\" é usado por carregadores de inicialização de "
+"alguns sistemas operacionais. Em outras palavras, o sistema operacional na "
+"partição marcada como \"ativa\" é inicializado."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:107
@@ -362,6 +418,11 @@ msgid ""
 "system, to indicate that the partition contains a bootable operating system, "
 "or some combination of the three."
 msgstr ""
+"O tipo é um número que identifica o uso antecipado da partição. Alguns "
+"sistemas operacionais usam o tipo de partição para denotar um tipo "
+"específico de sistema de arquivos, para sinalizar a partição como associada "
+"a um sistema operacional específico, para indicar que a partição contém um "
+"sistema operacional inicializável ou alguma combinação dos três."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:109
@@ -374,19 +435,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:111
 #, no-wrap
 msgid "Disk Drive With Single Partition"
-msgstr ""
+msgstr "Unidade de disco com partição única"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "Image of a disk drive with a single partition."
-msgstr ""
+msgstr "Imagem de uma unidade de disco com uma única partição."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "partitions/dos-single-partition.png"
-msgstr ""
+msgstr "partitions/dos-single-partition.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:116
@@ -396,12 +457,16 @@ msgid ""
 "table below shows a list of some of the commonly used partition types and "
 "hexadecimal numbers used to represent them."
 msgstr ""
+"A partição única neste exemplo é rotulada como `DOS`. Este rótulo mostra o *"
+"tipo de partição*, sendo `DOS` um dos mais comuns. A tabela abaixo mostra "
+"uma lista de alguns dos tipos de partição comumente usados e números "
+"hexadecimais usados para representá-los."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:118
 #, no-wrap
 msgid "Partition Types"
-msgstr ""
+msgstr "Tipos de partição"
 
 #. type: Table
 #: pages/appendixes/Disk_Partitions.adoc:143
@@ -429,12 +494,34 @@ msgid ""
 "|GNU HURD|63|DOS secondary|f2\n"
 "|Novell Netware 286|64|BBT|ff\n"
 msgstr ""
+"|Tipo de partição|Valor|Tipo de partição|Valor\n"
+"|Vazio|00|Novell Netware 386|65\n"
+"|DOS FAT de 12 bits|01|PIC/IX|75\n"
+"|XENIX raiz|02|MINIX antigo|80\n"
+"|XENIX usr|03|Linux/MINUX|81\n"
+"|DOS 16 bits <=32M|04|Linux swap|82\n"
+"|Estendida|05|Linux native|83\n"
+"|DOS 16 bits >=32|06|Estendida Linux|85\n"
+"|OS/2 HPFS|07|Amoeba|93\n"
+"|AIX|08|Amoeba BBT|94\n"
+"|AIX inicializável|09|BSD/386|a5\n"
+"|OS/2 gerenciador de inicialização|0a|OpenBSD|a6\n"
+"|Win95 FAT32|0b|NEXTSTEP|a7\n"
+"|Win95 FAT32 (LBA)|0c|BSDI fs|b7\n"
+"|Win95 FAT16 (LBA)|0e|BSDI swap|b8\n"
+"|Win95 estendida (LBA)|0f|Syrinx|c7\n"
+"|Venix 80286|40|CP/M|db\n"
+"|Novell|51|Acesso DOS|e1\n"
+"|Boot PReP|41|DOS R/O|e3\n"
+"|GNU HURD|63|DOS secundário|f2\n"
+"|Novell Netware 286|64|BBT|ff\n"
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:146
 #, no-wrap
 msgid "Partitions Within Partitions - An Overview of Extended Partitions"
 msgstr ""
+"Partições dentro de partições - uma visão geral das partições estendidas"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:149
@@ -443,6 +530,9 @@ msgid ""
 "_extended partitions_ to create up additional partitions. You do this by "
 "setting the type of a partition to \"Extended\"."
 msgstr ""
+"No caso de quatro partições serem insuficientes para suas necessidades, você "
+"pode usar _partições estendidas_ para criar partições adicionais. Você pode "
+"fazer isso definindo o tipo de partição para \"Estendida\"."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -460,19 +550,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:153
 #, no-wrap
 msgid "Disk Drive With Extended Partition"
-msgstr ""
+msgstr "Unidade de disco com partição estendida"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "Image of a disk drive with an extended partition."
-msgstr ""
+msgstr "Imagem de uma unidade de disco com uma partição estendida."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "partitions/extended-partitions.png"
-msgstr ""
+msgstr "partitions/extended-partitions.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:158
@@ -483,12 +573,17 @@ msgid ""
 "to the way in which partitions are accessed in Linux, no more than 12 "
 "logical partitions should be defined on a single disk drive."
 msgstr ""
+"Como esta figura indica, há uma diferença entre partições primárias e "
+"lógicas – pode haver apenas quatro partições primárias, mas não há um limite "
+"fixo para o número de partições lógicas que podem existir. No entanto, "
+"devido à maneira como as partições são acessadas no Linux, não mais do que "
+"12 partições lógicas devem ser definidas em uma única unidade de disco."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:160
 #, no-wrap
 msgid "GUID Partition Table (GPT)"
-msgstr ""
+msgstr "Tabela de Partição GUID (GPT)"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:163
@@ -503,12 +598,24 @@ msgid ""
 "primary partitions. This number could be extended by allocating more space "
 "to the partition table."
 msgstr ""
+"A Tabela de Partição GUID, ou GUID Partition Table (* GPT *), é um esquema "
+"de particionamento mais recente baseado no uso de identificadores globais "
+"exclusivos (*GUID*). *GPT* foi desenvolvido para lidar com as limitações da "
+"tabela de partição *MBR*, especialmente com o espaço de armazenamento máximo "
+"endereçável limitado de um disco. Ao contrário do *MBR*, que não consegue "
+"lidar com espaço de armazenamento maior que 2,2 terabytes, o *GPT* pode ser "
+"usado com discos rígidos maiores do que isso; o tamanho máximo do disco "
+"endereçável é 2,2 zetabytes. Além disso, *GPT* por padrão oferece suporte à "
+"criação de até 128 partições primárias. Esse número pode ser estendido com a "
+"alocação de mais espaço para a tabela de partição."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:165
 #, no-wrap
 msgid "*GPT* disks use logical block addressing (LBA) and the partition layout is as follows:\n"
 msgstr ""
+"Os discos *GPT* usam endereçamento de bloco lógico (LBA) e o layout da "
+"partição é o seguinte:\n"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:167
@@ -516,6 +623,9 @@ msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
 "0) of *GPT* is reserved for *MBR* data and it is called \"protective MBR\"."
 msgstr ""
+"Para preservar a compatibilidade reversa com discos MBR, o primeiro setor "
+"(*LBA* 0) de *GPT* é reservado para dados *MBR* e é chamado de \"MBR "
+"protetor\" (ou \"protective MBR\", em inglês)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -526,6 +636,11 @@ msgid ""
 "checksums of itself and the primary partition table. It also specifies the "
 "number of partition entries of the table."
 msgstr ""
+"O _cabeçalho primário do *GPT*_ começa no segundo bloco lógico (*LBA* 1) do "
+"dispositivo. O cabeçalho contém o GUID do disco, a localização da tabela de "
+"partição primária, a localização do cabeçalho GPT secundário e somas de "
+"verificação CRC32 de si mesmo e a tabela de partição primária. Ele também "
+"especifica o número de entradas de partição da tabela."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:171
@@ -534,6 +649,9 @@ msgid ""
 "with an entry size 128 bytes, its partition type GUID and unique partition "
 "GUID."
 msgstr ""
+"A _tabela primária do *GPT*_ inclui, por padrão, 128 entradas de partição, "
+"cada uma com um tamanho de entrada de 128 bytes, seu tipo de partição GUID e "
+"GUID de partição exclusivo."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:173
@@ -542,6 +660,9 @@ msgid ""
 "used mainly as a backup table for recovery in case the primary partition "
 "table is corrupted."
 msgstr ""
+"A _tabela secundária do *GPT*_ é idêntica à tabela primária. É usada "
+"principalmente como uma tabela de backup para recuperação, caso a tabela de "
+"partição primária esteja corrompida."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:175
@@ -553,6 +674,12 @@ msgid ""
 "itself and the secondary partition table, and the number of possible "
 "partition entries."
 msgstr ""
+"O _cabeçalho secundário do *GPT*_ está localizado no último setor lógico do "
+"disco e pode ser usado para recuperar informações do *GPT* caso o cabeçalho "
+"primário esteja corrompido. Ele contém o GUID do disco, a localização da "
+"tabela de partição secundária e o cabeçalho *GPT* primário, somas de "
+"verificação CRC32 de si mesmo e a tabela de partição secundária e o número "
+"de entradas de partição possíveis."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:180
@@ -562,12 +689,17 @@ msgid ""
 "includes disks initialized by [application]*Anaconda*. If the disk already "
 "contains a BIOS boot partition, it can be reused."
 msgstr ""
+"Deve haver uma partição de inicialização do BIOS para que o carregador de "
+"inicialização seja instalado com êxito em um disco que contém GPT (Tabela de "
+"Partição GUID). Isso inclui discos inicializados pelo [application]*Anaconda*"
+". Se o disco já contém uma partição de inicialização do BIOS, ele pode ser "
+"reutilizado."
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:184
 #, no-wrap
 msgid "Strategies for Disk Repartitioning"
-msgstr ""
+msgstr "Estratégias para reparticionamento de disco"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:187
