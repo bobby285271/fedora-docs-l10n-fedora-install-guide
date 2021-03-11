@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-03-08 18:01+0000\n"
+"PO-Revision-Date: 2021-03-11 16:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -707,21 +707,23 @@ msgid ""
 "There are several different ways that a disk can be repartitioned. This "
 "section discusses the following possible approaches:"
 msgstr ""
+"Existem várias maneiras diferentes de reparticionar um disco. Esta seção "
+"discute as seguintes abordagens possíveis:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:189
 msgid "Unpartitioned free space is available"
-msgstr ""
+msgstr "Espaço livre não particionado está disponível"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:191
 msgid "An unused partition is available"
-msgstr ""
+msgstr "Uma partição não utilizada está disponível"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:193
 msgid "Free space in an actively used partition is available"
-msgstr ""
+msgstr "O espaço livre em uma partição usada ativamente está disponível"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:195
@@ -731,6 +733,10 @@ msgid ""
 "disk repartitioning step-by-step. Such detailed information are beyond the "
 "scope of this document."
 msgstr ""
+"Observe que esta seção discute os conceitos mencionados acima apenas "
+"teoricamente e não inclui nenhum procedimento que mostre como executar o "
+"reparticionamento de disco passo a passo. Essas informações detalhadas estão "
+"além do escopo deste documento."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:200
@@ -739,12 +745,15 @@ msgid ""
 "of clarity and do not reflect the exact partition layout that you encounter "
 "when actually installing {PRODUCT}."
 msgstr ""
+"Tenha em mente que as ilustrações a seguir são simplificadas para fins de "
+"clareza e não refletem o layout de partição exato que você encontra ao "
+"instalar {PRODUCT}."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:204
 #, no-wrap
 msgid "Using Unpartitioned Free Space"
-msgstr ""
+msgstr "Usando espaço livre não particionado"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:207
@@ -759,19 +768,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:209
 #, no-wrap
 msgid "Disk Drive with Unpartitioned Free Space"
-msgstr ""
+msgstr "Unidade de disco com espaço livre não particionado"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "Image of a disk drive with unpartitioned free space"
-msgstr ""
+msgstr "Imagem de uma unidade de disco com espaço livre não particionado"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "partitions/unpart-space.png"
-msgstr ""
+msgstr "partitions/unpart-space.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:214
@@ -779,6 +788,8 @@ msgid ""
 "In the above example, `1` represents an undefined partition with unallocated "
 "space and `2` represents a defined partition with allocated space."
 msgstr ""
+"No exemplo acima, `1` representa uma partição indefinida com espaço não "
+"alocado e` 2` representa uma partição definida com espaço alocado."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:216
@@ -786,6 +797,8 @@ msgid ""
 "An unused hard disk also falls into this category. The only difference is "
 "that *all* the space is not part of any defined partition."
 msgstr ""
+"Um disco rígido não utilizado também se enquadra nesta categoria. A única "
+"diferença é que *todo* o espaço não faz parte de nenhuma partição definida."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:218
@@ -802,7 +815,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:220
 #, no-wrap
 msgid "Using Space from an Unused Partition"
-msgstr ""
+msgstr "Usando espaço de uma partição não usada"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:223
@@ -816,19 +829,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:225
 #, no-wrap
 msgid "Disk Drive with an Unused Partition"
-msgstr ""
+msgstr "Unidade de disco com uma partição não usada"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "Image of a disk drive with an unused partition"
-msgstr ""
+msgstr "Imagem de uma unidade de disco com uma partição não usada"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "partitions/unused-partition.png"
-msgstr ""
+msgstr "partitions/unused-partition.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:230
@@ -836,6 +849,8 @@ msgid ""
 "In the above example, `1` represents an unused partition and `2` represents "
 "reallocating an unused partition for Linux."
 msgstr ""
+"No exemplo acima, `1` representa uma partição não usada e `2` representa a "
+"realocação de uma partição não usada para Linux."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:232
@@ -845,12 +860,16 @@ msgid ""
 "partition(s) in its place. You can delete the unused partition and manually "
 "create new partitions during the installation process."
 msgstr ""
+"Nessa situação, você pode usar o espaço alocado para a partição não usada. "
+"Você deve primeiro deletar a partição e então criar a(s) partição(ões) Linux "
+"apropriada(s) em seu lugar. Você pode excluir a partição não usada e criar "
+"manualmente novas partições durante o processo de instalação."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:234
 #, no-wrap
 msgid "Using Free Space from an Active Partition"
-msgstr ""
+msgstr "Usando espaço livre de uma partição ativa"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:237
@@ -861,18 +880,25 @@ msgid ""
 "a computer with pre-installed software, the hard disk most likely has one "
 "massive partition holding the operating system and data."
 msgstr ""
+"Esta é a situação mais comum. Infelizmente, também é o mais difícil de "
+"manusear. O principal problema é que, mesmo se você tiver espaço livre "
+"suficiente, ele está atualmente alocado para uma partição que já está em "
+"uso. Se você comprou um computador com software pré-instalado, o disco "
+"rígido provavelmente tem uma partição enorme contendo o sistema operacional "
+"e os dados."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:239
 msgid ""
 "Aside from adding a new hard drive to your system, you have two choices:"
 msgstr ""
+"Além de adicionar um novo disco rígido ao sistema, você tem duas opções:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:240
 #, no-wrap
 msgid "*Destructive Repartitioning*"
-msgstr ""
+msgstr "*Reparticionamento destrutivo*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:241
@@ -884,6 +910,12 @@ msgid ""
 "backup software), and try to read data from the backup *before* deleting the "
 "partition."
 msgstr ""
+"Nesse caso, a única partição grande é excluída e várias outras menores são "
+"criadas. Todos os dados contidos na partição original são destruídos. Isso "
+"significa que é necessário fazer um backup completo. É altamente "
+"recomendável fazer dois backups, usar a verificação (se disponível em seu "
+"software de backup) e tentar ler os dados do backup *antes* de excluir a "
+"partição."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:246
@@ -895,6 +927,12 @@ msgid ""
 "check whether this applies to your system is *before* you destroy your "
 "original partition and its operating system installation."
 msgstr ""
+"Se um sistema operacional foi instalado nessa partição, ele deve ser "
+"reinstalado se você quiser usar esse sistema também. Esteja ciente de que "
+"alguns computadores vendidos com sistemas operacionais pré-instalados podem "
+"não incluir a mídia de instalação para reinstalar o sistema operacional "
+"original. Você deve verificar se isso se aplica ao seu sistema é *antes* de "
+"destruir a partição original e a instalação do sistema operacional."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:250
@@ -909,19 +947,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:252
 #, no-wrap
 msgid "Disk Drive Being Destructively Repartitioned"
-msgstr ""
+msgstr "Unidade de disco sendo repartida de forma destrutiva"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "Image of a disk drive being destructively repartitioned"
-msgstr ""
+msgstr "Imagem de uma unidade de disco sendo reparticionada de forma destrutiva"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "partitions/dstrct-reprt.png"
-msgstr ""
+msgstr "partitions/dstrct-reprt.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:257
@@ -929,18 +967,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:302
 #: pages/appendixes/Disk_Partitions.adoc:316
 msgid "In the above example, `1` represents before and `2` represents after."
-msgstr ""
+msgstr "No exemplo acima, `1` representa antes e `2` representa depois."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:262
 msgid "Any data previously present in the original partition is lost."
 msgstr ""
+"Todos os dados anteriormente presentes na partição original são perdidos."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:265
 #, no-wrap
 msgid "*Non-Destructive Repartitioning*"
-msgstr ""
+msgstr "*Reparticionamento não destrutivo*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:266
@@ -950,6 +989,10 @@ msgid ""
 "This method is usually reliable, but can be very time-consuming on large "
 "drives."
 msgstr ""
+"Com o reparticionamento não destrutivo, você executa um programa que reduz o "
+"tamanho de uma partição grande sem perder nenhum dos arquivos armazenados "
+"nessa partição. Esse método geralmente é confiável, mas pode consumir muito "
+"tempo em unidades grandes."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:268
@@ -957,34 +1000,36 @@ msgid ""
 "While the process of non-destructive repartitioning is rather "
 "straightforward, there are three steps involved:"
 msgstr ""
+"Embora o processo de reparticionamento não destrutivo seja bastante direto, "
+"há três etapas envolvidas:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:270
 msgid "Compress and backup existing data"
-msgstr ""
+msgstr "Compactar e fazer backup dos dados existentes"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:272
 msgid "Resize the existing partition"
-msgstr ""
+msgstr "Redimensionar a partição existente"
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:274
 #: pages/appendixes/Disk_Partitions.adoc:306
 #, no-wrap
 msgid "Create new partition(s)"
-msgstr ""
+msgstr "Criar nova(s) partição(ões)"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:276
 msgid "Each step is described further in more detail."
-msgstr ""
+msgstr "Cada etapa é descrita mais detalhadamente."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:278
 #, no-wrap
 msgid "Compress Existing Data"
-msgstr ""
+msgstr "Compactar dados existentes"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:281
@@ -994,24 +1039,27 @@ msgid ""
 "such that it maximizes the available free space at the \"end\" of the "
 "partition."
 msgstr ""
+"Como mostra a figura a seguir, a primeira etapa é compactar os dados em sua "
+"partição existente. O motivo para fazer isso é reorganizar os dados de modo "
+"que maximizem o espaço livre disponível no \"final\" da partição."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:283
 #, no-wrap
 msgid "Disk Drive Being Compressed"
-msgstr ""
+msgstr "Unidade de disco sendo compactada"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "Image of a disk drive being compressed"
-msgstr ""
+msgstr "Imagem de uma unidade de disco sendo compactada"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "partitions/compression.png"
-msgstr ""
+msgstr "partitions/compression.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:290
@@ -1022,12 +1070,17 @@ msgid ""
 "severely restricts the size of your new partition(s)), you may be forced to "
 "destructively repartition your disk."
 msgstr ""
+"Esta etapa é crucial. Sem ela, a localização dos dados pode impedir que a "
+"partição seja redimensionada para a extensão desejada. Observe também que, "
+"por um motivo ou outro, alguns dados não podem ser movidos. Se for este o "
+"caso (e isso restringe severamente o tamanho de sua(s) nova(s) partição(ões))"
+", você pode ser forçado a reparticionar seu disco de forma destrutiva."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:292
 #, no-wrap
 msgid "Resize the Existing Partition"
-msgstr ""
+msgstr "Redimensionar a partição existente"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:295
@@ -1043,19 +1096,19 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:297
 #, no-wrap
 msgid "Disk Drive with Partition Resized"
-msgstr ""
+msgstr "Unidade de disco com partição redimensionada"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "Image of a disk drive with a resized partition"
-msgstr ""
+msgstr "Imagem de uma unidade de disco com uma partição redimensionada"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "partitions/part-resize.png"
-msgstr ""
+msgstr "partitions/part-resize.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:304
@@ -1065,6 +1118,10 @@ msgid ""
 "case illustrated here, it would be best to delete the new DOS partition and "
 "create the appropriate Linux partition(s)."
 msgstr ""
+"É importante entender o que o software de redimensionamento que você usa faz "
+"com o espaço recém-liberado, para que você possa executar as etapas "
+"apropriadas. No caso ilustrado aqui, seria melhor excluir a nova partição "
+"DOS e criar a(s) partição(ões) Linux apropriada(s)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:309
@@ -1081,25 +1138,25 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:311
 #, no-wrap
 msgid "Disk Drive with Final Partition Configuration"
-msgstr ""
+msgstr "Unidade de disco com configuração de partição final"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "Image of a disk drive with final partition configuration"
-msgstr ""
+msgstr "Imagem de uma unidade de disco com configuração de partição final"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "partitions/nondestruct-fin.png"
-msgstr ""
+msgstr "partitions/nondestruct-fin.png"
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:318
 #, no-wrap
 msgid "Partition Naming Schemes and Mount Points"
-msgstr ""
+msgstr "Esquemas de nomenclatura de partição e pontos de montagem"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:321
@@ -1113,12 +1170,21 @@ msgid ""
 "This section describes the main principles of partition naming scheme and "
 "the way how partitions are accessed in {PRODUCT}."
 msgstr ""
+"Uma fonte comum de confusão para usuários não familiarizados com o Linux é a "
+"questão de como as partições são usadas e acessadas pelo sistema operacional "
+"Linux. No DOS/Windows, é relativamente simples: cada partição recebe uma "
+"\"letra de unidade\". Em seguida, use a letra da unidade correta para se "
+"referir aos arquivos e diretórios em sua partição correspondente. Isso é "
+"totalmente diferente de como o Linux lida com partições e, por falar nisso, "
+"com armazenamento em disco em geral. Esta seção descreve os princípios "
+"principais do esquema de nomenclatura de partição e a maneira como as "
+"partições são acessadas em {PRODUCT}."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:323
 #, no-wrap
 msgid "Partition Naming Scheme"
-msgstr ""
+msgstr "Esquema de nomenclatura de partição"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:326
@@ -1126,17 +1192,20 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
+"O Linux usa um esquema de nomenclatura baseado em arquivo, com nomes de "
+"arquivo na forma de `/dev/"
+"pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:328
 msgid "Device and partition names consist of the following:"
-msgstr ""
+msgstr "Os nomes do dispositivo e partição consistem no seguinte:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:329
 #, no-wrap
 msgid "`/dev/`"
-msgstr ""
+msgstr "`/dev/`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:330
@@ -1145,12 +1214,16 @@ msgid ""
 "partitions reside on hard disks, and hard disks are devices, the files "
 "representing all possible partitions reside in `/dev/`."
 msgstr ""
+"Este é o nome do diretório no qual residem todos os arquivos do dispositivo. "
+"Como as partições residem em discos rígidos, e discos rígidos são "
+"dispositivos, os arquivos que representam todas as partições possíveis "
+"residem em `/dev/`."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:331
 #, no-wrap
 msgid "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:332
@@ -1158,12 +1231,14 @@ msgid ""
 "The first two letters of the partition name indicate the type of device on "
 "which the partition resides, usually `sd`."
 msgstr ""
+"As primeiras duas letras do nome da partição indicam o tipo de dispositivo "
+"no qual a partição reside, geralmente `sd`."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:333
 #, no-wrap
 msgid "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:334
