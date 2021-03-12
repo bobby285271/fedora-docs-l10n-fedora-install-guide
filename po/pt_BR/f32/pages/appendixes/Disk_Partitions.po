@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-03-11 16:01+0000\n"
+"PO-Revision-Date: 2021-03-12 17:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -1330,12 +1330,15 @@ msgid ""
 "This letter indicates which device the partition is on. For example, `/dev/"
 "sda` for the first hard disk, `/dev/sdb` for the second, and so on."
 msgstr ""
+"Esta letra indica em qual dispositivo a partição está. Por exemplo, `/dev/"
+"sda` para o primeiro disco rígido, `/dev/sdb` para o segundo e assim por "
+"diante."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:335
 #, no-wrap
 msgid "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:336
@@ -1346,6 +1349,11 @@ msgid ""
 "the first hard disk, and `/dev/sdb6` is the second logical partition on the "
 "second hard disk."
 msgstr ""
+"O número final denota a partição. As primeiras quatro partições (primárias "
+"ou estendidas) são numeradas de `1` a `4`. As partições lógicas começam em "
+"`5`. Assim, por exemplo, `/dev/sda3` é a terceira partição primária ou "
+"estendida no primeiro disco rígido, e `/dev/sdb6` é a segunda partição "
+"lógica no segundo disco rígido."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:341
@@ -1356,12 +1364,17 @@ msgid ""
 "successfully access data on a partition dedicated to another operating "
 "system."
 msgstr ""
+"Mesmo que seu sistema possa identificar e referir-se a todos os tipos de "
+"partições de disco, ele pode não ser capaz de *ler* o sistema de arquivos e, "
+"portanto, acessar os dados armazenados em cada tipo de partição. No entanto, "
+"em muitos casos, é possível acessar com êxito os dados em uma partição "
+"dedicada a outro sistema operacional."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:345
 #, no-wrap
 msgid "Disk Partitions and Mount Points"
-msgstr ""
+msgstr "Partições de disco e pontos de montagem"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:348
@@ -1372,6 +1385,12 @@ msgid ""
 "makes its storage available starting at the specified directory (known as a "
 "_mount point_)."
 msgstr ""
+"Cada partição é usada para fazer parte do armazenamento necessário para "
+"suportar um único conjunto de arquivos e diretórios. Isso é feito associando "
+"uma partição a um diretório por meio de um processo conhecido como "
+"_montagem_ ou, em inglês, _mounting_. A montagem de uma partição torna seu "
+"armazenamento disponível a partir do diretório especificado (conhecido como "
+"_ponto de montagem_)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:350
@@ -1381,6 +1400,10 @@ msgid ""
 "sda5`. So the file `/usr/share/doc/FAQ/txt/Linux-FAQ` would be stored on `/"
 "dev/sda5`, while the file `/etc/gdm/custom.conf` would not."
 msgstr ""
+"Por exemplo, se a partição `/dev/sda5` está montada em `/usr/`, isso "
+"significa que todos os arquivos e diretórios em `/usr/` residem fisicamente "
+"em `/dev/sda5`. Portanto, o arquivo `/usr/share/doc/FAQ/txt/Linux-FAQ` seria "
+"armazenado em `/dev/sda5`, enquanto o arquivo `/etc/gdm/custom.conf` não."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:352
@@ -1391,12 +1414,17 @@ msgid ""
 "`/usr/local/man/whatis` would then reside on `/dev/sda7` rather than `/dev/"
 "sda5`."
 msgstr ""
+"Continuando o exemplo, também é possível que um ou mais diretórios abaixo de "
+"`/usr/` sejam pontos de montagem para outras partições. Por exemplo, uma "
+"partição (digamos, `/dev/sda7`) poderia ser montada em `/usr/local/`, o que "
+"significa que `/usr/local/man/whatis` residiria então em `/dev/sda7` do que "
+"`/dev/sda5`."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:354
 #, no-wrap
 msgid "How Many Partitions?"
-msgstr ""
+msgstr "Quantas partições?"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:357
@@ -1406,6 +1434,10 @@ msgid ""
 "by your new operating system. However, there is no one right answer to this "
 "question. It depends on your needs and requirements."
 msgstr ""
+"Neste ponto do processo de preparação para instalar o {PRODUCT}, você deve "
+"levar em consideração o número e o tamanho das partições a serem usadas por "
+"seu novo sistema operacional. No entanto, não há uma resposta certa para "
+"essa pergunta. Depende de suas necessidades e requisitos."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:359
@@ -1417,6 +1449,13 @@ msgid ""
 "partition for AMD and Intel systems with a GUID Partition Table (GPT) label "
 "on the system disk, or a `PReP Boot` partition on IBM Power Systems servers."
 msgstr ""
+"A menos que você tenha uma razão para fazer o contrário, você deve *pelo "
+"menos* criar uma partição `/boot` e uma partição `/ ` (raiz). Dependendo das "
+"especificações de hardware do seu sistema, partições adicionais podem ser "
+"necessárias, como `/boot/efi` para sistemas AMD e Intel de 64 bits com "
+"firmware UEFI, uma partição `biosboot` para sistemas AMD e Intel com uma "
+"Tabela de Partição GUID (GPT ) etiqueta no disco do sistema ou uma partição `"
+"PReP Boot` nos servidores IBM Power Systems."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:360
@@ -1425,3 +1464,6 @@ msgid ""
 "partitioning-recommended[Recommended Partitioning Scheme] for more "
 "information about the recommended partitioning scheme."
 msgstr ""
+"Veja xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-recommended[Esquema de particionamento recomendado] para "
+"mais informações sobre o esquema de particionamento recomendado."
