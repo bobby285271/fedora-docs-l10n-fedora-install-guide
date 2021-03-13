@@ -2,15 +2,14 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2020-12-05 01:36+0000\n"
-"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
-"roberto97@gmail.com>\n"
+"PO-Revision-Date: 2021-03-13 20:01+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/f30pagesadvancedboot_options/"
 "pt_BR/>\n"
@@ -19,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:6
 #, no-wrap
 msgid "Boot Options"
-msgstr "Opções de Inicialização"
+msgstr "Opções de inicialização"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:9
@@ -40,6 +39,16 @@ msgid ""
 "advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up "
 "an Installation Server])."
 msgstr ""
+"O instalador do [application]*Anaconda* inclui uma gama de opções de "
+"inicialização para administradores, que modificam o comportamento padrão do "
+"programa de instalação habilitando ou desabilitando certas funções. Para "
+"usar uma ou mais opções de inicialização, você deve inicializar a partir da "
+"mídia de instalação e anexar essas opções no menu de inicialização (consulte "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[O menu de "
+"inicialização]) ou deve adicioná-los em seu arquivo de configuração do "
+"servidor PXE se você estiver inicializando de uma rede (consulte xref:"
+"advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Configurando "
+"um servidor de instalação])."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:11
@@ -47,11 +56,13 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Você pode usar várias opções ao mesmo tempo; nesse caso, separe-as por um "
+"único espaço."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:13
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "Existem dois tipos básicos de opções descritos neste capítulo:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:15
@@ -63,6 +74,12 @@ msgid ""
 "attributes[{blank}]_password_pass:attributes[{blank}]#. On its own, without "
 "a password specified, the option is invalid."
 msgstr ""
+"As opções apresentadas terminando com um sinal de \"igual\" (`=`) exigem que "
+"um valor seja especificado – eles não podem ser usados por conta própria. "
+"Por exemplo, a opção [option]#inst.vncpassword=# também deve conter um valor "
+"(neste caso, uma senha). A forma correta é, portanto, [option]#inst."
+"vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. Por "
+"si só, sem uma senha especificada, a opção é inválida."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:17
@@ -74,6 +91,12 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
+"As opções apresentadas sem o sinal \"pass"
+":attributes[{blank}]`=`pass:attributes[{blank}]\" não aceitam quaisquer "
+"valores ou parâmetros. Por exemplo, a opção [option]#rd.live.check# força o "
+"[application]*Anaconda* a verificar a mídia de instalação antes de iniciar a "
+"instalação; se esta opção estiver presente, a verificação será realizada e, "
+"se não estiver presente, a verificação será ignorada."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:19
@@ -82,6 +105,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Além das opções descritas neste capítulo, o prompt de inicialização também "
+"aceita as opções de kernel [application]*dracut*. Uma lista dessas opções "
+"está disponível na página man `dracut.cmdline(7)`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:24
@@ -92,12 +118,17 @@ msgid ""
 "resolution=1024x768#. However, it is expected that the `inst.` prefix will "
 "be mandatory in future releases."
 msgstr ""
+"As opções de inicialização específicas para o programa de instalação sempre "
+"começam com `inst` neste guia. Atualmente, este prefixo é opcional – por "
+"exemplo, [option]#resolution=1024x768# funcionará exatamente da mesma forma "
+"que [option]#inst.resolution=1024x768#. No entanto, espera-se que o prefixo "
+"`inst` seja obrigatório em versões futuras."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:28
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Configurando o sistema de instalação no menu de inicialização"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:31
@@ -113,29 +144,41 @@ msgid ""
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"A maneira exata de especificar opções de inicialização personalizadas difere "
+"com base na arquitetura do seu sistema, firmware e o método que você usa "
+"para inicializar a instalação. Se estiver inicializando a partir da mídia "
+"local, você pode especificar opções no menu de inicialização, antes de "
+"iniciar a instalação; se estiver inicializando de uma rede usando um "
+"servidor PXE, você deve adicionar opções de inicialização ao arquivo de "
+"configuração do carregador de inicialização antes de inicializar o sistema "
+"de instalação. Para obter instruções específicas, consulte xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[O menu de inicialização] se "
+"você estiver inicializando a partir da mídia local e xref:advanced/"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Configurando um "
+"servidor de instalação] se estiver inicializando a partir de um servidor."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:33
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opções de inicialização disponíveis"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:36
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "As seguintes opções estão disponíveis no {PRODUCT}:"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:38
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Especificando a fonte de instalação"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:40
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:41
@@ -144,17 +187,19 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Especifica a fonte de instalação – ou seja, um local onde o programa de "
+"instalação pode encontrar as imagens e pacotes de que necessita. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:45
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[option]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:48
 msgid "The source must be either:"
-msgstr ""
+msgstr "A fonte deve ser:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:50
@@ -163,11 +208,14 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid `."
 "treeinfo` file"
 msgstr ""
+"uma árvore instalável, que é uma estrutura de diretório contendo as imagens, "
+"pacotes e repodados do programa de instalação, bem como um arquivo `."
+"treeinfo` válido"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:52
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "um DVD (um disco físico presente na unidade de DVD do sistema)"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:54
@@ -175,6 +223,8 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"uma imagem ISO do DVD de instalação completo do {PRODUCT}, colocado em um "
+"disco rígido ou um local de rede acessível a partir do sistema de instalação"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:56
@@ -182,12 +232,14 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
 msgstr ""
+"Esta opção permite a configuração de diferentes métodos de instalação usando "
+"diferentes formatos. A sintaxe é descrita na tabela a seguir."
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:58
 #, no-wrap
 msgid "Installation Sources"
-msgstr "Fontes de Instalação"
+msgstr "Fontes de instalação"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:71
@@ -203,27 +255,55 @@ msgid ""
 "|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by default. To use a different version, add [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to _options_.]\n"
 msgstr ""
+"|Fonte de instalação|Formato da opção\n"
+"|Qualquer unidade de CD/DVD|[option]#inst.repo=cdrom#\n"
+"|Unidade de CD/DVD específica|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_dispositivo_:attributes[{blank}]#\n"
+"|Disco rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
+"ss:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:a"
+"ttributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
+"\n"
+"|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass"
+":attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}"
+"]#\n"
+"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_usuário_:pass"
+":attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blank}]_"
+"host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attribute"
+"s[{blank}]#\n"
+"|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:"
+"attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attribut"
+"es[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por "
+"padrão. Para usar uma versão diferente, adicione "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# Às "
+"_opções_.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:74
 msgid "Disk device names may be specified using the following formats:"
 msgstr ""
+"Os nomes dos dispositivos de disco podem ser especificados usando os "
+"seguintes formatos:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:76
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "Nome do dispositivo de kernel, por exemplo, `/dev/sda1` ou `sdb2`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:78
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
 msgstr ""
+"Rótulo do sistema de arquivos, por exemplo, `LABEL=Flash` ou `LABEL=RHEL7`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:80
 msgid ""
 "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
+"UUID do sistema de arquivos, por exemplo, `UUID=8176c7bf-04ff-"
+"403a-a832-9557f94e61db`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:82
@@ -233,12 +313,16 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
+"Os caracteres não alfanuméricos devem ser representados como `\\xpass"
+":attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
+"representação hexadecimal do caractere. Por exemplo, `\\x20` é um espaço em "
+"branco (\" \")."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:83
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:84
@@ -260,12 +344,17 @@ msgid ""
 "x86_64#). If you modify the default label of the file system containing the "
 "runtime image, you must also edit this option to match the new label."
 msgstr ""
+"Por padrão, esta opção de inicialização é usada na mídia de instalação e "
+"definida para um rótulo específico (por exemplo, [option]#inst."
+"stage2=hd:LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão "
+"do sistema de arquivos que contém a imagem do tempo de execução, também "
+"deverá editar essa opção para corresponder ao novo rótulo."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:92
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:93
@@ -275,12 +364,16 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, a imagem do estágio 2 será buscada nos "
+"locais HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst."
+"stage2=# sequencialmente na ordem em que são especificadas, até que a imagem "
+"seja buscada com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:94
 #, no-wrap
 msgid "[option]#inst.dd=#"
-msgstr ""
+msgstr "[option]#inst.dd=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:95
@@ -297,7 +390,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:99
 #, no-wrap
 msgid "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
-msgstr ""
+msgstr "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:102
@@ -306,6 +399,9 @@ msgid ""
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
 msgstr ""
+"Usar esta opção sem nenhum parâmetro (apenas como [option]#inst.dd#) "
+"solicitará que o programa de instalação solicite um disco de atualização de "
+"driver com um menu interativo."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:107
@@ -315,12 +411,16 @@ msgid ""
 "installation. Updating drivers which are not essential during the "
 "installation should always be performed after the system is installed."
 msgstr ""
+"Você nunca deve tentar realizar uma atualização de driver durante a "
+"instalação, a menos que a falta de um driver defeituoso o esteja impedindo "
+"de concluir a instalação. A atualização de drivers que não são essenciais "
+"durante a instalação deve sempre ser realizada após a instalação do sistema."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:110
 #, no-wrap
 msgid "[option]#inst.askmethod#"
-msgstr ""
+msgstr "[option]#inst.askmethod#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:111
@@ -328,6 +428,8 @@ msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
 msgstr ""
+"Evita que o instalador tente configurar automaticamente uma fonte de "
+"instalação."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:113
@@ -341,6 +443,14 @@ msgid ""
 "`Installation Source` screen immediately without having to wait for the "
 "initial configuration to finish."
 msgstr ""
+"Normalmente, quando você entra pela primeira vez na tela `Resumo da "
+"Instalação`, o instalador tentará configurar uma fonte de instalação com "
+"base no tipo de mídia que você usou para inicializar. O DVD completo do "
+"{PRODUCT} Server configurará a fonte como mídia local, a imagem ISO netinst "
+"configurará o espelho de rede mais próximo, etc. Este processo leva tempo; "
+"portanto, se você planeja usar uma fonte diferente da padrão, esta opção "
+"permitirá que você entre na tela `Fonte de instalação` imediatamente, sem "
+"ter que esperar que a configuração inicial termine."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:115
@@ -351,18 +461,23 @@ msgid ""
 "the [option]#inst.repo=# option described above to configure a specific "
 "source directly in the boot menu."
 msgstr ""
+"Usar esta opção deixará a configuração da fonte de instalação em um estado "
+"de erro – você deve especificar manualmente uma fonte na tela `Fonte de "
+"instalação` para continuar com a instalação. Alternativamente, você pode "
+"usar a opção [option]#inst.repo=# descrita acima para configurar uma fonte "
+"específica diretamente no menu de inicialização."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:117
 #, no-wrap
 msgid "Kickstart Boot Options"
-msgstr ""
+msgstr "Opções de inicialização do kickstart"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:119
 #, no-wrap
 msgid "[option]#inst.ks=#"
-msgstr ""
+msgstr "[option]#inst.ks=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:120
@@ -381,12 +496,18 @@ msgid ""
 "this option without specifying a device, the installation program will use "
 "the following:"
 msgstr ""
+"Se você especificar apenas um dispositivo e não um caminho, o programa de "
+"instalação irá procurar o arquivo Kickstart em `/ks.cfg` no dispositivo "
+"especificado. Se você usar esta opção sem especificar um dispositivo, o "
+"programa de instalação usará o seguinte:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:126
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 msgstr ""
+"[option]#inst.ks=nfs:pass:attributes[{blank}]_next-"
+"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:129
@@ -396,12 +517,17 @@ msgid ""
 "option, or `/kickstart/`. If the given file name ends with the `/` "
 "character, `pass:attributes[{blank}]_ip_-kickstart` is appended. For example:"
 msgstr ""
+"No exemplo acima, _next-server_ é a opção `next-server` do DHCP ou o "
+"endereço IP do próprio servidor DHCP, e _filename_ é a opção`filename` do "
+"DHCP, ou `/kickstart/`. Se o nome do arquivo fornecido terminar com o "
+"caractere `/`, `pass:attributes[{blank}]_ip_-kickstart` é anexado. Por "
+"exemplo:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:131
 #, no-wrap
 msgid "Default Kickstart File Location"
-msgstr ""
+msgstr "Localização padrão do arquivo Kickstart"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:137
@@ -410,6 +536,10 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
+"|Endereço do servidor DHCP|Endereço do cliente|Localização do arquivo "
+"Kickstart\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
+"kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:139

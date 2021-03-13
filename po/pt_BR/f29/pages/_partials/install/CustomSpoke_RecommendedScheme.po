@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-03-12 17:01+0000\n"
+"PO-Revision-Date: 2021-03-13 20:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -142,6 +142,13 @@ msgid ""
 "files. During the installation, a separate `/home` partition will be created "
 "if there are 50 GB or more free space for your {PRODUCT} installation."
 msgstr ""
+"Para armazenar dados do usuário separadamente dos dados do sistema, crie um "
+"ponto de montagem dedicado para o diretório `/home`. Essa partição deve ser "
+"dimensionada com base na quantidade de dados que serão armazenados "
+"localmente, no número de usuários e assim por diante. Isso permitirá que "
+"você atualize ou reinstale o {PRODUCT} sem apagar os arquivos de dados do "
+"usuário. Durante a instalação, uma partição `/home` separada será criada se "
+"houver 50 GB ou mais de espaço livre para a instalação do {PRODUCT}."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
@@ -151,12 +158,16 @@ msgid ""
 "it, as it will likely hold the most data (user settings, images, videos, "
 "etc)."
 msgstr ""
+"Ao usar o {PRODUCT} como uma estação de trabalho para uso normal com um "
+"ambiente gráfico, este ponto de montagem deve ter mais espaço em disco "
+"atribuído a ele, pois provavelmente conterá a maioria dos dados ("
+"configurações do usuário, imagens, vídeos, etc)."
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
-msgstr ""
+msgstr "swap - baseado em parâmetros do seu sistema"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
@@ -170,6 +181,15 @@ msgid ""
 "system memory workload. Application providers and developers should be able "
 "to provide some guidance."
 msgstr ""
+"As partições de troca suportam memória virtual; os dados são escritos nelas "
+"quando não há RAM suficiente para armazenar os dados que o sistema está "
+"processando. O tamanho desta partição é uma função da carga de trabalho da "
+"memória do sistema, não da memória total do sistema e, portanto, não é igual "
+"ao tamanho total da memória do sistema. Portanto, é importante analisar "
+"quais aplicativos um sistema estará executando e a carga que esses "
+"aplicativos servirão para determinar a carga de trabalho da memória do "
+"sistema. Os provedores e desenvolvedores de aplicativos devem ser capazes de "
+"fornecer alguma orientação."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
@@ -181,6 +201,12 @@ msgid ""
 "partition and other additional information can be found in the `mkswap(8)` "
 "man page."
 msgstr ""
+"Quando o sistema fica sem espaço swap, o kernel encerra os processos à "
+"medida que a memória RAM do sistema se esgota. Configurar muito espaço swap "
+"resulta na alocação de dispositivos de armazenamento, mas ociosos e em um "
+"uso inadequado dos recursos. Muito espaço swap também pode ocultar "
+"vazamentos de memória. O tamanho máximo para uma partição swap e outras "
+"informações adicionais podem ser encontrados na página do manual `mkswap(8)`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:40
@@ -196,12 +222,23 @@ msgid ""
 "than 10% of the system's storage space, you must edit the partitioning "
 "layout manually."
 msgstr ""
+"A tabela abaixo fornece o tamanho recomendado de uma partição swap "
+"dependendo da quantidade de RAM em seu sistema e se você deseja memória "
+"suficiente para seu sistema hibernar. Se você permitir que o programa de "
+"instalação particione seu sistema automaticamente, o tamanho da partição "
+"swap será estabelecido usando estas diretrizes. A configuração do "
+"particionamento automático pressupõe que a hibernação não está em uso e que "
+"o tamanho máximo da partição de troca é limitado a 10% do tamanho total do "
+"disco rígido. Se você deseja configurar espaço swap suficiente para permitir "
+"a hibernação, ou se deseja definir o tamanho da partição swap para mais de "
+"10% do espaço de armazenamento do sistema, você deve editar o layout de "
+"particionamento manualmente."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:41
 #, no-wrap
 msgid "Recommended System Swap Space"
-msgstr ""
+msgstr "Espaço swap de sistema recomendado"
 
 #. type: Table
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:50
@@ -213,6 +250,12 @@ msgid ""
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
+"|Quantidade de RAM no sistema|Espaço swap recomendado|Espaço swap "
+"recomendado se pretende usar hibernação\n"
+"|menos de 2 GB|2 vezes a quantidade da RAM|3 vezes a quantidade da RAM\n"
+"|2 GB - 8 GB|Igual à quantidade da RAM|2 vezes a quantidade da RAM\n"
+"|8 GB - 64 GB|0,5 vezes a quantidade da RAM|1,5 vezes a quantidade da RAM\n"
+"|mais que 64 GB|dependendo da carga de uso|hibernação não recomendada\n"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:53
@@ -222,6 +265,11 @@ msgid ""
 "to chosen swap space and hibernation support. If your system resources allow "
 "for it, increasing the swap space may lead to better performance."
 msgstr ""
+"Na fronteira entre cada intervalo listado acima (por exemplo, um sistema com "
+"2 GB, 8 GB ou 64 GB de RAM do sistema), o critério pode ser exercido em "
+"relação ao espaço swap escolhido e suporte de hibernação. Se os recursos do "
+"seu sistema permitirem, aumentar o espaço swap pode levar a um melhor "
+"desempenho."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:55
@@ -230,12 +278,15 @@ msgid ""
 "systems with fast drives, controllers and interfaces - also improves swap "
 "space performance."
 msgstr ""
+"Distribuir espaço swap em vários dispositivos de armazenamento – "
+"especialmente em sistemas com unidades rápidas, controladores e interfaces – "
+"também melhora o desempenho do espaço swap."
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:56
 #, no-wrap
 msgid "BIOS Boot (1 MB) or EFI System Partition (200 MB)"
-msgstr ""
+msgstr "Inicialização BIOS (1 MB) ou Partição de Sistema EFI (200 MB)"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
@@ -245,12 +296,17 @@ msgid ""
 "In order to determine which of these methods to use, the installation "
 "program considers the following variations:"
 msgstr ""
+"O carregador de inicialização [application]*GRUB2* pode ser instalado no "
+"_Master Boot Record_ (MBR) ou na _Tabela de Partição GUID_ (GPT) do "
+"dispositivo de inicialização. Para determinar qual desses métodos usar, o "
+"programa de instalação considera as seguintes variações:"
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:58
 #, no-wrap
 msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
 msgstr ""
+"Sistemas com firmware BIOS e sistemas UEFI em modo de compatibilidade BIOS:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:59
@@ -259,16 +315,19 @@ msgid ""
 "the disk is not formatted, or you have erased all existing partitions from "
 "the disk, the installer will choose the following:"
 msgstr ""
+"Se o disco já estiver formatado, o esquema de particionamento será mantido. "
+"Se o disco não estiver formatado ou se você apagou todas as partições "
+"existentes do disco, o instalador escolherá o seguinte:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:61
 msgid "MBR if the size of the disk is less than 2 TB (terabytes)"
-msgstr ""
+msgstr "MBR se o tamanho do disco for inferior a 2 TB (terabytes)"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
 msgid "GPT if the size of the disk is more than 2 TB"
-msgstr ""
+msgstr "GPT se o tamanho do disco for maior que 2 TB"
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
@@ -278,6 +337,11 @@ msgid ""
 "Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
 "opposite is not possible - you can not use MBR on disks larger than 2 TB."
 msgstr ""
+"Você pode forçar o instalador a usar GPT em discos menores que 2 TB usando a "
+"opção de inicialização [option]#inst.gpt# conforme descrito em xref:advanced/"
+"Boot_Options.adoc#chap-anaconda-boot-options[Opções de inicialização]. No "
+"entanto, o oposto não é possível – você não pode usar MBR em discos maiores "
+"que 2 TB."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:72
@@ -286,12 +350,16 @@ msgid ""
 "a system with BIOS firmware if the disk containing the boot loader uses GPT. "
 "If the disk uses a MBR, no special partition is necessary on a BIOS system."
 msgstr ""
+"Você precisa criar uma partição _Inicialização BIOS_ com um tamanho de 1 MB "
+"para instalar em um sistema com firmware BIOS se o disco que contém o "
+"carregador de inicialização usa GPT. Se o disco usar um MBR, nenhuma "
+"partição especial será necessária em um sistema BIOS."
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:73
 #, no-wrap
 msgid "Systems with UEFI firmware:"
-msgstr ""
+msgstr "Sistema com firmware UEFI:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:74
@@ -300,6 +368,9 @@ msgid ""
 "with a MBR, it must be reformated and relabeled. All data currently on the "
 "disk will be lost."
 msgstr ""
+"Apenas GPT é permitido em sistemas UEFI. Para instalar em um disco formatado "
+"com MBR, ele deve ser reformatado e rotulado novamente. Todos os dados "
+"atualmente no disco serão perdidos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:76
@@ -307,6 +378,9 @@ msgid ""
 "UEFI-based systems require an _EFI System Partition_ at least 50 MB in size "
 "(recommended size is 200 MB), regardless of the partitioning scheme."
 msgstr ""
+"Os sistemas baseados em UEFI requerem uma _Partição de Sistema EFI_ com pelo "
+"menos 50 MB de tamanho (o tamanho recomendado é 200 MB), independentemente "
+"do esquema de particionamento."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
@@ -316,6 +390,10 @@ msgid ""
 "created as a standard physical partition. It can not reside on an LVM volume "
 "or a Btrfs subvolume."
 msgstr ""
+"Se o seu sistema requer uma partição de inicialização BIOS ou uma partição "
+"de sistema EFI com base nos requisitos detalhados acima, esta partição deve "
+"ser criada como uma partição física padrão. Ele não pode residir em um "
+"volume LVM ou em um subvolume Btrfs."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
@@ -323,6 +401,9 @@ msgid ""
 "Also note that if your system does not require any of these partitions, they "
 "will not be shown in the `File System` menu in mount point options."
 msgstr ""
+"Observe também que se seu sistema não requer nenhuma dessas partições, elas "
+"não serão mostradas no menu `Sistema de arquivos` nas opções de ponto de "
+"montagem."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:87
@@ -332,6 +413,11 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "advice[Advice on Partitions] for additional information and advice."
 msgstr ""
+"Muitos sistemas têm mais partições do que o mínimo listado acima. Escolha "
+"partições com base em suas necessidades particulares. Veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-advice[Conselhos sobre partições] para informações adicionais e "
+"conselhos."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:92
@@ -339,6 +425,9 @@ msgid ""
 "Only assign storage capacity to those partitions you require immediately. "
 "You may allocate free space at any time, to meet needs as they occur."
 msgstr ""
+"Atribua capacidade de armazenamento apenas às partições de que você precisa "
+"imediatamente. Você pode alocar espaço livre a qualquer momento, para "
+"atender às necessidades à medida que ocorrem."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:95
@@ -348,3 +437,8 @@ msgid ""
 "program as described in xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
+"Se você não tem certeza da melhor forma de configurar as partições para o "
+"seu computador, aceite o layout de partição padrão automático fornecido pelo "
+"programa de instalação conforme descrito em xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
+"Destino da instalação] ."
