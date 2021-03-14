@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-03-13 20:01+0000\n"
+"PO-Revision-Date: 2021-03-14 23:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/f29pagesadvancedboot_options/"
@@ -545,7 +545,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:139
 #, no-wrap
 msgid "[option]#inst.ks.all=#"
-msgstr ""
+msgstr "[option]#inst.ks.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:140
@@ -555,12 +555,16 @@ msgid ""
 "sequentially in the order they are specified, until the file is successfully "
 "fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, o arquivo Kickstart será obtido dos locais "
+"HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst.ks=# "
+"sequencialmente na ordem em que são especificados, até que o arquivo seja "
+"obtido com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:141
 #, no-wrap
 msgid "[option]#inst.ks.sendmac#"
-msgstr ""
+msgstr "[option]#inst.ks.sendmac#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:142
@@ -568,24 +572,27 @@ msgid ""
 "Adds headers to outgoing `HTTP` requests with the MAC addresses of all "
 "network interfaces. For example:"
 msgstr ""
+"Adiciona cabeçalhos às solicitações `HTTP` de saída com os endereços MAC de "
+"todas as interfaces de rede. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:146
 #, no-wrap
 msgid "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
-msgstr ""
+msgstr "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:149
 msgid ""
 "This can be useful when using [option]#inst.ks=http# to provision systems."
 msgstr ""
+"Isso pode ser útil ao usar [option]#inst.ks=http# para provisionar sistemas."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:150
 #, no-wrap
 msgid "[option]#inst.ks.sendsn#"
-msgstr ""
+msgstr "[option]#inst.ks.sendsn#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:151
@@ -594,24 +601,27 @@ msgid ""
 "system's serial number, read from `/sys/class/dmi/id/product_serial`. The "
 "header has the following syntax:"
 msgstr ""
+"Adiciona um cabeçalho para solicitações `HTTP` de saída. Este cabeçalho "
+"conterá o número de série do sistema, lido em `/sys/class/dmi/id/"
+"product_serial`. O cabeçalho possui a seguinte sintaxe:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:155
 #, no-wrap
 msgid "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
-msgstr ""
+msgstr "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:158
 #, no-wrap
 msgid "Console, Environment and Display Options"
-msgstr ""
+msgstr "Opções de console, ambiente e exibição"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:160
 #, no-wrap
 msgid "[option]#console=#"
-msgstr ""
+msgstr "[option]#console=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:161
@@ -621,6 +631,10 @@ msgid ""
 "[option]#console=ttyS0#. This option should be used along with the "
 "[option]#inst.text# option."
 msgstr ""
+"Esta opção de kernel especifica um dispositivo a ser usado como console "
+"principal. Por exemplo, para usar um console na primeira porta serial, use "
+"[option]#console=ttyS0#. Esta opção deve ser usada junto com a opção "
+"[option]#inst.text#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:163
@@ -631,12 +645,17 @@ msgid ""
 "[option]#console=ttyS0 console=ttyS1#, the installation program will only "
 "use `ttyS1`."
 msgstr ""
+"Você pode usar esta opção várias vezes. Nesse caso, a mensagem de "
+"inicialização será exibida em todos os consoles especificados, mas apenas o "
+"último será usado pelo programa de instalação posteriormente. Por exemplo, "
+"se você especificar [option]#console=ttyS0 console=ttyS1#, o programa de "
+"instalação usará apenas `ttyS1`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:164
 #, no-wrap
 msgid "[option]#noshell#"
-msgstr ""
+msgstr "[option]#noshell#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:165
@@ -646,12 +665,16 @@ msgid ""
 "can watch the installation progress, but they cannot interfere with it by "
 "accessing the root shell by pressing kbd:[Ctrl + Alt + F2]."
 msgstr ""
+"Desabilita o acesso ao shell de root durante a instalação. Isso é útil com "
+"instalações automatizadas (Kickstart) – se você usar esta opção, um usuário "
+"pode observar o progresso da instalação, mas não pode interferir acessando o "
+"shell do root pressionando kbd:[Ctrl + Alt + F2]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:166
 #, no-wrap
 msgid "[option]#inst.lang=#"
-msgstr ""
+msgstr "[option]#inst.lang=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:167
@@ -664,6 +687,13 @@ msgid ""
 "valid values can also be find in `/usr/share/system-config-language/locale-"
 "list`."
 msgstr ""
+"Define o idioma a ser usado durante a instalação. Os códigos de idioma são "
+"iguais aos usados no comando [command]#lang# do Kickstart, conforme descrito "
+"em xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-comandos-"
+"lang[lang (opcional) - Configurar idioma durante a instalação]. Em sistemas "
+"onde o pacote [package]*system-config-language* está instalado, uma lista de "
+"valores válidos também pode ser encontrada em `/usr/share/"
+"system-config-language/locale-list`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:169
@@ -672,12 +702,15 @@ msgid ""
 "using this option will be selected by default, but you will still be able to "
 "change it at the beginning of the graphical installation."
 msgstr ""
+"Se você executar a instalação interativamente, o idioma que você especificou "
+"usando esta opção será selecionado por padrão, mas você ainda poderá alterá-"
+"lo no início da instalação gráfica."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:170
 #, no-wrap
 msgid "[option]#inst.singlelang#"
-msgstr ""
+msgstr "[option]#inst.singlelang#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:171
