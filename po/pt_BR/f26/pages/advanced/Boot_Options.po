@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-03-14 23:01+0000\n"
+"PO-Revision-Date: 2021-03-17 22:00+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/f26pagesadvancedboot_options/"
@@ -477,7 +477,7 @@ msgid ""
 "character, `pass:attributes[{blank}]_ip_-kickstart` is appended. For example:"
 msgstr ""
 "No exemplo acima, _next-server_ é a opção `next-server` do DHCP ou o "
-"endereço IP do próprio servidor DHCP, e _filename_ é a opção`filename` do "
+"endereço IP do próprio servidor DHCP, e _filename_ é a opção `filename` do "
 "DHCP, ou `/kickstart/`. Se o nome do arquivo fornecido terminar com o "
 "caractere `/`, `pass:attributes[{blank}]_ip_-kickstart` é anexado. Por "
 "exemplo:"
@@ -655,12 +655,18 @@ msgid ""
 "[application]*Anaconda* and the installed system will default to `en-US."
 "UTF-8`."
 msgstr ""
+"Permite que você execute a instalação no modo de um único idioma – em outras "
+"palavras, esta opção desativa a seleção do idioma para o instalador e o "
+"sistema instalado. Se você também usar a opção [option]#inst.lang=# ao mesmo "
+"tempo, o idioma que você especificar será usado. Se você não definir o "
+"idioma, o [application]*Anaconda* e o sistema instalado usarão como padrão "
+"`en-US.UTF-8`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:168
 #, no-wrap
 msgid "[option]#inst.geoloc=#"
-msgstr ""
+msgstr "[option]#inst.geoloc=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:169
@@ -669,17 +675,21 @@ msgid ""
 "used to pre-set the language and time zone, and uses the following syntax: "
 "[option]#inst.geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 msgstr ""
+"Configura o uso de geolocalização no programa de instalação. A "
+"geolocalização é usada para predefinir o idioma e o fuso horário e usa a "
+"seguinte sintaxe: [option]#inst."
+"geoloc=pass:attributes[{blank}]_valor_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:171
 msgid "The _value_ parameter can be any of the following:"
-msgstr ""
+msgstr "O parâmetro _valor_ pode ser qualquer um dos seguintes:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:173
 #, no-wrap
 msgid "Valid Values for the inst.geoloc Option"
-msgstr ""
+msgstr "Valores válidos para a opção inst.geoloc"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:179
@@ -689,6 +699,9 @@ msgid ""
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 msgstr ""
+"|Desabilitar geolocalização|[option]#inst.geoloc=0#\n"
+"|Usar a API GeoIP do Fedora|[option]#inst.geoloc=provider_fedora_geoip#\n"
+"|Usar a API GeoIP de Hostip.info|[option]#inst.geoloc=provider_hostip#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:182
@@ -696,12 +709,14 @@ msgid ""
 "If this option is not specified, [application]*Anaconda* will use "
 "`provider_fedora_geoip`."
 msgstr ""
+"Se esta opção não for especificada, o [application]*Anaconda* vai usar "
+"`provider_fedora_geoip`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:183
 #, no-wrap
 msgid "[option]#inst.keymap=#"
-msgstr ""
+msgstr "[option]#inst.keymap=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:184
@@ -716,7 +731,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:185
 #, no-wrap
 msgid "[option]#inst.text#"
-msgstr ""
+msgstr "[option]#inst.text#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:186
@@ -733,7 +748,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:187
 #, no-wrap
 msgid "[option]#inst.cmdline#"
-msgstr ""
+msgstr "[option]#inst.cmdline#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:188
@@ -742,12 +757,15 @@ msgid ""
 "not allow any interaction, all options must be specified in a Kickstart file "
 "or on the command line."
 msgstr ""
+"Força o programa de instalação a ser executado no modo de linha de comando. "
+"Este modo não permite nenhuma interação, todas as opções devem ser "
+"especificadas em um arquivo Kickstart ou na linha de comando."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:189
 #, no-wrap
 msgid "[option]#inst.graphical#"
-msgstr ""
+msgstr "[option]#inst.graphical#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:190
@@ -755,12 +773,14 @@ msgid ""
 "Forces the installation program to run in graphical mode. This mode is the "
 "default."
 msgstr ""
+"Força o programa de instalação a ser executado no modo gráfico. Este modo é "
+"o padrão."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:191
 #, no-wrap
 msgid "[option]#inst.resolution=#"
-msgstr ""
+msgstr "[option]#inst.resolution=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:192
@@ -770,12 +790,16 @@ msgid ""
 "width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
+"Especifica a resolução da tela no modo gráfico. O formato é "
+"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, onde _N_ é a "
+"largura da tela e _M_ é a altura da tela (em pixels). A resolução mais baixa "
+"suportada é `800x600`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:193
 #, no-wrap
 msgid "[option]#inst.xdriver=#"
-msgstr ""
+msgstr "[option]#inst.xdriver=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:194
@@ -783,12 +807,14 @@ msgid ""
 "Specifies the name of the `X` driver to be used both during the installation "
 "and on the installed system."
 msgstr ""
+"Especifica o nome do driver `X` a ser usado durante a instalação e no "
+"sistema instalado."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:195
 #, no-wrap
 msgid "[option]#inst.usefbx#"
-msgstr ""
+msgstr "[option]#inst.usefbx#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:196
@@ -797,12 +823,15 @@ msgid ""
 "a hardware-specific driver. This option is equivalent to [option]#inst."
 "xdriver=fbdev#."
 msgstr ""
+"Diz ao programa de instalação para usar o driver `X` do buffer de quadros em "
+"vez de um driver específico de hardware. Esta opção é equivalente a "
+"[option]#inst.xdriver=fbdev#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:197
 #, no-wrap
 msgid "[option]#modprobe.blacklist=#"
-msgstr ""
+msgstr "[option]#modprobe.blacklist=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:198
@@ -813,23 +842,30 @@ msgid ""
 "system will keep these settings. The blacklisted drivers can then be found "
 "in the `/etc/modprobe.d/` directory."
 msgstr ""
+"Coloca em uma lista negra (isto é, desativa completamente) um ou mais "
+"drivers. Os drivers (mods) desabilitados com esta opção serão impedidos de "
+"carregar quando a instalação começar e, após o término da instalação, o "
+"sistema instalado manterá essas configurações. Os drivers da lista negra "
+"podem ser encontrados no diretório `/etc/modprobe.d/`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:200
 msgid "Use a comma-separated list to disable multiple drivers. For example:"
 msgstr ""
+"Use uma lista separada por vírgulas para desativar vários drivers. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:203
 #, no-wrap
 msgid "modprobe.blacklist=ahci,firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=ahci,firewire_ohci\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:205
 #, no-wrap
 msgid "[option]#inst.sshd#"
-msgstr ""
+msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:206
@@ -855,7 +891,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:215
 #, no-wrap
 msgid "Network Boot Options"
-msgstr ""
+msgstr "Opções de inicialização de rede"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:218
@@ -871,7 +907,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:219
 #, no-wrap
 msgid "[option]#ip=#"
-msgstr ""
+msgstr "[option]#ip=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:220
@@ -881,17 +917,21 @@ msgid ""
 "interfaces are configured, you must specify a primary boot interface using "
 "the [option]#bootdev# option described below."
 msgstr ""
+"Configura uma ou mais interfaces de rede. Para configurar várias interfaces, "
+"use a opção `ip` várias vezes – uma para cada interface. Se várias "
+"interfaces forem configuradas, você deve especificar uma interface de "
+"inicialização primária usando a opção [option]#bootdev# descrita abaixo."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:222
 msgid "The following table lists valid values for this option:"
-msgstr ""
+msgstr "A tabela a seguir lista os valores válidos para esta opção:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:224
 #, no-wrap
 msgid "Network Interface Configuration Formats"
-msgstr ""
+msgstr "Formatos de configuração de interface de rede"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:234
@@ -904,17 +944,38 @@ msgid ""
 "|Automatic configuration of a specific interface with an override\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the specified method of automatic configuration, such as `dhcp`, but overrides the automatically obtained IP address, gateway, netmask, hostname or other specified parameter. All parameters are optional; only specify the ones you wish to override and automatically obtained values will be used for the others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
+"|Método de configuração|Formato da opção\n"
+"|Configuração automática de alguma interface|[option]#ip=pass:attributes[{bla"
+"nk}]_método_pass:attributes[{blank}]#\n"
+"|Configuração automática de um interface específica|[option]#ip=pass:attribut"
+"es[{blank}]_interface_:pass:attributes[{blank}]_método_pass:attributes[{blank"
+"}]#\n"
+"|Configuração estática|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribu"
+"tes[{blank}]_gateway_:pass:attributes[{blank}]_máscara-de-"
+"rede_:pass:attributes[{blank}]_nome-do-"
+"host_:pass:attributes[{blank}]_interface_:none#\n"
+"|Configuração automática uma interface específica com uma substituição\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Abre a interface especificada usando o "
+"método especificado de configuração automática, como `dhcp`, mas substitui o "
+"endereço IP obtido automaticamente, gateway, máscara de rede, nome do host "
+"ou outro parâmetro especificado. Todos os parâmetros são opcionais; "
+"especifique apenas aqueles que deseja substituir e os valores obtidos "
+"automaticamente serão usados para os outros.]|[option]#ip=pass:attributes[{bl"
+"ank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_máscara"
+"-d-rede_:pass:attributes[{blank}]_nome-do-host_:pass:attributes[{blank}]_inte"
+"rface_:pass:attributes[{blank}]_método_:pass:attributes[{blank}]_mtu_pass:att"
+"ributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:237
 msgid "The [option]#method# parameter can be any the following:"
-msgstr ""
+msgstr "O parâmetro [option]#method# pode ser algum dos seguintes:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:239 pages/advanced/Boot_Options.adoc:428
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
-msgstr ""
+msgstr "Métodos de configuração automática de interface"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:248
@@ -926,6 +987,11 @@ msgid ""
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 msgstr ""
+"|Método de configuração automática|Valor\n"
+"|DHCP|`dhcp`\n"
+"|DHCP IPv6|`dhcp6`\n"
+"|Configuração automática IPv6|`auto6`\n"
+"|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:254
@@ -935,6 +1001,10 @@ msgid ""
 "attributes[{blank}]_path_pass:attributes[{blank}]#, without specifying the "
 "[option]#ip# option, the installation program will use [option]#ip=dhcp#."
 msgstr ""
+"Se você usar uma opção de inicialização que requer acesso à rede, como "
+"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:attributes[{blan"
+"k}]_caminho_pass:attributes[{blank}]#, sem especificar a opção [option]#ip#, "
+"o programa de instalação usará [option]#ip=dhcp#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:258
@@ -943,6 +1013,9 @@ msgid ""
 "`IPv6` addresses can be specified by putting them in square brackets, for "
 "example, `[2001:DB8::1]`."
 msgstr ""
+"Nas tabelas acima, o parâmetro _ip_ especifica o endereço IP do cliente. "
+"Endereços `IPv6` podem ser especificados colocando-os entre colchetes, por "
+"exemplo, `[2001:DB8::1]`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:260
@@ -950,6 +1023,8 @@ msgid ""
 "The _gateway_ parameter is the default gateway. IPv6 addresses are accepted "
 "here as well."
 msgstr ""
+"O parâmetro _gateway_ é o gateway padrão. Os endereços IPv6 também são "
+"aceitos aqui."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:262
@@ -957,6 +1032,9 @@ msgid ""
 "The _netmask_ parameter is the netmask to be used. This can either be a full "
 "netmask (for example `255.255.255.0`) or a prefix (for example `64`)."
 msgstr ""
+"O parâmetro _máscara-de-rede_ é a máscara de rede a ser usada. Pode ser uma "
+"máscara de rede completa (por exemplo, `255.255.255.0`) ou um prefixo (por "
+"exemplo, `64`)."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:264
@@ -964,12 +1042,14 @@ msgid ""
 "The _hostname_ parameter is the host name of the client system. This "
 "parameter is optional."
 msgstr ""
+"O parâmetro _nome-do-host_ é o nome do host do sistema cliente. Este "
+"parâmetro é opcional."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:265
 #, no-wrap
 msgid "[option]#nameserver=#"
-msgstr ""
+msgstr "[option]#nameserver=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:266
@@ -977,12 +1057,14 @@ msgid ""
 "Specifies the address of the name server. This option can be used multiple "
 "times."
 msgstr ""
+"Especifica o endereço do servidor de nomes. Esta opção pode ser usada várias "
+"vezes."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:267
 #, no-wrap
 msgid "[option]#bootdev=#"
-msgstr ""
+msgstr "[option]#bootdev=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:268
@@ -990,12 +1072,14 @@ msgid ""
 "Specifies the boot interface. This option is mandatory if you use more than "
 "one [option]#ip# option."
 msgstr ""
+"Especifica a interface de inicialização. Esta opção é obrigatória se você "
+"usar mais de uma opção [option]#ip#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:269
 #, no-wrap
 msgid "[option]#ifname=#"
-msgstr ""
+msgstr "[option]#ifname=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:270
@@ -1005,18 +1089,22 @@ msgid ""
 "attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:"
 "attributes[{blank}]#. For example:"
 msgstr ""
+"Atribui um determinado nome de interface a um dispositivo de rede com um "
+"determinado endereço MAC. Pode ser usado várias vezes. A sintaxe é [option]#i"
+"fname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:a"
+"ttributes[{blank}]#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:274
 #, no-wrap
 msgid "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
-msgstr ""
+msgstr "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:276
 #, no-wrap
 msgid "[option]#inst.dhcpclass=#"
-msgstr ""
+msgstr "[option]#inst.dhcpclass=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:277
@@ -1025,12 +1113,15 @@ msgid ""
 "this value as `vendor-class-identifier`. The default value is `anaconda-"
 "$(uname -srm)`."
 msgstr ""
+"Especifica o identificador de classe do fornecedor DHCP. O serviço `dhcpd` "
+"verá este valor como `vendor-class-identifier`. O valor padrão é `anaconda-$("
+"uname -srm)`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:278
 #, no-wrap
 msgid "[option]#vlan=#"
-msgstr ""
+msgstr "[option]#vlan=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:279
@@ -1039,12 +1130,16 @@ msgid ""
 "name. The syntax is [option]#vlan=pass:attributes[{blank}]_name_:pass:"
 "attributes[{blank}]_interface_pass:attributes[{blank}]#. For example:"
 msgstr ""
+"Configura um dispositivo de LAN virtual (VLAN) em uma interface especificada "
+"com um determinado nome. A sintaxe é [option]#vlan=pass:attributes[{blank}]_n"
+"ome_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:283
 #, no-wrap
 msgid "[option]#vlan=vlan5:em1#\n"
-msgstr ""
+msgstr "[option]#vlan=vlan5:em1#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:286
@@ -1052,12 +1147,14 @@ msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` interface. "
 "The _name_ can take the following forms:"
 msgstr ""
+"O acima irá configurar um dispositivo VLAN chamado `vlan5` na interface `em1`"
+". O _nome_ pode assumir as seguintes formas:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:288
 #, no-wrap
 msgid "VLAN Device Naming Conventions"
-msgstr ""
+msgstr "Convenções de nomenclatura de dispositivos VLAN"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:297
@@ -1069,12 +1166,17 @@ msgid ""
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 msgstr ""
+"|Esquema de nomenclatura|Exemplo\n"
+"|VLAN_PLUS_VID|`vlan0005`\n"
+"|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
+"|DEV_PLUS_VID|`em1.0005`.\n"
+"|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:299
 #, no-wrap
 msgid "[option]#bond=#"
-msgstr ""
+msgstr "[option]#bond=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:300
@@ -1087,12 +1189,19 @@ msgid ""
 "(ethernet) interfaces, and _options_ with a comma-separated list of bonding "
 "options. For example:"
 msgstr ""
+"Configura um dispositivo de ligação com a seguinte sintaxe: [option]#bond=pas"
+"s:attributes[{blank}]_nome_pass:attributes[{blank}][:pass:attributes[{blank}]"
+"_escravos_pass:attributes[{blank}]][:pass:attributes[{blank}]_opções_pass:att"
+"ributes[{blank}]]#. Substitua _nome_ pelo nome do dispositivo de bond, "
+"_escravos_ por uma lista separada por vírgulas de interfaces físicas "
+"(ethernet) e _opções_ por uma lista separada por vírgulas de opções de bond. "
+"Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:303
 #, no-wrap
 msgid "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
-msgstr ""
+msgstr "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:306
@@ -1100,6 +1209,8 @@ msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
 msgstr ""
+"Para obter uma lista das opções disponíveis, execute o comando [command]#"
+"modinfo bonding#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:308
@@ -1107,12 +1218,14 @@ msgid ""
 "Using this option without any parameters will assume [option]#bond=bond0:"
 "eth0,eth1:mode=balance-rr#."
 msgstr ""
+"Usar esta opção sem quaisquer parâmetros presumirá "
+"[option]#bond=bond0:eth0,eth1:mode=balance-rr#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:309
 #, no-wrap
 msgid "[option]#team=#"
-msgstr ""
+msgstr "[option]#team=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:310
@@ -1123,12 +1236,18 @@ msgid ""
 "device and _slaves_ with a comma-separated list of physical (ethernet) "
 "devices to be used as slaves in the team device. For example:"
 msgstr ""
+"Configura um dispositivo de equipe com a seguinte sintaxe: [option]#team=pass"
+":attributes[{blank}]_mestre_:pass:attributes[{blank}]_escravos_pass:attribute"
+"s[{blank}]#. Substitua _mestre_ pelo nome do dispositivo mestre da equipe e "
+"_escravos_ por uma lista separada por vírgulas de dispositivos físicos "
+"(ethernet) a serem usados como escravos no dispositivo da equipe. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:314
 #, no-wrap
 msgid "[option]#team=team0:em1,em2#\n"
-msgstr ""
+msgstr "[option]#team=team0:em1,em2#\n"
 
 #. type: Title =====
 #: pages/advanced/Boot_Options.adoc:317
@@ -1140,7 +1259,7 @@ msgstr "Opções avançadas de instalação"
 #: pages/advanced/Boot_Options.adoc:319
 #, no-wrap
 msgid "[option]#inst.multilib#"
-msgstr ""
+msgstr "[option]#inst.multilib#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:320
@@ -1149,6 +1268,9 @@ msgid ""
 "bit packages on a 64-bit x86 system) and install packages specified in this "
 "section as such."
 msgstr ""
+"Configura o sistema para pacotes multilib (ou seja, para permitir a "
+"instalação de pacotes de 32 bits em um sistema x86 de 64 bits) e instale os "
+"pacotes especificados nesta seção como tal."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:322
@@ -1159,6 +1281,11 @@ msgid ""
 "bit AMD or Intel systems (marked as `i686`) will be automatically installed "
 "as well if available."
 msgstr ""
+"Normalmente, em um sistema AMD64 ou Intel{nbsp}64, apenas pacotes para esta "
+"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas ("
+"marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
+"pacotes para sistemas 32-bits AMD ou Intel (marcados como `i686`) também "
+"serão instalados automaticamente, se disponíveis."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:324
@@ -1170,12 +1297,18 @@ msgid ""
 "installed in multiple variants, while the latter will only be installed in "
 "variants specifically required."
 msgstr ""
+"Isso se aplica apenas a pacotes especificados diretamente na seção "
+"`%packages`. Se um pacote for instalado apenas como uma dependência, apenas "
+"a dependência exata especificada será instalada. Por exemplo, se você "
+"estiver instalando o pacote [package]*foo* que depende do pacote "
+"[package]*bar*, o primeiro será instalado em múltiplas variantes, enquanto o "
+"último só será instalado em variantes especificamente necessárias."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:325
 #, no-wrap
 msgid "[option]#inst.gpt#"
-msgstr ""
+msgstr "[option]#inst.gpt#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:326
@@ -1185,6 +1318,10 @@ msgid ""
 "meaningless on UEFI-based systems, unless they are in BIOS compatibility "
 "mode."
 msgstr ""
+"Força o programa de instalação a instalar informações de partição em uma "
+"Tabela de Partição GUID (GPT) em vez de um Master Boot Record (MBR). Esta "
+"opção não faz sentido em sistemas baseados em UEFI, a menos que estejam no "
+"modo de compatibilidade do BIOS."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:328
@@ -1195,6 +1332,11 @@ msgid ""
 "change this behavior, allowing a GPT to be written even to disks smaller "
 "than 2 TB."
 msgstr ""
+"Normalmente, os sistemas baseados em BIOS e sistemas baseados em UEFI no "
+"modo de compatibilidade do BIOS tentarão usar o esquema MBR para armazenar "
+"informações de particionamento, a menos que o disco seja maior que 2 TB. O "
+"uso desta opção mudará este comportamento, permitindo que um GPT seja "
+"gravado mesmo em discos menores que 2 TB."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:330
@@ -1210,7 +1352,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:331
 #, no-wrap
 msgid "[option]#inst.nosave=#"
-msgstr ""
+msgstr "[option]#inst.nosave=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:332
@@ -1338,7 +1480,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:356
 #, no-wrap
 msgid "Enabling Remote Access Using VNC"
-msgstr ""
+msgstr "Habilitando acesso remoto usando VNC"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:359
