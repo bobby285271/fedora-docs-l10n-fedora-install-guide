@@ -2,24 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-19 21:54+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f26pages_partialsinstallkdumpspoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Block title
 #: pages/_partials/install/KdumpSpoke.adoc:5
 #: pages/_partials/install/KdumpSpoke.adoc:16
 #, no-wrap
 msgid "Kdump"
-msgstr ""
+msgstr "Kdump"
 
 #. type: delimited block =
 #: pages/_partials/install/KdumpSpoke.adoc:11
@@ -39,18 +44,20 @@ msgid ""
 "activated on the installed system, and how much memory will be reserved for "
 "it if enabled."
 msgstr ""
+"Use esta tela para selecionar se o [application]*Kdump* será ativado ou não "
+"no sistema instalado e quanta memória será reservada para ele, se ativado."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/KdumpSpoke.adoc:18
 #, no-wrap
 msgid "The Kdump configuration screen"
-msgstr ""
+msgstr "A tela de configuração do Kdump"
 
 #. type: Target for macro image
 #: pages/_partials/install/KdumpSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/KdumpSpoke.png"
-msgstr ""
+msgstr "anaconda/KdumpSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:21
@@ -62,6 +69,12 @@ msgid ""
 "of the system's memory (RAM) reserved to itself. This reserved memory will "
 "not be accessible to the main kernel."
 msgstr ""
+"[application]*Kdump* é um mecanismo de despejo de falha do kernel que, no "
+"caso de uma falha do sistema, captura o conteúdo da memória do sistema no "
+"momento da falha. Essa memória capturada pode então ser analisada para "
+"encontrar a causa da falha. Se o [application]*Kdump* estiver habilitado, "
+"ele deve ter uma pequena parte da memória do sistema (RAM) reservada para si "
+"mesmo. Esta memória reservada não estará acessível ao kernel principal."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:23
@@ -71,6 +84,10 @@ msgid ""
 "if you selected `Manual`, enter the amount of memory to be reserved in "
 "megabytes into the `Memory to be reserved` field."
 msgstr ""
+"Para habilitar o [application]*Kdump* no sistema instalado, marque `Enabled`"
+". Em seguida, selecione as configurações de reserva de memória `Automatic` "
+"ou `Manual` e, se você selecionou `Manual`, insira a quantidade de memória a "
+"ser reservada em megabytes no campo `Memória a ser reservada`."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:25
@@ -87,6 +104,18 @@ msgid ""
 "about how [application]*Kdump* works, how to configure additional settings, "
 "and how to analyze a saved crash dump."
 msgstr ""
+"A quantidade de memória que você deve reservar é determinada com base na "
+"arquitetura do seu sistema (AMD64 e Intel{nbsp}64 terão requisitos "
+"diferentes do IBM Power, por exemplo), bem como a quantidade total de "
+"memória do sistema. Na maioria dos casos, a reserva automática será "
+"satisfatória. Se você insiste nas configurações manuais, consulte o "
+"link:++https://access.redhat.com/documentation/en-US/"
+"Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-"
+"configurations-and-targets.html#sect-kdump-memory-requirements++[Red{nbsp}"
+"Hat Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump Guide] (guia de despejo "
+"da falha de kernel) para orientações. Este documento também contém "
+"informações mais detalhadas sobre como o [applicaion]*Kdump* funciona, como "
+"definir configurações adicionais e como analisar um despejo de memória salvo."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:27
@@ -95,6 +124,9 @@ msgid ""
 "how much memory will be accessible to your main system once your selected "
 "amount of RAM is reserved."
 msgstr ""
+"A leitura de `Memória Utilizável do Sistema` abaixo do campo de entrada de "
+"reserva mostra quanta memória estará acessível ao seu sistema principal uma "
+"vez que a quantidade de RAM selecionada for reservada."
 
 #. type: delimited block =
 #: pages/_partials/install/KdumpSpoke.adoc:32
@@ -104,6 +136,10 @@ msgid ""
 "`system-config-kdump` graphical interface, or manually in the `/etc/kdump."
 "conf` configuration file."
 msgstr ""
+"Configurações adicionais, como o local onde os despejos de memória do kernel "
+"serão salvos, só podem ser configuradas após a instalação usando a interface "
+"gráfica `system-config-kdump` ou manualmente no arquivo de configuração `/"
+"etc/kdump.conf`."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:35
@@ -112,3 +148,6 @@ msgid ""
 "left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Após ajustar as configurações do [application]*Kdump*, clique em btn:[Pronto]"
+" no canto superior esquerdo para retornar ao xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-summary[Resumo da Instalação]."
