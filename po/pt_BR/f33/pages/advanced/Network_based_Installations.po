@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:04+0000\n"
-"PO-Revision-Date: 2021-03-13 20:01+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-03-23 22:02+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f33pagesadvancednetwork_based_installations/pt_BR/>\n"
@@ -27,20 +27,25 @@ msgstr "Configurando um servidor de instalação"
 
 #. type: delimited block =
 #: pages/advanced/Network_based_Installations.adoc:11
+#, fuzzy
 msgid ""
 "This appendix is intended for users with previous Linux experience. If you "
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
 msgstr ""
+"Este apêndice se destina a usuários com experiência anterior em Linux. Se "
+"você for um novo usuário, convém instalar usando a mídia de inicialização "
+"mínima ou o DVD de distribuição."
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PXE Installation Overview"
-msgstr ""
+msgstr "Visão geral da instalação PXE"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:18
+#, fuzzy
 msgid ""
 "Preboot Execution Environment, or PXE, is a techonology that allows "
 "computers to boot directly from resources provided over the network. "
@@ -49,15 +54,22 @@ msgid ""
 "process involves a number of components and features working together to "
 "provide the resources required."
 msgstr ""
+"Preboot Execution Environment, ou PXE, é uma tecnologia que permite que os "
+"computadores inicializem diretamente de recursos fornecidos pela rede. "
+"Instalar o Fedora pela rede significa que você não precisa criar mídia e "
+"pode instalar em vários computadores ou máquina virtual simultaneamente. O "
+"processo envolve vários componentes e recursos trabalhando juntos para "
+"fornecer os recursos necessários."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PXE-capable computer"
-msgstr ""
+msgstr "Computador compatível com PXE"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:21
+#, fuzzy
 msgid ""
 "Most modern computers have the capability to network boot. Typically, a "
 "function key pressed during boot will bring up a boot selection menu. In "
@@ -67,69 +79,96 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"A maioria dos computadores modernos tem a capacidade de inicialização pela "
+"rede. Normalmente, uma tecla de função pressionada durante a inicialização "
+"abrirá um menu de seleção de inicialização. Em ambientes projetados para "
+"administração autônoma, os sistemas geralmente são configurados para tentar "
+"inicializar pela rede e, em seguida, inicializar do armazenamento local, e o "
+"servidor de instalação é configurado para oferecer a instalação apenas "
+"quando necessário. O manual do seu computador fornecerá instruções "
+"específicas sobre como definir as prioridades de inicialização."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DHCP Server"
-msgstr ""
+msgstr "Servidor DHCP"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:24
+#, fuzzy
 msgid ""
 "When a system requests an address during network booting, the DHCP server "
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
 msgstr ""
+"Quando um sistema solicita um endereço durante a inicialização da rede, o "
+"servidor DHCP também fornece a localização dos arquivos para inicializar. "
+"Uma rede deve ter apenas um servidor DHCP."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:25
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "TFTP Server"
-msgstr ""
+msgstr "Servidor TFTP"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:27
+#, fuzzy
 msgid ""
 "Because the pre-boot environment is very simple, files must be provided in a "
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"Como o ambiente de pré-inicialização é muito simples, os arquivos devem ser "
+"fornecidos de uma maneira muito simples. O Trivial File Transfer Protocol, "
+"ou TFTP, fornece ao sistema o carregador de inicialização necessário para "
+"continuar o processo de instalação."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:28
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Bootloader"
-msgstr ""
+msgstr "Bootloader"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:30
+#, fuzzy
 msgid ""
 "Because the job of booting an operating system is too complex for the pre-"
 "boot environment, a bootloader is used to load the kernel and related files. "
 "It also provides configuration information to the installer, and can offer a "
 "menu to select from different configurations."
 msgstr ""
+"Como a tarefa de inicializar um sistema operacional é muito complexa para o "
+"ambiente de pré-inicialização, um carregador de inicialização é usado para "
+"carregar o kernel e arquivos relacionados. Ele também fornece informações de "
+"configuração ao instalador e pode oferecer um menu para selecionar "
+"diferentes configurações."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:31
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr ""
+msgstr "Kernel e Initramfs"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:33
+#, fuzzy
 msgid ""
 "The kernel is the core of any Linux operating system, and the initramfs "
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
 msgstr ""
+"O kernel é o núcleo de qualquer sistema operacional Linux e o initramfs "
+"fornece ao kernel as ferramentas e recursos necessários. Esses arquivos "
+"também são fornecidos pelo tftp."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:34
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Package repository"
-msgstr ""
+msgstr "Repositório de pacotes"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:36
@@ -145,37 +184,40 @@ msgstr ""
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:40
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DHCP Server Configuration"
-msgstr ""
+msgstr "Configuração do Servidor DHCP"
 
 #. Needs adminition about static IP, reference out to Networking Guide. Example assumes 192.168.1.2 for server.
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:44
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Installing and configuring dhcpd"
-msgstr ""
+msgstr "Instalando e configurando o dhcpd"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:46
+#, fuzzy
 msgid "Install the dhcp server package."
-msgstr ""
+msgstr "Instale o pacote dhcp server."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:50
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "# dnf install dhcp\n"
-msgstr ""
+msgstr "# dnf install dhcp\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:53
+#, fuzzy
 msgid ""
 "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
 msgstr ""
+"Crie uma configuração simples para o servidor dhcp em `/etc/dhcp/dhcpd.conf`"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:61
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
 "authoritative;\n"
@@ -183,25 +225,33 @@ msgid ""
 "max-lease-time 7200;\n"
 "ddns-update-style none;\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"authoritative;\n"
+"default-lease-time 600;\n"
+"max-lease-time 7200;\n"
+"ddns-update-style none;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:64
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "option domain-name-servers 192.168.1.1;\n"
 "option routers 192.168.1.1;\n"
 msgstr ""
+"option domain-name-servers 192.168.1.1;\n"
+"option routers 192.168.1.1;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:66
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:69
+#, fuzzy
 msgid "Test your configuration and address any problems you discover."
-msgstr ""
+msgstr "Teste sua configuração e resolva quaisquer problemas que descobrir."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:75

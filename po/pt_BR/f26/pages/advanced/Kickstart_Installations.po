@@ -2,26 +2,32 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-23 22:02+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f26pagesadvancedkickstart_installations/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Automating the Installation with Kickstart"
-msgstr ""
+msgstr "Automatizando a instalação com o Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:9
+#, fuzzy
 msgid ""
 "Kickstart installations offer a means to automate the installation process, "
 "either partially or fully. Kickstart files contain answers to all questions "
@@ -33,71 +39,101 @@ msgid ""
 "especially useful when deploying {PRODUCT} on a large number of systems at "
 "once."
 msgstr ""
+"As instalações Kickstart oferecem um meio de automatizar o processo de "
+"instalação, parcial ou totalmente. Os arquivos Kickstart contêm respostas "
+"para todas as perguntas normalmente feitas pelo programa de instalação, como "
+"o fuso horário que você deseja que o sistema use, como as unidades devem ser "
+"particionadas ou quais pacotes devem ser instalados. Fornecer um arquivo "
+"Kickstart preparado quando a instalação começa, portanto, permite que você "
+"execute a instalação automaticamente, sem a necessidade de qualquer "
+"intervenção do usuário. Isso é especialmente útil ao implantar {PRODUCT} em "
+"um grande número de sistemas ao mesmo tempo."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:11
+#, fuzzy
 msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
 msgstr ""
+"Todos os scripts Kickstart e os arquivos de log de sua execução são "
+"armazenados no diretório `/tmp` para auxiliar na depuração de problemas de "
+"instalação."
 
 #. type: Title ====
 #: pages/advanced/Kickstart_Installations.adoc:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "How to Perform a Kickstart Installation"
-msgstr ""
+msgstr "Como realizar uma instalação Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:16
+#, fuzzy
 msgid ""
 "Kickstart installations can be performed using a local DVD, a local hard "
 "drive, or via NFS, FTP, HTTP, or HTTPS."
 msgstr ""
+"As instalações Kickstart podem ser realizadas usando um DVD local, um disco "
+"rígido local ou via NFS, FTP, HTTP ou HTTPS."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:18
+#, fuzzy
 msgid "To use Kickstart, you must:"
-msgstr ""
+msgstr "Para usar o Kickstart, você deve:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:20
+#, fuzzy
 msgid "Create a Kickstart file."
-msgstr ""
+msgstr "Criar um arquivo Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:22
+#, fuzzy
 msgid ""
 "Create boot media or configure a network boot (PXE) server which will be "
 "used to begin the installation."
 msgstr ""
+"Crie uma mídia de inicialização ou configure um servidor de inicialização de "
+"rede (PXE) que será usado para iniciar a instalação."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:24
+#, fuzzy
 msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
 msgstr ""
+"Disponibilize o arquivo Kickstart em uma mídia removível, um disco rígido ou "
+"um local de rede."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:26
+#, fuzzy
 msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
 msgstr ""
+"Inicie a instalação do Kickstart inicializando o instalador e usando uma "
+"opção de inicialização para dizer ao instalador onde encontrar o arquivo "
+"Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:28
+#, fuzzy
 msgid "This chapter explains these steps in detail."
-msgstr ""
+msgstr "Este capítulo explica essas etapas em detalhes."
 
 #. type: Title =====
 #: pages/advanced/Kickstart_Installations.adoc:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Creating a Kickstart File"
-msgstr ""
+msgstr "Criando um arquivo Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:33
+#, fuzzy
 msgid ""
 "The Kickstart file itself is a plain text file, containing keywords listed "
 "in xref:../appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-"
@@ -107,6 +143,13 @@ msgid ""
 "[application]*Notepad* on Windows systems) can be used to create and edit "
 "Kickstart files."
 msgstr ""
+"O próprio arquivo Kickstart é um arquivo de texto simples, contendo palavras-"
+"chave listadas em xref: ../appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Referência de sintaxe do kickstart], que servem "
+"como instruções para a instalação. Qualquer editor de texto capaz de salvar "
+"arquivos como texto ASCII (como [application]*Gedit* ou [application]*vim* "
+"em sistemas Linux ou [application]*Bloco de notas* em sistemas Windows) pode "
+"ser usado para criar e editar arquivos Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:35
