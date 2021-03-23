@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-03-06 22:01+0000\n"
+"PO-Revision-Date: 2021-03-23 22:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -24,7 +24,7 @@ msgstr ""
 #: pages/_partials/install/UserSpoke.adoc:17
 #, no-wrap
 msgid "Create User"
-msgstr ""
+msgstr "Criar usuário"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:9
@@ -37,6 +37,13 @@ msgid ""
 "managing user accounts (for example, the `Users` screen in the Settings menu "
 "in [application]*GNOME*)."
 msgstr ""
+"A tela `Criar usuário` pode ser usada para criar e configurar uma conta de "
+"usuário normal (não `root`) durante a instalação. Apenas uma conta de "
+"usuário pode ser configurada aqui; se você precisar de mais contas, espere "
+"até que a instalação seja concluída, reinicie seu sistema e crie outras "
+"contas usando o comando [command]#useradd# em um terminal ou um utilitário "
+"gráfico para gerenciar contas de usuário (por exemplo, a tela `Usuários` no "
+"menu Configurações no [application]*GNOME*)."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:14
@@ -45,18 +52,24 @@ msgid ""
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
 msgstr ""
+"A criação de uma conta de usuário normal não é necessária para finalizar a "
+"instalação; no entanto, é altamente recomendado. Se você não criar uma, terá "
+"que se autenticar no sistema como `root` diretamente, o que *não* é "
+"recomendado."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:19
 #, no-wrap
 msgid "The Create screen. Use the text input fields to create a user account and configure its settings."
 msgstr ""
+"A tela Criar usuário. Use os campos de entrada de texto para criar uma conta "
+"de usuário e definir suas configurações."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
-msgstr ""
+msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:22
@@ -66,6 +79,11 @@ msgid ""
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
+"Para configurar uma conta de usuário, preencha o `Nome completo` (por "
+"exemplo, `John Smith`) e `Nome do usuário` (por exemplo, `jsmith`). O `nome "
+"de usuário` será usado para se autenticar a partir de uma linha de comando; "
+"se você instalar um ambiente gráfico, seu gerenciador de login gráfico usará "
+"`Nome completo`."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:24
@@ -77,6 +95,12 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
+"Certifique-se de que a caixa de seleção `Necessário uma senha para usar essa "
+"conta` está habilitada, digite a senha que deseja usar para esta conta no "
+"campo `Senha`. Os caracteres que você escrever serão exibidos como pontos de "
+"segurança. Em seguida, repita a mesma senha no campo `Confirmar senha` "
+"abaixo para garantir que a inseriu corretamente. As duas senhas inseridas "
+"devem ser iguais."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:26
@@ -115,6 +139,12 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
+"A caixa de seleção `Tornar esse usuário administrador` dá ao usuário que "
+"você está criando direitos administrativos (adicionando este usuário ao "
+"grupo `wheel`), permitindo que este usuário use o comando [command]#sudo# "
+"para executar tarefas normalmente disponíveis apenas para `root` usando "
+"apenas a senha do usuário, ao invés da senha `root`. Isso pode ser mais "
+"conveniente, mas também pode representar um risco à segurança."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:40
@@ -123,6 +153,9 @@ msgid ""
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
 msgstr ""
+"Se você conceder privilégios de administrador a um usuário, certifique-se de "
+"que a conta esteja protegida por uma senha forte. Nunca conceda privilégios "
+"de administrador a um usuário sem exigir nenhuma senha para a conta."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:42
@@ -139,13 +172,17 @@ msgid ""
 "fields. A new dialog window titled `Advanced User Configuration` will open. "
 "This dialog is described in the following section."
 msgstr ""
+"Para configurações adicionais, clique no botão `Avançado` abaixo dos campos "
+"de entrada de senha. Uma nova janela de diálogo intitulada `Configuração "
+"avançada de usuário` será aberta. Esta caixa de diálogo é descrita na seção "
+"a seguir."
 
 #. type: Block title
 #: pages/_partials/install/UserSpoke.adoc:48
 #: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "Advanced User Configuration"
-msgstr ""
+msgstr "Configuração avançada de usuário"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:51
@@ -153,18 +190,20 @@ msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr ""
+"A caixa de diálogo `Configuração avançada de usuário` permite que você "
+"altere as seguintes configurações para a nova conta de usuário."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:54
 #, no-wrap
 msgid "Advanced settings for the new user account."
-msgstr ""
+msgstr "Configurações avançadas para a nova conta de usuário."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:54
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
-msgstr ""
+msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:57
@@ -172,6 +211,8 @@ msgid ""
 "The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
 "attributes[{blank}]` by default)."
 msgstr ""
+"O `Diretório home` do usuário (`/home/pass:attributes[{blank}]_nome de "
+"usuário_pass:attributes[{blank}]` por padrão)."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:59
@@ -179,6 +220,8 @@ msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they can not be assigned to an user."
 msgstr ""
+"O ID do usuário (UID). O valor padrão é 1000. UIDs 0-999 são reservados pelo "
+"sistema, portanto, não podem ser atribuídos a um usuário."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:61
@@ -187,6 +230,10 @@ msgid ""
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
 "are reserved by the system so they can not be assigned to an user's group."
 msgstr ""
+"O ID do grupo (GID) do grupo padrão do usuário. O nome do grupo padrão será "
+"o mesmo que o nome do usuário e seu GID padrão é 1000. Os GIDs 0-999 são "
+"reservados pelo sistema para que não possam ser atribuídos a um grupo de "
+"usuários."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:62
@@ -199,3 +246,11 @@ msgid ""
 "them in parentheses. If you do not specify a custom GID for a new group, it "
 "will be assigned automatically."
 msgstr ""
+"A participação do usuário ao grupo. A conta de usuário que você está criando "
+"sempre terá uma associação de grupo padrão (o grupo padrão do usuário com um "
+"ID definido no campo `Especifique um ID de usuário manualmente`). No campo `"
+"Participação do Grupo`, você pode especificar grupos adicionais como uma "
+"lista separada por vírgulas. Grupos que ainda não existem serão criados; "
+"você pode especificar GIDs personalizados para eles entre parênteses. Se "
+"você não especificar um GID personalizado para um novo grupo, ele será "
+"atribuído automaticamente."

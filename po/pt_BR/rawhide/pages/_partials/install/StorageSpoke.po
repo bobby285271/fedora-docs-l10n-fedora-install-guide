@@ -2,24 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-23 22:02+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"rawhidepages_partialsinstallstoragespoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
 #: pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "Destino da instalação"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:7
@@ -29,6 +34,10 @@ msgid ""
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
 msgstr ""
+"A tela `Destino da instalação` permite que você configure as opções de "
+"armazenamento – ou seja, quais discos serão usados como o destino de "
+"instalação para sua instalação do {PRODUCT}. Pelo menos um disco deve ser "
+"sempre selecionado para que a instalação prossiga."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:9
@@ -37,6 +46,10 @@ msgid ""
 "Linux, see xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"Para obter informações sobre a teoria e os conceitos por trás do "
+"particionamento de disco no Linux, consulte xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-recommended[Esquema de "
+"particionamento recomendado]."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:14
@@ -49,18 +62,27 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"Se você planeja usar um disco que já contém alguns dados – por exemplo, se "
+"deseja reduzir uma partição existente do Microsoft Windows e instalar o "
+"{PRODUCT} como um segundo sistema ou se estiver atualizando uma versão "
+"anterior do {PRODUCT}, certifique-se de para fazer backup de todos os dados "
+"importantes primeiro. Manipular partições sempre traz um risco - se o "
+"processo for interrompido ou falhar por qualquer motivo (erro do instalador, "
+"falha de hardware, falta de energia, etc.), quaisquer dados já no disco "
+"podem se tornar impossíveis de serem recuperados."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "The Installation Destination screen. There are two local standard disks available"
 msgstr ""
+"A tela Destino da instalação. Existem dois discos padrão locais disponíveis"
 
 #. type: Target for macro image
 #: pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:22
@@ -71,6 +93,11 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"Na parte superior da tela, todos os dispositivos de armazenamento "
+"disponíveis localmente (discos rígidos SATA, IDE e SCSI, unidades flash USB, "
+"etc.) são exibidos na seção `Discos padrão locais`. Os discos locais são "
+"detectados quando o instalador é iniciado – quaisquer dispositivos de "
+"armazenamento conectados após o início da instalação não serão exibidos."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:24
@@ -80,6 +107,10 @@ msgid ""
 "All detected disks, including any new ones, will be displayed in the `Local "
 "Standard Disks` section."
 msgstr ""
+"Se você precisar configurar dispositivos de armazenamento local adicionais, "
+"selecione `Atualizar` no canto inferior direito. Siga as instruções na caixa "
+"de diálogo que é aberta. Todos os discos detectados, incluindo os novos, "
+"serão exibidos na seção `Discos padrão locais`."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:26
@@ -94,6 +125,16 @@ msgid ""
 "show up in the `Specialized & Network Disks` the same way local disks are "
 "shown above."
 msgstr ""
+"A seção `Discos especializados e de rede` abaixo mostra o armazenamento de "
+"rede avançado (como discos iSCSI e FCoE) atualmente configurado. Quando você "
+"abre esta tela pela primeira vez, nenhum desses dispositivos será exibido "
+"porque eles não podem ser detectados automaticamente; para procurar "
+"dispositivos de armazenamento de rede, pressione o botão `Adicionar um disco`"
+" e prossiga com xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-destination[Destino da instalação - Discos especializados e de "
+"rede]. Qualquer armazenamento de rede que você configurar aparecerá em `"
+"Discos especializados e de rede` da mesma forma que os discos locais são "
+"mostrados acima."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:28
@@ -104,6 +145,11 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"Todos os dispositivos de armazenamento que serão usados para instalar o "
+"{PRODUCT} têm um ícone de círculo preto com uma marca de seleção branca. Os "
+"discos não marcados por este ícone não serão usados durante a instalação - "
+"eles serão ignorados se você escolher o particionamento automático e não "
+"estarão disponíveis no particionamento manual."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:33
@@ -115,6 +161,13 @@ msgid ""
 "If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"Os dispositivos de armazenamento USB, como unidades flash e discos externos, "
+"também serão exibidos em `Discos padrão locais` e estarão disponíveis para "
+"seleção da mesma forma que os discos rígidos internos. Certifique-se de *não*"
+" selecionar nenhum armazenamento removível como destino de instalação, a "
+"menos que você realmente queira fazer isso. Se você acidentalmente usar uma "
+"unidade removível para instalar o {PRODUCT} e, em seguida, desconectá-lo, o "
+"sistema provavelmente ficará inutilizável."
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:36
