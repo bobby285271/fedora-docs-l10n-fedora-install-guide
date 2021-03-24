@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-03-23 22:02+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-03-24 10:59+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f29pages_partialsinstallstoragespoke/pt_BR/>\n"
@@ -174,31 +175,37 @@ msgstr ""
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Disco não selecionado e selecionado"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Disk selection in the Installation Destination screen. Two disks are displayed; only the one on the right side will be used"
 msgstr ""
+"Seleção do disco na tela Destino da instalação. Dois discos são exibidos; "
+"apenas o do lado direito será usado"
 
 #. type: Target for macro image
 #: pages/_partials/install/StorageSpoke.adoc:38
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:41
+#, fuzzy
 msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "two options in the `Other Storage Options` section:"
 msgstr ""
+"Depois de selecionar todos os discos que deseja instalar {PRODUCT}, "
+"selecione uma das duas opções na seção `Outras opções de armazenamento`:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:43
+#, fuzzy
 msgid ""
 "`Automatically configure partitioning` - If this option is selected, then "
 "after you press `Done` in the top left corner of the screen, the installer "
@@ -208,9 +215,18 @@ msgid ""
 "firmware, the total amount of free space on your disks, and the amount of "
 "RAM on your system (which determines the size of your swap space)."
 msgstr ""
+"`Configurar automaticamente o particionamento` - se esta opção for "
+"selecionada, depois de pressionar` Concluído` no canto superior esquerdo da "
+"tela, o instalador determinará a quantidade total de espaço em todos os "
+"discos selecionados e criará um _Gerenciamento de volume lógico_ (LVM) "
+"layout adequado para seu sistema. As especificações desse layout dependem se "
+"seu sistema usa BIOS ou firmware UEFI, a quantidade total de espaço livre em "
+"seus discos e a quantidade de RAM em seu sistema (que determina o tamanho do "
+"seu espaço de swap)."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:45
+#, fuzzy
 msgid ""
 "With automatic partitioning, you can also select the `I would like to make "
 "additional space available` option below. Use this option if you want to "
@@ -220,9 +236,17 @@ msgid ""
 "The `Reclaim space` dialog which opens if this option is selected is "
 "described later in this section."
 msgstr ""
+"Com o particionamento automático, você também pode selecionar a opção `"
+"Gostaria de disponibilizar espaço adicional` abaixo. Use esta opção se "
+"desejar recuperar espaço de um layout de particionamento existente - por "
+"exemplo, se um disco que você deseja usar já contém um sistema operacional "
+"diferente e você deseja tornar as partições desse sistema menores para "
+"permitir mais espaço para {PRODUTO}. A caixa de diálogo `Recuperar espaço` "
+"que abre se esta opção for selecionada é descrita posteriormente nesta seção."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:47
+#, fuzzy
 msgid ""
 "`I will configure partitioning` - Select this option and press `Done` in the "
 "top left corner of the screen to configure your system's partitioning layout "
@@ -232,6 +256,14 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning]."
 msgstr ""
+"`Vou configurar o particionamento` - Selecione esta opção e "
+"pressione`Concluído` no canto superior esquerdo da tela para configurar o "
+"layout de particionamento do seu sistema manualmente. Isso requer algum "
+"conhecimento da teoria por trás das partições de disco e conceitos "
+"relacionados, mas oferece controle total sobre a maneira como o sistema será "
+"instalado. Para obter instruções sobre o particionamento manual, consulte "
+"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Particionamento manual]."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:49
