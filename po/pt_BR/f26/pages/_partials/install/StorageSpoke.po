@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-03-23 22:02+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-03-24 10:57+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f26pages_partialsinstallstoragespoke/pt_BR/>\n"
@@ -101,6 +102,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:25
+#, fuzzy
 msgid ""
 "If you need to configure additional local storage devices, select `I will "
 "configure partitioning` and press `Done` to move to xref:"
@@ -114,9 +116,22 @@ msgid ""
 "partitioning[Installation Destination]; all detected disks including any new "
 "ones will be displayed in the `Local Standard Disks` section."
 msgstr ""
+"Se você precisar configurar dispositivos de armazenamento local adicionais, "
+"selecione `Vou configurar o particionamento` e pressione` Concluído` para "
+"mover para xref: Connecting_Using_Anaconda.adoc # sect-installation-gui-"
+"manual-partitioning [Particionamento manual]. Em seguida, conecte todos os "
+"novos discos rígidos que deseja disponibilizar durante a instalação e "
+"pressione o botão marcado por uma seta circular no conjunto de controles "
+"abaixo da lista de pontos de montagem no lado esquerdo da tela. Na janela de "
+"diálogo que se abre, pressione `Reexaminar Discos` e aguarde até que o "
+"processo de digitalização seja concluído. Então, pressione `OK` para "
+"retornar ao xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-"
+"storage-partitioning[Destino da instalação]; todos os discos detectados, "
+"incluindo os novos, serão exibidos na seção `Discos padrão locais`."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:27
+#, fuzzy
 msgid ""
 "The `Specialized & Network Disks` section below shows advanced network "
 "storage (such as iSCSI and FCoE disks) currently configured. When you first "
@@ -128,6 +143,16 @@ msgid ""
 "show up in the `Specialized & Network Disks` the same way local disks are "
 "shown above."
 msgstr ""
+"A seção `Discos especializados e de rede` abaixo mostra o armazenamento de "
+"rede avançado (como discos iSCSI e FCoE) atualmente configurado. Quando você "
+"abre esta tela pela primeira vez, nenhum desses dispositivos será exibido "
+"porque eles não podem ser detectados automaticamente; para procurar "
+"dispositivos de armazenamento de rede, botão `Adicionar um disco` e "
+"prosseguir com xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-destination[Destino da instalação - Discos especializados e de "
+"rede]. Qualquer armazenamento de rede que você configurar aparecerá em `"
+"Discos especializados & Rede` da mesma forma que os discos locais são "
+"mostrados acima."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:29
@@ -164,31 +189,37 @@ msgstr ""
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:37
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Disco não selecionado e selecionado"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Disk selection in the Installation Destination screen. Two disks are displayed; only the one on the right side will be used"
 msgstr ""
+"Seleção do disco na tela Destino da instalação. Dois discos são exibidos; "
+"apenas o do lado direito será usado"
 
 #. type: Target for macro image
 #: pages/_partials/install/StorageSpoke.adoc:39
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:42
+#, fuzzy
 msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "two options in the `Other Storage Options` section:"
 msgstr ""
+"Depois de selecionar todos os discos que deseja instalar {PRODUCT}, "
+"selecione uma das duas opções na seção `Outras opções de armazenamento`:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:44
+#, fuzzy
 msgid ""
 "`Automatically configure partitioning` - If this option is selected, then "
 "after you press `Done` in the top left corner of the screen, the installer "
@@ -198,9 +229,18 @@ msgid ""
 "firmware, the total amount of free space on your disks, and the amount of "
 "RAM on your system (which determines the size of your swap space)."
 msgstr ""
+"`Configurar automaticamente o particionamento` - se esta opção for "
+"selecionada, depois de pressionar` Concluído` no canto superior esquerdo da "
+"tela, o instalador determinará a quantidade total de espaço em todos os "
+"discos selecionados e criará um _Gerenciamento de volume lógico_ (LVM) "
+"layout adequado para seu sistema. As especificações desse layout dependem se "
+"seu sistema usa BIOS ou firmware UEFI, a quantidade total de espaço livre em "
+"seus discos e a quantidade de RAM em seu sistema (que determina o tamanho do "
+"seu espaço de swap)."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:46
+#, fuzzy
 msgid ""
 "With automatic partitioning, you can also select the `I would like to make "
 "additional space available` option below. Use this option if you want to "
@@ -210,9 +250,17 @@ msgid ""
 "The `Reclaim space` dialog which opens if this option is selected is "
 "described later in this section."
 msgstr ""
+"Com o particionamento automático, você também pode selecionar a opção `"
+"Gostaria de disponibilizar espaço adicional` abaixo. Use esta opção se "
+"desejar recuperar espaço de um layout de particionamento existente - por "
+"exemplo, se um disco que você deseja usar já contém um sistema operacional "
+"diferente e você deseja tornar as partições desse sistema menores para "
+"permitir mais espaço para {PRODUTO}. A caixa de diálogo `Recuperar espaço` "
+"que abre se esta opção for selecionada é descrita posteriormente nesta seção."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:48
+#, fuzzy
 msgid ""
 "`I will configure partitioning` - Select this option and press `Done` in the "
 "top left corner of the screen to configure your system's partitioning layout "
@@ -222,6 +270,14 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning[Manual Partitioning]."
 msgstr ""
+"`Vou configurar o particionamento` - Selecione esta opção e "
+"pressione`Concluído` no canto superior esquerdo da tela para configurar o "
+"layout de particionamento do seu sistema manualmente. Isso requer algum "
+"conhecimento da teoria por trás das partições de disco e conceitos "
+"relacionados, mas oferece controle total sobre a maneira como o sistema será "
+"instalado. Para obter instruções sobre o particionamento manual, consulte "
+"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Particionamento manual]."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:50
@@ -236,6 +292,7 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:55
+#, fuzzy
 msgid ""
 "If you lose the LUKS passphrase, any encrypted partitions and the data on "
 "them will become completely inaccessible. There is no way to recover a lost "
@@ -245,9 +302,18 @@ msgid ""
 "kickstart-installations[Automating the Installation with Kickstart] for "
 "information about Kickstart installations."
 msgstr ""
+"Se você perder a senha do LUKS, todas as partições criptografadas e os dados "
+"nelas contidos ficarão completamente inacessíveis. Não há como recuperar uma "
+"senha longa perdida. No entanto, se você executar uma instalação Kickstart, "
+"você pode salvar frases-senha de criptografia e criar frases-senha de "
+"criptografia de backup durante a instalação. Veja xref:../advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installation[Automatizando a "
+"instalação com o Kickstart] para informações sobre as instalações do "
+"Kickstart."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:59
+#, fuzzy
 msgid ""
 "To control which one of your selected storage devices will contain the _boot "
 "loader_, click the `Full disk summary and bootloader` link in the bottom "
@@ -258,6 +324,15 @@ msgid ""
 "configurations (for example, systems which require _chain loading_ from "
 "another boot loader) will require the boot drive to be specified manually."
 msgstr ""
+"Para controlar qual de seus dispositivos de armazenamento selecionados "
+"conterá o _boot loader_, clique no link `Resumo completo do disco e "
+"bootloader` no canto inferior esquerdo da tela e siga as instruções em "
+"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning-bootloader[Instalação do carregador de boot]. Observe que, "
+"embora na maioria dos casos seja suficiente deixar o carregador de boot no "
+"local padrão, algumas configurações (por exemplo, sistemas que requerem "
+"_cadeia de carregamento_ de outro carregador de boot) exigirão que a unidade "
+"de boot seja especificada manualmente."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:61
