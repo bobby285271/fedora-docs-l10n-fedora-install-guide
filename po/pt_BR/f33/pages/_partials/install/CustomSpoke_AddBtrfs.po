@@ -7,13 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-25 00:02+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstallcustomspoke_addbtrfs/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:5
@@ -34,6 +38,7 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:10
+#, fuzzy
 msgid ""
 "Creating a Btrfs layout is somewhat similar to LVM (described in xref:"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
@@ -45,6 +50,16 @@ msgid ""
 "shown next to each mount point in the left pane, while with Btrfs, the total "
 "size of the entire volume is shown next to each subvolume."
 msgstr ""
+"A criação de um layout Btrfs é um pouco semelhante ao LVM (descrito em "
+"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[Criando um Layout de Gerenciamento de Volume Lógico (LVM)]) "
+"com terminologia ligeiramente diferente. Um _volume_ Btrfs é o equivalente a "
+"um grupo de volume LVM e um _subvolume_ Btrfs é semelhante a um volume "
+"lógico LVM. Uma diferença importante a ser observada é como o "
+"[application]*Anaconda* relata tamanhos para pontos de montagem separados: "
+"Para LVM, o tamanho exato de cada volume lógico é mostrado próximo a cada "
+"ponto de montagem no painel esquerdo, enquanto com Btrfs, o tamanho total de "
+"todo o volume é mostrado próximo a cada subvolume."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:15
@@ -57,39 +72,43 @@ msgstr ""
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Create Btrfs Subvolume"
-msgstr ""
+msgstr "Criar Subvolume Btrfs"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr ""
+msgstr "A tela de particionamento manual"
 
 #. type: Target for macro image
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "anaconda/CustomSpoke_AddBtrfs.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddBtrfs.png"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:23
+#, fuzzy
 msgid "Follow the procedure below to create Btrfs volumes and subvolumes:"
-msgstr ""
+msgstr "Siga o procedimento abaixo para criar volumes e subvolumes Btrfs:"
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Creating Btrfs Subvolumes and Volumes"
-msgstr ""
+msgstr "Criação de subvolumes e volumes Btrfs"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
+#, fuzzy
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
+"Clique no botão `+` na parte inferior da lista mostrando os pontos de "
+"montagem existentes. Uma nova janela de diálogo será aberta."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:28
@@ -103,10 +122,13 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:33
+#, fuzzy
 msgid ""
 "When creating a mount point for swap on Btrfs, specify the mount point as "
 "`swap`."
 msgstr ""
+"Ao criar um ponto de montagem para swap no Btrfs, especifique o ponto de "
+"montagem como `swap`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
@@ -147,18 +169,25 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
+#, fuzzy
 msgid ""
 "Additionally, you can set a fixed size for the volume by selecting the "
 "`Fixed` option from the `Size policy` menu and entering a size for the "
 "volume group."
 msgstr ""
+"Além disso, você pode definir um tamanho fixo para o volume selecionando a "
+"opção `Fixo` no menu` Política de tamanho` e inserindo um tamanho para o "
+"grupo de volume."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:52
+#, fuzzy
 msgid ""
 "After you finish configuring the Btrfs volume settings, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Depois de definir as configurações de volume do Btrfs, clique em `Salvar` "
+"para retornar à tela principal de` Particionamento manual`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
@@ -183,12 +212,17 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:58
+#, fuzzy
 msgid ""
 "Repeat this procedure for any additional Btrfs subvolumes you want to "
 "create. Note that when creating additional subvolumes, a new volume is not "
 "automatically created each time; instead, any additional subvolumes are "
 "assigned to an existing volume."
 msgstr ""
+"Repita este procedimento para quaisquer subvolumes Btrfs adicionais que você "
+"deseja criar. Observe que, ao criar subvolumes adicionais, um novo volume "
+"não é criado automaticamente a cada vez; em vez disso, quaisquer subvolumes "
+"adicionais são atribuídos a um volume existente."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:59
