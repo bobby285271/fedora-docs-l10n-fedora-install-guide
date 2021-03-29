@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-03-25 00:02+0000\n"
+"PO-Revision-Date: 2021-03-29 21:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.2\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
@@ -181,7 +181,7 @@ msgstr "Disco não selecionado e selecionado"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Disk selection in the Installation Destination screen. Two disks are displayed; only the one on the right side will be used"
 msgstr ""
 "Seleção do disco na tela Destino da instalação. Dois discos são exibidos; "
@@ -189,7 +189,7 @@ msgstr ""
 
 #. type: Target for macro image
 #: pages/_partials/install/StorageSpoke.adoc:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
 msgstr "anaconda/StorageSpoke_Selected.png"
 
@@ -226,7 +226,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:45
-#, fuzzy
 msgid ""
 "With automatic partitioning, you can also select the `I would like to make "
 "additional space available` option below. Use this option if you want to "
@@ -236,9 +235,9 @@ msgid ""
 "The `Reclaim space` dialog which opens if this option is selected is "
 "described later in this section."
 msgstr ""
-"Com o particionamento automático, você também pode selecionar a opção `"
-"Gostaria de disponibilizar espaço adicional` abaixo. Use esta opção se "
-"desejar recuperar espaço de um layout de particionamento existente - por "
+"Com o particionamento automático, você também pode selecionar a opção `Eu "
+"gostaria de adicionar espaço disponível no disco.` abaixo. Use esta opção se "
+"desejar recuperar espaço de um layout de particionamento existente – por "
 "exemplo, se um disco que você deseja usar já contém um sistema operacional "
 "diferente e você deseja tornar as partições desse sistema menores para "
 "permitir mais espaço para {PRODUCT}. A caixa de diálogo `Recuperar espaço` "
@@ -275,6 +274,13 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at link:++https://"
 "docs.fedoraproject.org/++[]."
 msgstr ""
+"Além disso, você pode selecionar a passagem `Criptografar meus "
+"dados`pass:attributes[{blank}]; isso criptografará todas as partições, "
+"exceto as necessárias para inicializar o sistema (como `/boot`) usando "
+"_Linux Unified Key Setup_ (LUKS). É recomendável criptografar seu disco "
+"rígido. Para obter informações detalhadas sobre a criptografia LUKS, "
+"consulte o [citetitle]_{PRODUCT} Security{nbsp}Guide_ (Guia de segurança), "
+"disponível em link:++https://docs.fedoraproject.org/++[]."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:54
@@ -287,6 +293,13 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"Se você perder a senha do LUKS, todas as partições criptografadas e os dados "
+"nelas contidos ficarão completamente inacessíveis. Não há como recuperar uma "
+"senha longa perdida. No entanto, se você executar uma instalação Kickstart, "
+"você pode salvar senhas de criptografia e criar senha de criptografia de "
+"backup durante a instalação. Veja xref:advanced/Kickstart_Installations.adoc"
+"#chap-kickstart-installations[Automatizando a instalação com o Kickstart] "
+"para obter informações sobre instalações com Kickstart."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:58
@@ -300,6 +313,16 @@ msgid ""
 "configurations (for example, systems which require _chain loading_ from "
 "another boot loader) will require the boot drive to be specified manually."
 msgstr ""
+"Para controlar qual de seus dispositivos de armazenamento selecionados "
+"conterá o _carregador de inicialização_, clique no link `Resumo completo do "
+"disco e carregador de inicialização` no canto inferior esquerdo da tela e "
+"siga as instruções em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning-bootloader[Instalação do carregador de "
+"inicialização]. Observe que, embora na maioria dos casos seja suficiente "
+"deixar o carregador de inicialização no local padrão, algumas configurações ("
+"por exemplo, sistemas que requerem _cadeia de carregamento_ de outro "
+"carregador de inicialização) exigirão que a unidade de inicialização seja "
+"especificada manualmente."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:60
@@ -309,6 +332,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"Depois de selecionar os dispositivos de armazenamento, escolha entre o "
+"particionamento automático e manual, configure a criptografia e o local do "
+"carregador de inicialização e pressione `Pronto` no canto superior esquerdo "
+"da tela. Então, dependendo de suas configurações, acontecerá o seguinte:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:62
@@ -321,6 +348,13 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"Se você optar por criptografar seu disco rígido, a caixa de diálogo `Senha "
+"de criptografia de disco` aparecerá. Digite sua senha escolhida nos campos "
+"`Senha` e` Confirmar`. Ao fazer isso, a senha será avaliada automaticamente "
+"e sua força será exibida, junto com sugestões sobre como torná-la mais forte "
+"se o instalador a tiver determinado como fraca. Para obter informações sobre "
+"como criar senhas fortes, consulte o [citetitle]_{PRODUCT} Security{nbsp}"
+"Guide_ (guia de segurança)."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:64
@@ -333,6 +367,14 @@ msgid ""
 "information about how much space the system needs for at least a minimal "
 "installation and how much space you have reclaimed."
 msgstr ""
+"Se você selecionou o particionamento automático e `Eu gostaria de adicionar "
+"espaço disponível no disco.`, ou se não houver espaço livre suficiente nos "
+"discos rígidos selecionados para instalar o {PRODUCT}, a caixa de diálogo `"
+"Recuperar espaço` aparecerá. Esta caixa de diálogo lista todos os "
+"dispositivos de disco que você configurou e todas as partições nesses "
+"dispositivos. O canto inferior direito da caixa de diálogo exibe informações "
+"sobre quanto espaço o sistema precisa para pelo menos uma instalação mínima "
+"e quanto espaço você recuperou."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:69
@@ -341,6 +383,9 @@ msgid ""
 "that partition will be lost. If you want to preserve your data, use the "
 "`Shrink` option, not the `Delete` option."
 msgstr ""
+"Se você usar a caixa de diálogo `Recuperar espaço` para *excluir* uma "
+"partição, todos os dados dessa partição serão perdidos. Se você quiser "
+"preservar seus dados, use a opção `Reduzir`, não a opção `Excluir`."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:73
@@ -355,6 +400,16 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"Primeiro, revise a lista exibida de dispositivos de armazenamento "
+"disponíveis. A coluna `Espaço recuperável` mostra quanto espaço pode ser "
+"recuperado de cada entrada. Para recuperar espaço, selecione um disco ou "
+"partição e pressione o botão `Excluir` para excluir essa partição (ou todas "
+"as partições em um disco selecionado) ou `Reduzir` para usar o espaço livre "
+"em uma partição enquanto preserva os dados existentes. Alternativamente, "
+"você pode pressionar `Excluir tudo` no canto inferior direito; isso excluirá "
+"todas as partições existentes em todos os discos e disponibilizará este "
+"espaço para {PRODUCT}, mas todos os dados existentes em todos os discos "
+"serão perdidos."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:75
@@ -362,6 +417,8 @@ msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
+"Após você liberar espaço suficiente para sua instalação do {PRODUCT}, "
+"pressione `Recuperar espaço` para concluir."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:80
@@ -372,6 +429,11 @@ msgid ""
 "partitions for resizing or deletion, but no such action is performed "
 "immediately."
 msgstr ""
+"Nenhuma mudança em nenhum disco será feita até que você pressione `Iniciar a "
+"instalação` em xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-summary[Resumo da Instalação]. A caixa de diálogo `Recuperar "
+"espaço do disco` apenas *marca* as partições para redimensionamento ou "
+"exclusão, mas nenhuma ação é realizada imediatamente."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:84
