@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-03-05 20:01+0000\n"
+"PO-Revision-Date: 2021-04-01 10:23+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.2\n"
 
 #. type: Block title
 #: pages/_partials/install/SoftwareSpoke.adoc:5
@@ -61,6 +61,13 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"Não é possível selecionar pacotes específicos durante uma instalação manual. "
+"Você só pode selecionar ambientes e complementos predefinidos. Se você "
+"precisa controlar exatamente quais pacotes são instalados, você deve usar um "
+"arquivo Kickstart e definir os pacotes na seção [command]#%packages#. Veja "
+"xref:../advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Automatizando a Instalação com o Kickstart] para informações sobre as "
+"instalações do Kickstart."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:19
@@ -131,6 +138,13 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection]."
 msgstr ""
+"Ambientes e complementos são definidos usando um arquivo `comps.xml` em sua "
+"fonte de instalação (por exemplo, no diretório`repodata/`no DVD de "
+"instalação do Fedora{nbsp}Server completo). Revise este arquivo para ver "
+"exatamente quais pacotes serão instalados como parte de um determinado "
+"ambiente ou complemento. Para obter mais informações sobre o arquivo `comps."
+"xml`, consulte xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-"
+"kickstart-packages[%packages (obrigatório) - Seleção de pacotes]."
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:30
