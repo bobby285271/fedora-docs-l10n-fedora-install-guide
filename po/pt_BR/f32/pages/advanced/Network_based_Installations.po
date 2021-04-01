@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:05+0000\n"
-"PO-Revision-Date: 2021-03-23 22:01+0000\n"
+"PO-Revision-Date: 2021-04-01 10:23+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.2\n"
 
 #. type: Title =
 #: pages/advanced/Network_based_Installations.adoc:5
@@ -256,14 +256,17 @@ msgstr "Teste sua configuração e resolva quaisquer problemas que descobrir."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:75
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "[command]#systemctl start dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl start dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:78
+#, fuzzy
 msgid ""
 "Add entries to point clients to their bootloader and the server that "
 "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. Because "
@@ -271,6 +274,12 @@ msgid ""
 "their address request, BIOS clients and UEFI clients can each be directed to "
 "the correct bootloader."
 msgstr ""
+"Adicione entradas para apontar clientes para seu gerenciador de "
+"inicialização e o servidor que fornece isso para sua configuração de sub-"
+"rede em `/etc/dhcp/dhcpd.conf`. Como os clientes DHCP fornecem ao servidor "
+"informações de identificação junto com sua solicitação de endereço, os "
+"clientes BIOS e os clientes UEFI podem ser direcionados ao carregador de "
+"inicialização correto."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:82
@@ -294,98 +303,115 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:91
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "next-server 192.168.1.2;\n"
-msgstr ""
+msgstr "next-server 192.168.1.2;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:93
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:96
+#, fuzzy
 msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
 msgstr ""
+"Reinicie o serviço dhcp para verificar a configuração e fazer as alterações "
+"necessárias."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:102
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl restart dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:106
 #: pages/advanced/Network_based_Installations.adoc:108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Installing the tftp server"
-msgstr ""
+msgstr "Instalando o servidor tftp"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:110
+#, fuzzy
 msgid "Install the tftp server package."
-msgstr ""
+msgstr "Instale o pacote do servidor tftp."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:113
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "# dnf install tftp-server\n"
-msgstr ""
+msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:116
+#, fuzzy
 msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
 msgstr ""
+"Inicie e habilite o `soquete tftp`. `systemd` irá iniciar automaticamente o "
+"serviço` tftpd` quando necessário."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:121
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# [command]#systemctl start tftp.socket#\n"
 "# [command]#systemctl enable tftp.socket#\n"
 msgstr ""
+"# [command]#systemctl start tftp.socket#\n"
+"# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:124
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "Fornecimento e configuração de bootloaders para clientes PXE"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:126
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "Obtendo os arquivos do bootloader"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:128
+#, fuzzy
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
 msgstr ""
+"Obtenha o carregador de inicialização [package]*syslinux* para clientes BIOS."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:130
+#, fuzzy
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "Instale o pacote [package]*syslinux*."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:133
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "# dnf install syslinux\n"
-msgstr ""
+msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:136
 #: pages/advanced/Network_based_Installations.adoc:153
+#, fuzzy
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
+"Crie um diretório para os arquivos do carregador de inicialização e torne-os "
+"disponíveis lá."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:141
@@ -397,8 +423,9 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:144
+#, fuzzy
 msgid "Get the bootloader files for UEFI systems"
-msgstr ""
+msgstr "Obtenha os arquivos do bootloader para sistemas UEFI"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:146
@@ -425,25 +452,31 @@ msgstr ""
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:160
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configuring client bootloaders"
-msgstr ""
+msgstr "Configurando cliente bootloaders"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:162
+#, fuzzy
 msgid ""
 "Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
 "default`."
 msgstr ""
+"Crie um menu de inicialização para clientes BIOS em `/var/lib/tftpboot/"
+"pxelinux.cfg/default`."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:170
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "default vesamenu.c32\n"
 "prompt 1\n"
 "timeout 600\n"
 msgstr ""
+"default vesamenu.c32\n"
+"prompt 1\n"
+"timeout 600\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:175
@@ -483,7 +516,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:198
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "function load_video {\n"
 "\tinsmod efi_gop\n"
@@ -493,15 +526,25 @@ msgid ""
 "\tinsmod all_video\n"
 "}\n"
 msgstr ""
+"function load_video {\n"
+"\tinsmod efi_gop\n"
+"\tinsmod efi_uga\n"
+"\tinsmod video_bochs\n"
+"\tinsmod video_cirrus\n"
+"\tinsmod all_video\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:202
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "load_video\n"
 "set gfxpayload=keep\n"
 "insmod gzio\n"
 msgstr ""
+"load_video\n"
+"set gfxpayload=keep\n"
+"insmod gzio\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:206
@@ -551,9 +594,11 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:228
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:231
