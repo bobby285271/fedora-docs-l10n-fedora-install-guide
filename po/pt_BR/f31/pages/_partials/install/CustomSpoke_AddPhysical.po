@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-03-25 00:02+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-04-02 11:02+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f31pages_partialsinstallcustomspoke_addphysical/pt_BR/>\n"
@@ -17,14 +18,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:5
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:17
 #, no-wrap
 msgid "Creating Standard Partitions"
-msgstr ""
+msgstr "Criando partições padrão"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:8
@@ -37,6 +38,13 @@ msgid ""
 "partition with the BIOS Boot or EFI System file system to store the boot "
 "loader."
 msgstr ""
+"_Partições padrão_ são o tipo mais comum de partição, com o suporte mais "
+"amplo entre os sistemas operacionais. Por exemplo, o Microsoft Windows usa "
+"partições exclusivamente físicas e não pode funcionar nativamente com LVM ou "
+"Btrfs. A maioria das configurações de particionamento do {PRODUCT} também "
+"exigirá pelo menos uma partição padrão para o diretório `/boot` e, "
+"possivelmente, também outra partição padrão com a BIOS Boot ou sistema de "
+"arquivos de sistema EFI para armazenar o carregador de inicialização."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:10
@@ -45,24 +53,27 @@ msgid ""
 "Introduction to Disk Partitions] for additional information about the "
 "concepts behind physical partitions."
 msgstr ""
+"Veja xref:appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview[Uma "
+"introdução às partições de disco] para informações adicionais sobre os "
+"conceitos por trás das partições físicas."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:11
 #, no-wrap
 msgid "Create Standard Partition"
-msgstr ""
+msgstr "Cirar uma partição padrão"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr "A tela de particionamento manual"
+msgstr "A tela Particionamento manual"
 
 #. type: Target for macro image
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddPhysical.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddPhysical.png"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:16
@@ -70,10 +81,11 @@ msgid ""
 "Follow the procedure below to create mount points on standard physical "
 "partitions:"
 msgstr ""
+"Siga o procedimento abaixo para criar pontos de montagem em partições "
+"físicas padrão:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:19
-#, fuzzy
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
@@ -90,6 +102,12 @@ msgid ""
 "Then, click `Add mount point` to add the mount point and return to the main "
 "partitioning screen."
 msgstr ""
+"Na nova janela de diálogo, especifique um ponto de montagem para o qual "
+"deseja criar um ponto de montagem separado – por exemplo, `/`. "
+"Opcionalmente, especifique um tamanho para a partição usando unidades padrão "
+"como MB ou GB (por exemplo, `50GB`). Em seguida, clique em `Adicionar um "
+"ponto de montagem` para adicionar o ponto de montagem e retornar à tela "
+"principal de particionamento."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
@@ -98,6 +116,9 @@ msgid ""
 "BIOS Boot partition, use `biosboot`. For an EFI System Partition, use `/boot/"
 "efi`."
 msgstr ""
+"Ao criar uma partição swap, especifique o ponto de montagem como `swap`. "
+"Para uma partição de inicialização do BIOS, use `biosboot`. Para uma "
+"partição de sistema EFI, use `/boot/efi`."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
@@ -106,6 +127,9 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"Para informações sobre esses tipos de partição, veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de partição recomendado]."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
@@ -116,6 +140,12 @@ msgid ""
 "partition by changing the `Device Type` option to `Standard Partition`. "
 "Then, click `Update Settings` in the bottom right corner of the screen."
 msgstr ""
+"O ponto de montagem agora foi criado usando as configurações padrão, o que "
+"significa que foi criado como um volume lógico LVM. Selecione o ponto de "
+"montagem recém-criado no painel esquerdo para configurá-lo ainda mais e "
+"convertê-lo em uma partição física alterando a opção `Tipo de dispositivo` "
+"para `Partição padrão`. Em seguida, clique em `Atualizar configurações` no "
+"canto inferior direito da tela."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
@@ -124,6 +154,9 @@ msgid ""
 "the partition has been assigned to one or more hard drives. Click the "
 "`Modify` button to configure on which drive this partition will be created."
 msgstr ""
+"Na seção `Dispositivo(s)` no lado direito da tela, você pode ver que a "
+"partição foi atribuída a um ou mais discos rígidos. Clique no botão "
+"`Modificar` para configurar em qual drive esta partição será criada."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
@@ -137,6 +170,15 @@ msgid ""
 "want to make sure that this partition is placed on a specific hard drive, "
 "select only that drive and unselect all others."
 msgstr ""
+"Na caixa de diálogo `Configurar ponto de montagem`, você pode especificar em "
+"quais dispositivos físicos (discos) este volume *pode* residir. Você pode "
+"selecionar um ou mais discos que serão usados para manter este volume, "
+"mantendo pressionado kbd:[Ctrl] e clicando em cada disco na lista. Se você "
+"selecionar vários discos aqui, o [application]*Anaconda* determinará onde "
+"exatamente a partição deve ser criada com base em como você configurou o "
+"resto da instalação. Se você quiser ter certeza de que esta partição foi "
+"colocada em um disco rígido específico, selecione apenas essa unidade e "
+"desmarque todas as outras."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
@@ -144,6 +186,8 @@ msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Após terminar de configurar a localização da partição, clique em `Salvar` "
+"para retornar à tela principal `Particionamento manual`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
@@ -152,6 +196,9 @@ msgid ""
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
+"Configure outras configurações específicas para a partição – seu `Ponto de "
+"montagem`, `Capacidade desejada` e `Sistema de arquivos`. Pressione `"
+"Atualizar configurações` para aplicar quaisquer alterações à configuração."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
@@ -159,3 +206,5 @@ msgid ""
 "Repeat this procedure for any additional standard partitions you want to "
 "create."
 msgstr ""
+"Repita este procedimento para todas as partições padrão adicionais que "
+"deseja criar."

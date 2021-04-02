@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-03-26 16:01+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-04-02 11:02+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f26pages_partialsinstallfilterspoke_addfcoe/pt_BR/>\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:6
@@ -27,23 +28,22 @@ msgstr "====== Adicionar FCoE SAN"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:8
-#, fuzzy
 msgid ""
 "The following procedure explains how to add _Fibre Channel over Ethernet_ "
 "(FCoE) storage devices and make them available during the installation:"
 msgstr ""
-"The following procedure explains how to add _Fiber Channel over Ethernet_ "
-"(FCoE) storage devices and make them available during the installation:"
+"O procedimento a seguir explica como adicionar dispositivos de armazenamento "
+"_Fibre Channel over Ethernet_ (FCoE) e torná-los disponíveis durante a "
+"instalação:"
 
 #. type: Block title
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Add FCoE Target"
-msgstr "Adicionar alvo FCoE"
+msgstr "Adicionar destino FCoE"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:12
-#, fuzzy
 msgid ""
 "Click the `Add FCoE SAN` button in the bottom right corner of xref:"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
@@ -51,7 +51,7 @@ msgid ""
 "dialog window will open."
 msgstr ""
 "Clique no botão `Adicionar FCoE SAN` no canto inferior direito de "
-"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
 "destination[Destino da instalação - Discos especializados e de rede]. Uma "
 "nova janela de diálogo será aberta."
 
@@ -71,19 +71,17 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:16
-#, fuzzy
 msgid "Below the `NIC` drop-down menu are two choices:"
-msgstr "Abaixo do menu suspenso `NIC` estão duas opções:"
+msgstr "Embaixo do menu suspenso `NIC` estão duas opções:"
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "`Use DCB`"
-msgstr "`Use DCB`"
+msgstr "`Usar DCB`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:18
-#, fuzzy
 msgid ""
 "_Data Center Bridging_ (DCB) is a set of enhancements to the Ethernet "
 "protocols designed to increase the efficiency of Ethernet connections in "
@@ -101,13 +99,12 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "`Use auto vlan`"
-msgstr "`Use auto vlan`"
+msgstr "`Usar auto vlan`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:20
-#, fuzzy
 msgid ""
 "This option indicates whether VLAN discovery should be performed. If this "
 "box is checked, then the _FCoE Initiation Protocol_ (FIP) VLAN discovery "
@@ -122,11 +119,10 @@ msgstr ""
 "configuração do link for validada. Se ainda não estiverem configuradas, as "
 "interfaces de rede para quaisquer VLANs FCoE descobertas serão criadas "
 "automaticamente e as instâncias FCoE serão criadas nas interfaces VLAN. Essa "
-"opção é ativada por padrão."
+"opção está ativada por padrão."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:21
-#, fuzzy
 msgid ""
 "After you select which interface and options to use, click `Add FCoE "
 "Disk(s)`. Discovered FCoE storage devices will be displayed under the `Other "
@@ -135,7 +131,7 @@ msgid ""
 "Network Disks]."
 msgstr ""
 "Depois de selecionar qual interface e opções usar, clique em `Adicionar "
-"disco (s) FCoE`. Os dispositivos de armazenamento FCoE descobertos serão "
-"exibidos na guia `Outros dispositivos SAN` em xref:Connecting_Using_Anaconda."
+"disco(s) FCoE`. Os dispositivos de armazenamento FCoE descobertos serão "
+"exibidos na aba `Outros dispositivos SAN` em xref:Installing_Using_Anaconda."
 "adoc#sect-installation-gui-installation-destination[Destino da instalação - "
 "Discos especializados e de rede]."

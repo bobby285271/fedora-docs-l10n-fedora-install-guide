@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-04-01 10:23+0000\n"
+"PO-Revision-Date: 2021-04-02 11:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.2\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke.adoc:5
@@ -89,13 +89,13 @@ msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke.adoc:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr "A tela de particionamento manual. Neste ponto"
+msgstr "A tela Particionamento manual. Neste ponto"
 
 #. type: Target for macro image
 #: pages/_partials/install/CustomSpoke.adoc:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "anaconda/CustomSpoke.png"
 msgstr "anaconda/CustomSpoke.png"
 
@@ -119,7 +119,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:27
-#, fuzzy
 msgid ""
 "Here, you can choose a partitioning scheme such as `LVM` or `BTRFS` and "
 "click the `Click here to create them automatically` to prompt the installer "
@@ -130,9 +129,9 @@ msgid ""
 "automatically based on the total amount of available space."
 msgstr ""
 "Aqui, você pode escolher um esquema de particionamento como `LVM` ou` BTRFS` "
-"e clicar em `Clique aqui para criá-los automaticamente` para solicitar ao "
+"e clicar em `Clicar aqui para criá-los automaticamente` para solicitar ao "
 "instalador que crie um layout de particionamento básico; este layout segue "
-"as diretrizes descritas em xref:Connecting_Using_Anaconda.adoc#sect-"
+"as diretrizes descritas em xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-manual-partitioning-recommended[Esquema de particionamento "
 "recomendado]. O layout criado é um layout básico onde os tamanhos de partiçã"
 "o/volume são determinados automaticamente com base na quantidade total de "
@@ -140,7 +139,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:29
-#, fuzzy
 msgid ""
 "Click the `+` button to add a mount point. In the dialog window that opens, "
 "choose a mount point such as `/` or `/home`, and the desired capacity for "
@@ -154,18 +152,17 @@ msgid ""
 msgstr ""
 "Clique no botão `+` para adicionar um ponto de montagem. Na janela de "
 "diálogo que se abre, escolha um ponto de montagem, como `/` ou `/home`, e a "
-"capacidade desejada para o ponto de montagem (como` 10 GB` ou `500 MB`). "
+"capacidade desejada para o ponto de montagem (como `10 GB` ou `500 MB`). "
 "Observe que especificar o ponto de montagem é obrigatório, mas você não "
 "precisa especificar a capacidade neste ponto; isso é útil ao adicionar um "
 "ponto de montagem que você deseja tornar maior do que o espaço disponível "
-"atual permite. Em seguida, clique em `Adicionar ponto de montagem` para "
+"atual permite. Em seguida, clique em `Adicionar um ponto de montagem` para "
 "adicioná-lo à lista usando as configurações padrão, o que significa que ele "
 "será criado como um volume lógico e um novo grupo de volume será criado para "
 "ele, a menos que já exista um."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:31
-#, fuzzy
 msgid ""
 "Then, select the newly created mount point in the list on the left side. A "
 "set of controls will display on the right side of the screen, allowing you "
@@ -186,20 +183,18 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke.adoc:36
-#, fuzzy
 msgid ""
 "For a description of available device and file system types, see xref:"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "filesystems[Device, File System and RAID Types]."
 msgstr ""
 "Para obter uma descrição dos tipos de dispositivos e sistemas de arquivos "
-"disponíveis, consulte xref:Connecting_Using_Anaconda.adoc#sect-installation-"
-"gui-manual-partitioning-filesystems[Dispositivos, Sistema de Arquivos e "
-"Tipos de RAID]."
+"disponíveis, consulte xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-filesystems[Tipos de dispositivos, sistemas de "
+"arquivos e RAID]."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:40
-#, fuzzy
 msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
@@ -209,7 +204,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:42
-#, fuzzy
 msgid ""
 "The exact steps for configuring your storage depend on your specific needs "
 "and your system configuration. Procedures for creating specific layouts are "
@@ -223,22 +217,21 @@ msgstr ""
 "As etapas exatas para configurar seu armazenamento dependem de suas "
 "necessidades específicas e da configuração do sistema. Os procedimentos para "
 "a criação de layouts específicos são descritos mais adiante neste capítulo. "
-"Antes de começar, você também deve revisar o xref:Connecting_Using_Anaconda."
+"Antes de começar, você também deve revisar o xref:Installing_Using_Anaconda."
 "adoc#sect-installation-gui-manual-partitioning-recommended[Esquema de "
-"particionamento recomendado] e xref:Connecting_Using_Anaconda.adoc#sect-"
-"installation-gui-manual-manual-partitioning-conselhos[Conselho nas partições]"
-" para obter uma lista de requisitos e dicas para particionar seus discos "
-"para {PRODUCT}."
+"particionamento recomendado] e xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-advice[Conselho sobre partições] para "
+"obter uma lista de requisitos e dicas para particionar seus discos para o "
+"{PRODUCT}."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:44
-#, fuzzy
 msgid ""
 "Below the list of existing mount points are two fields, showing you how much "
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
-"Abaixo da lista de pontos de montagem existentes, há dois campos, mostrando "
+"Embaixo da lista de pontos de montagem existentes, há dois campos, mostrando "
 "quanto espaço livre resta em seus dispositivos de armazenamento e quanto "
 "espaço total eles possuem."
 
@@ -265,7 +258,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:48
-#, fuzzy
 msgid ""
 "You can press the `Reset All` button in the bottom right corner at any time "
 "to reset the storage configuration to the state it was in when you last "
@@ -277,8 +269,8 @@ msgid ""
 msgstr ""
 "Você pode pressionar o botão `Redefinir tudo` no canto inferior direito a "
 "qualquer momento para redefinir a configuração de armazenamento para o "
-"estado em que estava quando você abriu a tela de` Particionamento manual` "
-"pela última vez. Isso significa que se você modificar a configuração de "
+"estado em que estava quando você abriu a tela `Particionamento manual` pela "
+"última vez. Isso significa que se você modificar a configuração de "
 "armazenamento, sair da tela e voltar, o botão Redefinir irá redefinir a "
 "configuração de volta ao estado já modificado, descartando apenas as "
 "alterações feitas recentemente, nem todas as alterações na configuração de "
@@ -311,19 +303,19 @@ msgstr ""
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke.adoc:51
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Rescan Disks"
-msgstr "Examinar novamente os discos"
+msgstr "Nova varredura de discos"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke.adoc:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr "A caixa de diálogo Reexaminar discos"
+msgstr "A caixa de diálogo Nova varredura de discos"
 
 #. type: Target for macro image
 #: pages/_partials/install/CustomSpoke.adoc:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
 msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
@@ -339,6 +331,14 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Depois de terminar de configurar o armazenamento do sistema, pressione "
+"`Pronto` no canto superior esquerdo para salvar a configuração e retornar à "
+"tela `Resumo da Instalação`. Neste ponto, o instalador verificará se sua "
+"configuração de armazenamento é válida. Se um erro for detectado, uma "
+"mensagem será exibida na parte inferior da tela. Clique na mensagem para "
+"abrir uma janela de diálogo explicando que tipo de erro foi detectado (por "
+"exemplo, você colocou `/boot` em um subvolume Btrfs ou não criou uma "
+"partição de inicialização do BIOS quando seu sistema requer uma)."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:58
@@ -349,6 +349,11 @@ msgid ""
 "anyway, but a storage configuration error will prevent you from starting the "
 "actual installation process."
 msgstr ""
+"Se tal mensagem for exibida, volte e corrija quaisquer problemas encontrados "
+"pelo instalador; caso contrário, você não poderá prosseguir com a "
+"instalação. Você também pode pressionar `Pronto` novamente para retornar ao `"
+"Resumo da Instalação` de qualquer maneira, mas um erro de configuração de "
+"armazenamento o impedirá de iniciar o processo de instalação real."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:60
@@ -361,3 +366,10 @@ msgid ""
 "`Cancel & Return to Custom Partitioning` if you want to make any more "
 "changes."
 msgstr ""
+"Se nenhuma mensagem de erro for exibida e se você fez alguma alteração desde "
+"a última vez que visitou esta tela, uma caixa de diálogo de resumo "
+"aparecerá, exibindo uma lista detalhada das alterações feitas. Revise a "
+"lista e clique em `Aceitar mudanças` para prosseguir com "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Resumo da Instalação] ou clique em `Cancelar e retornar para o "
+"particionamento personalizado` se quiser fazer mais alterações ."

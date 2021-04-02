@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-03-08 18:01+0000\n"
+"PO-Revision-Date: 2021-04-02 11:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "Tipos de dispositivos, sistemas de arquivos e RAID"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -32,6 +32,9 @@ msgid ""
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
 msgstr ""
+"{PRODUCT} tem suporte a vários tipos de dispositivos e sistemas de arquivos. "
+"As listas abaixo oferecem uma breve descrição de cada tipo de dispositivo, "
+"sistema de arquivos e RAID disponível e notas sobre seu uso."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -43,6 +46,13 @@ msgid ""
 "the right side of the screen. Then, click `Update Settings` and repeat this "
 "process for all mount points you want to modify."
 msgstr ""
+"Para selecionar um tipo de dispositivo ou sistema de arquivo de uma partição "
+"ou volume lógico, selecione-o na lista em xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning[Particionamento manual] e "
+"selecione um `Tipo de dispositivo` e um `Sistema de arquivos` de seus "
+"respectivos menus suspensos no lado direito da tela. Em seguida, clique em `"
+"Atualizar configurações` e repita este processo para todos os pontos de "
+"montagem que deseja modificar."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -60,12 +70,24 @@ msgid ""
 "installation-gui-manual-partitioning-swraid[Creating Software RAID] as "
 "needed."
 msgstr ""
+"Para configurar o RAID por software, certifique-se de ter unidades de disco "
+"rígido físicas suficientes selecionadas como alvos de instalação (o número "
+"de unidades separadas necessárias para cada tipo de RAID é anotado em sua "
+"descrição). Em seguida, escolha um nível de RAID ao criar ou modificar um "
+"volume Btrfs ou grupo de volume LVM, ou selecione `RAID por software` como o "
+"tipo de dispositivo para criar RAID por software com partições padrão. Para "
+"obter instruções detalhadas, consulte xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-btrfs[Criando um layout Btrfs], "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[Criando um layout de Gerenciamento de Volume Lógico (LVM)] "
+"e xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-swraid[Criando RAID por Software] conforme necessário."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:13
 #, no-wrap
 msgid "Device Types"
-msgstr ""
+msgstr "Tipos de dispositivos"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:16
@@ -77,6 +99,13 @@ msgid ""
 "adoc#appe-disk-partitions-overview[An Introduction to Disk Partitions] for "
 "additional information about the concepts behind physical partitions."
 msgstr ""
+"`Partição padrão` - Uma partição padrão pode conter um sistema de arquivos "
+"ou espaço de troca. As partições padrão são mais comumente usadas para "
+"`/boot` e as partições BIOS Boot e sistema EFI. Volumes lógicos LVM ou "
+"subvolumes Btrfs são recomendados para a maioria dos outros usos. Consulte "
+"xref:appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview[Uma "
+"introdução às partições de disco] para obter informações adicionais sobre os "
+"conceitos por trás das partições físicas."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:18
@@ -91,6 +120,16 @@ msgid ""
 "see xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding "
 "LVM] for some additional information about LVM in general."
 msgstr ""
+"`LVM` - Escolher `LVM` como o `Tipo de dispositivo` cria um volume lógico "
+"LVM e um grupo de volume para contê-lo (a menos que já exista, caso em que o "
+"novo volume é atribuído ao grupo existente). O LVM pode melhorar o "
+"desempenho ao usar discos físicos e permite que você use vários discos para "
+"um único ponto de montagem. Para obter informações sobre como criar um "
+"volume lógico, consulte xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-lvm[Criando um layout de Gerenciamento "
+"de Volume Lógico (LVM)]. Consulte também xref:appendixes/Understanding_LVM."
+"adoc#appe-lvm-overview[Entendendo LVM] para obter algumas informações "
+"adicionais sobre o LVM em geral."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:20
@@ -101,6 +140,11 @@ msgid ""
 "be expanded dynamically when needed for cost-effective allocation of storage "
 "space."
 msgstr ""
+"`Provisionamento LVM fino` - Usando o provisionamento dinâmico, você pode "
+"gerenciar um pool de armazenamento de espaço livre, conhecido como _conjunto "
+"fino_, que pode ser alocado a um número arbitrário de dispositivos quando "
+"necessário pelos aplicativos. O pool fino pode ser expandido dinamicamente "
+"quando necessário para alocação econômica de espaço de armazenamento."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:22
@@ -111,6 +155,11 @@ msgid ""
 "partitioning-swraid[Creating Software RAID] for instructions on creating "
 "software RAID."
 msgstr ""
+"`RAID` - A criação de duas ou mais partições de RAID de software permite que "
+"você crie um dispositivo de RAID por software. Uma partição RAID é atribuída "
+"a cada disco do sistema. Veja xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-swraid[Criando RAID por software] para "
+"obter instruções sobre como criar RAID por software."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:24
@@ -122,6 +171,12 @@ msgid ""
 "btrfs[Creating a Btrfs Layout] for more information about creating Btrfs "
 "volumes."
 msgstr ""
+"`BTRFS` - Btrfs é um sistema de arquivos com vários recursos semelhantes a "
+"dispositivos. Ele é capaz de endereçar e gerenciar mais arquivos, arquivos "
+"maiores e volumes maiores do que os sistemas de arquivos ext2, ext3 e ext4. "
+"Veja xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-btrfs[Criando um layout Btrfs] para mais informações sobre a "
+"criação de volumes Btrfs."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:25
@@ -140,6 +195,14 @@ msgid ""
 "file system used by {PRODUCT} Workstation and Cloud. The maximum supported "
 "size of a single ext4 file system is 50 TB."
 msgstr ""
+"`ext4` - O sistema de arquivos ext4 é baseado no sistema de arquivos ext3 e "
+"apresenta uma série de melhorias. Isso inclui suporte para sistemas de "
+"arquivos maiores e arquivos maiores, alocação mais rápida e eficiente de "
+"espaço em disco, sem limite no número de subdiretórios em um diretório, "
+"verificação mais rápida do sistema de arquivos e registro de diário mais "
+"robusto. Ext4 é o sistema de arquivos padrão e recomendado usado pela "
+"estação de trabalho e nuvem do {PRODUCT}. O tamanho máximo suportado de um "
+"único sistema de arquivo ext4 é 50 TB."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:30
@@ -150,6 +213,12 @@ msgid ""
 "the file system for metadata consistency by running the [command]#fsck# "
 "utility every time a crash occurs."
 msgstr ""
+"`ext3` - O sistema de arquivos ext3 é baseado no sistema de arquivos ext2 e "
+"tem uma vantagem principal - journaling. O uso de um sistema de arquivos com "
+"journaling reduz o tempo gasto na recuperação de um sistema de arquivos após "
+"um travamento, pois não há necessidade de verificar a consistência dos "
+"metadados do sistema de arquivos executando o utilitário [command]#fsck# "
+"toda vez que ocorre um travamento."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:32
@@ -158,6 +227,10 @@ msgid ""
 "regular files, directories, or symbolic links. It provides the ability to "
 "assign long file names, up to 255 characters."
 msgstr ""
+"`ext2` - Um sistema de arquivo ext2 oferece suporte a tipos de arquivo Unix "
+"padrão, incluindo arquivos regulares, diretórios ou links simbólicos. Ele "
+"fornece a capacidade de atribuir nomes de arquivo longos, de até 255 "
+"caracteres."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:34
@@ -169,6 +242,13 @@ msgid ""
 "manual-partitioning-recommended[Recommended Partitioning Scheme] for details "
 "such as the recommended size."
 msgstr ""
+"`swap` - As partições de troca são usadas para oferecer suporte à memória "
+"virtual. Em outras palavras, os dados são gravados em uma partição swap "
+"quando não há RAM suficiente para armazenar os dados que seu sistema está "
+"processando. Uma partição swap deve sempre ser criada; veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomendado] para "
+"detalhes como o tamanho recomendado."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:36
@@ -181,6 +261,15 @@ msgid ""
 "supported size of a single XFS file system is 500 TB. Starting with {PRODUCT}"
 "{nbsp}22, XFS is the default and recommended file system on {PRODUCT} Server."
 msgstr ""
+"`xfs` - O XFS é um sistema de arquivos altamente escalonável e de alto "
+"desempenho que oferece suporte a sistemas de arquivos de até 16 exabytes ("
+"aproximadamente 16 milhões de terabytes), arquivos de até 8 exabytes ("
+"aproximadamente 8 milhões de terabytes) e estruturas de diretório contendo "
+"dezenas de milhões de entradas. O XFS também oferece suporte a registro de "
+"metadados, o que facilita a recuperação de falhas mais rápida. O tamanho "
+"máximo suportado de um único sistema de arquivos XFS é 500 TB. Começando com "
+"{PRODUCT}{nbsp}22, XFS é o sistema de arquivos padrão e recomendado no "
+"{PRODUCT} Server."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:41
@@ -190,6 +279,11 @@ msgid ""
 "will need to adjust the sizes of your file systems often, using XFS is not "
 "recommended, as it makes administration substantially more time-consuming."
 msgstr ""
+"Observe que o tamanho de um sistema de arquivos XFS não pode ser reduzido "
+"atualmente sem destruir e recriar o sistema de arquivos. Se você espera que "
+"precise ajustar os tamanhos de seus sistemas de arquivos com frequência, o "
+"uso do XFS não é recomendado, pois torna a administração substancialmente "
+"mais demorada."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:45
@@ -197,6 +291,9 @@ msgid ""
 "`vfat` - The VFAT file system is a Linux file system that is compatible with "
 "Microsoft Windows long file names on the FAT file system."
 msgstr ""
+"`vfat` - O sistema de arquivos VFAT é um sistema de arquivos Linux "
+"compatível com os nomes de arquivo longos do Microsoft Windows no sistema de "
+"arquivos FAT."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:47
@@ -207,6 +304,12 @@ msgid ""
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme] for details."
 msgstr ""
+"`BIOS Boot` - Uma partição muito pequena necessária para inicializar a "
+"partir de um dispositivo com uma tabela de partição GUID (GPT) em sistemas "
+"BIOS e sistemas UEFI no modo de compatibilidade de BIOS. Veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomendado] para "
+"detalhes."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:49
@@ -216,12 +319,17 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme] for details."
 msgstr ""
+"`Partição de sistema EFI` - Uma pequena partição necessária para inicializar "
+"um dispositivo com uma tabela de partição GUID (GPT) em um sistema UEFI. "
+"Veja xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomendado] para "
+"detalhes."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:50
 #, no-wrap
 msgid "Software RAID Types"
-msgstr ""
+msgstr "Tipos de RAID por software"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:53
@@ -232,6 +340,12 @@ msgid ""
 "Level 0 RAIDs offer no redundancy and that the failure of one device in the "
 "array destroys data in the entire array. RAID 0 requires at least two disks."
 msgstr ""
+"`RAID0` - Distribui dados em vários discos. O RAID de nível 0 oferece maior "
+"desempenho em relação às partições padrão e pode ser usado para agrupar o "
+"armazenamento de vários discos em um grande dispositivo virtual. Observe que "
+"os RAIDs de nível 0 não oferecem redundância e que a falha de um dispositivo "
+"no arranjo destrói os dados em todo o arranjo. O RAID 0 requer pelo menos "
+"dois discos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:55
@@ -240,6 +354,9 @@ msgid ""
 "other disks. Additional devices in the array provide increasing levels of "
 "redundancy. RAID 1 requires at least two disks."
 msgstr ""
+"`RAID1` - Espelha todos os dados de uma partição em um ou mais discos. "
+"Dispositivos adicionais no arranjo fornecem níveis crescentes de "
+"redundância. O RAID 1 requer pelo menos dois discos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:57
@@ -250,6 +367,11 @@ msgid ""
 "stored on one disk, access to this disk creates a \"bottleneck\" in the "
 "array's performance. Level 4 RAID requires at least three disks."
 msgstr ""
+"`RAID4` - Distribui dados em vários discos e usa um disco no arranjo para "
+"armazenar informações de paridade que protegem o array no caso de falha de "
+"algum disco do arranjo. Como todas as informações de paridade são "
+"armazenadas em um disco, o acesso a esse disco cria um \"gargalo\" no "
+"desempenho do arranjo. O RAID de nível 4 requer pelo menos três discos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:59
@@ -261,6 +383,11 @@ msgid ""
 "information is also distributed through the array. RAID 5 requires at least "
 "three disks."
 msgstr ""
+"`RAID5` - Distribui dados e informações de paridade em vários discos. Os "
+"RAIDs de nível 5, portanto, oferecem as vantagens de desempenho de "
+"distribuir dados em vários discos, mas não compartilham o gargalo de "
+"desempenho dos RAIDs de nível 4 porque as informações de paridade também são "
+"distribuídas por meio do arranjo. O RAID 5 requer pelo menos três discos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:61
@@ -269,6 +396,9 @@ msgid ""
 "RAIDs, but instead of storing only one set of parity data, they store two "
 "sets. RAID 6 requires at least four disks."
 msgstr ""
+"`RAID6` - Os RAIDs de nível 6 são semelhantes aos RAIDs de nível 5, mas em "
+"vez de armazenar apenas um conjunto de dados de paridade, eles armazenam "
+"dois conjuntos. O RAID 6 requer pelo menos quatro discos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:62
@@ -279,3 +409,8 @@ msgid ""
 "partitions consists of two mirrored pairs of striped partitions. RAID 10 "
 "requires at least four disks."
 msgstr ""
+"`RAID10` - Os RAIDs de nível 10 são RAIDs aninhados ou RAIDs híbridos. Eles "
+"são construídos com a distribuição de dados em conjuntos de discos "
+"espelhados. Por exemplo, uma matriz RAID de nível 10 construída a partir de "
+"quatro partições RAID consiste em dois pares espelhados de partições "
+"distribuídas. O RAID 10 requer pelo menos quatro discos."

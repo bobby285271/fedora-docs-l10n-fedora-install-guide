@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-03-25 00:02+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-04-02 11:02+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "rawhidepages_partialsinstallcustomspoke_partitioningadvice/pt_BR/>\n"
@@ -17,17 +18,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:5
 #, no-wrap
 msgid "Advice on Partitions"
-msgstr ""
+msgstr "Conselho sobre partições"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:8
-#, fuzzy
 msgid ""
 "There is no best way to partition every system; the optimal setup depends on "
 "how you plan to use the system being installed. However, the following tips "
@@ -40,7 +40,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:10
-#, fuzzy
 msgid ""
 "Consider encrypting any partitions and volumes which might contain sensitive "
 "data. Encryption prevents unauthorized people from accessing the data on the "
@@ -56,7 +55,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:12
-#, fuzzy
 msgid ""
 "In some cases, creating separate mount points for directories other than `/"
 "`, `/boot` and `/home` may be useful; for example, on a server running a "
@@ -67,7 +65,7 @@ msgid ""
 "difficult."
 msgstr ""
 "Em alguns casos, criar pontos de montagem separados para diretórios "
-"diferentes de `/`, `/boot` e` /home` pode ser útil; por exemplo, em um "
+"diferentes de `/`, `/boot` e `/home` pode ser útil; por exemplo, em um "
 "servidor executando um banco de dados [application]*MySQL*, ter um ponto de "
 "montagem separado para `/var/lib/mysql` permitirá que você preserve o banco "
 "de dados durante uma reinstalação sem ter que restaurá-lo do backup "
@@ -76,7 +74,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14
-#, fuzzy
 msgid ""
 "Some special restrictions apply to certain directories with regards on which "
 "partitioning layouts can they be placed. Notably, the `/boot` directory must "
@@ -86,7 +83,7 @@ msgstr ""
 "Algumas restrições especiais se aplicam a certos diretórios com relação aos "
 "layouts de particionamento que eles podem ser colocados. Notavelmente, o "
 "diretório `/boot` deve sempre estar em uma partição física (não em um volume "
-"LVM ou um subvolume Btrfs), e` /usr` não pode estar em um subvolume Btrfs."
+"LVM ou um subvolume Btrfs), e `/usr` não pode estar em um subvolume Btrfs."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:16
@@ -96,10 +93,13 @@ msgid ""
 "fhs-2.3.html++[] for information about various system directories and their "
 "contents."
 msgstr ""
+"Se você é novo no Linux, considere revisar a [citetitle]_Linux Filesystem "
+"Hierarchy Standard_ em link:++https://refspecs.linuxfoundation.org/FHS_2.3/"
+"fhs-2.3.html++[] para obter informações sobre vários diretórios de sistemas "
+"e seus conteúdos."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:18
-#, fuzzy
 msgid ""
 "Each kernel installed on your system requires approximately 20 MB on the `/"
 "boot` partition. The default partition size of 500 MB for `/boot` should "
@@ -113,7 +113,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:20
-#, fuzzy
 msgid ""
 "The `/var` directory holds content for a number of applications, including "
 "the [application]*Apache* web server, and is used by the [application]*DNF* "
@@ -135,6 +134,12 @@ msgid ""
 "root is on an SSD, consider creating a separate mount point for `/var` on a "
 "classic (platter) HDD."
 msgstr ""
+"O conteúdo do diretório `/var` geralmente muda com muita frequência. Isso "
+"pode causar problemas com unidades de estado sólido (SSDs) mais antigas, "
+"pois podem lidar com um número menor de ciclos de leitura/gravação antes de "
+"se tornarem inutilizáveis. Se a raiz do seu sistema estiver em um SSD, "
+"considere a criação de um ponto de montagem separado para `/var` em um HDD "
+"clássico."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:24
@@ -144,6 +149,10 @@ msgid ""
 "therefore be at least 5 GB for minimal installations, and at least 10 GB for "
 "installations with a graphical environment."
 msgstr ""
+"O diretório `/usr` contém a maioria do software em uma instalação típica do "
+"{PRODUCT}. A partição ou volume que contém este diretório deve, portanto, "
+"ter pelo menos 5 GB para instalações mínimas e pelo menos 10 GB para "
+"instalações com um ambiente gráfico."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:26
@@ -155,6 +164,12 @@ msgid ""
 "either be unable to boot, or it may hang with a `Device is busy` error when "
 "powering off or rebooting."
 msgstr ""
+"Se `/usr` ou `/var` for particionado separadamente do resto do volume raiz, "
+"o processo de inicialização se torna muito mais complexo porque esses "
+"diretórios contêm componentes críticos para a inicialização. Em algumas "
+"situações, como quando esses diretórios são colocados em um drive iSCSI ou "
+"em um local FCoE, o sistema pode não conseguir inicializar ou pode travar "
+"com um erro `Device is busy` ao desligar ou reinicializar."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:28
@@ -163,6 +178,9 @@ msgid ""
 "them. For example, a separate partition for `/var/www` will work without "
 "issues."
 msgstr ""
+"Esta limitação se aplica apenas a `/usr` ou `/var`, não aos diretórios "
+"abaixo deles. Por exemplo, uma partição separada para `/var/www` funcionará "
+"sem problemas."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:30
@@ -173,6 +191,12 @@ msgid ""
 "select the `Thin provisioning` device type for the partition to have the "
 "unused space handled automatically by the volume."
 msgstr ""
+"Considere deixar uma parte do espaço em um grupo de volume LVM não alocado. "
+"Este espaço não alocado oferece flexibilidade se seus requisitos de espaço "
+"mudarem, mas você não deseja remover dados de outros volumes. Você também "
+"pode selecionar o tipo de dispositivo de `provisionamento fino` para a "
+"partição para que o espaço não utilizado seja tratado automaticamente pelo "
+"volume."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:32
@@ -183,6 +207,11 @@ msgid ""
 "Therefore, if you expect needing to manipulate your partitioning layout "
 "later, you should use the `ext4` file system instead."
 msgstr ""
+"O tamanho de um sistema de arquivos `XFS` não pode ser reduzido – se você "
+"precisa diminuir uma partição ou volume com este sistema de arquivos, você "
+"deve fazer backup de seus dados, destruir o sistema de arquivos e criar um "
+"novo e menor em seu lugar. Portanto, se você espera precisar manipular seu "
+"layout de particionamento mais tarde, deve usar o sistema de arquivos `ext4`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:34
@@ -193,6 +222,12 @@ msgid ""
 "and logical volume as you see fit - for example, you can easily expand your "
 "system's `/home` (or any other directory residing on a logical volume)."
 msgstr ""
+"Use Gerenciador de Volume Lógico (LVM) se você pretende expandir seu "
+"armazenamento adicionando mais discos rígidos após a instalação. Com o LVM, "
+"você pode criar volumes físicos nas novas unidades e, em seguida, atribuí-"
+"los a qualquer grupo de volume e volume lógico conforme achar necessário – "
+"por exemplo, você pode facilmente expandir o `/home` de seu sistema (ou "
+"qualquer outro diretório residente em um volume lógico)."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:36
@@ -205,6 +240,14 @@ msgid ""
 "create a BIOS Boot or EFI System Partition if your system does *not* require "
 "one - in that case, they will be hidden from the menu."
 msgstr ""
+"Pode ser necessário criar uma partição de inicialização do BIOS ou uma "
+"partição de sistema EFI, dependendo do firmware do sistema, tamanho da "
+"unidade de inicialização e rótulo do disco da unidade de inicialização. Veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomendado] para "
+"informações sobre essas partições. Observe que o instalador gráfico não "
+"permitirá que você crie uma inicialização do BIOS ou partição do sistema EFI "
+"se o seu sistema *não* exigir uma – nesse caso, eles serão ocultados do menu."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
@@ -214,3 +257,8 @@ msgid ""
 "help you do this. If you prefer a command line tool, try [package]*system-"
 "storage-manager*."
 msgstr ""
+"Se você precisar fazer qualquer alteração em sua configuração de "
+"armazenamento após a instalação, os repositórios do {PRODUCT} oferecem "
+"várias ferramentas diferentes que podem ajudá-lo a fazer isso. Se você "
+"preferir uma ferramenta de linha de comando, tente [package]*system-storage-"
+"manager*."
