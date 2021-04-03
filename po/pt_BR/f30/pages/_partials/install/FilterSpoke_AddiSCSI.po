@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-04-02 11:02+0000\n"
+"PO-Revision-Date: 2021-04-03 13:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -214,6 +214,12 @@ msgid ""
 "error, make sure you entered all CHAP and reverse CHAP credentials correctly "
 "and that you have access to the iSCSI target."
 msgstr ""
+"Se a descoberta *não* foi bem-sucedida, uma mensagem de erro será exibida na "
+"janela de diálogo. Esta mensagem irá variar com base em qual parte da "
+"descoberta falhou. Se o instalador não encontrou o destino que você "
+"especificou, você deve verificar o endereço IP; se o problema for um erro de "
+"autenticação, certifique-se de inserir todas as credenciais do CHAP e do "
+"CHAP reverso corretamente e de ter acesso ao destino iSCSI."
 
 #. type: delimited block =
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
@@ -222,12 +228,17 @@ msgid ""
 "address you specified are already configured. During discovery, "
 "[application]*Anaconda* ignores nodes which have already been added."
 msgstr ""
+"A mensagem de erro `No nodes discovered` também pode significar que todos os "
+"nós no endereço que você especificou já estão configurados. Durante a "
+"descoberta, o [application]*Anaconda* ignora os nós que já foram adicionados."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
 msgid ""
 "If the discovery was successful, you will see a list of all discovered nodes."
 msgstr ""
+"Se a descoberta foi bem-sucedida, você verá uma lista de todos os nós "
+"descobertos."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:56
@@ -239,6 +250,12 @@ msgid ""
 "name and password you used to discover the target are also valid for logging "
 "in to it."
 msgstr ""
+"Selecione um ou mais nós nos quais deseja fazer login marcando ou "
+"desmarcando a caixa de seleção ao lado de cada nó descoberto no destino. "
+"Abaixo da lista, selecione novamente o tipo de autenticação que deseja usar; "
+"você também pode selecionar a opção `Usar as credenciais da descoberta` se o "
+"nome de usuário e senha CHAP/CHAP reverso que você usou para descobrir o "
+"destino também forem válidos para fazer login nele."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:58
@@ -251,6 +268,13 @@ msgid ""
 "adoc#sect-installation-gui-installation-destination[Installation Destination "
 "- Specialized & Network Disks]."
 msgstr ""
+"Depois de selecionar todos os nós que deseja usar, clique em `Login` para "
+"iniciar uma sessão iSCSI. O [application]*Anaconda* tentará fazer o login em "
+"todos os nós selecionados. Se o processo de login for bem-sucedido, a caixa "
+"de diálogo `Adicionar destino de armazenamento iSCSI` fechará e todos os nós "
+"que você configurou serão mostrados na lista de discos de rede em "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Destino da instalação - Discos especializados e de rede]."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
@@ -261,3 +285,9 @@ msgid ""
 "able to change the `iSCSI Initiator Name`. If you made an error when "
 "configuring the initiator name, you must restart the installation."
 msgstr ""
+"Você pode repetir este procedimento para descobrir destinos iSCSI adicionais "
+"ou para adicionar mais nós de um destino configurado anteriormente. No "
+"entanto, observe que depois de clicar no botão `Iniciar descoberta` pela "
+"primeira vez, você não poderá alterar o `Nome do iniciador iSCSI`. Se você "
+"cometeu um erro ao configurar o nome do iniciador, deve reiniciar a "
+"instalação."
