@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-07 04:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f26pagesinstallinstalling_using_anaconda/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:6
@@ -134,13 +137,16 @@ msgid ""
 "prompt with `root` privileges, unless this prompt was specifically disabled "
 "using a boot option or a Kickstart command."
 msgstr ""
+"{PRODUCT} 安装程序使用 [application]*tmux* "
+"终端多路复用器以显示和控制多个窗口。每个窗口都有不同的用途，例如显示不同的日志文件以在安装时进行排错处理、使用带有 `root` 权限的交互式 "
+"Shell 等（当然你可以通过引导选项设置和 Kickstart 命令关闭特定的功能）。"
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:41
 msgid ""
 "In general, there is no reason to leave the default graphical installation "
 "environment unless you need to diagnose an installation problem."
-msgstr ""
+msgstr "通常来说，如果没有排错处理的需要，是没有必要离开默认的图形化安装环境的。"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:45
@@ -150,6 +156,8 @@ msgid ""
 "Alt + F1]. To go back to the main installation interface which runs in "
 "virtual console 6, press kbd:[Ctrl + Alt + F6]."
 msgstr ""
+"终端多路复用器运行于 1 号虚拟终端，你可以使用 kbd:[Ctrl + Alt + F1] 从常规安装环境切换到位于 6 号虚拟终端的 "
+"[application]*tmux* ，要想返回到常规安装环境可以使用 kbd:[Ctrl + Alt + F6] 。"
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:50
@@ -158,6 +166,8 @@ msgid ""
 "([application]*tmux*), and switching to console 6 will open a shell prompt "
 "instead of a graphical interface."
 msgstr ""
+"如果你使用的是文字模式的安装， [application]*tmux* 依然是在 1 号虚拟终端，只是 6 号虚拟终端就是一个 Shell "
+"环境而不是图形界面了。"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:54
@@ -168,6 +178,8 @@ msgid ""
 "press kbd:[Ctrl + b], then release both keys, and press the number key for "
 "the window you want to use."
 msgstr ""
+"运行 [application]*tmux* 的终端有五个可用的窗口，我们在下面列举了每个窗口的快捷键和功能。注意快捷键包含两部分，你要首先按下 "
+"kbd:[Ctrl + b] ，然后松开这两个键，再按下数字键前往对应的窗口。"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:56
@@ -175,12 +187,14 @@ msgid ""
 "You can also use kbd:[Ctrl + b] kbd:[n] and kbd:[Ctrl + b] kbd:[p] to switch "
 "to the next or previous [application]*tmux* window, respectively."
 msgstr ""
+"你还可以使用 kbd:[Ctrl + b] kbd:[n] 和 kbd:[Ctrl + b] kbd:[p] 切换到下一个或上一个 "
+"[application]*tmux* 窗口。"
 
 #. type: Block title
 #: ./pages/install/Installing_Using_Anaconda.adoc:58
 #, no-wrap
 msgid "Available tmux Windows"
-msgstr ""
+msgstr "可用的 tmux 窗口"
 
 #. type: Table
 #: ./pages/install/Installing_Using_Anaconda.adoc:68
@@ -198,6 +212,13 @@ msgid ""
 "|kbd:[Ctrl + b] kbd:[5]|Program log; displays messages from other system "
 "utilities, stored in `/tmp/program.log`.\n"
 msgstr ""
+"|快捷键|功能\n"
+"|kbd:[Ctrl + b] kbd:[1]|主安装程序窗口，也带有一些调试信息。\n"
+"|kbd:[Ctrl + b] kbd:[2]|带有 `root` 权限的交互式 Shell。\n"
+"|kbd:[Ctrl + b] kbd:[3]|安装日志 `/tmp/anaconda.log` 的显示。\n"
+"|kbd:[Ctrl + b] kbd:[4]|存储日志 `/tmp/storage.log` "
+"的显示，主要是跟内核与系统服务使用到的存储设备相关的一些信息。\n"
+"|kbd:[Ctrl + b] kbd:[5]|程序日志 `/tmp/program.log` 的显示，主要是其他系统组件的一些消息。\n"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:71
@@ -216,7 +237,7 @@ msgstr ""
 #: ./pages/install/Installing_Using_Anaconda.adoc:73
 #, no-wrap
 msgid "Saving Screenshots"
-msgstr ""
+msgstr "屏幕截图储存"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:76
