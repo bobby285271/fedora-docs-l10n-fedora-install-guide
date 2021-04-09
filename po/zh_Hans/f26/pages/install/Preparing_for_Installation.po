@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-09 04:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f26pagesinstallpreparing_for_installation/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:6
@@ -32,25 +35,27 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"本章节将介绍开始安装之前的一些准备事项。你不需要严格按照这里所说地去做，例如说如果你希望使用默认的安装设定，你就不需要收集分区 UUID "
+"信息和卷标或者网络信息如 IP 地质。然而，你仍然应该读一下这个章节，它将为你介绍可用的安装介质、如何准备安装介质和安装来源。"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "升级还是安装？"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:14
 msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
-msgstr ""
+msgstr "如果你已经安装 Fedora 且希望将你的系统升级到当前的版本，你可以："
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:15
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr ""
+msgstr "使用 [application]*dnf system upgrade* 执行自动升级"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:16
@@ -61,12 +66,15 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"使用 [application]*dnf system upgrade* 执行升级是我们推荐的方式。你可以阅读 "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[这个页面] "
+"了解如何通过这个方式升级。"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:17
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "手动重装系统"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:18
@@ -86,7 +94,7 @@ msgstr ""
 msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
-msgstr ""
+msgstr "无论如何，在升级和重装系统之前务必备份好你的个人数据。"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:25
@@ -301,7 +309,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "准备安装介质"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:125
@@ -309,6 +317,8 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora 的映像文件是混合的 ISO 文件，你可以将它烧录到光盘、写入到 USB 驱动器，可以在 BIOS 模式下启动，也可以在 UEFI "
+"模式下启动。"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:126
@@ -564,7 +574,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:195
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:198
@@ -575,7 +585,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:202
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:205

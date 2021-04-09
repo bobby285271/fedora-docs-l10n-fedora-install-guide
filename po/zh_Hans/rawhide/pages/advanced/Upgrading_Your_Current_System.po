@@ -1,38 +1,41 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-09 04:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"rawhidepagesadvancedupgrading_your_current_system/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Title =
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:6
 #, no-wrap
 msgid "Upgrading Your Current System"
-msgstr ""
+msgstr "升级你的系统"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:9
 msgid ""
 "This chapter explains how to upgrade your existing {PRODUCT} installation to "
 "the current release. There are two basic ways to do so:"
-msgstr ""
+msgstr "本章节将介绍如何将已有的 {PRODUCT} 系统升级到当前最新版本，具体而言有两种办法："
 
 #. type: Labeled list
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:10
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr ""
+msgstr "使用 [application]*dnf system upgrade* 执行自动升级"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:11
@@ -43,12 +46,15 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki DNF "
 "system upgrade]."
 msgstr ""
+"使用 [application]*dnf system upgrade* 执行升级是我们推荐的方式。你可以阅读 "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[这个页面] "
+"了解如何通过这个方式升级。"
 
 #. type: Labeled list
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:12
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "手动重装系统"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:13
@@ -68,13 +74,13 @@ msgstr ""
 msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
-msgstr ""
+msgstr "无论如何，在升级和重装系统之前务必备份好你的个人数据。"
 
 #. type: Title ==
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:22
 #, no-wrap
 msgid "Manual System Upgrade or Reinstallation"
-msgstr ""
+msgstr "手动升级系统或重装系统"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:24
@@ -88,3 +94,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning] should in most cases be easy to adapt for this."
 msgstr ""
+"不幸的是，我们还没有完成本章节的编写，维基上也没有详细介绍重装系统的页面。在编写工作完成之前，你可以尝试引导安装介质，在安装程序中手动分区，重用已有的分区"
+"（而不是创建细新的同时销毁旧的）。 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning[手动分区] 这篇文章应该能覆盖大部分的情形。"

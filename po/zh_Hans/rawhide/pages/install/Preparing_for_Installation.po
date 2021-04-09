@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-27 21:02+0000\n"
-"PO-Revision-Date: 2021-04-07 04:02+0000\n"
+"PO-Revision-Date: 2021-04-09 04:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -35,25 +35,27 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"本章节将介绍开始安装之前的一些准备事项。你不需要严格按照这里所说地去做，例如说如果你希望使用默认的安装设定，你就不需要收集分区 UUID "
+"信息和卷标或者网络信息如 IP 地质。然而，你仍然应该读一下这个章节，它将为你介绍可用的安装介质、如何准备安装介质和安装来源。"
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:10
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "升级还是安装？"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:13
 msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
-msgstr ""
+msgstr "如果你已经安装 Fedora 且希望将你的系统升级到当前的版本，你可以："
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:14
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr ""
+msgstr "使用 [application]*dnf system upgrade* 执行自动升级"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:15
@@ -64,12 +66,15 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"使用 [application]*dnf system upgrade* 执行升级是我们推荐的方式。你可以阅读 "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[这个页面] "
+"了解如何通过这个方式升级。"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:16
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "手动重装系统"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:17
@@ -83,19 +88,23 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"除了使用 [application]*dnf system upgrade* 之外，你还可以手动完成系统升级。你可以引导安装介质并执行全新安装，"
+"或者让安装程序探测你当前的 Fedora 系统，将根分区改写的同时保留其它的分区或卷。当然对于只重装不升级的情况，也是可以采取一样的方法的。具体可以查看 "
+"xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-"
+"manual-reinstall[手动系统升级与系统重装] 这篇文章。"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:21
 msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
-msgstr ""
+msgstr "无论如何，在升级和重装系统之前务必备份好你的个人数据。"
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "准备安装介质"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -103,12 +112,14 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora 的映像文件是混合的 ISO 文件，你可以将它烧录到光盘、写入到 USB 驱动器，可以在 BIOS 模式下启动，也可以在 UEFI "
+"模式下启动。"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writer"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -121,6 +132,9 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer* 是 Fedora 官方提供且支持的可启动设备制作工具。 [application]*"
+"Fedora Media Writer* 支持 Linux、Mac 和 Windows 系统。这个工具将允许你很方便地创建 Fedora（或其它发行版）"
+"的 USB 启动盘。尽管还有其它可用的工具，我们强烈推荐你使用 [application]*Fedora Media Writer* 。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:34
@@ -131,6 +145,9 @@ msgid ""
 "the button below _Custom image_. This offers a selection of various Fedora "
 "Spins, such as Xfce or Mate."
 msgstr ""
+"你可以直接在 [application]*Fedora Media Writer* 的主页面点击获取 Fedora Workstation 和 "
+"Server 的安装映像文件，然而你也可以通过 _Custom image_ 选项选择自己的安装映像文件（例如 Xfce 和 Mate 的 Fedora "
+"Spin 安装映像）。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:36
@@ -141,6 +158,8 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"很多人可能会使用 [application]*Unetbootin* 这样的通用 USB 启动盘创建工具。这些软件通常通过从安装映像中解压和提取文件，"
+"并将 [application]*syslinux* 引导程序写入设备从而在 USB 驱动器上创建一个文件系统。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -150,13 +169,15 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"这些方法会忽略 Fedora 映像中内置的引导程序配置，Fedora 映像是预先分区的，而且为启用安全启动设置的 UEFI 系统和 BIOS "
+"系统做过适配。使用这些方法将会导致导致实际写入的内容和 Fedora 原映像文件不一致，在 UEFI 模式下这个差异会体现地特别明显。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
 msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
-msgstr ""
+msgstr "综上所述，我们推荐的做法是不对 Fedora 映像做任何的改动，直接写入即可。"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -167,18 +188,20 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"在将映像文件写入设备之前一定要再三思考。根据本文介绍的方法，USB "
+"驱动器上的所有数据都被删除，所以在开始前一定要做好数据备份，此外务必确认你选择了正确的目标设备！"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "安装和运行 Fedora Media Writer"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "在 Fedora 系统"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -186,28 +209,30 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"如果你在使用 Fedora 25 或更高版本， [application]*Fedora Media Writer* 已经进入了官方软件仓库。你可以使用 "
+"`dnf` 安装这个软件。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
 msgid "To install the [application]*Fedora Media Writer* using:"
-msgstr ""
+msgstr "要安装 [application]*Fedora Media Writer* ，执行："
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:59
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:62
 msgid "Run the [application]*Fedora Media Writer*:"
-msgstr ""
+msgstr "要运行 [application]*Fedora Media Writer* ，执行："
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:66
 #, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:69
@@ -215,12 +240,14 @@ msgid ""
 "or in [application]*Gnome 3* select *Activities* and then click on "
 "[application]*Fedora Media Writer*."
 msgstr ""
+"如果你在使用 [application]*GNOME* ，可以前往 *活动* 视图然后点击运行 [application]*Fedora Media "
+"Writer* 。"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:71
 #, no-wrap
 msgid "On other Linux distributions"
-msgstr ""
+msgstr "在其它 Linux 发行版"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:75
@@ -230,30 +257,33 @@ msgid ""
 "obtained from the official Flatpak repository "
 "https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 msgstr ""
+"对于大部分的 Linux 发行版，安装 [application]*Fedora Media Writer* 最简单的方式就是安装预先构建好的 "
+"_Flatpak_ 软件包。你可以在 Flatpak 软件仓库 https://flathub.org/apps/details/org."
+"fedoraproject.MediaWriter[Flathub.org] 获取这个软件包。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:77
 msgid ""
 "To setup *Flatpak* on your Linux system, follow the guidelines on the "
 "https://flatpak.org/setup/[Flatpak documentation] page."
-msgstr ""
+msgstr "要在你的系统配置 *Flatpak* ，只需按照 https://flatpak.org/setup/[Flatpak 文档] 按部就班即可。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:79
 msgid "Run the application:"
-msgstr ""
+msgstr "启动应用程序："
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:83
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:85
 #, no-wrap
 msgid "On Windows"
-msgstr ""
+msgstr "在 Windows 系统"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:88
@@ -263,6 +293,8 @@ msgid ""
 "detects the running system and offers you the correct installation file for "
 "your Windows version."
 msgstr ""
+"你可以从 link:++https://getfedora.org++[GetFedora.org] 获取适用于 Windows "
+"的安装程序。我们的服务器会探测你的系统并为你提供合适的安装文件。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:90
@@ -270,12 +302,12 @@ msgid ""
 "Run the installation by double clicking the installer, and then continue "
 "through the set-up wizard. The Wizard lets you customize the software's "
 "installation if you choose to."
-msgstr ""
+msgstr "双击安装程序，根据安装向导的提示操作就可以自定义安装并执行安装。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:92
 msgid "Run the application by clicking on a launcher."
-msgstr ""
+msgstr "点击启动项就可以启动应用程序了。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:94
@@ -284,12 +316,14 @@ msgid ""
 "placed in the _All apps_ menu under _F_. In Windows 10, you can just type "
 "[application]*Fedora Media Writer* in the search box on the task bar."
 msgstr ""
+"在 Windows 8 和 10， [application]*Fedora Media Writer* 的启动项位于开始菜单的 _F_ 分类下。在 "
+"Windows 10 下，你可以在任务栏搜索 [application]*Fedora Media Writer* 找到启动项。"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:96
 #, no-wrap
 msgid "On MacOS"
-msgstr ""
+msgstr "在 MacOS 系统"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:99
@@ -299,6 +333,8 @@ msgid ""
 "automatically detects the running system and offers a correct package for "
 "your MacOS."
 msgstr ""
+"你可以从 link:++https://getfedora.org++[GetFedora.org] 获取 Macintosh 磁盘文件（即拓展名为 ."
+"dmg 的文件）。我们的服务器会探测你的系统并为你提供合适的安装文件。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:101
@@ -306,16 +342,17 @@ msgid ""
 "Open the `.dmg` file, and press and hold the kbd:[Ctrl] key while clicking "
 "on the [application]*Fedora Media Writer* application."
 msgstr ""
+"打开 `.dmg` 文件，在点击 [application]*Fedora Media Writer* 应用的同时按住 kbd:[Ctrl] 键。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:103
 msgid "Press \"Open\" in the pop-up menu."
-msgstr ""
+msgstr "在弹出的菜单中点击打开选项。"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:105
 msgid "Click the \"Open\" button in the confirmation dialog, if it appears."
-msgstr ""
+msgstr "如果还有任何的确认对话框，继续点击打开按钮。"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:106
