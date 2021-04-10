@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-10 08:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"rawhidepages_partialsinstallsoftwarespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SoftwareSpoke.adoc:5
 #: ./pages/_partials/install/SoftwareSpoke.adoc:20
 #, no-wrap
 msgid "Software Selection"
-msgstr ""
+msgstr "软件包选择"
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:8
@@ -28,7 +31,7 @@ msgid ""
 "The `Software Selection` screen allows you to choose a _Base Environment_ "
 "and _Add-ons_. These options control which software packages will be "
 "installed on your system during the installation process."
-msgstr ""
+msgstr "软件包选择屏幕允许你选择一个软件包集和一些附加组件。被选中的软件包会在系统安装过程中被安装到你的系统。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:10
@@ -38,6 +41,8 @@ msgid ""
 "Source] is properly configured and only after the installer has downloaded "
 "package metadata from the source."
 msgstr ""
+"这个屏幕当且仅当 xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-source[安装来源] 已经正确设置而且软安装程序已经成功从软件源获取软件包元数据。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SoftwareSpoke.adoc:15
@@ -51,6 +56,9 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"要注意的是在一般的安装流程中，你只能选择我们定义好的软件包组合，而不能指定安装某个具体的软件包。如果你真的想这么做，你需要使用一个 Kickstart "
+"文件并在 [command]#%packages# 配置需要的软件包，详情请阅读 xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart 自动安装] 教程。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:19
@@ -62,18 +70,20 @@ msgid ""
 "example, the Fedora{nbsp}Cloud image. You can change this by configuring a "
 "different installation source containing different environments."
 msgstr ""
+"可供选用的软件包集和附加组件取决于你的安装来源。在默认情况下起决定作用的就是你使用的安装媒体介质文件。Fedora{nbsp}Server "
+"提供的软件包集和附加组件就和 Fedora{nbsp}Cloud 所提供的有所不同，当然你可以自由切换安装来源。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
-msgstr ""
+msgstr "软件包选择屏幕。位于左侧"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/SoftwareSpoke.png"
-msgstr ""
+msgstr "anaconda/SoftwareSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:25
