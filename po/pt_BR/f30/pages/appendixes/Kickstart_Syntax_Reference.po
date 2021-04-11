@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-04-10 08:02+0000\n"
+"PO-Revision-Date: 2021-04-11 16:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -646,7 +646,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:205
 #, no-wrap
 msgid "ostreesetup (optional) - Install from an OSTree"
-msgstr ""
+msgstr "ostreesetup (opcional) - Instala de uma OSTree"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:208
@@ -654,6 +654,9 @@ msgid ""
 "Used for OSTree installations. See link:++https://wiki.gnome.org/action/show/"
 "Projects/OSTree++[] for more information about OSTree. Available options are:"
 msgstr ""
+"Usado para instalações OSTree. Veja link:++https://wiki.gnome.org/action/"
+"show/Projects/OSTree++[] para mais informações sobre OSTree. As opções "
+"disponíveis são:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:209
@@ -665,6 +668,7 @@ msgstr "[option]#--osname=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:210
 msgid "Management root for OS installation (required)."
 msgstr ""
+"Raiz de gerenciamento para a instalação do sistema operacional (obrigatório)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:211
@@ -676,6 +680,7 @@ msgstr "[option]#--remote=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:212
 msgid "Management root for OS installation (optional)."
 msgstr ""
+"Raiz de gerenciamento para a instalação do sistema operacional (opcional)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:213
@@ -687,7 +692,7 @@ msgstr "[option]#--url=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:214
 msgid "Repository URL (required)."
-msgstr ""
+msgstr "URL do repositório (obrigatório)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:215
@@ -698,7 +703,7 @@ msgstr "[option]#--ref=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:216
 msgid "Name of branch inside the repository (required)."
-msgstr ""
+msgstr "Nome do branch dentro do repositório (obrigatório)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:217
@@ -709,13 +714,13 @@ msgstr "[option]#--nogpg#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:218
 msgid "Disable GPG key verification (optional)."
-msgstr ""
+msgstr "Desabilita a verificação de chave GPG (opcional)."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:220
 #, no-wrap
 msgid "repo (optional) - Configure Additional Repositories"
-msgstr ""
+msgstr "repo (opcional) - Configura repositórios adicionais"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:223
@@ -724,6 +729,9 @@ msgid ""
 "sources for package installation. This command can be used multiple times in "
 "a single Kickstart file."
 msgstr ""
+"Configura repositórios adicionais do [application] *DNF* que podem ser "
+"usados como fontes para a instalação do pacote. Este comando pode ser usado "
+"várias vezes em um único arquivo Kickstart."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:225
@@ -732,6 +740,9 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for information about the "
 "[application]*DNF* package manager."
 msgstr ""
+"Veja o [citetitle]_Fedora System Administrator's Guide_ (guia de "
+"administrador de sistema), disponível em link:++https://docs.fedoraproject."
+"org/++[], para informações sobre o gerenciador de pacotes [application]*DNF*."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:230
@@ -739,6 +750,8 @@ msgid ""
 "Repositories used for installation must be stable. The installation may fail "
 "if a repository is modified before the installation concludes."
 msgstr ""
+"Os repositórios usados para instalação devem ser estáveis. A instalação pode "
+"falhar se um repositório for modificado antes da conclusão da instalação."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:233
@@ -758,6 +771,11 @@ msgid ""
 "this means that you cannot add repositories with the same names as the "
 "preconfigured ones."
 msgstr ""
+"O ID do repositório. Esta opção é obrigatória. Se um repositório tiver um "
+"nome que conflite com outro repositório adicionado anteriormente, ele será "
+"ignorado. Como o programa de instalação usa uma lista de repositórios pré-"
+"configurados, isso significa que você não pode adicionar repositórios com os "
+"mesmos nomes dos pré-configurados."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:235
@@ -772,6 +790,9 @@ msgid ""
 "repo configuration files are *not* supported. You may use one of either this "
 "option or [option]#--mirrorlist#, not both."
 msgstr ""
+"O URL do repositório. As variáveis que podem ser usadas nos arquivos de "
+"configuração de repositório do [application]*DNF* *não* são suportadas. Você "
+"pode usar uma destas opções ou [option]#--mirrorlist#, não ambas."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:237
@@ -787,6 +808,10 @@ msgid ""
 "may normally be used in dnf repository configuration files are not supported "
 "here. You may use one of either this option or --baseurl, not both."
 msgstr ""
+"A URL apontando para uma lista de espelhos para o repositório. As variáveis "
+"que normalmente podem ser usadas nos arquivos de configuração do repositório "
+"dnf não são suportadas aqui. Você pode usar uma das opções ou --baseurl, não "
+"ambas."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:239
@@ -801,6 +826,9 @@ msgid ""
 "after the installation as well. Creates a configuration file for the "
 "repository in `/etc/yum.repos.d/` on the installed system."
 msgstr ""
+"Disponibiliza o repositório configurado no arquivo Kickstart no sistema após "
+"a instalação. Cria um arquivo de configuração para o repositório em `/etc/yum"
+".repos.d/` no sistema instalado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:241
@@ -816,6 +844,10 @@ msgid ""
 "prioritize which repository will be used before another. Repositories with a "
 "lower cost take priority over repositories with higher cost."
 msgstr ""
+"Um valor inteiro para atribuir um custo a este repositório. Se vários "
+"repositórios fornecerem os mesmos pacotes, este número será usado para "
+"priorizar qual repositório será usado antes do outro. Repositórios com custo "
+"mais baixo têm prioridade sobre repositórios com custo mais alto."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:243
@@ -832,6 +864,11 @@ msgid ""
 "package names (such as `publican`) and globs (such as `gnome-*`) are "
 "accepted."
 msgstr ""
+"Uma lista separada por vírgulas de nomes de pacotes que *não* devem ser "
+"extraídos deste repositório. Isso é útil se vários repositórios fornecem o "
+"mesmo pacote e você deseja ter certeza de que ele vem de um repositório "
+"específico. Ambos os nomes de pacotes completos (como `publican`) e globs "
+"(como`gnome-*`) são aceitos."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:245
@@ -846,6 +883,9 @@ msgid ""
 "this repository. This is useful if multiple repositories provide the same "
 "package and you want to make sure it comes from this repository."
 msgstr ""
+"Uma lista separada por vírgulas de nomes de pacotes e globs que devem ser "
+"extraídos deste repositório. Isso é útil se vários repositórios fornecerem o "
+"mesmo pacote e você quiser ter certeza de que ele vem desse repositório."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:247
@@ -861,6 +901,9 @@ msgid ""
 "repository. This setting does not affect any other repositories or "
 "installation sources."
 msgstr ""
+"Especifica um servidor proxy `HTTP`, `HTTPS` ou `FTP` para usar ao acessar "
+"este repositório. Esta configuração não afeta nenhum outro repositório ou "
+"fonte de instalação."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:249
@@ -876,6 +919,10 @@ msgid ""
 "the package group information when mirroring trees so as to avoid mirroring "
 "large amounts of unnecessary data."
 msgstr ""
+"Esta opção é usada ao compor árvores de instalação e não tem efeito no "
+"próprio processo de instalação. Diz às ferramentas de composição para não "
+"olharem para as informações do grupo de pacotes ao espelhar árvores, para "
+"evitar espelhar grandes quantidades de dados desnecessários."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:251
@@ -889,11 +936,15 @@ msgstr "[option]#--noverifyssl#"
 #, no-wrap
 msgid "url (optional) - Install from an installation tree on a remote server via FTP or HTTP."
 msgstr ""
+"url (opcional) - Instala a partir de uma árvore de instalação em um servidor "
+"remoto via FTP ou HTTP."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:257
 msgid "Install from an installation tree on a remote server via FTP or HTTP."
 msgstr ""
+"Instala a partir de uma árvore de instalação em um servidor remoto via FTP "
+"ou HTTP."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:259
@@ -901,12 +952,14 @@ msgid ""
 "Specify an HTTP/HTTPS/FTP proxy to use while performing the install. The "
 "various parts of the argument act like you would expect. The syntax is:"
 msgstr ""
+"Especifica um proxy HTTP/HTTPS/FTP para usar durante a instalação. As várias "
+"partes do argumento agem como você esperaria. A sintaxe é:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:263
 #, no-wrap
 msgid "[protocol://][username[:password]@]host[:port]\n"
-msgstr ""
+msgstr "[protocolo://][usuário[:senha]@]host[:porta]\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:266
@@ -915,6 +968,9 @@ msgid ""
 "well-known CA validate and do not check the server’s host name matches the "
 "certificate’s domain name."
 msgstr ""
+"Para uma árvore em um servidor HTTPS, não verifica o certificado do servidor "
+"com o que uma AC conhecida validou e não verifique se o nome do host do "
+"servidor corresponde ao nome de domínio do certificado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:268
@@ -922,6 +978,8 @@ msgid ""
 "The URL to install from. Variable substitution is done for `$releasever` and "
 "`$basearch` in the URL."
 msgstr ""
+"A URL a partir da qual instalar. A substituição da variável é feita para "
+"`$releasever` e `$basearch` na URL."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:270
@@ -929,12 +987,14 @@ msgid ""
 "The mirror URL to install from. Variable substitution is done for `"
 "$releasever` and `$basearch` in the URL."
 msgstr ""
+"A URL do espelho a partir da qual instalar. A substituição da variável é "
+"feita para `$releasever` e `$basearch` na URL."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:271
 #, no-wrap
 msgid "[option]#--metalink=#"
-msgstr ""
+msgstr "[option]#--metalink=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:272
@@ -942,12 +1002,14 @@ msgid ""
 "The metalink URL to install from. Variable substitution is done for `"
 "$releasever` and `$basearch` in the URL."
 msgstr ""
+"A URL do metalink a partir da qual instalar. A substituição da variável é "
+"feita para `$releasever` e `$basearch` na URL."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:274
 #, no-wrap
 msgid "Storage and Partitioning"
-msgstr ""
+msgstr "Armazenamento e particionalmente"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -955,12 +1017,14 @@ msgid ""
 "Commands in this section are used to determine your system's storage options "
 "and partitioning."
 msgstr ""
+"Os comandos nesta seção são usados para determinar as opções de "
+"armazenamento e particionamento do seu sistema."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:279
 #, no-wrap
 msgid "autopart (optional) - Automatic Partitioning"
-msgstr ""
+msgstr "autopart (opcional) - Particionamento automático"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:282
@@ -970,6 +1034,10 @@ msgid ""
 "On large enough drives (50{nbsp}GB and larger), this also creates a `/home` "
 "partition."
 msgstr ""
+"Cria partições automaticamente: uma partição raiz (`/`) (1 GB ou maior), uma "
+"partição `swap` e uma partição `/boot` apropriada para a arquitetura. Em "
+"unidades grandes o suficiente (50{nbsp}GB e maiores), isso também cria uma "
+"partição `/home`."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:287
@@ -978,6 +1046,9 @@ msgid ""
 "[command]#part/partition#, [command]#raid#, [command]#logvol#, or "
 "[command]#volgroup# options in the same Kickstart file."
 msgstr ""
+"A opção [command]#autopart# não pode ser usada junto com as opções [command]#"
+"part/partition#, [command]#raid#, [command]#logvol# ou [command]#volgroup# "
+"no mesmo arquivo Kickstart ."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:290
@@ -991,26 +1062,28 @@ msgid ""
 "Selects one of the predefined automatic partitioning schemes you want to "
 "use. Accepts the following values:"
 msgstr ""
+"Seleciona um dos esquemas de particionamento automático predefinidos que "
+"você deseja usar. Aceita os seguintes valores:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:293
 msgid "`lvm`: The LVM partitioning scheme."
-msgstr ""
+msgstr "`lvm`: O esquema de particionamento LVM."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:295
 msgid "`btrfs`: The Btrfs partitioning scheme."
-msgstr ""
+msgstr "`btrfs`: O esquema de particionamento Btrfs."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:297
 msgid "`plain`: Regular partitions with no LVM or Btrfs."
-msgstr ""
+msgstr "`plain`: Particionamentos regulares sem LVM ou Btrfs."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:299
 msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
-msgstr ""
+msgstr "`thinp`: O esquema de particionamento de provisionamento LVM fino."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:301
@@ -1019,6 +1092,9 @@ msgid ""
 "at xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
 "partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"O esquema de particionamento criado seguirá o esquema recomendado descrito "
+"em xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomnedado]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:302
@@ -1035,6 +1111,8 @@ msgid ""
 "Specify a supported file system (such as `ext4` or `xfs`) to replace the "
 "default when doing automatic partitioning."
 msgstr ""
+"Especifica um sistema de arquivos compatível (como `ext4` ou `xfs`) para "
+"substituir o padrão ao fazer o particionamento automático."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:304
@@ -1048,6 +1126,8 @@ msgid ""
 "Do not use LVM or Btrfs for automatic partitioning. This option is equal to "
 "[option]#--type=plain#."
 msgstr ""
+"Não usa LVM ou Btrfs para particionamento automático. Esta opção é igual a "
+"[option]#--type=plain#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:306
@@ -1065,6 +1145,9 @@ msgid ""
 "partitions` check box on the initial partitioning screen during a manual "
 "graphical installation."
 msgstr ""
+"Criptografa todas as partições. Isso é equivalente a marcar a caixa de "
+"seleção `Criptografar partições` na tela de particionamento inicial durante "
+"uma instalação gráfica manual."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:308
@@ -1079,6 +1162,8 @@ msgstr "[option]#--passphrase=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:309
 msgid "Provides a default system-wide passphrase for all encrypted devices."
 msgstr ""
+"Fornece uma senha padrão para o sistema para todos os dispositivos "
+"criptografados."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:310
@@ -1088,8 +1173,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X.509_certificate_pass:attributes[{blank}]#"
 msgstr ""
-"[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X."
-"509_certificate_pass:attributes[{blank}]#"
+"[option]#--escrowcert=pass:attributes[{blank}]_URL_do_certificado_X."
+"509_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:311
@@ -1102,6 +1187,11 @@ msgid ""
 "encrypted volume. This option is only meaningful if [option]#--encrypted# is "
 "specified."
 msgstr ""
+"Armazena chaves de criptografia de dados de todos os volumes criptografados "
+"como arquivos em `/root`, criptografados usando o certificado X.509 da URL "
+"especificada com _URL_do_certificado_X.509_. As chaves são armazenadas como "
+"um arquivo separado para cada volume criptografado. Esta opção só é "
+"significativa se [option]#--encrypted# for especificada."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:312
@@ -1120,6 +1210,10 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Adiciona uma senha gerada aleatoriamente para cada volume criptografado. "
+"Armazena essas senhas em arquivos separados em `/root`, criptografados "
+"usando o certificado X.509 especificado com [option]#--escrowcert#. Esta "
+"opção só é significativa se [option]#--escrowcert# for especificado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:314
@@ -1144,6 +1238,13 @@ msgid ""
 "fedoraproject.org/++[]. Using either `aes-xts-plain64` or `aes-cbc-essiv:"
 "sha256` is strongly recommended."
 msgstr ""
+"Especifica qual tipo de criptografia será usado se `aes-xts-plain64`, padrão "
+"do [application]*Anaconda*, não for satisfatório. Você deve usar esta opção "
+"junto com a opção [option]#--encrypted#; por si só não tem efeito. Os tipos "
+"de criptografia disponíveis estão listados no [citetitle]_Fedora Security "
+"Guide_ (guia de segurança), disponível no link:++https://docs.fedoraproject."
+"org/++[]. Usar `aes-xts-plain64` ou `aes-cbc-essiv: sha256` é fortemente "
+"recomendado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:316
@@ -1152,7 +1253,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1074
 #, no-wrap
 msgid "[option]#--luks-version=#"
-msgstr ""
+msgstr "[option]#--luks-version=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:317
