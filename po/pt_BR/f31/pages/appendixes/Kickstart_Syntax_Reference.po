@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-04-11 16:02+0000\n"
+"PO-Revision-Date: 2021-04-13 01:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -1264,6 +1264,8 @@ msgid ""
 "Specifies which version of LUKS should be used to encrypt the system. Only "
 "relevant if [option]#--encrypted# is also specified."
 msgstr ""
+"Especifica qual versão do LUKS deve ser usada para criptografar o sistema. "
+"Relevante apenas se [option]#--encrypted# também for especificada."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:318
@@ -1272,7 +1274,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1076
 #, no-wrap
 msgid "[option]#--pbkdf=#"
-msgstr ""
+msgstr "[option]#--pbkdf=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:319
@@ -1284,6 +1286,10 @@ msgid ""
 "keyslot. Only relevant if [option]#--encrypted# is also specified. See the "
 "`cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o algoritmo da Função de Derivação de Chave Baseada em Senha (PBKDF) "
+"para o slot de chave LUKS. Relevante apenas se [option]#--encrypted# também "
+"for especificado. Consulte a página man `cryptsetup(8)` para obter mais "
+"informações."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:320
@@ -1292,7 +1298,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1078
 #, no-wrap
 msgid "[option]#pbkdf-memory=#"
-msgstr ""
+msgstr "[option]#pbkdf-memory=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:321
@@ -1303,6 +1309,9 @@ msgid ""
 "Sets the memory cost for PBKDF. Only relevant if [option]#--encrypted# is "
 "also specified. See the `cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o custo de memória para PBKDF. Relevante apenas se "
+"[option]#--encrypted# também for especificada. Consulte a página man "
+"`cryptsetup(8)` para obter mais informações."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:322
@@ -1311,7 +1320,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1080
 #, no-wrap
 msgid "[option]#pbkdf-time=#"
-msgstr ""
+msgstr "[option]#pbkdf-time=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:323
@@ -1324,6 +1333,10 @@ msgid ""
 "about the [option]#--iter-time# option in the `cryptsetup(8)` man page for "
 "more information."
 msgstr ""
+"Define o número de milissegundos a ser gasto com o processamento da senha "
+"PBKDF. Relevante apenas se [option]#--encrypted# também for especificado. "
+"Veja informações sobre a opção [option]#--iter-time# na página man "
+"`cryptsetup(8)` para mais informações."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:325
@@ -1338,6 +1351,8 @@ msgid ""
 "Only one of [option]#--pbkdf-time=# or [option]#--pbkdf-iterations=# can be "
 "specified at the same time."
 msgstr ""
+"Apenas uma de [option]#--pbkdf-time=# ou [option]#--pbkdf-iterations=# pode "
+"ser especificada ao mesmo tempo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:326
@@ -1346,7 +1361,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1084
 #, no-wrap
 msgid "[option]#pbkdf-iterations=#"
-msgstr ""
+msgstr "[option]#pbkdf-iterations=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:327
@@ -1359,17 +1374,22 @@ msgid ""
 "See information about the [option]#--pbkdf-force-iterations# option in the "
 "`cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o número de iterações para o processamento da senha diretamente e "
+"evita a avaliação de desempenho de PBKDF. Relevante apenas se "
+"[option]#--encrypted# também for especificado. Veja informações sobre a "
+"opção [option]#--pbkdf-force-iterations# na página do manual `cryptsetup(8)` "
+"para mais informações."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:331
 #, no-wrap
 msgid "bootloader (required) - Configure Boot Loader"
-msgstr ""
+msgstr "bootloader (obrigatório) - Configura o carregador de inicialização"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:334
 msgid "Specifies how the boot loader should be installed."
-msgstr ""
+msgstr "Especifica como o carregador de inicialização deve ser instalado."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:339
@@ -1378,6 +1398,10 @@ msgid ""
 "boot loader can allow a potential attacker to modify the system's boot "
 "options and gain unauthorized access to the system."
 msgstr ""
+"Você deve sempre usar uma senha para proteger seu carregador de "
+"inicialização. Um carregador de inicialização desprotegido pode permitir que "
+"um invasor em potencial modifique as opções de inicialização do sistema e "
+"obtenha acesso não autorizado ao sistema."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:346
@@ -1389,6 +1413,13 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-"
 "bootloader[Boot Loader Installation]."
 msgstr ""
+"Alguns sistemas requerem uma partição especial para instalar o carregador de "
+"inicialização. O tipo e tamanho desta partição depende se o disco no qual "
+"você está instalando o carregador de incialização usa o _Master Boot Record_ "
+"(MBR) ou um esquema de _Tabela de Partição GUID_ (GPT). Para obter mais "
+"informações, consulte xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning-bootloader[Instalação do carregador de "
+"inicialização]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:349
@@ -1402,6 +1433,8 @@ msgid ""
 "Specifies additional kernel parameters. To specify multiple parameters, "
 "separate them with spaces. For example:"
 msgstr ""
+"Especifica parâmetros de kernel adicionais. Para especificar vários "
+"parâmetros, separe-os com espaços. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:354
@@ -1417,6 +1450,8 @@ msgid ""
 "you do not specify them here or do not use the [option]#--append=# command "
 "at all."
 msgstr ""
+"Os parâmetros [option]#rhgb# e [option]#quiet# são sempre usados, mesmo se "
+"você não os especificar aqui ou não usar o comando [option]#--append=#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:358
@@ -1431,6 +1466,10 @@ msgid ""
 "which drive the computer will boot from. If you use a multipath device as "
 "the boot drive, specify only one member of the device."
 msgstr ""
+"Especifica em qual unidade o carregador de inicialização deve ser gravado e, "
+"portanto, de qual unidade o computador será inicializado. Se você usar um "
+"dispositivo multipath como unidade de inicialização, especifique apenas um "
+"membro do dispositivo."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:364
@@ -1440,12 +1479,16 @@ msgid ""
 "boot loader. When [application]*zipl* is installed, it determines the boot "
 "drive on its own."
 msgstr ""
+"A opção [option]#--boot-drive=# está atualmente sendo ignorada em "
+"instalações do {PRODUCT} em sistemas IBM System{nbsp}z usando o carregador "
+"de inicialização [application]*zipl*. Quando [application]*zipl* está "
+"instalado, ele determina a unidade de inicialização por sua própria conta."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:368
 #, no-wrap
 msgid "*Not* specifying this option will result in the following behavior:\n"
-msgstr ""
+msgstr "*Não* especificar esta opção resultará no seguinte comportamento:\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:370
@@ -1454,12 +1497,16 @@ msgid ""
 "install the boot loader on the first valid device specified in the drive "
 "order."
 msgstr ""
+"Se a opção [option]#--driveorder=# foi usada, [application]*Anaconda* "
+"instalará o carregador de inicialização no primeiro dispositivo válido "
+"especificado na ordem do drive."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:372
 msgid ""
 "The first present and valid disk containing a `/boot` partition will be used."
 msgstr ""
+"O primeiro disco presente e válido contendo uma partição `/boot` será usado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:374
@@ -1467,6 +1514,9 @@ msgid ""
 "If none of the above applies, then the first valid storage device from the "
 "list of all detected devices will be used to install the boot loader."
 msgstr ""
+"Se nenhuma das opções acima se aplicar, o primeiro dispositivo de "
+"armazenamento válido da lista de todos os dispositivos detectados será usado "
+"para instalar o carregador de inicialização."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:375
@@ -1480,6 +1530,8 @@ msgid ""
 "Prevents the installation program from making changes to the existing list "
 "of bootable images on UEFI or ISeries/PSeries systems."
 msgstr ""
+"Evita que o programa de instalação faça alterações na lista existente de "
+"imagens inicializáveis em sistemas UEFI ou ISeries/PSeries."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:377
@@ -1491,6 +1543,8 @@ msgstr "[option]#--driveorder=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:378
 msgid "Specifies which drive is first in the BIOS boot order. For example:"
 msgstr ""
+"Especifica qual unidade é a primeira na ordem de inicialização do BIOS. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:382
@@ -1509,6 +1563,8 @@ msgstr "[option]#--location=#"
 msgid ""
 "Specifies where the boot record is written. Valid values are the following:"
 msgstr ""
+"Especifica onde o registro de inicialização é gravado. Os valores válidos "
+"são os seguintes:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:387
@@ -1516,6 +1572,8 @@ msgid ""
 "`mbr` - The default option. Depends on whether the drive uses the Master "
 "Boot Record (MBR) or GUID Partition Table (GPT) scheme:"
 msgstr ""
+"`mbr` - A opção padrão. Depende se a unidade usa o esquema Master Boot "
+"Record (MBR) ou Tabela de Partição GUID (GPT):"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:389
@@ -1523,6 +1581,8 @@ msgid ""
 "On a GPT-formatted disk, this option will install stage 1.5 of the boot "
 "loader into the BIOS boot partition."
 msgstr ""
+"Em um disco formatado por GPT, esta opção instalará o estágio 1.5 do "
+"carregador de inicialização na partição de inicialização do BIOS."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:391
@@ -1530,6 +1590,8 @@ msgid ""
 "On an MBR-formatted disk, stage 1.5 will be installed into the empty space "
 "between the MBR and the first partition."
 msgstr ""
+"Em um disco formatado por MBR, o estágio 1.5 será instalado no espaço vazio "
+"entre o MBR e a primeira partição."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:393
@@ -1537,16 +1599,18 @@ msgid ""
 "`partition` - Install the boot loader on the first sector of the partition "
 "containing the kernel."
 msgstr ""
+"`partition` - Instala o carregador de inicialização no primeiro setor da "
+"partição que contém o kernel."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:395
 msgid "`none` - Do not install the boot loader."
-msgstr ""
+msgstr "`none` - Não instala o carregador de inicialização."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:397
 msgid "In most cases, this option does not need to be specified."
-msgstr ""
+msgstr "Na maioria dos casos, essa opção não precisa ser especificada."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:398
@@ -1565,6 +1629,10 @@ msgid ""
 "restrict access to the [application]*GRUB2* shell, where arbitrary kernel "
 "options can be passed."
 msgstr ""
+"Se estiver usando [application]*GRUB2* como o carregador de inicialização, "
+"defina a senha do carregador de inicialização para aquela especificada com "
+"esta opção. Isso deve ser usado para restringir o acesso ao shell do "
+"[application]*GRUB2*, onde opções arbitrárias do kernel podem ser passadas."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:401
@@ -1572,6 +1640,8 @@ msgid ""
 "If a password is specified, [application]*GRUB2* will also ask for a user "
 "name. The user name is always `root`."
 msgstr ""
+"Se uma senha for especificada, o [application]*GRUB2* também solicitará um "
+"nome de usuário. O nome do usuário é sempre `root`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:402
@@ -1589,6 +1659,10 @@ msgid ""
 "password=# option, it will be stored in the Kickstart file in plain text. If "
 "you want to encrypt the password, use this option and an encrypted password."
 msgstr ""
+"Normalmente, quando você especifica uma senha do carregador de inicialização "
+"usando a opção [option]#--password=#, ela será armazenada no arquivo "
+"Kickstart em texto simples. Se você deseja criptografar a senha, use esta "
+"opção e uma senha criptografada."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:405
@@ -1599,6 +1673,11 @@ msgid ""
 "[command]#bootloader# Kickstart entry with an encrypted password will look "
 "similar to the following:"
 msgstr ""
+"Para gerar uma senha criptografada, use o comando [command]#grub2-mkpasswd-"
+"pbkdf2#, insira a senha que deseja usar e copie a saída do comando (o hash "
+"começando com `grub.pbkdf2`) no arquivo Kickstart. Um exemplo de entrada "
+"Kickstart de [command]#bootloader# com uma senha criptografada será "
+"semelhante ao seguinte:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:410
@@ -1623,6 +1702,8 @@ msgid ""
 "Specifies the amount of time the boot loader will wait before booting the "
 "default option (in seconds)."
 msgstr ""
+"Especifica a quantidade de tempo que o carregador de inicialização aguardará "
+"antes de inicializar a opção padrão (em segundos)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:415
@@ -1634,6 +1715,8 @@ msgstr "[option]#--default=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:416
 msgid "Sets the default boot image in the boot loader configuration."
 msgstr ""
+"Define a imagem de inicialização padrão na configuração do carregador de "
+"inicialização."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:417
@@ -1647,6 +1730,9 @@ msgid ""
 "Use the [application]*extlinux* boot loader instead of [application]*GRUB2*. "
 "This option only works on systems supported by [application]*extlinux*."
 msgstr ""
+"Usa o carregador de inicialização [application]*extlinux* em vez do "
+"[application]*GRUB2*. Esta opção funciona apenas em sistemas suportados pelo "
+"[application]*extlinux*."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:419
@@ -1662,6 +1748,10 @@ msgid ""
 "boot loader configuration; all other boot loader options will be ignored and "
 "no boot loader packages will be installed."
 msgstr ""
+"Não tenta instalar um carregador de inicialização. Esta opção substitui "
+"todas as outras configurações do carregador de inicialização; todas as "
+"outras opções do carregador de inicialização serão ignoradas e nenhum pacote "
+"do carregador de inicialização será instalado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:421
@@ -1675,26 +1765,28 @@ msgid ""
 "Install the boot loader configuration and support files, but do not modify "
 "the MBR."
 msgstr ""
+"Instala a configuração do carregador de inicialização e os arquivos de "
+"suporte, mas não modifica o MBR."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "btrfs (optional) - Create Btrfs Volume or Subvolume"
-msgstr ""
+msgstr "btrfs (opcional) - Cria volume ou subvolume Btrfs"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:427
 msgid "Create a Btrfs volume or subvolume. For a volume, the syntax is:"
-msgstr ""
+msgstr "Cria um volume ou subvolume Btrfs. Para um volume, a sintaxe é:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:432
 #, no-wrap
 msgid "[command]#btrfs _mntpoint_ --data=pass:attributes[{blank}]_level_ --metadata=pass:attributes[{blank}]_level_ [--label=] _partitions_pass:attributes[{blank}]#\n"
 msgstr ""
-"[command]#btrfs _mntpoint_ --data=pass:attributes[{blank}]_level_ "
-"--metadata=pass:attributes[{blank}]_level_ [--label=] "
-"_partitions_pass:attributes[{blank}]#\n"
+"[command]#btrfs _ponto de montagem_ --data=pass:attributes[{blank}]_nível_ "
+"--metadata=pass:attributes[{blank}]_nível_ [--label=] "
+"_partições_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:436
@@ -1708,15 +1800,15 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:438
 msgid "For a subvolume, the syntax is:"
-msgstr ""
+msgstr "Para um subvolume, a sintaxe é:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:443
 #, no-wrap
 msgid "[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ _parent_pass:attributes[{blank}]#\n"
 msgstr ""
-"[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ "
-"_parent_pass:attributes[{blank}]#\n"
+"[command]#btrfs _ponto de montagem_ --subvol --name=pass:attributes[{blank}]"
+"_nome_ _pai_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:447
@@ -1725,6 +1817,9 @@ msgid ""
 "with a name for the subvolume, and _mntpoint_ is the location where the file "
 "system is mounted."
 msgstr ""
+"_pai_ deve ser o identificador do volume pai do subvolume, _nome_ com um "
+"nome para o subvolume e _ponto de montagem_ é o local onde o sistema de "
+"arquivos está montado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:448
@@ -1739,6 +1834,9 @@ msgid ""
 "parameter is optional, has no meaning for subvolumes, and requires more than "
 "one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para *dados* do sistema de arquivos (como `0`, `1` "
+"ou `10`). Este parâmetro é opcional, não tem significado para subvolumes e "
+"requer mais de um disco físico."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:450
@@ -1753,6 +1851,9 @@ msgid ""
 "`10`). This parameter is optional, has no meaning for subvolumes, and "
 "requires more than one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para sistema de arquivos/volume de *metadados* ("
+"como `0`, `1` ou `10`). Este parâmetro é opcional, não tem significado para "
+"subvolumes e requer mais de um disco físico."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:452
@@ -1770,6 +1871,9 @@ msgid ""
 "use by another file system, a new label will be created. This option has no "
 "meaning for subvolumes."
 msgstr ""
+"Especifica um rótulo para o sistema de arquivos Btrfs. Se o rótulo fornecido "
+"já estiver em uso por outro sistema de arquivos, um novo rótulo será criado. "
+"Esta opção não tem significado para subvolumes."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:454
@@ -1780,12 +1884,12 @@ msgstr "[option]#--subvol#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:455
 msgid "Create a Btrfs subvolume instead of a volume."
-msgstr ""
+msgstr "Cria um subvolume Btrfs em vez de um volume."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:457
 msgid "Set a name for a Btrfs subvolume."
-msgstr ""
+msgstr "Define um nome para um subvolume Btrfs."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:458
@@ -1799,6 +1903,8 @@ msgid ""
 "Use an existing Btrfs volume (or subvolume) and do not reformat the file "
 "system."
 msgstr ""
+"Usa um volume Btrfs existente (ou subvolume) e não reformata o sistema de "
+"arquivos."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:460
@@ -1818,6 +1924,12 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume ou subvolume. Nenhum processamento é "
+"feito na lista de argumentos, então eles devem ser fornecidos em um formato "
+"que pode ser passado diretamente para o programa mkfs. Isso significa que "
+"várias opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:463
@@ -1826,12 +1938,15 @@ msgid ""
 "partitions on three disks with subvolumes for `/` and `/home`. The main "
 "volume is not mounted or used directly in this example."
 msgstr ""
+"O exemplo a seguir mostra como criar um volume Btrfs a partir de partições "
+"membros em três discos com subvolumes para `/` e `/home`. O volume principal "
+"não é montado ou usado diretamente neste exemplo."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:465
 #, no-wrap
 msgid "Creating Btrfs Volumes and Subvolumes"
-msgstr ""
+msgstr "Criando volumes e subvolumes Btrfs"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:474
@@ -1862,7 +1977,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:484
 #, no-wrap
 msgid "clearpart (optional) - Remove All Existing Partitions"
-msgstr ""
+msgstr "clearpart (opcional) - Remove todas as partições existentes"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:487
@@ -1870,6 +1985,8 @@ msgid ""
 "Removes partitions from the system, prior to creation of new partitions. By "
 "default, no partitions are removed."
 msgstr ""
+"Remove partições do sistema, antes da criação de novas partições. Por "
+"padrão, nenhuma partição é removida."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:492
@@ -1877,6 +1994,8 @@ msgid ""
 "If the [command]#clearpart# command is used, then the [command]#part --"
 "onpart# command cannot be used on a logical partition."
 msgstr ""
+"Se o comando [command]#clearpart# for usado, o comando [command]#part "
+"--onpart# não poderá ser usado em uma partição lógica."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:496
@@ -1895,7 +2014,7 @@ msgstr "[option]#--all#"
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:498
 msgid "Erases all partitions from the system."
-msgstr ""
+msgstr "Apaga todas as partições do sistema."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:503
@@ -1903,13 +2022,16 @@ msgid ""
 "This option will erase all disks which can be reached by the installer, "
 "including any attached network storage. Use this option with caution."
 msgstr ""
+"Esta opção apagará todos os discos que podem ser acessados pelo instalador, "
+"incluindo qualquer armazenamento de rede conectado. Use esta opção com "
+"cuidado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:506
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:588
 #, no-wrap
 msgid "[option]#--drives=#"
-msgstr ""
+msgstr "[option]#--drives=#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:507
@@ -6937,7 +7059,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2324
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "Exemplo avançado de particionamento"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2323
