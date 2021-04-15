@@ -7,20 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-15 03:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f33pages_partialsinstalldatetimespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:5
 #: ./pages/_partials/install/DateTimeSpoke.adoc:9
 #, no-wrap
 msgid "Date & Time"
-msgstr ""
+msgstr "日期与时间"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:8
@@ -32,18 +36,20 @@ msgid ""
 "Screen and Language Selection], but you can change your date, time and "
 "location settings before you begin the installation."
 msgstr ""
+"日期与时间页面允许你对日期和时间进行设定。我们会基于你在 xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-welcome[欢迎屏幕] 的设定为此屏幕给定一系列的默认值，但在开始安装之前，你可以随时对这些设置进行调整。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "日期与时间页面屏幕截图"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:14
@@ -54,6 +60,8 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"首先你可以从屏幕左上角的下拉菜单中选择你所在的地区，然后选择你所在的城市或者距离你所在位置最近的且位于同一时区的城市。指定一个准确的位置有利于 "
+"{PRODUCT} 充分考虑夏令时等条件，从而正确设定你的时间。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:16
@@ -61,7 +69,7 @@ msgid ""
 "You can also select a time zone relative to Greenwich Mean Time (GMT) "
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
-msgstr ""
+msgstr "你也可以直接指定你所在的时区而不去指定地区，只需将 `Etc` 设置为你的地区即可。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/DateTimeSpoke.adoc:21
@@ -72,6 +80,8 @@ msgid ""
 "regions into this database. You can find more information at the "
 "link:++https://www.iana.org//time-zones++[IANA official website]."
 msgstr ""
+"地区与城市列表基于 [package]*tzdata* 日期时间数据库生成，这个数据库由 IANA 维护。Fedora 项目没有修改这个数据库内容的权利，"
+"你可以在 link:++https://www.iana.org//time-zones++[IANA 官方网站] 了解有关这个数据库的更多信息。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:25
@@ -83,6 +93,8 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"右上角的切换按钮可以用于启用和关闭基于 NTP 的网络时间自动同步服务。启用这个选项可以保证你的系统在连接到互联网的前提下时间准确。NTP "
+"池已经被默认配置好，但你可以随时对 NTP 服务器进行调整。"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:26
