@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-04-09 04:02+0000\n"
+"PO-Revision-Date: 2021-04-16 15:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -82,6 +82,9 @@ msgid ""
 "boot command line or in your PXE server configuration, this language will be "
 "selected by default, but you will still be able to change it."
 msgstr ""
+"我们会为你默认挑选一种语言，如果你的网络连接在这个时候已经可用了（例如你在网络服务器上引导了安装介质），我们就会通过 GeoIP "
+"模组探测你的位置并将相应的语言设定为默认。指定默认语言的方式还包括在引导选项或者 PXE 服务器配置添加 [option]#inst.lang=# "
+"。默认语言会出现在语言列表顶部，但是你依然可以在操作选单任意指定其它的语言以用于后续安装和使用。"
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:20
@@ -91,6 +94,8 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"在选择好语言和地区后，点击继续以确认你的选择然后前往 xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[安装摘要页] 。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/WelcomeSpoke.adoc:25
@@ -101,3 +106,4 @@ msgid ""
 "installation, or `Get me out of here` to quit the installation and reboot "
 "your system."
 msgstr ""
+"如果你在使用 {PRODUCT} 的预发布版本，在点击继续后会有提示框出现告知你你使用的介质是预发布的。此时你可以选择继续安装，或者退出安装重启系统。"

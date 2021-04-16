@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-04-10 08:02+0000\n"
+"PO-Revision-Date: 2021-04-16 15:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -31,13 +31,13 @@ msgid ""
 "The `Installation Summary` screen is the central location for setting up an "
 "installation. Most of the options which can be configured during the "
 "installation can be accessed from here."
-msgstr "安装摘要屏幕在安装程序中处于枢纽的地位，绝大多数的安装选项都可以从这里访问。"
+msgstr "安装摘要页面在安装程序中处于枢纽的地位，绝大多数的安装选项都可以从这里访问。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:11
 #, no-wrap
 msgid "The Installation Summary screen"
-msgstr "安装摘要屏幕"
+msgstr "安装摘要页面"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:11
@@ -54,6 +54,8 @@ msgid ""
 "for you to set up a network connection prior to displaying the `Installation "
 "Summary` screen."
 msgstr ""
+"如果你通过引导选项或者 Kickstart "
+"配置文件指定安装来源为网络上的软件仓库，然而网络在安装开始的时候却不可用，那么安装程序将会在显示安装摘要页面之前显示网络配置页面。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:21
@@ -61,7 +63,7 @@ msgid ""
 "The summary screen consists of several links to other screens, separated "
 "into categories. These links can be in several different states, which are "
 "graphically indicated:"
-msgstr ""
+msgstr "安装摘要页面包含了若干个跳转到其它页面的链接，这些链接以类别的形式组织起来。对于每一个链接，都有着下面几种状态："
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:23
@@ -73,6 +75,8 @@ msgid ""
 "variant, you always have to at least confirm this selection, even if you do "
 "not want to make any changes."
 msgstr ""
+"图标旁边显示着 *警告标志* （带有感叹号的黄色三角形）意味着在开始安装之前需要额外留意这个页面。通常安装路径页面对应的链接在初始时就是这样的，尽管有自动"
+"分区功能，但我们仍然要求你至少进入这个页面进行确认，哪怕你什么都不修改。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:25
@@ -83,6 +87,8 @@ msgid ""
 "installation source in the `Installation Source` screen and the installer is "
 "probing the new source location and gathering a list of available packages."
 msgstr ""
+"链接文字 *变灰* 意味着安装程序正在对这个页面的选项进行设置，在访问这个页面之前你必须等待安装程序完成有关的设置。当你修改了安装来源后通常就会有这种情况"
+"发生，这是因为安装程序会花上一点时间探测新的安装来源并获取可用软件包列表。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:27
@@ -93,7 +99,7 @@ msgid ""
 "typically happens with localization settings, as these are either detected "
 "automatically, or set up on the previous screen where you select your "
 "language and locale."
-msgstr ""
+msgstr "链接文字 *黑色且无警告标志*"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:29
