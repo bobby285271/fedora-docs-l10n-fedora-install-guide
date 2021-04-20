@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-04-13 01:02+0000\n"
+"PO-Revision-Date: 2021-04-20 18:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.6\n"
 
 #. type: Title =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
@@ -2047,6 +2047,9 @@ msgid ""
 "clears all the partitions on the first two drives on the primary IDE "
 "controller:"
 msgstr ""
+"Especifica de quais unidades limpar as partições. Por exemplo, o seguinte "
+"limpa todas as partições nas primeiras duas unidades no controlador IDE "
+"primário:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:511
@@ -2062,6 +2065,10 @@ msgid ""
 "device. For example, to clear a disk with WWID "
 "`58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Para limpar um dispositivo multipath, use o formato `disk/by-id/scsi-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para limpar um disco "
+"com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:518
@@ -2081,6 +2088,12 @@ msgid ""
 "device. For example, to clear a disk with WWID "
 "`2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Este formato é preferível para todos os dispositivos multipath, mas se "
+"surgirem erros, os dispositivos multipath que não usam _gerenciamento de "
+"volume lógico_ (LVM) também podem ser limpos usando o formato `disk/by-id/dm-"
+"uuid-mpath-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para limpar "
+"um disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:525
@@ -2100,6 +2113,11 @@ msgid ""
 "mpatha` during installation might not be the one that you expect it to be. "
 "Therefore, the [command]#clearpart# command could target the wrong disk."
 msgstr ""
+"Nunca especifique dispositivos multipath por nomes de dispositivos como "
+"`mpatha`. Nomes de dispositivos como este não são específicos para um "
+"determinado disco. O disco denominado `/dev/mpatha` durante a instalação "
+"pode não ser o que você esperava. Portanto, o comando [command]#clearpart# "
+"pode ter como destino o disco errado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:535
@@ -2110,6 +2128,10 @@ msgid ""
 "targets in one command, using the pipe (\"pass:attributes[{blank}]`|`pass:"
 "attributes[{blank}]\") as a delimiter. For example:"
 msgstr ""
+"A partir do Fedora 25, você pode combinar várias maneiras de especificar "
+"destinos de armazenamento em um comando, usando o pipe (\"pass"
+":attributes[{blank}]`|`pass:attributes[{blank}]\") como delimitador. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:538
@@ -2126,6 +2148,9 @@ msgid ""
 "Variants are processed from left to right, and at least one of them must "
 "match for the command to succeed."
 msgstr ""
+"O acima irá corresponder a qualquer um de `sd*`, `hd*`, *or* `vda` *e* `/dev/"
+"vdc`. As variantes são processadas da esquerda para a direita e pelo menos "
+"uma delas deve corresponder para que o comando seja bem-sucedido."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:542
@@ -2140,6 +2165,9 @@ msgid ""
 "all# and [option]#--linux# options if used. Can be used across different "
 "drives. For example:"
 msgstr ""
+"Especifica quais partições limpar. Esta opção sobrescreve as opções "
+"[option]#--all# e [option]#--linux#, se usadas. Pode ser usado em diferentes "
+"unidades. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:547
@@ -2156,7 +2184,7 @@ msgstr "[option]#--disklabel=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:550
 msgid "Create a set disk label when relabeling a disk."
-msgstr ""
+msgstr "Cria um conjunto de rótulo de disco ao renomear um disco."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:551
@@ -2167,7 +2195,7 @@ msgstr "[option]#--linux#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 msgid "Erases all Linux partitions."
-msgstr ""
+msgstr "Apaga todas as partições Linux."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:553
@@ -2181,6 +2209,8 @@ msgid ""
 "Do not remove any partitions. This is the default behavior - using this "
 "option is the same as not using the [command]#clearpart# command at all."
 msgstr ""
+"Não remove nenhuma partição. Este é o comportamento padrão - usar esta opção "
+"é o mesmo que não usar o comando [command]#clearpart#."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:559
@@ -2191,12 +2221,18 @@ msgid ""
 "need to perform the installation automatically with no interaction, add the "
 "[command]#zerombr# command to your Kickstart file."
 msgstr ""
+"Usar o comando [command]#clearpart --all# em um arquivo Kickstart para "
+"remover todas as partições existentes durante a instalação fará com que o "
+"[application]*Anaconda* pause e solicite uma confirmação. Se você precisar "
+"executar a instalação automaticamente sem interação, adicione o comando "
+"[command]#zerombr# ao seu arquivo Kickstart."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:563
 #, no-wrap
 msgid "fcoe (optional) - Configure Fibre Channel Over Ethernet Devices"
 msgstr ""
+"fcoe (opcional) - Configura dispositivos de Fibre Channel sobre Ethernet"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:566
@@ -2204,24 +2240,26 @@ msgid ""
 "Specify which FCoE devices should be activated automatically in addition to "
 "those discovered by _Enhanced Disk Drive Services_ (EDD)."
 msgstr ""
+"Especifica quais dispositivos FCoE devem ser ativados automaticamente, além "
+"daqueles descobertos por _Enhanced Disk Drive Services_ (EDD)."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:570
 #, no-wrap
 msgid "[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 msgstr ""
-"[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
+"[command]#fcoe --nic=pass:attributes[{blank}]_nome_ [--dcp= | --autovlan]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:572
 #, no-wrap
 msgid "[option]#--nic=# (required)"
-msgstr "[option]#--nic=# (required)"
+msgstr "[option]#--nic=# (obrigatório)"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:573
 msgid "Name of the device to be activated."
-msgstr ""
+msgstr "Nome do dispositivo a ser ativado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:574
@@ -2232,7 +2270,7 @@ msgstr "[option]#--dcb=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:575
 msgid "Establish _Data Center Bridging_ (DCB) settings."
-msgstr ""
+msgstr "Estabelece configurações de _Data Center Bridging_ (DCB)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:576
@@ -2243,7 +2281,7 @@ msgstr "[option]#--autovlan#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:577
 msgid "Discover VLANs automatically."
-msgstr ""
+msgstr "Descobre VLANs automaticamente."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:579
@@ -2312,7 +2350,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:607
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#ignoredisk --drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
 "[command]#ignoredisk --drives=disk/by-id/scsi-"
@@ -2351,7 +2389,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:636
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
 "[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-"
@@ -2364,7 +2402,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:643
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
 "[command]#ignoredisk --only-use=disk/by-id/scsi-"
@@ -2722,7 +2760,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:740
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:978
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1049
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--fsoptions=#"
 msgstr "[option]#--fsoptions=#"
 
@@ -2915,7 +2953,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:789
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--metadatasize=#"
 msgstr "[option]#--metadatasize=#"
 
@@ -2948,7 +2986,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:795
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--poolname=#"
 msgstr "[option]#--poolname=#"
 
@@ -2961,7 +2999,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:797
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--profile=#"
 msgstr "[option]#--profile=#"
 
@@ -3458,7 +3496,7 @@ msgstr ""
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1039
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1845
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--level=#"
 msgstr "[option]#--level=#"
 
@@ -3544,7 +3582,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1099
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "[command]#part raid.01 --size=6000 --ondisk=sda#\n"
 "[command]#part raid.02 --size=6000 --ondisk=sdb#\n"
@@ -4310,7 +4348,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1377
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--nodns#"
 msgstr "[option]#--nodns#"
 
@@ -4428,7 +4466,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1397
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--noipv4#"
 msgstr "[option]#--noipv4#"
 
@@ -4439,7 +4477,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1399
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--noipv6#"
 msgstr "[option]#--noipv6#"
 
@@ -4875,7 +4913,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1545
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--disabled=#"
 msgstr "[option]#--disabled=#"
 
@@ -4886,7 +4924,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1547
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--enabled=#"
 msgstr "[option]#--enabled=#"
 
@@ -4960,7 +4998,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1575
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--nontp#"
 msgstr "[option]#--nontp#"
 
@@ -5321,7 +5359,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1687
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--no-password#"
 msgstr "[option]#--no-password#"
 
@@ -5538,7 +5576,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1747
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--username=#"
 msgstr "[option]#--username=#"
 
@@ -5782,7 +5820,7 @@ msgstr ""
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1841
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1932
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--host=#"
 msgstr "[option]#--host=#"
 
@@ -5892,7 +5930,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1888
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--username#"
 msgstr "[option]#--username#"
 
@@ -6054,7 +6092,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1963
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--disable#"
 msgstr "[option]#--disable#"
 
@@ -6663,7 +6701,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2180
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--nocore#"
 msgstr "[option]#--nocore#"
 
@@ -6759,7 +6797,7 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2205
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--nodefaults#"
 msgstr "[option]#--nodefaults#"
 
@@ -6883,7 +6921,7 @@ msgstr ""
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2242
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2300
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[option]#--log=#"
 msgstr "[option]#--log=#"
 
@@ -7232,7 +7270,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2430
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
 msgstr "[command]#%include /tmp/part-include#\n"
 
@@ -7268,7 +7306,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2455
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# Mount an NFS share\n"
 "mkdir /mnt/temp\n"
@@ -7276,7 +7314,7 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
-"# Monte um compartilhamento NFS\n"
+"# Monta um compartilhamento NFS\n"
 "mkdir /mnt/temp\n"
 "mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
 "openvt -s -w -- /mnt/temp/runme\n"
@@ -7284,7 +7322,7 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2458
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# End of the %post section\n"
 "%end\n"
