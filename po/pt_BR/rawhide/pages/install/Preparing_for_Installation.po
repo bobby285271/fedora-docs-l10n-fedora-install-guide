@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-27 21:02+0000\n"
+"POT-Creation-Date: 2021-04-26 21:02+0000\n"
 "PO-Revision-Date: 2021-03-04 18:01+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -601,8 +601,8 @@ msgid ""
 "fedora[Downloading Fedora]."
 msgstr ""
 "Leia mais sobre Fedora Workstation, Fedora Cloud, Fedora Server e os tipos "
-"de mídia disponíveis em xref:Downloading_Fedora.adoc#chap-downloading-fedora["
-"Baixando o Fedora]."
+"de mídia disponíveis em xref:Downloading_Fedora.adoc#chap-downloading-"
+"fedora[Baixando o Fedora]."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:159
@@ -611,8 +611,8 @@ msgid ""
 "or tools for specialized tasks at link:++https://spins.fedoraproject.org++[]."
 msgstr ""
 "Você também pode escolher um Fedora _Spin_ apresentando desktops "
-"alternativos favoritos ou ferramentas para tarefas especializadas em "
-"link:++https://spins.fedoraproject.org++[]."
+"alternativos favoritos ou ferramentas para tarefas especializadas em link:+"
+"+https://spins.fedoraproject.org++[]."
 
 #. type: Title ====
 #: pages/install/Preparing_for_Installation.adoc:161
@@ -661,15 +661,19 @@ msgstr "Verificando checksums em sistemas Windows"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:171
-#: pages/install/Preparing_for_Installation.adoc:222
+#, fuzzy
+#| msgid ""
+#| "Download the Fedora image of your choice from link:++https://"
+#| "fedoraproject.org/get-fedora++[] and the corresponding checksum file from "
+#| "link:++https://getfedora.org/security/++[]"
 msgid ""
-"Download the Fedora image of your choice from link:++https://fedoraproject."
-"org/get-fedora++[] and the corresponding checksum file from link:++https://"
-"getfedora.org/security/++[]"
+"Download the Fedora image of your choice from link:++https://getfedora.org/+"
+"+[] and the corresponding checksum file from link:++https://getfedora.org/"
+"security/++[]"
 msgstr ""
 "Baixe a imagem do Fedora de sua escolha no link:++https://fedoraproject.org/"
-"get-fedora++[] e o arquivo de soma de verificação correspondente em "
-"link:++https://getfedora.org/security/++[]"
+"get-fedora++[] e o arquivo de soma de verificação correspondente em link:+"
+"+https://getfedora.org/security/++[]"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:173
@@ -775,6 +779,17 @@ msgid "Verifying checksums on Linux and OSX systems"
 msgstr "Verificando somas de verificação em sistemas Linux e OSX"
 
 #. type: Plain text
+#: pages/install/Preparing_for_Installation.adoc:222
+msgid ""
+"Download the Fedora image of your choice from link:++https://fedoraproject."
+"org/get-fedora++[] and the corresponding checksum file from link:++https://"
+"getfedora.org/security/++[]"
+msgstr ""
+"Baixe a imagem do Fedora de sua escolha no link:++https://fedoraproject.org/"
+"get-fedora++[] e o arquivo de soma de verificação correspondente em link:+"
+"+https://getfedora.org/security/++[]"
+
+#. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:224
 msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
@@ -813,8 +828,9 @@ msgstr "Para OSX:"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:244
-#, no-wrap
-msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
+#, fuzzy, no-wrap
+#| msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
+msgid "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \"  \" $2 }' | shasum -a 256 -c\n"
 msgstr "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | shasum -a 256 -c\n"
 
 #. type: Title ===
@@ -900,16 +916,14 @@ msgid ""
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
 "$ [command]#dmesg|tail#\n"
-"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
-"SerialNumber=2\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, SerialNumber=2\n"
 "[288954.686559] usb 2-1.8: Product: USB Storage\n"
 "[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
 "[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
 "[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
 "[288954.712809] usbcore: registered new interface driver usb-storage\n"
 "[288954.716682] usbcore: registered new interface driver uas\n"
-"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
-"9228 PQ: 0 ANSI: 0\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   9228 PQ: 0 ANSI: 0\n"
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
@@ -931,9 +945,9 @@ msgid ""
 "`dd` command destroys all data on the target device. If you made a mistake, "
 "you could lose important data."
 msgstr ""
-"Preste muita atenção aos dispositivos de origem (`if=`) e de destino (`of=`)"
-". O comando `dd` destrói todos os dados no dispositivo de destino. Se você "
-"cometer um erro, poderá perder dados importantes."
+"Preste muita atenção aos dispositivos de origem (`if=`) e de destino "
+"(`of=`). O comando `dd` destrói todos os dados no dispositivo de destino. Se "
+"você cometer um erro, poderá perder dados importantes."
 
 #. type: Title ===
 #: pages/install/Preparing_for_Installation.adoc:290

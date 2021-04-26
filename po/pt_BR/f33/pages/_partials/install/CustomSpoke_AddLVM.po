@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-04-26 21:04+0000\n"
 "PO-Revision-Date: 2021-04-02 11:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -21,8 +21,9 @@ msgstr ""
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:5
-#, no-wrap
-msgid "Creating a Logical Volume Managament (LVM) Layout"
+#, fuzzy, no-wrap
+#| msgid "Creating a Logical Volume Managament (LVM) Layout"
+msgid "Creating a Logical Volume Management (LVM) Layout"
 msgstr "Criando um layout de Gerenciamento de Volume Lógico (LVM)"
 
 #. type: Plain text
@@ -52,8 +53,8 @@ msgid ""
 "LVM] for additional information about the concepts behind Logical Volume "
 "Management."
 msgstr ""
-"Veja xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Entendendo LVM]"
-" para obter informações adicionais sobre os conceitos por trás do "
+"Veja xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Entendendo "
+"LVM] para obter informações adicionais sobre os conceitos por trás do "
 "Gerenciamento de Volume Lógico."
 
 #. type: delimited block =
@@ -123,9 +124,10 @@ msgid ""
 msgstr ""
 "Na nova janela de diálogo, especifique um ponto de montagem para o qual "
 "deseja criar um volume lógico separado – por exemplo, `/`. Opcionalmente, "
-"especifique um tamanho para o volume usando unidades padrão como MB ou GB ("
-"por exemplo, `50 GB`). Em seguida, clique em `Adicionar um ponto de montagem`"
-" para adicionar o volume e retornar à tela principal de particionamento."
+"especifique um tamanho para o volume usando unidades padrão como MB ou GB "
+"(por exemplo, `50 GB`). Em seguida, clique em `Adicionar um ponto de "
+"montagem` para adicionar o volume e retornar à tela principal de "
+"particionamento."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:33
@@ -149,8 +151,8 @@ msgstr ""
 "significa que foi criado como um volume lógico LVM e um grupo de volume foi "
 "criado para contê-lo. Selecione o ponto de montagem recém-criado no painel "
 "esquerdo para configurá-lo ainda mais. Se você deseja usar o provisionamento "
-"fino para este volume, altere a opção `Tipo de dispositivo` para`"
-"Provisionamento LVM fino`."
+"fino para este volume, altere a opção `Tipo de dispositivo` "
+"para`Provisionamento LVM fino`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:39
@@ -208,9 +210,9 @@ msgid ""
 msgstr ""
 "Você também pode ter certeza de que o grupo de volume está criptografado "
 "selecionando a opção `Criptografar`; isso habilitará a criptografia LUKS "
-"para todo o grupo de volume. Veja o [citetitle]_{PRODUCT} Security Guide_ ("
-"guia de segurança), disponível em link:++https://docs.fedoraproject.org/++[]"
-", para obter informações sobre criptografia de disco LUKS."
+"para todo o grupo de volume. Veja o [citetitle]_{PRODUCT} Security Guide_ "
+"(guia de segurança), disponível em link:++https://docs.fedoraproject.org/+"
+"+[], para obter informações sobre criptografia de disco LUKS."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:52
@@ -248,8 +250,8 @@ msgstr ""
 "definido com o valor padrão de 4 MiB. Se você deseja criar um grupo de "
 "volume com diferentes extensões físicas, crie-o manualmente alternando para "
 "um shell interativo e usando o comando [command]#vgcreate#, ou use um "
-"arquivo Kickstart com o comando [command]#volgroup "
-"--pesize=pass:attributes[{blank}]_tamanho_pass:attributes[{blank}]#."
+"arquivo Kickstart com o comando [command]#volgroup --pesize=pass:"
+"attributes[{blank}]_tamanho_pass:attributes[{blank}]#."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:63
@@ -263,8 +265,8 @@ msgid ""
 "then go through your existing mount points and change this setting to assign "
 "them to a different volume group."
 msgstr ""
-"Se você precisar criar mais de um grupo de volume, abra o menu suspenso `"
-"Grupo de volume` e selecione a opção `Criar um novo grupo de volume`. Uma "
+"Se você precisar criar mais de um grupo de volume, abra o menu suspenso "
+"`Grupo de volume` e selecione a opção `Criar um novo grupo de volume`. Uma "
 "nova janela de diálogo será aberta, idêntica à descrita na etapa anterior. "
 "Novamente, selecione um nome, dispositivos de armazenamento, configurações "
 "de criptografia, nível de RAID e política de tamanho para o novo grupo e "
