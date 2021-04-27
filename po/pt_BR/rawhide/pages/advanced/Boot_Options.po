@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-17 21:03+0000\n"
+"POT-Creation-Date: 2021-04-27 21:02+0000\n"
 "PO-Revision-Date: 2021-04-02 11:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -111,12 +111,18 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:23
+#, fuzzy
+#| msgid ""
+#| "Boot options specific to the installation program always start with `inst."
+#| "` in this guide. Currently, this prefix is optional - for example, "
+#| "[option]#resolution=1024x768# will work exactly the same as [option]#inst."
+#| "resolution=1024x768#. However, it is expected that the `inst.` prefix "
+#| "will be mandatory in future releases."
 msgid ""
 "Boot options specific to the installation program always start with `inst.` "
-"in this guide. Currently, this prefix is optional - for example, "
-"[option]#resolution=1024x768# will work exactly the same as [option]#inst."
-"resolution=1024x768#. However, it is expected that the `inst.` prefix will "
-"be mandatory in future releases."
+"in this guide. This prefix was optional in previous releases, but starting "
+"with Fedora 34, the installer will ignore options that do not use it (for "
+"example, `stage2=` instead of `inst.stage2=`)."
 msgstr ""
 "As opções de inicialização específicas para o programa de instalação sempre "
 "começam com `inst` neste guia. Atualmente, este prefixo é opcional – por "
@@ -1391,8 +1397,8 @@ msgid ""
 "as well if available."
 msgstr ""
 "Normalmente, em um sistema AMD64 ou Intel{nbsp}64, apenas pacotes para esta "
-"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas ("
-"marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
+"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas "
+"(marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
 "pacotes para sistemas 32-bits AMD ou Intel (marcados como `i686`) também "
 "serão instalados automaticamente, se disponíveis."
 
@@ -1611,9 +1617,10 @@ msgid ""
 "remote graphical installation. See xref:advanced/VNC_Installations.adoc#chap-"
 "vnc-installations[Installing Using VNC] for more details."
 msgstr ""
-"As seguintes opções são necessárias para configurar o [application]*Anaconda*"
-" para instalação gráfica remota. Consulte xref:advanced/VNC_Installations."
-"adoc#chap-vnc-installations[Instalando usando VNC] para obter mais detalhes."
+"As seguintes opções são necessárias para configurar o "
+"[application]*Anaconda* para instalação gráfica remota. Consulte xref:"
+"advanced/VNC_Installations.adoc#chap-vnc-installations[Instalando usando "
+"VNC] para obter mais detalhes."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:363
@@ -1639,7 +1646,8 @@ msgstr ""
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:369
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr "Um sistema instalado usando `VNC` irá iniciar em modo texto por padrão."
+msgstr ""
+"Um sistema instalado usando `VNC` irá iniciar em modo texto por padrão."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:372
@@ -1658,9 +1666,9 @@ msgid ""
 msgstr ""
 "Servidor `VNC` usado pelo programa de instalação. Qualquer cliente `VNC` "
 "tentando se conectar ao sistema terá que fornecer a senha correta para obter "
-"acesso. Por exemplo, [option]#inst."
-"vncpassword=pass:attributes[{blank}]_senhateste_pass:attributes[{blank}]# "
-"definirá a senha para `senhateste`. A senha deve ter entre 6 e 8 caracteres."
+"acesso. Por exemplo, [option]#inst.vncpassword=pass:"
+"attributes[{blank}]_senhateste_pass:attributes[{blank}]# definirá a senha "
+"para `senhateste`. A senha deve ter entre 6 e 8 caracteres."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:378
@@ -1705,10 +1713,11 @@ msgid ""
 "specify one, the installation program will use `5900`."
 msgstr ""
 "Conecte-se a um cliente `VNC` de escuta em um host e porta especificados "
-"assim que a instalação começar. A sintaxe correta é [option]#inst.vncconnect="
-"pass:attributes[{blank}]_host_:pass:attributes[{blank}]_porta_pass:attributes"
-"[{blank}]#. O parâmetro _porta_ é opcional – se você não especificar uma, o "
-"programa de instalação usará `5900`."
+"assim que a instalação começar. A sintaxe correta é [option]#inst."
+"vncconnect=pass:attributes[{blank}]_host_:pass:"
+"attributes[{blank}]_porta_pass:attributes[{blank}]#. O parâmetro _porta_ é "
+"opcional – se você não especificar uma, o programa de instalação usará "
+"`5900`."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:394
@@ -1799,10 +1808,11 @@ msgid ""
 "forwarding logs. The default value is `org.fedoraproject.anaconda.log.0`pass:"
 "attributes[{blank}]; if this port is present, it will be used."
 msgstr ""
-"Especifica uma porta `virtio` (um dispositivo de caractere em `/dev/"
-"virtio-ports/pass:attributes[{blank}]_nome_pass:attributes[{blank}]`) a ser "
-"usado para encaminhar logs. O valor padrão é `org.fedoraproject.anaconda.log."
-"0`pass:attributes[{blank}]; se esta porta estiver presente, ela será usada."
+"Especifica uma porta `virtio` (um dispositivo de caractere em `/dev/virtio-"
+"ports/pass:attributes[{blank}]_nome_pass:attributes[{blank}]`) a ser usado "
+"para encaminhar logs. O valor padrão é `org.fedoraproject.anaconda."
+"log.0`pass:attributes[{blank}]; se esta porta estiver presente, ela será "
+"usada."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:407
@@ -1873,9 +1883,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:422
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
-msgstr ""
-"[option]#repo=nfsiso:pass:attributes[{blank}]_servidor_:/pass:attributes[{bla"
-"nk}]_caminho_pass:attributes[{blank}]#"
+msgstr "[option]#repo=nfsiso:pass:attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:423
@@ -1889,8 +1897,8 @@ msgstr ""
 "Em instalações NFS, especifica-se que o destino é uma imagem ISO localizada "
 "em um servidor NFS em vez de uma árvore instalável. A diferença agora é "
 "detectada automaticamente, o que significa que esta opção é a mesma que "
-"[option]#inst.repo=nfs:pass:attributes[{blank}]_servidor_:/pass:attributes[{b"
-"lank}]_caminho_pass:attributes[{blank}]#."
+"[option]#inst.repo=nfs:pass:attributes[{blank}]_servidor_:/pass:"
+"attributes[{blank}]_caminho_pass:attributes[{blank}]#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:424
@@ -1911,9 +1919,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:426
 #, no-wrap
 msgid "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
-msgstr ""
-"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
-"[option]#ipv6=#"
+msgstr "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:427
@@ -1949,22 +1955,12 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
 "|Valor|Comportamento atual\n"
-"|Não presente|Tenta ativar todos os dispositivos usando `dhcp`, a menos que "
-"o dispositivo e a configuração desejados sejam especificados pela opção "
-"[option]#ip=# ou a opção [option]#BOOTIF#.\n"
-"|[option]#ksdevice=link#|Semelhante ao anterior, com a diferença de que a "
-"rede estará sempre ativada no initramfs, seja necessário ou não. A opção "
-"[option]#rd.neednet# suportada (fornecida pelo [application]*dracut*) deve "
-"ser usada em seu lugar.\n"
-"|[option]#ksdevice=bootif#|Ignorada (a opção BOOTID= é usada por padrão "
-"quando especificada)\n"
+"|Não presente|Tenta ativar todos os dispositivos usando `dhcp`, a menos que o dispositivo e a configuração desejados sejam especificados pela opção [option]#ip=# ou a opção [option]#BOOTIF#.\n"
+"|[option]#ksdevice=link#|Semelhante ao anterior, com a diferença de que a rede estará sempre ativada no initramfs, seja necessário ou não. A opção [option]#rd.neednet# suportada (fornecida pelo [application]*dracut*) deve ser usada em seu lugar.\n"
+"|[option]#ksdevice=bootif#|Ignorada (a opção BOOTID= é usada por padrão quando especificada)\n"
 "|[option]#ksdevice=ibft#|Substituída com a opção [option]#ip=ibft#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
-"Substituída com "
-"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_dispositivo_pass:attributes[{blan"
-"k}]#|Substituída com especificar o nome do dispositivo usando a opção "
-"[option]#ip=#.\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|Substituída com [option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_dispositivo_pass:attributes[{blank}]#|Substituída com especificar o nome do dispositivo usando a opção [option]#ip=#.\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:448
@@ -2232,8 +2228,8 @@ msgid ""
 msgstr ""
 "As atualizações são feitas de maneira diferente nas versões atuais do "
 "{PRODUCT}. Para obter mais informações sobre como atualizar seu sistema, "
-"consulte xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading["
-"Atualizando seu sistema atual]."
+"consulte xref:advanced/Upgrading_Your_Current_System.adoc#chap-"
+"upgrading[Atualizando seu sistema atual]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:490
@@ -2309,14 +2305,14 @@ msgid ""
 "the bottom informing you of the current status, and another pass will start "
 "automatically."
 msgstr ""
-"O {PRODUCT} inclui o aplicativo de teste de memória [application]*Memtest86+*"
-". Para iniciar o modo de teste de memória, escolha Troubleshooting > `Memory "
-"test` no menu de inicialização. O teste começará imediatamente. Por padrão, "
-"[application]*Memtest86+* realiza dez testes em cada passagem; uma "
-"configuração diferente pode ser especificada acessando a tela de "
-"configuração usando a tecla kbd:[c]. Após a conclusão da primeira passagem, "
-"uma mensagem aparecerá na parte inferior informando sobre o status atual e "
-"outra passagem será iniciada automaticamente."
+"O {PRODUCT} inclui o aplicativo de teste de memória "
+"[application]*Memtest86+*. Para iniciar o modo de teste de memória, escolha "
+"Troubleshooting > `Memory test` no menu de inicialização. O teste começará "
+"imediatamente. Por padrão, [application]*Memtest86+* realiza dez testes em "
+"cada passagem; uma configuração diferente pode ser especificada acessando a "
+"tela de configuração usando a tecla kbd:[c]. Após a conclusão da primeira "
+"passagem, uma mensagem aparecerá na parte inferior informando sobre o status "
+"atual e outra passagem será iniciada automaticamente."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:508
@@ -2445,8 +2441,8 @@ msgid ""
 "to complete."
 msgstr ""
 "A quantidade de tempo que leva para completar uma única passagem completa do "
-"[application]*Memtest86+* varia dependendo da configuração do seu sistema ("
-"notavelmente o tamanho da RAM e a velocidade). Por exemplo, em um sistema "
+"[application]*Memtest86+* varia dependendo da configuração do seu sistema "
+"(notavelmente o tamanho da RAM e a velocidade). Por exemplo, em um sistema "
 "com 2{nbsp}GB de memória DDR2 667{nbsp}MHz, uma única passagem levará "
 "aproximadamente 20{nbsp}minutos para ser concluída."
 
@@ -2456,8 +2452,8 @@ msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
 msgstr ""
-"Para interromper os testes e reiniciar o computador, pressione a tecla "
-"kbd:[Esc] a qualquer momento."
+"Para interromper os testes e reiniciar o computador, pressione a tecla kbd:"
+"[Esc] a qualquer momento."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:542
@@ -2469,9 +2465,9 @@ msgid ""
 msgstr ""
 "Para mais informações sobre o uso do [application]*Memtest86+*, veja o site "
 "oficial em link:++https://www.memtest.org/++[]. Um arquivo`README` também "
-"está localizado em `/usr/share/doc/"
-"memtest86+-_versão_pass:attributes[{blank}]/` em sistemas {PRODUCT} com o "
-"pacote [package]*memtest86+* instalado."
+"está localizado em `/usr/share/doc/memtest86+-_versão_pass:"
+"attributes[{blank}]/` em sistemas {PRODUCT} com o pacote "
+"[package]*memtest86+* instalado."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:544
