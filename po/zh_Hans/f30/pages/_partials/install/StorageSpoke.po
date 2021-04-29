@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-29 01:02+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f30pages_partialsinstallstoragespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.6\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4
 #: ./pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "安装目标"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:7
@@ -29,7 +32,7 @@ msgid ""
 "options - namely, which disks will be used as the installation target for "
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
-msgstr ""
+msgstr "安装目标页面将允许你对储存设备进行配置，你可以选择将哪个设备用于 {PRODUCT} 的安装。你需要至少选择一个设备以完成安装。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:9
@@ -51,6 +54,9 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"如果你需要使用一个已经包含一些数据的磁盘，例如你希望将 Microsoft Windows 的分区压缩并在剩余的空间上安装 {PRODUCT} ，"
+"或者你希望升级你的 {PRODUCT} "
+"，务必对所有重要的数据做好备份。手动分区是有风险的，如果手动分区进程被中断或是无法完成（例如安装出错、电源中断等等），磁盘上已有的数据可能将无法恢复。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -58,7 +64,7 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "安装目标页面。共有两个本地磁盘可用"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -75,6 +81,8 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"在页面的顶部，所有在本地可用的储存设备都会被列出来（包括 SATA、IDE 和 SCSI 硬盘、USB "
+"驱动器等等）。在安装程序启动的时候本地储存设备就会被自动探测，在安装开始后才接入的设备不会被显示。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
@@ -115,6 +123,8 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"我们使用一个黑色实心圆为底的白色对勾标记将被用于安装的储存设备。没有被标记的设备将不会用于安装，自动分区的时候也会忽略这些设备，手动分区的时候这些设备也将"
+"会是不可用状态。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33
@@ -126,12 +136,14 @@ msgid ""
 "so. If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"外接硬盘和闪存盘等 USB 储存设备也会在本地标准磁盘栏目显示，它们跟内部硬盘一样可在安装时供选择。除非你真的想这样做，否则务必 *不要* "
+"将可卸载设备作为安装目标。如果你在可卸载设备上安装了 {PRODUCT} 并移除了设备，你的系统可能就不可用了。"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:36
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "未选择的和已选择的磁盘"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:38
@@ -139,7 +151,7 @@ msgstr ""
 msgid ""
 "Disk selection in the Installation Destination screen. Two disks are "
 "displayed; only the one on the right side will be used"
-msgstr ""
+msgstr "安装目标页的磁盘选择栏目。这里显示了两块硬盘，右边的硬盘将会被使用"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:38
@@ -177,6 +189,8 @@ msgid ""
 "{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
 "is described later in this section."
 msgstr ""
+"在选择自动分区方案时，你可以选择是否让额外的空间可用。选择这个选项后你就可以从已有的分区中回收空间。例如说如果你的磁盘已经包含了一个不同的操作系统，"
+"你就可以通过压缩这个操作系统的分区以为 {PRODUCT} 留出更多储存空间。我们会在后面进一步说明回收空间功能。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:47
@@ -200,6 +214,9 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"此外你还可以选择加密你的数据，这将使用 LUKS 加密所有的分区（除了用于系统引导的分区，如 `/boot`）。我们非常推荐你加密你的设备，请前往 "
+"link:++https://docs.fedoraproject.org/++[] 阅读 [citetitle]_{PRODUCT} 安全指引_ "
+"以了解更多信息。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:54
@@ -213,6 +230,9 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"如果你丢失了 LUKS 密钥，你将无法访问加密的分区以及上面的数据。恢复丢失的密钥也是完全不可行的。然而，如果你是通过 Kickstart "
+"进行的安装，你可以在安装的时候储存你的密钥并创建一个备用的密钥。阅读 xref:advanced/Kickstart_Installations.adoc"
+"#chap-kickstart-installations[使用 Kickstart 进行无人职守安装] 页面了解更多信息。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:58

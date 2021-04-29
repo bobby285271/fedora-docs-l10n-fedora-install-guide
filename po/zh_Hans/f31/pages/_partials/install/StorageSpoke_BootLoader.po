@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-04-16 21:56+0000\n"
+"PO-Revision-Date: 2021-04-29 01:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.6\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:5
@@ -54,6 +54,10 @@ msgid ""
 "[citetitle]_{PRODUCT} System{nbsp}Administrator's{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]"
 msgstr ""
+"如果你还安装了其他的操作系统， {PRODUCT} "
+"安装程序会尝试自动探测他们并为引导程序添加相应的启动项。如果这些操作系统没有被正确探测，你可以在系统安装结束之后进行相关的配置。要了解如何配置 "
+"[application]*GRUB2* ，可前往 link:++https://docs.fedoraproject.org/++[] 并查看 "
+"[citetitle]_{PRODUCT} 系统管理员指南_ 。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:19
@@ -66,24 +70,26 @@ msgid ""
 "`EFI system partition` will be created on that device during guided "
 "partitioning."
 msgstr ""
+"如果你在多个硬盘上安装 Fedora，你可能希望指定在哪个硬盘上安装引导程序。在安装目标配置页面点击磁盘摘要和引导器按钮即可弹出磁盘选择的对话框。引导程序"
+"将会安装在你选择的设备上，如果你使用 UEFI 模式，在向导式磁盘分区的过程中 EFI 系统分区也会被创建。"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:20
 #, no-wrap
 msgid "Boot Device Selection"
-msgstr ""
+msgstr "引导设备选择"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "The Selected Disks dialog"
-msgstr ""
+msgstr "磁盘选择对话框"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:22
 #, no-wrap
 msgid "anaconda/StorageSpoke_BootLoader.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_BootLoader.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:25
@@ -93,6 +99,8 @@ msgid ""
 "list and click the `Set as Boot Device` button to install the boot loader "
 "there instead. Only one device can be set as the boot device."
 msgstr ""
+"在引导栏目，被勾选的设备就是期望用于引导的设备。要改变引导设备以更改引导程序安装的位置，从列表中选择一个设备并点击设定为引导设备按钮。你只能在一个设备上安"
+"装引导设备。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:27
@@ -102,6 +110,8 @@ msgid ""
 "remove the tick and ensure [application]*GRUB2* is not installed on any "
 "device."
 msgstr ""
+"如果你不希望安装新的引导程序，请选择当前标记为引导的设备，然后单击不安装引导程序按钮。这样子 [application]*GRUB2* "
+"就不会在任何设备上安装。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:32
@@ -111,6 +121,7 @@ msgid ""
 "as a stand-alone commercial boot loader application. Use this option only if "
 "you are sure you have another way to boot your system."
 msgstr ""
+"如果你不安装引导程序，你可能无法正确引导系统，你可能需要其他的引导方式，例如其他独立的引导程序。只有你确定你有其他方式引导系统的时候才使用这个选项。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke_BootLoader.adoc:35
@@ -124,3 +135,6 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"引导程序需要一个特定的分区，这取决于你在使用 BIOS 模式还是在使用 UEFI 模式，也取决于你在使用 GPT 分区表还是 MBR "
+"分区表。如果你使用自动分区，安装程序会在必要的时候为你创建这些分区。详情请阅读 xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[推荐的分区方案] 。"
