@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-16 21:02+0000\n"
-"PO-Revision-Date: 2021-04-16 15:02+0000\n"
+"PO-Revision-Date: 2021-04-30 23:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.6\n"
 
 #. type: Block title
 #: pages/_partials/install/LangSupportSpoke.adoc:5
@@ -27,14 +27,6 @@ msgstr "语言支持"
 
 #. type: Plain text
 #: pages/_partials/install/LangSupportSpoke.adoc:8
-#, fuzzy
-#| msgid ""
-#| "The `Language Support` screen allows you to configure language settings "
-#| "for your system. The default language is determined by your selection in "
-#| "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-welcome[Welcome "
-#| "Screen and Language Selection] and support for this language can not be "
-#| "removed. You can only add additional languages, which will be available "
-#| "on the installed system - not during the installation."
 msgid ""
 "The `Language Support` screen allows you to configure language settings for "
 "your system. The default language is determined by your selection in xref:"
@@ -43,58 +35,43 @@ msgid ""
 "removed. You can only add additional languages, which will be available on "
 "the installed system - not during the installation."
 msgstr ""
-"语言支持页面允许你对系统的语言进行配置。默认的语言由 xref:"
-"Installing_Using_Anaconda.adoc#sect-installation-gui-welcome[欢迎页面] 决定，"
-"你只能额外添加其它的语言而不能删除默认的语言，设置好的语言将会在安装好的系统"
-"上可用 - 而不是安装程序。"
+"语言支持页面允许你对系统的语言进行配置。默认的语言由 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-welcome[欢迎页面] 决定，你只能额外添加其它的语言而不能删除默认的语言，设置好的语言将会在安装好的系统上可用 -"
+" 而不是安装程序。"
 
 #. type: Plain text
 #: pages/_partials/install/LangSupportSpoke.adoc:10
-#, fuzzy
-#| msgid ""
-#| "If you want to change the default language, or the language used during "
-#| "the installation, you must reboot your system, start the installer again, "
-#| "and select a different language in xref:Installing_Using_Anaconda."
-#| "adoc#sect-installation-gui-welcome[Welcome Screen and Language Selection]."
 msgid ""
 "If you want to change the default language, or the language used during the "
 "installation, you must reboot your system, start the installer again, and "
 "select a different language in xref:install/Installing_Using_Anaconda."
 "adoc#sect-installation-gui-welcome[Welcome Screen and Language Selection]."
 msgstr ""
-"如果你希望更换默认语言，或者安装时使用的语言，你必须重启你的系统重新进入安装"
-"程序，并在 xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"welcome[欢迎页] 选择其它的语言。"
+"如果你希望更换默认语言，或者安装时使用的语言，你必须重启你的系统重新进入安装程序，并在 xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-welcome[欢迎页] 选择其它的语言。"
 
 #. type: delimited block =
 #: pages/_partials/install/LangSupportSpoke.adoc:15
-#, fuzzy
-#| msgid ""
-#| "Adding support for another language does not automatically configure the "
-#| "corresponding keyboard layout. Layouts are a separate setting configured "
-#| "in xref:Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-"
-#| "layout[Keyboard Layout]."
 msgid ""
 "Adding support for another language does not automatically configure the "
 "corresponding keyboard layout. Layouts are a separate setting configured in "
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-"
 "layout[Keyboard Layout]."
 msgstr ""
-"添加其它语言的同时键盘布局并不会自动设置。你可能还需要前往 xref:"
-"Installing_Using_Anaconda.adoc#sect-installation-gui-keyboard-layout[键盘布"
-"局] 页面进行设置。"
+"添加其它语言的同时键盘布局并不会自动设置。你可能还需要前往 xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-keyboard-layout[键盘布局] 页面进行设置。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/LangSupportSpoke.adoc:20
 #, no-wrap
 msgid "The language configuration screen. The left side shows that at least one variant of English and French have been selected; the right column shows that French (France) and French (Canada) are selected in the currently highlighted French group."
-msgstr ""
+msgstr "语言支持页面。可以看到左栏中英语和法语都被选中了，而在右栏可以看到在法语栏目中，法语（法国）和法语（加拿大）都被选中了。"
 
 #. type: Target for macro image
 #: pages/_partials/install/LangSupportSpoke.adoc:20
 #, no-wrap
 msgid "anaconda/LangSupportSpoke.png"
-msgstr ""
+msgstr "anaconda/LangSupportSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/LangSupportSpoke.adoc:23
@@ -105,6 +82,8 @@ msgid ""
 "highlighted. This allows you to easily see which languages you have "
 "configured support for."
 msgstr ""
+"左栏包括了一些可选的语言组，例如英语和中文。如果你从中选择了至少一组，该组语言的左侧就会出现一个勾选标记，这个语言组也会被高亮显示。这样子你就可以很方便地"
+"看到哪些语言被配置过了。"
 
 #. type: Plain text
 #: pages/_partials/install/LangSupportSpoke.adoc:25
@@ -113,7 +92,7 @@ msgid ""
 "left panel, and then select one or more regional variations in the right "
 "panel using check boxes next to list entries. Repeat this process for all "
 "languages you want to install support for."
-msgstr ""
+msgstr "要添加一种或多种语言，从左栏选择一个语言组，然后在右栏选择一个具体的语言变种。重复这一步骤，直到所有需要启用的语言都已经配置妥当。"
 
 #. type: delimited block =
 #: pages/_partials/install/LangSupportSpoke.adoc:30
@@ -125,6 +104,9 @@ msgid ""
 "install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-"
 "selection[Software Selection]."
 msgstr ""
+"如果你启用了特定的语言（如某些不采用拉丁字母的语言），我们可能会为你安装额外的软件包。例如，如果你勾选了阿拉伯语言组，我们会为你安装 `arabic-"
+"support` 软件包组。要了解更多信息，可前往 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-software-selection[软件包选择] 页面。"
 
 #. type: Plain text
 #: pages/_partials/install/LangSupportSpoke.adoc:33
@@ -133,3 +115,5 @@ msgid ""
 "return to xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
 "installation-summary[Installation Summary]."
 msgstr ""
+"当你完成设置后，点击左上角的完成按钮回到 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[安装摘要页] 。"
