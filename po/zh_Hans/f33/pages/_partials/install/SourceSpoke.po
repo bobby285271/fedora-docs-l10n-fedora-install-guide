@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-04-29 01:02+0000\n"
+"PO-Revision-Date: 2021-05-02 02:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -73,13 +73,13 @@ msgstr ""
 msgid ""
 "The following options are available. Note that not all of them may be "
 "displayed."
-msgstr ""
+msgstr "可用的选项如下所示，注意有些不适用于你的选项可能会被隐藏。"
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:22
 #, no-wrap
 msgid "Auto-detected installation media"
-msgstr ""
+msgstr "自动探测的安装介质"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:23
@@ -89,12 +89,14 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"如果安装程序是通过一个带有安装源的媒体启动的，例如 Live "
+"DVD，那么这个选项就会成为默认值。你不需要采取额外的措施，作为可选项你可以在此处校验媒体的可用性。"
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:24
 #, no-wrap
 msgid "ISO file"
-msgstr ""
+msgstr "ISO 文件"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:25
@@ -104,13 +106,13 @@ msgid ""
 "click the btn:[Choose an ISO] button, and browse to the installation ISO "
 "file's location on your system. You can click the `Verify` button to check "
 "the file's integrity."
-msgstr ""
+msgstr "如果你在启动的时候挂载了已有分区的磁盘设备，这个选项就会可用。选择此项后，你还需要指定一个 ISO 文件，同样你可以在此处校验文件的可用性。"
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "网络"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:27
@@ -118,7 +120,7 @@ msgid ""
 "Use this option to download packages to be installed from a network location "
 "instead of local media. This is the default selection on network "
 "installation media."
-msgstr ""
+msgstr "除了从本地媒体获取软件包，还可以选择此项以使用网络获取软件包。当你使用网络安装媒体时此选项将成为默认值。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:29
@@ -126,7 +128,7 @@ msgid ""
 "In most cases, the `Closest mirror` option available from the protocol "
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
-msgstr ""
+msgstr "在多数情况下，我们推荐你从下拉列表中选择最近的镜像一栏。这样子所有软件包都会从最合适的镜像站获取。"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:31
@@ -143,7 +145,7 @@ msgstr ""
 msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
-msgstr ""
+msgstr "当你选择了 NFS 安装源，你需要使用 `:` 将主机和路径间隔开来，例如："
 
 #. type: delimited block -
 #: ./pages/_partials/install/SourceSpoke.adoc:40
@@ -160,13 +162,15 @@ msgid ""
 "Authentication` and enter your user name and password. Click btn:[OK] to "
 "finish the configuration."
 msgstr ""
+"如果需要为 HTTP 或 HTTPS 安装源指定代理，点击代理设置按钮。勾选启用 HTTP 代理并填写代理 "
+"URL。如果代理需要验证，勾选需要验证并输入你的帐户和密码。点击完成按钮以结束配置。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:47
 msgid ""
 "If your HTTP or HTTPS URL refers to a repository mirror list, mark the check "
 "box under the address field."
-msgstr ""
+msgstr "如果你的 HTTP 或 HTTPS 链接指向一个镜像站列表，在地址栏下方的勾选框打勾。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:49
@@ -178,6 +182,9 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection[Software "
 "Selection] once you finish configuring the sources."
 msgstr ""
+"你还可以指定额外的安装源以访问更多的安装环境和附加组件。当配置完成后，所有可用的安装环境和附加组建都会显示在 xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-software-"
+"selection[软件包选择] 页面。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:51
