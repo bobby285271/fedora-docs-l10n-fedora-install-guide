@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-05-02 02:02+0000\n"
+"PO-Revision-Date: 2021-05-06 21:56+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.6.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4
@@ -246,6 +246,10 @@ msgid ""
 "example, systems which require _chain loading_ from another boot loader) "
 "will require the boot drive to be specified manually."
 msgstr ""
+"要指定在哪个储存设备安装 _引导程序_ ，点击页面左下角的磁盘概览和引导器链接，并按照 xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-"
+"bootloader[安装引导程序] "
+"章节的说明进行操作。请注意大部分时候只需要使用默认配置就可以了，但有些时候（例如需要链式引导启动的时候）还是需要手动制定引导的设备。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:60
@@ -254,7 +258,7 @@ msgid ""
 "partitioning, configure encryption and boot loader location, press `Done` in "
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
-msgstr ""
+msgstr "在选择储存设备，指定自动分区还是手动分区，配置好磁盘加密和引导器位置后，点击左上角的完成按钮。然后根据你的选择，可能会有下面的情况发生："
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:62
@@ -267,6 +271,8 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"如果你选择加密你的磁盘，将会弹出一个对话框提示你对密钥进行设置，你只需要输入一次密钥，然后再输入一次密钥以确认你的输入无误即可。在你输入的时候，我们会检查"
+"密钥的强度并为你提出相关建议。要了解如果创建强密钥，请阅读 [citetitle]_{PRODUCT} 安全手册_ 。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:64
@@ -301,13 +307,16 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"首先，对可用设备和分区列表进行检查。对于每一项我们都会显示你可以回收多少的空间。要对空间进行回收，选择一个磁盘或分区，你可以点击删除按钮删除分区（或磁盘上"
+"的所有分区），或者点击压缩按钮以在利用分区空闲空间的同时保留原有的数据。你也可以点击右下角的全部删除按钮，"
+"这将会删除所有磁盘的所有分区并将腾出来的空间全部用于 {PRODUCT} 。但与此同时，所有磁盘上的数据都会被删除。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:75
 msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
-msgstr ""
+msgstr "当你为 {PRODUCT} 留出了足够多的空间，你就可以点击回收空间按钮以完成。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:80
