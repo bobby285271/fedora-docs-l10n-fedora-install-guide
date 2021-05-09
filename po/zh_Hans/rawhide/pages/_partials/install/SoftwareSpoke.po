@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-16 21:02+0000\n"
-"PO-Revision-Date: 2021-04-16 15:02+0000\n"
+"PO-Revision-Date: 2021-05-09 02:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
 #: pages/_partials/install/SoftwareSpoke.adoc:5
@@ -37,21 +37,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:10
-#, fuzzy
-#| msgid ""
-#| "This screen is only available if xref:Installing_Using_Anaconda.adoc#sect-"
-#| "installation-gui-installation-source[Installation Source] is properly "
-#| "configured and only after the installer has downloaded package metadata "
-#| "from the source."
 msgid ""
 "This screen is only available if xref:install/Installing_Using_Anaconda."
 "adoc#sect-installation-gui-installation-source[Installation Source] is "
 "properly configured and only after the installer has downloaded package "
 "metadata from the source."
 msgstr ""
-"这个页面当且仅当 xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"installation-source[安装来源] 已经正确设置而且软安装程序已经成功从软件源获取"
-"软件包元数据。"
+"这个页面当且仅当 xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-source[安装来源] 已经正确设置而且软安装程序已经成功从软件源获取软件包元数据。"
 
 #. type: delimited block =
 #: pages/_partials/install/SoftwareSpoke.adoc:15
@@ -88,7 +81,7 @@ msgstr ""
 #: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
-msgstr "软件包选择屏幕。位于左侧"
+msgstr "软件包选择页面。位于左侧"
 
 #. type: Target for macro image
 #: pages/_partials/install/SoftwareSpoke.adoc:22
@@ -104,6 +97,7 @@ msgid ""
 "are available. Then, on the right side of the screen, select one or more add-"
 "ons which you want to install by marking the check boxes next to each add-on."
 msgstr ""
+"要配置软件包选择，从页面左侧选择一个环境。只有选择了环境后才可以做下一步的定制。接下来，在页面右侧，你可以通过勾选列表上的内容来选择一个或多个的附加组件。"
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:27
@@ -113,7 +107,7 @@ msgid ""
 "select a different environment, the add-ons available here will change. The "
 "add-ons displayed below the separator are not specific to your chosen "
 "environment."
-msgstr ""
+msgstr "附加组件有两个类别，分隔线上方的附加组件与你选择的环境有关；选择不同的环境会有不同的额外组件可用。分隔线下方的附加组件和所选环境无关。"
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:29
@@ -126,6 +120,9 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection]."
 msgstr ""
+"可用环境和附加组件由安装源的 `comps.xml` 文件定义（以 Fedora Server 安装 DVD 为例，这个文件位于 `repodata/` "
+"目录）。要了解每个环境和附加组件到底包含了什么软件包，可以查看这个文件。要了解更多信息，请阅读 xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[这个页面] 。"
 
 #. type: Plain text
 #: pages/_partials/install/SoftwareSpoke.adoc:30
@@ -134,3 +131,5 @@ msgid ""
 "top left corner to return to xref:install/Installing_Using_Anaconda."
 "adoc#sect-installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"当你完成了软件包选择后，可以点击页面左上角的完成按钮回到 xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-installation-summary[安装概览] 页面。"
