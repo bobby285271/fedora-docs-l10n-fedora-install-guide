@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-04-30 23:02+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-05-16 18:02+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f27pagesappendixeskickstart_syntax_reference/pt_BR/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
@@ -735,11 +735,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:223
+#, fuzzy
 msgid ""
 "See the [citetitle]_Fedora System Administrator's Guide_, available at link:+"
 "+http://docs.fedoraproject.org/++[], for information about the "
 "[application]*DNF* package manager."
 msgstr ""
+"Veja o [citetitle]_Fedora System Administrator's Guide_, disponível no link: "
+"++http://docs.fedoraproject.org/++[], para informações sobre o gerenciador "
+"de pacotes [application]*DNF*."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:228
@@ -1007,11 +1011,15 @@ msgstr "`thinp`: O esquema de particionamento de provisionamento LVM fino."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:279
+#, fuzzy
 msgid ""
 "The created partitioning scheme will follow the recommended scheme described "
 "at xref:../install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
 "manual-partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"O esquema de particionamento criado seguirá o esquema recomendado descrito "
+"em xref:../install/Connecting_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-recommended[Esquema de particionamento recomendado]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:280
@@ -1146,6 +1154,7 @@ msgstr "[option]#--cipher=#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:746
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:955
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1005
+#, fuzzy
 msgid ""
 "Specifies which type of encryption will be used if the "
 "[application]*Anaconda* default `aes-xts-plain64` is not satisfactory. You "
@@ -1155,6 +1164,12 @@ msgid ""
 "fedoraproject.org/++[]. Using either `aes-xts-plain64` or `aes-cbc-essiv:"
 "sha256` is strongly recommended."
 msgstr ""
+"Especifica qual tipo de criptografia será usado se o [application]*Anaconda* "
+"padrão `aes-xts-plain64` não for satisfatório. Você deve usar esta opção "
+"junto com a opção [opção] # - criptografada; por si só não tem efeito. Os "
+"tipos de criptografia disponíveis estão listados no [citetitle]_Fedora "
+"Security Guide_, disponível no link: ++http://docs.fedoraproject.org/++[]. "
+"Usar `aes-xts-plain64` ou` aes-cbc-essiv: sha256` é fortemente recomendado."
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:295
@@ -1181,6 +1196,7 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:310
+#, fuzzy
 msgid ""
 "Some systems require a special partition for installing the boot loader. The "
 "type and size of this partition depends on whether the disk you are "
@@ -1189,6 +1205,12 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-"
 "bootloader[Boot Loader Installation]."
 msgstr ""
+"Alguns sistemas requerem uma partição especial para instalar o boot loader. "
+"O tipo e tamanho desta partição depende se o disco no qual você está "
+"instalando o boot loader usa o _Master Boot Record_ (MBR) ou um esquema "
+"_GUID Partition Table_ (GPT). Para obter mais informações, consulte xref:../"
+"install/Connecting_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning-bootloader [Instalação do boot loader]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:313
