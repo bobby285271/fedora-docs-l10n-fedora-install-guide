@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-05-24 21:05+0000\n"
 "PO-Revision-Date: 2021-05-09 02:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -20,49 +20,59 @@ msgstr ""
 "X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
-#: ./pages/_partials/install/SoftwareSpoke.adoc:5
-#: ./pages/_partials/install/SoftwareSpoke.adoc:20
+#: pages/_partials/install/SoftwareSpoke.adoc:5
+#: pages/_partials/install/SoftwareSpoke.adoc:20
 #, no-wrap
 msgid "Software Selection"
 msgstr "软件包选择"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:8
+#: pages/_partials/install/SoftwareSpoke.adoc:8
 msgid ""
 "The `Software Selection` screen allows you to choose a _Base Environment_ "
 "and _Add-ons_. These options control which software packages will be "
 "installed on your system during the installation process."
-msgstr "软件包选择页面允许你选择一个软件包集和一些附加组件。被选中的软件包会在系统安装过程中被安装到你的系统。"
+msgstr ""
+"软件包选择页面允许你选择一个软件包集和一些附加组件。被选中的软件包会在系统安"
+"装过程中被安装到你的系统。"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:10
+#: pages/_partials/install/SoftwareSpoke.adoc:10
+#, fuzzy
+#| msgid ""
+#| "This screen is only available if xref:Installing_Using_Anaconda.adoc#sect-"
+#| "installation-gui-installation-source[Installation Source] is properly "
+#| "configured and only after the installer has downloaded package metadata "
+#| "from the source."
 msgid ""
-"This screen is only available if "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-source[Installation "
-"Source] is properly configured and only after the installer has downloaded "
-"package metadata from the source."
+"This screen is only available if xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-source[Installation Source] is "
+"properly configured and only after the installer has downloaded package "
+"metadata from the source."
 msgstr ""
 "这个页面当且仅当 xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
-"installation-source[安装来源] 已经正确设置而且软安装程序已经成功从软件源获取软件包元数据。"
+"installation-source[安装来源] 已经正确设置而且软安装程序已经成功从软件源获取"
+"软件包元数据。"
 
 #. type: delimited block =
-#: ./pages/_partials/install/SoftwareSpoke.adoc:15
+#: pages/_partials/install/SoftwareSpoke.adoc:15
 msgid ""
-"It is not possible to select specific packages during a manual "
-"installation. You can only select pre-defined environments and add-ons. If "
-"you need to control exactly which packages are installed, you must use a "
-"Kickstart file and define the packages in the [command]#%packages# "
-"section. See "
-"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
-"the Installation with Kickstart] for information about Kickstart "
-"installations."
+"It is not possible to select specific packages during a manual installation. "
+"You can only select pre-defined environments and add-ons. If you need to "
+"control exactly which packages are installed, you must use a Kickstart file "
+"and define the packages in the [command]#%packages# section. See xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[Automating the Installation with Kickstart] for information "
+"about Kickstart installations."
 msgstr ""
-"要注意的是在一般的安装流程中，你只能选择我们定义好的软件包组合，而不能指定安装某个具体的软件包。如果你真的想这么做，你需要使用一个 Kickstart "
-"文件并在 [command]#%packages# 配置需要的软件包，详情请阅读 xref:advanced/"
-"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart 自动安装] 教程。"
+"要注意的是在一般的安装流程中，你只能选择我们定义好的软件包组合，而不能指定安"
+"装某个具体的软件包。如果你真的想这么做，你需要使用一个 Kickstart 文件并在 "
+"[command]#%packages# 配置需要的软件包，详情请阅读 xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart 自动安"
+"装] 教程。"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:19
+#: pages/_partials/install/SoftwareSpoke.adoc:19
 msgid ""
 "The availability of environments and add-ons depends on your installation "
 "source. By default, the selection depends on the installation media you used "
@@ -71,62 +81,66 @@ msgid ""
 "example, the Fedora{nbsp}Cloud image. You can change this by configuring a "
 "different installation source containing different environments."
 msgstr ""
-"可供选用的软件包集和附加组件取决于你的安装来源。在默认情况下起决定作用的就是你使用的安装媒体介质文件。Fedora{nbsp}Server "
-"提供的软件包集和附加组件就和 Fedora{nbsp}Cloud 所提供的有所不同，当然你可以自由切换安装来源。"
+"可供选用的软件包集和附加组件取决于你的安装来源。在默认情况下起决定作用的就是"
+"你使用的安装媒体介质文件。Fedora{nbsp}Server 提供的软件包集和附加组件就和 "
+"Fedora{nbsp}Cloud 所提供的有所不同，当然你可以自由切换安装来源。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
 msgstr "软件包选择页面。位于左侧"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/SoftwareSpoke.adoc:22
+#: pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/SoftwareSpoke.png"
 msgstr "anaconda/SoftwareSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:25
+#: pages/_partials/install/SoftwareSpoke.adoc:25
 msgid ""
 "To configure your software selection, first choose an environment on the "
 "left side of the screen. Only one environment can be chosen, even if more "
-"are available. Then, on the right side of the screen, select one or more "
-"add-ons which you want to install by marking the check boxes next to each "
-"add-on."
+"are available. Then, on the right side of the screen, select one or more add-"
+"ons which you want to install by marking the check boxes next to each add-on."
 msgstr ""
-"要配置软件包选择，从页面左侧选择一个环境。只有选择了环境后才可以做下一步的定制。接下来，在页面右侧，你可以通过勾选列表上的内容来选择一个或多个的附加组件。"
+"要配置软件包选择，从页面左侧选择一个环境。只有选择了环境后才可以做下一步的定"
+"制。接下来，在页面右侧，你可以通过勾选列表上的内容来选择一个或多个的附加组"
+"件。"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:27
+#: pages/_partials/install/SoftwareSpoke.adoc:27
 msgid ""
 "The list of add-ons is divided into two parts by a horizontal line. Add-ons "
 "above this line are defined as part of your chosen environment; if you "
 "select a different environment, the add-ons available here will change. The "
 "add-ons displayed below the separator are not specific to your chosen "
 "environment."
-msgstr "附加组件有两个类别，分隔线上方的附加组件与你选择的环境有关；选择不同的环境会有不同的额外组件可用。分隔线下方的附加组件和所选环境无关。"
+msgstr ""
+"附加组件有两个类别，分隔线上方的附加组件与你选择的环境有关；选择不同的环境会"
+"有不同的额外组件可用。分隔线下方的附加组件和所选环境无关。"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:29
+#: pages/_partials/install/SoftwareSpoke.adoc:29
 msgid ""
 "Environments and add-ons are defined using a `comps.xml` file in your "
 "installation source (for example, in the `repodata/` directory on the full "
 "Fedora{nbsp}Server installation DVD). Review this file to see exactly which "
 "packages will be installed as part of a certain environment or add-on. For "
-"more information about the `comps.xml` file, see "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
-"(required) - Package Selection]."
+"more information about the `comps.xml` file, see xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
+"- Package Selection]."
 msgstr ""
-"可用环境和附加组件由安装源的 `comps.xml` 文件定义（以 Fedora Server 安装 DVD 为例，这个文件位于 `repodata/` "
-"目录）。要了解每个环境和附加组件到底包含了什么软件包，可以查看这个文件。要了解更多信息，请阅读 xref:appendixes/"
+"可用环境和附加组件由安装源的 `comps.xml` 文件定义（以 Fedora Server 安装 DVD "
+"为例，这个文件位于 `repodata/` 目录）。要了解每个环境和附加组件到底包含了什么"
+"软件包，可以查看这个文件。要了解更多信息，请阅读 xref:appendixes/"
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[这个页面] 。"
 
 #. type: Plain text
-#: ./pages/_partials/install/SoftwareSpoke.adoc:30
+#: pages/_partials/install/SoftwareSpoke.adoc:30
 msgid ""
 "After you finish configuring your software selection, click `Done` in the "
-"top left corner to return to "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
-"Summary]."
+"top left corner to return to xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-summary[Installation Summary]."
 msgstr ""
