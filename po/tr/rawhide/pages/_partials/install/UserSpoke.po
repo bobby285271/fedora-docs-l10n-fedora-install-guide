@@ -2,24 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-24 08:03+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/rawhidepages_partialsinstalluserspoke/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
 #: pages/_partials/install/UserSpoke.adoc:4
 #: pages/_partials/install/UserSpoke.adoc:15
 #, no-wrap
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:7
@@ -32,6 +37,14 @@ msgid ""
 "managing user accounts (for example, the `Users` screen in the Settings menu "
 "in [application]*GNOME*)."
 msgstr ""
+"`Kullanıcı Oluştur` ekranı, kurulum sırasında bir normal (`root` olmayan) "
+"kullanıcı hesabı oluşturmak ve yapılandırmak için kullanılabilir. Burada "
+"yalnızca bir kullanıcı hesabı yapılandırılabilir; daha fazla hesaba "
+"ihtiyacınız varsa kurulum tamamlanana kadar bekleyin, sisteminizi yeniden "
+"başlatın ve ardından bir terminalde [command]#useradd# komutunu ya da "
+"kullanıcı hesaplarını yönetmek için bir grafiksel yardımcı programı ("
+"örneğin, [application]*GNOME* Ayarlar menüsündeki `Kullanıcılar` ekranı) "
+"kullanarak diğer hesapları oluşturun."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:12
@@ -40,18 +53,24 @@ msgid ""
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
 msgstr ""
+"Kurulumu bitirmek için normal bir kullanıcı hesabı oluşturmak gerekli "
+"değildir; ancak şiddetle tavsiye edilir. Eğer bir tane oluşturmazsanız, "
+"sistemde doğrudan `root` olarak oturum açmanız gerekecektir, bu da tavsiye "
+"*edilmez*."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:17
 #, no-wrap
 msgid "The Create User screen. Use the text input fields to create a user account and configure its settings."
 msgstr ""
+"Kullanıcı Oluştur ekranı. Bir kullanıcı hesabı oluşturmak ve ayarlarını "
+"yapılandırmak için metin giriş alanlarını kullanın."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:17
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
-msgstr ""
+msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:20
@@ -61,6 +80,11 @@ msgid ""
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
+"Bir kullanıcı hesabı yapılandırmak için, `Tam ad` (örneğin, `John Smith`) ve "
+"`Kullanıcı adı` (örneğin, `jsmith`) alanlarını doldurun. `Kullanıcı adı` bir "
+"komut satırından oturum açmak için kullanılacaktır; bir grafiksel ortam "
+"kurarsanız, grafiksel oturum açma yöneticiniz `Tam ad` alanındaki değeri "
+"kullanacaktır."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:22
@@ -72,6 +96,12 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
+"`Bu hesabı kullanmak için parola gerektir` onay kutusunun işaretlendiğinden "
+"emin olun, bu hesap için kullanmak istediğiniz parolayı `Parola` alanına "
+"girin. Yazdığınız karakterler güvenlik gerekçesiyle nokta olarak "
+"görüntülenecektir. Ardından, doğru bir şekilde girdiğinizden emin olmak için "
+"aşağıdaki `Parolayı onayla` alanında aynı parolayı tekrarlayın. Girilen her "
+"iki parola da aynı olmalıdır."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:24
@@ -81,12 +111,16 @@ msgid ""
 "weak, a message will appear at the bottom of the screen, explaining which "
 "aspect of your chosen password is considered insuficient. For example:"
 msgstr ""
+"Siz girerken parolanız değerlendirilecek ve kurucu parolanın sağlamlığını "
+"belirleyecektir. Kurucu parolanızın zayıf olduğunu düşünürse, ekranın alt "
+"kısmında seçtiğiniz parolanın hangi yönünün yetersiz olduğunu açıklayan bir "
+"mesaj görünecektir. Örneğin:"
 
 #. type: delimited block -
 #: pages/_partials/install/UserSpoke.adoc:28
 #, no-wrap
 msgid "`The password you have provided is weak:` `The password is shorter than 5 characters.`\n"
-msgstr ""
+msgstr "`Sağladığınız parola zayıf:` `Parola 5 karakterden kısa.`\n"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:31
@@ -94,6 +128,8 @@ msgid ""
 "If a message similar to the above appears, it is highly recommended to "
 "choose a different, stronger password."
 msgstr ""
+"Yukarıdakine benzer bir mesaj görünürse, farklı ve daha sağlam bir parola "
+"seçmeniz şiddetle tavsiye edilir."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:33
@@ -104,6 +140,12 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
+"`Bu kullanıcıyı yönetici yap` onay kutusu, oluşturduğunuz kullanıcıya (bu "
+"kullanıcıyı `wheel` grubuna ekleyerek) yönetici hakları verir, bu da bu "
+"kullanıcının `root` parolası yerine sadece kendi parolası ile normalde "
+"yalnızca `root` kullanıcısının yapabileceği görevleri gerçekleştirmek için "
+"[command]#sudo# komutunu kullanmasına izin verir. Bunun kullanımı daha kolay "
+"olabilir, ancak aynı zamanda bir güvenlik riski de oluşturabilir."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:38
@@ -112,6 +154,9 @@ msgid ""
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
 msgstr ""
+"Bir kullanıcıya yönetici ayrıcalıkları verirseniz, hesabın güçlü bir parola "
+"ile korunduğundan emin olun. Hesap için herhangi bir parola gerektirmeden "
+"bir kullanıcıya yönetici ayrıcalıkları vermeyin."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:40
@@ -120,6 +165,9 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
+"Güçlü parolalar seçme yönergeleri dahil parola güvenliği hakkında ayrıntılı "
+"bilgi için the link:++https://docs.fedoraproject.org/++[] adresindeki "
+"[citetitle]_{PRODUCT} Güvenlik Kılavuzuna_ bakın."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:44
@@ -128,13 +176,17 @@ msgid ""
 "fields. A new dialog window titled `Advanced User Configuration` will open. "
 "This dialog is described in the following section."
 msgstr ""
+"Ek ayarlar için, parola giriş alanlarının altındaki `Gelişmiş` düğmesine "
+"tıklayın. `Gelişmiş Kullanıcı Yapılandırma` başlıklı yeni bir iletişim "
+"penceresi açılacaktır. Bu iletişim penceresi aşağıdaki bölümde "
+"açıklanmaktadır."
 
 #. type: Block title
 #: pages/_partials/install/UserSpoke.adoc:46
 #: pages/_partials/install/UserSpoke.adoc:50
 #, no-wrap
 msgid "Advanced User Configuration"
-msgstr ""
+msgstr "Gelişmiş Kullanıcı Yapılandırma"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:49
@@ -142,18 +194,20 @@ msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr ""
+"`Gelişmiş Kullanıcı Yapılandırma` iletişim penceresi, yeni kullanıcı hesabı "
+"için aşağıdaki ayarları değiştirmenize olanak tanır."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "Advanced settings for the new user account."
-msgstr ""
+msgstr "Yeni kullanıcı hesabı için gelişmiş ayarlar."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
-msgstr ""
+msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:55
@@ -161,6 +215,8 @@ msgid ""
 "The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
 "attributes[{blank}]` by default)."
 msgstr ""
+"Kullanıcının `Ev dizini` (öntanımlı olarak `/home/"
+"pass:attributes[{blank}]_kullanıcı-adı_pass:attributes[{blank}]`)."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:57
@@ -168,6 +224,8 @@ msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they can not be assigned to an user."
 msgstr ""
+"Kullanıcının kimliği (UID). Öntanımlı değer 1000'dir. 0-999 arasındaki "
+"değerler sistem için ayrıldığından bir kullanıcıya atanamazlar."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:59
@@ -176,6 +234,10 @@ msgid ""
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
 "are reserved by the system so they can not be assigned to an user's group."
 msgstr ""
+"Kullanıcının öntanımlı grubunun grup kimliği (GID). Öntanımlı grup adı, "
+"kullanıcı adıyla aynı olacaktır ve öntanımlı GID değeri 1000'dir. 0-999 "
+"arasındaki değerler sistem için ayrıldığından bir kullanıcının grubuna "
+"atanamazlar."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:60
@@ -188,3 +250,10 @@ msgid ""
 "them in parentheses. If you do not specify a custom GID for a new group, it "
 "will be assigned automatically."
 msgstr ""
+"Kullanıcının grup üyeliği. Oluşturmakta olduğunuz kullanıcı hesabının her "
+"zaman bir öntanımlı grup üyeliği olacaktır (`Elle bir grup kimliği belirtin` "
+"alanında kimliği ayarlanmış olan, kullanıcının öntanımlı grubu). `Grup "
+"Üyeliği` alanında, virgülle ayrılmış bir liste olarak ek grupları "
+"belirtebilirsiniz. Zaten var olmayan gruplar oluşturulacaktır; parantez "
+"içinde onlar için özel GID'ler belirtebilirsiniz. Yeni bir grup için özel "
+"bir GID belirtmezseniz, bu otomatik olarak atanacaktır."

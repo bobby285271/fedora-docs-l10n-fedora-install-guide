@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-24 08:03+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f34pagesappendixesunderstanding_lvm/tr/>"
+"\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "LVM'yi Anlama"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -31,6 +34,13 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"LVM (Logical Volume Management - Mantıksal Birim Yönetimi) bölümleri, "
+"standart bölümlere göre bir takım avantajlar sağlamaktadır. LVM bölümleri "
+"_fiziksel birimler_ olarak biçimlendirilir. Bir _birim grubu_ oluşturmak "
+"için bir veya daha fazla fiziksel birim birleştirilir. Daha sonra, her birim "
+"grubunun toplam depolama alanı bir veya daha fazla _mantıksal birime_ "
+"bölünür. Mantıksal birimler standart bölümlere çok benzerler. `ext4` gibi "
+"bir dosya sistemi türüne ve bir bağlama noktasına sahiptirler."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +48,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"Önyükleyici LVM birimlerini okuyamaz. `/boot` bölümünüz için standart, LVM "
+"olmayan bir disk bölümü oluşturmanız gerekmektedir."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -48,6 +60,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"Öntanımlı olarak, kurulum işlemi `/` ve `takas` bölümlerini her zaman LVM "
+"birimleri içinde, `/boot` bölümünü ayrı bir standart bölüm üzerinde "
+"oluşturmaktadır. Ayrıntılar için xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -59,6 +76,12 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"LVM'yi daha iyi anlamak için, fiziksel birimi bir _blok_ yığını olarak hayal "
+"edin. Blok, veri depolamak için kullanılan bir depolama birimidir. Bir birim "
+"grubu yapmak için fiziksel birimler birleştirildiği gibi, çok daha büyük bir "
+"yığın oluşturmak için birkaç blok yığını birleştirilebilir. Elde edilen "
+"yığın, tıpkı bir birim grubunun birkaç mantıksal birime ayrılması gibi, "
+"istenilen boyutta birkaç küçük yığın halinde alt gruplara ayrılabilir."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -68,6 +91,10 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"Yönetici, standart disk bölümlerinden farklı olarak, verileri yok etmeden "
+"mantıksal birimleri büyütebilir veya küçültebilir. Bir birim grubundaki "
+"fiziksel birimler ayrı sürücüler veya RAID dizileri üzerindeyse, yöneticiler "
+"bir mantıksal birimi farklı depolama aygıtlarına da yayabilir."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -78,3 +105,9 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"Bir mantıksal birimi, birim üzerinde bulunan verilerden daha düşük bir "
+"kapasiteye küçültürseniz veri kaybedebilirsiniz. Azami esneklik sağlamak "
+"için, mevcut ihtiyaçlarınızı karşılamak üzere mantıklı birimler oluşturun ve "
+"fazla depolama kapasitesini ayrılmamış olarak bırakın. İhtiyaçlarınızın "
+"gerektirdiği şekilde ayrılmamış alanı kullanmak için mantıksal birimlerin "
+"kapasitesini güvenle artırabilirsiniz."
