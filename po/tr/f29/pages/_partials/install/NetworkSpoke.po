@@ -2,24 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-26 13:02+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f29pages_partialsinstallnetworkspoke/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
 #: pages/_partials/install/NetworkSpoke.adoc:5
 #: pages/_partials/install/NetworkSpoke.adoc:16
 #, no-wrap
 msgid "Network & Hostname"
-msgstr ""
+msgstr "Ağ & Ana Makine Adı"
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:8
@@ -29,6 +34,10 @@ msgid ""
 "needed for tasks such as downloading packages from a remote location) and on "
 "the installed system."
 msgstr ""
+"`Ağ & Ana Makine Adı` ekranı, ağ arayüzlerini yapılandırmak için kullanılır. "
+"Burada seçilen seçenekler hem kurulum sırasında (gerekirse uzak bir konumdan "
+"paketleri indirmek gibi görevler için) hem de kurulu sistemde kullanılabilir "
+"olacaktır."
 
 #. type: delimited block =
 #: pages/_partials/install/NetworkSpoke.adoc:13
@@ -40,18 +49,23 @@ msgid ""
 "Networking{nbsp}Guide_, available at link:++https://docs.fedoraproject.org/+"
 "+[]."
 msgstr ""
+"Ağ yapılandırması kapsamlı bir konudur ve kurulum sırasında kullanılabilen "
+"seçeneklerin çoğu bu belgenin kapsamı dışındadır. Hem teorik konular hem de "
+"özel talimatlar ve örnekler dahil olmak üzere ağ oluşturma hakkında "
+"ayrıntılı bilgi için link:++https://docs.fedoraproject.org/++[] adresinde "
+"bulunan [citetitle]_{PRODUCT} Ağ{nbsp}Kılavuzuna_ bakın."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
-msgstr ""
+msgstr "Ağ & Ana Makine Adı ekranı. Sol bölmede"
 
 #. type: Target for macro image
 #: pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/NetworkSpoke.png"
-msgstr ""
+msgstr "anaconda/NetworkSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:21
@@ -62,6 +76,11 @@ msgid ""
 "display its current configuration (such as IP and DNS address); the details "
 "are displayed on the right side of the screen."
 msgstr ""
+"Yerel olarak erişilebilir arayüzler, kurulum programı tarafından otomatik "
+"olarak algılanır ve elle eklenemez veya silinemez. Algılanan tüm arayüzler "
+"ekranın sol tarafında listelenir. Geçerli yapılandırmasını (IP ve DNS adresi "
+"gibi) görüntülemek için listedeki bir arayüze tıklayın; ayrıntılar ekranın "
+"sağ tarafında görüntülenir."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:23
@@ -73,6 +92,12 @@ msgid ""
 "previously created virtual interface, select it in the list and click the `-"
 "` button."
 msgstr ""
+"Arayüz listesinin altında iki düğme vardır. xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
+"virtual-interface[Sanal Ağ Arayüzü Ekleme} bölümünde açıklandığı gibi bir "
+"sanal ağ arayüzü (Team, Bond veya VLAN) eklemek için `+` düğmesini kullanın. "
+"Önceden oluşturulan bir sanal arayüzü kaldırmak için, onu listeden seçin ve "
+"`-` düğmesine tıklayın."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:25
@@ -84,6 +109,12 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
 "advanced[Editing Network Interface Configuration]."
 msgstr ""
+"IP adresleri, DNS sunucuları veya mevcut bir arayüz (hem sanal hem de "
+"fiziksel) için yönlendirme yapılandırması gibi ayarları değiştirmek için, "
+"sol bölmede arayüzü seçin ve ekranın sağ alt köşesindeki `Yapılandır` "
+"düğmesine tıklayın. Kullanılabilir ayarlar, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
+"advanced[Ağ Arayüzü Yapılandırmasını Düzenleme] bölümünde açıklanmaktadır."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:27
@@ -91,6 +122,9 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
+"Seçili olan arayüzü etkinleştirmek veya devre dışı bırakmak için sağ üst "
+"köşedeki `AÇIK`pass:attributes[{blank}]/pass:attributes[{blank}]`KAPALI` "
+"anahtarını kullanın."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:29
@@ -103,3 +137,11 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
+"Bağlantılar listesinin altında, `Ana makine adı` giriş alanına bu bilgisayar "
+"için bir ana makine adı girin. Ana makine adı, _anamakineadı.etkialanıadı_ "
+"biçiminde bir _tam nitelikli etki alanı adı (fully-qualified domain name)_ "
+"(`FQDN`) veya etki alanı adı olmayan kısa bir ana makine adı olabilir. Çoğu "
+"ağda, bağlı sistemlere otomatik olarak bir etki alanı adı sağlayan _Dinamik "
+"Ana Makine Yapılandırma Protokolü (Dynamic Host Configuration Protocol)_ "
+"(`DHCP`) hizmeti bulunur; `DHCP` hizmetinin bu makineye etki alanı adı "
+"atamasına izin vermek için yalnızca kısa ana makine adını belirtin."
