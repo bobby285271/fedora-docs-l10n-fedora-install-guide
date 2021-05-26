@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-05-24 22:00+0000\n"
+"PO-Revision-Date: 2021-05-26 13:02+0000\n"
 "Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesadvancedboot_options/id/>\n"
@@ -45,11 +45,13 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Anda dapat menggunakan beberapa opsi secara bersamaan; dalam hal ini, "
+"pisahkan dengan spasi tunggal."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:13
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "Terdapat dua jenis opsi dasar yang dijelaskan dalam bab ini:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:15
@@ -61,6 +63,12 @@ msgid ""
 "attributes[{blank}]_password_pass:attributes[{blank}]#. On its own, without "
 "a password specified, the option is invalid."
 msgstr ""
+"Opsi yang ditampilkan sebagai akhir dengan tanda \"sama dengan\" (`=`) "
+"memerlukan nilai untuk ditentukan - opsi tersebut tidak dapat digunakan "
+"sendiri. Misalnya, opsi [option] # inst.vncpassword = # juga harus berisi "
+"nilai (dalam hal ini, kata sandi). Format yang benar adalah [option] # "
+"inst.vncpassword = pass: atribut [{blank}] _ password_pass: atribut [{blank}]"
+" #. Opsi ini dengan sendirinya tidak valid tanpa kata sandi yang ditentukan."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:17
@@ -72,6 +80,11 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
+"Opsi yang ditampilkan tanpa tanda \"pass: atribut [{blank}]` = `pass: "
+"atribut [{blank}]\" tidak menerima nilai atau parameter apa pun. Misalnya, "
+"[opsi] # rd.live.check # opsi memaksa [aplikasi] * Anaconda * untuk "
+"memverifikasi media instalasi sebelum memulai instalasi; pemeriksaan akan "
+"dilakukan jika opsi ini ada, dan akan dilewati jika tidak ada."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:19
@@ -80,6 +93,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Selain opsi yang dijelaskan dalam bab ini, prompt boot juga menerima opsi "
+"kernel [aplikasi] * dracut *. Daftar opsi ini tersedia pada manual `"
+"dracut.cmdline (7)`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:24
@@ -90,12 +106,17 @@ msgid ""
 "resolution=1024x768#. However, it is expected that the `inst.` prefix will "
 "be mandatory in future releases."
 msgstr ""
+"Opsi boot khusus untuk program instalasi selalu dimulai dengan `inst.` dalam "
+"panduan ini. Awalan ini opsional untuk saat ini - misalnya, [option] "
+"#resolution=1024x768# akan bekerja persis sama dengan [option]#inst."
+"resolution=1024x768#. Namun diharapkan awalan `inst.` akan menjadi keharusan "
+"di rilis mendatang."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:28
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Melakukan Konfigurasi Sistem Instalasi pada Menu Boot"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:31
@@ -116,24 +137,24 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:33
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opsi Boot yang Tersedia"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:36
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "Opsi-opsi berikut tersedia di {PRODUCT}:"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:38
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Menentukan Sumber Instalasi"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:40
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:41
@@ -142,6 +163,8 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Menentukan sumber instalasi - yaitu lokasi di mana program instalasi dapat "
+"menemukan images dan paket yang diperlukan. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:45
@@ -152,7 +175,7 @@ msgstr "[option]#inst.repo=cdrom#\n"
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:48
 msgid "The source must be either:"
-msgstr ""
+msgstr "Sumber harus berupa:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:50
@@ -161,11 +184,13 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid `."
 "treeinfo` file"
 msgstr ""
+"installable tree yang merupakan struktur direktori berisi images program "
+"instalasi, paket dan repodata serta file `.treeinfo` yang valid."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:52
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "DVD (disk fisik yang dapat ditampilkan dalam drive DVD sistem)"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:54
@@ -173,6 +198,8 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"ISO image dari DVD instalasi {PRODUCT} lengkap yang ditempatkan pada hard "
+"drive atar lokasi jaringan yang dapat diakses dari sistem instalasi."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:56
@@ -180,6 +207,8 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
 msgstr ""
+"Opsi ini memungkinkan konfigurasi metode instalasi berbeda menggunakan "
+"format yang berbeda. Sintaksnya dijelaskan pada tabel di bawah ini."
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:58
@@ -201,27 +230,49 @@ msgid ""
 "|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by default. To use a different version, add [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to _options_.]\n"
 msgstr ""
+"|Installation source|Option format\n"
+"|Any CD/DVD drive|[option]#inst.repo=cdrom#\n"
+"|Specific CD/DVD drive|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
+"|Hard Drive|[option]#inst.repo=hd:pass:attributes[{blank}]_device_:/pass:attr"
+"ibutes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTP Server|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:att"
+"ributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTPS Server|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:a"
+"ttributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|FTP Server|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:"
+"attributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}"
+"]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes"
+"[{blank}]#\n"
+"|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:a"
+"ttributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{bl"
+"ank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by "
+"default. To use a different version, add "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
+"_options_.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:74
 msgid "Disk device names may be specified using the following formats:"
-msgstr ""
+msgstr "Nama perangkat disk dapat ditentukan menggunakan format berikut:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:76
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "Nama perangkat kernel, sebagai contoh `/dev/sda1` atau `sdb2`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:78
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
-msgstr ""
+msgstr "Label file sistem, sebagai contoh `LABEL=Flash` atau `LABEL=RHEL7`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:80
 msgid ""
 "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
+"UUID file sistem, sebagai contoh `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:82
@@ -231,6 +282,10 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
+"Karakter non-alfanumerik harus direpresentasikan sebagai `\\xpass"
+":attributes[{blank}]_NN_pass:attributes[{blank}]`, di mana _NN_ adalah "
+"representasi heksadesimal dari karakter tersebut. Misalnya, `\\ x20` adalah "
+"spasi putih (\"\")."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:83
@@ -249,6 +304,12 @@ msgid ""
 "available, [application]*Anaconda* will try to load the image from `LiveOS/"
 "squashfs.img`."
 msgstr ""
+"Tentukan lokasi image runtime program instalasi yang akan dimuat. Sintaksnya "
+"sama seperti di  xref:Boot_Options.adoc#tabl-boot-options-sources["
+"Installation Sources]. Opsi ini mencari jalur menuju direktori yang berisi "
+"file `.treeinfo` yang valid; lokasi image runtime akan dibaca dari file ini "
+"jika ditemukan. Jika file `.treeinfo` tidak tersedia, [application]*Anaconda*"
+" akan mencoba memuat image dari `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:89
@@ -258,6 +319,10 @@ msgid ""
 "x86_64#). If you modify the default label of the file system containing the "
 "runtime image, you must also edit this option to match the new label."
 msgstr ""
+"Secara default, opsi boot ini digunakan pada media instalasi dan diset ke "
+"label tertentu (misalnya, [option]#inst.stage2=hd:LABEL=F21\\x20Server."
+"x86_64#). Jika Anda mengubah label default sistem file yang berisi image "
+"runtime, Anda juga harus menyunting opsi ini agar cocok dengan label baru."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:92
@@ -278,7 +343,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:94
 #, no-wrap
 msgid "[option]#inst.dd=#"
-msgstr ""
+msgstr "[option]#inst.dd=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:95
@@ -290,6 +355,12 @@ msgid ""
 "the exception of the [option]#inst.dd=cdrom# option, the device name must "
 "always be specified. For example:"
 msgstr ""
+"Jika Anda perlu melakukan pembaruan driver selama penginstalan, gunakan "
+"opsi[option]#inst.dd=#. Hal tersebut dapat dilakukan berkali-kali. Lokasi "
+"dari paket RPM driver dapat ditentukan menggunakan salah satu format yang "
+"dijelaskan di xref:Boot_Options.adoc#tabl-boot-options-sources[Installation "
+"Sources]. Dengan pengecualian dari opsi [option]#inst.dd=cdrom#, nama "
+"perangkat harus selalu ditentukan. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:99
@@ -304,6 +375,9 @@ msgid ""
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
 msgstr ""
+"Menggunakan opsi ini tanpa parameter apa pun (hanya sebagai [option]#inst."
+"dd#) akan membuat program instalasi meminta Anda untuk disk pembaruan driver "
+"dengan menu interaktif."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:107
@@ -313,6 +387,9 @@ msgid ""
 "installation. Updating drivers which are not essential during the "
 "installation should always be performed after the system is installed."
 msgstr ""
+"Anda tidak boleh melakukan pembaruan driver selama penginstalan kecuali jika "
+"driver bermasalah dan menghalangi Anda untuk menyelesaikan penginstalan. "
+"Memperbarui driver harus selalu dilakukan setelah sistem diinstal."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:110
@@ -326,6 +403,8 @@ msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
 msgstr ""
+"Cegah program instalasi dalam melakukan konfigurasi sumber penginstalan "
+"secara otomatis."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:113
@@ -339,6 +418,15 @@ msgid ""
 "`Installation Source` screen immediately without having to wait for the "
 "initial configuration to finish."
 msgstr ""
+"Normalnya saat Anda pertama kali masuk ke layar `Installation Summary`, "
+"program instalasi akan mencoba melakukan konfigurasi sumber instalasi "
+"berdasarkan jenis media yang Anda gunakan untuk boot. DVD Server {PRODUCT} "
+"lengkap akan melakukan konfigurasi sumber sebagai media lokal, image ISO "
+"netinst akan melakukan konfigurasi mirror jaringan terdekat, dll. Proses ini "
+"membutuhkan waktu; oleh karena itu, jika Anda berencana untuk menggunakan "
+"sumber yang berbeda dari default, opsi ini akan memungkinkan Anda untuk "
+"segera masuk ke layar `Sumber Instalasi` tanpa harus menunggu konfigurasi "
+"awal selesai."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:115
@@ -349,12 +437,17 @@ msgid ""
 "the [option]#inst.repo=# option described above to configure a specific "
 "source directly in the boot menu."
 msgstr ""
+"Menggunakan opsi ini akan membuat konfigurasi sumber penginstalan dalam "
+"status galat - Anda harus menentukan sumber secara manual di layar `Sumber "
+"Penginstalan` untuk melanjutkan instalasi. Sebagai alternatif, Anda dapat "
+"menggunakan opsi [option]#inst.repo=# yang dijelaskan di atas untuk "
+"melakukan konfigurasi sumber tertentu secara langsung di menu boot."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:117
 #, no-wrap
 msgid "Kickstart Boot Options"
-msgstr ""
+msgstr "Opsi Boot Kickstart"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:119
@@ -370,6 +463,10 @@ msgid ""
 "[option]#inst.repo=#. See xref:Boot_Options.adoc#tabl-boot-options-"
 "sources[Installation Sources] for valid formats."
 msgstr ""
+"Memberikan lokasi file Kickstart yang akan digunakan untuk melakukan "
+"instalasi otomatis. Lokasi file dapat ditentukan dengan menggunakan salah "
+"satu format yang valid untuk [option]#inst.repo=#. See xref:Boot_Options.adoc"
+"#tabl-boot-options-sources[Installation Sources] untuk format yang valid."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:122
@@ -379,6 +476,10 @@ msgid ""
 "this option without specifying a device, the installation program will use "
 "the following:"
 msgstr ""
+"Jika Anda hanya menentukan perangkat dan bukan jalurnya, program instalasi "
+"akan mencari file Kickstart di `/ ks.cfg` pada perangkat yang ditentukan. "
+"Jika Anda menggunakan opsi ini tanpa menentukan perangkat, program instalasi "
+"akan menggunakan:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:126
@@ -394,12 +495,17 @@ msgid ""
 "option, or `/kickstart/`. If the given file name ends with the `/` "
 "character, `pass:attributes[{blank}]_ip_-kickstart` is appended. For example:"
 msgstr ""
+"Pada contoh di atas, _next-server_ adalah opsi DHCP `next-server` atau "
+"alamat IP dari DHCP server itu sendiri, dan _filename_ adalah opsi DHCP` "
+"filename`, atau `/ kickstart /`. Jika nama file yang diberikan diakhiri "
+"dengan karakter `/`, maka akan ditambahkan `pass: atribut [{blank}] _ "
+"ip_-kickstart` . Sebagai contoh:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:131
 #, no-wrap
 msgid "Default Kickstart File Location"
-msgstr ""
+msgstr "Lokasi Default File Kickstart"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:137
@@ -436,6 +542,8 @@ msgid ""
 "Adds headers to outgoing `HTTP` requests with the MAC addresses of all "
 "network interfaces. For example:"
 msgstr ""
+"Menambahkan header ke permintaan `HTTP` keluar dengan alamat MAC dari semua "
+"antarmuka jaringan. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:146
@@ -448,6 +556,8 @@ msgstr ""
 msgid ""
 "This can be useful when using [option]#inst.ks=http# to provision systems."
 msgstr ""
+"Ini dapat berguna saat menggunakan [option]#inst.ks=http# ke sistem "
+"penyediaan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:150
