@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-05-25 12:17+0000\n"
+"PO-Revision-Date: 2021-05-26 13:03+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -32,6 +32,10 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart]."
 msgstr ""
+"Este apêndice descreve comandos e opções disponíveis em instalações "
+"Kickstart. Para informações gerais sobre o Kickstart, veja xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Automatizando a "
+"instalação com o Kickstart]."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:16
@@ -129,6 +133,9 @@ msgid ""
 "Notes_, available at link:++https://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Além disso, você pode revisar as [citetitle]_Notas de Lançamento do "
+"Fedora{nbsp}{PRODVER }_, disponíveis no link:++https://docs.fedoraproject."
+"org/++[], para obter uma lista de mudanças."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:50
@@ -328,6 +335,12 @@ msgid ""
 "Media]. This command requires that installations be attended, so it is "
 "disabled by default."
 msgstr ""
+"Este comando forçará o programa de instalação a executar uma verificação de "
+"mídia antes de iniciar a instalação, de forma semelhante à [option]#rd.live."
+"check# opção de inicialização (consulte xref:advanced/Boot_Options.adoc#sect-"
+"boot-options-mediacheck[Verificando a mídia de inicialização]. Este comando "
+"requer que as instalações sejam atendidas, por isso está desabilitado por "
+"padrão."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:118
@@ -356,57 +369,59 @@ msgstr "[option]#--osname=#"
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:123
 msgid "Management root for OS installation (required)."
 msgstr ""
+"Raiz de gerenciamento para a instalação do sistema operacional (obrigatório)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:124
 #, no-wrap
 msgid "[option]#--remote=#"
-msgstr ""
+msgstr "[option]#--remote=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:125
 msgid "Management root for OS installation (optional)."
 msgstr ""
+"Raiz de gerenciamento para a instalação do sistema operacional (opcional)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:126
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:180
 #, no-wrap
 msgid "[option]#--url=#"
-msgstr ""
+msgstr "[option]#--url=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:127
 msgid "Repository URL (required)."
-msgstr ""
+msgstr "URL do repositório (obrigatório)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:128
 #, no-wrap
 msgid "[option]#--ref=#"
-msgstr ""
+msgstr "[option]#--ref=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:129
 msgid "Name of branch inside the repository (required)."
-msgstr ""
+msgstr "Nome do branch dentro do repositório (obrigatório)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:130
 #, no-wrap
 msgid "[option]#--nogpg#"
-msgstr ""
+msgstr "[option]#--nogpg#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:131
 msgid "Disable GPG key verification (optional)."
-msgstr ""
+msgstr "Desabilita a verificação de chave GPG (opcional)."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:133
 #, no-wrap
 msgid "repo (optional) - Configure Additional Repositories"
-msgstr ""
+msgstr "repo (opcional) - Configura repositórios adicionais"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:136
@@ -415,6 +430,9 @@ msgid ""
 "sources for package installation. This command can be used multiple times in "
 "a single Kickstart file."
 msgstr ""
+"Configura repositórios adicionais do [application] *DNF* que podem ser "
+"usados como fontes para a instalação do pacote. Este comando pode ser usado "
+"várias vezes em um único arquivo Kickstart."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:138
@@ -423,6 +441,9 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for information about the "
 "[application]*DNF* package manager."
 msgstr ""
+"Veja o [citetitle]_Fedora System Administrator's Guide_ (guia de "
+"administrador de sistema), disponível em link:++https://docs.fedoraproject."
+"org/++[], para informações sobre o gerenciador de pacotes [application]*DNF*."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:143
@@ -430,6 +451,8 @@ msgid ""
 "Repositories used for installation must be stable. The installation may fail "
 "if a repository is modified before the installation concludes."
 msgstr ""
+"Os repositórios usados para instalação devem ser estáveis. A instalação pode "
+"falhar se um repositório for modificado antes da conclusão da instalação."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:146
@@ -438,7 +461,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1662
 #, no-wrap
 msgid "[option]#--name=#"
-msgstr ""
+msgstr "[option]#--name=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:147
@@ -449,12 +472,17 @@ msgid ""
 "repositories, this means that you cannot add repositories with the same "
 "names as the preconfigured ones."
 msgstr ""
+"O ID do repositório. Esta opção é obrigatória. Se um repositório tiver um "
+"nome que conflite com outro repositório adicionado anteriormente, ele será "
+"ignorado. Como o programa de instalação usa uma lista de repositórios pré-"
+"configurados, isso significa que você não pode adicionar repositórios com os "
+"mesmos nomes dos pré-configurados."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:148
 #, no-wrap
 msgid "[option]#--baseurl=#"
-msgstr ""
+msgstr "[option]#--baseurl=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:149
@@ -463,13 +491,16 @@ msgid ""
 "repo configuration files are *not* supported. You may use one of either this "
 "option or [option]#--mirrorlist#, not both."
 msgstr ""
+"O URL do repositório. As variáveis que podem ser usadas nos arquivos de "
+"configuração de repositório do [application]*DNF* *não* são suportadas. Você "
+"pode usar uma destas opções ou [option]#--mirrorlist#, não ambas."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:150
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:182
 #, no-wrap
 msgid "[option]#--mirrorlist=#"
-msgstr ""
+msgstr "[option]#--mirrorlist=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:151
@@ -478,12 +509,16 @@ msgid ""
 "may normally be used in dnf repository configuration files are not supported "
 "here. You may use one of either this option or --baseurl, not both."
 msgstr ""
+"A URL apontando para uma lista de espelhos para o repositório. As variáveis "
+"que normalmente podem ser usadas nos arquivos de configuração do repositório "
+"dnf não são suportadas aqui. Você pode usar uma das opções ou --baseurl, não "
+"ambas."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:152
 #, no-wrap
 msgid "[option]#--install#"
-msgstr ""
+msgstr "[option]#--install#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:153
@@ -492,12 +527,15 @@ msgid ""
 "after the installation as well. Creates a configuration file for the "
 "repository in `/etc/yum.repos.d/` on the installed system."
 msgstr ""
+"Disponibiliza o repositório configurado no arquivo Kickstart no sistema após "
+"a instalação. Cria um arquivo de configuração para o repositório em `/etc/yum"
+".repos.d/` no sistema instalado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:154
 #, no-wrap
 msgid "[option]#--cost=#"
-msgstr ""
+msgstr "[option]#--cost=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:155
@@ -507,12 +545,16 @@ msgid ""
 "prioritize which repository will be used before another. Repositories with a "
 "lower cost take priority over repositories with higher cost."
 msgstr ""
+"Um valor inteiro para atribuir um custo a este repositório. Se vários "
+"repositórios fornecerem os mesmos pacotes, este número será usado para "
+"priorizar qual repositório será usado antes do outro. Repositórios com custo "
+"mais baixo têm prioridade sobre repositórios com custo mais alto."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:156
 #, no-wrap
 msgid "[option]#--excludepkgs=#"
-msgstr ""
+msgstr "[option]#--excludepkgs=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:157
@@ -523,12 +565,17 @@ msgid ""
 "package names (such as `publican`) and globs (such as `gnome-*`) are "
 "accepted."
 msgstr ""
+"Uma lista separada por vírgulas de nomes de pacotes que *não* devem ser "
+"extraídos deste repositório. Isso é útil se vários repositórios fornecem o "
+"mesmo pacote e você deseja ter certeza de que ele vem de um repositório "
+"específico. Ambos os nomes de pacotes completos (como `publican`) e globs "
+"(como`gnome-*`) são aceitos."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:158
 #, no-wrap
 msgid "[option]#--includepkgs=#"
-msgstr ""
+msgstr "[option]#--includepkgs=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:159
@@ -537,13 +584,16 @@ msgid ""
 "this repository. This is useful if multiple repositories provide the same "
 "package and you want to make sure it comes from this repository."
 msgstr ""
+"Uma lista separada por vírgulas de nomes de pacotes e globs que devem ser "
+"extraídos deste repositório. Isso é útil se vários repositórios fornecerem o "
+"mesmo pacote e você quiser ter certeza de que ele vem desse repositório."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:160
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:171
 #, no-wrap
 msgid "[option]#--proxy=#"
-msgstr ""
+msgstr "[option]#--proxy=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:161
@@ -552,12 +602,15 @@ msgid ""
 "repository. This setting does not affect any other repositories or "
 "installation sources."
 msgstr ""
+"Especifica um servidor proxy `HTTP`, `HTTPS` ou `FTP` para usar ao acessar "
+"este repositório. Esta configuração não afeta nenhum outro repositório ou "
+"fonte de instalação."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:162
 #, no-wrap
 msgid "[option]#--ignoregroups=true#"
-msgstr ""
+msgstr "[option]#--ignoregroups=true#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:163
@@ -567,13 +620,17 @@ msgid ""
 "the package group information when mirroring trees so as to avoid mirroring "
 "large amounts of unnecessary data."
 msgstr ""
+"Esta opção é usada ao compor árvores de instalação e não tem efeito no "
+"próprio processo de instalação. Diz às ferramentas de composição para não "
+"olharem para as informações do grupo de pacotes ao espelhar árvores, para "
+"evitar espelhar grandes quantidades de dados desnecessários."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:164
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:178
 #, no-wrap
 msgid "[option]#--noverifyssl#"
-msgstr ""
+msgstr "[option]#--noverifyssl#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:165
@@ -587,11 +644,15 @@ msgid ""
 "url (optional) - Install from an installation tree on a remote server via "
 "FTP or HTTP."
 msgstr ""
+"url (opcional) - Instala a partir de uma árvore de instalação em um servidor "
+"remoto via FTP ou HTTP."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:170
 msgid "Install from an installation tree on a remote server via FTP or HTTP."
 msgstr ""
+"Instala a partir de uma árvore de instalação em um servidor remoto via FTP "
+"ou HTTP."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:172
@@ -599,12 +660,14 @@ msgid ""
 "Specify an HTTP/HTTPS/FTP proxy to use while performing the install. The "
 "various parts of the argument act like you would expect. The syntax is:"
 msgstr ""
+"Especifica um proxy HTTP/HTTPS/FTP para usar durante a instalação. As várias "
+"partes do argumento agem como você esperaria. A sintaxe é:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:176
 #, no-wrap
 msgid "[protocol://][username[:password]@]host[:port]\n"
-msgstr ""
+msgstr "[protocolo://][usuário[:senha]@]host[:porta]\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:179
@@ -613,6 +676,9 @@ msgid ""
 "well-known CA validate and do not check the server’s host name matches the "
 "certificate’s domain name."
 msgstr ""
+"Para uma árvore em um servidor HTTPS, não verifica o certificado do servidor "
+"com o que uma AC conhecida validou e não verifique se o nome do host do "
+"servidor corresponde ao nome de domínio do certificado."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:181
@@ -620,6 +686,8 @@ msgid ""
 "The URL to install from. Variable substitution is done for `$releasever` and "
 "`$basearch` in the URL."
 msgstr ""
+"A URL a partir da qual instalar. A substituição da variável é feita para "
+"`$releasever` e `$basearch` na URL."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:183
@@ -627,12 +695,14 @@ msgid ""
 "The mirror URL to install from. Variable substitution is done for "
 "`$releasever` and `$basearch` in the URL."
 msgstr ""
+"A URL do espelho a partir da qual instalar. A substituição da variável é "
+"feita para `$releasever` e `$basearch` na URL."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:184
 #, no-wrap
 msgid "[option]#--metalink=#"
-msgstr ""
+msgstr "[option]#--metalink=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:185
@@ -640,12 +710,14 @@ msgid ""
 "The metalink URL to install from. Variable substitution is done for "
 "`$releasever` and `$basearch` in the URL."
 msgstr ""
+"A URL do metalink a partir da qual instalar. A substituição da variável é "
+"feita para `$releasever` e `$basearch` na URL."
 
 #. type: Title ==
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:187
 #, no-wrap
 msgid "Storage and Partitioning"
-msgstr ""
+msgstr "Armazenamento e particionalmente"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:190
@@ -653,12 +725,14 @@ msgid ""
 "Commands in this section are used to determine your system's storage options "
 "and partitioning."
 msgstr ""
+"Os comandos nesta seção são usados para determinar as opções de "
+"armazenamento e particionamento do seu sistema."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:192
 #, no-wrap
 msgid "autopart (optional) - Automatic Partitioning"
-msgstr ""
+msgstr "autopart (opcional) - Particionamento automático"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:195
@@ -668,6 +742,10 @@ msgid ""
 "architecture. On large enough drives (50{nbsp}GB and larger), this also "
 "creates a `/home` partition."
 msgstr ""
+"Cria partições automaticamente: uma partição raiz (`/`) (1 GB ou maior), uma "
+"partição `swap` e uma partição `/boot` apropriada para a arquitetura. Em "
+"unidades grandes o suficiente (50{nbsp}GB e maiores), isso também cria uma "
+"partição `/home`."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:200
@@ -676,12 +754,15 @@ msgid ""
 "[command]#part/partition#, [command]#raid#, [command]#logvol#, or "
 "[command]#volgroup# options in the same Kickstart file."
 msgstr ""
+"A opção [command]#autopart# não pode ser usada junto com as opções [command]#"
+"part/partition#, [command]#raid#, [command]#logvol# ou [command]#volgroup# "
+"no mesmo arquivo Kickstart ."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:203
 #, no-wrap
 msgid "[option]#--type=#"
-msgstr ""
+msgstr "[option]#--type=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:204
@@ -689,26 +770,28 @@ msgid ""
 "Selects one of the predefined automatic partitioning schemes you want to "
 "use. Accepts the following values:"
 msgstr ""
+"Seleciona um dos esquemas de particionamento automático predefinidos que "
+"você deseja usar. Aceita os seguintes valores:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:206
 msgid "`lvm`: The LVM partitioning scheme."
-msgstr ""
+msgstr "`lvm`: O esquema de particionamento LVM."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:208
 msgid "`btrfs`: The Btrfs partitioning scheme."
-msgstr ""
+msgstr "`btrfs`: O esquema de particionamento Btrfs."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:210
 msgid "`plain`: Regular partitions with no LVM or Btrfs."
-msgstr ""
+msgstr "`plain`: Particionamentos regulares sem LVM ou Btrfs."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:212
 msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
-msgstr ""
+msgstr "`thinp`: O esquema de particionamento de provisionamento LVM fino."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:214
@@ -718,6 +801,9 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"O esquema de particionamento criado seguirá o esquema recomendado descrito "
+"em xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de particionamento recomendado]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:215
@@ -726,7 +812,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:950
 #, no-wrap
 msgid "[option]#--fstype=#"
-msgstr ""
+msgstr "[option]#--fstype=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:216
@@ -734,12 +820,14 @@ msgid ""
 "Specify a supported file system (such as `ext4` or `xfs`) to replace the "
 "default when doing automatic partitioning."
 msgstr ""
+"Especifica um sistema de arquivos compatível (como `ext4` ou `xfs`) para "
+"substituir o padrão ao fazer o particionamento automático."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:217
 #, no-wrap
 msgid "[option]#--nolvm#"
-msgstr ""
+msgstr "[option]#--nolvm#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:218
@@ -747,6 +835,8 @@ msgid ""
 "Do not use LVM or Btrfs for automatic partitioning. This option is equal to "
 "[option]#--type=plain#."
 msgstr ""
+"Não usa LVM ou Btrfs para particionamento automático. Esta opção é igual a "
+"[option]#--type=plain#."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:219
@@ -755,7 +845,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:967
 #, no-wrap
 msgid "[option]#--encrypted#"
-msgstr ""
+msgstr "[option]#--encrypted#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:220
@@ -764,6 +854,9 @@ msgid ""
 "partitions` check box on the initial partitioning screen during a manual "
 "graphical installation."
 msgstr ""
+"Criptografa todas as partições. Isso é equivalente a marcar a caixa de "
+"seleção `Criptografar partições` na tela de particionamento inicial durante "
+"uma instalação gráfica manual."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:221
@@ -772,12 +865,14 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:969
 #, no-wrap
 msgid "[option]#--passphrase=#"
-msgstr ""
+msgstr "[option]#--passphrase=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:222
 msgid "Provides a default system-wide passphrase for all encrypted devices."
 msgstr ""
+"Fornece uma senha padrão para o sistema para todos os dispositivos "
+"criptografados."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:223
@@ -787,6 +882,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X.509_certificate_pass:attributes[{blank}]#"
 msgstr ""
+"[option]#--escrowcert=pass:attributes[{blank}]_URL_do_certificado_X."
+"509_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:224
@@ -799,6 +896,11 @@ msgid ""
 "encrypted volume. This option is only meaningful if [option]#--encrypted# is "
 "specified."
 msgstr ""
+"Armazena chaves de criptografia de dados de todos os volumes criptografados "
+"como arquivos em `/root`, criptografados usando o certificado X.509 da URL "
+"especificada com _URL_do_certificado_X.509_. As chaves são armazenadas como "
+"um arquivo separado para cada volume criptografado. Esta opção só é "
+"significativa se [option]#--encrypted# for especificada."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:225
@@ -807,7 +909,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:975
 #, no-wrap
 msgid "[option]#--backuppassphrase#"
-msgstr ""
+msgstr "[option]#--backuppassphrase#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:226
@@ -817,6 +919,10 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Adiciona uma senha gerada aleatoriamente para cada volume criptografado. "
+"Armazena essas senhas em arquivos separados em `/root`, criptografados "
+"usando o certificado X.509 especificado com [option]#--escrowcert#. Esta "
+"opção só é significativa se [option]#--escrowcert# for especificado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:227
@@ -825,7 +931,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:971
 #, no-wrap
 msgid "[option]#--cipher=#"
-msgstr ""
+msgstr "[option]#--cipher=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:228
@@ -841,6 +947,13 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[]. Using either `aes-xts-plain64` "
 "or `aes-cbc-essiv:sha256` is strongly recommended."
 msgstr ""
+"Especifica qual tipo de criptografia será usado se `aes-xts-plain64`, padrão "
+"do [application]*Anaconda*, não for satisfatório. Você deve usar esta opção "
+"junto com a opção [option]#--encrypted#; por si só não tem efeito. Os tipos "
+"de criptografia disponíveis estão listados no [citetitle]_Fedora Security "
+"Guide_ (guia de segurança), disponível no link:++https://docs.fedoraproject."
+"org/++[]. Usar `aes-xts-plain64` ou `aes-cbc-essiv: sha256` é fortemente "
+"recomendado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:229
@@ -849,7 +962,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:977
 #, no-wrap
 msgid "[option]#--luks-version=#"
-msgstr ""
+msgstr "[option]#--luks-version=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:230
@@ -860,6 +973,8 @@ msgid ""
 "Specifies which version of LUKS should be used to encrypt the system. Only "
 "relevant if [option]#--encrypted# is also specified."
 msgstr ""
+"Especifica qual versão do LUKS deve ser usada para criptografar o sistema. "
+"Relevante apenas se [option]#--encrypted# também for especificada."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:231
@@ -868,7 +983,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:979
 #, no-wrap
 msgid "[option]#--pbkdf=#"
-msgstr ""
+msgstr "[option]#--pbkdf=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:232
@@ -880,6 +995,10 @@ msgid ""
 "keyslot. Only relevant if [option]#--encrypted# is also specified. See the "
 "`cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o algoritmo da Função de Derivação de Chave Baseada em Senha (PBKDF) "
+"para o slot de chave LUKS. Relevante apenas se [option]#--encrypted# também "
+"for especificado. Consulte a página man `cryptsetup(8)` para obter mais "
+"informações."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:233
@@ -888,7 +1007,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:981
 #, no-wrap
 msgid "[option]#pbkdf-memory=#"
-msgstr ""
+msgstr "[option]#pbkdf-memory=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:234
@@ -899,6 +1018,9 @@ msgid ""
 "Sets the memory cost for PBKDF. Only relevant if [option]#--encrypted# is "
 "also specified. See the `cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o custo de memória para PBKDF. Relevante apenas se "
+"[option]#--encrypted# também for especificada. Consulte a página man "
+"`cryptsetup(8)` para obter mais informações."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:235
@@ -907,7 +1029,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:983
 #, no-wrap
 msgid "[option]#pbkdf-time=#"
-msgstr ""
+msgstr "[option]#pbkdf-time=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:236
@@ -920,6 +1042,10 @@ msgid ""
 "information about the [option]#--iter-time# option in the `cryptsetup(8)` "
 "man page for more information."
 msgstr ""
+"Define o número de milissegundos a ser gasto com o processamento da senha "
+"PBKDF. Relevante apenas se [option]#--encrypted# também for especificado. "
+"Veja informações sobre a opção [option]#--iter-time# na página man "
+"`cryptsetup(8)` para mais informações."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:238
@@ -934,6 +1060,8 @@ msgid ""
 "Only one of [option]#--pbkdf-time=# or [option]#--pbkdf-iterations=# can be "
 "specified at the same time."
 msgstr ""
+"Apenas uma de [option]#--pbkdf-time=# ou [option]#--pbkdf-iterations=# pode "
+"ser especificada ao mesmo tempo."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:239
@@ -942,7 +1070,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:987
 #, no-wrap
 msgid "[option]#pbkdf-iterations=#"
-msgstr ""
+msgstr "[option]#pbkdf-iterations=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:240
@@ -955,17 +1083,22 @@ msgid ""
 "specified. See information about the [option]#--pbkdf-force-iterations# "
 "option in the `cryptsetup(8)` man page for more information."
 msgstr ""
+"Define o número de iterações para o processamento da senha diretamente e "
+"evita a avaliação de desempenho de PBKDF. Relevante apenas se "
+"[option]#--encrypted# também for especificado. Veja informações sobre a "
+"opção [option]#--pbkdf-force-iterations# na página do manual `cryptsetup(8)` "
+"para mais informações."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:244
 #, no-wrap
 msgid "bootloader (required) - Configure Boot Loader"
-msgstr ""
+msgstr "bootloader (obrigatório) - Configura o carregador de inicialização"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:247
 msgid "Specifies how the boot loader should be installed."
-msgstr ""
+msgstr "Especifica como o carregador de inicialização deve ser instalado."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:252
@@ -974,6 +1107,10 @@ msgid ""
 "boot loader can allow a potential attacker to modify the system's boot "
 "options and gain unauthorized access to the system."
 msgstr ""
+"Você deve sempre usar uma senha para proteger seu carregador de "
+"inicialização. Um carregador de inicialização desprotegido pode permitir que "
+"um invasor em potencial modifique as opções de inicialização do sistema e "
+"obtenha acesso não autorizado ao sistema."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:259
@@ -985,12 +1122,19 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-bootloader[Boot "
 "Loader Installation]."
 msgstr ""
+"Alguns sistemas requerem uma partição especial para instalar o carregador de "
+"inicialização. O tipo e tamanho desta partição depende se o disco no qual "
+"você está instalando o carregador de incialização usa o _Master Boot Record_ "
+"(MBR) ou um esquema de _Tabela de Partição GUID_ (GPT). Para obter mais "
+"informações, consulte xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning-bootloader[Instalação do carregador de "
+"inicialização]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:262
 #, no-wrap
 msgid "[option]#--append=#"
-msgstr ""
+msgstr "[option]#--append=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:263
@@ -998,12 +1142,15 @@ msgid ""
 "Specifies additional kernel parameters. To specify multiple parameters, "
 "separate them with spaces. For example:"
 msgstr ""
+"Especifica parâmetros de kernel adicionais. Para especificar vários "
+"parâmetros, separe-os com espaços. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:267
 #, no-wrap
 msgid "[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 msgstr ""
+"[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:270
@@ -1012,12 +1159,14 @@ msgid ""
 "you do not specify them here or do not use the [option]#--append=# command "
 "at all."
 msgstr ""
+"Os parâmetros [option]#rhgb# e [option]#quiet# são sempre usados, mesmo se "
+"você não os especificar aqui ou não usar o comando [option]#--append=#."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:271
 #, no-wrap
 msgid "[option]#--boot-drive=#"
-msgstr ""
+msgstr "[option]#--boot-drive=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:272
@@ -1026,6 +1175,10 @@ msgid ""
 "which drive the computer will boot from. If you use a multipath device as "
 "the boot drive, specify only one member of the device."
 msgstr ""
+"Especifica em qual unidade o carregador de inicialização deve ser gravado e, "
+"portanto, de qual unidade o computador será inicializado. Se você usar um "
+"dispositivo multipath como unidade de inicialização, especifique apenas um "
+"membro do dispositivo."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -1035,12 +1188,16 @@ msgid ""
 "boot loader. When [application]*zipl* is installed, it determines the boot "
 "drive on its own."
 msgstr ""
+"A opção [option]#--boot-drive=# está atualmente sendo ignorada em "
+"instalações do {PRODUCT} em sistemas IBM System{nbsp}z usando o carregador "
+"de inicialização [application]*zipl*. Quando [application]*zipl* está "
+"instalado, ele determina a unidade de inicialização por sua própria conta."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:281
 #, no-wrap
 msgid "*Not* specifying this option will result in the following behavior:\n"
-msgstr ""
+msgstr "*Não* especificar esta opção resultará no seguinte comportamento:\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:283
@@ -1049,6 +1206,9 @@ msgid ""
 "install the boot loader on the first valid device specified in the drive "
 "order."
 msgstr ""
+"Se a opção [option]#--driveorder=# foi usada, [application]*Anaconda* "
+"instalará o carregador de inicialização no primeiro dispositivo válido "
+"especificado na ordem do drive."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:285
@@ -1056,6 +1216,7 @@ msgid ""
 "The first present and valid disk containing a `/boot` partition will be "
 "used."
 msgstr ""
+"O primeiro disco presente e válido contendo uma partição `/boot` será usado."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:287
@@ -1063,12 +1224,15 @@ msgid ""
 "If none of the above applies, then the first valid storage device from the "
 "list of all detected devices will be used to install the boot loader."
 msgstr ""
+"Se nenhuma das opções acima se aplicar, o primeiro dispositivo de "
+"armazenamento válido da lista de todos os dispositivos detectados será usado "
+"para instalar o carregador de inicialização."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:288
 #, no-wrap
 msgid "[option]#--leavebootorder#"
-msgstr ""
+msgstr "[option]#--leavebootorder#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:289
@@ -1076,34 +1240,40 @@ msgid ""
 "Prevents the installation program from making changes to the existing list "
 "of bootable images on UEFI or ISeries/PSeries systems."
 msgstr ""
+"Evita que o programa de instalação faça alterações na lista existente de "
+"imagens inicializáveis em sistemas UEFI ou ISeries/PSeries."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:290
 #, no-wrap
 msgid "[option]#--driveorder=#"
-msgstr ""
+msgstr "[option]#--driveorder=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:291
 msgid "Specifies which drive is first in the BIOS boot order. For example:"
 msgstr ""
+"Especifica qual unidade é a primeira na ordem de inicialização do BIOS. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:295
 #, no-wrap
 msgid "[command]#bootloader --driveorder=sda,hda#\n"
-msgstr ""
+msgstr "[command]#bootloader --driveorder=sda,hda#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:297
 #, no-wrap
 msgid "[option]#--location=#"
-msgstr ""
+msgstr "[option]#--location=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:298
 msgid "Specifies where the boot record is written. Valid values are the following:"
 msgstr ""
+"Especifica onde o registro de inicialização é gravado. Os valores válidos "
+"são os seguintes:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:300
@@ -1111,6 +1281,8 @@ msgid ""
 "`mbr` - The default option. Depends on whether the drive uses the Master "
 "Boot Record (MBR) or GUID Partition Table (GPT) scheme:"
 msgstr ""
+"`mbr` - A opção padrão. Depende se a unidade usa o esquema Master Boot "
+"Record (MBR) ou Tabela de Partição GUID (GPT):"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:302
@@ -1118,6 +1290,8 @@ msgid ""
 "On a GPT-formatted disk, this option will install stage 1.5 of the boot "
 "loader into the BIOS boot partition."
 msgstr ""
+"Em um disco formatado por GPT, esta opção instalará o estágio 1.5 do "
+"carregador de inicialização na partição de inicialização do BIOS."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:304
@@ -1125,6 +1299,8 @@ msgid ""
 "On an MBR-formatted disk, stage 1.5 will be installed into the empty space "
 "between the MBR and the first partition."
 msgstr ""
+"Em um disco formatado por MBR, o estágio 1.5 será instalado no espaço vazio "
+"entre o MBR e a primeira partição."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:306
@@ -1132,16 +1308,18 @@ msgid ""
 "`partition` - Install the boot loader on the first sector of the partition "
 "containing the kernel."
 msgstr ""
+"`partition` - Instala o carregador de inicialização no primeiro setor da "
+"partição que contém o kernel."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:308
 msgid "`none` - Do not install the boot loader."
-msgstr ""
+msgstr "`none` - Não instala o carregador de inicialização."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:310
 msgid "In most cases, this option does not need to be specified."
-msgstr ""
+msgstr "Na maioria dos casos, essa opção não precisa ser especificada."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:311
@@ -1150,7 +1328,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1839
 #, no-wrap
 msgid "[option]#--password=#"
-msgstr ""
+msgstr "[option]#--password=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:312
@@ -1160,6 +1338,10 @@ msgid ""
 "restrict access to the [application]*GRUB2* shell, where arbitrary kernel "
 "options can be passed."
 msgstr ""
+"Se estiver usando [application]*GRUB2* como o carregador de inicialização, "
+"defina a senha do carregador de inicialização para aquela especificada com "
+"esta opção. Isso deve ser usado para restringir o acesso ao shell do "
+"[application]*GRUB2*, onde opções arbitrárias do kernel podem ser passadas."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:314
@@ -1167,6 +1349,8 @@ msgid ""
 "If a password is specified, [application]*GRUB2* will also ask for a user "
 "name. The user name is always `root`."
 msgstr ""
+"Se uma senha for especificada, o [application]*GRUB2* também solicitará um "
+"nome de usuário. O nome do usuário é sempre `root`."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:315
@@ -1175,7 +1359,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1793
 #, no-wrap
 msgid "[option]#--iscrypted#"
-msgstr ""
+msgstr "[option]#--iscrypted#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:316
@@ -1185,6 +1369,10 @@ msgid ""
 "plain text. If you want to encrypt the password, use this option and an "
 "encrypted password."
 msgstr ""
+"Normalmente, quando você especifica uma senha do carregador de inicialização "
+"usando a opção [option]#--password=#, ela será armazenada no arquivo "
+"Kickstart em texto simples. Se você deseja criptografar a senha, use esta "
+"opção e uma senha criptografada."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:318
@@ -1195,6 +1383,11 @@ msgid ""
 "[command]#bootloader# Kickstart entry with an encrypted password will look "
 "similar to the following:"
 msgstr ""
+"Para gerar uma senha criptografada, use o comando [command]#grub2-mkpasswd-"
+"pbkdf2#, insira a senha que deseja usar e copie a saída do comando (o hash "
+"começando com `grub.pbkdf2`) no arquivo Kickstart. Um exemplo de entrada "
+"Kickstart de [command]#bootloader# com uma senha criptografada será "
+"semelhante ao seguinte:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:323
@@ -1203,12 +1396,17 @@ msgid ""
 "[command]#bootloader --iscrypted "
 "--password=grub.pbkdf2.sha512.10000.5520C6C9832F3AC3D149AC0B24BE69E2D4FB0DBEEDBD29CA1D30A044DE2645C4C7A291E585D4DC43F8A4D82479F8B95CA4BA4381F8550510B75E8E0BB2938990.C688B6F0EF935701FF9BD1A8EC7FE5BD2333799C98F28420C5CC8F1A2A233DE22C83705BB614EA17F3FDFDF4AC2161CEA3384E56EB38A2E39102F5334C47405E#\n"
 msgstr ""
+"[command]#bootloader --iscrypted --password=grub.pbkdf2.sha512.10000.5520C6C9"
+"832F3AC3D149AC0B24BE69E2D4FB0DBEEDBD29CA1D30A044DE2645C4C7A291E585D4DC43F8A4D"
+"82479F8B95CA4BA4381F8550510B75E8E0BB2938990.C688B6F0EF935701FF9BD1A8EC7FE5BD2"
+"333799C98F28420C5CC8F1A2A233DE22C83705BB614EA17F3FDFDF4AC2161CEA3384E56EB38A2"
+"E39102F5334C47405E#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:326
 #, no-wrap
 msgid "[option]#--timeout=#"
-msgstr ""
+msgstr "[option]#--timeout=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:327
@@ -1216,23 +1414,27 @@ msgid ""
 "Specifies the amount of time the boot loader will wait before booting the "
 "default option (in seconds)."
 msgstr ""
+"Especifica a quantidade de tempo que o carregador de inicialização aguardará "
+"antes de inicializar a opção padrão (em segundos)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:328
 #, no-wrap
 msgid "[option]#--default=#"
-msgstr ""
+msgstr "[option]#--default=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:329
 msgid "Sets the default boot image in the boot loader configuration."
 msgstr ""
+"Define a imagem de inicialização padrão na configuração do carregador de "
+"inicialização."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:330
 #, no-wrap
 msgid "[option]#--extlinux#"
-msgstr ""
+msgstr "[option]#--extlinux#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:331
@@ -1241,13 +1443,16 @@ msgid ""
 "[application]*GRUB2*. This option only works on systems supported by "
 "[application]*extlinux*."
 msgstr ""
+"Usa o carregador de inicialização [application]*extlinux* em vez do "
+"[application]*GRUB2*. Esta opção funciona apenas em sistemas suportados pelo "
+"[application]*extlinux*."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:332
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1637
 #, no-wrap
 msgid "[option]#--disabled#"
-msgstr ""
+msgstr "[option]#--disabled#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:333
@@ -1256,12 +1461,16 @@ msgid ""
 "boot loader configuration; all other boot loader options will be ignored and "
 "no boot loader packages will be installed."
 msgstr ""
+"Não tenta instalar um carregador de inicialização. Esta opção substitui "
+"todas as outras configurações do carregador de inicialização; todas as "
+"outras opções do carregador de inicialização serão ignoradas e nenhum pacote "
+"do carregador de inicialização será instalado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:334
 #, no-wrap
 msgid "[option]#--nombr#"
-msgstr ""
+msgstr "[option]#--nombr#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:335
@@ -1269,17 +1478,19 @@ msgid ""
 "Install the boot loader configuration and support files, but do not modify "
 "the MBR."
 msgstr ""
+"Instala a configuração do carregador de inicialização e os arquivos de "
+"suporte, mas não modifica o MBR."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:337
 #, no-wrap
 msgid "btrfs (optional) - Create Btrfs Volume or Subvolume"
-msgstr ""
+msgstr "btrfs (opcional) - Cria volume ou subvolume Btrfs"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:340
 msgid "Create a Btrfs volume or subvolume. For a volume, the syntax is:"
-msgstr ""
+msgstr "Cria um volume ou subvolume Btrfs. Para um volume, a sintaxe é:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:345
@@ -1289,6 +1500,9 @@ msgid ""
 "--metadata=pass:attributes[{blank}]_level_ [--label=] "
 "_partitions_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _ponto de montagem_ --data=pass:attributes[{blank}]_nível_ "
+"--metadata=pass:attributes[{blank}]_nível_ [--label=] "
+"_partições_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:349
@@ -1298,11 +1512,15 @@ msgid ""
 "space. See xref:exam-kickstart-create-btrfs[Creating Btrfs Volumes and "
 "Subvolumes] for a demonstration."
 msgstr ""
+"Uma ou mais partições podem ser especificadas em _partições_. Ao especificar "
+"mais de uma partição, as entradas devem ser separadas por um único espaço. "
+"Veja xref:exam-kickstart-create-btrfs[Criando volumes e subvolumes Btrfs] "
+"para uma demonstração."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:351
 msgid "For a subvolume, the syntax is:"
-msgstr ""
+msgstr "Para um subvolume, a sintaxe é:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:356
@@ -1311,6 +1529,8 @@ msgid ""
 "[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ "
 "_parent_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _ponto de montagem_ --subvol --name=pass:attributes[{blank}]"
+"_nome_ _pai_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:360
@@ -1319,12 +1539,15 @@ msgid ""
 "with a name for the subvolume, and _mntpoint_ is the location where the file "
 "system is mounted."
 msgstr ""
+"_pai_ deve ser o identificador do volume pai do subvolume, _nome_ com um "
+"nome para o subvolume e _ponto de montagem_ é o local onde o sistema de "
+"arquivos está montado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:361
 #, no-wrap
 msgid "[option]#--data=#"
-msgstr ""
+msgstr "[option]#--data=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:362
@@ -1333,12 +1556,15 @@ msgid ""
 "parameter is optional, has no meaning for subvolumes, and requires more than "
 "one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para *dados* do sistema de arquivos (como `0`, `1` "
+"ou `10`). Este parâmetro é opcional, não tem significado para subvolumes e "
+"requer mais de um disco físico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:363
 #, no-wrap
 msgid "[option]#--metadata=#"
-msgstr ""
+msgstr "[option]#--metadata=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:364
@@ -1347,6 +1573,9 @@ msgid ""
 "`10`). This parameter is optional, has no meaning for subvolumes, and "
 "requires more than one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para sistema de arquivos/volume de *metadados* ("
+"como `0`, `1` ou `10`). Este parâmetro é opcional, não tem significado para "
+"subvolumes e requer mais de um disco físico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:365
@@ -1355,7 +1584,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:961
 #, no-wrap
 msgid "[option]#--label=#"
-msgstr ""
+msgstr "[option]#--label=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:366
@@ -1364,28 +1593,31 @@ msgid ""
 "use by another file system, a new label will be created. This option has no "
 "meaning for subvolumes."
 msgstr ""
+"Especifica um rótulo para o sistema de arquivos Btrfs. Se o rótulo fornecido "
+"já estiver em uso por outro sistema de arquivos, um novo rótulo será criado. "
+"Esta opção não tem significado para subvolumes."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:367
 #, no-wrap
 msgid "[option]#--subvol#"
-msgstr ""
+msgstr "[option]#--subvol#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:368
 msgid "Create a Btrfs subvolume instead of a volume."
-msgstr ""
+msgstr "Cria um subvolume Btrfs em vez de um volume."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:370
 msgid "Set a name for a Btrfs subvolume."
-msgstr ""
+msgstr "Define um nome para um subvolume Btrfs."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:371
 #, no-wrap
 msgid "[option]#--noformat# or [option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--noformat# ou [option]#--useexisting#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:372
@@ -1393,6 +1625,8 @@ msgid ""
 "Use an existing Btrfs volume (or subvolume) and do not reformat the file "
 "system."
 msgstr ""
+"Usa um volume Btrfs existente (ou subvolume) e não reformata o sistema de "
+"arquivos."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:373
@@ -1401,7 +1635,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:959
 #, no-wrap
 msgid "[option]#--mkfsoptions=#"
-msgstr ""
+msgstr "[option]#--mkfsoptions=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:374
@@ -1412,6 +1646,12 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume ou subvolume. Nenhum processamento é "
+"feito na lista de argumentos, então eles devem ser fornecidos em um formato "
+"que pode ser passado diretamente para o programa mkfs. Isso significa que "
+"várias opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:376
@@ -1420,12 +1660,15 @@ msgid ""
 "partitions on three disks with subvolumes for `/` and `/home`. The main "
 "volume is not mounted or used directly in this example."
 msgstr ""
+"O exemplo a seguir mostra como criar um volume Btrfs a partir de partições "
+"membros em três discos com subvolumes para `/` e `/home`. O volume principal "
+"não é montado ou usado diretamente neste exemplo."
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:378
 #, no-wrap
 msgid "Creating Btrfs Volumes and Subvolumes"
-msgstr ""
+msgstr "Criando volumes e subvolumes Btrfs"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:387
@@ -1435,6 +1678,9 @@ msgid ""
 "[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
 "[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part btrfs.01 --size=6000 --ondisk=sda#\n"
+"[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
+"[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:391
@@ -1445,12 +1691,16 @@ msgid ""
 "[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
 "[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 msgstr ""
+"[command]#btrfs none --data=0 --metadata=1 --label=f{PRODVER} btrfs.01 "
+"btrfs.02 btrfs.03#\n"
+"[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
+"[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:397
 #, no-wrap
 msgid "clearpart (optional) - Remove All Existing Partitions"
-msgstr ""
+msgstr "clearpart (opcional) - Remove todas as partições existentes"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:400
@@ -1458,6 +1708,8 @@ msgid ""
 "Removes partitions from the system, prior to creation of new partitions. By "
 "default, no partitions are removed."
 msgstr ""
+"Remove partições do sistema, antes da criação de novas partições. Por "
+"padrão, nenhuma partição é removida."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:405
@@ -1465,6 +1717,8 @@ msgid ""
 "If the [command]#clearpart# command is used, then the [command]#part "
 "--onpart# command cannot be used on a logical partition."
 msgstr ""
+"Se o comando [command]#clearpart# for usado, o comando [command]#part "
+"--onpart# não poderá ser usado em uma partição lógica."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:409
@@ -1473,17 +1727,20 @@ msgid ""
 "command, see xref:sect-kickstart-example-advanced-partitioning[Advanced "
 "Partitioning Example]."
 msgstr ""
+"Para obter um exemplo detalhado de particionamento, incluindo o comando "
+"[command]#clearpart#, consulte xref:sect-kickstart-example-advanced-"
+"partitioning[Exemplo avançado de particionamento]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:410
 #, no-wrap
 msgid "[option]#--all#"
-msgstr ""
+msgstr "[option]#--all#"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:411
 msgid "Erases all partitions from the system."
-msgstr ""
+msgstr "Apaga todas as partições do sistema."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:416
@@ -1491,13 +1748,16 @@ msgid ""
 "This option will erase all disks which can be reached by the installer, "
 "including any attached network storage. Use this option with caution."
 msgstr ""
+"Esta opção apagará todos os discos que podem ser acessados pelo instalador, "
+"incluindo qualquer armazenamento de rede conectado. Use esta opção com "
+"cuidado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:419
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:501
 #, no-wrap
 msgid "[option]#--drives=#"
-msgstr ""
+msgstr "[option]#--drives=#"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:420
@@ -1506,12 +1766,15 @@ msgid ""
 "clears all the partitions on the first two drives on the primary IDE "
 "controller:"
 msgstr ""
+"Especifica de quais unidades limpar as partições. Por exemplo, o seguinte "
+"limpa todas as partições nas primeiras duas unidades no controlador IDE "
+"primário:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "[command]#clearpart --drives=hda,hdb --all#\n"
-msgstr ""
+msgstr "[command]#clearpart --drives=hda,hdb --all#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:427
@@ -1521,6 +1784,10 @@ msgid ""
 "_world-wide identifier_ for the device. For example, to clear a disk with "
 "WWID `58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Para limpar um dispositivo multipath, use o formato `disk/by-id/scsi-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para limpar um disco "
+"com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:431
@@ -1529,6 +1796,8 @@ msgid ""
 "[command]#clearpart "
 "--drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:434
@@ -1540,6 +1809,12 @@ msgid ""
 "the _world-wide identifier_ for the device. For example, to clear a disk "
 "with WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Este formato é preferível para todos os dispositivos multipath, mas se "
+"surgirem erros, os dispositivos multipath que não usam _gerenciamento de "
+"volume lógico_ (LVM) também podem ser limpos usando o formato `disk/by-id/dm-"
+"uuid-mpath-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para limpar "
+"um disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:438
@@ -1548,6 +1823,8 @@ msgid ""
 "[command]#clearpart "
 "--drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:444
@@ -1559,6 +1836,11 @@ msgid ""
 "`/dev/mpatha` during installation might not be the one that you expect it to "
 "be. Therefore, the [command]#clearpart# command could target the wrong disk."
 msgstr ""
+"Nunca especifique dispositivos multipath por nomes de dispositivos como "
+"`mpatha`. Nomes de dispositivos como este não são específicos para um "
+"determinado disco. O disco denominado `/dev/mpatha` durante a instalação "
+"pode não ser o que você esperava. Portanto, o comando [command]#clearpart# "
+"pode ter como destino o disco errado."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:448
@@ -1569,12 +1851,16 @@ msgid ""
 "(\"pass:attributes[{blank}]`|`pass:attributes[{blank}]\") as a "
 "delimiter. For example:"
 msgstr ""
+"A partir do Fedora 25, você pode combinar várias maneiras de especificar "
+"destinos de armazenamento em um comando, usando o pipe (\"pass"
+":attributes[{blank}]`|`pass:attributes[{blank}]\") como delimitador. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:451
 #, no-wrap
 msgid "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:454
@@ -1584,12 +1870,15 @@ msgid ""
 "`/dev/vdc`. Variants are processed from left to right, and at least one of "
 "them must match for the command to succeed."
 msgstr ""
+"O acima irá corresponder a qualquer um de `sd*`, `hd*`, *ou* `vda` *e* `/dev/"
+"vdc`. As variantes são processadas da esquerda para a direita e pelo menos "
+"uma delas deve corresponder para que o comando seja bem-sucedido."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:455
 #, no-wrap
 msgid "[option]#--list=#"
-msgstr ""
+msgstr "[option]#--list=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:456
@@ -1598,40 +1887,43 @@ msgid ""
 "[option]#--all# and [option]#--linux# options if used. Can be used across "
 "different drives. For example:"
 msgstr ""
+"Especifica quais partições limpar. Esta opção sobrescreve as opções "
+"[option]#--all# e [option]#--linux#, se usadas. Pode ser usado em diferentes "
+"unidades. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:460
 #, no-wrap
 msgid "[command]#clearpart --list=sda2,sda3,sdb1#\n"
-msgstr ""
+msgstr "[command]#clearpart --list=sda2,sda3,sdb1#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:462
 #, no-wrap
 msgid "[option]#--disklabel=#"
-msgstr ""
+msgstr "[option]#--disklabel=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:463
 msgid "Create a set disk label when relabeling a disk."
-msgstr ""
+msgstr "Cria um conjunto de rótulo de disco ao renomear um disco."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:464
 #, no-wrap
 msgid "[option]#--linux#"
-msgstr ""
+msgstr "[option]#--linux#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:465
 msgid "Erases all Linux partitions."
-msgstr ""
+msgstr "Apaga todas as partições Linux."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:466
 #, no-wrap
 msgid "[option]#--none#"
-msgstr ""
+msgstr "[option]#--none#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:467
@@ -1639,6 +1931,8 @@ msgid ""
 "Do not remove any partitions. This is the default behavior - using this "
 "option is the same as not using the [command]#clearpart# command at all."
 msgstr ""
+"Não remove nenhuma partição. Este é o comportamento padrão - usar esta opção "
+"é o mesmo que não usar o comando [command]#clearpart#."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:472
@@ -1649,12 +1943,18 @@ msgid ""
 "need to perform the installation automatically with no interaction, add the "
 "[command]#zerombr# command to your Kickstart file."
 msgstr ""
+"Usar o comando [command]#clearpart --all# em um arquivo Kickstart para "
+"remover todas as partições existentes durante a instalação fará com que o "
+"[application]*Anaconda* pause e solicite uma confirmação. Se você precisar "
+"executar a instalação automaticamente sem interação, adicione o comando "
+"[command]#zerombr# ao seu arquivo Kickstart."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:476
 #, no-wrap
 msgid "fcoe (optional) - Configure Fibre Channel Over Ethernet Devices"
 msgstr ""
+"fcoe (opcional) - Configura dispositivos de Fibre Channel sobre Ethernet"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:479
@@ -1662,51 +1962,54 @@ msgid ""
 "Specify which FCoE devices should be activated automatically in addition to "
 "those discovered by _Enhanced Disk Drive Services_ (EDD)."
 msgstr ""
+"Especifica quais dispositivos FCoE devem ser ativados automaticamente, além "
+"daqueles descobertos por _Enhanced Disk Drive Services_ (EDD)."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:483
 #, no-wrap
 msgid "[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 msgstr ""
+"[command]#fcoe --nic=pass:attributes[{blank}]_nome_ [--dcp= | --autovlan]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:485
 #, no-wrap
 msgid "[option]#--nic=# (required)"
-msgstr ""
+msgstr "[option]#--nic=# (obrigatório)"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:486
 msgid "Name of the device to be activated."
-msgstr ""
+msgstr "Nome do dispositivo a ser ativado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:487
 #, no-wrap
 msgid "[option]#--dcb=#"
-msgstr ""
+msgstr "[option]#--dcb=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:488
 msgid "Establish _Data Center Bridging_ (DCB) settings."
-msgstr ""
+msgstr "Estabelece configurações de _Data Center Bridging_ (DCB)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:489
 #, no-wrap
 msgid "[option]#--autovlan#"
-msgstr ""
+msgstr "[option]#--autovlan#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:490
 msgid "Discover VLANs automatically."
-msgstr ""
+msgstr "Descobre VLANs automaticamente."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:492
 #, no-wrap
 msgid "ignoredisk (optional) - Ignore Specified Disks"
-msgstr ""
+msgstr "ignoredisk (opcional) - Ignora discos específicos"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:495
@@ -1717,12 +2020,18 @@ msgid ""
 "a SAN cluster the Kickstart would fail, as the installation program detects "
 "passive paths to the SAN that return no partition table."
 msgstr ""
+"Faz com que o programa de instalação ignore os discos especificados. Isso é "
+"útil se você usar a partição automática e quiser ter certeza de que alguns "
+"discos serão ignorados. Por exemplo, sem [command]#ignoredisk#, a tentativa "
+"de implantar em um cluster SAN, o Kickstart falhará, pois o programa de "
+"instalação detecta caminhos passivos para a SAN que não retornam nenhuma "
+"tabela de partição."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:499
 #, no-wrap
 msgid "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:502
@@ -1730,12 +2039,14 @@ msgid ""
 "Specify one or more drives to ignore. Multiple drives can be specified as a "
 "comma-separated list. For example:"
 msgstr ""
+"Especifica uma ou mais unidades para ignorar. Várias unidades podem ser "
+"especificadas como uma lista separada por vírgulas. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:506
 #, no-wrap
 msgid "[command]#ignoredisk --drives=sda,sdc#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives=sda,sdc#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:509
@@ -1746,6 +2057,11 @@ msgid ""
 "the _world-wide identifier_ for the device. For example, to ignore a disk "
 "with WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Para ignorar um dispositivo multicaminho que não usa _gerenciamento de "
+"volume lógico_ (LVM), use o formato `disk/by-id/dm-uuid-mpath-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para ignorar um "
+"disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:513
@@ -1754,6 +2070,8 @@ msgid ""
 "[command]#ignoredisk "
 "--drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:516
@@ -1766,6 +2084,13 @@ msgid ""
 "_world-wide identifier_ for the device. For example, to ignore a disk with "
 "WWID `58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Os dispositivos multicaminho que usam LVM não são montados até que o "
+"[application]*Anaconda* tenha analisado o arquivo Kickstart. Portanto, você "
+"não pode especificar esses dispositivos no formato `dm-uuid-mpath`. Em vez "
+"disso, para ignorar um dispositivo multicaminho que usa LVM, use o formato `"
+"disk/by-id/scsi-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para "
+"ignorar um disco com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:520
@@ -1774,18 +2099,20 @@ msgid ""
 "[command]#ignoredisk "
 "--drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:533
 #, no-wrap
 msgid "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:537
 #, no-wrap
 msgid "[option]#--only-use=#"
-msgstr ""
+msgstr "[option]#--only-use=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:538
@@ -1794,17 +2121,20 @@ msgid ""
 "disks are ignored. For example, to use disk `sda` during installation and "
 "ignore all other disks:"
 msgstr ""
+"Especifica uma lista de discos para uso do programa de instalação. Todos os "
+"outros discos são ignorados. Por exemplo, para usar o disco `sda` durante a "
+"instalação e ignorar todos os outros discos:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:542
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=sda#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --only-use=sda#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:545
 msgid "To include a multipath device that does not use LVM:"
-msgstr ""
+msgstr "Para incluir um dispositivo multicaminho que não usa LVM:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:549
@@ -1813,11 +2143,13 @@ msgid ""
 "[command]#ignoredisk "
 "--only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 msgid "To include a multipath device that uses LVM:"
-msgstr ""
+msgstr "Para incluir um dispositivo multicaminho que usa LVM:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:556
@@ -1826,23 +2158,25 @@ msgid ""
 "[command]#ignoredisk "
 "--only-use=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:558
 #, no-wrap
 msgid "[option]#--interactive#"
-msgstr ""
+msgstr "[option]#--interactive#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:559
 msgid "Allows you to manually navigate the advanced storage screen."
-msgstr ""
+msgstr "Permite que você navegue manualmente na tela de armazenamento avançado."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:561
 #, no-wrap
 msgid "iscsi (optional) - Configure iSCSI Devices"
-msgstr ""
+msgstr "iscsi (opcional) - Configura dispositivos iSCSI"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:564
@@ -1854,6 +2188,12 @@ msgid ""
 "iSCSI Device]. The [command]#iscsiname# command must appear before the "
 "[command]#iscsi# command in the Kickstart file."
 msgstr ""
+"Especifica o armazenamento iSCSI adicional a ser conectado durante a "
+"instalação. Se você usar o comando [command]#iscsi#, também deve atribuir um "
+"nome ao nó iSCSI, usando o comando [command]#iscsiname# (veja xref:sect-"
+"kickstart-comandos-iscsiname[iscsiname (opcional) - Atribui nome do "
+"dispositivo iSCSI]. O comando [command]#iscsiname# deve aparecer antes do "
+"comando [command]#iscsi# no arquivo Kickstart."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:566
@@ -1864,6 +2204,11 @@ msgid ""
 "configured in BIOS or firmware and no special configuration is necessary in "
 "the Kickstart file."
 msgstr ""
+"Você deve configurar o armazenamento iSCSI no BIOS ou firmware do sistema ("
+"iBFT para sistemas Intel) em vez de usar o comando [command]#iscsi# se "
+"possível. Se você fizer isso, o [application]*Anaconda* detecta e usa "
+"automaticamente os discos configurados no BIOS ou firmware e nenhuma "
+"configuração especial é necessária no arquivo Kickstart."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:568
@@ -1874,6 +2219,10 @@ msgid ""
 "iSCSI disks with commands such as [command]#clearpart# or "
 "[command]#ignoredisk#."
 msgstr ""
+"Se você deve usar o comando [command]#iscsi#, certifique-se de que a rede "
+"esteja ativada no início da instalação, e que o comando [command]#iscsi# "
+"apareça no arquivo Kickstart *antes* de você referir-se aos discos iSCSI com "
+"comandos como [command]#clearpart# ou [command]#ignoreisk#."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:572
@@ -1882,17 +2231,19 @@ msgid ""
 "[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | "
 "--password= | --reverse-user= | --reverse-password=]#\n"
 msgstr ""
+"[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | --"
+"password= | --reverse-user= | --reverse-password=]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:574
 #, no-wrap
 msgid "[option]#--ipaddr=#"
-msgstr ""
+msgstr "[option]#--ipaddr=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:575
 msgid "The IP address of the target to connect to."
-msgstr ""
+msgstr "O endereço IP do alvo para conectar."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:576
@@ -1901,29 +2252,29 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1837
 #, no-wrap
 msgid "[option]#--port=#"
-msgstr ""
+msgstr "[option]#--port=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:577
 msgid "The port number (typically `3260`)."
-msgstr ""
+msgstr "O número de porta (geralmente `3260`)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:578
 #, no-wrap
 msgid "[option]#--target=#"
-msgstr ""
+msgstr "[option]#--target=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:579
 msgid "Target _IQN_ (iSCSI Qualified Name)."
-msgstr ""
+msgstr "_IQN_ (Nome Qualificado iSCSI) alvo."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:580
 #, no-wrap
 msgid "[option]#--iface=#"
-msgstr ""
+msgstr "[option]#--iface=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:581
@@ -1933,28 +2284,32 @@ msgid ""
 "in all instances of the [command]#iscsi# command in the entire Kickstart "
 "file."
 msgstr ""
+"Vincula a conexão a uma interface de rede específica em vez de usar a "
+"interface padrão determinada pela camada de rede. Uma vez usado, ele deve "
+"ser especificado em todas as instâncias do comando [command]#iscsi# em todo "
+"o arquivo Kickstart."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:582
 #, no-wrap
 msgid "[option]#--user=#"
-msgstr ""
+msgstr "[option]#--user=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:583
 msgid "User name required to authenticate with the target."
-msgstr ""
+msgstr "Nome de usuário necessário para autenticar com o alvo."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:585
 msgid "Password that corresponds with the user name specified for the target."
-msgstr ""
+msgstr "Senha que corresponde ao nome de usuário especificado para o alvo."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:586
 #, no-wrap
 msgid "[option]#--reverse-user=#"
-msgstr ""
+msgstr "[option]#--reverse-user=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:587
@@ -1962,23 +2317,25 @@ msgid ""
 "User name required to authenticate with the initiator from a target using "
 "reverse CHAP authentication."
 msgstr ""
+"Nome de usuário necessário para autenticar com o iniciador de um destino "
+"usando autenticação CHAP reversa."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:588
 #, no-wrap
 msgid "[option]#--reverse-password=#"
-msgstr ""
+msgstr "[option]#--reverse-password=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:589
 msgid "Password that corresponds with the user name specified for the initiator."
-msgstr ""
+msgstr "Senha que corresponde ao nome de usuário especificado para o iniciador."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:591
 #, no-wrap
 msgid "iscsiname (optional) - Assign Name to iSCSI Device"
-msgstr ""
+msgstr "iscsiname (opcional) - Atribui nome do dispositivo iSCSI"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:594
@@ -1988,23 +2345,29 @@ msgid ""
 "Devices]). This command is mandatory if you use the [command]#iscsi# "
 "command, and it must be specified *before* you use [command]#iscsi#."
 msgstr ""
+"Atribui um nome a um nó iSCSI especificado pelo comando [command]#iscsi# "
+"(xref:sect-kickstart-comandos-iscsi[iscsi (opcional) - Configura "
+"dispositivos iSCSI]). Este comando é obrigatório se você usar o comando "
+"[command]#iscsi# e deve ser especificado *antes* de usar [command]#iscsi#."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:598
 #, no-wrap
 msgid "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
-msgstr ""
+msgstr "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:601
 #, no-wrap
 msgid "logvol (optional) - Create LVM Logical Volume"
-msgstr ""
+msgstr "logvol (opcional) - Cria volume lógico LVM"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:604
 msgid "Create a logical volume for Logical Volume Management (LVM) with the syntax:"
 msgstr ""
+"Cria um volume lógico para Gerenciamento de Volume Lógico (LVM) com a "
+"sintaxe:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:608
@@ -2013,6 +2376,8 @@ msgid ""
 "[command]#logvol _mntpoint_ --vgname=  --name= "
 "[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#logvol _pontomontagem_ --vgname=  --name= "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:614
@@ -2025,6 +2390,12 @@ msgid ""
 "volume group named `volgrp-01` containing a logical volume named `logvol-01` "
 "will be listed as `/dev/mapper/volgrp--01-logvol--01`."
 msgstr ""
+"Não usa o caractere de traço (`-`) no volume lógico e nomes de grupo de "
+"volume ao instalar {PRODUCT} usando o Kickstart. Se este caractere for "
+"usado, a instalação terminará normalmente, mas o diretório `/dev/mapper/` "
+"irá listar esses volumes e grupos de volumes com cada traço dobrado. Por "
+"exemplo, um grupo de volume denominado `volgrp-01` contendo um volume lógico "
+"denominado `logvol-01` será listado como `/dev/mapper/volgrp--01-logvol--01`."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:616
@@ -2033,6 +2404,10 @@ msgid ""
 "group names. If you are reusing existing ones using the [option]#--noformat# "
 "or [option]#--useexisting# option, their names will not be changed."
 msgstr ""
+"Essa limitação se aplica apenas a nomes de volume lógico e grupo de volume "
+"recém-criados. Se você estiver reutilizando os existentes usando a opção "
+"[option]#--noformat# ou [option]#--useexisting#, seus nomes não serão "
+"alterados."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:620
@@ -2041,6 +2416,8 @@ msgid ""
 "xref:sect-kickstart-example-advanced-partitioning[Advanced Partitioning "
 "Example]."
 msgstr ""
+"Para um exemplo detalhado de [command]#logvol# em ação, veja xref:sect-"
+"kickstart-example-advanced-partitioning[Exemplo avançado de particionamento]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:621
@@ -2048,7 +2425,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:940
 #, no-wrap
 msgid "_mntpoint_"
-msgstr ""
+msgstr "_pontomontagem_"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:622
@@ -2056,32 +2433,34 @@ msgid ""
 "Replace with the volume's mount point. This name can take the following "
 "forms:"
 msgstr ""
+"Substitui com o ponto de montagem do volume. Este nome aceita as seguintes "
+"formas:"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:623
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:780
 #, no-wrap
 msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:624
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:781
 msgid "A path to the mount point - for example, `/` or `/home`"
-msgstr ""
+msgstr "Um caminho para o ponto de montagem - por exemplo, `/` ou `/home`"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:625
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:782
 #, no-wrap
 msgid "`swap`:"
-msgstr ""
+msgstr "`swap`:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:626
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:783
 msgid "The partition is used as swap space."
-msgstr ""
+msgstr "A partição é usada como espaço swap."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:628
@@ -2090,13 +2469,15 @@ msgid ""
 "To determine the size of the swap partition automatically, use the "
 "[option]#--recommended# option:"
 msgstr ""
+"Para determinar o tamanho da partição swap automaticamente, use a opção "
+"[option]#--recommended#:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:632
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:789
 #, no-wrap
 msgid "`swap --recommended`\n"
-msgstr ""
+msgstr "`swap --recommended`\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:635
@@ -2106,12 +2487,15 @@ msgid ""
 "extra space for your system to hibernate, use the [option]#--hibernation# "
 "option:"
 msgstr ""
+"Para determinar o tamanho da partição swap automaticamente, mas também "
+"permitir espaço extra para o seu sistema hibernar, use a opção "
+"[option]#--hibernation#:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:639
 #, no-wrap
 msgid "`swap --hibernation`\n"
-msgstr ""
+msgstr "`swap --hibernation`\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:642
@@ -2120,6 +2504,8 @@ msgid ""
 "The size assigned will be equivalent to the swap space assigned by "
 "[option]#--recommended# plus the amount of RAM on your system."
 msgstr ""
+"O tamanho atribuído será equivalente ao espaço de troca atribuído por "
+"[option]#--recommended# mais a quantidade de RAM em seu sistema."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:644
@@ -2130,17 +2516,21 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Para os tamanhos de swap atribuídos por esses comandos, consulte a seção que "
+"descreve swap em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Esquema de particionamento "
+"recomendado]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:645
 #, no-wrap
 msgid "`none`:"
-msgstr ""
+msgstr "`none`:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:646
 msgid "Used only when creating a thin pool volume."
-msgstr ""
+msgstr "Usada apenas ao criar um volume thin-pool."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:647
@@ -2149,12 +2539,12 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1058
 #, no-wrap
 msgid "[option]#--noformat#"
-msgstr ""
+msgstr "[option]#--noformat#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:648
 msgid "Use an existing logical volume and do not format it."
-msgstr ""
+msgstr "Usa um volume lógico existente e não o formata."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:649
@@ -2162,12 +2552,12 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1060
 #, no-wrap
 msgid "[option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--useexisting#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:650
 msgid "Use an existing logical volume and format it."
-msgstr ""
+msgstr "Usa um volume lógico existente e o formate."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:652
@@ -2177,6 +2567,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types] for information about available file systems."
 msgstr ""
+"Define o tipo de sistema de arquivos para o volume lógico. Os valores "
+"válidos são `xfs`, `ext2`, `ext3`, `ext4`, `swap` e `vfat`. Veja xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Tipos de dispositivos, sistemas de arquivos e RAID] "
+"para informações sobre os sistemas de arquivos disponíveis."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:653
@@ -2184,7 +2579,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:952
 #, no-wrap
 msgid "[option]#--fsoptions=#"
-msgstr ""
+msgstr "[option]#--fsoptions=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:654
@@ -2195,6 +2590,9 @@ msgid ""
 "filesystem. This string will be copied into the `/etc/fstab` file of the "
 "installed system and should be enclosed in quotes. For example:"
 msgstr ""
+"Especifica uma sequência de opções de formato livre a ser usada ao montar o "
+"sistema de arquivos. Esta string será copiada para o arquivo `/etc/fstab` do "
+"sistema instalado e deve ser colocada entre aspas. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:658
@@ -2202,7 +2600,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:957
 #, no-wrap
 msgid "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
-msgstr ""
+msgstr "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:661
@@ -2213,18 +2611,24 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume lógico. Nenhum processamento é feito na "
+"lista de argumentos, então eles devem ser fornecidos em um formato que pode "
+"ser passado diretamente para o programa mkfs. Isso significa que várias "
+"opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:663
 msgid "Sets a label for the logical volume."
-msgstr ""
+msgstr "Define um rótulo para o volume lógico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:664
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:825
 #, no-wrap
 msgid "[option]#--grow#"
-msgstr ""
+msgstr "[option]#--grow#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:665
@@ -2232,13 +2636,15 @@ msgid ""
 "Grow the volume to fill available space (if any), or up to the limit set by "
 "the [option]#--maxsize=# option."
 msgstr ""
+"Aumenta o volume para preencher o espaço disponível (se houver) ou até o "
+"limite definido pela opção [option]#--maxsize=#."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:666
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:812
 #, no-wrap
 msgid "[option]#--size=#"
-msgstr ""
+msgstr "[option]#--size=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:667
@@ -2246,12 +2652,14 @@ msgid ""
 "The size of the logical volume in megabytes. This option can not be used "
 "together with the [option]#--percent=# option."
 msgstr ""
+"O tamanho do volume lógico em megabytes. Esta opção não pode ser usada junto "
+"com a opção [option]#--percent=#."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:668
 #, no-wrap
 msgid "[option]#--percent=#"
-msgstr ""
+msgstr "[option]#--percent=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:669
@@ -2261,6 +2669,10 @@ msgid ""
 "volumes are taken into account. This option can not be used together with "
 "the [option]#--size=# and [option]#--grow# options."
 msgstr ""
+"Especifica a quantidade pela qual o volume lógico deve crescer, como uma "
+"porcentagem do espaço livre no grupo de volumes após quaisquer volumes "
+"lógicos de tamanho estático serem considerados. Esta opção não pode ser "
+"usada junto com as opções [option]#--size=# e [option]#--grow#."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:674
@@ -2270,13 +2682,17 @@ msgid ""
 "remaining free space using the [option]#--percent=# option. You can not use "
 "both of these options on the same logical volume."
 msgstr ""
+"Ao criar um novo volume lógico, você deve especificar seu tamanho "
+"estaticamente usando a opção [option]#--size=#, ou como uma porcentagem do "
+"espaço livre restante usando a opção [option]#--percent=#. Você não pode "
+"usar ambas as opções no mesmo volume lógico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:677
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:821
 #, no-wrap
 msgid "[option]#--maxsize=#"
-msgstr ""
+msgstr "[option]#--maxsize=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:678
@@ -2284,13 +2700,16 @@ msgid ""
 "The maximum size in megabytes when the logical volume is set to "
 "grow. Specify an integer value here such as `500` (do not include the unit)."
 msgstr ""
+"O tamanho máximo em megabytes quando o volume lógico é configurado para "
+"aumentar. Especifique um valor inteiro aqui, como `500` (não inclua a "
+"unidade)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:679
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:892
 #, no-wrap
 msgid "[option]#--recommended#"
-msgstr ""
+msgstr "[option]#--recommended#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:680
@@ -2301,6 +2720,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Use esta opção ao criar um volume lógico `swap` para determinar o tamanho "
+"deste volume automaticamente, baseado no hardware do seu sistema. Para obter "
+"detalhes sobre o esquema recomendado, consulte xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[Esquema de particionamento recomendado]."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:685
@@ -2310,13 +2734,16 @@ msgid ""
 "such as the `/boot` partition and `swap` space. It can not be used to create "
 "partitionsm, LVM physical or logical volumes or RAID members."
 msgstr ""
+"Esta opção só pode ser usada para partições que resultam em um sistema de "
+"arquivos como a partição `/boot` e o espaço `swap`. Não pode ser usado para "
+"criar partições, volumes físicos ou lógicos de LVM ou membros RAID."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:688
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:823
 #, no-wrap
 msgid "[option]#--resize#"
-msgstr ""
+msgstr "[option]#--resize#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:689
@@ -2324,6 +2751,8 @@ msgid ""
 "Resize an existing logical volume. If you use this option, you must also "
 "specify [option]#--useexisting# and [option]#--size#."
 msgstr ""
+"Redimensiona um volume lógico existente. Se você usar esta opção, você "
+"também deve especificar [option]#--useexisting# e [option]#--size#."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:691
@@ -2335,6 +2764,12 @@ msgid ""
 "the installation and prompt you to provide a passphrase if no default is "
 "set."
 msgstr ""
+"Especifica que este volume lógico deve ser criptografado, usando a senha "
+"fornecida na opção [option]#--passphrase=#. Se você não especificar uma "
+"senha, o programa de instalação usará a senha padrão para todo o sistema "
+"definida com o comando [command]#autopart --passphrase#, ou interromperá a "
+"instalação e solicitará que você forneça uma senha se nenhum padrão for "
+"definido."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:693
@@ -2343,6 +2778,9 @@ msgid ""
 "must use this option together with the [option]#--encrypted# option. This "
 "option has no effect by itself."
 msgstr ""
+"Especifica a frase secreta a ser usada ao criptografar este volume lógico. "
+"Você deve usar esta opção junto com a opção [option]#--encrypted#. Esta "
+"opção não tem efeito por si só."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:697
@@ -2353,6 +2791,11 @@ msgid ""
 "encrypted volume. This option is only meaningful if [option]#--encrypted# is "
 "specified."
 msgstr ""
+"Armazena as chaves de criptografia de dados de todos os volumes "
+"criptografados como arquivos em `/root`, criptografados usando o certificado "
+"X.509 da URL especificada com _URL_do_certificado_X.509_. As chaves são "
+"armazenadas como um arquivo separado para cada volume criptografado. Esta "
+"opção só é significativa se [option]#--encrypted# for especificado."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:699
@@ -2362,56 +2805,62 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Adiciona uma senha gerada aleatoriamente a cada volume criptografado. "
+"Armazena essas senhas em arquivos separados em `/root`, criptografados "
+"usando o certificado X.509 especificado com [option]#--escrowcert#. Esta "
+"opção só é significativa se [option]#--escrowcert# for especificado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:700
 #, no-wrap
 msgid "[option]#--thinpool#"
-msgstr ""
+msgstr "[option]#--thinpool#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:701
 msgid "Creates a thin pool logical volume. (Use a mount point of `none`)"
 msgstr ""
+"Cria um volume lógico de thin-pool. (Use um ponto de montagem de `none`)"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:702
 #, no-wrap
 msgid "[option]#--metadatasize=#"
-msgstr ""
+msgstr "[option]#--metadatasize=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:703
 msgid "Metadata area size (in MiB) for a new thin pool device."
 msgstr ""
+"Tamanho da área de metadados (em MiB) para um novo dispositivo de thin pool."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:704
 #, no-wrap
 msgid "[option]#--chunksize=#"
-msgstr ""
+msgstr "[option]#--chunksize=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:705
 msgid "Chunk size (in KiB) for a new thin pool device."
-msgstr ""
+msgstr "Tamanho do bloco (em KiB) para um novo dispositivo de thin pool."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:706
 #, no-wrap
 msgid "[option]#--thin#"
-msgstr ""
+msgstr "[option]#--thin#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:707
 msgid "Create a thin logical volume. (Requires use of [option]#--poolname#)"
-msgstr ""
+msgstr "Cria um volume lógico thing. (Requer o uso de [option]#--poolname#)"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:708
 #, no-wrap
 msgid "[option]#--poolname=#"
-msgstr ""
+msgstr "[option]#--poolname=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:709
@@ -2419,12 +2868,14 @@ msgid ""
 "Specify the name of the thin pool in which to create a thin logical "
 "volume. Requires the [option]#--thin# option."
 msgstr ""
+"Especifica o nome do thin pool no qual criar um volume lógico thin. Requer a "
+"opção [option]#--thin#."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:710
 #, no-wrap
 msgid "[option]#--profile=#"
-msgstr ""
+msgstr "[option]#--profile=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:711
@@ -2435,12 +2886,17 @@ msgid ""
 "`thin-performance` and are defined in the `/etc/lvm/profile` directory. See "
 "the `lvm(8)` man page for additional information."
 msgstr ""
+"Especifica o nome do perfil de configuração a ser usado com volumes lógicos "
+"thin. Se usado, o nome também será incluído nos metadados para o volume "
+"lógico fornecido. Por padrão, os perfis disponíveis são `default` e `thin-"
+"performance` e são definidos no diretório `/etc/lvm/profile`. Consulte a "
+"página man `lvm(8)` para obter informações adicionais."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:712
 #, no-wrap
 msgid "[option]#--cachepvs=#"
-msgstr ""
+msgstr "[option]#--cachepvs=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:713
@@ -2448,12 +2904,14 @@ msgid ""
 "A comma-separated list of (fast) physical volumes which should be used for "
 "LVM cache."
 msgstr ""
+"Uma lista separada por vírgulas de volumes físicos (rápidos) que devem ser "
+"usados para o cache LVM."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:714
 #, no-wrap
 msgid "[option]#--cachesize=#"
-msgstr ""
+msgstr "[option]#--cachesize=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:715
@@ -2461,17 +2919,19 @@ msgid ""
 "Requested size of cache attached to the logical volume, in MiB. (Requires "
 "the [option]#--cachepvs=# option.)"
 msgstr ""
+"Tamanho solicitado de cache anexado ao volume lógico, em MiB. (Requer a "
+"opção [option]#--cachepvs=#.)"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:716
 #, no-wrap
 msgid "[option]#--cachemode=#"
-msgstr ""
+msgstr "[option]#--cachemode=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:717
 msgid "Mode to be used for LVM cache (either `writeback` or `writethrough`)."
-msgstr ""
+msgstr "Modo a ser usado para cache LVM (`writeback` ou `writethrough`)."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:722
@@ -2480,6 +2940,9 @@ msgid ""
 "[option]#--cachemode=# options listed above are used to configure LVM "
 "caching. For more information, see the `lvmcache(7)` man page."
 msgstr ""
+"As opções [option]#--cachepvs=#, [option]#--cachesize=# e "
+"[option]#--cachemode=# listadas acima são usadas para configurar cache de "
+"LVM. Para mais informações, veja a áginas man `lvmcache(7)`."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:740
@@ -2520,6 +2983,8 @@ msgid ""
 "xref:sect-kickstart-example-advanced-partitioning[Advanced Partitioning "
 "Example]."
 msgstr ""
+"Para um exemplo detalhado de [command]#part# em ação, veja xref:sect-"
+"kickstart-example-advanced-partitioning[Exemplo avançado de particionamento]."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:761
@@ -2907,6 +3372,8 @@ msgid ""
 "xref:sect-kickstart-example-advanced-partitioning[Advanced Partitioning "
 "Example]."
 msgstr ""
+"Para um exemplo detalhado de [command]#raid# em ação, veja xref:sect-"
+"kickstart-example-advanced-partitioning[Exemplo avançado de particionamento]."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:941
@@ -2924,7 +3391,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1748
 #, no-wrap
 msgid "[option]#--level=#"
-msgstr ""
+msgstr "[option]#--level=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:943
@@ -3014,6 +3481,9 @@ msgid ""
 "[command]#part raid.02 --size=6000 --ondisk=sdb#\n"
 "[command]#part raid.03 --size=6000 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part raid.01 --size=6000 --ondisk=sda#\n"
+"[command]#part raid.02 --size=6000 --ondisk=sdb#\n"
+"[command]#part raid.03 --size=6000 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1006
@@ -3121,6 +3591,9 @@ msgid ""
 "xref:sect-kickstart-example-advanced-partitioning[Advanced Partitioning "
 "Example]."
 msgstr ""
+"Para um exemplo detalhado de particionamento incluindo [command]#logvol#, "
+"veja xref:sect-kickstart-example-advanced-partitioning[Exemplo avançado de "
+"particionamento]."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1059
@@ -3292,7 +3765,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1119
 #, no-wrap
 msgid "Network Configuration"
-msgstr ""
+msgstr "Configuração de rede"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1122
@@ -3342,7 +3815,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1136
 msgid "Disable the firewall."
-msgstr ""
+msgstr "Desabilitar o firewall."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1137
@@ -3715,7 +4188,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1263
 #, no-wrap
 msgid "[option]#--ip=#"
-msgstr ""
+msgstr "[option]#--ip=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1264
@@ -3792,7 +4265,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1280
 #, no-wrap
 msgid "[option]#--nodns#"
-msgstr ""
+msgstr "[option]#--nodns#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1281
@@ -3814,7 +4287,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1284
 #, no-wrap
 msgid "[option]#--hostname=#"
-msgstr ""
+msgstr "[option]#--hostname=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1285
@@ -3910,7 +4383,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1300
 #, no-wrap
 msgid "[option]#--noipv4#"
-msgstr ""
+msgstr "[option]#--noipv4#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1301
@@ -3921,7 +4394,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1302
 #, no-wrap
 msgid "[option]#--noipv6#"
-msgstr ""
+msgstr "[option]#--noipv6#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1303
@@ -4175,7 +4648,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1379
 #, no-wrap
 msgid "keyboard (optional) - Configure Keyboard Layouts"
-msgstr ""
+msgstr "keyboard (opcional) - Configurar layouts de teclado"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1382
@@ -4265,7 +4738,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1405
 #, no-wrap
 msgid "lang (optional) - Configure Language During Installation"
-msgstr ""
+msgstr "lang (opcional) - Configurar idioma durante a instalação"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1408
@@ -4371,7 +4844,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1448
 #, no-wrap
 msgid "[option]#--disabled=#"
-msgstr ""
+msgstr "[option]#--disabled=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1449
@@ -4382,7 +4855,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1450
 #, no-wrap
 msgid "[option]#--enabled=#"
-msgstr ""
+msgstr "[option]#--enabled=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1451
@@ -4458,7 +4931,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1478
 #, no-wrap
 msgid "[option]#--nontp#"
-msgstr ""
+msgstr "[option]#--nontp#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1479
@@ -4828,7 +5301,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1590
 #, no-wrap
 msgid "[option]#--no-password#"
-msgstr ""
+msgstr "[option]#--no-password#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1591
@@ -5049,7 +5522,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1650
 #, no-wrap
 msgid "[option]#--username=#"
-msgstr ""
+msgstr "[option]#--username=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1651
@@ -5154,7 +5627,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1687
 #, no-wrap
 msgid "[option]#--uid=#"
-msgstr ""
+msgstr "[option]#--uid=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1688
@@ -5294,7 +5767,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1835
 #, no-wrap
 msgid "[option]#--host=#"
-msgstr ""
+msgstr "[option]#--host=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1745
@@ -5359,7 +5832,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1763
 #, no-wrap
 msgid "sshpw (optional) - Restrict ssh Access During Installation"
-msgstr ""
+msgstr "sshpw (opcional) - Restringir o acesso ssh durante a instalação"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1766
@@ -5407,7 +5880,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1791
 #, no-wrap
 msgid "[option]#--username#"
-msgstr ""
+msgstr "[option]#--username#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1803
@@ -5501,7 +5974,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1842
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "Após a instalação"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1845
@@ -5514,7 +5987,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1847
 #, no-wrap
 msgid "%addon com_redhat_kdump (optional) - Configure kdump"
-msgstr ""
+msgstr "%addon com_redhat_kdump (opcional) - Configurar kdump"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1850
@@ -5574,7 +6047,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1866
 #, no-wrap
 msgid "[option]#--disable#"
-msgstr ""
+msgstr "[option]#--disable#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1867
@@ -5954,7 +6427,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1983
 #, no-wrap
 msgid "%packages (required) - Package Selection"
-msgstr ""
+msgstr "%packages (obrigatório) - Seleção de pacotes"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1986
@@ -6186,7 +6659,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2083
 #, no-wrap
 msgid "[option]#--nocore#"
-msgstr ""
+msgstr "[option]#--nocore#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2084
@@ -6282,7 +6755,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2108
 #, no-wrap
 msgid "[option]#--nodefaults#"
-msgstr ""
+msgstr "[option]#--nodefaults#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2109
@@ -6315,7 +6788,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2115
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr ""
+msgstr "%pre (opcional) - Script de pré-instalação"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2118
@@ -6405,7 +6878,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2203
 #, no-wrap
 msgid "[option]#--log=#"
-msgstr ""
+msgstr "[option]#--log=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2146
@@ -6429,7 +6902,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2155
 #, no-wrap
 msgid "%post (optional) - Post-installation Script"
-msgstr ""
+msgstr "%post (opcional) - Script de pós-instalação"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2158
@@ -6563,6 +7036,8 @@ msgid ""
 "For an example of a post-installation script, see "
 "xref:sect-kickstart-example-post-script[Example Post-installation Script]."
 msgstr ""
+"Para um exemplo de script de pós-instalação, veja xref:sect-kickstart-"
+"example-post-script[Exemplo de script pós-instalação]."
 
 #. type: Title ==
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2220
@@ -6575,7 +7050,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2227
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "Exemplo avançado de particionamento"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2226
@@ -6760,7 +7235,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2333
 #, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
-msgstr ""
+msgstr "[command]#%include /tmp/part-include#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2336
@@ -6771,7 +7246,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2340
 #, no-wrap
 msgid "Example Post-installation Script"
-msgstr ""
+msgstr "Exemplo de script pós-instalação"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2343
@@ -6802,6 +7277,11 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
+"# Monta um compartilhamento NFS\n"
+"mkdir /mnt/temp\n"
+"mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
+"openvt -s -w -- /mnt/temp/runme\n"
+"umount /mnt/temp\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2361
@@ -6810,6 +7290,8 @@ msgid ""
 "# End of the %post section\n"
 "%end\n"
 msgstr ""
+"# Fim da seção %post\n"
+"%end\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2365

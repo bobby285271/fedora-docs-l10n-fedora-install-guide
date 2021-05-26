@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-05-25 12:17+0000\n"
+"PO-Revision-Date: 2021-05-26 13:03+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/f34pagesadvancedboot_options/"
@@ -38,6 +38,16 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server])."
 msgstr ""
+"O instalador do [application]*Anaconda* inclui uma gama de opções de "
+"inicialização para administradores, que modificam o comportamento padrão do "
+"programa de instalação habilitando ou desabilitando certas funções. Para "
+"usar uma ou mais opções de inicialização, você deve inicializar a partir da "
+"mídia de instalação e anexar essas opções no menu de inicialização (consulte "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[O menu de "
+"inicialização]) ou deve adicioná-los em seu arquivo de configuração do "
+"servidor PXE se você estiver inicializando de uma rede (consulte xref:"
+"advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Configurando "
+"um servidor de instalação])."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:10
@@ -106,6 +116,10 @@ msgid ""
 "with Fedora 34, the installer will ignore options that do not use it (for "
 "example, `stage2=` instead of `inst.stage2=`)."
 msgstr ""
+"As opções de inicialização específicas para o programa de instalação sempre "
+"começam com `inst.` neste guia. Este prefixo era opcional em lançamentos "
+"anteriores, mas a partir do Fedora 34, o instalador vai ignorar opções que "
+"não usam-na (por exemplo, `stage2=` em vez de `inst.stage2=`)."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:27
@@ -128,6 +142,18 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server] if you are booting from a server."
 msgstr ""
+"A maneira exata de especificar opções de inicialização personalizadas difere "
+"com base na arquitetura do seu sistema, firmware e o método que você usa "
+"para inicializar a instalação. Se estiver inicializando a partir da mídia "
+"local, você pode especificar opções no menu de inicialização, antes de "
+"iniciar a instalação; se estiver inicializando de uma rede usando um "
+"servidor PXE, você deve adicionar opções de inicialização ao arquivo de "
+"configuração do carregador de inicialização antes de inicializar o sistema "
+"de instalação. Para obter instruções específicas, consulte xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[O menu de inicialização] se "
+"você estiver inicializando a partir da mídia local e xref:advanced/"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Configurando um "
+"servidor de instalação] se estiver inicializando a partir de um servidor."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:32
@@ -315,6 +341,13 @@ msgid ""
 "not available, [application]*Anaconda* will try to load the image from "
 "`LiveOS/squashfs.img`."
 msgstr ""
+"Especifica a localização da imagem de tempo de execução do programa de "
+"instalação a ser carregada. A sintaxe é a mesma de xref:tabl-boot-options-"
+"sources[Fontes de instalação]. Esta opção espera um caminho para um "
+"diretório contendo um arquivo `.treeinfo` válido; a localização da imagem de "
+"tempo de execução será lida a partir deste arquivo, se encontrada. Se um "
+"arquivo `.treeinfo` não estiver disponível, o [application]*Anaconda* "
+"tentará carregar a imagem de `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:88
@@ -335,7 +368,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:91
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:92
@@ -345,6 +378,10 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, a imagem do estágio 2 será buscada nos "
+"locais HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst."
+"stage2=# sequencialmente na ordem em que são especificadas, até que a imagem "
+"seja buscada com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:93
@@ -362,6 +399,12 @@ msgid ""
 "the [option]#inst.dd=cdrom# option, the device name must always be "
 "specified. For example:"
 msgstr ""
+"Se você precisar realizar uma atualização de driver durante a instalação, "
+"use a opção [option]#inst.dd=#. Ela pode ser usada várias vezes. A "
+"localização de um pacote RPM de driver pode ser especificada usando qualquer "
+"um dos formatos descritos em xref:tabl-boot-options-sources[Fontes de "
+"instalação]. Com exceção da opção [option]#inst.dd=cdrom#, o nome do "
+"dispositivo deve sempre ser especificado. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:98
@@ -464,6 +507,10 @@ msgid ""
 "[option]#inst.repo=#. See xref:tabl-boot-options-sources[Installation "
 "Sources] for valid formats."
 msgstr ""
+"Fornece a localização de um arquivo Kickstart a ser usado para automatizar a "
+"instalação. Os locais podem ser especificados usando qualquer um dos "
+"formatos válidos para [option]#inst.repo=#. Veja xref:tabl-boot-options-"
+"sources[Fontes de instalação] para formatos válidos."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:121
@@ -523,7 +570,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:138
 #, no-wrap
 msgid "[option]#inst.ks.all=#"
-msgstr ""
+msgstr "[option]#inst.ks.all=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:139
@@ -533,6 +580,10 @@ msgid ""
 "sequentially in the order they are specified, until the file is successfully "
 "fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, o arquivo Kickstart será obtido dos locais "
+"HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst.ks=# "
+"sequencialmente na ordem em que são especificados, até que o arquivo seja "
+"obtido com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:140
@@ -660,6 +711,13 @@ msgid ""
 "[package]*system-config-language* package is installed, a list of valid "
 "values can also be find in `/usr/share/system-config-language/locale-list`."
 msgstr ""
+"Define o idioma a ser usado durante a instalação. Os códigos de idioma são "
+"iguais aos usados no comando [command]#lang# do Kickstart, conforme descrito "
+"em xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-comandos-"
+"lang[lang (opcional) - Configurar idioma durante a instalação]. Em sistemas "
+"onde o pacote [package]*system-config-language* está instalado, uma lista de "
+"valores válidos também pode ser encontrada em `/usr/share/"
+"system-config-language/locale-list`."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:168
@@ -760,6 +818,11 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-keyboard[keyboard "
 "(optional) - Configure Keyboard Layouts]."
 msgstr ""
+"Especifica o layout do teclado a ser usado pelo programa de instalação. Os "
+"códigos de layout são iguais aos usados no comando [command]#keyboard# do "
+"Kickstart, conforme descrito em xref:appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-commands-keyboard[keyboard (opcional) - Configurar "
+"layouts de teclado]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:188
@@ -777,6 +840,12 @@ msgid ""
 "as described in xref:sect-boot-options-vnc[Enabling Remote Access Using "
 "VNC]."
 msgstr ""
+"Força o programa de instalação a ser executado no modo texto em vez do modo "
+"gráfico. A interface de usuário de texto é limitada, por exemplo, não "
+"permite que você modifique o layout da partição ou configure LVM. Ao "
+"instalar um sistema em uma máquina com recursos gráficos limitados, é "
+"recomendado usar o VNC conforme descrito em xref:sect-boot-options-vnc["
+"Habilitando acesso remoto usando VNC]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:190
@@ -865,7 +934,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:200
 #, no-wrap
 msgid "[option]#inst.xtimeout=#"
-msgstr ""
+msgstr "[option]#inst.xtimeout=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:201
@@ -873,6 +942,8 @@ msgid ""
 "Specifies a timeout period (in seconds) the installer will wait before "
 "starting the [application]*X* server."
 msgstr ""
+"Especifica um período de tempo limite (em segundos) que o instalador "
+"aguardará antes de iniciar o servidor [application]*X*."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:202
@@ -923,6 +994,12 @@ msgid ""
 "corresponding chapter in the [citetitle]_{PRODUCT} System Administrator's "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Inicia o serviço `sshd` durante a instalação, o que permite que você se "
+"conecte ao sistema durante a instalação usando `SSH` e monitore seu "
+"progresso. Para obter mais informações sobre o `SSH`, consulte a página man "
+"`ssh(1)` e o capítulo correspondente no [citetitle]_{PRODUCT} System "
+"Administrator's Guide_ (guia do administrador de sistema), disponível em "
+"link:++https://docs.fedoraproject.org/++[]."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:216
@@ -933,12 +1010,17 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
 "(optional) - Restrict ssh Access During Installation]."
 msgstr ""
+"Durante a instalação, a conta `root` não tem senha por padrão. Você pode "
+"definir uma senha root a ser usada durante a instalação com o comando "
+"[command]#sshpw# do Kickstart, conforme descrito em xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
+"(opcional) - Restringir o acesso ssh durante a instalação]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:219
 #, no-wrap
 msgid "[option]#inst.decorated=#"
-msgstr ""
+msgstr "[option]#inst.decorated=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:220
@@ -946,6 +1028,8 @@ msgid ""
 "Starting with Fedora 27, the graphical installer window has no "
 "decorations. Use this option to enable window decorations again."
 msgstr ""
+"A partir do Fedora 27, a janela do instalador gráfico não tem decorações. "
+"Use esta opção para habilitar as decorações das janelas novamente."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:222
@@ -962,6 +1046,12 @@ msgid ""
 "networking is also available in the [citetitle]_{PRODUCT} Networking Guide_, "
 "available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"A inicialização inicial da rede é feita pelo [application]*dracut*. Esta "
+"seção lista apenas algumas das opções mais comumente usadas; para uma lista "
+"completa, consulte a página man `dracut.cmdline(7)`. Informações adicionais "
+"sobre rede também estão disponíveis no [citetitle]_{PRODUCT} Networking "
+"Guide_ (guia de rede), disponível em link:++https://docs.fedoraproject.org/"
+"++[]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:226
@@ -1349,6 +1439,11 @@ msgid ""
 "32-bit AMD or Intel systems (marked as `i686`) will be automatically "
 "installed as well if available."
 msgstr ""
+"Normalmente, em um sistema AMD64 ou Intel{nbsp}64, apenas pacotes para esta "
+"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas ("
+"marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
+"pacotes para sistemas 32-bits AMD ou Intel (marcados como `i686`) também "
+"serão instalados automaticamente, se disponíveis."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:331
@@ -1411,6 +1506,12 @@ msgid ""
 "Partition Table (GPT)] for more general information about GPT, MBR and disk "
 "partitioning in general."
 msgstr ""
+"Consulte xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-recommended[Esquema de particionamento recomendado] para "
+"obter mais informações sobre GPT e MBR, e xref:appendixes/Disk_Partitions."
+"adoc#sect-disk-partitioning-guid-partition-table[Tabela de Partição GUID "
+"(GPT)] para mais informações gerais sobre GPT, MBR e particionamento de "
+"disco em geral."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:338
@@ -1537,6 +1638,15 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-kdump[%addon "
 "com_redhat_kdump (optional) - Configure kdump] Kickstart command."
 msgstr ""
+"Liga ou desliga o complemento de instalador [application]*Kdump* (o "
+"complemento está desativado por padrão). Se você usar [option]#inst."
+"kdump_addon=on#, uma nova tela, que permite configurar o mecanismo "
+"[application]*Kdump* de despejo de falha do kernel, aparecerá no menu "
+"principal da interface gráfica ou de texto (veja xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-kdump[Kdump]). "
+"Habilitar este complemento também é necessário para usar o comando Kickstart "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"kdump[%addon com_redhat_kdump (opcional) - Configurar kdump]."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:359
@@ -1552,6 +1662,9 @@ msgid ""
 "xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
 "VNC] for more details."
 msgstr ""
+"As seguintes opções são necessárias para configurar o [application]*Anaconda*"
+" para instalação gráfica remota. Consulte xref:advanced/VNC_Installations."
+"adoc#chap-vnc-installations[Instalando usando VNC] para obter mais detalhes."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:363
@@ -1672,6 +1785,12 @@ msgid ""
 "only a directory, the installation program will look for a file named "
 "`updates.img`."
 msgstr ""
+"Especifica a localização do arquivo `updates.img` a ser aplicado ao tempo de "
+"execução do programa de instalação. A sintaxe é a mesma da [option]#inst."
+"repo# opção – consulte xref:tabl-boot-options-sources[Fontes de instalação] "
+"para obter detalhes. Em todos os formatos, se você não especificar um nome "
+"de arquivo, mas apenas um diretório, o programa de instalação irá procurar "
+"por um arquivo chamado `updates.img`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:398
@@ -2176,6 +2295,10 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading[Upgrading "
 "Your Current System]."
 msgstr ""
+"As atualizações são feitas de maneira diferente nas versões atuais do "
+"{PRODUCT}. Para obter mais informações sobre como atualizar seu sistema, "
+"consulte xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading["
+"Atualizando seu sistema atual]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:490
@@ -2409,6 +2532,11 @@ msgid ""
 "located in `/usr/share/doc/memtest86+-_version_pass:attributes[{blank}]/` on "
 "{PRODUCT} systems with the [package]*memtest86+* package installed."
 msgstr ""
+"Para mais informações sobre o uso do [application]*Memtest86+*, veja o site "
+"oficial em link:++https://www.memtest.org/++[]. Um arquivo`README` também "
+"está localizado em `/usr/share/doc/"
+"memtest86+-_versão_pass:attributes[{blank}]/` em sistemas {PRODUCT} com o "
+"pacote [package]*memtest86+* instalado."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:544

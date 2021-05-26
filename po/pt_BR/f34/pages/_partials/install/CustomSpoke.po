@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-26 13:03+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10nfedora-install-guide/"
+"f34pages_partialsinstallcustomspoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:5
 #: ./pages/_partials/install/CustomSpoke.adoc:20
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "Particionamento manual"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:8
@@ -29,6 +32,9 @@ msgid ""
 "configuration for your {PRODUCT} system manually, giving you a greater "
 "control over your system's storage."
 msgstr ""
+"A tela `Particionamento manual` permite que você crie uma configuração de "
+"armazenamento para o seu sistema {PRODUCT} manualmente, dando a você um "
+"maior controle sobre o armazenamento do seu sistema."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:10
@@ -40,6 +46,13 @@ msgid ""
 "top of logical volumes, and the last step is usually assigning a mount point "
 "to each volume as needed."
 msgstr ""
+"Na maioria dos outros instaladores para Linux e outros sistemas "
+"operacionais, o particionamento de disco geralmente usa uma abordagem \"de "
+"baixo para cima\". Nesses instaladores, você primeiro cria dispositivos "
+"subjacentes, como volumes físicos LVM, em seguida, cria um layout como LVM "
+"sobre eles, cria sistemas de arquivos sobre volumes lógicos e a última etapa "
+"geralmente é atribuir um ponto de montagem para cada volume conforme "
+"necessário."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:12
@@ -50,6 +63,12 @@ msgid ""
 "where the volume group will reside) is performed automatically. You can then "
 "adjust the automatic settings as you require."
 msgstr ""
+"[application]*Anaconda* usa uma abordagem oposta. Primeiro, você cria todos "
+"os pontos de montagem separados de que precisa e tudo o que é necessário "
+"para criá-los (criando um grupo de volumes, volumes lógicos dentro dele e "
+"volumes físicos onde o grupo de volumes residirá) é executado "
+"automaticamente. Você pode então ajustar as configurações automáticas "
+"conforme necessário."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:17
@@ -60,18 +79,23 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Nenhuma mudança permanente será feita em seus discos durante o processo de "
+"particionamento real. A configuração que você selecionou só será gravada em "
+"seu sistema após você pressionar o botão `Iniciar a instalação` em xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Resumo da Instalação]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr ""
+msgstr "A tela Particionamento manual. Neste ponto"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/CustomSpoke.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:25
@@ -84,6 +108,13 @@ msgid ""
 "partitions, then a message informing you that no mount points currently "
 "exist will appear."
 msgstr ""
+"Quando você abre a tela `Particionamento manual` pela primeira vez, a coluna "
+"do lado esquerdo exibirá todas as partições existentes anteriormente em "
+"todas as unidades que você selecionou como alvos de instalação em xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Destino da instalação]. Se nenhuma das unidades selecionadas "
+"contiver partições existentes, será exibida uma mensagem informando que "
+"nenhum ponto de montagem existe no momento."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:27
@@ -97,6 +128,14 @@ msgid ""
 "partition/volume sizes are determined automatically based on the total "
 "amount of available space."
 msgstr ""
+"Aqui, você pode escolher um esquema de particionamento como `LVM` ou` BTRFS` "
+"e clicar em `Clicar aqui para criá-los automaticamente` para solicitar ao "
+"instalador que crie um layout de particionamento básico; este layout segue "
+"as diretrizes descritas em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Esquema de particionamento "
+"recomendado]. O layout criado é um layout básico onde os tamanhos de partiçã"
+"o/volume são determinados automaticamente com base na quantidade total de "
+"espaço disponível."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:29
@@ -111,6 +150,16 @@ msgid ""
 "be created as a logical volume, and a new volume group will be created for "
 "it unless one already exists."
 msgstr ""
+"Clique no botão `+` para adicionar um ponto de montagem. Na janela de "
+"diálogo que se abre, escolha um ponto de montagem, como `/` ou `/home`, e a "
+"capacidade desejada para o ponto de montagem (como `10 GB` ou `500 MB`). "
+"Observe que especificar o ponto de montagem é obrigatório, mas você não "
+"precisa especificar a capacidade neste ponto; isso é útil ao adicionar um "
+"ponto de montagem que você deseja tornar maior do que o espaço disponível "
+"atual permite. Em seguida, clique em `Adicionar um ponto de montagem` para "
+"adicioná-lo à lista usando as configurações padrão, o que significa que ele "
+"será criado como um volume lógico e um novo grupo de volume será criado para "
+"ele, a menos que já exista um."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:31
@@ -123,6 +172,14 @@ msgid ""
 "you can now create another mount point, or select a different existing one "
 "and adjust its settings as well."
 msgstr ""
+"Em seguida, selecione o ponto de montagem recém-criado na lista do lado "
+"esquerdo. Um conjunto de controles será exibido no lado direito da tela, "
+"permitindo que você altere seu ponto de montagem, o dispositivo no qual ele "
+"residirá fisicamente, sua capacidade, sistema de arquivos, etc. Quando você "
+"alterar qualquer configuração, pressione `Atualizar configurações` no canto "
+"inferior direito. Isso salvará a configuração ajustada; agora você pode "
+"criar outro ponto de montagem ou selecionar um ponto existente diferente e "
+"ajustar suas configurações também."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:36
@@ -131,6 +188,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types]."
 msgstr ""
+"Para obter uma descrição dos tipos de dispositivos e sistemas de arquivos "
+"disponíveis, consulte xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Tipos de dispositivos, "
+"sistemas de arquivos e RAID]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:40
@@ -138,6 +199,8 @@ msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
 msgstr ""
+"Para remover um ponto de montagem, selecione-o na lista e pressione o botão "
+"`-` abaixo."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:42
@@ -151,6 +214,15 @@ msgid ""
 "on Partitions] for a list of requirements and tips for partitioning your "
 "disks for {PRODUCT}."
 msgstr ""
+"As etapas exatas para configurar seu armazenamento dependem de suas "
+"necessidades específicas e da configuração do sistema. Os procedimentos para "
+"a criação de layouts específicos são descritos mais adiante neste capítulo. "
+"Antes de começar, você também deve revisar o xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[Esquema de particionamento recomendado] e xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"advice[Conselho sobre partições] para obter uma lista de requisitos e dicas "
+"para particionar seus discos para o {PRODUCT}."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:44
@@ -159,6 +231,9 @@ msgid ""
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
+"Embaixo da lista de pontos de montagem existentes, há dois campos, mostrando "
+"quanto espaço livre resta em seus dispositivos de armazenamento e quanto "
+"espaço total eles possuem."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:46
@@ -171,6 +246,14 @@ msgid ""
 "Destination]. If you want to add or remove any storage devices from your "
 "configuration, return to that screen and change your selection."
 msgstr ""
+"Clique em `pass:attributes[{blank}]_X_ dispositivos de armazenamento "
+"selecionados` para ver um resumo dos dispositivos de armazenamento "
+"selecionados atualmente; isso pode ajudá-lo com orientação em esquemas de "
+"armazenamento mais complicados. Os dispositivos exibidos aqui são aqueles "
+"que você selecionou em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning[Destino da instalação]. Se você deseja "
+"adicionar ou remover qualquer dispositivo de armazenamento de sua "
+"configuração, volte para aquela tela e mude sua seleção."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:48
@@ -183,6 +266,14 @@ msgid ""
 "discarding only the changes you have made recently, not all changes to the "
 "storage configuration since you booted the installer."
 msgstr ""
+"Você pode pressionar o botão `Redefinir tudo` no canto inferior direito a "
+"qualquer momento para redefinir a configuração de armazenamento para o "
+"estado em que estava quando você abriu a tela `Particionamento manual` pela "
+"última vez. Isso significa que se você modificar a configuração de "
+"armazenamento, sair da tela e voltar, o botão Redefinir irá redefinir a "
+"configuração de volta ao estado já modificado, descartando apenas as "
+"alterações feitas recentemente, nem todas as alterações na configuração de "
+"armazenamento desde você inicializou o instalador."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:50
@@ -197,24 +288,34 @@ msgid ""
 "Destination]; all detected disks including any new ones will be displayed in "
 "the `Local Standard Disks` section."
 msgstr ""
+"Para descartar todas as alterações e também detectar quaisquer novas "
+"unidades que não tenham sido detectadas quando o instalador foi iniciado ("
+"geralmente quando você anexou uma nova unidade depois de iniciar), pressione "
+"o botão marcado por uma seta circular no conjunto de controles abaixo da "
+"lista de pontos de montagem no lado esquerdo da tela. Na janela de diálogo "
+"que se abre, pressione `Nova varredura de discos` e aguarde até que o "
+"processo de digitalização seja concluído. Então, pressione `OK` para "
+"retornar ao xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-storage-partitioning[Destino da instalação]; todos os discos detectados, "
+"incluindo os novos, serão exibidos na seção `Discos padrão locais`."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:51
 #, no-wrap
 msgid "Rescan Disks"
-msgstr ""
+msgstr "Nova varredura de discos"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr ""
+msgstr "A caixa de diálogo Nova varredura de discos"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:56
@@ -228,6 +329,14 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Depois de terminar de configurar o armazenamento do sistema, pressione "
+"`Pronto` no canto superior esquerdo para salvar a configuração e retornar à "
+"tela `Resumo da Instalação`. Neste ponto, o instalador verificará se sua "
+"configuração de armazenamento é válida. Se um erro for detectado, uma "
+"mensagem será exibida na parte inferior da tela. Clique na mensagem para "
+"abrir uma janela de diálogo explicando que tipo de erro foi detectado (por "
+"exemplo, você colocou `/boot` em um subvolume Btrfs ou não criou uma "
+"partição de inicialização do BIOS quando seu sistema requer uma)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:58
@@ -238,6 +347,11 @@ msgid ""
 "Summary` anyway, but a storage configuration error will prevent you from "
 "starting the actual installation process."
 msgstr ""
+"Se tal mensagem for exibida, volte e corrija quaisquer problemas encontrados "
+"pelo instalador; caso contrário, você não poderá prosseguir com a "
+"instalação. Você também pode pressionar `Pronto` novamente para retornar ao `"
+"Resumo da Instalação` de qualquer maneira, mas um erro de configuração de "
+"armazenamento o impedirá de iniciar o processo de instalação real."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:60
@@ -250,3 +364,10 @@ msgid ""
 "Summary], or click `Cancel & Return to Custom Partitioning` if you want to "
 "make any more changes."
 msgstr ""
+"Se nenhuma mensagem de erro for exibida e se você fez alguma alteração desde "
+"a última vez que visitou esta tela, uma caixa de diálogo de resumo "
+"aparecerá, exibindo uma lista detalhada das alterações feitas. Revise a "
+"lista e clique em `Aceitar mudanças` para prosseguir com xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary["
+"Resumo da Instalação] ou clique em `Cancelar e retornar para o "
+"particionamento personalizado` se quiser fazer mais alterações."
