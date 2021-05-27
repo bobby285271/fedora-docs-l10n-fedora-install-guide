@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-27 16:03+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f32pages_partialsinstallcustomspoke_filesystems/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "Aygıt, Dosya Sistemi ve RAID Türleri"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -27,6 +32,9 @@ msgid ""
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
 msgstr ""
+"{PRODUCT}, birden çok aygıt türünü ve dosya sistemini desteklemektedir. "
+"Aşağıdaki listeler, kullanılabilir her aygıtın, dosya sisteminin ve RAID "
+"türünün kısa bir açıklamasını ve bunların kullanımıyla ilgili notları sunar."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -38,6 +46,12 @@ msgid ""
 "the right side of the screen. Then, click `Update Settings` and repeat this "
 "process for all mount points you want to modify."
 msgstr ""
+"Bir bölümün veya mantıksal birimin aygıt türünü veya dosya sistemini seçmek "
+"için, onu xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[Elle Bölümlendirme] bölümündeki listeden seçin ve ekranın sağ "
+"tarafındaki ilgili açılır menülerinden bir `Aygıt Türü` ve bir `Dosya "
+"Sistemi` seçin. Ardından, `Ayarları Güncelle` düğmesine tıklayın ve "
+"değiştirmek istediğiniz tüm bağlama noktaları için bu işlemi tekrarlayın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -55,12 +69,24 @@ msgid ""
 "installation-gui-manual-partitioning-swraid[Creating Software RAID] as "
 "needed."
 msgstr ""
+"Yazılımsal RAID yapılandırmak için, kurulum hedefleri olarak seçilmiş "
+"yeterli fiziksel sabit diskinizin olduğundan emin olun (her RAID türü için "
+"gereken ayrı disk sayısı açıklamasında belirtilmiştir). Ardından, bir Btrfs "
+"birimi veya LVM birim grubu oluştururken veya değiştirirken bir RAID düzeyi "
+"seçin veya standart bölümlere sahip yazılımsal RAID oluşturmak için aygıt "
+"türü olarak `Yazılımsal RAID` seçin. Ayrıntılı talimatlar için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-btrfs[Btrfs Düzeni Oluşturma], xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-lvm[Mantıksal Birim Yönetimi ("
+"Logical Volume Management - LVM) Düzeni Oluşturma] ve "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-swraid[Yazılımsal RAID Oluşturma] bölümlerine bakın."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:13
 #, no-wrap
 msgid "Device Types"
-msgstr ""
+msgstr "Aygıt Türleri"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:16
@@ -72,6 +98,12 @@ msgid ""
 "adoc#appe-disk-partitions-overview[An Introduction to Disk Partitions] for "
 "additional information about the concepts behind physical partitions."
 msgstr ""
+"`Standart Bölüm` - Standart bir bölüm bir dosya sistemi veya takas alanı "
+"içerebilir. Standart bölümler en çok `/boot` ve BIOS Önyükleme ve EFI Sistem "
+"bölümleri için kullanılır. Diğer birçok kullanım için LVM mantıksal "
+"birimleri veya Btrfs alt birimleri tavsiye edilir. Fiziksel bölümlerin "
+"arkasındaki kavramlar hakkında ek bilgi için xref:appendixes/Disk_Partitions."
+"adoc#appe-disk-partitions-overview[Disk Bölümlerine Giriş] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:18
@@ -86,6 +118,16 @@ msgid ""
 "see xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding "
 "LVM] for some additional information about LVM in general."
 msgstr ""
+"`LVM` - `Aygıt Türü` olarak `LVM` seçilmesi, bir LVM mantıksal birimi ve onu "
+"içerecek bir birim grubu oluşturur (zaten bir tane varsa birim grubu "
+"oluşturulmaz, bu durumda yeni birim mevcut gruba atanır). LVM, fiziksel "
+"diskler kullanırken performansı artırabilir ve tek bir bağlama noktası için "
+"birden çok disk kullanmanıza izin verir. Mantıksal birim oluşturma hakkında "
+"bilgi için xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[Mantıksal Birim Yönetimi (Logical Volume Management - LVM) "
+"Düzeni Oluşturma] bölümüne bakın. Ayrıca genel olarak LVM hakkında bazı ek "
+"bilgiler için xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview["
+"LVM'yi Anlama] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:20
@@ -96,6 +138,11 @@ msgid ""
 "be expanded dynamically when needed for cost-effective allocation of storage "
 "space."
 msgstr ""
+"`LVM İnce Dağıtım` - İnce dağıtım kullanarak, uygulamalar tarafından ihtiyaç "
+"duyulduğunda herhangi bir sayıda aygıta tahsis edilebilen, ince havuz olarak "
+"bilinen bir boş depolama alanı havuzunu yönetebilirsiniz. İnce havuz, "
+"depolama alanının etkili bir şekilde tahsisi için gerektiğinde dinamik "
+"olarak genişletilebilir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:22
@@ -106,6 +153,11 @@ msgid ""
 "partitioning-swraid[Creating Software RAID] for instructions on creating "
 "software RAID."
 msgstr ""
+"`RAID` - İki veya daha fazla yazılımsal RAID bölümü oluşturmak, bir "
+"yazılımsal RAID aygıtı oluşturmanıza olanak sağlar. Sistemdeki her diske bir "
+"RAID bölümü atanır. Yazılımsal RAID oluşturmayla ilgili talimatlar için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-swraid[Yazılımsal RAID Oluşturma] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:24
@@ -117,12 +169,18 @@ msgid ""
 "btrfs[Creating a Btrfs Layout] for more information about creating Btrfs "
 "volumes."
 msgstr ""
+"`BTRFS` - Btrfs, çeşitli aygıt benzeri özelliklere sahip bir dosya "
+"sistemidir. ext2, ext3 ve ext4 dosya sistemlerinden daha fazla dosyayı, daha "
+"büyük dosyaları ve daha büyük birimleri adresleme ve yönetme yeteneğine "
+"sahiptir. Btrfs birimleri oluşturma hakkında daha fazla bilgi için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-btrfs[Btrfs Düzeni Oluşturma] bölümüne bakın."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:25
 #, no-wrap
 msgid "File Systems"
-msgstr ""
+msgstr "Dosya Sistemleri"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:28
@@ -135,6 +193,13 @@ msgid ""
 "file system used by {PRODUCT} Workstation and Cloud. The maximum supported "
 "size of a single ext4 file system is 50 TB."
 msgstr ""
+"`ext4` - ext4 dosya sistemi ext3 dosya sistemini temel alır ve daha büyük "
+"dosya sistemleri ve daha büyük dosyalar için desteği, daha hızlı ve daha "
+"verimli disk alanı tahsisini, bir dizin içindeki alt dizinlerin sayısında "
+"sınırlama olmamasını, daha hızlı dosya sistemi denetimini ve daha sağlam "
+"günlük tutmayı içeren bir dizi iyileştirme getirir. ext4, {PRODUCT} "
+"Workstation ve Cloud tarafından kullanılan öntanımlı ve tavsiye edilen dosya "
+"sistemidir. Tek bir ext4 dosya sisteminin desteklenen azami boyutu 50 TB'tır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:30
@@ -145,6 +210,11 @@ msgid ""
 "the file system for metadata consistency by running the [command]#fsck# "
 "utility every time a crash occurs."
 msgstr ""
+"`ext3` - ext3 dosya sistemi ext2 dosya sistemine dayanır ve bir önemli "
+"artısı vardır - günlük tutma. Her çökme oluştuğunda [command]#fsck# "
+"programını çalıştırarak dosya sistemini üst veri tutarlılığı açısından "
+"denetlemeye gerek olmadığından, günlük tutan bir dosya sistemi kullanmak bir "
+"çökme sonrasında dosya sistemini kurtarmak için harcanan zamanı azaltır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:32
@@ -153,6 +223,9 @@ msgid ""
 "regular files, directories, or symbolic links. It provides the ability to "
 "assign long file names, up to 255 characters."
 msgstr ""
+"`ext2` - Bir ext2 dosya sistemi normal dosyalar, dizinler veya sembolik "
+"bağlantılar dahil olmak üzere standart Unix dosya türlerini destekler. 255 "
+"karaktere kadar uzun dosya adları atama imkanı sağlar."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:34
@@ -164,6 +237,12 @@ msgid ""
 "manual-partitioning-recommended[Recommended Partitioning Scheme] for details "
 "such as the recommended size."
 msgstr ""
+"`swap` - Takas bölümleri sanal belleği desteklemek için kullanılır. Başka "
+"bir deyişle, sisteminizin işlediği verileri depolamak için yeterli RAM "
+"olmadığında veriler bir takas bölümüne yazılır. Her zaman bir takas bölümü "
+"oluşturulmalıdır; tavsiye edilen boyut gibi ayrıntılar için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:36
@@ -176,6 +255,14 @@ msgid ""
 "supported size of a single XFS file system is 500 TB. Starting with {PRODUCT}"
 "{nbsp}22, XFS is the default and recommended file system on {PRODUCT} Server."
 msgstr ""
+"`xfs` - XFS, 16 eksabayta (yaklaşık 16 milyon terabayt) kadar olan dosya "
+"sistemlerini, 8 eksabayta (yaklaşık 8 milyon terabayt) kadar olan dosyaları "
+"ve on milyonlarca girdi içeren dizin yapılarını destekleyen, oldukça iyi "
+"ölçeklenebilir, yüksek performanslı bir dosya sistemidir. XFS ayrıca, çökme "
+"durumunda daha hızlı kurtarmayı kolaylaştıran üst veri günlük kaydını "
+"destekler. Tek bir XFS dosya sisteminin desteklenen azami boyutu 500 TB'tır. "
+"{PRODUCT}{nbsp}22 ile başlayarak XFS, {PRODUCT} Server için öntanımlı ve "
+"tavsiye edilen dosya sistemidir."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:41
@@ -185,6 +272,11 @@ msgid ""
 "will need to adjust the sizes of your file systems often, using XFS is not "
 "recommended, as it makes administration substantially more time-consuming."
 msgstr ""
+"Bir XFS dosya sisteminin boyutunun şu anda dosya sistemini yok etmeden ve "
+"yeniden oluşturmadan azaltılamayacağını unutmayın. Dosya sistemlerinizin "
+"boyutlarını sık sık ayarlamanız gerekeceğini düşünüyorsanız, yönetimi önemli "
+"ölçüde daha fazla zaman alıcı hale getirdiğinden XFS kullanılması tavsiye "
+"edilmez."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:45
@@ -192,6 +284,8 @@ msgid ""
 "`vfat` - The VFAT file system is a Linux file system that is compatible with "
 "Microsoft Windows long file names on the FAT file system."
 msgstr ""
+"`vfat` - VFAT dosya sistemi, FAT dosya sisteminde Microsoft Windows uzun "
+"dosya adlarıyla uyumlu bir Linux dosya sistemidir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:47
@@ -202,6 +296,11 @@ msgid ""
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme] for details."
 msgstr ""
+"`BIOS Önyükleme` - BIOS sistemlerinde GUID bölümlendirme tablosu (GUID "
+"partition table - GPT) bulunan bir aygıttan ve BIOS uyumluluk modundaki UEFI "
+"sistemlerinde önyükleme yapmak için gereken çok küçük bir bölüm. Ayrıntılar "
+"için xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:49
@@ -211,12 +310,16 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme] for details."
 msgstr ""
+"`EFI Sistem Bölümü` - Bir UEFI sisteminde GUID bölümlendirme tablosu (GPT) "
+"olan bir aygıtı önyüklemek için gerekli küçük bir bölüm. Ayrıntılar için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:50
 #, no-wrap
 msgid "Software RAID Types"
-msgstr ""
+msgstr "Yazılımsal RAID Türleri"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:53
@@ -227,6 +330,12 @@ msgid ""
 "Level 0 RAIDs offer no redundancy and that the failure of one device in the "
 "array destroys data in the entire array. RAID 0 requires at least two disks."
 msgstr ""
+"`RAID0 (Performans)` - Verileri birden çok diske dağıtır. Seviye 0 RAID, "
+"standart bölümlere göre daha yüksek performans sunar ve birden çok diskin "
+"depolamasını tek bir büyük sanal aygıtta toplamak için kullanılabilir. "
+"Seviye 0 RAID'lerin yedeklilik sağlamadığını ve dizideki bir aygıtın "
+"arızalanmasının tüm dizideki verileri yok ettiğini unutmayın. RAID 0, en az "
+"iki disk gerektirir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:55
@@ -235,6 +344,9 @@ msgid ""
 "other disks. Additional devices in the array provide increasing levels of "
 "redundancy. RAID 1 requires at least two disks."
 msgstr ""
+"`RAID1 (Yedeklilik)` - Bir bölümdeki tüm verileri bir veya daha fazla başka "
+"diske yansıtır. Dizideki ek aygıtlar artan düzeylerde yedeklilik sağlar. "
+"RAID 1, en az iki disk gerektirir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:57
@@ -245,6 +357,12 @@ msgid ""
 "stored on one disk, access to this disk creates a \"bottleneck\" in the "
 "array's performance. Level 4 RAID requires at least three disks."
 msgstr ""
+"`RAID4 (Hata Denetimi)` - Verileri birden çok diske dağıtır ve eşlik "
+"bilgilerini depolamak için dizideki bir diski kullanır; bu, dizideki "
+"herhangi bir diskin arızalanması durumunda diziyi korur . Tüm eşlik "
+"bilgileri tek bir diskte depolandığından, bu diske erişim dizinin "
+"performansında bir \"darboğaz\" oluşturur. Seviye 4 RAID, en az üç disk "
+"gerektirir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:59
@@ -256,6 +374,11 @@ msgid ""
 "information is also distributed through the array. RAID 5 requires at least "
 "three disks."
 msgstr ""
+"`RAID5 (Dağıtılmış Hata Denetimi)` - Verileri ve eşlik bilgilerini birden "
+"çok diske dağıtır. Bu nedenle Seviye 5 RAID'ler, verileri birden çok diske "
+"dağıtmanın performans avantajlarını sunar, ancak seviye 4 RAID'lerin "
+"performans darboğazını yaşatmaz çünkü eşlik bilgileri de dizi üzerinde "
+"dağıtılır. RAID 5, en az üç disk gerektirir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:61
@@ -264,6 +387,9 @@ msgid ""
 "RAIDs, but instead of storing only one set of parity data, they store two "
 "sets. RAID 6 requires at least four disks."
 msgstr ""
+"`RAID6 (Yedekli Hata Denetimi)` - Seviye 6 RAID'ler seviye 5 RAID'lere "
+"benzer, ancak yalnızca bir eşlik verileri kümesi depolamak yerine iki tane "
+"depolar. RAID 6, en az dört disk gerektirir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:62
@@ -274,3 +400,8 @@ msgid ""
 "partitions consists of two mirrored pairs of striped partitions. RAID 10 "
 "requires at least four disks."
 msgstr ""
+"`RAID10 (Performans, Yedeklilik)` - Seviye 10 RAID'ler, iç içe geçmiş "
+"RAID'ler veya melez RAID'lerdir. Verilerin yansıtılmış disk kümelerine "
+"dağıtılmasıyla oluşturulurlar. Örneğin, dört RAID bölümünden oluşturulan bir "
+"seviye 10 RAID dizisi, iki tane yansıtılmış şeritlenen bölüm çiftinden "
+"oluşur. RAID 10, en az dört disk gerektirir."

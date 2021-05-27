@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-27 16:02+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f31pages_partialsinstallcustomspoke_partitioningadvice/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:5
 #, no-wrap
 msgid "Advice on Partitions"
-msgstr ""
+msgstr "Bölümlerle İlgili Tavsiyeler"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:8
@@ -27,6 +32,10 @@ msgid ""
 "how you plan to use the system being installed. However, the following tips "
 "may help you find the optimal layout for your needs:"
 msgstr ""
+"Her sistemi bölümlendirmenin en iyi bir yolu yoktur; en iyi kurulum, "
+"kurulmakta olan sistemi nasıl kullanmayı düşündüğünüze bağlıdır. Bununla "
+"birlikte, aşağıdaki ipuçları ihtiyaçlarınız için en uygun düzeni bulmanıza "
+"yardımcı olabilir:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:10
@@ -37,6 +46,10 @@ msgid ""
 "cases, you should at least encrypt the `/home` partition, which contains "
 "user data."
 msgstr ""
+"Hassas veriler içerebilecek tüm bölümleri ve birimleri şifrelemeyi düşünün. "
+"Şifreleme, fiziksel depolama aygıtına erişimleri olsa bile, yetkisiz "
+"kişilerin bölümlerdeki verilere erişmesini engeller. Çoğu durumda, en "
+"azından kullanıcı verilerini içeren `/home` bölümünü şifrelemelisiniz."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:12
@@ -49,6 +62,13 @@ msgid ""
 "unnecessary separate mount points will make storage administration more "
 "difficult."
 msgstr ""
+"Bazı durumlarda `/`, `/boot` ve `/home` dışındaki dizinler için ayrı bağlama "
+"noktaları oluşturmak yararlı olabilir; örneğin, [application]*MySQL* veri "
+"tabanı çalıştıran bir sunucuda `/var/lib/mysql` için ayrı bir bağlama "
+"noktasına sahip olmak, yeniden kurulum sırasında kurulumu tamamladıktan "
+"sonra yedekten geri yüklemek zorunda kalmadan veri tabanını korumanıza "
+"olanak tanır. Ancak, gereksiz ayrı bağlama noktalarına sahip olmak, depolama "
+"yönetimini daha zor hale getirecektir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14
@@ -58,6 +78,10 @@ msgid ""
 "always be on a physical partition (not on an LVM volume or a Btrfs "
 "subvolume), and `/usr` can not be on a Btrfs subvolume."
 msgstr ""
+"Hangi bölümlendirme düzenleri üzerinde bulunabilecekleriyle ilgili belirli "
+"dizinlere bazı özel kısıtlamalar uygulanır. Özellikle `/boot` dizini her "
+"zaman fiziksel bir bölümde olmalıdır (bir LVM biriminde veya bir Btrfs alt "
+"biriminde değil) ve `/usr` bir Btrfs alt biriminde olamaz."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:16
@@ -67,6 +91,10 @@ msgid ""
 "fhs-2.3.html++[] for information about various system directories and their "
 "contents."
 msgstr ""
+"Linux konusunda yeniyseniz, çeşitli sistem dizinleri ve içerikleri hakkında "
+"bilgi için link:++https://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3."
+"html++[] adresinde bulunan [citetitle]_Linux Dosya Sistemi Hiyerarşisi "
+"Standardını_ gözden geçirmeyi düşünün."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:18
@@ -76,6 +104,10 @@ msgid ""
 "suffice for most common uses; increase the size of this partition if you "
 "plan to keep many kernels installed at the same time."
 msgstr ""
+"Sisteminize kurulan her çekirdek, `/boot` bölümünde yaklaşık 20 MB "
+"gerektirir. `/boot` için 500 MB'lık öntanımlı bölüm boyutu en yaygın "
+"kullanımlar için yeterli olacaktır; aynı anda birçok çekirdeğin kurulu "
+"olmasını planlıyorsanız, bu bölümün boyutunu arttırın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:20
@@ -85,6 +117,11 @@ msgid ""
 "package manager to temporarily store downloaded package updates. Make sure "
 "that the partition or volume containing `/var` has at least 3 GB."
 msgstr ""
+"`/var` dizini, [application]*Apache* web sunucusu dahil olmak üzere bir dizi "
+"uygulamanın içeriklerini barındırır ve indirilen paket güncellemelerini "
+"geçici olarak depolamak için [application]*DNF* paket yöneticisi tarafından "
+"kullanılır. `/var` dizinini içeren bölümün veya birimin en az 3 GB "
+"olduğundan emin olun."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:22
@@ -95,6 +132,11 @@ msgid ""
 "root is on an SSD, consider creating a separate mount point for `/var` on a "
 "classic (platter) HDD."
 msgstr ""
+"`/var` dizininin içeriği genellikle çok sık değişir. Bu, kullanılamaz hale "
+"gelmeden önce daha az sayıda okuma/yazma döngüsüne sahip oldukları için eski "
+"katı hal sürücülerinde (solid state drive - SSD) sorunlara neden olabilir. "
+"Sistem kökünüz bir SSD üzerindeyse, bir sabit disk (HDD) üzerinde `/var` "
+"için ayrı bir bağlama noktası oluşturmayı düşünün."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:24
@@ -104,6 +146,9 @@ msgid ""
 "therefore be at least 5 GB for minimal installations, and at least 10 GB for "
 "installations with a graphical environment."
 msgstr ""
+"`/usr` dizini, normal bir {PRODUCT} kurulumdaki yazılımların çoğunu "
+"barındırır. Bu dizini içeren bölüm veya birim bu nedenle asgari kurulumlar "
+"için en az 5 GB ve grafiksel ortamlı kurulumlar için en az 10 GB olmalıdır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:26
@@ -115,6 +160,12 @@ msgid ""
 "either be unable to boot, or it may hang with a `Device is busy` error when "
 "powering off or rebooting."
 msgstr ""
+"`/usr` veya `/var`, kök birimin geri kalanından ayrı olarak "
+"bölümlendirilirse, bu dizinler önyükleme açısından önemli bileşenler "
+"içerdiğinden, önyükleme işlemi çok daha karmaşık hale gelir. Bu dizinlerin "
+"bir iSCSI sürücüsüne veya FCoE konumuna yerleştirilmesi gibi durumlarda, "
+"sistem ya önyükleme yapamayabilir ya da kapatırken veya yeniden başlatırken "
+"bir `Aygıt meşgul` hatasıyla kilitlenebilir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:28
@@ -123,6 +174,9 @@ msgid ""
 "them. For example, a separate partition for `/var/www` will work without "
 "issues."
 msgstr ""
+"Bu sınırlama yalnızca `/usr` veya `/var` için geçerlidir, bunların altındaki "
+"dizinlere uygulanmaz. Örneğin, `/var/www` için ayrı bir bölüm sorunsuz "
+"çalışacaktır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:30
@@ -133,6 +187,11 @@ msgid ""
 "select the `Thin provisioning` device type for the partition to have the "
 "unused space handled automatically by the volume."
 msgstr ""
+"Bir LVM birim grubunun bir kısmını ayrılmamış alan olarak bırakmayı düşünün. "
+"Bu ayrılmamış alan, gereksinimleriniz değişirse ancak diğer birimlerden "
+"verileri kaldırmak istemiyorsanız size esneklik sağlar. Kullanılmayan alanın "
+"birim tarafından otomatik olarak ele alınması için bölüm için \"İnce "
+"dağıtım\" aygıt türünü de seçebilirsiniz."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:32
@@ -143,6 +202,12 @@ msgid ""
 "Therefore, if you expect needing to manipulate your partitioning layout "
 "later, you should use the `ext4` file system instead."
 msgstr ""
+"Bir `XFS` dosya sisteminin boyutu küçültülemez - bu dosya sistemine sahip "
+"bir bölümü veya birimi küçültmeniz gerekiyorsa, verilerinizi yedeklemeli, "
+"dosya sistemini yok etmeli ve onun yerine yeni, daha küçük bir tane "
+"oluşturmalısınız. Bu nedenle, bölümlendirme düzeninizi daha sonra "
+"değiştirmeniz gerekeceğini düşünüyorsanız, onun yerine `ext4` dosya "
+"sistemini kullanmalısınız."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:34
@@ -153,6 +218,12 @@ msgid ""
 "and logical volume as you see fit - for example, you can easily expand your "
 "system's `/home` (or any other directory residing on a logical volume)."
 msgstr ""
+"Kurulumdan sonra daha fazla sabit disk ekleyerek depolama alanınızı "
+"genişletmeyi düşünüyorsanız Mantıksal Birim Yönetimi (LVM) kullanın. LVM "
+"ile, yeni diskler üzerinde fiziksel birimler oluşturabilir ve ardından "
+"bunları uygun gördüğünüz herhangi bir birim grubuna ve mantıksal birime "
+"atayabilirsiniz - örneğin, sisteminizin `/home` dizinini (veya bir mantıksal "
+"birim üzerinde bulunan herhangi bir dizini) kolayca genişletebilirsiniz."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:36
@@ -165,6 +236,14 @@ msgid ""
 "create a BIOS Boot or EFI System Partition if your system does *not* require "
 "one - in that case, they will be hidden from the menu."
 msgstr ""
+"Sisteminizin ürün yazılımına, önyükleme sürücüsü boyutuna ve önyükleme "
+"sürücüsü disk etiketine bağlı olarak bir BIOS Önyükleme bölümü veya bir EFI "
+"Sistem Bölümü oluşturmak gerekebilir. Bu bölümler hakkında bilgi için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne "
+"bakın. Grafiksel kurucunun, sisteminiz *gerektirmiyorsa* BIOS Önyükleme veya "
+"EFI Sistem Bölümü oluşturmanıza izin vermeyeceğini unutmayın - bu durumda, "
+"bunlar menüden gizlenecektir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:37
@@ -174,3 +253,7 @@ msgid ""
 "help you do this. If you prefer a command line tool, try [package]*system-"
 "storage-manager*."
 msgstr ""
+"Kurulumdan sonra depolama yapılandırmanızda herhangi bir değişiklik yapmanız "
+"gerekirse, {PRODUCT} depoları bunu yapmanıza yardımcı olabilecek birkaç "
+"farklı araç sunmaktadır. Bir komut satırı aracını tercih ediyorsanız, "
+"[package]*system-storage-manager* programını deneyin."
