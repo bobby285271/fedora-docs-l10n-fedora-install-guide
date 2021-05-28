@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-05-27 17:28+0000\n"
+"PO-Revision-Date: 2021-05-28 18:02+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -36,6 +36,13 @@ msgid ""
 "filesystems[Device, File System and RAID Types] a description of different "
 "kinds of RAIDs."
 msgstr ""
+"_Bağımsız disklerin yedekli dizileri_ (Redundant arrays of independent disks "
+"- RAID), artırılmış performans ve bazı yapılandırmalarda hatalara karşı daha "
+"fazla dayanıklılık sağlayacak şekilde düzenlenen birden çok depolama "
+"aygıtından oluşturulur. Farklı RAID türlerinin açıklamaları için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne "
+"bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:10
@@ -66,12 +73,21 @@ msgid ""
 "installation-gui-manual-partitioning-btrfs[Creating a Btrfs Layout] for "
 "instructions on creating RAID in LVM and Btrfs."
 msgstr ""
+"Bu bölümde yalnızca standart (fiziksel) bölümlerle nasıl yazılımsal RAID "
+"oluşturulacağı açıklanmaktadır. Ancak, LVM birim gruplarını ve Btrfs "
+"birimlerini RAID kullanacak şekilde yapılandırabilir ve onların mantıksal "
+"birimlerini veya Btrfs alt birimlerini bu RAID dizisinin üstüne "
+"yerleştirebilirsiniz. LVM ve Btrfs'de RAID oluşturma talimatları için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[Mantıksal Birim Yönetimi (Logical Volume Management - LVM) "
+"Düzeni Oluşturma] ve xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-btrfs[Btrfs Düzeni Oluşturma] bölümlerine bakın."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:18
 #, no-wrap
 msgid "Create Software RAID"
-msgstr ""
+msgstr "Yazılımsal RAID Oluştur"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
@@ -83,7 +99,7 @@ msgstr "Elle Bölümlendirme ekranı"
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_SoftwareRAID.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_SoftwareRAID.png"
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:26
@@ -95,11 +111,17 @@ msgid ""
 "installation-gui-manual-partitioning-filesystems[Device, File System and "
 "RAID Types]."
 msgstr ""
+"RAID yapılandırma seçenekleri yalnızca kurulum için iki veya daha fazla disk "
+"seçtiyseniz görünür. Bir RAID aygıtı oluşturmak için en az iki disk "
+"gereklidir ve bazı RAID düzenleri daha fazlasını gerektirir. Farklı RAID "
+"türleri için gereksinimler xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Aygıt, Dosya Sistemi ve "
+"RAID Türleri] bölümünde açıklanmaktadır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:30
 msgid "Follow the procedure below to create software RAID:"
-msgstr ""
+msgstr "Yazılımsal RAID oluşturmak için aşağıdaki adımları izleyin:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:33
@@ -119,6 +141,12 @@ msgid ""
 "example, `50GB`). Then, click `Add mount point` to add the mount point and "
 "return to the main partitioning screen."
 msgstr ""
+"Yeni iletişim penceresinde, ayrı bir yazılımsal RAID bölümü oluşturmak "
+"istediğiniz bir bağlama noktası belirtin - örneğin, `/`. İsteğe bağlı "
+"olarak, MB veya GB gibi standart birimler (örneğin, `50GB`) kullanarak yeni "
+"bölüm için bir boyut belirtin. Ardından, bağlama noktasını eklemek ve ana "
+"bölümlendirme ekranına geri dönmek için `Bağlama noktası ekle` düğmesine "
+"tıklayın."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:40
@@ -126,6 +154,8 @@ msgid ""
 "When creating a mount point for swap on software RAID, specify the mount "
 "point as `swap`."
 msgstr ""
+"Yazılımsal RAID üzerinde takas için bir bağlama noktası oluştururken, "
+"bağlama noktasını `swap` olarak belirtin."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:44
@@ -135,6 +165,10 @@ msgid ""
 "point in the left pane to configure it further, and convert it to a software "
 "RAID partition by changing the `Device Type` option to `RAID`."
 msgstr ""
+"Bu adımdan sonra bağlama noktası öntanımlı ayarlar kullanılarak, yani bir "
+"LVM mantıksal birimi olarak oluşturulur. Daha fazla yapılandırmak için sol "
+"bölmede yeni oluşturulan bağlama noktasını seçin ve `Aygıt Türü` seçeneğini "
+"`RAID` olarak değiştirerek bir yazılımsal RAID bölümüne dönüştürün."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:46
@@ -144,6 +178,10 @@ msgid ""
 "adoc#sect-installation-gui-manual-partitioning-filesystems[Device, File "
 "System and RAID Types]."
 msgstr ""
+"`RAID Seviyesi` açılır menüsünden bir RAID türü seçin. Kullanılabilir RAID "
+"türleri ve gereksinimleri xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-filesystems[Aygıt, Dosya Sistemi ve "
+"RAID Türleri] bölümünde açıklanmaktadır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:48
@@ -152,6 +190,9 @@ msgid ""
 "the partition has been assigned to several physical disks. Click the "
 "`Modify` button to configure on which drives this partition will be created."
 msgstr ""
+"Ekranın sağ tarafındaki `Aygıt(lar)` bölümünde, bölümün birkaç fiziksel "
+"diske atandığını görebilirsiniz. Bu bölümün hangi diskler üzerinde "
+"oluşturulacağını yapılandırmak için `Değiştir` düğmesine tıklayın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:50
@@ -163,6 +204,12 @@ msgid ""
 "partition is placed on a specific set of hard drives, select only those "
 "drives and unselect all others."
 msgstr ""
+"`Bağlama Noktası Yapılandır` iletişim kutusunda, bu birimin hangi fiziksel "
+"aygıtlarda (diskler) *bulunabileceğini* belirleyebilirsiniz. Bu bölümü "
+"tutmak için kullanılacak bir veya daha fazla diski kbd:[Ctrl] tuşuna basılı "
+"tutup listedeki her diski tıklayarak seçebilirsiniz. Bu bölümün belirli bir "
+"sabit disk kümesinde oluşturulduğundan emin olmak istiyorsanız, yalnızca o "
+"diskleri seçin ve diğerlerinin seçimini kaldırın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:52
@@ -190,3 +237,5 @@ msgid ""
 "Repeat this procedure for any additional standard partitions with software "
 "RAID you want to create."
 msgstr ""
+"Oluşturmak istediğiniz ek yazılımsal RAID ile standart bölümler için bu "
+"adımları tekrarlayın."

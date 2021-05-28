@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-28 18:02+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f31pages_partialsinstallfilterspoke_addfcoe/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title ====
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:5
 #, no-wrap
 msgid "Add FCoE SAN"
-msgstr ""
+msgstr "FCoE SAN Ekle"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:8
@@ -26,12 +31,15 @@ msgid ""
 "The following procedure explains how to add _Fibre Channel over Ethernet_ "
 "(FCoE) storage devices and make them available during the installation:"
 msgstr ""
+"Aşağıdaki adımlar, _Ethernet üzerinden Fiber Kanal_ (Fibre Channel over "
+"Ethernet - FCoE) depolama aygıtlarının nasıl ekleneceğini ve kurulum "
+"sırasında bunların nasıl kullanılabilir hale getirileceğini açıklamaktadır:"
 
 #. type: Block title
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:10
 #, no-wrap
 msgid "Add FCoE Target"
-msgstr ""
+msgstr "FCoE Hedefi Ekle"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:12
@@ -41,6 +49,10 @@ msgid ""
 "destination[Installation Destination - Specialized & Network Disks]. A new "
 "dialog window will open."
 msgstr ""
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Kurulum Hedefi - Özelleşmiş Diskler ve Ağ Diskleri] ekranının "
+"sağ alt köşesindeki `FCoE SAN Ekle` düğmesine tıklayın. Yeni bir iletişim "
+"penceresi açılacaktır."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:14
@@ -50,17 +62,21 @@ msgid ""
 "and connected - see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-network-configuration[Network & Hostname]."
 msgstr ""
+"Açılır menüden FCoE anahtarınıza bağlı olan ağ arayüzünü (`NIC`) seçin. Bu "
+"ağ arayüzünün yapılandırılması ve bağlanması gerektiğini unutmayın - xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[Ağ & Ana Makine Adı] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:16
 msgid "Below the `NIC` drop-down menu are two choices:"
-msgstr ""
+msgstr "`NIC` açılır menüsünün altında iki seçenek vardır:"
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:17
 #, no-wrap
 msgid "`Use DCB`"
-msgstr ""
+msgstr "`DCB kullan`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:18
@@ -72,12 +88,18 @@ msgid ""
 "interfaces that implement a hardware DCBX client should leave this check box "
 "empty."
 msgstr ""
+"_Veri Merkezi Köprüleme_ (Data Center Bridging - DCB), depolama ağları ve "
+"kümelerindeki Ethernet bağlantılarının verimliliğini artırmak için "
+"tasarlanan Ethernet protokolleri üzerindeki bir dizi iyileştirmedir. Bu "
+"seçenek yalnızca ana makine tabanlı DCBX istemcisi gerektiren ağ arayüzleri "
+"için etkinleştirilmelidir. Bir donanım DCBX istemcisini uygulayan "
+"arayüzlerdeki yapılandırmalar, bu onay kutusunu boş bırakmalıdır."
 
 #. type: Labeled list
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:19
 #, no-wrap
 msgid "`Use auto vlan`"
-msgstr ""
+msgstr "`Otomatik VLAN kullan`"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:20
@@ -89,6 +111,12 @@ msgid ""
 "any discovered FCoE VLANs will be automatically created and FCoE instances "
 "will be created on the VLAN interfaces. This option is enabled by default."
 msgstr ""
+"Bu seçenek, VLAN keşfinin gerçekleştirilip gerçekleştirilmeyeceğini "
+"belirtir. Bu kutu işaretlenirse, _FCoE Initiation Protocol_ (FIP) VLAN keşif "
+"protokolü, bağlantı yapılandırması doğrulandıktan sonra Ethernet arayüzünde "
+"çalışacaktır. Önceden yapılandırılmadılarsa, keşfedilen FCoE VLAN'ları için "
+"ağ arayüzleri otomatik olarak oluşturulacak ve VLAN arayüzlerinde FCoE "
+"örnekleri oluşturulacaktır. Bu seçenek öntanımlı olarak etkindir."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddFCoE.adoc:21
@@ -99,3 +127,8 @@ msgid ""
 "gui-installation-destination[Installation Destination - Specialized & "
 "Network Disks]."
 msgstr ""
+"Hangi arayüzü ve seçenekleri kullanacağınızı seçtikten sonra, `FCoE Disk(ler)"
+"i Ekle` düğmesine tıklayın. Keşfedilen FCoE depolama aygıtları, "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Kurulum Hedefi - Özelleşmiş Diskler ve Ağ Diskleri] bölümündeki `"
+"Diğer SAN Aygıtları` sekmesi altında görüntülenecektir."
