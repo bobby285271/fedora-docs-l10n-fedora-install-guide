@@ -2,12 +2,13 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-24 21:04+0000\n"
-"PO-Revision-Date: 2021-05-25 12:17+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-05-30 12:17+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f34pagesadvancedkickstart_installations/pt_BR/>\n"
@@ -91,6 +92,11 @@ msgid ""
 "the installer, such as the standard or netinstall ISO image from the Server "
 "edition."
 msgstr ""
+"Crie uma mídia de inicialização ou configure um servidor de inicialização de "
+"rede (PXE) que será usado para iniciar a instalação. Observe que a mídia "
+"live não pode ser usada para instalações Kickstart — use a mídia de "
+"instalação que pode inicializar diretamente no instalador, como a imagem ISO "
+"padrão ou netinstall da edição do servidor."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:24
@@ -133,6 +139,13 @@ msgid ""
 "[application]*Notepad* on Windows systems) can be used to create and edit "
 "Kickstart files."
 msgstr ""
+"O próprio arquivo Kickstart é um arquivo de texto simples, contendo palavras-"
+"chave listadas em xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Referência da sintaxe do Kickstart], que servem "
+"como instruções para a instalação. Qualquer editor de texto capaz de salvar "
+"arquivos como texto ASCII (como [application]*Gedit* ou [application]*vim* "
+"em sistemas Linux ou [application]*Notepad* em sistemas Windows) pode ser "
+"usado para criar e editar arquivos Kickstart."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:35
@@ -185,6 +198,11 @@ msgid ""
 "syntax-reference[Kickstart Syntax Reference]. Note that some commands, such "
 "as [command]#install#, are mandatory, but most commands are optional."
 msgstr ""
+"A seção de comando que contém os comandos e opções reais do Kickstart, "
+"conforme listado em xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
+"kickstart-syntax-reference[Referência da sintaxe do Kickstart]. Observe que "
+"alguns comandos, como [command]#install#, são obrigatórios, mas a maioria "
+"dos comandos são opcionais."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:45
@@ -194,6 +212,10 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection] for details."
 msgstr ""
+"A seção [command]#%packages# que contém uma lista de pacotes e grupos de "
+"pacotes a serem instalados. Veja xref:appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-packages[%packages (obrigatório) - Seleção de pacotes] "
+"para detalhes."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:47
@@ -205,6 +227,12 @@ msgid ""
 "and xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
 "postinstall[%post (optional) - Post-installation Script] for details."
 msgstr ""
+"As seções [command]#%pre# e [command]#%post#, contendo scripts de pré-"
+"instalação e pós-instalação. Essas duas seções podem estar em qualquer ordem "
+"e não são obrigatórias. Veja xref:appendixes/Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-preinstall[%pre (opcional) - Script de pré-instalação] e "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall["
+"%post (opcional) - Script de pós-instalação] para obter detalhes."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:52
@@ -370,6 +398,9 @@ msgid ""
 "Up an Installation Server] offers some additional information about "
 "preparing for a network-based installation."
 msgstr ""
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup["
+"Configurando um servidor de instalação] oferece algumas informações "
+"adicionais sobre a preparação para uma instalação baseada em rede."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:101
@@ -388,3 +419,11 @@ msgid ""
 "used in Kickstart installations, see xref:advanced/Boot_Options.adoc#sect-"
 "boot-options-kickstart[Kickstart Boot Options]."
 msgstr ""
+"Depois de ter tudo pronto – você criou um arquivo Kickstart válido e tem a "
+"mídia de inicialização local ou um servidor PXE disponível, você pode "
+"iniciar a instalação do Kickstart. Você precisa usar a opção de "
+"inicialização [option]#inst.ks=# no menu de inicialização (ao inicializar a "
+"partir da mídia local) ou adicionar esta opção à configuração do servidor "
+"PXE. Para obter informações sobre as opções de inicialização usadas nas "
+"instalações do Kickstart, consulte xref:advanced/Boot_Options.adoc#sect-boot-"
+"options-kickstart[Opções de inicialização do Kickstart]."
