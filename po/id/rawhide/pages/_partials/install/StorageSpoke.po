@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Anonymous <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:02+0000\n"
-"PO-Revision-Date: 2020-11-04 02:51+0000\n"
+"PO-Revision-Date: 2021-06-02 15:03+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
@@ -42,19 +42,14 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:9
-#, fuzzy
-#| msgid ""
-#| "For information about the theory and concepts behind disk partitioning in "
-#| "Linux, see xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
-#| "manual-partitioning-recommended[Recommended Partitioning Scheme]."
 msgid ""
 "For information about the theory and concepts behind disk partitioning in "
 "Linux, see xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
 "manual-partitioning-recommended[Recommended Partitioning Scheme]."
 msgstr ""
 "Untuk informasi tentang teori dan konsep di belakang pemartisian disk dalam "
-"Linux, lihat xref:sect-installation-gui-manual-partitioning-"
-"recommended[Skema Pemartisian yang Direkomendasikan]."
+"Linux, lihat xref:sect-installation-gui-manual-partitioning-recommended["
+"Skema Pemartisian yang Direkomendasikan]."
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:14
@@ -86,7 +81,7 @@ msgstr "Layar Tujuan Instalasi. Tersedia dua disk standar lokal"
 #: pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr "anaconda/StorageSpoke.png"
+msgstr "anaconda/SoftwareSpoke.png"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:22
@@ -118,17 +113,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:26
-#, fuzzy
-#| msgid ""
-#| "The `Specialized & Network Disks` section below shows advanced network "
-#| "storage (such as iSCSI and FCoE disks) currently configured. When you "
-#| "first open this screen, no such devices will be displayed because they "
-#| "can not be automatically detected; to search for network storage devices, "
-#| "press `Add a disk` button and proceed with xref:Installing_Using_Anaconda."
-#| "adoc#sect-installation-gui-installation-destination[Installation "
-#| "Destination - Specialized & Network Disks]. Any network storage you "
-#| "configure will then show up in the `Specialized & Network Disks` the same "
-#| "way local disks are shown above."
 msgid ""
 "The `Specialized & Network Disks` section below shows advanced network "
 "storage (such as iSCSI and FCoE disks) currently configured. When you first "
@@ -144,12 +128,12 @@ msgstr ""
 "penyimpanan jaringan tingkat lanjut (seperti disk iSCSI dan FCoE) yang saat "
 "ini dikonfigurasi. Ketika Anda pertama kali membuka layar ini, tidak ada "
 "perangkat yang akan ditampilkan karena mereka tidak dapat dideteksi secara "
-"otomatis; untuk mencari perangkat penyimpanan jaringan, tekan tombol "
-"`Tambahkan disk` dan lanjutkan dengan xref:sect-installation-gui-"
-"installation-destination[Tujuan Instalasi - Disk Jaringan & "
-"Terspesialisasi]. Setiap penyimpanan jaringan yang Anda konfigurasi kemudian "
-"akan muncul di `Disk Jaringan & Terspesialisasi` dengan cara yang sama "
-"seperti disk lokal yang ditampilkan di atas."
+"otomatis; untuk mencari perangkat penyimpanan jaringan, tekan tombol `"
+"Tambahkan disk` dan lanjutkan dengan xref:sect-installation-gui-installation-"
+"destination[Tujuan Instalasi - Disk Jaringan & Terspesialisasi]. Setiap "
+"penyimpanan jaringan yang Anda konfigurasi kemudian akan muncul di `Disk "
+"Jaringan & Terspesialisasi` dengan cara yang sama seperti disk lokal yang "
+"ditampilkan di atas."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:28
@@ -251,15 +235,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:47
-#, fuzzy
-#| msgid ""
-#| "`Custom` - Select this option and press `Done` in the top left corner of "
-#| "the screen to configure your system's partitioning layout semi-manually. "
-#| "This requires some knowledge of the theory behind disk partitions and "
-#| "related concepts, but provides recommendations over the way the system "
-#| "will be installed. For instructions for Custom partitioning, see xref:"
-#| "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-#| "partitioning[Manual Partitioning]."
 msgid ""
 "`Custom` - Select this option and press `Done` in the top left corner of the "
 "screen to configure your system's partitioning layout semi-manually. This "
@@ -380,15 +355,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:66
-#, fuzzy
-#| msgid ""
-#| "If you selected automatic partitioning and the `I would like to make "
-#| "additional space available`, or if there is not enough free space on your "
-#| "selected hard drives to install {PRODUCT}, the `Reclaim Space` dialog "
-#| "will appear. This dialog lists all disk devices you have configured and "
-#| "all partitions on those devices. The bottom right corner of the dialog "
-#| "displays information about how much space the system needs for at least a "
-#| "minimal installation and how much space you have reclaimed."
 msgid ""
 "If you selected automatic partitioning and the `I would like to make "
 "additional space available`, or if there is not enough free space on your "
@@ -408,11 +374,6 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:71
-#, fuzzy
-#| msgid ""
-#| "If you use the `Reclaim Space` dialog to *delete* a partition, all data "
-#| "on that partition will be lost. If you want to preserve your data, use "
-#| "the `Shrink` option, not the `Delete` option."
 msgid ""
 "If you use the `Reclaim Disk Space` dialog to *delete* a partition, all data "
 "on that partition will be lost. If you want to preserve your data, use the "
@@ -456,13 +417,6 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/StorageSpoke.adoc:82
-#, fuzzy
-#| msgid ""
-#| "No changes to any disks will be made until you press `Begin Installation` "
-#| "in xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
-#| "summary[Installation Summary]. The `Reclaim Space` dialog only *marks* "
-#| "partitions for resizing or deletion, but no such action is performed "
-#| "immediately."
 msgid ""
 "No changes to any disks will be made until you press `Begin Installation` in "
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
@@ -471,28 +425,22 @@ msgid ""
 "immediately."
 msgstr ""
 "Tidak ada perubahan pada disk apa pun yang akan dilakukan sampai Anda "
-"menekan `Mulai Instalasi` di xref:sect-installation-gui-installation-"
-"summary[Ringkasan Instalasi]. Dialog `Bebaskan Ruang` hanya *menandai* "
-"partisi untuk mengubah ukuran atau menghapus, tetapi tidak ada tindakan yang "
-"dilakukan seketika."
+"menekan `Mulai Instalasi` di xref:sect-installation-gui-installation-summary["
+"Ringkasan Instalasi]. Dialog `Bebaskan Ruang` hanya *menandai* partisi untuk "
+"mengubah ukuran atau menghapus, tetapi tidak ada tindakan yang dilakukan "
+"seketika."
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:86
-#, fuzzy
-#| msgid ""
-#| "If you selected the `Custom` option, pressing `Done` will open the "
-#| "`Manual Partitioning` screen. See xref:Installing_Using_Anaconda."
-#| "adoc#sect-installation-gui-manual-partitioning[Manual Partitioning] for "
-#| "further instructions."
 msgid ""
 "If you selected the `Custom` option, pressing `Done` will open the `Manual "
 "Partitioning` screen. See xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-manual-partitioning[Manual Partitioning] for further "
 "instructions."
 msgstr ""
-"Jika Anda memilih opsi `Ubahan`, menekan `Selesai` akan membuka layar "
-"`Partisi Manual`. Lihat xref:sect-installation-gui-manual-"
-"partitioning[Pemartisian Manual] untuk instruksi lebih lanjut."
+"Jika Anda memilih opsi `Ubahan`, menekan `Selesai` akan membuka layar `"
+"Partisi Manual`. Lihat xref:sect-installation-gui-manual-partitioning["
+"Pemartisian Manual] untuk instruksi lebih lanjut."
 
 #~ msgid ""
 #~ "If you need to configure additional local storage devices, select `I will "
