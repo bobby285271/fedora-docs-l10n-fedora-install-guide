@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-05-30 01:09+0000\n"
+"PO-Revision-Date: 2021-06-02 15:03+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pagesinstalltroubleshooting/tr/>\n"
@@ -127,15 +127,15 @@ msgid ""
 "and how to transfer them from the installation system."
 msgstr ""
 "Kurulumla ilgili sorunları gidermek için yardım istediğinizde, kurucu "
-"tarafından oluşturulan günlük dosyalarını sağlamanız istenebilir. Aşağıdaki "
-"bölümler hangi dosyaların oluşturulduğunu, içeriklerinin ne olduğunu ve "
-"bunların kurulum sisteminden nasıl aktarılacağını açıklamaktadır."
+"tarafından oluşturulan günlük kaydı dosyalarını sağlamanız istenebilir. "
+"Aşağıdaki bölümler hangi dosyaların oluşturulduğunu, içeriklerinin ne "
+"olduğunu ve bunların kurulum sisteminden nasıl aktarılacağını açıklamaktadır."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:35
 #, no-wrap
 msgid "Log Files Generated During the Installation"
-msgstr "Kurulum Sırasında Oluşturulan Günlük Dosyaları"
+msgstr "Kurulum Sırasında Oluşturulan Günlük Kaydı Dosyaları"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:38
@@ -151,7 +151,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:40
 #, no-wrap
 msgid "Log Files and Their Contents"
-msgstr "Günlük Dosyaları ve İçerikleri"
+msgstr "Günlük Kaydı Dosyaları ve İçerikleri"
 
 #. type: Table
 #: pages/install/Troubleshooting.adoc:50
@@ -164,7 +164,7 @@ msgid ""
 "|`/tmp/packaging.log`|[application]*dnf* and [application]*rpm* package installation messages\n"
 "|`/tmp/syslog`|hardware-related system messages\n"
 msgstr ""
-"|Günlük dosyası|İçerikleri\n"
+"|Günlük kaydı dosyası|İçerikleri\n"
 "|`/tmp/anaconda.log`|genel [application]*Anaconda* mesajları\n"
 "|`/tmp/program.log`|kurulum sırasında çalıştırılan tüm harici programlar\n"
 "|`/tmp/storage.log`|kapsamlı depolama modülü bilgileri\n"
@@ -187,7 +187,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:55
 #, no-wrap
 msgid "Transferring Log Files from the Installation System"
-msgstr ""
+msgstr "Günlük Kaydı Dosyalarını Kurulum Sisteminden Aktarma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:58
@@ -203,12 +203,23 @@ msgid ""
 "other removable media, you should make sure to back up any data on it before "
 "starting the procedure."
 msgstr ""
+"xref:install/Troubleshooting.adoc#sect-troubleshooting-log-files[Kurulum "
+"Sırasında Oluşturulan Günlük Kaydı Dosyaları] bölümünde açıklanan tüm "
+"dosyalar, kurulum programının RAM diskinde bulunur, bu da kalıcı olarak "
+"kaydedilmedikleri ve sistem kapatıldığında kaybolacakları anlamına gelir. "
+"Onları kalıcı olarak saklamak için, bu dosyaları kurulum programını "
+"çalıştıran sistemde [command]#scp# komutunu kullanarak ağdaki başka bir "
+"sisteme kopyalayın veya bunları takılı bir depolama aygıtına (USB flash "
+"bellek gibi) kopyalayın. Günlük kaydı dosyalarının nasıl aktarılacağına "
+"ilişkin ayrıntılar aşağıdadır. Bir USB flash bellek veya başka bir "
+"çıkarılabilir ortam kullanıyorsanız, işleme başlamadan önce içindeki tüm "
+"verileri yedeklediğinizden emin olmanız gerektiğini unutmayın."
 
 #. type: Title ====
 #: pages/install/Troubleshooting.adoc:60
 #, no-wrap
 msgid "Transferring Log Files Onto a USB Drive"
-msgstr ""
+msgstr "Günlük Kaydı Dosyalarını USB Belleğe Aktarma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:63 pages/install/Troubleshooting.adoc:119
@@ -217,6 +228,9 @@ msgid ""
 "shell prompt. You will be logged into a root account and you will have "
 "access to the installation program's temporary file system."
 msgstr ""
+"Kurduğunuz sistemde, bir kabuk istemine erişmek için kbd:[Ctrl + Alt + F2] "
+"tuşlarına basın. Bir root hesabında oturum açacaksınız ve kurulum "
+"programının geçici dosya sistemine erişiminiz olacak."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:65
@@ -227,18 +241,23 @@ msgid ""
 "you just connected. It will look like a set of lines similar to the "
 "following:"
 msgstr ""
+"Sisteme bir USB flash bellek bağlayın ve [command]#dmesg# komutunu "
+"çalıştırın. Tüm son olayların ayrıntılarını içeren bir günlük kaydı "
+"görüntülenecektir. Bu günlük kaydının altında, yeni bağladığınız USB flash "
+"belleğin neden olduğu bir dizi mesaj göreceksiniz. Aşağıdakine benzer bir "
+"dizi satır gibi görünecektir:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:69
 #, no-wrap
 msgid "`[  170.171135] sd 5:0:0:0: [sdb] Attached SCSI removable disk`\n"
-msgstr ""
+msgstr "`[  170.171135] sd 5:0:0:0: [sdb] Attached SCSI removable disk`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:72
 msgid ""
 "Note the name of the connected device - in the above example, it is `sdb`."
-msgstr ""
+msgstr "Bağlanan aygıtın adını not edin - yukarıdaki örnekte bu `sdb` olacak."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:74
@@ -247,12 +266,15 @@ msgid ""
 "serve as the mount target for the USB drive. The name of the directory does "
 "not matter; this example uses the name `usb`."
 msgstr ""
+"`/mnt` dizinine gidin ve orada, USB bellek için bağlama hedefi olarak "
+"kullanılacak yeni bir dizin oluşturun. Dizinin adı önemli değil; bu örnekte "
+"`usb` kullanılacak."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:78
 #, no-wrap
 msgid "# mkdir usb\n"
-msgstr ""
+msgstr "# mkdir usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:81
@@ -262,12 +284,17 @@ msgid ""
 "Therefore, do not use the name `sdb` - use the name of the partition you "
 "want to write the log files to. In this example, the name `sdb1` is used."
 msgstr ""
+"USB flash belleği yeni oluşturulan dizine bağlayın. Çoğu durumda USB "
+"belleğin tamamını değil, üzerindeki bir bölümü bağlamak isteyeceğinizi "
+"unutmayın. Bu nedenle, `sdb` adını kullanmayın - günlük kaydı dosyalarını "
+"yazmak istediğiniz bölümün adını kullanın. Bu örnekte `sdb1` "
+"kullanılmaktadır."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:85
 #, no-wrap
 msgid "# mount /dev/sdb1 /mnt/usb\n"
-msgstr ""
+msgstr "# mount /dev/sdb1 /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:88
@@ -276,29 +303,32 @@ msgid ""
 "accessing it and listing its contents - the list should match what you "
 "expect to be on the drive."
 msgstr ""
+"Artık doğru aygıtı ve bölümü bağladığınızı, ona erişerek ve içeriğini "
+"listeleyerek doğrulayabilirsiniz - liste, USB bellekte olmasını "
+"beklediklerinizle eşleşmelidir."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:92
 #, no-wrap
 msgid "# cd /mnt/usb\n"
-msgstr ""
+msgstr "# cd /mnt/usb\n"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:97
 #, no-wrap
 msgid "# ls\n"
-msgstr ""
+msgstr "# ls\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:100
 msgid "Copy the log files to the mounted device."
-msgstr ""
+msgstr "Günlük kaydı dosyalarını bağlanan aygıta kopyalayın."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:104
 #, no-wrap
 msgid "# cp /tmp/*log /mnt/usb\n"
-msgstr ""
+msgstr "# cp /tmp/*log /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:107
@@ -307,35 +337,38 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"USB flash belleğin bağlantısını kaldırın. Hedefin meşgul olduğunu belirten "
+"bir hata mesajı alırsanız, çalışma dizininizi bağlama noktasının dışında bir "
+"yere değiştirin (örneğin, `/`)."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:111
 #, no-wrap
 msgid "# umount /mnt/usb\n"
-msgstr ""
+msgstr "# umount /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:114
 msgid ""
 "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "Kurulumdaki günlük kaydı dosyaları artık USB flash belleğe kaydedildi."
 
 #. type: Title ====
 #: pages/install/Troubleshooting.adoc:116
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "Günlük Kaydı Dosyalarını Ağ Üzerinden Aktarma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "Günlük kaydı dosyalarının bulunduğu `/tmp` dizinine geçin:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:125
 #, no-wrap
 msgid "# cd /tmp\n"
-msgstr ""
+msgstr "# cd /tmp\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:128
@@ -343,12 +376,14 @@ msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
 msgstr ""
+"Günlük kaydı dosyalarını [command]#scp# komutunu kullanarak ağdaki başka bir "
+"sisteme kopyalayın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:132
 #, no-wrap
 msgid "# scp *log user@address:path\n"
-msgstr ""
+msgstr "# scp *log kullanıcı@adres:yol\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:135
@@ -360,12 +395,18 @@ msgid ""
 "the log files into the `/home/john/logs/` directory on that system, the "
 "command will have the following form:"
 msgstr ""
+"_kullanıcı_ kısmını hedef sistemde geçerli bir kullanıcı adıyla, _adres_ "
+"kısmını hedef sistemin adresi veya ana makine adıyla ve _yol_ kısmını günlük "
+"kaydı dosyalarını kaydetmek istediğiniz dizinin yoluyla değiştirin. Örneğin, "
+"`192.168.0.122` IP adresine sahip bir sistemde `john` olarak oturum açmak ve "
+"günlük kaydı dosyalarını o sistemdeki `/home/john/logs/` dizinine kaydetmek "
+"istiyorsanız, komut aşağıdaki biçimde olacaktır:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:139
 #, no-wrap
 msgid "# scp *log john@192.168.0.122:/home/john/logs/\n"
-msgstr ""
+msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:142
@@ -373,6 +414,8 @@ msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
 msgstr ""
+"Hedef sisteme ilk kez bağlanırken aşağıdakine benzer bir mesajla "
+"karşılaşabilirsiniz:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:149
@@ -382,6 +425,10 @@ msgid ""
 "`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
+"established.`\n"
+"`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Are you sure you want to continue connecting (yes/no)?`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:153
@@ -390,6 +437,9 @@ msgid ""
 "when prompted. The files will start transferring to the specified directory "
 "on the target system."
 msgstr ""
+"`yes` yazın ve devam etmek için kbd:[Enter] tuşuna basın. Ardından, "
+"istendiğinde geçerli bir parola girin. Dosyalar, hedef sistemde belirtilen "
+"dizine aktarılmaya başlayacaktır."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:155
@@ -397,18 +447,20 @@ msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
 msgstr ""
+"Kurulumdaki günlük kaydı dosyaları artık kalıcı olarak hedef sisteme "
+"kaydedildi ve incelenmek için hazır."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:157
 #, no-wrap
 msgid "Trouble Beginning the Installation"
-msgstr ""
+msgstr "Kuruluma Başlama Sorunları"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:159
 #, no-wrap
 msgid "Problems with Booting into the Graphical Installation"
-msgstr ""
+msgstr "Grafiksel Kuruluma Önyükleme ile İlgili Sorunlar"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:162
@@ -418,6 +470,10 @@ msgid ""
 "default settings, it attempts to run in a lower resolution mode. If that "
 "still fails, the installation program attempts to run in text mode."
 msgstr ""
+"Bazı ekran kartlarına sahip sistemler, grafiksel kurulum programına "
+"önyükleme yaparken sorun yaşarlar. Kurulum programı öntanımlı ayarlarını "
+"kullanarak çalışmazsa, daha düşük bir çözünürlük modunda çalışmayı dener. Bu "
+"da başarısız olursa, kurulum programı metin modunda çalışmayı dener."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:164
@@ -427,12 +483,16 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-installer[Configuring the "
 "Installation System at the Boot Menu]."
 msgstr ""
+"Ekran sorunları için, çoğu özel önyükleme seçeneklerini belirtmeyi içeren "
+"birkaç olası çözüm vardır. Daha fazla bilgi için xref:advanced/Boot_Options."
+"adoc#sect-boot-options-installer[Önyükleme Menüsünde Kurulum Sistemini "
+"Yapılandırma] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:165
 #, no-wrap
 msgid "Use the basic graphics mode"
-msgstr ""
+msgstr "Temel grafiksel modu kullanın"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:166
@@ -441,12 +501,16 @@ msgid ""
 "To do this, edit the installation program's boot options and append "
 "[option]#inst.xdriver=vesa# at the end of the command line."
 msgstr ""
+"Temel grafik sürücüsünü kullanarak kurulumu gerçekleştirmeyi "
+"deneyebilirsiniz. Bunu yapmak için, kurulum programının önyükleme "
+"seçeneklerini düzenleyin ve komut satırının sonuna [option]#inst."
+"xdriver=vesa# ekleyin."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:167
 #, no-wrap
 msgid "Specify the display resolution manually"
-msgstr ""
+msgstr "Ekran çözünürlüğünü elle belirtin"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:168
@@ -457,12 +521,17 @@ msgid ""
 "attributes[{blank}]# option at the boot menu, where _x_ is your display's "
 "resolution (for example, `1024x768`)."
 msgstr ""
+"Kurulum programı ekran çözünürlüğünüzü algılayamazsa, otomatik algılamayı "
+"geçersiz kılabilir ve çözünürlüğü elle belirleyebilirsiniz. Bunu yapmak "
+"için, önyükleme menüsünde [option]#inst."
+"resolution=pass:attributes[{blank}]_x_pass:attributes[{blank}]# seçeneğini "
+"ekleyin, burada _x_ ekranınızın çözünürlüğüdür (örneğin, `1024x768`)."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:169
 #, no-wrap
 msgid "Use an alternate video driver"
-msgstr ""
+msgstr "Başka bir grafik sürücüsü kullanın"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:170
@@ -473,6 +542,11 @@ msgid ""
 "option, where _x_ is the device driver you want to use (for example, "
 "`nouveau`)."
 msgstr ""
+"Kurulum programının otomatik algılamasını geçersiz kılarak özel bir grafik "
+"sürücüsü belirtmeyi de deneyebilirsiniz. Bir sürücü belirtmek için "
+"[option]#inst.xdriver=pass:attributes[{blank}]_x_pass:attributes[{blank}]# "
+"seçeneğini kullanın, burada _x_ kullanmak istediğiniz aygıt sürücüsüdür ("
+"örneğin, `nouveau`)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:175
@@ -482,12 +556,17 @@ msgid ""
 "component. [application]*Anaconda* should be able to detect your hardware "
 "automatically and use the appropriate driver without your intervention."
 msgstr ""
+"Özel bir grafik sürücüsü belirtmeniz sorununuzu çözerse, bunu "
+"link:++https://bugzilla.redhat.com++[] adresinde `anaconda` bileşeninin "
+"altında bir hata olarak bildirmelisiniz. [application]*Anaconda*, "
+"donanımınızı otomatik olarak algılayabilmeli ve sizin müdahaleniz olmadan "
+"uygun sürücüyü kullanabilmelidir."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:178
 #, no-wrap
 msgid "Perform the installation using VNC"
-msgstr ""
+msgstr "Kurulumu VNC kullanarak gerçekleştirin"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:179
@@ -497,12 +576,17 @@ msgid ""
 "Computing_ (VNC) protocol. For details on installing using VNC, see xref:"
 "advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
+"Yukarıdaki seçenekler başarısız olursa, _Virtual Network Computing_ (VNC) "
+"protokolünü kullanarak ağ üzerinden grafiksel kuruluma erişmek için ayrı bir "
+"sistem kullanabilirsiniz. VNC kullanarak kurmayla ilgili ayrıntılar için "
+"xref:advanced/VNC_Installations.adoc#chap-vnc-installations[VNC Kullanarak "
+"Kurma] bölümüne bakın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:180
 #, no-wrap
 msgid "Serial Console Not Detected"
-msgstr ""
+msgstr "Seri Konsol Algılanmadı"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:183
@@ -513,6 +597,11 @@ msgid ""
 "detects a graphics card, it will attempt to use it for a display, even if no "
 "display is connected."
 msgstr ""
+"Bazı durumlarda, bir seri konsol kullanarak metin modunda kurulum yapmaya "
+"çalışmak, konsolda çıktı alınmamasına neden olacaktır. Bu, grafik kartı olan "
+"ancak ekran bağlı olmayan sistemlerde olur. [application]*Anaconda* bir "
+"grafik kartı algılarsa, herhangi bir ekran bağlı olmasa bile onu bir ekran "
+"için kullanmayı deneyecektir."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:185
@@ -522,12 +611,16 @@ msgid ""
 "advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot Options] for more "
 "details."
 msgstr ""
+"Bir seri konsolda metin tabanlı bir kurulum gerçekleştirmek istiyorsanız, "
+"[option]#inst.text# ve [option]#console=# önyükleme seçeneklerini kullanın. "
+"Daha fazla ayrıntı için xref:advanced/Boot_Options.adoc#chap-anaconda-boot-"
+"options[Önyükleme Seçenekleri] bölümüne bakın."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:187
 #, no-wrap
 msgid "Trouble During the Installation"
-msgstr ""
+msgstr "Kurulum Anındaki Sorunlar"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:190
@@ -542,6 +635,9 @@ msgid ""
 "appear at the bottom: `No disks detected. Please shut down the computer, "
 "connect at least one disk, and restart to complete installation`."
 msgstr ""
+"`Kurulum Hedefi` ekranında, altta aşağıdaki hata mesajı görünebilir: `Disk "
+"algılanmadı. Lütfen bilgisayarı kapatın, en az bir disk bağlayın ve kurulumu "
+"tamamlamak için yeniden başlatın`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:195
@@ -550,6 +646,9 @@ msgid ""
 "storage devices to install to. In that case, first make sure that your "
 "system does have at least one storage device attached."
 msgstr ""
+"Bu mesaj, [application]*Anaconda*'nın kurulum yapılacak herhangi bir "
+"yazılabilir depolama aygıtı bulamadığını gösterir. Bu durumda, öncelikle "
+"sisteminize en az bir depolama aygıtının takılı olduğundan emin olun."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:197
@@ -558,6 +657,9 @@ msgid ""
 "is properly configured and working. See your controller's documentation for "
 "instructions."
 msgstr ""
+"Sisteminiz bir donanımsal RAID denetleyicisi kullanıyorsa, denetleyicinin "
+"uygun şekilde yapılandırıldığını ve çalıştığını doğrulayın. Talimatlar için "
+"denetleyicinizin belgelendirmesine bakın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:199
@@ -567,6 +669,9 @@ msgid ""
 "Unit Numbers_) are being presented to the appropriate HBA (_Host Bus "
 "Adapter_)."
 msgstr ""
+"Bir veya daha fazla iSCSI aygıtına kurulum yapıyorsanız ve sistemde yerel "
+"depolama yoksa, gerekli tüm LUN'ların (_Logical Unit Numbers_) uygun HBA'ya ("
+"_Host Bus Adapter_) sunulduğundan emin olun."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:201
@@ -577,19 +682,25 @@ msgid ""
 "the storage. In most cases this message appears when you attempt to install "
 "on an SCSI device which has not been recognized by the installation program."
 msgstr ""
+"Bağlı ve uygun şekilde yapılandırılmış bir depolama aygıtına sahip "
+"olduğunuzdan emin olduysanız ve sistemi yeniden önyükleyip kurulumu yeniden "
+"başlattıktan sonra mesaj hala görünüyorsa, bu kurulum programının depolamayı "
+"algılayamadığı anlamına gelir. Çoğu durumda bu mesaj, kurulum programı "
+"tarafından tanınmayan bir SCSI aygıtına kurulum yapmaya çalıştığınızda "
+"görünür."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:203
 #, no-wrap
 msgid "Problems After Installation"
-msgstr ""
+msgstr "Kurulumdan Sonraki Sorunlar"
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:206
 #: pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
-msgstr ""
+msgstr "Root Parolasını Sıfırlama"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:209
@@ -597,30 +708,34 @@ msgid ""
 "If you lost the root password to the system and you have access to the boot "
 "loader, you can reset the password by editing the GRUB2 configuration."
 msgstr ""
+"Sistemin root parolasını kaybettiyseniz ve önyükleyiciye erişiminiz varsa, "
+"GRUB2 yapılandırmasını düzenleyerek parolayı sıfırlayabilirsiniz."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:212
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "Sisteminizi önyükleyin ve GRUB2 menüsü görünene kadar bekleyin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:214
 msgid ""
 "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
 msgstr ""
+"Önyükleyici menüsünde, herhangi bir girdiyi vurgulayın ve düzenlemek için "
+"kbd:[e] tuşuna basın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:216
 msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
-msgstr ""
+msgstr "`linux` ile başlayan satırı bulun. Bu satırın sonuna şunu ekleyin:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:220
 #, no-wrap
 msgid "`init=/bin/sh`\n"
-msgstr ""
+msgstr "`init=/bin/sh`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:223
@@ -628,6 +743,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
 msgstr ""
+"Düzenlediğiniz seçenekleri kullanarak sistemi önyüklemek için kbd:[F10] veya "
+"kbd:[Ctrl + X] tuşlarına basın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:225
@@ -635,45 +752,47 @@ msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
 msgstr ""
+"Sistem önyüklendiğinde, herhangi bir kullanıcı adı veya parola girmenize "
+"gerek kalmadan size bir kabuk istemi sunulacak:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:229
 #, no-wrap
 msgid "pass:quotes[`sh-4.2#`]\n"
-msgstr ""
+msgstr "pass:quotes[`sh-4.2#`]\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:232
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "Kurulu SELinux politikasını yükleyin:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:236
 #, no-wrap
 msgid "sh-4.2# /usr/sbin/load_policy -i\n"
-msgstr ""
+msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:239
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "Kök bölümünüzü yeniden bağlamak için aşağıdaki komutu çalıştırın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:243
 #, no-wrap
 msgid "sh4.2# mount -o remount,rw /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,rw /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:246
 msgid "Reset the root password:"
-msgstr ""
+msgstr "Root parolasını sıfırlayın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:250
 #, no-wrap
 msgid "sh4.2# passwd root\n"
-msgstr ""
+msgstr "sh4.2# passwd root\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:253
@@ -684,17 +803,21 @@ msgid ""
 "match, a message informing you of a successful root password change will "
 "appear."
 msgstr ""
+"İstendiğinde, yeni root parolanızı girin ve kbd:[Enter] tuşuna basarak "
+"onaylayın. Doğru yazdığınızdan emin olmak için parolayı ikinci kez girin ve "
+"kbd:[Enter] tuşu ile tekrar onaylayın. Her iki parola da eşleşirse, başarılı "
+"bir root parolası değişikliğini size bildiren bir mesaj görünecektir."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:255
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "Kök bölümünü, bu sefer salt okunur olarak yeniden bağlayın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:259
 #, no-wrap
 msgid "sh4.2# mount -o remount,ro /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,ro /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:262
@@ -702,12 +825,14 @@ msgid ""
 "Reboot the system. From now on, you will be able to log in as the root user "
 "using the new password set up during this procedure."
 msgstr ""
+"Sistemi yeniden başlatın. Bundan böyle, bu adımlar sırasında belirlenen yeni "
+"parolayı kullanarak root kullanıcısı olarak oturum açabileceksiniz."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:264
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "RAID Kartınızla Önyükleme Yapamıyor Musunuz?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:267
@@ -715,6 +840,9 @@ msgid ""
 "If you have performed an installation and cannot boot your system properly, "
 "you may need to reinstall and partition your system's storage differently."
 msgstr ""
+"Bir kurulum yaptıysanız ve sisteminizi düzgün şekilde önyükleyemiyorsanız, "
+"yeniden kurulum yapmanız ve sisteminizin depolama alanını farklı şekilde "
+"bölümlendirmeniz gerekebilir."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:269
@@ -726,6 +854,13 @@ msgid ""
 "system and move your `/boot` partition and the boot loader outside the RAID "
 "array. The `/boot` partition and the boot loader must be on the same drive."
 msgstr ""
+"Bazı BIOS türleri RAID kartlarından önyüklemeyi desteklemez. Kurulumu "
+"bitirdikten ve sistemi ilk kez yeniden başlattıktan sonra, önyükleyici "
+"istemini gösteren metin tabanlı bir ekran (örneğin, `grub>`) ve yanıp sönen "
+"bir imleç görünen tek şey olabilir. Durum buysa, sisteminizi yeniden "
+"bölümlendirmeniz ve `/boot` bölümünüzü ve önyükleyiciyi RAID dizisinin "
+"dışına taşımanız gerekir. `/boot` bölümü ve önyükleyici aynı diskte "
+"olmalıdır."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:271
@@ -735,12 +870,16 @@ msgid ""
 "partitioning, see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
+"Bu değişiklikler yapıldıktan sonra, kurulumunuzu tamamlayabilmeli ve sistemi "
+"düzgün bir şekilde önyükleyebilmelisiniz. Bölümlendirme hakkında daha fazla "
+"bilgi için xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"storage-partitioning[Kurulum Hedefi] bölümüne bakın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:273
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "Grafiksel Önyükleme Sırasıyla İlgili Sorunlar"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:276
@@ -753,12 +892,20 @@ msgid ""
 "sequence; to solve this issue, you must disable graphical boot. To do this, "
 "temporarily alter the setting at boot time before changing it permanently."
 msgstr ""
+"Kurulumu bitirdikten ve sisteminizi ilk kez yeniden başlattıktan sonra, "
+"sistem grafiksel önyükleme sırasında yanıt vermeyebilir ve sıfırlama "
+"gerektirebilir. Bu durumda, önyükleyici başarıyla görüntülenir, ancak "
+"herhangi bir girdiyi seçip başlatmaya çalışmak, sistemin durmasıyla "
+"sonuçlanır. Bu genellikle grafiksel önyükleme sırası ile ilgili bir sorun "
+"olduğu anlamına gelir; bu sorunu çözmek için grafiksel önyüklemeyi devre "
+"dışı bırakmalısınız. Bunu yapmak için, kalıcı olarak değiştirmeden önce "
+"önyükleme sırasında ayarı geçici olarak değiştirin."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:277
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "Grafiksel Önyüklemeyi Geçici Olarak Devre Dışı Bırakma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:279
@@ -768,6 +915,9 @@ msgid ""
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
 "it."
 msgstr ""
+"Bilgisayarınızı başlatın ve önyükleyici menüsü görünene kadar bekleyin. "
+"Önyükleyici zaman aşımı sürenizi 0 olarak ayarladıysanız, menüye erişmek "
+"için kbd:[Esc] tuşunu basılı tutun."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:281
@@ -777,6 +927,9 @@ msgid ""
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
 "options."
 msgstr ""
+"Önyükleyici menüsü göründüğünde, önyükleme yapmak istediğiniz girdiyi "
+"vurgulamak için imleç tuşlarınızı kullanın ve o girdinin seçeneklerini "
+"düzenlemek için kbd:[e] tuşuna basın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:283
@@ -786,6 +939,10 @@ msgid ""
 "this line, locate the `rhgb` option and delete it. The option may not be "
 "immediately visible; use the cursor keys to scroll up and down."
 msgstr ""
+"Seçenekler listesinde çekirdek satırını, yani `linux` (veya bazı durumlarda "
+"`linux16` veya `linuxefi`) anahtar kelimesiyle başlayan satırı bulun. Bu "
+"satırda `rhgb` seçeneğini bulun ve silin. Seçenek hemen görünmeyebilir; "
+"yukarı ve aşağı kaydırmak için imleç tuşlarını kullanın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:285
@@ -794,6 +951,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
 msgstr ""
+"Düzenlenen seçeneklerle sisteminizi önyüklemek için kbd:[F10] veya kbd:[Ctrl "
+"+ X] tuşlarına basın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:287
@@ -803,23 +962,28 @@ msgid ""
 "perform the previous procedure every time the system boots. To permanently "
 "change boot options, do the following."
 msgstr ""
+"Sistem başarıyla başlatıldıysa, normal şekilde oturum açabilirsiniz. "
+"Ardından, grafiksel önyüklemeyi kalıcı olarak devre dışı bırakmanız "
+"gerekecek - aksi takdirde sistem her önyüklendiğinde önceki işlemleri "
+"uygulamanız gerekecek. Önyükleme seçeneklerini kalıcı olarak değiştirmek "
+"için aşağıdakileri yapın."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:288
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "Grafiksel Önyüklemeyi Kalıcı Olarak Devre Dışı Bırakma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:290
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "[command]#su -# komutunu kullanarak `root` hesabında oturum açın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:294
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:297
@@ -827,6 +991,8 @@ msgid ""
 "Open the `/etc/default/grub` configuration file using a plain text editor "
 "such as [application]*vim*."
 msgstr ""
+"[application]*vim* gibi bir düz metin düzenleyicisi kullanarak `/etc/default/"
+"grub` yapılandırma dosyasını açın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:299
@@ -834,35 +1000,41 @@ msgid ""
 "Within the `grub` file, locate the line beginning with `GRUB_CMDLINE_LINUX`. "
 "The line should look similar to the following:"
 msgstr ""
+"`grub` dosyası içinde, `GRUB_CMDLINE_LINUX` ile başlayan satırı bulun. Satır "
+"aşağıdakine benzer şekilde görünmelidir:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:303
 #, no-wrap
 msgid "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:307
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "Bu satırda `rhgb` seçeneğini silin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:309
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "Düzenlenen yapılandırma dosyasını kaydedin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:311
 msgid ""
 "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "Aşağıdaki komutu çalıştırarak önyükleyici yapılandırmasını yenileyin:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:315
 #: pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:318
@@ -873,6 +1045,12 @@ msgid ""
 "`GRUB_CMDLINE_LINUX` line in the `/etc/default/grub` file and refresh the "
 "boot loader configuration again using the [command]#grub2-mkconfig# command."
 msgstr ""
+"Bu işlemi tamamladıktan sonra bilgisayarınızı yeniden başlatabilirsiniz. "
+"{PRODUCT} artık grafiksel önyükleme sırasını kullanmayacak. Grafiksel "
+"önyüklemeyi etkinleştirmek istiyorsanız aynı adımları izleyin, `/etc/default/"
+"grub` dosyasındaki `GRUB_CMDLINE_LINUX` satırına `rhgb` seçeneğini ekleyin "
+"ve [command]#grub2-mkconfig# komutunu kullanarak önyükleyici "
+"yapılandırmasını tekrar yenileyin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:320
@@ -882,12 +1060,15 @@ msgid ""
 "link:++http://docs.fedoraproject.org/++[], for more information about "
 "working with the [application]*GRUB2* boot loader."
 msgstr ""
+"[application]*GRUB2* önyükleyicisi ile çalışma hakkında daha fazla bilgi "
+"için link:++https://docs.fedoraproject.org/++[] adresinde bulunan "
+"[citetitle]_{PRODUCT} Sistem Yöneticisi Kılavuzuna_ bakın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "Grafiksel Bir Ortama Önyükleme Yapma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:325
@@ -898,6 +1079,12 @@ msgid ""
 "using the [command]#startx# command. Note, however, that this is just a one-"
 "time fix and does not change the log in process for future log ins."
 msgstr ""
+"[application]*X Pencere Sistemi* ve [application]*GNOME* gibi bir masaüstü "
+"ortamı kurduysanız, ancak sisteminizde oturum açtığınızda bir grafiksel "
+"masaüstü ortamı görmüyorsanız, [command]#startx# kullanarak elle "
+"başlatabilirsiniz. Ancak bunun yalnızca bir seferlik bir düzeltme olduğunu "
+"ve gelecekteki oturum açma işlemleri için oturum açma sürecini "
+"değiştirmediğini unutmayın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:327
@@ -907,12 +1094,17 @@ msgid ""
 "target`. When you are finished, reboot the computer. You will presented with "
 "a graphical login prompt after the system restarts."
 msgstr ""
+"Sisteminizi bir grafiksel oturum açma ekranında oturum açabilecek şekilde "
+"ayarlamak için öntanımlı [application]*systemd* hedefini `graphical.target` "
+"olarak değiştirmelisiniz. Bitirdiğinizde, bilgisayarı yeniden başlatın. "
+"Sistem yeniden başlatıldıktan sonra grafiksel bir oturum açma istemi ile "
+"karşılaşacaksınız."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "Grafiksel Oturum Açmayı Öntanımlı Olarak Ayarlama"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:330
@@ -920,6 +1112,8 @@ msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
 msgstr ""
+"Bir kabuk istemi açın. Kullanıcı hesabınızdaysanız [command]#su -# komutunu "
+"yazarak root kullanıcısına geçiş yapın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:332
@@ -927,12 +1121,14 @@ msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
 msgstr ""
+"Öntanımlı hedefi `graphical.target` olarak değiştirin. Bunu yapmak için "
+"aşağıdaki komutu çalıştırın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:336
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:339
@@ -942,12 +1138,16 @@ msgid ""
 "change and keep using the text-based login prompt, execute the following "
 "command as `root`:"
 msgstr ""
+"Grafiksel oturum açma artık öntanımlı olarak etkindir - bir sonraki yeniden "
+"başlatmanın ardından bir grafiksel oturum açma istemi ile karşılaşacaksınız. "
+"Bu değişikliği geri almak ve metin tabanlı oturum açma istemini kullanmaya "
+"devam etmek istiyorsanız, `root` olarak aşağıdaki komutu çalıştırın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:343
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:346
@@ -956,12 +1156,15 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
 "+http://docs.fedoraproject.org/++[]."
 msgstr ""
+"[application]*systemd* hedefleri hakkında daha fazla bilgi için "
+"link:++https://docs.fedoraproject.org/++[] adresinde bulunan "
+"[citetitle]_{PRODUCT} Sistem Yöneticisi Kılavuzuna_ bakın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:348
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "Grafiksel Kullanıcı Arayüzü Yok"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:351
@@ -972,6 +1175,10 @@ msgid ""
 "installation, such as `Minimal install` or `Web Server`, do not include a "
 "graphical interface - it has to be installed manually."
 msgstr ""
+"[application]*X* ([application]*X Pencere Sistemi*) başlatmakta sorun "
+"yaşıyorsanız, onu kurmamış olabilirsiniz. Kurulum sırasında seçebileceğiniz `"
+"Asgari kurulum` veya `Web Sunucusu` gibi bazı önceden ayarlanmış temel "
+"ortamlar, bir grafiksel arayüz içermez - elle kurulmalıdır."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:353
@@ -981,12 +1188,16 @@ msgid ""
 "to install [application]*GNOME*, use [command]#dnf install gnome-shell# as "
 "`root`."
 msgstr ""
+"[application]*X* istiyorsanız, kurulumdan sonra [application]*DNF* paket "
+"yöneticisini kullanarak gerekli paketleri kurabilirsiniz. Örneğin, "
+"[application]*GNOME* kurmak için `root` olarak [command]#dnf install gnome-"
+"shell# komutunu kullanın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:354
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "Kullanıcı Oturum Açtıktan Sonra X Sunucusu Çöküyor"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:357
@@ -996,12 +1207,16 @@ msgid ""
 "To verify that this is the problem you are experiencing, execute the "
 "following command:"
 msgstr ""
+"Bir kullanıcı oturum açtığında [application]*X* sunucusunun çökmesiyle "
+"ilgili sorun yaşıyorsanız, bir veya daha fazla dosya sisteminiz dolu (veya "
+"neredeyse dolu) olabilir. Yaşadığınız sorunun bu olduğunu doğrulamak için "
+"aşağıdaki komutu çalıştırın:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:361
 #, no-wrap
 msgid "$ [command]#df -h#\n"
-msgstr ""
+msgstr "$ [command]#df -h#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:364
@@ -1010,6 +1225,9 @@ msgid ""
 "the problem will be on the `/home` partition. A sample output of the "
 "[command]#df# command may look similar to the following:"
 msgstr ""
+"Çıktı, hangi bölümün dolu olduğunu teşhis etmenize yardımcı olacaktır - çoğu "
+"durumda sorun `/home` bölümünde olacaktır. [command]#df# komutunun örnek bir "
+"çıktısı aşağıdakine benzer şekilde görünebilir:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:376
@@ -1025,6 +1243,17 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"Filesystem                                  Size  Used Avail Use% Mounted "
+"on\n"
+"/dev/mapper/vg_rhel-root                     20G  6.0G   13G  32% /\n"
+"devtmpfs                                    1.8G     0  1.8G   0% /dev\n"
+"tmpfs                                       1.8G  2.7M  1.8G   1% /dev/shm\n"
+"tmpfs                                       1.8G 1012K  1.8G   1% /run\n"
+"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/"
+"cgroup\n"
+"tmpfs                                       1.8G  2.6M  1.8G   1% /tmp\n"
+"/dev/sda1                                   976M  150M  760M  17% /boot\n"
+"/dev/dm-4                                    90G   90G     0 100% /home\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:380
@@ -1034,6 +1263,10 @@ msgid ""
 "unneeded files. After you free up some disk space, start [application]*X* "
 "using the [command]#startx# command."
 msgstr ""
+"Yukarıdaki örnekte, `/home` bölümünün dolu olduğunu ve bunun da çökmeye "
+"neden olduğunu görebilirsiniz. Gereksiz dosyaları kaldırarak bölümde biraz "
+"yer açabilirsiniz. Biraz disk alanı boşalttıktan sonra, [command]#startx# "
+"komutunu kullanarak [application]*X*'i başlatın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:382
@@ -1042,6 +1275,9 @@ msgid ""
 "options available (such as the [option]#-h# option used in this example), "
 "see the `df(1)` man page."
 msgstr ""
+"[command]#df# komutu hakkında ek bilgi ve kullanılabilir seçeneklerin (bu "
+"örnekte kullanılan [option]#-h# seçeneği gibi) bir açıklaması için, `df(1)` "
+"kılavuz sayfasına bakın."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:384
