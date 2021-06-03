@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-06-03 17:03+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f26pagesadvancedkickstart_installations/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:6
 #, no-wrap
 msgid "Automating the Installation with Kickstart"
-msgstr ""
+msgstr "Kickstart ile Kurulumu Otomatikleştirme"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:9
@@ -33,6 +38,15 @@ msgid ""
 "especially useful when deploying {PRODUCT} on a large number of systems at "
 "once."
 msgstr ""
+"Kickstart kurulumları, kurulum sürecini kısmen veya tamamen "
+"otomatikleştirmenin bir yolunu sunar. Kickstart dosyaları, sistemin hangi "
+"saat dilimini kullanmasını istediğiniz, disklerin nasıl bölümlendirilmesi "
+"veya hangi paketlerin kurulması gerektiği gibi normalde kurulum programı "
+"tarafından sorulan tüm soruların yanıtlarını içerir. Bu nedenle kurulum "
+"başladığında hazır bir Kickstart dosyası sağlamak, kullanıcının herhangi bir "
+"müdahalesine gerek kalmadan kurulumu otomatik olarak gerçekleştirmenizi "
+"sağlar. Bu, özellikle {PRODUCT}'yı aynı anda çok sayıda sisteme kurarken "
+"faydalıdır."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:11
@@ -40,12 +54,15 @@ msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
 msgstr ""
+"Tüm Kickstart betikleri ve bunların çalıştırılmasıyla ilgili günlük kaydı "
+"dosyaları, kurulum sorunlarının giderilmesine yardımcı olması için `/tmp` "
+"dizininde depolanır."
 
 #. type: Title ====
 #: pages/advanced/Kickstart_Installations.adoc:13
 #, no-wrap
 msgid "How to Perform a Kickstart Installation"
-msgstr ""
+msgstr "Kickstart Kurulumu Nasıl Gerçekleştirilir"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:16
@@ -53,16 +70,18 @@ msgid ""
 "Kickstart installations can be performed using a local DVD, a local hard "
 "drive, or via NFS, FTP, HTTP, or HTTPS."
 msgstr ""
+"Kickstart kurulumları yerel bir DVD, yerel bir sabit disk veya NFS, FTP, "
+"HTTP veya HTTPS aracılığıyla gerçekleştirilebilir."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:18
 msgid "To use Kickstart, you must:"
-msgstr ""
+msgstr "Kickstart kullanmak için şunları yapmalısınız:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:20
 msgid "Create a Kickstart file."
-msgstr ""
+msgstr "Bir Kickstart dosyası oluşturun."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:22
@@ -70,6 +89,8 @@ msgid ""
 "Create boot media or configure a network boot (PXE) server which will be "
 "used to begin the installation."
 msgstr ""
+"Önyükleme ortamı oluşturun veya kurulumu başlatmak için kullanılacak bir ağ "
+"önyükleme (PXE) sunucusu yapılandırın."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:24
@@ -77,6 +98,8 @@ msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
 msgstr ""
+"Kickstart dosyasını çıkarılabilir ortamda, bir sabit diskte veya ağ "
+"konumunda kullanılabilir duruma getirin."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:26
@@ -84,17 +107,19 @@ msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
 msgstr ""
+"Kurucuyu önyükleyerek ve ona Kickstart dosyasını nerede bulacağını söylemek "
+"için bir önyükleme seçeneği kullanarak Kickstart kurulumunu başlatın."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:28
 msgid "This chapter explains these steps in detail."
-msgstr ""
+msgstr "Bu bölümde bu adımlar ayrıntılı olarak açıklanmaktadır."
 
 #. type: Title =====
 #: pages/advanced/Kickstart_Installations.adoc:30
 #, no-wrap
 msgid "Creating a Kickstart File"
-msgstr ""
+msgstr "Kickstart Dosyası Oluşturma"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:33
@@ -107,6 +132,14 @@ msgid ""
 "[application]*Notepad* on Windows systems) can be used to create and edit "
 "Kickstart files."
 msgstr ""
+"Kickstart dosyasının kendisi, xref:../appendixes/Kickstart_Syntax_Reference."
+"adoc#appe-kickstart-syntax-reference[Kickstart Söz Dizimi Referansı] "
+"bölümünde listelenen ve kurulum için yönlendirme görevi gören anahtar "
+"kelimeleri içeren bir düz metin dosyasıdır. Dosyaları ASCII metni olarak "
+"kaydedebilen herhangi bir metin düzenleyicisi (Linux sistemlerinde "
+"[application]*Gedit* veya [application]*vim* ya da Windows sistemlerinde "
+"[application]*Notepad* gibi) Kickstart dosyalarını oluşturmak ve düzenlemek "
+"için kullanılabilir."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:35
@@ -118,11 +151,17 @@ msgid ""
 "then copy this file, make any changes you need, and use the resulting "
 "configuration file in further installations."
 msgstr ""
+"Kickstart dosyaları oluşturmak için tavsiye edilen yaklaşım, önce bir tane "
+"sistemde elle kurulum yapmaktır. Kurulum tamamlandıktan sonra kurulum "
+"sırasında yapılan tüm seçimler kurulu sistem üzerinde `/root/` dizininde "
+"bulunan `anaconda-ks.cfg` adında bir dosyaya kaydedilir. Daha sonra bu "
+"dosyayı kopyalayabilir, ihtiyacınız olan değişiklikleri yapabilir ve ortaya "
+"çıkan yapılandırma dosyasını sonraki kurulumlarda kullanabilirsiniz."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:37
 msgid "When creating a Kickstart file, keep in mind the following:"
-msgstr ""
+msgstr "Bir Kickstart dosyası oluştururken şunları aklınızda bulundurun:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:39
@@ -130,6 +169,7 @@ msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
 msgstr ""
+"`#` işaretiyle başlayan satırlar yorum olarak kabul edilir ve yok sayılır."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:41
@@ -138,6 +178,9 @@ msgid ""
 "to be in a specific order unless otherwise specified. The correct section "
 "order is:"
 msgstr ""
+"Bölümler *sırayla* belirtilmelidir. Bölümlerdeki ögelerin aksi "
+"belirtilmedikçe belirli bir sırada olması gerekmez. Doğru bölüm sırası şu "
+"şekildedir:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:43
@@ -147,6 +190,11 @@ msgid ""
 "syntax-reference[Kickstart Syntax Reference]. Note that some commands, such "
 "as [command]#install#, are mandatory, but most commands are optional."
 msgstr ""
+"xref:../appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-"
+"reference[Kickstart Söz Dizimi Referansı] bölümünde listelenen gerçek "
+"Kickstart komutlarını ve seçeneklerini içeren komut bölümü. "
+"[command]#install# gibi bazı komutların zorunlu olduğunu, ancak çoğu komutun "
+"isteğe bağlı olduğunu unutmayın."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:45
@@ -156,6 +204,10 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (required) "
 "- Package Selection] for details."
 msgstr ""
+"Kurulacak paketlerin ve paket gruplarının listesini içeren "
+"[command]#%packages# bölümü. Ayrıntılar için xref:../appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (gerekli) -"
+" Paket Seçimi] bölümüne bakın."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:47
@@ -168,6 +220,13 @@ msgid ""
 "adoc#sect-kickstart-postinstall[%post (optional) - Post-installation Script] "
 "for details."
 msgstr ""
+"Kurulum öncesi ve kurulum sonrası betiklerini içeren [command]#%pre# ve "
+"[command]#%post# bölümleri. Bu iki bölüm herhangi bir sırada olabilir ve "
+"zorunlu değildir. Ayrıntılar için xref:../appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-preinstall[%pre (isteğe bağlı)"
+" - Kurulum Öncesi Betiği] ve xref:../appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-postinstall[%post (isteğe bağlı) - Kurulum Sonrası "
+"Betiği] bölümlerine bakın."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:52
@@ -176,6 +235,9 @@ msgid ""
 "end with [command]#%end#, otherwise the installation program will refuse the "
 "Kickstart file. The main command section has no special ending statement."
 msgstr ""
+"[command]#%packages#, [command]#%pre# and [command]#%post# bölümleri "
+"[command]#%end# ile bitmelidir, aksi takdirde kurulum programı Kickstart "
+"dosyasını reddedecektir. Ana komut bölümünün özel bir bitiş ifadesi yoktur."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:56
@@ -187,12 +249,17 @@ msgid ""
 "you will not be able to see the prompt, and the installation will appear to "
 "have failed."
 msgstr ""
+"Gerekli herhangi bir ögenin atlanması durumunda, tıpkı normal bir kurulum "
+"sırasında kullanıcıdan isteneceği gibi, kurulum programında kullanıcıdan "
+"ilgili ögeye yanıt vermesi istenir. Yanıt verildikten sonra kurulum devam "
+"edecektir. Kurmakta olduğunuz sistemin ekranı yoksa, isteği göremeyeceğinizi "
+"ve kurulumun başarısız görüneceğini unutmayın."
 
 #. type: Title =====
 #: pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr ""
+msgstr "Kickstart Dosyasını Doğrulama"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:61
@@ -203,12 +270,18 @@ msgid ""
 "used to do this. This tool is a part of the [package]*pykickstart* package. "
 "To install this package, execute the following command:"
 msgstr ""
+"Kickstart dosyanızı oluştururken veya özelleştirirken, onu bir kurulumda "
+"kullanmaya çalışmadan önce geçerli olduğunu doğrulamanız faydalı olacaktır. "
+"{PRODUCT}, bunu yapmak için kullanılabilecek [application]*ksvalidator* "
+"komut satırı yardımcı programını içermektedir. Bu araç, "
+"[package]*pykickstart* paketinin bir parçasıdır. Bu paketi kurmak için "
+"aşağıdaki komutu çalıştırın:"
 
 #. type: delimited block -
 #: pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
-msgstr ""
+msgstr "# dnf install pykickstart\n"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:68
@@ -216,12 +289,14 @@ msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
 msgstr ""
+"Paketi kurduktan sonra, aşağıdaki komutu kullanarak bir Kickstart dosyasını "
+"doğrulayabilirsiniz:"
 
 #. type: delimited block -
 #: pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
-msgstr ""
+msgstr "$ [command]#ksvalidator _/dosya/yolu/kickstart.ks_#\n"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:75
@@ -229,12 +304,16 @@ msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
 msgstr ""
+"_/dosya/yolu/kickstart.ks_ kısmını, doğrulamak istediğiniz Kickstart "
+"dosyasının yolu ile değiştirin."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:77
 msgid ""
 "For more information about this tool, see the `ksvalidator(1)` man page."
 msgstr ""
+"Bu araç hakkında daha fazla bilgi için `ksvalidator(1)` kılavuz sayfasına "
+"bakın."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:82
@@ -246,12 +325,18 @@ msgid ""
 "attempt to validate the [command]#%pre#, [command]#%post# and [command]#"
 "%packages# sections of the Kickstart file."
 msgstr ""
+"Doğrulama aracının bazı sınırlamaları olduğunu unutmayın. Kickstart dosyası "
+"çok karmaşık olabilir; [application]*ksvalidator* söz diziminin doğru "
+"olduğundan ve dosyanın kaldırılan seçenekleri içermediğinden emin olabilir, "
+"ancak kurulumun başarılı olacağını garanti edemez. Ayrıca Kickstart "
+"dosyasının [command]#%pre#, [command]#%post# ve [command]#%packages# "
+"bölümlerini doğrulamaya çalışmaz."
 
 #. type: Title =====
 #: pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr ""
+msgstr "Kickstart Dosyasını Kullanılabilir Yapma"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:89
@@ -259,6 +344,8 @@ msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
 msgstr ""
+"Bir Kickstart dosyası oluşturduğunuzda, onu aşağıdakilerden birine "
+"koyabilirsiniz:"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:91
@@ -266,16 +353,18 @@ msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
 msgstr ""
+"Kurulum sistemine bağlı DVD veya USB flash bellek gibi bir *çıkarılabilir "
+"ortam*"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
-msgstr ""
+msgstr "Kurulum sistemine bağlı bir *sabit disk*"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
-msgstr ""
+msgstr "Kurulum sisteminden erişilebilen bir *ağ paylaşım konumu*"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:97
@@ -287,6 +376,12 @@ msgid ""
 "is downloaded from a network share, and software packages specified in the "
 "file are downloaded from remote repositories."
 msgstr ""
+"Normalde, bir Kickstart dosyası çıkarılabilir ortama veya sabit diske "
+"kopyalanır veya ağda kullanılabilir duruma getirilir. Dosyayı bir ağ "
+"konumuna yerleştirmek, kendisi de ağ tabanlı olan Kickstart kurulumlarına "
+"yönelik olağan yaklaşımı tamamlar: sistem bir PXE sunucusu kullanılarak "
+"önyüklenir, Kickstart dosyası bir ağ paylaşım konumundan indirilir ve "
+"dosyada belirtilen yazılım paketleri uzak depolardan indirilir."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:99
@@ -295,12 +390,15 @@ msgid ""
 "Installation Server] offers some additional information about preparing for "
 "a network-based installation."
 msgstr ""
+"xref:Network_based_Installations.adoc#chap-pxe-server-setup[Kurulum Sunucusu "
+"Ayarlama] bölümü, ağ tabanlı bir kuruluma hazırlanma hakkında bazı ek "
+"bilgiler sunmaktadır."
 
 #. type: Title =====
 #: pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr ""
+msgstr "Kickstart Kurulumunu Başlatma"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:103
@@ -313,3 +411,11 @@ msgid ""
 "used in Kickstart installations, see xref:Boot_Options.adoc#sect-boot-"
 "options-kickstart[Kickstart Boot Options]."
 msgstr ""
+"Her şey hazır olduğunda, yani geçerli bir Kickstart dosyası oluşturduysanız "
+"ve yerel önyükleme ortamınız veya kullanılabilir bir PXE sunucunuz varsa, "
+"Kickstart kurulumunu başlatabilirsiniz. (Yerel ortamdan önyükleme yaparken) "
+"önyükleme menüsünde [option]#inst.ks=# önyükleme seçeneğini kullanmanız veya "
+"bu seçeneği PXE sunucusu yapılandırmanıza eklemeniz gerekir. Kickstart "
+"kurulumlarında kullanılan önyükleme seçenekleri hakkında bilgi için "
+"xref:Boot_Options.adoc#sect-boot-options-kickstart[Kickstart Önyükleme "
+"Seçenekleri] bölümüne bakın."

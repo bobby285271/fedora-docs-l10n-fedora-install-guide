@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-06-02 15:03+0000\n"
+"PO-Revision-Date: 2021-06-03 17:03+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f29pagesinstalltroubleshooting/tr/>\n"
@@ -67,6 +67,9 @@ msgid ""
 "The #fedora IRC channel on link:++https://freenode.net//++[FreeNode] - one "
 "of the main IRC channels used by Fedora users, English only"
 msgstr ""
+"link:++https://libera.chat/++[Libera.Chat] üzerindeki #fedora IRC kanalı - "
+"Fedora kullanıcıları tarafından kullanılan ana IRC kanallarından biri, "
+"yalnızca İngilizce"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:20
@@ -1283,7 +1286,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:384
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "RAM'iniz Tanınmıyor Mu?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:387
@@ -1297,6 +1300,15 @@ msgid ""
 "system's memory - see xref:advanced/Boot_Options.adoc#sect-boot-options-"
 "memtest[Loading the Memory (RAM) Testing Mode] for details."
 msgstr ""
+"Bazı durumlarda, çekirdek tüm belleğinizi (RAM) tanımaz, bu da sistemin "
+"kurulu olandan daha az bellek kullanmasına neden olur. [command]#free -m# "
+"komutunu kullanarak ne kadar RAM kullanıldığını öğrenebilirsiniz. "
+"Görüntülenen toplam bellek miktarı beklentilerinizi karşılamıyorsa, bellek "
+"modüllerinizden en az biri arızalı olabilir. BIOS tabanlı sistemlerde, "
+"sisteminizin belleğini test etmek için [application]*Memtest86+* yardımcı "
+"programını kullanabilirsiniz - ayrıntılar için xref:advanced/Boot_Options."
+"adoc#sect-boot-options-memtest[Bellek (RAM) Test Modunu Yükleme] bölümüne "
+"bakın."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:392
@@ -1305,6 +1317,10 @@ msgid ""
 "3.5GB or 3.7GB, you have probably installed a 32-bit version of {PRODUCT} on "
 "a 64bit kernel. For modern systems, use the 64-bit (x86_64) version."
 msgstr ""
+"4 GB veya daha fazla bellek kuruluysa ancak {PRODUCT} yalnızca yaklaşık 3,5 "
+"GB veya 3,7 GB gösteriyorsa, muhtemelen 64 bit bir çekirdeğe {PRODUCT}'nın "
+"32 bit sürümünü kurdunuz. Modern sistemler için 64 bit (x86_64) sürümünü "
+"kullanın."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:394
@@ -1315,6 +1331,12 @@ msgid ""
 "with 4{nbsp}GB of RAM and an integrated Intel graphics card will show only "
 "roughly 3.7{nbsp}GB of available memory, even with a 64-bit system."
 msgstr ""
+"Bazı donanım yapılandırmalarında sistem RAM'inin bir kısmı ayrılmıştır ve "
+"ana sistem tarafından kullanılamaz. Özellikle tümleşik grafik kartlarına "
+"sahip dizüstü bilgisayarlar GPU için bir miktar bellek ayıracaktır. Örneğin, "
+"4{nbsp}GB RAM'e ve tümleşik Intel grafik kartına sahip bir dizüstü "
+"bilgisayar, 64 bit sistemde bile yalnızca yaklaşık 3,7{nbsp}GB "
+"kullanılabilir bellek gösterecektir."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:396
@@ -1327,6 +1349,13 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
 "+https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Ek olarak, [application]*kdump* çekirdek çökme döküm mekanizması, birincil "
+"çekirdeğin çökmesi durumunda kullanılan ikincil çekirdek için bir miktar "
+"bellek ayırır. Bu ayrılan bellek de, [command]#free# komutu "
+"çalıştırıldığında kullanılabilir olarak görüntülenmeyecektir. "
+"[application]*kdump* ve bellek gereksinimleriyle ilgili ayrıntılar için "
+"link:++https://docs.fedoraproject.org/++[] adresinde bulunan "
+"[citetitle]_{PRODUCT} Sistem Yöneticisi Kılavuzuna_ bakın."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:400
@@ -1334,12 +1363,15 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"Belleğinizde herhangi bir sorun olmadığından eminseniz, [option]#mem=# "
+"çekirdek seçeneğini kullanarak bellek miktarını elle ayarlamayı "
+"deneyebilirsiniz."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:401
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "Belleği Elle Yapılandırma"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:407
@@ -1348,19 +1380,23 @@ msgid ""
 "with the keyword `linux` (or, in some cases, `linux16`). Append the "
 "following option to the end of this line:"
 msgstr ""
+"Seçenekler listesinde çekirdek satırını, yani `linux` (veya bazı durumlarda "
+"`linux16`) anahtar kelimesiyle başlayan satırı bulun. Bu satırın sonuna "
+"aşağıdaki seçeneği ekleyin:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:411
 #: pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
-msgstr ""
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:414
 #: pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
 msgstr ""
+"_xx_ değerini megabayt cinsinden sahip olduğunuz RAM miktarıyla değiştirin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:418
@@ -1371,6 +1407,11 @@ msgid ""
 "the line beginning with `GRUB_CMDLINE_LINUX` in the `/etc/default/grub` file "
 "to make the change permanent:"
 msgstr ""
+"Sistemin önyüklemesini bekleyin ve oturum açın. Ardından bir komut satırı "
+"açın ve [command]#free -m# komutunu tekrar çalıştırın. Komut tarafından "
+"görüntülenen toplam RAM miktarı beklentilerinize uyuyorsa, değişikliği "
+"kalıcı hale getirmek için `/etc/default/grub` dosyasında `GRUB_CMDLINE_LINUX`"
+" ile başlayan satırın sonuna aşağıdakini ekleyin:"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:427
@@ -1379,6 +1420,9 @@ msgid ""
 "configuration so that the change will take effect. Run the following command "
 "with root privileges:"
 msgstr ""
+"Dosyayı güncelleyip kaydettikten sonra, değişikliğin etkili olması için "
+"önyükleyici yapılandırmasını yenileyin. Aşağıdaki komutu root "
+"ayrıcalıklarıyla çalıştırın:"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:434
@@ -1386,6 +1430,8 @@ msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
 msgstr ""
+"`/etc/default/grub` dosyasında, yukarıdaki örnek aşağıdakine benzer şekilde "
+"görünecektir:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:444
@@ -1399,3 +1445,12 @@ msgid ""
 "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd.lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
+"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"
