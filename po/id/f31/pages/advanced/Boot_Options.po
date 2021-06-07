@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-05-26 13:02+0000\n"
+"PO-Revision-Date: 2021-06-07 12:04+0000\n"
 "Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesadvancedboot_options/id/>\n"
@@ -291,7 +291,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:83
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:84
@@ -366,7 +366,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:99
 #, no-wrap
 msgid "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
-msgstr ""
+msgstr "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:102
@@ -395,7 +395,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:110
 #, no-wrap
 msgid "[option]#inst.askmethod#"
-msgstr ""
+msgstr "[option]#inst.askmethod#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:111
@@ -453,7 +453,7 @@ msgstr "Opsi Boot Kickstart"
 #: pages/advanced/Boot_Options.adoc:119
 #, no-wrap
 msgid "[option]#inst.ks=#"
-msgstr ""
+msgstr "[option]#inst.ks=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:120
@@ -486,6 +486,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 msgstr ""
+"[opsi]#inst.ks=nfs:pass:attributes[{blank}]_next-"
+"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:129
@@ -514,6 +516,9 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
+"|DHCP server address|Client address|Kickstart file location\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
+"kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:139
@@ -534,7 +539,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:141
 #, no-wrap
 msgid "[option]#inst.ks.sendmac#"
-msgstr ""
+msgstr "[option]#inst.ks.sendmac#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:142
@@ -549,7 +554,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:146
 #, no-wrap
 msgid "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
-msgstr ""
+msgstr "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:149
@@ -563,7 +568,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:150
 #, no-wrap
 msgid "[option]#inst.ks.sendsn#"
-msgstr ""
+msgstr "[option]#inst.ks.sendsn#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:151
@@ -572,24 +577,27 @@ msgid ""
 "system's serial number, read from `/sys/class/dmi/id/product_serial`. The "
 "header has the following syntax:"
 msgstr ""
+"Tambahkan header pada permintaan `HTTP` keluar. Header ini akan berisi nomor "
+"seri sistem, dibaca dari `/sys/class/dmi/id/product_serial`. Header tersebut "
+"akan memiliki sintaks berikut:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:155
 #, no-wrap
 msgid "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
-msgstr ""
+msgstr "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:158
 #, no-wrap
 msgid "Console, Environment and Display Options"
-msgstr ""
+msgstr "Opsi Konsol, Lingkungan, dan Tampilan"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:160
 #, no-wrap
 msgid "[option]#console=#"
-msgstr ""
+msgstr "[option]#console=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:161
@@ -599,6 +607,10 @@ msgid ""
 "[option]#console=ttyS0#. This option should be used along with the "
 "[option]#inst.text# option."
 msgstr ""
+"Opsi kernel ini menentukan perangkat yang akan digunakan sebagai konsol "
+"utama. Misalnya, untuk menggunakan konsol pada port serial pertama, gunakan "
+"[option]#console=ttyS0#. Opsi ini harus digunakan bersama dengan opsi "
+"[option]#inst.text#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:163
@@ -609,12 +621,17 @@ msgid ""
 "[option]#console=ttyS0 console=ttyS1#, the installation program will only "
 "use `ttyS1`."
 msgstr ""
+"Anda dapat menggunakan opsi ini beberapa kali. Dalam hal ini, pesan boot "
+"akan ditampilkan di semua konsol yang ditentukan, tetapi hanya konsol "
+"terakhir yang akan digunakan oleh program instalasi setelahnya. Misalnya, "
+"jika Anda menentukan [option]#console=ttyS0 console=ttyS1#, program "
+"instalasi hanya akan menggunakan `ttyS1`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:164
 #, no-wrap
 msgid "[option]#noshell#"
-msgstr ""
+msgstr "[option]#noshell#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:165
@@ -624,12 +641,16 @@ msgid ""
 "can watch the installation progress, but they cannot interfere with it by "
 "accessing the root shell by pressing kbd:[Ctrl + Alt + F2]."
 msgstr ""
+"Nonaktifkan akses ke shell root selama instalasi. Hal ini berguna untuk "
+"instalasi otomatis (Kickstart) - jika Anda menggunakan opsi ini, pengguna "
+"dapat melihat kemajuan instalasi, tetapi mereka tidak dapat mengganggunya "
+"dengan mengakses shell root melalui kbd:[Ctrl + Alt + F2]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:166
 #, no-wrap
 msgid "[option]#inst.lang=#"
-msgstr ""
+msgstr "[option]#inst.lang=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:167
@@ -650,12 +671,15 @@ msgid ""
 "using this option will be selected by default, but you will still be able to "
 "change it at the beginning of the graphical installation."
 msgstr ""
+"Jika Anda melakukan instalasi secara interaktif, bahasa yang Anda tentukan "
+"menggunakan opsi ini akan dipilih secara default, tetapi Anda masih dapat "
+"mengubahnya di awal instalasi grafis."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:170
 #, no-wrap
 msgid "[option]#inst.singlelang#"
-msgstr ""
+msgstr "[option]#inst.singlelang#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:171
@@ -667,12 +691,18 @@ msgid ""
 "[application]*Anaconda* and the installed system will default to `en-US."
 "UTF-8`."
 msgstr ""
+"Izinkan Anda menjalankan instalasi dalam mode satu bahasa - dengan kata "
+"lain, opsi ini menonaktifkan pemilihan bahasa untuk penginstal dan sistem "
+"yang diinstal. Jika Anda juga menggunakan opsi [option]#inst.lang=# secara "
+"bersamaan, bahasa yang Anda tentukan akan digunakan. Jika Anda tidak "
+"mengatur bahasa, [aplikasi]*Anaconda* dan sistem yang diinstal akan default "
+"ke `en-US.UTF-8`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:172
 #, no-wrap
 msgid "[option]#inst.geoloc=#"
-msgstr ""
+msgstr "[option]#inst.geoloc=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:173
@@ -681,17 +711,23 @@ msgid ""
 "used to pre-set the language and time zone, and uses the following syntax: "
 "[option]#inst.geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 msgstr ""
+"Lakukan konfigutasi penggunaan geolokasi dalam program instalasi. Geolokasi "
+"digunakan untuk mengatur bahasa dan zona waktu sebelumnya, dan menggunakan "
+"sintaks berikut: [option]#inst."
+"geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:175
 msgid "The _value_ parameter can be any of the following:"
 msgstr ""
+"Parameter _value_ dapat berupa salah satu dari yang tercantum di daftar "
+"berikut ini:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:177
 #, no-wrap
 msgid "Valid Values for the inst.geoloc Option"
-msgstr ""
+msgstr "Nilai Valid untuk Opsi inst.geoloc"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:183
@@ -701,6 +737,9 @@ msgid ""
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 msgstr ""
+"|Nonaktifkan geolokasi|[option]#inst.geoloc=0#\n"
+"|Gunakan Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
+"|Gunakan Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:186
@@ -708,12 +747,14 @@ msgid ""
 "If this option is not specified, [application]*Anaconda* will use "
 "`provider_fedora_geoip`."
 msgstr ""
+"Jika opsi ini tidak ditentukan, [application]*Anaconda* akan menggunakan "
+"`provider_fedora_geoip`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:187
 #, no-wrap
 msgid "[option]#inst.keymap=#"
-msgstr ""
+msgstr "[option]#inst.keymap=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:188
@@ -728,7 +769,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:189
 #, no-wrap
 msgid "[option]#inst.text#"
-msgstr ""
+msgstr "[option]#inst.text#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:190
@@ -740,12 +781,18 @@ msgid ""
 "as described in xref:Boot_Options.adoc#sect-boot-options-vnc[Enabling Remote "
 "Access Using VNC]."
 msgstr ""
+"Paksa program instalasi untuk berjalan dalam mode teks dibandingkan mode "
+"grafis. Antarmuka pengguna teks terbatas, misalnya, tidak memungkinkan Anda "
+"untuk mengubah tata letak partisi atau mengatur LVM. Saat memasang sistem "
+"pada mesin dengan kemampuan grafis terbatas, disarankan untuk menggunakan "
+"VNC seperti yang dijelaskan dalam xref:Boot_Options.adoc#sect-boot-options-"
+"vnc[Mengaktifkan Akses Jarak Jauh Menggunakan VNC]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:191
 #, no-wrap
 msgid "[option]#inst.cmdline#"
-msgstr ""
+msgstr "[option]#inst.cmdline#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:192
@@ -754,12 +801,15 @@ msgid ""
 "not allow any interaction, all options must be specified in a Kickstart file "
 "or on the command line."
 msgstr ""
+"Paksa program instalasi untuk berjalan dalam mode baris perintah. Mode ini "
+"tidak mengizinkan interaksi apa pun, semua opsi harus ditentukan dalam file "
+"Kickstart atau pada baris perintah."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:193
 #, no-wrap
 msgid "[option]#inst.graphical#"
-msgstr ""
+msgstr "[option]#inst.graphical#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:194
@@ -767,12 +817,14 @@ msgid ""
 "Forces the installation program to run in graphical mode. This mode is the "
 "default."
 msgstr ""
+"Paksa program instalasi untuk berjalan dalam mode grafis. Ini adalah mode "
+"default."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:195
 #, no-wrap
 msgid "[option]#inst.resolution=#"
-msgstr ""
+msgstr "[option]#inst.resolution=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:196
@@ -782,12 +834,16 @@ msgid ""
 "width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
+"Tentukan resolusi layar dalam mode grafis. Formatnya adalah "
+"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, dengan _N_ adalah "
+"lebar layar dan _M_ adalah tinggi layar (dalam piksel). Resolusi terendah "
+"yang didukung adalah `800x600`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:197
 #, no-wrap
 msgid "[option]#inst.xdriver=#"
-msgstr ""
+msgstr "[option]#inst.xdriver=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:198
@@ -795,12 +851,14 @@ msgid ""
 "Specifies the name of the `X` driver to be used both during the installation "
 "and on the installed system."
 msgstr ""
+"Tentukan nama driver `X` yang akan digunakan selama instalasi dan pada "
+"sistem yang akan diinstal."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:199
 #, no-wrap
 msgid "[option]#inst.usefbx#"
-msgstr ""
+msgstr "[option]#inst.usefbx#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:200
@@ -809,6 +867,9 @@ msgid ""
 "a hardware-specific driver. This option is equivalent to [option]#inst."
 "xdriver=fbdev#."
 msgstr ""
+"Arahkan program instalasi untuk menggunakan frame buffer `X` driver daripada "
+"menggunakan driver khusus perangkat keras. Opsi ini setara dengan [opsi]#inst"
+".xdriver=fbdev#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:201
@@ -827,7 +888,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:203
 #, no-wrap
 msgid "[option]#modprobe.blacklist=#"
-msgstr ""
+msgstr "[option]#modprobe.blacklist=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:204
@@ -838,23 +899,30 @@ msgid ""
 "system will keep these settings. The blacklisted drivers can then be found "
 "in the `/etc/modprobe.d/` directory."
 msgstr ""
+"Masukkan satu driver atau lebih ke dalam daftar hitam (nonaktifkan "
+"sepenuhnya). Driver (mods) yang dinonaktifkan menggunakan opsi ini akan "
+"dicegah untuk memuat saat instalasi dimulai, dan setelah instalasi selesai, "
+"sistem yang terinstal akan menyimpan setelan ini. Driver yang masuk daftar "
+"hitam kemudian dapat ditemukan di direktori `/etc/modprobe.d/`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:206
 msgid "Use a comma-separated list to disable multiple drivers. For example:"
 msgstr ""
+"Gunakan daftar yang dipisahkan koma untuk menonaktifkan beberapa driver. "
+"Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:209
 #, no-wrap
 msgid "modprobe.blacklist=ahci,firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=ahci,firewire_ohci\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:211
 #, no-wrap
 msgid "[option]#inst.sshd#"
-msgstr ""
+msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:212
@@ -893,7 +961,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:223
 #, no-wrap
 msgid "Network Boot Options"
-msgstr ""
+msgstr "Opsi Boot Jaringan"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:226
