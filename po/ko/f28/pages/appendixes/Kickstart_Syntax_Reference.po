@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-06-02 15:03+0000\n"
+"PO-Revision-Date: 2021-06-07 12:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -22,7 +22,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "킥스타트 구문 참조"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -46,12 +46,12 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:18
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[명령]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:21
 msgid "You could use an entry similar to one of the following:"
-msgstr ""
+msgstr "당신은 다음 중 하나와 유사한 항목을 사용 할 수 있습니다:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:26
@@ -62,6 +62,9 @@ msgid ""
 "part / --fstype=xfs "
 "--onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:30
@@ -86,7 +89,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:38
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [명령]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:41
@@ -119,18 +122,18 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:52
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr ""
+msgstr "설치 방법과 원천"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:55
 msgid "The following commands control the way Fedora will be installed."
-msgstr ""
+msgstr "다음 명령은 페도라가 설치되어지는 방식을 제어합니다."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:57
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr ""
+msgstr "장치 (선택적인) - 추가 장치 드라이버를 설치"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:60
@@ -146,7 +149,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:64
 #, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[명령]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:67
@@ -159,24 +162,24 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:68
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[선택]#--opts=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:69
 msgid "Options to pass to the installed kernel module. For example:"
-msgstr ""
+msgstr "설치된 커널 모듈에 전달하여야 하는 선택. 예를 들면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:72
 #, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:75
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr ""
+msgstr "driverdisk (선택적인) - 드라이버 디스크를 사용합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:78
@@ -192,7 +195,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:82
 #, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[명령]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:84
@@ -212,13 +215,13 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:89
 #, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[명령]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:91
 #, no-wrap
 msgid "[option]#--source=#"
-msgstr ""
+msgstr "[선택]#--source=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:92
@@ -234,6 +237,8 @@ msgid ""
 "[command]#driverdisk "
 "--source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[명령]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:101
@@ -242,6 +247,8 @@ msgid ""
 "[command]#driverdisk "
 "--source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[명령]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:106
@@ -250,17 +257,20 @@ msgid ""
 "[command]#driverdisk "
 "--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[명령]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:108
 #, no-wrap
 msgid "[option]#--biospart=#"
-msgstr ""
+msgstr "[선택]#--biospart=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:109
 msgid "BIOS partition containing the driver disk (for example, `82p2`)."
-msgstr ""
+msgstr "드라이버 디스크에 포함되어 있는 바이오스 파티션(예를 들면, `82p2`)."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:111
@@ -533,7 +543,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:198
 #, no-wrap
 msgid "mediacheck (optional) - Verify Installation Media Integrity"
-msgstr ""
+msgstr "mediacheck (선택적인) - 설치 미디어 무결성을 확인합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:201
@@ -550,7 +560,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:203
 #, no-wrap
 msgid "ostreesetup (optional) - Install from an OSTree"
-msgstr ""
+msgstr "ostreesetup (선택적인) - OSTree에서 설치합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:206
@@ -559,68 +569,70 @@ msgid ""
 "link:++https://wiki.gnome.org/action/show/Projects/OSTree++[] for more "
 "information about OSTree. Available options are:"
 msgstr ""
+"OSTree 설치에 사용되었습니다. OSTree에 대한 보다 상세한 정보를 위하여 연결: ++https://wiki.gnome.org/"
+"action/show/Projects/OSTree++[]을 참조하세요. 사용 가능한 선택은 다음과 같습니다:"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:207
 #, no-wrap
 msgid "[option]#--osname=#"
-msgstr ""
+msgstr "[선택]#--osname=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:208
 msgid "Management root for OS installation (required)."
-msgstr ""
+msgstr "운영체제 설치에 root 관리 (필수적인)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:209
 #, no-wrap
 msgid "[option]#--remote=#"
-msgstr ""
+msgstr "[선택]#--remote=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:210
 msgid "Management root for OS installation (optional)."
-msgstr ""
+msgstr "OS 설치에 루트 관리(필수적인)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:211
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:265
 #, no-wrap
 msgid "[option]#--url=#"
-msgstr ""
+msgstr "[선택]#--url=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:212
 msgid "Repository URL (required)."
-msgstr ""
+msgstr "저장소 URL (필수적인)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:213
 #, no-wrap
 msgid "[option]#--ref=#"
-msgstr ""
+msgstr "[선택]#--ref=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:214
 msgid "Name of branch inside the repository (required)."
-msgstr ""
+msgstr "저장소 내부의 분기 이름 (필수적인)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:215
 #, no-wrap
 msgid "[option]#--nogpg#"
-msgstr ""
+msgstr "[선택]#--nogpg#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:216
 msgid "Disable GPG key verification (optional)."
-msgstr ""
+msgstr "GPG 키 확인 비활성화 (선택적인)."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:218
 #, no-wrap
 msgid "repo (optional) - Configure Additional Repositories"
-msgstr ""
+msgstr "repo (선택적인) - 추가 저장소 구성"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:221
@@ -629,6 +641,8 @@ msgid ""
 "sources for package installation. This command can be used multiple times in "
 "a single Kickstart file."
 msgstr ""
+"꾸러미 설치에 원천으로 사용되어질 수 있는 추가적인[응용프로그램]*DNF* 저장소를 구성합니다. 이 명령은 단일 킥스타트 파일에서 여러 "
+"번 사용 될 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:223
@@ -644,6 +658,7 @@ msgid ""
 "Repositories used for installation must be stable. The installation may fail "
 "if a repository is modified before the installation concludes."
 msgstr ""
+"설치를 위해 사용되어지는 저장소는 안정된 상태이어야 합니다. 설치는 만약 설치가 완료되기 전에 저장소가 수정되면 실패 할 수 있습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:231
@@ -652,7 +667,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1701
 #, no-wrap
 msgid "[option]#--name=#"
-msgstr ""
+msgstr "[선택]#--name=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:232
@@ -668,7 +683,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:233
 #, no-wrap
 msgid "[option]#--baseurl=#"
-msgstr ""
+msgstr "[선택]#--baseurl=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:234
