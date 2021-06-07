@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-05-25 12:17+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
 "f26pagesappendixeskickstart_syntax_reference/pt_BR/>\n"
@@ -2990,17 +2990,20 @@ msgid ""
 "[command]#volgroup myvg pv.01#\n"
 "[command]#logvol / --vgname=myvg --size=2000 --name=rootvol#\n"
 msgstr ""
+"[command]#part pv.01 --size 3000#\n"
+"[command]#volgroup myvg pv.01#\n"
+"[command]#logvol / --vgname=myvg --size=2000 --name=rootvol#\n"
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:788
 #, no-wrap
 msgid "part (required) - Create Physical Partition"
-msgstr ""
+msgstr "part (obrigatório) - Cria partição física"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:791
 msgid "Creates a partition on the system."
-msgstr ""
+msgstr "Cria uma partição no sistema."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:793
@@ -3015,6 +3018,10 @@ msgstr ""
 #, no-wrap
 msgid "[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ --device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#part|partition _pontomontagem_ --name=pass:attributes[{blank}]"
+"_nome_ --device=pass:attributes[{blank}]_dispositivo_ "
+"--rule=pass:attributes[{blank}]_regra_ "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:805
@@ -3022,6 +3029,9 @@ msgid ""
 "All partitions created are formatted as part of the installation process "
 "unless [option]#--noformat# and [option]#--onpart=# are used."
 msgstr ""
+"Todas as partições criadas são formatadas como parte do processo de "
+"instalação, a menos que [option]#--noformat# e [option]#--onpart=# sejam "
+"usados."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:812
@@ -3029,12 +3039,14 @@ msgid ""
 "If partitioning fails for any reason, diagnostic messages appear on virtual "
 "console 3."
 msgstr ""
+"Se o particionamento falhar por qualquer motivo, mensagens de diagnóstico "
+"serão exibidas no console virtual 3."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:816
 msgid ""
 "Where the partition is mounted. The value must be of one of the following:"
-msgstr ""
+msgstr "Onde a partição é montada. O valor deve ser um dos seguintes:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:829
@@ -3042,29 +3054,31 @@ msgid ""
 "The size assigned will be effective but not precisely calibrated for your "
 "system."
 msgstr ""
+"O tamanho atribuído será eficaz, mas não calibrado com precisão para o seu "
+"sistema."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:835
 #, no-wrap
 msgid "`swap--hibernation`\n"
-msgstr ""
+msgstr "`swap--hibernation`\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
 #, no-wrap
 msgid "`raid._id_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`raid._id_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:842
 msgid "The partition is used for software RAID (see [command]#raid#)."
-msgstr ""
+msgstr "A partição é usada para RAID por software (veja [command]#raid#)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:843
 #, no-wrap
 msgid "`pv._id_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`pv._id_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:844
@@ -3077,7 +3091,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:845
 #, no-wrap
 msgid "`biosboot`:"
-msgstr ""
+msgstr "`biosboot`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:846
@@ -3093,7 +3107,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:847
 #, no-wrap
 msgid "`/boot/efi`:"
-msgstr ""
+msgstr "`/boot/efi`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:848
@@ -3111,6 +3125,8 @@ msgid ""
 "The minimum partition size in megabytes. Specify an integer value here such "
 "as `500` (do not include the unit)."
 msgstr ""
+"O tamanho mínimo da partição em megabytes. Especifique um valor inteiro "
+"aqui, como `500` (não inclua a unidade)."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -3128,6 +3144,9 @@ msgid ""
 "The maximum partition size in megabytes when the partition is set to grow. "
 "Specify an integer value here such as `500` (do not include the unit)."
 msgstr ""
+"O tamanho máximo da partição em megabytes quando a partição é configurada "
+"para aumentar. Especifique um valor inteiro aqui, como `500` (não inclua a "
+"unidade)."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:861
@@ -3136,6 +3155,9 @@ msgid ""
 "(in megabytes) using the [option]#--size=# option and the target partition "
 "using the [option]#--onpart=# option."
 msgstr ""
+"Redimensiona uma partição existente. Ao usar esta opção, especifique o novo "
+"tamanho (em megabytes) usando a opção [option]#--size=# e a partição de "
+"destino usando a opção [option]#--onpart=#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:863
@@ -3143,6 +3165,8 @@ msgid ""
 "Tells the partition to grow to fill available space (if any), or up to the "
 "maximum size setting."
 msgstr ""
+"Diz à partição para aumentar para preencher o espaço disponível (se houver) "
+"ou até a configuração de tamanho máximo."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:868
@@ -3154,6 +3178,12 @@ msgid ""
 "than 2{nbsp}GB, the imposed limit is the size of physical memory plus 2{nbsp}"
 "GB."
 msgstr ""
+"Se você usar [option]#--grow=# sem definir [option]#--maxsize=# em uma "
+"partição swap, o [application]*Anaconda* irá limitar o tamanho máximo da "
+"partição swap. Para sistemas com menos de 2{nbsp}GB de memória física, o "
+"limite imposto é duas vezes a quantidade de memória física. Para sistemas "
+"com mais de 2{nbsp}GB, o limite imposto é o tamanho da memória física mais "
+"2{nbsp}GB."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:872
@@ -3161,40 +3191,44 @@ msgid ""
 "Specifies that the partition should not be formatted, for use with the "
 "[option]#--onpart# command."
 msgstr ""
+"Especifica que a partição não deve ser formatada, para uso com o comando "
+"[option]#--onpart#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:873
 #, no-wrap
 msgid "[option]#--onpart=# or [option]#--usepart=#"
-msgstr ""
+msgstr "[option]#--onpart=# ou [option]#--usepart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:874
 msgid "Specifies the device on which to place the partition. For example:"
-msgstr ""
+msgstr "Especifica o dispositivo no qual colocar a partição. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:878
 #, no-wrap
 msgid "[command]#partition /home --onpart=hda1#\n"
-msgstr ""
+msgstr "[command]#partition /home --onpart=hda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:881
 msgid "The above puts `/home` on `/dev/hda1`."
-msgstr ""
+msgstr "Isto coloca `/home` em `/dev/hda1`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:883
 msgid ""
 "These options can also add a partition to a logical volume. For example:"
 msgstr ""
+"Essas opções também podem adicionar uma partição a um volume lógico. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:887
 #, no-wrap
 msgid "[command]#partition pv.1 --onpart=hda2#\n"
-msgstr ""
+msgstr "[command]#partition pv.1 --onpart=hda2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:890
@@ -3202,12 +3236,14 @@ msgid ""
 "The device must already exist on the system; the [option]#--onpart# option "
 "will not create it."
 msgstr ""
+"O dispositivo já deve existir no sistema; a opção [option]#--onpart# não irá "
+"criá-lo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:891
 #, no-wrap
 msgid "[option]#--ondisk=# or [option]#--ondrive=#"
-msgstr ""
+msgstr "[option]#--ondisk=# ou [option]#--ondrive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:892
@@ -3216,6 +3252,8 @@ msgid ""
 "[option]#--ondisk=sdb# puts the partition on the second SCSI disk on the "
 "system."
 msgstr ""
+"Força a criação da partição em um disco específico. Por exemplo, "
+"[option]#--ondisk=sdb# coloca a partição no segundo disco SCSI do sistema."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:894
@@ -3582,7 +3620,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1057
 #, no-wrap
 msgid "volgroup (optional) - Create LVM Volume Group"
-msgstr ""
+msgstr "volgroup (opcional) - Cria grupo de volume lógico LVM"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1060
