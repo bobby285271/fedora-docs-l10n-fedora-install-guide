@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-27 21:02+0000\n"
-"PO-Revision-Date: 2021-06-10 08:04+0000\n"
+"PO-Revision-Date: 2021-06-10 22:03+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesadvancedboot_options/ko/>\n"
@@ -43,12 +43,12 @@ msgstr ""
 msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
-msgstr ""
+msgstr "당신은 동시에 다중 선택을 사용 할 수 있습니다: 그 경우에, 단일 공백에 의해 그 들을 분리합니다."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:12
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "이 장에서 설명되어지는 두 가지 기본 유형의 선택이 있습니다:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:14
@@ -179,7 +179,7 @@ msgstr ""
 msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
-msgstr ""
+msgstr "이 선택은 다른 형식을 사용하여 다른 설치 방법의 구성을 허용합니다. 구문은 아래 표에서 설명됩니다."
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:57
@@ -210,6 +210,27 @@ msgid ""
 "[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
 "_options_.]\n"
 msgstr ""
+"|Installation source|Option format\n"
+"|Any CD/DVD drive|[option]#inst.repo=cdrom#\n"
+"|Specific CD/DVD drive|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
+"|Hard Drive|[option]#inst.repo=hd:pass:attributes[{blank}]_device_:/pass:attr"
+"ibutes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTP Server|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:att"
+"ributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTPS Server|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:a"
+"ttributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|FTP Server|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:"
+"attributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}"
+"]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes"
+"[{blank}]#\n"
+"|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:a"
+"ttributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{bl"
+"ank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by "
+"default. To use a different version, add "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
+"_options_.]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:73
@@ -694,7 +715,7 @@ msgstr "[선택]#inst.xdriver=#"
 msgid ""
 "Specifies the name of the `X` driver to be used both during the installation "
 "and on the installed system."
-msgstr ""
+msgstr "설치 할 때와 설치된 시스템 두 경우 모두 사용되는 `X` 드라이버의 이름을 지정합니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:198
@@ -940,7 +961,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:272
 #, no-wrap
 msgid "[option]#nameserver=#"
-msgstr ""
+msgstr "[선택]#nameserver=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:273
@@ -981,13 +1002,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:281
 #, no-wrap
 msgid "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
-msgstr ""
+msgstr "[선택]#ifname=eth0:01:23:45:67:89:ab#\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:283
 #, no-wrap
 msgid "[option]#inst.dhcpclass=#"
-msgstr ""
+msgstr "[선택]#inst.dhcpclass=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:284
@@ -1041,12 +1062,17 @@ msgid ""
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 msgstr ""
+"|이름 체계|예제\n"
+"|VLAN_PLUS_VID|`vlan0005`\n"
+"|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
+"|DEV_PLUS_VID|`em1.0005`.\n"
+"|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:306
 #, no-wrap
 msgid "[option]#bond=#"
-msgstr ""
+msgstr "[선택]#bond=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:307
@@ -1360,7 +1386,7 @@ msgstr "비밀번호:\n"
 #: ./pages/advanced/Boot_Options.adoc:391
 #, no-wrap
 msgid "[option]#inst.vncconnect=#"
-msgstr ""
+msgstr "[선택]#inst.vncconnect=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:392
@@ -1616,7 +1642,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:453
 #, no-wrap
 msgid "[option]#blacklist=#"
-msgstr ""
+msgstr "[선택]#blacklist=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:454
@@ -1624,12 +1650,13 @@ msgid ""
 "Used to disable specified drivers. This is now handled by the "
 "[option]#modprobe.blacklist=# option."
 msgstr ""
+"지정된 드라이버를 비활성화 할 때에 사용됩니다. 이는 현재 [선택]#modprobe.blacklist=# option에 의해 관리 됩니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:455
 #, no-wrap
 msgid "[option]#nofirewire=#"
-msgstr ""
+msgstr "[선택]#nofirewire=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:456
@@ -1638,6 +1665,8 @@ msgid ""
 "driver (`firewire_ohci`) by using the [option]#modprobe.blacklist=# option "
 "instead:"
 msgstr ""
+"FireWire 연결장치를 위한 지원을 비활성화되었습니다. [선택]#modprobe.blacklist=# 선택 대신에 의해 "
+"FireWire 드라이버 (`firewire_ohci`)를 비활성화 할 수 있습니다:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:459
@@ -1777,7 +1806,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:484
 #, no-wrap
 msgid "[option]#utf8#"
-msgstr ""
+msgstr "[선택]#utf8#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:485
@@ -1819,7 +1848,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:490
 #, no-wrap
 msgid "[option]#vlanid=#"
-msgstr ""
+msgstr "[선택]#vlanid=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:491
@@ -1996,7 +2025,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:544
 #, no-wrap
 msgid "Verifying Boot Media"
-msgstr ""
+msgstr "부트 미디어 확인"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:547
