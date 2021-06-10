@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-06-10 08:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesadvancedboot_options/ko/>\n"
@@ -141,7 +141,7 @@ msgid ""
 "Specifies the installation source - that is, a location where the "
 "installation program can find the images and packages it requires. For "
 "example:"
-msgstr ""
+msgstr "설치 원천을 지정합니다 - 즉, 설치 프로그램이 필요한 이미지와 꾸러미를 찾을 수있는 위치입니다. 예를 들면 :"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:45
@@ -173,6 +173,7 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"설치 시스템에서 접근 할 수 있는 하드 드라이브 또는 네트워크 위치에 배치되어 있는 전체 {PRODUCT} 설치 DVD의 ISO 이미지"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:56
@@ -851,6 +852,25 @@ msgid ""
 "wish to override and automatically obtained values will be used for the "
 "others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
+"|Configuration Method|Option format\n"
+"|Automatic configuration of any interface|[option]#ip=pass:attributes[{blank}"
+"]_method_pass:attributes[{blank}]#\n"
+"|Automatic configuration of a specific interface|[option]#ip=pass:attributes["
+"{blank}]_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#"
+"\n"
+"|Static configuration|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribut"
+"es[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank"
+"}]_hostname_:pass:attributes[{blank}]_interface_:none#\n"
+"|Automatic configuration of a specific interface with an override\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the "
+"specified method of automatic configuration, such as `dhcp`, but overrides "
+"the automatically obtained IP address, gateway, netmask, hostname or other "
+"specified parameter. All parameters are optional; only specify the ones you "
+"wish to override and automatically obtained values will be used for the other"
+"s.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gatewa"
+"y_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:"
+"attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attribut"
+"es[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:245
@@ -874,6 +894,11 @@ msgid ""
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 msgstr ""
+"|Automatic configuration method|Value\n"
+"|DHCP|`dhcp`\n"
+"|IPv6 DHCP|`dhcp6`\n"
+"|IPv6 automatic configuration|`auto6`\n"
+"|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:262
@@ -993,7 +1018,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:291
 #, no-wrap
 msgid "[option]#vlan=vlan5:em1#\n"
-msgstr ""
+msgstr "[선택]#vlan=vlan5:em1#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:294
@@ -1006,7 +1031,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:296
 #, no-wrap
 msgid "VLAN Device Naming Conventions"
-msgstr ""
+msgstr "VLAN 장치이름 지정 규칙"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:305
@@ -1059,7 +1084,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:317
 #, no-wrap
 msgid "[option]#team=#"
-msgstr ""
+msgstr "[선택]#team=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:318
@@ -1235,7 +1260,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:357
 #, no-wrap
 msgid "[option]#inst.memcheck#"
-msgstr ""
+msgstr "[선택]#inst.memcheck#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:358
@@ -1286,7 +1311,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:364
 #, no-wrap
 msgid "Enabling Remote Access Using VNC"
-msgstr ""
+msgstr "VNC를 사용하여 원격 접속을 활성화하기"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:367
@@ -1301,7 +1326,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:368
 #, no-wrap
 msgid "[option]#inst.vnc#"
-msgstr ""
+msgstr "[선택]#inst.vnc#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:369
@@ -1379,13 +1404,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:399
 #, no-wrap
 msgid "Debugging and Troubleshooting"
-msgstr ""
+msgstr "디버깅과 문제 해결"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:401
 #, no-wrap
 msgid "[option]#inst.updates=#"
-msgstr ""
+msgstr "[선택]#inst.updates=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:402
@@ -1403,7 +1428,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:403
 #, no-wrap
 msgid "[option]#inst.loglevel=#"
-msgstr ""
+msgstr "[선택]#inst.loglevel=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:404
@@ -1578,6 +1603,22 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced "
 "by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
+"|Value|Current behavior\n"
+"|Not present|All devices are attempted to be activated using `dhcp`, unless "
+"desired device and configuration is specified by [option]#ip=# option and/or "
+"the [option]#BOOTIF# option.\n"
+"|[option]#ksdevice=link#|Similar to the above, with the difference that "
+"network will always be activated in the initramfs, whether it is needed or "
+"not. The supported [option]#rd.neednet# option (provided by "
+"[application]*dracut*) should be used instead.\n"
+"|[option]#ksdevice=bootif#|Ignored (the BOOTID= option is used by default "
+"when specified)\n"
+"|[option]#ksdevice=ibft#|Replaced with the [option]#ip=ibft# option\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
+"Replaced with "
+"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|"
+"Replaced by specifying the device name using the [option]#ip=# option.\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:453
@@ -1631,13 +1672,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:464
 #, no-wrap
 msgid "modprobe.blacklist=firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=firewire_ohci\n"
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:467
 #, no-wrap
 msgid "Removed Boot Options"
-msgstr ""
+msgstr "제거된 부트 선택"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:470

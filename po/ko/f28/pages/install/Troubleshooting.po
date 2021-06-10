@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-06-08 15:04+0000\n"
+"PO-Revision-Date: 2021-06-10 08:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pagesinstalltroubleshooting/ko/>\n"
@@ -121,7 +121,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:40
 #, no-wrap
 msgid "Log Files and Their Contents"
-msgstr ""
+msgstr "로그 파일과 그 내용"
 
 #. type: Table
 #: ./pages/install/Troubleshooting.adoc:50
@@ -135,6 +135,13 @@ msgid ""
 "installation messages\n"
 "|`/tmp/syslog`|hardware-related system messages\n"
 msgstr ""
+"|로그 파일|내용\n"
+"|`/tmp/anaconda.log`|general [application]*Anaconda* messages\n"
+"|`/tmp/program.log`|all external programs run during the installation\n"
+"|`/tmp/storage.log`|extensive storage module information\n"
+"|`/tmp/packaging.log`|[application]*dnf* and [application]*rpm* package "
+"installation messages\n"
+"|`/tmp/syslog`|hardware-related system messages\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:53
@@ -194,7 +201,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:69
 #, no-wrap
 msgid "`[  170.171135] sd 5:0:0:0: [sdb] Attached SCSI removable disk`\n"
-msgstr ""
+msgstr "`[ 170.171135] sd 5:0:0:0: [sdb] 부착된 SCSI 제거 할 수 있는 디스크`\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:72
@@ -248,7 +255,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:97
 #, no-wrap
 msgid "# ls\n"
-msgstr ""
+msgstr "# ls\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:100
@@ -295,7 +302,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:125
 #, no-wrap
 msgid "# cd /tmp\n"
-msgstr ""
+msgstr "# cd /tmp\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:128
@@ -370,7 +377,7 @@ msgstr "설치 시작 문제"
 #: ./pages/install/Troubleshooting.adoc:159
 #, no-wrap
 msgid "Problems with Booting into the Graphical Installation"
-msgstr ""
+msgstr "그래픽 설치에서 부팅 할 때에 발생 문제"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:162
@@ -394,7 +401,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:165
 #, no-wrap
 msgid "Use the basic graphics mode"
-msgstr ""
+msgstr "기본적인 그래픽 방법 사용"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:166
@@ -408,7 +415,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:167
 #, no-wrap
 msgid "Specify the display resolution manually"
-msgstr ""
+msgstr "표시 해상도를 수동으로 지정합니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:168
@@ -425,7 +432,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:169
 #, no-wrap
 msgid "Use an alternate video driver"
-msgstr ""
+msgstr "대체 비디오 드라이버 사용"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:170
@@ -450,7 +457,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:178
 #, no-wrap
 msgid "Perform the installation using VNC"
-msgstr ""
+msgstr "VNC 사용하여 설치를 수행합니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:179
@@ -466,7 +473,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:180
 #, no-wrap
 msgid "Serial Console Not Detected"
-msgstr ""
+msgstr "시리얼 콘솔이 탐지되지 않았습니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:183
@@ -491,7 +498,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:187
 #, no-wrap
 msgid "Trouble During the Installation"
-msgstr ""
+msgstr "설치 할 때에 문제"
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:190
@@ -546,14 +553,14 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:203
 #, no-wrap
 msgid "Problems After Installation"
-msgstr ""
+msgstr "설치 후의 문제"
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:206
 #: ./pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
-msgstr ""
+msgstr "root 비밀번호 재설정하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:209
@@ -583,7 +590,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:220
 #, no-wrap
 msgid "`init=/bin/sh`\n"
-msgstr ""
+msgstr "`init=/bin/sh`\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:223
@@ -614,7 +621,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:236
 #, no-wrap
 msgid "sh-4.2# /usr/sbin/load_policy -i\n"
-msgstr ""
+msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:239
@@ -630,13 +637,13 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:246
 msgid "Reset the root password:"
-msgstr ""
+msgstr "root 비밀번호 재지정:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:250
 #, no-wrap
 msgid "sh4.2# passwd root\n"
-msgstr ""
+msgstr "sh4.2# passwd root\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:253
@@ -657,7 +664,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:259
 #, no-wrap
 msgid "sh4.2# mount -o remount,ro /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,ro /\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:262
@@ -704,7 +711,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:273
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "그래픽 부팅 순서에 문제"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:276
@@ -772,7 +779,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:288
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "영구적인 그랙픽 부팅 비활성화"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:290
@@ -854,7 +861,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "그래픽 환경에서 부팅"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:325
@@ -994,6 +1001,15 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"Filesystem Size Used Avail Use% Mounted on\n"
+"/dev/mapper/vg_rhel-root 20G 6.0G 13G 32% /\n"
+"devtmpfs 1.8G 0 1.8G 0% /dev\n"
+"tmpfs 1.8G 2.7M 1.8G 1% /dev/shm\n"
+"tmpfs 1.8G 1012K 1.8G 1% /run\n"
+"tmpfs 1.8G 0 1.8G 0% /sys/fs/cgroup\n"
+"tmpfs 1.8G 2.6M 1.8G 1% /tmp\n"
+"/dev/sda1 976M 150M 760M 17% /boot\n"
+"/dev/dm-4 90G 90G 0 100% /home\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:380
@@ -1136,3 +1152,12 @@ msgid ""
 "mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
+"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"
