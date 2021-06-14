@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-06-10 08:05+0000\n"
+"PO-Revision-Date: 2021-06-14 14:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f32pagesappendixesunderstanding_lvm/ko/>"
@@ -34,6 +34,9 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"LVM (논리 볼륨 관리) 파티션은 표준 파티션에 비해 많은 이점을 제공합니다. LVM 파티션은 물리적 볼륨으로 초기화됩니다. 하나 "
+"이상의 물리적 볼륨이 결합되어 볼륨그룹을 형성합니다. 각 볼륨 그룹의 총 저장장치는 하나 이상의 논리적 볼륨으로 나뉩니다. 논리 볼륨은 "
+"표준 파티션과 같이 유사하게 작동합니다. `ext4`와 적재지점과 같은 파일 시스템 유형을 가지고 있습니다."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -66,6 +69,9 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"LVM을 더 잘 이해하려면 물리 볼륨을 _blocks_ 더미로 생각해 보세요. 블록은 자료를 저장하는 데 사용되는 저장 단위입니다. "
+"블록의 여러 더미는 물리 볼륨이 볼륨 그룹을 만들기에 결합되는 것처럼 보다 큰 더미를 만들기 위하여 결합 할 수 있습니다. 결과적으로 "
+"더미는 불륨 그룹이 여러 논리 볼륨을 할당 되는 것처럼 임의 크기의 여러 작은 더미로 세분화 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -75,6 +81,8 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"관리자는 표준 디스크 파티션과 같지 않으며, 자료를 파괴하지 않고 논리 볼륨을 늘리거나 줄일 수 있습니다. 만약 볼륨 그룹에 있는 물리 "
+"볼륨이 별도의 드라이브 또는 레이드 배열이 있는 경우 관리자는 저장 장치를 통해 논리적 볼륨을 분산 시킬 수도 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -85,3 +93,6 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"당신은 논리 볼륨을 볼륨에서 자료가 필요한 것보다 작은 용량으로 축소하면 자료가 손실 될 수 있습니다. 유연성을 극대화하려면, 현재 요구 "
+"사항을 충족하는 논리 볼륨을 만들고, 초과 저장장치 용량은 할당되지 않은 상태로 나둡니다. 필요에 따라서, 할당되지 않은 공간을 "
+"사용하도록 논리 볼륨을 안전하게 늘릴 수 있습니다."
