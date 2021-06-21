@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-06-19 16:04+0000\n"
+"PO-Revision-Date: 2021-06-21 08:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -1021,6 +1021,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X.509_certificate_pass:attributes[{blank}]#"
 msgstr ""
+"[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X."
+"509_certificate_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:309
@@ -1041,7 +1043,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1028
 #, no-wrap
 msgid "[option]#--backuppassphrase#"
-msgstr ""
+msgstr "[option]#--backuppassphrase#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:311
@@ -1124,6 +1126,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 msgstr ""
+"[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:341
@@ -1431,7 +1434,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:422
 msgid "For a subvolume, the syntax is:"
-msgstr ""
+msgstr "하위 볼륨에, 구문은 다음과 같습니다:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:427
@@ -2614,7 +2617,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:785
 #, no-wrap
 msgid "[option]#--cachesize=#"
-msgstr ""
+msgstr "[option]#--cachesize=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:786
@@ -2969,7 +2972,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1001
 #, no-wrap
 msgid "[option]#--fsprofile=#"
-msgstr ""
+msgstr "[option]#--fsprofile=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:945
@@ -3008,7 +3011,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:958
 msgid "Assign a label to an individual partition."
-msgstr ""
+msgstr "이름표를 개별 파티션에 할당합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:960
@@ -3501,7 +3504,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1163
 #, no-wrap
 msgid "firewall (optional) - Configure Firewall"
-msgstr ""
+msgstr "방화벽(선택) - 방화벽 구성"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1166
@@ -3779,6 +3782,8 @@ msgid ""
 "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
 "--gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1252
@@ -4654,6 +4659,9 @@ msgid ""
 "[pass:attributes[{blank}]_timezone_pass:attributes[{blank}]] "
 "[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#timezone "
+"[pass:attributes[{blank}]_timezone_pass:attributes[{blank}]] "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1515
@@ -4737,13 +4745,13 @@ msgstr "[option]#--startxonboot#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1531
 msgid "Use a graphical login on the installed system."
-msgstr ""
+msgstr "설치된 시스템에서 그래픽 로그인 사용."
 
 #. type: Title ==
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1533
 #, no-wrap
 msgid "Users, Groups and Authentication"
-msgstr ""
+msgstr "사용자, 그룹과 인증"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1536
@@ -4795,7 +4803,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1554
 #, no-wrap
 msgid "group (optional) - Create User Group"
-msgstr ""
+msgstr "그룹 (선택) - 사용자 그룹 생성"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1557
@@ -4812,18 +4820,20 @@ msgid ""
 "[command]#group --name=pass:attributes[{blank}]_name_ "
 "[--gid=pass:attributes[{blank}]_gid_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#group --name=pass:attributes[{blank}]_name_ "
+"[--gid=pass:attributes[{blank}]_gid_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1564
 msgid "Provides the name of the group."
-msgstr ""
+msgstr "그룹의 이름을 제공합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1565
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1728
 #, no-wrap
 msgid "[option]#--gid=#"
-msgstr ""
+msgstr "[option]#--gid=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1566
@@ -4855,6 +4865,10 @@ msgid ""
 "[--minquality=pass:attributes[{blank}]_quality_pass:attributes[{blank}]] "
 "[--strict|nostrict] [--emptyok|noempty] [--changesok|nochanges]#\n"
 msgstr ""
+"[command]#pwpolicy _name_ "
+"[--minlen=pass:attributes[{blank}]_length_pass:attributes[{blank}]] "
+"[--minquality=pass:attributes[{blank}]_quality_pass:attributes[{blank}]] "
+"[--strict|nostrict] [--emptyok|noempty] [--changesok|nochanges]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1580
@@ -5026,12 +5040,14 @@ msgid ""
 "[command]#realm join _domain_ "
 "[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#realm join _domain_ "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1627
 #, no-wrap
 msgid "[option]#--computer-ou=OU=#"
-msgstr ""
+msgstr "[option]#--computer-ou=OU=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1628
@@ -5481,7 +5497,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1762
 #, no-wrap
 msgid "graphical (optional) - Perform Installation in Graphical Mode"
-msgstr ""
+msgstr "그래픽 (선택) - 그래픽 방식에서 설치를 수행합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1765
@@ -5556,13 +5572,13 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1797
 #, no-wrap
 msgid "[command]#rescue [--nomount|--romount]#\n"
-msgstr ""
+msgstr "[command]#rescue [--nomount|--romount]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1799
 #, no-wrap
 msgid "[option]#--nomount# or [option]#--romount#"
-msgstr ""
+msgstr "[option]#--nomount# or [option]#--romount#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1800
@@ -5688,6 +5704,10 @@ msgid ""
 "[--port=pass:attributes[{blank}]_port_pass:attributes[{blank}]] "
 "[--password=pass:attributes[{blank}]_password_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#vnc "
+"[--host=pass:attributes[{blank}]_hostname_pass:attributes[{blank}]] "
+"[--port=pass:attributes[{blank}]_port_pass:attributes[{blank}]] "
+"[--password=pass:attributes[{blank}]_password_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1873
@@ -5777,7 +5797,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1902
 msgid "Available options are:"
-msgstr ""
+msgstr "사용 가능한 선택은 다음과 같습니다:"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1903
@@ -6281,7 +6301,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2060
 #, no-wrap
 msgid "Specifying Groups"
-msgstr ""
+msgstr "그룹 상세화"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2061
@@ -6409,7 +6429,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2113
 #, no-wrap
 msgid "Common Package Selection Options"
-msgstr ""
+msgstr "공통 꾸러미 선택 옵션"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2116
@@ -6561,7 +6581,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2154
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr ""
+msgstr "%pre (선택) - 사전-설치 스크립트"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2157
@@ -6825,7 +6845,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2259
 #, no-wrap
 msgid "Example Kickstart Configurations"
-msgstr ""
+msgstr "예제 킥스타트 구성"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2262
@@ -6965,12 +6985,12 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2320
 #, no-wrap
 msgid "Example Pre-installation Script"
-msgstr ""
+msgstr "예제 사전-설치 스크립트"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2323
 msgid "The following is an example [command]#%pre# section:"
-msgstr ""
+msgstr "다음은 예제 [command]#%pre# 부분입니다:"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2325
@@ -7095,13 +7115,13 @@ msgstr "설치-후 스크립트 예제"
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2382
 msgid "The following is an example [command]#%post# section:"
-msgstr ""
+msgstr "다음은 예제 [command]#%post# 부분입니다:"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2384
 #, no-wrap
 msgid "Sample %post Script"
-msgstr ""
+msgstr "예제 %post 스크립트"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2391
