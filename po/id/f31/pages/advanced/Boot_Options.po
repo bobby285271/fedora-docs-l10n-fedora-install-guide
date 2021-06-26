@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-06-26 14:04+0000\n"
 "Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesadvancedboot_options/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:6
@@ -38,6 +38,15 @@ msgid ""
 "advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up "
 "an Installation Server])."
 msgstr ""
+"Installer [application]*Anaconda* menyertakan berbagai opsi boot untuk "
+"administrator, yang mengubah perilaku default program instalasi dengan "
+"mengaktifkan atau menonaktifkan fungsi tertentu. Untuk menggunakan satu atau "
+"lebih opsi boot, Anda harus melakukan boot dari media instalasi dan "
+"menambahkan opsi ini di menu boot (lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Boot]), atau Anda harus "
+"menambahkannya ke dalam file konfigurasi server PXE Anda jika Anda boot dari "
+"jaringan (lihat xref:advanced/Network_based_Installations.adoc#chap-pxe-"
+"server-setup[Menyiapkan Server Instalasi])."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:11
@@ -132,6 +141,17 @@ msgid ""
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"Cara yang tepat untuk menentukan opsi boot kustom berbeda berdasarkan "
+"arsitektur sistem Anda, firmware, dan metode yang Anda gunakan untuk "
+"melakukan boot instalasi. Jika Anda melakukan booting dari media lokal, Anda "
+"dapat menentukan opsi di menu boot, sebelum Anda memulai instalasi; jika "
+"Anda melakukan booting dari jaringan menggunakan server PXE, Anda harus "
+"menambahkan opsi boot ke dalam file konfigurasi boot loader sebelum Anda mem-"
+"boot sistem instalasi. Untuk instruksi spesifik, lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Booting] jika Anda boot "
+"dari media lokal, dan xref:advanced/Network_based_Installations.adoc#chap-"
+"pxe-server-setup[Menyiapkan sebuah Server Instalasi] jika Anda melakukan "
+"booting dari server."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:33
@@ -328,7 +348,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:92
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:93
@@ -338,6 +358,10 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Dengan opsi boot ini, image tahap 2 akan diambil dari lokasi HTTP, HTTPS, "
+"dan FTP yang ditentukan menggunakan opsi [option]#inst.stage2=# secara "
+"berurutan sesuai urutan yang ditentukan, hingga image berhasil diambil. "
+"Semua lokasi lain akan diabaikan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:94
@@ -524,7 +548,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:139
 #, no-wrap
 msgid "[option]#inst.ks.all=#"
-msgstr ""
+msgstr "[option]#inst.ks.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:140
@@ -534,6 +558,10 @@ msgid ""
 "sequentially in the order they are specified, until the file is successfully "
 "fetched. All other locations will be ignored."
 msgstr ""
+"Dengan opsi boot ini, file Kickstart akan diambil dari lokasi HTTP, HTTPS, "
+"dan FTP yang ditentukan menggunakan opsi [option]#inst.ks=# secara berurutan "
+"sesuai urutan yang ditentukan, hingga file berhasil diambil. Semua lokasi "
+"lain akan diabaikan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:141

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-27 21:02+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-06-26 14:04+0000\n"
 "Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesadvancedboot_options/id/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:5
@@ -39,6 +39,15 @@ msgid ""
 "advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up "
 "an Installation Server])."
 msgstr ""
+"Installer [application]*Anaconda* menyertakan berbagai opsi boot untuk "
+"administrator, yang mengubah perilaku default program instalasi dengan "
+"mengaktifkan atau menonaktifkan fungsi tertentu. Untuk menggunakan satu atau "
+"lebih opsi boot, Anda harus melakukan boot dari media instalasi dan "
+"menambahkan opsi ini di menu boot (lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Boot]), atau Anda harus "
+"menambahkannya ke dalam file konfigurasi server PXE Anda jika Anda boot dari "
+"jaringan (lihat xref:advanced/Network_based_Installations.adoc#chap-pxe-"
+"server-setup[Menyiapkan Server Instalasi])."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:10
@@ -106,6 +115,10 @@ msgid ""
 "with Fedora 34, the installer will ignore options that do not use it (for "
 "example, `stage2=` instead of `inst.stage2=`)."
 msgstr ""
+"Opsi boot khusus untuk program instalasi selalu dimulai dengan `inst.` dalam "
+"panduan ini. Awalan ini opsional di rilis sebelumnya, tetapi mulai dengan "
+"Fedora 34, installer akan mengabaikan opsi yang tidak menggunakannya ("
+"misalnya, `stage2=` daripada `inst.stage2=`)."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:27
@@ -127,6 +140,17 @@ msgid ""
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"Cara yang tepat untuk menentukan opsi boot kustom berbeda berdasarkan "
+"arsitektur sistem Anda, firmware, dan metode yang Anda gunakan untuk "
+"melakukan boot instalasi. Jika Anda melakukan booting dari media lokal, Anda "
+"dapat menentukan opsi di menu boot, sebelum Anda memulai instalasi; jika "
+"Anda melakukan booting dari jaringan menggunakan server PXE, Anda harus "
+"menambahkan opsi boot ke dalam file konfigurasi boot loader sebelum Anda mem-"
+"boot sistem instalasi. Untuk instruksi spesifik, lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Booting] jika Anda boot "
+"dari media lokal, dan xref:advanced/Network_based_Installations.adoc#chap-"
+"pxe-server-setup[Menyiapkan sebuah Server Instalasi] jika Anda melakukan "
+"booting dari server."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:32
@@ -299,6 +323,12 @@ msgid ""
 "[application]*Anaconda* will try to load the image from `LiveOS/squashfs."
 "img`."
 msgstr ""
+"tentukan lokasi program runtime image instalasi yang akan dimuat. Sintaksnya "
+"sama seperti di xref:tabl-boot-options-sources[Sumber Instalasi]. Opsi ini "
+"mengharapkan jalur ke direktori yang berisi file `.treeinfo` yang valid; "
+"lokasi runtime image akan dibaca dari file ini jika ditemukan. Jika file `."
+"treeinfo` tidak tersedia, [application]*Anaconda* akan mencoba memuat image "
+"dari `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:88
@@ -317,7 +347,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:91
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:92
@@ -327,6 +357,10 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Dengan opsi boot ini, image tahap 2 akan diambil dari lokasi HTTP, HTTPS, "
+"dan FTP yang ditentukan menggunakan opsi [option]#inst.stage2=# secara "
+"berurutan sesuai urutan yang ditentukan, hingga image berhasil diambil. "
+"Semua lokasi lain akan diabaikan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:93
@@ -344,6 +378,12 @@ msgid ""
 "the [option]#inst.dd=cdrom# option, the device name must always be "
 "specified. For example:"
 msgstr ""
+"Jika Anda perlu melakukan pembaruan driver selama penginstalan, gunakan opsi "
+"[option]#inst.dd=#. Hal ini dapat dilakukan beberapa kali. Lokasi paket RPM "
+"driver dapat ditentukan menggunakan salah satu format yang dijelaskan dalam "
+"xref:tabl-boot-options-sources[Sumber Instalasi]. Dengan pengecualian opsi "
+"[option]#inst.dd=cdrom#, nama perangkat harus selalu ditentukan. Sebagai "
+"contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:98
@@ -446,6 +486,10 @@ msgid ""
 "[option]#inst.repo=#. See xref:tabl-boot-options-sources[Installation "
 "Sources] for valid formats."
 msgstr ""
+"berikan lokasi file Kickstart yang akan digunakan untuk instalasi otomatis. "
+"Lokasi dapat ditentukan menggunakan salah satu format yang valid untuk "
+"[option]#inst.repo=#. Lihat xref:tabl-boot-options-sources[Sumber Instalasi] "
+"untuk format yang valid."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:121
@@ -503,7 +547,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:138
 #, no-wrap
 msgid "[option]#inst.ks.all=#"
-msgstr ""
+msgstr "[option]#inst.ks.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:139
@@ -513,6 +557,10 @@ msgid ""
 "sequentially in the order they are specified, until the file is successfully "
 "fetched. All other locations will be ignored."
 msgstr ""
+"Dengan opsi boot ini, file Kickstart akan diambil dari lokasi HTTP, HTTPS, "
+"dan FTP yang ditentukan menggunakan opsi [option]#inst.ks=# secara berurutan "
+"sesuai urutan yang ditentukan, hingga file berhasil diambil. Semua lokasi "
+"lain akan diabaikan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:140
