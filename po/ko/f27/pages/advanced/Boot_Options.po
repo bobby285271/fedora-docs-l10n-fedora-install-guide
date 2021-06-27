@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-06-15 15:04+0000\n"
+"PO-Revision-Date: 2021-06-27 19:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f27pagesadvancedboot_options/ko/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7\n"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:6
@@ -403,6 +403,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 msgstr ""
+"[option]#inst.ks=nfs:pass:attributes[{blank}]_next-"
+"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:127
@@ -427,6 +429,9 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
+"|DHCP server address|Client address|Kickstart file location\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
+"kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:137
@@ -470,7 +475,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:151
 #, no-wrap
 msgid "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
-msgstr ""
+msgstr "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
 
 #. type: Title =====
 #: ./pages/advanced/Boot_Options.adoc:154
@@ -594,6 +599,9 @@ msgid ""
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 msgstr ""
+"|Disable geolocation|[option]#inst.geoloc=0#\n"
+"|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
+"|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:182
@@ -916,13 +924,13 @@ msgstr "[option]#nameserver=#"
 msgid ""
 "Specifies the address of the name server. This option can be used multiple "
 "times."
-msgstr ""
+msgstr "네임서버의 주소를 지정합니다. 이 선택은 여러 번 사용 될 수 있습니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:267
 #, no-wrap
 msgid "[option]#bootdev=#"
-msgstr ""
+msgstr "[option]#bootdev=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:268
@@ -935,7 +943,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:269
 #, no-wrap
 msgid "[option]#ifname=#"
-msgstr ""
+msgstr "[option]#ifname=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:270
@@ -970,7 +978,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:278
 #, no-wrap
 msgid "[option]#vlan=#"
-msgstr ""
+msgstr "[option]#vlan=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:279
@@ -1037,14 +1045,14 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:303
 #, no-wrap
 msgid "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
-msgstr ""
+msgstr "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:306
 msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
-msgstr ""
+msgstr "사용 가능한 선택 목록을 위하여, [command]#modinfo bonding# 명령을 실행하세요."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:308
@@ -1073,7 +1081,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:314
 #, no-wrap
 msgid "[option]#team=team0:em1,em2#\n"
-msgstr ""
+msgstr "[option]#team=team0:em1,em2#\n"
 
 #. type: Title =====
 #: ./pages/advanced/Boot_Options.adoc:317
@@ -1085,7 +1093,7 @@ msgstr "고급 설치 선택"
 #: ./pages/advanced/Boot_Options.adoc:319
 #, no-wrap
 msgid "[option]#inst.multilib#"
-msgstr ""
+msgstr "[option]#inst.multilib#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:320
@@ -1120,7 +1128,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:325
 #, no-wrap
 msgid "[option]#inst.gpt#"
-msgstr ""
+msgstr "[option]#inst.gpt#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:326
@@ -1156,7 +1164,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:331
 #, no-wrap
 msgid "[option]#inst.nosave=#"
-msgstr ""
+msgstr "[option]#inst.nosave=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:332
@@ -1314,7 +1322,7 @@ msgstr ""
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:366
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr ""
+msgstr "`VNC`를 사용하여 설치된 시스템은 기본적으로 텍스트 방식로 시작 할 것입니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:369
@@ -1522,7 +1530,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:421
 #, no-wrap
 msgid "[option]#dns=#"
-msgstr ""
+msgstr "[option]#dns=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:422
@@ -1538,6 +1546,8 @@ msgid ""
 "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
 "[option]#ipv6=#"
 msgstr ""
+"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
+"[option]#ipv6=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:424
@@ -1670,7 +1680,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:463
 #, no-wrap
 msgid "[option]#asknetwork#"
-msgstr ""
+msgstr "[option]#asknetwork#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:464
@@ -1684,7 +1694,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:465
 #, no-wrap
 msgid "[option]#serial#"
-msgstr ""
+msgstr "[option]#serial#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:466
@@ -1697,7 +1707,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:467
 #, no-wrap
 msgid "[option]#updates=#"
-msgstr ""
+msgstr "[option]#updates=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:468
@@ -1724,7 +1734,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:471
 #, no-wrap
 msgid "[option]#ethtool=#"
-msgstr ""
+msgstr "[option]#ethtool=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:472
@@ -1737,7 +1747,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:473
 #, no-wrap
 msgid "[option]#gdb#"
-msgstr ""
+msgstr "[option]#gdb#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:474
@@ -1761,7 +1771,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:477
 #, no-wrap
 msgid "[option]#ks=floppy#"
-msgstr ""
+msgstr "[option]#ks=floppy#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:478
@@ -1774,12 +1784,12 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:479
 #, no-wrap
 msgid "[option]#display=#"
-msgstr ""
+msgstr "[option]#display=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:480
 msgid "Configured a remote display. Replaced with the [option]#inst.vnc# option."
-msgstr ""
+msgstr "원격 표시가 구성되었습니다. [option]#inst.vnc# 선택으로 교체되었습니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:481
@@ -1798,7 +1808,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:483
 #, no-wrap
 msgid "[option]#noipv6#"
-msgstr ""
+msgstr "[option]#noipv6#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:484
@@ -1812,7 +1822,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:485
 #, no-wrap
 msgid "[option]#upgradeany#"
-msgstr ""
+msgstr "[option]#upgradeany#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:486
@@ -1840,7 +1850,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:489
 #, no-wrap
 msgid "[option]#inst.dnf#"
-msgstr ""
+msgstr "[option]#inst.dnf#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:490
@@ -1855,13 +1865,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:492
 #, no-wrap
 msgid "Using the Maintenance Boot Modes"
-msgstr ""
+msgstr "유지보수 부트 방법 사용하기"
 
 #. type: Title =====
 #: ./pages/advanced/Boot_Options.adoc:495
 #, no-wrap
 msgid "Loading the Memory (RAM) Testing Mode"
-msgstr ""
+msgstr "메모리(램) 시험 적재하는 방법"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:498
@@ -1916,7 +1926,7 @@ msgstr "boot/memtest86.png"
 msgid ""
 "The main screen displayed while testing is in progress is divided into three "
 "main areas:"
-msgstr ""
+msgstr "처리에서 시험 될 때에 표시되는 주요 화면은 세가지 주요 영역으로 다음과 같이 나눠집니다:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:515
@@ -1952,7 +1962,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:523
 #, no-wrap
 msgid "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
-msgstr ""
+msgstr "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:526
@@ -2029,7 +2039,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:548
 #, no-wrap
 msgid "Booting Your Computer in Rescue Mode"
-msgstr ""
+msgstr "복구 방법에서 당신의 컴퓨터 부팅"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:551
