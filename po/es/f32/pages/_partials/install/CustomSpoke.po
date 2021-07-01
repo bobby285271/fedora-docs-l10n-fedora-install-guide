@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-01 05:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallcustomspoke/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:5
 #: ./pages/_partials/install/CustomSpoke.adoc:20
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "Particionado manual"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:8
@@ -29,6 +32,9 @@ msgid ""
 "configuration for your {PRODUCT} system manually, giving you a greater "
 "control over your system's storage."
 msgstr ""
+"La pantalla `Particionado Manual` le permite crear una configuración de "
+"almacenamiento para su sistema {PRODUCT} manualmente, dándole un mayor "
+"control sobre el almacenamiento del sistema."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:10
@@ -40,6 +46,13 @@ msgid ""
 "top of logical volumes, and the last step is usually assigning a mount point "
 "to each volume as needed."
 msgstr ""
+"En la mayoría de otros instaladores tanto de Linux como de otros sistemas "
+"operativos, la partición del disco suele adoptar un enfoque de \"abajo hacia "
+"arriba\". En estos instaladores, primero crea dispositivos subyacentes como "
+"volúmenes físicos LVM, luego crea un diseño como LVM encima de ellos, "
+"después usted crea los sistemas de archivos encima de los volúmenes lógicos "
+"y como último paso normalmente se asigna un punto de montaje para cada "
+"volumen según sea necesario."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:12
@@ -50,6 +63,11 @@ msgid ""
 "where the volume group will reside) is performed automatically. You can then "
 "adjust the automatic settings as you require."
 msgstr ""
+"[application]*Anaconda* usa un enfoque opuesto. Primero, usted crea los "
+"puntos de montaje separados que necesite y todo lo necesario para crearlos ("
+"creando un grupo volumen, volúmenes lógicos dentro y volúmenes físicos donde "
+"residirá el grupo volumen) se lleva a cabo automáticamente. A continuación "
+"puede ajustar la configuración automática según sus necesidades."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:17
@@ -65,13 +83,13 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr ""
+msgstr "Pantalla de Particionado Manual. En este punto"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "anaconda/CustomSpoke.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:25

@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-01 05:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f26pages_partialsinstallcustomspoke_recommendedscheme/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:6
@@ -24,6 +27,8 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
 msgid "In most cases, at least the following mount points should always be created:"
 msgstr ""
+"En la mayoría de los casos se deberían crear siempre al menos los siguientes "
+"puntos de montaje:"
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
@@ -49,6 +54,10 @@ msgid ""
 "created on a partition outside of the RAID array, such as on a separate hard "
 "drive."
 msgstr ""
+"Si su sistema tiene una controladora hardware RAID, esté atento a que "
+"algunos tipos de BIOS no soportan el arranque desde ellas. En este caso la "
+"partición `/boot` debe ser creada sobre una partición fuera de la formación "
+"RAID, como por ejemplo un disco duro separado."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
@@ -73,6 +82,12 @@ msgid ""
 "described in this section, this will be the partition where most software "
 "packages will be installed."
 msgstr ""
+"Esta es donde se localiza el directorio raíz. El directorio raíz es el nivel "
+"más alto de la estructura de directorios. De modo predeterminado, todos los "
+"archivos se escriben en esta partición a menos que se monte una partición "
+"diferente en la ruta en la que se escribe (por ejemplo, `/boot` or `/home`). "
+"Si usted sigue el esquema recomendado en esta sección, esta será la "
+"partición donde serán instalados la mayoría de los paquetes de software."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
