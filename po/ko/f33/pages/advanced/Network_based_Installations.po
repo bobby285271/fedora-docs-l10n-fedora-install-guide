@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:04+0000\n"
-"PO-Revision-Date: 2021-06-25 08:04+0000\n"
+"PO-Revision-Date: 2021-07-09 04:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: ./pages/advanced/Network_based_Installations.adoc:5
@@ -239,6 +239,8 @@ msgid ""
 "# refer to RFC4578 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 msgstr ""
+"# refer to RFC4578 for possible arch option values\n"
+"option arch code 93 = unsigned integer 16;\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:89
@@ -251,6 +253,12 @@ msgid ""
 "filename \"pxelinux.0\";\n"
 "}\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"if option arch = 00:07 {\n"
+"filename \"uefi/shimx64.efi\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:91
@@ -304,7 +312,7 @@ msgstr "# dnf install tftp-server\n"
 msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
-msgstr ""
+msgstr "`tftp socket`을 시작하고 활성화합니다. `systemd`는 요청 할 때에 `tftpd`를 자동으로 시작 할 것입니다."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:121
@@ -320,23 +328,23 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:124
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "PXE 클라이언트를 위한 부트로더 제공과 구성하기"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:126
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "부트로더 파일 가져오기"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:128
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
-msgstr ""
+msgstr "바이오스 클라이언트에 [package]*syslinux* 부트로더를 가져옵니다."
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:130
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "[package]*syslinux* 꾸러미를 설치합니다."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:133
@@ -348,7 +356,7 @@ msgstr "# dnf install syslinux\n"
 #: ./pages/advanced/Network_based_Installations.adoc:136
 #: ./pages/advanced/Network_based_Installations.adoc:153
 msgid "Create a directory for the bootloader files, and make them available there."
-msgstr ""
+msgstr "부트로더 파일을 위해 디렉토리를 생성하고, 그 곳에 이를 사용 할 수 있도록 합니다."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:141
@@ -360,6 +368,11 @@ msgid ""
 "`/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` "
 "`/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/pxelinux."
+"cfg`pass:attributes[{blank}]#\n"
+"# [command]#cp `/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux"
+".c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:144
@@ -382,6 +395,8 @@ msgid ""
 "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever "
 "{PRODVER}\n"
 msgstr ""
+"# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever "
+"{PRODVER}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:158
@@ -391,6 +406,9 @@ msgid ""
 "# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` "
 "`/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
+"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` `/"
+"var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:160
@@ -426,6 +444,10 @@ msgid ""
 "menu default\n"
 "localboot 0xffff\n"
 msgstr ""
+"label local\n"
+"menu label Boot from ^local drive\n"
+"menu default\n"
+"localboot 0xffff\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:180
@@ -438,6 +460,12 @@ msgid ""
 "inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
 "ip=dhcp\n"
 msgstr ""
+"label linux\n"
+"menu label ^Install Fedora {PRODVER} 64-bit\n"
+"kernel f{PRODVER}/vmlinuz\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip="
+"dhcp\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:185
@@ -450,11 +478,17 @@ msgid ""
 "inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
 "ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 msgstr ""
+"label server\n"
+"menu label ^Install Fedora {PRODVER} ( Minimal Image )\n"
+"kernel f{PRODVER}/vmlinuz\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:188
 msgid "Create a boot menu for UEFI clients at `/var/lib/tftpboot/uefi/grub.cfg`."
-msgstr ""
+msgstr "`/var/lib/tftpboot/uefi/grub.cfg`에서 UEFI 클라이언트를 위한 부트 메뉴를 생성합니다."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:198
@@ -496,6 +530,9 @@ msgid ""
 "        exit\n"
 "}\n"
 msgstr ""
+"menuentry 'Exit this grub' {\n"
+"        exit\n"
+"}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:211
@@ -508,6 +545,12 @@ msgid ""
 "\tinitrdefi f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
+"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --"
+"class gnu --class os {\n"
+"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"\tinitrdefi f{PRODVER}/initrd.img\n"
+"}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:216
@@ -522,6 +565,14 @@ msgid ""
 "ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 msgstr ""
+"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-"
+"linux --class gnu --class os {\n"
+"\tkernel f{PRODVER}/vmlinuz\n"
+"\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/"
+"fedora-install-server.ks?h=f21\n"
+"}\n"
 
 #. type: Title ==
 #: ./pages/advanced/Network_based_Installations.adoc:220
@@ -563,6 +614,9 @@ msgid ""
 "https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz "
 "-O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 msgstr ""
+"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/"
+"f{PRODVER}/vmlinuz\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:238
@@ -577,6 +631,9 @@ msgid ""
 "https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img "
 "-O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 msgstr ""
+"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/"
+"f{PRODVER}/initrd.img\n"
 
 #. type: Title ==
 #: ./pages/advanced/Network_based_Installations.adoc:245
@@ -591,6 +648,8 @@ msgid ""
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
 msgstr ""
+"이 부분에서 예제는 꾸러미 원천처럼 공개 페도라 미러를 사용합니다. 빠른 설치, 많은 시스템 설치 할 때에, 또는 더 많은 독립된 환경을 "
+"위해서는 로컬 저장소를 유지하기 바랍니다."
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:250
@@ -606,7 +665,7 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:252
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
-msgstr ""
+msgstr "Cobbler를 사용한 고급 네트워크 설치"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:255

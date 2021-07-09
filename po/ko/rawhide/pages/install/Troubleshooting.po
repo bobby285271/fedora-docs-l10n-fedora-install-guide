@@ -6,16 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-06-10 21:03+0000\n"
-"PO-Revision-Date: 2021-06-10 08:04+0000\n"
+"PO-Revision-Date: 2021-07-09 04:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/rawhidepagesinstalltroubleshooting/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/rawhidepagesinstalltroubleshooting/ko/>"
+"\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: pages/install/Troubleshooting.adoc:5
@@ -35,7 +36,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:10
 #, no-wrap
 msgid "Getting Help"
-msgstr ""
+msgstr "도움 얻기"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:13
@@ -107,7 +108,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:34
 #, no-wrap
 msgid "Log Files Generated During the Installation"
-msgstr ""
+msgstr "설치 중에 로그 파일이 생성되었습니다"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:37
@@ -246,7 +247,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:91
 #, no-wrap
 msgid "# cd /mnt/usb\n"
-msgstr ""
+msgstr "# cd /mnt/usb\n"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:96
@@ -313,7 +314,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:131
 #, no-wrap
 msgid "# scp *log user@address:path\n"
-msgstr ""
+msgstr "# scp *log user@address:path\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:134
@@ -605,12 +606,12 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:228
 #, no-wrap
 msgid "pass:quotes[`sh-4.2#`]\n"
-msgstr ""
+msgstr "pass:quotes[`sh-4.2#`]\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:231
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "설치된 SELinux 정책을 적재합니다:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:235
@@ -627,7 +628,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:242
 #, no-wrap
 msgid "sh4.2# mount -o remount,rw /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,rw /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:245
@@ -784,7 +785,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:293
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:296
@@ -805,29 +806,33 @@ msgstr ""
 #, no-wrap
 msgid "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:306
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "이 줄에서`rhgb` 선택을 삭제합니다."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:308
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "편집된 구성 파일을 저장합니다."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:310
 msgid ""
 "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "다음 명령을 실행에 의해 부트로더 구성을 새롭게 합니다:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:314
 #: pages/install/Troubleshooting.adoc:430
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:317
@@ -966,7 +971,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:360
 #, no-wrap
 msgid "$ [command]#df -h#\n"
-msgstr ""
+msgstr "$ [command]#df -h#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:363
