@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-07-09 04:04+0000\n"
+"PO-Revision-Date: 2021-07-10 10:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f29pages_partialsinstallinitialsetuphub/"
@@ -51,16 +51,19 @@ msgid ""
 "described in xref:After_Installation.adoc#sect-gnome-initial-setup[GNOME "
 "Initial Setup])."
 msgstr ""
+"당신이 설치했던 그래픽 환경은 *그놈 데스크탑 환경*[application]이 *아닙니다* (ref:After_Installation."
+"adoc#sect-gnome-initial-setup[그놈 초기 설정]에서 설명되어지는 것과 같은 자신의 초기 설정 유틸리티를 "
+"제공합니다)."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:14
 msgid "The [package]*initial-setup* package has been installed."
-msgstr ""
+msgstr "[package]*초기-설정* 꾸러미가 설치되었습니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:16
 msgid "You have not configured every screen available in the graphical installer."
-msgstr ""
+msgstr "그래픽 설치자에서 사용 가능한 모든 화면이 구성되지 않습니다."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/InitialSetupHub.adoc:19
@@ -68,7 +71,7 @@ msgstr ""
 msgid ""
 "The main Initial Setup screen. This example shows all options; not all of "
 "them may be shown"
-msgstr ""
+msgstr "주요 초기 설정 화면. 이 예제는 모든 선택을 표시합니다; 보여지는 것이 모두는 아닙니다"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/InitialSetupHub.adoc:19
@@ -88,6 +91,11 @@ msgid ""
 "be able to configure one. If you configured all available options during the "
 "instalaltion, [application]*Initial Setup* will not be displayed at all."
 msgstr ""
+"[application]*초기 설정*은 여러 시스템 설정을 구성 할 수 있도록 합니다. 이들 모두는 또한 설치 중에 구성 될 수도 "
+"있으며, 그러나 이를 완료 할 필요는 없습니다. 설치 중에 구성되지 *않은* 설정만이 표시 될 것입니다; 예를 들면, 만약 설치하는 동안 "
+"비- 'root'가 사용자 계정을 생성하지 않는다면, [application]*초기 설정*은 첫 번째 재부트 후에 시작 될 것이며,그런 "
+"후에 당신은 계정을 구성 할 수 있을 것입니다. 만약 당신이 설치 중에 모든 사용 가능한 선택을 구성한 경우에, [application]*"
+"초기 설정*은 조금도 표시되지 않을 것입니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:24
@@ -99,6 +107,9 @@ msgid ""
 "need help, press `Help` in the top left corner to open a new window "
 "containing directions for that screen."
 msgstr ""
+"유틸리티에서 사용 가능한 시스템 측면으로 구성하려면, 주요 창(예를 들면, `사용자 생성`)에서 사용 가능한 연결을 눌러줍니다. 각각의 "
+"연결은 분리된 옵션이 있는 화면으로 분리하도록 합니다; 이들 화면은 그래픽 설치 중에 사용 할 수 있는 동일한 것 중에 하나입니다. 만약 "
+"도움이 필요하면, 왼쪽 상단 모서리에 있는 '도움말'을 눌러서, 그창 화면에 새로운 창이 포함된 지침을 엽니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:26
@@ -109,6 +120,9 @@ msgid ""
 "bottom right corner to save all configured settings. The configuration "
 "utility will close and you will be able to log in to the system."
 msgstr ""
+"화면 구성을 종료 한 후에, 상단 왼쪽 모서리 부분에 '완료' 누름단추를 눌러주고, [application]*초기 설정* 메뉴로 "
+"돌아갑니다. 당신은 모든 설정 구성이 끝나면, 하단 오른쪽 모서리 부분에서 '구성 완료'를 누르고, 모든 구성된 설정을 저장합니다. 구성 "
+"유틸리티는 닫힐 것이고 당신은 시스템에 로그인 할 수 있을 것입니다."
 
 #. type: delimited block =
 #: ./pages/_partials/install/InitialSetupHub.adoc:31
@@ -118,6 +132,8 @@ msgid ""
 "installation. To do so, you must use a Kickstart file at the start of the "
 "installation, and this file must contain the following command:"
 msgstr ""
+"심지어 설치 중에 이미 구성되어져 있어도, 모든 사용 가능한 선택이 표시되며 [application]*초기 설정*을 구성 할 수 "
+"있습니다. 이렇게 하려면, 설치 시작 부분에서 킥스타트 파일을 사용해야만 하고, 이 파일은 다음 명령을 포함하여야만 합니다:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/InitialSetupHub.adoc:35
@@ -134,6 +150,9 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"[option]#--reconfig# 옵션은 모든 선택이 표시되는 것처럼 상세화합니다. 킥스타트 설치에 대한 정보는 xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-installations[킥스타트를 통한 "
+"자동화된 설치]를 참고하세요."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:45
@@ -143,6 +162,8 @@ msgid ""
 "the next reboot, before a login prompt is displayed), by executing the "
 "following command as `root`:"
 msgstr ""
+"일반적으로, 종료 한 후에 [application]*초기 설정*으로 되돌아 갈 수 없으며 시스템에 로그인합니다. `root`로 다음 "
+"명령을 실행에 의하여(다음 재시작 후에, 로그인 입력기가 표시되기 전에) 다시 표시 할 수 있도록 만들 수 있습니다:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/InitialSetupHub.adoc:49
