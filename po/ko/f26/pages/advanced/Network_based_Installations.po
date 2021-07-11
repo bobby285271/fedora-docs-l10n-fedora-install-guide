@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:12+0000\n"
-"PO-Revision-Date: 2021-07-10 10:04+0000\n"
+"PO-Revision-Date: 2021-07-11 11:08+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -50,6 +50,9 @@ msgid ""
 "simultaneously. The process involves a number of components and features "
 "working together to provide the resources required."
 msgstr ""
+"사전부트 실행 환경, 또는 PXE는 네트워크를 통해 제공되는 자원에서 직접 부팅 하는 컴퓨터를 사용하는 기술입니다. 네트워크를 통해 "
+"페도라 설치는 당신이 미디어를 생성 할 필요가 없는 것을 의미하고, 그리고 당신은 동시에 여러 컴퓨터 또는 가상 장비에 설치 할 수 "
+"있습니다. 처리는 요구되는 자원을 공급하는 것과 함께 동작하는 수많은 구성과 기능을 포함합니다."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:20
@@ -68,6 +71,10 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"대부분 현대적인 컴퓨터는 네트워크 부팅하는 기능을 갖고 있습니다. 전형적으로, 부트 할 때에 기능키를 누르면 부트 선택 메뉴가 나타날 "
+"것입니다. 무인 관리를 위해 설계된 환경에서, 시스템은 종종 우선 네트워크에서 부팅을 시도하도록 한 다음에 로컬 저장소에서 부팅 하도록 "
+"구성 될 것이며, 그리고 설치 서버는 다만 필요 할 때에 설치를 제공하도록 구성됩니다. 당신의 컴퓨터 설명서는 설정 부트 우선순위에서 "
+"지정한 지시를 제공 할 것입니다."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:23
@@ -98,6 +105,8 @@ msgid ""
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"왜냐하면 사전-부트 환경은 매우 단순하기 때문에, 파일은 매우 빠른 방식으로 제공되어야 합니다. 간단한 파일 통신규약 또는 TFTP는 "
+"설치 처리를 진행 할 때에 필요한 부트로더에서 제공됩니다."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:29
@@ -113,6 +122,8 @@ msgid ""
 "files. It also provides configuration information to the installer, and can "
 "offer a menu to select from different configurations."
 msgstr ""
+"운영 체제 부팅 작업은 사전-부팅 환경에 비해 너무 복잡하기 때문에, 부트로더는 커널과 관련 파일을 적재해 사용됩니다. 이는 또한 "
+"설치자에서 구성 정보를 제공하고, 그리고 다른 구성에서 선택하는 메뉴를 제공 할 수 있습니다."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:32
@@ -705,6 +716,9 @@ msgid ""
 "coordinating repositories, maintaining dns records, dhcp servers, and even "
 "puppet manifests are effectively automated by [package]*cobbler*."
 msgstr ""
+"보다 복잡한 환경에서, {PRODUCT}는 [package]*cobbler* 설치 서버를 제공합니다. 킥스타트 구성, 저장소 협조, "
+"dns 기록 유지, dhcp 서버와 심지어 puppet 메니페스트를 관리와 같은 업무는 [package]*cobbler*에 의해 "
+"효과적으로 자동화 되었습니다."
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:264
@@ -723,3 +737,5 @@ msgid ""
 "official documentation as well as downloads on the project website at "
 "link:++https://www.theforeman.org/++[]."
 msgstr ""
+"상대적으로, 당신은 **Foreman**에 흥미를 느낄지 모릅니다. 당신은 link:++https://www.theforeman.org/"
+"++[FOREMAN 홈페이지]에 있는 프로젝트 웹사이트에서 내려 받을 수 있는 공식 문서를 찾을 수 있습니다."
