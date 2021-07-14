@@ -1,25 +1,27 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-14 01:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f30pagesadvancedvnc_installations/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: ./pages/advanced/VNC_Installations.adoc:6
 #, no-wrap
 msgid "Installing Using VNC"
-msgstr ""
+msgstr "Instalación Usando VNC"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:9
@@ -30,6 +32,11 @@ msgid ""
 "connect a display and a keyboard, making VNC a necessity for manual "
 "(non-Kickstart) installations."
 msgstr ""
+"El método recomendado de instalación de {PRODUCT} es la interfaz gráfica de "
+"instalación. Sin embargo, en algunos casos, el acceso a la interfaz gráfica "
+"es difícil o imposible. Algunos sistemas carecen de la capacidad de conectar "
+"una pantalla y un teclado, haciendo de VNC una necesidad para instalaciones "
+"manuales (no Kickstart)."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:11
@@ -41,6 +48,13 @@ msgid ""
 "display on another system connected to the network. The VNC installation "
 "provides you with the full range of installation options."
 msgstr ""
+"Para permitir las instalaciones manuales sobre _sistemas sin cabeza_ ("
+"sistemas sin una pantalla, un teclado y un ratón directamente conectados), "
+"el programa de instalación [application]*Anaconda* incluye un modo "
+"_Computación en Red Virtual_ (VNC) que permite que el modo gráfico del "
+"programa de instalación corra localmente pero se visualice en otro sistema "
+"conectado a la red. La instalación VNC suministra el rango total de las "
+"opciones de instalación."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:13
@@ -48,12 +62,14 @@ msgid ""
 "This chapter provides instructions on activating VNC mode on the "
 "installation system and connecting to it using a VNC viewer."
 msgstr ""
+"Este capítulo suministra instrucciones sobre la activación del modo VNC en "
+"la instalación del sistema y la conexión usando un visualizador VNC."
 
 #. type: Title ==
 #: ./pages/advanced/VNC_Installations.adoc:15
 #, no-wrap
 msgid "Installing a VNC Viewer"
-msgstr ""
+msgstr "Instalando un Visualizador VNC"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:18
@@ -64,11 +80,17 @@ msgid ""
 "available for other operating systems such as Windows. On Linux systems, use "
 "your package manager to search for a viewer for your distribution."
 msgstr ""
+"Llevar a cabo una instalación VNC requiere un visualizador VNC corriendo en "
+"su estación de trabajo u otro ordenador terminal. Los visualizadores VNC "
+"están disponibles en los repositorios de las mayoría de las distribuciones "
+"Linux; visualizadores VNC libres están también disponibles para otros "
+"sistemas operativos como Windows. En los sistemas Linux, use su "
+"administrador de paquetes para buscar un visualizador para su distribución."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:20
 msgid "The following VNC viewers are available in {PRODUCT}:"
-msgstr ""
+msgstr "En {PRODUCT} están disponibles los siguientes visualizadores VNC:"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:22
@@ -76,6 +98,8 @@ msgid ""
 "[application]*TigerVNC* - A basic viewer independent of your desktop "
 "environment. Installed as the [package]*tigervnc* package."
 msgstr ""
+"[application]*TigerVNC* - Un visualizador básico independientes de su "
+"entorno de escritorio. Instalado como paquete [package]*tigervnc*."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:24

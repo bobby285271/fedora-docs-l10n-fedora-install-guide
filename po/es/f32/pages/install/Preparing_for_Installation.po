@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-27 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-14 01:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f32pagesinstallpreparing_for_installation/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Preparación para la instalación"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:8
@@ -32,12 +35,20 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Este capítulo describe los pasos que necesita tomar antes de empezar la "
+"instalación. No se deben seguir los pasos estrictamente - por ejemplo, si "
+"usted planea usar los ajustes de instalación predeterminados, no necesita "
+"recoger información del sistema como etiquetas/UUIDs, del dispositivo de "
+"disco o información de la red como la dirección IP del sistema. Sin embargo, "
+"debería continuar con este capitulo, puesto que también describe los tipos "
+"de medio de instalación disponibles y como preparar el medio de arranque y "
+"las fuentes de la instalación."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:10
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "¿Modernizar o Instalar?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:13
@@ -45,12 +56,14 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Si usted ya tiene instalado Fedora y desea modernizar su instalación a la "
+"versión actual, hay dos maneras básicas de hacerlo:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:14
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr ""
+msgstr "La modernización automática usando [application]*dnf system upgrade*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:15
@@ -61,12 +74,16 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"La manera preferida de modernizar su sistema es una modernización automática "
+"usando la utilidad [application]*dnf system upgrade*. Para información sobre "
+"llevar a cabo una modernización automática, vea link:++https://fedoraproject."
+"org/wiki/DNF_system_upgrade++[Fedora Wiki dnf system upgrade]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:16
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "Reinstalación manual"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:17
@@ -80,6 +97,15 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"Usted puede modernizar a la última versión de Fedora manualmente en lugar de "
+"confiar en [application]*dnf system upgrade*. Esto implica iniciar el "
+"instalador como si estuviera llevando a cabo una instalación limpia, "
+"dejándole detectar su sistema Fedora existente y sobreescribiendo la "
+"partición root a la vez que preserva los datos en las otras particiones y "
+"volúmenes. El mismo procedimiento se puede usar para reinstala el sistema, "
+"si lo necesita. Para información detallada, vea xref:advanced/"
+"Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall["
+"Modernización Manual del Sistema o Reinstalación]."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:21

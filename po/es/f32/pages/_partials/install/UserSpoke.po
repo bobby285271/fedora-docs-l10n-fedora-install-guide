@@ -1,26 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-14 01:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstalluserspoke/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/UserSpoke.adoc:5
 #: ./pages/_partials/install/UserSpoke.adoc:16
 #, no-wrap
 msgid "Create User"
-msgstr ""
+msgstr "Crear usuario|"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:8
@@ -33,6 +35,13 @@ msgid ""
 "utility for managing user accounts (for example, the `Users` screen in the "
 "Settings menu in [application]*GNOME*)."
 msgstr ""
+"La pantalla `Crear Usuario` puede ser usada para crear y configurar una "
+"cuenta de usuario normal (no`root`) durante la instalación. Sólo se puede "
+"configurar un usuario aquí; si requiere más cuentas, espere a que la "
+"instalación se complete, reinicie su sistema y después cree otras cuentas "
+"usando bien el comando [command]#useradd# en un terminal o una utilidad "
+"gráfica para administrar cuentas de usuario (por ejemplo, la pantalla "
+"`Usuarios` en el menú Ajustes de [application]*GNOME*)."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:13
@@ -41,6 +50,10 @@ msgid ""
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
 msgstr ""
+"No es preciso la creación de una cuenta de usuario para finalizar la "
+"instalación; sin embargo, es altamente recomendable. Si usted no crea una, "
+"tendrá que registrarse en el sistema como `root` directamente, lo que *no* "
+"es recomendable."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/UserSpoke.adoc:18
@@ -49,12 +62,14 @@ msgid ""
 "The Create screen. Use the text input fields to create a user account and "
 "configure its settings."
 msgstr ""
+"La pantalla Crear. Use los campos de entrada de texto para crear una cuenta "
+"de usuario y configurar sus ajustes."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/UserSpoke.adoc:18
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "anaconda/UserSpoke.png"
-msgstr ""
+msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:21
@@ -64,6 +79,11 @@ msgid ""
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
+"Para configurar una cuenta de usuario, rellene el `Nombre completo` (por "
+"ejemplo, `John Smith`) y el `Nombre de usuario` (por ejemplo, `jsmith`). El `"
+"nombre de usuario` se usará para acceder desde la línea de comandos; si "
+"usted instala un entorno gráfico, el administrador gráfico de acceso usará "
+"el `Nombre completo`."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:23
@@ -75,6 +95,13 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
+"Asegúrese de que la casilla de verificación `Se requiere contraseña para "
+"usar esta cuenta` está habilitada, introduzca una contraseña que desee "
+"utilizar para esta cuenta en el campo `Contraseña`. Los caracteres que "
+"escriba se mostrarán como puntos por seguridad. Después, repita la mism "
+"contraseña en el campo `Confirmar contraseña` mas abajo para asegurar que lo "
+"ha introducido apropiadamente. Ambas contraseñas introducidas deben ser la "
+"misma."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:25
@@ -84,6 +111,10 @@ msgid ""
 "weak, a message will appear at the bottom of the screen, explaining which "
 "aspect of your chosen password is considered insuficient. For example:"
 msgstr ""
+"Según introduzca la contraseña será evaluada y el instalador determinará su "
+"fortaleza. Si el instalador considera que la contraseña es débil aparecerá "
+"un mensaje en la parte inferior de la pantalla, explicando que aspecto de la "
+"contraseña que ha elegido es considerado insuficiente. Por ejemplo:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/UserSpoke.adoc:29
@@ -92,6 +123,8 @@ msgid ""
 "`The password you have provided is weak:` `The password is shorter than 5 "
 "characters.`\n"
 msgstr ""
+"`La contraseña que ha suministrado es débil:` `La contraseña tiene menos de "
+"5 caracteres.`\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:32
