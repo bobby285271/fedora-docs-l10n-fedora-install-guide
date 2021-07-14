@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-05-26 13:03+0000\n"
+"PO-Revision-Date: 2021-07-14 10:18+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Mempersiapkan Instalasi"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:8
@@ -35,12 +35,19 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Bab ini menjelaskan langkah yang perlu diambil sebelum Anda memulai "
+"instalasi. Tidak setiap langkah harus diikuti secara ketat - misalnya, jika "
+"Anda berencana untuk menggunakan pengaturan instalasi default, Anda tidak "
+"perlu mengumpulkan informasi sistem seperti label perangkat disk/UUID atau "
+"informasi jaringan seperti alamat IP sistem. Namun, Anda masih harus "
+"melewati bab ini, karena ini juga menjelaskan jenis media instalasi yang "
+"tersedia dan bagaimana mempersiapkan media boot dan sumber instalasi."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:10
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Tingkatkan atau Pasang Baru?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:13
@@ -48,6 +55,8 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Jika Anda sudah menginstal Fedora dan ingin meningkatkan instalasi Anda ke "
+"versi saat ini, ada dua cara dasar untuk melakukannya:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:14
@@ -64,6 +73,11 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"Cara yang lebih disukai untuk meningkatkan sistem Anda adalah upgrade "
+"otomatis menggunakan utilitas [application]*dnf system upgrade*. Untuk "
+"informasi tentang melakukan upgrade otomatis, lihat "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[dnf system "
+"upgrade Wiki Fedora]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:16
@@ -83,6 +97,15 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"Anda dapat meningkatkan ke versi terakhir Fedora secara manual alih-alih "
+"mengandalkan [application]*dnf system upgrade*. Ini melibatkan mem-boot "
+"installer seolah Anda melakukan suatu instalasi bersih, membiarkannya "
+"mendetekai sistem Fedora Anda yang ada, dan menimpa partisi root sambil "
+"mempertahan data pada partisi dan volume lain. Proses yang sama juga dapat "
+"dipakai untuk menginstal ulang sistem, bila Anda perlu melakukannya. Untuk "
+"informasi rinci, lihat xref:advanced/Upgrading_Your_Current_System.adoc#sect-"
+"upgrading-fedora-manual-reinstall[Peningkatan Sistem Manual atau Instalasi "
+"Ulang]."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:21
@@ -97,7 +120,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Mempersiapkan Media Boot"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -105,12 +128,14 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Image Fedora adalah `ISO Hibrida` dan dapat digunakan untuk membuat media "
+"instalasi dengan disk optik dan USB, untuk boot pada sistem BIOS dan UEFI."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Penulis Media Fedora"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -123,6 +148,13 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer* telah meningkat secara signifikan dan "
+"sekarang menjadi resmi, diuji dan didukung cara untuk membuat media "
+"bootable. [application]*Fedora Media Writer* mendukung Linux, Mac, dan "
+"Windows. Ini adalah cara mudah untuk membuat media USB bootable untuk "
+"menginstal Fedora (atau sistem operasi lain). Menggunakan [application]*"
+"Fedora Media Writer* sangat dianjurkan, meskipun perangkat lunak pembuatan "
+"media USB lainnya dapat bekerja dengan baik."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:34
@@ -133,6 +165,11 @@ msgid ""
 "the button below _Custom image_. This offers a selection of various Fedora "
 "Spins, such as Xfce or Mate."
 msgstr ""
+"Beberapa tambahan baru ke [application]*Fedora Media Writer* adalah bahwa "
+"Fedora Workstation dan Server mudah dan cepat diakses dari pemilihan di "
+"layar utama. Pilihan lebih lanjut tersedia jika Anda memilih tombol di bawah "
+"_Image ubahan_. Ini menawarkan berbagai pilihan Fedora Spins, seperti Xfce "
+"atau Mate."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:36
@@ -143,6 +180,11 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Secara historis, alat kreasi USB universal, seperti [application]*Unetbootin*"
+", adalah cara yang populer untuk membuat penginstal USB dari ISO yang "
+"ditujukan untuk media optik. Mereka biasanya membuat sistem berkas pada "
+"drive USB dengan mengekstrak berkas dari image, dan menulis bootloader "
+"[application]*syslinux* ke perangkat."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -152,6 +194,11 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Metode ini memotong konfigurasi boot-loader yang dibangun ke dalam gambar "
+"Fedora, yang terprapartisi dan dirancang untuk boot pada sistem UEFI dengan "
+"SecureBoot yang diaktifkan serta sistem BIOS, dan dengan demikian mereka "
+"tidak memproduksi hasil yang konsisten dengan image Fedora, terutama pada "
+"sistem UEFI."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
@@ -159,6 +206,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"Hasil terbaik dihasilkan oleh utilitas yang menggunakan metode menulis "
+"langsung dan tidak memodifikasi image Fedora."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -169,18 +218,23 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Selalu berpikir dua kali sebelum menulis image ke perangkat. Metode "
+"pembuatan media yang dijelaskan dalam artikel ini bersifat destruktif.  "
+"Semua data pada USB stick akan dihapus selama proses, jadi pastikan Anda "
+"memiliki cadangan data pada USB stick. Periksa bahwa Anda telah memilih "
+"perangkat yang benar tempat menulis image!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Menginstal dan menjalankan Fedora Media Writer"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "Pada Fedora"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -188,28 +242,31 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"Di Fedora 25 atau yang lebih baru, [application]*Fedora Media Writer* "
+"tersedia dalam repositori default. Anda dapat menggunakan `dnf` untuk "
+"menginstal paket."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
 msgid "To install the [application]*Fedora Media Writer* using:"
-msgstr ""
+msgstr "Untuk menginstal [application]*Fedora Media Writer* menggunakan:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:59
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:62
 msgid "Run the [application]*Fedora Media Writer*:"
-msgstr ""
+msgstr "Jalankan [application]*Fedora Media Writer*:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:66
 #, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:69
@@ -217,12 +274,14 @@ msgid ""
 "or in [application]*Gnome 3* select *Activities* and then click on "
 "[application]*Fedora Media Writer*."
 msgstr ""
+"atau dalam [application]*Gnome 3* pilih *Aktivitas* dan kemudian klik pada "
+"[application]*Fedora Media Writer*."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:71
 #, no-wrap
 msgid "On other Linux distributions"
-msgstr ""
+msgstr "Pada distribusi Linux lainnya"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:75
@@ -232,6 +291,10 @@ msgid ""
 "obtained from the official Flatpak repository "
 "https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 msgstr ""
+"Cara terbaik untuk menginstal [application]*Fedora Media Writer* pada "
+"berbagai distribusi Linux adalah dengan menggunakan paket pre-built "
+"_Flatpak_.  Paket ini dapat diperoleh dari repositori resmi Flatpak "
+"https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:77
@@ -239,17 +302,19 @@ msgid ""
 "To setup *Flatpak* on your Linux system, follow the guidelines on the "
 "https://flatpak.org/setup/[Flatpak documentation] page."
 msgstr ""
+"Untuk menyiapkan *Flatpak* pada sistem Linux Anda, ikuti panduan tentang "
+"halaman https://flatpak.org/setup/[Dokumentasi Flatpak]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:79
 msgid "Run the application:"
-msgstr ""
+msgstr "Jalankan aplikasi:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:83
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:85
