@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-07-12 12:13+0000\n"
+"PO-Revision-Date: 2021-07-16 06:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -89,6 +89,8 @@ msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
+"Pulse el botón `+` en la parte inferior de la lista que muestra los puntos "
+"de montaje existentes. Se abrirá una nueva ventana de diálogo."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:21
@@ -99,6 +101,11 @@ msgid ""
 "`50GB`). Then, click `Add mount point` to add the mount point and return to "
 "the main partitioning screen."
 msgstr ""
+"En la nueva ventana de diálogo, especifique un punto de montaje para el que "
+"desea crear un punto de montaje separado - por ejemplo, `/`. Opcionalmente, "
+"especifique un tamaño para la partición usando las unidades estándar como MB "
+"o GB (por ejemplo, `50GB`). Pulse después `Añadir puntos de montaje` para "
+"añadir el punto de montaje y volver a la pantalla principal de particionado."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
@@ -107,6 +114,9 @@ msgid ""
 "BIOS Boot partition, use `biosboot`. For an EFI System Partition, use "
 "`/boot/efi`."
 msgstr ""
+"Cuando cree una partición swap, especifique el punto de montaje como `swap`. "
+"Para una partición BIOS Boot, use `biosboot`. Para una Partición Sistema "
+"EFI, use `/boot/efi`."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
@@ -115,6 +125,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Para información sobre estos tipos de particiones, vea "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de Particionamiento Recomendado]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
@@ -126,6 +139,12 @@ msgid ""
 "Partition`. Then, click `Update Settings` in the bottom right corner of the "
 "screen."
 msgstr ""
+"El punto de montaje ha sido creado ahora usando los ajustes predeterminados, "
+"lo que significa que ha sido creado como un volumen lógico LVM. Seleccione "
+"el punto de montaje recién creado para configurarlo más y convertirlo en una "
+"partición física cambiando la opción `Tipo de Dispositivo` a `Partición "
+"Estándar`. Después pulse `Actualizar Ajustes` en la esquina inferior derecha "
+"de la pantalla."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
@@ -134,6 +153,9 @@ msgid ""
 "the partition has been assigned to one or more hard drives. Click the "
 "`Modify` button to configure on which drive this partition will be created."
 msgstr ""
+"En la sección `Dispositivo(s)` en el lado derecho de la pantalla, puede ver "
+"que la partición ha sido asignado a uno o más discos duros. Pulse el botón "
+"`Modificar` para configurar en que disco será creada esta partición."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
@@ -147,6 +169,14 @@ msgid ""
 "want to make sure that this partition is placed on a specific hard drive, "
 "select only that drive and unselect all others."
 msgstr ""
+"En el diálogo `Configurar Punto de Montaje`, puede especificar en que "
+"dispositivos físicos *puede* residir este volumen. Puede seleccionar uno o "
+"más discos que serán usados para coger este volumen pulsando kbd:[Ctrl] y "
+"pulsando cada disco de la lista. Si usted selecciona múltiples discos aquí, "
+"[application]*Anaconda* determinará dónde se debe crear exactamente la "
+"partición en función de como haya configurado el resto de la instalación. Si "
+"desea asegurarse de que esta partición se sitúe en un disco duro específico, "
+"seleccione solo ese disco y deseleccione los otros."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
@@ -154,6 +184,8 @@ msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Después de que termine de configurar la situación de la partición, pulse "
+"`Guardar` para volver a la pantalla principal `Particionado Manual`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
@@ -162,6 +194,9 @@ msgid ""
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
+"Configure otros ajustes específicos a la partición - su `Punto de Montaje`, `"
+"Capacidad Deseada` y `Sistema de Archivos`. Pulse `Actualizar Ajustes` para "
+"aplicar cualquier cambio a la configuración."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
@@ -169,3 +204,5 @@ msgid ""
 "Repeat this procedure for any additional standard partitions you want to "
 "create."
 msgstr ""
+"Repita este procedimiento para cualquier partición estándar adicional que "
+"desee crear."
