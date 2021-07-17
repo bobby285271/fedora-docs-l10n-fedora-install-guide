@@ -2,14 +2,14 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021.
 # Arman Arisman <arman.wu@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-07-14 01:04+0000\n"
-"Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
+"PO-Revision-Date: 2021-07-17 07:04+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f27pagesadvancedboot_options/id/>\n"
 "Language: id\n"
@@ -1560,7 +1560,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:360
 #, no-wrap
 msgid "[option]#inst.vnc#"
-msgstr ""
+msgstr "[option]#inst.vnc#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:361
@@ -1571,17 +1571,24 @@ msgid ""
 "installation program. `VNC` sharing is enabled, so multiple clients can "
 "connect to the system at the same time."
 msgstr ""
+"Menyatakan bahwa antarmuka grafis program instalasi mesti dijalankan dalam "
+"suatu sesi `VNC`. Bila Anda menyatakan opsi ini, Anda perlu menyambung ke "
+"sistem memakai aplikasi klien `VNC`agar dapat berinteraksi dengan program "
+"instalasi. Berbagi `VNC` difungsikan, sehingga beberapa klien dapat "
+"menyambung ke sistem pada saat yang sama."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:366
 msgid "A system installed using `VNC` will start in text mode by default."
 msgstr ""
+"Suatu sistem yang dipasang memakai `VNC` akan mulai dalam mode teks secara "
+"baku."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:369
 #, no-wrap
 msgid "[option]#inst.vncpassword=#"
-msgstr ""
+msgstr "[option]#inst.vncpassword=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:370
@@ -1592,6 +1599,12 @@ msgid ""
 "attributes[{blank}]_testpwd_pass:attributes[{blank}]# will set the password "
 "to `testpwd`. The password must be between 6 and 8 characters long."
 msgstr ""
+"Server `VNC` yang dipakai oleh program instalasi. Sebarang klien `VNC` yang "
+"mencoba menyambung ke sistem mesti menyediakan kata sandi yang benar untuk "
+"memperoleh akses. Sebagai contoh, [option]#inst."
+"vncpassword=pass:attributes[{blank}]_testpwd_pass:attributes[{blank}]# akan "
+"menata kata sandi ke `testpwd`. Panjang kata sandi mesti antara 6 dan 8 "
+"karakter."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:375
@@ -1600,6 +1613,9 @@ msgid ""
 "will be prompted to specify a new one by a message from the installation "
 "program:"
 msgstr ""
+"Bila Anda menyatakan suatu kata sandi yang tidak valid (yang terlalu pendek "
+"atau terlalu panjang), Anda akan ditanyai untuk memberikan yang baru oleh "
+"suatu pesan dari program instalasi:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:381
@@ -1608,20 +1624,20 @@ msgid ""
 "VNC password must be six to eight characters long.\n"
 "Please enter a new one, or leave blank for no password.\n"
 msgstr ""
-"Panjang kata sandi VNC harus 6 sampai 8 karakter.\n"
-"Silakan masukkan yang baru, atau kosongkan jika tanpa kata sandi.\n"
+"Panjang kata sandi VNC mesti enam sampai delapan karakter.\n"
+"Harap masukkan yang baru, atau biarkan kosong untuk tanpa kata sandi.\n"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:383
 #, no-wrap
 msgid "Password:\n"
-msgstr "Kata Sandi:\n"
+msgstr "Kata sandi:\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:388
 #, no-wrap
 msgid "[option]#inst.vncconnect=#"
-msgstr ""
+msgstr "[option]#inst.vncconnect=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:389
