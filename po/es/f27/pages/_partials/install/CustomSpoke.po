@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-07-01 05:04+0000\n"
+"PO-Revision-Date: 2021-07-20 05:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f27pages_partialsinstallcustomspoke/es/>"
@@ -87,7 +87,7 @@ msgstr "Pantalla de Particionado Manual. En este punto"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "anaconda/CustomSpoke.png"
 msgstr "anaconda/CustomSpoke.png"
 
@@ -129,6 +129,16 @@ msgid ""
 "be created as a logical volume, and a new volume group will be created for "
 "it unless one already exists."
 msgstr ""
+"Pulse el botón `+` para añadir un punto de montaje. En la ventana de diálogo "
+"que se abre elija un punto de montaje como `/` u `/home`y la capacidad "
+"deseada para el punto de montaje (como `10GB` o `500MB`). Advierta que el "
+"especificar el punto de montaje es obligatorio, pero no tiene que "
+"especificar la capacidad en este punto; esto es útil cuando añada un punto "
+"de montaje que desea hacer más grande que los espacios permitidos "
+"actualmente disponibles. Después, pulse `Añadir punto de montaje` para "
+"añadirlo a la lista usando los ajustes predeterminados, lo que significa que "
+"será creado como un volumen lógico y se creará también un nuevo grupo de "
+"volumen para él a no ser que ya exista uno."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:31
@@ -141,6 +151,14 @@ msgid ""
 "you can now create another mount point, or select a different existing one "
 "and adjust its settings as well."
 msgstr ""
+"Después, seleccione el punto de montaje recientemente creado en la lista del "
+"lado izquierdo. Se mostrarán una serie de controles en el lado derecho de la "
+"pantalla que le permite cambiar su punto de montaje, el dispositivo en el "
+"que reside físicamente, su capacidad, sistema de archivos, etc. Cuando "
+"cambie cualquier ajuste, pulse `Actualizar Ajustes` abajo a la derecha. Esto "
+"guardará la configuración ajustada; usted puede ahora crear otro punto de "
+"montaje o seleccionar otro de los existentes y establecer sus ajustes "
+"también."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:36
@@ -156,6 +174,8 @@ msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
 msgstr ""
+"Para quitar un punto de montaje, selecciónelo de la lista y pulse el botón "
+"`-` de abajo."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:42
@@ -177,6 +197,9 @@ msgid ""
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
+"Debajo de la lista de puntos de montaje existentes hay dos campos, mostrando "
+"cuánto espacio libre queda en sus dispositivos de almacenamiento y cuanto "
+"espacio total tienen."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:46
