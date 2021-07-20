@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-07-20 05:04+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #. type: Title =
 #: ./pages/advanced/Network_based_Installations.adoc:5
@@ -31,12 +31,15 @@ msgid ""
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
 msgstr ""
+"Lampiran ini ditujukan bagi pengguna dengan pengalaman Linux sebelumnya. "
+"Bila Anda pengguna baru, Anda mungkin ingin memasang memakai media boot "
+"minimal atau DVD distribusi."
 
 #. type: Title ==
 #: ./pages/advanced/Network_based_Installations.adoc:15
 #, no-wrap
 msgid "PXE Installation Overview"
-msgstr ""
+msgstr "Ringkasan Instalasi PXE"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:18
@@ -48,12 +51,18 @@ msgid ""
 "simultaneously. The process involves a number of components and features "
 "working together to provide the resources required."
 msgstr ""
+"Preboot Execution Environment, atau PXE, adalah suatu teknologi yang "
+"memungkinkan komputer boot secara langsung dari sumber daya yang disediakan "
+"melalui jaringan. Memasang Fedora melalui jaringan berarti Anda tidak perlu "
+"membuat media, dan Anda dapat memasang ke beberapa komputer atau mesin "
+"virtual secara simultan. Proses tersebut melibatkan sejumlah komponen dan "
+"fitur yang bekerja bersama untuk menyediakan sumber daya yang diperlukan."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:19
 #, no-wrap
 msgid "PXE-capable computer"
-msgstr ""
+msgstr "Komputer berkemampuan PXE"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:21
@@ -66,12 +75,20 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"Kebanyakan komputer modern memiliki kapabilitas boot jaringan. Biasanya, "
+"suatu tombol fungsi yang ditekan selama boot akan memunculkan suatu menu "
+"pemilihan boot. Dalam lingkungan yang dirancang untuk administrasi tanpa "
+"pengawasan, sistem seringkali dikonfigurasi agar pertama kali mencoba boot "
+"dari jaringan, lalu boot dari penyimpanan lokal, dan server instalasi "
+"dikonfigurasi untuk hanya menawarkan instalasi ketika diperlukan. Manual "
+"komputer Anda akan memberikan instruksi spesifik tentang menata prioritas "
+"boot."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:22
 #, no-wrap
 msgid "DHCP Server"
-msgstr ""
+msgstr "Server DHCP"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:24
@@ -80,12 +97,15 @@ msgid ""
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
 msgstr ""
+"Ketika suatu sistem meminta sebuah alamat selama boot jaringan, server DHCP "
+"juga menyediakan lokasi berkas untuk boot. Suatu jaringan mesti hanya punya "
+"satu server DHCP."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:25
 #, no-wrap
 msgid "TFTP Server"
-msgstr ""
+msgstr "Server TFTP"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:27
