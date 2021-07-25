@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-07-18 13:04+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"PO-Revision-Date: 2021-07-25 04:04+0000\n"
+"Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pagesadvancedboot_options/id/>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:6
@@ -199,7 +199,6 @@ msgstr "Sumber harus berupa:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:50
-#, fuzzy
 msgid ""
 "an installable tree, which is a directory structure containing the "
 "installation program's images, packages and repodata as well as a valid `."
@@ -1735,12 +1734,17 @@ msgid ""
 "attributes[{blank}]#. The _port_ parameter is optional - if you do not "
 "specify one, the installation program will use `5900`."
 msgstr ""
+"Hubungkan ke klien `VNC` yang mendengarkan di host dan port tertentu setelah "
+"instalasi dimulai. Sintaks yang benar adalah [option]#inst.vncconnect=pass:at"
+"tributes[{blank}]_host_:pass:attributes[{blank}]_port_pass:attributes[{blank}"
+"]#. Parameter _port_ bersifat opsional - jika Anda tidak menentukannya, "
+"program instalasi akan menggunakan `5900`."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:399
 #, no-wrap
 msgid "Debugging and Troubleshooting"
-msgstr ""
+msgstr "Debugging dan Pemecahan Masalah"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:401
@@ -1772,6 +1776,9 @@ msgid ""
 "only concerns real-time logging in a terminal; log files will always contain "
 "messages of all levels."
 msgstr ""
+"Tentukan level minimum untuk pesan yang akan dicatat di terminal. Ini hanya "
+"menyangkut logging real-time di terminal; file log akan selalu berisi pesan "
+"dari semua tingkatan."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:406
@@ -1781,6 +1788,11 @@ msgid ""
 "`info`, which means that by default, the logging terminal will display "
 "messages ranging from `info` to `critical`, but not `debug`."
 msgstr ""
+"Nilai yang mungkin untuk opsi ini dari level terendah hingga tertinggi "
+"adalah: `debug`, `info`, `warning`, `error`, dan `critical`. Nilai "
+"defaultnya adalah `info`, yang berarti bahwa secara default, terminal "
+"logging akan menampilkan pesan mulai dari `info` hingga `critical`, tetapi "
+"bukan `debug`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:407
@@ -1795,6 +1807,9 @@ msgid ""
 "process on the specified host. The remote syslog process must be configured "
 "to accept incoming connections."
 msgstr ""
+"Setelah penginstalan dimulai, opsi ini mengirimkan pesan log ke proses "
+"syslog pada host yang ditentukan. Proses syslog jarak jauh harus "
+"dikonfigurasi untuk menerima koneksi masuk."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:409
@@ -1810,12 +1825,16 @@ msgid ""
 "forwarding logs. The default value is `org.fedoraproject.anaconda.log.0`pass:"
 "attributes[{blank}]; if this port is present, it will be used."
 msgstr ""
+"Tentukan port `virtio` (perangkat karakter di `/dev/virtio-ports/"
+"pass:attributes[{blank}]_name_pass:attributes[{blank}]`) yang akan digunakan "
+"untuk meneruskan log. Nilai defaultnya adalah `org.fedoraproject.anaconda.log"
+".0`pass:attributes[{blank}]; jika port ini ada, itu akan digunakan."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:412
 #, no-wrap
 msgid "Deprecated Boot Options"
-msgstr ""
+msgstr "Opsi Boot yang Tidak Digunakan Lagi"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:415
@@ -1825,6 +1844,10 @@ msgid ""
 "Using deprecated options is not recommended and they are expected to be "
 "removed in future releases."
 msgstr ""
+"Opsi dalam daftar ini *tidak digunakan lagi*. Mereka masih akan berfungsi, "
+"tetapi ada opsi lain yang menawarkan fungsionalitas yang sama dan harus "
+"lebih disukai. Menggunakan opsi yang tidak digunakan lagi tidak disarankan "
+"dan diharapkan akan dihapus di rilis mendatang."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:420
