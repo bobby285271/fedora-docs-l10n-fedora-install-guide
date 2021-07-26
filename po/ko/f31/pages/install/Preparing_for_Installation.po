@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-27 21:06+0000\n"
-"PO-Revision-Date: 2021-06-17 05:04+0000\n"
+"PO-Revision-Date: 2021-07-26 17:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
@@ -249,7 +249,7 @@ msgstr "응용프로그램을 실행합니다:"
 #: ./pages/install/Preparing_for_Installation.adoc:83
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:85
@@ -437,13 +437,13 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:137
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:139
 #, no-wrap
 msgid "Other methods to create a live USB"
-msgstr ""
+msgstr "다른 방법으로 라이브 USB 생성하기"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:142
@@ -612,7 +612,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:200
 msgid "Calculate the downloaded image's checksum. This will take a while!"
-msgstr ""
+msgstr "내려받은 이미지의 체크섬을 계산합니다. 이는 잠시 시간이 걸립니다!"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:203
@@ -668,7 +668,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:228
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
-msgstr ""
+msgstr "$ [command]#cd ~/Downloads#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:231
@@ -698,12 +698,14 @@ msgid ""
 "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
 "shasum -a 256 -c\n"
 msgstr ""
+"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
+"shasum -a 256 -c\n"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:246
 #, no-wrap
 msgid "Writing the images to USB media"
-msgstr ""
+msgstr "이미지를 USB 미디어로 작성하기"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:248
@@ -775,6 +777,19 @@ msgid ""
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
+"$ [command]#dmesg|tail#\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
+"SerialNumber=2\n"
+"[288954.686559] usb 2-1.8: Product: USB Storage\n"
+"[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
+"[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
+"[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
+"[288954.712809] usbcore: registered new interface driver usb-storage\n"
+"[288954.716682] usbcore: registered new interface driver uas\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
+"9228 PQ: 0 ANSI: 0\n"
+"[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
+"[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:278
@@ -785,7 +800,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:282
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
-msgstr ""
+msgstr "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:288
@@ -799,7 +814,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:290
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
-msgstr ""
+msgstr "부팅 CD 또는 DVD 생성하기"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:292
