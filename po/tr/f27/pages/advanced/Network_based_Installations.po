@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-01 16:04+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f27pagesadvancednetwork_based_installations/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Title ===
 #: pages/advanced/Network_based_Installations.adoc:6
 #, no-wrap
 msgid "Setting Up an Installation Server"
-msgstr ""
+msgstr "Kurulum Sunucusu Ayarlama"
 
 #. type: delimited block =
 #: pages/advanced/Network_based_Installations.adoc:12
@@ -27,12 +32,15 @@ msgid ""
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
 msgstr ""
+"Bu ek, daha önce Linux deneyimi olan kullanıcılar için hazırlanmıştır. Yeni "
+"bir kullanıcıysanız, bunun yerine asgari önyükleme ortamı veya dağıtım "
+"DVD'si kullanarak kurulum yapmak isteyebilirsiniz."
 
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:16
 #, no-wrap
 msgid "PXE Installation Overview"
-msgstr ""
+msgstr "PXE Kurulumuna Genel Bakış"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:19
@@ -44,12 +52,18 @@ msgid ""
 "process involves a number of components and features working together to "
 "provide the resources required."
 msgstr ""
+"Preboot Execution Environment (Önyükleme Öncesi Yürütme Ortamı) veya PXE, "
+"bilgisayarların doğrudan ağ üzerinden sağlanan kaynaklardan önyükleme "
+"yapmasını sağlayan bir teknolojidir. Fedora'yı ağ üzerinden kurmak, kurulum "
+"ortamı oluşturmanız gerekmediği ve aynı anda birden fazla bilgisayara veya "
+"sanal makineye kurabilmeniz anlamına gelir. Süreç, gerekli kaynakları "
+"sağlamak için birlikte çalışan bir dizi bileşen ve özelliği içermektedir."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:20
 #, no-wrap
 msgid "PXE-capable computer"
-msgstr ""
+msgstr "PXE özellikli bilgisayar"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:22
@@ -62,12 +76,20 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"Çoğu modern bilgisayar, ağ üzerinden önyükleme özelliğine sahiptir. Genel "
+"olarak, önyükleme sırasında basılan bir işlev tuşu, bir önyükleme seçim "
+"menüsü getirecektir. Etkileşimsiz yönetim için tasarlanmış ortamlarda, "
+"sistemler genellikle önce ağdan önyüklemeyi deneyecek, ardından yerel "
+"depolamadan önyükleme yapacak şekilde yapılandırılacaktır ve kurulum "
+"sunucusu yalnızca gerektiğinde kurulumu sunacak şekilde yapılandırılır. "
+"Bilgisayarınızın kılavuzu, önyükleme önceliklerini ayarlama konusunda özel "
+"talimatlar sağlayacaktır."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:23
 #, no-wrap
 msgid "DHCP Server"
-msgstr ""
+msgstr "DHCP Sunucusu"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:25
@@ -76,12 +98,15 @@ msgid ""
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
 msgstr ""
+"Bir sistem ağ üzerinden önyükleme sırasında bir adres istediğinde, DHCP "
+"sunucusu ayrıca önyükleme yapılacak dosyaların konumunu da sağlar. Bir ağda "
+"yalnızca bir DHCP sunucusu olmalıdır."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:26
 #, no-wrap
 msgid "TFTP Server"
-msgstr ""
+msgstr "TFTP Sunucusu"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:28
@@ -90,12 +115,16 @@ msgid ""
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"Önyükleme öncesi ortam çok basit olduğundan, dosyalar çok basit bir şekilde "
+"sağlanmalıdır. Trivial File Transfer Protocol (Basit Dosya Aktarım Protokolü)"
+" veya TFTP, sisteme kurulum işlemine devam etmek için gereken önyükleyiciyi "
+"sağlar."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:29
 #, no-wrap
 msgid "Bootloader"
-msgstr ""
+msgstr "Önyükleyici"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:31
@@ -105,12 +134,16 @@ msgid ""
 "It also provides configuration information to the installer, and can offer a "
 "menu to select from different configurations."
 msgstr ""
+"Bir işletim sistemini başlatma işi, önyükleme öncesi ortam için çok karmaşık "
+"olduğundan, çekirdeği ve ilgili dosyaları yüklemek için bir önyükleyici "
+"kullanılır. Ayrıca kurucuya yapılandırma bilgileri sağlar ve farklı "
+"yapılandırmalar arasından seçim yapmak için bir menü sunabilir."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:32
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr ""
+msgstr "Çekirdek ve Initramfs"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:34
@@ -119,12 +152,15 @@ msgid ""
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
 msgstr ""
+"Çekirdek, herhangi bir Linux işletim sisteminin çekirdeğidir ve initramfs, "
+"çekirdeğe gerekli araçları ve kaynakları sağlar. Bu dosyalar da tftp "
+"tarafından sağlanmaktadır."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:35
 #, no-wrap
 msgid "Package repository"
-msgstr ""
+msgstr "Paket deposu"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:37
@@ -136,37 +172,46 @@ msgid ""
 "see xref:Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for details."
 msgstr ""
+"Kurulum için kullanılabilir bir Fedora deposu bulunmalıdır. Bu bölümdeki "
+"örnek, depo kaynağı olarak herkesin erişimine açık Fedora yansılarını "
+"kullanmaktadır, ancak NFS, FTP veya HTTP tarafından sağlanan yerel ağ "
+"üzerindeki bir depoyu da kullanabilirsiniz. Depolar, [option]#inst.repo=# "
+"önyükleme seçeneği kullanılarak yapılandırılabilir; ayrıntılar için "
+"xref:Boot_Options.adoc#sect-boot-options-sources[Kurulum Kaynağını Belirtme] "
+"bölümüne bakın."
 
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:41
 #, no-wrap
 msgid "DHCP Server Configuration"
-msgstr ""
+msgstr "DHCP Sunucusunu Yapılandırma"
 
 #. Needs adminition about static IP, reference out to Networking Guide. Example assumes 192.168.1.2 for server.
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:45
 #, no-wrap
 msgid "Installing and configuring dhcpd"
-msgstr ""
+msgstr "dhcpd kurma ve yapılandırma"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:47
 msgid "Install the dhcp server package."
-msgstr ""
+msgstr "dhcp sunucusu paketini kurun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:51
 #, no-wrap
 msgid "# dnf install dhcp\n"
-msgstr ""
+msgstr "# dnf install dhcp\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:54
 msgid ""
 "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
 msgstr ""
+"`/etc/dhcp/dhcpd.conf` konumunda dhcp sunucusu için basit bir yapılandırma "
+"oluşturun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:62
@@ -178,6 +223,11 @@ msgid ""
 "max-lease-time 7200;\n"
 "ddns-update-style none;\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"authoritative;\n"
+"default-lease-time 600;\n"
+"max-lease-time 7200;\n"
+"ddns-update-style none;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:65
@@ -186,17 +236,19 @@ msgid ""
 "option domain-name-servers 192.168.1.1;\n"
 "option routers 192.168.1.1;\n"
 msgstr ""
+"option domain-name-servers 192.168.1.1;\n"
+"option routers 192.168.1.1;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:67
 #, no-wrap
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:70
 msgid "Test your configuration and address any problems you discover."
-msgstr ""
+msgstr "Yapılandırmanızı test edin ve karşılaştığınız sorunları giderin."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:76
@@ -205,6 +257,8 @@ msgid ""
 "[command]#systemctl start dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl start dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:79
@@ -215,6 +269,11 @@ msgid ""
 "their address request, BIOS clients and UEFI clients can each be directed to "
 "the correct bootloader."
 msgstr ""
+"İstemcileri önyükleyicilerine ve onları sağlayan sunucuya yönlendirmek için "
+"`/etc/dhcp/dhcpd.conf` içindeki alt ağ yapılandırmanıza girdiler ekleyin. "
+"DHCP istemcileri, sunucuya adres istekleriyle birlikte tanımlayıcı bilgiler "
+"sağladığından, BIOS istemcileri ve UEFI istemcilerinin her biri doğru "
+"önyükleyiciye yönlendirilebilir."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:83
@@ -223,6 +282,8 @@ msgid ""
 "# refer to RFC4758 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 msgstr ""
+"# olası mimari (arch) seçeneği değerleri için RFC4758'e bakın\n"
+"option arch code 93 = unsigned integer 16;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:90
@@ -235,18 +296,24 @@ msgid ""
 "filename \"pxelinux.0\";\n"
 "}\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"if option arch = 00:07 {\n"
+"filename \"uefi/shim.efi\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:92
 #, no-wrap
 msgid "next-server 192.168.1.2;\n"
-msgstr ""
+msgstr "next-server 192.168.1.2;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:94
 #, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:97
@@ -254,6 +321,8 @@ msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
 msgstr ""
+"Yapılandırmayı denetlemek ve gereken değişiklikleri yapmak için dhcp "
+"hizmetini yeniden başlatın."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:103
@@ -262,24 +331,26 @@ msgid ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl restart dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:107
 #: pages/advanced/Network_based_Installations.adoc:109
 #, no-wrap
 msgid "Installing the tftp server"
-msgstr ""
+msgstr "TFTP sunucusunu kurma"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:111
 msgid "Install the tftp server package."
-msgstr ""
+msgstr "tftp sunucusu paketini kurun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:114
 #, no-wrap
 msgid "# dnf install tftp-server\n"
-msgstr ""
+msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:117
@@ -287,6 +358,8 @@ msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
 msgstr ""
+"`tftp soketini` başlatın ve etkinleştirin. `systemd`, gerektiğinde `tftpd` "
+"hizmetini otomatik olarak başlatacaktır."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:122
@@ -295,34 +368,36 @@ msgid ""
 "# [command]#systemctl start tftp.socket#\n"
 "# [command]#systemctl enable tftp.socket#\n"
 msgstr ""
+"# [command]#systemctl start tftp.socket#\n"
+"# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:125
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "PXE istemcileri için önyükleyiciyi sağlama ve yapılandırma"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:127
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "Önyükleyici dosyalarını edinme"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:129
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
-msgstr ""
+msgstr "BIOS istemcileri için [package]*syslinux* önyükleyicisini edinin."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:131
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "[package]*syslinux* paketini kurun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:134
 #, no-wrap
 msgid "# dnf install syslinux\n"
-msgstr ""
+msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:137
@@ -330,6 +405,8 @@ msgstr ""
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
+"Önyükleyici dosyaları için bir dizin oluşturun ve bunları orada "
+"kullanılabilir hale getirin."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:142
@@ -338,11 +415,16 @@ msgid ""
 "# [command]#mkdir -p `/var/lib/tftpboot/pxelinux.cfg`pass:attributes[{blank}]#\n"
 "# [command]#cp `/usr/share/syslinux/{pxelinux.0,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/pxelinux."
+"cfg`pass:attributes[{blank}]#\n"
+"# [command]#cp `/usr/share/syslinux/{pxelinux.0,vesamenu.c32,ldlinux."
+"c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:145
 msgid "Get the bootloader files for UEFI systems"
-msgstr ""
+msgstr "UEFI sistemleri için önyükleyici dosyalarını edinin."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:147
@@ -352,12 +434,18 @@ msgid ""
 "install root*. Installing them directly on a BIOS machine will attempt to "
 "configure the system for UEFI booting and cause problems."
 msgstr ""
+"[package]*shim* ve [package]*grub2-efi* paketlerini kurun. Sunucunuz bir "
+"BIOS sistemiyse, *paketleri geçici bir kurulum köküne kurmalısınız*. Bunları "
+"doğrudan bir BIOS makinesine kurmak, sistemi UEFI önyüklemesi için "
+"yapılandırmaya çalışacak ve sorunlara neden olacaktır."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:151
 #, no-wrap
 msgid "# dnf install shim grub2-efi --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr ""
+"# dnf install shim grub2-efi --installroot=/tmp/fedora --releasever {PRODVER}"
+"\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:159
@@ -366,12 +454,15 @@ msgid ""
 "# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
 "# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shim.efi,grubx64.efi}` `/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
+"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shim.efi,grubx64.efi}` `/"
+"var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:161
 #, no-wrap
 msgid "Configuring client bootloaders"
-msgstr ""
+msgstr "İstemci önyükleyicilerini yapılandırma"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:163
@@ -379,6 +470,8 @@ msgid ""
 "Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
 "default`."
 msgstr ""
+"`/var/lib/tftpboot/pxelinux.cfg/default` konumunda BIOS istemcileri için bir "
+"önyükleme menüsü oluşturun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:171
@@ -388,6 +481,9 @@ msgid ""
 "prompt 1\n"
 "timeout 600\n"
 msgstr ""
+"default vesamenu.c32\n"
+"prompt 1\n"
+"timeout 600\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:177
@@ -399,6 +495,12 @@ msgid ""
 "kernel f{PRODVER}/vmlinuz\n"
 "append initrd=f{PRODVER}/initrd.img inst.stage2=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp\n"
 msgstr ""
+"label linux\n"
+"menu label ^Install Fedora {PRODVER} 64-bit\n"
+"menu default\n"
+"kernel f{PRODVER}/vmlinuz\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=http://download.fedoraproject"
+".org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:183
@@ -410,6 +512,13 @@ msgid ""
 "kernel f{PRODVER}/vmlinuz\n"
 "append initrd=f{PRODVER}/initrd.img inst.stage2=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 msgstr ""
+"label server\n"
+"menu label ^Install Fedora {PRODVER} ( Minimal Image )\n"
+"menu default\n"
+"kernel f{PRODVER}/vmlinuz\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=http://download.fedoraproject"
+".org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp "
+"ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:188
@@ -420,6 +529,12 @@ msgid ""
 "kernel f{PRODVER}/vmlinuz\n"
 "append initrd=f{PRODVER}initrd.img ip=dhcp root=live:http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/LiveOS/squashfs.img rescue\n"
 msgstr ""
+"label rescue\n"
+"menu label ^Rescue installed system\n"
+"kernel f{PRODVER}/vmlinuz\n"
+"append initrd=f{PRODVER}initrd.img ip=dhcp root=live:http://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/"
+"LiveOS/squashfs.img rescue\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:192
@@ -429,12 +544,17 @@ msgid ""
 "menu label Boot from ^local drive\n"
 "localboot 0xffff\n"
 msgstr ""
+"label local\n"
+"menu label Boot from ^local drive\n"
+"localboot 0xffff\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:195
 msgid ""
 "Create a boot menu for UEFI clients at `/var/lib/tftpboot/pxelinux/uefi`."
 msgstr ""
+"`/var/lib/tftpboot/pxelinux/uefi` konumunda UEFI istemcileri için bir "
+"önyükleme menüsü oluşturun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:205
@@ -448,6 +568,13 @@ msgid ""
 "\tinsmod all_video\n"
 "}\n"
 msgstr ""
+"function load_video {\n"
+"\tinsmod efi_gop\n"
+"\tinsmod efi_uga\n"
+"\tinsmod video_bochs\n"
+"\tinsmod video_cirrus\n"
+"\tinsmod all_video\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:209
@@ -457,6 +584,9 @@ msgid ""
 "set gfxpayload=keep\n"
 "insmod gzio\n"
 msgstr ""
+"load_video\n"
+"set gfxpayload=keep\n"
+"insmod gzio\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:214
@@ -467,6 +597,12 @@ msgid ""
 "\tinitrdefi f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
+"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --"
+"class gnu --class os {\n"
+"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=http://download.fedoraproject"
+".org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"\tinitrdefi f{PRODVER}/initrd.img\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:219
@@ -477,6 +613,14 @@ msgid ""
 "\tappend initrd=f{PRODVER}/initrd.img inst.repo=http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 msgstr ""
+"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-"
+"linux --class gnu --class os {\n"
+"\tkernel f{PRODVER}/vmlinuz\n"
+"\tappend initrd=f{PRODVER}/initrd.img inst.repo=http://download.fedoraproject"
+".org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp "
+"ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-"
+"install-server.ks?h=f21\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:224
@@ -487,57 +631,72 @@ msgid ""
 "\tappend f{PRODVER}/initrd=initrd.img root=live:http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/LiveOS/squashfs.img rescue\n"
 "}\n"
 msgstr ""
+"menuentry 'Rescue installed system'  --class fedora --class gnu-linux --"
+"class gnu --class os {\n"
+"\tkernel f{PRODVER}/vmlinuz\n"
+"\tappend f{PRODVER}/initrd=initrd.img root=live:http://download.fedoraproject"
+".org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/LiveOS/"
+"squashfs.img rescue\n"
+"}\n"
 
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:227
 #, no-wrap
 msgid "Getting the kernel and initrd"
-msgstr ""
+msgstr "Çekirdek ve initrd edinme"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:229
 #, no-wrap
 msgid "Downloading the kernel and initrd"
-msgstr ""
+msgstr "Çekirdek ve initrd indirme"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:231
 msgid "Create a directory for the files."
-msgstr ""
+msgstr "Dosyalar için bir dizin oluşturun."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:235
 #, no-wrap
 msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:238
 msgid "Download the kernel."
-msgstr ""
+msgstr "Çekirdeği indirin."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:242
 #, no-wrap
 msgid "# wget http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 msgstr ""
+"# wget http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/"
+"Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/"
+"vmlinuz\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:245
 msgid "Download the initrd"
-msgstr ""
+msgstr "Initrd'yi indirin."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:249
 #, no-wrap
 msgid "# wget http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 msgstr ""
+"# wget http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/"
+"Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/"
+"f{PRODVER}/initrd.img\n"
 
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:252
 #, no-wrap
 msgid "Providing repositories"
-msgstr ""
+msgstr "Depoları sağlama"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:255
@@ -546,6 +705,10 @@ msgid ""
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
 msgstr ""
+"Bu bölümdeki örnekler, paket kaynağı olarak herkesin erişimine açık Fedora "
+"yansılarını kullanmaktadır. Daha hızlı kurulumlar, birçok sisteme kurulum "
+"veya daha fazla yalıtılmış ortamlar için yerel bir depo bulundurmak "
+"isteyebilirsiniz."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:257
@@ -556,12 +719,17 @@ msgid ""
 "can refer to the [citetitle]_Fedora System Administrator's Guide_, available "
 "at link:++http://docs.fedoraproject.org/++[], to configure `httpd`."
 msgstr ""
+"Fedora Altyapı ekibi, link:++https://fedoraproject.org/wiki/Infrastructure/"
+"Mirroring++[] adresinde yerel bir yansı yapılandırma talimatlarını "
+"bulundurmaktadır. Depo sağlamak için tercih edilen yöntem HTTP'dir ve `httpd`"
+" yapılandırması için link:++https://docs.fedoraproject.org/++[] adresinde "
+"bulunan [citetitle]_Fedora Sistem Yöneticisi Kılavuzuna_ başvurabilirsiniz."
 
 #. type: Title ====
 #: pages/advanced/Network_based_Installations.adoc:259
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
-msgstr ""
+msgstr "Cobbler ile gelişmiş ağ kurulumları"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:262
@@ -571,6 +739,11 @@ msgid ""
 "coordinating repositories, maintaining dns records, dhcp servers, and even "
 "puppet manifests are effectively automated by [package]*cobbler*."
 msgstr ""
+"{PRODUCT}, daha karmaşık ortamlar için [package]*cobbler* kurulum sunucusunu "
+"sunmaktadır. Kickstart yapılandırmalarını yönetmek, depoları eş güdümlemek, "
+"dns kayıtlarını, dhcp sunucularını ve hatta puppet bildirimlerini sağlamak "
+"gibi görevler [package]*cobbler* tarafından etkin bir şekilde "
+"otomatikleştirilir."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:264
@@ -581,6 +754,11 @@ msgid ""
 "link:++https://cobbler.github.io/++[] to accompany the packages in the "
 "Fedora repository."
 msgstr ""
+"Cobbler tarafından sağlanan tüm özelliklerden yararlanmak nispeten basit "
+"olsa da, bu güçlü aracın tam işlevselliği bu kılavuzda belgelenemeyecek "
+"kadar geniştir. Cobbler topluluğu, Fedora deposundaki paketlere eşlik edecek "
+"belgelendirmeyi link:++https://cobbler.github.io/++[] adresinde "
+"sağlamaktadır."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:265
@@ -589,3 +767,6 @@ msgid ""
 "official documentation as well as downloads on the project website at link:+"
 "+https://www.theforeman.org/++[]."
 msgstr ""
+"Alternatif olarak, **Foreman** ile de ilgilenebilirsiniz. Resmi "
+"belgelendirmeyi ve indirmeleri link:++https://www.theforeman.org/++[] "
+"adresindeki proje web sitesinde bulabilirsiniz."
