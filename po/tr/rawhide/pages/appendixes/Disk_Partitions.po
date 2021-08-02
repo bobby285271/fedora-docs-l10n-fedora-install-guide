@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-05-27 16:02+0000\n"
+"PO-Revision-Date: 2021-08-02 18:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Title =
 #: pages/appendixes/Disk_Partitions.adoc:6
 #, no-wrap
 msgid "An Introduction to Disk Partitions"
-msgstr ""
+msgstr "Disk Bölümlerine Giriş"
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:12
@@ -32,6 +32,8 @@ msgid ""
 "AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
 "apply."
 msgstr ""
+"Bu ek, AMD64 ve Intel{nbsp}64 dışındaki mimariler için geçerli olmayabilir. "
+"Ancak burada bahsedilen genel kavramlar geçerli olabilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:16
@@ -39,6 +41,9 @@ msgid ""
 "This section discusses basic disk concepts, disk repartitioning strategies, "
 "the partition naming scheme used by Linux systems, and related topics."
 msgstr ""
+"Bu bölümde temel disk kavramları, disk yeniden bölümlendirme stratejileri, "
+"Linux sistemleri tarafından kullanılan bölüm adlandırma düzeni ve ilgili "
+"konular tartışılmaktadır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:18
@@ -48,12 +53,16 @@ msgid ""
 "information on the process of freeing up disk space to prepare for a "
 "{PRODUCT} installation."
 msgstr ""
+"Disk bölümleri konusunda bilgi sahibiyseniz, bir {PRODUCT} kurulumuna "
+"hazırlanmak üzere disk alanını boşaltma süreci hakkında daha fazla bilgi "
+"için xref:sect-disk-partitions-making-room[Disk Yeniden Bölümlendirme "
+"Stratejileri] bölümüne geçebilirsiniz."
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:20
 #, no-wrap
 msgid "Hard Disk Basic Concepts"
-msgstr ""
+msgstr "Sabit Disk Temel Kavramları"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:23
@@ -61,6 +70,8 @@ msgid ""
 "Hard disks perform a very simple function - they store data and reliably "
 "retrieve it on command."
 msgstr ""
+"Sabit diskler çok basit bir işlevi yerine getirir - verileri depolar ve "
+"istendiğinde güvenilir bir şekilde geri getirirler."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:25
@@ -71,6 +82,11 @@ msgid ""
 "This appendix uses a set of simplified diagrams of a disk drive to help "
 "explain what is the process and theory behind partitions."
 msgstr ""
+"Disk bölümlendirme gibi sorunları tartışırken, altta yatan donanımı anlamak "
+"önemlidir; ancak teori çok karmaşık ve kapsamlı olduğu için burada sadece "
+"temel kavramlar açıklanacaktır. Bu ek, bölümlerin arkasındaki süreç ve "
+"teorinin ne olduğunu açıklamaya yardımcı olmak için bir disk sürücüsünün bir "
+"dizi basitleştirilmiş grafiksel gösterimini kullanmaktadır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:27
@@ -78,24 +94,26 @@ msgid ""
 "xref:figu-partitions-unused-drive[An Unused Disk Drive], shows a brand-new, "
 "unused disk drive."
 msgstr ""
+"xref:figu-partitions-unused-drive[Kullanılmayan Bir Disk Sürücüsü], yepyeni, "
+"kullanılmamış bir disk sürücüsünü göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:29
 #, no-wrap
 msgid "An Unused Disk Drive"
-msgstr ""
+msgstr "Kullanılmayan Bir Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "Image of an unused disk drive."
-msgstr ""
+msgstr "Kullanılmayan bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "partitions/unused-drive.png"
-msgstr ""
+msgstr "partitions/unused-drive.png"
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:34
@@ -111,24 +129,29 @@ msgid ""
 "attributes[{blank}]\") writes information to the drive, creating order out "
 "of the empty space in an unformatted drive."
 msgstr ""
+"Bir disk sürücüsünde veri depolamak için önce disk sürücüsünü "
+"_biçimlendirmek_ gerekmektedir. Biçimlendirme işlemi (genellikle \"_dosya "
+"sistemi_pass:attributes[{blank}] oluşturma\" olarak bilinir), "
+"biçimlendirilmemiş bir sürücüdeki boş alandan bir düzen oluşturarak sürücüye "
+"bilgi yazar."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:39
 #, no-wrap
 msgid "Disk Drive with a File System"
-msgstr ""
+msgstr "Bir Dosya Sistemine Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "Image of a formatted disk drive."
-msgstr ""
+msgstr "Biçimlendirilmiş bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "partitions/formatted-drive.png"
-msgstr ""
+msgstr "partitions/formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:44
@@ -136,6 +159,9 @@ msgid ""
 "As xref:figu-partitions-formatted-drive[Disk Drive with a File System], "
 "implies, the order imposed by a file system involves some trade-offs:"
 msgstr ""
+"xref:figu-partitions-formatted-drive[Bir Dosya Sistemine Sahip Disk "
+"Sürücüsünün] ima ettiği gibi, bir dosya sistemi tarafından sağlanan düzen "
+"bazı ödün vermeler içermektedir:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:46
@@ -143,6 +169,8 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"Diskin kullanılabilir alanının küçük bir yüzdesi dosya sistemiyle ilgili "
+"verileri depolamak için kullanılır ve ek yük olarak kabul edilebilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:48
@@ -153,6 +181,12 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"Bir dosya sistemi, kalan alanı küçük, sabit boyutlu parçalara ayırır. Linux "
+"için bu parçalar _bloklar_ olarak bilinir footnote:[Bizim "
+"resimlediklerimizin aksine, bloklar gerçekten tutarlı bir şekilde "
+"boyutlandırılmıştır. Ayrıca, ortalama bir disk sürücüsünün binlerce blok "
+"içerdiğini unutmayın. Resim, bu tartışmanın amaçları doğrultusunda "
+"basitleştirilmiştir.]."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:50
@@ -167,24 +201,34 @@ msgid ""
 "Microsoft Windows), making data interchange between different file systems "
 "easy."
 msgstr ""
+"Tek bir evrensel dosya sistemi olmadığını unutmayın. xref:figu-partitions-"
+"different-file-system[Farklı Bir Dosya Sistemine Sahip Disk Sürücüsünün] "
+"gösterdiği gibi, bir disk sürücüsü üzerinde birçok farklı dosya sisteminden "
+"biri yazılı olabilir. Farklı dosya sistemleri uyumsuz olma eğilimindedir; "
+"diğer bir deyişle, bir dosya sistemini (veya bir avuç ilgili dosya sistemi "
+"türünü) destekleyen bir işletim sistemi diğerini desteklemeyebilir. Bununla "
+"birlikte, {PRODUCT} çok çeşitli dosya sistemlerini desteklemekte (Microsoft "
+"Windows gibi diğer işletim sistemleri tarafından yaygın olarak kullanılanlar "
+"da dahil olmak üzere), farklı dosya sistemleri arasında veri alışverişini "
+"kolaylaştırmaktadır."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:52
 #, no-wrap
 msgid "Disk Drive with a Different File System"
-msgstr ""
+msgstr "Farklı Bir Dosya Sistemine Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "Image of a disk drive with a different file system."
-msgstr ""
+msgstr "Farklı bir dosya sistemine sahip bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "partitions/other-formatted-drive.png"
-msgstr ""
+msgstr "partitions/other-formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:57
@@ -193,24 +237,27 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"Bir dosya sistemini diske yazmak yalnızca ilk adımdır. Bu işlemin amacı, "
+"verileri gerçekten *depolamak* ve *geri almaktır*. Aşağıdaki şekil, üzerine "
+"bazı veriler yazıldıktan sonra bir sürücü diskini göstermektedir:"
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:59
 #, no-wrap
 msgid "Disk Drive with Data Written to It"
-msgstr ""
+msgstr "Üzerine Veri Yazılmış Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "Image of a disk drive with data written to it."
-msgstr ""
+msgstr "Üzerine veri yazılmış bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "partitions/used-formatted-drive.png"
-msgstr ""
+msgstr "partitions/used-formatted-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:64
@@ -225,6 +272,16 @@ msgid ""
 "_fragmentation_. Fragmentation can play a part when attempting to resize an "
 "existing partition."
 msgstr ""
+"xref:figu-partitions-drive-with-data[Üzerine Veri Yazılmış Disk Sürücüsünün] "
+"gösterdiği gibi, önceden boş olan bazı bloklarda artık veri bulunmaktadır. "
+"Ancak, sadece bu resme bakarak bu sürücüde tam olarak kaç dosya bulunduğunu "
+"belirleyemeyiz. Tüm dosyalar en az bir blok kullandığından ve bazı dosyalar "
+"birden fazla blok kullandığından yalnızca bir veya daha fazla dosya "
+"olabilir. Dikkat edilmesi gereken bir diğer önemli nokta ise kullanılan "
+"blokların bitişik bir bölge oluşturması gerekmediğidir; kullanılan ve "
+"kullanılmayan bloklar karışık bir şekilde bulunabilir. Bu _parçalanma_ "
+"olarak bilinir. Parçalanma, var olan bir bölümü yeniden boyutlandırmaya "
+"çalışırken önemli olabilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:66
@@ -235,12 +292,17 @@ msgid ""
 "additional capacity drove a fundamental change in the way disk drives were "
 "used."
 msgstr ""
+"Bilgisayarla ilgili çoğu teknolojide olduğu gibi, disk sürücüleri de ilk "
+"çıktıklarından sonra zaman içinde değişti. Özellikle daha da büyüdüler. "
+"Fiziksel boyutları değil, bilgi depolama kapasiteleri daha büyük duruma "
+"geldi. Ve bu ek kapasite, disk sürücülerinin kullanılma biçiminde temel bir "
+"değişikliğe yol açtı."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:68
 #, no-wrap
 msgid "Partitions: Turning One Drive Into Many"
-msgstr ""
+msgstr "Bölümler: Bir Diski Birden Fazla Diske Dönüştürme"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:71
@@ -249,6 +311,8 @@ msgid ""
 "as if it was a separate disk. This is done through the addition of a "
 "_partition table_."
 msgstr ""
+"Disk sürücüleri _bölümlere_ ayrılabilir. Her bölüme ayrı bir diskmiş gibi "
+"erişilebilir. Bu, bir _bölümlendirme tablosunun_ eklenmesiyle yapılır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:73
@@ -256,21 +320,23 @@ msgid ""
 "There are several reasons for allocating disk space into separate disk "
 "partitions, for example:"
 msgstr ""
+"Disk alanını ayrı disk bölümlerine ayırmanın birkaç nedeni vardır, örneğin:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:75
 msgid "Logical separation of the operating system data from the user data"
 msgstr ""
+"İşletim sistemi verilerinin kullanıcı verilerinden mantıksal olarak ayrılması"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:77
 msgid "Ability to use different file systems"
-msgstr ""
+msgstr "Farklı dosya sistemlerini kullanabilme"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:79
 msgid "Ability to run multiple operating systems on one machine"
-msgstr ""
+msgstr "Bir makinede birden fazla işletim sistemi çalıştırabilme"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:81
@@ -286,6 +352,18 @@ msgid ""
 "layout, see xref:sect-disk-partitioning-guid-partition-table[GUID Partition "
 "Table (GPT)]."
 msgstr ""
+"Şu anda fiziksel sabit diskler için iki bölümlendirme düzeni standardı "
+"vardır: Ana Önyükleme Kaydı (Master Boot Record - *MBR*) ve GUID "
+"Bölümlendirme Tablosu (GUID Partition Table - *GPT*). *MBR*, BIOS tabanlı "
+"bilgisayarlarda kullanılan eski bir disk bölümlendirme yöntemidir. *GPT*, "
+"Birleşik Genişletilebilir Ürün Yazılımı Arayüzünün (Unified Extensible "
+"Firmware Interface - *UEFI*) bir parçası olan daha yeni bir bölümlendirme "
+"düzenidir. Bu bölüm ve xref:sect-disk-partitions-extended[Bölümlerin "
+"İçindeki Bölümler - Genişletilmiş Bölümlere Genel Bakış], temel olarak _Ana "
+"Önyükleme Kaydı_ (*MBR*) disk bölümlendirme düzenini açıklamaktadır. _GUID "
+"Bölümlendirme Tablosu_ (*GPT*) bölümlendirme düzeni hakkında bilgi için xref"
+":sect-disk-partitioning-guid-partition-table[GUID Bölümlendirme Tablosu "
+"(GPT)] kısmına bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:86
@@ -296,24 +374,30 @@ msgid ""
 "any file system or user data. But for clarity, they are separate in our "
 "diagrams."
 msgstr ""
+"Bu bölümdeki grafiksel gösterimler, bölümlendirme tablosunu gerçek disk "
+"sürücüsünden ayrı olarak gösterse de, bu tam olarak doğru değildir. "
+"Gerçekte, bölümlendirme tablosu, herhangi bir dosya sistemi veya kullanıcı "
+"verisinden önce, diskin en başında saklanır. Ancak netlik için, buradaki "
+"grafiklerimizde ayrı olarak gösterilmektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:90
 #, no-wrap
 msgid "Disk Drive with Partition Table"
-msgstr ""
+msgstr "Bölümlendirme Tablosuna Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "Image of an unused disk drive with a partition table."
 msgstr ""
+"Bölümlendirme tablosuna sahip kullanılmayan bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "partitions/unused-partitioned-drive.png"
-msgstr ""
+msgstr "partitions/unused-partitioned-drive.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:95
@@ -325,6 +409,12 @@ msgid ""
 "information necessary to define a single partition, meaning that the "
 "partition table can define no more than four partitions."
 msgstr ""
+"xref:figu-partitions-partition-table[Bölümlendirme Tablosuna Sahip Disk "
+"Sürücüsünün] gösterdiği gibi, bölümlendirme tablosu dört kısma veya dört "
+"_birincil_ bölüme ayrılmıştır. Birincil bölüm, bir sabit diskte yalnızca bir "
+"mantıksal sürücü (veya kısım) içerebilen bir bölümdür. Her kısım, tek bir "
+"bölüm tanımlamak için gerekli bilgileri tutabilir, yani bölümlendirme "
+"tablosu en fazla dört bölüm tanımlayabilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:97
@@ -332,21 +422,22 @@ msgid ""
 "Each partition table entry contains several important characteristics of the "
 "partition:"
 msgstr ""
+"Her bölümlendirme tablosu girdisi, bölümün birkaç önemli özelliğini içerir:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:99
 msgid "The points on the disk where the partition starts and ends"
-msgstr ""
+msgstr "Disk üzerinde bölümün başladığı ve bittiği noktalar"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:101
 msgid "Whether the partition is \"active\""
-msgstr ""
+msgstr "Bölümün \"etkin\" olup olmadığı"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:103
 msgid "The partition's type"
-msgstr ""
+msgstr "Bölümün türü"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:105
@@ -356,6 +447,10 @@ msgid ""
 "loaders. In other words, the operating system in the partition that is "
 "marked \"active\" is booted."
 msgstr ""
+"Başlangıç ve bitiş noktaları, bölümün boyutunu ve diskteki konumunu "
+"tanımlar. \"Etkin\" işareti, bazı işletim sistemlerinin önyükleyicileri "
+"tarafından kullanılır. Başka bir deyişle, \"etkin\" olarak işaretlenen "
+"bölümdeki işletim sistemi önyüklenir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:107
@@ -366,6 +461,11 @@ msgid ""
 "system, to indicate that the partition contains a bootable operating system, "
 "or some combination of the three."
 msgstr ""
+"Tür, bölümün beklenen kullanımını tanımlayan bir sayıdır. Bazı işletim "
+"sistemleri belirli bir dosya sistemi türünü belirtmek, bölümü belirli bir "
+"işletim sistemiyle ilişkili olarak işaretlemek, bölümün önyüklenebilir bir "
+"işletim sistemi içerdiğini belirtmek veya üçünün bir birleşimi için bölüm "
+"türünü kullanır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:109
@@ -373,24 +473,26 @@ msgid ""
 "See xref:figu-partitions-single-part[Disk Drive With Single Partition] for "
 "an example of a disk drive with single partition."
 msgstr ""
+"Tek bölüme sahip bir disk sürücüsü örneği için xref:figu-partitions-single-"
+"part[Tek Bölüme Sahip Disk Sürücüsü] kısmına bakın."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:111
 #, no-wrap
 msgid "Disk Drive With Single Partition"
-msgstr ""
+msgstr "Tek Bölüme Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "Image of a disk drive with a single partition."
-msgstr ""
+msgstr "Tek bölüme sahip bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "partitions/dos-single-partition.png"
-msgstr ""
+msgstr "partitions/dos-single-partition.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:116
@@ -400,12 +502,16 @@ msgid ""
 "table below shows a list of some of the commonly used partition types and "
 "hexadecimal numbers used to represent them."
 msgstr ""
+"Bu örnekteki tek bölüm `DOS` olarak etiketlenmiştir. Bu etiket, *bölüm "
+"türünü* gösterir, `DOS` en yaygın olanlardan biridir. Aşağıdaki tablo, "
+"yaygın olarak kullanılan bazı bölüm türlerinin ve bunları temsil etmek için "
+"kullanılan onaltılık sayıların bir listesini göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:118
 #, no-wrap
 msgid "Partition Types"
-msgstr ""
+msgstr "Bölüm Türleri"
 
 #. type: Table
 #: pages/appendixes/Disk_Partitions.adoc:143
@@ -433,12 +539,33 @@ msgid ""
 "|GNU HURD|63|DOS secondary|f2\n"
 "|Novell Netware 286|64|BBT|ff\n"
 msgstr ""
+"|Bölüm Türü|Değer|Bölüm Türü|Değer\n"
+"|Boş|00|Novell Netware 386|65\n"
+"|DOS 12-bit FAT|01|PIC/IX|75\n"
+"|XENIX kök|02|Eski MINIX|80\n"
+"|XENIX usr|03|Linux/MINUX|81\n"
+"|DOS 16-bit <=32M|04|Linux takas|82\n"
+"|Genişletilmiş|05|Linux yerel|83\n"
+"|DOS 16-bit >=32|06|Linux genişletilmiş|85\n"
+"|OS/2 HPFS|07|Amoeba|93\n"
+"|AIX|08|Amoeba BBT|94\n"
+"|AIX önyüklenebilir|09|BSD/386|a5\n"
+"|OS/2 Önyükleme Yöneticisi|0a|OpenBSD|a6\n"
+"|Win95 FAT32|0b|NEXTSTEP|a7\n"
+"|Win95 FAT32 (LBA)|0c|BSDI dosya sistemi|b7\n"
+"|Win95 FAT16 (LBA)|0e|BSDI takas|b8\n"
+"|Win95 Genişletilmiş (LBA)|0f|Syrinx|c7\n"
+"|Venix 80286|40|CP/M|db\n"
+"|Novell|51|DOS erişim|e1\n"
+"|PReP Önyükleme|41|DOS R/O|e3\n"
+"|GNU HURD|63|DOS ikincil|f2\n"
+"|Novell Netware 286|64|BBT|ff\n"
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:146
 #, no-wrap
 msgid "Partitions Within Partitions - An Overview of Extended Partitions"
-msgstr ""
+msgstr "Bölümlerin İçindeki Bölümler - Genişletilmiş Bölümlere Genel Bakış"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:149
@@ -447,6 +574,9 @@ msgid ""
 "_extended partitions_ to create up additional partitions. You do this by "
 "setting the type of a partition to \"Extended\"."
 msgstr ""
+"Dört bölümün ihtiyaçlarınız için yetersiz kalması durumunda, ek bölümler "
+"oluşturmak için _genişletilmiş bölümleri_ kullanabilirsiniz. Bunu, bir "
+"bölümün türünü \"Genişletilmiş\" olarak ayarlayarak yaparsınız."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -459,24 +589,32 @@ msgid ""
 "partition and one extended partition containing two logical partitions "
 "(along with some unpartitioned free space)."
 msgstr ""
+"Genişletilmiş bölüm başlı başına bir disk sürücüsü gibidir - tamamen "
+"genişletilmiş bölümün kendi içinde bulunan bir veya daha fazla bölüme (şimdi "
+"dört _birincil bölümün_ aksine _mantıksal bölümler_ olarak adlandırılırlar) "
+"işaret eden kendi bölümlendirme tablosuna sahiptir. xref:figu-partitions-"
+"extended[Genişletilmiş Bölüme Sahip Disk Sürücüsü], bir birincil bölüm ve "
+"iki mantıksal bölüm içeren bir genişletilmiş bölüm (bir kısım "
+"bölümlendirilmemiş boş alanla birlikte) olan bir disk sürücüsünü "
+"göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:153
 #, no-wrap
 msgid "Disk Drive With Extended Partition"
-msgstr ""
+msgstr "Genişletilmiş Bölüme Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "Image of a disk drive with an extended partition."
-msgstr ""
+msgstr "Genişletilmiş bölüme sahip bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "partitions/extended-partitions.png"
-msgstr ""
+msgstr "partitions/extended-partitions.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:158
@@ -487,12 +625,17 @@ msgid ""
 "to the way in which partitions are accessed in Linux, no more than 12 "
 "logical partitions should be defined on a single disk drive."
 msgstr ""
+"Bu şekilden de anlaşılacağı gibi, birincil ve mantıksal bölümler arasında "
+"bir fark vardır - yalnızca dört birincil bölüm olabilir, ancak var "
+"olabilecek mantıksal bölümlerin sayısında sabit bir sınır yoktur. Ancak "
+"Linux'ta bölümlere erişme şekli nedeniyle, tek bir disk sürücüsünde 12'den "
+"fazla mantıksal bölüm tanımlanmamalıdır."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:160
 #, no-wrap
 msgid "GUID Partition Table (GPT)"
-msgstr ""
+msgstr "GUID Bölümlendirme Tablosu (GPT)"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:163
@@ -507,12 +650,24 @@ msgid ""
 "primary partitions. This number could be extended by allocating more space "
 "to the partition table."
 msgstr ""
+"GUID Bölümlendirme Tablosu (GUID Partition Table - *GPT*), Genel Olarak "
+"Benzersiz Tanımlayıcılar (Globally Unique Identifiers - *GUID*) kullanımına "
+"dayalı daha yeni bir bölümlendirme düzenidir. *GPT*, *MBR* bölümlendirme "
+"tablosunun sınırlamalarıyla, özellikle de diskin sınırlı azami "
+"adreslenebilir depolama alanıyla başa çıkmak için geliştirilmiştir. 2,2 "
+"terabayttan daha büyük depolama alanını adresleyemeyen *MBR*'nin aksine, "
+"*GPT* bundan daha büyük sabit disklerle kullanılabilir; azami adreslenebilir "
+"disk boyutu 2,2 zettabayttır. Ayrıca, *GPT* öntanımlı olarak 128 adede kadar "
+"birincil bölüm oluşturmayı destekler. Bu sayı, bölümlendirme tablosuna daha "
+"fazla alan ayrılarak genişletilebilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:165
 #, no-wrap
 msgid "*GPT* disks use logical block addressing (LBA) and the partition layout is as follows:\n"
 msgstr ""
+"*GPT* diskleri mantıksal blok adreslemeyi (logical block addressing - LBA) "
+"kullanır ve bölümlendirme düzeni aşağıdaki gibidir:\n"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:167
@@ -520,6 +675,9 @@ msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
 "0) of *GPT* is reserved for *MBR* data and it is called \"protective MBR\"."
 msgstr ""
+"MBR diskleriyle geriye dönük uyumluluğu korumak için, *GPT*'nin ilk sektörü "
+"(*LBA* 0) *MBR* verileri için ayrılmıştır ve buna \"koruyucu MBR\" adı "
+"verilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -530,6 +688,11 @@ msgid ""
 "checksums of itself and the primary partition table. It also specifies the "
 "number of partition entries of the table."
 msgstr ""
+"_Birincil *GPT* başlığı_, aygıtın ikinci mantıksal bloğunda (*LBA* 1) "
+"başlar. Başlık disk GUID'sini, birincil bölümlendirme tablosunun konumunu, "
+"ikincil GPT başlığının konumunu ve kendisinin ve birincil bölümlendirme "
+"tablosunun CRC32 sağlama toplamlarını içerir. Ayrıca tablodaki bölüm "
+"girdilerinin sayısını da belirtir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:171
@@ -538,6 +701,9 @@ msgid ""
 "with an entry size 128 bytes, its partition type GUID and unique partition "
 "GUID."
 msgstr ""
+"_Birincil *GPT* tablosu_ öntanımlı olarak, her biri 128 bayt girdi boyutuna "
+"sahip 128 bölüm girdisi, bölüm türü GUID'si ve benzersiz bölüm GUID'sini "
+"içerir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:173
@@ -546,6 +712,9 @@ msgid ""
 "used mainly as a backup table for recovery in case the primary partition "
 "table is corrupted."
 msgstr ""
+"_İkincil *GPT* tablosu_, birincil *GPT* tablosuyla aynıdır. Genellikle, "
+"birincil bölümlendirme tablosunun bozulması durumunda kurtarma için yedek "
+"bir tablo olarak kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:175
@@ -557,6 +726,11 @@ msgid ""
 "itself and the secondary partition table, and the number of possible "
 "partition entries."
 msgstr ""
+"_İkincil *GPT* başlığı_, diskin son mantıksal sektöründe bulunur ve birincil "
+"başlığın bozulması durumunda *GPT* bilgilerini kurtarmak için "
+"kullanılabilir. Disk GUID'sini, ikincil bölümlendirme tablosunun ve birincil "
+"*GPT* başlığının konumunu, kendisinin ve ikincil bölümlendirme tablosunun "
+"CRC32 sağlama toplamlarını ve olası bölüm girdilerinin sayısını içerir."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:180
@@ -566,6 +740,10 @@ msgid ""
 "includes disks initialized by [application]*Anaconda*. If the disk already "
 "contains a BIOS boot partition, it can be reused."
 msgstr ""
+"Önyükleyicinin GPT (GUID Bölümlendirme Tablosu) içeren bir diske başarıyla "
+"kurulması için bir BIOS önyükleme bölümü olmalıdır. Bu, "
+"[application]*Anaconda* tarafından başlatılan diskleri içerir. Disk zaten "
+"bir BIOS önyükleme bölümü içeriyorsa yeniden kullanılabilir."
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:184
