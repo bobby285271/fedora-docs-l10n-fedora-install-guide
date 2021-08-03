@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-08-02 18:04+0000\n"
+"PO-Revision-Date: 2021-08-03 23:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
@@ -56,7 +56,7 @@ msgstr ""
 "Disk bölümleri konusunda bilgi sahibiyseniz, bir {PRODUCT} kurulumuna "
 "hazırlanmak üzere disk alanını boşaltma süreci hakkında daha fazla bilgi "
 "için xref:sect-disk-partitions-making-room[Disk Yeniden Bölümlendirme "
-"Stratejileri] bölümüne geçebilirsiniz."
+"Stratejileri] kısmına geçebilirsiniz."
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:20
@@ -749,7 +749,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:184
 #, no-wrap
 msgid "Strategies for Disk Repartitioning"
-msgstr ""
+msgstr "Disk Yeniden Bölümlendirme Stratejileri"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:187
@@ -757,21 +757,23 @@ msgid ""
 "There are several different ways that a disk can be repartitioned. This "
 "section discusses the following possible approaches:"
 msgstr ""
+"Bir diski yeniden bölümlendirmenin birkaç farklı yolu vardır. Bu bölümde "
+"aşağıdaki olası yaklaşımlar tartışılmaktadır:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:189
 msgid "Unpartitioned free space is available"
-msgstr ""
+msgstr "Bölümlendirilmemiş kullanılabilir boş alan var"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:191
 msgid "An unused partition is available"
-msgstr ""
+msgstr "Kullanılmayan bir bölüm var"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:193
 msgid "Free space in an actively used partition is available"
-msgstr ""
+msgstr "Etkin olarak kullanılan bir bölümde boş alan var"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:195
@@ -781,6 +783,10 @@ msgid ""
 "disk repartitioning step-by-step. Such detailed information are beyond the "
 "scope of this document."
 msgstr ""
+"Bu bölümün yukarıda bahsedilen kavramları yalnızca teorik olarak ele "
+"aldığını ve disk yeniden bölümlendirmenin adım adım nasıl "
+"gerçekleştirileceğini gösteren herhangi bir işlemi içermediğini unutmayın. "
+"Bu tür ayrıntılı bilgiler bu belgenin kapsamı dışındadır."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:200
@@ -789,12 +795,15 @@ msgid ""
 "of clarity and do not reflect the exact partition layout that you encounter "
 "when actually installing {PRODUCT}."
 msgstr ""
+"Aşağıdaki resimlerin anlaşılır olması açısından basitleştirilmiş olduğunu ve "
+"gerçekten {PRODUCT} kurarken karşılaştığınız tam bölümlendirme düzenini "
+"yansıtmadığını unutmayın."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:204
 #, no-wrap
 msgid "Using Unpartitioned Free Space"
-msgstr ""
+msgstr "Bölümlendirilmemiş Boş Alan Kullanma"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:207
@@ -804,24 +813,28 @@ msgid ""
 "partition. xref:figu-partitions-unused-space[Disk Drive with Unpartitioned "
 "Free Space], shows what this might look like."
 msgstr ""
+"Bu durumda, önceden tanımlanan bölümler sabit diskin tamamına yayılmaz ve "
+"tanımlanan herhangi bir bölümün parçası olmayan ayrılmamış alan bırakır. xref"
+":figu-partitions-unused-space[Bölümlendirilmemiş Boş Alana Sahip Disk "
+"Sürücüsü], bunun nasıl görünebileceğini göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:209
 #, no-wrap
 msgid "Disk Drive with Unpartitioned Free Space"
-msgstr ""
+msgstr "Bölümlendirilmemiş Boş Alana Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "Image of a disk drive with unpartitioned free space"
-msgstr ""
+msgstr "Bölümlendirilmemiş boş alana sahip bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "partitions/unpart-space.png"
-msgstr ""
+msgstr "partitions/unpart-space.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:214
@@ -829,6 +842,8 @@ msgid ""
 "In the above example, `1` represents an undefined partition with unallocated "
 "space and `2` represents a defined partition with allocated space."
 msgstr ""
+"Yukarıdaki örnekte `1`, ayrılmamış alana sahip tanımsız bir bölümü; `2`, "
+"ayrılmış alana sahip tanımlı bir bölümü temsil etmektedir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:216
@@ -836,6 +851,8 @@ msgid ""
 "An unused hard disk also falls into this category. The only difference is "
 "that *all* the space is not part of any defined partition."
 msgstr ""
+"Kullanılmayan bir sabit disk de bu kategoriye girer. Tek fark, *tüm* alanın "
+"tanımlanmış herhangi bir bölümün parçası olmamasıdır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:218
@@ -847,12 +864,18 @@ msgid ""
 "a disk drive (see xref:sect-disk-partitions-active-partition[Using Free "
 "Space from an Active Partition])."
 msgstr ""
+"Her durumda, kullanılmayan alandan gerekli bölümleri oluşturabilirsiniz. Ne "
+"yazık ki, bu senaryo çok basit olmasına rağmen (yalnızca {PRODUCT} için yeni "
+"bir disk satın almadıysanız) pek olası değildir. Önceden kurulu işletim "
+"sistemlerinin çoğu, bir disk sürücüsündeki tüm kullanılabilir alanı "
+"kaplayacak şekilde yapılandırılmıştır (xref:sect-disk-partitions-active-"
+"partition[Etkin Bir Bölümden Boş Alan Kullanma] kısmına bakın)."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:220
 #, no-wrap
 msgid "Using Space from an Unused Partition"
-msgstr ""
+msgstr "Kullanılmayan Bir Bölümden Alan Kullanma"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:223
@@ -861,24 +884,27 @@ msgid ""
 "longer. xref:figu-partitions-unused-partition[Disk Drive with an Unused "
 "Partition], illustrates such a situation."
 msgstr ""
+"Bu durumda, artık kullanmadığınız bir veya daha fazla bölümünüz olabilir. "
+"xref:figu-partitions-unused-partition[Kullanılmayan Bir Bölüme Sahip Disk "
+"Sürücüsü], böyle bir durumu göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:225
 #, no-wrap
 msgid "Disk Drive with an Unused Partition"
-msgstr ""
+msgstr "Kullanılmayan Bir Bölüme Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "Image of a disk drive with an unused partition"
-msgstr ""
+msgstr "Kullanılmayan bir bölüme sahip bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "partitions/unused-partition.png"
-msgstr ""
+msgstr "partitions/unused-partition.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:230
@@ -886,6 +912,8 @@ msgid ""
 "In the above example, `1` represents an unused partition and `2` represents "
 "reallocating an unused partition for Linux."
 msgstr ""
+"Yukarıdaki örnekte `1`, kullanılmayan bir bölümü; `2`, kullanılmayan bir "
+"bölümün Linux için yeniden ayrılmasını temsil etmektedir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:232
@@ -895,12 +923,16 @@ msgid ""
 "partition(s) in its place. You can delete the unused partition and manually "
 "create new partitions during the installation process."
 msgstr ""
+"Bu durumda kullanılmayan bölüme ayrılan alanı kullanabilirsiniz. Önce bölümü "
+"silmeli ve ardından onun yerine uygun Linux bölüm(ler)ini oluşturmalısınız. "
+"Kurulum işlemi sırasında kullanılmayan bölümü silebilir ve elle yeni "
+"bölümler oluşturabilirsiniz."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:234
 #, no-wrap
 msgid "Using Free Space from an Active Partition"
-msgstr ""
+msgstr "Etkin Bir Bölümden Boş Alan Kullanma"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:237
@@ -911,18 +943,24 @@ msgid ""
 "a computer with pre-installed software, the hard disk most likely has one "
 "massive partition holding the operating system and data."
 msgstr ""
+"Bu en yaygın durumdur. Aynı zamanda, ne yazık ki ele alınması en zor "
+"olanıdır. Asıl sorun, yeterli boş alanınız olsa bile, bunun zaten kullanımda "
+"olan bir bölüme ayrılmış olmasıdır. Önceden kurulu yazılıma sahip bir "
+"bilgisayar satın aldıysanız, sabit disk büyük olasılıkla işletim sistemini "
+"ve verileri tutan büyük bir bölüme sahiptir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:239
 msgid ""
 "Aside from adding a new hard drive to your system, you have two choices:"
 msgstr ""
+"Sisteminize yeni bir sabit disk eklemenin yanı sıra iki seçeneğiniz vardır:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:240
 #, no-wrap
 msgid "*Destructive Repartitioning*"
-msgstr ""
+msgstr "*Yok Edici Yeniden Bölümlendirme*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:241
@@ -934,6 +972,11 @@ msgid ""
 "backup software), and try to read data from the backup *before* deleting the "
 "partition."
 msgstr ""
+"Bu durumda, tek büyük bölüm silinir ve bunun yerine birkaç küçük bölüm "
+"oluşturulur. Orijinal bölümde tutulan tüm veriler yok edilir. Bu, tam bir "
+"yedeklemenin gerekli olduğu anlamına gelir. İki tane yedekleme yapmanız, "
+"doğrulama kullanmanız (yedekleme yazılımınızda varsa) ve bölümü silmeden "
+"*önce* yedeklemedeki verileri okumaya çalışmanız şiddetle tavsiye edilir."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:246
@@ -945,6 +988,12 @@ msgid ""
 "check whether this applies to your system is *before* you destroy your "
 "original partition and its operating system installation."
 msgstr ""
+"O bölümde bir işletim sistemi kuruluysa, o sistemi de kullanmak istiyorsanız "
+"yeniden kurulması gerekir. Önceden kurulu işletim sistemleriyle satılan bazı "
+"bilgisayarların, orijinal işletim sistemini yeniden kurmak için kurulum "
+"ortamı içermeyebileceğini unutmayın. Orijinal bölümünüzü ve işletim sistemi "
+"kurulumunu yok etmeden *önce* bunun sisteminiz için geçerli olup olmadığını "
+"gözden geçirmelisiniz."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:250
@@ -954,24 +1003,30 @@ msgid ""
 "figu-partitions-destructive-repartitioning[Disk Drive Being Destructively "
 "Repartitioned] shows this being done."
 msgstr ""
+"Mevcut işletim sisteminiz için daha küçük bir bölüm oluşturduktan sonra "
+"yazılımları yeniden kurabilir, verilerinizi geri yükleyebilir ve kurulumu "
+"başlatabilirsiniz. xref:figu-partitions-destructive-repartitioning[Disk "
+"Sürücüsünün Yok Edici Bir Şekilde Yeniden Bölümlendirilmesi] bunun "
+"yapılışını göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:252
 #, no-wrap
 msgid "Disk Drive Being Destructively Repartitioned"
-msgstr ""
+msgstr "Disk Sürücüsünün Yok Edici Bir Şekilde Yeniden Bölümlendirilmesi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "Image of a disk drive being destructively repartitioned"
 msgstr ""
+"Yok edici bir şekilde yeniden bölümlendirilen bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "partitions/dstrct-reprt.png"
-msgstr ""
+msgstr "partitions/dstrct-reprt.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:257
@@ -979,18 +1034,18 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:302
 #: pages/appendixes/Disk_Partitions.adoc:316
 msgid "In the above example, `1` represents before and `2` represents after."
-msgstr ""
+msgstr "Yukarıdaki örnekte `1` öncesini, `2` sonrasını temsil etmektedir."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:262
 msgid "Any data previously present in the original partition is lost."
-msgstr ""
+msgstr "Orijinal bölümde daha önce bulunan tüm veriler kaybolur."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:265
 #, no-wrap
 msgid "*Non-Destructive Repartitioning*"
-msgstr ""
+msgstr "*Yok Edici Olmayan Yeniden Bölümlendirme*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:266
@@ -1000,6 +1055,9 @@ msgid ""
 "This method is usually reliable, but can be very time-consuming on large "
 "drives."
 msgstr ""
+"Yok edici olmayan yeniden bölümlendirme ile, büyük bir bölümü o bölümde "
+"depolanan dosyaları kaybetmeden küçülten bir program çalıştırırsınız. Bu "
+"yöntem genellikle güvenilirdir, ancak büyük disklerde çok zaman alabilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:268
@@ -1007,34 +1065,36 @@ msgid ""
 "While the process of non-destructive repartitioning is rather "
 "straightforward, there are three steps involved:"
 msgstr ""
+"Yok edici olmayan yeniden bölümlendirme işlemi oldukça basit olsa da, ilgili "
+"üç adım vardır:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:270
 msgid "Compress and backup existing data"
-msgstr ""
+msgstr "Mevcut verileri sıkıştırın ve yedekleyin"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:272
 msgid "Resize the existing partition"
-msgstr ""
+msgstr "Mevcut bölümü yeniden boyutlandırın"
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:274
 #: pages/appendixes/Disk_Partitions.adoc:306
 #, no-wrap
 msgid "Create new partition(s)"
-msgstr ""
+msgstr "Yeni bölüm(ler) oluşturun"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:276
 msgid "Each step is described further in more detail."
-msgstr ""
+msgstr "Her adım aşağıda daha ayrıntılı olarak açıklanmaktadır."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:278
 #, no-wrap
 msgid "Compress Existing Data"
-msgstr ""
+msgstr "Mevcut Verileri Sıkıştırın"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:281
@@ -1044,24 +1104,27 @@ msgid ""
 "such that it maximizes the available free space at the \"end\" of the "
 "partition."
 msgstr ""
+"Aşağıdaki şekilde gösterildiği gibi ilk adım, mevcut bölümünüzdeki verileri "
+"sıkıştırmaktır. Bunu yapmanın nedeni, bölümün \"sonunda\" kullanılabilir boş "
+"alanı olabildiğince arttıracak şekilde verileri yeniden düzenlemektir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:283
 #, no-wrap
 msgid "Disk Drive Being Compressed"
-msgstr ""
+msgstr "Disk Sürücüsünün Sıkıştırılması"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "Image of a disk drive being compressed"
-msgstr ""
+msgstr "Sıkıştırılmakta olan bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "partitions/compression.png"
-msgstr ""
+msgstr "partitions/compression.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:290
@@ -1072,12 +1135,17 @@ msgid ""
 "severely restricts the size of your new partition(s)), you may be forced to "
 "destructively repartition your disk."
 msgstr ""
+"Bu adım çok önemlidir. Yapılmazsa, verilerin konumu bölümün istenen ölçüde "
+"yeniden boyutlandırılmasını engelleyebilir. Ayrıca, şu veya bu nedenle bazı "
+"verilerin taşınamayacağını da unutmayın. Eğer öyleyse (ve yeni bölüm(ler)"
+"inizin boyutunu ciddi şekilde kısıtlarsa), diskinizi yok edici bir şekilde "
+"yeniden bölümlendirmeye zorlanabilirsiniz."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:292
 #, no-wrap
 msgid "Resize the Existing Partition"
-msgstr ""
+msgstr "Mevcut Bölümü Yeniden Boyutlandırın"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:295
@@ -1088,24 +1156,30 @@ msgid ""
 "freed space is used to create an unformatted partition of the same type as "
 "the original partition."
 msgstr ""
+"xref:figu-partitions-resize-existing[Bölümü Yeniden Boyutlandırılan Disk "
+"Sürücüsü], gerçek yeniden boyutlandırma işlemini göstermektedir. Yeniden "
+"boyutlandırma işleminin gerçek sonucu kullanılan yazılıma bağlı olarak "
+"değişmekle birlikte, çoğu durumda yeni boşaltılan alan, orijinal bölümle "
+"aynı türde biçimlendirilmemiş bir bölüm oluşturmak için kullanılır."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:297
 #, no-wrap
 msgid "Disk Drive with Partition Resized"
-msgstr ""
+msgstr "Bölümü Yeniden Boyutlandırılan Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "Image of a disk drive with a resized partition"
 msgstr ""
+"Yeniden boyutlandırılmış bir bölüme sahip bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "partitions/part-resize.png"
-msgstr ""
+msgstr "partitions/part-resize.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:304
@@ -1115,6 +1189,10 @@ msgid ""
 "case illustrated here, it would be best to delete the new DOS partition and "
 "create the appropriate Linux partition(s)."
 msgstr ""
+"Uygun adımları atabilmeniz için kullandığınız yeniden boyutlandırma "
+"yazılımının yeni boşaltılan alanla ne yaptığını anlamak önemlidir. Burada "
+"gösterilen durumda, yeni DOS bölümünü silmek ve uygun Linux bölüm(ler)ini "
+"oluşturmak en iyisi olacaktır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:309
@@ -1125,30 +1203,35 @@ msgid ""
 "resizing process. xref:figu-partitions-final-configuration[Disk Drive with "
 "Final Partition Configuration], shows this being done."
 msgstr ""
+"Önceki adımın ima ettiği gibi, yeni bölümler oluşturmak gerekli olabilir "
+"veya olmayabilir. Ancak, yeniden boyutlandırma yazılımınız Linux uyumlu "
+"değilse, yeniden boyutlandırma işlemi sırasında oluşturulan bölümü silmeniz "
+"gerekebilir. xref:figu-partitions-final-configuration[Son Bölüm "
+"Yapılandırmasına Sahip Disk Sürücüsü], bunun yapılışını göstermektedir."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:311
 #, no-wrap
 msgid "Disk Drive with Final Partition Configuration"
-msgstr ""
+msgstr "Son Bölüm Yapılandırmasına Sahip Disk Sürücüsü"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "Image of a disk drive with final partition configuration"
-msgstr ""
+msgstr "Son bölüm yapılandırmasına sahip bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "partitions/nondestruct-fin.png"
-msgstr ""
+msgstr "partitions/nondestruct-fin.png"
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:318
 #, no-wrap
 msgid "Partition Naming Schemes and Mount Points"
-msgstr ""
+msgstr "Bölüm Adlandırma Düzenleri ve Bağlama Noktaları"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:321
@@ -1162,12 +1245,20 @@ msgid ""
 "This section describes the main principles of partition naming scheme and "
 "the way how partitions are accessed in {PRODUCT}."
 msgstr ""
+"Linux'a aşina olmayan kullanıcılar için yaygın bir kafa karışıklığı kaynağı, "
+"bölümlerin Linux işletim sistemi tarafından nasıl kullanıldığı ve bunlara "
+"nasıl erişildiği meselesidir. DOS/Windows'ta bu nispeten basittir: Her bölüm "
+"bir \"sürücü harfi\" alır. Daha sonra, ilgili bölümündeki dosyalara ve "
+"dizinlere erişmek için doğru sürücü harfini kullanırsınız. Bu, Linux'un "
+"bölümlerle ve bu konuda genel olarak disk depolama ile nasıl ilgilendiğinden "
+"tamamen farklıdır. Bu kısım, bölüm adlandırma düzeninin ana ilkelerini ve "
+"{PRODUCT}'da bölümlere nasıl erişildiğini açıklamaktadır."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:323
 #, no-wrap
 msgid "Partition Naming Scheme"
-msgstr ""
+msgstr "Bölüm Adlandırma Düzeni"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:326
@@ -1175,17 +1266,20 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
+"Linux, dosya adları `/dev/"
+"pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]` şeklinde olan dosya "
+"tabanlı bir adlandırma düzeni kullanmaktadır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:328
 msgid "Device and partition names consist of the following:"
-msgstr ""
+msgstr "Aygıt ve bölüm adları şunlardan oluşmaktadır:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:329
 #, no-wrap
 msgid "`/dev/`"
-msgstr ""
+msgstr "`/dev/`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:330
@@ -1194,12 +1288,15 @@ msgid ""
 "partitions reside on hard disks, and hard disks are devices, the files "
 "representing all possible partitions reside in `/dev/`."
 msgstr ""
+"Bu, tüm aygıt dosyalarının bulunduğu dizinin adıdır. Bölümler sabit "
+"disklerde bulunduğundan ve sabit diskler aygıt olduğundan, tüm olası "
+"bölümleri temsil eden dosyalar `/dev/` dizini içinde bulunur."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:331
 #, no-wrap
 msgid "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:332
@@ -1207,12 +1304,14 @@ msgid ""
 "The first two letters of the partition name indicate the type of device on "
 "which the partition resides, usually `sd`."
 msgstr ""
+"Bölüm adının ilk iki harfi, genellikle `sd` olur, bölümün bulunduğu aygıtın "
+"türünü belirtir."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:333
 #, no-wrap
 msgid "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:334
@@ -1220,12 +1319,14 @@ msgid ""
 "This letter indicates which device the partition is on. For example, `/dev/"
 "sda` for the first hard disk, `/dev/sdb` for the second, and so on."
 msgstr ""
+"Bu harf, bölümün hangi aygıt üzerinde olduğunu gösterir. Örneğin, ilk sabit "
+"disk için `/dev/sda`, ikinci sabit disk için `/dev/sdb` vs."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:335
 #, no-wrap
 msgid "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:336
@@ -1236,6 +1337,11 @@ msgid ""
 "the first hard disk, and `/dev/sdb6` is the second logical partition on the "
 "second hard disk."
 msgstr ""
+"Son sayı bölümü belirtir. İlk dört (birincil veya genişletilmiş) bölüm `1` "
+"ila `4` arasında numaralandırılır. `5` ve sonrası mantıksal bölümlerdir. "
+"Örneğin, `/dev/sda3` birinci sabit diskteki üçüncü birincil veya "
+"genişletilmiş bölümdür ve `/dev/sdb6` ikinci sabit diskteki ikinci mantıksal "
+"bölümdür."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:341
@@ -1246,12 +1352,16 @@ msgid ""
 "successfully access data on a partition dedicated to another operating "
 "system."
 msgstr ""
+"Sisteminiz her tür disk bölümünü tanımlayıp bunları kullanabilse bile, "
+"üzerindeki dosya sistemini *okuyamayabilir* ve bu nedenle her bölüm türünde "
+"depolanan verilere erişemeyebilir. Ancak çoğu durumda, başka bir işletim "
+"sistemine tahsis edilmiş bir bölümdeki verilere başarıyla erişmek mümkündür."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:345
 #, no-wrap
 msgid "Disk Partitions and Mount Points"
-msgstr ""
+msgstr "Disk Bölümleri ve Bağlama Noktaları"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:348
@@ -1262,6 +1372,11 @@ msgid ""
 "makes its storage available starting at the specified directory (known as a "
 "_mount point_)."
 msgstr ""
+"Her bölüm, tek bir dosya ve dizin kümesini desteklemek için gerekli olan "
+"depolamanın bir parçasını oluşturmak için kullanılır. Bu, _bağlama_ olarak "
+"bilinen bir işlem aracılığıyla bir bölümü bir dizinle ilişkilendirerek "
+"yapılır. Bir bölümün bağlanması, içeriğinin belirtilen dizinden (_bağlama "
+"noktası_ olarak bilinir) başlayarak kullanılabilir olmasını sağlar."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:350
@@ -1271,6 +1386,11 @@ msgid ""
 "sda5`. So the file `/usr/share/doc/FAQ/txt/Linux-FAQ` would be stored on `/"
 "dev/sda5`, while the file `/etc/gdm/custom.conf` would not."
 msgstr ""
+"Örneğin, `/dev/sda5` bölümü `/usr/` konumuna bağlandıysa bu, `/usr/` "
+"altındaki tüm dosya ve dizinlerin fiziksel olarak `/dev/sda5` üzerinde "
+"bulunduğu anlamına gelir. Böylece `/usr/share/doc/FAQ/txt/Linux-FAQ` dosyası "
+"`/dev/sda5` üzerinde depolanırken `/etc/gdm/custom.conf` dosyası başka bir "
+"yerde depolanır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:352
@@ -1281,12 +1401,17 @@ msgid ""
 "`/usr/local/man/whatis` would then reside on `/dev/sda7` rather than `/dev/"
 "sda5`."
 msgstr ""
+"Yukarıdaki örneğe devam edersek, `/usr/` altındaki bir veya daha fazla "
+"dizinin diğer bölümler için bağlama noktaları olması da mümkündür. Örneğin, "
+"bir bölüm (mesela `/dev/sda7`) `/usr/local/` dizinine bağlanabilir, böylece "
+"`/usr/local/man/whatis` `/dev/sda5` üzerinde değil `/dev/sda7` üzerinde "
+"bulunacaktır."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:354
 #, no-wrap
 msgid "How Many Partitions?"
-msgstr ""
+msgstr "Kaç Tane Bölüm?"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:357
@@ -1296,6 +1421,10 @@ msgid ""
 "by your new operating system. However, there is no one right answer to this "
 "question. It depends on your needs and requirements."
 msgstr ""
+"{PRODUCT} kurmaya hazırlanma sürecinin bu noktasında, yeni işletim "
+"sisteminiz tarafından kullanılacak bölümlerin sayısını ve boyutunu biraz göz "
+"önünde bulundurmalısınız. Ancak bu sorunun tek bir doğru cevabı yoktur. "
+"İhtiyaçlarınıza ve gereksinimlerinize göre değişir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:359
@@ -1307,6 +1436,12 @@ msgid ""
 "partition for AMD and Intel systems with a GUID Partition Table (GPT) label "
 "on the system disk, or a `PReP Boot` partition on IBM Power Systems servers."
 msgstr ""
+"Aksini yapmak için bir nedeniniz yoksa, *en azından* bir `/boot` bölümü ve "
+"bir `/` (kök) bölümü oluşturmalısınız. Sisteminizin donanım özelliklerine "
+"bağlı olarak; UEFI ürün yazılımına sahip 64-bit AMD ve Intel sistemleri için "
+"`/boot/efi`, sistem diskinde GUID Bölümlendirme Tablosu (GPT) olan AMD ve "
+"Intel sistemleri için `biosboot`, IBM Power Systems sunucuları için `PReP "
+"Önyükleme` gibi ek bölümler gerekebilir."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:360
@@ -1315,3 +1450,6 @@ msgid ""
 "partitioning-recommended[Recommended Partitioning Scheme] for more "
 "information about the recommended partitioning scheme."
 msgstr ""
+"Tavsiye edilen bölümlendirme düzeni hakkında daha fazla bilgi için xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] kısmına bakın."
