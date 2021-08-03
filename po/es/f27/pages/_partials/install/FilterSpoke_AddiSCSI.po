@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-03 23:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f27pages_partialsinstallfilterspoke_addiscsi/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:6
@@ -28,6 +31,11 @@ msgid ""
 "of these steps may require a user name and password for _Challenge Handshake "
 "Authentication Protocol_ (CHAP) authentication."
 msgstr ""
+"Para usar dispositivos de almacenamiento iSCSI, el instalador debe ser capaz "
+"de descubrirlos como _objetivos iSCSI_ y ser capaz de crear una sesuñib "
+"iSCSI para acceder a ellos. Ambos pasos pueden requerir un nombre de usuario "
+"y contraseña para autenticiación _Challenge Handshake Authentication "
+"Protocol_ (CHAP)."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:10
@@ -40,17 +48,26 @@ msgid ""
 "password are different for CHAP authentication and reverse CHAP "
 "authentication."
 msgstr ""
+"También puede configurar un objetivo iSCSI para autenticar el iniciador "
+"iSCSI sobre el sistema al que están enganchado el objetivo (_CHAP reverso_), "
+"tanto para el descubrimiento como para la sesión. Usados juntos, CHAP y CHAP "
+"reverso se denominan _CHAP mutuo_ o _CHAP de dos caminos_. CHAP mutuo "
+"suministra el mayor nivel de seguridad para conexiones iSCSI, "
+"particularmente si el nombre de usuario y la contraseña son diferentes para "
+"la autenticación CHAP y para la autenticación CHAP reversa."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:12
 msgid "Follow the procedure below to add an iSCSI storage target to your system."
 msgstr ""
+"Siga el procedimiento de abajo para añadir un objetivo de almacenamiento "
+"iSCSI a su sistema."
 
 #. type: Block title
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:14
 #, no-wrap
 msgid "Add iSCSI Target"
-msgstr ""
+msgstr "Añadir Objetivo iSCSI"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:16
@@ -60,11 +77,18 @@ msgid ""
 "Destination - Specialized & Network Disks] screen. A new dialog window "
 "titled `Add iSCSI Storage Target` will open."
 msgstr ""
+"Pulse el botón `Añadir Objetivo iSCSI` ben la esquina inferior derecha de la "
+"pantalla xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-destination[Destino de la Instalación - Discos Especializados y "
+"en Red]. Se abrirá una nueva ventana de diálogo titulada `Añadir Objetivo de "
+"Almacenamiento iSCSI`."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
 msgid "Enter the IP address of the iSCSI target in the `Target IP Address` field."
 msgstr ""
+"Introduzca la dirección IP del objetivo iSCSI en el campo `Dirección IP "
+"Objetivo`."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
@@ -72,11 +96,14 @@ msgid ""
 "Provide a name in the `iSCSI Initiator Name` field for the iSCSI initiator "
 "in _iSCSI Qualified Name_ (IQN) format. A valid IQN entry contains:"
 msgstr ""
+"Suministre un nombre en el campo `Nombre de Iniciador iSCSI` para el "
+"iniciador iSCSI en el formato _Nombre Cualificado iSCSI_ (IQN). Una entrada "
+"válida IQN contiene:"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
 msgid "The string `iqn.` (including the period)."
-msgstr ""
+msgstr "La cadena `iqn.` (incluyendo el punto)."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:24
@@ -86,6 +113,11 @@ msgid ""
 "for the year, a dash, and two digits for the month, followed by a "
 "period. For example, represent September 2010 as `2010-09.`"
 msgstr ""
+"Un código de fecha especificando el año y el mes en el que el nombre de "
+"dominio o subdominio en Internet de su organización fue registrado, "
+"representado como cuatro dígitos para el año, un guión y dos dígitos para el "
+"mes seguido de un punto. Por ejemplo, representa Septiembre de 2010 cómo "
+"`2010-09.`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:26
@@ -94,6 +126,10 @@ msgid ""
 "*reverse* order (with the top-level domain first). For example, represent "
 "the subdomain storage.example.com as `com.example.storage`."
 msgstr ""
+"El nombre de dominio o subdominio de Internet de su organización, presentado "
+"en orden *inverso* order (cn el dominio de nivel más alto primero). Por "
+"ejemplo, representa el subdominio storage.example.com como `com.example."
+"storage`."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:28
