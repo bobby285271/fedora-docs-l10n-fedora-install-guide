@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-07-20 05:04+0000\n"
+"PO-Revision-Date: 2021-08-05 05:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f29pages_partialsinstallcustomspoke/es/>"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:5
@@ -212,6 +212,14 @@ msgid ""
 "Destination]. If you want to add or remove any storage devices from your "
 "configuration, return to that screen and change your selection."
 msgstr ""
+"Puse `pass:attributes[{blank}]_X_ dispositivos de almacenamiento "
+"seleccionados` para ver un resumen de los dispositivos de almacenamiento "
+"actualmente seleccionados; esto puede ayudar a orientarse en esquemas de "
+"almacenamiento más complicados. Los dispositivos que se muestran aquí son "
+"los que ha seleccionado en xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning[Destino de la Instalación]. Si desea "
+"añadir o borrar cualquier dispositivo de almacenamiento de su configuración, "
+"vuelva a esta pantalla y cambie la selección."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:48
@@ -224,6 +232,15 @@ msgid ""
 "discarding only the changes you have made recently, not all changes to the "
 "storage configuration since you booted the installer."
 msgstr ""
+"Usted puede pulsar el botón You can press the `Reset Todo` en la esquina "
+"inferior derecha en cualquier momento para reajustar la configuración de "
+"almacenamiento al estado en el que estaba cuando usted abrió por última vez "
+"la pantalla `Particionado Manual`. Esto significa que si usted modifica la "
+"configuración de almacenamiento, deja la pantalla y después vuelve, el botón "
+"Reset reseteará la configuración de vuelta al estado ya modificado, "
+"descartando solo los cambios que haya hecho recientemente, no a todos los "
+"cambios de la configuración de almacenamiento que haya hecho desde que "
+"arrancó el instalador."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:50
@@ -238,24 +255,35 @@ msgid ""
 "Destination]; all detected disks including any new ones will be displayed in "
 "the `Local Standard Disks` section."
 msgstr ""
+"Para descartar todos los cambios y también para detectar cualquier nuevo "
+"dispositivo que no haya sido detectado cuando inició el instalador ("
+"normalmente cuando engancha un nuevo dispositivo después de iniciar), pulse "
+"el botón marcado con una flecha circular en el conjunto de controles debajo "
+"de la lista de puntos de montaje en el lado izquierdo de la pantalla. En la "
+"ventana de diálogo que se abre, pulse `Rescanear Discos` ay espere hasta que "
+"el proceso de escaneo se complete. Después pulse `OK` para volver a xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Destino de la Instalación]; todos los discos detectados, "
+"incluyendo los nuevos se visualizarán en la sección `Discos Estándar "
+"Locales`."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:51
 #, no-wrap
 msgid "Rescan Disks"
-msgstr ""
+msgstr "Volver a Buscar Discos"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr ""
+msgstr "El diálogo Volver a Buscar Discos"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:56
@@ -269,6 +297,14 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Después de que termine de configurar el almacenamiento del sistema, pulse "
+"`Hecho` en la esquina superior izquierda para guardar la configuración y "
+"volver a la pantalla `Resumen de la Instalación`. En este punto, el "
+"instalador comprobará si su configuración de almacenamiento es válida. Si "
+"detecta un error se mostrará un mensaje en la parte inferior de la pantalla. "
+"Pulse el mensaje para abrir una ventana de diálogo explicando que clase de "
+"error ha sido detectado (por ejemplo, ha puesto `/boot` en un subvolumen "
+"Btrfs o no ha creado una partición BIOS Boot cuando su sistema requiere una)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:58
@@ -279,6 +315,11 @@ msgid ""
 "Summary` anyway, but a storage configuration error will prevent you from "
 "starting the actual installation process."
 msgstr ""
+"Si se muestra este mensaje, vuelva atrás y corrija las cuestiones "
+"encontradas por el instalador; de otro modo no será capaz de continuar con "
+"la instalación. Puede presionar `Hecho` otra vez para volver a `Resumen de "
+"la Instalación` de todos modos, pero un error de configuración de "
+"almacenamiento evitará que inicie el actual proceso de instalación."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:60
