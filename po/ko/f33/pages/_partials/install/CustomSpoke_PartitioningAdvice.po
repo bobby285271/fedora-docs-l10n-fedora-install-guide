@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-07-26 17:04+0000\n"
+"PO-Revision-Date: 2021-08-22 15:05+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:5
@@ -59,6 +59,10 @@ msgid ""
 "having unnecessary separate mount points will make storage administration "
 "more difficult."
 msgstr ""
+"몇가지 경우에서, `/`, `/boot`와 `/home` 이외의 디렉토리를 위해 분리된 적재(mount) 지점을 생성하는 것은 유용 할 "
+"수 있습니다; 예를 들면, [application]*MySQL* 데이터베이스를 실행하는 서버에서, `/var/lib/mysql`를 위한 "
+"분리된 적재 지점을 갖고 있으면 다음에 백업에서 이를 복구 할 필요가 없으며 재설치 중에도 데이터베이스를 보존 할 수 있게 합니다. "
+"하지만, 불필요한 분리된 적재 지점을 가지고 있으면 저장소 관리를 더욱 어렵게 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14

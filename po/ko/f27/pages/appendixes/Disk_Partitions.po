@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-08-01 16:04+0000\n"
+"PO-Revision-Date: 2021-08-22 15:05+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f27pagesappendixesdisk_partitions/ko/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:6
@@ -119,6 +119,9 @@ msgid ""
 "system_pass:attributes[{blank}]\") writes information to the drive, creating "
 "order out of the empty space in an unformatted drive."
 msgstr ""
+"디스크 드라이브에서 자료를 저장하려면, 우선 디스크 드라이브를 초기화(format)가 필요합니다. 초기화는 (일반적으로 \"file "
+"system_pass:attributes[{blank}] 만들기\"로 알려졌으며) 드라이브에 정보를 작성하며, 초기화 되지 않은 "
+"드라이브에 빈 공간에서 순서를 만듭니다."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:39
@@ -145,6 +148,8 @@ msgid ""
 "a File System], implies, the order imposed by a file system involves some "
 "trade-offs:"
 msgstr ""
+"xref:Disk_Partitions.adoc#figu-partitions-formatted-drive[파일 시스템이 있는 디스크 "
+"드라이브]에서 알 수 있듯이, 파일 시스템에 의해 제공되는 순서에는 다음과 같은 몇 가지 절충-안이 포함됩니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:46
@@ -152,6 +157,7 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"드라이버의 사용 가능한 공간 중의 적은 비율이 파일 시스템-연관된 자료를 저장하는 데 사용되었으며 오버헤드로 간주될 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:48
@@ -389,6 +395,8 @@ msgid ""
 "See xref:Disk_Partitions.adoc#figu-partitions-single-part[Disk Drive With "
 "Single Partition] for an example of a disk drive with single partition."
 msgstr ""
+"단일 파티션이 있는 디스크의 예제를 위해 xref:Disk_Partitions.adoc#figu-partitions-single-part["
+"단일 파티션이 있는 디스크]를 참고하세요."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:113
@@ -1043,6 +1051,8 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
+"리눅스는 `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`의 형태로 파일 "
+"이름을 갖는 파일-기반형 이름 체계를 사용합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:330
@@ -1088,6 +1098,8 @@ msgid ""
 "This letter indicates which device the partition is on. For example, "
 "`/dev/sda` for the first hard disk, `/dev/sdb` for the second, and so on."
 msgstr ""
+"이 문자는 파티션이 있는 장치를 표시합니다. 예를 들면, 첫 번째 하드 디스크는 `/dev/sda`, 두 번째는 `/dev/sdb` 등과 "
+"같습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Disk_Partitions.adoc:337

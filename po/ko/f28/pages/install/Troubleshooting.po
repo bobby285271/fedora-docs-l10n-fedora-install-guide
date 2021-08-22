@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-07-09 04:04+0000\n"
+"PO-Revision-Date: 2021-08-22 15:05+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pagesinstalltroubleshooting/ko/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: ./pages/install/Troubleshooting.adoc:6
@@ -51,6 +51,8 @@ msgid ""
 "link:++https://ask.fedoraproject.org/en/questions/++[Ask Fedora] - Fedora's "
 "knowledge base, available in multiple languages"
 msgstr ""
+"link:++https://ask.fedoraproject.org/[페도라 사용자 도움(Ask)] - 다중 언어로 사용 할 수 있는 "
+"페도라의 지식 기반"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:18
@@ -65,6 +67,7 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/++[Fedora Project Wiki] - the official "
 "wiki for Fedora Project"
 msgstr ""
+"link:++https://fedoraproject.org/wiki/++[페도라 프로젝트 위키] - 페도라 프로젝트를 위한 공식 위키"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:22
@@ -155,7 +158,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:55
 #, no-wrap
 msgid "Transferring Log Files from the Installation System"
-msgstr ""
+msgstr "설치 시스템에서 로그 파일 전송하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:58
@@ -176,7 +179,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:60
 #, no-wrap
 msgid "Transferring Log Files Onto a USB Drive"
-msgstr ""
+msgstr "USB 드라이브로 로그 파일을 전송"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:63
@@ -235,7 +238,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:85
 #, no-wrap
 msgid "# mount /dev/sdb1 /mnt/usb\n"
-msgstr ""
+msgstr "# mount /dev/sdb1 /mnt/usb\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:88
@@ -285,18 +288,18 @@ msgstr "# umount /mnt/usb\n"
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:114
 msgid "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "설치에서 로그 파일은 이제 USB 플래쉬 드라이브에 저장됩니다."
 
 #. type: Title ====
 #: ./pages/install/Troubleshooting.adoc:116
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "네트워크를 통해 로그 파일을 전송하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "로그 파일이 위치하는 `/tmp` 디렉토리로 전환합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:125
@@ -309,7 +312,7 @@ msgstr "# cd /tmp\n"
 msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
-msgstr ""
+msgstr "[command]#scp# 명령을 사용하여 네트워크에서 다른 시스템에 로그 파일을 복사합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:132
@@ -332,7 +335,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:139
 #, no-wrap
 msgid "# scp *log john@192.168.0.122:/home/john/logs/\n"
-msgstr ""
+msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:142
@@ -351,6 +354,10 @@ msgid ""
 "a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
+"established.`\n"
+"`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Are you sure you want to continue connecting (yes/no)?`\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:153
@@ -572,12 +579,12 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:212
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "자신의 시스템을 부팅하고 GRUB2 메뉴가 나타날 때까지 기다리세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:214
 msgid "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
-msgstr ""
+msgstr "부트로더 메뉴에서, 강조된 항목에서 이를 편집하기 위해 kbd:[e] 를 눌러주세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:216
@@ -626,7 +633,7 @@ msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:239
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "다음 명령을 실행하여 자신의 root 파티션을 다시 적재 합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:243
