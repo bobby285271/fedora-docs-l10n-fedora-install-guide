@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-08-22 15:05+0000\n"
+"PO-Revision-Date: 2021-08-24 04:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f30pagesappendixesdisk_partitions/ko/>\n"
@@ -168,6 +168,9 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"파일 시스템은 나머지 공간을 일정한 크기의 작은 세그먼트로 분할합니다. 리눅스의 경우에, 이들 세그먼트는 블럭으로 알려져 있습니다 "
+"footnote: [블럭은 *실제로* 우리의 그림(삽화)과 다르게 크기가 일정합니다. 또한, 평균 디스크 드라이브에는 수천 개의 블럭이 "
+"포함되어 있다는 점을 기억하세요. 그림은 이와 같은 논의 목적을 위해 단순화했습니다.]."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:50
@@ -208,6 +211,8 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"파일 시스템을 디스크에 쓰는 것은 첫 번째 단계일 뿐입니다. 이와 같은 처리의 목표는 실제로 자료를 *저장*하고 *검색*하는 것입니다. "
+"아래 그림은 일부 자료가 기록된 후의 드라이브 디스크를 보여줍니다:"
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:59
@@ -582,6 +587,8 @@ msgid ""
 "with an entry size 128 bytes, its partition type GUID and unique partition "
 "GUID."
 msgstr ""
+"기본 GPT 테이블에는 기본적으로 각각 항목 크기가 128 바이트인 파티션 항목 128개, 이와 같은 파티션 유형 GUID와 고유 파티션 "
+"GUID가 포함됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:173
@@ -695,6 +702,7 @@ msgid ""
 "In the above example, `1` represents an undefined partition with unallocated "
 "space and `2` represents a defined partition with allocated space."
 msgstr ""
+"위의 예제에서, '1'은 할당되지 않은 공간에 정의되지 않은 파티션을 나타내고 '2'는 할당된 공간에 정의된 파티션을 나타냅니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:216
@@ -702,6 +710,7 @@ msgid ""
 "An unused hard disk also falls into this category. The only difference is "
 "that *all* the space is not part of any defined partition."
 msgstr ""
+"사용하지 않는 하드 디스크도 또한 이런 종류에 속합니다. 단지 차이점은 *모든* 공간이 정의된 파티션의 일부가 아니라는 것입니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:218
@@ -874,7 +883,7 @@ msgstr ""
 msgid ""
 "While the process of non-destructive repartitioning is rather "
 "straightforward, there are three steps involved:"
-msgstr ""
+msgstr "비-파괴적으로 다시 파티션을 처리 할 때에는 다소 간단하지만, 다음 세가지 단계가 포함됩니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:270

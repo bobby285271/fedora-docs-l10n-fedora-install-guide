@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-08-24 04:20+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:6
@@ -33,7 +33,7 @@ msgstr "대부분의 경우에, 적어도 다음 적재 지점은 항상 생성�
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
 #, no-wrap
 msgid "`/boot` - 500 MB"
-msgstr ""
+msgstr "`/boot` - 500 MB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:11
@@ -60,12 +60,13 @@ msgid ""
 "Also note that the `/boot` directory can not be placed on a LVM logical "
 "volume or a Btrfs subvolume. Use a standard partition."
 msgstr ""
+"또한 `/boot` 디렉토리는 LVM 논리 볼륨이나 Btrfs 하위 볼륨에서 위치 할 수 없는 것을 기록합니다. 표준 파티션을 사용하세요."
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
 #, no-wrap
 msgid "`/` (root) - 10 GB"
-msgstr ""
+msgstr "`/` (root) - 10 GB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:22
@@ -185,6 +186,12 @@ msgid ""
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
+"if allowing for hibernation\n"
+"|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
+"|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
+"|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
+"|more than 64 GB|workload dependent|hibernation not recommended\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:54
@@ -222,7 +229,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:59
 #, no-wrap
 msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
-msgstr ""
+msgstr "바이오스 호환 방식의 바이오스 펌웨어와 UEFI 시스템을 갖는 시스템:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
@@ -231,6 +238,8 @@ msgid ""
 "the disk is not formatted, or you have erased all existing partitions from "
 "the disk, the installer will choose the following:"
 msgstr ""
+"만약 디스크가 이미 초기화 되었으면, 파티션 구성표는 유지됩니다. 만약 디스크가 초기화 되지 않거나, 디스크에서 모든 기존 파티션을 "
+"제거하면, 설치자(인스톨러)는 다음과 같이 선택 할 것입니다:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:62
