@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-08-22 15:04+0000\n"
+"PO-Revision-Date: 2021-08-25 06:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f34pagesinstalltroubleshooting/ko/>\n"
@@ -30,6 +30,8 @@ msgid ""
 "wrong. It also discusses some common installation problems and their "
 "solutions."
 msgstr ""
+"이 장에서는 잘못된 문제가 발생했을 때에도 도움을 받을 수 있는 방법에 대해 몇 가지 제안을 제공합니다. 이는 또한 몇 가지 공통적인 "
+"설치 문제와 이들 해결 방법에 대해 설명합니다."
 
 #. type: Title ==
 #: ./pages/install/Troubleshooting.adoc:11
@@ -44,6 +46,8 @@ msgid ""
 "a problem not described in this chapter: discussion boards, blogs, IRC, and "
 "more. Some of the more popular places where you can find help include:"
 msgstr ""
+"이 장에서 설명하지 않은 문제에 직면 하였을 때에 자신에게 도움을 줄 수 있는 인터넷에 많은 웹주소가 있습니다: 토론 게시판, 블로그, "
+"IRC 등. 다음을 포함하여 도움을 찾을 수 있는 몇몇 인기 있는 웹주소:"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:16
@@ -155,6 +159,8 @@ msgid ""
 "into `/tmp/anaconda-tb-_identifier_pass:attributes[{blank}]`, where "
 "_identifier_ is a random string."
 msgstr ""
+"만약 설치에 실패하면, 이들 파일에서 메시지가 `/tmp/anaconda-tb-"
+"_identifier_pass:attributes[{blank}]`로 통합되었으며, 여기서 식별자는 임의의 문자열입니다."
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:55
@@ -210,7 +216,7 @@ msgstr "`[ 170.171135] sd 5:0:0:0: [sdb] 부착된 SCSI 제거 할 수 있는 �
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:72
 msgid "Note the name of the connected device - in the above example, it is `sdb`."
-msgstr ""
+msgstr "연결된 장치의 이름을 기록합니다 - 위의 예제에서, 이는 `sdb`입니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:74
@@ -248,6 +254,8 @@ msgid ""
 "accessing it and listing its contents - the list should match what you "
 "expect to be on the drive."
 msgstr ""
+"당신은 이제 접근하고 이와 같은 내용을 나열에 의하여 올바른 장치와 파티션을 적재했는지 확인 할 수 있습니다 - 목록은 드라이브에서 있을 "
+"것으로 예상하는 것과 일치해야만 합니다."
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:92
@@ -279,6 +287,8 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"USB 플래쉬 드라이브를 내려(umount) 놓습니다. 만약 대상이 바쁘다는 것을 말하는 오류가 보이면, 적재 지점 밖으로 동작 중인 "
+"디렉토리를 변경합니다 (예를 들면, `/`)."
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:111
@@ -343,7 +353,7 @@ msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
-msgstr ""
+msgstr "대상 시스템에 처음 연결 할 때에, 다음과 유사한 메시지가 나타날 수 있습니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:149
@@ -373,7 +383,7 @@ msgstr ""
 msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
-msgstr ""
+msgstr "설치에서 로그 파일은 이제 대상 시스템에 영구적으로 저장되고 검토 할 수 있습니다."
 
 #. type: Title ==
 #: ./pages/install/Troubleshooting.adoc:157
@@ -592,7 +602,7 @@ msgstr "부트로더 메뉴에서, 강조된 항목에서 이를 편집하기 �
 msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
-msgstr ""
+msgstr "`linux`로 시작하는 줄을 찾습니다. 이 줄 끝에서, 다음을 추가합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:220
@@ -605,14 +615,14 @@ msgstr "`init=/bin/sh`\n"
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
-msgstr ""
+msgstr "방금 편집한 옵션(선택)을 사용하여 시스템을 부팅하려면 kbd:[F10] 나 kbd:[Ctrl + X] 를 누르세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:225
 msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
-msgstr ""
+msgstr "한번 시스템을 부팅 하면, 어떤 사용자 이름이나 비밀번호를 입력 할 필요 없이 쉘 입력기가 표시됩니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:229
@@ -666,7 +676,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:255
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "이번에는 읽기 전용으로 root 파티션을 다시 적재합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:259
@@ -685,7 +695,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:264
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "자신의 레이드 카드로 부팅 할 수 없나요?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:267
@@ -737,7 +747,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:277
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "그래픽 부트 임시적으로 비활성화하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:279
@@ -772,7 +782,7 @@ msgstr ""
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
-msgstr ""
+msgstr "kbd:[F10] 또는 kbd:[Ctrl + X] 를 눌러서 편집된 선택(옵션)으로 자신의 시스템을 부팅합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:287
@@ -792,7 +802,7 @@ msgstr "영구적인 그랙픽 부팅 비활성화"
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:290
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "[command]#su -# 명령을 사용하여 `root` 계정으로 로그인합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:294
@@ -898,27 +908,27 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "기본 설정으로 그래픽 로그인 설정하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:330
 msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
-msgstr ""
+msgstr "쉘 입력기를 엽니다. 만약 자신의 사용자 계정이라면, [command]#su -# 명령을 입력하여 root로 변경합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:332
 msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
-msgstr ""
+msgstr "기본 설정 대상을 `graphical.target`으로 변경합니다. 이와 같이 하려면, 다음 명령을 실행합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:336
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:339
@@ -933,7 +943,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:343
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:346
@@ -947,7 +957,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:348
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "그래픽 사용자 연결장치가 존재하지 않습니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:351
@@ -972,7 +982,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:354
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "사용자 로그인 후 X 서버 충돌"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:357
@@ -1044,7 +1054,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:384
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "램이 인식되지 않나요?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:387
@@ -1096,12 +1106,14 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"만약 자신의 메모리에 문제가 없다고 확신한다면, [option]#mem=# 커널 선택(옵션)을 사용하여 수동으로 메모리 양을 설정해 볼 "
+"수 있습니다."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:401
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "수동으로 메모리 구성하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:407
@@ -1116,13 +1128,13 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
-msgstr ""
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:414
 #: ./pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
-msgstr ""
+msgstr "_ xx_를 메가바이트 단위의 램 용량으로 교체합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:418
@@ -1147,7 +1159,7 @@ msgstr ""
 msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
-msgstr ""
+msgstr "`/etc/default/grub`에서, 위의 예제는 다음과 유사한 모습을 보입니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:444

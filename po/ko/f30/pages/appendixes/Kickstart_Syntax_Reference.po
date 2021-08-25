@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-08-22 15:05+0000\n"
+"PO-Revision-Date: 2021-08-25 06:05+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -72,6 +72,8 @@ msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
 msgstr ""
+"이것은 단지 `sda`보다 더 의미 있는 디스크를 참조하는 일관된 방법을 제공합니다. 이는 특히 대규모 저장장치 환경에서 유용 할 수 "
+"있습니다."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:36
@@ -276,7 +278,7 @@ msgstr "드라이버 디스크에 포함되어 있는 바이오스 파티션(예
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:113
 #, no-wrap
 msgid "install (required) - Configure Installation Method"
-msgstr ""
+msgstr "install (필수의) - 설치 방법을 구성합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:116
@@ -433,13 +435,13 @@ msgstr "[option]#--proxy=#:"
 msgid ""
 "Specify an `HTTP`, `HTTPS` or `FTP` proxy to use while performing the "
 "installation."
-msgstr ""
+msgstr "설치 수행시에 사용 되는`HTTP`, `HTTPS` 또는 `FTP` 프락시를 상세화 합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:161
 #, no-wrap
 msgid "[option]#--checksum=#:"
-msgstr ""
+msgstr "[option]#--checksum=#:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:162
@@ -477,6 +479,8 @@ msgid ""
 "full installation ISO image (such as the {PRODUCT} Server DVD) or its "
 "extracted contents."
 msgstr ""
+"지정된 `NFS` 서버에서 설치합니다. NFS 서버는 완전한 설치 ISO 이미지({PRODUCT} 서버 DVD 처럼) 또는 이 추출된 "
+"내용을 내보내고 있어야 합니다."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:172
@@ -822,12 +826,12 @@ msgstr "[option]#--noverifyssl#"
 msgid ""
 "url (optional) - Install from an installation tree on a remote server via "
 "FTP or HTTP."
-msgstr ""
+msgstr "url (선택적인) - FTP 또는 HTTP를 통해서 원격 서버에 있는 설치 트리에서 설치합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:257
 msgid "Install from an installation tree on a remote server via FTP or HTTP."
-msgstr ""
+msgstr "FTP 또는 HTTP를 통해 원격 서버에 있는 설치 트리에서 설치합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:259
@@ -855,14 +859,14 @@ msgstr ""
 msgid ""
 "The URL to install from. Variable substitution is done for `$releasever` and "
 "`$basearch` in the URL."
-msgstr ""
+msgstr "설치 할 URL. 변수 대체는 URL에서 `$releasever`와 `$basearch`를 위해 수행됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:270
 msgid ""
 "The mirror URL to install from. Variable substitution is done for "
 "`$releasever` and `$basearch` in the URL."
-msgstr ""
+msgstr "설치 해야 할 미러 URL. 변수 대체는 URL에서 `$releasever` 와 `$basearch`를 위해 수행됩니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:271
@@ -875,7 +879,7 @@ msgstr "[option]#--metalink=#"
 msgid ""
 "The metalink URL to install from. Variable substitution is done for "
 "`$releasever` and `$basearch` in the URL."
-msgstr ""
+msgstr "설치 하는 메타링크 URL. 변수 대체는 URL에서 `$releasever`와 `$basearch`를 위해 수행됩니다."
 
 #. type: Title ==
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:274
@@ -888,7 +892,7 @@ msgstr "저장소와 파티션닝"
 msgid ""
 "Commands in this section are used to determine your system's storage options "
 "and partitioning."
-msgstr ""
+msgstr "이 부분에서 명령은 자신의 시스템 저장소 선택(옵션)과 파티션 결정하는데 사용됩니다."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:279
@@ -924,7 +928,7 @@ msgstr "[option]#--type=#"
 msgid ""
 "Selects one of the predefined automatic partitioning schemes you want to "
 "use. Accepts the following values:"
-msgstr ""
+msgstr "사용하려는 미리 정의된 자동 파티션 구성표 중 하나를 선택합니다. 다음 값을 허용합니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:293
@@ -969,7 +973,7 @@ msgstr "[option]#--fstype=#"
 msgid ""
 "Specify a supported file system (such as `ext4` or `xfs`) to replace the "
 "default when doing automatic partitioning."
-msgstr ""
+msgstr "지원 파일 시스템( `ext4` 또는 `xfs`와 같은) 지정하고 자동 파티션을 하는데 기본설정을 교체합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:304
@@ -983,6 +987,8 @@ msgid ""
 "Do not use LVM or Btrfs for automatic partitioning. This option is equal to "
 "[option]#--type=plain#."
 msgstr ""
+"자동화 파티션을 위해 LVM 또는 Btrfs 를 사용하지 않습니다. 이와 같은 선택(옵션)은 [option]#--type=plain# 와 "
+"동일합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:306
@@ -1013,7 +1019,7 @@ msgstr "[option]#--passphrase=#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:309
 msgid "Provides a default system-wide passphrase for all encrypted devices."
-msgstr ""
+msgstr "암호화된 장치를 위하여 기본 시스템 전반에 암호화를 제공합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:310
@@ -1098,6 +1104,8 @@ msgid ""
 "Specifies which version of LUKS should be used to encrypt the system. Only "
 "relevant if [option]#--encrypted# is also specified."
 msgstr ""
+"시스템을 암호화하는 데 사용해야 하는 LUKS 버전을 지정합니다. 만약 [option]#--encrypted#이 또한 지정된 경우에만 "
+"관련이 있습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:318
@@ -1279,7 +1287,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:368
 #, no-wrap
 msgid "*Not* specifying this option will result in the following behavior:\n"
-msgstr ""
+msgstr "이 선택(옵션)을 지정하지 않으면 다음 행위가 발생 될 것입니다:\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:370
@@ -1288,13 +1296,15 @@ msgid ""
 "install the boot loader on the first valid device specified in the drive "
 "order."
 msgstr ""
+"만약 [option]#--driveorder=# 선택(옵션)이 사용된다면, [application]*아나콘다* 는 드라이버 순서에서 "
+"지정된 처음 유효한 장치에서 부트로더를 설치합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:372
 msgid ""
 "The first present and valid disk containing a `/boot` partition will be "
 "used."
-msgstr ""
+msgstr "`/boot` 파티션을 포함하는 최초의 현재 유효한 디스크가 사용됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:374
@@ -1343,7 +1353,7 @@ msgstr "[option]#--location=#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:385
 msgid "Specifies where the boot record is written. Valid values are the following:"
-msgstr ""
+msgstr "부트 레코드가 기록되는 위치를 지정합니다. 유효한 값은 다음과 같습니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:387
@@ -1376,12 +1386,12 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:395
 msgid "`none` - Do not install the boot loader."
-msgstr ""
+msgstr "`none` - 부트 로더를 설치하지 않습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:397
 msgid "In most cases, this option does not need to be specified."
-msgstr ""
+msgstr "대부분의 경우에, 이와 같은 선택(옵션)은 상세화 할 필요가 없습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:398
@@ -1513,13 +1523,13 @@ msgstr "[option]#--nombr#"
 msgid ""
 "Install the boot loader configuration and support files, but do not modify "
 "the MBR."
-msgstr ""
+msgstr "부트로더 구성과 지원파일을 설치합니다, 하지만 MBR을 수정하지는 않습니다."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "btrfs (optional) - Create Btrfs Volume or Subvolume"
-msgstr ""
+msgstr "btrfs (선택적인) - Btrfs 불륨과 하위 볼륨을 생성합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:427
@@ -1919,7 +1929,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:563
 #, no-wrap
 msgid "fcoe (optional) - Configure Fibre Channel Over Ethernet Devices"
-msgstr ""
+msgstr "fcoe (선택적인) - 이더넷 장치를 통해 광 채널을 구성합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:566
@@ -1995,7 +2005,7 @@ msgstr "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
 msgid ""
 "Specify one or more drives to ignore. Multiple drives can be specified as a "
 "comma-separated list. For example:"
-msgstr ""
+msgstr "무시하려는 드라이브 하나 이상을 지정하세요. 여러 드라이브를 쉼표로 구분된 목록으로 지정 할 수 있습니다. 예를 들면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:593
@@ -2064,6 +2074,8 @@ msgid ""
 "disks are ignored. For example, to use disk `sda` during installation and "
 "ignore all other disks:"
 msgstr ""
+"설치 프로그램을 사용하기 위해 디스크 목록을 지정합니다. 모든 다른 디스크는 무시됩니다. 예를 들면, 설치 중에 디스크 `sda`를 "
+"사용하고 다른 모든 디스크를 무시하려면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:629
@@ -2074,7 +2086,7 @@ msgstr "[command]#ignoredisk --only-use=sda#\n"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:632
 msgid "To include a multipath device that does not use LVM:"
-msgstr ""
+msgstr "LVM을 사용하지 않는 다중 경로 장치를 포함하려면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:636
@@ -2089,7 +2101,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:639
 msgid "To include a multipath device that uses LVM:"
-msgstr ""
+msgstr "LVM을 사용하는 다중 경로 장치를 포함하려면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:643
@@ -2256,7 +2268,7 @@ msgstr "관리자에 의해 지정된 사용자 이름에 일치하는 비밀번
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:678
 #, no-wrap
 msgid "iscsiname (optional) - Assign Name to iSCSI Device"
-msgstr ""
+msgstr "iscsiname (선택적인l) - iSCSI 장치에 이름 할당"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:681
@@ -2283,7 +2295,7 @@ msgstr "logvol (선택) - LVM 논리 볼륨 생성"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:691
 msgid "Create a logical volume for Logical Volume Management (LVM) with the syntax:"
-msgstr ""
+msgstr "다음 구문과 함께 논리 볼륨 관리(LVM)을 위한 논리 볼륨을 생성합니다:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:695
@@ -2421,7 +2433,7 @@ msgstr "`none`:"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:733
 msgid "Used only when creating a thin pool volume."
-msgstr ""
+msgstr "씬 풀 볼륨 생성 할 때에만 사용됩니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:734
@@ -2435,7 +2447,7 @@ msgstr "[option]#--noformat#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:735
 msgid "Use an existing logical volume and do not format it."
-msgstr ""
+msgstr "기존 논리 볼륨을 사용하고 이를 초기화 하지 않습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:736
@@ -2653,7 +2665,7 @@ msgstr "[option]#--thinpool#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:788
 msgid "Creates a thin pool logical volume. (Use a mount point of `none`)"
-msgstr ""
+msgstr "씬 풀 논리 볼륨을 생성합니다. (`none`의 적재점을 사용합니다)"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:789
@@ -2664,7 +2676,7 @@ msgstr "[option]#--metadatasize=#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:790
 msgid "Metadata area size (in MiB) for a new thin pool device."
-msgstr ""
+msgstr "신규 씬 풀 장치를 위한 메타자료 영역 크기(MB)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:791
@@ -2675,7 +2687,7 @@ msgstr "[option]#--chunksize=#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:792
 msgid "Chunk size (in KiB) for a new thin pool device."
-msgstr ""
+msgstr "신규 씬 풀 장치를 위한 청크 크기 (KB)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:793
@@ -2815,6 +2827,9 @@ msgid ""
 "--rule=pass:attributes[{blank}]_rule_ "
 "[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ "
+"--device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]"
+"_rule_ [pass:attributes[{blank}\n"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -2857,7 +2872,7 @@ msgstr "`raid._id_pass:attributes[{blank}]`:"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:892
 msgid "The partition is used for software RAID (see [command]#raid#)."
-msgstr ""
+msgstr "파티션은 소프트웨어 레이드를 위해 사용됩니다([command]#raid# 참고하세요)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:893
@@ -2972,7 +2987,7 @@ msgstr "[option]#--onpart=# or [option]#--usepart=#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:924
 msgid "Specifies the device on which to place the partition. For example:"
-msgstr ""
+msgstr "파티션에 위치해야 하는데에 장치를 지정해야 합니다. 예를 들면:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:928
@@ -3001,7 +3016,7 @@ msgstr "[command]#partition pv.1 --onpart=hda2#\n"
 msgid ""
 "The device must already exist on the system; the [option]#--onpart# option "
 "will not create it."
-msgstr ""
+msgstr "장치는 이미 시스템에 존재해야 합니다; [option]#--onpart# 선택(옵션)은 이를 생성하지 않을 것입니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:941
@@ -3273,12 +3288,12 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1061
 msgid "Use an existing RAID device and do not format it."
-msgstr ""
+msgstr "존재하는 레이드 장치를 사용하고 이를 초기화 하지 않습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1063
 msgid "Use an existing RAID device and reformat it."
-msgstr ""
+msgstr "존재하는 레이드 장치를 사용하고 이를 다시 초기화합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1065
@@ -3402,12 +3417,12 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1135
 #, no-wrap
 msgid "volgroup (optional) - Create LVM Volume Group"
-msgstr ""
+msgstr "volgroup (추가적인) - LVM 볼륨 그룹을 생성합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1138
 msgid "Creates a Logical Volume Management (LVM) volume group."
-msgstr ""
+msgstr "논리 볼륨 관리(LVM) 볼륨 그룹을 생성합니다."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1142
@@ -3438,12 +3453,12 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1156
 msgid "Use an existing volume group and do not format it."
-msgstr ""
+msgstr "기존 볼륨 그룹을 사용하고 이를 초기화 하지 않습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1158
 msgid "Use an existing volume group and reformat it."
-msgstr ""
+msgstr "존재하는 볼륨 그룹을 사용하고 이를 다시 초기화합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1159
@@ -3561,7 +3576,7 @@ msgstr "[option]#--devnum#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1203
 msgid "The device number (zFCP adaptor device bus ID)."
-msgstr ""
+msgstr "장치 번호 (zFCP 어댑터 장치 버스 ID)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1204
@@ -3626,7 +3641,7 @@ msgstr "방화벽(선택) - 방화벽 구성"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1224
 msgid "Specify the firewall configuration for the installed system."
-msgstr ""
+msgstr "설치된 시스템을 위해 방화벽 구성을 지정합니다."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1228
@@ -3931,7 +3946,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1316
 msgid "You can specify a device to be activated in any of the following ways:"
-msgstr ""
+msgstr "다음 방식 중에 활성화 되는 장치를 지정 할 수 있습니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1318
