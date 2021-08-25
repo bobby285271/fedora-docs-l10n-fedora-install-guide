@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-07-16 06:04+0000\n"
+"PO-Revision-Date: 2021-08-25 06:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,12 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:6
 msgid "====== Creating a Logical Volume Managament (LVM) Layout"
-msgstr ""
+msgstr "====== Creando un Diseño de Gestión de Volumen Lógico (LVM)"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:8
@@ -34,6 +34,14 @@ msgid ""
 "partition. Therefore, LVM logical volumes function as partitions which can "
 "span multiple physical disks."
 msgstr ""
+"_Gestión de Volumen Lógico_ (LVM) presenta una sencilla visión lógica del "
+"espacio de almacenamiento físico subyacente, como discos duros o LUNs. Las "
+"particiones sobre el almacenamiento físico son representadas como _volúmenes "
+"físicos_ que se pueden agrupar juntos en _grupos de volumen_. Cada volumen "
+"puede ser dividido en múltiples _volúmenes lógicos_, cada uno de los cuales "
+"es análogo a una partición estándar de disco. Por lo tanto, Los volúmenes "
+"lógicos LVM funcionan como particiones que se pueden expandir por múltiples "
+"discos físicos."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:10
@@ -43,6 +51,9 @@ msgid ""
 "LVM] for additional information about the concepts behind Logical Volume "
 "Management."
 msgstr ""
+"Vea xref:../appendixes/Understanding_LVM.adoc#appe-lvm-overview["
+"Comprendiendo LVM] para información adicional sobre los conceptos que hay "
+"detrás de la Gestión de Volumen Lógico (LVM)."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:15
@@ -53,12 +64,17 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for more information."
 msgstr ""
+"Algunos tipos de partición - notablemente el directorio `/boot` y las "
+"particiones BIOS Boot y EFI - no se pueden situar en volúmenes lógicos. Use "
+"volúmenes físicos estándar para ellas. Vea xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-recommended[Esquema de "
+"Partición Recomendado] para más información."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:18
 #, no-wrap
 msgid "Create LVM Logical Volume"
-msgstr ""
+msgstr "Crear un Volumen Lógico LVM"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
@@ -70,18 +86,20 @@ msgstr "La pantalla de Particionamiento Manual"
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddLVM.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddLVM.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:23
 msgid "Follow the procedure below to create LVM logical volumes and volume groups."
 msgstr ""
+"Siga el procedimiento de abajo para crear volúmenes lógicos LVM y grupos de "
+"volumen."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:24
 #, no-wrap
 msgid "Creating LVM Logical Volumes and Groups"
-msgstr ""
+msgstr "Creando Volúmenes Lógicos LVM y Grupos"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:26
@@ -101,6 +119,11 @@ msgid ""
 "`50GB`). Then, click `Add mount point` to add the volume and return to the "
 "main partitioning screen."
 msgstr ""
+"En la nueva ventana de diálogo, especifique un punto de montaje para el que "
+"desea crear un volumen lógico separado - por ejemplo, `/`. Opcionalmente, "
+"especifique un tamaño para el volumen usando las unidades estándar como MB o "
+"GB (por ejemplo, `50GB`). Pulse después `Añadir puntos de montaje` para "
+"añadir el volumen y volver a la pantalla principal de particionado."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:33
@@ -108,6 +131,8 @@ msgid ""
 "When creating a mount point for swap on LVM, specify the mount point as "
 "`swap`."
 msgstr ""
+"Cuando cree un punto de montaje para swap sobre LVM, especifique el punto de "
+"montaje como `swap`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:37
@@ -118,6 +143,12 @@ msgid ""
 "to configure it further. If you want to use thin provisioning for this "
 "volume, change the `Device Type` option to `LVM Thin Provisioning`."
 msgstr ""
+"El punto de montaje ha sido creado ahora usando los ajustes predeterminados, "
+"lo que significa que se ha creado como volumen lógico LVM y se ha creado un "
+"grupo volumen para contenerlo. Selecciones el punto de montaje recientemente "
+"creado en el panel de la izquierda para configurarlo posteriormente. Si "
+"desea utilizar el aprovisionamiento ligero para este volumen, cambie los "
+"opción `Tipo de Dispositivo` a `Aprovisionamiento Ligero LVM`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:39

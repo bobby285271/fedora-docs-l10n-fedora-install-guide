@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-08-21 10:04+0000\n"
+"PO-Revision-Date: 2021-08-25 06:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pages_partialsinstallsummaryhub/es/>"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:6
@@ -100,6 +100,12 @@ msgid ""
 "installation source in the `Installation Source` screen and the installer is "
 "probing the new source location and gathering a list of available packages."
 msgstr ""
+"Si un enlace está en *gris*, significa que el instalador está configurando "
+"esta sección en este momento y debe esperar a que la configuración termine "
+"antes de acceder a esta pantalla. Esto normalmente sucede cuando usted "
+"cambia la fuente de instalación en la pantalla `Fuente de la Instalación` y "
+"el instalador está probando la nueva localización de la fuente y obteniendo "
+"una lista de los paquetes disponibles."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:28
@@ -111,6 +117,12 @@ msgid ""
 "automatically, or set up on the previous screen where you select your "
 "language and locale."
 msgstr ""
+"Las pantallas con el *texto en negro y sin símbolo de advertencia* indican "
+"que esa pantalla no requiere su atención. Usted puede cambiar los ajustes de "
+"esas pantallas, pero no es necesario que lo haga para completar la "
+"instalación. Esto normalmente sucede con los ajustes de ubicación, ya que o "
+"bien se ha detectado automáticamente o se ha configurado en la pantalla "
+"anterior cuando usted selecciono el idioma y el lugar."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:30
@@ -119,24 +131,27 @@ msgid ""
 "`Begin Installation` button is greyed out, as long as at least one item has "
 "not been configured yet."
 msgstr ""
+"Se muestra un mensaje de advertencia en la parte inferior de la pantalla "
+"resumen y el botón `Empezar la Instalación` está en gris, siempre que al "
+"menos un elemento no se haya configurado todavía."
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:31
 #, no-wrap
 msgid "Icon States in Installation Summary"
-msgstr ""
+msgstr "Icono de Estado en el Resumen de la Instalación"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:33
 #, no-wrap
 msgid "A screenshot of several icons in the Installation Summary screen"
-msgstr ""
+msgstr "Pantallazo de varios iconos en la pantalla Resumen de la Instalación"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:33
 #, no-wrap
 msgid "anaconda/SummaryHub_States.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_States.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:36
@@ -146,12 +161,16 @@ msgid ""
 "case, move your mouse cursor over it and wait until a tooltip with the full "
 "text appears."
 msgstr ""
+"Cada pantalla también tiene un texto explicativo debajo de su título, "
+"mostrando los ajustes que están configurados en esa pantalla. Este texto "
+"puede esta concatenado; en este caso, mueva el cursor sobre él y espere a "
+"que aparezca una herramienta de con el texto completo."
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:37
 #, no-wrap
 msgid "Tooltip in the Installation Summary"
-msgstr ""
+msgstr "Herramienta de Información en el Resumen de la Instalación"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:39
@@ -160,12 +179,14 @@ msgid ""
 "An entry in the Installation Summary shows a truncated description and a "
 "tooltip with full text."
 msgstr ""
+"Una entrada en el Resumen de la Instalación muestra una descripción truncada "
+"y una herramienta de información con el texto completo."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:39
 #, no-wrap
 msgid "anaconda/SummaryHub_Mouseover.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_Mouseover.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:41
@@ -179,3 +200,11 @@ msgid ""
 "can press `Quit` at any point; this will discard all changes you made in the "
 "installer so far and reboot the system."
 msgstr ""
+"Una vez que ha configurado todo lo que se requiere para la instalación, "
+"puede presionar el botón `Empezar Instalación` para iniciar la instalación "
+"de {PRODUCT}. Esto le llevará a xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-progress[Configuración y Progreso de la "
+"Instalación]. Advierta que como el texto debajo del botón dice, no se "
+"escribirá nada en su disco dura antes de que usted presione este botón. "
+"Usted puede presionar `Salir` en cualquier punto; esto descartará todos los "
+"cambios que haya hecho y reinicia el sistema."
