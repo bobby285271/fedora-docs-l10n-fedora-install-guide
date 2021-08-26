@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-26 11:04+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f27pages_partialsinstallprogresshub/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/ProgressHub.adoc:5
 #: ./pages/_partials/install/ProgressHub.adoc:9
 #, no-wrap
 msgid "Configuration and Installation Progress"
-msgstr ""
+msgstr "Configuración y Progreso de la Instalación"
 
 #. type: Plain text
 #: ./pages/_partials/install/ProgressHub.adoc:8
@@ -35,6 +38,15 @@ msgid ""
 "wait for the installation process to finish, reboot your system, log in and "
 "change your settings on the installed system."
 msgstr ""
+"La pantalla `Configuración` se muestra después de que usted termine de "
+"configurar todos los hitos requeridos en xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-installation-summary[Resumen de la Instalación] y "
+"pulse el botón `Empezar Instalación`. Después de este punto, el proceso de "
+"instalación empieza y los cambios de hacen en los discos seleccionados. No "
+"es posible volver atrás al `Resumen de la Instalación` y cambiar cualquier "
+"ajuste hecho allí; si necesita hacerlo, debe esperar a que el proceso de "
+"instalación finalice; reinicie el sistema, acceda y cambie los ajustes sobre "
+"el sistema instalado."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/ProgressHub.adoc:11
@@ -43,12 +55,14 @@ msgid ""
 "The Configuration screen. Two more screens at the top require "
 "configuration. Installation progress is displayed at the bottom."
 msgstr ""
+"La pantalla Configuración. Dos pantallas más en la parte superior requieren "
+"configuración. El progreso de la instalación se muestra en el fondo."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/ProgressHub.adoc:11
 #, no-wrap
 msgid "anaconda/ProgressHub.png"
-msgstr ""
+msgstr "anaconda/ProgressHub.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/ProgressHub.adoc:14
@@ -60,6 +74,13 @@ msgid ""
 "so, you will be prompted to create a non-root user account after the "
 "installation finishes and your system reboots."
 msgstr ""
+"En la parte superior de la pantalla están disponibles dos opciones "
+"adicionales, permitiendo configurar ajustes de autenticación - la contraseña "
+"de `root`y una cuenta de usuario adicional. La configuración de la "
+"contraseña de `root` es requerida para finalizar la instalación; la creación "
+"de una cuenta de usuario se puede saltar. Si lo hace, se le pedirá que cree "
+"una cuenta de usuario no root después de que la instalación finalice y su "
+"sistema se reinicie."
 
 #. type: Plain text
 #: ./pages/_partials/install/ProgressHub.adoc:16
@@ -70,6 +91,11 @@ msgid ""
 "button to reboot your computer and log in to your newly installed {PRODUCT} "
 "system."
 msgstr ""
+"Al fondo de la pantalla se muestra una barra de progreso y un mensaje "
+"informando del progreso actual de la instalación. Cuando la instalación "
+"termina y se ha establecido la contraseña de `root`, puede pulsar el botón `"
+"Terminar configuración` para reiniciar su sistema y acceder al sistema "
+"{PRODUCT} recién instalado."
 
 #. type: delimited block =
 #: ./pages/_partials/install/ProgressHub.adoc:21
@@ -80,3 +106,8 @@ msgid ""
 "media. Otherwise, your computer will start the installer again instead of "
 "the installed system."
 msgstr ""
+"Antes de finalizar la instalación y reiniciar, o bien quite el medio (CD, "
+"DVD o dispositivo USB) que ha usado para iniciar la instalación o asegure "
+"que su sistema intenta arrancar desde el disco duro antes que desde el medio "
+"removible. De otra manera, su ordenador iniciará otra vez el instalador en "
+"lugar del sistema instalado."
