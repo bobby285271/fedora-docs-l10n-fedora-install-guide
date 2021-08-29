@@ -6,12 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-08-27 21:03+0000\n"
 "PO-Revision-Date: 2021-08-03 23:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
-"tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -123,10 +122,16 @@ msgstr "Dosya Sistemleri"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:37
+#, fuzzy
+#| msgid ""
+#| "To store data on a disk drive, it is necessary to _format_ the disk drive "
+#| "first. Formatting (usually known as \"making a _file system_pass:"
+#| "attributes[{blank}]\") writes information to the drive, creating order "
+#| "out of the empty space in an unformatted drive."
 msgid ""
 "To store data on a disk drive, it is necessary to _format_ the disk drive "
-"first. Formatting (usually known as \"making a _file system_pass:"
-"attributes[{blank}]\") writes information to the drive, creating order out "
+"first. Formatting (usually known as \"`making a _file system_pass:"
+"attributes[{blank}]`\") writes information to the drive, creating order out "
 "of the empty space in an unformatted drive."
 msgstr ""
 "Bir disk sürücüsünde veri depolamak için önce disk sürücüsünü "
@@ -361,8 +366,8 @@ msgstr ""
 "düzenidir. Bu bölüm ve xref:sect-disk-partitions-extended[Bölümlerin "
 "İçindeki Bölümler - Genişletilmiş Bölümlere Genel Bakış], temel olarak _Ana "
 "Önyükleme Kaydı_ (*MBR*) disk bölümlendirme düzenini açıklamaktadır. _GUID "
-"Bölümlendirme Tablosu_ (*GPT*) bölümlendirme düzeni hakkında bilgi için xref"
-":sect-disk-partitioning-guid-partition-table[GUID Bölümlendirme Tablosu "
+"Bölümlendirme Tablosu_ (*GPT*) bölümlendirme düzeni hakkında bilgi için xref:"
+"sect-disk-partitioning-guid-partition-table[GUID Bölümlendirme Tablosu "
 "(GPT)] kısmına bakın."
 
 #. type: delimited block =
@@ -390,8 +395,7 @@ msgstr "Bölümlendirme Tablosuna Sahip Disk Sürücüsü"
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "Image of an unused disk drive with a partition table."
-msgstr ""
-"Bölümlendirme tablosuna sahip kullanılmayan bir disk sürücüsünün görüntüsü."
+msgstr "Bölümlendirme tablosuna sahip kullanılmayan bir disk sürücüsünün görüntüsü."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:92
@@ -431,7 +435,9 @@ msgstr "Disk üzerinde bölümün başladığı ve bittiği noktalar"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:101
-msgid "Whether the partition is \"active\""
+#, fuzzy
+#| msgid "Whether the partition is \"active\""
+msgid "Whether the partition is \"`active`\""
 msgstr "Bölümün \"etkin\" olup olmadığı"
 
 #. type: Plain text
@@ -441,11 +447,17 @@ msgstr "Bölümün türü"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:105
+#, fuzzy
+#| msgid ""
+#| "The starting and ending points define the partition's size and location "
+#| "on the disk. The \"active\" flag is used by some operating systems' boot "
+#| "loaders. In other words, the operating system in the partition that is "
+#| "marked \"active\" is booted."
 msgid ""
 "The starting and ending points define the partition's size and location on "
-"the disk. The \"active\" flag is used by some operating systems' boot "
+"the disk. The \"`active`\" flag is used by some operating systems’ boot "
 "loaders. In other words, the operating system in the partition that is "
-"marked \"active\" is booted."
+"marked \"`active`\" is booted."
 msgstr ""
 "Başlangıç ve bitiş noktaları, bölümün boyutunu ve diskteki konumunu "
 "tanımlar. \"Etkin\" işareti, bazı işletim sistemlerinin önyükleyicileri "
@@ -569,10 +581,15 @@ msgstr "Bölümlerin İçindeki Bölümler - Genişletilmiş Bölümlere Genel B
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:149
+#, fuzzy
+#| msgid ""
+#| "In case four partitions are insufficient for your needs, you can use "
+#| "_extended partitions_ to create up additional partitions. You do this by "
+#| "setting the type of a partition to \"Extended\"."
 msgid ""
 "In case four partitions are insufficient for your needs, you can use "
 "_extended partitions_ to create up additional partitions. You do this by "
-"setting the type of a partition to \"Extended\"."
+"setting the type of a partition to \"`Extended`\"."
 msgstr ""
 "Dört bölümün ihtiyaçlarınız için yetersiz kalması durumunda, ek bölümler "
 "oluşturmak için _genişletilmiş bölümleri_ kullanabilirsiniz. Bunu, bir "
@@ -665,15 +682,18 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:165
 #, no-wrap
 msgid "*GPT* disks use logical block addressing (LBA) and the partition layout is as follows:\n"
-msgstr ""
-"*GPT* diskleri mantıksal blok adreslemeyi (logical block addressing - LBA) "
-"kullanır ve bölümlendirme düzeni aşağıdaki gibidir:\n"
+msgstr "*GPT* diskleri mantıksal blok adreslemeyi (logical block addressing - LBA) kullanır ve bölümlendirme düzeni aşağıdaki gibidir:\n"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:167
+#, fuzzy
+#| msgid ""
+#| "To preserve backward compatibility with MBR disks, the first sector "
+#| "(*LBA* 0) of *GPT* is reserved for *MBR* data and it is called "
+#| "\"protective MBR\"."
 msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
-"0) of *GPT* is reserved for *MBR* data and it is called \"protective MBR\"."
+"0) of *GPT* is reserved for *MBR* data and it is called \"`protective MBR`\"."
 msgstr ""
 "MBR diskleriyle geriye dönük uyumluluğu korumak için, *GPT*'nin ilk sektörü "
 "(*LBA* 0) *MBR* verileri için ayrılmıştır ve buna \"koruyucu MBR\" adı "
@@ -814,8 +834,8 @@ msgid ""
 "Free Space], shows what this might look like."
 msgstr ""
 "Bu durumda, önceden tanımlanan bölümler sabit diskin tamamına yayılmaz ve "
-"tanımlanan herhangi bir bölümün parçası olmayan ayrılmamış alan bırakır. xref"
-":figu-partitions-unused-space[Bölümlendirilmemiş Boş Alana Sahip Disk "
+"tanımlanan herhangi bir bölümün parçası olmayan ayrılmamış alan bırakır. "
+"xref:figu-partitions-unused-space[Bölümlendirilmemiş Boş Alana Sahip Disk "
 "Sürücüsü], bunun nasıl görünebileceğini göstermektedir."
 
 #. type: Block title
@@ -1019,8 +1039,7 @@ msgstr "Disk Sürücüsünün Yok Edici Bir Şekilde Yeniden Bölümlendirilmesi
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "Image of a disk drive being destructively repartitioned"
-msgstr ""
-"Yok edici bir şekilde yeniden bölümlendirilen bir disk sürücüsünün görüntüsü"
+msgstr "Yok edici bir şekilde yeniden bölümlendirilen bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:254
@@ -1098,10 +1117,16 @@ msgstr "Mevcut Verileri Sıkıştırın"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:281
+#, fuzzy
+#| msgid ""
+#| "As the following figure shows, the first step is to compress the data in "
+#| "your existing partition. The reason for doing this is to rearrange the "
+#| "data such that it maximizes the available free space at the \"end\" of "
+#| "the partition."
 msgid ""
 "As the following figure shows, the first step is to compress the data in "
 "your existing partition. The reason for doing this is to rearrange the data "
-"such that it maximizes the available free space at the \"end\" of the "
+"such that it maximizes the available free space at the \"`end`\" of the "
 "partition."
 msgstr ""
 "Aşağıdaki şekilde gösterildiği gibi ilk adım, mevcut bölümünüzdeki verileri "
@@ -1137,9 +1162,9 @@ msgid ""
 msgstr ""
 "Bu adım çok önemlidir. Yapılmazsa, verilerin konumu bölümün istenen ölçüde "
 "yeniden boyutlandırılmasını engelleyebilir. Ayrıca, şu veya bu nedenle bazı "
-"verilerin taşınamayacağını da unutmayın. Eğer öyleyse (ve yeni bölüm(ler)"
-"inizin boyutunu ciddi şekilde kısıtlarsa), diskinizi yok edici bir şekilde "
-"yeniden bölümlendirmeye zorlanabilirsiniz."
+"verilerin taşınamayacağını da unutmayın. Eğer öyleyse (ve yeni "
+"bölüm(ler)inizin boyutunu ciddi şekilde kısıtlarsa), diskinizi yok edici bir "
+"şekilde yeniden bölümlendirmeye zorlanabilirsiniz."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:292
@@ -1172,8 +1197,7 @@ msgstr "Bölümü Yeniden Boyutlandırılan Disk Sürücüsü"
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "Image of a disk drive with a resized partition"
-msgstr ""
-"Yeniden boyutlandırılmış bir bölüme sahip bir disk sürücüsünün görüntüsü"
+msgstr "Yeniden boyutlandırılmış bir bölüme sahip bir disk sürücüsünün görüntüsü"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:299
@@ -1235,10 +1259,21 @@ msgstr "Bölüm Adlandırma Düzenleri ve Bağlama Noktaları"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:321
+#, fuzzy
+#| msgid ""
+#| "A common source of confusion for users unfamiliar with Linux is the "
+#| "matter of how partitions are used and accessed by the Linux operating "
+#| "system. In DOS/Windows, it is relatively simple: Each partition gets a "
+#| "\"drive letter.\" You then use the correct drive letter to refer to files "
+#| "and directories on its corresponding partition. This is entirely "
+#| "different from how Linux deals with partitions and, for that matter, with "
+#| "disk storage in general. This section describes the main principles of "
+#| "partition naming scheme and the way how partitions are accessed in "
+#| "{PRODUCT}."
 msgid ""
 "A common source of confusion for users unfamiliar with Linux is the matter "
 "of how partitions are used and accessed by the Linux operating system. In "
-"DOS/Windows, it is relatively simple: Each partition gets a \"drive letter."
+"DOS/Windows, it is relatively simple: Each partition gets a \"`drive letter.`"
 "\" You then use the correct drive letter to refer to files and directories "
 "on its corresponding partition. This is entirely different from how Linux "
 "deals with partitions and, for that matter, with disk storage in general. "
@@ -1266,9 +1301,9 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
-"Linux, dosya adları `/dev/"
-"pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]` şeklinde olan dosya "
-"tabanlı bir adlandırma düzeni kullanmaktadır."
+"Linux, dosya adları `/dev/pass:attributes[{blank}]_xxyN_pass:"
+"attributes[{blank}]` şeklinde olan dosya tabanlı bir adlandırma düzeni "
+"kullanmaktadır."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:328

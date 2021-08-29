@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-08-27 21:03+0000\n"
 "PO-Revision-Date: 2021-07-16 06:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/"
 "rawhidepages_partialsinstallcustomspoke_addphysical/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -19,22 +19,31 @@ msgstr ""
 "X-Generator: Weblate 4.7.1\n"
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:5
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:17
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:5
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:17
 #, no-wrap
 msgid "Creating Standard Partitions"
 msgstr "Creando Particiones Estándar"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:8
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:8
+#, fuzzy
+#| msgid ""
+#| "_Standard partitions_ are the most common type of partition, with the "
+#| "widest support across operating systems. For example, Microsoft Windows "
+#| "uses exclusively physical partitions and can not natively work with LVM "
+#| "or Btrfs. Most {PRODUCT} partitioning setups will also require at least "
+#| "one standard partition for the `/boot` directory, and possibly also "
+#| "another standard partition with the BIOS Boot or EFI System file system "
+#| "to store the boot loader."
 msgid ""
 "_Standard partitions_ are the most common type of partition, with the widest "
 "support across operating systems. For example, Microsoft Windows uses "
-"exclusively physical partitions and can not natively work with LVM or "
-"Btrfs. Most {PRODUCT} partitioning setups will also require at least one "
-"standard partition for the `/boot` directory, and possibly also another "
-"standard partition with the BIOS Boot or EFI System file system to store the "
-"boot loader."
+"exclusively physical partitions and cannot natively work with LVM or Btrfs. "
+"Most {PRODUCT} partitioning setups will also require at least one standard "
+"partition for the `/boot` directory, and possibly also another standard "
+"partition with the BIOS Boot or EFI System file system to store the boot "
+"loader."
 msgstr ""
 "_Particiones estándar_ son el tipo más común de partición, con el soporte "
 "más amplio en todos los sistemas operativos. Por ejemplo, Microsoft Windows "
@@ -46,7 +55,7 @@ msgstr ""
 "arranque."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:10
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:10
 msgid ""
 "See xref:appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview[An "
 "Introduction to Disk Partitions] for additional information about the "
@@ -57,25 +66,25 @@ msgstr ""
 "los conceptos detrás de las particiones físicas."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:11
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:11
 #, no-wrap
 msgid "Create Standard Partition"
 msgstr "Crear Partición Estándar"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "The Manual Partitioning screen"
 msgstr "La pantalla de Particionamiento Manual"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddPhysical.png"
 msgstr "anaconda/CustomSpoke_AddPhysical.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:16
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:16
 msgid ""
 "Follow the procedure below to create mount points on standard physical "
 "partitions:"
@@ -84,7 +93,7 @@ msgstr ""
 "particiones físicas:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:19
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:19
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
@@ -93,13 +102,13 @@ msgstr ""
 "de montaje existentes. Se abrirá una nueva ventana de diálogo."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:21
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:21
 msgid ""
 "In the new dialog window, specify a mount point for which you want to create "
 "a separate mount point - for example, `/`. Optionally, specify a size for "
-"the partition using standard units such as MB or GB (for example, "
-"`50GB`). Then, click `Add mount point` to add the mount point and return to "
-"the main partitioning screen."
+"the partition using standard units such as MB or GB (for example, `50GB`). "
+"Then, click `Add mount point` to add the mount point and return to the main "
+"partitioning screen."
 msgstr ""
 "En la nueva ventana de diálogo, especifique un punto de montaje para el que "
 "desea crear un punto de montaje separado - por ejemplo, `/`. Opcionalmente, "
@@ -108,36 +117,35 @@ msgstr ""
 "añadir el punto de montaje y volver a la pantalla principal de particionado."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
 msgid ""
 "When creating a swap partition, specify the mount point as `swap`. For a "
-"BIOS Boot partition, use `biosboot`. For an EFI System Partition, use "
-"`/boot/efi`."
+"BIOS Boot partition, use `biosboot`. For an EFI System Partition, use `/boot/"
+"efi`."
 msgstr ""
 "Cuando cree una partición swap, especifique el punto de montaje como `swap`. "
 "Para una partición BIOS Boot, use `biosboot`. Para una Partición Sistema "
 "EFI, use `/boot/efi`."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
 msgid ""
-"For information about these partition types, see "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
-"Partitioning Scheme]."
+"For information about these partition types, see xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[Recommended Partitioning Scheme]."
 msgstr ""
-"Para información sobre estos tipos de particiones, vea "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-recommended[Esquema de Particionamiento Recomendado]."
+"Para información sobre estos tipos de particiones, vea xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[Esquema de Particionamiento Recomendado]."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
 msgid ""
 "The mount point has now been created using the default settings, which means "
 "it has been created as an LVM logical volume. Select the newly created mount "
 "point in the left pane to configure it further, and convert it to a physical "
-"partition by changing the `Device Type` option to `Standard "
-"Partition`. Then, click `Update Settings` in the bottom right corner of the "
-"screen."
+"partition by changing the `Device Type` option to `Standard Partition`. "
+"Then, click `Update Settings` in the bottom right corner of the screen."
 msgstr ""
 "El punto de montaje ha sido creado ahora usando los ajustes predeterminados, "
 "lo que significa que ha sido creado como un volumen lógico LVM. Seleccione "
@@ -147,7 +155,7 @@ msgstr ""
 "de la pantalla."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
 msgid ""
 "In the `Device(s)` section on the right side of the screen, you can see that "
 "the partition has been assigned to one or more hard drives. Click the "
@@ -158,7 +166,7 @@ msgstr ""
 "`Modificar` para configurar en que disco será creada esta partición."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
 msgid ""
 "In the `Configure Mount Point` dialog, you can specify which physical "
 "devices (disks) this volume *may* reside on. You can select one or more "
@@ -179,7 +187,7 @@ msgstr ""
 "seleccione solo ese disco y deseleccione los otros."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
 msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
@@ -188,18 +196,18 @@ msgstr ""
 "`Guardar` para volver a la pantalla principal `Particionado Manual`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
 msgid ""
 "Configure other settings specific to the partition - its `Mount Point`, "
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
-"Configure otros ajustes específicos a la partición - su `Punto de Montaje`, `"
-"Capacidad Deseada` y `Sistema de Archivos`. Pulse `Actualizar Ajustes` para "
+"Configure otros ajustes específicos a la partición - su `Punto de Montaje`, "
+"`Capacidad Deseada` y `Sistema de Archivos`. Pulse `Actualizar Ajustes` para "
 "aplicar cualquier cambio a la configuración."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
+#: pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
 msgid ""
 "Repeat this procedure for any additional standard partitions you want to "
 "create."

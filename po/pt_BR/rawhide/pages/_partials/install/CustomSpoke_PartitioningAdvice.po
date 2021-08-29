@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-08-27 21:03+0000\n"
 "PO-Revision-Date: 2021-04-02 11:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -50,8 +50,8 @@ msgstr ""
 "Considere criptografar quaisquer partições e volumes que possam conter dados "
 "confidenciais. A criptografia evita que pessoas não autorizadas acessem os "
 "dados nas partições, mesmo que tenham acesso ao dispositivo de armazenamento "
-"físico. Na maioria dos casos, você deve pelo menos criptografar a partição "
-"`/home`, que contém os dados do usuário."
+"físico. Na maioria dos casos, você deve pelo menos criptografar a partição `/"
+"home`, que contém os dados do usuário."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:12
@@ -74,11 +74,17 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:14
+#, fuzzy
+#| msgid ""
+#| "Some special restrictions apply to certain directories with regards on "
+#| "which partitioning layouts can they be placed. Notably, the `/boot` "
+#| "directory must always be on a physical partition (not on an LVM volume or "
+#| "a Btrfs subvolume), and `/usr` can not be on a Btrfs subvolume."
 msgid ""
 "Some special restrictions apply to certain directories with regards on which "
 "partitioning layouts can they be placed. Notably, the `/boot` directory must "
 "always be on a physical partition (not on an LVM volume or a Btrfs "
-"subvolume), and `/usr` can not be on a Btrfs subvolume."
+"subvolume), and `/usr` cannot be on a Btrfs subvolume."
 msgstr ""
 "Algumas restrições especiais se aplicam a certos diretórios com relação aos "
 "layouts de particionamento que eles podem ser colocados. Notavelmente, o "
@@ -122,8 +128,8 @@ msgstr ""
 "O diretório `/var` contém conteúdo para vários aplicativos, incluindo o "
 "servidor da web [application]*Apache*, e é usado pelo gerenciador de pacotes "
 "[application]*DNF* para armazenar temporariamente as atualizações dos "
-"pacotes baixados. Certifique-se de que a partição ou volume que contém `/var`"
-" tenha pelo menos 3 GB."
+"pacotes baixados. Certifique-se de que a partição ou volume que contém `/"
+"var` tenha pelo menos 3 GB."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:22
@@ -200,8 +206,15 @@ msgstr ""
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_PartitioningAdvice.adoc:32
+#, fuzzy
+#| msgid ""
+#| "The size of an `XFS` file system can not be reduced - if you need to make "
+#| "a partition or volume with this file system smaller, you must back up "
+#| "your data, destroy the file system, and create a new, smaller one in its "
+#| "place. Therefore, if you expect needing to manipulate your partitioning "
+#| "layout later, you should use the `ext4` file system instead."
 msgid ""
-"The size of an `XFS` file system can not be reduced - if you need to make a "
+"The size of an `XFS` file system cannot be reduced - if you need to make a "
 "partition or volume with this file system smaller, you must back up your "
 "data, destroy the file system, and create a new, smaller one in its place. "
 "Therefore, if you expect needing to manipulate your partitioning layout "

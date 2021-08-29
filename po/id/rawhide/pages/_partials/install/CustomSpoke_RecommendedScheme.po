@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-08-27 21:03+0000\n"
 "PO-Revision-Date: 2020-09-10 18:36+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -68,8 +68,12 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
+#, fuzzy
+#| msgid ""
+#| "Also note that the `/boot` directory can not be placed on a LVM logical "
+#| "volume. Use a standard partition."
 msgid ""
-"Also note that the `/boot` directory can not be placed on a LVM logical "
+"Also note that the `/boot` directory cannot be placed on a LVM logical "
 "volume. Use a standard partition."
 msgstr ""
 "Juga perhatikan bahwa direktori `/boot` tidak dapat ditempatkan pada volume "
@@ -113,11 +117,17 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
+#, fuzzy
+#| msgid ""
+#| "The `/` mount point is the top of the Linux Filesystem Hierarchy, and is "
+#| "referred to as the _root file system_, or root. The `/root` directory, "
+#| "sometimes pronounced \"pass:attributes[{blank}]_slash-root_pass:"
+#| "attributes[{blank}]\", is the home directory for the `root` user."
 msgid ""
 "The `/` mount point is the top of the Linux Filesystem Hierarchy, and is "
 "referred to as the _root file system_, or root. The `/root` directory, "
-"sometimes pronounced \"pass:attributes[{blank}]_slash-root_pass:"
-"attributes[{blank}]\", is the home directory for the `root` user."
+"sometimes pronounced \"`pass:attributes[{blank}]_slash-root_pass:"
+"attributes[{blank}]`\", is the home directory for the `root` user."
 msgstr ""
 "Titik kait `/` adalah puncak dari Linux Filesystem Hierarchy, dan disebut "
 "sebagai _sistem berkas root_, atau root. Direktori `/root`, terkadang "
@@ -341,11 +351,17 @@ msgstr "GPT jika ukuran disk lebih dari 2 TB"
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:75
+#, fuzzy
+#| msgid ""
+#| "You can force the installer to use GPT on disks smaller than 2 TB by "
+#| "using the [option]#inst.gpt# boot option as described in xref:advanced/"
+#| "Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
+#| "opposite is not possible - you can not use MBR on disks larger than 2 TB."
 msgid ""
 "You can force the installer to use GPT on disks smaller than 2 TB by using "
 "the [option]#inst.gpt# boot option as described in xref:advanced/"
 "Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
-"opposite is not possible - you can not use MBR on disks larger than 2 TB."
+"opposite is not possible - you cannot use MBR on disks larger than 2 TB."
 msgstr ""
 "Anda dapat memaksa penginstal untuk menggunakan GPT pada disk yang lebih "
 "kecil dari 2 TB dengan menggunakan opsi boot [option]#inst.gpt# seperti yang "
@@ -393,10 +409,16 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:88
+#, fuzzy
+#| msgid ""
+#| "If your system requires either a BIOS Boot partition or an EFI System "
+#| "Partition based on the requirements detailed above, this partition must "
+#| "be created as a standard physical partition. It can not reside on an LVM "
+#| "volume or a Btrfs subvolume."
 msgid ""
 "If your system requires either a BIOS Boot partition or an EFI System "
 "Partition based on the requirements detailed above, this partition must be "
-"created as a standard physical partition. It can not reside on an LVM volume "
+"created as a standard physical partition. It cannot reside on an LVM volume "
 "or a Btrfs subvolume."
 msgstr ""
 "Jika sistem Anda membutuhkan baik partisi boot BIOS atau Partisi Sistem EFI "
