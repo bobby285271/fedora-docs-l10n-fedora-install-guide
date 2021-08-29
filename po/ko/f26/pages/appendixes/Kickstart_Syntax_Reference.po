@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-08-25 06:05+0000\n"
+"PO-Revision-Date: 2021-08-27 22:06+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -2199,7 +2199,7 @@ msgstr "파티션이 스왑 공간으로 사용되었습니다."
 msgid ""
 "To determine the size of the swap partition automatically, use the "
 "[option]#--recommended# option:"
-msgstr ""
+msgstr "스왑 파티션 크기를 자동으로 결정하려면, [option]#--recommended# 다음 선택(옵션)을 사용하세요:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:683
@@ -2216,6 +2216,8 @@ msgid ""
 "extra space for your system to hibernate, use the [option]#--hibernation# "
 "option:"
 msgstr ""
+"스왑 파티션의 크기를 자동으로 결정하고, 자신의 시스템을 절전하기 위해 추가 공간을 허용하려면, [option]#--hibernation#"
+" 다음 선택(옵션)을 사용하세요:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:690
@@ -2743,7 +2745,7 @@ msgstr ""
 msgid ""
 "The minimum partition size in megabytes. Specify an integer value here such "
 "as `500` (do not include the unit)."
-msgstr ""
+msgstr "메가바이트 단위의 최소 파티션 크기. `500`(단위를 포함하지 않는)처럼 이 곳에 정수 값을 지정하세요."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -3228,7 +3230,7 @@ msgstr "[option]#--add-boot#"
 msgid ""
 "Create a separate `/boot` partition in addition to the platform-specific "
 "partition created by the base command."
-msgstr ""
+msgstr "기본 명령에 의해 생성된 기술 환경에 따른 지정된 파티션 이외에 분리된 `/boot` 파티션을 생성합니다."
 
 #. type: Title =====
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1057
@@ -3288,7 +3290,7 @@ msgstr "[option]#--pesize=#"
 msgid ""
 "Set the size of the physical extents. The default size for Kickstart "
 "installations is 4 MiB."
-msgstr ""
+msgstr "물리 확장의 크기를 설정합니다. 킥스타트 설치를 위한 기본설정 크기는 4MB입니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1083
@@ -3320,7 +3322,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1099
 #, no-wrap
 msgid "zerombr (optional) - Reinitialize Partition Tables"
-msgstr ""
+msgstr "zerombr (선택적인) - 파티션 테이블을 다시 초기화합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1102
@@ -3406,7 +3408,7 @@ msgstr "[option]#--wwpn#"
 msgid ""
 "The device's World Wide Port Name (WWPN). Takes the form of a 16-digit "
 "number, preceded by `0x`."
-msgstr ""
+msgstr "장치의 WWPN(World Wide Port Name)입니다. '0x'가 앞에 오는 16-자리 숫자 형식을 취합니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1128
@@ -3419,7 +3421,7 @@ msgstr "[option]#--fcplun#"
 msgid ""
 "The device's Logical Unit Number (LUN). Takes the form of a 16-digit number, "
 "preceded by `0x`."
-msgstr ""
+msgstr "장치의 LUN(Logical Unit Number)입니다. '0x'가 앞에 오는 16-자리 숫자 형식을 취합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1131
@@ -3518,7 +3520,7 @@ msgstr "[command]#firewall --enable --trust=em1 --trust=em2#\n"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1164
 msgid "Do not use a comma-separated format such as [option]#--trust em1, em2#."
-msgstr ""
+msgstr "[option]#--trust em1, em2# 와 같은 쉼표로 분리된 형식을 사용하지 마세요."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1165
@@ -3592,7 +3594,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1182
 #, no-wrap
 msgid "network (optional) - Configure Network Interfaces"
-msgstr ""
+msgstr "network (선택적인) - 네트워크 연결장치를 구성합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1185
@@ -3669,7 +3671,7 @@ msgstr "[command]#network --bootproto=dhcp#\n"
 msgid ""
 "To direct a machine to use BOOTP to obtain its networking configuration, use "
 "the following line in the Kickstart file:"
-msgstr ""
+msgstr "장비를 BOOTP를 사용하여 네트워크 구성을 획득하는데 지시하려면, 킥스타트 파일에서 다음 줄을 사용하세요:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1206
