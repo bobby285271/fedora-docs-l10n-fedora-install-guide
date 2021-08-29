@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-08-01 16:04+0000\n"
+"PO-Revision-Date: 2021-08-29 05:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f29pagesinstallafter_installation/es/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: ./pages/install/After_Installation.adoc:6
@@ -171,6 +171,12 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-password[Resetting "
 "the Root Password]."
 msgstr ""
+"La contraseña de `root`, que se configura durante la instalación, es "
+"requerida para acceder al sistema como usuario `root`. Sin esta contraseña "
+"no será capaz de configurar su sistema o instalar software adicional. Si "
+"pierde u olvida su contraseña de `root`, puede restablecerla siguiendo los "
+"pasos descritos en xref:Troubleshooting.adoc#sect-trouble-after-reset-root-"
+"password[Restableciendo la Contraseña de Root]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:36
@@ -190,6 +196,15 @@ msgid ""
 "the network after the installation, see the [citetitle]_{PRODUCT} Networking "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"En la mayoría de los casos el acceso a la red se configura durante el "
+"proceso de instalación, bien en el programa de instalación "
+"[application]*Anaconda* (vea xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-network-configuration[Red y Nombre de Host]) o en un "
+"archivo Kickstart (vea xref:../appendixes/Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-commands-network[red (opcional) - Configurar Interfaces de "
+"Red]). Para más información sobre la configuración de la red después de la "
+"instalación, vea [citetitle]_{PRODUCT} Guía de Red_, disponible en "
+"link:++http://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:38
@@ -224,12 +239,16 @@ msgid ""
 "[application]*DNF*, see the [citetitle]_{PRODUCT} System Administrator's "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"El administrador de paquetes [application]*DNF* se usa para actualizar los "
+"paquetes instalados. Para más información sobre cómo actualizar su sistema "
+"con [application]*DNF*, vea la [citetitle]_{PRODUCT} Guía de Administrador "
+"del Sistema_, disponible en link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "Instalar actualizaciones de controlador"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:43
@@ -239,6 +258,11 @@ msgid ""
 "support for devices that have been released recently could be missing. In "
 "these cases, a driver update enabling your device may be available."
 msgstr ""
+"Normalmente, los controladores para los dispositivos del sistema ya están "
+"soportados en el kernel que suministra Red{nbsp}Hat Enterprise{nbsp}Linux. "
+"Sin embargo, ocasionalmente, el soporte para dispositivos que han sido "
+"lanzados recientemente pueden no estar. En estos casos, quizás esté "
+"disponible un controlador que habilite su dispositivo."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:45
@@ -252,12 +276,21 @@ msgid ""
 "the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Los dispositivos necesarios para completar la instalación pueden tener "
+"actualizaciones de controlador suministrados antes de empezar la "
+"instalación. Si un dispositivo tiene un controlador perdido, pero no es "
+"esencial durante la instalación, se recomienda esperar hasta que se complete "
+"la instalación e instalar los controladores adicionales después. "
+"Instrucciones para la instalación y habilitación de controladores "
+"adicionales sobre el sistema instalado usando [application]*RPM* y "
+"[application]*DNF*, en la [citetitle]_{PRODUCT} Guía de Administrador del "
+"Sistema_, disponible en link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "Configurar repositorios adicionales"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:47
@@ -270,6 +303,14 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"El nuevo software se instala desde _repositorios de paquetes_. Los "
+"repositorios de paquetes son conjuntos organizados de software y metadatos a "
+"los que puede acceder el administrador de paquetes [application]*DNF*. De "
+"modo predeterminado, se configuran automáticamente diversos repositorios de "
+"actualización suministrador por {PRODUCT} y usted puede instalar "
+"actualizaciones o software adicional desde ellos. Sin embargo, si desea "
+"configurar repositorios adicionales, por ejemplo los que contengan su propio "
+"software, son necesarios algunos pasos más."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:49
@@ -278,6 +319,9 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Para información sobre la configuración de repositorios de software "
+"adicionales, vea la [citetitle]_{PRODUCT} Guía de Administrador del "
+"Sistema_, disponible en link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:50
