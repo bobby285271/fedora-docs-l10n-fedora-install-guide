@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-07-12 12:04+0000\n"
+"PO-Revision-Date: 2021-08-30 02:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pages_partialsinstallinitialsetuphub/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/InitialSetupHub.adoc:6
@@ -132,6 +132,12 @@ msgid ""
 "bottom right corner to save all configured settings. The configuration "
 "utility will close and you will be able to log in to the system."
 msgstr ""
+"Después de terminar de configurar cualquier pantalla, pulse el botón `Hecho` "
+"en la esquina superior izquierda para volver al menú principal [application]*"
+"Ajuste Inicial*. Después de que termine de configurar todos los ajustes, "
+"pulse `Terminar la Configuración` en la esquina inferior derecha para "
+"guardar todos los ajustes configurados. La utilidad de configuración se "
+"cerrará y usted podrá acceder al sistema."
 
 #. type: delimited block =
 #: ./pages/_partials/install/InitialSetupHub.adoc:32
@@ -141,12 +147,16 @@ msgid ""
 "installation. To do so, you must use a Kickstart file at the start of the "
 "installation, and this file must contain the following command:"
 msgstr ""
+"Es posible configurar [application]*Ajuste Inicial* para visualizar todas "
+"las opciones disponibles, aunque hayan sido configuradas durante la "
+"instalación. Para hacerlo, debe usar un archivo Kickstart al empezar la "
+"instalación y este archivo debe contener el siguiente comando:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/InitialSetupHub.adoc:36
 #, no-wrap
 msgid "firstboot --enable --reconfig\n"
-msgstr ""
+msgstr "firstboot --enable --reconfig\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:39
@@ -157,6 +167,10 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"La opción [option]#--reconfig# especifica que todas las opciones serán "
+"mostradas. Vea xref:advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[Automatizando la Instalación con Kickstart] para información "
+"sobre las instalaciones Kickstart."
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:46
@@ -166,14 +180,18 @@ msgid ""
 "the next reboot, before a login prompt is displayed), by executing the "
 "following command as `root`:"
 msgstr ""
+"Normalmente no es posible volver a [application]*Ajuste Inicial* después de "
+"que lo haya cerrado y accedido al sistema. PUede hacerlo visible otra vez ("
+"después del siguiente reinicio, antes de que se muestra la solicitud de "
+"inicio de sesión), ejecutando el siguiente comando como `root`:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/InitialSetupHub.adoc:50
 #, no-wrap
 msgid "# systemctl enable initial-setup-graphical.service\n"
-msgstr ""
+msgstr "# systemctl enable initial-setup-graphical.service\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/InitialSetupHub.adoc:53
 msgid "Then, reboot your system."
-msgstr ""
+msgstr "Después, reinicie su sistema."
