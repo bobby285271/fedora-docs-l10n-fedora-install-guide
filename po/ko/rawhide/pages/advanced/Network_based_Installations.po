@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 21:03+0000\n"
+"POT-Creation-Date: 2021-09-08 21:06+0000\n"
 "PO-Revision-Date: 2021-08-30 02:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/"
 "rawhidepagesadvancednetwork_based_installations/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -251,12 +251,22 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:78
+#, fuzzy
+#| msgid ""
+#| "Add entries to point clients to their bootloader and the server that "
+#| "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. "
+#| "Because DHCP clients provide the server with identifying information "
+#| "along with their address request, BIOS clients and UEFI clients can each "
+#| "be directed to the correct bootloader."
 msgid ""
 "Add entries to point clients to their bootloader and the server that "
 "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. Because "
 "DHCP clients provide the server with identifying information along with "
 "their address request, BIOS clients and UEFI clients can each be directed to "
-"the correct bootloader."
+"the correct bootloader. Using latest processor architecture option codes, "
+"which may be found on the https://www.iana.org/assignments/dhcpv6-parameters/"
+"dhcpv6-parameters.xhtml#processor-architecture[IANA DHCPv6] registration "
+"page, allows multiple architectures to share a single DHCP server."
 msgstr ""
 "`/etc/dhcp/dhcpd.conf`에 있는 서브넷 구성을 제공하는 이들 부트로더와 서버에"
 "서 클라이언트를 지시하도록 항목을 추가합니다. DHCP 클라이언트는 주소 요청과 "
@@ -265,23 +275,40 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:82
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "# refer to RFC4578 for possible arch option values\n"
+#| "option arch code 93 = unsigned integer 16;\n"
 msgid ""
-"# refer to RFC4578 for possible arch option values\n"
+"# refer to RFC4578 & IANA DHCPv6 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 msgstr ""
 "# refer to RFC4578 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:89
-#, no-wrap
+#: pages/advanced/Network_based_Installations.adoc:96
+#, fuzzy, no-wrap
+#| msgid ""
+#| "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+#| "if option arch = 00:07 {\n"
+#| "filename \"uefi/shimx64.efi\";\n"
+#| "} else {\n"
+#| "filename \"pxelinux.0\";\n"
+#| "}\n"
 msgid ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
 "if option arch = 00:07 {\n"
+"# x64 UEFI\n"
 "filename \"uefi/shimx64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
 "} else {\n"
 "filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
 "}\n"
 msgstr ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
@@ -292,19 +319,14 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:91
-#, no-wrap
-msgid "next-server 192.168.1.2;\n"
-msgstr "next-server 192.168.1.2;\n"
-
-#. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:93
+#: pages/advanced/Network_based_Installations.adoc:99
+#: pages/advanced/Network_based_Installations.adoc:288
 #, no-wrap
 msgid "...\n"
 msgstr "...\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:96
+#: pages/advanced/Network_based_Installations.adoc:102
 msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
@@ -312,7 +334,7 @@ msgstr ""
 "dhcp 서비스를 재시작 하려면 구성을 점검하고 필요하다면 변경하도록합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:102
+#: pages/advanced/Network_based_Installations.adoc:108
 #, no-wrap
 msgid ""
 "[command]#systemctl restart dhcpd#\n"
@@ -322,25 +344,25 @@ msgstr ""
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
-#: pages/advanced/Network_based_Installations.adoc:106
-#: pages/advanced/Network_based_Installations.adoc:108
+#: pages/advanced/Network_based_Installations.adoc:112
+#: pages/advanced/Network_based_Installations.adoc:114
 #, no-wrap
 msgid "Installing the tftp server"
 msgstr "tftp 서버 설치하기"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:110
+#: pages/advanced/Network_based_Installations.adoc:116
 msgid "Install the tftp server package."
 msgstr "tftp 서버 꾸러미를 설치합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:113
+#: pages/advanced/Network_based_Installations.adoc:119
 #, no-wrap
 msgid "# dnf install tftp-server\n"
 msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:116
+#: pages/advanced/Network_based_Installations.adoc:122
 msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
@@ -349,7 +371,7 @@ msgstr ""
 "동으로 시작 할 것입니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:121
+#: pages/advanced/Network_based_Installations.adoc:127
 #, no-wrap
 msgid ""
 "# [command]#systemctl start tftp.socket#\n"
@@ -359,36 +381,36 @@ msgstr ""
 "# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ==
-#: pages/advanced/Network_based_Installations.adoc:124
+#: pages/advanced/Network_based_Installations.adoc:130
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
 msgstr "PXE 클라이언트를 위한 부트로더 제공과 구성하기"
 
 #. type: Block title
-#: pages/advanced/Network_based_Installations.adoc:126
+#: pages/advanced/Network_based_Installations.adoc:132
 #, no-wrap
 msgid "Getting the bootloader files"
 msgstr "부트로더 파일 가져오기"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:128
+#: pages/advanced/Network_based_Installations.adoc:134
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
 msgstr "바이오스 클라이언트에 [package]*syslinux* 부트로더를 가져옵니다."
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:130
+#: pages/advanced/Network_based_Installations.adoc:136
 msgid "Install the [package]*syslinux* package."
 msgstr "[package]*syslinux* 꾸러미를 설치합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:133
+#: pages/advanced/Network_based_Installations.adoc:139
 #, no-wrap
 msgid "# dnf install syslinux\n"
 msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:136
-#: pages/advanced/Network_based_Installations.adoc:153
+#: pages/advanced/Network_based_Installations.adoc:142
+#: pages/advanced/Network_based_Installations.adoc:159
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
@@ -396,7 +418,7 @@ msgstr ""
 "다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:141
+#: pages/advanced/Network_based_Installations.adoc:147
 #, no-wrap
 msgid ""
 "# [command]#mkdir -p `/var/lib/tftpboot/pxelinux.cfg`pass:attributes[{blank}]#\n"
@@ -406,12 +428,12 @@ msgstr ""
 "# [command]#cp `/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:144
+#: pages/advanced/Network_based_Installations.adoc:150
 msgid "Get the bootloader files for UEFI systems"
 msgstr "UEFI 시스템을 위한 부트로더 파일을 가져옵니다"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:146
+#: pages/advanced/Network_based_Installations.adoc:152
 msgid ""
 "Install the [package]*shim-x64* and [package]*grub2-efi-x64* packages. If "
 "your server is a BIOS system, you *must install the packages to a temporary "
@@ -424,13 +446,13 @@ msgstr ""
 "수 있고 문제가 발생 할 것입니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:150
+#: pages/advanced/Network_based_Installations.adoc:156
 #, no-wrap
 msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:158
+#: pages/advanced/Network_based_Installations.adoc:164
 #, no-wrap
 msgid ""
 "# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
@@ -440,13 +462,13 @@ msgstr ""
 "# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` `/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 
 #. type: Block title
-#: pages/advanced/Network_based_Installations.adoc:160
+#: pages/advanced/Network_based_Installations.adoc:166
 #, no-wrap
 msgid "Configuring client bootloaders"
 msgstr "클라이언트 부트로더 구성하기"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:162
+#: pages/advanced/Network_based_Installations.adoc:168
 msgid ""
 "Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
 "default`."
@@ -455,7 +477,7 @@ msgstr ""
 "메뉴를 생성합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:170
+#: pages/advanced/Network_based_Installations.adoc:176
 #, no-wrap
 msgid ""
 "default vesamenu.c32\n"
@@ -467,7 +489,7 @@ msgstr ""
 "timeout 600\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:175
+#: pages/advanced/Network_based_Installations.adoc:181
 #, no-wrap
 msgid ""
 "label local\n"
@@ -481,7 +503,7 @@ msgstr ""
 "localboot 0xffff\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:180
+#: pages/advanced/Network_based_Installations.adoc:186
 #, no-wrap
 msgid ""
 "label linux\n"
@@ -495,7 +517,7 @@ msgstr ""
 "append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:185
+#: pages/advanced/Network_based_Installations.adoc:191
 #, no-wrap
 msgid ""
 "label server\n"
@@ -509,7 +531,7 @@ msgstr ""
 "append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:188
+#: pages/advanced/Network_based_Installations.adoc:194
 msgid ""
 "Create a boot menu for UEFI clients at `/var/lib/tftpboot/uefi/grub.cfg`."
 msgstr ""
@@ -517,7 +539,7 @@ msgstr ""
 "합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:198
+#: pages/advanced/Network_based_Installations.adoc:204
 #, no-wrap
 msgid ""
 "function load_video {\n"
@@ -537,7 +559,7 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:202
+#: pages/advanced/Network_based_Installations.adoc:208
 #, no-wrap
 msgid ""
 "load_video\n"
@@ -549,7 +571,7 @@ msgstr ""
 "insmod gzio\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:206
+#: pages/advanced/Network_based_Installations.adoc:212
 #, no-wrap
 msgid ""
 "menuentry 'Exit this grub' {\n"
@@ -561,12 +583,17 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:211
-#, no-wrap
+#: pages/advanced/Network_based_Installations.adoc:217
+#, fuzzy, no-wrap
+#| msgid ""
+#| "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
+#| "\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+#| "\tinitrdefi f{PRODVER}/initrd.img\n"
+#| "}\n"
 msgid ""
 "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
-"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
-"\tinitrdefi f{PRODVER}/initrd.img\n"
+"\tlinux $fw_path/f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"\tinitrd $fw_path/f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
 "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
@@ -575,7 +602,7 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:216
+#: pages/advanced/Network_based_Installations.adoc:222
 #, no-wrap
 msgid ""
 "menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-linux --class gnu --class os {\n"
@@ -589,58 +616,145 @@ msgstr ""
 "}\n"
 
 #. type: Title ==
-#: pages/advanced/Network_based_Installations.adoc:220
+#: pages/advanced/Network_based_Installations.adoc:226
 #, no-wrap
 msgid "Getting the kernel and initrd"
 msgstr "커널과 initrd를 얻기"
 
 #. type: Block title
-#: pages/advanced/Network_based_Installations.adoc:222
+#: pages/advanced/Network_based_Installations.adoc:228
 #, no-wrap
 msgid "Downloading the kernel and initrd"
 msgstr "커널과 initrd 내려받기"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:224
+#: pages/advanced/Network_based_Installations.adoc:230
 msgid "Create a directory for the files."
 msgstr "파일을 위한 디렉토리를 생성합니다."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:228
+#: pages/advanced/Network_based_Installations.adoc:234
 #, no-wrap
 msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:231
+#: pages/advanced/Network_based_Installations.adoc:237
 msgid "Download the kernel."
 msgstr "커널 내려받기."
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:235
+#: pages/advanced/Network_based_Installations.adoc:241
 #, no-wrap
 msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 msgstr "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:238
+#: pages/advanced/Network_based_Installations.adoc:244
 msgid "Download the initrd"
 msgstr "initrd 내려받기"
 
 #. type: delimited block -
-#: pages/advanced/Network_based_Installations.adoc:242
+#: pages/advanced/Network_based_Installations.adoc:248
 #, no-wrap
 msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 msgstr "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 
 #. type: Title ==
-#: pages/advanced/Network_based_Installations.adoc:245
+#: pages/advanced/Network_based_Installations.adoc:251
+#, fuzzy, no-wrap
+#| msgid "PXE Installation Overview"
+msgid "HTTP Installation Overview"
+msgstr "PXE 설치 개요"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:254
+msgid ""
+"HTTP/HTTPS boot is a technology that allows computers to boot directly from "
+"resources provided over the network. When used in conjunction with HTTPS the "
+"authenticity of the server is validated, and the use of HTTP offers a more "
+"reliable transport mechanism than PXE's TFTP. Installing Fedora this way "
+"avoids creating install media and allows multiple computers to install "
+"simultaneously. Many current UEFI implementations, including the EDK2 based "
+"firmware shipping with fedora's virtualization solutions, can directly boot "
+"from HTTP sources. A UEFI boot entry may be manually added that specifies a "
+"HTTP source via firmware menus. Alternatively, a DHCP server may "
+"automatically provide the required HTTP path."
+msgstr ""
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:255
+#, no-wrap
+msgid "Enrolling Certificatesll"
+msgstr ""
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:257
+msgid ""
+"While many machines are capable of HTTPS boot as well as HTTP, they will "
+"frequently need to have a certificate authority (CA) enrolled first. The CA "
+"is used to validate the certificates presented by the HTTPS server. This may "
+"be accomplished by enrolling the appropriate files from the fedora provided "
+"ca-certificates for public mirrors or the local HTTPS boot server's "
+"certificate."
+msgstr ""
+
+#. type: Title ==
+#: pages/advanced/Network_based_Installations.adoc:260
+#, fuzzy, no-wrap
+#| msgid "DHCP Server Configuration"
+msgid "DHCP Server Configuration for HTTP"
+msgstr "DHCP 서버 구성"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:262
+msgid ""
+"The installation and configuration of a DHCP server for HTTP boot is "
+"identical to its configuration for <<pxe-dhcpd,PXE>> except that we need to "
+"amend the option arch conditions for HTTP clients"
+msgstr ""
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:265
+#, fuzzy, no-wrap
+#| msgid "...\n"
+msgid "....\n"
+msgstr "...\n"
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:286
+#, no-wrap
+msgid ""
+"if option arch = 00:07 {\n"
+"# x64 UEFI\n"
+"filename \"uefi/shim64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
+"} else if option arch = 00:13 {\n"
+"# aarch64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/aarch64/os/images/boot.iso\";\n"
+"} else if option arch = 00:10 {\n"
+"# x64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/boot.iso\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: pages/advanced/Network_based_Installations.adoc:291
 #, no-wrap
 msgid "Providing repositories"
 msgstr "저장소 제공하기"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:248
+#: pages/advanced/Network_based_Installations.adoc:294
 msgid ""
 "The examples in this section use the public Fedora mirrors as the package "
 "source. For faster installations, installing to many systems, or more "
@@ -651,7 +765,7 @@ msgstr ""
 "유지하기 바랍니다."
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:250
+#: pages/advanced/Network_based_Installations.adoc:296
 msgid ""
 "Fedora Infrastructure maintains instructions for configuring a local mirror "
 "at link:++https://fedoraproject.org/wiki/Infrastructure/Mirroring++[]. The "
@@ -660,18 +774,19 @@ msgid ""
 "adoc[{PRODUCT} System Administrator's Guide]_ to configure `httpd`."
 msgstr ""
 "페도라 인프라스트럭쳐는 link:++https://fedoraproject.org/wiki/Infrastructure/"
-"Mirroring++[인프라스트럭쳐 미러링]에서 로컬 미러에 구성을 위한 지침을 유지 할 수 있습니다. 저장소를 제공하기 위해 선호하는 "
-"방법은 HTTP를 통하는 것이고, `httpd` 구성하는데 [citetitle]_xref:fedora:system-"
-"administrators-guide:index.adoc[{PRODUCT} 시스템 관리자 안내] 부분을 참고 할 수 있습니다."
+"Mirroring++[인프라스트럭쳐 미러링]에서 로컬 미러에 구성을 위한 지침을 유지 "
+"할 수 있습니다. 저장소를 제공하기 위해 선호하는 방법은 HTTP를 통하는 것이고, "
+"`httpd` 구성하는데 [citetitle]_xref:fedora:system-administrators-guide:index."
+"adoc[{PRODUCT} 시스템 관리자 안내] 부분을 참고 할 수 있습니다."
 
 #. type: Title ==
-#: pages/advanced/Network_based_Installations.adoc:252
+#: pages/advanced/Network_based_Installations.adoc:298
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
 msgstr "Cobbler를 사용한 고급 네트워크 설치"
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:255
+#: pages/advanced/Network_based_Installations.adoc:301
 msgid ""
 "For more complex environments, {PRODUCT} offers the [package]*cobbler* "
 "installation server. Tasks like managing kickstart configurations, "
@@ -684,7 +799,7 @@ msgstr ""
 "다."
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:257
+#: pages/advanced/Network_based_Installations.adoc:303
 msgid ""
 "While levaraging all of the features provided by cobbler can be relatively "
 "simple, the full functionality of this powerful tool is too broad to be "
@@ -698,7 +813,7 @@ msgstr ""
 "+https://cobbler.github.io/++[cobbler 웹]에 있는 문서를 제공합니다."
 
 #. type: Plain text
-#: pages/advanced/Network_based_Installations.adoc:258
+#: pages/advanced/Network_based_Installations.adoc:304
 msgid ""
 "Alternatively, you may also be interested in **Foreman**. You can find "
 "official documentation as well as downloads on the project website at link:+"
@@ -707,3 +822,6 @@ msgstr ""
 "상대적으로, 당신은 **Foreman**에 흥미를 느낄지 모릅니다. 당신은 link:+"
 "+https://www.theforeman.org/++[FOREMAN 홈페이지]에 있는 프로젝트 웹사이트에"
 "서 내려 받을 수 있는 공식 문서를 찾을 수 있습니다."
+
+#~ msgid "next-server 192.168.1.2;\n"
+#~ msgstr "next-server 192.168.1.2;\n"
