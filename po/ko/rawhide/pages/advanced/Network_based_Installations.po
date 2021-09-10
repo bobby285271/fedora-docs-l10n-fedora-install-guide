@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-09-08 21:06+0000\n"
-"PO-Revision-Date: 2021-08-30 02:04+0000\n"
+"PO-Revision-Date: 2021-09-10 05:05+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
 "rawhidepagesadvancednetwork_based_installations/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -275,27 +275,17 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:82
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# refer to RFC4578 for possible arch option values\n"
-#| "option arch code 93 = unsigned integer 16;\n"
+#, no-wrap
 msgid ""
 "# refer to RFC4578 & IANA DHCPv6 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 msgstr ""
-"# refer to RFC4578 for possible arch option values\n"
+"# refer to RFC4578 & IANA DHCPv6 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:96
-#, fuzzy, no-wrap
-#| msgid ""
-#| "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
-#| "if option arch = 00:07 {\n"
-#| "filename \"uefi/shimx64.efi\";\n"
-#| "} else {\n"
-#| "filename \"pxelinux.0\";\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
 "if option arch = 00:07 {\n"
@@ -313,9 +303,16 @@ msgid ""
 msgstr ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
 "if option arch = 00:07 {\n"
+"# x64 UEFI\n"
 "filename \"uefi/shimx64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
 "} else {\n"
 "filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
 "}\n"
 
 #. type: delimited block -
@@ -584,21 +581,18 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:217
-#, fuzzy, no-wrap
-#| msgid ""
-#| "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
-#| "\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
-#| "\tinitrdefi f{PRODVER}/initrd.img\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
 "\tlinux $fw_path/f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
 "\tinitrd $fw_path/f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
-"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
-"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
-"\tinitrdefi f{PRODVER}/initrd.img\n"
+"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --"
+"class gnu --class os {\n"
+"\tlinux $fw_path/f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"\tinitrd $fw_path/f{PRODVER}/initrd.img\n"
 "}\n"
 
 #. type: delimited block -
