@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-08-31 03:04+0000\n"
+"PO-Revision-Date: 2021-09-13 02:04+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f29pagesadvancedboot_options/id/>\n"
@@ -2009,6 +2009,9 @@ msgid ""
 "option, or add the [option]#--device=link# option to the [command]#network# "
 "command in your Kickstart file."
 msgstr ""
+"Untuk mengatasi masalah ini, gunakan opsi boot [option]#ksdevice=link#, atau "
+"tambahkan opsi [option]#--device=link# ke perintah [command]#network# dalam "
+"berkas Kickstart Anda."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:458
@@ -2022,6 +2025,8 @@ msgid ""
 "Used to disable specified drivers. This is now handled by the "
 "[option]#modprobe.blacklist=# option."
 msgstr ""
+"Dipakai untuk menonaktifkan driver yang dinyatakan. Ini sekarang ditangani "
+"oleh opsi [option]#modprobe.blacklist=#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:460
@@ -2036,6 +2041,9 @@ msgid ""
 "driver (`firewire_ohci`) by using the [option]#modprobe.blacklist=# option "
 "instead:"
 msgstr ""
+"Menonaktifkan dukungan bagi antarmuka FireWire. Kini Anda dapat "
+"menonaktifkan driver FireWire (`firewire_ohci`) dengan memakai opsi "
+"[option]#modprobe.blacklist=# sebagai pengganti:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:464
@@ -2047,7 +2055,7 @@ msgstr "modprobe.blacklist=firewire_ohci\n"
 #: pages/advanced/Boot_Options.adoc:467
 #, no-wrap
 msgid "Removed Boot Options"
-msgstr ""
+msgstr "Opsi Boot yang Dihapus"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:470
@@ -2055,6 +2063,8 @@ msgid ""
 "The following options are removed. They were present in previous releases of "
 "{PRODUCT}, but they cannot be used anymore."
 msgstr ""
+"Opsi-opsi berikut dihapus. Mereka ada dalam rilis sebelumnya dari {PRODUCT}, "
+"tapi tidak dapat dipakai lagi."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:471
@@ -2069,6 +2079,9 @@ msgid ""
 "which means that this option are not available anymore. Use [option]#ip=# to "
 "configure network settings."
 msgstr ""
+"`initramfs` program instalasi kini sepenuhnya non-interaktif, yang berarti "
+"bahwa opsi ini tidak tersedia lagi. Gunakan [option]#ip=# untuk "
+"mengonfigurasi pengaturan jaringan."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:473
@@ -2082,12 +2095,15 @@ msgid ""
 "This option forced [application]*Anaconda* to use the `/dev/ttyS0` console "
 "as the output. Use the [option]#console=/dev/ttyS0# (or similar) instead."
 msgstr ""
+"Opsi ini memaksa [application]*Anaconda* untuk memakai konsol `/dev/ttyS0` "
+"sebagai keluaran. Gunakan [option]#console=/dev/ttyS0# (atau yang serupa) "
+"sebagai pengganti."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:475
 #, no-wrap
 msgid "[option]#updates=#"
-msgstr ""
+msgstr "[option]#updates=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:476
