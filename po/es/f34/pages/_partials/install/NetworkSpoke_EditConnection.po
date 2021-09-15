@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-07-18 13:04+0000\n"
+"PO-Revision-Date: 2021-09-15 12:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:5
@@ -182,6 +182,9 @@ msgid ""
 "Then, click `Add` on the right side and add a set of settings: `Address`, "
 "`Netmask` (for `IPv4`), `Prefix` (for `IPv6`), and `Gateway`."
 msgstr ""
+"Después, pulse `Añadir` en el lado derecho y añada un conjunto de ajustes: "
+"`Dirección`, `Máscara de Red` (para `IPv4`), `Prefijo` (para `IPv6`) y "
+"`Pasarela`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:38
@@ -189,6 +192,8 @@ msgid ""
 "The `DNS servers` field accepts one or more IP addresses of DNS servers - "
 "for example, `10.0.0.1,10.0.0.8`."
 msgstr ""
+"El campo `Servidores DNS` acepta uno o más direcciones IP de servidores DNS -"
+" por ejemplo, `10.0.0.1,10.0.0.8`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:40
@@ -200,12 +205,19 @@ msgid ""
 "disabled for both `IPv4` and `IPv6`, the interface will be able to connect "
 "if configuration succeeds on either IP protocol."
 msgstr ""
+"La opción final en ambas pestañas es `Requiere direccionamiento "
+"IPvpass:attributes[{blank}]_X_ para que se complete esta conexión`. "
+"Seleccione esta opción en la pestaña `IPv4` para sólo permitir esta conexión "
+"si `IPv4` tiene éxito; el mismo principio se aplica a este ajuste en la "
+"pestaña `IPv6`. Si esta opción permanece deshabilitada tanto para `IPv4` "
+"como para `IPv6`, la interfaz podrá conectarse si la configuración se "
+"realiza correctamente en cualquiera de los protocolos IP."
 
 #. type: Labeled list
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:41
 #, no-wrap
 msgid "Configure routes"
-msgstr ""
+msgstr "Configurar rutas"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:42
@@ -215,6 +227,10 @@ msgid ""
 "protocol on an interface. A new dialog will open, allowing you to `Add` a "
 "specific route."
 msgstr ""
+"En las pestañas `Ajustes IPv4` y `Ajustes IPv6`, pulse el botón `Rutas` en "
+"la esquina inferior derecha para configurar los ajustes de enrutamiento para "
+"un protocolo IP específico sobre una interfaz. Se abrirá un cuadro de "
+"diálogo, permitiéndole `Añadir` una ruta específica."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:44
@@ -223,6 +239,9 @@ msgid ""
 "specifically configured here by enabling the `Ignore automatically obtained "
 "routes`."
 msgstr ""
+"Si usted confía en al menos una ruta estática, puede deshabilitar todas las "
+"rutas no configuradas específicamente aquí habilitando `Ignorar "
+"automáticamente las rutas obtenidas`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:46
@@ -238,6 +257,16 @@ msgid ""
 "note that this option is only useful when more than one interface is "
 "configured."
 msgstr ""
+"Seleccione `Usar esta conexión sólo para recursos en esta red` para evitar "
+"que esta conexión llegue a ser la ruta predeterminada. Esta opción se puede "
+"seleccionar incluso si no configuró ninguna ruta estática. Habilitar esta "
+"opción significa que esta ruta solo se utilizará cuando sea necesario para "
+"acceder a ciertos recursos, como páginas de intranet que requieren una "
+"conexión local o VPN. Si es posible, se utilizará otra ruta (predeterminada) "
+"para los recursos disponibles públicamente. Tenga en cuenta que, a "
+"diferencia de las rutas adicionales configuradas en este cuadro de diálogo, "
+"esta configuración se transferirá al sistema instalado. También tenga en "
+"cuenta que esta opción solo es útil cuando se configura más de una interfaz."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_EditConnection.adoc:48
