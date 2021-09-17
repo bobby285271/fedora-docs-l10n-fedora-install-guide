@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-08-03 23:04+0000\n"
+"PO-Revision-Date: 2021-09-17 12:04+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:6
@@ -138,17 +138,20 @@ msgid ""
 "iSCSI initiator within your domain or subdomain. For example, "
 "`:diskarrays-sn-a8675309`"
 msgstr ""
+"Dos puntos (`:`) seguidos de una cadena que identifica inequívocamente este "
+"iniciador iSCSI concreto dentro de su dominio o subdominio. Por ejemplo, "
+"`:diskarrays-sn-a8675309`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
 msgid "A complete IQN will therefore look as follows:"
-msgstr ""
+msgstr "Un IQN completo parecerá por lo tanto como sigue:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
 #, no-wrap
 msgid "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
-msgstr ""
+msgstr "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:37
@@ -156,6 +159,8 @@ msgid ""
 "An example using the correct format is also displayed below the input field "
 "for reference."
 msgstr ""
+"También se muestra un ejemplo con el formato correcto debajo del campo de "
+"entrada como referencia."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:39
@@ -177,6 +182,12 @@ msgid ""
 "Username` and `CHAP Password` may then become visible. Fill in your "
 "authentication credentials; these should be provided by your organization."
 msgstr ""
+"Especificar el tipo de autenticación a usar para el descubrimiento iSCSI "
+"usando el menú desplegable `Tipo de Autenticación de Descubrimiento`. "
+"Dependiendo del tipo de autenticación que seleccione, pueden llegar a ser "
+"visibles campos de entrada adicionales (como `Nombre de Usuario CHAP` y `"
+"Contraseña CHAP`. Complete sus credenciales de autenticación; estas serían "
+"suministradas por su organización."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:43
@@ -187,6 +198,11 @@ msgid ""
 "the credentials you provided. This process may take some time (generally "
 "less than 30 seconds), depending on your network."
 msgstr ""
+"Pulse el botón `Comenzar Descubrimiento`. El instalador intentará ahora "
+"descubrir un objetivo iSCSI en base a la información que usted ha dado y si "
+"el objetivo requiere autenticación CHAP o CHAP inversa, intentará usar las "
+"credenciales que usted ha suministrado. Este proceso puede tomar algún "
+"tiempo (generalmente menos de 30 segundos), dependiendo de su red."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:45
@@ -198,6 +214,13 @@ msgid ""
 "error, make sure you entered all CHAP and reverse CHAP credentials correctly "
 "and that you have access to the iSCSI target."
 msgstr ""
+"Si el descubrimiento *no* tiene éxito, se mostrará un mensaje de error en el "
+"cuadro de diálogo. Este mensaje variará dependiendo de en que parte del "
+"descubrimiento haya fallado. Si el instalador no ha encontrado el objetivo "
+"que usted ha especificado de ningún modo debería comprobar la dirección IP "
+"address; si el problema es un error de autenticación, asegúrese que ha "
+"introducido todas las credenciales CHAP y CHAP inversa correctamente y que "
+"tiene acceso al iSCSI objetivo."
 
 #. type: delimited block =
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
@@ -206,6 +229,10 @@ msgid ""
 "address you specified are already configured. During discovery, "
 "[application]*Anaconda* ignores nodes which have already been added."
 msgstr ""
+"El mensaje de error `Sin nodos descubiertos` puede también significar que "
+"todos los nodos en la dirección que ha especificado están ya configurados. "
+"Durante el descubrimiento [application]*Anaconda* ignora los nodos que ya "
+"han sido añadidos."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
