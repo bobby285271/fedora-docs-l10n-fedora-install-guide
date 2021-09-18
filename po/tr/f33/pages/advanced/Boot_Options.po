@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-28 21:03+0000\n"
-"PO-Revision-Date: 2021-05-24 08:03+0000\n"
+"PO-Revision-Date: 2021-09-18 17:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f33pagesadvancedboot_options/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:5
@@ -72,6 +72,12 @@ msgid ""
 "attributes[{blank}]_password_pass:attributes[{blank}]#. On its own, without "
 "a password specified, the option is invalid."
 msgstr ""
+"\"Eşittir\" işaretiyle (`=`) biten seçenekler bir değerin belirtilmesini "
+"gerektirir - tek başlarına kullanılamazlar. Örneğin, [option]#inst."
+"vncpassword=# seçeneği ayrıca bir değer (bir parola) içermelidir. Bu nedenle "
+"doğru biçim [option]#inst."
+"vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]# "
+"şeklindedir. Tek başına, yani bir parola belirtilmeden seçenek geçersizdir."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:16
@@ -83,6 +89,11 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
+"\"pass:attributes[{blank}]`=`pass:attributes[{blank}]\" işareti olmadan "
+"belirtilen seçenekler herhangi bir değer veya parametreyi kabul etmez. "
+"Örneğin, [option]#rd.live.check# seçeneği, [application]*Anaconda*'yı "
+"kuruluma başlamadan önce kurulum ortamını doğrulamaya zorlar; bu seçenek "
+"varsa denetim yapılacak, yoksa atlanacaktır."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:18
@@ -91,6 +102,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Bu bölümde açıklanan seçeneklere ek olarak, önyükleme istemi "
+"[application]*dracut* çekirdek seçeneklerini de kabul eder. Bu seçeneklerin "
+"bir listesi `dracut.cmdline(7)` kılavuz sayfasında bulunabilir."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:23
@@ -101,12 +115,17 @@ msgid ""
 "resolution=1024x768#. However, it is expected that the `inst.` prefix will "
 "be mandatory in future releases."
 msgstr ""
+"Kurulum programına özel önyükleme seçenekleri bu kılavuzda her zaman `inst.` "
+"ile başlamaktadır. Şu anda bu ön ek isteğe bağlıdır - örneğin, "
+"[option]#resolution=1024x768# ile [option]#inst.resolution=1024x768# tam "
+"olarak aynı şekilde çalışmaktadır. Ancak, `inst.` ön ekinin gelecekteki "
+"sürümlerde zorunlu olması beklenmektedir."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:27
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Önyükleme Menüsünde Kurulum Sistemini Yapılandırma"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:30
@@ -122,29 +141,40 @@ msgid ""
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"Özel önyükleme seçeneklerini belirtmenin tam yolu sisteminizin mimarisine, "
+"ürün yazılımına ve kurulumu önyüklemek için kullandığınız yönteme göre "
+"farklılık gösterir. Yerel ortamdan önyükleme yapıyorsanız, kuruluma "
+"başlamadan önce önyükleme menüsünde seçenekleri belirtebilirsiniz; PXE "
+"sunucusu kullanan bir ağdan önyükleme yapıyorsanız, kurulum sistemini "
+"önyüklemeden önce önyükleyici yapılandırma dosyasına önyükleme seçeneklerini "
+"eklemelisiniz. Özel talimatlar için yerel ortamdan önyükleme yapıyorsanız "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[Önyükleme Menüsü], "
+"ve bir sunucudan önyükleme yapıyorsanız xref:advanced/"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Kurulum Sunucusu "
+"Ayarlama] bölümlerine bakın."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:32
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Kullanılabilir Önyükleme Seçenekleri"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:35
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "{PRODUCT}'da aşağıdaki seçenekler kullanılabilir:"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:37
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Kurulum Kaynağını Belirtme"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:39
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:40
@@ -153,17 +183,19 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Kurulum kaynağını, yani kurulum programının ihtiyaç duyduğu kalıpları ve "
+"paketleri bulabileceği bir konumu belirtir. Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:44
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[option]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:47
 msgid "The source must be either:"
-msgstr ""
+msgstr "Kaynak şunlardan biri olmalıdır:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:49
@@ -172,11 +204,14 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid `."
 "treeinfo` file"
 msgstr ""
+"geçerli bir `.treeinfo` dosyasının yanı sıra kurulum programının "
+"kalıplarını, paketlerini ve depo verilerini içeren bir dizin yapısı olan "
+"kurulabilir bir ağaç"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:51
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "DVD (sistemin DVD sürücüsünde bulunan fiziksel disk)"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:53
@@ -184,6 +219,8 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"tam bir {PRODUCT} kurulum DVD'sinin bir sabit diske veya kurulum sisteminden "
+"erişilebilen bir ağ konumuna yerleştirilmiş bir ISO kalıbı"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:55
@@ -191,12 +228,14 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
 msgstr ""
+"Bu seçenek, farklı biçimler kullanarak farklı kurulum yöntemlerinin "
+"yapılandırılmasına izin verir. Söz dizimi aşağıdaki tabloda açıklanmıştır."
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:57
 #, no-wrap
 msgid "Installation Sources"
-msgstr ""
+msgstr "Kurulum Kaynakları"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:70
@@ -212,27 +251,51 @@ msgid ""
 "|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by default. To use a different version, add [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to _options_.]\n"
 msgstr ""
+"|Kurulum kaynağı|Seçenek biçimi\n"
+"|Herhangi bir CD/DVD sürücüsü|[option]#inst.repo=cdrom#\n"
+"|Belirli bir CD/DVD sürücüsü|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_aygıt_pass:attributes[{blank}]#\n"
+"|Sabit Disk|[option]#inst.repo=hd:pass:attributes[{blank}]_aygıt_:/pass:attri"
+"butes[{blank}]_yol_pass:attributes[{blank}]#\n"
+"|HTTP Sunucusu|[option]#inst.repo=http://pass:attributes[{blank}]_anamakine_p"
+"ass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank}]"
+"#\n"
+"|HTTPS Sunucusu|[option]#inst.repo=https://pass:attributes[{blank}]_anamakine"
+"_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank"
+"}]#\n"
+"|FTP Sunucusu|[option]#inst.repo=ftp://pass:attributes[{blank}]_kullanıcıadı_"
+":pass:attributes[{blank}]_parola_pass:attributes[{blank}]@pass:attributes[{bl"
+"ank}]_anamakine_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:at"
+"tributes[{blank}]#\n"
+"|NFS Sunucusu|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass"
+":attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{"
+"blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tdipnot:[Bu seçenek, öntanımlı olarak NFS protokolü "
+"sürüm 3'ü kullanır. Farklı bir sürüm kullanmak için _seçeneklere_ "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# "
+"ekleyin.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:73
 msgid "Disk device names may be specified using the following formats:"
-msgstr ""
+msgstr "Disk aygıt adları aşağıdaki biçimler kullanılarak belirtilebilir:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:75
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "Çekirdek aygıt adı, örneğin `/dev/sda1` veya `sdb2`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:77
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
-msgstr ""
+msgstr "Dosya sistemi etiketi, örneğin `LABEL=Flash` veya `LABEL=RHEL7`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:79
 msgid ""
 "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
+"Dosya sistemi UUID'si, örneğin `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:81
@@ -242,12 +305,16 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
+"Alfasayısal olmayan karakterler `\\xpass"
+":attributes[{blank}]_NN_pass:attributes[{blank}]` olarak temsil edilmelidir; "
+"burada _NN_, karakterin onaltılık gösterimidir. Örneğin, `\\x20` bir boşluk "
+"karakteridir (\"\")."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:82
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:83
@@ -260,6 +327,12 @@ msgid ""
 "[application]*Anaconda* will try to load the image from `LiveOS/squashfs."
 "img`."
 msgstr ""
+"Yüklenecek kurulum programı çalışma zamanı kalıbının konumunu belirtir. Söz "
+"dizimi, xref:tabl-boot-options-sources[Kurulum Kaynaklarındaki] ile aynıdır. "
+"Bu seçenek, geçerli bir `.treeinfo` dosyası içeren bir dizinin yolunu bekler;"
+" bulunursa, çalışma zamanı kalıbının konumu bu dosyadan okunacaktır. Bir `."
+"treeinfo` dosyası yoksa, [application]*Anaconda* kalıbı `LiveOS/squashfs.img`"
+" dosyasından yüklemeye çalışacaktır."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:88
@@ -269,12 +342,17 @@ msgid ""
 "x86_64#). If you modify the default label of the file system containing the "
 "runtime image, you must also edit this option to match the new label."
 msgstr ""
+"Öntanımlı olarak, bu önyükleme seçeneği kurulum ortamında kullanılır ve "
+"belirli bir etikete ayarlanır (örneğin, [option]#inst.stage2=hd:LABEL="
+"F21\\x20Server.x86_64#). Çalışma zamanı kalıbını içeren dosya sisteminin "
+"öntanımlı etiketini değiştirirseniz, bu seçeneği de yeni etiketle eşleşecek "
+"şekilde düzenlemeniz gerekmektedir."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:91
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:92
@@ -284,12 +362,16 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Bu önyükleme seçeneğiyle 2. aşama kalıbı, kalıp başarıyla alınana kadar, "
+"[option]#inst.stage2=# seçeneği kullanılarak belirtilen HTTP, HTTPS ve FTP "
+"konumlarından sırayla, belirtilen sırayla alınacaktır. Diğer tüm konumlar "
+"yok sayılacaktır."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:93
 #, no-wrap
 msgid "[option]#inst.dd=#"
-msgstr ""
+msgstr "[option]#inst.dd=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:94
@@ -301,12 +383,18 @@ msgid ""
 "the [option]#inst.dd=cdrom# option, the device name must always be "
 "specified. For example:"
 msgstr ""
+"Kurulum sırasında bir sürücü güncellemesi yapmanız gerekirse [option]#inst."
+"dd=# seçeneğini kullanın. Birden çok kez kullanılabilir. Bir sürücü RPM "
+"paketinin konumu, xref:tabl-boot-options-sources[Kurulum Kaynakları] "
+"bölümünde açıklanan biçimlerden herhangi biri kullanılarak belirtilebilir. "
+"[option]#inst.dd=cdrom# seçeneği dışında, aygıt adı her zaman "
+"belirtilmelidir. Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:98
 #, no-wrap
 msgid "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
-msgstr ""
+msgstr "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:101
@@ -315,6 +403,9 @@ msgid ""
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
 msgstr ""
+"Bu seçeneği herhangi bir parametre olmadan kullanmak (yalnızca [option]#inst."
+"dd# olarak), kurulum programından etkileşimli bir menü içeren bir sürücü "
+"güncelleme diski istemesini isteyecektir."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:106
@@ -324,12 +415,16 @@ msgid ""
 "installation. Updating drivers which are not essential during the "
 "installation should always be performed after the system is installed."
 msgstr ""
+"Eksik bir sürücü kurulumu tamamlamanızı engellemediği sürece, kurulum "
+"sırasında asla sürücü güncellemesi yapmaya çalışmamalısınız. Kurulum "
+"sırasında gerekli olmayan sürücülerin güncellenmesi her zaman sistem "
+"kurulduktan sonra yapılmalıdır."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:109
 #, no-wrap
 msgid "[option]#inst.askmethod#"
-msgstr ""
+msgstr "[option]#inst.askmethod#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:110
@@ -337,6 +432,8 @@ msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
 msgstr ""
+"Kurucunun bir kurulum kaynağını otomatik olarak yapılandırmaya çalışmasını "
+"engeller."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:112
