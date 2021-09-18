@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-07-01 05:04+0000\n"
+"PO-Revision-Date: 2021-09-18 17:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
@@ -108,12 +108,17 @@ msgid ""
 "\"pass:attributes[{blank}]_slash-root_pass:attributes[{blank}]\", is the "
 "home directory for the `root` user."
 msgstr ""
+"El punto de montaje `/` es el más alto de la Jerarquía de Sistemas de "
+"Archivos Linux Filesystem Hierarchy y se nombra como _sistema de archivos "
+"raíz_ o root. El directorio `/root`, algunas veces pronunciado \"pass"
+":attributes[{blank}]_slash-root_pass:attributes[{blank}]\", es el directorio "
+"home para el usuario `root`."
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
 #, no-wrap
 msgid "`/home` - at least 10 GB"
-msgstr ""
+msgstr "`/home` - al menos 10 GB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
@@ -125,6 +130,13 @@ msgid ""
 "files. During the installation, a separate `/home` partition will be created "
 "if there are 50 GB or more free space for your {PRODUCT} installation."
 msgstr ""
+"Para almacenar los datos de usuario separadamente de los datos del sistema, "
+"cree un punto de montaje dedicado para el directorio `/home`. Esta partición "
+"se debería dimensionar en base a la cantidad de datos que serán almacenados "
+"localmente, el número de usuarios, etc. Esto le permitirá actualizar o "
+"reinstalar {PRODUCT} sib borrar archivos de datos de usuario. Durante la "
+"instalación, se creará una partición `/home` separada si hay 50 GB o más de "
+"espacio libre para su instalación {PRODUCT}."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
@@ -134,12 +146,16 @@ msgid ""
 "it, as it will likely hold the most data (user settings, images, videos, "
 "etc)."
 msgstr ""
+"Cuando usa {PRODUCT} como estación de trabajo para un uso normal con un "
+"entorno gráfico, este punto de montaje debería tener la mayoría del espacio "
+"de disco asignado, ya que probablemente contenga la mayor cantidad de datos ("
+"ajustes de usuario, imágenes, videos, etc)."
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
-msgstr ""
+msgstr "swap - basada en los parámetros de su sistema"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
@@ -153,6 +169,16 @@ msgid ""
 "the system memory workload. Application providers and developers should be "
 "able to provide some guidance."
 msgstr ""
+"Las particiones de intercambio soportan la memoria virtual; los datos se "
+"escriben en ella cuando no hay suficiente RAM para almacenar los datos que "
+"su sistema está procesando. El tamaño de esta partición está en función de "
+"la carga de trabajo de la memoria del sistema, no de la memoria total del "
+"sistema y por lo tanto no es igual del tamaño total de memoria del sistema. "
+"Por lo tanto, es importante analizar que aplicaciones estarán corriendo en "
+"el sistema y la carga que estas aplicaciones servirán con el objetivo de "
+"determinar la carga de trabajo de la memoria del sistema. Los proveedores de "
+"aplicaciones y los desarrolladores deberían ser capaces de suministrar "
+"algunas directrices."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
@@ -164,6 +190,13 @@ msgid ""
 "for a swap partition and other additional information can be found in the "
 "`mkswap(8)` man page."
 msgstr ""
+"Cuando el sistema corre fuera del espacio de intercambio el kernel finaliza "
+"procesos cuando la memoria RAM se agota. Configurar demasiado espacio de "
+"intercambio da como resultado que los dispositivos de almacenamiento se "
+"asignen pero estén inactivos y sea un mal uso de los recursos. Demasiado "
+"espacio de intercambio también puede ocultar pérdidas de memoria. El tamaño "
+"máximo para una partición de intercambio y otra información adicional se "
+"puede encontrar en la página de manual `mkswap(8)`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:40
@@ -179,6 +212,17 @@ msgid ""
 "than 10% of the system's storage space, you must edit the partitioning "
 "layout manually."
 msgstr ""
+"La tabla de abajo suministra el tamaño recomendado de partición de "
+"intercambio dependiendo de la cantidad de RAM en su sistema y si desea "
+"suficiente memoria para que su sistema hiberne. Si permite que el programa "
+"de instalación particione su sistema automáticamente, el tamaño de la "
+"partición de intercambio será establecido siguiendo estas directrices. El "
+"ajuste de particionamiento automático asume que la hibernación no se usa y "
+"el tamaño máximo de la partición de intercambio está limitado al 10% del "
+"tamaño total de su disco duro. Si desea tener suficiente espacio de "
+"intercambio para permitir la hibernación o si desea establecer la partición "
+"de intercambio con más del 10% del espacio de almacenamiento del sistema, "
+"debe editar manualmente el esquema de particionado."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:41
