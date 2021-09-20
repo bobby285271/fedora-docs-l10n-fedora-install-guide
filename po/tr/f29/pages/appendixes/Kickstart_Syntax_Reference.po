@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-05-28 18:03+0000\n"
+"PO-Revision-Date: 2021-09-20 18:05+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "Kickstart Söz Dizimi Referansı"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -33,6 +33,10 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]."
 msgstr ""
+"Bu ek, Kickstart kurulumlarında kullanılabilen komutları ve seçenekleri "
+"açıklamaktadır. Kickstart hakkında genel bilgi için xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Kickstart ile "
+"Kurulumu Otomatikleştirme] bölümüne bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:16
@@ -42,17 +46,22 @@ msgid ""
 "device node name (such as `sda`), you can instead use any item from `/dev/"
 "disk`. For example, instead of:"
 msgstr ""
+"Aygıt adlarının yeniden başlatmalar arasında tutarlı olması garanti edilmez, "
+"bu da Kickstart betiklerinde kullanımlarını karmaşıklaştırabilir. Bir "
+"Kickstart seçeneği bir aygıt düğümü adını (örneğin `sda`) gerektirdiğinde, "
+"bunun yerine `/dev/disk` altındaki herhangi bir ögeyi kullanabilirsiniz. "
+"Örneğin, şunun yerine:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:20
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:23
 msgid "You could use an entry similar to one of the following:"
-msgstr ""
+msgstr "Aşağıdakilerden birine benzer bir girdi kullanabilirsiniz:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:28
@@ -61,6 +70,9 @@ msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:32
@@ -68,6 +80,9 @@ msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
 msgstr ""
+"Bu, diskleri belirtmek için tutarlı bir yol sağlar ve yalnızca `sda` "
+"kullanmaktan daha anlamlıdır. Bu, özellikle büyük depolama ortamlarında "
+"kullanışlıdır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:36
@@ -80,12 +95,19 @@ msgid ""
 "in syntax between Fedora{nbsp}{PREVVER} and {PRODVER}, use the following "
 "command:"
 msgstr ""
+"Kickstart kurulumlarının genel ilkeleri çoğunlukla aynı kalırken, komutlar "
+"ve seçenekler ana sürümler arasında değişebilir. Kickstart söz diziminin iki "
+"sürümü arasındaki farkları görüntülemek için [command]#ksverdiff# komutunu "
+"kullanabilirsiniz. Bu, yeni bir sürümle kullanılmak üzere mevcut bir "
+"Kickstart dosyasını güncellerken faydalıdır. Fedora{nbsp}{PREVVER} ve "
+"{PRODVER} arasındaki söz dizimi değişikliklerinin bir listesini görüntülemek "
+"için aşağıdaki komutu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:40
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:43
@@ -97,6 +119,12 @@ msgid ""
 "system - the version of [package]*pykickstart* on Fedora{nbsp}{PREVVER} can "
 "not display changes in Fedora{nbsp}{PRODVER}."
 msgstr ""
+"[option]#-f# seçeneği karşılaştırmanın başlatılacağı sürümü, [option]#-t# "
+"seçeneği sonlandırılacağı sürümü belirtir. Ek bilgi için `ksverdiff(1)` "
+"kılavuz sayfasına bakın. Ayrıca bunu sisteminizden daha yeni bir sürümdeki "
+"değişiklikleri görüntülemek için kullanamayacağınızı unutmayın - "
+"Fedora{nbsp}{PREVVER} üzerindeki [package]*pykickstart* sürümü "
+"Fedora{nbsp}{PRODVER} için olan değişiklikleri görüntüleyemez."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:45
@@ -105,6 +133,9 @@ msgid ""
 "Notes_, available at link:++https://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Ek olarak, değişikliklerin bir listesi için link:++https://docs.fedoraproject"
+".org/++[] adresinde bulunan [citetitle]_Fedora{nbsp}{PRODVER} Sürüm "
+"Notlarını_ inceleyebilirsiniz."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:50
@@ -113,6 +144,9 @@ msgid ""
 "a value must be specified after it. In the example commands, options in "
 "square brackets (`[ ]`) are optional arguments for the command."
 msgstr ""
+"Aşağıdaki bölümlerde, bir seçeneğin ardından eşittir işareti (`=`) "
+"geliyorsa, ondan sonra bir değer belirtilmelidir. Örnek komutlarda, köşeli "
+"parantez (`[ ]`) içindeki seçenekler komut için isteğe bağlı argümanlardır."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:54
