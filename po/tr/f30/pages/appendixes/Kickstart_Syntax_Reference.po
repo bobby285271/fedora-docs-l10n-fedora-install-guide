@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-09-25 19:05+0000\n"
+"PO-Revision-Date: 2021-09-27 08:05+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -2954,7 +2954,7 @@ msgid ""
 "Specify an integer value here such as `500` (do not include the unit)."
 msgstr ""
 "Mantıksal birim büyütülmeye ayarlandığında megabayt cinsinden azami boyut. "
-"Burada `500` gibi bir tamsayı değeri belirtin (birimini dahil etmeyin)."
+"Burada `500` gibi bir tam sayı değeri belirtin (birimini dahil etmeyin)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:766
@@ -3231,12 +3231,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:838
 #, no-wrap
 msgid "part (required) - Create Physical Partition"
-msgstr ""
+msgstr "part (gerekli) - Fiziksel Bölüm Oluştur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
 msgid "Creates a partition on the system."
-msgstr ""
+msgstr "Sistemde bir bölüm oluşturur."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:843
@@ -3245,12 +3245,18 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
 "partitioning[Advanced Partitioning Example]."
 msgstr ""
+"[command]#part# komutunun ayrıntılı bir örneği için "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
+"partitioning[Gelişmiş Bölümlendirme Örneği] bölümüne bakın."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:848
 #, no-wrap
 msgid "[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ --device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#part|partition _bağlamanoktası_ --name=pass:attributes[{blank}]"
+"_ad_ --device=pass:attributes[{blank}]_aygıt_ --rule=pass:attributes[{blank}]"
+"_kural_ [pass:attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -3258,6 +3264,9 @@ msgid ""
 "All partitions created are formatted as part of the installation process "
 "unless [option]#--noformat# and [option]#--onpart=# are used."
 msgstr ""
+"Oluşturulan tüm bölümler, [option]#--noformat# ve [option]#--onpart=# "
+"seçenekleri kullanılmadığı sürece kurulum işleminin bir parçası olarak "
+"biçimlendirilir."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:862
@@ -3265,12 +3274,14 @@ msgid ""
 "If partitioning fails for any reason, diagnostic messages appear on virtual "
 "console 3."
 msgstr ""
+"Bölümlendirme herhangi bir nedenle başarısız olursa, tanılama mesajları 3. "
+"sanal konsolda görünecektir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:866
 msgid ""
 "Where the partition is mounted. The value must be of one of the following:"
-msgstr ""
+msgstr "Bölümün bağlanacağı konum. Değer aşağıdakilerden biri olmalıdır:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:879
@@ -3278,29 +3289,32 @@ msgid ""
 "The size assigned will be effective but not precisely calibrated for your "
 "system."
 msgstr ""
+"Atanan boyut etkili olacaktır ancak sisteminiz için en uygun şekilde "
+"ayarlanmış olmayacaktır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:885
 #, no-wrap
 msgid "`swap--hibernation`\n"
-msgstr ""
+msgstr "`swap--hibernation`\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:891
 #, no-wrap
 msgid "`raid._id_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`raid._id_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:892
 msgid "The partition is used for software RAID (see [command]#raid#)."
 msgstr ""
+"Bölüm, yazılımsal RAID için kullanılır ([command]#raid# komutuna bakın)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:893
 #, no-wrap
 msgid "`pv._id_pass:attributes[{blank}]`:"
-msgstr ""
+msgstr "`pv._id_pass:attributes[{blank}]`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:894
@@ -3308,12 +3322,15 @@ msgid ""
 "The partition is used for LVM (see xref:Kickstart_Syntax_Reference.adoc#sect-"
 "kickstart-commands-part[part (required) - Create Physical Partition])."
 msgstr ""
+"Bölüm, LVM için kullanılır (xref:Kickstart_Syntax_Reference.adoc#sect-"
+"kickstart-commands-part[part (gerekli) - Fiziksel Bölüm Oluştur] bölümüne "
+"bakın)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:895
 #, no-wrap
 msgid "`biosboot`:"
-msgstr ""
+msgstr "`biosboot`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:896
@@ -3324,12 +3341,17 @@ msgid ""
 "UEFI systems. Also see xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-"
 "commands-part[part (required) - Create Physical Partition]."
 msgstr ""
+"Bölüm, bir BIOS Önyükleme bölümü için kullanılacaktır. _GUID Bölümlendirme "
+"Tablosu_ (GPT) kullanan BIOS tabanlı sistemlerde 1 MB BIOS önyükleme bölümü "
+"gereklidir; önyükleyici bu bölüme kurulacaktır. UEFI sistemlerinde gerekli "
+"değildir. Ayrıca xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"commands-part[part (gerekli) - Fiziksel Bölüm Oluştur] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:897
 #, no-wrap
 msgid "`/boot/efi`:"
-msgstr ""
+msgstr "`/boot/efi`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:898
@@ -3340,6 +3362,10 @@ msgid ""
 "adoc#sect-kickstart-commands-part[part (required) - Create Physical "
 "Partition]."
 msgstr ""
+"Bir EFI Sistem Bölümü. UEFI tabanlı sistemlerde en az 50 MB boyutunda bir "
+"EFI bölümü gereklidir; tavsiye edilen boyut 200 MB'dir. BIOS sistemlerinde "
+"gerekli değildir. Ayrıca xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"commands-part[part (gerekli) - Fiziksel Bölüm Oluştur] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:900
@@ -3347,6 +3373,8 @@ msgid ""
 "The minimum partition size in megabytes. Specify an integer value here such "
 "as `500` (do not include the unit)."
 msgstr ""
+"Megabayt cinsinden asgari bölüm boyutu. Burada `500` gibi bir tam sayı "
+"değeri belirtin (birimini dahil etmeyin)."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:905
@@ -3357,6 +3385,11 @@ msgid ""
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme]."
 msgstr ""
+"[option]#--size# değeri çok küçükse kurulum başarısız olacaktır. "
+"[option]#--size# değerini, ihtiyacınız olan asgari alan miktarı olarak "
+"ayarlayın. Boyut tavsiyeleri için xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:909
@@ -3364,6 +3397,8 @@ msgid ""
 "The maximum partition size in megabytes when the partition is set to grow. "
 "Specify an integer value here such as `500` (do not include the unit)."
 msgstr ""
+"Bölüm büyütülmeye ayarlandığında megabayt cinsinden azami bölüm boyutu. "
+"Burada `500` gibi bir tam sayı değeri belirtin (birimini dahil etmeyin)."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:911
@@ -3372,6 +3407,9 @@ msgid ""
 "(in megabytes) using the [option]#--size=# option and the target partition "
 "using the [option]#--onpart=# option."
 msgstr ""
+"Mevcut bir bölümü yeniden boyutlandır. Bu seçeneği kullanırken, "
+"[option]#--size=# seçeneğini kullanarak (megabayt cinsinden) yeni boyutu ve "
+"[option]#--onpart=# seçeneğini kullanarak hedef bölümü belirtin."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:913
@@ -3379,6 +3417,8 @@ msgid ""
 "Tells the partition to grow to fill available space (if any), or up to the "
 "maximum size setting."
 msgstr ""
+"Bölüme, (varsa) kullanılabilir alanı veya azami boyut ayarına kadar "
+"dolduracak şekilde büyümesini söyler."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:918
@@ -3390,6 +3430,12 @@ msgid ""
 "than 2{nbsp}GB, the imposed limit is the size of physical memory plus 2{nbsp}"
 "GB."
 msgstr ""
+"Bir takas bölümünde [option]#--maxsize=# ayarlamadan [option]#--grow=# "
+"seçeneğini kullanırsanız, [application]*Anaconda* takas bölümünün azami "
+"boyutunu sınırlayacaktır. 2{nbsp}GB'tan daha az fiziksel belleğe sahip "
+"sistemler için uygulanan sınır, fiziksel bellek miktarının iki katıdır. "
+"2{nbsp}GB'den fazla olan sistemler için uygulanan sınır, fiziksel bellek "
+"boyutu artı 2{nbsp}GB'tır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:922
@@ -3397,40 +3443,42 @@ msgid ""
 "Specifies that the partition should not be formatted, for use with the "
 "[option]#--onpart# command."
 msgstr ""
+"[option]#--onpart# komutuyla kullanım için bölümün biçimlendirilmemesi "
+"gerektiğini belirtir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:923
 #, no-wrap
 msgid "[option]#--onpart=# or [option]#--usepart=#"
-msgstr ""
+msgstr "[option]#--onpart=# veya [option]#--usepart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:924
 msgid "Specifies the device on which to place the partition. For example:"
-msgstr ""
+msgstr "Bölümün üzerinde olacağı aygıtı belirtir. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:928
 #, no-wrap
 msgid "[command]#partition /home --onpart=hda1#\n"
-msgstr ""
+msgstr "[command]#partition /home --onpart=hda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:931
 msgid "The above puts `/home` on `/dev/hda1`."
-msgstr ""
+msgstr "Yukarıdaki komut, `/home` bölümünü `/dev/hda1` aygıtı üzerine koyar."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:933
 msgid ""
 "These options can also add a partition to a logical volume. For example:"
-msgstr ""
+msgstr "Bu seçenekler mantıksal bir birime de bölüm ekleyebilir. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:937
 #, no-wrap
 msgid "[command]#partition pv.1 --onpart=hda2#\n"
-msgstr ""
+msgstr "[command]#partition pv.1 --onpart=hda2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:940
@@ -3438,12 +3486,14 @@ msgid ""
 "The device must already exist on the system; the [option]#--onpart# option "
 "will not create it."
 msgstr ""
+"Aygıt sistemde zaten mevcut olmalıdır; [option]#--onpart# seçeneği onu "
+"oluşturmayacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:941
 #, no-wrap
 msgid "[option]#--ondisk=# or [option]#--ondrive=#"
-msgstr ""
+msgstr "[option]#--ondisk=# veya [option]#--ondrive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:942
@@ -3452,6 +3502,8 @@ msgid ""
 "[option]#--ondisk=sdb# puts the partition on the second SCSI disk on the "
 "system."
 msgstr ""
+"Bölümün belirli bir disk üzerinde oluşturulmasını zorlar. Örneğin, "
+"[option]#--ondisk=sdb#, bölümü sistemdeki ikinci SCSI diskinin üzerine koyar."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:944
@@ -3462,12 +3514,19 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"_Mantıksal birim yönetimi_ (LVM) kullanmayan çok yollu bir aygıtı belirtmek "
+"için, `disk/by-id/dm-uuid-mpath-_WWID_pass:attributes[{blank}]` biçimini "
+"kullanın; burada _WWID_, aygıt için _dünya genelinde tanımlayıcıdır_. "
+"Örneğin, `2416CD96995134CA5D787F00A5AA11017` WWID'sine sahip olan bir diski "
+"belirtmek için şunu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:948
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:951
@@ -3480,24 +3539,33 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"LVM kullanan çok yollu aygıtlar, [application]*Anaconda* Kickstart dosyasını "
+"ayrıştırana kadar bağlanmaz. Bu nedenle, bu aygıtları `dm-uuid-mpath` "
+"biçiminde belirtemezsiniz. Bunun yerine, LVM kullanan çok yollu bir aygıtı "
+"belirtmek için, `disk/by-id/scsi-_WWID_pass:attributes[{blank}]` biçimini "
+"kullanın; burada _WWID_, aygıt için _dünya genelinde tanımlayıcıdır. "
+"Örneğin, `58095BEC5510947BE8C0360F604351918` WWID'sine sahip olan bir diski "
+"belirtmek için şunu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:955
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:968
 #, no-wrap
 msgid "part --onpart=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "part --onpart=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:972
 #, no-wrap
 msgid "[option]#--asprimary#"
-msgstr ""
+msgstr "[option]#--asprimary#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:973
@@ -3511,13 +3579,21 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"Bölümü bir *birincil* bölüm olarak ayrılmaya zorlar. Bölüm birincil olarak "
+"ayrılamazsa (genellikle çok fazla birincil bölümün zaten ayrılmış olması "
+"nedeniyle), bölümleme işlemi başarısız olacaktır. Bu seçenek yalnızca disk "
+"bir Ana Önyükleme Kaydı (MBR) kullandığında anlamlıdır; GUID Bölümlendirme "
+"Tablosu (GPT) etiketli diskler için bu seçeneğin bir anlamı yoktur. Birincil "
+"(ve genişletilmiş) bölümler hakkında bilgi için xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:974
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1045
 #, no-wrap
 msgid "[option]#--fsprofile=#"
-msgstr ""
+msgstr "[option]#--fsprofile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:975
@@ -3530,6 +3606,12 @@ msgid ""
 "that lists valid types. For `ext2`, `ext3`, `ext4`, this configuration file "
 "is `/etc/mke2fs.conf`."
 msgstr ""
+"Bu bölümde bir dosya sistemi oluşturan programa geçirilecek bir _kullanım "
+"türü_ belirtir. Kullanım türü, bir dosya sistemi oluştururken kullanılacak "
+"çeşitli ayar parametrelerini tanımlar. Bu seçeneğin çalışması için dosya "
+"sisteminin kullanım türleri kavramını desteklemesi ve geçerli türleri "
+"listeleyen bir yapılandırma dosyası olması gerekir. `ext2`, `ext3`, `ext4` "
+"için bu `/etc/mke2fs.conf` yapılandırma dosyasıdır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:977
@@ -3541,6 +3623,11 @@ msgid ""
 "installation-gui-manual-partitioning-filesystems[Device, File System and "
 "RAID Types]."
 msgstr ""
+"Bölüm için dosya sistemi türünü ayarlar. Geçerli değerler şunlardır: `xfs`, "
+"`ext2`, `ext3`, `ext4`, `swap`, `vfat`, `efi` ve `biosboot`. Desteklenen "
+"dosya sistemleri hakkında bilgi için xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-filesystems[Aygıt, Dosya "
+"Sistemi ve RAID Türleri] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:986
@@ -3552,11 +3639,16 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Bu bölüm üzerinde bir dosya sistemi oluşturan programa iletilecek ek "
+"parametreleri belirtir. Argüman listesinde herhangi bir işlem yapılmaz, bu "
+"nedenle doğrudan mkfs programına iletilebilecek bir biçimde sağlanmaları "
+"gerekir. Bu, dosya sistemine bağlı olarak birden çok seçeneğin virgülle "
+"ayrılması veya çift tırnak içine alınması gerektiği anlamına gelir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:988
 msgid "Assign a label to an individual partition."
-msgstr ""
+msgstr "Tek bir bölüme bir etiket ata."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:990
@@ -3566,12 +3658,16 @@ msgid ""
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme]."
 msgstr ""
+"Bölümün boyutunu otomatik olarak belirle. Tavsiye edilen düzen hakkında "
+"ayrıntılar için xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:998
 #, no-wrap
 msgid "[option]#--onbiosdisk#"
-msgstr ""
+msgstr "[option]#--onbiosdisk#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:999
@@ -3579,6 +3675,8 @@ msgid ""
 "Forces the partition to be created on a particular disk as discovered by the "
 "BIOS."
 msgstr ""
+"Bölümü, BIOS tarafından keşfedildiği gibi belirli bir diskte oluşturulmaya "
+"zorlar."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1001
@@ -3589,6 +3687,12 @@ msgid ""
 "set with the [command]#autopart --passphrase# command, or stops the "
 "installation and prompts you to provide a passphrase if no default is set."
 msgstr ""
+"Bu bölümün, [option]#--passphrase=# seçeneğinde sağlanan parola kullanılarak "
+"şifrelenmesi gerektiğini belirtir. Bir parola belirtmezseniz, "
+"[application]*Anaconda* [command]#autopart --passphrase# komutuyla ayarlanan "
+"öntanımlı, sistem genelindeki parolayı kullanacak veya herhangi bir "
+"öntanımlı değer ayarlanmadıysa kurulumu durduracak ve sizden bir parola "
+"sağlamanızı isteyecektir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1003
@@ -3598,6 +3702,9 @@ msgid ""
 "this option together with the [option]#--encrypted# option; by itself it has "
 "no effect."
 msgstr ""
+"Bu bölümü şifrelerken kullanılacak parolayı belirtir. Bu seçeneği "
+"[option]#--encrypted# seçeneğiyle birlikte kullanmalısınız; tek başına bir "
+"etkisi yoktur."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1009
@@ -3608,23 +3715,29 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Şifrelenen her bölüme rastgele oluşturulmuş bir parola ekle. Bu parolaları, "
+"[option]#--escrowcert# seçeneğiyle belirtilen X.509 sertifikası kullanılarak "
+"şifrelenen ayrı dosyalarda `/root` dizinde depola. Bu seçenek yalnızca "
+"[option]#--escrowcert# seçeneği belirtilmişse anlamlıdır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1025
 #, no-wrap
 msgid "raid (optional) - Create Software RAID"
-msgstr ""
+msgstr "raid (isteğe bağlı) - Yazılımsal RAID Oluştur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1028
 msgid "Assembles a software RAID device. This command is of the form:"
 msgstr ""
+"Bir yazılımsal RAID aygıtı oluşturur. Bu komutun kullanımı aşağıdaki "
+"şekildedir:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1032
 #, no-wrap
 msgid "raid mntpoint --level=level --device=mddevice partitions*\n"
-msgstr ""
+msgstr "raid bağlamanoktası --level=seviye --device=mdaygıtı bölümler*\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1036
@@ -3633,6 +3746,9 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
 "partitioning[Advanced Partitioning Example]."
 msgstr ""
+"[command]#raid# komutunun ayrıntılı bir örneği için "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
+"partitioning[Gelişmiş Bölümlendirme Örneği] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1038
@@ -3644,13 +3760,19 @@ msgid ""
 "denotes that multiple partitions can be listed) lists the RAID identifiers "
 "to add to the RAID array."
 msgstr ""
+"RAID dosya sisteminin bağlanacağı konum. `/` ise, bir önyükleme bölümü "
+"(`/boot`) olmadığı sürece RAID seviyesi 1 olmalıdır. Bir önyükleme bölümü "
+"varsa, `/boot` bölümü 1. seviye olmalıdır ve kök (`/`) bölümü kullanılabilir "
+"türlerden herhangi biri olabilir. _bölümler*_ (birden çok bölümün "
+"listelenebileceğini belirtir), RAID dizisine eklenecek RAID "
+"tanımlayıcılarını listeler."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1039
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1845
 #, no-wrap
 msgid "[option]#--level=#"
-msgstr ""
+msgstr "[option]#--level=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1040
@@ -3660,13 +3782,17 @@ msgid ""
 "filesystems[Device, File System and RAID Types] for information about "
 "various RAID types and their requirements."
 msgstr ""
+"Kullanılacak RAID seviyesi (`0`, `1`, `4`, `5`, `6` veya `10`). Çeşitli RAID "
+"türleri ve gereksinimleri hakkında bilgi için xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1041
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1309
 #, no-wrap
 msgid "[option]#--device=#"
-msgstr ""
+msgstr "[option]#--device=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1042
@@ -3677,12 +3803,17 @@ msgid ""
 "by a filesystem label or UUID (for example, [option]#--device=rhel7-root --"
 "label=rhel7-root#)."
 msgstr ""
+"Kullanılacak RAID aygıtının adı. {PRODUCT}{nbsp}{PRODVER} itibarıyla RAID "
+"aygıtlarına artık `md0` gibi adlar verilmemektedir. Ad atayamayacağınız eski "
+"bir (v0.90 üst veri) diziniz varsa, diziyi bir dosya sistemi etiketi veya "
+"UUID ile belirtebilirsiniz (örneğin, [option]#--device=rhel7-root "
+"--label=rhel7-root#)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1043
 #, no-wrap
 msgid "[option]#--spares=#"
-msgstr ""
+msgstr "[option]#--spares=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1044
@@ -3690,6 +3821,8 @@ msgid ""
 "Specifies the number of spare drives allocated for the RAID array. Spare "
 "drives are used to rebuild the array in case of drive failure."
 msgstr ""
+"RAID dizisi için ayrılan yedek disk sayısını belirtir. Yedek diskler, disk "
+"arızası durumunda diziyi yeniden oluşturmak için kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1059
@@ -3697,16 +3830,19 @@ msgid ""
 "Specify the label to give to the filesystem to be made. If the given label "
 "is already in use by another filesystem, a new label will be created."
 msgstr ""
+"Yapılacak dosya sistemine verilecek etiketi belirt. Verilen etiket zaten "
+"başka bir dosya sistemi tarafından kullanılıyorsa, yeni bir etiket "
+"oluşturulacaktır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1061
 msgid "Use an existing RAID device and do not format it."
-msgstr ""
+msgstr "Mevcut bir RAID aygıtını kullan ve onu biçimlendirme."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1063
 msgid "Use an existing RAID device and reformat it."
-msgstr ""
+msgstr "Mevcut bir RAID aygıtını kullan ve onu yeniden biçimlendir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1065
@@ -3717,6 +3853,12 @@ msgid ""
 "the [command]#autopart --passphrase# command, or stops the installation and "
 "prompts you to provide a passphrase if no default is set."
 msgstr ""
+"Bu dizinin, [option]#--passphrase=# seçeneğinde sağlanan parola kullanılarak "
+"şifrelenmesi gerektiğini belirtir. Bir parola belirtmezseniz, "
+"[application]*Anaconda* [command]#autopart --passphrase# komutuyla ayarlanan "
+"öntanımlı, sistem genelindeki parolayı kullanacak veya herhangi bir "
+"öntanımlı değer ayarlanmadıysa kurulumu durduracak ve sizden bir parola "
+"sağlamanızı isteyecektir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1089
@@ -3725,12 +3867,16 @@ msgid ""
 "and a RAID level 5 for `/home`, assuming there are three SCSI disks on the "
 "system. It also creates three swap partitions, one on each drive."
 msgstr ""
+"Aşağıdaki örnekte, sistemde üç SCSI diski olduğu varsayılarak, `/` için RAID "
+"seviye 1 bölümünün ve `/home` için RAID seviye 5 bölümünün nasıl "
+"oluşturulacağı gösterilmektedir. Ayrıca her diskte bir tane olmak üzere üç "
+"takas bölümü oluşturulmaktadır."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1090
 #, no-wrap
 msgid "Creating a RAID array in Kickstart"
-msgstr ""
+msgstr "Kickstart'ta bir RAID dizisi oluşturma"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1099
@@ -3740,6 +3886,9 @@ msgid ""
 "[command]#part raid.02 --size=6000 --ondisk=sdb#\n"
 "[command]#part raid.03 --size=6000 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part raid.01 --size=6000 --ondisk=sda#\n"
+"[command]#part raid.02 --size=6000 --ondisk=sdb#\n"
+"[command]#part raid.03 --size=6000 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1103
@@ -3749,6 +3898,9 @@ msgid ""
 "[command]#part swap --size=512 --ondisk=sdb#\n"
 "[command]#part swap --size=512 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part swap --size=512 --ondisk=sda#\n"
+"[command]#part swap --size=512 --ondisk=sdb#\n"
+"[command]#part swap --size=512 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1107
@@ -3758,6 +3910,9 @@ msgid ""
 "[command]#part raid.12 --size=1 --grow --ondisk=sdb#\n"
 "[command]#part raid.13 --size=1 --grow --ondisk=sdc#\n"
 msgstr ""
+"[command]#part raid.11 --size=1 --grow --ondisk=sda#\n"
+"[command]#part raid.12 --size=1 --grow --ondisk=sdb#\n"
+"[command]#part raid.13 --size=1 --grow --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1110
@@ -3766,12 +3921,16 @@ msgid ""
 "[command]#raid / --level=1 --device=f{PRODVER}-root --label=f{PRODVER}-root raid.01 raid.02 raid.03#\n"
 "[command]#raid /home --level=5 --device=f{PRODVER}-home --label=f{PRODVER}-home raid.11 raid.12 raid.13#\n"
 msgstr ""
+"[command]#raid / --level=1 --device=f{PRODVER}-root --label=f{PRODVER}-root "
+"raid.01 raid.02 raid.03#\n"
+"[command]#raid /home --level=5 --device=f{PRODVER}-home --label=f{PRODVER}-"
+"home raid.11 raid.12 raid.13#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1116
 #, no-wrap
 msgid "reqpart (optional) - Create Required Partitions"
-msgstr ""
+msgstr "reqpart (isteğe bağlı) - Gerekli Bölümleri Oluştur"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1119
@@ -3781,6 +3940,11 @@ msgid ""
 "`biosboot` for x86_64 systems with BIOS firmware and GPT (GUID Partition "
 "Table), and `PRePBoot` for IBM Power Systems."
 msgstr ""
+"Donanım platformunuzun gerektirdiği bölümleri otomatik olarak oluştur. "
+"Bunlar, UEFI ürün yazılımına sahip x86_64 ve Aarch64 sistemleri için bir `/"
+"boot/efi`, GPT (GUID Bölümlendirme Tablosu) ve BIOS ürün yazılımına sahip "
+"x86_64 sistemleri için `biosboot` ve IBM Power Systems için `PRePBoot` "
+"bölümlerini içermektedir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1124
@@ -3791,18 +3955,23 @@ msgid ""
 "this command only creates platform-specific partitions and leaves the rest "
 "of the drive empty, allowing you to create a custom layout."
 msgstr ""
+"Bu komut, [command]#autopart# komutuyla birlikte kullanılamaz, çünkü "
+"[command]#autopart# komutu aynı şeyi yapar ve üzerine `/` ve `swap` gibi "
+"başka bölümler veya mantıksal birimler oluşturur. [command]#autopart# "
+"komutunun aksine, bu komut yalnızca platforma özel bölümleri oluşturur ve "
+"diskin geri kalanını boş bırakarak özel bir düzen oluşturmanıza olanak tanır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1130
 #, no-wrap
 msgid "[command]#reqpart [--add-boot]#\n"
-msgstr ""
+msgstr "[command]#reqpart [--add-boot]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1132
 #, no-wrap
 msgid "[option]#--add-boot#"
-msgstr ""
+msgstr "[option]#--add-boot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1133
@@ -3810,23 +3979,27 @@ msgid ""
 "Create a separate `/boot` partition in addition to the platform-specific "
 "partition created by the base command."
 msgstr ""
+"Temel komut tarafından oluşturulan platforma özel bölüme ek olarak ayrı bir "
+"`/boot` bölümü oluştur."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1135
 #, no-wrap
 msgid "volgroup (optional) - Create LVM Volume Group"
-msgstr ""
+msgstr "volgroup (isteğe bağlı) - LVM Birim Grubu Oluştur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1138
 msgid "Creates a Logical Volume Management (LVM) volume group."
-msgstr ""
+msgstr "Mantıksal Birim Yönetimi (LVM) birim grubu oluşturur."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1142
 #, no-wrap
 msgid "[command]#volgroup _name_ _partition_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#volgroup _ad_ _bölüm_ "
+"[pass:attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1150
@@ -3835,6 +4008,10 @@ msgid ""
 "group names. If you are reusing existing ones using the [option]#--noformat# "
 "or [option]#--noformat# option, their names will not be changed."
 msgstr ""
+"Bu sınırlama yalnızca yeni oluşturulan mantıksal birim ve birim grubu adları "
+"için geçerlidir. [option]#--noformat# veya [option]#--useexisting# "
+"seçeneğini kullanarak zaten var olanları yeniden kullanıyorsanız, onların "
+"adları değiştirilmeyecektir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1154
@@ -3843,22 +4020,25 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
 "partitioning[Advanced Partitioning Example]."
 msgstr ""
+"[command]#volgroup# komutunu içeren ayrıntılı bir bölümlendirme örneği için "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-example-advanced-"
+"partitioning[Gelişmiş Bölümlendirme Örneği] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1156
 msgid "Use an existing volume group and do not format it."
-msgstr ""
+msgstr "Mevcut bir birim grubunu kullan ve onu biçimlendirme."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1158
 msgid "Use an existing volume group and reformat it."
-msgstr ""
+msgstr "Mevcut bir birim grubunu kullan ve onu yeniden biçimlendir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1159
 #, no-wrap
 msgid "[option]#--pesize=#"
-msgstr ""
+msgstr "[option]#--pesize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1160
@@ -3866,12 +4046,14 @@ msgid ""
 "Set the size of the physical extents. The default size for Kickstart "
 "installations is 4 MiB."
 msgstr ""
+"Fiziksel genişletmelerin boyutunu ayarla. Kickstart kurulumları için "
+"öntanımlı boyut 4 MiB'dir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1161
 #, no-wrap
 msgid "[option]#--reserved-space=#"
-msgstr ""
+msgstr "[option]#--reserved-space=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1162
@@ -3879,12 +4061,14 @@ msgid ""
 "Specify an amount of space to leave unused in a volume group in megabytes. "
 "Applicable only to newly created volume groups."
 msgstr ""
+"Bir birim grubunda kullanılmadan bırakılacak alan miktarını megabayt olarak "
+"belirt. Yalnızca yeni oluşturulan birim grupları için geçerlidir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1163
 #, no-wrap
 msgid "[option]#--reserved-percent=#"
-msgstr ""
+msgstr "[option]#--reserved-percent=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1164
@@ -3892,12 +4076,14 @@ msgid ""
 "Specify a percentage of total volume group space to leave unused. Applicable "
 "only to newly created volume groups."
 msgstr ""
+"Kullanılmadan bırakılacak toplam birim grubu alanının yüzdesini belirt. "
+"Yalnızca yeni oluşturulan birim grupları için geçerlidir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1177
 #, no-wrap
 msgid "zerombr (optional) - Reinitialize Partition Tables"
-msgstr ""
+msgstr "zerombr (isteğe bağlı) - Bölümlendirme Tablolarını Yeniden Başlat"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1180
@@ -3907,6 +4093,10 @@ msgid ""
 "invalid partition tables. This command is required when performing an "
 "unattended installation on a system with previously initialized disks."
 msgstr ""
+"[command]#zerombr# belirtilirse, disklerde bulunan tüm geçersiz bölüm "
+"tabloları yeniden başlatılır. Bu, geçersiz bölüm tablolarına sahip disklerin "
+"tüm içeriğini yok eder. Bu komut, önceden başlatılmış disklere sahip bir "
+"sistemde etkileşimsiz kurulum gerçekleştirirken gereklidir."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1185
@@ -3917,6 +4107,12 @@ msgid ""
 "[application]*dasdfmt*. The command also prevents user choice during "
 "interactive installations."
 msgstr ""
+"IBM System{nbsp}z sistemlerinde, [command]#zerombr# komutu belirtilirse, "
+"kurulum programı tarafından görülebilen ve halihazırda düşük düzeyde "
+"biçimlendirilmemiş herhangi bir _Doğrudan Erişimli Depolama Aygıtı_ (Direct "
+"Access Storage Device - DASD), [application]*dasdfmt* ile otomatik olarak "
+"düşük düzeyde biçimlendirilir. Komut, etkileşimli kurulumlar sırasında "
+"kullanıcı seçimini de engeller."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1187
@@ -3925,6 +4121,9 @@ msgid ""
 "DASD visible to the installation program, a non-interactive Kickstart "
 "installation will exit unsuccessfully."
 msgstr ""
+"[command]#zerombr# komutu belirtilmezse ve kurulum programında görülebilen "
+"en az bir biçimlendirilmemiş DASD varsa, etkileşimli olmayan bir Kickstart "
+"kurulumu başarısız bir şekilde sonlandırılacaktır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1189
@@ -3935,12 +4134,18 @@ msgid ""
 "circumvent this, only activate those DASDs that you will use during "
 "installation. You can always add more DASDs after installation is complete."
 msgstr ""
+"[command]#zerombr# komutu belirtilmezse ve kurulum programında görülebilen "
+"en az bir biçimlendirilmemiş DASD varsa, kullanıcı tüm görülebilen ve "
+"biçimlendirilmemiş DASD'leri biçimlendirmeyi kabul etmezse etkileşimli "
+"kurulumdan çıkılır. Bunu önlemek için yalnızca kurulum sırasında "
+"kullanacağınız DASD'leri etkinleştirin. Kurulum tamamlandıktan sonra her "
+"zaman daha fazla DASD ekleyebilirsiniz."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1193
 #, no-wrap
 msgid "zfcp (optional) - Configure Fibre Channel Device"
-msgstr ""
+msgstr "zfcp (isteğe bağlı) - Fiber Kanal Aygıtı Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1196
@@ -3948,29 +4153,35 @@ msgid ""
 "Define a Fibre channel device. This option only applies on IBM System{nbsp}"
 "z. All of the options described below must be specified."
 msgstr ""
+"Bir Fiber kanal aygıtı tanımla. Bu seçenek yalnızca IBM System{nbsp}z "
+"sistemlerinde geçerlidir. Aşağıda açıklanan seçeneklerin tümü "
+"belirtilmelidir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1200
 #, no-wrap
 msgid "[command]#zfcp --devnum=pass:attributes[{blank}]_devnum_ --wwpn=pass:attributes[{blank}]_wwpn_ --fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#zfcp --devnum=pass:attributes[{blank}]_aygıtno_ "
+"--wwpn=pass:attributes[{blank}]_wwpn_ "
+"--fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1202
 #, no-wrap
 msgid "[option]#--devnum#"
-msgstr ""
+msgstr "[option]#--devnum#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1203
 msgid "The device number (zFCP adaptor device bus ID)."
-msgstr ""
+msgstr "Aygıt numarası (zFCP bağdaştırıcı aygıtı veri yolu kimliği)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1204
 #, no-wrap
 msgid "[option]#--wwpn#"
-msgstr ""
+msgstr "[option]#--wwpn#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1205
@@ -3978,12 +4189,14 @@ msgid ""
 "The device's World Wide Port Name (WWPN). Takes the form of a 16-digit "
 "number, preceded by `0x`."
 msgstr ""
+"Aygıtın Dünya Genelinde Bağlantı Noktası Adı (World Wide Port Name - WWPN). "
+"Başında `0x` bulunan 16 basamaklı bir sayı biçimindedir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1206
 #, no-wrap
 msgid "[option]#--fcplun#"
-msgstr ""
+msgstr "[option]#--fcplun#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1207
@@ -3991,30 +4204,34 @@ msgid ""
 "The device's Logical Unit Number (LUN). Takes the form of a 16-digit number, "
 "preceded by `0x`."
 msgstr ""
+"Aygıtın Mantıksal Birim Numarası (Logical Unit Number - LUN). Başında `0x` "
+"bulunan 16 basamaklı bir sayı biçimindedir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1209
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1326
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1339
 msgid "For example:"
-msgstr ""
+msgstr "Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1213
 #, no-wrap
 msgid "[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 --fcplun=0x5022000000000000#\n"
 msgstr ""
+"[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 "
+"--fcplun=0x5022000000000000#\n"
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1216
 #, no-wrap
 msgid "Network Configuration"
-msgstr ""
+msgstr "Ağ Yapılandırması"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1219
 msgid "Commands in this chapter are used for network configuration."
-msgstr ""
+msgstr "Bu bölümdeki komutlar ağ yapılandırması için kullanılmaktadır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1221
