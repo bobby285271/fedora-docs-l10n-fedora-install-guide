@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-09-27 08:05+0000\n"
+"PO-Revision-Date: 2021-10-01 06:05+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -4237,24 +4237,26 @@ msgstr "Bu bölümdeki komutlar ağ yapılandırması için kullanılmaktadır."
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1221
 #, no-wrap
 msgid "firewall (optional) - Configure Firewall"
-msgstr ""
+msgstr "firewall (isteğe bağlı) - Güvenlik Duvarını Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1224
 msgid "Specify the firewall configuration for the installed system."
-msgstr ""
+msgstr "Kurulu sistem için güvenlik duvarı yapılandırmasını belirt."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1228
 #, no-wrap
 msgid "[command]#firewall --enabled | --disabled _device_ [--trust= | --ssh | --smtp | --http | --ftp | --port= | --service=]#\n"
 msgstr ""
+"[command]#firewall --enabled | --disabled _aygıt_ [--trust= | --ssh | --smtp "
+"| --http | --ftp | --port= | --service=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1230
 #, no-wrap
 msgid "[option]#--enabled# or [option]#--enable#"
-msgstr ""
+msgstr "[option]#--enabled# veya [option]#--enable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1231
@@ -4264,23 +4266,27 @@ msgid ""
 "machine is needed, you can choose to allow specific services through the "
 "firewall."
 msgstr ""
+"DNS yanıtları veya DHCP istekleri gibi içerinden giden isteklere gelen "
+"yanıtlar dışındaki bağlantıları reddet. Bu makinede çalışan hizmetlere "
+"erişim gerekiyorsa, güvenlik duvarı aracılığıyla belirli hizmetlere izin "
+"vermeyi seçebilirsiniz."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1232
 #, no-wrap
 msgid "[option]#--disabled# or [option]#--disable#"
-msgstr ""
+msgstr "[option]#--disabled# veya [option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1233
 msgid "Disable the firewall."
-msgstr ""
+msgstr "Güvenlik duvarını devre dışı bırak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1234
 #, no-wrap
 msgid "[option]#--trust=#"
-msgstr ""
+msgstr "[option]#--trust=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1235
@@ -4289,23 +4295,27 @@ msgid ""
 "that device to go through the firewall. To list more than one device, use "
 "this option again - for example:"
 msgstr ""
+"Burada `em1` gibi bir aygıtın listelenmesi, o aygıta gelen ve ondan giden "
+"tüm trafiğin güvenlik duvarından geçmesine izin verir. Birden fazla aygıtı "
+"listelemek için bu seçeneği tekrar kullanın - örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1239
 #, no-wrap
 msgid "[command]#firewall --enable --trust=em1 --trust=em2#\n"
-msgstr ""
+msgstr "[command]#firewall --enable --trust=em1 --trust=em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1242
 msgid "Do not use a comma-separated format such as [option]#--trust em1, em2#."
 msgstr ""
+"[option]#--trust em1, em2# gibi virgülle ayrılmış bir biçim kullanmayın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1243
 #, no-wrap
 msgid "_incoming_"
-msgstr ""
+msgstr "_gelen_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1244
@@ -4313,26 +4323,28 @@ msgid ""
 "Replace with one or more of the following to allow the specified services "
 "through the firewall:"
 msgstr ""
+"Belirtilen hizmetlere güvenlik duvarı üzerinden izin vermek için "
+"aşağıdakilerden bir veya daha fazlasıyla değiştirin:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1246
 msgid "[option]#--ssh#"
-msgstr ""
+msgstr "[option]#--ssh#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1248
 msgid "[option]#--smtp#"
-msgstr ""
+msgstr "[option]#--smtp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1250
 msgid "[option]#--http#"
-msgstr ""
+msgstr "[option]#--http#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1252
 msgid "[option]#--ftp#"
-msgstr ""
+msgstr "[option]#--ftp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1254
@@ -4343,12 +4355,18 @@ msgid ""
 "example, to allow UDP packets on port 1234 through, specify `1234:udp`. To "
 "specify multiple ports, separate them by commas."
 msgstr ""
+"bağlantınoktası:protokol biçimini kullanarak güvenlik duvarı üzerinden "
+"bağlantı noktalarına izin verilmesini belirtebilirsiniz. Örneğin, güvenlik "
+"duvarınız üzerinden IMAP erişimine izin vermek için `imap:tcp` kullanın. "
+"Bağlantı noktası numaraları da açıkça belirtilebilir; örneğin, 1234 bağlantı "
+"noktası üzerinden UDP paketlerine izin vermek için `1234:udp` kullanın. "
+"Birden çok bağlantı noktası belirtmek için onları virgülle ayırın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1255
 #, no-wrap
 msgid "[option]#--service=#"
-msgstr ""
+msgstr "[option]#--service=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1256
@@ -4359,6 +4377,12 @@ msgid ""
 "You can specify each individual port with the [option]#--port# option, or "
 "specify [command]#--service=# and open them all at once."
 msgstr ""
+"Bu seçenek, güvenlik duvarı üzerinden hizmetlere izin vermek için daha üst "
+"düzey bir yol sağlar. Bazı hizmetler (`cups`, `avahi` vb.), hizmetin "
+"çalışması için birden fazla bağlantı noktasının açık olmasını veya diğer "
+"özel yapılandırmaları gerektirir. [option]#--port# seçeneğiyle her bir "
+"bağlantı noktasını belirtebilir veya [command]#--service=# seçeneğini "
+"belirtebilir ve hepsini bir defada açabilirsiniz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1258
@@ -4368,12 +4392,16 @@ msgid ""
 "[command]#firewall-cmd --get-services# will provide a list of known service "
 "names."
 msgstr ""
+"Geçerli seçenekler, [package]*firewalld* paketindeki [application]*firewall-"
+"offline-cmd* programı tarafından tanınan seçeneklerdir. `firewalld` "
+"çalışıyorsa, [command]#firewall-cmd --get-services# komutu bilinen hizmet "
+"adlarının bir listesini sağlayacaktır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1260
 #, no-wrap
 msgid "network (optional) - Configure Network Interfaces"
-msgstr ""
+msgstr "network (isteğe bağlı) - Ağ Arayüzlerini Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1263
@@ -4383,12 +4411,16 @@ msgid ""
 "[command]#network# command is activated automatically. Activation of the "
 "device can be also explicitly required by the [option]#--activate# option."
 msgstr ""
+"Hedef sistem için ağ bilgilerini yapılandırır ve kurulum ortamında ağ "
+"aygıtlarını etkinleştirir. İlk [command]#network# komutunda belirtilen aygıt "
+"otomatik olarak etkinleştirilir. Aygıtın etkinleştirilmesi, "
+"[option]#--activate# seçeneği tarafından da açıkça istenebilir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1264
 #, no-wrap
 msgid "[option]#--activate#"
-msgstr ""
+msgstr "[option]#--activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1265
@@ -4398,6 +4430,10 @@ msgid ""
 "that the system could retrieve the Kickstart file) the device is reactivated "
 "to use the details specified in the Kickstart file."
 msgstr ""
+"[option]#--activate# seçeneğini zaten etkinleştirilmiş bir aygıtta "
+"kullanırsanız (örneğin, sistemin Kickstart dosyasını alabilmesi için "
+"önyükleme seçenekleriyle yapılandırdığınız bir arayüz), Kickstart dosyasında "
+"belirtilen ayrıntıları kullanmak için aygıt yeniden etkinleştirilir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1267
@@ -4405,23 +4441,27 @@ msgid ""
 "Use the [option]#--nodefroute# option to prevent the device from using the "
 "default route."
 msgstr ""
+"Aygıtın öntanımlı yönlendirmeyi kullanmasını önlemek için "
+"[option]#--nodefroute# seçeneğini kullanın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1268
 #, no-wrap
 msgid "[option]#--no-activate#"
-msgstr ""
+msgstr "[option]#--no-activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1269
 msgid "Prevents the configured device from automatically activating on boot."
 msgstr ""
+"Yapılandırılan aygıtın önyükleme sırasında otomatik olarak "
+"etkinleştirilmesini engeller."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1270
 #, no-wrap
 msgid "[option]#--bootproto=#"
-msgstr ""
+msgstr "[option]#--bootproto=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1271
@@ -4430,6 +4470,9 @@ msgid ""
 "`dhcp`pass:attributes[{blank}]; the `dhcp` and `bootp` options are treated "
 "the same."
 msgstr ""
+"`dhcp`, `bootp`, `ibft` veya `static` seçeneklerinden biri. "
+"`dhcp`pass:attributes[{blank}] öntanımlı seçenektir; `dhcp` ve `bootp` "
+"seçenekleri aynı şekilde ele alınır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1273
@@ -4438,12 +4481,15 @@ msgid ""
 "configuration. The BOOTP method is similar, requiring a BOOTP server to "
 "supply the networking configuration. To direct a system to use DHCP:"
 msgstr ""
+"DHCP yöntemi, ağ yapılandırmasını almak için bir DHCP sunucu sistemi "
+"kullanır. BOOTP yöntemi benzerdir ve ağ yapılandırmasını sağlamak için bir "
+"BOOTP sunucusu gerektirir. Bir sistemi DHCP kullanmaya yönlendirmek için:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1277
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1280
@@ -4451,23 +4497,27 @@ msgid ""
 "To direct a machine to use BOOTP to obtain its networking configuration, use "
 "the following line in the Kickstart file:"
 msgstr ""
+"Bir makineyi ağ yapılandırmasını almak için BOOTP kullanmaya yönlendirmek "
+"için Kickstart dosyasında aşağıdaki komutu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1284
 #, no-wrap
 msgid "[command]#network --bootproto=bootp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=bootp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1287
 msgid "To direct a machine to use the configuration specified in iBFT, use:"
 msgstr ""
+"Bir makineyi iBFT'de belirtilen yapılandırmayı kullanmaya yönlendirmek için "
+"aşağıdaki komutu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1291
 #, no-wrap
 msgid "[command]#network --bootproto=ibft#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=ibft#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1294
@@ -4476,6 +4526,9 @@ msgid ""
 "gateway, and nameserver in the Kickstart file. This information is static "
 "and is used during and after the installation."
 msgstr ""
+"`static` yöntemi; IP adresini, ağ maskesini, ağ geçidini ve ad sunucusunu "
+"Kickstart dosyasında belirtmenizi gerektirir. Bu bilgiler statiktir ve "
+"kurulum sırasında ve sonrasında kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1296
@@ -4484,12 +4537,17 @@ msgid ""
 "line; you cannot wrap lines using a backslash (`\\`) as you can on a command "
 "line."
 msgstr ""
+"Tüm statik ağ yapılandırma bilgileri *bir* satırda belirtilmelidir; komut "
+"satırında olduğu gibi ters eğik çizgi (`\\`) kullanarak alt satırdan devam "
+"edemezsiniz."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1300
 #, no-wrap
 msgid "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 --gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1303
@@ -4498,6 +4556,9 @@ msgid ""
 "the [option]#--nameserver=# options once for each name server you want to "
 "configure:"
 msgstr ""
+"Aynı anda birden fazla ad sunucusunu da yapılandırabilirsiniz. Bunu yapmak "
+"için, yapılandırmak istediğiniz her ad sunucusu için [option]#--nameserver=# "
+"seçeneğini bir kez kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1307
@@ -4505,6 +4566,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 --gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1310
@@ -4512,6 +4575,8 @@ msgid ""
 "Specifies the device to be configured (and eventually activated in "
 "[application]*Anaconda*) with the [command]#network# command."
 msgstr ""
+"[command]#network# komutuyla yapılandırılacak (ve sonunda "
+"[application]*Anaconda*'da etkinleştirilecek) aygıtı belirtir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1312
@@ -4522,6 +4587,11 @@ msgid ""
 "considered deprecated behavior; in most cases, you should always specify a "
 "[option]#--device=# for every [command]#network# command."
 msgstr ""
+"[command]#network# komutunun *ilk* kullanımında [option]#--device=# seçeneği "
+"yoksa, [option]#ksdevice=# [application]*Anaconda* önyükleme seçeneğinin "
+"değeri varsa kullanılır. Bunun kullanımdan kaldırılmış davranış olarak kabul "
+"edildiğini unutmayın; çoğu durumda, her [command]#network# komutu için her "
+"zaman bir [option]#--device=# seçeneği belirtmeniz gerekir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1314
@@ -4531,28 +4601,34 @@ msgid ""
 "Make sure you specify this option for any [command]#network# command beyond "
 "the first."
 msgstr ""
+"Aynı Kickstart dosyasında sonraki herhangi bir [command]#network# komutunun "
+"davranışı, [option]#--device=# seçeneği eksikse belirsizdir. İlkinden "
+"sonraki tüm [command]#network# komutları için bu seçeneği belirttiğinizden "
+"emin olun."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1316
 msgid "You can specify a device to be activated in any of the following ways:"
 msgstr ""
+"Aşağıdaki yollardan herhangi biriyle etkinleştirilecek bir aygıtı "
+"belirtebilirsiniz:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1318
 msgid "the device name of the interface, for example, `em1`"
-msgstr ""
+msgstr "arayüzün aygıt adı, örneğin `em1`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1320
 msgid "the MAC address of the interface, for example, `01:23:45:67:89:ab`"
-msgstr ""
+msgstr "arayüzün MAC adresi, örneğin `01:23:45:67:89:ab`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1322
 msgid ""
 "the keyword `link`, which specifies the first interface with its link in the "
 "`up` state"
-msgstr ""
+msgstr "Bağlantı durumu `up` olan ilk arayüzü belirten `link` anahtar kelimesi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1324
@@ -4562,18 +4638,22 @@ msgid ""
 "your `pxelinux.cfg` file to have [application]*pxelinux* set the `BOOTIF` "
 "variable."
 msgstr ""
+"[application]*pxelinux* tarafından `BOOTIF` değişkeninde ayarlanan MAC "
+"adresini kullanan `bootif` anahtar sözcüğü. [application]*pxelinux* "
+"tarafından `BOOTIF` değişkeninin ayarlanması için `pxelinux.cfg` dosyanızda `"
+"IPAPPEND 2` seçeneğini ayarlayın."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1330
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp --device=em1#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp --device=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1332
 #, no-wrap
 msgid "[option]#--bindto=#"
-msgstr ""
+msgstr "[option]#--bindto=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1333
@@ -4584,12 +4664,19 @@ msgid ""
 "team, bridge) it configures binding of slaves. Not applicable to vlan "
 "devices."
 msgstr ""
+"İsteğe bağlı. Aygıt için oluşturulan bağlantı yapılandırmasının nasıl "
+"bağlanacağını belirtmeye izin verir. Seçenek kullanılmazsa, bağlantı arayüz "
+"adına (`ifcfg` dosyasındaki `DEVICE` değeri) bağlanır. Sanal aygıtlar (bond, "
+"team, bridge) için ikincillerin bağlanmasını yapılandırır. Vlan aygıtları "
+"için geçerli değildir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1335
 msgid ""
 "Note that this option is independent of how the `--device` is specified."
 msgstr ""
+"Bu seçeneğin, `--device` seçeneğinin nasıl belirtildiğinden bağımsız "
+"olduğunu unutmayın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1337
@@ -4597,12 +4684,15 @@ msgid ""
 "Currently only the value `mac` is suported. `--bindto=mac` will bind the "
 "connection to MAC address of the device (`HWADDR` value in the `ifcfg` file)."
 msgstr ""
+"Şu anda yalnızca `mac` değeri desteklenmektedir. `--bindto=mac`, bağlantıyı "
+"aygıtın MAC adresine (`ifcfg` dosyasındaki`HWADDR` değeri) bağlayacaktır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1343
 #, no-wrap
 msgid "[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 msgstr ""
+"[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1346
@@ -4610,12 +4700,14 @@ msgid ""
 "The above will bind the configuration of the device specified by MAC address "
 "`01:23:45:67:89:ab` to its MAC address."
 msgstr ""
+"Yukarıdaki komut, `01:23:45:67:89:ab` MAC adresiyle belirtilen aygıtın "
+"yapılandırmasını MAC adresine bağlayacaktır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1350
 #, no-wrap
 msgid "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
-msgstr ""
+msgstr "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1352
@@ -4623,12 +4715,14 @@ msgid ""
 "The above will bind the configuration of the device specified by MAC address "
 "`01:23:45:67:89:ab` to its interface name (e.g. `ens3`)."
 msgstr ""
+"Yukarıdaki komut, `01:23:45:67:89:ab` MAC adresiyle belirtilen aygıtın "
+"yapılandırmasını arayüz adına (örn. `ens3`) bağlayacaktır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1356
 #, no-wrap
 msgid "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
-msgstr ""
+msgstr "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1359
@@ -4636,23 +4730,25 @@ msgid ""
 "The above will bind the configuration of the device specified by interface "
 "name `ens3` to its MAC address."
 msgstr ""
+"Yukarıdaki komut, `ens3` arayüz adıyla belirtilen aygıtın yapılandırmasını "
+"MAC adresine bağlayacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1360
 #, no-wrap
 msgid "[option]#--ip=#"
-msgstr ""
+msgstr "[option]#--ip=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1361
 msgid "IP address of the device."
-msgstr ""
+msgstr "Aygıtın IP adresi."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1362
 #, no-wrap
 msgid "[option]#--ipv6=#"
-msgstr ""
+msgstr "[option]#--ipv6=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1363
@@ -4663,34 +4759,39 @@ msgid ""
 "You can also use `auto` for automatic configuration, or `dhcp` for DHCPv6-"
 "only configuration (no router advertisements)."
 msgstr ""
+"_adres_pass:attributes[{blank}][/pass:attributes[{blank}]_ön_ _ek_ "
+"_uzunluğu_pass:attributes[{blank}]] biçiminde aygıtın IPv6 adresi - örneğin, "
+"`3ffe:ffff:0:1::1/128` . _ön_ _ek_ belirtilmezse, `64` kullanılacaktır. "
+"Otomatik yapılandırma için `auto` veya yalnızca DHCPv6 yapılandırması ("
+"yönlendirici duyuruları yok) için `dhcp` seçeneklerini de kullanabilirsiniz."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1364
 #, no-wrap
 msgid "[option]#--gateway=#"
-msgstr ""
+msgstr "[option]#--gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1365
 msgid "Default gateway as a single IPv4 address."
-msgstr ""
+msgstr "Tek bir IPv4 adresi olarak öntanımlı ağ geçidi."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1366
 #, no-wrap
 msgid "[option]#--ipv6gateway=#"
-msgstr ""
+msgstr "[option]#--ipv6gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1367
 msgid "Default gateway as a single IPv6 address."
-msgstr ""
+msgstr "Tek bir IPv6 adresi olarak öntanımlı ağ geçidi."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1368
 #, no-wrap
 msgid "[option]#--nodefroute#"
-msgstr ""
+msgstr "[option]#--nodefroute#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1369
@@ -4699,12 +4800,15 @@ msgid ""
 "you activate additional devices with the [option]#--activate=# option, for "
 "example, a NIC on a separate subnet for an iSCSI target."
 msgstr ""
+"Arayüzün öntanımlı yönlendirme olarak ayarlanmasını engeller. "
+"[option]#--activate=# seçeneğiyle ek aygıtları etkinleştirdiğinizde, örneğin "
+"bir iSCSI hedefi için ayrı bir alt ağdaki bir NIC, bu seçeneği kullanın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1370
 #, no-wrap
 msgid "[option]#--nameserver=#"
-msgstr ""
+msgstr "[option]#--nameserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1371
@@ -4712,34 +4816,36 @@ msgid ""
 "DNS name server, as an IP address. To specify more than one name server, use "
 "this parameter multiple times. For example:"
 msgstr ""
+"IP adresi olarak DNS ad sunucusu. Birden fazla ad sunucusu belirtmek için bu "
+"parametreyi birden çok kez kullanın. Örneğin:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1377
 #, no-wrap
 msgid "[option]#--nodns#"
-msgstr ""
+msgstr "[option]#--nodns#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1378
 msgid "Do not configure any DNS server."
-msgstr ""
+msgstr "Herhangi bir DNS sunucusu yapılandırma."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1379
 #, no-wrap
 msgid "[option]#--netmask=#"
-msgstr ""
+msgstr "[option]#--netmask=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1380
 msgid "Network mask for the installed system."
-msgstr ""
+msgstr "Kurulu sistem için ağ maskesi."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1381
 #, no-wrap
 msgid "[option]#--hostname=#"
-msgstr ""
+msgstr "[option]#--hostname=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1382
@@ -4751,12 +4857,20 @@ msgid ""
 "connected systems with a domain name; to allow the `DHCP` service to assign "
 "the domain name to this machine, only specify the short host name."
 msgstr ""
+"Kurulu sistem için ana makine adı. Ana makine adı, "
+"_anamakineadı.etkialanıadı_ biçiminde bir _tam nitelikli etki alanı adı "
+"(fully-qualified domain name)_ (FQDN) veya etki alanı adı olmayan kısa bir "
+"ana makine adı olabilir. Çoğu ağda, bağlı sistemlere otomatik olarak bir "
+"etki alanı adı sağlayan _Dinamik Ana Makine Yapılandırma Protokolü (Dynamic "
+"Host Configuration Protocol)_ (`DHCP`) hizmeti bulunur; `DHCP` hizmetinin bu "
+"makineye etki alanı adı atamasına izin vermek için yalnızca kısa ana makine "
+"adını belirtin."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1383
 #, no-wrap
 msgid "[option]#--ethtool=#"
-msgstr ""
+msgstr "[option]#--ethtool=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1384
@@ -4764,100 +4878,102 @@ msgid ""
 "Specifies additional low-level settings for the network device which will be "
 "passed to the [application]*ethtool* program."
 msgstr ""
+"[application]*ethtool* programına aktarılacak, ağ aygıtı için ek düşük "
+"seviye ayarlarını belirtir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1385
 #, no-wrap
 msgid "[option]#--essid=#"
-msgstr ""
+msgstr "[option]#--essid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1386
 msgid "The network ID for wireless networks."
-msgstr ""
+msgstr "Kablosuz ağlar için ağ kimliği."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1387
 #, no-wrap
 msgid "[option]#--wepkey=#"
-msgstr ""
+msgstr "[option]#--wepkey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1388
 msgid "The WEP encryption key for wireless networks."
-msgstr ""
+msgstr "Kablosuz ağlar için WEP şifreleme anahtarı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1389
 #, no-wrap
 msgid "[option]#--wpakey=#"
-msgstr ""
+msgstr "[option]#--wpakey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1390
 msgid "The WPA encryption key for wireless networks."
-msgstr ""
+msgstr "Kablosuz ağlar için WPA şifreleme anahtarı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1391
 #, no-wrap
 msgid "[option]#--onboot=#"
-msgstr ""
+msgstr "[option]#--onboot=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1392
 msgid "Whether or not to enable the device at boot time."
-msgstr ""
+msgstr "Önyükleme sırasında aygıtın etkinleştirilip etkinleştirilmeyeceği."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1393
 #, no-wrap
 msgid "[option]#--dhcpclass=#"
-msgstr ""
+msgstr "[option]#--dhcpclass=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1394
 msgid "The DHCP class."
-msgstr ""
+msgstr "DHCP sınıfı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1395
 #, no-wrap
 msgid "[option]#--mtu=#"
-msgstr ""
+msgstr "[option]#--mtu=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1396
 msgid "The MTU of the device."
-msgstr ""
+msgstr "Aygıtın MTU'su."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1397
 #, no-wrap
 msgid "[option]#--noipv4#"
-msgstr ""
+msgstr "[option]#--noipv4#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1398
 msgid "Disable IPv4 on this device."
-msgstr ""
+msgstr "Bu aygıtta IPv4'ü devre dışı bırak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1399
 #, no-wrap
 msgid "[option]#--noipv6#"
-msgstr ""
+msgstr "[option]#--noipv6#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1400
 msgid "Disable IPv6 on this device."
-msgstr ""
+msgstr "Bu aygıtta IPv6'yı devre dışı bırak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1401
 #, no-wrap
 msgid "[option]#--bondslaves=#"
-msgstr ""
+msgstr "[option]#--bondslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1402
@@ -4866,12 +4982,15 @@ msgid ""
 "device=# option will be created using slaves defined in the [option]#--"
 "bondslaves=# option. For example:"
 msgstr ""
+"Bu seçenek kullanıldığında, [option]#--device=# seçeneğinde belirtilen ağ "
+"aygıtı, [option]#--bondslaves=# seçeneğinde tanımlanan ikinciller "
+"kullanılarak oluşturulacaktır. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1406
 #, no-wrap
 msgid "[command]#network --device=mynetwork --bondslaves=em1,em2#\n"
-msgstr ""
+msgstr "[command]#network --device=agim --bondslaves=em1,em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1409
@@ -4879,12 +4998,14 @@ msgid ""
 "The above command will create a bond device named `mynetwork` using the "
 "`em1` and `em2` interfaces as its slaves."
 msgstr ""
+"Yukarıdaki komut, `em1` ve `em2` arayüzlerini ikinciller olarak kullanarak "
+"`agim` adlı bir bond aygıtı oluşturacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1410
 #, no-wrap
 msgid "[command]#--bondopts=#"
-msgstr ""
+msgstr "[command]#--bondopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1411
@@ -4896,12 +5017,20 @@ msgid ""
 "attributes[{blank}]\"). If an option itself contains a comma, use a "
 "semicolon to separate the options. For example:"
 msgstr ""
+"[command]#--bondslaves=# ve [command]#--device=# seçenekleri kullanılarak "
+"belirtilen, bond yapılan bir arayüz için isteğe bağlı parametrelerin "
+"listesi. Bu listedeki seçenekler virgülle (\"pass"
+":attributes[{blank}]`,`pass:attributes[{blank}]\") veya noktalı virgülle ("
+"\"pass:attributes[{blank}]`;`pass:attributes[{blank}]\") ayrılmalıdır. Bir "
+"seçeneğin kendisi virgül içeriyorsa, seçenekleri ayırmak için noktalı virgül "
+"kullanın. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1415
 #, no-wrap
 msgid "[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 msgstr ""
+"[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1418
@@ -4910,6 +5039,9 @@ msgid ""
 "Kernel Modules_ chapter of the [citetitle]_Fedora System Administrator's "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Kullanılabilir isteğe bağlı parametreler, link:++https://docs.fedoraproject."
+"org/++[] adresinde bulunan [citetitle]_Fedora Sistem Yöneticisi Kılavuzunun_ "
+"[citetitle]_Çekirdek Modülleriyle Çalışma_ bölümünde listelenmektedir."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1423
@@ -4918,12 +5050,15 @@ msgid ""
 "as `balance-rr` or `broadcast`, not their numerical representations such as "
 "`0` or `3`."
 msgstr ""
+"[option]#--bondopts=mode=# parametresi yalnızca `balance-rr` veya `broadcast`"
+" gibi tam mod adlarını desteklemektedir, `0` veya `3` gibi sayısal "
+"gösterimlerini değil."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1426
 #, no-wrap
 msgid "[option]#--vlanid=#"
-msgstr ""
+msgstr "[option]#--vlanid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1427
@@ -4933,12 +5068,16 @@ msgid ""
 "[command]#network --device=em1 --vlanid=171# will create a virtual LAN "
 "device `em1.171`."
 msgstr ""
+"Ana aygıt olarak [option]#--device=# seçeneğinde belirtilen aygıt "
+"kullanılarak oluşturulan aygıt için sanal LAN (VLAN) kimlik numarasını ("
+"802.1q etiketi) belirtir. Örneğin, [command]#network --device=em1 "
+"--vlanid=171# komutu, `em1.171` sanal LAN aygıtını oluşturacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1428
 #, no-wrap
 msgid "[option]#--interfacename=#"
-msgstr ""
+msgstr "[option]#--interfacename=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1429
@@ -4948,12 +5087,16 @@ msgid ""
 "not desirable. This option must be used along with [option]#--vlanid=#. For "
 "example:"
 msgstr ""
+"Sanal bir LAN aygıtı için özel bir arayüz adı belirt. Bu seçenek, "
+"[option]#--vlanid=# seçeneği tarafından oluşturulan öntanımlı ad "
+"istenmediğinde kullanılmalıdır. Bu seçenek, [option]#--vlanid=# seçeneğiyle "
+"birlikte kullanılmalıdır. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1433
 #, no-wrap
 msgid "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
-msgstr ""
+msgstr "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1436
@@ -4961,6 +5104,8 @@ msgid ""
 "The above command will create a virtual LAN interface named `vlan171` on the "
 "`em1` device with an ID of `171`."
 msgstr ""
+"Yukarıdaki komut, `em1` aygıtında `171` kimliğine sahip `vlan171` adlı bir "
+"sanal LAN arayüzü oluşturacaktır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1438
@@ -4968,6 +5113,8 @@ msgid ""
 "The interface name can be arbitrary (for example, `my-vlan`), but in "
 "specific cases, the following conventions must be followed:"
 msgstr ""
+"Arayüz adı istediğiniz gibi olabilir (örneğin, `benim-vlanim`), ancak "
+"belirli durumlarda aşağıdaki kurallar izlenmelidir:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1440
@@ -4977,6 +5124,10 @@ msgid ""
 "arbitrary, but the _ID_ must be the VLAN ID. For example: `em1.171` or `my-"
 "vlan.171`."
 msgstr ""
+"Ad bir nokta (`.`) içeriyorsa, `pass:attributes[{blank}]_AD_."
+"_KİMLİK_pass:attributes[{blank}]` biçiminde olmalıdır. _AD_ istediğiniz gibi "
+"olabilir, ancak _KİMLİK_ VLAN kimliği olmalıdır. Örneğin: `em1.171` or "
+"`benim-vlanim.171`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1442
@@ -4984,12 +5135,15 @@ msgid ""
 "Names starting with `vlan` must take the form of `vlanpass:"
 "attributes[{blank}]_ID_pass:attributes[{blank}]` - for example, `vlan171`."
 msgstr ""
+"`vlan` ile başlayan adlar, "
+"`vlanpass:attributes[{blank}]_KİMLİK_pass:attributes[{blank}]` biçiminde "
+"olmalıdır - örneğin, `vlan171`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1443
 #, no-wrap
 msgid "[option]#--teamslaves=#"
-msgstr ""
+msgstr "[option]#--teamslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1444
@@ -4999,23 +5153,30 @@ msgid ""
 "slave can be followed by its configuration, which is a single-quoted JSON "
 "string with double quotes escaped by the `\\` character. For example:"
 msgstr ""
+"[option]#--device=# seçeneği ile belirtilen team aygıtı, bu seçenekte "
+"belirtilen ikinciller kullanılarak oluşturulacaktır. İkinciller virgülle "
+"ayrılır. Bir ikincili, çift tırnak karakterlerinin `\\` karakteriyle "
+"kaçırıldığı tek tırnak içinde bir JSON dizgesi olan yapılandırması takip "
+"edebilir. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1448
 #, no-wrap
 msgid "[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 msgstr ""
+"[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": "
+"true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1451
 msgid "See also the [option]#--teamconfig=# option."
-msgstr ""
+msgstr "Ayrıca [option]#--teamconfig=# seçeneğine bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1452
 #, no-wrap
 msgid "[option]#--teamconfig=#"
-msgstr ""
+msgstr "[option]#--teamconfig=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1453
@@ -5025,18 +5186,27 @@ msgid ""
 "specified by [option]#--device=# option and its slaves and their "
 "configuration by [option]#--teamslaves=# option. For example:"
 msgstr ""
+"Çift tırnak karakterlerinin `\\` karakteriyle kaçırıldığı tek tırnak içinde "
+"bir JSON dizgesi olan çift tırnak içinde team aygıtı yapılandırması . Aygıt "
+"adı, [option]#--device=# seçeneğiyle, ikincilleri ve bunların "
+"yapılandırmaları [option]#--teamslaves=# seçeneğiyle belirtilir. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1458
 #, no-wrap
 msgid "[command]#network --device team0 --activate --bootproto static --ip=10.34.102.222 --netmask=255.255.255.0 --gateway=10.34.102.254 --nameserver=10.34.39.2 --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": true}',p3p2'{\\\"prio\\\": 100}'\" --teamconfig=\"{\\\"runner\\\": {\\\"name\\\": \\\"activebackup\\\"}}\"#\n"
 msgstr ""
+"[command]#network --device team0 --activate --bootproto static --"
+"ip=10.34.102.222 --netmask=255.255.255.0 --gateway=10.34.102.254 --"
+"nameserver=10.34.39.2 --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\":"
+" true}',p3p2'{\\\"prio\\\": 100}'\" --teamconfig=\"{\\\"runner\\\": {\\\"name"
+"\\\": \\\"activebackup\\\"}}\"#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1461
 #, no-wrap
 msgid "[option]#--bridgeslaves=#"
-msgstr ""
+msgstr "[option]#--bridgeslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1462
@@ -5046,18 +5216,21 @@ msgid ""
 "the [option]#--bridgeslaves=# option will be added to the bridge. For "
 "example:"
 msgstr ""
+"Bu seçenek kullanıldığında, [option]#--device=# seçeneği kullanılarak "
+"belirtilen aygıt adıyla ağ köprüsü oluşturulacak ve [option]#--bridgeslaves=#"
+" seçeneğinde tanımlanan aygıtlar köprüye eklenecektir. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1466
 #, no-wrap
 msgid "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
-msgstr ""
+msgstr "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1468
 #, no-wrap
 msgid "[option]#--bridgeopts=#"
-msgstr ""
+msgstr "[option]#--bridgeopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1469
@@ -5071,12 +5244,20 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for general information about network "
 "bridging."
 msgstr ""
+"Köprü yapılan arayüz için isteğe bağlı virgülle ayrılmış bir parametre "
+"listesi. Kullanılabilir değerler şunlardır: `stp`, `priority`, `forward-"
+"delay`, `hello-time`, `max-age` ve `ageing-time`. Bu parametreler hakkında "
+"bilgi için `nm-settings(5)` kılavuz sayfasındaki veya "
+"link:++https://developer.gnome.org/NetworkManager/0.9/ref-settings.html++[] "
+"adresindeki [citetitle]_bridge setting_ tablosuna bakın. Ağ köprüleme "
+"hakkında genel bilgi için link:++https://docs.fedoraproject.org/++[] "
+"adresinde bulunan [citetitle]_{PRODUCT} Ağ Kılavuzuna_ da bakın."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1471
 #, no-wrap
 msgid "Console and Environment"
-msgstr ""
+msgstr "Konsol ve Ortam"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1474
@@ -5085,29 +5266,31 @@ msgid ""
 "installation finishes - language, keyboard layouts, or the graphical "
 "interface."
 msgstr ""
+"Aşağıdaki komutlar, kurulum tamamlandıktan sonraki sistemin ortamını "
+"denetler - dil, klavye düzenleri veya grafiksel arayüz."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1476
 #, no-wrap
 msgid "keyboard (optional) - Configure Keyboard Layouts"
-msgstr ""
+msgstr "keyboard (isteğe bağlı) - Klavye Düzenlerini Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1479
 msgid "Sets one or more available keyboard layouts for the system."
-msgstr ""
+msgstr "Sistem için bir veya daha fazla kullanılabilir klavye düzeni ayarlar."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1483
 #, no-wrap
 msgid "[command]#keyboard --vckeymap= | --xlayouts= [--switch=]#\n"
-msgstr ""
+msgstr "[command]#keyboard --vckeymap= | --xlayouts= [--switch=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1485
 #, no-wrap
 msgid "[option]#--vckeymap=#"
-msgstr ""
+msgstr "[option]#--vckeymap=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1486
@@ -5116,12 +5299,15 @@ msgid ""
 "the list of files in the `/usr/lib/kbd/keymaps/*` directory, without the `."
 "map.gz` extension."
 msgstr ""
+"Kullanılması gereken bir `VConsole` tuş eşlemi belirt. Geçerli adlar, `/usr/"
+"lib/kbd/keymaps/*` dizinindeki dosyaların adlarının `.map.gz` uzantısı "
+"olmayan halidir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1487
 #, no-wrap
 msgid "[option]#--xlayouts=#"
-msgstr ""
+msgstr "[option]#--xlayouts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1488
@@ -5132,6 +5318,11 @@ msgid ""
 "attributes[{blank}]` format (such as `cz`), or in the `pass:"
 "attributes[{blank}]_layout_ (_variant_)` format (such as `cz (qwerty)`)."
 msgstr ""
+"Aralarında boşluk olmadan virgülle ayrılmış bir liste olarak kullanılması "
+"gereken [application]*X* düzenlerinin bir listesini belirt. Ya "
+"`pass:attributes[{blank}]_düzen_pass:attributes[{blank}]` (`tr` gibi), ya da "
+"`pass:attributes[{blank}]_düzen_ (_çeşit_)` (`tr (f)` gibi) şeklinde "
+"`setxkbmap(1)` ile aynı biçimde değerleri kabul eder."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1490
@@ -5139,12 +5330,14 @@ msgid ""
 "All available layouts can be viewed on the `xkeyboard-config(7)` man page "
 "under `Layouts`."
 msgstr ""
+"Kullanılabilir tüm düzenler, `xkeyboard-config(7)` kılavuz sayfasının "
+"`Layouts` bölümünde görülebilir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1491
 #, no-wrap
 msgid "[option]#--switch=#"
-msgstr ""
+msgstr "[option]#--switch=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1492
@@ -5153,6 +5346,10 @@ msgid ""
 "multiple keyboard layouts). Multiple options must be separated by commas "
 "without spaces. Accepts values in the same format as `setxkbmap(1)`."
 msgstr ""
+"Düzen değiştirme seçeneklerinin bir listesini belirt (birden çok klavye "
+"düzeni arasında geçiş yapmak için kısayollar). Birden çok seçenek, "
+"aralarında boşluk olmadan virgülle ayrılmalıdır. `setxkbmap(1)` ile aynı "
+"biçimdeki değerleri kabul eder."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1494
@@ -5160,6 +5357,8 @@ msgid ""
 "Available switching options can be viewed on the `xkeyboard-config(7)` man "
 "page under `Options`."
 msgstr ""
+"Kullanılabilir değiştirme seçenekleri, `xkeyboard-config(7)` kılavuz "
+"sayfasının `Options` bölümünde görülebilir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1496
@@ -5168,18 +5367,21 @@ msgid ""
 "`Czech (qwerty)`) using the [option]#--xlayouts=# option, and allows to "
 "switch between them using kbd:[Alt + Shift]:"
 msgstr ""
+"Aşağıdaki örnek, [option]#--xlayouts=# seçeneğini kullanarak iki klavye "
+"düzeni (`İngilizce (ABD)` ve `Türkçe (f)`) ayarlar ve kbd:[Alt + Shift]: "
+"kullanarak bunlar arasında geçiş yapılmasına olanak tanır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1499
 #, no-wrap
 msgid "keyboard --xlayouts=us,'cz (qwerty)' --switch=grp:alt_shift_toggle\n"
-msgstr ""
+msgstr "keyboard --xlayouts=us,'tr (f)' --switch=grp:alt_shift_toggle\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1502
 #, no-wrap
 msgid "lang (optional) - Configure Language During Installation"
-msgstr ""
+msgstr "lang (isteğe bağlı) - Kurulum Sırasındaki Dili Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1505
@@ -5187,12 +5389,14 @@ msgid ""
 "Sets the language to use during installation and the default language to use "
 "on the installed system."
 msgstr ""
+"Kurulum sırasında kullanılacak dili ve kurulu sistemde kullanılacak "
+"öntanımlı dili ayarlar."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1509
 #, no-wrap
 msgid "[command]#lang _language_ [--addsupport=]#\n"
-msgstr ""
+msgstr "[command]#lang _dil_ [--addsupport=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1512
@@ -5201,6 +5405,9 @@ msgid ""
 "the valid _language_ codes in the first column of each line and is part of "
 "the [package]*system-config-language* package."
 msgstr ""
+"`/usr/share/system-config-language/locale-list` dosyası, her satırın ilk "
+"sütununda geçerli _dil_ kodlarının bir listesini sağlar ve [package]*system-"
+"config-language* paketinin bir parçasıdır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1514
@@ -5211,12 +5418,17 @@ msgid ""
 "the installation process will continue in English, but the installed system "
 "will use your selection as its default language."
 msgstr ""
+"Metin modunda kurulum sırasında belirli diller (örneğin Çince, Japonca, "
+"Korece ve Hint dilleri) desteklenmez. Bu dillerden birini [command]#lang# "
+"komutuyla belirtir ve metin modunu kullanırsanız, kurulum işlemi İngilizce "
+"olarak devam edecek, ancak kurulu sistem seçiminizi öntanımlı dil olarak "
+"kullanacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1515
 #, no-wrap
 msgid "[option]#--addsupport=#"
-msgstr ""
+msgstr "[option]#--addsupport=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1516
@@ -5224,18 +5436,20 @@ msgid ""
 "Add support for additional languages. Takes the form of comma-separated list "
 "without spaces. For example:"
 msgstr ""
+"Ek diller için destek ekle. Aralarında boşluk olmadan virgülle ayrılmış "
+"liste şeklini alır. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1519
 #, no-wrap
 msgid "lang en_US --addsupport=cs_CZ,de_DE,en_UK\n"
-msgstr ""
+msgstr "lang tr_TR --addsupport=cs_CZ,de_DE,en_US\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1522
 #, no-wrap
 msgid "services (optional) - Configure Services"
-msgstr ""
+msgstr "services (isteğe bağlı) - Hizmetleri Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1525
@@ -5245,12 +5459,19 @@ msgid ""
 "before the list of enabled services - therefore, if a service appears on "
 "both lists, it will be enabled."
 msgstr ""
+"Öntanımlı [application]*systemd* hedefi altında çalışacak öntanımlı hizmet "
+"kümesini değiştirir. Devre dışı bırakılan hizmetler listesi, etkinleştirilen "
+"hizmetler listesinden önce işlenir - bu nedenle, bir hizmet her iki listede "
+"de görünüyorsa, o hizmet etkinleştirilecektir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1529
 #, no-wrap
 msgid "[command]#services [--disabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]] [--enabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#services "
+"[--disabled=pass:attributes[{blank}]_liste_pass:attributes[{blank}]] "
+"[--enabled=pass:attributes[{blank}]_liste_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1532
@@ -5258,12 +5479,15 @@ msgid ""
 "Do not include spaces in the list of services. If you do, Kickstart will "
 "enable or disable only the services up to the first space. For example:"
 msgstr ""
+"Hizmetler listesine boşluk eklemeyin. Bunu yaparsanız, Kickstart yalnızca "
+"ilk boşluk karakterine kadar olan hizmetleri etkinleştirecek veya devre dışı "
+"bırakacaktır. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1536
 #, no-wrap
 msgid "[command]#services --disabled=auditd, cups,smartd, nfslock#\n"
-msgstr ""
+msgstr "[command]#services --disabled=auditd, cups,smartd, nfslock#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1539
@@ -5271,46 +5495,48 @@ msgid ""
 "The above will disable only the `auditd` service. To disable all four "
 "services, the entry should include no spaces:"
 msgstr ""
+"Yukarıdaki komut yalnızca `auditd` hizmetini devre dışı bırakacaktır. "
+"Dördünü de devre dışı bırakmak için hizmetlerin arasında boşluk olmamalıdır:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1543
 #, no-wrap
 msgid "[command]#services --disabled=auditd,cups,smartd,nfslock#\n"
-msgstr ""
+msgstr "[command]#services --disabled=auditd,cups,smartd,nfslock#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1545
 #, no-wrap
 msgid "[option]#--disabled=#"
-msgstr ""
+msgstr "[option]#--disabled=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1546
 msgid "Disable the services given in the comma separated list."
-msgstr ""
+msgstr "Virgülle ayrılmış listede verilen hizmetleri devre dışı bırak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1547
 #, no-wrap
 msgid "[option]#--enabled=#"
-msgstr ""
+msgstr "[option]#--enabled=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1548
 msgid "Enable the services given in the comma separated list."
-msgstr ""
+msgstr "Virgülle ayrılmış listede verilen hizmetleri etkinleştir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1550
 #, no-wrap
 msgid "skipx (optional) - Do Not Configure X Window System"
-msgstr ""
+msgstr "skipx (isteğe bağlı) - X Pencere Sistemini Yapılandırma"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1553
 msgid ""
 "If present, [application]*X* will not be configured on the installed system."
-msgstr ""
+msgstr "Belirtilirse, kurulu sistemde [application]*X* yapılandırılmayacaktır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1558
@@ -5320,12 +5546,16 @@ msgid ""
 "system will default to `graphical.target`. The effect of the "
 "[command]#skipx# option will be overridden."
 msgstr ""
+"Paket seçim seçenekleriniz arasında bir görüntü yöneticisi kurarsanız, bu "
+"paket bir [application]*X* yapılandırması oluşturacak ve kurulu sistem "
+"öntanımlı olarak `graphical.target` hedefini kullanacaktır. [command]#skipx# "
+"seçeneğinin etkisi geçersiz kılınacaktır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1562
 #, no-wrap
 msgid "timezone (optional) - Configure Time Zone"
-msgstr ""
+msgstr "timezone (isteğe bağlı) - Saat Dilimini Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1565
@@ -5333,6 +5563,9 @@ msgid ""
 "Sets the system time zone to _timezone_. To view a list of available time "
 "zones, use the [command]#timedatectl list-timezones# command."
 msgstr ""
+"Sistemin saat dilimini _saatdilimi_ olarak ayarlar. Kullanılabilir saat "
+"dilimlerinin listesini görüntülemek için [command]#timedatectl list-"
+"timezones# komutunu kullanın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1567
@@ -5343,18 +5576,26 @@ msgid ""
 "However, if this command is present in the Kickstart file, at least one "
 "option must be used."
 msgstr ""
+"Gerçekten bir saat dilimi belirtmek de dahil olmak üzere her seçenek, Fedora "
+"25'ten başlayarak isteğe bağlıdır. Bu örneğin, herhangi bir saat dilimi "
+"seçmek zorunda kalmadan [option]#--nontp# seçeneğini kullanarak NTP'nin "
+"başlatılmasını devre dışı bırakmanıza olanak tanır. Ancak bu komut Kickstart "
+"dosyasında bulunursa, en az bir seçenek kullanılmalıdır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1571
 #, no-wrap
 msgid "[command]#timezone [pass:attributes[{blank}]_timezone_pass:attributes[{blank}]] [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#timezone "
+"[pass:attributes[{blank}]_saatdilimi_pass:attributes[{blank}]] "
+"[pass:attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1573
 #, no-wrap
 msgid "[option]#--utc#"
-msgstr ""
+msgstr "[option]#--utc#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1574
@@ -5362,23 +5603,25 @@ msgid ""
 "If present, the system assumes the hardware clock is set to UTC (Greenwich "
 "Mean) time."
 msgstr ""
+"Belirtilirse, sistem donanım saatinin UTC (Greenwich Mean) saatine "
+"ayarlandığını varsayar."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1575
 #, no-wrap
 msgid "[option]#--nontp#"
-msgstr ""
+msgstr "[option]#--nontp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1576
 msgid "Disable the NTP service automatic starting."
-msgstr ""
+msgstr "NTP hizmetinin otomatik başlatılmasını devre dışı bırak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1577
 #, no-wrap
 msgid "[option]#--ntpservers=#"
-msgstr ""
+msgstr "[option]#--ntpservers=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1578
@@ -5386,12 +5629,14 @@ msgid ""
 "Specify a list of NTP servers to be used as a comma-separated list without "
 "spaces."
 msgstr ""
+"Aralarında boşluk olmadan virgülle ayrılmış bir liste olarak kullanılacak "
+"NTP sunucularının listesini belirt."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1580
 #, no-wrap
 msgid "xconfig (optional) - Configure X Window System"
-msgstr ""
+msgstr "xconfig (isteğe bağlı) - X Pencere Sistemini Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1583
@@ -5401,6 +5646,10 @@ msgid ""
 "the [command]#xconfig# command, you must provide the [application]*X* "
 "configuration manually during installation."
 msgstr ""
+"[application]*X Pencere Sistemini* yapılandırır. [command]#xconfig# komutunu "
+"içermeyen bir Kickstart dosyasıyla [application]*X Pencere Sistemini* "
+"kurarsanız, [application]*X* yapılandırmasını kurulum sırasında elle "
+"sağlamanız gerekmektedir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1585
@@ -5408,12 +5657,14 @@ msgid ""
 "Do not use this command in a Kickstart file that does not install the "
 "[application]*X Window System*."
 msgstr ""
+"Bu komutu, [application]*X Pencere Sistemini* kurmayan bir Kickstart "
+"dosyasında kullanmayın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1586
 #, no-wrap
 msgid "[option]#--defaultdesktop=#"
-msgstr ""
+msgstr "[option]#--defaultdesktop=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1587
@@ -5422,23 +5673,26 @@ msgid ""
 "[application]*GNOME Desktop Environment* and/or [application]*KDE Desktop "
 "Environment* has been installed in the [command]#%packages# section)."
 msgstr ""
+"Öntanımlı masaüstünü ayarlamak için `GNOME` veya `KDE` belirt "
+"([command]#%packages# bölümünde [application]*GNOME Masaüstü Ortamı* ve/veya "
+"[application]*KDE Masaüstü Ortamı*'nın kurulduğu varsayılır)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1588
 #, no-wrap
 msgid "[option]#--startxonboot#"
-msgstr ""
+msgstr "[option]#--startxonboot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1589
 msgid "Use a graphical login on the installed system."
-msgstr ""
+msgstr "Kurulu sistemde grafiksel bir oturum açma kullan."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1591
 #, no-wrap
 msgid "Users, Groups and Authentication"
-msgstr ""
+msgstr "Kullanıcılar, Gruplar ve Kimlik Doğrulama"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1594
@@ -5446,12 +5700,16 @@ msgid ""
 "The commands below are used to control user accounts, groups, and related "
 "areas."
 msgstr ""
+"Aşağıdaki komutlar kullanıcı hesaplarını, grupları ve ilgili alanları "
+"denetlemek için kullanılmaktadır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1596
 #, no-wrap
 msgid "auth or authconfig (optional) - Configure Authentication (deprecated)"
 msgstr ""
+"auth veya authconfig (isteğe bağlı) - Kimlik Doğrulamayı Yapılandır ("
+"kullanımdan kaldırıldı)"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1601
@@ -5460,6 +5718,9 @@ msgid ""
 "invoke the authconfig compatibility tool; however, it is highly recommended "
 "to use [command]#authselect# instead."
 msgstr ""
+"Bu komut, [command]#authselect# komutu tarafından kullanımdan kaldırıldı. "
+"Bunu kullanmak, authconfig uyumluluk aracını çalıştıracaktır; ancak bunun "
+"yerine [command]#authselect# komutunun kullanılması şiddetle tavsiye edilir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1604
@@ -5470,12 +5731,17 @@ msgid ""
 "[command]#authconfig --help# command for more details. Passwords are "
 "shadowed by default."
 msgstr ""
+"Kurulum tamamlandıktan sonra komut satırı aracılığıyla da çalıştırılabilen "
+"[command]#authconfig# komutunu kullanarak sistem için kimlik doğrulama "
+"seçeneklerini ayarlar. Daha fazla ayrıntı için `authconfig(8)` kılavuz "
+"sayfasına ve [command]#authconfig --help# komutuna bakın. Parolalar "
+"öntanımlı olarak gölgelenmektedir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1606
 #, no-wrap
 msgid "authselect (optional) - Configure Authentication"
-msgstr ""
+msgstr "authselect (isteğe bağlı) - Kimlik Doğrulamayı Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1609
@@ -5485,12 +5751,17 @@ msgid ""
 "recognized by that program are valid for this command. See the "
 "`authselect(8)` for a complete list. Passwords are shadowed by default."
 msgstr ""
+"Bu komut, sistem için kimlik doğrulama seçeneklerini ayarlar. Bu, yalnızca "
+"[command]#authselect# programının etrafında bir sarmalayıcıdır, dolayısıyla "
+"o program tarafından tanınan tüm seçenekler bu komut için geçerlidir. Tam "
+"bir liste için `authselect(8)` kılavuz sayfasına bakın. Parolalar öntanımlı "
+"olarak gölgelenmektedir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1612
 #, no-wrap
 msgid "group (optional) - Create User Group"
-msgstr ""
+msgstr "group (isteğe bağlı) - Kullanıcı Grubu Oluştur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1615
@@ -5499,24 +5770,30 @@ msgid ""
 "GID already exists, this command will fail. In addition, the [command]#user# "
 "command can be used to create a new group for the newly created user."
 msgstr ""
+"Sistemde yeni bir kullanıcı grubu oluşturur. Belirtilen ada veya kimliğe "
+"(GID) sahip bir grup zaten varsa bu komut başarısız olacaktır. Ayrıca, yeni "
+"oluşturulan kullanıcı için yeni bir grup oluşturmak için [command]#user# "
+"komutu kullanılabilir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1619
 #, no-wrap
 msgid "[command]#group --name=pass:attributes[{blank}]_name_ [--gid=pass:attributes[{blank}]_gid_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#group --name=pass:attributes[{blank}]_ad_ "
+"[--gid=pass:attributes[{blank}]_kimlik_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1622
 msgid "Provides the name of the group."
-msgstr ""
+msgstr "Grubun adını belirtir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1623
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1786
 #, no-wrap
 msgid "[option]#--gid=#"
-msgstr ""
+msgstr "[option]#--gid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1624
@@ -5524,12 +5801,14 @@ msgid ""
 "The group ID (GID). If not provided, defaults to the next available non-"
 "system GID."
 msgstr ""
+"Grup kimliği (GID). Belirtilmezse, öntanımlı olarak bir sonraki "
+"kullanılabilir sistem dışı kimlik kullanılır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1626
 #, no-wrap
 msgid "pwpolicy (optional) - Change the Default Password Policy"
-msgstr ""
+msgstr "pwpolicy (isteğe bağlı) - Öntanımlı Parola Politikasını Değiştir"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1629
@@ -5538,12 +5817,19 @@ msgid ""
 "and strength for passwords set during the installation - the `root` "
 "password, user passwords and LUKS (disk encryption) password."
 msgstr ""
+"Bu komut, kurulum sırasında ayarlanan parolalar (`root` parolası, kullanıcı "
+"parolaları ve LUKS (disk şifreleme) parolası) için uzunluk ve sağlamlık gibi "
+"özel gereksinimleri (politika) ayarlamak için kullanılabilir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1634
 #, no-wrap
 msgid "[command]#pwpolicy _name_ [--minlen=pass:attributes[{blank}]_length_pass:attributes[{blank}]] [--minquality=pass:attributes[{blank}]_quality_pass:attributes[{blank}]] [--strict|nostrict] [--emptyok|noempty] [--changesok|nochanges]#\n"
 msgstr ""
+"[command]#pwpolicy _ad_ "
+"[--minlen=pass:attributes[{blank}]_uzunluk_pass:attributes[{blank}]] "
+"[--minquality=pass:attributes[{blank}]_nitelik_pass:attributes[{blank}]] "
+"[--strict|nostrict] [--emptyok|noempty] [--changesok|nochanges]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1638
@@ -5555,6 +5841,13 @@ msgid ""
 "password with a given score. See the `pwscore(1)` and `pwmake(1)` man pages "
 "for details about these commands."
 msgstr ""
+"Asgari parola gereksinimlerini (uzunluk ve nitelik) denetlemek için "
+"`libpwquality` kütüphanesi kullanılmaktadır. Seçtiğiniz parolanın nitelik "
+"puanını denetlemek veya belirli bir puana sahip rastgele bir parola "
+"oluşturmak için [package]*libpwquality* paketi tarafından sağlanan "
+"[command]#pwscore# ve [command]#pwmake# komutlarını kullanabilirsiniz. Bu "
+"komutlarla ilgili ayrıntılar için `pwscore(1)` ve `pwmake(1)` kılavuz "
+"sayfalarına bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1643
@@ -5563,12 +5856,15 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-anaconda[%anaconda "
 "(optional) - Additional Anaconda Configuration] for details."
 msgstr ""
+"Bu komut [command]#%anaconda# bölümünde kullanılmalıdır. Ayrıntılar için "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-anaconda["
+"%anaconda (isteğe bağlı) - Ek Anaconda Yapılandırması] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1646
 #, no-wrap
 msgid "_name_"
-msgstr ""
+msgstr "_ad_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1647
@@ -5576,24 +5872,28 @@ msgid ""
 "Name of the password entry. Supported values are `root`, `user` and `luks` "
 "for `root` password, user passwords and LUKS password, respectively."
 msgstr ""
+"Parola girdisinin adı. `root` parolası için `root`, kullanıcı parolaları "
+"için `user` ve LUKS parolası için `luks` değerleri desteklenmektedir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1648
 #, no-wrap
 msgid "[option]#--minlen=#"
-msgstr ""
+msgstr "[option]#--minlen=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1649
 msgid ""
 "Sets the minimum allowed password length. The default minimum length is `8`."
 msgstr ""
+"İzin verilen asgari parola uzunluğunu ayarlar. Öntanımlı asgari uzunluk "
+"olarak `8` kullanılır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1650
 #, no-wrap
 msgid "[option]#--minquality=#"
-msgstr ""
+msgstr "[option]#--minquality=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1651
@@ -5601,12 +5901,14 @@ msgid ""
 "Sets the minimum allowed password quality as defined by the `libpwquality` "
 "library. The default value is `50`."
 msgstr ""
+"`libpwquality` kütüphanesi tarafından tanımlanan izin verilen asgari parola "
+"niteliğini ayarlar. Öntanımlı değer olarak `50` kullanılır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1652
 #, no-wrap
 msgid "[option]#--strict#"
-msgstr ""
+msgstr "[option]#--strict#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1653
@@ -5614,12 +5916,15 @@ msgid ""
 "Strict password enforcement. Passwords not meeting the quality requirements "
 "specified in [option]#--minquality=# will not be allowed. Enabled by default."
 msgstr ""
+"Katı parola uygulaması. [option]#--minquality=# seçeneğinde belirtilen "
+"nitelik gereksinimlerini karşılamayan parolalara izin verilmeyecektir. "
+"Öntanımlı olarak etkindir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1654
 #, no-wrap
 msgid "[option]#--notstrict#"
-msgstr ""
+msgstr "[option]#--notstrict#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1655
@@ -5627,34 +5932,37 @@ msgid ""
 "Passwords *not* meeting the minimum quality requirements specified in "
 "[option]#--minquality=# will be allowed after `Done` is clicked twice."
 msgstr ""
+"[option]#--minquality=# seçeneğinde belirtilen asgari nitelik "
+"gereksinimlerini *karşılamayan* parolalara `Bitti` düğmesine iki kez "
+"tıklandıktan sonra izin verilecektir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1656
 #, no-wrap
 msgid "[option]#--emptyok#"
-msgstr ""
+msgstr "[option]#--emptyok#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1657
 msgid "Allow empty passwords. Enabled by default."
-msgstr ""
+msgstr "Boş parolalara izin ver. Öntanımlı olarak etkindir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1658
 #, no-wrap
 msgid "[option]#--notempty#"
-msgstr ""
+msgstr "[option]#--notempty#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1659
 msgid "Do not allow empty passwords."
-msgstr ""
+msgstr "Boş parolalara izin verme."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1660
 #, no-wrap
 msgid "[option]#--changesok#"
-msgstr ""
+msgstr "[option]#--changesok#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1661
@@ -5662,12 +5970,14 @@ msgid ""
 "Allow changing the password in the user interface, even if the Kickstart "
 "file already specifies a password."
 msgstr ""
+"Kickstart dosyası zaten bir parola belirtmiş olsa bile, kullanıcı arayüzünde "
+"parolanın değiştirilmesine izin ver."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1662
 #, no-wrap
 msgid "[option]#--nochanges#"
-msgstr ""
+msgstr "[option]#--nochanges#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1663
@@ -5675,11 +5985,13 @@ msgid ""
 "Do not allow changing passwords which are already set in the Kickstart file. "
 "Enabled by default."
 msgstr ""
+"Kickstart dosyasında önceden ayarlanan olan parolaların değiştirilmesine "
+"izin verme. Öntanımlı olarak etkindir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1665
 msgid "An example use of the [command]#pwpolicy# command is below:"
-msgstr ""
+msgstr "[command]#pwpolicy# komutunun örnek bir kullanımı aşağıdaki gibidir:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1672
@@ -5689,12 +6001,16 @@ msgid ""
 "[command]#pwpolicy root --minlen=10 --minquality=60 --strict --notempty --nochanges#\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%anaconda#\n"
+"[command]#pwpolicy root --minlen=10 --minquality=60 --strict --notempty "
+"--nochanges#\n"
+"[command]#%end#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1676
 #, no-wrap
 msgid "realm (optional) - Join an Active Directory or IPA Domain"
-msgstr ""
+msgstr "realm (isteğe bağlı) - Active Directory veya IPA Etki Alanına Katıl"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1679
@@ -5702,18 +6018,23 @@ msgid ""
 "Join an Active Directory or IPA domain. For more information about this "
 "command, see the [command]#join# section of the `realm(8)` man page."
 msgstr ""
+"Bir Active Directory veya IPA etki alanına katıl. Bu komut hakkında daha "
+"fazla bilgi için, `realm(8)` kılavuz sayfasındaki [command]#join# bölümüne "
+"bakın."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1683
 #, no-wrap
 msgid "[command]#realm join _domain_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#realm join _etkialanı_ "
+"[pass:attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1685
 #, no-wrap
 msgid "[option]#--computer-ou=OU=#"
-msgstr ""
+msgstr "[option]#--computer-ou=OU=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1686
@@ -5723,35 +6044,41 @@ msgid ""
 "depends on the client software and membership software. The root DSE portion "
 "of the distinguished name can usually be left out."
 msgstr ""
+"Bilgisayar hesabını oluşturmak için bir kuruluş biriminin _ayırt edici "
+"adını_ belirt. Ayırt edici adın tam biçimi, istemci yazılımına ve üyelik "
+"yazılımına bağlıdır. Ayırt edici adın kök DSE kısmı genellikle dışarıda "
+"bırakılabilir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1687
 #, no-wrap
 msgid "[option]#--no-password#"
-msgstr ""
+msgstr "[option]#--no-password#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1688
 msgid "Join automatically without a password."
-msgstr ""
+msgstr "Parola olmadan otomatik olarak katıl."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1689
 #, no-wrap
 msgid "[option]#--one-time-password=#"
-msgstr ""
+msgstr "[option]#--one-time-password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1690
 msgid ""
 "Join using a one-time password. This is not possible with all types of realm."
 msgstr ""
+"Tek seferlik bir parola kullanarak katıl. Bu, tüm erişim alanı (realm) "
+"türleriyle mümkün değildir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1691
 #, no-wrap
 msgid "[option]#--client-software=#"
-msgstr ""
+msgstr "[option]#--client-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1692
@@ -5760,12 +6087,15 @@ msgid ""
 "`sssd` and `winbind`. Not all realms support all values. By default, the "
 "client software is chosen automatically."
 msgstr ""
+"Yalnızca bu istemci yazılımını çalıştırabilen erişim alanlarına katıl.`sssd` "
+"ve `winbind` geçerli değerlerdir. Tüm erişim alanları tüm değerleri "
+"desteklemez. Öntanımlı olarak, istemci yazılımı otomatik olarak seçilir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1693
 #, no-wrap
 msgid "[option]#--server-software=#"
-msgstr ""
+msgstr "[option]#--server-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1694
@@ -5773,12 +6103,14 @@ msgid ""
 "Only join realms which can run this server software. Possible values include "
 "`active-directory` or `freeipa`."
 msgstr ""
+"Yalnızca bu sunucu yazılımını çalıştırabilen erişim alanlarına katıl. "
+"`active-directory` veya `freeipa` olası değerlerdir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1695
 #, no-wrap
 msgid "[option]#--membership-software=#"
-msgstr ""
+msgstr "[option]#--membership-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1696
@@ -5787,23 +6119,28 @@ msgid ""
 "`adcli`. Not all realms support all values. By default, the membership "
 "software is chosen automatically."
 msgstr ""
+"Erişim alanına katılırken bu yazılımı kullan. `samba` ve `adcli` geçerli "
+"değerlerdir. Tüm erişim alanları tüm değerleri desteklemez. Öntanımlı "
+"olarak, üyelik yazılımı otomatik olarak seçilir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1698
 #, no-wrap
 msgid "rootpw (required) - Set Root Password"
-msgstr ""
+msgstr "rootpw (gerekli) - Root Parolasını Ayarla"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1701
 msgid "Sets the system's root password to the _password_ argument."
-msgstr ""
+msgstr "Sistemin root parolasını _parola_ argümanına ayarlar."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1705
 #, no-wrap
 msgid "[command]#rootpw [--iscrypted|--plaintext] [--lock] _password_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#rootpw [--iscrypted|--plaintext] [--lock] "
+"_parola_pass:attributes[{blank}]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1708
@@ -5814,6 +6151,9 @@ msgid ""
 "encrypted. This option is mutually exclusive with [option]#--plaintext#. To "
 "create an encrypted password, you can use Python:"
 msgstr ""
+"Bu seçenek belirtilirse, parola argümanının zaten şifrelenmiş olduğu "
+"varsayılır. Bu seçenek, [option]#--plaintext# seçeneğiyle birlikte "
+"kullanılamaz. Şifreli bir parola oluşturmak için Python kullanabilirsiniz:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1712
@@ -5822,6 +6162,8 @@ msgstr ""
 #, no-wrap
 msgid "$ [command]#python -c 'import crypt; print(crypt.crypt(\"My Password\", \"$6$My Salt\"))'#\n"
 msgstr ""
+"$ [command]#python -c 'import crypt; print(crypt.crypt(\"Parolam\", \"$6$"
+"Salt Değerim\"))'#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1715
@@ -5830,6 +6172,8 @@ msgstr ""
 msgid ""
 "This will generate a SHA512 crypt of your password using your provided salt."
 msgstr ""
+"Bu, sağladığınız salt değerini kullanarak parolanızın bir SHA512 şifresini "
+"oluşturacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1716
@@ -5837,7 +6181,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1899
 #, no-wrap
 msgid "[option]#--plaintext#"
-msgstr ""
+msgstr "[option]#--plaintext#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1717
@@ -5846,6 +6190,8 @@ msgid ""
 "If this option is present, the password argument is assumed to be in plain "
 "text. This option is mutually exclusive with [option]#--iscrypted#."
 msgstr ""
+"Bu seçenek belirtilirse, parola argümanının düz metin olduğu varsayılır. Bu "
+"seçenek, [option]#--iscrypted# seçeneğiyle birlikte kullanılamaz."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1718
@@ -5853,7 +6199,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1901
 #, no-wrap
 msgid "[option]#--lock#"
-msgstr ""
+msgstr "[option]#--lock#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1719
@@ -5861,12 +6207,14 @@ msgid ""
 "If this option is present, the root account is locked by default. This means "
 "that the root user will not be able to log in from the console."
 msgstr ""
+"Bu seçenek belirtilirse, root hesabı öntanımlı olarak kilitlidir. Bu, root "
+"kullanıcısının konsoldan oturum açamayacağı anlamına gelir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1721
 #, no-wrap
 msgid "selinux (optional) - Configure SELinux"
-msgstr ""
+msgstr "selinux (isteğe bağlı) - SELinux'u Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1724
@@ -5876,29 +6224,35 @@ msgid ""
 "[citetitle]_{PRODUCT} SELinux User's and Administrator's Guide_, available "
 "at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Kurulu sistemdeki SELinux durumunu ayarlar. `enforcing` öntanımlı "
+"politikadır. {PRODUCT}'da SELinux ile ilgili daha fazla bilgi için "
+"link:++https://docs.fedoraproject.org/++[] adresinde bulunan "
+"[citetitle]_{PRODUCT} SELinux Kullanıcısı ve Yöneticisi Kılavuzuna_ bakın."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1728
 #, no-wrap
 msgid "[command]#selinux [--disabled|--enforcing|--permissive]#\n"
-msgstr ""
+msgstr "[command]#selinux [--disabled|--enforcing|--permissive]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1730
 #, no-wrap
 msgid "[option]#--enforcing#"
-msgstr ""
+msgstr "[option]#--enforcing#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1731
 msgid "Enables SELinux with the default targeted policy being `enforcing`."
 msgstr ""
+"SELinux'u öntanımlı hedeflenen politika `enforcing` olacak şekilde "
+"etkinleştirir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1732
 #, no-wrap
 msgid "[option]#--permissive#"
-msgstr ""
+msgstr "[option]#--permissive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1733
@@ -5907,17 +6261,20 @@ msgid ""
 "policy outputs warnings based on the SELinux policy, but does not actually "
 "enforce the policy."
 msgstr ""
+"SELinux'u öntanımlı hedeflenen politika `permissive` olacak şekilde "
+"etkinleştirir. Bu politika, SELinux politikasına dayalı uyarılar verir, "
+"ancak politikanın uygulanmasını zorlamaz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1735
 msgid "Disables SELinux completely."
-msgstr ""
+msgstr "SELinux'u tamamen devre dışı bırakır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1737
 #, no-wrap
 msgid "sshkey (optional) - Add an Authorized SSH Key"
-msgstr ""
+msgstr "sshkey (isteğe bağlı) - Yetkili SSH Anahtarı Ekle"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1740
@@ -5928,12 +6285,18 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-user[user (optional) "
 "- Create User Account]."
 msgstr ""
+"Bir kullanıcının `authorized_keys` dosyasına belirtilen bir `SSH` anahtarını "
+"eklemek için bu komutu kullanın. Belirtilen kullanıcı ya `root` olmalı ya da "
+"Kickstart dosyasında (kurulan bir paket tarafından otomatik olarak veya "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-user[user ("
+"isteğe bağlı) - Kullanıcı Hesabı Oluştur] komutu kullanılarak) "
+"oluşturulmalıdır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1743
 #, no-wrap
 msgid "sshkey --username=user \"ssh_key\"\n"
-msgstr ""
+msgstr "sshkey --username=kullanıcı \"ssh_anahtarı\"\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1746
@@ -5941,47 +6304,51 @@ msgid ""
 "The _ssh_key_ must be a full `SSH` key fingerprint, and it must be enclosed "
 "in quotes (`\"\"`) because the key may contain spaces."
 msgstr ""
+"_ssh_anahtarı_ tam bir `SSH` anahtarı parmak izi olmalıdır ve anahtar boşluk "
+"karakterleri içerebileceğinden tırnak işareti (`\"\"`) içine alınmalıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1747
 #, no-wrap
 msgid "[option]#--username=#"
-msgstr ""
+msgstr "[option]#--username=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1748
 msgid ""
 "The name of the user account to which you want to install the `SSH` key."
-msgstr ""
+msgstr "`SSH` anahtarını kurmak istediğiniz kullanıcı hesabının adı."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1750
 #, no-wrap
 msgid "user (optional) - Create User Account"
-msgstr ""
+msgstr "user (isteğe bağlı) - Kullanıcı Hesabı Oluştur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1753
 msgid "Creates a new user on the system."
-msgstr ""
+msgstr "Sistemde yeni bir kullanıcı oluşturur."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1757
 #, no-wrap
 msgid "[command]#user --name=pass:attributes[{blank}]_username_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#user --name=pass:attributes[{blank}]_kullanıcıadı_ "
+"[pass:attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1760
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1889
 msgid "Provides the name of the user. This option is required."
-msgstr ""
+msgstr "Kullanıcının adını belirtir. Bu seçenek gereklidir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1761
 #, no-wrap
 msgid "[option]#--gecos=#"
-msgstr ""
+msgstr "[option]#--gecos=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1762
@@ -5991,12 +6358,16 @@ msgid ""
 "specify the user's full name, office number, etc. See the `passwd(5)` man "
 "page for more details."
 msgstr ""
+"Kullanıcı için GECOS bilgilerini belirtir. Bu, virgülle ayrılmış sisteme "
+"özgü çeşitli alanlardan oluşan bir dizgedir. Kullanıcının tam adını, ofis "
+"numarasını vb. belirtmek için sıklıkla kullanılır. Daha fazla ayrıntı için "
+"`passwd(5)` kılavuz sayfasına bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1763
 #, no-wrap
 msgid "[option]#--groups=#"
-msgstr ""
+msgstr "[option]#--groups=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1764
@@ -6006,12 +6377,16 @@ msgid ""
 "created. See xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
 "group[group (optional) - Create User Group]."
 msgstr ""
+"Öntanımlı gruba ek olarak, kullanıcının ait olması gereken virgülle ayrılmış "
+"grup adları listesi. Gruplar, kullanıcı hesabı oluşturulmadan önce mevcut "
+"olmalıdır. xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"group[group (isteğe bağlı) - Kullanıcı Grubu Oluştur] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1765
 #, no-wrap
 msgid "[option]#--homedir=#"
-msgstr ""
+msgstr "[option]#--homedir=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1766
@@ -6019,6 +6394,8 @@ msgid ""
 "The home directory for the user. If not provided, this defaults to `/home/"
 "pass:attributes[{blank}]_username_pass:attributes[{blank}]`."
 msgstr ""
+"Kullanıcının ev dizini. Belirtilmezse, öntanımlı olarak `/home/"
+"pass:attributes[{blank}]_kullanıcıadı_pass:attributes[{blank}]` kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1768
@@ -6027,31 +6404,35 @@ msgid ""
 "If this option is present, this account is locked by default. This means "
 "that the user will not be able to log in from the console."
 msgstr ""
+"Bu seçenek belirtilirse, bu hesap öntanımlı olarak kilitlidir. Bu, "
+"kullanıcının konsoldan oturum açamayacağı anlamına gelir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1770
 msgid ""
 "The new user's password. If no password is provided, the account will be "
 "locked."
-msgstr ""
+msgstr "Yeni kullanıcının parolası. Parola belirtilmezse hesap kilitlenecektir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1782
 #, no-wrap
 msgid "[option]#--shell=#"
-msgstr ""
+msgstr "[option]#--shell=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1783
 msgid ""
 "The user's login shell. If not provided, the system default will be used."
 msgstr ""
+"Kullanıcının oturum açma kabuğu. Belirtilmezse, sistemin öntanımlı değeri "
+"kullanılacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1784
 #, no-wrap
 msgid "[option]#--uid=#"
-msgstr ""
+msgstr "[option]#--uid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1785
@@ -6059,6 +6440,8 @@ msgid ""
 "The _UID_ (User ID). If not provided, this defaults to the next available "
 "non-system UID."
 msgstr ""
+"_UID_ (Kullanıcı kimliği). Belirtilmezse, öntanımlı olarak bir sonraki "
+"kullanılabilir sistem dışı kullanıcı kimliği kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1787
@@ -6066,12 +6449,15 @@ msgid ""
 "The _GID_ (Group ID) to be used for the user's default group. If not "
 "provided, this defaults to the next available non-system group ID."
 msgstr ""
+"Kullanıcının öntanımlı grubu için kullanılacak _GID_ (Grup kimliği). "
+"Belirtilmezse, öntanımlı olarak bir sonraki kullanılabilir sistem dışı grup "
+"kimliği kullanılır."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1789
 #, no-wrap
 msgid "Installation Environment"
-msgstr ""
+msgstr "Kurulum Ortamı"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1792
@@ -6079,12 +6465,13 @@ msgid ""
 "The following commands control how the system will behave during the "
 "installation."
 msgstr ""
+"Aşağıdaki komutlar, sistemin kurulum sırasında nasıl davranacağını denetler."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1794
 #, no-wrap
 msgid "autostep (optional) - Go Through Every Screen"
-msgstr ""
+msgstr "autostep (isteğe bağlı) - Her Ekrandan Geç"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1797
@@ -6094,18 +6481,22 @@ msgid ""
 "briefly. This option should not be used when deploying a system because it "
 "may disrupt package installation."
 msgstr ""
+"Normalde, Kickstart kurulumları gereksiz ekranları atlar. Bu seçenek, "
+"kurulum programının her ekranda adım adım ilerlemesini ve her birini kısaca "
+"görüntülemesini sağlar. Paket kurulumunu bozabileceğinden, bir sistem "
+"dağıtımı yapılırken bu seçenek kullanılmamalıdır."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1801
 #, no-wrap
 msgid "[command]#autostep [--autoscreenshot]#\n"
-msgstr ""
+msgstr "[command]#autostep [--autoscreenshot]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1803
 #, no-wrap
 msgid "[option]#--autoscreenshot#"
-msgstr ""
+msgstr "[option]#--autoscreenshot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1804
@@ -6114,6 +6505,10 @@ msgid ""
 "stored in `/tmp/anaconda-screenshots` during the installation, and after the "
 "installation finishes you can find them in `/root/anaconda-screenshots`."
 msgstr ""
+"Kurulum sırasında her adımda bir ekran görüntüsü al. Bu ekran görüntüleri "
+"kurulum sırasında `/tmp/anaconda-screenshots` dizininde saklanır ve kurulum "
+"tamamlandıktan sonra bunları `/root/anaconda-screenshots` dizininde "
+"bulabilirsiniz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1806
@@ -6125,12 +6520,18 @@ msgid ""
 "configuration you want. Then, when you press `Done` to continue, the screen "
 "will be captured including the configuration you just provided."
 msgstr ""
+"Her ekranın görüntüsü, yalnızca kurucu bir sonrakine geçmeden hemen önce "
+"kaydedilir. Bu önemlidir, çünkü gerekli tüm Kickstart seçeneklerini "
+"kullanmazsanız ve bu nedenle kurulum otomatik olarak başlamazsa, otomatik "
+"olarak yapılandırılmamış ekranlara gidebilir, istediğiniz yapılandırmayı "
+"yapabilirsiniz. Ardından, devam etmek için `Bitti` düğmesine bastığınızda, "
+"en son sağladığınız yapılandırmayı içeren ekran görüntüsü kaydedilecektir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1808
 #, no-wrap
 msgid "cmdline (optional) - Perform Installation in Command Line Mode"
-msgstr ""
+msgstr "cmdline (isteğe bağlı) - Kurulumu Komut Satırı Modunda Gerçekleştir"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1811
@@ -6139,6 +6540,9 @@ msgid ""
 "Any prompts for interaction halts the install. This mode is useful on IBM "
 "System{nbsp}z systems with the x3270 terminal."
 msgstr ""
+"Kurulumu tamamen etkileşimsiz bir komut satırı modunda gerçekleştir. "
+"Herhangi bir etkileşim istemi kurulumu durdurur. Bu mod, x3270 terminaline "
+"sahip IBM System{nbsp}z sistemlerinde kullanışlıdır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1816
@@ -6152,12 +6556,18 @@ msgid ""
 "adoc#sect-boot-options-display[Console, Environment and Display Options]. "
 "Otherwise the system will halt and ask you to choose a mode."
 msgstr ""
+"Tam otomatik kurulum için, Kickstart dosyasında kullanılabilir modlardan "
+"birini ([command]#graphical#, [command]#text# veya [command]#cmdline#) "
+"belirtmeniz veya xref:advanced/Boot_Options.adoc#sect-boot-options-display["
+"Konsol, Ortam ve Ekran Seçenekleri] bölümünde açıklandığı gibi "
+"[option]#console=# önyükleme seçeneğini kullanmanız gerekir. Aksi takdirde "
+"sistem duracak ve sizden bir mod seçmenizi isteyecektir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1820
 #, no-wrap
 msgid "graphical (optional) - Perform Installation in Graphical Mode"
-msgstr ""
+msgstr "graphical (isteğe bağlı) - Kurulumu Grafiksel Modda Gerçekleştir"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1823
@@ -6165,12 +6575,14 @@ msgid ""
 "Perform the installation in graphical mode. This is the default. This "
 "command takes no options."
 msgstr ""
+"Kurulumu grafiksel modda gerçekleştir. Bu, öntanımlı olandır. Bu komut "
+"hiçbir seçenek almaz."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1832
 #, no-wrap
 msgid "logging (optional) - Configure Error Logging During Installation"
-msgstr ""
+msgstr "logging (isteğe bağlı) - Kurulum Sırasındaki Hata Günlüğünü Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1835
@@ -6178,19 +6590,21 @@ msgid ""
 "Controls the error logging of [application]*Anaconda* during installation. "
 "It has no effect on the installed system."
 msgstr ""
+"Kurulum sırasında [application]*Anaconda*'nın hata günlüğü davranışını "
+"denetler. Kurulu sistem üzerinde hiçbir etkisi yoktur."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1839
 #, no-wrap
 msgid "[command]#logging [--host= | --port= | --level=]#\n"
-msgstr ""
+msgstr "[command]#logging [--host= | --port= | --level=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1841
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1932
 #, no-wrap
 msgid "[option]#--host=#"
-msgstr ""
+msgstr "[option]#--host=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1842
@@ -6198,6 +6612,9 @@ msgid ""
 "Send logging information to the given remote host, which must be running a "
 "`syslogd` process configured to accept remote logging."
 msgstr ""
+"Uzak günlük kaydını kabul etmek için yapılandırılmış bir `syslogd` işleminin "
+"çalışır olmasını gerektiren, belirtilen uzak ana makineye günlük bilgilerini "
+"gönder."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1844
@@ -6205,6 +6622,8 @@ msgid ""
 "If the remote syslogd process uses a port other than the default, it may be "
 "specified with this option."
 msgstr ""
+"Uzak syslogd işlemi öntanımlı olandan farklı bir bağlantı noktası "
+"kullanıyorsa, bu seçenekle belirtilebilir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1846
@@ -6214,12 +6633,16 @@ msgid ""
 "contain messages of all levels. Possible values are `debug`, `info`, "
 "`warning`, `error`, or `critical`."
 msgstr ""
+"3. sanal konsolda (`tty3`) görünen asgari mesaj seviyesini belirt. Bu "
+"yalnızca konsola yazdırılan mesajları etkiler; günlük dosyaları her "
+"seviyeden mesajları içerecektir. Olası değerler şunlardır: `debug`, `info`, "
+"`warning`, `error` veya `critical`."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1848
 #, no-wrap
 msgid "rescue (optional) - Rescue Mode"
-msgstr ""
+msgstr "rescue (isteğe bağlı) - Kurtarma Modu"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1851
@@ -6227,18 +6650,20 @@ msgid ""
 "Automatically enters the installation program's rescue mode. This gives you "
 "a chance to repair the system in case of any problems."
 msgstr ""
+"Otomatik olarak kurulum programının kurtarma moduna girer. Bu size herhangi "
+"bir sorun olması durumunda sistemi onarma şansı verir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1855
 #, no-wrap
 msgid "[command]#rescue [--nomount|--romount]#\n"
-msgstr ""
+msgstr "[command]#rescue [--nomount|--romount]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1857
 #, no-wrap
 msgid "[option]#--nomount# or [option]#--romount#"
-msgstr ""
+msgstr "[option]#--nomount# veya [option]#--romount#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1858
@@ -6250,12 +6675,18 @@ msgid ""
 "mount in read-only mode (the [option]#--romount# option). Only one of these "
 "two options may be used."
 msgstr ""
+"Kurulu sistemin kurtarma ortamında nasıl bağlanacağını denetler. Öntanımlı "
+"olarak, kurulum programı sisteminizi bulacak ve onu okuma-yazma modunda "
+"bağlayacak ve bu bağlamayı nerede gerçekleştirdiğini size bildirecektir. "
+"İsteğe bağlı olarak hiçbir şey bağlamamayı ([option]#--nomount# seçeneği) "
+"veya salt okunur modda bağlamayı ([option]#--romount# seçeneği) "
+"seçebilirsiniz. Bu iki seçenekten yalnızca biri kullanılabilir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1860
 #, no-wrap
 msgid "sshpw (optional) - Restrict ssh Access During Installation"
-msgstr ""
+msgstr "sshpw (isteğe bağlı) - Kurulum Sırasında ssh Erişimini Kısıtla"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1863
@@ -6267,12 +6698,19 @@ msgid ""
 "installation environment. These accounts are not transferred to the "
 "installed system."
 msgstr ""
+"Kurulum sırasında, kurulum programı ile etkileşime girebilir ve ilerlemesini "
+"bir `SSH' bağlantısı üzerinden izleyebilirsiniz. Oturum açabileceğiniz "
+"geçici hesaplar oluşturmak için [command]#sshpw# komutunu kullanın. Komutun "
+"her örneği, yalnızca kurulum ortamında bulunan ayrı bir hesap oluşturur. Bu "
+"hesaplar kurulu sisteme aktarılmaz."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1867
 #, no-wrap
 msgid "[command]#sshpw --username=pass:attributes[{blank}]_name_ _password_ [--iscrypted|--plaintext] [--lock]#\n"
 msgstr ""
+"[command]#sshpw --username=pass:attributes[{blank}]_ad_ _parola_ "
+"[--iscrypted|--plaintext] [--lock]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1873
@@ -6282,6 +6720,11 @@ msgid ""
 "boot option [option]#inst.sshd#. See xref:advanced/Boot_Options.adoc#sect-"
 "boot-options-display[Console, Environment and Display Options] for details."
 msgstr ""
+"Öntanımlı olarak, `ssh` sunucusu kurulum sırasında başlatılmaz. Kurulum "
+"sırasında `ssh` kullanılabilir hale getirmek için, sistemi [option]#inst."
+"sshd# çekirdek önyükleme seçeneği ile önyükleyin. Ayrıntılar için xref:"
+"advanced/Boot_Options.adoc#sect-boot-options-display[Konsol, Ortam ve Ekran "
+"Seçenekleri] bölümüne bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1880
@@ -6289,18 +6732,20 @@ msgid ""
 "If you want to disable root `ssh` access to your hardware during "
 "installation, use the following:"
 msgstr ""
+"Kurulum sırasında donanımınıza root `ssh` erişimini devre dışı bırakmak "
+"istiyorsanız, aşağıdaki komutu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1884
 #, no-wrap
 msgid "[command]#sshpw --username=root --lock#\n"
-msgstr ""
+msgstr "[command]#sshpw --username=root --lock#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1888
 #, no-wrap
 msgid "[option]#--username#"
-msgstr ""
+msgstr "[option]#--username#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1900
@@ -6308,12 +6753,14 @@ msgid ""
 "If this option is present, the password argument is assumed to be in plain "
 "text. This option is mutually exclusive with [option]#--iscrypted#"
 msgstr ""
+"Bu seçenek belirtilirse, parola argümanının düz metin olduğu varsayılır. Bu "
+"seçenek, [option]#--iscrypted# seçeneğiyle birlikte kullanılamaz."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1904
 #, no-wrap
 msgid "text (optional) - Perform Installation in Text Mode"
-msgstr ""
+msgstr "text (isteğe bağlı) - Kurulumu Metin Modunda Gerçekleştir"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1907
@@ -6321,12 +6768,16 @@ msgid ""
 "Perform the Kickstart installation in text mode. Kickstart installations are "
 "performed in graphical mode by default."
 msgstr ""
+"Kickstart kurulumunu metin modunda gerçekleştir. Kickstart kurulumları "
+"öntanımlı olarak grafiksel modda gerçekleştirilir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1916
 #, no-wrap
 msgid "unsupported_hardware (optional) - Suppress Unsupported Hardware Alerts"
 msgstr ""
+"unsupported_hardware (isteğe bağlı) - Desteklenmeyen Donanım Uyarılarını "
+"Gösterme"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1919
@@ -6335,12 +6786,15 @@ msgid ""
 "included and unsupported hardware is detected, the installation will stall "
 "at this alert."
 msgstr ""
+"`Desteklenmeyen Donanım Algılandı` uyarısını gösterme. Bu komut "
+"kullanılmazsa ve desteklenmeyen donanım algılanırsa, kurulum bu uyarıyı "
+"verecek ve duracaktır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1921
 #, no-wrap
 msgid "vnc (optional) - Configure VNC Access"
-msgstr ""
+msgstr "vnc (isteğe bağlı) - VNC Erişimini Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1924
@@ -6351,12 +6805,21 @@ msgid ""
 "will start a VNC server on the installation system with no password and will "
 "display the details required to connect to it."
 msgstr ""
+"Grafiksel kurulumun VNC üzerinden uzaktan görüntülenmesini sağlar. Metin "
+"kurulumlarında bazı boyut ve dil sınırlamaları olduğundan, bu yöntem "
+"genellikle metin moduna tercih edilir. Hiçbir ek seçenek olmadan bu komut, "
+"kurulum sisteminde parolasız bir VNC sunucusu başlatacak ve ona bağlanmak "
+"için gereken ayrıntıları görüntüleyecektir."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1928
 #, no-wrap
 msgid "[command]#vnc [--host=pass:attributes[{blank}]_hostname_pass:attributes[{blank}]] [--port=pass:attributes[{blank}]_port_pass:attributes[{blank}]] [--password=pass:attributes[{blank}]_password_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#vnc "
+"[--host=pass:attributes[{blank}]_anamakineadı_pass:attributes[{blank}]] "
+"[--port=pass:attributes[{blank}]_bağlantınoktası_pass:attributes[{blank}]] "
+"[--password=pass:attributes[{blank}]_parola_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1931
@@ -6365,11 +6828,15 @@ msgid ""
 "to connect to the installation system, see xref:advanced/VNC_Installations."
 "adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
+"Kurulum sistemine nasıl bağlanılacağına ilişkin talimatlar da dahil olmak "
+"üzere VNC kurulumları hakkında daha fazla bilgi için xref:advanced/"
+"VNC_Installations.adoc#chap-vnc-installations[VNC Kullanarak Kurma] bölümüne "
+"bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1933
 msgid "Connect to a VNC viewer listening on the given hostname."
-msgstr ""
+msgstr "Verilen ana makine üzerinde dinleyen bir VNC görüntüleyiciye bağlan."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1935
@@ -6377,6 +6844,8 @@ msgid ""
 "Provide a port that the remote VNC viewer process is listening on. If not "
 "provided, the VNC default (`5900`) will be used."
 msgstr ""
+"Uzak VNC görüntüleyici işleminin dinlediği bir bağlantı noktası belirt. "
+"Belirtilmezse, öntanımlı VNC değeri (`5900`) kullanılacaktır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1937
@@ -6384,6 +6853,8 @@ msgid ""
 "Set a password which must be provided to connect to the VNC session. This is "
 "optional, but recommended."
 msgstr ""
+"VNC oturumuna bağlanmak için sağlanması gereken bir parola ayarla. Bu isteğe "
+"bağlıdır, ancak kullanılması tavsiye edilir."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1939
@@ -6397,12 +6868,14 @@ msgid ""
 "This section contains commands which control the system's behavior "
 "immediately after the installation finishes."
 msgstr ""
+"Bu bölüm, kurulum tamamlandıktan hemen sonra sistemin davranışını denetleyen "
+"komutları içerir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1944
 #, no-wrap
 msgid "%addon com_redhat_kdump (optional) - Configure kdump"
-msgstr ""
+msgstr "%addon com_redhat_kdump (isteğe bağlı) - kdump'ı Yapılandır"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1947
@@ -6410,6 +6883,8 @@ msgid ""
 "This command configures the [application]*kdump* kernel crash dumping "
 "mechanism."
 msgstr ""
+"Bu komut, [application]*kdump* çekirdek çökme dökümü mekanizmasını "
+"yapılandırır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1952
@@ -6419,6 +6894,10 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-addon[%addon "
 "(optional) - Include an Anaconda Add-on]."
 msgstr ""
+"Bu komutun söz dizimi, yerleşik bir Kickstart komutu yerine bir eklenti "
+"olduğu için olağan dışıdır. Eklentiler hakkında daha fazla bilgi için "
+"xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-addon[%addon ("
+"isteğe bağlı) - Bir Anaconda Eklentisi Dahil Et] bölümüne bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1956
@@ -6429,6 +6908,11 @@ msgid ""
 "context of another kernel without rebooting the system and preserve the "
 "contents of the first kernel memory that would otherwise be lost."
 msgstr ""
+"[application]*Kdump*, sistem belleğinin içeriğini daha sonra incelemek üzere "
+"kaydetmenize izin veren bir çekirdek çökme dökümü mekanizmasıdır. Sistemi "
+"yeniden başlatmadan başka bir çekirdeğin bağlamından bir Linux çekirdeği "
+"başlatmak ve aksi takdirde kaybolacak olan ilk çekirdek belleğinin içeriğini "
+"korumak için kullanılabilen [application]*kexec* programını kullanmaktadır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1958
@@ -6441,39 +6925,46 @@ msgid ""
 "using Kickstart; it must be specified after the installation by editing the "
 "`/etc/kdump.conf` configuration file."
 msgstr ""
+"Bir sistem çökmesi durumunda, [application]*kexec* ikinci bir çekirdeği "
+"başlatır (bir _yakalama çekirdeği_). Bu yakalama çekirdeği, sistem "
+"belleğinin ana çekirdek tarafından erişilemeyen ayrılmış bir bölümünde "
+"bulunur. [application]*Kdump* daha sonra çöken çekirdeğin belleğinin "
+"içeriğini (bir _çökme dökümü_) yakalar ve belirtilen bir konuma kaydeder. Bu "
+"konum, Kickstart kullanılarak yapılandırılamaz; kurulumdan sonra `/etc/kdump."
+"conf` yapılandırma dosyası düzenlenerek belirtilmelidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1960
 msgid "Available options are:"
-msgstr ""
+msgstr "Kullanılabilir seçenekler şunlardır:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1961
 #, no-wrap
 msgid "[option]#--enable#"
-msgstr ""
+msgstr "[option]#--enable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1962
 msgid "Enable [application]*Kdump* on the installed system."
-msgstr ""
+msgstr "Kurulu sistemde [application]*Kdump*'ı etkinleştir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1963
 #, no-wrap
 msgid "[option]#--disable#"
-msgstr ""
+msgstr "[option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1964
 msgid "Do not enable [application]*Kdump* on the installed system."
-msgstr ""
+msgstr "Kurulu sistemde [application]*Kdump*'ı etkinleştirme."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1965
 #, no-wrap
 msgid "[option]#--reserve-mb=#"
-msgstr ""
+msgstr "[option]#--reserve-mb=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1966
@@ -6481,6 +6972,8 @@ msgid ""
 "The amount of memory you want to reserve for [application]*Kdump* in "
 "megabytes. For example:"
 msgstr ""
+"[application]*Kdump* için megabayt cinsinden ayırmak istediğiniz bellek "
+"miktarı. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1970
@@ -6489,6 +6982,8 @@ msgid ""
 "%addon com_redhat_kdump --enable --reserve-mb=128\n"
 "%end\n"
 msgstr ""
+"%addon com_redhat_kdump --enable --reserve-mb=128\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1973
@@ -6498,6 +6993,9 @@ msgid ""
 "automatically, based on your system architecture and the total amount of "
 "memory on the system."
 msgstr ""
+"Sayısal bir değer yerine `auto` değerini de belirtebilirsiniz. Bu durumda "
+"kurucu, sistem mimarinize ve sistemdeki toplam bellek miktarına bağlı olarak "
+"kdump için ayrılacak RAM miktarını otomatik olarak belirleyecektir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1975
@@ -6505,12 +7003,14 @@ msgid ""
 "If you enable [application]*Kdump* and do not specify the [option]#--reserve-"
 "mb=# option, the `auto` value will be used."
 msgstr ""
+"[application]*Kdump*'ı etkinleştirirseniz ve [option]#--reserve-mb=# "
+"seçeneğini belirtmezseniz, `auto` değeri kullanılacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1976
 #, no-wrap
 msgid "[option]#--enablefadump#"
-msgstr ""
+msgstr "[option]#--enablefadump#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1977
@@ -6518,12 +7018,15 @@ msgid ""
 "Enable firmware-assisted dumping on systems which allow it (notably IBM "
 "Power{nbsp}Systems servers)."
 msgstr ""
+"Buna izin veren sistemlerde (özellikle IBM Power{nbsp}Systems sunucuları) "
+"ürün yazılımı destekli dökümü etkinleştir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1979
 #, no-wrap
 msgid "firstboot (optional) - Enable or Disable Initial Setup"
 msgstr ""
+"firstboot (isteğe bağlı) - İlk Kurulumu Etkinleştir veya Devre Dışı Bırak"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1982
@@ -6534,18 +7037,24 @@ msgid ""
 "default. For more information about [application]*Initial Setup*, see xref:"
 "install/After_Installation.adoc#sect-initial-setup[Initial Setup]."
 msgstr ""
+"[application]*İlk Kurulum* uygulamasının sistem ilk önyüklendiğinde "
+"başlatılıp başlatılmayacağını belirle. Etkinleştirilirse, [package]*initial-"
+"setup* paketi kurulmalıdır. Belirtilmezse, bu seçenek öntanımlı olarak devre "
+"dışıdır. [application]*İlk Kurulum* hakkında daha fazla bilgi için xref:"
+"install/After_Installation.adoc#sect-initial-setup[İlk Kurulum] bölümüne "
+"bakın."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1986
 #, no-wrap
 msgid "[command]#firstboot --enable|--disable [--reconfig]#\n"
-msgstr ""
+msgstr "[command]#firstboot --enable|--disable [--reconfig]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1988
 #, no-wrap
 msgid "[option]#--enable# or [option]#--enabled#"
-msgstr ""
+msgstr "[option]#--enable# veya [option]#--enabled#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1989
@@ -6553,23 +7062,25 @@ msgid ""
 "[application]*Initial Setup* will be started the first time the installed "
 "system boots."
 msgstr ""
+"[application]*İlk Kurulum*, kurulu sistem ilk kez önyüklendiğinde "
+"başlatılacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1990
 #, no-wrap
 msgid "[option]#--disable# or [option]#--disabled#"
-msgstr ""
+msgstr "[option]#--disable# veya [option]#--disabled#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1991
 msgid "[application]*Initial Setup* will be disabled."
-msgstr ""
+msgstr "[application]*İlk Kurulum* devre dışı bırakılacak."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1992
 #, no-wrap
 msgid "[option]#--reconfig#"
-msgstr ""
+msgstr "[option]#--reconfig#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1993
@@ -6579,12 +7090,16 @@ msgid ""
 "security level, time zone and networking configuration options in addition "
 "to the default ones."
 msgstr ""
+"[application]*İlk Kurulum*, yeniden başlatmanın ardından yeniden "
+"yapılandırma modunda başlayacaktır. Bu mod, öntanımlı olanlara ek olarak "
+"dil, fare, klavye, root parolası, güvenlik seviyesi, saat dilimi ve ağ "
+"yapılandırma seçeneklerini etkinleştirir."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1995
 #, no-wrap
 msgid "halt (optional) - Halt System After Installation"
-msgstr ""
+msgstr "halt (isteğe bağlı) - Kurulumdan Sonra Sistemi Durdur"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1998
@@ -6595,6 +7110,11 @@ msgid ""
 "rebooting. During a Kickstart installation, if no completion method is "
 "specified, this option is used as the default."
 msgstr ""
+"Kurulum başarıyla tamamlandıktan sonra sistemi durdur. Bu, kurulum "
+"tamamlandıktan sonra kurucunun bir mesaj görüntülediği ve yeniden "
+"başlatmadan önce kullanıcının bir tuşa basmasını beklediği elle kuruluma "
+"benzer. Bir Kickstart kurulumu sırasında, herhangi bir tamamlama yöntemi "
+"belirtilmemişse, bu seçenek öntanımlı olarak kullanılır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2000
@@ -6602,19 +7122,21 @@ msgid ""
 "For other completion methods, see the [command]#poweroff#, "
 "[command]#reboot#, and [command]#shutdown# commands."
 msgstr ""
+"Diğer tamamlama yöntemleri için [command]#poweroff#, [command]#reboot# ve "
+"[command]#shutdown# komutlarına bakın."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2002
 #, no-wrap
 msgid "poweroff (optional) - Power Off After Installation"
-msgstr ""
+msgstr "poweroff (isteğe bağlı) - Kurulumdan Sonra Kapat"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2005
 msgid ""
 "Shut down and power off the system after the installation has successfully "
 "completed."
-msgstr ""
+msgstr "Kurulum başarıyla tamamlandıktan sonra sistemi kapat."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2010
@@ -6626,6 +7148,13 @@ msgid ""
 "hardware documentation for more information on you system's APM/ACPI "
 "abilities."
 msgstr ""
+"[command]#poweroff# komutu, büyük ölçüde kullanılan sistem donanımına "
+"bağlıdır. Özellikle BIOS, APM (advanced power management - gelişmiş güç "
+"yönetimi) ve ACPI (advanced configuration and power interface - gelişmiş "
+"yapılandırma ve güç arayüzü) gibi belirli donanım bileşenlerinin sistem "
+"çekirdeğiyle etkileşime girebilmesi gerekir. Sisteminizin APM/ACPI "
+"yetenekleri hakkında daha fazla bilgi için donanımınızın belgelendirmesine "
+"bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2014
@@ -6633,12 +7162,14 @@ msgid ""
 "For other completion methods, see the [command]#halt#, [command]#reboot#, "
 "and [command]#shutdown# Kickstart commands."
 msgstr ""
+"Diğer tamamlama yöntemleri için [command]#halt#, [command]#reboot# ve "
+"[command]#shutdown# Kickstart komutlarına bakın."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2016
 #, no-wrap
 msgid "reboot (optional) - Reboot After Installation"
-msgstr ""
+msgstr "reboot (isteğe bağlı) - Kurulumdan Sonra Yeniden Başlat"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2019
@@ -6649,6 +7180,11 @@ msgid ""
 "(optional) - Perform Installation in Command Line Mode]), this command is "
 "necessary for a fully automated installation."
 msgstr ""
+"Kurulum başarıyla tamamlandıktan sonra yeniden başlat. {PRODUCT}'yı IBM "
+"System{nbsp}z üzerinde komut satırı modunda kuruyorsanız "
+"(xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-cmdline["
+"cmdline (isteğe bağlı) - Kurulumu Komut Satırı Modunda Gerçekleştir] "
+"kullanarak), bu komut bir tam otomatik kurulum için gereklidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2021
@@ -6656,6 +7192,8 @@ msgid ""
 "For other completion methods, see the [command]#halt#, [command]#poweroff#, "
 "and [command]#shutdown# Kickstart options."
 msgstr ""
+"Diğer tamamlama yöntemleri için [command]#halt#, [command]#poweroff# ve "
+"[command]#shutdown# Kickstart seçeneklerine bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2026
@@ -6663,12 +7201,14 @@ msgid ""
 "Use of the [command]#reboot# command *may* result in an endless installation "
 "loop, depending on the installation media and method."
 msgstr ""
+"[command]#reboot# komutunun kullanılması, kurulum ortamına ve yöntemine "
+"bağlı olarak sonsuz bir kurulum döngüsüyle *sonuçlanabilir*."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2029
 #, no-wrap
 msgid "[option]#--eject#"
-msgstr ""
+msgstr "[option]#--eject#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2030
@@ -6676,12 +7216,14 @@ msgid ""
 "Attempt to eject the installation media (if installing from a DVD) before "
 "rebooting."
 msgstr ""
+"Yeniden başlatmadan önce kurulum ortamını (DVD'den kurulum yapıyorsanız) "
+"çıkarmayı dene."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2031
 #, no-wrap
 msgid "[option]#--kexec#"
-msgstr ""
+msgstr "[option]#--kexec#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2032
@@ -6690,17 +7232,20 @@ msgid ""
 "switching mechanism instead of a full reboot, bypassing the BIOS/Firmware "
 "and boot loader."
 msgstr ""
+"Tam bir yeniden başlatma yerine `kexec` çekirdek değiştirme mekanizmasını "
+"kullanıp BIOS/ürün yazılımı ve önyükleyiciyi atlayarak yeni sistemi yeniden "
+"başlatmak için bu seçeneği kullanın."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2034
 #, no-wrap
 msgid "shutdown (optional) - Shut Down After Installation"
-msgstr ""
+msgstr "shutdown (isteğe bağlı) - Kurulumdan Sonra Kapat"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2037
 msgid "Shut down the system after the installation has successfully completed."
-msgstr ""
+msgstr "Kurulum başarıyla tamamlandıktan sonra sistemi kapat."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2039
@@ -6708,12 +7253,14 @@ msgid ""
 "For other completion methods, see the [command]#halt#, [command]#poweroff#, "
 "and [command]#reboot# Kickstart options."
 msgstr ""
+"Diğer tamamlama yöntemleri için [command]#halt#, [command]#poweroff# ve "
+"[command]#reboot# Kickstart seçeneklerine bakın."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2041
 #, no-wrap
 msgid "%addon (optional) - Include an Anaconda Add-on"
-msgstr ""
+msgstr "%addon (isteğe bağlı) - Bir Anaconda Eklentisi Dahil Et"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2044
@@ -6721,6 +7268,8 @@ msgid ""
 "You can expand the basic [application]*Anaconda* and Kickstart functionality "
 "by using custom add-ons specified using the [command]#%addon# section."
 msgstr ""
+"[command]#%addon# bölümünde belirtilen özel eklentileri kullanarak temel "
+"[application]*Anaconda* ve Kickstart işlevselliğini genişletebilirsiniz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2046
@@ -6731,12 +7280,19 @@ msgid ""
 "[application]*Kdump* add-on, which is included by default on some "
 "installations, use the following block:"
 msgstr ""
+"Kickstart dosyanızda bir eklenti kullanmak için [command]#%addon "
+"_eklenti_adı_ _seçenekler_pass:attributes[{blank}]# komutunu ekleyin. Bölüm, "
+"bir [command]#%end# ifadesi ile kapatılmalıdır. Örneğin, bazı kurulumlarda "
+"öntanımlı olarak bulunan [application]*Kdump* eklentisini kullanmak için "
+"aşağıdaki bloğu kullanın:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2049
 #, no-wrap
 msgid "%addon com_redhat_kdump --enable --reserve-mb=128%end\n"
 msgstr ""
+"%addon com_redhat_kdump --enable --reserve-mb=128\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2053
@@ -6744,6 +7300,8 @@ msgid ""
 "The [command]#%addon# section does not have any options of its own; all "
 "options depend on the add-on being used."
 msgstr ""
+"[command]#%addon# bölümünün kendi seçeneği yoktur; tüm seçenekler, "
+"kullanılan eklentiye bağlıdır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2055
@@ -6752,12 +7310,15 @@ msgid ""
 "+https://vpodzime.fedorapeople.org/anaconda-addon-development-guide/+"
 "+[Fedora Anaconda Addon Development Guide]."
 msgstr ""
+"[application]*Anaconda* eklentileri hakkında daha fazla bilgi için "
+"link:++https://vpodzime.fedorapeople.org/anaconda-addon-development-guide/++["
+"Fedora Anaconda Eklenti Geliştirme Kılavuzuna] bakın."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2057
 #, no-wrap
 msgid "%anaconda (optional) - Additional Anaconda Configuration"
-msgstr ""
+msgstr "%anaconda (optional) - Ek Anaconda Yapılandırması"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2060
@@ -6770,6 +7331,13 @@ msgid ""
 "(optional) - Change the Default Password Policy]. The [command]#%anaconda# "
 "section must end with `%end`."
 msgstr ""
+"{PRODUCT} 22'de tanıtılan bu bölüm, kurucu için ek yapılandırma "
+"seçeneklerini belirtmek için kullanılır. Bu bölümdeki komutlar yalnızca "
+"kurulum sırasındaki davranışı denetler, kurulu sistemdeki değil. Bu bölümde "
+"şu anda kullanılabilen tek komut xref:Kickstart_Syntax_Reference.adoc#sect-"
+"kickstart-commands-pwpolicy[pwpolicy (isteğe bağlı) - Öntanımlı Parola "
+"Politikasını Değiştir] komutudur. [command]#%anaconda# bölümü `%end` ile "
+"bitmelidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2062
@@ -6780,6 +7348,12 @@ msgid ""
 "`product.img` file with a Kickstart file replacing the default one, and pass "
 "this file to [application]*Anaconda* using a boot option."
 msgstr ""
+"Etkileşimli kurulumlarda (grafiksel veya metin arayüzü kullanılarak), `/usr/"
+"share/anaconda/interactive-defaults.ks` dosyası öntanımlı "
+"[command]#%anaconda# bölümünü içerir. Öntanımlı değerleri değiştirmek için, "
+"öntanımlı olanın yerini alan bir Kickstart dosyasıyla bir `product.img` "
+"dosyası oluşturmalı ve bu dosyayı bir önyükleme seçeneği kullanarak "
+"[application]*Anaconda*'ya iletmelisiniz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2064
@@ -6787,12 +7361,14 @@ msgid ""
 "When using a Kickstart file, you can override the default [command]#"
 "%anaconda# section by using the section again in your custom Kickstart."
 msgstr ""
+"Bir Kickstart dosyası kullanırken, özel Kickstart dosyanızda bölümü tekrar "
+"kullanarak öntanımlı [command]#%anaconda# bölümünü geçersiz kılabilirsiniz."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2066
 #, no-wrap
 msgid "%include (optional) - Include Contents of Another File"
-msgstr ""
+msgstr "%include (isteğe bağlı) - Başka Bir Dosyanın İçeriğini Dahil Et"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2069
@@ -6802,12 +7378,15 @@ msgid ""
 "contents were at the location of the [command]#%include# command in the "
 "Kickstart file."
 msgstr ""
+"Başka bir dosyanın içeriğini, içerikler [command]#%include# komutunun "
+"bulunduğu konumdaymış gibi Kickstart dosyasına dahil etmek için [command]#"
+"%include _/dosyanın/yolu_pass:attributes[{blank}]# komutunu kullanın."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2071
 #, no-wrap
 msgid "%ksappend (optional) - Append Contents of Another File"
-msgstr ""
+msgstr "%ksappend (isteğe bağlı) - Başka Bir Dosyanın İçeriğini Ekle"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2074
@@ -6819,6 +7398,12 @@ msgid ""
 "the location of the [command]#%ksappend# command. The difference is in when "
 "the two directives are processed."
 msgstr ""
+"[command]#%ksappend _URL_pass:attributes[{blank}]# komutu, sanki "
+"[command]#%ksappend# komutunun bulunduğu konumdaymış gibi ek dosyaların "
+"içeriğini dahil etmek için kullanıldığı için xref:Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-commands-include[%include (isteğe bağlı) - Başka Bir "
+"Dosyanın İçeriğini Dahil Et] komutuna çok benzer. Aralarındaki fark, iki "
+"komutun ne zaman işlendiğidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2076
@@ -6829,6 +7414,11 @@ msgid ""
 "handled, and then finally the rest of the Kickstart file is processed in "
 "order, which includes [command]#%include# directives."
 msgstr ""
+"[command]#%ksappend#, Kickstart dosyasının diğer bölümlerinden önceki bir "
+"ilk geçişte işlenir. Ardından bu genişletilen Kickstart dosyası, tüm "
+"[command]#%pre# betiklerinin işlendiği [application]*Anaconda*'nın geri "
+"kalanına iletilir ve son olarak, [command]#%include# komutları içeren "
+"Kickstart dosyasının geri kalanı sırayla işlenir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2078
@@ -6836,12 +7426,15 @@ msgid ""
 "Therefore, [command]#%ksappend# provides a way to include a file containing "
 "[command]#%pre# scripts, while [command]#%include# does not."
 msgstr ""
+"Bu nedenle [command]#%ksappend# komutu, [command]#%pre# betiklerini içeren "
+"bir dosyayı dahil etmenin bir yolunu sağlarken [command]#%include# bunu "
+"sağlamaz."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2080
 #, no-wrap
 msgid "%packages (required) - Package Selection"
-msgstr ""
+msgstr "%packages (gerekli) - Paket Seçimi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2083
@@ -6850,6 +7443,9 @@ msgid ""
 "describes the software packages to be installed. This section must end with "
 "an [command]#%end# statement."
 msgstr ""
+"Kurulacak yazılım paketlerini açıklayan bir Kickstart bölümüne başlamak için "
+"[command]#%packages# komutunu kullanın. Bu bölüm bir [command]#%end# ifadesi "
+"ile bitmelidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2085
@@ -6859,6 +7455,9 @@ msgid ""
 "defined. See the `repodata/comps.xml` file in your installation source for "
 "environment and group definitions."
 msgstr ""
+"Paketleri _ortam_, _grup_ veya paket adlarına göre belirtebilirsiniz. İlgili "
+"paketleri içeren çeşitli ortamlar ve gruplar tanımlanmıştır. Ortam ve grup "
+"tanımları için kurulum kaynağınızdaki `repodata/comps.xml` dosyasına bakın."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2087
@@ -6871,6 +7470,14 @@ msgid ""
 "installed if they are not specifically excluded, and the packages marked "
 "`optional` must be specifically included even when the group is selected."
 msgstr ""
+"`comps.xml` dosyası, kullanılabilir ortamları (`<environment>` etiketiyle "
+"işaretlenir) ve grupları (`<group>` etiketiyle işaretlenir) açıklayan bir "
+"yapı içerir. Her girdinin bir kimliği, kullanıcı görünürlük değeri, adı, "
+"açıklaması ve paket listesi vardır. Kurulum için grup seçilirse, paket "
+"listesinde `mandatory` olarak işaretlenen paketler her zaman kurulur, "
+"`default` olarak işaretlenen paketler özellikle hariç tutulmamışlarsa "
+"kurulur ve `default` olarak işaretlenen paketler grup seçilmiş olsa bile "
+"özellikle dahil edilmelidir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2089
@@ -6878,6 +7485,8 @@ msgid ""
 "You can specify a package group or environment using either its ID (the "
 "`<id>` tag) or name (the `<name>` tag)."
 msgstr ""
+"Kimliğini (`<id>` etiketi) veya adını (`<name>` etiketi) kullanarak bir "
+"paket grubu veya ortamı belirtebilirsiniz."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2094
@@ -6887,6 +7496,10 @@ msgid ""
 "for example, [package]*glibc.i686*. The [option]#--multilib# option also "
 "must be specified in the Kickstart file; see the available options below."
 msgstr ""
+"64 bitlik bir sisteme 32 bitlik bir paket kurmak için, paketin oluşturulduğu "
+"32 bit mimariye sahip paket adını eklemeniz gerekir - örneğin, "
+"[package]*glibc.i686*. Ayrıca [option]#--multilib# seçeneği Kickstart "
+"dosyasında belirtilmelidir; aşağıdaki kullanılabilir seçeneklere bakın."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2101
@@ -6901,24 +7514,34 @@ msgid ""
 "- Create User Account] for details) or log into the installed system with a "
 "virtual console as `root` and add users with the [command]#useradd# command."
 msgstr ""
+"[application]*İlk Kurulum*, bir masaüstü ortamı ve [application]*X Pencere "
+"Sistemi* kuruluma dahil edilmedikçe ve grafiksel oturum açma "
+"etkinleştirilmedikçe, bir sistem Kickstart dosyasından kurulduktan sonra "
+"çalıştırılmaz. Bu, öntanımlı olarak `root` dışında hiçbir kullanıcının "
+"oluşturulmayacağı anlamına gelir. Ek sistemler kurmadan önce Kickstart "
+"dosyasında [option]#user# seçeneğiyle bir kullanıcı oluşturabilirsiniz ("
+"ayrıntılar için xref:Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"user[user (isteğe bağlı) - Kullanıcı Hesabı Oluştur] bölümüne bakın) veya "
+"kurulu sistemde sanal bir konsolla `root` olarak oturum açıp "
+"[command]#useradd# komutuyla kullanıcılar ekleyebilirsiniz."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2104
 #, no-wrap
 msgid "Specifying Environments, Groups and Packages"
-msgstr ""
+msgstr "Ortamları, Grupları ve Paketleri Belirtme"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2106
 #, no-wrap
 msgid "Specifying an Environment"
-msgstr ""
+msgstr "Bir Ortam Belirtme"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2107
 msgid ""
 "In addition to groups, you specify an entire environment to be installed:"
-msgstr ""
+msgstr "Gruplara ek olarak, tamamıyla kurulacak bir ortamı belirtebilirsiniz:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2113
@@ -6928,6 +7551,9 @@ msgid ""
 "@^Infrastructure Server\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"@^Infrastructure Server\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2117
@@ -6936,12 +7562,15 @@ msgid ""
 "Server` environment. All available environments are described in the `comps."
 "xml` file."
 msgstr ""
+"Bu komut, `Infrastracture Server` ortamının parçası olan tüm paketleri "
+"kuracaktır. Kullanılabilir tüm ortamlar `comps.xml` dosyasında "
+"açıklanmaktadır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2118
 #, no-wrap
 msgid "Specifying Groups"
-msgstr ""
+msgstr "Grupları Belirtme"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2119
@@ -6950,6 +7579,9 @@ msgid ""
 "the full group name or group id as given in the `comps.xml` file. For "
 "example:"
 msgstr ""
+"Her satır `@` simgesiyle başlayacak ve ardından `comps.xml` dosyasında "
+"belirtilen tam grup adını veya grup kimliğini içerecek biçimde grupları "
+"belirt. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2128
@@ -6961,6 +7593,11 @@ msgid ""
 "@Sound and Video\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%packages#\n"
+"@X Window System\n"
+"@Desktop\n"
+"@Sound and Video\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2132
@@ -6968,6 +7605,8 @@ msgid ""
 "The `Core` and `Base` groups are always selected - it is not necessary to "
 "specify them in the [command]#%packages# section."
 msgstr ""
+"`Core` ve `Base` gruplar her zaman seçilir - bunları [command]#%packages# "
+"bölümünde belirtmeniz gerekmez."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2134
@@ -6976,12 +7615,15 @@ msgid ""
 "each variant of {PRODUCT}. This group contains all packages which are known "
 "to cause file conflicts, and is intended to be excluded."
 msgstr ""
+"`comps.xml` dosyası, {PRODUCT}'nın her bir çeşidi için `Conflicts (_çeşit_)` "
+"adlı grupları da tanımlar. Bu grup, dosya çakışmalarına neden olduğu bilinen "
+"ve hariç tutulması amaçlanan tüm paketleri içermektedir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2135
 #, no-wrap
 msgid "Specifying Individual Packages"
-msgstr ""
+msgstr "Tek Tek Paketleri Belirtme"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2136
@@ -6989,6 +7631,9 @@ msgid ""
 "Specify individual packages by name, one entry to a line. You can use the "
 "asterisk character (`*`) as a _wildcard_ in package names. For example:"
 msgstr ""
+"Her satırda bir girdi olacak şekilde tek tek paketleri adlarıyla belirt. "
+"Paket adlarında yıldız karakterini (`*`) _joker_ _karakter_ olarak "
+"kullanabilirsiniz. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2145
@@ -7001,6 +7646,12 @@ msgid ""
 "docbook*\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"sqlite\n"
+"curl\n"
+"aspell\n"
+"docbook*\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2149
@@ -7009,12 +7660,15 @@ msgid ""
 "[package]*docbook-simple*, [package]*docbook-slides* and others that match "
 "the pattern represented with the wildcard."
 msgstr ""
+"`docbook*` girdisi; [package]*docbook-dtds*, [package]*docbook-simple*, "
+"[package]*docbook-slides* paketlerini ve joker karakterle temsil edilen "
+"modelle eşleşen diğerlerini içerir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2150
 #, no-wrap
 msgid "Excluding Environments, Groups, or Packages"
-msgstr ""
+msgstr "Ortamları, Grupları veya Paketleri Hariç Tutma"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2151
@@ -7022,6 +7676,8 @@ msgid ""
 "Use a leading dash (`-`) to specify packages or groups to exclude from the "
 "installation. For example:"
 msgstr ""
+"Kurulumdan hariç tutulacak paketleri veya grupları belirtmek için satır "
+"başında tire karakteri (`-`) kullanın. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2159
@@ -7033,6 +7689,11 @@ msgid ""
 "-ipa*fonts\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"-@Graphical Internet\n"
+"-autofs\n"
+"-ipa*fonts\n"
+"%end\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2166
@@ -7040,6 +7701,9 @@ msgid ""
 "Installing all available packages using only `*` in a Kickstart file is not "
 "supported, even if you exclude the `@Conflicts (_variant_)` group."
 msgstr ""
+"`@Conflicts (_çeşit_)` grubunu hariç tutsanız bile, bir Kickstart dosyasında "
+"yalnızca `*` kullanılarak kullanılabilir tüm paketlerin kurulması "
+"desteklenmemektedir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2170
@@ -7048,12 +7712,15 @@ msgid ""
 "using several options. Some options work for the entire package selection, "
 "others are used with only specific groups."
 msgstr ""
+"Birkaç seçeneği kullanarak [command]#%packages# bölümünün öntanımlı "
+"davranışını değiştirebilirsiniz. Bazı seçenekler tüm paket seçimi için "
+"çalışır, diğerleri yalnızca belirli gruplarla kullanılır."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2171
 #, no-wrap
 msgid "Common Package Selection Options"
-msgstr ""
+msgstr "Ortak Paket Seçimi Seçenekleri"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2174
@@ -7061,29 +7728,31 @@ msgid ""
 "The following options are available for the [command]#%packages#. To use an "
 "option, append it to the start of the package selection section. For example:"
 msgstr ""
+"[command]#%packages# için aşağıdaki seçenekler kullanılabilir. Bir seçeneği "
+"kullanmak için, onu paket seçimi bölümünün başına ekleyin. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2178
 #, no-wrap
 msgid "[command]#%packages --multilib --ignoremissing#\n"
-msgstr ""
+msgstr "[command]#%packages --multilib --ignoremissing#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2180
 #, no-wrap
 msgid "[option]#--nocore#"
-msgstr ""
+msgstr "[option]#--nocore#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2181
 msgid "Do not install the `@Core` group."
-msgstr ""
+msgstr "`@Core` grubunu kurma."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2182
 #, no-wrap
 msgid "[option]#--ignoremissing#"
-msgstr ""
+msgstr "[option]#--ignoremissing#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2183
@@ -7092,12 +7761,15 @@ msgid ""
 "source, instead of halting the installation to ask if the installation "
 "should be aborted or continued."
 msgstr ""
+"Kurulumun sonlandırılıp sonlandırılmayacağını veya devam ettirilip "
+"ettirilmeyeceğini sormak için kurulumu durdurmak yerine kurulum kaynağında "
+"eksik olan paketleri, grupları ve ortamları yoksay."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2184
 #, no-wrap
 msgid "[option]#--excludedocs#"
-msgstr ""
+msgstr "[option]#--excludedocs#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2185
@@ -7107,12 +7779,15 @@ msgid ""
 "directory, but the specific files to be excluded depend on individual "
 "packages."
 msgstr ""
+"Paketlerde bulunan hiçbir belgelendirmeyi kurma. Çoğu durumda, bu, normalde "
+"`/usr/share/doc*` dizinine kurulan dosyaları hariç tutacaktır, ancak hariç "
+"tutulacak belirli dosyalar paketlerin kendisine bağlıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2186
 #, no-wrap
 msgid "[option]#--multilib#"
-msgstr ""
+msgstr "[option]#--multilib#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2187
@@ -7121,6 +7796,9 @@ msgid ""
 "installing 32-bit packages on a 64-bit system) and install packages "
 "specified in this section as such."
 msgstr ""
+"Kurulu sistemi çoklu kütüphane (multilib) paketleri için yapılandır (yani, "
+"64-bit x86 sistemine 32-bit paketlerin kurulmasına izin vermek için) ve bu "
+"bölümde belirtilen paketleri bu şekilde kur."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2189
@@ -7130,6 +7808,11 @@ msgid ""
 "installed. When you use this option, packages for 32-bit systems (marked as "
 "`i686`) will be automatically installed as well, if available."
 msgstr ""
+"Normalde 64-bit bir sistemde, yalnızca bu mimari için olan paketler (`x86_64`"
+" olarak işaretlenir) ve tüm mimariler için olan paketler (`noarch` olarak "
+"işaretlenir) kurulur. Bu seçeneği kullandığınızda, varsa 32-bit sistemler "
+"için olan paketler de (`i686` olarak işaretlenir) otomatik olarak "
+"kurulacaktır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2191
@@ -7140,12 +7823,16 @@ msgid ""
 "architecture versions in which they are needed, even if they are available "
 "for more architectures."
 msgstr ""
+"Bu yalnızca [command]#%packages# bölümünde açıkça belirtilen paketler için "
+"geçerlidir. Kickstart dosyasında belirtilmeden yalnızca bağımlılık olarak "
+"kurulan paketler, daha fazla mimari için kullanılabilir olsalar bile, "
+"yalnızca ihtiyaç duyulan mimari sürümlerinde kurulacaktır."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2192
 #, no-wrap
 msgid "Options for Specific Package Groups"
-msgstr ""
+msgstr "Belirli Paket Grupları için Seçenekler"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2195
@@ -7154,6 +7841,9 @@ msgid ""
 "using them at the [command]#%packages# command in the Kickstart file, append "
 "them to the group name. For example:"
 msgstr ""
+"Bu listedeki seçenekler yalnızca tek bir paket grubu için geçerlidir. "
+"Bunları Kickstart dosyasındaki [command]#%packages# komutunda kullanmak "
+"yerine grup adına ekleyin. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2202
@@ -7163,24 +7853,27 @@ msgid ""
 "@Graphical Internet --optional\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%packages#\n"
+"@Graphical Internet --optional\n"
+"[command]#%end#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2205
 #, no-wrap
 msgid "[option]#--nodefaults#"
-msgstr ""
+msgstr "[option]#--nodefaults#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2206
 msgid ""
 "Only install the group's mandatory packages, not the default selections."
-msgstr ""
+msgstr "Öntanımlı seçimleri değil, yalnızca grubun zorunlu paketlerini kur."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2207
 #, no-wrap
 msgid "[option]#--optional#"
-msgstr ""
+msgstr "[option]#--optional#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2208
@@ -7188,6 +7881,8 @@ msgid ""
 "Install packages marked as optional in the group definition in the `comps."
 "xml` file, in addition to installing the default selections."
 msgstr ""
+"Öntanımlı seçimleri kurmaya ek olarak, `comps.xml` dosyasındaki grup "
+"tanımında isteğe bağlı olarak işaretlenen paketleri de kur."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2210
@@ -7197,12 +7892,16 @@ msgid ""
 "case the [option]#--optional# option must always be used, otherwise no "
 "packages from this group will be installed."
 msgstr ""
+"`Scientific Support` gibi bazı paket gruplarının, belirtilen zorunlu veya "
+"öntanımlı paketlere sahip olmadığını, yalnızca isteğe bağlı paketleri "
+"olduğunu unutmayın. Bu durumda [option]#--optional# seçeneği her zaman "
+"kullanılmalıdır, aksi takdirde bu gruptan hiçbir paket kurulmayacaktır."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2212
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr ""
+msgstr "%pre (isteğe bağlı) - Kurulum Öncesi Betiği"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2215
@@ -7215,6 +7914,12 @@ msgid ""
 "in which the [command]#%pre# and [command]#%post# sections are included does "
 "not matter."
 msgstr ""
+"Kickstart dosyası ayrıştırıldıktan hemen sonra, ancak kurulum başlamadan "
+"önce sistemde çalıştırılacak komutlar ekleyebilirsiniz. Bu bölüm Kickstart "
+"dosyasının sonuna doğru, gerçek Kickstart komutlarından sonra bulunmalı, "
+"[command]#%pre# ile başlamalı ve [command]#%end# ile bitmelidir. Kickstart "
+"dosyanız ayrıca bir [command]#%post# bölümü içeriyorsa, [command]#%pre# ve "
+"[command]#%post# bölümlerinin eklenme sırası önemli değildir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2217
@@ -7223,6 +7928,9 @@ msgid ""
 "_name service_ has not been configured at this point, so only IP addresses "
 "work, not URLs."
 msgstr ""
+"[command]#%pre# bölümünde ağa erişebilirsiniz. Ancak _ad hizmeti_ bu noktada "
+"yapılandırılmamıştır, bu nedenle yalnızca IP adresleri çalışır, URL'ler "
+"çalışmaz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2219
@@ -7232,6 +7940,10 @@ msgid ""
 "created Kickstart file, as the pre-installation script occurs during the "
 "second stage of the installation process."
 msgstr ""
+"Kickstart kurulum öncesi betiği bölümü birden fazla kurulum ağacını veya "
+"kaynak ortamını *yönetemez*. Kurulum öncesi betiği, kurulum işleminin ikinci "
+"aşamasında gerçekleştiğinden, oluşturulan her Kickstart dosyası için bu "
+"bilgilerin dahil edilmesi gerekir."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2224
@@ -7239,6 +7951,8 @@ msgid ""
 "Unlike the post-installation script, the pre-installation script is not run "
 "in the `chroot` environment."
 msgstr ""
+"Kurulum sonrası betiğinin aksine, kurulum öncesi betiği `chroot` ortamında "
+"çalıştırılmaz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2228
@@ -7247,6 +7961,9 @@ msgid ""
 "scripts. To use an option, append it to the [command]#%pre# line at the "
 "beginning of the script. For example:"
 msgstr ""
+"Kurulum öncesi betiklerinin davranışını değiştirmek için aşağıdaki "
+"seçenekler kullanılabilir. Bir seçeneği kullanmak için, onu betiğin "
+"başındaki [command]#%pre# satırına ekleyin. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2235
@@ -7256,13 +7973,16 @@ msgid ""
 "--- Python script omitted --\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%pre --interpreter=/usr/bin/python#\n"
+"--- Buraya Python betiği yazılır --\n"
+"[command]#%end#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2238
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2276
 #, no-wrap
 msgid "[option]#--interpreter=#"
-msgstr ""
+msgstr "[option]#--interpreter=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2239
@@ -7271,13 +7991,16 @@ msgid ""
 "scripting language available on the system can be used; in most cases, these "
 "will be `/usr/bin/sh`, `/usr/bin/bash`, and `/usr/bin/python`."
 msgstr ""
+"Python gibi farklı bir betik dili belirlemenize olanak tanır. Sistemde "
+"bulunan herhangi bir betik dili kullanılabilir; çoğu durumda bunlar `/usr/"
+"bin/sh`, `/usr/bin/bash` ve `/usr/bin/python` olacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2240
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2298
 #, no-wrap
 msgid "[option]#--erroronfail#"
-msgstr ""
+msgstr "[option]#--erroronfail#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2241
@@ -7286,24 +8009,26 @@ msgid ""
 "Display an error and halt the installation if the script fails. The error "
 "message will direct you to where the cause of the failure is logged."
 msgstr ""
+"Betik başarısız olursa bir hata görüntüle ve kurulumu durdur. Hata mesajı "
+"sizi hatanın nedeninin günlüğe kaydedildiği yere yönlendirecektir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2242
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2300
 #, no-wrap
 msgid "[option]#--log=#"
-msgstr ""
+msgstr "[option]#--log=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2243
 msgid "Logs the script's output into the specified log file. For example:"
-msgstr ""
+msgstr "Betiğin çıktısını belirtilen günlük dosyasına kaydeder. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2247
 #, no-wrap
 msgid "[command]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
-msgstr ""
+msgstr "[command]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2250
@@ -7312,12 +8037,15 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-example-pre-script[Example "
 "Pre-installation Script]."
 msgstr ""
+"Kurulum öncesi betiğinin bir örneği için xref:Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-example-pre-script[Örnek Kurulum Öncesi Betiği] bölümüne "
+"bakın."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2252
 #, no-wrap
 msgid "%post (optional) - Post-installation Script"
-msgstr ""
+msgstr "%post (isteğe bağlı) - Kurulum Sonrası Betiği"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2255
@@ -7330,6 +8058,12 @@ msgid ""
 "[command]#%pre# section, the order of the [command]#%pre# and [command]#"
 "%post# sections does not matter."
 msgstr ""
+"Kurulum tamamlandıktan sonra, ancak sistem ilk kez yeniden başlatılmadan "
+"önce sistemde çalıştırılacak komutları ekleme seçeneğiniz vardır. Bu bölüm, "
+"gerçek Kickstart komutlarından sonra, Kickstart dosyasının sonuna doğru "
+"bulunmalı, [command]#%post# ile başlamalı ve [command]#%end# ile bitmelidir. "
+"Kickstart dosyanız ayrıca bir [command]#%pre# bölümü içeriyorsa, "
+"[command]#%pre# ve [command]#%post# bölümlerinin sırası önemli değildir."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2257
@@ -7341,6 +8075,12 @@ msgid ""
 "change this behavior using the [option]#--nochroot# option as described "
 "below."
 msgstr ""
+"Bu bölüm, ek yazılımlar kurma veya ek ad sunucusu yapılandırma gibi işlevler "
+"için kullanışlıdır. Kurulum sonrası betiği bir chroot ortamında "
+"çalıştırılır, bu nedenle betikleri veya RPM paketlerini kurulum ortamından "
+"kopyalamak gibi görevlerin gerçekleştirilmesi öntanımlı olarak çalışmaz. Bu "
+"davranışı, aşağıda açıklandığı gibi [option]#--nochroot# seçeneğini "
+"kullanarak değiştirebilirsiniz."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2262
@@ -7353,6 +8093,13 @@ msgid ""
 "IP addresses. Thus, if you are using `DHCP`, you must specify IP addresses "
 "in the [command]#%post# section."
 msgstr ""
+"Ağı bir ad sunucusu da dahil olmak üzere statik IP bilgileriyle "
+"yapılandırdıysanız, [command]#%post# bölümünde ağa erişebilir ve IP "
+"adreslerini çözümleyebilirsiniz. Ağı `DHCP` için yapılandırdıysanız, kurulum "
+"[command]#%post# bölümünü çalıştırdığında `/etc/resolv.conf` dosyası "
+"tamamlanmamıştır. Ağa erişebilirsiniz, ancak IP adreslerini "
+"çözümleyemezsiniz. Bu nedenle, `DHCP` kullanıyorsanız, [command]#%post# "
+"bölümünde IP adreslerini belirtmelisiniz."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2266
@@ -7361,6 +8108,9 @@ msgid ""
 "installation scripts. To use an option, append it to the [command]#%post# "
 "line at the beginning of the script. For example:"
 msgstr ""
+"Kurulum sonrası betiklerinin davranışını değiştirmek için aşağıdaki "
+"seçenekler kullanılabilir. Bir seçeneği kullanmak için, onu betiğin "
+"başındaki [command]#%post# satırına ekleyin. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2273
@@ -7370,19 +8120,22 @@ msgid ""
 "--- Python script omitted --\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%post --interpreter=/usr/bin/python#\n"
+"--- Buraya Python betiği yazılır --\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2277
 msgid ""
 "Allows you to specify a different scripting language, such as Python. For "
 "example:"
-msgstr ""
+msgstr "Python gibi farklı bir betik dili belirtmenize olanak tanır. Örneğin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2281
 #, no-wrap
 msgid "[command]#%post --interpreter=/usr/bin/python#\n"
-msgstr ""
+msgstr "[command]#%post --interpreter=/usr/bin/python#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2284
@@ -7390,12 +8143,14 @@ msgid ""
 "Any scripting language available on the system can be used; in most cases, "
 "these will be `/usr/bin/sh`, `/usr/bin/bash`, and `/usr/bin/python`."
 msgstr ""
+"Sistemde bulunan herhangi bir betik dili kullanılabilir; çoğu durumda bunlar "
+"`/usr/bin/sh`, `/usr/bin/bash` ve `/usr/bin/python` olacaktır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2285
 #, no-wrap
 msgid "[option]#--nochroot#"
-msgstr ""
+msgstr "[option]#--nochroot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2286
@@ -7403,6 +8158,8 @@ msgid ""
 "Allows you to specify commands that you would like to run outside of the "
 "chroot environment."
 msgstr ""
+"chroot ortamının dışında çalıştırmak istediğiniz komutları belirtmenize "
+"olanak tanır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2288
@@ -7410,6 +8167,8 @@ msgid ""
 "The following example copies the file `/etc/resolv.conf` to the file system "
 "that was just installed."
 msgstr ""
+"Aşağıdaki örnek, `/etc/resolv.conf` dosyasını yeni kurulan dosya sistemine "
+"kopyalar."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2295
@@ -7419,6 +8178,9 @@ msgid ""
 "cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%post --nochroot#\n"
+"cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2301
@@ -7427,23 +8189,26 @@ msgid ""
 "the log file must take into account whether or not you use the [option]#--"
 "nochroot# option. For example, without [option]#--nochroot#:"
 msgstr ""
+"Betiğin çıktısını belirtilen günlük dosyasına kaydeder. Günlük dosyasının "
+"yolunun, [option]#--nochroot# seçeneğini kullanıp kullanmadığınızı dikkate "
+"alması gerektiğini unutmayın. Örneğin, [option]#--nochroot# seçeneği olmadan:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2305
 #, no-wrap
 msgid "[command]#%post --log=/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --log=/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2308
 msgid "with [option]#--nochroot#:"
-msgstr ""
+msgstr "[option]#--nochroot# seçeneğiyle:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2312
 #, no-wrap
 msgid "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2315
@@ -7452,19 +8217,22 @@ msgid ""
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-example-post-script[Example "
 "Post-installation Script]."
 msgstr ""
+"Kurulum sonrası betiğinin bir örneği için xref:Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-example-post-script[Örnek Kurulum Sonrası Betiği] "
+"bölümüne bakın."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2317
 #, no-wrap
 msgid "Example Kickstart Configurations"
-msgstr ""
+msgstr "Örnek Kickstart Yapılandırmaları"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2320
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2324
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "Gelişmiş Bölümlendirme Örneği"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2323
@@ -7473,6 +8241,9 @@ msgid ""
 "[command]#zerombr#, [command]#part#, [command]#raid#, [command]#volgroup#, "
 "and [command]#logvol# Kickstart options in action:"
 msgstr ""
+"[command]#clearpart#, [command]#zerombr#, [command]#part#, [command]#raid#, "
+"[command]#volgroup# ve [command]#logvol# Kickstart komutlarının uygulamalı "
+"bir örneği aşağıdadır:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2342
@@ -7492,6 +8263,19 @@ msgid ""
 "part raid.24 --size 8000              --ondrive=hdc\n"
 "part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 msgstr ""
+"clearpart  --drives=hda,hdc\n"
+"zerombr\n"
+"# Raid 1 IDE yapılandırması\n"
+"part raid.11 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.12 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.13 --size 2000  --asprimary --ondrive=hda\n"
+"part raid.14 --size 8000              --ondrive=hda\n"
+"part raid.15 --size 16384 --grow      --ondrive=hda\n"
+"part raid.21 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.22 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.23 --size 2000  --asprimary --ondrive=hdc\n"
+"part raid.24 --size 8000              --ondrive=hdc\n"
+"part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2349
@@ -7504,6 +8288,12 @@ msgid ""
 "raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
 "raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 msgstr ""
+"# --spares=x seçeneğini ekleyebilirsiniz\n"
+"raid /     --fstype xfs  --device root  --level=RAID1 raid.11 raid.21\n"
+"raid /safe --fstype xfs  --device safe  --level=RAID1 raid.12 raid.22\n"
+"raid swap  --fstype swap --device swap  --level=RAID1 raid.13 raid.23\n"
+"raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
+"raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2355
@@ -7515,6 +8305,12 @@ msgid ""
 "logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
 "logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 msgstr ""
+"# /var ve /usr/local bölümlerini daha sonra yeniden boyutlandırabilmemiz "
+"için LVM yapılandırması\n"
+"volgroup sysvg pv.01\n"
+"logvol /var           --vgname=sysvg --size=8000     --name=var\n"
+"logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
+"logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2361
@@ -7522,6 +8318,8 @@ msgid ""
 "This advanced example implements LVM over RAID, as well as the ability to "
 "resize various directories for future growth."
 msgstr ""
+"Bu gelişmiş örnekte, gelecekteki büyüme için çeşitli dizinleri yeniden "
+"boyutlandırma yeteneğinin yanı sıra RAID üzerinde LVM uygulanmaktadır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2363
@@ -7530,6 +8328,9 @@ msgid ""
 "wipe them. The [command]#zerombr# command initializes unused partition "
 "tables."
 msgstr ""
+"İlk olarak, onları silmek için `hda` ve `hdc` disklerinde "
+"[command]#clearpart# komutu kullanılır. [command]#zerombr# komutu, "
+"kullanılmayan bölümlendirme tablolarını başlatır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2365
@@ -7538,6 +8339,9 @@ msgid ""
 "Each drive is divided into five partitions, and each drive is partitioned "
 "into an identical layout."
 msgstr ""
+"Ardından iki disk, RAID yapılandırmasına hazırlanmaları için bölümlere "
+"ayrılır. Her disk beş bölüme ayrılır ve birbirinin aynısı düzende "
+"bölümlendirilir."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2367
@@ -7548,6 +8352,11 @@ msgid ""
 "partitions is named `pv.01` and will be used in the following part as a "
 "physical volume for LVM."
 msgstr ""
+"Sonraki kısım, RAID1 seviyesine (yansıtma) sahip bir yazılımsal RAID aygıtı "
+"oluşturmak için bu fiziksel bölüm çiftlerini kullanır. İlk dört RAID aygıtı "
+"`/` (kök), `/safe`, `swap` ve `/usr` için kullanılır. Beşinci, en büyük "
+"bölüm çifti `pv.01` olarak adlandırılır ve bir sonraki kısımda LVM için "
+"fiziksel bir birim olarak kullanılacaktır."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2369
@@ -7559,6 +8368,12 @@ msgid ""
 "the `/usr/local` volume uses the [option]#--grow# option to fill all "
 "remaining available space."
 msgstr ""
+"Son olarak, son komut kümesi ilk olarak `pv.01` fiziksel biriminde `sysvg` "
+"adlı bir birim grubu oluşturur. Ardından, üç mantıksal birim (`/var`, `/var/"
+"freespace` ve `/usr/local`) oluşturulur ve `sysvg` birim grubuna eklenir. "
+"`/var` ve `/var/freespace` birimlerinin 8 GB'lik bir ayarlanmış boyutu "
+"vardır ve `/usr/local` birimi, kalan tüm kullanılabilir alanı doldurmak için "
+"[option]#--grow# seçeneğini kullanır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2374
@@ -7567,23 +8382,27 @@ msgid ""
 "You should use unique identifiers, such as a disk labels or an UUIDs, to "
 "identify disk drives. See the note in introduction to this appendix."
 msgstr ""
+"Yukarıdaki örnek, disk sürücülerini tanımlamak için `hda` ve `hdc` "
+"tanımlayıcılarını kullanır. Disk sürücülerini tanımlamak için disk "
+"etiketleri veya UUID'ler gibi benzersiz tanımlayıcılar kullanmalısınız. Bu "
+"ekin giriş bölümündeki nota bakın."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2378
 #, no-wrap
 msgid "Example Pre-installation Script"
-msgstr ""
+msgstr "Örnek Kurulum Öncesi Betiği"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2381
 msgid "The following is an example [command]#%pre# section:"
-msgstr ""
+msgstr "[command]#%pre# bölümünün bir örneği aşağıdadır:"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2383
 #, no-wrap
 msgid "Sample %pre Script"
-msgstr ""
+msgstr "Örnek %pre Betiği"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2402
@@ -7604,6 +8423,20 @@ msgid ""
 "drive1=`echo $hds | cut -d' ' -f1`\n"
 "drive2=`echo $hds | cut -d' ' -f2`\n"
 msgstr ""
+"%pre\n"
+"#!/bin/sh\n"
+"hds=\"\"\n"
+"mymedia=\"\"\n"
+"for file in /proc/ide/h* do\n"
+"mymedia=`cat $file/media`\n"
+"if [ $mymedia == \"disk\" ] ; then\n"
+"hds=\"$hds `basename $file`\"\n"
+"fi\n"
+"done\n"
+"set $hds\n"
+"numhd=`echo $#`\n"
+"drive1=`echo $hds | cut -d' ' -f1`\n"
+"drive2=`echo $hds | cut -d' ' -f2`\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2422
@@ -7629,6 +8462,30 @@ msgid ""
 "fi\n"
 "%end\n"
 msgstr ""
+"#1 veya 2 sabit disk olup olmadığına göre bölümlendirme düzenini yaz\n"
+"if [ $numhd == \"2\" ] ; then\n"
+"#2 disk\n"
+"echo \"#%pre bölümünde 2 disk için oluşturulan bölümlendirme düzeni\" > /tmp/"
+"part-include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75 --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part / --fstype xfs --size 1 --grow --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part swap --recommended --ondisk $drive1\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 1 --grow --ondisk hdb\" >> /tmp/part-"
+"include\n"
+"else\n"
+"#1 disk\n"
+"echo \"#%pre bölümünde 1 disk için oluşturulan bölümlendirme düzeni\" > /tmp/"
+"part-include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75\" >> /tmp/part-include\n"
+"echo \"part swap --recommended\" >> /tmp/part-include\n"
+"echo \"part / --fstype xfs --size 2048\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 2048 --grow\" >> /tmp/part-include\n"
+"fi\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2426
@@ -7638,34 +8495,38 @@ msgid ""
 "one or two drives. Instead of having a set of partitioning commands in the "
 "Kickstart file, include the following line:"
 msgstr ""
+"Bu betik, sistemdeki sabit disk sayısını belirler ve bir veya iki diske "
+"sahip olmasına bağlı olarak farklı bir bölümlendirme düzenine sahip bir "
+"metin dosyası yazar. Kickstart dosyasında bir dizi bölümlendirme komutunu "
+"bulundurmak yerine aşağıdaki satırı ekleyin:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2430
 #, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
-msgstr ""
+msgstr "[command]#%include /tmp/part-include#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2433
 msgid "The partitioning commands selected in the script will be used."
-msgstr ""
+msgstr "Betikte seçilen bölümlendirme komutları kullanılacaktır."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2437
 #, no-wrap
 msgid "Example Post-installation Script"
-msgstr ""
+msgstr "Örnek Kurulum Sonrası Betiği"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2440
 msgid "The following is an example [command]#%post# section:"
-msgstr ""
+msgstr "[command]#%post# bölümünün bir örneği aşağıdadır:"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2442
 #, no-wrap
 msgid "Sample %post Script"
-msgstr ""
+msgstr "Örnek %post Betiği"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2449
@@ -7674,6 +8535,8 @@ msgid ""
 "# Start of the %post section with logging into /root/ks-post.log\n"
 "%post --log=/root/ks-post.log\n"
 msgstr ""
+"# /root/ks-post.log dosyasına günlük kaydı yapan %post bölümünün başlangıcı\n"
+"%post --log=/root/ks-post.log\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2455
@@ -7685,6 +8548,11 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
+"# Bir NFS paylaşımını bağla\n"
+"mkdir /mnt/temp\n"
+"mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
+"openvt -s -w -- /mnt/temp/runme\n"
+"umount /mnt/temp\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2458
@@ -7693,6 +8561,8 @@ msgid ""
 "# End of the %post section\n"
 "%end\n"
 msgstr ""
+"# %post bölümünün sonu\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2462
@@ -7702,3 +8572,7 @@ msgid ""
 "*not* supported while in Kickstart mode, therefore the [option]#-o nolock# "
 "option is required."
 msgstr ""
+"Yukarıdaki örnekte bir NFS paylaşımı bağlanır ve paylaşımdaki `/usr/"
+"new-machines/` konumunda bulunan `runme` adlı bir betik çalıştırılır. "
+"Kickstart modundayken NFS dosya kilitlemesinin *desteklenmediğini* "
+"unutmayın, bu nedenle [option]#-o nolock# seçeneği gereklidir."
