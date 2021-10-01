@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Anonymous <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2020-12-19 03:35+0000\n"
+"PO-Revision-Date: 2021-10-01 06:05+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/appendixes/Disk_Partitions.adoc:6
@@ -293,7 +293,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:68
 #, no-wrap
 msgid "Partitions: Turning One Drive Into Many"
-msgstr ""
+msgstr "Partisi: Membuat Satu Drive Menjadi Banyak"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:71
@@ -302,6 +302,9 @@ msgid ""
 "as if it was a separate disk. This is done through the addition of a "
 "_partition table_."
 msgstr ""
+"Disk drive dapat dibagi menjadi _partisi_. Setiap partisi dapat diakses "
+"seolah itu disk terpisah. Ini dilakukan melalui penambahan sebuah _tabel "
+"partisi_."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:73
@@ -309,11 +312,13 @@ msgid ""
 "There are several reasons for allocating disk space into separate disk "
 "partitions, for example:"
 msgstr ""
+"Ada beberapa alasan untuk mengalokasikan ruang disk ke dalam partisi-partisi "
+"disk yang terpisah, misalnya:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:75
 msgid "Logical separation of the operating system data from the user data"
-msgstr ""
+msgstr "Pemisahan logis data sistem operasi dari data pengguna"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:77
@@ -339,6 +344,16 @@ msgid ""
 "layout, see xref:sect-disk-partitioning-guid-partition-table[GUID Partition "
 "Table (GPT)]."
 msgstr ""
+"Saat ini ada dua standar tata letak pemartisian bagi hard disk fisik: Master "
+"Boot Record (*MBR*) dan GUID Partition Table (*GPT*). *MBR* adalah sebuah "
+"metoda yang lebih tua untuk pemartisian disk yang dipakai dengan komputer "
+"berbasis BIOS. *GPT* adalah tata letak pemartisian yang lebih baru yang "
+"merupakan bagian dari Unified Extensible Firmware Interface (*UEFI*). Bagian "
+"ini dan xref:sect-disk-partitions-extended[Partisi Di Dalam Partisi - "
+"Ringkasan dari Partisi Extended] utamanya menguraikan skema pemartisian disk "
+"_Master Boot Record_ (*MBR*). Untuk informasi tentang tata letak pemartisian "
+"_GUID Partition Table_ (*GPT*), lihat xref:sect-disk-partitioning-guid-"
+"partition-table[GUID Partition Table (GPT)]."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:86
@@ -349,18 +364,24 @@ msgid ""
 "any file system or user data. But for clarity, they are separate in our "
 "diagrams."
 msgstr ""
+"Sementara diagram dalam bab ini menunjukkan tabel partisi sebagai yang "
+"terpisah dari disk drive sebenarnya, ini tidak sepenuhnya akurat. Dalam "
+"realita, tabel partisi disimpan di bagian disk paling awal, sebelum sebarang "
+"sistem berkas atau data pengguna. Tapi untuk kejelasan, mereka terpisah "
+"dalam diagram kita."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:90
 #, no-wrap
 msgid "Disk Drive with Partition Table"
-msgstr ""
+msgstr "Disk Drive dengan Tabel Partisi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "Image of an unused disk drive with a partition table."
 msgstr ""
+"Citra dari suatu disk drive yang belum terpakai dengan sebuah tabel partisi."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:92
