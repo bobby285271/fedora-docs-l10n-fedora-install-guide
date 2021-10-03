@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-10-03 07:05+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallsourcespoke/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SourceSpoke.adoc:5
 #: ./pages/_partials/install/SourceSpoke.adoc:16
 #, no-wrap
 msgid "Installation Source"
-msgstr ""
+msgstr "Fuente de la instalación"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:8
@@ -30,6 +33,11 @@ msgid ""
 "system. This screen will be configured automatically in most cases, but you "
 "can change your settings or add additional sources."
 msgstr ""
+"La pantalla `Fuente de la Instalación` le perite especificar una "
+"localización (local o en la red) desde la que serán descargados los paquetes "
+"e instalados en su sistema. Esta pantalla será configurada automáticamente "
+"en la mayoría de los casos, pero puede cambiar sus ajustes o añadir fuentes "
+"adicionales."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:13
@@ -45,18 +53,29 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for information about boot options."
 msgstr ""
+"Normalmente, cuando entra por primera vez en la pantalla `Fuente de la "
+"Instalación`, el instalador intentará configurar una fuente de instalación "
+"en base al tipo de medio que haya usado para arrancar. El DVD completo "
+"{PRODUCT} Server configura la fuente como medio local, la imagen netinst ISO "
+"configurarán el espejo de red más cercado, etc. Este proceso lleva algún "
+"tiempo, especialmente si la fuente predeterminada es un espejo en red. Si "
+"planea usar una fuente de instalación personalizada, use la opción de "
+"arranque [option]#inst.askmethod# para saltar la configuración inicial; esto "
+"permitirá entrar en esta pantalla inmediatamente. Vea en xref:advanced/"
+"Boot_Options.adoc#sect-boot-options-sources[Especificando la Fuente de "
+"Instalación] más información sobre las opciones de arranque."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "The Installation Source screen"
-msgstr ""
+msgstr "La pantalla Fuente de Instalación"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/SourceSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:21
@@ -64,12 +83,14 @@ msgid ""
 "The following options are available. Note that not all of them may be "
 "displayed."
 msgstr ""
+"Están disponibles las siguientes opciones. Advierta que no todas ellas "
+"pueden ser mostradas."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:22
 #, no-wrap
 msgid "Auto-detected installation media"
-msgstr ""
+msgstr "Medio de instalación detectado automáticamente"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:23
@@ -79,6 +100,10 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"Esta es la opción seleccionada automáticamente si usted arranca el "
+"instalador desde un medio que contenga una fuente de instalación, como un "
+"DVD vivo. No es necesaria configuración adicional. Puede pulsar el botón "
+"`Verificar` para comprobar la integridad del medio."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:24
