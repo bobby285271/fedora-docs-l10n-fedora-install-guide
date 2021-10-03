@@ -5,12 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 21:03+0000\n"
+"POT-Creation-Date: 2021-10-01 21:04+0000\n"
 "PO-Revision-Date: 2021-09-07 11:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
-"ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,10 +25,15 @@ msgstr "디스크 파티션 소개"
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:12
+#, fuzzy
+#| msgid ""
+#| "This appendix is not necessarily applicable to architectures other than "
+#| "AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
+#| "apply."
 msgid ""
 "This appendix is not necessarily applicable to architectures other than "
-"AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
-"apply."
+"AMD64, Intel{nbsp}64, and Arm SystemReady. However, the general concepts "
+"mentioned here may apply."
 msgstr ""
 "이 부록은 AMD64와 Intel{nbsp}64 이외의 구조에 필수적으로 적용되는 것은 아닙니"
 "다. 하지만, 이 곳에 언급된 일반적인 개념은 적용 될 수 있습니다."
@@ -125,9 +129,10 @@ msgid ""
 "attributes[{blank}]`\") writes information to the drive, creating order out "
 "of the empty space in an unformatted drive."
 msgstr ""
-"디스크 드라이브에서 자료를 저장하려면, 우선 디스크 드라이브를 초기화(format)가 필요합니다. 초기화는 (일반적으로 \"`file "
-"system_pass:attributes[{blank}] 만들기`\"로 알려졌으며) 드라이브에 정보를 작성하며, 초기화 되지 않은 "
-"드라이브에 빈 공간에서 순서를 만듭니다."
+"디스크 드라이브에서 자료를 저장하려면, 우선 디스크 드라이브를 초기화(format)"
+"가 필요합니다. 초기화는 (일반적으로 \"`file system_pass:attributes[{blank}] "
+"만들기`\"로 알려졌으며) 드라이브에 정보를 작성하며, 초기화 되지 않은 드라이브"
+"에 빈 공간에서 순서를 만듭니다."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:39
@@ -194,11 +199,14 @@ msgid ""
 "Microsoft Windows), making data interchange between different file systems "
 "easy."
 msgstr ""
-"단일의 범용 파일 시스템은 없습니다. xref:Disk_Partitions.adoc#figu-partitions-different-"
-"file-system[다른 파일 시스템을 가지는 디스크 드라이브]로, 디스크 드라이브는 많은 파일 시스템 중 하나가 기록되어 있을 는 "
-"것을 보여줍니다. 다른 파일 시스템은 호환되지 않는 경향이 있습니다; 이는, 하나의 파일 시스템(또는 소수의 연관 파일 시스템 유형)을 "
-"지원하는 운영 체제는 다른 파일 시스템을 지원하지 않을 수도 있습니다. 아무튼, {PRODUCT}는 광범위한 파일 시스템(마이크로소프트 "
-"윈도우와 같은 다른 운영 체제에 의해 일반적으로 사용되는 것을 포함하여)을 지원하며, 다른 파일 시스템 간에 손쉽게 자료 교환을 만듭니다."
+"단일의 범용 파일 시스템은 없습니다. xref:Disk_Partitions.adoc#figu-"
+"partitions-different-file-system[다른 파일 시스템을 가지는 디스크 드라이브]"
+"로, 디스크 드라이브는 많은 파일 시스템 중 하나가 기록되어 있을 는 것을 보여줍"
+"니다. 다른 파일 시스템은 호환되지 않는 경향이 있습니다; 이는, 하나의 파일 시"
+"스템(또는 소수의 연관 파일 시스템 유형)을 지원하는 운영 체제는 다른 파일 시스"
+"템을 지원하지 않을 수도 있습니다. 아무튼, {PRODUCT}는 광범위한 파일 시스템(마"
+"이크로소프트 윈도우와 같은 다른 운영 체제에 의해 일반적으로 사용되는 것을 포"
+"함하여)을 지원하며, 다른 파일 시스템 간에 손쉽게 자료 교환을 만듭니다."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:52
@@ -510,8 +518,9 @@ msgid ""
 "_extended partitions_ to create up additional partitions. You do this by "
 "setting the type of a partition to \"`Extended`\"."
 msgstr ""
-"4개의 파티션인 경우는 자신의 목적에 따라 불충분하면, 추가 파티션을 생성하기 위하여 확장 파티션을 사용 할 수 있습니다. 당신은 파티션 "
-"유형을 \"`확장 파티션`\"으로 설정 할 수 있습니다."
+"4개의 파티션인 경우는 자신의 목적에 따라 불충분하면, 추가 파티션을 생성하기 "
+"위하여 확장 파티션을 사용 할 수 있습니다. 당신은 파티션 유형을 \"`확장 파티션"
+"`\"으로 설정 할 수 있습니다."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -585,8 +594,8 @@ msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
 "0) of *GPT* is reserved for *MBR* data and it is called \"`protective MBR`\"."
 msgstr ""
-"MBR 디스크와의 역-호환성을 유지하기 위해, *GPT*의 첫 번째 섹터(*LBA* 0)는 *MBR* 자료용으로 예약되어 있고 \"`보호 "
-"MBR`\"이라고 칭합니다."
+"MBR 디스크와의 역-호환성을 유지하기 위해, *GPT*의 첫 번째 섹터(*LBA* 0)는 "
+"*MBR* 자료용으로 예약되어 있고 \"`보호 MBR`\"이라고 칭합니다."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -761,8 +770,9 @@ msgid ""
 "longer. xref:figu-partitions-unused-partition[Disk Drive with an Unused "
 "Partition], illustrates such a situation."
 msgstr ""
-"이와 같은 경우에, 아마도 더 이상 사용하지 않는 하나 또는 그 이상의 파티션을 가지고 있습니다. xref:figu-partitions-"
-"unused-partition[사용하지 않는 파티션인 디스크 드라이브], 이와 같은 상태를 표시합니다."
+"이와 같은 경우에, 아마도 더 이상 사용하지 않는 하나 또는 그 이상의 파티션을 "
+"가지고 있습니다. xref:figu-partitions-unused-partition[사용하지 않는 파티션"
+"인 디스크 드라이브], 이와 같은 상태를 표시합니다."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:225
@@ -1104,8 +1114,9 @@ msgid ""
 "partitions reside on hard disks, and hard disks are devices, the files "
 "representing all possible partitions reside in `/dev/`."
 msgstr ""
-"이는 모든 장치 파일이 존재하는 것과 같은 디렉토리 명칭입니다.. 왜냐하면 파티션은 하드 디스크에 위치하고, 그리고 하드 디스크는 '/"
-"dev/'에 위치하는 모든 사용 가능한 파티션을 대표하는 파일 장치입니다."
+"이는 모든 장치 파일이 존재하는 것과 같은 디렉토리 명칭입니다.. 왜냐하면 파티"
+"션은 하드 디스크에 위치하고, 그리고 하드 디스크는 '/dev/'에 위치하는 모든 사"
+"용 가능한 파티션을 대표하는 파일 장치입니다."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:331
@@ -1219,9 +1230,10 @@ msgid ""
 "Unless you have a reason for doing otherwise, you should *at least* create a "
 "`/boot` partition and a `/` (root) partition. Depending on your system's "
 "hardware specifications, additional partitions may be necessary, such as `/"
-"boot/efi` for 64-bit AMD and Intel systems with UEFI firmware, a `biosboot` "
-"partition for AMD and Intel systems with a GUID Partition Table (GPT) label "
-"on the system disk, or a `PReP Boot` partition on IBM Power Systems servers."
+"boot/efi` for 64-bit AMD, Intel and Arm systems with UEFI firmware, a "
+"`biosboot` partition for AMD and Intel systems with a GUID Partition Table "
+"(GPT) label on the system disk, or a `PReP Boot` partition on IBM Power "
+"Systems servers."
 msgstr ""
 
 #. type: Plain text

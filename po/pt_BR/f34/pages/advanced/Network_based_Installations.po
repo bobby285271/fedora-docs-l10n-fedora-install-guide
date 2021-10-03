@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-19 21:04+0000\n"
+"POT-Creation-Date: 2021-10-01 21:05+0000\n"
 "PO-Revision-Date: 2021-05-26 13:03+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -19,13 +19,13 @@ msgstr ""
 "X-Generator: Weblate 4.6.2\n"
 
 #. type: Title =
-#: ./pages/advanced/Network_based_Installations.adoc:5
+#: pages/advanced/Network_based_Installations.adoc:5
 #, no-wrap
 msgid "Setting Up an Installation Server"
 msgstr "Configurando um servidor de instalação"
 
 #. type: delimited block =
-#: ./pages/advanced/Network_based_Installations.adoc:11
+#: pages/advanced/Network_based_Installations.adoc:11
 msgid ""
 "This appendix is intended for users with previous Linux experience. If you "
 "are a new user, you may want to install using minimal boot media or the "
@@ -36,20 +36,20 @@ msgstr ""
 "mínima ou o DVD de distribuição."
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:15
+#: pages/advanced/Network_based_Installations.adoc:15
 #, no-wrap
 msgid "PXE Installation Overview"
 msgstr "Visão geral da instalação PXE"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:18
+#: pages/advanced/Network_based_Installations.adoc:18
 msgid ""
 "Preboot Execution Environment, or PXE, is a techonology that allows "
-"computers to boot directly from resources provided over the "
-"network. Installing Fedora over the network means you don't have to create "
-"media, and you can install to multiple computers or virtual machine "
-"simultaneously. The process involves a number of components and features "
-"working together to provide the resources required."
+"computers to boot directly from resources provided over the network. "
+"Installing Fedora over the network means you don't have to create media, and "
+"you can install to multiple computers or virtual machine simultaneously. The "
+"process involves a number of components and features working together to "
+"provide the resources required."
 msgstr ""
 "Preboot Execution Environment, ou PXE, é uma tecnologia que permite que os "
 "computadores inicializem diretamente de recursos fornecidos pela rede. "
@@ -59,13 +59,13 @@ msgstr ""
 "fornecer os recursos necessários."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:19
+#: pages/advanced/Network_based_Installations.adoc:19
 #, no-wrap
 msgid "PXE-capable computer"
 msgstr "Computador compatível com PXE"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:21
+#: pages/advanced/Network_based_Installations.adoc:21
 msgid ""
 "Most modern computers have the capability to network boot. Typically, a "
 "function key pressed during boot will bring up a boot selection menu. In "
@@ -85,13 +85,13 @@ msgstr ""
 "específicas sobre como definir as prioridades de inicialização."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:22
+#: pages/advanced/Network_based_Installations.adoc:22
 #, no-wrap
 msgid "DHCP Server"
 msgstr "Servidor DHCP"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:24
+#: pages/advanced/Network_based_Installations.adoc:24
 msgid ""
 "When a system requests an address during network booting, the DHCP server "
 "also provides the location of files to boot. A network should have only one "
@@ -102,13 +102,13 @@ msgstr ""
 "Uma rede deve ter apenas um servidor DHCP."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:25
+#: pages/advanced/Network_based_Installations.adoc:25
 #, no-wrap
 msgid "TFTP Server"
 msgstr "Servidor TFTP"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:27
+#: pages/advanced/Network_based_Installations.adoc:27
 msgid ""
 "Because the pre-boot environment is very simple, files must be provided in a "
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
@@ -120,18 +120,18 @@ msgstr ""
 "continuar o processo de instalação."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:28
+#: pages/advanced/Network_based_Installations.adoc:28
 #, no-wrap
 msgid "Bootloader"
 msgstr "Carregador de inicialização"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:30
+#: pages/advanced/Network_based_Installations.adoc:30
 msgid ""
-"Because the job of booting an operating system is too complex for the "
-"pre-boot environment, a bootloader is used to load the kernel and related "
-"files. It also provides configuration information to the installer, and can "
-"offer a menu to select from different configurations."
+"Because the job of booting an operating system is too complex for the pre-"
+"boot environment, a bootloader is used to load the kernel and related files. "
+"It also provides configuration information to the installer, and can offer a "
+"menu to select from different configurations."
 msgstr ""
 "Como a tarefa de inicializar um sistema operacional é muito complexa para o "
 "ambiente de pré-inicialização, um carregador de inicialização é usado para "
@@ -140,13 +140,13 @@ msgstr ""
 "diferentes configurações."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:31
+#: pages/advanced/Network_based_Installations.adoc:31
 #, no-wrap
 msgid "Kernel and Initramfs"
 msgstr "Kernel e initramfs"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:33
+#: pages/advanced/Network_based_Installations.adoc:33
 msgid ""
 "The kernel is the core of any Linux operating system, and the initramfs "
 "provides the kernel with required tools and resources. These files are also "
@@ -157,63 +157,63 @@ msgstr ""
 "também são fornecidos pelo tftp."
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:34
+#: pages/advanced/Network_based_Installations.adoc:34
 #, no-wrap
 msgid "Package repository"
 msgstr "Repositório de pacotes"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:36
+#: pages/advanced/Network_based_Installations.adoc:36
 msgid ""
 "A Fedora repository must be available for the installation. The example in "
 "this section uses the public Fedora mirrors as the repository source, but "
-"you can also use a repo on the local network provided by NFS, FTP, or "
-"HTTP. Repositories can be configured using the [option]#inst.repo=# boot "
-"option; see "
-"xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
+"you can also use a repo on the local network provided by NFS, FTP, or HTTP. "
+"Repositories can be configured using the [option]#inst.repo=# boot option; "
+"see xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for details."
 msgstr ""
 "Um repositório Fedora deve estar disponível para a instalação. O exemplo "
 "nesta seção usa os espelhos públicos do Fedora como a fonte do repositório, "
 "mas você também pode usar um repositório na rede local fornecido por NFS, "
 "FTP ou HTTP. Os repositórios podem ser configurados usando a opção de "
-"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options.adoc"
-"#sect-boot-options-sources[Especificando a fonte de instalação] para obter "
-"detalhes."
+"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options."
+"adoc#sect-boot-options-sources[Especificando a fonte de instalação] para "
+"obter detalhes."
 
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:40
+#: pages/advanced/Network_based_Installations.adoc:40
 #, no-wrap
 msgid "DHCP Server Configuration"
 msgstr "Configuração do Servidor DHCP"
 
 #. Needs adminition about static IP, reference out to Networking Guide. Example assumes 192.168.1.2 for server.
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:44
+#: pages/advanced/Network_based_Installations.adoc:44
 #, no-wrap
 msgid "Installing and configuring dhcpd"
 msgstr "Instalando e configurando o dhcpd"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:46
+#: pages/advanced/Network_based_Installations.adoc:46
 msgid "Install the dhcp server package."
 msgstr "Instale o pacote de servidor dhcp."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:50
+#: pages/advanced/Network_based_Installations.adoc:50
 #, no-wrap
 msgid "# dnf install dhcp\n"
 msgstr "# dnf install dhcp\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:53
-msgid "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
+#: pages/advanced/Network_based_Installations.adoc:53
+msgid ""
+"Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
 msgstr ""
 "Crie uma configuração simples para o servidor dhcp em `/etc/dhcp/dhcpd.conf`"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:61
+#: pages/advanced/Network_based_Installations.adoc:61
 #, no-wrap
 msgid ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
@@ -229,7 +229,7 @@ msgstr ""
 "ddns-update-style none;\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:64
+#: pages/advanced/Network_based_Installations.adoc:64
 #, no-wrap
 msgid ""
 "option domain-name-servers 192.168.1.1;\n"
@@ -239,18 +239,18 @@ msgstr ""
 "option routers 192.168.1.1;\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:66
+#: pages/advanced/Network_based_Installations.adoc:66
 #, no-wrap
 msgid "}\n"
 msgstr "}\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:69
+#: pages/advanced/Network_based_Installations.adoc:69
 msgid "Test your configuration and address any problems you discover."
 msgstr "Teste sua configuração e resolva quaisquer problemas que encontrar."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:75
+#: pages/advanced/Network_based_Installations.adoc:75
 #, no-wrap
 msgid ""
 "[command]#systemctl start dhcpd#\n"
@@ -260,13 +260,23 @@ msgstr ""
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:78
+#: pages/advanced/Network_based_Installations.adoc:78
+#, fuzzy
+#| msgid ""
+#| "Add entries to point clients to their bootloader and the server that "
+#| "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. "
+#| "Because DHCP clients provide the server with identifying information "
+#| "along with their address request, BIOS clients and UEFI clients can each "
+#| "be directed to the correct bootloader."
 msgid ""
 "Add entries to point clients to their bootloader and the server that "
 "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. Because "
 "DHCP clients provide the server with identifying information along with "
 "their address request, BIOS clients and UEFI clients can each be directed to "
-"the correct bootloader."
+"the correct bootloader. Using latest processor architecture option codes, "
+"which may be found on the https://www.iana.org/assignments/dhcpv6-parameters/"
+"dhcpv6-parameters.xhtml#processor-architecture[IANA DHCPv6] registration "
+"page, allows multiple architectures to share a single DHCP server."
 msgstr ""
 "Adicione entradas para apontar clientes para seu gerenciador de "
 "inicialização e o servidor que fornece isso para sua configuração de sub-"
@@ -276,24 +286,41 @@ msgstr ""
 "inicialização correto."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:82
-#, no-wrap
+#: pages/advanced/Network_based_Installations.adoc:82
+#, fuzzy, no-wrap
+#| msgid ""
+#| "# refer to RFC4578 for possible arch option values\n"
+#| "option arch code 93 = unsigned integer 16;\n"
 msgid ""
-"# refer to RFC4578 for possible arch option values\n"
+"# refer to RFC4578 & IANA DHCPv6 for possible arch option values\n"
 "option arch code 93 = unsigned integer 16;\n"
 msgstr ""
 "# veja RFC4578 por valores possíveis de opções de arquitetura\n"
 "option arch code 93 = unsigned integer 16;\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:89
-#, no-wrap
+#: pages/advanced/Network_based_Installations.adoc:96
+#, fuzzy, no-wrap
+#| msgid ""
+#| "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+#| "if option arch = 00:07 {\n"
+#| "filename \"uefi/shimx64.efi\";\n"
+#| "} else {\n"
+#| "filename \"pxelinux.0\";\n"
+#| "}\n"
 msgid ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
 "if option arch = 00:07 {\n"
+"# x64 UEFI\n"
 "filename \"uefi/shimx64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
 "} else {\n"
 "filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
 "}\n"
 msgstr ""
 "subnet 192.168.1.0 netmask 255.255.255.0 {\n"
@@ -304,19 +331,14 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:91
-#, no-wrap
-msgid "next-server 192.168.1.2;\n"
-msgstr "next-server 192.168.1.2;\n"
-
-#. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:93
+#: pages/advanced/Network_based_Installations.adoc:99
+#: pages/advanced/Network_based_Installations.adoc:288
 #, no-wrap
 msgid "...\n"
 msgstr "...\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:96
+#: pages/advanced/Network_based_Installations.adoc:102
 msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
@@ -325,7 +347,7 @@ msgstr ""
 "necessárias."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:102
+#: pages/advanced/Network_based_Installations.adoc:108
 #, no-wrap
 msgid ""
 "[command]#systemctl restart dhcpd#\n"
@@ -335,25 +357,25 @@ msgstr ""
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:106
-#: ./pages/advanced/Network_based_Installations.adoc:108
+#: pages/advanced/Network_based_Installations.adoc:112
+#: pages/advanced/Network_based_Installations.adoc:114
 #, no-wrap
 msgid "Installing the tftp server"
 msgstr "Instalando o servidor tftp"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:110
+#: pages/advanced/Network_based_Installations.adoc:116
 msgid "Install the tftp server package."
 msgstr "Instale o pacote do servidor tftp."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:113
+#: pages/advanced/Network_based_Installations.adoc:119
 #, no-wrap
 msgid "# dnf install tftp-server\n"
 msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:116
+#: pages/advanced/Network_based_Installations.adoc:122
 msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
@@ -362,7 +384,7 @@ msgstr ""
 "serviço` tftpd` quando necessário."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:121
+#: pages/advanced/Network_based_Installations.adoc:127
 #, no-wrap
 msgid ""
 "# [command]#systemctl start tftp.socket#\n"
@@ -372,67 +394,60 @@ msgstr ""
 "# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:124
+#: pages/advanced/Network_based_Installations.adoc:130
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
-"Fornecimento e configuração de carregadores de inicialização para clientes "
-"PXE"
+msgstr "Fornecimento e configuração de carregadores de inicialização para clientes PXE"
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:126
+#: pages/advanced/Network_based_Installations.adoc:132
 #, no-wrap
 msgid "Getting the bootloader files"
 msgstr "Obtendo os arquivos de carregadores de inicialização"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:128
+#: pages/advanced/Network_based_Installations.adoc:134
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
 msgstr ""
 "Obtenha o carregador de inicialização [package]*syslinux* para clientes BIOS."
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:130
+#: pages/advanced/Network_based_Installations.adoc:136
 msgid "Install the [package]*syslinux* package."
 msgstr "Instale o pacote [package]*syslinux*."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:133
+#: pages/advanced/Network_based_Installations.adoc:139
 #, no-wrap
 msgid "# dnf install syslinux\n"
 msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:136
-#: ./pages/advanced/Network_based_Installations.adoc:153
-msgid "Create a directory for the bootloader files, and make them available there."
+#: pages/advanced/Network_based_Installations.adoc:142
+#: pages/advanced/Network_based_Installations.adoc:159
+msgid ""
+"Create a directory for the bootloader files, and make them available there."
 msgstr ""
 "Crie um diretório para os arquivos do carregador de inicialização e torne-os "
 "disponíveis lá."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:141
+#: pages/advanced/Network_based_Installations.adoc:147
 #, no-wrap
 msgid ""
-"# [command]#mkdir -p "
-"`/var/lib/tftpboot/pxelinux.cfg`pass:attributes[{blank}]#\n"
-"# [command]#cp "
-"`/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` "
-"`/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
+"# [command]#mkdir -p `/var/lib/tftpboot/pxelinux.cfg`pass:attributes[{blank}]#\n"
+"# [command]#cp `/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
 msgstr ""
-"# [command]#mkdir -p `/var/lib/tftpboot/pxelinux."
-"cfg`pass:attributes[{blank}]#\n"
-"# [command]#cp `/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux"
-".c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#"
-"\n"
+"# [command]#mkdir -p `/var/lib/tftpboot/pxelinux.cfg`pass:attributes[{blank}]#\n"
+"# [command]#cp `/usr/share/syslinux/{pxelinux.0,menu.c32,vesamenu.c32,ldlinux.c32,libcom32.c32,libutil.c32}` `/var/lib/tftpboot/`pass:attributes[{blank}]#\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:144
+#: pages/advanced/Network_based_Installations.adoc:150
 msgid "Get the bootloader files for UEFI systems"
 msgstr "Obtenha os arquivos do carregador de inicialização para sistemas UEFI"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:146
+#: pages/advanced/Network_based_Installations.adoc:152
 msgid ""
 "Install the [package]*shim-x64* and [package]*grub2-efi-x64* packages. If "
 "your server is a BIOS system, you *must install the packages to a temporary "
@@ -445,44 +460,38 @@ msgstr ""
 "configurar o sistema para inicialização UEFI e causar problemas."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:150
+#: pages/advanced/Network_based_Installations.adoc:156
 #, no-wrap
-msgid ""
-"# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever "
-"{PRODVER}\n"
-msgstr ""
-"# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever "
-"{PRODVER}\n"
+msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
+msgstr "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:158
+#: pages/advanced/Network_based_Installations.adoc:164
 #, no-wrap
 msgid ""
 "# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
-"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` "
-"`/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
+"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` `/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 msgstr ""
 "# [command]#mkdir -p `/var/lib/tftpboot/uefi`pass:attributes[{blank}]#\n"
-"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` `/"
-"var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
+"# [command]#cp `/tmp/fedora/boot/efi/EFI/fedora/{shimx64.efi,grubx64.efi}` `/var/lib/tftpboot/uefi/`pass:attributes[{blank}]#\n"
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:160
+#: pages/advanced/Network_based_Installations.adoc:166
 #, no-wrap
 msgid "Configuring client bootloaders"
 msgstr "Configurando carregações de inicialização clientes"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:162
+#: pages/advanced/Network_based_Installations.adoc:168
 msgid ""
-"Create a boot menu for BIOS clients at "
-"`/var/lib/tftpboot/pxelinux.cfg/default`."
+"Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
+"default`."
 msgstr ""
 "Crie um menu de inicialização para clientes BIOS em `/var/lib/tftpboot/"
 "pxelinux.cfg/default`."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:170
+#: pages/advanced/Network_based_Installations.adoc:176
 #, no-wrap
 msgid ""
 "default vesamenu.c32\n"
@@ -494,7 +503,7 @@ msgstr ""
 "timeout 600\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:175
+#: pages/advanced/Network_based_Installations.adoc:181
 #, no-wrap
 msgid ""
 "label local\n"
@@ -508,50 +517,43 @@ msgstr ""
 "localboot 0xffff\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:180
+#: pages/advanced/Network_based_Installations.adoc:186
 #, no-wrap
 msgid ""
 "label linux\n"
 "menu label ^Install Fedora {PRODVER} 64-bit\n"
 "kernel f{PRODVER}/vmlinuz\n"
-"append initrd=f{PRODVER}/initrd.img "
-"inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
-"ip=dhcp\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp\n"
 msgstr ""
 "label linux\n"
 "menu label ^Install Fedora {PRODVER} 64-bit\n"
 "kernel f{PRODVER}/vmlinuz\n"
-"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download."
-"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip="
-"dhcp\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:185
+#: pages/advanced/Network_based_Installations.adoc:191
 #, no-wrap
 msgid ""
 "label server\n"
 "menu label ^Install Fedora {PRODVER} ( Minimal Image )\n"
 "kernel f{PRODVER}/vmlinuz\n"
-"append initrd=f{PRODVER}/initrd.img "
-"inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
-"ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 msgstr ""
 "label server\n"
 "menu label ^Install Fedora {PRODVER} ( Minimal Image )\n"
 "kernel f{PRODVER}/vmlinuz\n"
-"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download."
-"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
-"ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
+"append initrd=f{PRODVER}/initrd.img inst.stage2=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://example.com/fedora/kickstarts/minimal.ks\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:188
-msgid "Create a boot menu for UEFI clients at `/var/lib/tftpboot/uefi/grub.cfg`."
+#: pages/advanced/Network_based_Installations.adoc:194
+msgid ""
+"Create a boot menu for UEFI clients at `/var/lib/tftpboot/uefi/grub.cfg`."
 msgstr ""
 "Crie um menu de inicialização para clientes UEFI em `/var/lib/tftpboot/uefi/"
 "grub.cfg`."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:198
+#: pages/advanced/Network_based_Installations.adoc:204
 #, no-wrap
 msgid ""
 "function load_video {\n"
@@ -571,7 +573,7 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:202
+#: pages/advanced/Network_based_Installations.adoc:208
 #, no-wrap
 msgid ""
 "load_video\n"
@@ -583,7 +585,7 @@ msgstr ""
 "insmod gzio\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:206
+#: pages/advanced/Network_based_Installations.adoc:212
 #, no-wrap
 msgid ""
 "menuentry 'Exit this grub' {\n"
@@ -595,114 +597,178 @@ msgstr ""
 "}\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:211
-#, no-wrap
+#: pages/advanced/Network_based_Installations.adoc:217
+#, fuzzy, no-wrap
+#| msgid ""
+#| "menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
+#| "\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+#| "\tinitrdefi f{PRODVER}/initrd.img\n"
+#| "}\n"
 msgid ""
-"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux "
-"--class gnu --class os {\n"
-"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp "
-"inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
-"\tinitrdefi f{PRODVER}/initrd.img\n"
+"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
+"\tlinux $fw_path/f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"\tinitrd $fw_path/f{PRODVER}/initrd.img\n"
 "}\n"
 msgstr ""
-"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --"
-"class gnu --class os {\n"
-"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download."
-"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
+"menuentry 'Install {PRODUCT} 64-bit'  --class fedora --class gnu-linux --class gnu --class os {\n"
+"\tlinuxefi f{PRODVER}/vmlinuz ip=dhcp inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/\n"
 "\tinitrdefi f{PRODVER}/initrd.img\n"
 "}\n"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:216
+#: pages/advanced/Network_based_Installations.adoc:222
 #, no-wrap
 msgid ""
-"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class "
-"gnu-linux --class gnu --class os {\n"
+"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-linux --class gnu --class os {\n"
 "\tkernel f{PRODVER}/vmlinuz\n"
-"\tappend initrd=f{PRODVER}/initrd.img "
-"inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
-"ip=dhcp "
-"ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
+"\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 msgstr ""
-"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-"
-"linux --class gnu --class os {\n"
+"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-linux --class gnu --class os {\n"
 "\tkernel f{PRODVER}/vmlinuz\n"
-"\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download."
-"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
-"ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/"
-"fedora-install-server.ks?h=f21\n"
+"\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:220
+#: pages/advanced/Network_based_Installations.adoc:226
 #, no-wrap
 msgid "Getting the kernel and initrd"
 msgstr "Obtendo o kernel e initrd"
 
 #. type: Block title
-#: ./pages/advanced/Network_based_Installations.adoc:222
+#: pages/advanced/Network_based_Installations.adoc:228
 #, no-wrap
 msgid "Downloading the kernel and initrd"
 msgstr "Baixando o kernel e initrd"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:224
+#: pages/advanced/Network_based_Installations.adoc:230
 msgid "Create a directory for the files."
 msgstr "Crie um diretório para os arquivos."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:228
+#: pages/advanced/Network_based_Installations.adoc:234
 #, no-wrap
-msgid ""
-"# [command]#mkdir -p "
-"`/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
-msgstr ""
-"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
-"\n"
+msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
+msgstr "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:231
+#: pages/advanced/Network_based_Installations.adoc:237
 msgid "Download the kernel."
 msgstr "Baixe o kernel."
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:235
+#: pages/advanced/Network_based_Installations.adoc:241
 #, no-wrap
-msgid ""
-"# wget "
-"https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz "
-"-O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
-msgstr ""
-"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
-"{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/"
-"f{PRODVER}/vmlinuz\n"
+msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
+msgstr "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:238
+#: pages/advanced/Network_based_Installations.adoc:244
 msgid "Download the initrd"
 msgstr "Baixe o initrd"
 
 #. type: delimited block -
-#: ./pages/advanced/Network_based_Installations.adoc:242
+#: pages/advanced/Network_based_Installations.adoc:248
 #, no-wrap
-msgid ""
-"# wget "
-"https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img "
-"-O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
-msgstr ""
-"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
-"{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/"
-"f{PRODVER}/initrd.img\n"
+msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
+msgstr "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:245
+#: pages/advanced/Network_based_Installations.adoc:251
+#, fuzzy, no-wrap
+#| msgid "PXE Installation Overview"
+msgid "HTTP Installation Overview"
+msgstr "Visão geral da instalação PXE"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:254
+msgid ""
+"HTTP/HTTPS boot is a technology that allows computers to boot directly from "
+"resources provided over the network. When used in conjunction with HTTPS the "
+"authenticity of the server is validated, and the use of HTTP offers a more "
+"reliable transport mechanism than PXE's TFTP. Installing Fedora this way "
+"avoids creating install media and allows multiple computers to install "
+"simultaneously. Many current UEFI implementations, including the EDK2 based "
+"firmware shipping with fedora's virtualization solutions, can directly boot "
+"from HTTP sources. A UEFI boot entry may be manually added that specifies a "
+"HTTP source via firmware menus. Alternatively, a DHCP server may "
+"automatically provide the required HTTP path."
+msgstr ""
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:255
+#, no-wrap
+msgid "Enrolling Certificatesll"
+msgstr ""
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:257
+msgid ""
+"While many machines are capable of HTTPS boot as well as HTTP, they will "
+"frequently need to have a certificate authority (CA) enrolled first. The CA "
+"is used to validate the certificates presented by the HTTPS server. This may "
+"be accomplished by enrolling the appropriate files from the fedora provided "
+"ca-certificates for public mirrors or the local HTTPS boot server's "
+"certificate."
+msgstr ""
+
+#. type: Title ==
+#: pages/advanced/Network_based_Installations.adoc:260
+#, fuzzy, no-wrap
+#| msgid "DHCP Server Configuration"
+msgid "DHCP Server Configuration for HTTP"
+msgstr "Configuração do Servidor DHCP"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:262
+msgid ""
+"The installation and configuration of a DHCP server for HTTP boot is "
+"identical to its configuration for <<pxe-dhcpd,PXE>> except that we need to "
+"amend the option arch conditions for HTTP clients"
+msgstr ""
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:265
+#, fuzzy, no-wrap
+#| msgid "...\n"
+msgid "....\n"
+msgstr "...\n"
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:286
+#, no-wrap
+msgid ""
+"if option arch = 00:07 {\n"
+"# x64 UEFI\n"
+"filename \"uefi/shim64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
+"} else if option arch = 00:13 {\n"
+"# aarch64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/aarch64/os/images/boot.iso\";\n"
+"} else if option arch = 00:10 {\n"
+"# x64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/boot.iso\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
+"}\n"
+msgstr ""
+
+#. type: Title ==
+#: pages/advanced/Network_based_Installations.adoc:291
 #, no-wrap
 msgid "Providing repositories"
 msgstr "Fornecendo repositórios"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:248
+#: pages/advanced/Network_based_Installations.adoc:294
 msgid ""
 "The examples in this section use the public Fedora mirrors as the package "
 "source. For faster installations, installing to many systems, or more "
@@ -713,13 +779,13 @@ msgstr ""
 "ambientes mais isolados, você pode desejar manter um repositório local."
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:250
+#: pages/advanced/Network_based_Installations.adoc:296
 msgid ""
 "Fedora Infrastructure maintains instructions for configuring a local mirror "
 "at link:++https://fedoraproject.org/wiki/Infrastructure/Mirroring++[]. The "
 "preferred method for providing repositories is via HTTP, and you can refer "
-"to the [citetitle]_Fedora System Administrator's Guide_, available at "
-"link:++https://docs.fedoraproject.org/++[], to configure `httpd`."
+"to the [citetitle]_Fedora System Administrator's Guide_, available at link:+"
+"+https://docs.fedoraproject.org/++[], to configure `httpd`."
 msgstr ""
 "Fedora Infrastructure mantém instruções para configurar um espelho local em "
 "link:++https://fedoraproject.org/wiki/Infrastructure/Mirroring++[]. O método "
@@ -729,13 +795,13 @@ msgstr ""
 "configurar `httpd`."
 
 #. type: Title ==
-#: ./pages/advanced/Network_based_Installations.adoc:252
+#: pages/advanced/Network_based_Installations.adoc:298
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
 msgstr "Instalações de rede avançadas com Cobbler"
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:255
+#: pages/advanced/Network_based_Installations.adoc:301
 msgid ""
 "For more complex environments, {PRODUCT} offers the [package]*cobbler* "
 "installation server. Tasks like managing kickstart configurations, "
@@ -748,7 +814,7 @@ msgstr ""
 "manifestos fantoches são efetivamente automatizados por [package]*cobbler*."
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:257
+#: pages/advanced/Network_based_Installations.adoc:303
 msgid ""
 "While levaraging all of the features provided by cobbler can be relatively "
 "simple, the full functionality of this powerful tool is too broad to be "
@@ -763,12 +829,15 @@ msgstr ""
 "pacotes no repositório Fedora."
 
 #. type: Plain text
-#: ./pages/advanced/Network_based_Installations.adoc:258
+#: pages/advanced/Network_based_Installations.adoc:304
 msgid ""
 "Alternatively, you may also be interested in **Foreman**. You can find "
-"official documentation as well as downloads on the project website at "
-"link:++https://www.theforeman.org/++[]."
+"official documentation as well as downloads on the project website at link:+"
+"+https://www.theforeman.org/++[]."
 msgstr ""
 "Como alternativa, você também pode estar interessado em **Foreman**. Você "
 "pode encontrar a documentação oficial, bem como downloads no site do projeto "
 "em link:++https://www.theforeman.org/++[]."
+
+#~ msgid "next-server 192.168.1.2;\n"
+#~ msgstr "next-server 192.168.1.2;\n"

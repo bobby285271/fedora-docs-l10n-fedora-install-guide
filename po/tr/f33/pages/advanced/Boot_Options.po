@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-01-28 21:03+0000\n"
+"POT-Creation-Date: 2021-10-01 21:07+0000\n"
 "PO-Revision-Date: 2021-09-25 19:05+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f33pagesadvancedboot_options/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/f33pagesadvancedboot_options/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,9 +75,9 @@ msgstr ""
 "\"Eşittir\" işaretiyle (`=`) biten seçenekler bir değerin belirtilmesini "
 "gerektirir - tek başlarına kullanılamazlar. Örneğin, [option]#inst."
 "vncpassword=# seçeneği ayrıca bir değer (bir parola) içermelidir. Bu nedenle "
-"doğru biçim [option]#inst."
-"vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]# "
-"şeklindedir. Tek başına, yani bir parola belirtilmeden seçenek geçersizdir."
+"doğru biçim [option]#inst.vncpassword=pass:attributes[{blank}]_password_pass:"
+"attributes[{blank}]# şeklindedir. Tek başına, yani bir parola belirtilmeden "
+"seçenek geçersizdir."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:16
@@ -253,27 +253,13 @@ msgid ""
 msgstr ""
 "|Kurulum kaynağı|Seçenek biçimi\n"
 "|Herhangi bir CD/DVD sürücüsü|[option]#inst.repo=cdrom#\n"
-"|Belirli bir CD/DVD sürücüsü|[option]#inst."
-"repo=cdrom:pass:attributes[{blank}]_aygıt_pass:attributes[{blank}]#\n"
-"|Sabit Disk|[option]#inst.repo=hd:pass:attributes[{blank}]_aygıt_:/pass:attri"
-"butes[{blank}]_yol_pass:attributes[{blank}]#\n"
-"|HTTP Sunucusu|[option]#inst.repo=http://pass:attributes[{blank}]_anamakine_p"
-"ass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank}]"
-"#\n"
-"|HTTPS Sunucusu|[option]#inst.repo=https://pass:attributes[{blank}]_anamakine"
-"_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank"
-"}]#\n"
-"|FTP Sunucusu|[option]#inst.repo=ftp://pass:attributes[{blank}]_kullanıcıadı_"
-":pass:attributes[{blank}]_parola_pass:attributes[{blank}]@pass:attributes[{bl"
-"ank}]_anamakine_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:at"
-"tributes[{blank}]#\n"
-"|NFS Sunucusu|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass"
-":attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{"
-"blank}]#\n"
-"\t\t\t\t\t\t\t\t\t\t\tdipnot:[Bu seçenek, öntanımlı olarak NFS protokolü "
-"sürüm 3'ü kullanır. Farklı bir sürüm kullanmak için _seçeneklere_ "
-"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# "
-"ekleyin.]\n"
+"|Belirli bir CD/DVD sürücüsü|[option]#inst.repo=cdrom:pass:attributes[{blank}]_aygıt_pass:attributes[{blank}]#\n"
+"|Sabit Disk|[option]#inst.repo=hd:pass:attributes[{blank}]_aygıt_:/pass:attributes[{blank}]_yol_pass:attributes[{blank}]#\n"
+"|HTTP Sunucusu|[option]#inst.repo=http://pass:attributes[{blank}]_anamakine_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank}]#\n"
+"|HTTPS Sunucusu|[option]#inst.repo=https://pass:attributes[{blank}]_anamakine_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank}]#\n"
+"|FTP Sunucusu|[option]#inst.repo=ftp://pass:attributes[{blank}]_kullanıcıadı_:pass:attributes[{blank}]_parola_pass:attributes[{blank}]@pass:attributes[{blank}]_anamakine_pass:attributes[{blank}]/pass:attributes[{blank}]_yol_pass:attributes[{blank}]#\n"
+"|NFS Sunucusu|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tdipnot:[Bu seçenek, öntanımlı olarak NFS protokolü sürüm 3'ü kullanır. Farklı bir sürüm kullanmak için _seçeneklere_ [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# ekleyin.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:73
@@ -305,10 +291,9 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
-"Alfasayısal olmayan karakterler `\\xpass"
-":attributes[{blank}]_NN_pass:attributes[{blank}]` olarak temsil edilmelidir; "
-"burada _NN_, karakterin onaltılık gösterimidir. Örneğin, `\\x20` bir boşluk "
-"karakteridir (\"\")."
+"Alfasayısal olmayan karakterler `\\xpass:attributes[{blank}]_NN_pass:"
+"attributes[{blank}]` olarak temsil edilmelidir; burada _NN_, karakterin "
+"onaltılık gösterimidir. Örneğin, `\\x20` bir boşluk karakteridir (\"\")."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:82
@@ -329,10 +314,10 @@ msgid ""
 msgstr ""
 "Yüklenecek kurulum programı çalışma zamanı kalıbının konumunu belirtir. Söz "
 "dizimi, xref:tabl-boot-options-sources[Kurulum Kaynaklarındaki] ile aynıdır. "
-"Bu seçenek, geçerli bir `.treeinfo` dosyası içeren bir dizinin yolunu bekler;"
-" bulunursa, çalışma zamanı kalıbının konumu bu dosyadan okunacaktır. Bir `."
-"treeinfo` dosyası yoksa, [application]*Anaconda* kalıbı `LiveOS/squashfs.img`"
-" dosyasından yüklemeye çalışacaktır."
+"Bu seçenek, geçerli bir `.treeinfo` dosyası içeren bir dizinin yolunu "
+"bekler; bulunursa, çalışma zamanı kalıbının konumu bu dosyadan okunacaktır. "
+"Bir `.treeinfo` dosyası yoksa, [application]*Anaconda* kalıbı `LiveOS/"
+"squashfs.img` dosyasından yüklemeye çalışacaktır."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:88
@@ -343,10 +328,10 @@ msgid ""
 "runtime image, you must also edit this option to match the new label."
 msgstr ""
 "Öntanımlı olarak, bu önyükleme seçeneği kurulum ortamında kullanılır ve "
-"belirli bir etikete ayarlanır (örneğin, [option]#inst.stage2=hd:LABEL="
-"F21\\x20Server.x86_64#). Çalışma zamanı kalıbını içeren dosya sisteminin "
-"öntanımlı etiketini değiştirirseniz, bu seçeneği de yeni etiketle eşleşecek "
-"şekilde düzenlemeniz gerekmektedir."
+"belirli bir etikete ayarlanır (örneğin, [option]#inst.stage2=hd:"
+"LABEL=F21\\x20Server.x86_64#). Çalışma zamanı kalıbını içeren dosya "
+"sisteminin öntanımlı etiketini değiştirirseniz, bu seçeneği de yeni etiketle "
+"eşleşecek şekilde düzenlemeniz gerekmektedir."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:91
@@ -513,9 +498,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:125
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
-msgstr ""
-"[option]#inst.ks=nfs:pass:attributes[{blank}]_next-"
-"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
+msgstr "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:128
@@ -544,8 +527,7 @@ msgid ""
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
 "|DHCP sunucusu adresi|İstemci adresi|Kickstart dosyası konumu\n"
-"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
-"kickstart/192.168.122.100-kickstart`\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:138
@@ -653,9 +635,9 @@ msgid ""
 msgstr ""
 "Bu seçeneği birden çok kez kullanabilirsiniz. Bu durumda, belirtilen tüm "
 "konsollarda önyükleme mesajı görüntülenecektir, ancak daha sonra kurulum "
-"programı tarafından yalnızca sonuncusu kullanılacaktır. Örneğin, [option]#"
-"console=ttyS0 console=ttyS1# belirtirseniz, kurulum programı yalnızca `ttyS1`"
-" kullanacaktır."
+"programı tarafından yalnızca sonuncusu kullanılacaktır. Örneğin, "
+"[option]#console=ttyS0 console=ttyS1# belirtirseniz, kurulum programı "
+"yalnızca `ttyS1` kullanacaktır."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:163
@@ -696,10 +678,10 @@ msgstr ""
 "Kurulum sırasında kullanılacak dili ayarlar. Dil kodları, xref:appendixes/"
 "Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-lang[lang (isteğe "
 "bağlı) - Kurulum Sırasındaki Dili Yapılandır] bölümünde açıklandığı gibi "
-"[command]#lang# Kickstart komutunda kullanılanlarla aynıdır. [package"
-"]*system-config-language* paketinin kurulu olduğu sistemlerde, geçerli "
-"değerlerin bir listesi `/usr/share/system-config-language/locale-list` "
-"içinde de bulunabilir."
+"[command]#lang# Kickstart komutunda kullanılanlarla aynıdır. "
+"[package]*system-config-language* paketinin kurulu olduğu sistemlerde, "
+"geçerli değerlerin bir listesi `/usr/share/system-config-language/locale-"
+"list` içinde de bulunabilir."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:168
@@ -749,8 +731,8 @@ msgid ""
 msgstr ""
 "Kurulum programında coğrafi konum kullanımını yapılandırır. Coğrafi konum, "
 "dili ve saat dilimini önceden ayarlamak için kullanılır ve aşağıdaki söz "
-"dizimini kullanır:: [option]#inst."
-"geoloc=pass:attributes[{blank}]_değer_pass:attributes[{blank}]#"
+"dizimini kullanır:: [option]#inst.geoloc=pass:attributes[{blank}]_değer_pass:"
+"attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:174
@@ -873,9 +855,9 @@ msgid ""
 "width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
-"Grafiksel modda ekran çözünürlüğünü belirtir. Biçim "
-"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_ şeklindedir; burada "
-"_N_ ekran genişliği ve _M_ ekran yüksekliğidir (piksel olarak). `800x600` "
+"Grafiksel modda ekran çözünürlüğünü belirtir. Biçim _N_pass:"
+"attributes[{blank}]xpass:attributes[{blank}]_M_ şeklindedir; burada _N_ "
+"ekran genişliği ve _M_ ekran yüksekliğidir (piksel olarak). `800x600` "
 "desteklenen en düşük çözünürlük değeridir."
 
 #. type: Labeled list
@@ -906,8 +888,8 @@ msgid ""
 "a hardware-specific driver. This option is equivalent to [option]#inst."
 "xdriver=fbdev#."
 msgstr ""
-"Kurulum programına, donanıma özgü bir sürücü yerine çerçeve arabelleği ("
-"frame buffer) `X` sürücüsünü kullanmasını söyler. Bu seçenek, [option]#inst."
+"Kurulum programına, donanıma özgü bir sürücü yerine çerçeve arabelleği "
+"(frame buffer) `X` sürücüsünü kullanmasını söyler. Bu seçenek, [option]#inst."
 "xdriver=fbdev# ile eş değerdir."
 
 #. type: Labeled list
@@ -976,10 +958,9 @@ msgid ""
 msgstr ""
 "Kurulum sırasında sisteme `SSH` kullanarak bağlanmanızı ve ilerlemesini "
 "izlemenizi sağlayan `sshd` hizmetini kurulum sırasında başlatır. `SSH` "
-"hakkında daha fazla bilgi için, `ssh(1)` kılavuz sayfasına ve "
-"link:++https://docs.fedoraproject.org/++[] adresinde bulunan "
-"[citetitle]_{PRODUCT} Sistem Yöneticisi Kılavuzu_ içindeki ilgili bölüme "
-"bakın."
+"hakkında daha fazla bilgi için, `ssh(1)` kılavuz sayfasına ve link:++https://"
+"docs.fedoraproject.org/++[] adresinde bulunan [citetitle]_{PRODUCT} Sistem "
+"Yöneticisi Kılavuzu_ içindeki ilgili bölüme bakın."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:216
@@ -1075,24 +1056,11 @@ msgid ""
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the specified method of automatic configuration, such as `dhcp`, but overrides the automatically obtained IP address, gateway, netmask, hostname or other specified parameter. All parameters are optional; only specify the ones you wish to override and automatically obtained values will be used for the others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
 "|Yapılandırma Yöntemi|Seçenek biçimi\n"
-"|Herhangi bir arayüzün otomatik yapılandırması|[option]#ip=pass:attributes[{b"
-"lank}]_yöntem_pass:attributes[{blank}]#\n"
-"|Belirli bir arayüzün otomatik yapılandırması|[option]#ip=pass:attributes[{bl"
-"ank}]_arayüz_:pass:attributes[{blank}]_yöntem_pass:attributes[{blank}]#\n"
-"|Statik yapılandırma|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribute"
-"s[{blank}]_ağgeçidi_:pass:attributes[{blank}]_ağmaskesi_:pass:attributes[{bla"
-"nk}]_anamakineadı_:pass:attributes[{blank}]_arayüz_:none#\n"
+"|Herhangi bir arayüzün otomatik yapılandırması|[option]#ip=pass:attributes[{blank}]_yöntem_pass:attributes[{blank}]#\n"
+"|Belirli bir arayüzün otomatik yapılandırması|[option]#ip=pass:attributes[{blank}]_arayüz_:pass:attributes[{blank}]_yöntem_pass:attributes[{blank}]#\n"
+"|Statik yapılandırma|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_ağgeçidi_:pass:attributes[{blank}]_ağmaskesi_:pass:attributes[{blank}]_anamakineadı_:pass:attributes[{blank}]_arayüz_:none#\n"
 "|Belirli bir arayüzün üzerine yazılarak otomatik yapılandırması\n"
-"\t\t\t\t\t\t\t\t\t\t\tfootnote:[`dhcp` gibi belirtilen otomatik yapılandırma "
-"yöntemini kullanarak belirtilen arayüzü etkinleştirir, ancak otomatik olarak "
-"alınan IP adresini, ağ geçidini, ağ maskesini, ana makine adını veya diğer "
-"belirtilen parametrenin üzerine yazar. Tüm parametreler isteğe bağlıdır; "
-"yalnızca üzerine yazmak istediklerinizi belirtin ve diğerleri için otomatik "
-"olarak alınan değerler kullanılacaktır.]|[option]#ip=pass:attributes[{blank}]"
-"_ip_::pass:attributes[{blank}]_ağgeçidi_:pass:attributes[{blank}]_ağmaskesi_:"
-"pass:attributes[{blank}]_anamakineadı_:pass:attributes[{blank}]_arayüz_:pass:"
-"attributes[{blank}]_yöntem_:pass:attributes[{blank}]_mtu_pass:attributes[{bla"
-"nk}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[`dhcp` gibi belirtilen otomatik yapılandırma yöntemini kullanarak belirtilen arayüzü etkinleştirir, ancak otomatik olarak alınan IP adresini, ağ geçidini, ağ maskesini, ana makine adını veya diğer belirtilen parametrenin üzerine yazar. Tüm parametreler isteğe bağlıdır; yalnızca üzerine yazmak istediklerinizi belirtin ve diğerleri için otomatik olarak alınan değerler kullanılacaktır.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_ağgeçidi_:pass:attributes[{blank}]_ağmaskesi_:pass:attributes[{blank}]_anamakineadı_:pass:attributes[{blank}]_arayüz_:pass:attributes[{blank}]_yöntem_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:244
@@ -1129,10 +1097,10 @@ msgid ""
 "attributes[{blank}]_path_pass:attributes[{blank}]#, without specifying the "
 "[option]#ip# option, the installation program will use [option]#ip=dhcp#."
 msgstr ""
-"[option]#ip# seçeneğini belirtmeden [option]#inst.ks=http://pass:attributes[{"
-"blank}]_anamakine_:/pass:attributes[{blank}]_yol_pass:attributes[{blank}]# "
-"gibi ağ erişimi gerektiren bir önyükleme seçeneği kullanırsanız, kurulum "
-"programı [option]#ip=dhcp# seçeneğini kullanacaktır."
+"[option]#ip# seçeneğini belirtmeden [option]#inst.ks=http://pass:"
+"attributes[{blank}]_anamakine_:/pass:attributes[{blank}]_yol_pass:"
+"attributes[{blank}]# gibi ağ erişimi gerektiren bir önyükleme seçeneği "
+"kullanırsanız, kurulum programı [option]#ip=dhcp# seçeneğini kullanacaktır."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:265
@@ -1160,8 +1128,8 @@ msgid ""
 "The _netmask_ parameter is the netmask to be used. This can either be a full "
 "netmask (for example `255.255.255.0`) or a prefix (for example `64`)."
 msgstr ""
-"_ağmaskesi_ parametresi, kullanılacak ağ maskesidir. Bu, tam bir ağ maskesi ("
-"örneğin `255.255.255.0`) veya bir ön ek (örneğin `64`) olabilir."
+"_ağmaskesi_ parametresi, kullanılacak ağ maskesidir. Bu, tam bir ağ maskesi "
+"(örneğin `255.255.255.0`) veya bir ön ek (örneğin `64`) olabilir."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:271
@@ -1216,9 +1184,9 @@ msgid ""
 "attributes[{blank}]#. For example:"
 msgstr ""
 "Belirli bir MAC adresine sahip bir ağ aygıtına belirli bir arayüz adı atar. "
-"Birden çok kez kullanılabilir. Söz dizimi [option]#ifname=pass:attributes[{bl"
-"ank}]_arayüz_:pass:attributes[{blank}]_MAC_pass:attributes[{blank}]# "
-"şeklindedir. Örneğin:"
+"Birden çok kez kullanılabilir. Söz dizimi [option]#ifname=pass:"
+"attributes[{blank}]_arayüz_:pass:attributes[{blank}]_MAC_pass:"
+"attributes[{blank}]# şeklindedir. Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:281
@@ -1240,8 +1208,8 @@ msgid ""
 "$(uname -srm)`."
 msgstr ""
 "DHCP sağlayıcısı sınıfı tanımlayıcısını belirtir. `dhcpd` hizmeti bu değeri "
-"`vendor-class-identifier` olarak görecektir. Öntanımlı değer `anaconda-$("
-"uname -srm)` şeklindedir."
+"`vendor-class-identifier` olarak görecektir. Öntanımlı değer `anaconda-"
+"$(uname -srm)` şeklindedir."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:285
@@ -1257,8 +1225,8 @@ msgid ""
 "attributes[{blank}]_interface_pass:attributes[{blank}]#. For example:"
 msgstr ""
 "Belirli bir ada sahip belirli bir arayüzde bir Sanal (Virtual) LAN (VLAN) "
-"aygıtı ayarlar. Söz dizimi [option]#vlan=pass:attributes[{blank}]_ad_:pass:at"
-"tributes[{blank}]_arayüz_pass:attributes[{blank}]# şeklindedir. Örneğin:"
+"aygıtı ayarlar. Söz dizimi [option]#vlan=pass:attributes[{blank}]_ad_:pass:"
+"attributes[{blank}]_arayüz_pass:attributes[{blank}]# şeklindedir. Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:290
@@ -1314,13 +1282,14 @@ msgid ""
 "(ethernet) interfaces, and _options_ with a comma-separated list of bonding "
 "options. For example:"
 msgstr ""
-"Şu söz dizimiyle bir birleştirme (bond) aygıtı ayarla: [option]#bond=pass:att"
-"ributes[{blank}]_ad_pass:attributes[{blank}][:pass:attributes[{blank}]_ikinci"
-"ller_pass:attributes[{blank}]][:pass:attributes[{blank}]_seçenekler_pass:attr"
-"ibutes[{blank}]]#. _ad_ parametresini birleştirme aygıtı adıyla, "
-"_ikinciller_ parametresini virgülle ayrılmış fiziksel (ethernet) arayüzler "
-"listesiyle ve _seçenekler_ parametresini virgülle ayrılmış birleştirme "
-"seçenekleri listesiyle değiştirin. Örneğin:"
+"Şu söz dizimiyle bir birleştirme (bond) aygıtı ayarla: [option]#bond=pass:"
+"attributes[{blank}]_ad_pass:attributes[{blank}][:pass:"
+"attributes[{blank}]_ikinciller_pass:attributes[{blank}]][:pass:"
+"attributes[{blank}]_seçenekler_pass:attributes[{blank}]]#. _ad_ "
+"parametresini birleştirme aygıtı adıyla, _ikinciller_ parametresini virgülle "
+"ayrılmış fiziksel (ethernet) arayüzler listesiyle ve _seçenekler_ "
+"parametresini virgülle ayrılmış birleştirme seçenekleri listesiyle "
+"değiştirin. Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:310
@@ -1361,11 +1330,12 @@ msgid ""
 "device and _slaves_ with a comma-separated list of physical (ethernet) "
 "devices to be used as slaves in the team device. For example:"
 msgstr ""
-"Şu söz dizimiyle bir takım (team) aygıtı ayarla: [option]#team=pass:attribute"
-"s[{blank}]_birincil_:pass:attributes[{blank}]_ikinciller_pass:attributes[{bla"
-"nk}]#. _birincil_ parametresini ana takım aygıtının adıyla ve _ikinciller_ "
-"parametresini, takım aygıtında ikincil olarak kullanılacak fiziksel "
-"(ethernet) aygıtların virgülle ayrılmış listesiyle değiştirin. Örneğin:"
+"Şu söz dizimiyle bir takım (team) aygıtı ayarla: [option]#team=pass:"
+"attributes[{blank}]_birincil_:pass:attributes[{blank}]_ikinciller_pass:"
+"attributes[{blank}]#. _birincil_ parametresini ana takım aygıtının adıyla ve "
+"_ikinciller_ parametresini, takım aygıtında ikincil olarak kullanılacak "
+"fiziksel (ethernet) aygıtların virgülle ayrılmış listesiyle değiştirin. "
+"Örneğin:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:321
@@ -1398,10 +1368,17 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:329
+#, fuzzy
+#| msgid ""
+#| "Normally, on an AMD64 or Intel{nbsp}64 system, only packages for this "
+#| "architecture (marked as `x86_64`) and packages for all architectures "
+#| "(marked as `noarch` would be installed. When you use this option, "
+#| "packages for 32-bit AMD or Intel systems (marked as `i686`) will be "
+#| "automatically installed as well if available."
 msgid ""
 "Normally, on an AMD64 or Intel{nbsp}64 system, only packages for this "
 "architecture (marked as `x86_64`) and packages for all architectures (marked "
-"as `noarch` would be installed. When you use this option, packages for 32-"
+"as `noarch`) would be installed. When you use this option, packages for 32-"
 "bit AMD or Intel systems (marked as `i686`) will be automatically installed "
 "as well if available."
 msgstr ""
@@ -1474,8 +1451,8 @@ msgstr ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne ve GPT, MBR ve "
 "genel olarak disk bölümlendirme hakkında daha genel bilgi için xref:"
-"appendixes/Disk_Partitions.adoc#sect-disk-partitioning-guid-partition-table["
-"GUID Bölümlendirme Tablosu (GPT)] bölümüne bakın."
+"appendixes/Disk_Partitions.adoc#sect-disk-partitioning-guid-partition-"
+"table[GUID Bölümlendirme Tablosu (GPT)] bölümüne bakın."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:338
@@ -1677,10 +1654,10 @@ msgid ""
 msgstr ""
 "Kurulum programı tarafından kullanılan `VNC` parolası. Sisteme bağlanmaya "
 "çalışan herhangi bir `VNC` istemcisi, erişim kazanmak için doğru parolayı "
-"sağlamalıdır. Örneğin, [option]#inst."
-"vncpassword=pass:attributes[{blank}]_prltest_pass:attributes[{blank}]# "
-"seçeneği parolayı `prltest` olarak ayarlayacaktır. Parola 6 ila 8 karakter "
-"uzunluğunda olmalıdır."
+"sağlamalıdır. Örneğin, [option]#inst.vncpassword=pass:"
+"attributes[{blank}]_prltest_pass:attributes[{blank}]# seçeneği parolayı "
+"`prltest` olarak ayarlayacaktır. Parola 6 ila 8 karakter uzunluğunda "
+"olmalıdır."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:378
@@ -1724,11 +1701,11 @@ msgid ""
 "specify one, the installation program will use `5900`."
 msgstr ""
 "Kurulum başladığında, belirtilen bir ana makine ve bağlantı noktasında "
-"dinleyen bir `VNC` istemcisine bağlan. Doğru söz dizimi [option]#inst.vncconn"
-"ect=pass:attributes[{blank}]_anamakine_:pass:attributes[{blank}]_bağlantınokt"
-"ası_pass:attributes[{blank}]# şeklindedir. _bağlantınoktası_ parametresi "
-"isteğe bağlıdır - belirtmezseniz kurulum programı `5900` değerini "
-"kullanacaktır."
+"dinleyen bir `VNC` istemcisine bağlan. Doğru söz dizimi [option]#inst."
+"vncconnect=pass:attributes[{blank}]_anamakine_:pass:"
+"attributes[{blank}]_bağlantınoktası_pass:attributes[{blank}]# şeklindedir. "
+"_bağlantınoktası_ parametresi isteğe bağlıdır - belirtmezseniz kurulum "
+"programı `5900` değerini kullanacaktır."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:394
@@ -1752,9 +1729,9 @@ msgid ""
 "directory, the installation program will look for a file named `updates.img`."
 msgstr ""
 "Kurulum programı çalışma zamanına uygulanacak `updates.img` dosyasının "
-"konumunu belirtir. Söz dizimi, [option]#inst.repo# seçeneğindekiyle aynıdır -"
-" ayrıntılar için xref:tabl-boot-options-sources[Kurulum Kaynakları] bölümüne "
-"bakın. Tüm biçimlerde, bir dosya adı değil de yalnızca bir dizin "
+"konumunu belirtir. Söz dizimi, [option]#inst.repo# seçeneğindekiyle aynıdır "
+"- ayrıntılar için xref:tabl-boot-options-sources[Kurulum Kaynakları] "
+"bölümüne bakın. Tüm biçimlerde, bir dosya adı değil de yalnızca bir dizin "
 "belirtirseniz, kurulum programı `updates.img` adlı bir dosya arayacaktır."
 
 #. type: Labeled list
@@ -1820,8 +1797,8 @@ msgid ""
 msgstr ""
 "Günlükleri iletmek için kullanılacak bir `virtio` bağlantı noktası (`/dev/"
 "virtio-ports/pass:attributes[{blank}]_ad_pass:attributes[{blank}]` konumunda "
-"bir karakter aygıtı) belirtir. `org.fedoraproject.anaconda.log."
-"0`pass:attributes[{blank}] öntanımlı değerdir; bu bağlantı noktası varsa "
+"bir karakter aygıtı) belirtir. `org.fedoraproject.anaconda.log.0`pass:"
+"attributes[{blank}] öntanımlı değerdir; bu bağlantı noktası varsa "
 "kullanılacaktır."
 
 #. type: Title ==
@@ -1893,9 +1870,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:422
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
-msgstr ""
-"[option]#repo=nfsiso:pass:attributes[{blank}]_sunucu_:/pass:attributes[{blank"
-"}]_yol_pass:attributes[{blank}]#"
+msgstr "[option]#repo=nfsiso:pass:attributes[{blank}]_sunucu_:/pass:attributes[{blank}]_yol_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:423
@@ -1908,8 +1883,9 @@ msgid ""
 msgstr ""
 "NFS kurulumlarında, hedefin kurulabilir bir ağaç yerine NFS sunucusunda "
 "bulunan bir ISO kalıbı olduğunu belirtiyordu. Fark artık otomatik olarak "
-"algılanıyor, yani bu seçenek [option]#inst.repo=nfs:pass:attributes[{blank}]_"
-"sunucu_:/pass:attributes[{blank}]_yol_pass:attributes[{blank}]# ile aynıdır."
+"algılanıyor, yani bu seçenek [option]#inst.repo=nfs:pass:"
+"attributes[{blank}]_sunucu_:/pass:attributes[{blank}]_yol_pass:"
+"attributes[{blank}]# ile aynıdır."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:424
@@ -1930,9 +1906,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:426
 #, no-wrap
 msgid "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
-msgstr ""
-"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
-"[option]#ipv6=#"
+msgstr "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:427
@@ -1967,22 +1941,12 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
 "|Değer|Şu anki davranış\n"
-"|Yok|İstenen aygıt ve yapılandırma [option]#ip=# seçeneği ve/veya "
-"[option]#BOOTIF# seçeneği ile belirtilmediği sürece tüm aygıtlar `dhcp` "
-"kullanılarak etkinleştirilmeye çalışılır.\n"
-"|[option]#ksdevice=link#|Yukarıdakine benzerdir, farklı olarak, gerekli "
-"olsun ya da olmasın, ağ initramfs aşamasında her zaman etkinleştirilecektir. "
-"Bunun yerine desteklenen [option]#rd.neednet# seçeneği ([application]*dracut*"
-" tarafından sağlanır) kullanılmalıdır.\n"
-"|[option]#ksdevice=bootif#|Yok sayılır (BOOTID= seçeneği belirtildiğinde "
-"öntanımlı olarak kullanılır)\n"
+"|Yok|İstenen aygıt ve yapılandırma [option]#ip=# seçeneği ve/veya [option]#BOOTIF# seçeneği ile belirtilmediği sürece tüm aygıtlar `dhcp` kullanılarak etkinleştirilmeye çalışılır.\n"
+"|[option]#ksdevice=link#|Yukarıdakine benzerdir, farklı olarak, gerekli olsun ya da olmasın, ağ initramfs aşamasında her zaman etkinleştirilecektir. Bunun yerine desteklenen [option]#rd.neednet# seçeneği ([application]*dracut* tarafından sağlanır) kullanılmalıdır.\n"
+"|[option]#ksdevice=bootif#|Yok sayılır (BOOTID= seçeneği belirtildiğinde öntanımlı olarak kullanılır)\n"
 "|[option]#ksdevice=ibft#|[option]#ip=ibft# seçeneği ile değiştirildi\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|[op"
-"tion]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]# "
-"seçeneğiyle değiştirildi\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_aygıt_pass:attributes[{blank}]#|["
-"option]#ip=# seçeneğini kullanarak aygıt adının belirtilmesiyle değiştirildi."
-"\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]# seçeneğiyle değiştirildi\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_aygıt_pass:attributes[{blank}]#|[option]#ip=# seçeneğini kullanarak aygıt adının belirtilmesiyle değiştirildi.\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:448
@@ -2000,8 +1964,8 @@ msgstr ""
 "başlatılmayacaktır. Bu, bir ağ konumuna erişen kurulum öncesi veya kurulum "
 "sonrası betikleri gibi ağ erişimi gerektiren diğer Kickstart seçeneklerinin "
 "kurulumun başarısız olmasına neden olacağı anlamına gelir. Bu bilinen bir "
-"sorundur; ayrıntılar için BZ#link:++https://bugzilla.redhat.com/show_bug."
-"cgi?id=1085310++[1085310] sayfasına bakın."
+"sorundur; ayrıntılar için BZ#link:++https://bugzilla.redhat.com/show_bug.cgi?"
+"id=1085310++[1085310] sayfasına bakın."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:450
@@ -2011,8 +1975,8 @@ msgid ""
 "command in your Kickstart file."
 msgstr ""
 "Bu sorunu çözmek için [option]#ksdevice=link# önyükleme seçeneğini kullanın "
-"veya Kickstart dosyanızdaki [command]#network# komutuna "
-"[option]#--device=link# seçeneğini ekleyin."
+"veya Kickstart dosyanızdaki [command]#network# komutuna [option]#--"
+"device=link# seçeneğini ekleyin."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:453
@@ -2157,8 +2121,8 @@ msgstr "[option]#gdb#"
 #: pages/advanced/Boot_Options.adoc:477
 msgid "Allowed you to debug the loader. Use [option]#rd.debug# instead."
 msgstr ""
-"Yükleyicide hata ayıklamanıza izin veriyordu. Bunun yerine [option]#rd.debug#"
-" seçeneğini kullanın."
+"Yükleyicide hata ayıklamanıza izin veriyordu. Bunun yerine [option]#rd."
+"debug# seçeneğini kullanın."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:478
@@ -2313,8 +2277,8 @@ msgstr ""
 "Bellek (RAM) modüllerindeki hatalar, sisteminizin beklenmedik şekilde "
 "donmasına veya çökmesine neden olabilir. Bazı durumlarda, bellek hataları "
 "yalnızca belirli yazılımlar bir arada olduğunda hatalara neden olabilir. Bu "
-"nedenle, daha önce başka işletim sistemleri çalıştırmış olsa bile {PRODUCT}"
-"'yı ilk kez kurmadan önce bilgisayarın belleğini test etmelisiniz."
+"nedenle, daha önce başka işletim sistemleri çalıştırmış olsa bile "
+"{PRODUCT}'yı ilk kez kurmadan önce bilgisayarın belleğini test etmelisiniz."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:503
@@ -2329,8 +2293,8 @@ msgid ""
 "automatically."
 msgstr ""
 "{PRODUCT}, [application]*Memtest86+* bellek test uygulamasını içermektedir. "
-"Bellek testi modunu başlatmak için, önyükleme menüsünde Sorun Giderme > `"
-"Bellek testi` seçeneğini seçin. Test hemen başlayacaktır. Öntanımlı olarak, "
+"Bellek testi modunu başlatmak için, önyükleme menüsünde Sorun Giderme > "
+"`Bellek testi` seçeneğini seçin. Test hemen başlayacaktır. Öntanımlı olarak, "
 "[application]*Memtest86+* her geçişte on test gerçekleştirir; kbd:[c] tuşu "
 "ile yapılandırma ekranına erişilerek farklı bir yapılandırma belirtilebilir. "
 "İlk geçiş tamamlandıktan sonra, altta geçerli durumu bildiren bir mesaj "
@@ -2480,10 +2444,10 @@ msgid ""
 "located in `/usr/share/doc/memtest86+-_version_pass:attributes[{blank}]/` on "
 "{PRODUCT} systems with the [package]*memtest86+* package installed."
 msgstr ""
-"[application]*Memtest86+* kullanma hakkında daha fazla bilgi için "
-"link:++https://www.memtest.org/++[] adresindeki resmi web sitesine bakın. "
-"Ayrıca [package]*memtest86+* paketinin kurulu olduğu {PRODUCT} sistemlerinde "
-"`/usr/share/doc/memtest86+-_sürüm_pass:attributes[{blank}]/` konumunda bir "
+"[application]*Memtest86+* kullanma hakkında daha fazla bilgi için link:+"
+"+https://www.memtest.org/++[] adresindeki resmi web sitesine bakın. Ayrıca "
+"[package]*memtest86+* paketinin kurulu olduğu {PRODUCT} sistemlerinde `/usr/"
+"share/doc/memtest86+-_sürüm_pass:attributes[{blank}]/` konumunda bir "
 "`README` dosyası bulunmaktadır."
 
 #. type: Title ===

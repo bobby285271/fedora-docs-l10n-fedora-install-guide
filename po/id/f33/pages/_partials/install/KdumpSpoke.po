@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-24 21:05+0000\n"
+"POT-Creation-Date: 2021-10-01 21:07+0000\n"
 "PO-Revision-Date: 2021-06-02 15:03+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallkdumpspoke/id/>"
-"\n"
+"fedora-docs-l10nfedora-install-guide/f33pages_partialsinstallkdumpspoke/id/"
+">\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,14 +20,14 @@ msgstr ""
 "X-Generator: Weblate 4.6.2\n"
 
 #. type: Block title
-#: pages/_partials/install/KdumpSpoke.adoc:5
-#: pages/_partials/install/KdumpSpoke.adoc:16
+#: pages/_partials/install/KdumpSpoke.adoc:4
+#: pages/_partials/install/KdumpSpoke.adoc:15
 #, no-wrap
 msgid "Kdump"
 msgstr "Kdump"
 
 #. type: delimited block =
-#: pages/_partials/install/KdumpSpoke.adoc:11
+#: pages/_partials/install/KdumpSpoke.adoc:10
 msgid ""
 "This screen is disabled by default. To enable it during the installation, "
 "you must use the [option]#inst.kdump_addon=on# option at the boot menu. See "
@@ -44,7 +44,7 @@ msgstr ""
 "tentang penggunaan opsi boot ubahan."
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:15
+#: pages/_partials/install/KdumpSpoke.adoc:14
 msgid ""
 "Use this screen to select whether or not [application]*Kdump* will be "
 "activated on the installed system, and how much memory will be reserved for "
@@ -55,19 +55,19 @@ msgstr ""
 "dicadangkan untuk itu jika diaktifkan."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: pages/_partials/install/KdumpSpoke.adoc:18
+#: pages/_partials/install/KdumpSpoke.adoc:17
 #, no-wrap
 msgid "The Kdump configuration screen"
 msgstr "Layar konfigurasi Kdump"
 
 #. type: Target for macro image
-#: pages/_partials/install/KdumpSpoke.adoc:18
+#: pages/_partials/install/KdumpSpoke.adoc:17
 #, no-wrap
 msgid "anaconda/KdumpSpoke.png"
 msgstr "anaconda/KdumpSpoke.png"
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:21
+#: pages/_partials/install/KdumpSpoke.adoc:20
 msgid ""
 "[application]*Kdump* is a kernel crash dumping mechanism which, in the event "
 "of a system crash, captures the contents of the system memory at the moment "
@@ -85,12 +85,17 @@ msgstr ""
 "kernel utama."
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:23
+#: pages/_partials/install/KdumpSpoke.adoc:22
+#, fuzzy
+#| msgid ""
+#| "To enable [application]*Kdump* on the installed system, check `Enabled`. "
+#| "Then, select either `Automatic` or `Manual` memory reservation settings, "
+#| "and if you selected `Manual`, enter the amount of memory to be reserved "
+#| "in megabytes into the `Memory to be reserved` field."
 msgid ""
-"To enable [application]*Kdump* on the installed system, check `Enabled`. "
-"Then, select either `Automatic` or `Manual` memory reservation settings, and "
-"if you selected `Manual`, enter the amount of memory to be reserved in "
-"megabytes into the `Memory to be reserved` field."
+"To enable [application]*Kdump* on the installed system, check `Enable "
+"kdump`. Then, enter the amount of memory to be reserved in megabytes into "
+"the `Memory To Be Reserved` field."
 msgstr ""
 "Untuk mengaktifkan [application]*Kdump* pada sistem yang diinstal, centang "
 "`Aktifkan`. Kemudian, pilih salah satu pengaturan penyimpanan memori "
@@ -99,7 +104,7 @@ msgstr ""
 "akan dicadangkan`."
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:25
+#: pages/_partials/install/KdumpSpoke.adoc:24
 msgid ""
 "The amount of memory which you should reserve is determined based on your "
 "system's architecture (AMD64 and Intel{nbsp}64 will have different "
@@ -126,7 +131,7 @@ msgstr ""
 "tambahan, dan cara menganalisis crash dump yang disimpan."
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:27
+#: pages/_partials/install/KdumpSpoke.adoc:26
 msgid ""
 "The `Usable System Memory` readout below the reservation input field shows "
 "how much memory will be accessible to your main system once your selected "
@@ -137,7 +142,7 @@ msgstr ""
 "utama Anda setelah banyaknya RAM yang Anda pilih dicadangkan."
 
 #. type: delimited block =
-#: pages/_partials/install/KdumpSpoke.adoc:32
+#: pages/_partials/install/KdumpSpoke.adoc:31
 msgid ""
 "Additional settings, such as the location where kernel crash dumps will be "
 "saved, can only be configured after the installation using either the "
@@ -150,7 +155,7 @@ msgstr ""
 "conf`."
 
 #. type: Plain text
-#: pages/_partials/install/KdumpSpoke.adoc:35
+#: pages/_partials/install/KdumpSpoke.adoc:34
 msgid ""
 "After configuring [application]*Kdump* settings, click btn:[Done] in the top "
 "left corner to return to xref:install/Installing_Using_Anaconda.adoc#sect-"
