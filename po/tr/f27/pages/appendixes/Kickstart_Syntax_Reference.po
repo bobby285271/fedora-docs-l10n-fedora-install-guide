@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-10-01 06:05+0000\n"
+"PO-Revision-Date: 2021-10-01 22:07+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -5432,12 +5432,18 @@ msgstr ""
 #, no-wrap
 msgid "[command]#auth [--enablenis | --nisdomain= | --nisserver= | --enableshadow | --enableldap | --enableldapauth | --ldapserver= | --ldapbasedn= | --enableldaptls | --disableldaptls | --enablekrb5 | --krb5realm= | --krb5kdc= | --krb5adminserver= | --enablehesiod | --hesiodlhs= | --hesiodrhs= | --enablesmbauth | --smbservers= | --smbworkgroup= | --enablecache | --passalgo=]#\n"
 msgstr ""
+"[command]#auth [--enablenis | --nisdomain= | --nisserver= | --enableshadow | "
+"--enableldap | --enableldapauth | --ldapserver= | --ldapbasedn= | --"
+"enableldaptls | --disableldaptls | --enablekrb5 | --krb5realm= | --krb5kdc= |"
+" --krb5adminserver= | --enablehesiod | --hesiodlhs= | --hesiodrhs= | --"
+"enablesmbauth | --smbservers= | --smbworkgroup= | --enablecache | "
+"--passalgo=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1501
 #, no-wrap
 msgid "[option]#--enablenis#"
-msgstr ""
+msgstr "[option]#--enablenis#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1502
@@ -5446,45 +5452,49 @@ msgid ""
 "it finds on the network. A domain should almost always be set by hand with "
 "the [option]#--nisdomain=# option."
 msgstr ""
+"NIS desteğini etkinleştirir. Öntanımlı olarak, [option]#--enablenis# ağda "
+"bulduğu etki alanını kullanır. Hemen hemen her durumda [option]#--nisdomain=#"
+" seçeneğini kullanarak bir etki alanı elle ayarlanmalıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1503
 #, no-wrap
 msgid "[option]#--nisdomain=#"
-msgstr ""
+msgstr "[option]#--nisdomain=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1504
 msgid "NIS domain name to use for NIS services."
-msgstr ""
+msgstr "NIS hizmetleri için kullanılacak NIS etki alanı adı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1505
 #, no-wrap
 msgid "[option]#--nisserver=#"
-msgstr ""
+msgstr "[option]#--nisserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1506
 msgid "Server to use for NIS services (broadcasts by default)."
 msgstr ""
+"NIS hizmetleri için kullanılacak sunucu (öntanımlı olarak genel yayınlar)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1507
 #, no-wrap
 msgid "[option]#--useshadow#pass:attributes[{blank}]or [option]#--enableshadow#"
-msgstr ""
+msgstr "[option]#--useshadow# veya [option]#--enableshadow#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1508
 msgid "Use shadow passwords. Active by default."
-msgstr ""
+msgstr "Gölge parolaları kullan. Öntanımlı olarak etkindir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1509
 #, no-wrap
 msgid "[option]#--enableldap#"
-msgstr ""
+msgstr "[option]#--enableldap#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1510
@@ -5496,12 +5506,19 @@ msgid ""
 "_DN_ (distinguished name) with [option]#--ldapserver=# and [option]#--"
 "ldapbasedn=#."
 msgstr ""
+"`/etc/nsswitch.conf` dosyasında LDAP desteğini etkinleştirerek sisteminizin "
+"bir LDAP dizininden kullanıcılar hakkında (örneğin kullanıcı kimlikleri, ev "
+"dizinleri ve kabukları) bilgi almasına izin verir. Bu seçeneği kullanmak "
+"için [package]*nss-pam-ldapd* paketini kurmalısınız. Ayrıca "
+"[option]#--ldapserver=# ve [option]#--ldapbasedn=# seçeneklerini kullanarak "
+"bir sunucu ve temel _DN_ (distinguished name - ayırt edici ad) "
+"belirtmelisiniz."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1511
 #, no-wrap
 msgid "[option]#--enableldapauth#"
-msgstr ""
+msgstr "[option]#--enableldapauth#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1512
@@ -5514,12 +5531,21 @@ msgid ""
 "Layer Security), use the [option]#--disableldaptls# switch to ensure that "
 "the resulting configuration file works."
 msgstr ""
+"Kimlik doğrulama yöntemi olarak LDAP kullan. Bu, bir LDAP dizini kullanarak "
+"kimlik doğrulamak ve parola değiştirmek için `pam_ldap` modülünü "
+"etkinleştirir. Bu seçeneği kullanmak için [package]*nss-pam-ldapd* paketini "
+"kurmalısınız. Ayrıca [option]#--ldapserver=# ve [option]#--ldapbasedn=# "
+"seçeneklerini kullanarak bir sunucu ve temel _DN_ (distinguished name - "
+"ayırt edici ad) belirtmelisiniz. Ortamınız _TLS_ (Transport Layer Security - "
+"Taşıma Katmanı Güvenliği) kullanmıyorsa, ortaya çıkan yapılandırma "
+"dosyasının çalıştığından emin olmak için [option]#--disableldaptls# "
+"seçeneğini kullanın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1513
 #, no-wrap
 msgid "[option]#--ldapserver=#"
-msgstr ""
+msgstr "[option]#--ldapserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1514
@@ -5528,12 +5554,15 @@ msgid ""
 "enableldapauth#, use this option to specify the name of the LDAP server to "
 "use. This option is set in the `/etc/ldap.conf` file."
 msgstr ""
+"[option]#--enableldap# veya [option]#--enableldapauth# seçeneklerinden "
+"birini belirttiyseniz, kullanılacak LDAP sunucusunun adını belirtmek için bu "
+"seçeneği kullanın. Bu seçenek `/etc/ldap.conf` dosyasında ayarlanır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1515
 #, no-wrap
 msgid "[option]#--ldapbasedn=#"
-msgstr ""
+msgstr "[option]#--ldapbasedn=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1516
@@ -5543,12 +5572,16 @@ msgid ""
 "tree under which user information is stored. This option is set in the `/etc/"
 "ldap.conf` file."
 msgstr ""
+"[option]#--enableldap# veya [option]#--enableldapauth# seçeneklerinden "
+"birini belirttiyseniz, LDAP dizin ağacınızda kullanıcı bilgilerinin "
+"depolandığı DN'yi belirtmek için bu seçeneği kullanın. Bu seçenek `/etc/ldap."
+"conf` dosyasında ayarlanır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1517
 #, no-wrap
 msgid "[option]#--enableldaptls#"
-msgstr ""
+msgstr "[option]#--enableldaptls#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1518
@@ -5556,12 +5589,15 @@ msgid ""
 "Use TLS (Transport Layer Security) lookups. This option allows LDAP to send "
 "encrypted usernames and passwords to an LDAP server before authentication."
 msgstr ""
+"TLS (Transport Layer Security - Taşıma Katmanı Güvenliği) aramalarını "
+"kullan. Bu seçenek, LDAP'nin kimlik doğrulamadan önce bir LDAP sunucusuna "
+"şifrelenmiş kullanıcı adlarını ve parolaları göndermesine olanak tanır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1519
 #, no-wrap
 msgid "[option]#--disableldaptls#"
-msgstr ""
+msgstr "[option]#--disableldaptls#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1520
@@ -5569,12 +5605,14 @@ msgid ""
 "Do not use TLS (Transport Layer Security) lookups in an environment that "
 "uses LDAP for authentication."
 msgstr ""
+"Kimlik doğrulama için LDAP kullanan bir ortamda TLS (Transport Layer "
+"Security - Taşıma Katmanı Güvenliği) aramalarını kullanma."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1521
 #, no-wrap
 msgid "[option]#--enablekrb5#"
-msgstr ""
+msgstr "[option]#--enablekrb5#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1522
@@ -5585,23 +5623,29 @@ msgid ""
 "or by using the [command]#useradd# command. If you use this option, you must "
 "have the [package]*pam_krb5* package installed."
 msgstr ""
+"Kullanıcıların kimliğini doğrulamak için Kerberos 5 kullan. Kerberos'un "
+"kendisi ev dizinleri, kullanıcı kimlikleri veya kabuklar hakkında bilgi "
+"sahibi değildir. Kerberos'u etkinleştirirseniz, LDAP, NIS veya Hesiod'u "
+"etkinleştirerek veya [command]#useradd# komutunu kullanarak kullanıcıların "
+"hesaplarını bu iş istasyonuna tanıtmanız gerekir. Bu seçeneği kullanırsanız, "
+"[package]*pam_krb5* paketinin kurulu olması gerekir."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1523
 #, no-wrap
 msgid "[option]#--krb5realm=#"
-msgstr ""
+msgstr "[option]#--krb5realm=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1524
 msgid "The Kerberos 5 realm to which your workstation belongs."
-msgstr ""
+msgstr "İş istasyonunuzun ait olduğu Kerberos 5 erişim alanı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1525
 #, no-wrap
 msgid "[option]#--krb5kdc=#"
-msgstr ""
+msgstr "[option]#--krb5kdc=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1526
@@ -5609,12 +5653,15 @@ msgid ""
 "The KDC (or KDCs) that serve requests for the realm. If you have multiple "
 "KDCs in your realm, use a comma-separated list without spaces."
 msgstr ""
+"Erişim alanı için isteklere cevap veren KDC (veya KDC'ler). Erişim "
+"alanınızda birden fazla KDC'niz varsa, aralarında boşluk olmadan virgülle "
+"ayrılmış bir liste kullanın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1527
 #, no-wrap
 msgid "[option]#--krb5adminserver=#"
-msgstr ""
+msgstr "[option]#--krb5adminserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1528
@@ -5623,12 +5670,15 @@ msgid ""
 "password changing and other administrative requests. This server must be run "
 "on the master KDC if you have more than one KDC."
 msgstr ""
+"Ayrıca kadmind de çalıştıran erişim alanınızdaki KDC. Bu sunucu, parola "
+"değiştirme ve diğer yönetim isteklerini ele alır. Birden fazla KDC'niz "
+"varsa, bu sunucu ana KDC'de çalıştırılmalıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1529
 #, no-wrap
 msgid "[option]#--enablehesiod#"
-msgstr ""
+msgstr "[option]#--enablehesiod#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1530
@@ -5639,12 +5689,18 @@ msgid ""
 "[package]*glibc* package. Hesiod is an extension of DNS that uses DNS "
 "records to store information about users, groups, and various other items."
 msgstr ""
+"Kullanıcı ana dizinlerini, kullanıcı kimliklerini ve kabukları aramak için "
+"Hesiod desteğini etkinleştirir. Hesiod'u ağınızda kurma ve kullanma hakkında "
+"daha fazla bilgi, [package]*glibc* paketinde bulunan `/usr/share/doc/glibc-2."
+"x.x/README.hesiod` dosyasında bulunabilir. Hesiod, kullanıcılar, gruplar ve "
+"diğer çeşitli ögeler hakkındaki bilgileri depolamak için DNS kayıtlarını "
+"kullanan bir DNS uzantısıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1531
 #, no-wrap
 msgid "[option]#--hesiodlhs=# and [option]#--hesiodrhs=#"
-msgstr ""
+msgstr "[option]#--hesiodlhs=# ve [option]#--hesiodrhs=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1532
@@ -5653,6 +5709,10 @@ msgid ""
 "etc/hesiod.conf`. The `Hesiod` library uses these values to search DNS for a "
 "name, similar to the way that `LDAP` uses a base DN."
 msgstr ""
+"`/etc/hesiod.conf` dosyasında ayarlanan `Hesiod` LHS (left-hand side - sol "
+"taraf) ve RHS (right-hand side - sağ taraf) değerleri. `Hesiod` kütüphanesi, "
+"LDAP'nin bir temel DN kullanmasına benzer şekilde, DNS'de bir ad aramak için "
+"bu değerleri kullanır."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1534
@@ -5666,6 +5726,14 @@ msgid ""
 "attributes[{blank}]_LHS_pass:attributes[{blank}]pass:"
 "attributes[{blank}]_RHS_pass:attributes[{blank}]` instead."
 msgstr ""
+"`jim` kullanıcı adı için kullanıcı bilgilerini aramak için, Hesiod "
+"kütüphanesi `jim.passwdpass:attributes[{blank}]_LHS_pass:attributes[{blank}]p"
+"ass:attributes[{blank}]_RHS_pass:attributes[{blank}]` ifadesini arar, bunun "
+"`passwd` dosyasındaki o kullanıcı için bir girdiyle aynı dizgeyi içeren bir "
+"TXT kaydına çözümlenmesi gerekir: `jim:*:501:501:Jungle Jim:/home/jim:/bin/"
+"bash`. Hesiod kütüphanesi grupları aramak bunun yerine `jim.grouppass:attribu"
+"tes[{blank}]_LHS_pass:attributes[{blank}]pass:attributes[{blank}]_RHS_pass:at"
+"tributes[{blank}]` ifadesini arar."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1536
@@ -5677,12 +5745,18 @@ msgid ""
 "in front of them, you must include the period in the values you set for "
 "[option]#--hesiodlhs=# and [option]#--hesiodrhs=#."
 msgstr ""
+"Kullanıcıları ve grupları numaraya göre aramak için, `501.uid` değerini `jim."
+"passwd` için bir CNAME ve `501.gid` değerini `jim.group` için bir CNAME "
+"yapın. Kütüphanenin arama yaparken LHS ve RHS değerlerinin önüne nokta (`.`) "
+"koymadığını unutmayın. Bu nedenle, LHS ve RHS değerlerinin önüne nokta "
+"konulması gerekiyorsa, [option]#--hesiodlhs=# ve [option]#--hesiodrhs=# "
+"seçenekleri için belirlediğiniz değerlere nokta eklemelisiniz."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1537
 #, no-wrap
 msgid "[option]#--enablesmbauth#"
-msgstr ""
+msgstr "[option]#--enablesmbauth#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1538
@@ -5693,12 +5767,18 @@ msgid ""
 "accounts known to the workstation by enabling LDAP, NIS, or Hesiod or by "
 "using the [command]#useradd# command."
 msgstr ""
+"Kullanıcıların bir SMB sunucusuna (genellikle bir Samba veya Windows "
+"sunucusuna) karşı kimlik doğrulamasını sağlar. SMB kimlik doğrulama desteği "
+"ev dizinleri, kullanıcı kimlikleri veya kabuklar hakkında bilgi sahibi "
+"değildir. SMB'yi etkinleştirirseniz LDAP, NIS veya Hesiod'u etkinleştirerek "
+"veya [command]#useradd# komutunu kullanarak iş istasyonunun kullanıcı "
+"hesaplarını tanımasını sağlamalısınız."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1539
 #, no-wrap
 msgid "[option]#--smbservers=#"
-msgstr ""
+msgstr "[option]#--smbservers=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1540
@@ -5706,23 +5786,25 @@ msgid ""
 "The name of the servers to use for SMB authentication. To specify more than "
 "one server, separate the names with commas (`,`)."
 msgstr ""
+"SMB kimlik doğrulaması için kullanılacak sunucuların adı. Birden fazla "
+"sunucu belirtmek için adları virgülle (`,`) ayırın."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1541
 #, no-wrap
 msgid "[option]#--smbworkgroup=#"
-msgstr ""
+msgstr "[option]#--smbworkgroup=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1542
 msgid "The name of the workgroup for the SMB servers."
-msgstr ""
+msgstr "SMB sunucuları için çalışma grubunun adı."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1543
 #, no-wrap
 msgid "[option]#--enablecache#"
-msgstr ""
+msgstr "[option]#--enablecache#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1544
@@ -5732,12 +5814,16 @@ msgid ""
 "helpful if you choose to distribute information about users and groups over "
 "your network using `NIS`, `LDAP`, or `Hesiod`."
 msgstr ""
+"`nscd` hizmetini etkinleştirir. `nscd` hizmeti kullanıcılar, gruplar ve "
+"diğer çeşitli bilgi türleri hakkındaki bilgileri önbelleğe alır. Önbelleğe "
+"alma özellikle `NIS`, `LDAP` veya `Hesiod` kullanarak ağınız üzerinden "
+"kullanıcılar ve gruplar hakkında bilgi dağıtmayı seçerseniz kullanışlıdır."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1545
 #, no-wrap
 msgid "[option]#--passalgo=#"
-msgstr ""
+msgstr "[option]#--passalgo=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1546
@@ -5745,6 +5831,9 @@ msgid ""
 "Specify [option]#sha256# to set up the SHA-256 hashing algorithm or "
 "[option]#sha512# to set up the SHA-512 hashing algorithm."
 msgstr ""
+"SHA-256 sağlama algoritmasını ayarlamak için [option]#sha256# seçeneğini, "
+"SHA-512 sağlama algoritmasını ayarlamak için [option]#sha512# seçeneğini "
+"belirtin."
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1548
