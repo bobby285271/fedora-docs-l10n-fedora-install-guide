@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-01 21:04+0000\n"
-"PO-Revision-Date: 2021-03-12 17:01+0000\n"
+"PO-Revision-Date: 2021-10-07 09:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/appendixes/Disk_Partitions.adoc:6
@@ -27,19 +27,14 @@ msgstr "Uma introdução às partições de disco"
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:12
-#, fuzzy
-#| msgid ""
-#| "This appendix is not necessarily applicable to architectures other than "
-#| "AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
-#| "apply."
 msgid ""
 "This appendix is not necessarily applicable to architectures other than "
 "AMD64, Intel{nbsp}64, and Arm SystemReady. However, the general concepts "
 "mentioned here may apply."
 msgstr ""
 "Este apêndice não é necessariamente aplicável a arquiteturas diferentes de "
-"AMD64 e Intel{nbsp}64. No entanto, os conceitos gerais mencionados aqui "
-"podem ser aplicáveis."
+"AMD64, Intel{nbsp}64 e Arm SystemReady. No entanto, os conceitos gerais "
+"mencionados aqui podem ser aplicáveis."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:16
@@ -129,12 +124,6 @@ msgstr "Sistemas de arquivos"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:37
-#, fuzzy
-#| msgid ""
-#| "To store data on a disk drive, it is necessary to _format_ the disk drive "
-#| "first. Formatting (usually known as \"making a _file system_pass:"
-#| "attributes[{blank}]\") writes information to the drive, creating order "
-#| "out of the empty space in an unformatted drive."
 msgid ""
 "To store data on a disk drive, it is necessary to _format_ the disk drive "
 "first. Formatting (usually known as \"`making a _file system_pass:"
@@ -142,8 +131,8 @@ msgid ""
 "of the empty space in an unformatted drive."
 msgstr ""
 "Para armazenar dados em uma unidade de disco, é necessário _formatar_ a "
-"unidade de disco primeiro. A formatação (normalmente conhecida como \"criar "
-"um _sistema de arquivos_pass:attributes[{blank}]\") escreve as informações "
+"unidade de disco primeiro. A formatação (normalmente conhecida como \"`criar "
+"um _sistema de arquivos_pass:attributes[{blank}]`\") escreve as informações "
 "na unidade, criando ordem no espaço vazio em uma unidade não formatada."
 
 #. type: Block title
@@ -446,10 +435,8 @@ msgstr "Os pontos do disco onde a partição começa e termina"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:101
-#, fuzzy
-#| msgid "Whether the partition is \"active\""
 msgid "Whether the partition is \"`active`\""
-msgstr "Se a partição está \"ativa\""
+msgstr "Se a partição está \"`ativa`\""
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:103
@@ -458,12 +445,6 @@ msgstr "O tipo da partição"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:105
-#, fuzzy
-#| msgid ""
-#| "The starting and ending points define the partition's size and location "
-#| "on the disk. The \"active\" flag is used by some operating systems' boot "
-#| "loaders. In other words, the operating system in the partition that is "
-#| "marked \"active\" is booted."
 msgid ""
 "The starting and ending points define the partition's size and location on "
 "the disk. The \"`active`\" flag is used by some operating systems’ boot "
@@ -471,9 +452,9 @@ msgid ""
 "marked \"`active`\" is booted."
 msgstr ""
 "Os pontos inicial e final definem o tamanho e a localização da partição no "
-"disco. O sinalizador \"ativo\" é usado por carregadores de inicialização de "
-"alguns sistemas operacionais. Em outras palavras, o sistema operacional na "
-"partição marcada como \"ativa\" é inicializado."
+"disco. O sinalizador \"`ativo`\" é usado por carregadores de inicialização "
+"de alguns sistemas operacionais. Em outras palavras, o sistema operacional "
+"na partição marcada como \"`ativa`\" é inicializado."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:107
@@ -592,11 +573,6 @@ msgstr "Partições dentro de partições - uma visão geral das partições est
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:149
-#, fuzzy
-#| msgid ""
-#| "In case four partitions are insufficient for your needs, you can use "
-#| "_extended partitions_ to create up additional partitions. You do this by "
-#| "setting the type of a partition to \"Extended\"."
 msgid ""
 "In case four partitions are insufficient for your needs, you can use "
 "_extended partitions_ to create up additional partitions. You do this by "
@@ -604,7 +580,7 @@ msgid ""
 msgstr ""
 "No caso de quatro partições serem insuficientes para suas necessidades, você "
 "pode usar _partições estendidas_ para criar partições adicionais. Você pode "
-"fazer isso definindo o tipo de partição para \"Estendida\"."
+"fazer isso definindo o tipo de partição para \"`Estendida`\"."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -696,18 +672,13 @@ msgstr "Os discos *GPT* usam endereçamento de bloco lógico (LBA) e o layout da
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:167
-#, fuzzy
-#| msgid ""
-#| "To preserve backward compatibility with MBR disks, the first sector "
-#| "(*LBA* 0) of *GPT* is reserved for *MBR* data and it is called "
-#| "\"protective MBR\"."
 msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
 "0) of *GPT* is reserved for *MBR* data and it is called \"`protective MBR`\"."
 msgstr ""
 "Para preservar a compatibilidade reversa com discos MBR, o primeiro setor "
-"(*LBA* 0) de *GPT* é reservado para dados *MBR* e é chamado de \"MBR protetor"
-"\" (ou \"protective MBR\", em inglês)."
+"(*LBA* 0) de *GPT* é reservado para dados *MBR* e é chamado de \"`MBR "
+"protetor`\" (ou \"protective MBR\", em inglês)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -1133,12 +1104,6 @@ msgstr "Compactar dados existentes"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:281
-#, fuzzy
-#| msgid ""
-#| "As the following figure shows, the first step is to compress the data in "
-#| "your existing partition. The reason for doing this is to rearrange the "
-#| "data such that it maximizes the available free space at the \"end\" of "
-#| "the partition."
 msgid ""
 "As the following figure shows, the first step is to compress the data in "
 "your existing partition. The reason for doing this is to rearrange the data "
@@ -1147,7 +1112,7 @@ msgid ""
 msgstr ""
 "Como mostra a figura a seguir, a primeira etapa é compactar os dados em sua "
 "partição existente. O motivo para fazer isso é reorganizar os dados de modo "
-"que maximizem o espaço livre disponível no \"final\" da partição."
+"que maximizem o espaço livre disponível no \"`final`\" da partição."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:283
@@ -1277,17 +1242,6 @@ msgstr "Esquemas de nomenclatura de partição e pontos de montagem"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:321
-#, fuzzy
-#| msgid ""
-#| "A common source of confusion for users unfamiliar with Linux is the "
-#| "matter of how partitions are used and accessed by the Linux operating "
-#| "system. In DOS/Windows, it is relatively simple: Each partition gets a "
-#| "\"drive letter.\" You then use the correct drive letter to refer to files "
-#| "and directories on its corresponding partition. This is entirely "
-#| "different from how Linux deals with partitions and, for that matter, with "
-#| "disk storage in general. This section describes the main principles of "
-#| "partition naming scheme and the way how partitions are accessed in "
-#| "{PRODUCT}."
 msgid ""
 "A common source of confusion for users unfamiliar with Linux is the matter "
 "of how partitions are used and accessed by the Linux operating system. In "
@@ -1300,8 +1254,8 @@ msgid ""
 msgstr ""
 "Uma fonte comum de confusão para usuários não familiarizados com o Linux é a "
 "questão de como as partições são usadas e acessadas pelo sistema operacional "
-"Linux. No DOS/Windows, é relativamente simples: cada partição recebe uma "
-"\"letra de unidade\". Em seguida, use a letra da unidade correta para se "
+"Linux. No DOS/Windows, é relativamente simples: cada partição recebe uma \"`"
+"letra de unidade`\". Em seguida, use a letra da unidade correta para se "
 "referir aos arquivos e diretórios em sua partição correspondente. Isso é "
 "totalmente diferente de como o Linux lida com partições e, por falar nisso, "
 "com armazenamento em disco em geral. Esta seção descreve os princípios "
@@ -1485,15 +1439,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:359
-#, fuzzy
-#| msgid ""
-#| "Unless you have a reason for doing otherwise, you should *at least* "
-#| "create a `/boot` partition and a `/` (root) partition. Depending on your "
-#| "system's hardware specifications, additional partitions may be necessary, "
-#| "such as `/boot/efi` for 64-bit AMD and Intel systems with UEFI firmware, "
-#| "a `biosboot` partition for AMD and Intel systems with a GUID Partition "
-#| "Table (GPT) label on the system disk, or a `PReP Boot` partition on IBM "
-#| "Power Systems servers."
 msgid ""
 "Unless you have a reason for doing otherwise, you should *at least* create a "
 "`/boot` partition and a `/` (root) partition. Depending on your system's "
@@ -1506,10 +1451,10 @@ msgstr ""
 "A menos que você tenha uma razão para fazer o contrário, você deve *pelo "
 "menos* criar uma partição `/boot` e uma partição `/ ` (raiz). Dependendo das "
 "especificações de hardware do seu sistema, partições adicionais podem ser "
-"necessárias, como `/boot/efi` para sistemas AMD e Intel de 64 bits com "
+"necessárias, como `/boot/efi` para sistemas 64 bits da AMD, Intel e ARM com "
 "firmware UEFI, uma partição `biosboot` para sistemas AMD e Intel com uma "
-"Tabela de Partição GUID (GPT ) etiqueta no disco do sistema ou uma partição "
-"`PReP Boot` nos servidores IBM Power Systems."
+"Tabela de Partição GUID (GPT ) etiqueta no disco do sistema ou uma partição `"
+"PReP Boot` nos servidores IBM Power Systems."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:360

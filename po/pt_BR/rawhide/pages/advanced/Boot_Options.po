@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2021-06-07 12:04+0000\n"
+"PO-Revision-Date: 2021-10-07 09:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:5
@@ -67,14 +67,6 @@ msgstr "Existem dois tipos básicos de opções descritos neste capítulo:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:14
-#, fuzzy
-#| msgid ""
-#| "Options presented as ending with an \"equals\" sign (`=`) require a value "
-#| "to be specified - they cannot be used on their own. For example, the "
-#| "[option]#inst.vncpassword=# option must also contain a value (in this "
-#| "case, a password). The correct form is therefore [option]#inst."
-#| "vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. "
-#| "On its own, without a password specified, the option is invalid."
 msgid ""
 "Options presented as ending with an \"`equals`\" sign (`=`) require a value "
 "to be specified - they cannot be used on their own. For example, the "
@@ -83,23 +75,15 @@ msgid ""
 "attributes[{blank}]_password_pass:attributes[{blank}]#. On its own, without "
 "a password specified, the option is invalid."
 msgstr ""
-"As opções apresentadas terminando com um sinal de \"igual\" (`=`) exigem que "
-"um valor seja especificado – eles não podem ser usados por conta própria. "
-"Por exemplo, a opção [option]#inst.vncpassword=# também deve conter um valor "
-"(neste caso, uma senha). A forma correta é, portanto, [option]#inst."
+"As opções apresentadas terminando com um sinal de \"`igual`\" (`=`) exigem "
+"que um valor seja especificado – eles não podem ser usados por conta "
+"própria. Por exemplo, a opção [option]#inst.vncpassword=# também deve conter "
+"um valor (neste caso, uma senha). A forma correta é, portanto, [option]#inst."
 "vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. Por "
 "si só, sem uma senha especificada, a opção é inválida."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:16
-#, fuzzy
-#| msgid ""
-#| "Options presented without the \"pass:attributes[{blank}]`=`pass:"
-#| "attributes[{blank}]\" sign do not accept any values or parameters. For "
-#| "example, the [option]#rd.live.check# option forces "
-#| "[application]*Anaconda* to verify the installation media before starting "
-#| "the installation; if this option is present, the check will be performed, "
-#| "and if it is not present, the check will be skipped."
 msgid ""
 "Options presented without the \"`pass:attributes[{blank}]`=`pass:"
 "attributes[{blank}]`\" sign do not accept any values or parameters. For "
@@ -108,12 +92,12 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
-"As opções apresentadas sem o sinal \"pass:attributes[{blank}]`=`pass:"
-"attributes[{blank}]\" não aceitam quaisquer valores ou parâmetros. Por "
-"exemplo, a opção [option]#rd.live.check# força o [application]*Anaconda* a "
-"verificar a mídia de instalação antes de iniciar a instalação; se esta opção "
-"estiver presente, a verificação será realizada e, se não estiver presente, a "
-"verificação será ignorada."
+"As opções apresentadas sem o sinal \""
+"`pass:attributes[{blank}]`=`pass:attributes[{blank}]`\" não aceitam "
+"quaisquer valores ou parâmetros. Por exemplo, a opção [option]#rd.live.check#"
+" força o [application]*Anaconda* a verificar a mídia de instalação antes de "
+"iniciar a instalação; se esta opção estiver presente, a verificação será "
+"realizada e, se não estiver presente, a verificação será ignorada."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:18
@@ -309,22 +293,16 @@ msgstr ""
 #.  Normally, I would use quotes substitution (https://docs.asciidoctor.org/asciidoc/latest/subs/quotes/), but it can't be used when quoting a single space. See: https://github.com/asciidoctor/asciidoctor/issues/4122
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:82
-#, fuzzy
-#| msgid ""
-#| "Non-alphanumeric characters must be represented as `\\xpass:"
-#| "attributes[{blank}]_NN_pass:attributes[{blank}]`, where _NN_ is the "
-#| "hexadecimal representation of the character. For example, `\\x20` is a "
-#| "white space (\"\")."
 msgid ""
 "Non-alphanumeric characters must be represented as `\\xpass:"
 "attributes[{blank}]_NN_pass:attributes[{blank}]`, where _NN_ is the "
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (“ ”)."
 msgstr ""
-"Os caracteres não alfanuméricos devem ser representados como `\\xpass:"
-"attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
+"Os caracteres não alfanuméricos devem ser representados como `\\xpass"
+":attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
 "representação hexadecimal do caractere. Por exemplo, `\\x20` é um espaço em "
-"branco (\" \")."
+"branco (“ ”)."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:83
@@ -983,14 +961,6 @@ msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:212
-#, fuzzy
-#| msgid ""
-#| "Starts the `sshd` service during the installation, which allows you to "
-#| "connect to the system during the installation using `SSH` and monitor its "
-#| "progress. For more information on `SSH`, see the `ssh(1)` man page and "
-#| "the corresponding chapter in the [citetitle]_{PRODUCT} System "
-#| "Administrator's Guide_, available at link:++https://docs.fedoraproject."
-#| "org/++[]."
 msgid ""
 "Starts the `sshd` service during the installation, which allows you to "
 "connect to the system during the installation using `SSH` and monitor its "
@@ -1001,9 +971,8 @@ msgstr ""
 "Inicia o serviço `sshd` durante a instalação, o que permite que você se "
 "conecte ao sistema durante a instalação usando `SSH` e monitore seu "
 "progresso. Para obter mais informações sobre o `SSH`, consulte a página man "
-"`ssh(1)` e o capítulo correspondente no [citetitle]_{PRODUCT} System "
-"Administrator's Guide_ (guia do administrador de sistema), disponível em "
-"link:++https://docs.fedoraproject.org/++[]."
+"`ssh(1)` e o capítulo correspondente no [citetitle]_xref:fedora:system-"
+"administrators-guide:index.adoc[Guia do Administrador do Sistema {PRODUCT}_."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:217
@@ -1587,13 +1556,6 @@ msgstr "[option]#inst.nodnf#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:356
-#, fuzzy
-#| msgid ""
-#| "Use the older [application]*Yum* backend for package installation and "
-#| "dependency resolution instead of [application]*DNF*. See the "
-#| "[citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
-#| "+https://docs.fedoraproject.org/++[], for details about "
-#| "[application]*DNF*."
 msgid ""
 "Use the older [application]*Yum* backend for package installation and "
 "dependency resolution instead of [application]*DNF*. See the "
@@ -1602,9 +1564,9 @@ msgid ""
 msgstr ""
 "Usa o backend antigo do [application]*Yum* para instalação de pacotes e "
 "resolução de dependência em vez do [application]*DNF*. Veja o "
-"[citetitle]_{PRODUCT} System Administrator's Guide_ (guia do administrador "
-"de sistema), disponível em link:++https://docs.fedoraproject.org/++[], para "
-"detalhes sobre o [application]*DNF*."
+"[citetitle]_xref:fedora:system-administrators-guide:index.adoc[Guia do "
+"Administrador do Sistema {PRODUCT}_, para detalhes sobre o "
+"[application]*DNF*."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:357
