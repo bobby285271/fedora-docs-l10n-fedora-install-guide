@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-10-03 07:05+0000\n"
+"PO-Revision-Date: 2021-10-08 03:10+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f31pages_partialsinstallsourcespoke/es/>"
@@ -109,7 +109,7 @@ msgstr ""
 #: ./pages/_partials/install/SourceSpoke.adoc:24
 #, no-wrap
 msgid "ISO file"
-msgstr ""
+msgstr "Archivo ISO"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:25
@@ -120,12 +120,17 @@ msgid ""
 "file's location on your system. You can click the `Verify` button to check "
 "the file's integrity."
 msgstr ""
+"Esta opción aparecerá si el programa de instalación detectó un disco duro "
+"particionado con una sistema de archivos montable durante el arranque. "
+"Selecciones esta opción, pulse el botón btn:[Elegir un ISO] y navegue a la "
+"localización del archivo ISO en su sistema. Puede pulsar el botón `Verificar`"
+" para comprobar la integridad del archivo."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:26
 #, no-wrap
 msgid "On the network"
-msgstr ""
+msgstr "Sobre la red"
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:27
@@ -134,6 +139,9 @@ msgid ""
 "instead of local media. This is the default selection on network "
 "installation media."
 msgstr ""
+"Use esta opción para descargar los paquetes a ser instalados desde una "
+"localización en red en lugar de un medio local. Esta es la selección "
+"predeterminada en un medio de instalación en red."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:29
@@ -142,6 +150,10 @@ msgid ""
 "selection drop-down menu is preferable. If this option is selected, packages "
 "for your system will be downloaded from the most suitable location (mirror)."
 msgstr ""
+"En la mayoría de los casos, la opción `Espejo más cercano` disponible desde "
+"la selección de protocolo del menú desplegable es la preferible. Si se "
+"seleccionar esta opción, los paquetes para su sistema serán descargados "
+"desde la localización más adecuada (espejo)."
 
 #. type: Plain text
 #: ./pages/_partials/install/SourceSpoke.adoc:31
@@ -152,6 +164,12 @@ msgid ""
 "(without the protocol) into the address field. If you choose NFS, a second "
 "input field will appear where you can specify custom `NFS mount options`."
 msgstr ""
+"Para configurar una fuente de instalación basada en red, use el menú "
+"desplegable para especificar el protocolo a ser usado cuando se descarguen "
+"los paquetes. Este ajuste depende del servidor que desee usar. Después, "
+"teclee la dirección del servidor (sin el protocolo) en el campo dirección. "
+"Si elige NFS, aparecerá un segundo campo de entrada donde puede especificar "
+"una `Opciones de montaje NFS` personalizadas."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:36
@@ -159,6 +177,9 @@ msgid ""
 "When selecting an NFS installation source, you must specify the address with "
 "a colon (`:`) character separating the host name from the path. For example:"
 msgstr ""
+"Cuando seleccione una fuente de instalación NFS, debe especificar la "
+"dirección con un carácter dos puntos (`:`) separando el nombre del host de "
+"la ruta. Por ejemplo:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/SourceSpoke.adoc:40

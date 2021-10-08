@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-08-25 06:05+0000\n"
+"PO-Revision-Date: 2021-10-08 03:10+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -34,6 +34,12 @@ msgid ""
 "maintains snapshots of the file system that can be used for backup or "
 "repair."
 msgstr ""
+"_Btrfs_ es un tipo de sistema de archivos, pero tiene varias funciones "
+"características de un dispositivo de almacenamiento. Está diseñado para "
+"hacer al sistema de archivos tolerante a errores y facilitar la detección y "
+"reparación de los errores cuando suceden. Usa checksums para asegurar la "
+"validez de los datos y metadatos y mantiene instantáneas del sistema de "
+"archivos que pueden ser usadas como copias de seguridad o reparar."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:10
@@ -48,6 +54,16 @@ msgid ""
 "to each mount point in the left pane, while with Btrfs, the total size of "
 "the entire volume is shown next to each subvolume."
 msgstr ""
+"Crear un diseño Btrfs es algo similar a LVM (descrito en "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[Crear un Esquema de Administración de Volumen Lógico (LVM)])"
+" con terminología ligeramente diferente. Un _volumen_ Btrfs es el "
+"equivalente a un grupo de volumen LVM y un _subvolumen_ Btrfs es similar a "
+"un volumen lógico LVM. Una diferencia importante a advertir es como "
+"[application]*Anaconda* reporta tamaños para puntos de montaje separados: "
+"Para LVM, el tamaño exacto de cada volumen lógico se muestra cerca de cada "
+"punto de montaje en el panel de la izquierda, mientras que con Btrfs, el "
+"tamaño total de todo el volumen se muestra cerca de cada subvolumen."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:15
@@ -59,12 +75,17 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for more information."
 msgstr ""
+"Algunos tipos de partición - notablemente los directorios `/boot` y `/usr` y "
+"las particiones BIOS Boot y EFI - no se pueden situar en subvolumenes Btrfs. "
+"Use volúmenes físicos estándar para ellas. Vea xref:Installing_Using_Anaconda"
+".adoc#sect-installation-gui-manual-partitioning-recommended[Esquema de "
+"Partición Recomendado] para más información."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
 #, no-wrap
 msgid "Create Btrfs Subvolume"
-msgstr ""
+msgstr "Crear un Subvolumen Btrfs"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
@@ -76,18 +97,19 @@ msgstr "La pantalla de Particionamiento Manual"
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddBtrfs.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddBtrfs.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:23
 msgid "Follow the procedure below to create Btrfs volumes and subvolumes:"
 msgstr ""
+"Siga el procedimiento que sigue para crear volúmenes y subvolumenes Btrfs:"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
 #, no-wrap
 msgid "Creating Btrfs Subvolumes and Volumes"
-msgstr ""
+msgstr "Crear Subvolumenes y Volúmenes Btrfs"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
@@ -119,6 +141,8 @@ msgid ""
 "When creating a mount point for swap on Btrfs, specify the mount point as "
 "`swap`."
 msgstr ""
+"Cuando cree un punto de montaje para swap sobre Btrfs, especifique el punto "
+"de montaje como `swap`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
@@ -129,6 +153,12 @@ msgid ""
 "subvolume by changing the `Device Type` option to `Btrfs`. Then, click "
 "`Update Settings` in the bottom right corner of the screen."
 msgstr ""
+"El punto de montaje ha sido creado ahora usando los ajustes predeterminados, "
+"lo que significa que ha sido creado como un volumen lógico LVM. Seleccione "
+"el punto de montaje recién creado para configurarlo más y convertirlo en un "
+"subvolumen Btrfs cambiando la opción `Tipo de Dispositivo` a `Btrfs`. "
+"Después pulse `Actualizar Ajustes` en la esquina inferior derecha de la "
+"pantalla."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:39
