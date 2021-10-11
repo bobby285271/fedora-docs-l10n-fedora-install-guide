@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2021-08-31 03:05+0000\n"
+"PO-Revision-Date: 2021-10-11 12:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesadvancedboot_options/es/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:5
 #, no-wrap
 msgid "Boot Options"
-msgstr ""
+msgstr "Opciones de arranque"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:8
@@ -36,6 +36,16 @@ msgid ""
 "advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up "
 "an Installation Server])."
 msgstr ""
+"El instalador [application]*Anaconda* incluye una variedad de opciones de "
+"arranque para los administradores, que modifican el comportamiento "
+"predeterminado el programa de instalación habilitando o deshabilitando "
+"ciertas funciones. Para usar una o mas opciones de arranque, o bien tiene "
+"que arrancar desde el medio de instalación y añadir estas opciones en el "
+"menú de arranque (see xref:install/Booting_the_Installation.adoc#sect-boot-"
+"menu[El Menú de Arranque]) o debe añadirlo en el archivo de configuración de "
+"su servidor PXE si está arrancando desde una red (see xref:advanced/"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Configurando un "
+"Servidor de Instalación])."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:10
@@ -43,11 +53,13 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Puede usar múltiples opciones al mismo tiempo; en este caso, separelos por "
+"un espacio simple."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:12
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "Hay dos tipos básicos de opciones descritos en estre capítulo:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:14
@@ -78,6 +90,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Además de las opciones descritas en este capítulo, el indicador de arranque "
+"también acepta opciones de kernel [application]*dracut*. Una lista de estas "
+"opciones está disponible en la página de manual `dracut.cmdline(7)`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:23
@@ -92,7 +107,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:27
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Configurando la Instalación del Sistema en el Menú de Arranque"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:30
@@ -108,12 +123,24 @@ msgid ""
 "Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"La manera exacta de especificar las opciones de arranque personalizadas es "
+"diferente en base a la arquitectura de su sistema, el firmware y el método "
+"que use para arrancar la instalación. Si está arrancando desde el medio "
+"local, puede especificar opciones en el menú de arranque, antes de empezar "
+"la instalación; si está arrancando desde una red usando un servidor PXE, "
+"debe añadir opciones de arranque en el archivo de configuración del cargador "
+"de arranque antes de que arranque la instalación del sistema. Para "
+"instrucciones específicas vea xref:install/Booting_the_Installation.adoc"
+"#sect-boot-menu[El Menú de Arranque] si está arrancando desde un medio local "
+"y xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup["
+"Configurando un Servidor de Instalación] si está arrancando desde un "
+"servidor."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:32
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opciones de Arranque Disponibles"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:35
