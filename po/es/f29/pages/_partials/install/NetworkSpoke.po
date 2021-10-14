@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-10-14 14:05+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f29pages_partialsinstallnetworkspoke/es/"
+">\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/NetworkSpoke.adoc:5
 #: ./pages/_partials/install/NetworkSpoke.adoc:16
 #, no-wrap
 msgid "Network & Hostname"
-msgstr ""
+msgstr "Red y Nombre de equipo"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:8
@@ -30,6 +33,10 @@ msgid ""
 "installation (if needed for tasks such as downloading packages from a remote "
 "location) and on the installed system."
 msgstr ""
+"La pantalla `Red y Nombre de equipo` e usa para configurar las interfaces de "
+"red. Las opciones seleccionadas aquí estarán disponibles tanto durante la "
+"instalación (si son necesarias tareas como la descarga de paquetes desde una "
+"ubicación remota) como en el sistema instalado."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke.adoc:13
@@ -41,18 +48,24 @@ msgid ""
 "Networking{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"La configuración de red es un tema extenso y muchas de las opciones "
+"disponibles durante la instalación están más allá del alcance de este "
+"documento. Para información detallada sobre redes, incluyendo tanto "
+"cuestiones teóricas como instrucciones específicas y ejemplos, vea la "
+"[citetitle]_{PRODUCT} Guía de Red{nbsp}_, disponible en link:++https://docs."
+"fedoraproject.org/++[]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
-msgstr ""
+msgstr "La pantalla Red y Nombre de equipo, En el panel izquierdo"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/NetworkSpoke.png"
-msgstr ""
+msgstr "anaconda/PasswordSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:21
@@ -63,6 +76,12 @@ msgid ""
 "display its current configuration (such as IP and DNS address); the details "
 "are displayed on the right side of the screen."
 msgstr ""
+"Las interfaces localmente accesibles son detectadas automáticamente por el "
+"programa de instalación y no pueden ser añadidas o borradas manualmente. "
+"Todas las interfaces detectadas se listan en el lado izquierdo de la "
+"pantalla. Pulse sobre una interfaz de la lista para visualizar su "
+"configuración actual (como direcciones IP y DNS); los detalles se visualizan "
+"en el lado derecho de la pantalla."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:23
@@ -73,6 +92,12 @@ msgid ""
 "a Virtual Network Interface]. To remove a previously created virtual "
 "interface, select it in the list and click the `-` button."
 msgstr ""
+"Debajo de la lista de interfaces hay dos botones. Use el botón `+` para "
+"añadir una interfaz virtual de red (Team, Bond o VLAN) como se describe en "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration-virtual-interface[Añadir una Interfaz Virtual de Red]. Para "
+"borrar una interfaz virtual previamente creada, selecciónela de la lista y "
+"pulse el botón `-`."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:25
@@ -84,6 +109,13 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"Para cambiar ajustes como direcciones IP, servidores DNS o configuración de "
+"enrutamiento para una interfaz existentes (tanto virtual como física), "
+"seleccione la interfaz en el panel izquierdo y pulse `Configurar` en la "
+"esquina inferior derecha de la pantalla. Los ajustes disponibles están "
+"descritos en xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-network-configuration-advanced[Editar la Configuración de una Interfaz "
+"de Red]."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:27
@@ -91,6 +123,9 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
+"Use el conmutador `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` "
+"en la esquina superior derecha de la pantalla para habilitar o deshabilitar "
+"la interfaz seleccionada actualmente."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:29
@@ -103,3 +138,11 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
+"Debajo de la lista de conexiones, introduzca un nombre de equipo de este "
+"ordenador en el campo de entrada `Nombre de equipo`. El nombre de equipo "
+"puede ser bien un _nombre de dominio completo_ (FQDN) en el formato _nombre "
+"de equipo_._nombre de dominio_ o un nombre de equipo corto sin nombre de "
+"dominio. Muchas redes tiene un servicio _Protocolo de Configuración Dinámica "
+"de Equipo_ (`DHCP`) que suministra automáticamente a los equipos conectados "
+"con un nombre de dominio; para permitir al servicio `DHCP` aisgnar el nombre "
+"de dominio a esta máquina, especifique solo el nombre corto de equipo."

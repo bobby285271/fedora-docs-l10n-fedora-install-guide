@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-27 21:07+0000\n"
-"PO-Revision-Date: 2021-07-14 01:04+0000\n"
+"PO-Revision-Date: 2021-10-14 14:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
@@ -113,12 +113,14 @@ msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
 msgstr ""
+"Haga siempre copia de seguridad de sus datos antes de llevar a cabo una "
+"actualización o reinstalación en su sistema, no importa el método que elija."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Preparar Medios de Arranque"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -126,12 +128,15 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Las imágenes Fedora son `ISOs Híbridos` y pueden ser usadas para crear "
+"medios de instalación tanto en discos ópticos como USB, para arrancar en "
+"sistemas tanto BIOS como UEFI."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Escritor de Medios Fedora"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -164,6 +169,12 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Históricamente, las herramientas universales de creación de USB, como "
+"[application]*Unetbootin*, eran una manera popular de crear instaladores USB "
+"desde ISOs destinados a medios ópticos. Ellos normalmente crean un sistema "
+"de archivos sobre el dispositivo USB extrayendo archivos de la imagen y "
+"escribiendo el cargador de arranque [application]*syslinux* en el "
+"dispositivo."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -173,6 +184,11 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Estos métodos evitan la configuración del cargador de arranque integrado en "
+"las imágenes Fedora, que están pre particionadas y diseñadas para arrancar "
+"sobre sistemas UEFI con SecureBoot habilitado así como sobre sistemas BIOS y "
+"por lo tanto no producen resultados consistentes con imágenes Fedora, "
+"especialmente sobre sistemas UEFI."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
@@ -180,6 +196,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"Los mejores resultados se producen con utilidades que usan un método de "
+"lectura directa y no modifican la imagen Fedora."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -190,18 +208,24 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Piense siempre dos veces antes de escribir una imagen en el dispositivo. Los "
+"métodos de creación de medios descritos en este artículo son destructivos. "
+"Todos los datos en el lápiz USB son borrados durante el proceso, de modo que "
+"esté seguro de tener copia de seguridad de los datos del lápiz USB. ¡Haga "
+"una doble comprobación de que ha seleccionado el dispositivo correcto para "
+"escribir la imagen!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Instalar y ejecutar Escritor de Medios Fedora"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "Sobre Fedora"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -209,6 +233,9 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"Sobre Fedora 25 o posteriores, [application]*Escritor de Medios Fedora* está "
+"disponible en el repositorio predeterminado. Puede usar `dnf` para instalar "
+"el paquete."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
