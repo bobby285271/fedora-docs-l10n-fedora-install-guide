@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-11 21:03+0000\n"
-"PO-Revision-Date: 2021-10-07 09:05+0000\n"
+"PO-Revision-Date: 2021-10-16 15:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10nfedora-install-guide/"
@@ -29,17 +29,6 @@ msgstr "Opções de inicialização"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:20
-#, fuzzy
-#| msgid ""
-#| "The [application]*Anaconda* installer includes a range of boot options "
-#| "for administrators, which modify the default behavior of the installation "
-#| "program by enabling or disabling certain functions. To use one or more "
-#| "boot options, you either have to boot from installation media and append "
-#| "these options at the boot menu (see xref:install/Booting_the_Installation."
-#| "adoc#sect-boot-menu[The Boot Menu]), or you must add them into your PXE "
-#| "server configuration file if you are booting from a network (see xref:"
-#| "advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
-#| "Up an Installation Server])."
 msgid ""
 "The [application]*Anaconda* installer includes a range of boot options for "
 "administrators, which modify the default behavior of the installation "
@@ -78,14 +67,6 @@ msgstr "Existem dois tipos básicos de opções descritos neste capítulo:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:38
-#, fuzzy
-#| msgid ""
-#| "Options presented as ending with an \"`equals`\" sign (`=`) require a "
-#| "value to be specified - they cannot be used on their own. For example, "
-#| "the [option]#inst.vncpassword=# option must also contain a value (in this "
-#| "case, a password). The correct form is therefore [option]#inst."
-#| "vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. "
-#| "On its own, without a password specified, the option is invalid."
 msgid ""
 "Options presented as ending with an \"`equals`\" sign (`=`)  require a value "
 "to be specified - they cannot be used on their own.  For example, the "
@@ -103,14 +84,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:48
-#, fuzzy
-#| msgid ""
-#| "Options presented without the \"`pass:attributes[{blank}]`=`pass:"
-#| "attributes[{blank}]`\" sign do not accept any values or parameters. For "
-#| "example, the [option]#rd.live.check# option forces "
-#| "[application]*Anaconda* to verify the installation media before starting "
-#| "the installation; if this option is present, the check will be performed, "
-#| "and if it is not present, the check will be skipped."
 msgid ""
 "Options presented without the \"`pass:attributes[{blank}]`=`pass:"
 "attributes[{blank}]`\" sign do not accept any values or parameters.  For "
@@ -119,12 +92,12 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
-"As opções apresentadas sem o sinal \"`pass:attributes[{blank}]`=`pass:"
-"attributes[{blank}]`\" não aceitam quaisquer valores ou parâmetros. Por "
-"exemplo, a opção [option]#rd.live.check# força o [application]*Anaconda* a "
-"verificar a mídia de instalação antes de iniciar a instalação; se esta opção "
-"estiver presente, a verificação será realizada e, se não estiver presente, a "
-"verificação será ignorada."
+"As opções apresentadas sem o sinal \""
+"`pass:attributes[{blank}]`=`pass:attributes[{blank}]`\" não aceitam "
+"quaisquer valores ou parâmetros. Por exemplo, a opção [option]#rd.live.check#"
+" força o [application]*Anaconda* a verificar a mídia de instalação antes de "
+"iniciar a instalação; se esta opção estiver presente, a verificação será "
+"realizada e, se não estiver presente, a verificação será ignorada."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:50
@@ -158,19 +131,6 @@ msgstr "Configurando o sistema de instalação no menu de inicialização"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:78
-#, fuzzy
-#| msgid ""
-#| "The exact way to specify custom boot options is differs based on your "
-#| "system's architecture, firmware and the method you use to boot the "
-#| "installation. If you are booting from local media, you can specify "
-#| "options in the boot menu, before you begin the installation; if you are "
-#| "booting from a network using a PXE server, you must add boot options into "
-#| "the boot loader configuration file before you boot the installation "
-#| "system. For specific instructions, see xref:install/"
-#| "Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu] if you are "
-#| "booting from local media, and xref:advanced/Network_based_Installations."
-#| "adoc#chap-pxe-server-setup[Setting Up an Installation Server] if you are "
-#| "booting from a server."
 msgid ""
 "The exact way to specify custom boot options is differs based on your "
 "system's architecture, firmware and the method you use to boot the "
@@ -267,11 +227,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:106
-#, fuzzy
-#| msgid ""
-#| "This option allows for the configuration of different installation "
-#| "methods using different formats. The syntax is described in the table "
-#| "below."
 msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats.  The syntax is described in the table below."
@@ -449,13 +404,6 @@ msgstr ""
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:164
-#, fuzzy
-#| msgid ""
-#| "You should never attempt to perform a driver update during the "
-#| "installation unless a missing our faulty driver is preventing you from "
-#| "completing the installation. Updating drivers which are not essential "
-#| "during the installation should always be performed after the system is "
-#| "installed."
 msgid ""
 "You should never attempt to perform a driver update during the installation "
 "unless a missing our faulty driver is preventing you from completing the "
@@ -484,16 +432,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:180
-#, fuzzy
-#| msgid ""
-#| "Normally, when you first enter the `Installation Summary` screen, the "
-#| "installer will attempt to configure an installation source based on the "
-#| "type of media you used to boot. The full {PRODUCT} Server DVD will "
-#| "configure the source as local media, the netinst ISO image will configure "
-#| "the closest network mirror, etc. This process takes time; therefore, if "
-#| "you plan to use a different source than the default, this option will "
-#| "allow you to enter the `Installation Source` screen immediately without "
-#| "having to wait for the initial configuration to finish."
 msgid ""
 "Normally, when you first enter the `Installation Summary` screen, the "
 "installer will attempt to configure an installation source based on the type "
@@ -542,12 +480,6 @@ msgstr "[option]#inst.ks=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:192
-#, fuzzy
-#| msgid ""
-#| "Gives the location of a Kickstart file to be used to automate the "
-#| "installation. Locations can be specified using any of the formats valid "
-#| "for [option]#inst.repo=#. See xref:tabl-boot-options-sources[Installation "
-#| "Sources] for valid formats."
 msgid ""
 "Gives the location of a Kickstart file to be used to automate the "
 "installation.  Locations can be specified using any of the formats valid for "
@@ -561,12 +493,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:198
-#, fuzzy
-#| msgid ""
-#| "If you only specify a device and not a path, the installation program "
-#| "will look for the Kickstart file in `/ks.cfg` on the specified device. If "
-#| "you use this option without specifying a device, the installation program "
-#| "will use the following:"
 msgid ""
 "If you only specify a device and not a path, the installation program will "
 "look for the Kickstart file in `/ks.cfg` on the specified device.  If you "
