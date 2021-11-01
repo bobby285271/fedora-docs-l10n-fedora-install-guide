@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-01 21:04+0000\n"
-"PO-Revision-Date: 2021-10-13 02:05+0000\n"
+"PO-Revision-Date: 2021-11-01 05:05+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
@@ -28,18 +28,14 @@ msgstr "Pengenalan ke Partisi Disk"
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:12
-#, fuzzy
-#| msgid ""
-#| "This appendix is not necessarily applicable to architectures other than "
-#| "AMD64 and Intel{nbsp}64. However, the general concepts mentioned here may "
-#| "apply."
 msgid ""
 "This appendix is not necessarily applicable to architectures other than "
 "AMD64, Intel{nbsp}64, and Arm SystemReady. However, the general concepts "
 "mentioned here may apply."
 msgstr ""
-"Lampiran ini belum tentu berlaku ke arsitektur selain AMD64 dan Intel{nbsp}"
-"64. Namun, konsep umum yang disinggung di sini mungkin berlaku."
+"Lampiran ini belum tentu berlaku ke arsitektur selain AMD64, Intel{nbsp}64, "
+"dan Arm SystemReady. Namun, konsep umum yang disinggung di sini mungkin "
+"berlaku."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:16
@@ -129,12 +125,6 @@ msgstr "Sistem Berkas"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:37
-#, fuzzy
-#| msgid ""
-#| "To store data on a disk drive, it is necessary to _format_ the disk drive "
-#| "first. Formatting (usually known as \"making a _file system_pass:"
-#| "attributes[{blank}]\") writes information to the drive, creating order "
-#| "out of the empty space in an unformatted drive."
 msgid ""
 "To store data on a disk drive, it is necessary to _format_ the disk drive "
 "first. Formatting (usually known as \"`making a _file system_pass:"
@@ -142,8 +132,8 @@ msgid ""
 "of the empty space in an unformatted drive."
 msgstr ""
 "Untuk menyimpan data pada disk drive, perlu _memformat_ disk drive tersebut "
-"terlebih dahulu. Pemformatan (biasanya dikenal sebagai \"membuat sebuah "
-"_sistem berkas_pass:attributes[{blank}]\") menulis informasi ke drive, "
+"terlebih dahulu. Pemformatan (biasanya dikenal sebagai \"`membuat sebuah "
+"_sistem berkas_pass:attributes[{blank}]`\") menulis informasi ke drive, "
 "membuat urutan dari ruang kosong di drive yang tidak diformat."
 
 #. type: Block title
@@ -283,6 +273,16 @@ msgid ""
 "_fragmentation_. Fragmentation can play a part when attempting to resize an "
 "existing partition."
 msgstr ""
+"Seperti ditunjukkan xref:figu-partitions-drive-with-data[Disk Drive dengan "
+"Data Ditulis ke Sana], sebagian dari blok yang sebelumnya kosong kini "
+"menyimpan data. Namun, hanya dengan melihat gambar ini, kita tidak bisa "
+"menentukan secara eksak berapa banyak berkas yang berada pada drive ini. "
+"Mungkin hanya ada satu berkas atau banyak. karena semua berkas memakai "
+"paling tidak satu blok dan beberapa berkas memakai beberapa blok. Hal "
+"penting lain untuk dicatat adalah bahwa blok-blok yang dipakai tidak harus "
+"membentuk wilayah yang berkesinambungan; blok terpakai dan tidak terpakai "
+"bisa berselang-seling. Ini dikenal sebagai _fragmentasi_. Fragmentasi bisa "
+"mengambil peran saat mencoba mengubah ukuran partisi yang sudah ada."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:66
@@ -293,6 +293,12 @@ msgid ""
 "additional capacity drove a fundamental change in the way disk drives were "
 "used."
 msgstr ""
+"Seperti dengan kebanyakan teknolog terkait komputer, disk drive berubah "
+"dengan berjalannya waktu setelah diperkenalkan. Secara khusus, mereka "
+"menjadi semakin besar. Tidak lebih besar dalam ukuran fisik, tapi lebih "
+"besar dalam kapasitas mereka untuk menyimpan informasi. Dan kapasitas "
+"tambahan ini mendorong perubahan yang mendasar dalam carai disk drive "
+"dipakai."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:68
@@ -410,6 +416,7 @@ msgid ""
 "Each partition table entry contains several important characteristics of the "
 "partition:"
 msgstr ""
+"Setiap tabel partisi memuat beberapa karakteristik penting dari partisi:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:99

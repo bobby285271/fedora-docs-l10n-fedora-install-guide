@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:07+0000\n"
-"PO-Revision-Date: 2021-08-06 09:04+0000\n"
-"Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
+"PO-Revision-Date: 2021-11-01 05:05+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
 "f30pagesadvancednetwork_based_installations/id/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: pages/advanced/Network_based_Installations.adoc:5
@@ -116,12 +116,16 @@ msgid ""
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"Karena lingkungan pra-boot sangat sederhana, berkas-berkas mesti disediakan "
+"dalam cara yang sangat sederhana. Trivial File Transfer Protocol, atau TFTP, "
+"menyediakan sistem dengan bootloader yang diperlukan untuk melanjutkan "
+"proses instalasi."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:28
 #, no-wrap
 msgid "Bootloader"
-msgstr ""
+msgstr "Bootloader"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:30
@@ -131,12 +135,16 @@ msgid ""
 "It also provides configuration information to the installer, and can offer a "
 "menu to select from different configurations."
 msgstr ""
+"Karena tugas mem-boot suatu sistem operasi terlalu rumit bagi lingkungan pra-"
+"boot, suatu bootloader dipakai untuk memuat kernel dari berkas-berkas "
+"terkait. Itu juga menyediakan informasi konfigurasi ke installer, dan dapat "
+"menawarkan sebuah menu untuk memilih dari konfigurasi yang berbeda."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:31
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr ""
+msgstr "Kernel dan Initramfs"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:33
@@ -186,7 +194,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:50
 #, no-wrap
 msgid "# dnf install dhcp\n"
-msgstr ""
+msgstr "# dnf install dhcp\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:53
@@ -204,6 +212,11 @@ msgid ""
 "max-lease-time 7200;\n"
 "ddns-update-style none;\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"authoritative;\n"
+"default-lease-time 600;\n"
+"max-lease-time 7200;\n"
+"ddns-update-style none;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:64
@@ -212,12 +225,14 @@ msgid ""
 "option domain-name-servers 192.168.1.1;\n"
 "option routers 192.168.1.1;\n"
 msgstr ""
+"option domain-name-servers 192.168.1.1;\n"
+"option routers 192.168.1.1;\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:66
 #, no-wrap
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:69
@@ -231,6 +246,8 @@ msgid ""
 "[command]#systemctl start dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl start dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:78
