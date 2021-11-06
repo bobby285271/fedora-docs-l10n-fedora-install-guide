@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2021-11-04 22:15+0000\n"
+"PO-Revision-Date: 2021-11-06 08:07+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -2013,23 +2013,25 @@ msgstr "Untuk menyertakan perangkat multipath yang menggunakan LVM:"
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:609
 #, no-wrap
 msgid "[option]#--interactive#"
-msgstr ""
+msgstr "[option]#--interactive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:610
 msgid "Allows you to manually navigate the advanced storage screen."
-msgstr ""
+msgstr "Memungkinkan Anda menavigasi layar penyimpanan lanjutan secara manual."
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:612
 #, no-wrap
 msgid "iscsi (optional) - Configure iSCSI Devices"
-msgstr ""
+msgstr "iscsi (opsional) - Konfigurasi Perangkat iSCSI"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:615
@@ -2051,6 +2053,11 @@ msgid ""
 "configured in BIOS or firmware and no special configuration is necessary in "
 "the Kickstart file."
 msgstr ""
+"Anda harus mengonfigurasi penyimpanan iSCSI di BIOS atau firmware sistem ("
+"iBFT untuk sistem Intel) daripada menggunakan perintah [command]#iscsi# jika "
+"memungkinkan. Jika Anda melakukannya, [aplikasi]*Anaconda* secara otomatis "
+"mendeteksi dan menggunakan disk yang dikonfigurasi di BIOS atau firmware dan "
+"tidak diperlukan konfigurasi khusus dalam file Kickstart."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:619
@@ -2061,23 +2068,29 @@ msgid ""
 "iSCSI disks with commands such as [command]#clearpart# or "
 "[command]#ignoredisk#."
 msgstr ""
+"Jika Anda harus menggunakan perintah [command]#iscsi#, pastikan jaringan "
+"diaktifkan pada awal instalasi, dan perintah [command]#iscsi# muncul di file "
+"Kickstart *sebelum* Anda merujuk ke disk iSCSI dengan perintah seperti "
+"[command]#clearpart# atau [command]#ignoredisk#."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:623
 #, no-wrap
 msgid "[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | --password= | --reverse-user= | --reverse-password=]#\n"
 msgstr ""
+"[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | --"
+"password= | --reverse-user= | --reverse-password=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:625
 #, no-wrap
 msgid "[option]#--ipaddr=#"
-msgstr ""
+msgstr "[option]#--ipaddr=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:626
 msgid "The IP address of the target to connect to."
-msgstr ""
+msgstr "Alamat IP target yang akan disambungkan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:627
@@ -2086,29 +2099,29 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1870
 #, no-wrap
 msgid "[option]#--port=#"
-msgstr ""
+msgstr "[option]#--port=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:628
 msgid "The port number (typically `3260`)."
-msgstr ""
+msgstr "Nomor port (biasanya `3260`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:629
 #, no-wrap
 msgid "[option]#--target=#"
-msgstr ""
+msgstr "[option]#--target=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:630
 msgid "Target _IQN_ (iSCSI Qualified Name)."
-msgstr ""
+msgstr "Target _IQN_ (iSCSI Qualified Name)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:631
 #, no-wrap
 msgid "[option]#--iface=#"
-msgstr ""
+msgstr "[option]#--iface=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:632
@@ -2118,28 +2131,33 @@ msgid ""
 "in all instances of the [command]#iscsi# command in the entire Kickstart "
 "file."
 msgstr ""
+"Ikat koneksi ke antarmuka jaringan tertentu alih-alih menggunakan yang "
+"default yang ditentukan oleh lapisan jaringan. Setelah digunakan, itu harus "
+"ditentukan di semua contoh perintah [command]#iscsi# di seluruh file "
+"Kickstart."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:633
 #, no-wrap
 msgid "[option]#--user=#"
-msgstr ""
+msgstr "[option]#--user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:634
 msgid "User name required to authenticate with the target."
-msgstr ""
+msgstr "Nama pengguna diperlukan untuk mengautentikasi dengan target."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:636
 msgid "Password that corresponds with the user name specified for the target."
 msgstr ""
+"Kata sandi yang sesuai dengan nama pengguna yang ditentukan untuk target."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:637
 #, no-wrap
 msgid "[option]#--reverse-user=#"
-msgstr ""
+msgstr "[option]#--reverse-user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:638
@@ -2147,24 +2165,27 @@ msgid ""
 "User name required to authenticate with the initiator from a target using "
 "reverse CHAP authentication."
 msgstr ""
+"Nama pengguna diperlukan untuk mengautentikasi dengan inisiator dari target "
+"menggunakan autentikasi CHAP terbalik."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:639
 #, no-wrap
 msgid "[option]#--reverse-password=#"
-msgstr ""
+msgstr "[opsi]#--reverse-password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:640
 msgid ""
 "Password that corresponds with the user name specified for the initiator."
 msgstr ""
+"Kata sandi yang sesuai dengan nama pengguna yang ditentukan untuk inisiator."
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:642
 #, no-wrap
 msgid "iscsiname (optional) - Assign Name to iSCSI Device"
-msgstr ""
+msgstr "iscsiname (opsional) - Tetapkan Nama ke Perangkat iSCSI"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:645
@@ -2180,25 +2201,27 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:649
 #, no-wrap
 msgid "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
-msgstr ""
+msgstr "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:652
 #, no-wrap
 msgid "logvol (optional) - Create LVM Logical Volume"
-msgstr ""
+msgstr "logvol (opsional) - Buat Volume Logis LVM"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:655
 msgid ""
 "Create a logical volume for Logical Volume Management (LVM) with the syntax:"
-msgstr ""
+msgstr "Buat volume logis untuk Logical Volume Management (LVM) dengan sintaks:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:659
 #, no-wrap
 msgid "[command]#logvol _mntpoint_ --vgname=  --name= [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#logvol _mntpoint_ --vgname= --name= "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:665
@@ -2211,6 +2234,13 @@ msgid ""
 "volume group named `volgrp-01` containing a logical volume named `logvol-01` "
 "will be listed as `/dev/mapper/volgrp--01-logvol--01`."
 msgstr ""
+"Jangan gunakan karakter tanda hubung (`-`) dalam volume logis dan nama grup "
+"volume saat memasang {PRODUCT} menggunakan Kickstart. Jika karakter ini "
+"digunakan, penginstalan akan selesai secara normal, tetapi direktori `/dev/"
+"mapper/` akan mencantumkan volume dan grup volume ini dengan setiap tanda "
+"hubung digandakan. Misalnya, grup volume bernama `volgrp-01` yang berisi "
+"volume logis bernama `logvol-01` akan terdaftar sebagai `/dev/mapper/volgrp--"
+"01-logvol--01`."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:667
@@ -2219,6 +2249,10 @@ msgid ""
 "group names. If you are reusing existing ones using the [option]#--noformat# "
 "or [option]#--useexisting# option, their names will not be changed."
 msgstr ""
+"Batasan ini hanya berlaku untuk volume logis dan nama grup volume yang baru "
+"dibuat. Jika Anda menggunakan kembali yang sudah ada menggunakan opsi "
+"[option]#--noformat# atau [option]#--useexisting#, nama mereka tidak akan "
+"diubah."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:671
@@ -2234,7 +2268,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:973
 #, no-wrap
 msgid "_mntpoint_"
-msgstr ""
+msgstr "_mntpoint_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:673
@@ -2242,6 +2276,8 @@ msgid ""
 "Replace with the volume's mount point. This name can take the following "
 "forms:"
 msgstr ""
+"Ganti dengan titik pemasangan volume. Nama ini dapat mengambil bentuk "
+"berikut:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:674
@@ -2254,20 +2290,20 @@ msgstr "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`:"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:675
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:818
 msgid "A path to the mount point - for example, `/` or `/home`"
-msgstr ""
+msgstr "Jalur ke titik pemasangan - misalnya, `/` atau `/home`"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:676
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:819
 #, no-wrap
 msgid "`swap`:"
-msgstr ""
+msgstr "`swap`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:677
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:820
 msgid "The partition is used as swap space."
-msgstr ""
+msgstr "Partisi ini digunakan sebagai ruang swap."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:679
@@ -2276,13 +2312,15 @@ msgid ""
 "To determine the size of the swap partition automatically, use the "
 "[option]#--recommended# option:"
 msgstr ""
+"Untuk menentukan ukuran partisi swap secara otomatis, gunakan opsi "
+"[option]#--recommended#:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:683
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:826
 #, no-wrap
 msgid "`swap --recommended`\n"
-msgstr ""
+msgstr "`swap --recommended`\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:686
@@ -2292,12 +2330,15 @@ msgid ""
 "extra space for your system to hibernate, use the [option]#--hibernation# "
 "option:"
 msgstr ""
+"Untuk menentukan ukuran partisi swap secara otomatis tetapi juga memberikan "
+"ruang ekstra bagi sistem Anda untuk hibernasi, gunakan opsi "
+"[option]#--hibernation#:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:690
 #, no-wrap
 msgid "`swap --hibernation`\n"
-msgstr ""
+msgstr "`swap --hibernation`\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:693
@@ -2306,6 +2347,8 @@ msgid ""
 "The size assigned will be equivalent to the swap space assigned by "
 "[option]#--recommended# plus the amount of RAM on your system."
 msgstr ""
+"Ukuran yang ditetapkan akan setara dengan ruang swap yang ditetapkan oleh "
+"[option]#--recommended# ditambah jumlah RAM pada sistem Anda."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:695
@@ -2320,12 +2363,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:696
 #, no-wrap
 msgid "`none`:"
-msgstr ""
+msgstr "`none`:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:697
 msgid "Used only when creating a thin pool volume."
-msgstr ""
+msgstr "Digunakan hanya saat membuat volume kolam tipis."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:698
@@ -2334,12 +2377,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1077
 #, no-wrap
 msgid "[option]#--noformat#"
-msgstr ""
+msgstr "[option]#--noformat#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:699
 msgid "Use an existing logical volume and do not format it."
-msgstr ""
+msgstr "Gunakan volume logis yang ada dan jangan memformatnya."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:700
@@ -2347,12 +2390,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1079
 #, no-wrap
 msgid "[option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--useexisting#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:701
 msgid "Use an existing logical volume and format it."
-msgstr ""
+msgstr "Gunakan volume logis yang ada dan formatlah."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:703
@@ -2370,7 +2413,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:985
 #, no-wrap
 msgid "[option]#--fsoptions=#"
-msgstr ""
+msgstr "[option]#--fsoptions=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:705
@@ -2381,6 +2424,9 @@ msgid ""
 "filesystem. This string will be copied into the `/etc/fstab` file of the "
 "installed system and should be enclosed in quotes. For example:"
 msgstr ""
+"Menentukan string opsi bentuk bebas yang akan digunakan saat memasang sistem "
+"file. String ini akan disalin ke file `/etc/fstab` dari sistem yang diinstal "
+"dan harus diapit dalam tanda kutip. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:709
@@ -2388,7 +2434,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:990
 #, no-wrap
 msgid "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
-msgstr ""
+msgstr "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:712
@@ -2399,18 +2445,24 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Menentukan parameter tambahan yang akan diteruskan ke program yang membuat "
+"sistem file pada volume logis ini. Tidak ada pemrosesan yang dilakukan pada "
+"daftar argumen, sehingga argumen harus diberikan dalam format yang dapat "
+"diteruskan langsung ke program mkfs. Ini berarti beberapa opsi harus "
+"dipisahkan dengan koma atau dikelilingi oleh tanda kutip ganda, tergantung "
+"pada sistem file."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:714
 msgid "Sets a label for the logical volume."
-msgstr ""
+msgstr "Menetapkan label untuk volume logis."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:715
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:862
 #, no-wrap
 msgid "[option]#--grow#"
-msgstr ""
+msgstr "[option]#--grow#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:716
@@ -2418,13 +2470,15 @@ msgid ""
 "Grow the volume to fill available space (if any), or up to the limit set by "
 "the [option]#--maxsize=# option."
 msgstr ""
+"Perbesar volume untuk mengisi ruang yang tersedia (jika ada), atau hingga "
+"batas yang ditentukan oleh opsi [option]#--maxsize=#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:717
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:849
 #, no-wrap
 msgid "[option]#--size=#"
-msgstr ""
+msgstr "[option]#--size=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:718
@@ -2432,12 +2486,14 @@ msgid ""
 "The size of the logical volume in megabytes. This option can not be used "
 "together with the [option]#--percent=# option."
 msgstr ""
+"Ukuran volume logis dalam megabyte. Opsi ini tidak dapat digunakan bersama "
+"dengan opsi [option]#--percent=#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:719
 #, no-wrap
 msgid "[option]#--percent=#"
-msgstr ""
+msgstr "[option]#--percent=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:720
@@ -2447,6 +2503,10 @@ msgid ""
 "volumes are taken into account. This option can not be used together with "
 "the [option]#--size=# and [option]#--grow# options."
 msgstr ""
+"Tentukan jumlah yang digunakan untuk menumbuhkan volume logis, sebagai "
+"persentase dari ruang kosong dalam grup volume setelah volume logis "
+"berukuran statis diperhitungkan. Opsi ini tidak dapat digunakan bersama "
+"dengan opsi [option]#--size=# dan [option]#--grow#."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:725
@@ -2456,13 +2516,17 @@ msgid ""
 "remaining free space using the [option]#--percent=# option. You can not use "
 "both of these options on the same logical volume."
 msgstr ""
+"Saat membuat volume logis baru, Anda harus menentukan ukurannya secara "
+"statis menggunakan opsi [option]#--size=#, atau sebagai persentase dari sisa "
+"ruang kosong menggunakan opsi [option]#--percent=#. Anda tidak dapat "
+"menggunakan kedua opsi ini pada volume logis yang sama."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:728
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:858
 #, no-wrap
 msgid "[option]#--maxsize=#"
-msgstr ""
+msgstr "[option]#--maxsize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:729
@@ -2470,13 +2534,15 @@ msgid ""
 "The maximum size in megabytes when the logical volume is set to grow. "
 "Specify an integer value here such as `500` (do not include the unit)."
 msgstr ""
+"Ukuran maksimum dalam megabyte ketika volume logis diatur untuk tumbuh. "
+"Tentukan nilai integer di sini seperti `500` (tidak termasuk unit)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:730
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:939
 #, no-wrap
 msgid "[option]#--recommended#"
-msgstr ""
+msgstr "[option]#--recommended#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:731
@@ -2496,13 +2562,16 @@ msgid ""
 "such as the `/boot` partition and `swap` space. It can not be used to create "
 "partitionsm, LVM physical or logical volumes or RAID members."
 msgstr ""
+"Opsi ini hanya dapat digunakan untuk partisi yang menghasilkan sistem file "
+"seperti partisi `/boot` dan ruang `swap`. Itu tidak dapat digunakan untuk "
+"membuat partisi, volume fisik atau logis LVM, atau anggota RAID."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:739
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:860
 #, no-wrap
 msgid "[option]#--resize#"
-msgstr ""
+msgstr "[option]#--resize#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:740
@@ -2510,6 +2579,8 @@ msgid ""
 "Resize an existing logical volume. If you use this option, you must also "
 "specify [option]#--useexisting# and [option]#--size#."
 msgstr ""
+"Ubah ukuran volume logis yang ada. Jika Anda menggunakan opsi ini, Anda juga "
+"harus menentukan [option]#--useexisting# dan [option]#--size#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:742
@@ -2520,6 +2591,12 @@ msgid ""
 "passphrase set with the [command]#autopart --passphrase# command, or stop "
 "the installation and prompt you to provide a passphrase if no default is set."
 msgstr ""
+"Menentukan bahwa volume logis ini harus dienkripsi, menggunakan frasa sandi "
+"yang disediakan dalam opsi [option]#--passphrase=#. Jika Anda tidak "
+"menentukan frasa sandi, program penginstalan akan menggunakan default, frasa "
+"sandi seluruh sistem yang disetel dengan perintah [command]#autopart "
+"--passphrase#, atau menghentikan penginstalan dan meminta Anda untuk "
+"memberikan frasa sandi jika tidak ada default yang disetel ."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:744
@@ -2528,6 +2605,9 @@ msgid ""
 "must use this option together with the [option]#--encrypted# option. This "
 "option has no effect by itself."
 msgstr ""
+"Menentukan frasa sandi yang akan digunakan saat mengenkripsi volume logis "
+"ini. Anda harus menggunakan opsi ini bersama dengan opsi "
+"[option]#--encrypted#. Opsi ini tidak berpengaruh dengan sendirinya."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:748
@@ -2538,6 +2618,11 @@ msgid ""
 "encrypted volume. This option is only meaningful if [option]#--encrypted# is "
 "specified."
 msgstr ""
+"Simpan kunci enkripsi data dari semua volume terenkripsi sebagai file di "
+"`/root`, dienkripsi menggunakan sertifikat X.509 dari URL yang ditentukan "
+"dengan _URL_of_X.509_certificate_. Kunci disimpan sebagai file terpisah "
+"untuk setiap volume terenkripsi. Opsi ini hanya bermakna jika "
+"[option]#--encrypted# ditentukan."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:750
@@ -2547,56 +2632,61 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Tambahkan frasa sandi yang dibuat secara acak ke setiap volume terenkripsi. "
+"Simpan frasa sandi ini dalam file terpisah di `/root`, dienkripsi "
+"menggunakan sertifikat X.509 yang ditentukan dengan [option]#--escrowcert#. "
+"Opsi ini hanya bermakna jika [opsi]#--escrowcert# ditentukan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:751
 #, no-wrap
 msgid "[option]#--thinpool#"
-msgstr ""
+msgstr "[option]#--thinpool#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:752
 msgid "Creates a thin pool logical volume. (Use a mount point of `none`)"
-msgstr ""
+msgstr "Membuat volume logis kumpulan tipis. (Gunakan titik pemasangan `none`)"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:753
 #, no-wrap
 msgid "[option]#--metadatasize=#"
-msgstr ""
+msgstr "[option]#--metadatasize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:754
 msgid "Metadata area size (in MiB) for a new thin pool device."
-msgstr ""
+msgstr "Ukuran area metadata (dalam MiB) untuk perangkat thin pool baru."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:755
 #, no-wrap
 msgid "[option]#--chunksize=#"
-msgstr ""
+msgstr "[option]#--chunksize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:756
 msgid "Chunk size (in KiB) for a new thin pool device."
-msgstr ""
+msgstr "Ukuran potongan (dalam KiB) untuk perangkat kolam tipis baru."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:757
 #, no-wrap
 msgid "[option]#--thin#"
-msgstr ""
+msgstr "[option]#--thin#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:758
 msgid "Create a thin logical volume. (Requires use of [option]#--poolname#)"
 msgstr ""
+"Buat volume logis yang tipis. (Memerlukan penggunaan [option]#--poolname#)"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:759
 #, no-wrap
 msgid "[option]#--poolname=#"
-msgstr ""
+msgstr "[opsi]#--poolname=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:760
@@ -2604,12 +2694,14 @@ msgid ""
 "Specify the name of the thin pool in which to create a thin logical volume. "
 "Requires the [option]#--thin# option."
 msgstr ""
+"Tentukan nama kumpulan tipis untuk membuat volume logis tipis. Memerlukan "
+"opsi [opsi]#--tipis#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:761
 #, no-wrap
 msgid "[option]#--profile=#"
-msgstr ""
+msgstr "[option]#--profile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:762
@@ -2620,12 +2712,17 @@ msgid ""
 "performance` and are defined in the `/etc/lvm/profile` directory. See the "
 "`lvm(8)` man page for additional information."
 msgstr ""
+"Tentukan nama profil konfigurasi yang akan digunakan dengan volume logis "
+"tipis. Jika digunakan, nama tersebut juga akan disertakan dalam metadata "
+"untuk volume logis yang diberikan. Secara default, profil yang tersedia "
+"adalah `default` dan `thin-performance` dan ditentukan dalam direktori `/etc/"
+"lvm/profile`. Lihat halaman manual `lvm(8)` untuk informasi tambahan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:763
 #, no-wrap
 msgid "[option]#--cachepvs=#"
-msgstr ""
+msgstr "[option]#--cachepvs=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:764
@@ -2633,12 +2730,14 @@ msgid ""
 "A comma-separated list of (fast) physical volumes which should be used for "
 "LVM cache."
 msgstr ""
+"Daftar volume fisik (cepat) yang dipisahkan koma yang harus digunakan untuk "
+"cache LVM."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:765
 #, no-wrap
 msgid "[option]#--cachesize=#"
-msgstr ""
+msgstr "[option]#--cachesize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:766
@@ -2646,17 +2745,21 @@ msgid ""
 "Requested size of cache attached to the logical volume, in MiB. (Requires "
 "the [option]#--cachepvs=# option.)"
 msgstr ""
+"Ukuran cache yang diminta yang dilampirkan ke volume logis, dalam MiB. ("
+"Memerlukan opsi [opsi]#--cachepvs=#.)"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:767
 #, no-wrap
 msgid "[option]#--cachemode=#"
-msgstr ""
+msgstr "[option]#--cachemode=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:768
 msgid "Mode to be used for LVM cache (either `writeback` or `writethrough`)."
 msgstr ""
+"Mode yang akan digunakan untuk cache LVM (baik `writeback` atau "
+"`writethrough`)."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:773
@@ -2665,6 +2768,9 @@ msgid ""
 "cachemode=# options listed above are used to configure LVM caching. For more "
 "information, see the `lvmcache(7)` man page."
 msgstr ""
+"Opsi [option]#--cachepvs=#, [option]#--cachesize=#, dan "
+"[option]#--cachemode=# yang tercantum di atas digunakan untuk mengonfigurasi "
+"cache LVM. Untuk informasi lebih lanjut, lihat halaman manual `lvmcache(7)`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:777
@@ -2686,17 +2792,20 @@ msgid ""
 "[command]#volgroup myvg pv.01#\n"
 "[command]#logvol / --vgname=myvg --size=2000 --name=rootvol#\n"
 msgstr ""
+"[command]#part pv.01 --size 3000#\n"
+"[command]#volgroup myvg pv.01#\n"
+"[command]#logvol / --vgname=myvg --size=2000 --name=rootvol#\n"
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:788
 #, no-wrap
 msgid "part (required) - Create Physical Partition"
-msgstr ""
+msgstr "part (required) - Create Physical Partition"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:791
 msgid "Creates a partition on the system."
-msgstr ""
+msgstr "Membuat partisi pada sistem."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:793
@@ -2711,6 +2820,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ --device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ "
+"--device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]"
+"_rule_ [pass: atribut[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:805
@@ -2718,6 +2830,8 @@ msgid ""
 "All partitions created are formatted as part of the installation process "
 "unless [option]#--noformat# and [option]#--onpart=# are used."
 msgstr ""
+"Semua partisi yang dibuat diformat sebagai bagian dari proses instalasi "
+"kecuali [option]#--noformat# dan [option]#--onpart=# digunakan."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:812
@@ -2725,12 +2839,14 @@ msgid ""
 "If partitioning fails for any reason, diagnostic messages appear on virtual "
 "console 3."
 msgstr ""
+"Jika partisi gagal karena alasan apa pun, pesan diagnostik muncul di konsol "
+"virtual 3."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:816
 msgid ""
 "Where the partition is mounted. The value must be of one of the following:"
-msgstr ""
+msgstr "Di mana partisi dipasang. Nilai harus salah satu dari berikut ini:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:829
@@ -2738,12 +2854,14 @@ msgid ""
 "The size assigned will be effective but not precisely calibrated for your "
 "system."
 msgstr ""
+"Ukuran yang ditetapkan akan efektif tetapi tidak dikalibrasi dengan tepat "
+"untuk sistem Anda."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:835
 #, no-wrap
 msgid "`swap--hibernation`\n"
-msgstr ""
+msgstr "`swap--hibernation`\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
