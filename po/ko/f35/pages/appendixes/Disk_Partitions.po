@@ -7,13 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-06 08:08+0000\n"
+"Last-Translator: simmon <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f35pagesappendixesdisk_partitions/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title =
 #: ./pages/appendixes/Disk_Partitions.adoc:6
@@ -44,6 +47,8 @@ msgid ""
 "for more information on the process of freeing up disk space to prepare for "
 "a {PRODUCT} installation."
 msgstr ""
+"만약 디스크 파티션에 익숙하다면, {PRODUCT} 설치를 준비하기 위해 디스크 공간을 확보하는 과정에서 더 많은 정보를 위해 xref"
+":sect-disk-partitions-making-room[디스크 재구성을 위한 전략]으로 건너 뛸 수 있습니다."
 
 #. type: Title ==
 #: ./pages/appendixes/Disk_Partitions.adoc:20
@@ -67,6 +72,9 @@ msgid ""
 "here. This appendix uses a set of simplified diagrams of a disk drive to "
 "help explain what is the process and theory behind partitions."
 msgstr ""
+"디스크 파티셔닝과 같은 문제를 토의 할 때에, 기본 하드웨어를 이해하는 것이 중요합니다; 아뭏튼, 이론은 매우 복잡하고 광범위하여, "
+"여기서에서는 기본 개념만 설명 할 것입니다. 이 부록에서는 디스크 드라이브의 간략화된 다이어그램 설정을 사용하여 파티션 뒤에 있는 처리와 "
+"이론을 설명합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:27
@@ -74,6 +82,8 @@ msgid ""
 "xref:figu-partitions-unused-drive[An Unused Disk Drive], shows a brand-new, "
 "unused disk drive."
 msgstr ""
+"xref:figu-partitions-unused-drive[사용하지 않는 디스크 드라이브], 사용하지 않은 신규 디스크 드라이브를 "
+"보여줍니다."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:29
@@ -97,7 +107,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:34
 #, no-wrap
 msgid "File Systems"
-msgstr ""
+msgstr "파일 시스템"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:37
@@ -107,6 +117,9 @@ msgid ""
 "system_pass:attributes[{blank}]`\") writes information to the drive, "
 "creating order out of the empty space in an unformatted drive."
 msgstr ""
+"디스크 드라이브에서 자료를 저장하려면, 우선 디스크 드라이브를 초기화(format)가 필요합니다. 초기화는 (일반적으로 \"`file "
+"system_pass:attributes[{blank}] 만들기`\"로 알려졌으며) 드라이브에 정보를 작성하며, 초기화 되지 않은 "
+"드라이브에 빈 공간에서 순서를 만듭니다."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:39
@@ -132,6 +145,8 @@ msgid ""
 "As xref:figu-partitions-formatted-drive[Disk Drive with a File System], "
 "implies, the order imposed by a file system involves some trade-offs:"
 msgstr ""
+"xref:figu-partitions-formatted-drive[파일 시스템이 있는 디스크 드라이브]에서 의미 하듯이, 파일 시스템에 "
+"의해 부과되는 순서에는 몇 가지 절충안이 포함됩니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:46
@@ -139,6 +154,7 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"드라이버의 사용 가능한 공간 중의 적은 비율이 파일 시스템-연관된 자료를 저장하는 데 사용되었으며 오버헤드로 간주될 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:48
@@ -149,6 +165,9 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"파일 시스템은 나머지 공간을 일정한 크기의 작은 세그먼트로 분할합니다. 리눅스의 경우에, 이들 세그먼트는 블럭으로 알려져 있습니다 "
+"footnote: [블럭은 *실제로* 우리의 그림(삽화)과 다르게 크기가 일정합니다. 또한, 평균 디스크 드라이브에는 수천 개의 블럭이 "
+"포함되어 있다는 점을 기억하세요. 그림은 이와 같은 논의 목적을 위해 단순화했습니다.]."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:50
@@ -163,6 +182,11 @@ msgid ""
 "systems such as Microsoft Windows), making data interchange between "
 "different file systems easy."
 msgstr ""
+"단일의 범용 파일 시스템은 없습니다. xref:Disk_Partitions.adoc#figu-partitions-different-"
+"file-system[다른 파일 시스템을 가지는 디스크 드라이브]로, 디스크 드라이브는 많은 파일 시스템 중 하나가 기록되어 있을 는 "
+"것을 보여줍니다. 다른 파일 시스템은 호환되지 않는 경향이 있습니다; 이는, 하나의 파일 시스템(또는 소수의 연관 파일 시스템 유형)을 "
+"지원하는 운영 체제는 다른 파일 시스템을 지원하지 않을 수도 있습니다. 아무튼, {PRODUCT}는 광범위한 파일 시스템(마이크로소프트 "
+"윈도우와 같은 다른 운영 체제에 의해 일반적으로 사용되는 것을 포함하여)을 지원하며, 다른 파일 시스템 간에 손쉽게 자료 교환을 만듭니다."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:52
@@ -189,6 +213,8 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"파일 시스템을 디스크에 쓰는 것은 첫 번째 단계일 뿐입니다. 이와 같은 처리의 목표는 실제로 자료를 *저장*하고 *검색*하는 것입니다. "
+"아래 그림은 일부 자료가 기록된 후의 드라이브 디스크를 보여줍니다:"
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:59
@@ -245,6 +271,8 @@ msgid ""
 "as if it was a separate disk. This is done through the addition of a "
 "_partition table_."
 msgstr ""
+"디스크 드라이버는 파티션에서 나눠 질 수 있습니다. 각각의 파티션은 만약 분리된 디스크가 있는 것처럼 접근 될 수 있습니다. 이는 파티션 "
+"테이블의 추가를 통해서 수행됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:73
@@ -370,6 +398,8 @@ msgid ""
 "See xref:figu-partitions-single-part[Disk Drive With Single Partition] for "
 "an example of a disk drive with single partition."
 msgstr ""
+"단일 파티션을 갖고 있는 디스크 드라이버의 예를 위해 xref:figu-partitions-single-part[단일 파티션을 갖고 있는 "
+"디스크 드라이브]를 참고하세요."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:111
@@ -402,7 +432,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:118
 #, no-wrap
 msgid "Partition Types"
-msgstr ""
+msgstr "파티션 유형"
 
 #. type: Table
 #: ./pages/appendixes/Disk_Partitions.adoc:143
@@ -430,12 +460,33 @@ msgid ""
 "|GNU HURD|63|DOS secondary|f2\n"
 "|Novell Netware 286|64|BBT|ff\n"
 msgstr ""
+"|Partition Type|Value|Partition Type|Value\n"
+"|Empty|00|Novell Netware 386|65\n"
+"|DOS 12-bit FAT|01|PIC/IX|75\n"
+"|XENIX root|02|Old MINIX|80\n"
+"|XENIX usr|03|Linux/MINUX|81\n"
+"|DOS 16-bit <=32M|04|Linux swap|82\n"
+"|Extended|05|Linux native|83\n"
+"|DOS 16-bit >=32|06|Linux extended|85\n"
+"|OS/2 HPFS|07|Amoeba|93\n"
+"|AIX|08|Amoeba BBT|94\n"
+"|AIX bootable|09|BSD/386|a5\n"
+"|OS/2 Boot Manager|0a|OpenBSD|a6\n"
+"|Win95 FAT32|0b|NEXTSTEP|a7\n"
+"|Win95 FAT32 (LBA)|0c|BSDI fs|b7\n"
+"|Win95 FAT16 (LBA)|0e|BSDI swap|b8\n"
+"|Win95 Extended (LBA)|0f|Syrinx|c7\n"
+"|Venix 80286|40|CP/M|db\n"
+"|Novell|51|DOS access|e1\n"
+"|PReP Boot|41|DOS R/O|e3\n"
+"|GNU HURD|63|DOS secondary|f2\n"
+"|Novell Netware 286|64|BBT|ff\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:146
 #, no-wrap
 msgid "Partitions Within Partitions - An Overview of Extended Partitions"
-msgstr ""
+msgstr "파티션 안에 있는 파티션 - 확장 파티션 개요"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:149
@@ -444,6 +495,8 @@ msgid ""
 "_extended partitions_ to create up additional partitions. You do this by "
 "setting the type of a partition to \"`Extended`\"."
 msgstr ""
+"4개의 파티션인 경우는 자신의 목적에 따라 불충분하면, 추가 파티션을 생성하기 위하여 확장 파티션을 사용 할 수 있습니다. 당신은 파티션 "
+"유형을 \"`확장 파티션`\"으로 설정 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:151
@@ -511,7 +564,7 @@ msgstr ""
 msgid ""
 "*GPT* disks use logical block addressing (LBA) and the partition layout is "
 "as follows:\n"
-msgstr ""
+msgstr "*GPT* 디스크는 논리 블록 주소(LBA)를 사용하고 파티션 배열은 다음과 같습니다:\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:167
@@ -520,6 +573,8 @@ msgid ""
 "0) of *GPT* is reserved for *MBR* data and it is called \"`protective "
 "MBR`\"."
 msgstr ""
+"MBR 디스크와의 역-호환성을 유지하기 위해, *GPT*의 첫 번째 섹터(*LBA* 0)는 *MBR* 자료용으로 예약되어 있고 \"`보호 "
+"MBR`\"이라고 칭합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:169
@@ -538,6 +593,8 @@ msgid ""
 "with an entry size 128 bytes, its partition type GUID and unique partition "
 "GUID."
 msgstr ""
+"기본 GPT 테이블에는 기본적으로 각각 항목 크기가 128 바이트인 파티션 항목 128개, 이와 같은 파티션 유형 GUID와 고유 파티션 "
+"GUID가 포함됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:173
@@ -546,6 +603,8 @@ msgid ""
 "used mainly as a backup table for recovery in case the primary partition "
 "table is corrupted."
 msgstr ""
+"보조(secondary) *GPT* 테이블은 기본(primary) *GPT* 테이블과 동일합니다. 이는 기본 파티션 테이블이 망가진 "
+"경우에 복구를 위한 복구(백업) 테이블처럼 주로 사용됩니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:175
@@ -651,6 +710,7 @@ msgid ""
 "In the above example, `1` represents an undefined partition with unallocated "
 "space and `2` represents a defined partition with allocated space."
 msgstr ""
+"위의 예제에서, '1'은 할당되지 않은 공간에 정의되지 않은 파티션을 나타내고 '2'는 할당된 공간에 정의된 파티션을 나타냅니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:216
@@ -658,6 +718,7 @@ msgid ""
 "An unused hard disk also falls into this category. The only difference is "
 "that *all* the space is not part of any defined partition."
 msgstr ""
+"사용하지 않는 하드 디스크도 또한 이런 종류에 속합니다. 단지 차이점은 *모든* 공간이 정의된 파티션의 일부가 아니라는 것입니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:218
@@ -683,6 +744,8 @@ msgid ""
 "longer. xref:figu-partitions-unused-partition[Disk Drive with an Unused "
 "Partition], illustrates such a situation."
 msgstr ""
+"이와 같은 경우에, 아마도 더 이상 사용하지 않는 하나 또는 그 이상의 파티션을 가지고 있습니다. xref:figu-partitions-"
+"unused-partition[사용하지 않는 파티션인 디스크 드라이브], 이와 같은 상태를 표시합니다."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:225
@@ -828,7 +891,7 @@ msgstr ""
 msgid ""
 "While the process of non-destructive repartitioning is rather "
 "straightforward, there are three steps involved:"
-msgstr ""
+msgstr "비-파괴적으로 다시 파티션을 처리 할 때에는 다소 간단하지만, 다음 세가지 단계가 포함됩니다:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:270
@@ -838,7 +901,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:272
 msgid "Resize the existing partition"
-msgstr ""
+msgstr "기존 파티션 크기를 조정합니다"
 
 #. type: Title ====
 #: ./pages/appendixes/Disk_Partitions.adoc:274
@@ -856,7 +919,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:278
 #, no-wrap
 msgid "Compress Existing Data"
-msgstr ""
+msgstr "기존 자료를 압축합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:281
@@ -899,7 +962,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:292
 #, no-wrap
 msgid "Resize the Existing Partition"
-msgstr ""
+msgstr "기존 파티션 크기를 조정합니다"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:295
@@ -997,6 +1060,8 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
+"리눅스는 `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`의 형태로 파일 "
+"이름을 갖는 파일-기반형 이름 체계를 사용합니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:328
@@ -1016,12 +1081,14 @@ msgid ""
 "partitions reside on hard disks, and hard disks are devices, the files "
 "representing all possible partitions reside in `/dev/`."
 msgstr ""
+"이는 모든 장치 파일이 존재하는 것과 같은 디렉토리 명칭입니다.. 왜냐하면 파티션은 하드 디스크에 위치하고, 그리고 하드 디스크는 '/"
+"dev/'에 위치하는 모든 사용 가능한 파티션을 대표하는 파일 장치입니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Disk_Partitions.adoc:331
 #, no-wrap
 msgid "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:332
@@ -1034,7 +1101,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:333
 #, no-wrap
 msgid "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:334
@@ -1042,12 +1109,14 @@ msgid ""
 "This letter indicates which device the partition is on. For example, "
 "`/dev/sda` for the first hard disk, `/dev/sdb` for the second, and so on."
 msgstr ""
+"이 문자는 파티션이 있는 장치를 표시합니다. 예를 들면, 첫 번째 하드 디스크는 `/dev/sda`, 두 번째는 `/dev/sdb` 등과 "
+"같습니다."
 
 #. type: Labeled list
 #: ./pages/appendixes/Disk_Partitions.adoc:335
 #, no-wrap
 msgid "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:336
@@ -1139,3 +1208,5 @@ msgid ""
 "Partitioning Scheme] for more information about the recommended partitioning "
 "scheme."
 msgstr ""
+"권장 파티션 구성표에 대한 더 많은 정보는 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[권장 파티션 구성표]를 참고하세요."

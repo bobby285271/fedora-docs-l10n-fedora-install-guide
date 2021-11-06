@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# simmon <simmon@nplob.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-06 08:08+0000\n"
+"Last-Translator: simmon <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f35pages_partialsinstallnetworkspoke_virtualinterfaces/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:5
 #, no-wrap
 msgid "Adding a Virtual Network Interface"
-msgstr ""
+msgstr "가상 네트워크 연결장치 추가하기"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:8
@@ -28,6 +31,8 @@ msgid ""
 "the interface list. A new window will open, prompting you to select one of "
 "the three available types of virtual interfaces:"
 msgstr ""
+"가상 네트워크 연결장치를 추가하려면, 연결장치 목록의 하단에서 `+` 누름단추를 눌러주세요. 가상 연결장치의 세가지 사용 가능한 유형 "
+"중의 하나를 선택하는 새로운 창이 열립니다:"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:10
@@ -35,6 +40,8 @@ msgid ""
 "`Bond` - NIC (_Network Interface Controller_) Bonding, a method to bind "
 "multiple physical network interfaces together into a single bonded channel."
 msgstr ""
+"`Bond` - NIC (_네트워크 연결장치 제어기_) 본딩, 여러 물리적 네트워크 연결장치를 함께 하나로 결합된 채널로 바인딩 하는 "
+"방법입니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:12
@@ -43,13 +50,15 @@ msgid ""
 "provide a small kernel driver to implement the fast handling of packet "
 "flows, and various applications to do everything else in user space."
 msgstr ""
+"`Team` - NIC 티밍, 연결을 집계하는 새로운 구현, 패킷 흐름의 빠른 처리를 구현하는데 작은 커널 드라이버와 사용자 공간에서 "
+"다른 모든 것을 수행하는데 다양한 응용프로그램을 제공하도록 설계되었습니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:14
 msgid ""
 "`Vlan` (_Virtual LAN_) - A method to create multiple distinct broadcast "
 "domains which are mutually isolated."
-msgstr ""
+msgstr "`Vlan` (_Virtual LAN_) - 상호 격리되는 여러 개의 개별 브로드캐스트 도메인을 생성하는 방법."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:16
@@ -63,6 +72,12 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"추가 하려는 연결장치 유형을 선택하고, '추가'를 눌러줍니다. 다른 대화상자는 당신이 선택한 연결장치 유형을 위해 사용 가능한 설정을 "
+"편집 하도록 하고 열립니다. 사용 가능한 설정에 대한 정보는, link:++https://docs.fedoraproject.org/ko/"
+"docs++[사용자 문서]에서 사용 할 수 있는 [citetitle] _ {PRODUCT} 네트워킹{nbsp}안내의 각 부분을 "
+"참고하세요. 기본 문서는 또한 xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-network-configuration-advanced[네트워크 연결장치 구성 편집하기]에서 사용 할 수 "
+"있습니다."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:21
@@ -72,3 +87,5 @@ msgid ""
 "bottom right corner of the screen. To remove a virtual interface, select it "
 "in the list and click the `-` button below."
 msgstr ""
+"설정 대화 상자를 종료 한 이후에, 다시 접근하려면, 구성된 연결장치 목록에서 동일한 연결장치를 선택하고 화면 하단 오른쪽 모서리 부분에 "
+"있는 '구성'을 눌러주세요. 가상 연결장치를 제거하려면, 목록에서 선택하고 아래의`-` 누름단추를 눌러주세요."
