@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-07 16:17+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f35pages_partialsinstallcustomspoke_addphysical/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:5
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:17
 #, no-wrap
 msgid "Creating Standard Partitions"
-msgstr ""
+msgstr "Standart Bölümler Oluşturma"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:8
@@ -33,6 +36,12 @@ msgid ""
 "standard partition with the BIOS Boot or EFI System file system to store the "
 "boot loader."
 msgstr ""
+"_Standart bölümler_, işletim sistemleri arasında en geniş desteğe sahip en "
+"yaygın bölüm türüdür. Örneğin, Microsoft Windows yalnızca fiziksel bölümler "
+"kullanır ve LVM veya Btrfs ile doğrudan çalışamaz. Çoğu {PRODUCT} "
+"bölümlendirme kurulumu, ayrıca `/boot` dizini için en az bir standart bölüm "
+"ve önyükleyiciyi depolamak için BIOS Önyükleme veya EFI Sistem dosya "
+"sistemine sahip muhtemelen başka bir standart bölüm gerektirir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:10
@@ -41,24 +50,27 @@ msgid ""
 "Introduction to Disk Partitions] for additional information about the "
 "concepts behind physical partitions."
 msgstr ""
+"Fiziksel bölümlerin arkasındaki kavramlar hakkında ek bilgi için, xref:"
+"appendixes/Disk_Partitions.adoc#appe-disk-partitions-overview[Disk "
+"Bölümlerine Giriş] bölümüne bakın."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:11
 #, no-wrap
 msgid "Create Standard Partition"
-msgstr ""
+msgstr "Standart Bölüm Oluştur"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr ""
+msgstr "Elle Bölümlendirme ekranı"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:13
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddPhysical.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddPhysical.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:16
@@ -66,6 +78,8 @@ msgid ""
 "Follow the procedure below to create mount points on standard physical "
 "partitions:"
 msgstr ""
+"Standart fiziksel bölümlerde bağlama noktaları oluşturmak için aşağıdaki "
+"adımları izleyin:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:19
@@ -73,6 +87,8 @@ msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
+"Mevcut bağlama noktalarını gösteren listenin altındaki `+` düğmesine "
+"tıklayın. Yeni bir iletişim penceresi açılacaktır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:21
@@ -83,6 +99,11 @@ msgid ""
 "`50GB`). Then, click `Add mount point` to add the mount point and return to "
 "the main partitioning screen."
 msgstr ""
+"Yeni iletişim penceresinde, ayrı bir bağlama noktası oluşturmak istediğiniz "
+"bir bağlama noktası belirtin - örneğin, `/`. İsteğe bağlı olarak, MB veya GB "
+"gibi standart birimler kullanarak bölüm için bir boyut belirtin (örneğin, "
+"`50GB`). Ardından, bağlama noktasını eklemek ve ana bölümlendirme ekranına "
+"geri dönmek için `Bağlama noktası ekle` düğmesine tıklayın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:26
@@ -91,6 +112,9 @@ msgid ""
 "BIOS Boot partition, use `biosboot`. For an EFI System Partition, use "
 "`/boot/efi`."
 msgstr ""
+"Bir takas bölümü oluştururken, bağlama noktasını `swap` olarak belirtin. "
+"BIOS Önyükleme bölümü için `biosboot` kullanın. EFI Sistem Bölümü için `/"
+"boot/efi` kullanın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:28
@@ -99,6 +123,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Bu bölüm türleri hakkında bilgi için, xref:Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:32
@@ -110,6 +137,11 @@ msgid ""
 "Partition`. Then, click `Update Settings` in the bottom right corner of the "
 "screen."
 msgstr ""
+"Bu adımdan sonra bağlama noktası öntanımlı ayarlar kullanılarak, yani bir "
+"LVM mantıksal birimi olarak oluşturulur. Daha fazla yapılandırmak için sol "
+"bölmede yeni oluşturulan bağlama noktasını seçin ve `Aygıt Türü` seçeneğini `"
+"Standart Bölüm` olarak değiştirerek fiziksel bir bölüme dönüştürün. "
+"Ardından, ekranın sağ alt köşesindeki `Ayarları Güncelle` düğmesine tıklayın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:34
@@ -118,6 +150,9 @@ msgid ""
 "the partition has been assigned to one or more hard drives. Click the "
 "`Modify` button to configure on which drive this partition will be created."
 msgstr ""
+"Ekranın sağ tarafındaki `Aygıt(lar)` bölümünde, bölümün bir veya daha fazla "
+"sabit diske atandığını görebilirsiniz. Bu bölümün hangi diskte "
+"oluşturulacağını yapılandırmak için `Değiştir` düğmesine tıklayın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:36
@@ -131,6 +166,15 @@ msgid ""
 "want to make sure that this partition is placed on a specific hard drive, "
 "select only that drive and unselect all others."
 msgstr ""
+"`Bağlama Noktası Yapılandır` iletişim kutusunda, bu birimin hangi fiziksel "
+"aygıtlarda (diskler) *bulunabileceğini* belirleyebilirsiniz. Bu birimi "
+"tutmak için kullanılacak bir veya daha fazla diski kbd:[Ctrl] tuşuna basılı "
+"tutup listedeki her diski tıklayarak seçebilirsiniz. Burada birden fazla "
+"disk seçerseniz, [application]*Anaconda* kurulumun geri kalanını nasıl "
+"yapılandırdığınıza bağlı olarak bölümün tam olarak nerede oluşturulması "
+"gerektiğini belirleyecektir. Bu bölümün belirli bir sabit diskte "
+"oluşturulduğundan emin olmak istiyorsanız, yalnızca o diski seçin ve "
+"diğerlerinin seçimini kaldırın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:38
@@ -138,6 +182,8 @@ msgid ""
 "After you finish configuring the partition's location, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Bölümün konumunu yapılandırmayı bitirdikten sonra, ana `Elle Bölümlendirme` "
+"ekranına dönmek için `Kaydet` düğmesine tıklayın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:40
@@ -146,6 +192,9 @@ msgid ""
 "`Desired Capacity`, and `File System`. Press `Update Settings` to apply any "
 "changes to the configuration."
 msgstr ""
+"Bölüme özgü diğer ayarları yapılandırın - `Bağlama Noktası`, `İstenen "
+"Kapasite` ve `Dosya Sistemi`. Değişiklikleri yapılandırmaya uygulamak için `"
+"Ayarları Güncelle` düğmesine basın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddPhysical.adoc:41
@@ -153,3 +202,4 @@ msgid ""
 "Repeat this procedure for any additional standard partitions you want to "
 "create."
 msgstr ""
+"Oluşturmak istediğiniz ek standart bölümler için bu adımları tekrarlayın."

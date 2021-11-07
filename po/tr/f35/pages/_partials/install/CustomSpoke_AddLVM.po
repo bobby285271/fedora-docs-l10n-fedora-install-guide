@@ -1,25 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-07 16:17+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/"
+"f35pages_partialsinstallcustomspoke_addlvm/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:5
 #, no-wrap
 msgid "Creating a Logical Volume Management (LVM) Layout"
 msgstr ""
+"Mantıksal Birim Yönetimi (Logical Volume Management - LVM) Düzeni Oluşturma"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:8
@@ -32,6 +36,13 @@ msgid ""
 "partition. Therefore, LVM logical volumes function as partitions which can "
 "span multiple physical disks."
 msgstr ""
+"_Mantıksal Birim Yönetimi_ (LVM), sabit diskler veya LUN'lar gibi temelde "
+"yatan fiziksel depolama alanının basit bir mantıksal görünümünü sunar. "
+"Fiziksel depolama üzerindeki bölümler, _birim grupları_ olarak "
+"gruplandırılabilen _fiziksel birimler_ olarak temsil edilir. Her birim "
+"grubu, her biri standart bir disk bölümüne benzer olan birden çok _mantıksal "
+"birime_ bölünebilir. Bu nedenle LVM mantıksal birimleri, birden çok fiziksel "
+"diske yayılabilen bölümler olarak işlev görür."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:10
@@ -40,6 +51,9 @@ msgid ""
 "LVM] for additional information about the concepts behind Logical Volume "
 "Management."
 msgstr ""
+"Mantıksal Birim Yönetiminin arkasındaki kavramlar hakkında ek bilgi için "
+"xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[LVM'yi Anlama] "
+"bölümüne bakın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:15
@@ -50,35 +64,42 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for more information."
 msgstr ""
+"Bazı bölüm türleri - özellikle `/ boot` dizini ve BIOS Önyükleme ve EFI "
+"bölümleri - mantıksal birimlere yerleştirilemez. Onlar için standart "
+"fiziksel birimler kullanın. Daha fazla bilgi için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Tavsiye Edilen Bölümlendirme Düzeni] bölümüne bakın."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:18
 #, no-wrap
 msgid "Create LVM Logical Volume"
-msgstr ""
+msgstr "LVM Mantıksal Birimi Oluştur"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
 #, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr ""
+msgstr "Elle Bölümlendirme ekranı"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddLVM.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddLVM.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:23
 msgid "Follow the procedure below to create LVM logical volumes and volume groups."
 msgstr ""
+"LVM mantıksal birimleri ve birim grupları oluşturmak için aşağıdaki adımları "
+"izleyin."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:24
 #, no-wrap
 msgid "Creating LVM Logical Volumes and Groups"
-msgstr ""
+msgstr "LVM Mantıksal Birimleri ve Grupları Oluşturma"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:26
@@ -86,6 +107,8 @@ msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
 msgstr ""
+"Mevcut bağlama noktalarını gösteren listenin altındaki `+` düğmesine "
+"tıklayın. Yeni bir iletişim penceresi açılacaktır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:28
@@ -96,6 +119,11 @@ msgid ""
 "`50GB`). Then, click `Add mount point` to add the volume and return to the "
 "main partitioning screen."
 msgstr ""
+"Yeni iletişim penceresinde, ayrı bir mantıksal birim oluşturmak istediğiniz "
+"bir bağlama noktası belirtin - örneğin, `/`. İsteğe bağlı olarak, MB veya GB "
+"gibi standart birimler kullanarak birim için bir boyut belirtin (örneğin, "
+"`50GB`). Ardından, birimi eklemek ve ana bölümlendirme ekranına geri dönmek "
+"için `Bağlama noktası ekle` düğmesine tıklayın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:33
@@ -103,6 +131,8 @@ msgid ""
 "When creating a mount point for swap on LVM, specify the mount point as "
 "`swap`."
 msgstr ""
+"LVM üzerinde takas için bir bağlama noktası oluştururken, bağlama noktasını "
+"`swap` olarak belirtin."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:37
@@ -113,6 +143,12 @@ msgid ""
 "to configure it further. If you want to use thin provisioning for this "
 "volume, change the `Device Type` option to `LVM Thin Provisioning`."
 msgstr ""
+"Bu adımdan sonra bağlama noktası öntanımlı ayarlar kullanılarak, yani bir "
+"LVM mantıksal birimi olarak oluşturulur ve onu içermesi için bir birim grubu "
+"oluşturulur. Daha fazla yapılandırmak için sol bölmede yeni oluşturulan "
+"bağlama noktasını seçin. Bu birim için ince dağıtım (thin provisioning) "
+"kullanmak istiyorsanız, `Aygıt Türü` seçeneğini `LVM İnce Dağıtım` olarak "
+"değiştirin."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:39
@@ -122,6 +158,10 @@ msgid ""
 "variant you are installing (for example, `fedora-server`. Click the `Modify` "
 "button under the drop-down menu to access the volume group settings."
 msgstr ""
+"`Birim Grubu` menüsünde, birimin kurduğunuz {PRODUCT} çeşidinin adını "
+"taşıyan (örneğin, `fedora-server`) otomatik olarak oluşturulmuş bir birim "
+"grubuna atandığını görebilirsiniz. Birim grubu ayarlarına erişmek için "
+"açılır menünün altındaki `Değiştir` düğmesine tıklayın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:41
@@ -134,6 +174,14 @@ msgid ""
 "reside on. You can select one or more disks which will be used to hold this "
 "volume group by holding down kbd:[Ctrl] and clicking each disk in the list."
 msgstr ""
+"`Birim Grubunu Yapılandır` iletişim kutusunda birim grubunun adını, `RAID "
+"seviyesini` (kullanılabilir RAID türleri hakkında bilgi için "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne "
+"bakın) değiştirebilir ve ayrıca bu birim grubunun hangi fiziksel aygıtların "
+"(disklerin) üzerinde bulunması gerektiğini belirtebilirsiniz. Bu birim "
+"grubunu tutmak için kullanılacak bir veya daha fazla diski kbd:[Ctrl] tuşuna "
+"basılı tutup listedeki her diski tıklayarak seçebilirsiniz."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:46
@@ -142,6 +190,9 @@ msgid ""
 "volume group will take up twice its actual size on your disks. A 5 GB volume "
 "group with RAID1 will take up 10 GB of space."
 msgstr ""
+"Yedekli bir RAID türü seçerseniz (`RAID1 (Yedeklilik)` gibi), disklerinizde "
+"birim grubu gerçek boyutunun iki katı kadar yer kaplayacaktır. RAID1 ile 5 "
+"GB'lık bir birim grubu 10 GB alan kaplayacaktır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:50
@@ -152,6 +203,11 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for information about LUKS disk "
 "encryption."
 msgstr ""
+"Ayrıca, `Şifrele` seçeneğini seçerek birim grubunun şifrelenmiş olduğundan "
+"emin olabilirsiniz; bu, tüm birim grubu için LUKS şifrelemesini "
+"etkinleştirecektir. LUKS ile disk şifreleme hakkında bilgi için "
+"link:++https://docs.fedoraproject.org/++[] adresindeki [citetitle]_{PRODUCT} "
+"Güvenlik Kılavuzuna_ bakın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:52
@@ -160,6 +216,9 @@ msgid ""
 "`Fixed` option from the `Size policy` menu and entering a size for the "
 "volume group."
 msgstr ""
+"Ek olarak, `Boyut politikası` menüsünden `Sabit` seçeneğini seçerek ve birim "
+"grubu için bir boyut girerek birim grubu için sabit bir boyut "
+"ayarlayabilirsiniz."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:54
@@ -167,6 +226,8 @@ msgid ""
 "After you finish configuring the volume group settings, click `Save` to "
 "return to the main `Manual Partitioning` screen."
 msgstr ""
+"Birim grubu ayarlarını yapılandırmayı bitirdikten sonra, ana `Elle "
+"Bölümlendirme` ekranına dönmek için `Kaydet` düğmesine tıklayın."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:59
@@ -179,6 +240,13 @@ msgid ""
 "[command]#volgroup "
 "--pesize=pass:attributes[{blank}]_size_pass:attributes[{blank}]# command."
 msgstr ""
+"Yapılandırma iletişim kutusu, birim grubunun _fiziksel kapsamlarının_ "
+"boyutunu belirlemenize izin vermez. Boyut her zaman öntanımlı 4 MiB değerine "
+"ayarlanacaktır. Farklı fiziksel kapsamlara sahip bir birim grubu oluşturmak "
+"istiyorsanız, etkileşimli bir kabuğa geçerek ve [command]#vgcreate# komutunu "
+"kullanarak elle oluşturun veya [command]#volgroup "
+"--pesize=pass:attributes[{blank}]_size_pass:attributes[{blank}]# komutuyla "
+"bir Kickstart dosyası kullanın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:63
@@ -192,6 +260,14 @@ msgid ""
 "then go through your existing mount points and change this setting to assign "
 "them to a different volume group."
 msgstr ""
+"Birden fazla birim grubu oluşturmanız gerekiyorsa, `Birim Grubu` açılır "
+"menüsünü açın ve `Yeni bir birim grubu oluştur` seçeneğini seçin. Önceki "
+"adımda açıklananla aynı olan yeni bir iletişim penceresi açılacaktır. Aynı "
+"şekilde, yeni grup için bir ad, depolama aygıtları, şifreleme ayarları, RAID "
+"seviyesi ve boyut politikası seçin ve `Kaydet` düğmesine tıklayın. Yeni "
+"birim grubu daha sonra `Birim Grubu` açılır menüsünde kullanılabilir hale "
+"gelecektir; daha sonra mevcut bağlama noktalarınızın üzerinden geçebilir ve "
+"bunları farklı bir birim grubuna atamak için bu ayarı değiştirebilirsiniz."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:65
@@ -200,6 +276,9 @@ msgid ""
 "`Desired Capacity`, `File System`, and `Name`. Press `Update Settings` to "
 "apply any changes to the configuration."
 msgstr ""
+"Mantıksal birime özgü diğer ayarları yapılandırın - `Bağlama Noktası`, `"
+"İstenen Kapasite`, `Dosya Sistemi` ve `Ad`. Değişiklikleri yapılandırmaya "
+"uygulamak için `Ayarları Güncelle` düğmesine basın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:67
@@ -209,6 +288,10 @@ msgid ""
 "group is not automatically created each time; instead, any additional "
 "volumes are assigned to an existing group."
 msgstr ""
+"Oluşturmak istediğiniz ek mantıksal birimler için bu adımları tekrarlayın. "
+"Ek LVM mantıksal birimleri oluştururken, her seferinde otomatik olarak yeni "
+"bir birim grubu oluşturulmadığını unutmayın; bunun yerine, ek birimler var "
+"olan bir gruba atanır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddLVM.adoc:68
@@ -218,3 +301,7 @@ msgid ""
 "it has a descriptive name so you can identify the volume later if you need "
 "to."
 msgstr ""
+"Oluşturduğunuz her bağlama noktası için ayarlarını gözden geçirin ve doğru "
+"gruba atandığından, yeterli kapasiteye sahip olduğundan ve gerekirse daha "
+"sonra alt birimi tanımlayabilmeniz için açıklayıcı bir ada sahip olduğundan "
+"emin olun."

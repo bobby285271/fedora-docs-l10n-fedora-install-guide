@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguzersen@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-07 16:17+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10nfedora-install-guide/f35pages_partialsinstalldatetimespoke/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:5
 #: ./pages/_partials/install/DateTimeSpoke.adoc:9
 #, no-wrap
 msgid "Date & Time"
-msgstr ""
+msgstr "Tarih ve Saat"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:8
@@ -32,18 +35,24 @@ msgid ""
 "Screen and Language Selection], but you can change your date, time and "
 "location settings before you begin the installation."
 msgstr ""
+"`Tarih ve Saat` ekranı, sisteminiz için saat ve tarihle ilgili ayarları "
+"yapılandırmanıza olanak tanımaktadır. Bu ekran, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-welcome[Hoş Geldiniz "
+"Ekranı ve Dil Seçimi] bölümünde seçtiğiniz ayarlara göre otomatik olarak "
+"yapılandırılır, ancak kuruluma başlamadan önce tarih, saat ve konum "
+"ayarlarınızı değiştirebilirsiniz."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "Tarih ve Saat ekranının görüntüsü"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:14
@@ -54,6 +63,12 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"İlk olarak, ekranın sol üst köşesindeki açılır menüyü kullanarak `Bölge` "
+"seçiminizi yapın. Ardından, `Şehir` seçiminizi yapın, veya aynı saat "
+"diliminde bulunduğunuz yere en yakın şehri seçin. Belirli bir konumun "
+"seçilmesi, {PRODUCT}'nın, gün ışığından yararlanma saati için otomatik saat "
+"değişiklikleri de dahil olmak üzere, zamanınızın her zaman doğru "
+"ayarlanmasını sağlamasına yardımcı olur."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:16
@@ -62,6 +77,9 @@ msgid ""
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
 msgstr ""
+"Konumunuzu belirli bir bölgeye ayarlamadan Greenwich Ortalama Saati'ne (GMT) "
+"göre bir saat dilimi de seçebilirsiniz. Bunu yapmak için bölgenizi `Etc` "
+"olarak seçin."
 
 #. type: delimited block =
 #: ./pages/_partials/install/DateTimeSpoke.adoc:21
@@ -72,6 +90,11 @@ msgid ""
 "regions into this database. You can find more information at the "
 "link:++https://www.iana.org//time-zones++[IANA official website]."
 msgstr ""
+"Şehirlerin ve bölgelerin listesi, Internet Assigned Numbers Authority (IANA) "
+"tarafından sağlanan, kamu malı olan Zaman Dilimi Veri Tabanından "
+"([package]*tzdata*) gelmektedir. Fedora Projesi bu veri tabanına şehir veya "
+"bölge ekleyemez. Daha fazla bilgiyi link:++https://www.iana.org//time-"
+"zones++[IANA resmi web sitesinde] bulabilirsiniz."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:25
@@ -83,12 +106,19 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"Ekranın sağ üst köşesindeki `Ağ Saati` etiketli anahtar, Ağ Saati "
+"Protokolünü (NTP) kullanarak ağ üzerinden saat eşzamanlamasını "
+"etkinleştirmek veya devre dışı bırakmak için kullanılabilir. Bu seçeneğin "
+"etkinleştirilmesi, sistem internete erişebildiği sürece sistem saatinizi "
+"doğru tutacaktır. Öntanımlı olarak, dört NTP _havuzu_ yapılandırılmıştır; "
+"anahtarın yanındaki dişli çark düğmesini tıklayarak başkalarını ekleyebilir "
+"ve öntanımlıları devre dışı bırakabilir veya kaldırabilirsiniz."
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:26
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "Kullanmak için NTP sunucuları ekle ve işaretle iletişim penceresi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
@@ -97,12 +127,14 @@ msgid ""
 "A dialog window allowing you to add or remove NTP pools from your system "
 "configuration"
 msgstr ""
+"Sistem yapılandırmanıza NTP havuzları eklemenizi veya kaldırmanızı sağlayan "
+"bir iletişim penceresi"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:31
@@ -111,6 +143,9 @@ msgid ""
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
 msgstr ""
+"Ağ üzerinden saat eşzamanlamasını devre dışı bırakırsanız, ekranın altındaki "
+"denetimler etkin hale gelecek ve geçerli saati ve tarihi elle "
+"ayarlayabileceksiniz."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:32
@@ -120,3 +155,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Saat ve tarih ayarlarınızı yapılandırdıktan sonra, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary["
+"Kurulum Özetine] dönmek için sol üst köşedeki `Bitti` düğmesine basın."
