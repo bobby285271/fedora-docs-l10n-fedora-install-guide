@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2021-11-06 08:08+0000\n"
+"PO-Revision-Date: 2021-11-07 16:17+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -27,13 +27,13 @@ msgstr "추천된 파티션 구성표"
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
 msgid "In most cases, at least the following mount points should always be created:"
-msgstr ""
+msgstr "대부분의 경우에, 적어도 다음 적재 지점은 항상 생성되어야 합니다:"
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
 #, no-wrap
 msgid "`/boot` - 1 GB"
-msgstr ""
+msgstr "`/boot` - 1 GB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
@@ -59,13 +59,13 @@ msgstr ""
 msgid ""
 "Also note that the `/boot` directory cannot be placed on a LVM logical "
 "volume. Use a standard partition."
-msgstr ""
+msgstr "또한 `/boot` 디렉토리는 LVM 논리 볼륨에서 위치 할 수 없는 것을 기록합니다. 표준 파티션을 사용하세요."
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
 #, no-wrap
 msgid "`/` (root) - 25 GB"
-msgstr ""
+msgstr "`/` (root) - 25 GB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
@@ -195,6 +195,12 @@ msgid ""
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
+"if allowing for hibernation\n"
+"|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
+"|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
+"|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
+"|more than 64 GB|workload dependent|hibernation not recommended\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
@@ -232,7 +238,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
 #, no-wrap
 msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
-msgstr ""
+msgstr "바이오스 호환 방식의 바이오스 펌웨어와 UEFI 시스템을 갖는 시스템:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
@@ -241,6 +247,8 @@ msgid ""
 "the disk is not formatted, or you have erased all existing partitions from "
 "the disk, the installer will choose the following:"
 msgstr ""
+"만약 디스크가 이미 초기화 되었으면, 파티션 구성표는 유지됩니다. 만약 디스크가 초기화 되지 않거나, 디스크에서 모든 기존 파티션을 "
+"제거하면, 설치자는 다음과 같이 선택 할 것입니다:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
@@ -284,6 +292,8 @@ msgid ""
 "with a MBR, it must be reformated and relabeled. All data currently on the "
 "disk will be lost."
 msgstr ""
+"GPT만 UEFI 시스템에서 허용됩니다. MBR로 초기화된 디스크에서 설치하려면, 다시 초기화 되어야 하고 다시 uefi로 재지정해야 "
+"합니다. 현재 디스크에 있는 모든 자료는 사라집니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83

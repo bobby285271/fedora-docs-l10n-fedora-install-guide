@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-01 21:05+0000\n"
-"PO-Revision-Date: 2021-11-06 08:07+0000\n"
+"PO-Revision-Date: 2021-11-07 16:16+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -251,13 +251,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:78
-#, fuzzy
-#| msgid ""
-#| "Add entries to point clients to their bootloader and the server that "
-#| "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. "
-#| "Because DHCP clients provide the server with identifying information "
-#| "along with their address request, BIOS clients and UEFI clients can each "
-#| "be directed to the correct bootloader."
 msgid ""
 "Add entries to point clients to their bootloader and the server that "
 "provides it to your subnet configuration in `/etc/dhcp/dhcpd.conf`. Because "
@@ -268,10 +261,11 @@ msgid ""
 "dhcpv6-parameters.xhtml#processor-architecture[IANA DHCPv6] registration "
 "page, allows multiple architectures to share a single DHCP server."
 msgstr ""
-"`/etc/dhcp/dhcpd.conf`에 있는 서브넷 구성을 제공하는 이들 부트로더와 서버에"
-"서 클라이언트를 지시하도록 항목을 추가합니다. DHCP 클라이언트는 주소 요청과 "
-"함께 식별 정보를 서버에 제공하기 때문에, 바이오스와 UEFI 클라이언트는 각각 정"
-"확한 부트로더로 연결될 수 있습니다."
+"`/etc/dhcp/dhcpd.conf`에 있는 서브넷 구성을 제공하는 이들 부트로더와 서버에서 클라이언트를 지시하도록 항목을 "
+"추가합니다. DHCP 클라이언트는 주소 요청과 함께 식별 정보를 서버에 제공하기 때문에, 바이오스와 UEFI 클라이언트는 각각 정확한 "
+"부트로더로 연결될 수 있습니다. https://www.iana.org/assignments/dhcpv6-parameters/"
+"dhcpv6-parameters.xhtml#processor-architecture[IANA DHCPv6] 등록 부분에서 찾을 수 있는 "
+"최신 프로세서 구조 옵션 코드를 사용하면, 여러 구조를 단일 DHCP 서버로 공유 할 수 있습니다."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:82
@@ -674,6 +668,12 @@ msgid ""
 "HTTP source via firmware menus. Alternatively, a DHCP server may "
 "automatically provide the required HTTP path."
 msgstr ""
+"HTTP/HTTPS 부트는 셈틀(컴퓨터)이 네트워크를 통해 제공되는 자원에서 직접 부트 할 수 있도록 하는 기술입니다. 서버의 HTTPS "
+"신뢰성과 함께 사용되어 검증 될 때에, HTTP의 사용은 PXE의 TFTP 보다 더 안정적인 전송 원리를 제공합니다. 이와 같은 방식으로 "
+"페도라 설치는 설치 미디어 생성을 방지하고 여러 셈틈(컴퓨터)을 동시에 설치 할 수 있습니다. 페도라의 가상화 해결책과 함께 탑재되는 "
+"EDK2 기반 펌웨어를 포함하여, 현재의 많은 UEFI 구현은 HTTP 원천에서 직접 부트 할 수 있습니다. UEFI 부트 항목은 펌웨어 "
+"메뉴를 통해 HTTP 원천을 지정하여 수동으로 추가 될 수 있습니다. 대안으로, DHCP 서버는 필요한 HTTP 경로를 자동으로 제공 할 "
+"수도 있습니다."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:255
@@ -691,6 +691,9 @@ msgid ""
 "ca-certificates for public mirrors or the local HTTPS boot server's "
 "certificate."
 msgstr ""
+"많은 장비가 HTTP 부트뿐만 아니라 HTTPS 부트도 가능하지만, 이는 먼저 등록된 인증 기관(CA)을 가져야 하는 경우가 많습니다. "
+"CA는 HTTPS 서버에서 제공되는 인증서의 유효성을 검증하는 데 사용됩니다. 이는 공식 미러 또는 로컬 HTTPS 부트 서버의 인증서를 "
+"위해 제공된 페도라에서 적절한 파일 등록에 의해 수행 될 수도 있습니다."
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:260
@@ -705,13 +708,14 @@ msgid ""
 "identical to its configuration for <<pxe-dhcpd,PXE>> except that we need to "
 "amend the option arch conditions for HTTP clients"
 msgstr ""
+"HTTP 부트용 DHCP 서버의 설치와 구성은 HTTP 클라이언트를 위해 옵션 구조 상태를 수정해야 한다는 점을 제외하고 <<pxe-"
+"dhcpd,PXE>>의 구성과 동일합니다"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:265
-#, fuzzy, no-wrap
-#| msgid "...\n"
+#, no-wrap
 msgid "....\n"
-msgstr "...\n"
+msgstr "....\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:286
@@ -738,6 +742,28 @@ msgid ""
 "next-server 192.168.1.2;\n"
 "}\n"
 msgstr ""
+"if option arch = 00:07 {\n"
+"# x64 UEFI\n"
+"filename \"uefi/shim64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
+"} else if option arch = 00:13 {\n"
+"# aarch64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/aarch64/os/images/boot.iso\";\n"
+"} else if option arch = 00:10 {\n"
+"# x64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/boot.iso\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
+"}\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:291

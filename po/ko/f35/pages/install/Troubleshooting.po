@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2021-11-06 08:08+0000\n"
+"PO-Revision-Date: 2021-11-07 16:17+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f35pagesinstalltroubleshooting/ko/>\n"
@@ -64,6 +64,8 @@ msgid ""
 "The #fedora IRC channel on link:++https://libera.chat/++[Libera.Chat] - one "
 "of the main IRC channels used by Fedora users, English only"
 msgstr ""
+"link:++https://libera.chat/++[리베라.대화]에 있는 #fedora IRC 채널 - 영어 전용인 페도라 사용자에 "
+"의해 사용되는 주요 IRC 채널 중의 하나"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:19
@@ -71,6 +73,7 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/++[Fedora Project Wiki] - the official "
 "wiki for Fedora Project"
 msgstr ""
+"link:++https://fedoraproject.org/wiki/++[페도라 프로젝트 위키] - 페도라 프로젝트를 위한 공식 위키"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:21
@@ -78,6 +81,8 @@ msgid ""
 "link:++https://unix.stackexchange.com/++[Stack Exchange] - an English "
 "language Q&A board, not specific to Fedora"
 msgstr ""
+"link:++https://unix.stackexchange.com/++[Stack Exchange] - 페도라만 해당되지 않는 영어 "
+"질문과 답변(Q&A) 게시판"
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:26
@@ -113,7 +118,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:34
 #, no-wrap
 msgid "Log Files Generated During the Installation"
-msgstr ""
+msgstr "설치 중에 로그 파일이 생성되었습니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:37
@@ -149,12 +154,14 @@ msgid ""
 "into `/tmp/anaconda-tb-_identifier_pass:attributes[{blank}]`, where "
 "_identifier_ is a random string."
 msgstr ""
+"만약 설치에 실패하면, 이들 파일에서 메시지가 `/tmp/anaconda-tb-"
+"_identifier_pass:attributes[{blank}]`로 통합되었으며, 여기서 식별자는 임의의 문자열입니다."
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:54
 #, no-wrap
 msgid "Transferring Log Files from the Installation System"
-msgstr ""
+msgstr "설치 시스템에서 로그 파일 전송하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:57
@@ -174,7 +181,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:59
 #, no-wrap
 msgid "Transferring Log Files Onto a USB Drive"
-msgstr ""
+msgstr "USB 드라이브로 로그 파일을 전송"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:62
@@ -184,6 +191,8 @@ msgid ""
 "shell prompt. You will be logged into a root account and you will have "
 "access to the installation program's temporary file system."
 msgstr ""
+"시스템에서 설치 할 때에, kbd:[Ctrl + Alt + F2]를 눌러서 쉘 입력기에 접근하세요. 루트 계정으로 로그인 할 수 있고 "
+"설치 프로그램의 임시 파일 시스템으로 접근 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:64
@@ -204,7 +213,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:71
 msgid "Note the name of the connected device - in the above example, it is `sdb`."
-msgstr ""
+msgstr "연결된 장치의 이름을 기록합니다 - 위의 예제에서, 이는 `sdb`입니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:73
@@ -233,7 +242,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:84
 #, no-wrap
 msgid "# mount /dev/sdb1 /mnt/usb\n"
-msgstr ""
+msgstr "# mount /dev/sdb1 /mnt/usb\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:87
@@ -242,12 +251,14 @@ msgid ""
 "accessing it and listing its contents - the list should match what you "
 "expect to be on the drive."
 msgstr ""
+"당신은 이제 접근하고 이와 같은 내용을 나열에 의하여 올바른 장치와 파티션을 적재했는지 확인 할 수 있습니다 - 목록은 드라이브에서 있을 "
+"것으로 예상하는 것과 일치해야만 합니다."
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:91
 #, no-wrap
 msgid "# cd /mnt/usb\n"
-msgstr ""
+msgstr "# cd /mnt/usb\n"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:96
@@ -273,28 +284,30 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"USB 플래쉬 드라이브를 내려(umount) 놓습니다. 만약 대상이 바쁘다는 것을 말하는 오류가 보이면, 적재 지점 밖으로 동작 중인 "
+"디렉토리를 변경합니다 (예를 들면, `/`)."
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:110
 #, no-wrap
 msgid "# umount /mnt/usb\n"
-msgstr ""
+msgstr "# umount /mnt/usb\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:113
 msgid "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "설치에서 로그 파일은 이제 USB 플래쉬 드라이브에 저장됩니다."
 
 #. type: Title ====
 #: ./pages/install/Troubleshooting.adoc:115
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "네트워크를 통해 로그 파일을 전송하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:120
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "로그 파일이 위치하는 `/tmp` 디렉토리로 전환합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:124
@@ -307,13 +320,13 @@ msgstr ""
 msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
-msgstr ""
+msgstr "[command]#scp# 명령을 사용하여 네트워크에서 다른 시스템에 로그 파일을 복사합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:131
 #, no-wrap
 msgid "# scp *log user@address:path\n"
-msgstr ""
+msgstr "# scp *log user@address:path\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:134
@@ -330,14 +343,14 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:138
 #, no-wrap
 msgid "# scp *log john@192.168.0.122:/home/john/logs/\n"
-msgstr ""
+msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:141
 msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
-msgstr ""
+msgstr "대상 시스템에 처음 연결 할 때에, 다음과 유사한 메시지가 나타날 수 있습니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:148
@@ -349,6 +362,10 @@ msgid ""
 "a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
+"established.`\n"
+"`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Are you sure you want to continue connecting (yes/no)?`\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:152
@@ -363,7 +380,7 @@ msgstr ""
 msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
-msgstr ""
+msgstr "설치에서 로그 파일은 이제 대상 시스템에 영구적으로 저장되고 검토 할 수 있습니다."
 
 #. type: Title ==
 #: ./pages/install/Troubleshooting.adoc:156
@@ -502,7 +519,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:189
 #, no-wrap
 msgid "No Disks Detected"
-msgstr ""
+msgstr "탐지된 디스크가 없습니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:192
@@ -570,19 +587,19 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:211
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "자신의 시스템을 부팅하고 GRUB2 메뉴가 나타날 때까지 기다리세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:213
 msgid "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
-msgstr ""
+msgstr "부트로더 메뉴에서, 강조된 항목에서 이를 편집하기 위해 kbd:[e] 를 눌러주세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:215
 msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
-msgstr ""
+msgstr "`linux`로 시작하는 줄을 찾습니다. 이 줄 끝에서, 다음을 추가합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:219
@@ -595,25 +612,25 @@ msgstr ""
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
-msgstr ""
+msgstr "방금 편집한 선택을 사용하여 시스템을 부팅하려면 kbd:[F10] 나 kbd:[Ctrl + X] 를 누르세요."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:224
 msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
-msgstr ""
+msgstr "한번 시스템을 부팅 하면, 어떤 사용자 이름이나 비밀번호를 입력 할 필요 없이 쉘 입력기가 표시됩니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:228
 #, no-wrap
 msgid "pass:quotes[`sh-4.2#`]\n"
-msgstr ""
+msgstr "pass:quotes[`sh-4.2#`]\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:231
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "설치된 SELinux 정책을 적재합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:235
@@ -624,13 +641,13 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:238
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "다음 명령을 실행하여 자신의 root 파티션을 다시 적재 합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:242
 #, no-wrap
 msgid "sh4.2# mount -o remount,rw /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,rw /\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:245
@@ -656,26 +673,26 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:254
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "이번에는 읽기 전용으로 root 파티션을 다시 적재합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:258
 #, no-wrap
 msgid "sh4.2# mount -o remount,ro /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,ro /\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:261
 msgid ""
 "Reboot the system. From now on, you will be able to log in as the root user "
 "using the new password set up during this procedure."
-msgstr ""
+msgstr "시스템을 재시작합니다. 이제부터, 이와 같은 절차에서 설정한 신규 비밀번호를 사용하여 루트 사용자로 로그인 할 수 있습니다."
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:263
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "자신의 레이드 카드로 부팅 할 수 없나요?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:266
@@ -727,7 +744,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:276
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "그래픽 부트 임시적으로 비활성화하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:278
@@ -762,7 +779,7 @@ msgstr ""
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
-msgstr ""
+msgstr "kbd:[F10] 또는 kbd:[Ctrl + X] 를 눌러서 편집된 선택으로 자신의 시스템을 부팅합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:286
@@ -782,13 +799,13 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:289
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "[command]#su -# 명령을 사용하여 `root` 계정으로 로그인합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:293
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:296
@@ -813,28 +830,32 @@ msgid ""
 ":) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
 "quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:306
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "이 줄에서`rhgb` 선택을 삭제합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:308
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "편집된 구성 파일을 저장합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:310
 msgid "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "다음 명령을 실행에 의해 부트로더 구성을 새롭게 합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:314
 #: ./pages/install/Troubleshooting.adoc:430
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:317
@@ -885,27 +906,27 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:327
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "기본 설정으로 그래픽 로그인 설정하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:329
 msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
-msgstr ""
+msgstr "쉘 입력기를 엽니다. 만약 자신의 사용자 계정이라면, [command]#su -# 명령을 입력하여 root로 변경합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:331
 msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
-msgstr ""
+msgstr "기본 설정 대상을 `graphical.target`으로 변경합니다. 이와 같이 하려면, 다음 명령을 실행합니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:335
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:338
@@ -920,7 +941,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:342
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:345
@@ -934,7 +955,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:347
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "그래픽 사용자 연결장치가 존재하지 않습니다"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:350
@@ -959,7 +980,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:353
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "사용자 로그인 후 X 서버 충돌"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:356
@@ -974,7 +995,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:360
 #, no-wrap
 msgid "$ [command]#df -h#\n"
-msgstr ""
+msgstr "$ [command]#df -h#\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:363
@@ -1022,7 +1043,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:383
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "램이 인식되지 않나요?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:386
@@ -1074,12 +1095,14 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"만약 자신의 메모리에 문제가 없다고 확신한다면, [option]#mem=# 커널 선택을 사용하여 수동으로 메모리 양을 설정해 볼 수 "
+"있습니다."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:400
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "수동으로 메모리 구성하기"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:406
@@ -1094,13 +1117,13 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:421
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
-msgstr ""
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:413
 #: ./pages/install/Troubleshooting.adoc:424
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
-msgstr ""
+msgstr "_ xx_를 메가바이트 단위의 램 용량으로 교체합니다."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:417
@@ -1125,7 +1148,7 @@ msgstr ""
 msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
-msgstr ""
+msgstr "`/etc/default/grub`에서, 위의 예제는 다음과 유사한 모습을 보입니다:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:443
