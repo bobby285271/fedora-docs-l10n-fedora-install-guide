@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2021-11-07 16:23+0000\n"
+"PO-Revision-Date: 2021-11-07 16:26+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -96,6 +96,14 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"[application]*dnf sistem yükseltme* kullanmak yerine, Fedora'nın en son "
+"sürümüne elle yükseltebilirsiniz. Bu, kurucuyu baştan bir kurulum yapıyormuş "
+"gibi önyüklemeyi, mevcut Fedora sisteminizi algılamasını sağlamayı ve diğer "
+"bölümler ve birimlerdeki verilere dokunmadan kök bölümünün üzerine yazmayı "
+"içermektedir. Aynı işlem gerekirse sistemi yeniden kurmak için de "
+"kullanılabilir. Ayrıntılı bilgi için xref:advanced/"
+"Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall["
+"Elle Sistem Yükseltme veya Yeniden Kurulum] bölümüne bakın."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:21
@@ -103,12 +111,14 @@ msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
 msgstr ""
+"Hangi yöntemi seçerseniz seçin, sisteminizi yükseltmeden veya yeniden "
+"kurmadan önce her zaman verilerinizi yedekleyin."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Önyükleme Ortamını Hazırlama"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -116,12 +126,15 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora kalıpları `Hibrit ISO` kalıplarıdır ve hem BIOS hem de UEFI "
+"sistemlerinde önyükleme yapmak için, optik ve USB disklerle kurulum ortamı "
+"oluşturmakta kullanılabilir."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writer"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -134,6 +147,13 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer* önemli ölçüde iyileştirildi ve artık "
+"resmi, test edilmiş ve desteklenen önyüklenebilir ortam oluşturma yoludur. "
+"[application]*Fedora Media Writer* Linux, macOS ve Windows'u "
+"desteklemektedir. Fedora'yı (veya diğer işletim sistemlerini) kurmak için "
+"önyüklenebilir USB ortamı oluşturmanın kolay bir yoludur. Diğer USB ortam "
+"oluşturma programları da düzgün çalışmaktadır, bununla birlikte "
+"[application]*Fedora Media Writer* kullanılması şiddetle önerilir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:34
@@ -144,6 +164,11 @@ msgid ""
 "the button below _Custom image_. This offers a selection of various Fedora "
 "Spins, such as Xfce or Mate."
 msgstr ""
+"[application]*Fedora Media Writer* için yeni özelliklerden bazıları, Fedora "
+"Workstation ve Server sürümlerinin ana ekrandaki seçimden kolay ve hızlı bir "
+"şekilde erişilebilir olmasıdır. _Özel kalıp_ seçeneğinin altındaki düğmeyi "
+"seçerseniz kullanılabilir başka seçenekler de bulunmaktadır. Burada Xfce "
+"veya Mate gibi çeşitli Fedora Spin seçenekleri sunulmaktadır."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:36
@@ -154,6 +179,11 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Tarihsel olarak, yaygın USB oluşturma araçları, [application]*Unetbootin* "
+"gibi, optik ortamlar için tasarlanan ISO'lardan USB kurucular oluşturmanın "
+"popüler bir yoludur. Genellikle kalıptan dosyaları çıkararak ve "
+"[application]*syslinux* önyükleyicisini aygıta yazarak USB sürücüde bir "
+"dosya sistemi oluştururlar."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -163,6 +193,10 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Bu yöntemler, SecureBoot etkinleştirilmiş UEFI sistemlerinin yanı sıra BIOS "
+"sistemlerinde de önyükleme yapmak üzere bölümlendirilmiş ve tasarlanmış olan "
+"Fedora kalıplarındaki önyükleyici ayarlarını atlar ve bu nedenle Fedora "
+"kalıpları ile, özellikle UEFI sistemlerinde tutarlı sonuçlar vermezler."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
@@ -170,6 +204,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"En iyi sonuçlar, doğrudan yazma yöntemi kullanan ve Fedora kalıbını "
+"değiştirmeyen programlar tarafından üretilmektedir."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -180,18 +216,23 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Kalıbı aygıta yazmadan önce her zaman iki kere düşünün. Bu makalede "
+"açıklanan ortam oluşturma yöntemleri yok edicidir.  İşlem sırasında USB "
+"bellekteki tüm veriler silinir, bu nedenle USB bellekteki verilerin "
+"yedeklendiğinden emin olun. Kalıbı yazmak için doğru aygıtı seçtiğinizi iki "
+"kere denetleyin!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writer'ı kurma ve çalıştırma"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "Fedora'da"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -199,28 +240,30 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"Fedora 25 veya sonrasında, [application]*Fedora Media Writer* öntanımlı "
+"depoda bulunmaktadır. Paketi kurmak için `dnf` kullanabilirsiniz."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
 msgid "To install the [application]*Fedora Media Writer* using:"
-msgstr ""
+msgstr "[application]*Fedora Media Writer*'ı kurmak için:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:59
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:62
 msgid "Run the [application]*Fedora Media Writer*:"
-msgstr ""
+msgstr "[application]*Fedora Media Writer*'ı çalıştırın:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:66
 #, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:69
