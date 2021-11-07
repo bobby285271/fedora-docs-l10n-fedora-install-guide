@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2021-11-06 08:07+0000\n"
+"PO-Revision-Date: 2021-11-07 16:16+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -35,6 +35,10 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]."
 msgstr ""
+"Lampiran ini menjelaskan perintah dan opsi yang tersedia di instalasi "
+"Kickstart. Untuk informasi umum tentang Kickstart, lihat xref:../advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Mengotomatiskan "
+"Instalasi dengan Kickstart]."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:14
@@ -44,6 +48,10 @@ msgid ""
 "device node name (such as `sda`), you can instead use any item from `/dev/"
 "disk`. For example, instead of:"
 msgstr ""
+"Nama perangkat tidak dijamin konsisten di seluruh reboot, yang dapat "
+"memperumit penggunaan dalam skrip Kickstart. Saat opsi Kickstart memanggil "
+"nama node perangkat (seperti `sda`), Anda dapat menggunakan item apa pun "
+"dari `/dev/disk`. Misalnya, alih-alih:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:18
@@ -55,6 +63,7 @@ msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:21
 msgid "You could use an entry similar to one of the following:"
 msgstr ""
+"Anda dapat menggunakan entri yang mirip dengan salah satu dari berikut ini:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:26
@@ -72,6 +81,9 @@ msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
 msgstr ""
+"Ini memberikan cara yang konsisten untuk merujuk ke disk yang lebih bermakna "
+"daripada hanya `sda`. Ini sangat berguna di lingkungan penyimpanan yang "
+"besar."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:34
@@ -84,6 +96,12 @@ msgid ""
 "in syntax between Fedora{nbsp}{PREVVER} and {PRODVER}, use the following "
 "command:"
 msgstr ""
+"Sementara prinsip umum instalasi Kickstart cenderung tetap sama, perintah "
+"dan opsi dapat berubah di antara rilis utama. Anda dapat menggunakan "
+"perintah [command]#ksverdiff# untuk menampilkan perbedaan antara dua versi "
+"sintaks Kickstart. Ini berguna saat memperbarui file Kickstart yang ada "
+"untuk digunakan dengan rilis baru. Untuk menampilkan daftar perubahan "
+"sintaks antara Fedora{nbsp}{PREVVER} dan {PRODVER}, gunakan perintah berikut:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:38
@@ -101,6 +119,13 @@ msgid ""
 "system - the version of [package]*pykickstart* on Fedora{nbsp}{PREVVER} can "
 "not display changes in Fedora{nbsp}{PRODVER}."
 msgstr ""
+"Opsi [option]#-f# menentukan rilis untuk memulai perbandingan, dan opsi "
+"[option]#-t# untuk menentukan rilis yang akan diakhiri. Untuk informasi "
+"tambahan, lihat halaman manual `ksverdiff(1)`. Perhatikan juga bahwa Anda "
+"tidak dapat menggunakan ini untuk menampilkan perubahan dalam rilis yang "
+"lebih baru dari sistem Anda - versi [paket]*pykickstart* di "
+"Fedora{nbsp}{PREVVER} tidak dapat menampilkan perubahan di "
+"Fedora{nbsp}{PRODVER} ."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:43
@@ -109,6 +134,9 @@ msgid ""
 "Notes_, available at link:++http://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Selain itu, Anda dapat meninjau [citetitle]_Fedora{nbsp}{PRODVER} Catatan "
+"Rilis_, tersedia di link:++https://docs.fedoraproject.org/++[], untuk daftar "
+"perubahan."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:48
@@ -117,12 +145,15 @@ msgid ""
 "a value must be specified after it. In the example commands, options in "
 "square brackets (`[ ]`) are optional arguments for the command."
 msgstr ""
+"Di bagian berikut, jika opsi diikuti dengan tanda sama dengan (`=`), nilai "
+"harus ditentukan setelahnya. Dalam contoh perintah, opsi dalam tanda kurung "
+"siku (`[ ]`) adalah argumen opsional untuk perintah tersebut."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:52
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr ""
+msgstr "Metode dan Sumber Instalasi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:55
@@ -133,7 +164,7 @@ msgstr "Perintah berikut mengontrol bagaimana Fedora akan diinstal."
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:57
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr ""
+msgstr "perangkat (opsional) - Instal Driver Perangkat Ekstra"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:60
@@ -144,6 +175,11 @@ msgid ""
 "command, which tells the installation program to install extra modules, uses "
 "the following format:"
 msgstr ""
+"Pada kebanyakan sistem PCI, program instalasi akan secara otomatis "
+"mendeteksi kartu Ethernet dan SCSI. Namun, pada sistem yang lebih lama dan "
+"beberapa sistem PCI, Kickstart memerlukan petunjuk untuk menemukan perangkat "
+"yang tepat. Perintah [command]#device#, yang memberitahu program instalasi "
+"untuk menginstal modul tambahan, menggunakan format berikut:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:64
@@ -156,7 +192,7 @@ msgstr "[command]#device _moduleName_ [--opts=]#\n"
 msgid ""
 "Replace _moduleName_ with the name of the kernel module which should be "
 "installed."
-msgstr ""
+msgstr "Ganti _moduleName_ dengan nama modul kernel yang harus diinstal."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:68
@@ -167,7 +203,7 @@ msgstr "[option]#--opts=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:69
 msgid "Options to pass to the installed kernel module. For example:"
-msgstr ""
+msgstr "Opsi untuk diteruskan ke modul kernel yang diinstal. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:72
@@ -179,7 +215,7 @@ msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:75
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr ""
+msgstr "driverdisk (opsional) - Gunakan Disk Driver"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:78
@@ -190,6 +226,12 @@ msgid ""
 "Then, you must use the [command]#driverdisk# command to specify that the "
 "installation program should look for a driver disk and its location."
 msgstr ""
+"Disk driver dapat digunakan selama instalasi Kickstart untuk menyediakan "
+"driver tambahan yang tidak disertakan secara default. Anda harus menyalin "
+"konten disk driver ke direktori root partisi pada hard drive sistem. "
+"Kemudian, Anda harus menggunakan perintah [command]#driverdisk# untuk "
+"menentukan bahwa program penginstalan harus mencari disk driver dan "
+"lokasinya."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:82
@@ -201,7 +243,7 @@ msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
 #, no-wrap
 msgid "_partition_"
-msgstr ""
+msgstr "_partition_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:85
@@ -210,6 +252,9 @@ msgid ""
 "with the name of the partition containing the driver disk. Note that the "
 "partition must be specified as a full path. For example:"
 msgstr ""
+"Cari gambar disk driver di partisi lokal. Ganti _partition_ dengan nama "
+"partisi yang berisi disk driver. Perhatikan bahwa partisi harus ditentukan "
+"sebagai path lengkap. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:89
@@ -229,6 +274,7 @@ msgid ""
 "Search for the driver disk in a network location instead of a local "
 "partition. For example:"
 msgstr ""
+"Cari disk driver di lokasi jaringan, bukan di partisi lokal. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:96
@@ -257,7 +303,7 @@ msgstr "[option]#--biospart=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:109
 msgid "BIOS partition containing the driver disk (for example, `82p2`)."
-msgstr ""
+msgstr "Partisi BIOS yang berisi disk driver (misalnya, `82p2`)."
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:111
