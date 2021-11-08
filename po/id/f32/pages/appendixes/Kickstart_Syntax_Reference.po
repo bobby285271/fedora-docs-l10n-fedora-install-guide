@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-11-07 16:16+0000\n"
+"PO-Revision-Date: 2021-11-08 19:29+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -306,7 +306,7 @@ msgstr "Partisi BIOS yang berisi disk driver (misalnya, `82p2`)."
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:113
 #, no-wrap
 msgid "install (required) - Configure Installation Method"
-msgstr ""
+msgstr "install (wajib) - Konfigurasi Metode Instalasi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:116
@@ -316,6 +316,10 @@ msgid ""
 "[command]#install# command and the installation method command must be on "
 "separate lines. For example:"
 msgstr ""
+"Modus instalasi default. Anda harus menentukan jenis instalasi dari `cdrom`, "
+"`harddrive`, `nfs`, `liveimg`, atau `url`. Perintah [command]#install# dan "
+"perintah metode instalasi harus berada pada baris yang terpisah. Sebagai "
+"contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:122
@@ -330,7 +334,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:126
 msgid "The installation method commands are:"
-msgstr ""
+msgstr "Perintah metode instalasi adalah:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:127
@@ -341,7 +345,7 @@ msgstr "[command]#cdrom#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:128
 msgid "Install from the first optical (DVD) drive on the system."
-msgstr ""
+msgstr "Instal dari drive optik (DVD) pertama pada sistem."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:129
@@ -357,6 +361,10 @@ msgid ""
 "installation environment. Supported file systems are `ext2`, `ext3`, `ext4`, "
 "`vfat`, or `xfs`."
 msgstr ""
+"Instal dari pohon atau gambar ISO instalasi penuh pada hard drive lokal. "
+"Gambar pohon atau ISO harus berada pada sistem file yang dapat dipasang di "
+"lingkungan instalasi. Sistem file yang didukung adalah `ext2`, `ext3`, `ext4`"
+", `vfat`, atau `xfs`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:136
@@ -377,7 +385,7 @@ msgstr "[option]#--partition=#:"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:140
 msgid "Partition to install from (such as `sdb2`)."
-msgstr ""
+msgstr "Partisi untuk menginstal (seperti `sdb2`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:141
@@ -388,7 +396,7 @@ msgstr "[option]#--biospart=#:"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:142
 msgid "BIOS partition to install from (such as `82p2`)."
-msgstr ""
+msgstr "Partisi BIOS untuk menginstal (seperti `82p2`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:143
@@ -401,7 +409,7 @@ msgstr "[option]#--dir=#:"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:144
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:178
 msgid "Directory containing the installation tree or ISO image."
-msgstr ""
+msgstr "Direktori yang berisi pohon instalasi atau citra ISO."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:145
@@ -417,6 +425,10 @@ msgid ""
 "installation media can mount. Supported file systems are `ext2`, `ext3`, "
 "`ext4`, `vfat`, and `xfs`."
 msgstr ""
+"Instal dari gambar disk alih-alih paket. Gambar dapat berupa file `squashfs."
+"img` dari gambar ISO langsung, atau sistem file apa pun yang dapat dipasang "
+"oleh media instalasi. Sistem file yang didukung adalah `ext2`, `ext3`, `ext4`"
+", `vfat`, dan `xfs`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:148
@@ -425,6 +437,9 @@ msgid ""
 "system. In that case, the file name must end with `.tar`, `.tbz`, `.tgz`, `."
 "txz`, `.tar.bz2`, `tar.gz`, or `tar.xz`."
 msgstr ""
+"Perintah ini juga mendukung instalasi dari arsip tar dari sistem file root. "
+"Dalam hal ini, nama file harus diakhiri dengan `.tar`, `.tbz`, `.tgz`, `.txz`"
+", `.tar.bz2`, `tar.gz`, atau `tar.xz`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:154
@@ -449,13 +464,15 @@ msgid ""
 "The location to install from. Supported protocols are `HTTP`, `HTTPS`, "
 "`FTP`, and `file`."
 msgstr ""
+"Lokasi untuk menginstal dari. Protokol yang didukung adalah `HTTP`, `HTTPS`, "
+"`FTP`, dan `file`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:159
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:195
 #, no-wrap
 msgid "[option]#--proxy=#:"
-msgstr ""
+msgstr "[opsi]#--proxy=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:160
@@ -464,12 +481,14 @@ msgid ""
 "Specify an `HTTP`, `HTTPS` or `FTP` proxy to use while performing the "
 "installation."
 msgstr ""
+"Tentukan proxy `HTTP`, `HTTPS`, atau `FTP` untuk digunakan saat melakukan "
+"penginstalan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:161
 #, no-wrap
 msgid "[option]#--checksum=#:"
-msgstr ""
+msgstr "[option]#--checksum=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:162
@@ -479,26 +498,30 @@ msgid ""
 "Project, you can find a list of checksums at link:++https://fedoraproject."
 "org/en/verify++[]."
 msgstr ""
+"Argumen opsional dengan checksum `SHA256` dari file gambar, digunakan untuk "
+"verifikasi integritas. Jika Anda menggunakan gambar langsung yang disediakan "
+"oleh Proyek Fedora, Anda dapat menemukan daftar checksum di "
+"tautan:++https://fedoraproject.org/en/verify++[]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:163
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:197
 #, no-wrap
 msgid "[option]#--noverifyssl#:"
-msgstr ""
+msgstr "[option]#--noverifyssl#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:164
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:198
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:252
 msgid "Disable SSL verification when connecting to an `HTTPS` server."
-msgstr ""
+msgstr "Nonaktifkan verifikasi SSL saat menghubungkan ke server `HTTPS`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:165
 #, no-wrap
 msgid "[command]#nfs#"
-msgstr ""
+msgstr "[command]#nfs#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:166
@@ -507,6 +530,9 @@ msgid ""
 "full installation ISO image (such as the {PRODUCT} Server DVD) or its "
 "extracted contents."
 msgstr ""
+"Instal dari server `NFS` yang ditentukan. Server NFS harus mengekspor image "
+"ISO penginstalan penuh (seperti DVD Server {PRODUCT}) atau konten yang "
+"diekstraksi."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:172
@@ -515,17 +541,19 @@ msgid ""
 "[command]#install#\n"
 "[command]#nfs --server=  [--dir=] [--opts= ]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#nfs --server=  [--dir=] [--opts= ]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:175
 #, no-wrap
 msgid "[option]#--server=#:"
-msgstr ""
+msgstr "[option]#--server=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:176
 msgid "Host name of the server."
-msgstr ""
+msgstr "Nama host server."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:179
@@ -536,18 +564,18 @@ msgstr "[option]#--opts=#:"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:180
 msgid "Mount options to use for mounting the `NFS` export."
-msgstr ""
+msgstr "Opsi pemasangan yang akan digunakan untuk memasang ekspor `NFS`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:181
 #, no-wrap
 msgid "[command]#url#"
-msgstr ""
+msgstr "[command]#url#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:182
 msgid "Install from a tree on a remote server via `HTTP`, `HTTPS`, or `FTP`."
-msgstr ""
+msgstr "Instal dari pohon di server jauh melalui `HTTP`, `HTTPS`, atau `FTP`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:188
@@ -556,6 +584,8 @@ msgid ""
 "[command]#install#\n"
 "[command]#url --url= | --mirrorlist= [--proxy= | --noverifyssl]#\n"
 msgstr ""
+"[command]#install#\n"
+"[command]#url --url= | --mirrorlist= [--proxy= | --noverifyssl]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:192
@@ -563,23 +593,25 @@ msgid ""
 "The location to install from. Supported protocols are `http`, `https`, "
 "`ftp`, and `file`."
 msgstr ""
+"Lokasi untuk menginstal dari. Protokol yang didukung adalah `http`, `https`, "
+"`ftp`, dan `file`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:193
 #, no-wrap
 msgid "[option]#--mirrorlist=#:"
-msgstr ""
+msgstr "[option]#--mirrorlist=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:194
 msgid "The mirror URL to install from."
-msgstr ""
+msgstr "URL cermin untuk menginstal dari."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:200
 #, no-wrap
 msgid "mediacheck (optional) - Verify Installation Media Integrity"
-msgstr ""
+msgstr "mediacheck (opsional) - Verifikasi Integritas Media Instalasi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:203
@@ -595,7 +627,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:205
 #, no-wrap
 msgid "ostreesetup (optional) - Install from an OSTree"
-msgstr ""
+msgstr "ostreesetup (opsional) - Instal dari OSTree"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:208
