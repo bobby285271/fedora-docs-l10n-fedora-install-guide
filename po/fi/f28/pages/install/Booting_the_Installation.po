@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-11-08 23:03+0000\n"
+"PO-Revision-Date: 2021-11-10 05:16+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f28pagesinstallbooting_the_installation/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 #. type: Title =
 #: ./pages/install/Booting_the_Installation.adoc:6
@@ -68,6 +68,13 @@ msgid ""
 "on an UEFI system in UEFI mode, and then switch it to BIOS compatibility "
 "mode, {PRODUCT} will no longer boot and will require a reinstallation."
 msgstr ""
+"BIOS- ja UEFI-järjestelmille ei ole olemassa erillisiä asennusmedioita. "
+"Kaikki niistä voidaan käynnistää samasta ISO-levykuvasta. Sen jälkeen kun "
+"{PRODUCT} on asennettu, et voi kuitenkaan vaihtaa UEFI:n ja BIOSin välillä. "
+"Järjestelmää on ajettava samalla laiteohjelmistolla, johon se asennettiin; "
+"Jos esimerkiksi suoritat asennuksen UEFI-järjestelmään UEFI-tilassa ja "
+"vaihdat sen sitten BIOS-yhteensopivuustilaan, {PRODUCT} ei enää käynnisty ja "
+"se vaatii uudelleenasennuksen."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:26
@@ -87,6 +94,11 @@ msgid ""
 "specifications will not be available. The UEFI specifications are available "
 "from link:++http://www.uefi.org/specs/agreement/++[]."
 msgstr ""
+"Huomaa myös, että {PRODUCT} tukee täysin vain UEFI-määrityksen versiota 2.2. "
+"Laitteisto, joka tukee versiota 2.3 tai uudempaa, käynnistyy ja toimii "
+"normaalisti, mutta näiden myöhempien teknisten tietojen määrittelemät "
+"lisätoiminnot eivät ole käytettävissä. UEFI-spesifikaatiot ovat saatavilla "
+"sivulta link:++https://www.uefi.org/specs/agreement/++[]."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:32
@@ -124,6 +136,7 @@ msgstr ""
 #, no-wrap
 msgid "Press F12 to select boot device, or Del to enter SETUP\n"
 msgstr ""
+"Paina F12 valitaksesi käynnistyslaitteen tai Del siirtyäksesi ASETUKSIIN\n"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:44
@@ -135,6 +148,12 @@ msgid ""
 "there is usually a very short time window provided to access the menu; once "
 "it passes, you need to restart the system and try again."
 msgstr ""
+"Noudata näytön ohjeita päästäksesi käynnistysvalikkoon. Jos ohjeita ei "
+"näytetä (jotkut järjestelmät näyttävät vain graafisen logon käynnistyksen "
+"alkuvaiheessa), yritä painaa useita kertoja kbd:[F12], kbd:[F11], kbd:[F10] "
+"tai kbd:[Del]. Nämä ovat yleisimmin käytettyjä avaimia. Huomaa, että "
+"valikkoon pääsemiseen on yleensä hyvin lyhyt aika; kun se menee ohi, sinun "
+"on käynnistettävä järjestelmä uudelleen ja yritettävä uudelleen."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:49
