@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2021-11-07 16:17+0000\n"
+"PO-Revision-Date: 2021-11-10 05:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/f35pagesadvancedboot_options/id/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 #. type: Title =
 #: ./pages/advanced/Boot_Options.adoc:5
@@ -37,6 +37,15 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server])."
 msgstr ""
+"Installer [application]*Anaconda* menyertakan berbagai opsi boot untuk "
+"administrator, yang mengubah perilaku default program instalasi dengan "
+"mengaktifkan atau menonaktifkan fungsi tertentu. Untuk menggunakan satu atau "
+"lebih opsi boot, Anda harus melakukan boot dari media instalasi dan "
+"menambahkan opsi ini di menu boot (lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Boot]), atau Anda harus "
+"menambahkannya ke dalam file konfigurasi server PXE Anda jika Anda boot dari "
+"jaringan (lihat xref:advanced/Network_based_Installations.adoc#chap-pxe-"
+"server-setup[Menyiapkan Server Instalasi])."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:10
@@ -119,6 +128,17 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server] if you are booting from a server."
 msgstr ""
+"Cara yang tepat untuk menentukan opsi boot kustom berbeda berdasarkan "
+"arsitektur sistem Anda, firmware, dan metode yang Anda gunakan untuk "
+"melakukan boot instalasi. Jika Anda melakukan booting dari media lokal, Anda "
+"dapat menentukan opsi di menu boot, sebelum Anda memulai instalasi; jika "
+"Anda melakukan booting dari jaringan menggunakan server PXE, Anda harus "
+"menambahkan opsi boot ke dalam file konfigurasi boot loader sebelum Anda mem-"
+"boot sistem instalasi. Untuk instruksi spesifik, lihat xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Menu Booting] jika Anda boot "
+"dari media lokal, dan xref:advanced/Network_based_Installations.adoc#chap-"
+"pxe-server-setup[Menyiapkan sebuah Server Instalasi] jika Anda melakukan "
+"booting dari server."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:32
@@ -194,6 +214,8 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
 msgstr ""
+"Opsi ini memungkinkan konfigurasi metode instalasi berbeda menggunakan "
+"format yang berbeda. Sintaksnya dijelaskan pada tabel di bawah ini."
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:57
@@ -386,6 +408,9 @@ msgid ""
 "installation. Updating drivers which are not essential during the "
 "installation should always be performed after the system is installed."
 msgstr ""
+"Anda tidak boleh melakukan pembaruan driver selama penginstalan kecuali jika "
+"driver bermasalah dan menghalangi Anda untuk menyelesaikan penginstalan. "
+"Memperbarui driver harus selalu dilakukan setelah sistem diinstal."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:110
@@ -414,6 +439,15 @@ msgid ""
 "`Installation Source` screen immediately without having to wait for the "
 "initial configuration to finish."
 msgstr ""
+"Normalnya saat Anda pertama kali masuk ke layar `Installation Summary`, "
+"program instalasi akan mencoba melakukan konfigurasi sumber instalasi "
+"berdasarkan jenis media yang Anda gunakan untuk boot. DVD Server {PRODUCT} "
+"lengkap akan melakukan konfigurasi sumber sebagai media lokal, image ISO "
+"netinst akan melakukan konfigurasi mirror jaringan terdekat, dll. Proses ini "
+"membutuhkan waktu; oleh karena itu, jika Anda berencana untuk menggunakan "
+"sumber yang berbeda dari default, opsi ini akan memungkinkan Anda untuk "
+"segera masuk ke layar `Sumber Instalasi` tanpa harus menunggu konfigurasi "
+"awal selesai."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:115
@@ -450,6 +484,10 @@ msgid ""
 "[option]#inst.repo=#. See xref:tabl-boot-options-sources[Installation "
 "Sources] for valid formats."
 msgstr ""
+"Berikan lokasi file Kickstart yang akan digunakan untuk instalasi otomatis. "
+"Lokasi dapat ditentukan menggunakan salah satu format yang valid untuk "
+"[option]#inst.repo=#. Lihat xref:tabl-boot-options-sources[Sumber Instalasi] "
+"untuk format yang valid."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:122
@@ -459,6 +497,10 @@ msgid ""
 "this option without specifying a device, the installation program will use "
 "the following:"
 msgstr ""
+"Jika Anda hanya menentukan perangkat dan bukan jalurnya, program instalasi "
+"akan mencari file Kickstart di `/ks.cfg` pada perangkat yang ditentukan. "
+"Jika Anda menggunakan opsi ini tanpa menentukan perangkat, program instalasi "
+"akan menggunakan:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:126
@@ -777,6 +819,12 @@ msgid ""
 "as described in xref:sect-boot-options-vnc[Enabling Remote Access Using "
 "VNC]."
 msgstr ""
+"Atur program instalasi untuk berjalan dalam mode teks alih-alih mode grafis. "
+"Antarmuka pengguna teks terbatas, misalnya, tidak memungkinkan Anda untuk "
+"mengubah tata letak partisi atau mengatur LVM. Saat memasang sistem pada "
+"mesin dengan kemampuan grafis terbatas, disarankan untuk menggunakan VNC "
+"seperti yang dijelaskan dalam xref:sect-boot-options-vnc[Mengaktifkan Akses "
+"Jarak Jauh Menggunakan VNC]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:191
@@ -791,6 +839,9 @@ msgid ""
 "not allow any interaction, all options must be specified in a Kickstart file "
 "or on the command line."
 msgstr ""
+"Paksa program instalasi untuk berjalan dalam mode baris perintah. Mode ini "
+"tidak mengizinkan interaksi apa pun, semua opsi harus ditentukan dalam file "
+"Kickstart atau pada baris perintah."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:193
@@ -821,6 +872,10 @@ msgid ""
 "screen width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
+"Tentukan resolusi layar dalam mode grafis. Formatnya adalah "
+"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, dengan _N_ adalah "
+"lebar layar dan _M_ adalah tinggi layar (dalam piksel). Resolusi terendah "
+"yang didukung adalah `800x600`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:197
@@ -929,6 +984,11 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
 "(optional) - Restrict ssh Access During Installation]."
 msgstr ""
+"Selama instalasi, akun `root` tidak memiliki kata sandi secara default. Anda "
+"dapat mengatur kata sandi root untuk digunakan selama instalasi dengan "
+"perintah [command]#sshpw# Kickstart seperti yang dijelaskan dalam xref:"
+"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw["
+"sshpw (optional) - Batasi Akses ssh Selama Instalasi]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:220
@@ -960,6 +1020,11 @@ msgid ""
 "networking is also available in the [citetitle]_{PRODUCT} Networking Guide_, "
 "available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Inisialisasi jaringan awal ditangani oleh [aplikasi]*dracut*. Bagian ini "
+"hanya mencantumkan beberapa opsi yang lebih umum digunakan; untuk daftar "
+"lengkapnya, lihat halaman manual `dracut.cmdline(7)`. Informasi tambahan "
+"tentang jaringan juga tersedia di [citetitle]_{PRODUCT} Networking Guide_, "
+"tersedia di link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:227
@@ -1080,6 +1145,9 @@ msgid ""
 "address. `IPv6` addresses can be specified by putting them in square "
 "brackets, for example, `[2001:DB8::1]`."
 msgstr ""
+"Dalam tabel di atas, parameter _ip_ menentukan alamat IP klien. Alamat `IPv6`"
+" dapat ditentukan dengan menempatkannya dalam tanda kurung siku, misalnya, "
+"`[2001:DB8::1]`."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:268
@@ -1209,6 +1277,8 @@ msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` "
 "interface. The _name_ can take the following forms:"
 msgstr ""
+"Di atas akan menyiapkan perangkat VLAN bernama `vlan5` pada antarmuka `em1`. "
+"_name_ dapat mengambil bentuk berikut:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:296
@@ -1353,6 +1423,12 @@ msgid ""
 "will be installed in multiple variants, while the latter will only be "
 "installed in variants specifically required."
 msgstr ""
+"Ini hanya berlaku untuk paket yang ditentukan secara langsung di bagian "
+"`%packages`. Jika sebuah paket hanya diinstal sebagai dependensi, hanya "
+"dependensi yang ditentukan persis yang akan diinstal. Misalnya, jika Anda "
+"menginstal paket [paket]*foo* yang bergantung pada paket [paket]*bar*, yang "
+"pertama akan diinstal dalam beberapa varian, sedangkan yang terakhir hanya "
+"akan diinstal dalam varian yang secara khusus diperlukan."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:333
@@ -1368,6 +1444,10 @@ msgid ""
 "meaningless on UEFI-based systems, unless they are in BIOS compatibility "
 "mode."
 msgstr ""
+"Atur program instalasi untuk menginstal informasi partisi ke dalam GUID "
+"Partition Table (GPT) daripada Master Boot Record (MBR). Opsi ini tidak ada "
+"artinya pada sistem berbasis UEFI, kecuali jika mereka berada dalam mode "
+"kompatibilitas BIOS."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:336
@@ -1378,6 +1458,11 @@ msgid ""
 "change this behavior, allowing a GPT to be written even to disks smaller "
 "than 2 TB."
 msgstr ""
+"Biasanya, sistem berbasis BIOS dan sistem berbasis UEFI dalam mode "
+"kompatibilitas BIOS akan mencoba menggunakan skema MBR untuk menyimpan "
+"informasi partisi, kecuali jika disk lebih besar dari 2 TB. Menggunakan opsi "
+"ini akan mengubah perilaku ini, memungkinkan GPT untuk ditulis bahkan ke "
+"disk yang lebih kecil dari 2 TB."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:338
@@ -1516,6 +1601,15 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-kdump[%addon "
 "com_redhat_kdump (optional) - Configure kdump] Kickstart command."
 msgstr ""
+"Aktifkan add-on instalasi [application]*Kdump* `on` atau `off` (add-on "
+"dinonaktifkan secara default). Jika Anda menggunakan [option]#inst."
+"kdump_addon=on#, layar baru, yang memungkinkan Anda untuk mengkonfigurasi "
+"mekanisme dumping crash kernel [application]*Kdump*, akan muncul di menu "
+"utama antarmuka grafis atau teks (lihat xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-kdump[Kdump]). "
+"Mengaktifkan add-on ini juga diperlukan untuk menggunakan perintah xref:"
+"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-kdump["
+"%addon com_redhat_kdump (opsional) - Konfigurasi kdump] Kickstart."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:360
@@ -1550,6 +1644,11 @@ msgid ""
 "installation program. `VNC` sharing is enabled, so multiple clients can "
 "connect to the system at the same time."
 msgstr ""
+"Menyatakan bahwa antarmuka grafis program instalasi mesti dijalankan dalam "
+"suatu sesi `VNC`. Bila Anda menyatakan opsi ini, Anda perlu menyambung ke "
+"sistem memakai aplikasi klien `VNC`agar dapat berinteraksi dengan program "
+"instalasi. Berbagi `VNC` difungsikan, sehingga beberapa klien dapat "
+"menyambung ke sistem pada saat yang sama."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:370
@@ -1574,6 +1673,12 @@ msgid ""
 "will set the password to `testpwd`. The password must be between 6 and 8 "
 "characters long."
 msgstr ""
+"Server `VNC` yang dipakai oleh program instalasi. Sebarang klien `VNC` yang "
+"mencoba menyambung ke sistem mesti menyediakan kata sandi yang benar untuk "
+"memperoleh akses. Sebagai contoh, [option]#inst."
+"vncpassword=pass:attributes[{blank}]_testpwd_pass:attributes[{blank}]# akan "
+"mengatur kata sandi menjadi `testpwd`. Panjang kata sandi mesti antara 6 dan "
+"8 karakter."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:379
@@ -1962,6 +2067,8 @@ msgid ""
 "The following options are removed. They were present in previous releases of "
 "{PRODUCT}, but they cannot be used anymore."
 msgstr ""
+"Opsi-opsi berikut dihapus. Mereka ada dalam rilis sebelumnya dari {PRODUCT}, "
+"tapi tidak dapat dipakai lagi."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:467
@@ -1976,6 +2083,9 @@ msgid ""
 "which means that this option are not available anymore. Use [option]#ip=# to "
 "configure network settings."
 msgstr ""
+"`initramfs` program instalasi kini sepenuhnya non-interaktif, yang berarti "
+"bahwa opsi ini tidak tersedia lagi. Gunakan [option]#ip=# untuk "
+"mengonfigurasi pengaturan jaringan."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:469
