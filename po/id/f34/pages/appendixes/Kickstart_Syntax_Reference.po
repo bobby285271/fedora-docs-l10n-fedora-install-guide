@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-09-08 21:07+0000\n"
-"PO-Revision-Date: 2021-11-10 05:16+0000\n"
+"PO-Revision-Date: 2021-11-11 06:13+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -6776,6 +6776,9 @@ msgid ""
 "the full group name or group id as given in the `comps.xml` file. For "
 "example:"
 msgstr ""
+"Tentukan grup, satu entri ke satu baris, dimulai dengan simbol `@`, lalu "
+"nama grup lengkap atau id grup seperti yang diberikan dalam file `comps.xml`"
+". Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2033
@@ -6787,6 +6790,11 @@ msgid ""
 "@Sound and Video\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%packages#\n"
+"@X Window System\n"
+"@Desktop\n"
+"@Sound and Video\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2037
@@ -6794,6 +6802,8 @@ msgid ""
 "The `Core` and `Base` groups are always selected - it is not necessary to "
 "specify them in the [command]#%packages# section."
 msgstr ""
+"Grup `Core` dan `Base` selalu dipilih - tidak perlu menentukannya di bagian "
+"[command]#%packages#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2039
@@ -6802,12 +6812,15 @@ msgid ""
 "each variant of {PRODUCT}. This group contains all packages which are known "
 "to cause file conflicts, and is intended to be excluded."
 msgstr ""
+"File `comps.xml` juga mendefinisikan grup yang disebut `Konflik (_varian_)` "
+"untuk setiap varian {PRODUCT}. Grup ini berisi semua paket yang diketahui "
+"menyebabkan konflik file, dan dimaksudkan untuk dikecualikan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2040
 #, no-wrap
 msgid "Specifying Individual Packages"
-msgstr ""
+msgstr "Menentukan Paket Individu"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2041
@@ -6815,6 +6828,9 @@ msgid ""
 "Specify individual packages by name, one entry to a line. You can use the "
 "asterisk character (`*`) as a _wildcard_ in package names. For example:"
 msgstr ""
+"Tentukan paket individu dengan nama, satu entri ke baris. Anda dapat "
+"menggunakan karakter asterisk (`*`) sebagai _wildcard_ dalam nama paket. "
+"Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2050
@@ -6827,6 +6843,12 @@ msgid ""
 "docbook*\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"sqlite\n"
+"curl\n"
+"aspell\n"
+"docbook*\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2054
@@ -6835,12 +6857,15 @@ msgid ""
 "[package]*docbook-simple*, [package]*docbook-slides* and others that match "
 "the pattern represented with the wildcard."
 msgstr ""
+"Entri `docbook*` mencakup paket [paket]*docbook-dtds*, [paket]*docbook-"
+"simple*, [paket]*docbook-slides* dan lainnya yang cocok dengan pola yang "
+"diwakili dengan karakter pengganti."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2055
 #, no-wrap
 msgid "Excluding Environments, Groups, or Packages"
-msgstr ""
+msgstr "Tidak termasuk Lingkungan, Grup, atau Paket"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2056
@@ -6848,6 +6873,8 @@ msgid ""
 "Use a leading dash (`-`) to specify packages or groups to exclude from the "
 "installation. For example:"
 msgstr ""
+"Gunakan tanda hubung (`-`) di depan untuk menentukan paket atau grup yang "
+"akan dikecualikan dari penginstalan. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2064
@@ -6859,6 +6886,11 @@ msgid ""
 "-ipa*fonts\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"-@Graphical Internet\n"
+"-autofs\n"
+"-ipa*fonts\n"
+"%end\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2071
@@ -6866,6 +6898,9 @@ msgid ""
 "Installing all available packages using only `*` in a Kickstart file is not "
 "supported, even if you exclude the `@Conflicts (_variant_)` group."
 msgstr ""
+"Menginstal semua paket yang tersedia hanya menggunakan `*` dalam file "
+"Kickstart tidak didukung, bahkan jika Anda mengecualikan grup `@Konflik "
+"(_variant_)`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2075
@@ -6874,12 +6909,15 @@ msgid ""
 "using several options. Some options work for the entire package selection, "
 "others are used with only specific groups."
 msgstr ""
+"Anda dapat mengubah perilaku default bagian [command]#%packages# dengan "
+"menggunakan beberapa opsi. Beberapa opsi berfungsi untuk seluruh pemilihan "
+"paket, yang lain digunakan hanya dengan grup tertentu."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2076
 #, no-wrap
 msgid "Common Package Selection Options"
-msgstr ""
+msgstr "Opsi Pemilihan Paket Umum"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2079
@@ -6887,29 +6925,31 @@ msgid ""
 "The following options are available for the [command]#%packages#. To use an "
 "option, append it to the start of the package selection section. For example:"
 msgstr ""
+"Opsi berikut tersedia untuk [command]#%packages#. Untuk menggunakan opsi, "
+"tambahkan ke awal bagian pemilihan paket. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2083
 #, no-wrap
 msgid "[command]#%packages --multilib --ignoremissing#\n"
-msgstr ""
+msgstr "[command]#%packages --multilib --ignoremissing#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2085
 #, no-wrap
 msgid "[option]#--nocore#"
-msgstr ""
+msgstr "[option]#--nocore#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2086
 msgid "Do not install the `@Core` group."
-msgstr ""
+msgstr "Jangan instal grup `@Core`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2087
 #, no-wrap
 msgid "[option]#--ignoremissing#"
-msgstr ""
+msgstr "[option]#--ignoremissing#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2088
@@ -6918,12 +6958,15 @@ msgid ""
 "source, instead of halting the installation to ask if the installation "
 "should be aborted or continued."
 msgstr ""
+"Abaikan semua paket, grup, dan lingkungan yang hilang di sumber "
+"penginstalan, alih-alih menghentikan penginstalan untuk menanyakan apakah "
+"penginstalan harus dibatalkan atau dilanjutkan."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2089
 #, no-wrap
 msgid "[option]#--excludedocs#"
-msgstr ""
+msgstr "[option]#--excludedocs#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2090
@@ -6933,12 +6976,16 @@ msgid ""
 "directory, but the specific files to be excluded depend on individual "
 "packages."
 msgstr ""
+"Jangan menginstal dokumentasi apa pun yang ada di dalam paket. Dalam "
+"kebanyakan kasus, ini akan mengecualikan file apa pun yang biasanya diinstal "
+"di direktori `/usr/share/doc*`, tetapi file tertentu yang akan dikecualikan "
+"bergantung pada paket individual."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2091
 #, no-wrap
 msgid "[option]#--multilib#"
-msgstr ""
+msgstr "[option]#--multilib#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2092
@@ -6947,6 +6994,9 @@ msgid ""
 "installing 32-bit packages on a 64-bit system) and install packages "
 "specified in this section as such."
 msgstr ""
+"Konfigurasikan sistem yang diinstal untuk paket multilib (yaitu, untuk "
+"mengizinkan penginstalan paket 32-bit pada sistem 64-bit) dan instal paket "
+"yang ditentukan di bagian ini."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2094
@@ -6956,6 +7006,11 @@ msgid ""
 "installed. When you use this option, packages for 32-bit systems (marked as "
 "`i686`) will be automatically installed as well, if available."
 msgstr ""
+"Biasanya, pada sistem 64-bit, hanya paket untuk arsitektur ini (ditandai "
+"sebagai `x86_64`) dan paket untuk semua arsitektur (ditandai sebagai "
+"`noarch`) yang akan diinstal. Saat Anda menggunakan opsi ini, paket untuk "
+"sistem 32-bit (ditandai sebagai `i686`) juga akan diinstal secara otomatis, "
+"jika tersedia."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2096
@@ -6966,12 +7021,16 @@ msgid ""
 "architecture versions in which they are needed, even if they are available "
 "for more architectures."
 msgstr ""
+"Ini hanya berlaku untuk paket yang secara eksplisit ditentukan di bagian "
+"[command]#%packages#. Paket yang hanya diinstal sebagai dependensi tanpa "
+"ditentukan dalam file Kickstart hanya akan diinstal dalam versi arsitektur "
+"yang diperlukan, bahkan jika tersedia untuk lebih banyak arsitektur."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2097
 #, no-wrap
 msgid "Options for Specific Package Groups"
-msgstr ""
+msgstr "Opsi untuk Grup Paket Tertentu"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2100
@@ -6980,6 +7039,9 @@ msgid ""
 "using them at the [command]#%packages# command in the Kickstart file, append "
 "them to the group name. For example:"
 msgstr ""
+"Opsi dalam daftar ini hanya berlaku untuk satu grup paket. Alih-alih "
+"menggunakannya pada perintah [command]#%packages# di file Kickstart, "
+"tambahkan mereka ke nama grup. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2107
@@ -6989,24 +7051,27 @@ msgid ""
 "@Graphical Internet --optional\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%packages#\n"
+"@Graphical Internet --optional\n"
+"[command]#%end#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2110
 #, no-wrap
 msgid "[option]#--nodefaults#"
-msgstr ""
+msgstr "[option]#--nodefaults#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2111
 msgid ""
 "Only install the group's mandatory packages, not the default selections."
-msgstr ""
+msgstr "Hanya instal paket wajib grup, bukan pilihan default."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2112
 #, no-wrap
 msgid "[option]#--optional#"
-msgstr ""
+msgstr "[option]#--optional#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2113
@@ -7014,6 +7079,8 @@ msgid ""
 "Install packages marked as optional in the group definition in the `comps."
 "xml` file, in addition to installing the default selections."
 msgstr ""
+"Instal paket yang ditandai sebagai opsional dalam definisi grup di file "
+"`comps.xml`, selain menginstal pilihan default."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2115
@@ -7023,12 +7090,16 @@ msgid ""
 "case the [option]#--optional# option must always be used, otherwise no "
 "packages from this group will be installed."
 msgstr ""
+"Perhatikan bahwa beberapa grup paket, seperti `Scientific Support`, tidak "
+"memiliki paket wajib atau default yang ditentukan - hanya paket opsional. "
+"Dalam hal ini opsi [option]#--opsional# harus selalu digunakan, jika tidak, "
+"tidak ada paket dari grup ini yang akan diinstal."
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2117
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr ""
+msgstr "%pre (opsional) - Skrip Pra-instalasi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2120
@@ -7041,6 +7112,13 @@ msgid ""
 "in which the [command]#%pre# and [command]#%post# sections are included does "
 "not matter."
 msgstr ""
+"Anda dapat menambahkan perintah untuk dijalankan di sistem segera setelah "
+"file Kickstart diurai, tetapi sebelum instalasi dimulai. Bagian ini harus "
+"ditempatkan menjelang akhir file Kickstart, setelah perintah Kickstart yang "
+"sebenarnya, dan harus dimulai dengan [command]#%pre# dan diakhiri dengan "
+"[command]#%end#. Jika file Kickstart Anda juga menyertakan bagian "
+"[command]#%post#, urutan di mana bagian [command]#%pre# dan [command]#%post# "
+"disertakan tidak masalah."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2122
@@ -7049,6 +7127,9 @@ msgid ""
 "_name service_ has not been configured at this point, so only IP addresses "
 "work, not URLs."
 msgstr ""
+"Anda dapat mengakses jaringan di bagian [command]#%pre#. Namun, _name "
+"service_ belum dikonfigurasi pada saat ini, jadi hanya alamat IP yang "
+"berfungsi, bukan URL."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2124
@@ -7058,6 +7139,10 @@ msgid ""
 "created Kickstart file, as the pre-installation script occurs during the "
 "second stage of the installation process."
 msgstr ""
+"Bagian skrip pra-instalasi Kickstart *tidak dapat* mengelola beberapa pohon "
+"instalasi atau media sumber. Informasi ini harus disertakan untuk setiap "
+"file Kickstart yang dibuat, karena skrip pra-instalasi terjadi selama tahap "
+"kedua proses instalasi."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2129
@@ -7065,6 +7150,8 @@ msgid ""
 "Unlike the post-installation script, the pre-installation script is not run "
 "in the `chroot` environment."
 msgstr ""
+"Tidak seperti skrip pasca-instalasi, skrip pra-instalasi tidak dijalankan di "
+"lingkungan `chroot`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2133
@@ -7073,6 +7160,9 @@ msgid ""
 "scripts. To use an option, append it to the [command]#%pre# line at the "
 "beginning of the script. For example:"
 msgstr ""
+"Opsi berikut dapat digunakan untuk mengubah perilaku skrip pra-instalasi. "
+"Untuk menggunakan opsi, tambahkan ke baris [command]#%pre# di awal skrip. "
+"Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2140
@@ -7082,13 +7172,16 @@ msgid ""
 "--- Python script omitted --\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%pre --interpreter=/usr/bin/python#\n"
+"--- Python script omitted --\n"
+"[command]#%end#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2143
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2181
 #, no-wrap
 msgid "[option]#--interpreter=#"
-msgstr ""
+msgstr "[option]#--interpreter=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2144
@@ -7097,13 +7190,17 @@ msgid ""
 "scripting language available on the system can be used; in most cases, these "
 "will be `/usr/bin/sh`, `/usr/bin/bash`, and `/usr/bin/python`."
 msgstr ""
+"Memungkinkan Anda menentukan bahasa skrip yang berbeda, seperti Python. "
+"Bahasa skrip apa pun yang tersedia di sistem dapat digunakan; dalam "
+"kebanyakan kasus, ini akan menjadi `/usr/bin/sh`, `/usr/bin/bash`, dan `/usr/"
+"bin/python`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2145
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2203
 #, no-wrap
 msgid "[option]#--erroronfail#"
-msgstr ""
+msgstr "[option]#--erroronfail#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2146
@@ -7112,24 +7209,26 @@ msgid ""
 "Display an error and halt the installation if the script fails. The error "
 "message will direct you to where the cause of the failure is logged."
 msgstr ""
+"Tampilkan kesalahan dan hentikan instalasi jika skrip gagal. Pesan kesalahan "
+"akan mengarahkan Anda ke tempat penyebab kegagalan dicatat."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2147
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2205
 #, no-wrap
 msgid "[option]#--log=#"
-msgstr ""
+msgstr "[option]#--log=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2148
 msgid "Logs the script's output into the specified log file. For example:"
-msgstr ""
+msgstr "Log output skrip ke dalam file log yang ditentukan. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2152
 #, no-wrap
 msgid "[command]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
-msgstr ""
+msgstr "[perintah]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2155
@@ -7142,7 +7241,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2157
 #, no-wrap
 msgid "%post (optional) - Post-installation Script"
-msgstr ""
+msgstr "%post (opsional) - Skrip Pasca-instalasi"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2160
@@ -7155,6 +7254,13 @@ msgid ""
 "[command]#%pre# section, the order of the [command]#%pre# and [command]#"
 "%post# sections does not matter."
 msgstr ""
+"Anda memiliki opsi untuk menambahkan perintah untuk dijalankan pada sistem "
+"setelah penginstalan selesai, tetapi sebelum sistem di-boot ulang untuk "
+"pertama kalinya. Bagian ini harus ditempatkan di akhir file Kickstart, "
+"setelah perintah Kickstart yang sebenarnya, dan harus dimulai dengan "
+"[command]#%post# dan diakhiri dengan [command]#%end#. Jika file Kickstart "
+"Anda juga menyertakan bagian [command]#%pre#, urutan bagian [command]#%pre# "
+"dan [command]#%post# tidak menjadi masalah."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2162
@@ -7166,6 +7272,12 @@ msgid ""
 "change this behavior using the [option]#--nochroot# option as described "
 "below."
 msgstr ""
+"Bagian ini berguna untuk fungsi seperti menginstal perangkat lunak tambahan "
+"atau mengkonfigurasi server nama tambahan. Skrip pasca-instal dijalankan di "
+"lingkungan chroot, oleh karena itu, melakukan tugas seperti menyalin skrip "
+"atau paket RPM dari media instalasi tidak bekerja secara default. Anda dapat "
+"mengubah perilaku ini menggunakan opsi [option]#--nochroot# seperti yang "
+"dijelaskan di bawah ini."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2167
@@ -7178,6 +7290,13 @@ msgid ""
 "IP addresses. Thus, if you are using `DHCP`, you must specify IP addresses "
 "in the [command]#%post# section."
 msgstr ""
+"Jika Anda mengonfigurasi jaringan dengan informasi IP statis, termasuk "
+"server nama, Anda dapat mengakses jaringan dan menyelesaikan alamat IP di "
+"bagian [command]#%post#. Jika Anda mengkonfigurasi jaringan untuk `DHCP`, "
+"file `/etc/resolv.conf` belum selesai ketika instalasi menjalankan bagian "
+"[command]#%post#. Anda dapat mengakses jaringan, tetapi Anda tidak dapat "
+"menyelesaikan alamat IP. Jadi, jika Anda menggunakan `DHCP`, Anda harus "
+"menentukan alamat IP di bagian [command]#%post#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2171
@@ -7186,6 +7305,9 @@ msgid ""
 "installation scripts. To use an option, append it to the [command]#%post# "
 "line at the beginning of the script. For example:"
 msgstr ""
+"Opsi berikut dapat digunakan untuk mengubah perilaku skrip pasca-instalasi. "
+"Untuk menggunakan opsi, tambahkan ke baris [command]#%post# di awal skrip. "
+"Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2178
@@ -7195,6 +7317,9 @@ msgid ""
 "--- Python script omitted --\n"
 "[command]#%end#\n"
 msgstr ""
+"[perintah]#%post --interpreter=/usr/bin/python#\n"
+"--- Skrip Python dihilangkan --\n"
+"[perintah]#%akhir#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2182
@@ -7202,12 +7327,14 @@ msgid ""
 "Allows you to specify a different scripting language, such as Python. For "
 "example:"
 msgstr ""
+"Memungkinkan Anda menentukan bahasa skrip yang berbeda, seperti Python. "
+"Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2186
 #, no-wrap
 msgid "[command]#%post --interpreter=/usr/bin/python#\n"
-msgstr ""
+msgstr "[command]#%post --interpreter=/usr/bin/python#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2189
@@ -7215,12 +7342,15 @@ msgid ""
 "Any scripting language available on the system can be used; in most cases, "
 "these will be `/usr/bin/sh`, `/usr/bin/bash`, and `/usr/bin/python`."
 msgstr ""
+"Bahasa skrip apa pun yang tersedia di sistem dapat digunakan; dalam "
+"kebanyakan kasus, ini akan menjadi `/usr/bin/sh`, `/usr/bin/bash`, dan `/usr/"
+"bin/python`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2190
 #, no-wrap
 msgid "[option]#--nochroot#"
-msgstr ""
+msgstr "[option]#--nochroot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2191
@@ -7228,6 +7358,8 @@ msgid ""
 "Allows you to specify commands that you would like to run outside of the "
 "chroot environment."
 msgstr ""
+"Memungkinkan Anda menentukan perintah yang ingin Anda jalankan di luar "
+"lingkungan chroot."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2193
@@ -7235,6 +7367,8 @@ msgid ""
 "The following example copies the file `/etc/resolv.conf` to the file system "
 "that was just installed."
 msgstr ""
+"Contoh berikut menyalin file `/etc/resolv.conf` ke sistem file yang baru "
+"saja diinstal."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2200
@@ -7244,6 +7378,9 @@ msgid ""
 "cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%post --nochroot#\n"
+"cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2206
@@ -7252,23 +7389,26 @@ msgid ""
 "the log file must take into account whether or not you use the [option]#--"
 "nochroot# option. For example, without [option]#--nochroot#:"
 msgstr ""
+"Log output skrip ke dalam file log yang ditentukan. Perhatikan bahwa jalur "
+"file log harus memperhitungkan apakah Anda menggunakan opsi "
+"[option]#--nochroot# atau tidak. Misalnya, tanpa [opsi]#--nochroot#:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2210
 #, no-wrap
 msgid "[command]#%post --log=/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --log=/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2213
 msgid "with [option]#--nochroot#:"
-msgstr ""
+msgstr "dengan [opsi]#--nochroot#:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2217
 #, no-wrap
 msgid "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
-msgstr ""
+msgstr "[perintah]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2220
@@ -7281,14 +7421,14 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2222
 #, no-wrap
 msgid "Example Kickstart Configurations"
-msgstr ""
+msgstr "Contoh Konfigurasi Kickstart"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2225
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2229
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "Contoh Partisi Lanjutan"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2228
@@ -7297,6 +7437,9 @@ msgid ""
 "[command]#zerombr#, [command]#part#, [command]#raid#, [command]#volgroup#, "
 "and [command]#logvol# Kickstart options in action:"
 msgstr ""
+"Berikut ini adalah contoh terintegrasi yang menunjukkan [command]#clearpart#"
+", [command]#zerombr#, [command]#part#, [command]#raid#, [command]#volgroup#, "
+"dan [command]#logvol# Opsi kickstart beraksi:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2247
@@ -7316,6 +7459,19 @@ msgid ""
 "part raid.24 --size 8000              --ondrive=hdc\n"
 "part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 msgstr ""
+"clearpart  --drives=hda,hdc\n"
+"zerombr\n"
+"# Raid 1 IDE config\n"
+"part raid.11 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.12 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.13 --size 2000  --asprimary --ondrive=hda\n"
+"part raid.14 --size 8000              --ondrive=hda\n"
+"part raid.15 --size 16384 --grow      --ondrive=hda\n"
+"part raid.21 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.22 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.23 --size 2000  --asprimary --ondrive=hdc\n"
+"part raid.24 --size 8000              --ondrive=hdc\n"
+"part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2254
@@ -7328,6 +7484,12 @@ msgid ""
 "raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
 "raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 msgstr ""
+"# You can add --spares=x\n"
+"raid /     --fstype xfs  --device root  --level=RAID1 raid.11 raid.21\n"
+"raid /safe --fstype xfs  --device safe  --level=RAID1 raid.12 raid.22\n"
+"raid swap  --fstype swap --device swap  --level=RAID1 raid.13 raid.23\n"
+"raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
+"raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2260
@@ -7339,6 +7501,12 @@ msgid ""
 "logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
 "logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 msgstr ""
+"# Konfigurasi LVM sehingga kita dapat mengubah ukuran /var dan /usr/local "
+"nanti\n"
+"volgroup sysvg pv.01\n"
+"logvol /var --vgname=sysvg --size=8000 --name=var\n"
+"logvol /var/freespace --vgname=sysvg --size=8000 --name=freespacetouse\n"
+"logvol /usr/local --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2266
@@ -7346,6 +7514,8 @@ msgid ""
 "This advanced example implements LVM over RAID, as well as the ability to "
 "resize various directories for future growth."
 msgstr ""
+"Contoh lanjutan ini mengimplementasikan LVM melalui RAID, serta kemampuan "
+"untuk mengubah ukuran berbagai direktori untuk pertumbuhan di masa mendatang."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2268
@@ -7354,6 +7524,9 @@ msgid ""
 "wipe them. The [command]#zerombr# command initializes unused partition "
 "tables."
 msgstr ""
+"Pertama, perintah [command]#clearpart# digunakan pada drive `hda` dan `hdc` "
+"untuk menghapusnya. Perintah [command]#zerombr# menginisialisasi tabel "
+"partisi yang tidak digunakan."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2270
@@ -7362,6 +7535,9 @@ msgid ""
 "Each drive is divided into five partitions, and each drive is partitioned "
 "into an identical layout."
 msgstr ""
+"Kemudian, kedua drive dipartisi untuk mempersiapkan konfigurasi RAID. Setiap "
+"drive dibagi menjadi lima partisi, dan setiap drive dipartisi ke dalam tata "
+"letak yang identik."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2272
@@ -7372,6 +7548,11 @@ msgid ""
 "partitions is named `pv.01` and will be used in the following part as a "
 "physical volume for LVM."
 msgstr ""
+"Bagian selanjutnya menggunakan pasangan partisi fisik ini untuk membuat "
+"perangkat RAID perangkat lunak dengan level RAID1 (mirroring). Empat "
+"perangkat RAID pertama digunakan untuk `/` (root), `/safe`, `swap` dan `/usr`"
+". Pasangan partisi terbesar kelima bernama `pv.01` dan akan digunakan di "
+"bagian berikut sebagai volume fisik untuk LVM."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2274
@@ -7383,6 +7564,12 @@ msgid ""
 "the `/usr/local` volume uses the [option]#--grow# option to fill all "
 "remaining available space."
 msgstr ""
+"Terakhir, kumpulan perintah terakhir pertama-tama membuat grup volume "
+"bernama `sysvg` pada volume fisik `pv.01`. Kemudian, tiga volume logis "
+"(`/var`, `/var/freespace` dan `/usr/local`) dibuat dan ditambahkan ke grup "
+"volume `sysvg`. Volume `/var` dan `/var/freespace` memiliki ukuran yang "
+"ditetapkan sebesar 8 GB, dan volume `/usr/local` menggunakan opsi "
+"[option]#--grow# untuk mengisi semua sisa ruang yang tersedia."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2279
@@ -7391,23 +7578,27 @@ msgid ""
 "You should use unique identifiers, such as a disk labels or an UUIDs, to "
 "identify disk drives. See the note in introduction to this appendix."
 msgstr ""
+"Contoh di atas menggunakan pengenal `hda` dan `hdc` untuk mengidentifikasi "
+"drive disk. Anda harus menggunakan pengidentifikasi unik, seperti label disk "
+"atau UUID, untuk mengidentifikasi drive disk. Lihat catatan dalam pengantar "
+"lampiran ini."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2283
 #, no-wrap
 msgid "Example Pre-installation Script"
-msgstr ""
+msgstr "Contoh Skrip Pra-instalasi"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2286
 msgid "The following is an example [command]#%pre# section:"
-msgstr ""
+msgstr "Berikut ini adalah contoh bagian [command]#%pre#:"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2288
 #, no-wrap
 msgid "Sample %pre Script"
-msgstr ""
+msgstr "Contoh % pra Skrip"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2307
@@ -7428,6 +7619,20 @@ msgid ""
 "drive1=`echo $hds | cut -d' ' -f1`\n"
 "drive2=`echo $hds | cut -d' ' -f2`\n"
 msgstr ""
+"%pre\n"
+"#!/bin/sh\n"
+"hds=\"\"\n"
+"mymedia=\"\"\n"
+"for file in /proc/ide/h* do\n"
+"mymedia=`cat $file/media`\n"
+"if [ $mymedia == \"disk\" ] ; then\n"
+"hds=\"$hds `basename $file`\"\n"
+"fi\n"
+"done\n"
+"set $hds\n"
+"numhd=`echo $#`\n"
+"drive1=`echo $hds | cut -d' ' -f1`\n"
+"drive2=`echo $hds | cut -d' ' -f2`\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2327
@@ -7453,6 +7658,30 @@ msgid ""
 "fi\n"
 "%end\n"
 msgstr ""
+"#Tulis skema partisi berdasarkan apakah ada 1 atau 2 hard drive\n"
+"jika [ $numhd == \"2\" ] ; kemudian\n"
+"#2 drive\n"
+"echo \"#skema partisi dihasilkan di %pre untuk 2 drive\" > /tmp/part-"
+"include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75 --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part / --fstype xfs --size 1 --grow --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part swap --recommended --ondisk $drive1\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 1 --grow --ondisk hdb\" >> /tmp/part-"
+"include\n"
+"lain\n"
+"#1 mengemudi\n"
+"echo \"#skema partisi dihasilkan di %pre untuk 1 drive\" > /tmp/part-"
+"include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75\" >> /tmp/part-include\n"
+"echo \"part swap --recommended\" >> /tmp/part-include\n"
+"echo \"bagian / --fstype xfs --size 2048\" >> /tmp/part-include\n"
+"echo \"bagian /home --fstype xfs --size 2048 --grow\" >> /tmp/part-include\n"
+"fi\n"
+"%akhir\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2331
@@ -7462,34 +7691,38 @@ msgid ""
 "one or two drives. Instead of having a set of partitioning commands in the "
 "Kickstart file, include the following line:"
 msgstr ""
+"Script ini menentukan jumlah hard drive dalam sistem dan menulis file teks "
+"dengan skema partisi yang berbeda tergantung pada apakah ia memiliki satu "
+"atau dua drive. Alih-alih memiliki satu set perintah partisi di file "
+"Kickstart, sertakan baris berikut:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2335
 #, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
-msgstr ""
+msgstr "[command]#%include /tmp/part-include#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2338
 msgid "The partitioning commands selected in the script will be used."
-msgstr ""
+msgstr "Perintah partisi yang dipilih dalam skrip akan digunakan."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2342
 #, no-wrap
 msgid "Example Post-installation Script"
-msgstr ""
+msgstr "Contoh Skrip Pasca-instalasi"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2345
 msgid "The following is an example [command]#%post# section:"
-msgstr ""
+msgstr "Berikut ini adalah contoh bagian [command]#%post#:"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2347
 #, no-wrap
 msgid "Sample %post Script"
-msgstr ""
+msgstr "Contoh Skrip %post"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2354
@@ -7498,6 +7731,8 @@ msgid ""
 "# Start of the %post section with logging into /root/ks-post.log\n"
 "%post --log=/root/ks-post.log\n"
 msgstr ""
+"# Mulai dari bagian %post dengan masuk ke /root/ks-post.log\n"
+"%post --log=/root/ks-post.log\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2360
@@ -7509,6 +7744,11 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
+"# Pasang berbagi NFS\n"
+"mkdir /mnt/temp\n"
+"mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
+"openvt -s -w -- /mnt/temp/runme\n"
+"umount /mnt/temp\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2363
@@ -7517,6 +7757,8 @@ msgid ""
 "# End of the %post section\n"
 "%end\n"
 msgstr ""
+"# Akhir dari bagian %posting\n"
+"%akhir\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2367
@@ -7526,3 +7768,7 @@ msgid ""
 "*not* supported while in Kickstart mode, therefore the [option]#-o nolock# "
 "option is required."
 msgstr ""
+"Contoh di atas me-mount share NFS dan mengeksekusi skrip bernama `runme` "
+"yang terletak di `/usr/new-machines/` pada share. Perhatikan bahwa "
+"penguncian file NFS *tidak* didukung saat dalam mode Kickstart, oleh karena "
+"itu opsi [opsi]#-o nolock# diperlukan."
