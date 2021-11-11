@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2021-11-10 05:16+0000\n"
+"PO-Revision-Date: 2021-11-11 06:13+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10nfedora-install-guide/"
@@ -175,6 +175,8 @@ msgid ""
 "On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
 "selection menu."
 msgstr ""
+"Mac-laitteistossa paina kbd:[Option]-näppäintä päästäksesi käynnistysmedian "
+"valintavalikkoon."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:55
@@ -184,6 +186,10 @@ msgid ""
 "optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
 "from a network location."
 msgstr ""
+"Kun järjestelmän käynnistysvalikko avautuu, valitse merkintä, kuten \"Boot "
+"from USB\", jos loit käynnistettävän USB-aseman, \"Boot from CD/DVD\", jos "
+"käytät optista levyä {PRODUCT} -asennukseen, tai \"Boot from PXE\". ` jos "
+"haluat käynnistää verkkosijainnista."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:57
@@ -191,12 +197,14 @@ msgid ""
 "Wait until the boot menu is displayed. The boot menu is described further in "
 "this chapter."
 msgstr ""
+"Odota, kunnes käynnistysvalikko tulee näkyviin. Käynnistysvalikkoa kuvataan "
+"tarkemmin tässä luvussa."
 
 #. type: Title ==
 #: pages/install/Booting_the_Installation.adoc:59
 #, no-wrap
 msgid "The Boot Menu"
-msgstr ""
+msgstr "Käynnistysvalikko"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:62
@@ -206,6 +214,10 @@ msgid ""
 "this menu, you can either start the actual installation, or you can use the "
 "boot media to rescue an existing system."
 msgstr ""
+"Useimmissa tapauksissa, kun käynnistät {PRODUCT} -asennusohjelman valmiilta "
+"käynnistysmedialta tai palvelimelta, käynnistysvalikko tulee ensimmäisenä "
+"näkyviin. Tästä valikosta voit joko aloittaa varsinaisen asennuksen tai voit "
+"korjata olemassa olevan järjestelmän käynnistysmedian avulla."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:64
@@ -215,6 +227,11 @@ msgid ""
 "loader, and UEFI systems use [application]*GRUB2*. However, both of the "
 "menus described below function very similarly from a user's point of view."
 msgstr ""
+"Käynnistysvalikon ulkoasu ja toiminta vaihtelee jonkin verran järjestelmän "
+"laiteohjelmiston mukaan - BIOS-järjestelmät käyttävät [sovellus]*SYSLINUX* "
+"käynnistyslatainta ja UEFI-järjestelmät [sovellus]*GRUB2*:ta. Molemmat alla "
+"kuvatut valikot toimivat kuitenkin hyvin samalla tavalla käyttäjän "
+"näkökulmasta."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:66
@@ -225,6 +242,10 @@ msgid ""
 "second one will verify the integrity of the boot media before starting the "
 "installation."
 msgstr ""
+"Käytä nuolinäppäimiä valitaksesi merkintä valikosta ja kbd:[Enter] "
+"vahvistaaksesi valintasi. Luettelon kaksi ensimmäistä kohtaa jatkavat "
+"asennusta; ensimmäinen käynnistää asennusohjelman heti ja toinen varmistaa "
+"käynnistystietovälineen eheyden ennen asennuksen aloittamista."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:68
@@ -239,6 +260,15 @@ msgid ""
 "menu and boot normally from your system's hard drive via the `Boot from "
 "local drive` option."
 msgstr ""
+"Viimeinen merkintä luettelossa on `Vianetsintä`pass:attributes[{blank}]; "
+"tämä on alivalikko. Tämän merkinnän valitseminen ja kbd:[Enter]-näppäimen "
+"painaminen näyttää uudet valinnat, joissa voit asentaa perusgrafiikkatilassa "
+"(hyödyllinen, jos haluat tehdä manuaalisen graafisen asennuksen, mutta "
+"järjestelmässäsi on ongelmia graafisen oletusasennusohjelman kanssa) , "
+"korjata olemassa olevaa järjestelmä tai etsiä järjestelmän muistimoduuleiden "
+"virheitä (vain BIOS-järjestelmissä). Vianmääritysvalikon avulla voit myös "
+"poistua käynnistysvalikosta ja käynnistää normaalisti järjestelmän "
+"kiintolevyltä \"Boot from local drive\" -vaihtoehdon kautta."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:70
@@ -249,6 +279,11 @@ msgid ""
 "systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
 "bottom of the screen."
 msgstr ""
+"Jokainen luettelon valikkokohta on ennalta määritetty sarja "
+"käynnistysasetuksia, ja näitä asetuksia voidaan mukauttaa muuttamaan joitain "
+"asennusohjelman toiminnan näkökohtia. Voit muokata oletusarvoisia "
+"käynnistysasetuksia painamalla kbd:[Tab] BIOS-järjestelmissä tai kbd:[e] "
+"UEFI-järjestelmissä. Käytettävä avain näkyy myös näytön alareunassa."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:75
@@ -258,6 +293,10 @@ msgid ""
 "configured on the line which starts with the `linux` (or `linux16` or "
 "`linuxefi`) keyword. Do not modify any other lines in the configuration."
 msgstr ""
+"Käynnistysasetusten muokkaaminen kohdassa [application]*GRUB2* (UEFI-"
+"järjestelmissä) näyttää valitun merkinnän koko kokoonpanon. Todelliset "
+"käynnistysasetukset määritetään riville, joka alkaa avainsanalla \"linux\" ("
+"tai \"linux16\" tai \"linuxefi\"). Älä muuta kokoonpanon muita rivejä."
 
 #. type: delimited block =
 #: pages/install/Booting_the_Installation.adoc:77
@@ -265,6 +304,8 @@ msgid ""
 "On systems with BIOS firmware, only the actual boot options are displayed "
 "when you press kbd:[Tab]."
 msgstr ""
+"Järjestelmässä, jossa on BIOS-laiteohjelmisto, vain mahdolliset "
+"käynnistysvaihtoehdot näytetään, kun painat kbd:[Tab]."
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:81
@@ -274,37 +315,44 @@ msgid ""
 "or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
 "options."
 msgstr ""
+"Kun muokkaat oletusasetusjoukkoa, voit muuttaa olemassa olevia vaihtoehtoja "
+"sekä lisätä uusia. Kun olet valmis, paina kbd:[Enter] BIOSissa tai kbd:[Ctrl "
+"+ X] UEFI:ssä käynnistääksesi asennusohjelman mukautetuilla asetuksillasi."
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:82
 #, no-wrap
 msgid "Editing boot options on a system with BIOS firmware"
 msgstr ""
+"Käynnistysasetusten muokkaaminen järjestelmässä, jossa on BIOS-"
+"laiteohjelmisto"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Booting_the_Installation.adoc:84
 #: pages/install/Booting_the_Installation.adoc:88
 #, no-wrap
 msgid "The boot menu."
-msgstr ""
+msgstr "Käynnistysvalikko."
 
 #. type: Target for macro image
 #: pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "boot/boot-menu-BIOS.png"
-msgstr ""
+msgstr "boot/boot-menu-BIOS.png"
 
 #. type: Block title
 #: pages/install/Booting_the_Installation.adoc:86
 #, no-wrap
 msgid "Editing boot options on a system with UEFI firmware"
 msgstr ""
+"Käynnistysasetusten muokkaaminen järjestelmässä, jossa on UEFI-"
+"laiteohjelmisto"
 
 #. type: Target for macro image
 #: pages/install/Booting_the_Installation.adoc:88
 #, no-wrap
 msgid "boot/boot-menu-UEFI.png"
-msgstr ""
+msgstr "boot/boot-menu-UEFI.png"
 
 #. type: Plain text
 #: pages/install/Booting_the_Installation.adoc:90
@@ -313,3 +361,6 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-available[Available Boot "
 "Options]."
 msgstr ""
+"Kaikki käytettävissä olevat [sovellus]*Anaconda* käynnistysasetukset on "
+"kuvattu julkaisussa xref:advanced/Boot_Options.adoc#sect-boot-options-"
+"available[Käynnistysasetukset]."
