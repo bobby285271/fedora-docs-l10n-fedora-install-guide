@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:09+0000\n"
+"POT-Creation-Date: 2021-11-21 21:19+0000\n"
 "PO-Revision-Date: 2021-09-18 17:05+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/"
 "f26pages_partialsinstallcustomspoke_recommendedscheme/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -19,35 +19,36 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:6
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:6
 msgid "====== Recommended Partitioning Scheme"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
-msgid "In most cases, at least the following mount points should always be created:"
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
+msgid ""
+"In most cases, at least the following mount points should always be created:"
 msgstr ""
 "En la mayoría de los casos se deberían crear siempre al menos los siguientes "
 "puntos de montaje:"
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
 #, no-wrap
 msgid "`/boot` - 500 MB"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
 msgid ""
 "This partition contains the operating system kernel, which allows {PRODUCT} "
 "to boot. It also contains other files used during the bootstrap process. Due "
 "to the limitations of most firmware, creating a separate, small standard "
-"partition for this directory is recommended. In most scenarios, a 500 MB "
-"`/boot` partition is adequate."
+"partition for this directory is recommended. In most scenarios, a 500 MB `/"
+"boot` partition is adequate."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
 msgid ""
 "If your system has a hardware RAID controller, be aware that some BIOS types "
 "do not support booting from it. In that case, the `/boot` partition must be "
@@ -60,20 +61,20 @@ msgstr ""
 "RAID, como por ejemplo un disco duro separado."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
 msgid ""
 "Also note that the `/boot` directory can not be placed on a LVM logical "
 "volume or a Btrfs subvolume. Use a standard partition."
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
 #, no-wrap
 msgid "`/` (root) - 10 GB"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
 msgid ""
 "This is where the root directory is located. The root directory is the top "
 "level of the directory structure. By default, all files are written to this "
@@ -90,37 +91,36 @@ msgstr ""
 "partición donde serán instalados la mayoría de los paquetes de software."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
 msgid ""
-"For a minimal installation, a 5 GB root partition will be "
-"sufficient. However, for most common installations which include extra "
-"packages and a graphical user interface, the root partition should be at "
-"least 10 GB; with 20 GB being sufficient for most common use cases."
+"For a minimal installation, a 5 GB root partition will be sufficient. "
+"However, for most common installations which include extra packages and a "
+"graphical user interface, the root partition should be at least 10 GB; with "
+"20 GB being sufficient for most common use cases."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
 msgid ""
 "The `/` mount point is the top of the Linux Filesystem Hierarchy, and is "
 "referred to as the _root file system_, or root. The `/root` directory, "
-"sometimes pronounced "
-"\"pass:attributes[{blank}]_slash-root_pass:attributes[{blank}]\", is the "
-"home directory for the `root` user."
+"sometimes pronounced \"pass:attributes[{blank}]_slash-root_pass:"
+"attributes[{blank}]\", is the home directory for the `root` user."
 msgstr ""
 "El punto de montaje `/` es el más alto de la Jerarquía de Sistemas de "
 "Archivos Linux Filesystem Hierarchy y se nombra como _sistema de archivos "
-"raíz_ o root. El directorio `/root`, algunas veces pronunciado \"pass"
-":attributes[{blank}]_slash-root_pass:attributes[{blank}]\", es el directorio "
+"raíz_ o root. El directorio `/root`, algunas veces pronunciado \"pass:"
+"attributes[{blank}]_slash-root_pass:attributes[{blank}]\", es el directorio "
 "home para el usuario `root`."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
 #, no-wrap
 msgid "`/home` - at least 10 GB"
 msgstr "`/home` - al menos 10 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
 msgid ""
 "To store user data separately from system data, create a dedicated mount "
 "point for the `/home` directory. This partition should be sized based on the "
@@ -138,7 +138,7 @@ msgstr ""
 "espacio libre para su instalación {PRODUCT}."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
 msgid ""
 "When using {PRODUCT} as a workstation for normal use with a graphical "
 "environment, this mount point should have the most disk space assigned to "
@@ -147,26 +147,26 @@ msgid ""
 msgstr ""
 "Cuando usa {PRODUCT} como estación de trabajo para un uso normal con un "
 "entorno gráfico, este punto de montaje debería tener la mayoría del espacio "
-"de disco asignado, ya que probablemente contenga la mayor cantidad de datos ("
-"ajustes de usuario, imágenes, videos, etc)."
+"de disco asignado, ya que probablemente contenga la mayor cantidad de datos "
+"(ajustes de usuario, imágenes, videos, etc)."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
 msgstr "swap - basada en los parámetros de su sistema"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
 msgid ""
 "Swap partitions support virtual memory; data is written to them when there "
 "is not enough RAM to store the data your system is processing. This "
 "partition's size is a function of system memory workload, not total system "
-"memory, and therefore is not equal to the total system memory "
-"size. Therefore, it is important to analyze what applications a system will "
-"be running and the load those applications will serve in order to determine "
-"the system memory workload. Application providers and developers should be "
-"able to provide some guidance."
+"memory, and therefore is not equal to the total system memory size. "
+"Therefore, it is important to analyze what applications a system will be "
+"running and the load those applications will serve in order to determine the "
+"system memory workload. Application providers and developers should be able "
+"to provide some guidance."
 msgstr ""
 "Las particiones de intercambio soportan la memoria virtual; los datos se "
 "escriben en ella cuando no hay suficiente RAM para almacenar los datos que "
@@ -180,14 +180,14 @@ msgstr ""
 "algunas directrices."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
 msgid ""
 "When the system runs out of swap space, the kernel terminates processes as "
 "the system RAM memory is exhausted. Configuring too much swap space results "
-"in storage devices being allocated but idle and is a poor use of "
-"resources. Too much swap space can also hide memory leaks. The maximum size "
-"for a swap partition and other additional information can be found in the "
-"`mkswap(8)` man page."
+"in storage devices being allocated but idle and is a poor use of resources. "
+"Too much swap space can also hide memory leaks. The maximum size for a swap "
+"partition and other additional information can be found in the `mkswap(8)` "
+"man page."
 msgstr ""
 "Cuando el sistema corre fuera del espacio de intercambio el kernel finaliza "
 "procesos cuando la memoria RAM se agota. Configurar demasiado espacio de "
@@ -198,7 +198,7 @@ msgstr ""
 "puede encontrar en la página de manual `mkswap(8)`."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:40
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:40
 msgid ""
 "The table below provides the recommended size of a swap partition depending "
 "on the amount of RAM in your system and whether you want sufficient memory "
@@ -224,17 +224,16 @@ msgstr ""
 "debe editar manualmente el esquema de particionado."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:41
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:41
 #, no-wrap
 msgid "Recommended System Swap Space"
 msgstr ""
 
 #. type: Table
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:50
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:50
 #, no-wrap
 msgid ""
-"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
-"if allowing for hibernation\n"
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space if allowing for hibernation\n"
 "|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
 "|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
@@ -242,7 +241,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:53
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:53
 msgid ""
 "At the border between each range listed above (for example, a system with 2 "
 "GB, 8 GB, or 64 GB of system RAM), discretion can be exercised with regard "
@@ -251,7 +250,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:55
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:55
 msgid ""
 "Distributing swap space over multiple storage devices - particularly on "
 "systems with fast drives, controllers and interfaces - also improves swap "
@@ -259,28 +258,28 @@ msgid ""
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:56
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:56
 #, no-wrap
 msgid "BIOS Boot (1 MB) or EFI System Partition (200 MB)"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
 msgid ""
 "The [application]*GRUB2* boot loader can be installed either in the _Master "
-"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot "
-"device. In order to determine which of these methods to use, the "
-"installation program considers the following variations:"
+"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot device. "
+"In order to determine which of these methods to use, the installation "
+"program considers the following variations:"
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:58
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:58
 #, no-wrap
-msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
+msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:59
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:59
 msgid ""
 "If the disk is already formatted, the partitioning scheme is retained. If "
 "the disk is not formatted, or you have erased all existing partitions from "
@@ -288,42 +287,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:61
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:61
 msgid "MBR if the size of the disk is less than 2 TB (terabytes)"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
 msgid "GPT if the size of the disk is more than 2 TB"
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
 msgid ""
 "You can force the installer to use GPT on disks smaller than 2 TB by using "
-"the [option]#inst.gpt# boot option as described in "
-"xref:../advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot "
-"Options]. However, the opposite is not possible - you can not use MBR on "
-"disks larger than 2 TB."
+"the [option]#inst.gpt# boot option as described in xref:../advanced/"
+"Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
+"opposite is not possible - you can not use MBR on disks larger than 2 TB."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:72
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:72
 msgid ""
 "You need to create a _BIOS Boot_ partition with a size of 1 MB to install on "
-"a system with BIOS firmware if the disk containing the boot loader uses "
-"GPT. If the disk uses a MBR, no special partition is necessary on a BIOS "
-"system."
+"a system with BIOS firmware if the disk containing the boot loader uses GPT. "
+"If the disk uses a MBR, no special partition is necessary on a BIOS system."
 msgstr ""
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:73
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:73
 #, no-wrap
-msgid "Systems with UEFI firmware:"
+msgid "Systems with UEFI firmware"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:74
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:74
 msgid ""
 "Only GPT is allowed on UEFI systems. In order to install on a formatted disk "
 "with a MBR, it must be reformated and relabeled. All data currently on the "
@@ -331,14 +328,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:76
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:76
 msgid ""
 "UEFI-based systems require an _EFI System Partition_ at least 50 MB in size "
 "(recommended size is 200 MB), regardless of the partitioning scheme."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
 msgid ""
 "If your system requires either a BIOS Boot partition or an EFI System "
 "Partition based on the requirements detailed above, this partition must be "
@@ -347,35 +344,33 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
 msgid ""
 "Also note that if your system does not require any of these partitions, they "
 "will not be shown in the `File System` menu in mount point options."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:87
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:87
 msgid ""
 "Many systems have more partitions than the minimum listed above. Choose "
-"partitions based on your particular needs. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-advice[Advice "
-"on Partitions] for additional information and advice."
+"partitions based on your particular needs. See xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"advice[Advice on Partitions] for additional information and advice."
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:92
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:92
 msgid ""
-"Only assign storage capacity to those partitions you require "
-"immediately. You may allocate free space at any time, to meet needs as they "
-"occur."
+"Only assign storage capacity to those partitions you require immediately. "
+"You may allocate free space at any time, to meet needs as they occur."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:95
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:95
 msgid ""
 "If you are not sure how best to configure the partitions for your computer, "
 "accept the automatic default partition layout provided by the installation "
-"program as described in "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning[Installation "
-"Destination]."
+"program as described in xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""

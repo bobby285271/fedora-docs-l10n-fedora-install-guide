@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:03+0000\n"
+"POT-Creation-Date: 2021-11-21 21:08+0000\n"
 "PO-Revision-Date: 2021-05-27 17:24+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/"
 "f33pages_partialsinstallcustomspoke_recommendedscheme/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -51,8 +51,8 @@ msgstr ""
 "Bu bölüm, {PRODUCT}'nın önyüklenmesini sağlayan işletim sistemi çekirdeğini "
 "içerir. Ayrıca, önyükleme işlemi sırasında kullanılan diğer dosyaları da "
 "içerir. Çoğu ürün yazılımının sınırlamaları nedeniyle bu dizin için ayrı, "
-"küçük bir standart bölüm oluşturulması tavsiye edilir. Çoğu durumda, 1 GB "
-"`/boot` bölümü yeterlidir."
+"küçük bir standart bölüm oluşturulması tavsiye edilir. Çoğu durumda, 1 GB `/"
+"boot` bölümü yeterlidir."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
@@ -93,8 +93,8 @@ msgid ""
 "packages will be installed."
 msgstr ""
 "Kök dizinin bulunduğu yer burasıdır. Kök dizin, dizin yapısının en üst "
-"düzeyidir. Öntanımlı olarak, yazılan yola farklı bir bölüm bağlanmadıkça ("
-"örneğin, `/boot` veya `/home`) tüm dosyalar bu bölüme yazılır. Bu bölümde "
+"düzeyidir. Öntanımlı olarak, yazılan yola farklı bir bölüm bağlanmadıkça "
+"(örneğin, `/boot` veya `/home`) tüm dosyalar bu bölüme yazılır. Bu bölümde "
 "açıklanan tavsiye edilen düzeni takip ederseniz, çoğu yazılım paketinin "
 "kurulacağı bölüm burası olacaktır."
 
@@ -120,9 +120,9 @@ msgid ""
 "attributes[{blank}]\", is the home directory for the `root` user."
 msgstr ""
 "`/` bağlama noktası, Linux Dosya Sistemi Hiyerarşisinin en üstündedir ve "
-"_kök dosya sistemi_ veya kök olarak adlandırılır. Bazen \"pass"
-":attributes[{blank}]_slash-root_pass:attributes[{blank}]\" olarak da "
-"telaffuz edilen `/root` dizini, `root` kullanıcısının ev dizinidir."
+"_kök dosya sistemi_ veya kök olarak adlandırılır. Bazen \"pass:"
+"attributes[{blank}]_slash-root_pass:attributes[{blank}]\" olarak da telaffuz "
+"edilen `/root` dizini, `root` kullanıcısının ev dizinidir."
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
@@ -145,8 +145,8 @@ msgstr ""
 "depolanacak veri miktarına, kullanıcı sayısına vb. göre "
 "boyutlandırılmalıdır. Bu, kullanıcı veri dosyalarını silmeden {PRODUCT}'yı "
 "yükseltmenize veya yeniden kurmanıza olanak tanır. Kurulum sırasında, "
-"{PRODUCT} kurulumunuz için 50 GB veya daha fazla boş alan varsa ayrı bir "
-"`/home` bölümü oluşturulacaktır."
+"{PRODUCT} kurulumunuz için 50 GB veya daha fazla boş alan varsa ayrı bir `/"
+"home` bölümü oluşturulacaktır."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
@@ -263,8 +263,7 @@ msgid ""
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
-"|Sistemdeki RAM miktarı|Tavsiye edilen takas alanı|Hazırda bekletmeye izin "
-"veriliyorsa tavsiye edilen takas alanı\n"
+"|Sistemdeki RAM miktarı|Tavsiye edilen takas alanı|Hazırda bekletmeye izin veriliyorsa tavsiye edilen takas alanı\n"
 "|2 GB'den az|RAM miktarının 2 katı|RAM miktarının 3 katı\n"
 "|2 GB - 8 GB|RAM miktarına eşit|RAM miktarının 2 katı\n"
 "|8 GB - 64 GB|RAM miktarının yarısı|RAM miktarının 1 buçuk katı\n"
@@ -310,18 +309,17 @@ msgid ""
 "program considers the following variations:"
 msgstr ""
 "[application]*GRUB2* önyükleyicisi, önyükleme aygıtının _Ana Önyükleme "
-"Kaydına_ (Master Boot Record - MBR) veya _GUID Bölümlendirme Tablosuna_ ("
-"GUID Partition Table - GPT) kurulabilir. Bu yöntemlerden hangisinin "
+"Kaydına_ (Master Boot Record - MBR) veya _GUID Bölümlendirme Tablosuna_ "
+"(GUID Partition Table - GPT) kurulabilir. Bu yöntemlerden hangisinin "
 "kullanılacağını belirlemek için kurulum programı aşağıdaki durumları dikkate "
 "alır:"
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
-#, no-wrap
-msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
-msgstr ""
-"BIOS ürün yazılımına sahip sistemler ve BIOS uyumluluk modundaki UEFI "
-"sistemleri:"
+#, fuzzy, no-wrap
+#| msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
+msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode"
+msgstr "BIOS ürün yazılımına sahip sistemler ve BIOS uyumluluk modundaki UEFI sistemleri:"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
@@ -371,8 +369,9 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:80
-#, no-wrap
-msgid "Systems with UEFI firmware:"
+#, fuzzy, no-wrap
+#| msgid "Systems with UEFI firmware:"
+msgid "Systems with UEFI firmware"
 msgstr "UEFI ürün yazılımına sahip sistemler:"
 
 #. type: Plain text

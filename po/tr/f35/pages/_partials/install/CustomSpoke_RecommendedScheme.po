@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-04 21:05+0000\n"
+"POT-Creation-Date: 2021-11-21 21:04+0000\n"
 "PO-Revision-Date: 2021-11-07 16:17+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/"
 "f35pages_partialsinstallcustomspoke_recommendedscheme/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -19,41 +19,42 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #. type: Title ====
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
 #, no-wrap
 msgid "Recommended Partitioning Scheme"
 msgstr "Tavsiye Edilen Bölümlendirme Düzeni"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
-msgid "In most cases, at least the following mount points should always be created:"
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
+msgid ""
+"In most cases, at least the following mount points should always be created:"
 msgstr ""
 "Çoğu durumda, en azından aşağıdaki bağlama noktaları her zaman "
 "oluşturulmalıdır:"
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
 #, no-wrap
 msgid "`/boot` - 1 GB"
 msgstr "`/boot` - 1 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
 msgid ""
 "This partition contains the operating system kernel, which allows {PRODUCT} "
 "to boot. It also contains other files used during the bootstrap process. Due "
 "to the limitations of most firmware, creating a separate, small standard "
-"partition for this directory is recommended. In most scenarios, a 1 GB "
-"`/boot` partition is adequate."
+"partition for this directory is recommended. In most scenarios, a 1 GB `/"
+"boot` partition is adequate."
 msgstr ""
 "Bu bölüm, {PRODUCT}'nın önyüklenmesini sağlayan işletim sistemi çekirdeğini "
 "içerir. Ayrıca, önyükleme işlemi sırasında kullanılan diğer dosyaları da "
 "içerir. Çoğu ürün yazılımının sınırlamaları nedeniyle bu dizin için ayrı, "
-"küçük bir standart bölüm oluşturulması tavsiye edilir. Çoğu durumda, 1 GB "
-"`/boot` bölümü yeterlidir."
+"küçük bir standart bölüm oluşturulması tavsiye edilir. Çoğu durumda, 1 GB `/"
+"boot` bölümü yeterlidir."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:15
 msgid ""
 "If your system has a hardware RAID controller, be aware that some BIOS types "
 "do not support booting from it. In that case, the `/boot` partition must be "
@@ -66,7 +67,7 @@ msgstr ""
 "oluşturulmalıdır."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:17
 msgid ""
 "Also note that the `/boot` directory cannot be placed on a LVM logical "
 "volume. Use a standard partition."
@@ -75,13 +76,13 @@ msgstr ""
 "unutmayın. Standart bir bölüm kullanın."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
 #, no-wrap
 msgid "`/` (root) - 25 GB"
 msgstr "`/` (kök) - 25 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
 msgid ""
 "This is where the root directory is located. The root directory is the top "
 "level of the directory structure. By default, all files are written to this "
@@ -91,18 +92,18 @@ msgid ""
 "packages will be installed."
 msgstr ""
 "Kök dizinin bulunduğu yer burasıdır. Kök dizin, dizin yapısının en üst "
-"düzeyidir. Öntanımlı olarak, yazılan yola farklı bir bölüm bağlanmadıkça ("
-"örneğin, `/boot` veya `/home`) tüm dosyalar bu bölüme yazılır. Bu bölümde "
+"düzeyidir. Öntanımlı olarak, yazılan yola farklı bir bölüm bağlanmadıkça "
+"(örneğin, `/boot` veya `/home`) tüm dosyalar bu bölüme yazılır. Bu bölümde "
 "açıklanan tavsiye edilen düzeni takip ederseniz, çoğu yazılım paketinin "
 "kurulacağı bölüm burası olacaktır."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:23
 msgid ""
-"For a minimal installation, a 10 GB root partition will be "
-"sufficient. However, for most common installations which include extra "
-"packages and a graphical user interface, the root partition should be at "
-"least 25 GB; with 75 GB being sufficient for most common use cases."
+"For a minimal installation, a 10 GB root partition will be sufficient. "
+"However, for most common installations which include extra packages and a "
+"graphical user interface, the root partition should be at least 25 GB; with "
+"75 GB being sufficient for most common use cases."
 msgstr ""
 "Asgari bir kurulum için 10 GB'lık bir kök bölümü yeterli olacaktır. Bununla "
 "birlikte, fazladan paketler ve bir grafiksel kullanıcı arayüzü içeren en "
@@ -110,27 +111,26 @@ msgstr ""
 "kullanım durumları için yeterlidir."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:28
 msgid ""
 "The `/` mount point is the top of the Linux Filesystem Hierarchy, and is "
 "referred to as the _root file system_, or root. The `/root` directory, "
-"sometimes pronounced "
-"\"`pass:attributes[{blank}]_slash-root_pass:attributes[{blank}]`\", is the "
-"home directory for the `root` user."
+"sometimes pronounced \"`pass:attributes[{blank}]_slash-root_pass:"
+"attributes[{blank}]`\", is the home directory for the `root` user."
 msgstr ""
 "`/` bağlama noktası, Linux Dosya Sistemi Hiyerarşisinin en üstündedir ve "
-"_kök dosya sistemi_ veya kök olarak adlandırılır. Bazen \""
-"`pass:attributes[{blank}]_slash-root_pass:attributes[{blank}]`\" olarak da "
+"_kök dosya sistemi_ veya kök olarak adlandırılır. Bazen \"`pass:"
+"attributes[{blank}]_slash-root_pass:attributes[{blank}]`\" olarak da "
 "telaffuz edilen `/root` dizini, `root` kullanıcısının ev dizinidir."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
 #, no-wrap
 msgid "`/home` - at least 10 GB"
 msgstr "`/home` - en az 10 GB"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
 msgid ""
 "To store user data separately from system data, create a dedicated mount "
 "point for the `/home` directory. This partition should be sized based on the "
@@ -144,11 +144,11 @@ msgstr ""
 "depolanacak veri miktarına, kullanıcı sayısına vb. göre "
 "boyutlandırılmalıdır. Bu, kullanıcı veri dosyalarını silmeden {PRODUCT}'yı "
 "yükseltmenize veya yeniden kurmanıza olanak tanır. Kurulum sırasında, "
-"{PRODUCT} kurulumunuz için 50 GB veya daha fazla boş alan varsa ayrı bir "
-"`/home` bölümü oluşturulacaktır."
+"{PRODUCT} kurulumunuz için 50 GB veya daha fazla boş alan varsa ayrı bir `/"
+"home` bölümü oluşturulacaktır."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:34
 msgid ""
 "When using {PRODUCT} as a workstation for normal use with a graphical "
 "environment, this mount point should have the most disk space assigned to "
@@ -161,22 +161,22 @@ msgstr ""
 "alanının çoğu ona atanmış olmalıdır."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
 msgstr "takas - sistem parametrelerinize göre"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
 msgid ""
 "Swap partitions support virtual memory; data is written to them when there "
 "is not enough RAM to store the data your system is processing. This "
 "partition's size is a function of system memory workload, not total system "
-"memory, and therefore is not equal to the total system memory "
-"size. Therefore, it is important to analyze what applications a system will "
-"be running and the load those applications will serve in order to determine "
-"the system memory workload. Application providers and developers should be "
-"able to provide some guidance."
+"memory, and therefore is not equal to the total system memory size. "
+"Therefore, it is important to analyze what applications a system will be "
+"running and the load those applications will serve in order to determine the "
+"system memory workload. Application providers and developers should be able "
+"to provide some guidance."
 msgstr ""
 "Takas bölümleri sanal belleği destekler; sisteminizin işlediği verileri "
 "depolamak için yeterli RAM olmadığında veriler onlara yazılır. Bu bölümün "
@@ -188,14 +188,14 @@ msgstr ""
 "konuda bazı tavsiyelerde bulunabilirler."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:38
 msgid ""
 "When the system runs out of swap space, the kernel terminates processes as "
 "the system RAM memory is exhausted. Configuring too much swap space results "
-"in storage devices being allocated but idle and is a poor use of "
-"resources. Too much swap space can also hide memory leaks. The maximum size "
-"for a swap partition and other additional information can be found in the "
-"`mkswap(8)` man page."
+"in storage devices being allocated but idle and is a poor use of resources. "
+"Too much swap space can also hide memory leaks. The maximum size for a swap "
+"partition and other additional information can be found in the `mkswap(8)` "
+"man page."
 msgstr ""
 "Sistemin takas alanı tükendiğinde çekirdek, sistem RAM belleğinin tamamı "
 "kullanıldığında işlemleri sonlandırır. Çok fazla takas alanı yapılandırmak, "
@@ -205,13 +205,13 @@ msgstr ""
 "`mkswap(8)` kılavuz sayfasında bulunabilir."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:43
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:43
 msgid ""
-"Beginning with Fedora 33, disk-based swap is no longer created by "
-"default. Instead, ZRAM-based swap is automatically used. See `man "
-"zram-generator` and `man zram-generator.conf` for more information. Should "
-"you choose to create disk-based swap, you will have two swap devices: "
-"disk-based with a lower priority, and ZRAM-based with a higher priority."
+"Beginning with Fedora 33, disk-based swap is no longer created by default. "
+"Instead, ZRAM-based swap is automatically used. See `man zram-generator` and "
+"`man zram-generator.conf` for more information. Should you choose to create "
+"disk-based swap, you will have two swap devices: disk-based with a lower "
+"priority, and ZRAM-based with a higher priority."
 msgstr ""
 "Fedora 33 ile başlayarak, disk tabanlı takas artık öntanımlı olarak "
 "oluşturulmaz. Bunun yerine, otomatik olarak ZRAM tabanlı takas kullanılır. "
@@ -221,7 +221,7 @@ msgstr ""
 "yüksek önceliğe sahip ZRAM tabanlı."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:47
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:47
 msgid ""
 "The table below provides the recommended size of a swap partition depending "
 "on the amount of RAM in your system and whether you want sufficient memory "
@@ -247,31 +247,29 @@ msgstr ""
 "düzenlemelisiniz."
 
 #. type: Block title
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:48
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:48
 #, no-wrap
 msgid "Recommended System Swap Space"
 msgstr "Tavsiye Edilen Sistem Takas Alanı"
 
 #. type: Table
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
 #, no-wrap
 msgid ""
-"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
-"if allowing for hibernation\n"
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space if allowing for hibernation\n"
 "|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
 "|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
-"|Sistemdeki RAM miktarı|Tavsiye edilen takas alanı|Hazırda bekletmeye izin "
-"veriliyorsa tavsiye edilen takas alanı\n"
+"|Sistemdeki RAM miktarı|Tavsiye edilen takas alanı|Hazırda bekletmeye izin veriliyorsa tavsiye edilen takas alanı\n"
 "|2 GB'den az|RAM miktarının 2 katı|RAM miktarının 3 katı\n"
 "|2 GB - 8 GB|RAM miktarına eşit|RAM miktarının 2 katı\n"
 "|8 GB - 64 GB|RAM miktarının yarısı|RAM miktarının 1 buçuk katı\n"
 "|64 GB'den fazla|iş yüküne bağlı|hazırda bekletme tavsiye edilmez\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:60
 msgid ""
 "At the border between each range listed above (for example, a system with 2 "
 "GB, 8 GB, or 64 GB of system RAM), discretion can be exercised with regard "
@@ -285,7 +283,7 @@ msgstr ""
 "performans sağlayabilir."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:62
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:62
 msgid ""
 "Distributing swap space over multiple storage devices - particularly on "
 "systems with fast drives, controllers and interfaces - also improves swap "
@@ -296,35 +294,34 @@ msgstr ""
 "performansını iyileştirir."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
 #, no-wrap
 msgid "BIOS Boot (1 MB) or EFI System Partition (200 MB)"
 msgstr "BIOS Önyükleme (1 MB) veya EFI Sistem Bölümü (200 MB)"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:64
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:64
 msgid ""
 "The [application]*GRUB2* boot loader can be installed either in the _Master "
-"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot "
-"device. In order to determine which of these methods to use, the "
-"installation program considers the following variations:"
+"Boot Record_ (MBR) or the _GUID Partition Table_ (GPT) of the boot device. "
+"In order to determine which of these methods to use, the installation "
+"program considers the following variations:"
 msgstr ""
 "[application]*GRUB2* önyükleyicisi, önyükleme aygıtının _Ana Önyükleme "
-"Kaydına_ (Master Boot Record - MBR) veya _GUID Bölümlendirme Tablosuna_ ("
-"GUID Partition Table - GPT) kurulabilir. Bu yöntemlerden hangisinin "
+"Kaydına_ (Master Boot Record - MBR) veya _GUID Bölümlendirme Tablosuna_ "
+"(GUID Partition Table - GPT) kurulabilir. Bu yöntemlerden hangisinin "
 "kullanılacağını belirlemek için kurulum programı aşağıdaki durumları dikkate "
 "alır:"
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
-#, no-wrap
-msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
-msgstr ""
-"BIOS ürün yazılımına sahip sistemler ve BIOS uyumluluk modundaki UEFI "
-"sistemleri:"
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:65
+#, fuzzy, no-wrap
+#| msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode:"
+msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode"
+msgstr "BIOS ürün yazılımına sahip sistemler ve BIOS uyumluluk modundaki UEFI sistemleri:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:66
 msgid ""
 "If the disk is already formatted, the partitioning scheme is retained. If "
 "the disk is not formatted, or you have erased all existing partitions from "
@@ -335,23 +332,22 @@ msgstr ""
 "şunu seçecektir:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
 msgid "MBR if the size of the disk is less than 2 TB (terabytes)"
 msgstr "Diskin boyutu 2 TB'den (terabayt) azsa MBR"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:70
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:70
 msgid "GPT if the size of the disk is more than 2 TB"
 msgstr "Diskin boyutu 2 TB'den fazlaysa GPT"
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:75
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:75
 msgid ""
 "You can force the installer to use GPT on disks smaller than 2 TB by using "
-"the [option]#inst.gpt# boot option as described in "
-"xref:advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot "
-"Options]. However, the opposite is not possible - you cannot use MBR on "
-"disks larger than 2 TB."
+"the [option]#inst.gpt# boot option as described in xref:advanced/"
+"Boot_Options.adoc#chap-anaconda-boot-options[Boot Options]. However, the "
+"opposite is not possible - you cannot use MBR on disks larger than 2 TB."
 msgstr ""
 "xref:advanced/Boot_Options.adoc#chap-anaconda-boot-options[Önyükleme "
 "Seçenekleri] bölümünde açıklandığı gibi [option]#inst.gpt# önyükleme "
@@ -360,25 +356,25 @@ msgstr ""
 "disklerde MBR kullanamazsınız."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:79
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:79
 msgid ""
 "You need to create a _BIOS Boot_ partition with a size of 1 MB to install on "
-"a system with BIOS firmware if the disk containing the boot loader uses "
-"GPT. If the disk uses a MBR, no special partition is necessary on a BIOS "
-"system."
+"a system with BIOS firmware if the disk containing the boot loader uses GPT. "
+"If the disk uses a MBR, no special partition is necessary on a BIOS system."
 msgstr ""
 "Önyükleyiciyi içeren disk GPT kullanıyorsa, BIOS ürün yazılımlı bir sisteme "
 "kurmak için 1 MB boyutunda bir _BIOS Önyükleme_ bölümü oluşturmanız gerekir. "
 "Disk MBR kullanıyorsa, BIOS sisteminde özel bir bölüme gerek yoktur."
 
 #. type: Labeled list
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:80
-#, no-wrap
-msgid "Systems with UEFI firmware:"
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:80
+#, fuzzy, no-wrap
+#| msgid "Systems with UEFI firmware:"
+msgid "Systems with UEFI firmware"
 msgstr "UEFI ürün yazılımına sahip sistemler:"
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:81
 msgid ""
 "Only GPT is allowed on UEFI systems. In order to install on a formatted disk "
 "with a MBR, it must be reformated and relabeled. All data currently on the "
@@ -389,7 +385,7 @@ msgstr ""
 "etiketlenmelidir. Diskte bulunan tüm veriler kaybedilecektir."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:83
 msgid ""
 "UEFI-based systems require an _EFI System Partition_ at least 50 MB in size "
 "(recommended size is 200 MB), regardless of the partitioning scheme."
@@ -399,7 +395,7 @@ msgstr ""
 "MB'dir)."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:88
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:88
 msgid ""
 "If your system requires either a BIOS Boot partition or an EFI System "
 "Partition based on the requirements detailed above, this partition must be "
@@ -412,7 +408,7 @@ msgstr ""
 "veya bir Btrfs alt biriminde bulunamaz."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:90
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:90
 msgid ""
 "Also note that if your system does not require any of these partitions, they "
 "will not be shown in the `File System` menu in mount point options."
@@ -422,12 +418,12 @@ msgstr ""
 "gösterilmeyeceğini unutmayın."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:94
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:94
 msgid ""
 "Many systems have more partitions than the minimum listed above. Choose "
-"partitions based on your particular needs. See "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-advice[Advice "
-"on Partitions] for additional information and advice."
+"partitions based on your particular needs. See xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"advice[Advice on Partitions] for additional information and advice."
 msgstr ""
 "Çoğu sistem, yukarıda listelenen asgari bölümlerden daha fazla bölüme "
 "sahiptir. Bölümleri kendi ihtiyaçlarınıza göre seçin. Ek bilgi ve tavsiye "
@@ -435,24 +431,22 @@ msgstr ""
 "partitioning-advice[Bölümlerle İlgili Tavsiyeler] bölümüne bakın."
 
 #. type: delimited block =
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:99
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:99
 msgid ""
-"Only assign storage capacity to those partitions you require "
-"immediately. You may allocate free space at any time, to meet needs as they "
-"occur."
+"Only assign storage capacity to those partitions you require immediately. "
+"You may allocate free space at any time, to meet needs as they occur."
 msgstr ""
 "Yalnızca hemen ihtiyaç duyduğunuz bölümlere depolama kapasitesi atayın. "
 "İhtiyaçları ortaya çıktıkça karşılamak için istediğiniz zaman boş alan "
 "tahsis edebilirsiniz."
 
 #. type: Plain text
-#: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:102
+#: pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:102
 msgid ""
 "If you are not sure how best to configure the partitions for your computer, "
 "accept the automatic default partition layout provided by the installation "
-"program as described in "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning[Installation "
-"Destination]."
+"program as described in xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
 "Bilgisayarınız için bölümleri en iyi şekilde nasıl yapılandıracağınızdan "
 "emin değilseniz, xref:install/Installing_Using_Anaconda.adoc#sect-"
