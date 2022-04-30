@@ -2,20 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Emilio Herrera <ehespinosa57@gmail.com>, 2021.
+# Alejandro Alcaide <alex@blueselene.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2021-08-26 11:04+0000\n"
-"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/rawhidepages_partialsinstalluserspoke/es/>\n"
+"PO-Revision-Date: 2022-04-30 20:18+0000\n"
+"Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/rawhidepages_partialsinstalluserspoke/"
+"es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Block title
 #: pages/_partials/install/UserSpoke.adoc:4
@@ -60,6 +62,8 @@ msgstr ""
 #, no-wrap
 msgid "The Create User screen. Use the text input fields to create a user account and configure its settings."
 msgstr ""
+"La pantalla Crear. Use los campos de entrada de texto para crear una cuenta "
+"de usuario y configurar sus ajustes."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:17
@@ -94,7 +98,7 @@ msgstr ""
 "Asegúrese de que la casilla de verificación `Se requiere contraseña para "
 "usar esta cuenta` está habilitada, introduzca una contraseña que desee "
 "utilizar para esta cuenta en el campo `Contraseña`. Los caracteres que "
-"escriba se mostrarán como puntos por seguridad. Después, repita la mism "
+"escriba se mostrarán como puntos por seguridad. Después, repita la misma "
 "contraseña en el campo `Confirmar contraseña` mas abajo para asegurar que lo "
 "ha introducido apropiadamente. Ambas contraseñas introducidas deben ser la "
 "misma."
@@ -136,6 +140,12 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
+"La opción `Hacer a este usuario administrador` le da al usuario que estas "
+"creando derechos administrativos (añadiéndolo al grupo `wheel`), permitiendo "
+"a este usuario usar el [command]#sudo# comando para realizar las tareas "
+"normalmente solo disponibles a `root` usando su propia contraseña, en vez de "
+"la de `root.` Esto puede ser mas conveniente, pero también puede ser un "
+"riesgo de seguridad."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:38
@@ -144,6 +154,9 @@ msgid ""
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
 msgstr ""
+"Si le das a un usuario privilegios de administrador asegúrese de que la "
+"cuenta esta protegida por una contraseña fuerte. Nunca le des a un usuario "
+"privilegios de administrador sin requerir ninguna contraseña para la cuenta."
 
 #. type: delimited block =
 #: pages/_partials/install/UserSpoke.adoc:40
@@ -152,6 +165,9 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
+"Véase [citetitle]_{PRODUCT} Guia de Seguridad_, disponible en el "
+"link:++https://docs.fedoraproject.org/++[], para información detallada sobre "
+"seguridad de contraseñas, incluyendo guías para elegir contraseñas fuertes."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:44
@@ -160,13 +176,17 @@ msgid ""
 "fields. A new dialog window titled `Advanced User Configuration` will open. "
 "This dialog is described in the following section."
 msgstr ""
+"Para mas ajustes, haga click en el botón `Avanzado` debajo del campo para la "
+"contraseña. Aparecerá un nuevo cuadro de dialogo con el titulo `"
+"Configuración Avanzada de Usuario`. Este dialogo se describe en la siguiente "
+"sección."
 
 #. type: Block title
 #: pages/_partials/install/UserSpoke.adoc:46
 #: pages/_partials/install/UserSpoke.adoc:50
 #, no-wrap
 msgid "Advanced User Configuration"
-msgstr ""
+msgstr "Configuración Avanzada de Usuario"
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:49
@@ -174,12 +194,14 @@ msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr ""
+"La ventana `Configuracion Avanzada de Usuario` le permita cambiar los "
+"siguientes ajustes para la nueva cuenta de usuario."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "Advanced settings for the new user account."
-msgstr ""
+msgstr "Ajustes avanzados para la nueva cuenta de usuario."
 
 #. type: Target for macro image
 #: pages/_partials/install/UserSpoke.adoc:52
@@ -193,6 +215,8 @@ msgid ""
 "The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
 "attributes[{blank}]` by default)."
 msgstr ""
+"El `directorio Home` del usuario (`/home/"
+"pass:attributes[{blank}]_username_pass:attributes[{blank}]`por defecto)."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:57
@@ -200,6 +224,8 @@ msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they cannot be assigned to an user."
 msgstr ""
+"El ID del usuario (UID). El valor por defecto es 1000. Los UIDs 0-999 están "
+"reservados por el sistema, por lo tanto no se pueden asignar a un usuario."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:59
@@ -208,6 +234,10 @@ msgid ""
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
 "are reserved by the system so they cannot be assigned to an user's group."
 msgstr ""
+"El ID de grupo (GID) del grupo por defecto del usuario. El grupo por defecto "
+"tendrá el mismo nombre que el de la cuenta, y su GID por defecto es 1000. "
+"Los GID 0-999 están reservados por el sistema, por lo tanto no se les puede "
+"asignar al grupo de un usuario."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:60
