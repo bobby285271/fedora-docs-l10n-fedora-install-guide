@@ -2,21 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # simmon <simmon@nplob.com>, 2021.
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-06 21:06+0000\n"
-"PO-Revision-Date: 2021-11-07 16:16+0000\n"
-"Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/f34pagesadvancednetwork_based_installations/ko/"
-">\n"
+"PO-Revision-Date: 2022-05-08 06:20+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f34pagesadvancednetwork_based_installations/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title =
 #: pages/advanced/Network_based_Installations.adoc:5
@@ -192,10 +193,9 @@ msgstr "dhcp 서버 꾸러미 설치."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:50
-#, fuzzy, no-wrap
-#| msgid "# dnf install tftp-server\n"
+#, no-wrap
 msgid "# dnf install dhcp-server\n"
-msgstr "# dnf install tftp-server\n"
+msgstr "# dnf install dhcp-server\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:53
@@ -242,16 +242,14 @@ msgstr "당신의 구성을 시험하고 당신이 발견한 문제를 해결하
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:76
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[command]#systemctl start dhcpd#\n"
-#| "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
+#, no-wrap
 msgid ""
 "[command]#systemctl start dhcpd#\n"
 "[command]#systemctl enable dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
 "[command]#systemctl start dhcpd#\n"
+"[command]#systemctl enable dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
