@@ -2,23 +2,23 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020, 2021.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021, 2022.
 # Arman Arisman <arman.wu@gmail.com>, 2021.
 # Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-11-10 05:56+0000\n"
+"PO-Revision-Date: 2022-05-09 23:18+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f29pagesadvancedboot_options/id/>\n"
+"fedora-docs-l10n-fedora-install-guide/f29pagesadvancedboot_options/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:6
@@ -2001,6 +2001,13 @@ msgid ""
 "issue; see BZ#link:++https://bugzilla.redhat.com/show_bug.cgi?id=1085310+"
 "+[1085310] for details."
 msgstr ""
+"Saat melakukan instalasi Kickstart, boot dari media lokal dan memiliki "
+"berkas Kickstart di media lokal juga, jaringan tidak akan diinisialisasi. "
+"Ini berarti bahwa opsi Kickstart lainnya yang memerlukan akses jaringan, "
+"seperti skrip pra-instalasi atau pasca-instalasi yang mengakses lokasi "
+"jaringan, akan menyebabkan instalasi gagal. Ini adalah masalah yang "
+"diketahui; lihat BZ#link:++https://bugzilla.redhat.com/show_bug."
+"cgi?id=1085310++[1085310] untuk detailnya."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:455
@@ -2111,12 +2118,14 @@ msgid ""
 "Specified the location of updates for the installation program. Use the "
 "[option]#inst.updates=# option instead."
 msgstr ""
+"Menentukan lokasi pembaruan untuk program instalasi. Gunakan opsi "
+"[option]#inst.updates=# sebagai gantinya."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:477
 #, no-wrap
 msgid "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
-msgstr ""
+msgstr "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:478
@@ -2125,12 +2134,15 @@ msgid ""
 "handled by [application]*dracut*, which does not support wireless "
 "networking, rendering these options useless."
 msgstr ""
+"Akses jaringan nirkabel yang dikonfigurasi. Konfigurasi jaringan sekarang "
+"sedang ditangani oleh [application]*dracut*, yang tidak mendukung jaringan "
+"nirkabel, membuat opsi ini tidak berguna."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:479
 #, no-wrap
 msgid "[option]#ethtool=#"
-msgstr ""
+msgstr "[option]#ethtool=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:480
@@ -2138,23 +2150,28 @@ msgid ""
 "Used in the past to configure additional low-level network settings. All "
 "network settings are now handled by the [option]#ip=# option."
 msgstr ""
+"Digunakan di masa lalu untuk mengonfigurasi pengaturan jaringan tingkat "
+"rendah tambahan. Semua pengaturan jaringan sekarang ditangani oleh opsi "
+"[option]#ip=#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:481
 #, no-wrap
 msgid "[option]#gdb#"
-msgstr ""
+msgstr "[option]#gdb#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:482
 msgid "Allowed you to debug the loader. Use [option]#rd.debug# instead."
 msgstr ""
+"Memungkinkan Anda untuk men-debug loader. Gunakan [opsi]#rd.debug# sebagai "
+"gantinya."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:483
 #, no-wrap
 msgid "[option]#mediacheck#"
-msgstr ""
+msgstr "[option]#mediacheck#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:484
@@ -2162,12 +2179,14 @@ msgid ""
 "Verified the installation media before starting the installation. Replaced "
 "with the [option]#rd.live.check# option."
 msgstr ""
+"Memverifikasi media instalasi sebelum memulai instalasi. Diganti dengan opsi "
+"[option]#rd.live.check#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:485
 #, no-wrap
 msgid "[option]#ks=floppy#"
-msgstr ""
+msgstr "[option]#ks=floppy#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:486
@@ -2175,24 +2194,27 @@ msgid ""
 "Specified a floppy disk as the Kickstart file source. Floppy drives are not "
 "supported anymore."
 msgstr ""
+"Menentukan floppy disk sebagai sumber berkas Kickstart. Floppy drive tidak "
+"didukung lagi."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:487
 #, no-wrap
 msgid "[option]#display=#"
-msgstr ""
+msgstr "[option]#display=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:488
 msgid ""
 "Configured a remote display. Replaced with the [option]#inst.vnc# option."
 msgstr ""
+"Mengonfigurasi tampilan jarak jauh. Diganti dengan opsi [option]#inst.vnc#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:489
 #, no-wrap
 msgid "[option]#utf8#"
-msgstr ""
+msgstr "[option]#utf8#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:490
@@ -2200,12 +2222,14 @@ msgid ""
 "Added UTF8 support when installing in text mode. UTF8 support now works "
 "automatically."
 msgstr ""
+"Menambahkan dukungan UTF8 saat menginstal dalam mode teks. Dukungan UTF8 "
+"sekarang bekerja secara otomatis."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:491
 #, no-wrap
 msgid "[option]#noipv6#"
-msgstr ""
+msgstr "[option]#noipv6#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:492
@@ -2214,12 +2238,16 @@ msgid ""
 "into the kernel so the driver cannot be blacklisted; however, it is possible "
 "to disable IPv6 using the [option]#ipv6.disable# option."
 msgstr ""
+"Digunakan untuk menonaktifkan dukungan IPv6 dalam program instalasi. IPv6 "
+"sekarang dibangun ke dalam kernel sehingga driver tidak dapat masuk daftar "
+"hitam; namun, dimungkinkan untuk menonaktifkan IPv6 menggunakan opsi "
+"[option]#ipv6.disable#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:493
 #, no-wrap
 msgid "[option]#upgradeany#"
-msgstr ""
+msgstr "[option]#upgradeany#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:494
@@ -2229,12 +2257,16 @@ msgid ""
 "Upgrading_Your_Current_System.adoc#chap-upgrading[Upgrading Your Current "
 "System]."
 msgstr ""
+"Peningkatan dilakukan dengan cara yang berbeda dalam rilis {PRODUCT} saat "
+"ini. Untuk informasi selengkapnya tentang meningkatkan sistem Anda, lihat "
+"xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading[Meningkatkan "
+"Sistem Anda Saat Ini]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:495
 #, no-wrap
 msgid "[option]#vlanid=#"
-msgstr ""
+msgstr "[option]#vlanid=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:496
@@ -2242,12 +2274,14 @@ msgid ""
 "Used to configure Virtual LAN (802.1q tag) devices. Use the [option]#vlan=# "
 "option instead."
 msgstr ""
+"Digunakan untuk mengonfigurasi perangkat Virtual LAN (tag 802.1q). Gunakan "
+"opsi [option]#vlan=# sebagai gantinya."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:497
 #, no-wrap
 msgid "[option]#inst.dnf#"
-msgstr ""
+msgstr "[option]#inst.dnf#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:498
@@ -2257,18 +2291,22 @@ msgid ""
 "default and this option has been replaced with [option]#inst.nodnf#, which "
 "reverts back to [application]*Yum*."
 msgstr ""
+"Digunakan untuk mengaktifkan [application]*DNF* untuk menangani instalasi "
+"paket dan resolusi dependensi di {PRODUCT} 21. [application]*DNF* sekarang "
+"digunakan secara baku dan opsi ini telah diganti dengan [option]#inst.nodnf#"
+", yang mengembalikan ke [application]*Yum*."
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:500
 #, no-wrap
 msgid "Using the Maintenance Boot Modes"
-msgstr ""
+msgstr "Menggunakan Mode Boot Pemeliharaan"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:503
 #, no-wrap
 msgid "Loading the Memory (RAM) Testing Mode"
-msgstr ""
+msgstr "Memuat Mode Pengujian Memori (RAM)"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:506
@@ -2292,6 +2330,14 @@ msgid ""
 "the bottom informing you of the current status, and another pass will start "
 "automatically."
 msgstr ""
+"{PRODUCT} mencakup aplikasi pengujian memori [application]*Memtest86+*. "
+"Untuk memulai mode pengujian memori, pilih Pemecahan Masalah > `Uji memori` "
+"di menu boot. Pengujian akan seketika dimulai. Secara baku, "
+"[application]*Memtest86+* melakukan sepuluh tes di setiap pass; konfigurasi "
+"yang berbeda dapat ditentukan dengan mengakses layar konfigurasi menggunakan "
+"tombol kbd:[c]. Setelah pass pertama selesai, pesan akan muncul di bagian "
+"bawah yang memberi tahu Anda tentang status saat ini, dan pass lain akan "
+"dimulai secara otomatis."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:513
@@ -2304,19 +2350,19 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:516
 #, no-wrap
 msgid "Memory Check Using Memtest86+"
-msgstr ""
+msgstr "Pemeriksaan Memori Menggunakan Memtest86+"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/advanced/Boot_Options.adoc:518
 #, no-wrap
 msgid "Memtest86+ testing the system memory"
-msgstr ""
+msgstr "Memtest86+ menguji memori sistem"
 
 #. type: Target for macro image
 #: pages/advanced/Boot_Options.adoc:518
 #, no-wrap
 msgid "boot/memtest86.png"
-msgstr ""
+msgstr "boot/memtest86.png"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:521
@@ -2324,6 +2370,8 @@ msgid ""
 "The main screen displayed while testing is in progress is divided into three "
 "main areas:"
 msgstr ""
+"Layar utama yang ditampilkan saat pengujian sedang berlangsung dibagi "
+"menjadi tiga area utama:"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:523
@@ -2333,6 +2381,10 @@ msgid ""
 "throughputs and processor and chipset information. This information is "
 "detected when [application]*Memtest86+* starts."
 msgstr ""
+"Sudut kiri atas menampilkan informasi tentang konfigurasi memori sistem Anda "
+"- seberapa besar memori dan cache prosesor yang terdeteksi serta throughput "
+"serta informasi prosesor dan chipset mereka. Informasi ini terdeteksi saat "
+"[application]*Memtest86+* dimulai."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:525
@@ -2341,6 +2393,8 @@ msgid ""
 "the current pass and the currently running test in that pass as well as a "
 "description of the test."
 msgstr ""
+"Sudut kanan atas menampilkan informasi tentang tes - kemajuan pass saat ini "
+"dan tes yang sedang berjalan pada pass tersebut serta deskripsi tes."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:527
@@ -2354,12 +2408,19 @@ msgid ""
 "each pass completes, a short summary will appear in this location. For "
 "example:"
 msgstr ""
+"Bagian tengah layar digunakan untuk menampilkan informasi tentang seluruh "
+"rangkaian tes dari saat alat telah dimulai, seperti total waktu, cacah pass "
+"yang diselesaikan, cacah kesalahan yang terdeteksi, dan pilihan pengujian "
+"Anda. Pada beberapa sistem, informasi terperinci tentang memori yang "
+"diinstal (seperti cacah modul yang diinstal, pabrikan, frekuensi, dan "
+"latensinya) juga akan ditampilkan di sini. Setelah setiap pass selesai, "
+"ringkasan singkat akan muncul di lokasi ini. Misalnya:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:531
 #, no-wrap
 msgid "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
-msgstr ""
+msgstr "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:534
@@ -2369,6 +2430,10 @@ msgid ""
 "such as which test detected a problem, the memory location which is failing, "
 "and others."
 msgstr ""
+"Jika [application]*Memtest86+* mendeteksi kesalahan, itu juga akan "
+"ditampilkan di area ini dan disorot merah. Pesan akan mencakup informasi "
+"terperinci seperti tes mana yang mendeteksi masalah, lokasi memori yang "
+"gagal, dan lainnya."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:536
@@ -2380,6 +2445,12 @@ msgid ""
 "important system, leave the tests running overnight or even for a few days "
 "in order to complete multiple passes."
 msgstr ""
+"Dalam kebanyakan kasus, satu pass yang berhasil (yaitu, satu run dari semua "
+"10 tes) sudah cukup untuk memverifikasi bahwa RAM Anda dalam kondisi baik. "
+"Namun, dalam beberapa keadaan langka, kesalahan yang tidak terdeteksi pada "
+"pass pertama mungkin muncul pada operan berikutnya. Untuk melakukan tes "
+"menyeluruh pada sistem penting, biarkan tes berjalan semalaman atau bahkan "
+"selama beberapa hari untuk menyelesaikan beberapa pass."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:541
@@ -2397,6 +2468,8 @@ msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
 msgstr ""
+"Untuk menghentikan pengujian dan me-reboot komputer Anda, tekan tombol "
+"kbd:[Esc] kapan saja."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:547
@@ -2411,7 +2484,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:549
 #, no-wrap
 msgid "Verifying Boot Media"
-msgstr ""
+msgstr "Memverifikasi Media Boot"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:552
@@ -2431,12 +2504,16 @@ msgid ""
 "you select the default installation option from the boot menu (`Test this "
 "media & install Fedora`)."
 msgstr ""
+"Untuk menguji integritas image ISO, tambahkan [option]#rd.live.check# ke "
+"baris perintah boot loader. Perhatikan bahwa opsi ini digunakan secara "
+"otomatis jika Anda memilih opsi instalasi baku dari menu boot (`Uji media "
+"ini & instal Fedora`)."
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:556
 #, no-wrap
 msgid "Booting Your Computer in Rescue Mode"
-msgstr ""
+msgstr "Mem-boot Komputer Anda dalam Mode Penyelamatan"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:559
@@ -2454,6 +2531,9 @@ msgid ""
 "`Rescue a {PRODUCT} system` from the Troubleshooting submenu in the boot "
 "menu, or use the [option]#inst.rescue# boot option."
 msgstr ""
+"Untuk memuat sistem penyelamatan dengan disk instalasi atau drive USB, pilih "
+"`Selamatkan sistem {PRODUCT}` dari submenu Pemecahan Masalah di menu boot, "
+"atau gunakan opsi boot [option]#inst.rescue#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:563
@@ -2462,6 +2542,9 @@ msgid ""
 "system with the screens that follow. The final setup screen configures "
 "access to the existing system on your computer."
 msgstr ""
+"Tentukan bahasa, tata letak papan ketik, dan pengaturan jaringan untuk "
+"sistem penyelamatan dengan layar yang mengikuti. Layar pengaturan akhir "
+"mengonfigurasi akses ke sistem yang ada di komputer Anda."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:564
@@ -2469,3 +2552,5 @@ msgid ""
 "By default, rescue mode attaches an existing operating system to the rescue "
 "system under the directory `/mnt/sysimage/`."
 msgstr ""
+"Secara baku, mode penyelamatan mecantolkan sistem operasi yang ada ke sistem "
+"penyelamatan di bawah direktori `/mnt/sysimage/`."
