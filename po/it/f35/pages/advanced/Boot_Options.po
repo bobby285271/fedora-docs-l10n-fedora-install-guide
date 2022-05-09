@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-05-08 06:20+0000\n"
+"PO-Revision-Date: 2022-05-09 23:18+0000\n"
 "Last-Translator: Nathan <nathan95@live.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f35pagesadvancedboot_options/it/>\n"
@@ -37,6 +37,15 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server])."
 msgstr ""
+"Il programma di installazione di [application]*Anaconda* include una serie "
+"di opzioni di avvio per gli amministratori, che modificano il comportamento "
+"predefinito del programma di installazione abilitando o disabilitando alcune "
+"funzioni. Per utilizzare una o più opzioni di avvio, devi avviare da un "
+"supporto di installazione e aggiungere queste opzioni al menu di avvio (vedi "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu]), "
+"oppure devi aggiungerle nel tuo file di configurazione del server PXE se "
+"stai avviando da una rete (vedi xref:advanced/Network_based_Installations."
+"adoc#chap-pxe-server-setup[Setting Up an Installation Server])."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:10
@@ -44,6 +53,8 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Puoi utilizzare più opzioni allo stesso tempo; in questo caso, separale con "
+"un singolo spazio."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:12
@@ -60,6 +71,13 @@ msgid ""
 "[option]#inst.vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. "
 "On its own, without a password specified, the option is invalid."
 msgstr ""
+"Le opzioni presentate come terminanti con un segno \"`equals`\" (`=`) "
+"richiedono che sia specificato un valore - non possono essere utilizzate da "
+"sole. Per esempio, l'opzione [option]#inst.vncpassword=# deve contenere "
+"anche un valore (in questo caso, una password). La forma corretta è quindi "
+"[option]#inst."
+"vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. Da "
+"sola, senza una password specificata, l'opzione non è valida."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:16
@@ -71,6 +89,12 @@ msgid ""
 "starting the installation; if this option is present, the check will be "
 "performed, and if it is not present, the check will be skipped."
 msgstr ""
+"Le opzioni presentate senza il segno \""
+"`pass:attributes[{blank}]`=`pass:attributes[{blank}]`\" non accettano alcun "
+"valore o parametro. Per esempio, l'opzione [option]#rd.live.check# forza "
+"[application]*Anaconda* di verificare il supporto di installazione prima di "
+"iniziare l'installazione; se questa opzione è presente, il controllo verrà "
+"eseguito, e se non è presente, il controllo verrà saltato."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:18
@@ -79,6 +103,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Oltre alle opzioni descritte in questo capitolo, il prompt di avvio accetta "
+"anche le opzioni del kernel [application]*dracut*. Un elenco di queste "
+"opzioni è disponibile nella pagina man di `dracut.cmdline(7)`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:23
@@ -88,12 +115,17 @@ msgid ""
 "with Fedora 34, the installer will ignore options that do not use it (for "
 "example, `stage2=` instead of `inst.stage2=`)."
 msgstr ""
+"Le opzioni di avvio specifiche del programma di installazione iniziano "
+"sempre con `inst.` in questa guida. Questo prefisso era opzionale nelle "
+"versioni precedenti, ma a partire da Fedora 34, il programma di "
+"installazione ignorerà le opzioni che non lo utilizzano (per esempio, "
+"`stage2=` invece di `inst.stage2=`)."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:27
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Configurare il sistema di installazione dal menu d'avvio"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:30
@@ -110,29 +142,40 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server] if you are booting from a server."
 msgstr ""
+"Il modo esatto di specificare le opzioni di avvio personalizzate è diverso "
+"in base all'architettura del tuo sistema, al firmware e al metodo che usi "
+"per avviare l'installazione. Se la stai avviando da un supporto locale, puoi "
+"specificare le opzioni nel menu di avvio, prima di iniziare l'installazione; "
+"se la stai avviando da una rete utilizzando un server PXE, devi aggiungere "
+"le opzioni di avvio nel file di configurazione del boot loader prima di "
+"avviare il sistema d'installazione. Per istruzioni specifiche, vedi xref:"
+"install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu] se stai "
+"usando un supporto locale e xref:advanced/Network_based_Installations.adoc"
+"#chap-pxe-server-setup[Setting Up an Installation Server] se stai avviando "
+"l'installazione da un server."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:32
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opzioni di avvio disponibili"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:35
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "Le seguenti opzioni sono disponibili in {PRODUCT}:"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:37
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Specificare la fonte d'installazione"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:39
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[opzioni]#inst.repo=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:40
@@ -141,17 +184,20 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Specifica la fonte di installazione - cioè una posizione dove il programma "
+"d'installazione può trovare le immagini e i pacchetti di cui ha bisogno. Per "
+"esempio:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:44
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[opzione]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:47
 msgid "The source must be either:"
-msgstr ""
+msgstr "La fonte deve essere:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:49
@@ -160,11 +206,14 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid "
 "`.treeinfo` file"
 msgstr ""
+"un albero installabile, che è una struttura di directory che contiene le "
+"immagini, i pacchetti e i repodata del programma d'installazione così come "
+"un file `.treeinfo` valido"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:51
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "Un DVD (Un disco fisico presente nel lettore DVD del sistema)"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:53
@@ -172,6 +221,8 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"Un immagine ISO del disco d'installazione completa di {PRODUCT} collocata su "
+"un disco rigido o su un unità di rete accessibile dal sistema d'installazione"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:55
