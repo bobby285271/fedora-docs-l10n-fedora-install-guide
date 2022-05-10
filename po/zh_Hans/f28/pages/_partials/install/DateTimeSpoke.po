@@ -2,28 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Bobby Rong <rjl931189261@126.com>, 2021.
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2021-04-15 03:02+0000\n"
-"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"PO-Revision-Date: 2022-05-10 22:06+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "f28pages_partialsinstalldatetimespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:6
 #: ./pages/_partials/install/DateTimeSpoke.adoc:10
 #, no-wrap
 msgid "Date & Time"
-msgstr "日期与时间"
+msgstr "日期时间"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:9
@@ -42,13 +43,13 @@ msgstr ""
 #: ./pages/_partials/install/DateTimeSpoke.adoc:12
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr "日期与时间页面屏幕截图"
+msgstr "日期时间页面的屏幕截图"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:12
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr "anaconda/DateTimeSpoke.png"
+msgstr "anaconda文件夹下的DateTimeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:15
@@ -59,8 +60,10 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
-"首先你可以从屏幕左上角的下拉菜单中选择你所在的地区，然后选择你所在的城市或者距离你所在位置最近的且位于同一时区的城市。指定一个准确的位置有利于 "
-"{PRODUCT} 充分考虑夏令时等条件，从而正确设定你的时间。"
+"首先，点击屏幕的左上角的下拉菜单来选择你的“地区”。然后，选择你的“城市”，或者"
+"最接近你目前所在地点的、在同一时区下的城市。选择一个特定的地点将帮助{PRODUCT}"
+"确保你的时间总会被设置正确；如果夏令时可用，那么为夏令时而自动做出的时间修改"
+"也会被设置正确。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:17
@@ -68,7 +71,8 @@ msgid ""
 "You can also select a time zone relative to Greenwich Mean Time (GMT) "
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
-msgstr "你也可以直接指定你所在的时区而不去指定地区，只需将 `Etc` 设置为你的地区即可。"
+msgstr "你也可以只选择一个相对于格林尼治时间的时区而不设置到某个特定区域的地点。如果"
+"你想这样做，就选择“Etc”作为你的区域。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/DateTimeSpoke.adoc:22
@@ -90,14 +94,16 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
-"右上角的切换按钮可以用于启用和关闭基于 NTP 的网络时间自动同步服务。启用这个选项可以保证你的系统在连接到互联网的前提下时间准确。NTP "
-"池已经被默认配置好，但你可以随时对 NTP 服务器进行调整。"
+"在屏幕右上角的拨动开关所示的“网络时间”可以通过使用网络时间协议（NTP）的方式，"
+"被用来开启或关闭网络时间同步。只要你的操作系统连上了互联网，开启此功能就会保"
+"持你的操作系统的时间正确。默认地，4个NTP_池_会被配置好；此外你也可以通过按下"
+"鼠标左键和右键旁边的中键来添加其他的NTP_池_，或者删除默认的NTP_池_。"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:27
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "NTP服务器对话框的添加和标记用法"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:29
@@ -105,13 +111,13 @@ msgstr ""
 msgid ""
 "A dialog window allowing you to add or remove NTP pools from your system "
 "configuration"
-msgstr ""
+msgstr "允许你从系统设置中添加或删除NTP池的对话框"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:29
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda文件夹下的DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:32
@@ -119,7 +125,8 @@ msgid ""
 "If you disable network time synchronization, the controls at the bottom of "
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
-msgstr ""
+msgstr "如果你禁用了网络时间同步，屏幕下方的控件将变得可用，然后你就可以手动设置当前"
+"时间和日期了。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:33

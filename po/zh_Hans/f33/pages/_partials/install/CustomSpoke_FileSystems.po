@@ -7,19 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-10 22:06+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f33pages_partialsinstallcustomspoke_filesystems/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title ====
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "设备、文件系统和RAID类型"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -27,7 +31,8 @@ msgid ""
 "{PRODUCT} supports multiple types of devices and file systems. The lists "
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
-msgstr ""
+msgstr "{PRODUCT}支持多种类型的设备和文件系统。下面的列表提供了一段关于每种可用设备、"
+"文件系统、RAID类型和注意事项的简短描述。"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -39,6 +44,11 @@ msgid ""
 "the right side of the screen. Then, click `Update Settings` and repeat this "
 "process for all mount points you want to modify."
 msgstr ""
+"要选择一种设备类型、一个分区的文件系统或者一个逻辑卷的文件系统，可以在这个列"
+"表xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioni"
+"ng[手动分区]中进行选择。在屏幕右侧的下拉菜单里面选择一个“设备类型”和一个“文件"
+"系统”，然后点击“更新设置”。再重复这种操作，直到你想修改的所有的挂载点都改完了"
+"为止。"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -56,12 +66,21 @@ msgid ""
 "installation-gui-manual-partitioning-swraid[Creating Software RAID] as "
 "needed."
 msgstr ""
+"要配置软件RAID，你需要先确保你有足够的物理硬盘来选为安装介质（每种RAID类型需"
+"要的不同硬盘的数量在解释信息里面都有注解）。然后，当创建Btrfs卷组或者LVM卷组"
+"的时候，选择或者修改一种RAID级别；或者也可以选择“软件RAID”作为设备类型、用标"
+"准分区来创建软件RAID。详细说明请见xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-btrfs[创建Btrfs布局], "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-lvm[创建逻辑卷管理（LVM）布局], and "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-swraid[创建软件RAID]，可在需要时进行查阅。"
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:13
 #, no-wrap
 msgid "Device Types"
-msgstr ""
+msgstr "设备类型"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:16
@@ -73,6 +92,10 @@ msgid ""
 "adoc#appe-disk-partitions-overview[An Introduction to Disk Partitions] for "
 "additional information about the concepts behind physical partitions."
 msgstr ""
+"“标准分区”——一种可以包含一个文件系统或者交换空间的、标准的分区。标准分区最常"
+"见的用途是“/boot”、BIOS启动分区和EFI系统分区。对于其他用途的分区，推荐使用LVM"
+"逻辑卷或者Btrfs子卷。详见xref:appendixes/Disk_Partitions.adoc#appe-disk-"
+"partitions-overview[一段关于磁盘分区的介绍]来了解有关于物理分区之外的概念。"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:18
@@ -87,6 +110,13 @@ msgid ""
 "see xref:appendixes/Understanding_LVM.adoc#appe-lvm-overview[Understanding "
 "LVM] for some additional information about LVM in general."
 msgstr ""
+"“LVM”——选择“LVM”作为“设备类型”将创建一个LVM逻辑卷和一个容纳它的卷组（除非有一"
+"个卷组已经存在，并且LVM逻辑卷分配给了已有的卷组，此时则不会创建新的卷组）。LV"
+"M能改善在使用物理硬盘时的性能，并且允许你通过一个挂载点使用多块硬盘。关于如何"
+"创建逻辑卷的信息详见xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-lvm[创建一个逻辑卷管理（LVM）布局]。并且，其他关于和L"
+"VM相关的、总的信息详见xref:appendixes/Understanding_LVM.adoc#appe-lvm-"
+"overview[理解LVM]。"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_FileSystems.adoc:20

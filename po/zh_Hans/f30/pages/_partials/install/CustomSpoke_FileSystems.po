@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-10 22:06+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f30pages_partialsinstallcustomspoke_filesystems/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "设备、文件系统和RAID类型"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -27,7 +30,8 @@ msgid ""
 "{PRODUCT} supports multiple types of devices and file systems. The lists "
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
-msgstr ""
+msgstr "{PRODUCT}支持多种类型的设备和文件系统。下面的列表提供了一段关于每种可用设备、"
+"文件系统、RAID类型和注意事项的简短描述。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -40,6 +44,11 @@ msgid ""
 "`Update Settings` and repeat this process for all mount points you want to "
 "modify."
 msgstr ""
+"要选择一种设备类型、一个分区的文件系统或者一个逻辑卷的文件系统，可以在这个列"
+"表xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioni"
+"ng[手动分区]中进行选择。在屏幕右侧的下拉菜单里面选择一个“设备类型”和一个“文件"
+"系统”，然后点击“更新设置”。再重复这种操作，直到你想修改的所有的挂载点都改完了"
+"为止。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -62,7 +71,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:13
 #, no-wrap
 msgid "Device Types"
-msgstr ""
+msgstr "设备类型"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:16
@@ -75,6 +84,10 @@ msgid ""
 "Introduction to Disk Partitions] for additional information about the "
 "concepts behind physical partitions."
 msgstr ""
+"“标准分区”——一种可以包含一个文件系统或者交换空间的、标准的分区。标准分区最常"
+"见的用途是“/boot”、BIOS启动分区和EFI系统分区。对于其他用途的分区，推荐使用LVM"
+"逻辑卷或者Btrfs子卷。详见xref:appendixes/Disk_Partitions.adoc#appe-disk-"
+"partitions-overview[一段关于磁盘分区的介绍]来了解有关于物理分区之外的概念。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:18

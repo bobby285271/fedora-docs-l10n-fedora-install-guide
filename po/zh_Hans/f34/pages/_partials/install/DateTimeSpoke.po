@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-10 22:06+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f34pages_partialsinstalldatetimespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:5
 #: ./pages/_partials/install/DateTimeSpoke.adoc:9
 #, no-wrap
 msgid "Date & Time"
-msgstr ""
+msgstr "日期时间"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:8
@@ -32,18 +35,22 @@ msgid ""
 "Screen and Language Selection], but you can change your date, time and "
 "location settings before you begin the installation."
 msgstr ""
+"“日期时间”屏幕允许你外自己的操作系统配置日期和时间相关的设置。这个屏幕被你选"
+"择的xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-welcome"
+"[欢迎页和语言选择]设置项所自动配置，但你仍然可以在开始安装之前修改你的日期、"
+"时间和时区设置。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "日期时间页面的屏幕截图"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda文件夹下的DateTimeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:14
@@ -54,6 +61,10 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"首先，点击屏幕的左上角的下拉菜单来选择你的“地区”。然后，选择你的“城市”，或者"
+"最接近你目前所在地点的、在同一时区下的城市。选择一个特定的地点将帮助{PRODUCT}"
+"确保你的时间总会被设置正确；如果夏令时可用，那么为夏令时而自动做出的时间修改"
+"也会被设置正确。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:16
@@ -61,7 +72,8 @@ msgid ""
 "You can also select a time zone relative to Greenwich Mean Time (GMT) "
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
-msgstr ""
+msgstr "你也可以只选择一个相对于格林尼治时间的时区而不设置到某个特定区域的地点。如果"
+"你想这样做，就选择“Etc”作为你的区域。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/DateTimeSpoke.adoc:21
@@ -83,12 +95,16 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"在屏幕右上角的拨动开关所示的“网络时间”可以通过使用网络时间协议（NTP）的方式，"
+"被用来开启或关闭网络时间同步。只要你的操作系统连上了互联网，开启此功能就会保"
+"持你的操作系统的时间正确。默认地，4个NTP_池_会被配置好；此外你也可以通过按下"
+"鼠标左键和右键旁边的中键来添加其他的NTP_池_，或者删除默认的NTP_池_。"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:26
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "NTP服务器对话框的添加和标记用法"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
@@ -96,13 +112,13 @@ msgstr ""
 msgid ""
 "A dialog window allowing you to add or remove NTP pools from your system "
 "configuration"
-msgstr ""
+msgstr "允许你从系统设置中添加或删除NTP池的对话框"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda文件夹下的DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:31
@@ -110,7 +126,8 @@ msgid ""
 "If you disable network time synchronization, the controls at the bottom of "
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
-msgstr ""
+msgstr "如果你禁用了网络时间同步，屏幕下方的控件将变得可用，然后你就可以手动设置当前"
+"时间和日期了。"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:32
@@ -120,3 +137,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"在配置完你的时间和日期设置之后，按下屏幕左上角的“Done”按键即可返回xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[安装概要]。"
