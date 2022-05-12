@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-12 02:18+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f29pages_partialsinstallnetworkspoke_virtualinterfaces/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:5
 #, no-wrap
 msgid "Adding a Virtual Network Interface"
-msgstr ""
+msgstr "添加一个虚拟网络接口"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:8
@@ -27,14 +30,16 @@ msgid ""
 "To add a virtual network interface, click the `+` button at the bottom of "
 "the interface list. A new window will open, prompting you to select one of "
 "the three available types of virtual interfaces:"
-msgstr ""
+msgstr "要增加一个虚拟网络接口，你需要点击在接口列表底部的“+”按钮。一个新的窗口将打开"
+"，提示你需要从三种可用虚拟接口类型当中来选择一种："
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:10
 msgid ""
 "`Bond` - NIC (_Network Interface Controller_) Bonding, a method to bind "
 "multiple physical network interfaces together into a single bonded channel."
-msgstr ""
+msgstr "“Bond”——NIC "
+"(_网络接口控制器_)连接，是一种连接多个物理网络接口到一个连接的通道上的方法。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:12
@@ -43,13 +48,15 @@ msgid ""
 "provide a small kernel driver to implement the fast handling of packet "
 "flows, and various applications to do everything else in user space."
 msgstr ""
+"“Team”——NIC网卡聚合，是一种新引入的聚合链接，它被设计用于提供一个小的内核驱动"
+"来引入数据包流的快速处理，并且提供大量应用在用户空间里做其他所有的事情。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:14
 msgid ""
 "`Vlan` (_Virtual LAN_) - A method to create multiple distinct broadcast "
 "domains which are mutually isolated."
-msgstr ""
+msgstr "“Vlan”（_虚拟局域网_）——一种创建多个不同的、相互隔离的广播域名的方法。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:16
@@ -63,6 +70,12 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"选择你想要添加的类型，然后点击“Add”按钮。另一个对话框将弹出，它允许你编辑选定"
+"的接口类型的所有可用的设置。更多可用设置的信息详见[citetitle]_{PRODUCT} "
+"网络{nbsp}指南_, available at link:++https://docs.fedoraproject.org/"
+"++[]的各个章节。基本文档也可以通过xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-network-configuration-"
+"advanced[编辑网络接口配置]获取到。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke_VirtualInterfaces.adoc:21
@@ -72,3 +85,6 @@ msgid ""
 "bottom right corner of the screen. To remove a virtual interface, select it "
 "in the list and click the `-` button below."
 msgstr ""
+"在关闭设置对话框后，如果你想再次访问这个对话框，就需要在配置接口的列表中选择"
+"相同的接口，然后点击屏幕右下角的“配置”按钮。如果你想移除一个虚拟接口，那你需"
+"要在列表当中选中要移除的接口，然后点击下方的“-”按钮。"

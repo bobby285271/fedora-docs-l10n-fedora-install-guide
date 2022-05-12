@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-12 02:18+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f35pages_partialsinstallcustomspoke_addbtrfs/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:5
 #, no-wrap
 msgid "Creating a Btrfs Layout"
-msgstr ""
+msgstr "创建一个Btrfs布局"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:8
@@ -31,6 +34,10 @@ msgid ""
 "supports snapshots that can be used for backup, replication, and namespace "
 "isolation (e.g. for use in containers)."
 msgstr ""
+"_Btrfs_是一种文件系统，但在一个存储设备上有多种特性。它被设计用于令文件系统能"
+"够容错、能够查错并且能够修复错误。它使用checksums确保数据和元数据的完整性，并"
+"且支持快照，用快照可以实现备份、磁盘对拷和命名空间隔离（例如在容器上的应用）"
+"。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:10
@@ -45,6 +52,12 @@ msgid ""
 "to each mount point in the left pane, while with Btrfs, the total size of "
 "the entire volume is shown next to each subvolume."
 msgstr ""
+"创建一个Btrfs布局有点像LVM（详见xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-lvm[创建一个逻辑卷管理（LVM） 布局]），"
+"而只是稍微有一点点术语上的区别。一个Btrfs_卷_和一个LVM卷组是等价的，并且一个B"
+"trfs_子卷_和一个LVM逻辑卷是相似的。需要注意的一点是：如何使用[应用]*Anaconda*"
+"上报分离挂载点的大小。对于LVM而言，每个逻辑卷的精确大小在左侧面板的挂载点旁边"
+"来显示。但对于Btrfs而言，每个子卷旁边显示的是整个卷的大小。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:15
@@ -54,42 +67,45 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for more information."
 msgstr ""
+"有些分区类型——特别注意BIOS启动分区和EFI分区——不能用Btrfs子卷放置，要用普通逻"
+"辑分区来放置它们。详见xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-recommended[推荐的分区方案]。"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
 #, no-wrap
 msgid "Create Btrfs Subvolume"
-msgstr ""
+msgstr "创建Btrfs子卷"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
 #, no-wrap
 msgid "The Manual Partitioning screen"
-msgstr ""
+msgstr "手动分区屏幕"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_AddBtrfs.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_AddBtrfs.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:23
 msgid "Follow the procedure below to create Btrfs volumes and subvolumes:"
-msgstr ""
+msgstr "按以下流程来创建Btrfs卷和子卷："
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
 #, no-wrap
 msgid "Creating Btrfs Subvolumes and Volumes"
-msgstr ""
+msgstr "创建Btrfs子卷和卷"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
 msgid ""
 "Click the `+` button at the bottom of the list showing existing mount "
 "points. A new dialog window will open."
-msgstr ""
+msgstr "按下现存挂载点列表底部的“+\"按钮，然后将开启一个新的对话框。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:28
@@ -100,13 +116,17 @@ msgid ""
 "subvolumes have no discrete size of their own. Finally, click `Add mount "
 "point` to add the subvolume and return to the main partitioning screen."
 msgstr ""
+"在这个新的对话框中，你需要指定一个现存的挂载点来创建分离挂载点——例如：挂载点“"
+"/”。Anaconda将对每一个你创建的挂载点都创建一个Btrfs子卷。类似于目录的概念，子"
+"卷没有属于它们各自的大小。最后，点击“增加挂载点”来增加子卷，然后返回分区主屏"
+"幕。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:33
 msgid ""
 "When creating a mount point for swap on Btrfs, specify the mount point as "
 "`swap`."
-msgstr ""
+msgstr "当在Btrfs上创建一个交换分区挂载点时，需要指定挂载点类型为“swap”。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:37
@@ -114,7 +134,8 @@ msgid ""
 "Once the mount point is created, select the newly created mount point in the "
 "left pane, and configure it further in the right pane. When finished, click "
 "`Update Settings` in the bottom right corner of the screen."
-msgstr ""
+msgstr "一旦挂载点被创建，选择左侧面板上的、新创建的挂载点，然后在右侧面板上深入配置"
+"这个挂载点。在配置完成后，点击屏幕右下角的“更新设置”按钮。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:39
@@ -122,7 +143,8 @@ msgid ""
 "In the `Volume` area, you can see that the mount point's subvolume has been "
 "assigned to an automatically created volume. Click the `Modify` button under "
 "the drop-down menu to access the configure volume settings."
-msgstr ""
+msgstr "在“卷”区域，你可以看到挂载点的子卷已经被配置给了自动创建的卷。点击下拉菜单下"
+"方的“修改”按钮来配置卷设置。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:41
@@ -135,6 +157,11 @@ msgid ""
 "reside on. You can select one or more disks which will be used to hold this "
 "volume by holding down kbd:[Ctrl] and clicking each disk in the list."
 msgstr ""
+"在“配置卷”对话框中，你可以修改卷标。无论卷是否被加密过，或者卷的“RAID级别”是"
+"什么（可用RAID类型详见xref:Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-manual-partitioning-filesystems[设备、文件系统和RAID类型]），然后你也可以"
+"指定这个卷应该放在哪些物理设备（磁盘）之上。你可以通过按kbd:[Ctrl]键并点击鼠"
+"标左键的方式来选择一块或多块磁盘来容纳这个卷。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:46
@@ -145,6 +172,9 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for information about LUKS disk "
 "encryption."
 msgstr ""
+"安装器支持对整个Btrfs卷进行LUKS加密。要开启加密，你需要点击卷下方的修改按钮，"
+"然后检查加密项。LUKS磁盘加密的信息详见[citetitle]_{PRODUCT} 安全指导书_, "
+"available at link:++https://docs.fedoraproject.org/++[]。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
@@ -152,14 +182,15 @@ msgid ""
 "Additionally, you can set a fixed size for the volume by selecting the "
 "`Fixed` option from the `Size policy` menu and entering a size for the "
 "volume group."
-msgstr ""
+msgstr "此外，你可以通过选择“大小策略”中的“固定大小”的选项、然后对一个卷组输入一个大"
+"小参数的方式，来设置卷为一个固定的大小。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:52
 msgid ""
 "After you finish configuring the Btrfs volume settings, click `Save` to "
 "return to the main `Manual Partitioning` screen."
-msgstr ""
+msgstr "在你配置完Btrfs卷的设置之后，点击“保存”来返回主“手动分区”屏幕。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
@@ -173,6 +204,11 @@ msgid ""
 "through your existing mount points and change this setting to assign them to "
 "a different volume."
 msgstr ""
+"如果你需要创建多个Btrfs卷，则需要点开“卷”下拉菜单，然后选择“添加新卷”选项。然"
+"后，一个新的对话框将会弹出，之后的操作和上面的步骤中描述的相同：为新卷再次选"
+"择卷标、存储设备、加密设置、RAID级别和尺寸策略，最后点击“保存”。新卷随后将在“"
+"卷”下拉菜单中可用。此外，你也可以进入先前的挂载点、修改这个设置来将挂载点分配"
+"到另一个卷上。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:56
@@ -180,7 +216,8 @@ msgid ""
 "Configure other settings specific to the subvolume - its `Mount Point`, "
 "`Device Type`, and `Name`. Press `Update Settings` to apply any changes to "
 "the configuration."
-msgstr ""
+msgstr "配置其他专属于子卷的设置——子卷的“挂载点”、“设备类型”和“卷标”。按下“更新设置”"
+"按钮来应用设置中的修改。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:58
@@ -190,6 +227,8 @@ msgid ""
 "automatically created each time; instead, any additional subvolumes are "
 "assigned to an existing volume."
 msgstr ""
+"对于你想创建的所有Btrfs子卷，你都要重复这个流程。注意：当创建其他的子卷时，不"
+"会每次都创建一个新的卷；相反地，新创建的子卷都会默认分配到已有的卷之下。"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_AddBtrfs.adoc:59
@@ -198,3 +237,6 @@ msgid ""
 "is assigned to the correct volume, that it has sufficient capacity, and that "
 "it has a descriptive name so you can identify the subvolume."
 msgstr ""
+"对于每个你创建的挂载点而言，你需要检查这些挂载点的设置。检查的项目包括：确保"
+"挂载点都分配到正确的卷之下；挂载点要有足够的容量；挂载点要有一个描述性的名称"
+"，以便您可以识别子卷。"
