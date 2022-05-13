@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-13 14:06+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f36pagesadvancedkickstart_installations/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: ./pages/advanced/Kickstart_Installations.adoc:6
 #, no-wrap
 msgid "Automating the Installation with Kickstart"
-msgstr ""
+msgstr "킥스타트로 설치 자동화"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:9
@@ -40,7 +43,8 @@ msgstr ""
 msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
-msgstr ""
+msgstr "모든 킥스타트 스크립트와 이들 실행 로그 파일은 설치 문제 디버깅을 지원하기 "
+"위해 `/tmp` 디렉토리에 저장됩니다."
 
 #. type: Title ==
 #: ./pages/advanced/Kickstart_Installations.adoc:13
@@ -58,7 +62,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:18
 msgid "To use Kickstart, you must:"
-msgstr ""
+msgstr "킥스타트를 사용하려면, 다음을 사용하여야 합니다:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:20
@@ -80,14 +84,16 @@ msgstr ""
 msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
-msgstr ""
+msgstr "이동식 미디어, 하드 드라이브 또는 네트워크 위치에서 사용 가능한 킥스타트 "
+"파일을 만듭니다."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:26
 msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
-msgstr ""
+msgstr "설치자로 부팅하고 부트 옵션을 사용하여 설치자에 킥스타트 파일을 찾을 위치를 "
+"알려서 킥스타트 설치를 시작합니다."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:28
@@ -133,7 +139,7 @@ msgstr ""
 msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
-msgstr ""
+msgstr "파운드 기호(`#`)로 시작하는 줄은 주석으로 처리되거나 무시됩니다."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:41
@@ -142,6 +148,8 @@ msgid ""
 "to be in a specific order unless otherwise specified. The correct section "
 "order is:"
 msgstr ""
+"부분은 *순서대로* 지정해야 합니다. 부분 내의 항목은 다르게 지정되지 않는 한 "
+"특정한 순서일 필요가 없습니다. 올바른 부분 순서는 다음과 같습니다:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:43
@@ -161,6 +169,10 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
 "(required) - Package Selection] for details."
 msgstr ""
+"설치되어 있는 꾸러미와 꾸러미 그룹의 목록이 포함되어 있는 "
+"[command]#%packages# 부분. 자세한 내용을 위해 xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages (필수적인) "
+"- 꾸러미 부분]을 참고하세요."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:47
@@ -197,7 +209,7 @@ msgstr ""
 #: ./pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr ""
+msgstr "킥스타트 파일 확인하기"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:61
@@ -213,32 +225,33 @@ msgstr ""
 #: ./pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
-msgstr ""
+msgstr "# dnf install pykickstart\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:68
 msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
-msgstr ""
+msgstr "이 꾸러미를 설치 한 후에, 다음 명령을 사용하여 킥스타트 파일을 확인 할 수 "
+"있습니다:"
 
 #. type: delimited block -
 #: ./pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
-msgstr ""
+msgstr "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:75
 msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
-msgstr ""
+msgstr "확인을 원하는 킥스타트 파일 경로를 갖는 _/path/to/kickstart.ks_로 교체합니다."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:77
 msgid "For more information about this tool, see the `ksvalidator(1)` man page."
-msgstr ""
+msgstr "이 도구에 대해 더 많은 정보를 위해, `ksvalidator(1)` man 부분을 참고하세요."
 
 #. type: delimited block =
 #: ./pages/advanced/Kickstart_Installations.adoc:82
@@ -255,31 +268,32 @@ msgstr ""
 #: ./pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr ""
+msgstr "킥스타트 파일을 사용 가능하도록 만들기"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:89
 msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
-msgstr ""
+msgstr "한번 킥스타트 파일을 생성하면, 다음 위치 중 하나에서 이를 배치 할 수 "
+"있습니다:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:91
 msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
-msgstr ""
+msgstr "설치 시스템에 연결된 DVD 또는 USB 플래시 드라이브와 같은 *이동형 미디어* 에서"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
-msgstr ""
+msgstr "설치 시스템에 연결된 *하드 드라이브* 에서"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
-msgstr ""
+msgstr "설치 시스템에서 접근 가능한 *네트워크 공유* 에서"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:97
@@ -299,12 +313,15 @@ msgid ""
 "Up an Installation Server] offers some additional information about "
 "preparing for a network-based installation."
 msgstr ""
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[설치 "
+"서버 설정]은 네트워크-기반을 위한 설치 준비에 대해 몇 가지 추가적인 정보를 "
+"제공합니다."
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr ""
+msgstr "킥스타트 설치 시작하기"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:103
