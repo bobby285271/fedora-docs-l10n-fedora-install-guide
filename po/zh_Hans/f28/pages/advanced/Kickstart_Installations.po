@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-14 18:02+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f28pagesadvancedkickstart_installations/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: ./pages/advanced/Kickstart_Installations.adoc:6
 #, no-wrap
 msgid "Automating the Installation with Kickstart"
-msgstr ""
+msgstr "使用Kickstart进行自动化安装"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:9
@@ -34,68 +37,75 @@ msgid ""
 "especially useful when deploying {PRODUCT} on a large number of systems at "
 "once."
 msgstr ""
+"Kickstart安装方式提供了一种要么半自动化安装、要么全自动化安装的过程的含义。Ki"
+"ckstart文件包含了安装程序一般会涉及到的所有问题的答案，例如你想令操作系统使用"
+"哪种时区、硬盘应该如何分区或者需要安装哪些软件包等等。当安装过程开始时提供一"
+"个准备好的Kickstart文件，那之后它就允许你进行自动化的安装过程，而无需用户的人"
+"工干预。这对在大量操作系统上一次性部署{PRODUCT}尤其有用。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:11
 msgid ""
 "All Kickstart scripts and the log files of their execution are stored in the "
 "`/tmp` directory to assist with debugging installation issues."
-msgstr ""
+msgstr "所有Kickstart脚本和它们执行时的日志文件都被存放于`/tmp`目录下，以帮助调试安装"
+"时出现的问题。"
 
 #. type: Title ==
 #: ./pages/advanced/Kickstart_Installations.adoc:13
 #, no-wrap
 msgid "How to Perform a Kickstart Installation"
-msgstr ""
+msgstr "如何进行Kickstart安装"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:16
 msgid ""
 "Kickstart installations can be performed using a local DVD, a local hard "
 "drive, or via NFS, FTP, HTTP, or HTTPS."
-msgstr ""
+msgstr "Kickstart安装可以使用本地DVD、本地硬盘、NFS、FTP、HTTP或者HTTPS来进行。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:18
 msgid "To use Kickstart, you must:"
-msgstr ""
+msgstr "要使用Kickstart，你必须："
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:20
 msgid "Create a Kickstart file."
-msgstr ""
+msgstr "创建一个Kickstart文件。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:22
 msgid ""
 "Create boot media or configure a network boot (PXE) server which will be "
 "used to begin the installation."
-msgstr ""
+msgstr "创建启动媒体，或者配置一个网络启动（PXE）服务器，以在安装开始时被使用。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:24
 msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
-msgstr ""
+msgstr "使你的Kickstart文件在可移动媒介、硬盘或者网络位置可用。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:26
 msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
-msgstr ""
+msgstr "通过启动安装器的方式来启动Kickstart安装，并且使用一个启动方式来告诉安装器在哪"
+"里能够找到Kickstart文件。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:28
 msgid "This chapter explains these steps in detail."
-msgstr ""
+msgstr "本章详细解释了这些步骤。"
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:30
 #, no-wrap
 msgid "Creating a Kickstart File"
-msgstr ""
+msgstr "创建一个Kickstart文件"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:33
@@ -119,18 +129,23 @@ msgid ""
 "system. You can then copy this file, make any changes you need, and use the "
 "resulting configuration file in further installations."
 msgstr ""
+"创建Kickstart的一种推荐的方式是先进行一次手动安装。在手动安装完成后，在安装过"
+"程中做出的所有选项都会被保存到一个文件`anaconda-ks."
+"cfg`当中，此文件位于安装好的操作系统中的`/root/`目录下。你在安装完成之后可以"
+"复制这个文件，对这个文件做出任何想要的修改，并且在未来的安装过程中利用上这个"
+"配置文件。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:37
 msgid "When creating a Kickstart file, keep in mind the following:"
-msgstr ""
+msgstr "当创建Kickstart文件时，牢记以下几点："
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:39
 msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
-msgstr ""
+msgstr "以井号（`#`）开头的行被认为是注释，注释部分会被忽略。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:41
@@ -138,7 +153,8 @@ msgid ""
 "Sections must be specified *in order*. Items within the sections do not have "
 "to be in a specific order unless otherwise specified. The correct section "
 "order is:"
-msgstr ""
+msgstr "章节（section）必须*按顺序*指定。在章节中的项目（item）不必须按顺序指定，除非"
+"有特殊的情况那才需要按顺序指定。正确的章节顺序是："
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:43
