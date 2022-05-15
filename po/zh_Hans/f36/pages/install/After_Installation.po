@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-05-15 08:09+0000\n"
+"PO-Revision-Date: 2022-05-15 17:38+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -29,7 +29,7 @@ msgstr "安装后"
 msgid ""
 "This chapter describes the initial setup tools which open after you finish "
 "the installation, reboot the system, and log in for the first time."
-msgstr ""
+msgstr "本章描述了在第一次安装操作系统、重启并登录后打开的初始设置工具。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:11
@@ -41,6 +41,10 @@ msgid ""
 "graphical environments, the [application]*Initial Setup* tool serves the "
 "same purpose."
 msgstr ""
+"两个分开的配置是{PRODUCT}的一部分。如果你安装了[application]*GNOME*桌面环境（"
+"{PRODUCT}工作站版本的、默认的{PRODUCT}环境），那么[application]*GNOME "
+"Initial Setup*工具将开启。对于其他桌面环境而言，[application]*Initial "
+"Setup*也会开启。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:13
@@ -54,13 +58,17 @@ msgid ""
 "installation finished, you will not be prompted to do so again after the "
 "installation completes."
 msgstr ""
+"这两个工具允许你配置用户指定的、安装过程中没完成的设置。一些设置项既在图形安"
+"装器中可用，也在Kickstart命令中可用。如果使用Kickstart方式，则只会在第一次重"
+"启后显示跳过的那些设置。这意味着如果你在安装完成前配置了用户账号，那么在安装"
+"完成后将不会提示配置用户账号。"
 
 #. type: Block title
 #: ./pages/install/After_Installation.adoc:17
 #: ./pages/install/After_Installation.adoc:21
 #, no-wrap
 msgid "GNOME Initial Setup"
-msgstr ""
+msgstr "GNOME初始设置"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:20
@@ -69,18 +77,20 @@ msgid ""
 "log in for the first time with any user account, as long as your first login "
 "is in the [application]*GNOME* desktop environment."
 msgstr ""
+"只要你使用[application]*GNOME*桌面环境首次登录，那么无论用哪一个账号进行登录"
+"，[application]*GNOME Initial Setup*工具都将在首次登录后显示。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "GNOME Initial Setup with language selection displayed."
-msgstr ""
+msgstr "GNOME初始设置显示语言章节。"
 
 #. type: Target for macro image
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "afterinstall/gnome-initial-setup.png"
-msgstr ""
+msgstr "afterinstall/gnome-initial-setup.png"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:26
@@ -91,6 +101,9 @@ msgid ""
 "screens. Some screens (`Configure online accounts` in particular) are "
 "optional and can be skipped using the `Skip` button in the top right corner."
 msgstr ""
+"本工具允许你配置用户指定的设置，例如系统语言和默认键盘布局。可以使用在窗口上"
+"方的`Next`和`Previous`按钮来在屏幕上导航。有些屏幕（例如`配置在线账号`）是可"
+"选的，可以点击在窗口右上角的`Skip`按钮来跳过。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:28
@@ -100,12 +113,15 @@ msgid ""
 "displayed, and you can either browse the help content, or close it and start "
 "using your desktop."
 msgstr ""
+"在完成了所有屏幕的配置之后，点击`Start using "
+"Fedora`按钮来退出工具。此后将会显示在GNOME帮助中的`Getting Started`页面，然后"
+"你要么可以继续浏览帮助页面，要么可以关闭此页面并开始使用你的桌面。"
 
 #. type: Title ==
 #: ./pages/install/After_Installation.adoc:30
 #, no-wrap
 msgid "Common Post-installation Tasks"
-msgstr ""
+msgstr "常用安装后任务"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:33
@@ -117,12 +133,15 @@ msgid ""
 "system. The list below describes some of the more common tasks usually "
 "performed immediately after a new installation."
 msgstr ""
+"在你完成安装、走完一遍初始设置流程后，你的操作系统就已经可以用了。然而，其他"
+"管理员相关的、又必要的任务可能不包含在初始设置当中，这取决于你如何使用操作系"
+"统。下面列出了一些在安装后通常立即执行的、常见的任务。"
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:34
 #, no-wrap
 msgid "Recover a lost `root` password"
-msgstr ""
+msgstr "恢复丢失的`root`密码"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:35
@@ -140,7 +159,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:36
 #, no-wrap
 msgid "Configure the network"
-msgstr ""
+msgstr "配置网络"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:37
@@ -159,7 +178,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:38
 #, no-wrap
 msgid "Perform an initial system update"
-msgstr ""
+msgstr "进行第一次系统升级"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:39
@@ -171,6 +190,10 @@ msgid ""
 "installed packages are updated to their latest available versions. Updates "
 "to packages provide security fixes, bug fixes and enhancements."
 msgstr ""
+"如果你用full ISO镜像安装了{PRODUCT}（例如Workstation live image或者full "
+"Server DVD），那么推荐你进行第一次系统升级，因为你的安装媒体应该是包含了老旧"
+"版本的软件包。在第一次系统升级当中，所有的安装过的软件包都会被升级到最新版本"
+"。软件包升级提供了安全修复、bug修复和功能提升。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:41
@@ -186,7 +209,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "安装驱动更新"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:43
@@ -214,7 +237,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "配置额外软件源"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:47
@@ -227,6 +250,10 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"安装在_软件源_的新软件。软件源由软件集和元包组成，并且可以被[application]*DNF"
+"*包管理器获取到。默认地，{PRODUCT}提供的一些update源已经被自动配置好了，并且"
+"你可以用这些update源安装更新和额外软件。然而，如果你想要设置例如包含你自己的"
+"软件包的额外软件源，则需要一些额外步骤。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:49
@@ -240,7 +267,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:50
 #, no-wrap
 msgid "Install additional packages"
-msgstr ""
+msgstr "安装额外软件包"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:51
@@ -259,7 +286,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:52
 #, no-wrap
 msgid "Switch to a graphical login"
-msgstr ""
+msgstr "切换至图形登录"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:53
@@ -271,6 +298,10 @@ msgid ""
 "[application]*X Window System* and your preferred desktop environment "
 "(either [application]*GNOME* or [application]*KDE*)."
 msgstr ""
+"取决于你在安装过程中的选项，你的操作系统可能没有图形界面，此时系统只提供文本"
+"的提示。在这种情况下如果你想在安装后启用图形桌面，那么你必须安装[application]"
+"*X Window系统*和你偏好的桌面环境（可以是[application]*GNOME*或[application]*K"
+"DE*）。"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:54
