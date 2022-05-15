@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguz@ersen.moe>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-15 08:09+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pagesinstallafter_installation/tr/>"
+"\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: ./pages/install/After_Installation.adoc:6
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "Kurulumdan Sonra"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:9
@@ -27,6 +30,8 @@ msgid ""
 "This chapter describes the initial setup tools which open after you finish "
 "the installation, reboot the system, and log in for the first time."
 msgstr ""
+"Bu bölüm kurulumu tamamladıktan, sistemi yeniden başlattıktan ve ilk kez "
+"oturum açtıktan sonra açılan ilk kurulum araçlarını açıklamaktadır."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:11
@@ -38,6 +43,12 @@ msgid ""
 "graphical environments, the [application]*Initial Setup* tool serves the "
 "same purpose."
 msgstr ""
+"İki ayrı yapılandırma aracı {PRODUCT}'nın bir parçasıdır. "
+"[application]*GNOME* masaüstü ortamını kurduysanız (öntanımlı {PRODUCT} "
+"ortamı, örneğin {PRODUCT} Workstation sürümünün bir parçası olarak kurulur), "
+"[application]*GNOME İlk Kurulum* yardımcı programı açılacaktır; diğer tüm "
+"grafiksel ortamlar için [application]*İlk Kurulum* aracı aynı amaca hizmet "
+"etmektedir."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:13
@@ -51,13 +62,21 @@ msgid ""
 "installation finished, you will not be prompted to do so again after the "
 "installation completes."
 msgstr ""
+"Bu araçların her ikisi de, kurulum sırasında yapılandırılmayan kullanıcıya "
+"özel ayarları yapılandırmanıza izin verecektir. Ayarlardan bazıları hem "
+"grafiksel kurucuda (veya Kickstart komutları olarak) hem de ilk kurulum "
+"yardımcı programlarında bulunur; bu durumda yalnızca kurulum sırasında "
+"atladıysanız ilk yeniden başlatmanın ardından görüntülenecektir. Bu, "
+"örneğin, kurulum tamamlanmadan önce bir kullanıcı hesabı yapılandırdıysanız, "
+"kurulum tamamlandıktan sonra bunu tekrar yapmanız istenmeyeceği anlamına "
+"gelir."
 
 #. type: Block title
 #: ./pages/install/After_Installation.adoc:17
 #: ./pages/install/After_Installation.adoc:21
 #, no-wrap
 msgid "GNOME Initial Setup"
-msgstr ""
+msgstr "GNOME İlk Kurulum"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:20
@@ -66,18 +85,21 @@ msgid ""
 "log in for the first time with any user account, as long as your first login "
 "is in the [application]*GNOME* desktop environment."
 msgstr ""
+"İlk oturumunuz [application]*GNOME* masaüstü ortamında olduğu sürece, "
+"herhangi bir kullanıcı hesabıyla ilk kez oturum açtıktan sonra [application]*"
+"GNOME İlk Kurulum* yardımcı programı görüntülenecektir."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "GNOME Initial Setup with language selection displayed."
-msgstr ""
+msgstr "GNOME İlk Kurulum dil seçimi görüntülenirken."
 
 #. type: Target for macro image
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "afterinstall/gnome-initial-setup.png"
-msgstr ""
+msgstr "afterinstall/gnome-initial-setup.png"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:26
@@ -88,6 +110,12 @@ msgid ""
 "screens. Some screens (`Configure online accounts` in particular) are "
 "optional and can be skipped using the `Skip` button in the top right corner."
 msgstr ""
+"Bu yardımcı program, sistem dili veya öntanımlı klavye düzeni gibi "
+"kullanıcıya özel birkaç ayarı yapılandırmanıza olanak tanır. Ekranlar "
+"arasında gezinmek için pencerenin üst kısmındaki `İleri` ve `Geri` "
+"düğmelerini kullanın. Bazı ekranlar (özellikle `Çevrim içi hesapları "
+"yapılandır`) isteğe bağlıdır ve sağ üst köşedeki `Geç` düğmesi kullanılarak "
+"atlanabilir."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:28
@@ -97,12 +125,16 @@ msgid ""
 "displayed, and you can either browse the help content, or close it and start "
 "using your desktop."
 msgstr ""
+"Tüm ekranları yapılandırmayı bitirdikten sonra, yardımcı programdan çıkmak "
+"için `Fedora Kullanmaya Başla` düğmesine tıklayın. Bundan sonra GNOME "
+"yardımındaki `Başlarken` sayfası görüntülenecektir, yardım içeriğine göz "
+"atabilir veya kapatabilir ve masaüstünüzü kullanmaya başlayabilirsiniz."
 
 #. type: Title ==
 #: ./pages/install/After_Installation.adoc:30
 #, no-wrap
 msgid "Common Post-installation Tasks"
-msgstr ""
+msgstr "Yaygın Kurulum Sonrası Görevleri"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:33
@@ -114,12 +146,18 @@ msgid ""
 "system. The list below describes some of the more common tasks usually "
 "performed immediately after a new installation."
 msgstr ""
+"Kurulumu tamamladıktan ve yukarıda açıklanan ilk kurulum yardımcı "
+"programlarından birini geçtikten sonra sisteminiz kullanıma hazırdır. Ancak, "
+"sisteminizi nasıl kullanmayı planladığınıza bağlı olarak, kurucu veya ilk "
+"kurulum yardımcı programları tarafından kapsanmayan diğer yönetim görevleri "
+"yine de gerekli olabilir. Aşağıdaki liste, genellikle yeni bir kurulumdan "
+"hemen sonra gerçekleştirilen yaygın görevlerden bazılarını açıklamaktadır."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:34
 #, no-wrap
 msgid "Recover a lost `root` password"
-msgstr ""
+msgstr "Kayıp `root` parolasını kurtarın"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:35
@@ -132,12 +170,18 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-password[Resetting "
 "the Root Password]."
 msgstr ""
+"Kurulum sırasında yapılandırılan `root` parolası, sisteme `root` kullanıcısı "
+"olarak erişmek için gereklidir. Bu parola olmadan sisteminizi yapılandıramaz "
+"veya ek yazılım kuramazsınız. `root` parolanızı kaybettiyseniz veya "
+"unuttuysanız, xref:install/Troubleshooting.adoc#sect-trouble-after-reset-"
+"root-password[Root Parolasını Sıfırlama] bölümünde açıklanan adımları "
+"izleyerek parolanızı sıfırlayabilirsiniz."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:36
 #, no-wrap
 msgid "Configure the network"
-msgstr ""
+msgstr "Ağı yapılandırın"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:37
@@ -151,12 +195,20 @@ msgid ""
 "the network after the installation, see the [citetitle]_{PRODUCT} Networking "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Çoğu durumda ağ erişimi, ya [application]*Anaconda* kurulum programında "
+"(xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[Ağ & Ana Makine Adı] bölümüne bakın) ya da bir Kickstart "
+"dosyasında (xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
+"commands-network[network (isteğe bağlı) - Ağ Arayüzlerini Yapılandır] "
+"bölümüne bakın) kurulum işlemi sırasında yapılandırılır. Kurulumdan sonra "
+"ağı yapılandırma hakkında bilgi için link:++https://docs.fedoraproject.org/"
+"++[] adresinde bulunan [citetitle]_{PRODUCT} Ağ Kılavuzuna_ bakın."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:38
 #, no-wrap
 msgid "Perform an initial system update"
-msgstr ""
+msgstr "İlk sistem güncellemesini gerçekleştirin"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:39
@@ -168,6 +220,13 @@ msgid ""
 "installed packages are updated to their latest available versions. Updates "
 "to packages provide security fixes, bug fixes and enhancements."
 msgstr ""
+"{PRODUCT}'yı bir tam kurulum ISO kalıbından (Workstation canlı kalıbı veya "
+"tam Server DVD'si gibi) kurduysanız, kurulum ortamınız muhtemelen yazılım "
+"paketlerinin eski sürümlerini içerdiği için bir ilk sistem güncellemesi "
+"yapmanız tavsiye edilir. İlk güncelleme sırasında, kurulu tüm paketler "
+"kullanılabilir en son sürümlerine güncellenir. Paketlerde yapılan "
+"güncellemeler güvenlik düzeltmeleri, hata düzeltmeleri ve iyileştirmeler "
+"sağlar."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:41
@@ -178,12 +237,16 @@ msgid ""
 "[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
 "System Administrator's Guide]_."
 msgstr ""
+"[application]*DNF* paket yöneticisi, kurulu paketleri güncellemek için "
+"kullanılır. Sisteminizi [application]*DNF* ile güncelleme hakkında daha "
+"fazla bilgi için [citetitle]_xref:fedora:system-administrators-guide:index."
+"adoc[{PRODUCT} Sistem Yöneticisi Kılavuzuna]_ bakın."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "Sürücü güncellemelerini kurun"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:43
@@ -193,6 +256,10 @@ msgid ""
 "been released recently could be missing. In these cases, a driver update "
 "enabling your device may be available."
 msgstr ""
+"Sistem aygıtlarının sürücüleri, genellikle {PRODUCT} tarafından sağlanan "
+"çekirdekte zaten desteklenmektedir. Ancak, bazen yakın zamanda piyasaya "
+"sürülen aygıtlar için destek eksik olabilir. Bu durumlarda, aygıtınızı "
+"etkinleştiren bir sürücü güncellemesi bulunabilir."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:45
@@ -206,12 +273,20 @@ msgid ""
 "the [citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
 "System Administrator's Guide]_."
 msgstr ""
+"Kurulumu tamamlamak için gerekli aygıtlar için, kurulum başlamadan önce "
+"sürücü güncellemeleri sağlanabilir. Bir aygıtın sürücüsü eksikse, ancak "
+"kurulum sırasında gerekli değilse, kurulumun tamamlanmasını beklemeniz ve ek "
+"sürücüleri daha sonra kurmanız tavsiye edilir. [application]*RPM* ve "
+"[application]*DNF* kullanarak kurulan sisteme ek sürücülerin kurulması ve "
+"etkinleştirilmesine ilişkin talimatlar için [citetitle]_xref:fedora:system-"
+"administrators-guide:index.adoc[{PRODUCT} Sistem Yöneticisi Kılavuzuna]_ "
+"bakın."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "Ek depoları yapılandırın"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:47
@@ -224,6 +299,13 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"Yeni yazılımlar _paket depolarından_ kurulmaktadır. Paket depoları, "
+"[application]*DNF* paket yöneticisi tarafından erişilebilen düzenli yazılım "
+"ve üst veri kümeleridir. Öntanımlı olarak, {PRODUCT} tarafından sağlanan "
+"çeşitli güncelleme depoları otomatik olarak yapılandırılır ve bunlardan "
+"güncellemeleri ve ek yazılımları kurabilirsiniz. Bununla birlikte, örneğin "
+"kendi yazılımınızı içerenler gibi ek depolar kurmak istiyorsanız bazı ek "
+"adımlar gerekmektedir."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:49
@@ -232,12 +314,15 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Ek yazılım depoları yapılandırma hakkında bilgi için link:++https://docs."
+"fedoraproject.org/++[] adresinde bulunan [citetitle]_{PRODUCT} Sistem "
+"Yöneticisi Kılavuzuna_ bakın."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:50
 #, no-wrap
 msgid "Install additional packages"
-msgstr ""
+msgstr "Ek paketler kurun"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:51
@@ -251,12 +336,21 @@ msgid ""
 "the [citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
 "System Administrator's Guide]_."
 msgstr ""
+"Grafiksel kurulumdaki `Yazılım Seçimi` iletişim kutusunda bir ortam seçerek "
+"hangi paketlerin kurulacağını denetleyebilirsiniz (xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-software-selection["
+"Yazılım Seçimi] bölümüne bakın). Bu iletişim kutusu, tek tek paketleri "
+"seçmenize izin vermez, yalnızca önceden tanımlanmış kümeler sağlar. Ancak, "
+"kurulumdan sonra ek paketler kurmak için [application]*DNF* paket "
+"yöneticisini kullanabilirsiniz. [citetitle]_xref:fedora:system-"
+"administrators-guide:index.adoc[{PRODUCT} Sistem Yöneticisi Kılavuzuna]_ "
+"bakın."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:52
 #, no-wrap
 msgid "Switch to a graphical login"
-msgstr ""
+msgstr "Grafiksel oturuma geçiş yapın"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:53
@@ -268,6 +362,12 @@ msgid ""
 "[application]*X Window System* and your preferred desktop environment "
 "(either [application]*GNOME* or [application]*KDE*)."
 msgstr ""
+"Kurulum işlemi sırasında seçtiğiniz seçeneklere bağlı olarak, sisteminizin "
+"grafiksel bir arayüze sahip olmaması, bunun yerine yalnızca metin tabanlı "
+"bir komut istemi sunması mümkündür. Eğer öyleyse ve kurulumdan sonra bir "
+"grafiksel masaüstünü etkinleştirmek istiyorsanız, [application]*X Pencere "
+"Sistemini* ve tercih ettiğiniz masaüstü ortamını ([application]*GNOME* ya da "
+"[application]*KDE*) kurmanız gerekir."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:54
@@ -281,3 +381,11 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-trouble-after-graphical-login[Booting "
 "into a Graphical Environment]."
 msgstr ""
+"Diğer tüm yazılımlarda olduğu gibi, bu paketler [application]*DNF* paket "
+"yöneticisi kullanılarak kurulabilir. Yeni paketleri kurmak için "
+"[application]*DNF* kullanmak hakkında bilgi için [citetitle]_xref:fedora"
+":system-administrators-guide:index.adoc[{PRODUCT} Sistem Yöneticisi "
+"Kılavuzuna]_ bakın. Öntanımlı olarak grafiksel oturum açmanın nasıl "
+"etkinleştirileceği hakkında bilgi için xref:install/Troubleshooting.adoc"
+"#sect-trouble-after-graphical-login[Grafiksel Ortama Önyükleme] bölümüne "
+"bakın."
