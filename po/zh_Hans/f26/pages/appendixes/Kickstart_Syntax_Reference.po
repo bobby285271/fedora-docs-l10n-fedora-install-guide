@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:19+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-15 03:23+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f26pagesappendixeskickstart_syntax_reference/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "Kickstart语法参考"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -38,17 +41,20 @@ msgid ""
 "device node name (such as `sda`), you can instead use any item from `/dev/"
 "disk`. For example, instead of:"
 msgstr ""
+"设备名不保证重启前后的一致性，这可能造成Kickstart脚本编写复杂。当一个Kickstar"
+"t功能用到设备名（例如sda）时，你可以用其他用法换掉类似于`/dev/"
+"disk`的用法。例如，不使用："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:18
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:21
 msgid "You could use an entry similar to one of the following:"
-msgstr ""
+msgstr "你可以用和下列某一种入口类似的入口："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:26
@@ -57,13 +63,17 @@ msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:30
 msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
-msgstr ""
+msgstr "它提供了一种一致性的方式来引用磁盘，比仅使用`sda`这种方式更有意义。这对大型存"
+"储环境尤其有用。"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:34
@@ -76,12 +86,16 @@ msgid ""
 "in syntax between Fedora{nbsp}{PREVVER} and {PRODVER}, use the following "
 "command:"
 msgstr ""
+"当Kickstart安装的通用准则倾向于保持不变时，命令和功能有可能在主要发行版之间变"
+"化。你可以使用[command]#ksverdiff#命令显示两个不同发行版之间的Kickstart语法区"
+"别。这在升级Kickstart文件时非常有用。要显示Fedora{nbsp}{PREVVER} and "
+"{PRODVER}语法变更的列表，请使用以下命令："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:38
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:41
@@ -108,24 +122,25 @@ msgid ""
 "In the following sections, if an option is followed by an equals mark (`=`), "
 "a value must be specified after it. In the example commands, options in "
 "square brackets (`[ ]`) are optional arguments for the command."
-msgstr ""
+msgstr "在下面的章节中，如果一个功能后面跟了等号（`=`），那么等号后面必须指定一个数字"
+"。在示例代码中，方括号（`[ ]`）中的选项是可选选项。"
 
 #. type: Title ====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:52
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr ""
+msgstr "安装方法和资源"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:55
 msgid "The following commands control the way Fedora will be installed."
-msgstr ""
+msgstr "下列命令控制了Fedora的安装方式。"
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:57
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr ""
+msgstr "device（可选）——安装额外设备驱动"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:60
@@ -136,43 +151,46 @@ msgid ""
 "command, which tells the installation program to install extra modules, uses "
 "the following format:"
 msgstr ""
+"在大多数PCI系统中，安装程序会自动检测以太网和SCSI卡。然而，Kickstart在老系统"
+"上可能需要提示才能找到合适的设备。[command]#device#命令可以告诉安装程序来安装"
+"额外模块，格式如下："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:64
 #, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:67
 msgid ""
 "Replace _moduleName_ with the name of the kernel module which should be "
 "installed."
-msgstr ""
+msgstr "将_moduleName_换成要安装的内核模块名。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:68
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:177
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[option]#--opts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:69
 msgid "Options to pass to the installed kernel module. For example:"
-msgstr ""
+msgstr "传递已安装的内核模块的选项。例如："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:72
 #, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title =====
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:75
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr ""
+msgstr "driverdisk（可选）——使用一个驱动盘"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:78
@@ -183,18 +201,21 @@ msgid ""
 "Then, you must use the [command]#driverdisk# command to specify that the "
 "installation program should look for a driver disk and its location."
 msgstr ""
+"Kickstart安装允许使用驱动盘来提供默认没有的驱动。你必须将驱动盘先挂载到操作系"
+"统的root目录下，然后必须使用[command]#driverdisk#命令指定安装程序查找的驱动盘"
+"位置。"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:82
 #, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
 #, no-wrap
 msgid "_partition_"
-msgstr ""
+msgstr "_partition_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:85
@@ -202,13 +223,14 @@ msgid ""
 "Search for the driver disk image on a local partition. Replace _partition_ "
 "with the name of the partition containing the driver disk. Note that the "
 "partition must be specified as a full path. For example:"
-msgstr ""
+msgstr "在本地分区下查找驱动盘的镜像。将_partition_替换为一个包含驱动盘的分区。注意："
+"分区必须指定为一个绝对路径，例如："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:89
 #, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:91
@@ -976,7 +998,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:313
 #, no-wrap
 msgid "[option]#--append=#"
-msgstr ""
+msgstr "[option]#--append=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:314
@@ -1003,7 +1025,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:322
 #, no-wrap
 msgid "[option]#--boot-drive=#"
-msgstr ""
+msgstr "[option]#--boot-drive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:323
@@ -1053,7 +1075,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:339
 #, no-wrap
 msgid "[option]#--leavebootorder#"
-msgstr ""
+msgstr "[option]#--leavebootorder#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:340
@@ -1066,7 +1088,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:341
 #, no-wrap
 msgid "[option]#--driveorder=#"
-msgstr ""
+msgstr "[option]#--driveorder=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:342
@@ -1083,7 +1105,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:348
 #, no-wrap
 msgid "[option]#--location=#"
-msgstr ""
+msgstr "[option]#--location=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:349
@@ -1136,7 +1158,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1872
 #, no-wrap
 msgid "[option]#--password=#"
-msgstr ""
+msgstr "[option]#--password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:363
@@ -1161,7 +1183,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1826
 #, no-wrap
 msgid "[option]#--iscrypted#"
-msgstr ""
+msgstr "[option]#--iscrypted#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:367
@@ -1191,7 +1213,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:377
 #, no-wrap
 msgid "[option]#--timeout=#"
-msgstr ""
+msgstr "[option]#--timeout=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:378
@@ -1204,7 +1226,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:379
 #, no-wrap
 msgid "[option]#--default=#"
-msgstr ""
+msgstr "[option]#--default=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:380
@@ -1215,7 +1237,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:381
 #, no-wrap
 msgid "[option]#--extlinux#"
-msgstr ""
+msgstr "[option]#--extlinux#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:382
@@ -1229,7 +1251,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1670
 #, no-wrap
 msgid "[option]#--disabled#"
-msgstr ""
+msgstr "[option]#--disabled#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:384
@@ -1243,7 +1265,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:385
 #, no-wrap
 msgid "[option]#--nombr#"
-msgstr ""
+msgstr "[option]#--nombr#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:386
@@ -1301,7 +1323,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:412
 #, no-wrap
 msgid "[option]#--data=#"
-msgstr ""
+msgstr "[option]#--data=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:413
@@ -1315,7 +1337,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:414
 #, no-wrap
 msgid "[option]#--metadata=#"
-msgstr ""
+msgstr "[option]#--metadata=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:415
@@ -1332,7 +1354,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:994
 #, no-wrap
 msgid "[option]#--label=#"
-msgstr ""
+msgstr "[option]#--label=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:417
@@ -1346,7 +1368,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:418
 #, no-wrap
 msgid "[option]#--subvol#"
-msgstr ""
+msgstr "[option]#--subvol#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:419
@@ -1378,7 +1400,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:992
 #, no-wrap
 msgid "[option]#--mkfsoptions=#"
-msgstr ""
+msgstr "[option]#--mkfsoptions=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:425
@@ -1454,7 +1476,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:461
 #, no-wrap
 msgid "[option]#--all#"
-msgstr ""
+msgstr "[option]#--all#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:462
@@ -1473,7 +1495,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 #, no-wrap
 msgid "[option]#--drives=#"
-msgstr ""
+msgstr "[option]#--drives=#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:471
@@ -1562,7 +1584,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:506
 #, no-wrap
 msgid "[option]#--list=#"
-msgstr ""
+msgstr "[option]#--list=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:507
@@ -1582,7 +1604,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:513
 #, no-wrap
 msgid "[option]#--disklabel=#"
-msgstr ""
+msgstr "[option]#--disklabel=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:514
@@ -1593,7 +1615,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:515
 #, no-wrap
 msgid "[option]#--linux#"
-msgstr ""
+msgstr "[option]#--linux#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:516
@@ -1604,7 +1626,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:517
 #, no-wrap
 msgid "[option]#--none#"
-msgstr ""
+msgstr "[option]#--none#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:518
@@ -1657,7 +1679,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:538
 #, no-wrap
 msgid "[option]#--dcb=#"
-msgstr ""
+msgstr "[option]#--dcb=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:539
@@ -1668,7 +1690,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:540
 #, no-wrap
 msgid "[option]#--autovlan#"
-msgstr ""
+msgstr "[option]#--autovlan#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:541
@@ -1754,7 +1776,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:588
 #, no-wrap
 msgid "[option]#--only-use=#"
-msgstr ""
+msgstr "[option]#--only-use=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:589
@@ -1796,7 +1818,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:609
 #, no-wrap
 msgid "[option]#--interactive#"
-msgstr ""
+msgstr "[option]#--interactive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:610
@@ -1850,7 +1872,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:625
 #, no-wrap
 msgid "[option]#--ipaddr=#"
-msgstr ""
+msgstr "[option]#--ipaddr=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:626
@@ -1864,7 +1886,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1870
 #, no-wrap
 msgid "[option]#--port=#"
-msgstr ""
+msgstr "[option]#--port=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:628
@@ -1875,7 +1897,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:629
 #, no-wrap
 msgid "[option]#--target=#"
-msgstr ""
+msgstr "[option]#--target=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:630
@@ -1886,7 +1908,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:631
 #, no-wrap
 msgid "[option]#--iface=#"
-msgstr ""
+msgstr "[option]#--iface=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:632
@@ -1901,7 +1923,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:633
 #, no-wrap
 msgid "[option]#--user=#"
-msgstr ""
+msgstr "[option]#--user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:634
@@ -1917,7 +1939,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:637
 #, no-wrap
 msgid "[option]#--reverse-user=#"
-msgstr ""
+msgstr "[option]#--reverse-user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:638
@@ -1930,7 +1952,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:639
 #, no-wrap
 msgid "[option]#--reverse-password=#"
-msgstr ""
+msgstr "[option]#--reverse-password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:640
@@ -2012,7 +2034,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:973
 #, no-wrap
 msgid "_mntpoint_"
-msgstr ""
+msgstr "_mntpoint_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:673
@@ -2112,7 +2134,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1077
 #, no-wrap
 msgid "[option]#--noformat#"
-msgstr ""
+msgstr "[option]#--noformat#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:699
@@ -2125,7 +2147,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1079
 #, no-wrap
 msgid "[option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--useexisting#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:701
@@ -2148,7 +2170,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:985
 #, no-wrap
 msgid "[option]#--fsoptions=#"
-msgstr ""
+msgstr "[option]#--fsoptions=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:705
@@ -2188,7 +2210,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:862
 #, no-wrap
 msgid "[option]#--grow#"
-msgstr ""
+msgstr "[option]#--grow#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:716
@@ -2202,7 +2224,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:849
 #, no-wrap
 msgid "[option]#--size=#"
-msgstr ""
+msgstr "[option]#--size=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:718
@@ -2215,7 +2237,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:719
 #, no-wrap
 msgid "[option]#--percent=#"
-msgstr ""
+msgstr "[option]#--percent=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:720
@@ -2240,7 +2262,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:858
 #, no-wrap
 msgid "[option]#--maxsize=#"
-msgstr ""
+msgstr "[option]#--maxsize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:729
@@ -2254,7 +2276,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:939
 #, no-wrap
 msgid "[option]#--recommended#"
-msgstr ""
+msgstr "[option]#--recommended#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:731
@@ -2280,7 +2302,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:860
 #, no-wrap
 msgid "[option]#--resize#"
-msgstr ""
+msgstr "[option]#--resize#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:740
@@ -2330,7 +2352,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:751
 #, no-wrap
 msgid "[option]#--thinpool#"
-msgstr ""
+msgstr "[option]#--thinpool#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:752
@@ -2341,7 +2363,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:753
 #, no-wrap
 msgid "[option]#--metadatasize=#"
-msgstr ""
+msgstr "[option]#--metadatasize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:754
@@ -2352,7 +2374,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:755
 #, no-wrap
 msgid "[option]#--chunksize=#"
-msgstr ""
+msgstr "[option]#--chunksize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:756
@@ -2363,7 +2385,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:757
 #, no-wrap
 msgid "[option]#--thin#"
-msgstr ""
+msgstr "[option]#--thin#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:758
@@ -2374,7 +2396,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:759
 #, no-wrap
 msgid "[option]#--poolname=#"
-msgstr ""
+msgstr "[option]#--poolname=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:760
@@ -2387,7 +2409,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:761
 #, no-wrap
 msgid "[option]#--profile=#"
-msgstr ""
+msgstr "[option]#--profile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:762
@@ -2403,7 +2425,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:763
 #, no-wrap
 msgid "[option]#--cachepvs=#"
-msgstr ""
+msgstr "[option]#--cachepvs=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:764
@@ -2416,7 +2438,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:765
 #, no-wrap
 msgid "[option]#--cachesize=#"
-msgstr ""
+msgstr "[option]#--cachesize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:766
@@ -2429,7 +2451,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:767
 #, no-wrap
 msgid "[option]#--cachemode=#"
-msgstr ""
+msgstr "[option]#--cachemode=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:768
@@ -2521,7 +2543,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:835
 #, no-wrap
 msgid "`swap--hibernation`\n"
-msgstr ""
+msgstr "`swap--hibernation`\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
@@ -2735,7 +2757,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:922
 #, no-wrap
 msgid "[option]#--asprimary#"
-msgstr ""
+msgstr "[option]#--asprimary#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:923
@@ -2755,7 +2777,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:981
 #, no-wrap
 msgid "[option]#--fsprofile=#"
-msgstr ""
+msgstr "[option]#--fsprofile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:925
@@ -2809,7 +2831,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:948
 #, no-wrap
 msgid "[option]#--onbiosdisk#"
-msgstr ""
+msgstr "[option]#--onbiosdisk#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:949
@@ -2888,7 +2910,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1781
 #, no-wrap
 msgid "[option]#--level=#"
-msgstr ""
+msgstr "[option]#--level=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:976
@@ -2904,7 +2926,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1231
 #, no-wrap
 msgid "[option]#--device=#"
-msgstr ""
+msgstr "[option]#--device=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:978
@@ -2920,7 +2942,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:979
 #, no-wrap
 msgid "[option]#--spares=#"
-msgstr ""
+msgstr "[option]#--spares=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:980
@@ -3040,7 +3062,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1054
 #, no-wrap
 msgid "[option]#--add-boot#"
-msgstr ""
+msgstr "[option]#--add-boot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1055
@@ -3096,7 +3118,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1081
 #, no-wrap
 msgid "[option]#--pesize=#"
-msgstr ""
+msgstr "[option]#--pesize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1082
@@ -3109,7 +3131,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1083
 #, no-wrap
 msgid "[option]#--reserved-space=#"
-msgstr ""
+msgstr "[option]#--reserved-space=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1084
@@ -3122,7 +3144,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1085
 #, no-wrap
 msgid "[option]#--reserved-percent=#"
-msgstr ""
+msgstr "[option]#--reserved-percent=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1086
@@ -3197,7 +3219,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1124
 #, no-wrap
 msgid "[option]#--devnum#"
-msgstr ""
+msgstr "[option]#--devnum#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1125
@@ -3208,7 +3230,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1126
 #, no-wrap
 msgid "[option]#--wwpn#"
-msgstr ""
+msgstr "[option]#--wwpn#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1127
@@ -3221,7 +3243,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1128
 #, no-wrap
 msgid "[option]#--fcplun#"
-msgstr ""
+msgstr "[option]#--fcplun#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1129
@@ -3300,7 +3322,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1156
 #, no-wrap
 msgid "[option]#--trust=#"
-msgstr ""
+msgstr "[option]#--trust=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1157
@@ -3325,7 +3347,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1165
 #, no-wrap
 msgid "_incoming_"
-msgstr ""
+msgstr "_即将到来的_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1166
@@ -3337,22 +3359,22 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1168
 msgid "[option]#--ssh#"
-msgstr ""
+msgstr "[option]#--ssh#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1170
 msgid "[option]#--smtp#"
-msgstr ""
+msgstr "[option]#--smtp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1172
 msgid "[option]#--http#"
-msgstr ""
+msgstr "[option]#--http#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1174
 msgid "[option]#--ftp#"
-msgstr ""
+msgstr "[option]#--ftp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1176
@@ -3368,7 +3390,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1177
 #, no-wrap
 msgid "[option]#--service=#"
-msgstr ""
+msgstr "[option]#--service=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1178
@@ -3408,7 +3430,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1186
 #, no-wrap
 msgid "[option]#--activate#"
-msgstr ""
+msgstr "[option]#--activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1187
@@ -3430,7 +3452,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1190
 #, no-wrap
 msgid "[option]#--no-activate#"
-msgstr ""
+msgstr "[option]#--no-activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1191
@@ -3441,7 +3463,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1192
 #, no-wrap
 msgid "[option]#--bootproto=#"
-msgstr ""
+msgstr "[option]#--bootproto=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1193
@@ -3593,7 +3615,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1254
 #, no-wrap
 msgid "[option]#--ip=#"
-msgstr ""
+msgstr "[option]#--ip=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1255
@@ -3604,7 +3626,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1256
 #, no-wrap
 msgid "[option]#--ipv6=#"
-msgstr ""
+msgstr "[option]#--ipv6=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1257
@@ -3620,7 +3642,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1258
 #, no-wrap
 msgid "[option]#--gateway=#"
-msgstr ""
+msgstr "[option]#--gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1259
@@ -3631,7 +3653,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1260
 #, no-wrap
 msgid "[option]#--ipv6gateway=#"
-msgstr ""
+msgstr "[option]#--ipv6gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1261
@@ -3642,7 +3664,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1262
 #, no-wrap
 msgid "[option]#--nodefroute#"
-msgstr ""
+msgstr "[option]#--nodefroute#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1263
@@ -3656,7 +3678,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1264
 #, no-wrap
 msgid "[option]#--nameserver=#"
-msgstr ""
+msgstr "[option]#--nameserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1265
@@ -3669,7 +3691,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1271
 #, no-wrap
 msgid "[option]#--nodns#"
-msgstr ""
+msgstr "[option]#--nodns#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1272
@@ -3680,7 +3702,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1273
 #, no-wrap
 msgid "[option]#--netmask=#"
-msgstr ""
+msgstr "[option]#--netmask=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1274
@@ -3691,7 +3713,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1275
 #, no-wrap
 msgid "[option]#--hostname=#"
-msgstr ""
+msgstr "[option]#--hostname=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1276
@@ -3708,7 +3730,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1277
 #, no-wrap
 msgid "[option]#--ethtool=#"
-msgstr ""
+msgstr "[option]#--ethtool=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1278
@@ -3721,7 +3743,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1279
 #, no-wrap
 msgid "[option]#--essid=#"
-msgstr ""
+msgstr "[option]#--essid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1280
@@ -3732,7 +3754,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1281
 #, no-wrap
 msgid "[option]#--wepkey=#"
-msgstr ""
+msgstr "[option]#--wepkey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1282
@@ -3743,7 +3765,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1283
 #, no-wrap
 msgid "[option]#--wpakey=#"
-msgstr ""
+msgstr "[option]#--wpakey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1284
@@ -3754,7 +3776,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1285
 #, no-wrap
 msgid "[option]#--onboot=#"
-msgstr ""
+msgstr "[option]#--onboot=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1286
@@ -3765,7 +3787,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1287
 #, no-wrap
 msgid "[option]#--dhcpclass=#"
-msgstr ""
+msgstr "[option]#--dhcpclass=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1288
@@ -3776,7 +3798,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1289
 #, no-wrap
 msgid "[option]#--mtu=#"
-msgstr ""
+msgstr "[option]#--mtu=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1290
@@ -3787,7 +3809,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1291
 #, no-wrap
 msgid "[option]#--noipv4#"
-msgstr ""
+msgstr "[option]#--noipv4#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1292
@@ -3798,7 +3820,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1293
 #, no-wrap
 msgid "[option]#--noipv6#"
-msgstr ""
+msgstr "[option]#--noipv6#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1294
@@ -3809,7 +3831,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1295
 #, no-wrap
 msgid "[option]#--bondslaves=#"
-msgstr ""
+msgstr "[option]#--bondslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1296
@@ -3836,7 +3858,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1304
 #, no-wrap
 msgid "[command]#--bondopts=#"
-msgstr ""
+msgstr "[command]#--bondopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1305
@@ -3875,7 +3897,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1320
 #, no-wrap
 msgid "[option]#--vlanid=#"
-msgstr ""
+msgstr "[option]#--vlanid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1321
@@ -3890,7 +3912,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1322
 #, no-wrap
 msgid "[option]#--interfacename=#"
-msgstr ""
+msgstr "[option]#--interfacename=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1323
@@ -3941,7 +3963,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1337
 #, no-wrap
 msgid "[option]#--teamslaves=#"
-msgstr ""
+msgstr "[option]#--teamslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1338
@@ -3967,7 +3989,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1346
 #, no-wrap
 msgid "[option]#--teamconfig=#"
-msgstr ""
+msgstr "[option]#--teamconfig=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1347
@@ -3988,7 +4010,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1355
 #, no-wrap
 msgid "[option]#--bridgeslaves=#"
-msgstr ""
+msgstr "[option]#--bridgeslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1356
@@ -4009,7 +4031,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1362
 #, no-wrap
 msgid "[option]#--bridgeopts=#"
-msgstr ""
+msgstr "[option]#--bridgeopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1363
@@ -4059,7 +4081,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1379
 #, no-wrap
 msgid "[option]#--vckeymap=#"
-msgstr ""
+msgstr "[option]#--vckeymap=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1380
@@ -4073,7 +4095,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1381
 #, no-wrap
 msgid "[option]#--xlayouts=#"
-msgstr ""
+msgstr "[option]#--xlayouts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1382
@@ -4096,7 +4118,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1385
 #, no-wrap
 msgid "[option]#--switch=#"
-msgstr ""
+msgstr "[option]#--switch=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1386
@@ -4168,7 +4190,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1409
 #, no-wrap
 msgid "[option]#--addsupport=#"
-msgstr ""
+msgstr "[option]#--addsupport=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1410
@@ -4234,7 +4256,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1439
 #, no-wrap
 msgid "[option]#--disabled=#"
-msgstr ""
+msgstr "[option]#--disabled=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1440
@@ -4245,7 +4267,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1441
 #, no-wrap
 msgid "[option]#--enabled=#"
-msgstr ""
+msgstr "[option]#--enabled=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1442
@@ -4306,7 +4328,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1467
 #, no-wrap
 msgid "[option]#--utc#"
-msgstr ""
+msgstr "[option]#--utc#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1468
@@ -4319,7 +4341,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1469
 #, no-wrap
 msgid "[option]#--nontp#"
-msgstr ""
+msgstr "[option]#--nontp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1470
@@ -4330,7 +4352,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1471
 #, no-wrap
 msgid "[option]#--ntpservers=#"
-msgstr ""
+msgstr "[option]#--ntpservers=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1472
@@ -4365,7 +4387,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1480
 #, no-wrap
 msgid "[option]#--defaultdesktop=#"
-msgstr ""
+msgstr "[option]#--defaultdesktop=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1481
@@ -4379,7 +4401,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1482
 #, no-wrap
 msgid "[option]#--startxonboot#"
-msgstr ""
+msgstr "[option]#--startxonboot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1483
@@ -4764,7 +4786,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1722
 #, no-wrap
 msgid "[option]#--gid=#"
-msgstr ""
+msgstr "[option]#--gid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1560
@@ -4816,7 +4838,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1582
 #, no-wrap
 msgid "_name_"
-msgstr ""
+msgstr "_name_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1583
@@ -4829,7 +4851,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1584
 #, no-wrap
 msgid "[option]#--minlen=#"
-msgstr ""
+msgstr "[option]#--minlen=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1585
@@ -4841,7 +4863,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1586
 #, no-wrap
 msgid "[option]#--minquality=#"
-msgstr ""
+msgstr "[option]#--minquality=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1587
@@ -4854,7 +4876,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1588
 #, no-wrap
 msgid "[option]#--strict#"
-msgstr ""
+msgstr "[option]#--strict#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1589
@@ -4867,7 +4889,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1590
 #, no-wrap
 msgid "[option]#--notstrict#"
-msgstr ""
+msgstr "[option]#--notstrict#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1591
@@ -4880,7 +4902,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1592
 #, no-wrap
 msgid "[option]#--emptyok#"
-msgstr ""
+msgstr "[option]#--emptyok#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1593
@@ -4891,7 +4913,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1594
 #, no-wrap
 msgid "[option]#--notempty#"
-msgstr ""
+msgstr "[option]#--notempty#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1595
@@ -4902,7 +4924,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1596
 #, no-wrap
 msgid "[option]#--changesok#"
-msgstr ""
+msgstr "[option]#--changesok#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1597
@@ -4915,7 +4937,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1598
 #, no-wrap
 msgid "[option]#--nochanges#"
-msgstr ""
+msgstr "[option]#--nochanges#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1599
@@ -4961,7 +4983,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1621
 #, no-wrap
 msgid "[option]#--computer-ou=OU=#"
-msgstr ""
+msgstr "[option]#--computer-ou=OU=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1622
@@ -4976,7 +4998,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1623
 #, no-wrap
 msgid "[option]#--no-password#"
-msgstr ""
+msgstr "[option]#--no-password#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1624
@@ -4987,7 +5009,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1625
 #, no-wrap
 msgid "[option]#--one-time-password=#"
-msgstr ""
+msgstr "[option]#--one-time-password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1626
@@ -4999,7 +5021,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1627
 #, no-wrap
 msgid "[option]#--client-software=#"
-msgstr ""
+msgstr "[option]#--client-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1628
@@ -5013,7 +5035,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1629
 #, no-wrap
 msgid "[option]#--server-software=#"
-msgstr ""
+msgstr "[option]#--server-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1630
@@ -5026,7 +5048,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1631
 #, no-wrap
 msgid "[option]#--membership-software=#"
-msgstr ""
+msgstr "[option]#--membership-software=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1632
@@ -5085,7 +5107,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1835
 #, no-wrap
 msgid "[option]#--plaintext#"
-msgstr ""
+msgstr "[option]#--plaintext#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1653
@@ -5101,7 +5123,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1837
 #, no-wrap
 msgid "[option]#--lock#"
-msgstr ""
+msgstr "[option]#--lock#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1655
@@ -5135,7 +5157,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1666
 #, no-wrap
 msgid "[option]#--enforcing#"
-msgstr ""
+msgstr "[option]#--enforcing#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1667
@@ -5146,7 +5168,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1668
 #, no-wrap
 msgid "[option]#--permissive#"
-msgstr ""
+msgstr "[option]#--permissive#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1669
@@ -5194,7 +5216,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1683
 #, no-wrap
 msgid "[option]#--username=#"
-msgstr ""
+msgstr "[option]#--username=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1684
@@ -5229,7 +5251,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1697
 #, no-wrap
 msgid "[option]#--gecos=#"
-msgstr ""
+msgstr "[option]#--gecos=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1698
@@ -5244,7 +5266,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1699
 #, no-wrap
 msgid "[option]#--groups=#"
-msgstr ""
+msgstr "[option]#--groups=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1700
@@ -5259,7 +5281,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1701
 #, no-wrap
 msgid "[option]#--homedir=#"
-msgstr ""
+msgstr "[option]#--homedir=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1702
@@ -5287,7 +5309,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1718
 #, no-wrap
 msgid "[option]#--shell=#"
-msgstr ""
+msgstr "[option]#--shell=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1719
@@ -5299,7 +5321,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1720
 #, no-wrap
 msgid "[option]#--uid=#"
-msgstr ""
+msgstr "[option]#--uid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1721
@@ -5353,7 +5375,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1739
 #, no-wrap
 msgid "[option]#--autoscreenshot#"
-msgstr ""
+msgstr "[option]#--autoscreenshot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1740
@@ -5438,7 +5460,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1868
 #, no-wrap
 msgid "[option]#--host=#"
-msgstr ""
+msgstr "[option]#--host=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1778
@@ -5548,7 +5570,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1824
 #, no-wrap
 msgid "[option]#--username#"
-msgstr ""
+msgstr "[option]#--username#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1836
@@ -5699,7 +5721,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1897
 #, no-wrap
 msgid "[option]#--enable#"
-msgstr ""
+msgstr "[option]#--enable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1898
@@ -5710,7 +5732,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1899
 #, no-wrap
 msgid "[option]#--disable#"
-msgstr ""
+msgstr "[option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1900
@@ -5721,7 +5743,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1901
 #, no-wrap
 msgid "[option]#--reserve-mb=#"
-msgstr ""
+msgstr "[option]#--reserve-mb=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1902
@@ -5758,7 +5780,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1912
 #, no-wrap
 msgid "[option]#--enablefadump#"
-msgstr ""
+msgstr "[option]#--enablefadump#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1913
