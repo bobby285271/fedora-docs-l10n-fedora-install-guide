@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:08+0000\n"
-"PO-Revision-Date: 2022-05-15 03:23+0000\n"
+"PO-Revision-Date: 2022-05-15 08:08+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -256,18 +256,25 @@ msgstr ""
 #, no-wrap
 msgid "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:103
 #, no-wrap
 msgid "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:108
 #, no-wrap
 msgid "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:110
@@ -548,7 +555,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:200
 #, no-wrap
 msgid "mediacheck (optional) - Verify Installation Media Integrity"
-msgstr ""
+msgstr "mediacheck（可选）——验证安装媒体的完整性"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:203
@@ -564,7 +571,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:205
 #, no-wrap
 msgid "ostreesetup (optional) - Install from an OSTree"
-msgstr ""
+msgstr "ostreesetup（可选）——从OSTree安装"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:208
@@ -582,7 +589,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:210
 msgid "Management root for OS installation (required)."
-msgstr ""
+msgstr "管理系统安装过程中的root（必选）。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:211
@@ -593,12 +600,12 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:212
 msgid "Management root for OS installation (optional)."
-msgstr ""
+msgstr "管理系统安装过程中的root（可选）。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:214
 msgid "Repository URL (required)."
-msgstr ""
+msgstr "软件源网址（必选）。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:215
@@ -609,7 +616,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:216
 msgid "Name of branch inside the repository (required)."
-msgstr ""
+msgstr "软件源的分支名（必选）。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:217
@@ -620,13 +627,13 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:218
 msgid "Disable GPG key verification (optional)."
-msgstr ""
+msgstr "禁用GPG密钥验证（可选）。"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:220
 #, no-wrap
 msgid "repo (optional) - Configure Additional Repositories"
-msgstr ""
+msgstr "repo（可选）——配置额外软件源"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:223
@@ -837,7 +844,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:274
 #, no-wrap
 msgid "Storage and Partitioning"
-msgstr ""
+msgstr "存储器和分区"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -850,7 +857,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:279
 #, no-wrap
 msgid "autopart (optional) - Automatic Partitioning"
-msgstr ""
+msgstr "autopart（可选）——自动分区"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:282
@@ -885,12 +892,12 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:293
 msgid "`lvm`: The LVM partitioning scheme."
-msgstr ""
+msgstr "`lvm`：LVM分区方案。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:295
 msgid "`btrfs`: The Btrfs partitioning scheme."
-msgstr ""
+msgstr "`btrfs`：Btrfs分区方案。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:297
@@ -900,7 +907,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:299
 msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
-msgstr ""
+msgstr "`thinp`：LVM自动精简配置分区方案。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:301
@@ -1151,7 +1158,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:331
 #, no-wrap
 msgid "bootloader (required) - Configure Boot Loader"
-msgstr ""
+msgstr "bootloader（必选）——配置Boot Loader"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:334
@@ -1195,6 +1202,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 msgstr ""
+"[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:357
@@ -1282,7 +1290,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:382
 #, no-wrap
 msgid "[command]#bootloader --driveorder=sda,hda#\n"
-msgstr ""
+msgstr "[command]#bootloader --driveorder=sda,hda#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:384
@@ -1391,6 +1399,11 @@ msgstr ""
 #, no-wrap
 msgid "[command]#bootloader --iscrypted --password=grub.pbkdf2.sha512.10000.5520C6C9832F3AC3D149AC0B24BE69E2D4FB0DBEEDBD29CA1D30A044DE2645C4C7A291E585D4DC43F8A4D82479F8B95CA4BA4381F8550510B75E8E0BB2938990.C688B6F0EF935701FF9BD1A8EC7FE5BD2333799C98F28420C5CC8F1A2A233DE22C83705BB614EA17F3FDFDF4AC2161CEA3384E56EB38A2E39102F5334C47405E#\n"
 msgstr ""
+"[command]#bootloader --iscrypted --password=grub.pbkdf2.sha512.10000.5520C6C9"
+"832F3AC3D149AC0B24BE69E2D4FB0DBEEDBD29CA1D30A044DE2645C4C7A291E585D4DC43F8A4D"
+"82479F8B95CA4BA4381F8550510B75E8E0BB2938990.C688B6F0EF935701FF9BD1A8EC7FE5BD2"
+"333799C98F28420C5CC8F1A2A233DE22C83705BB614EA17F3FDFDF4AC2161CEA3384E56EB38A2"
+"E39102F5334C47405E#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:413
@@ -1473,6 +1486,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#btrfs _mntpoint_ --data=pass:attributes[{blank}]_level_ --metadata=pass:attributes[{blank}]_level_ [--label=] _partitions_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _mntpoint_ --data=pass:attributes[{blank}]_level_ "
+"--metadata=pass:attributes[{blank}]_level_ [--label=] "
+"_partitions_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:436
@@ -1486,13 +1502,15 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:438
 msgid "For a subvolume, the syntax is:"
-msgstr ""
+msgstr "子卷相关的语法是："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:443
 #, no-wrap
 msgid "[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ _parent_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ "
+"_parent_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:447
@@ -1561,13 +1579,13 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:457
 msgid "Set a name for a Btrfs subvolume."
-msgstr ""
+msgstr "设置一个Btrfs子卷。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:458
 #, no-wrap
 msgid "[option]#--noformat# or [option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--noformat# or [option]#--useexisting#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:459
@@ -1607,7 +1625,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:465
 #, no-wrap
 msgid "Creating Btrfs Volumes and Subvolumes"
-msgstr ""
+msgstr "创建Btrfs卷和子卷"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:474
@@ -1664,7 +1682,7 @@ msgstr "[option]#--all#"
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:498
 msgid "Erases all partitions from the system."
-msgstr ""
+msgstr "擦除操作系统中的全部分区。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:503
@@ -1692,7 +1710,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:511
 #, no-wrap
 msgid "[command]#clearpart --drives=hda,hdb --all#\n"
-msgstr ""
+msgstr "[command]#clearpart --drives=hda,hdb --all#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:514
@@ -1708,6 +1726,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:521
@@ -1725,6 +1745,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:531
@@ -1750,7 +1772,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:538
 #, no-wrap
 msgid "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:541
@@ -1779,7 +1801,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:547
 #, no-wrap
 msgid "[command]#clearpart --list=sda2,sda3,sdb1#\n"
-msgstr ""
+msgstr "[command]#clearpart --list=sda2,sda3,sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:549
@@ -1801,7 +1823,7 @@ msgstr "[option]#--linux#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 msgid "Erases all Linux partitions."
-msgstr ""
+msgstr "擦除所有Linux分区。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:553
@@ -1844,12 +1866,13 @@ msgstr ""
 #, no-wrap
 msgid "[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 msgstr ""
+"[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:572
 #, no-wrap
 msgid "[option]#--nic=# (required)"
-msgstr ""
+msgstr "[option]#--nic=# （必选）"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:573
@@ -1865,7 +1888,7 @@ msgstr "[option]#--dcb=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:575
 msgid "Establish _Data Center Bridging_ (DCB) settings."
-msgstr ""
+msgstr "创建_数据中心桥_（DCB）设置。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:576
@@ -1876,13 +1899,13 @@ msgstr "[option]#--autovlan#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:577
 msgid "Discover VLANs automatically."
-msgstr ""
+msgstr "自动发现VLAN。"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:579
 #, no-wrap
 msgid "ignoredisk (optional) - Ignore Specified Disks"
-msgstr ""
+msgstr "ignoredisk（可选）——忽略特定的磁盘"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:582
@@ -1898,7 +1921,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:586
 #, no-wrap
 msgid "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:589
@@ -1911,7 +1934,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:593
 #, no-wrap
 msgid "[command]#ignoredisk --drives=sda,sdc#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives=sda,sdc#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:596
@@ -1928,6 +1951,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:603
@@ -1946,12 +1971,14 @@ msgstr ""
 #, no-wrap
 msgid "[command]#ignoredisk --drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:620
 #, no-wrap
 msgid "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:624
@@ -1971,7 +1998,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:629
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=sda#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --only-use=sda#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:632
@@ -1983,6 +2010,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:639
@@ -1994,6 +2023,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:645
@@ -2010,7 +2041,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:648
 #, no-wrap
 msgid "iscsi (optional) - Configure iSCSI Devices"
-msgstr ""
+msgstr "iscsi（可选）——配置iSCSI设备"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:651
@@ -2072,7 +2103,7 @@ msgstr "[option]#--port=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:664
 msgid "The port number (typically `3260`)."
-msgstr ""
+msgstr "端口号（典型的端口号是`3260`）。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:665
@@ -2083,7 +2114,7 @@ msgstr "[option]#--target=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:666
 msgid "Target _IQN_ (iSCSI Qualified Name)."
-msgstr ""
+msgstr "目标_IQN_（iSCSI的IQN号）。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:667
@@ -2160,7 +2191,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:685
 #, no-wrap
 msgid "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
-msgstr ""
+msgstr "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:688
@@ -2179,6 +2210,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#logvol _mntpoint_ --vgname=  --name= [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#logvol _mntpoint_ --vgname=  --name= "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:701
@@ -2227,7 +2260,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:867
 #, no-wrap
 msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:711
@@ -2240,7 +2273,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:869
 #, no-wrap
 msgid "`swap`"
-msgstr ""
+msgstr "`swap`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:713
@@ -2261,7 +2294,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:876
 #, no-wrap
 msgid "`swap --recommended`\n"
-msgstr ""
+msgstr "`swap --recommended`\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:722
@@ -2276,7 +2309,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:726
 #, no-wrap
 msgid "`swap --hibernation`\n"
-msgstr ""
+msgstr "`swap --hibernation`\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:729
@@ -2299,7 +2332,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:732
 #, no-wrap
 msgid "`none`"
-msgstr ""
+msgstr "`none`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:733
@@ -2367,7 +2400,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1046
 #, no-wrap
 msgid "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
-msgstr ""
+msgstr "[option]#--fsoptions=\"ro, x-systemd.device-timeout=0\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:748
@@ -2669,12 +2702,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:838
 #, no-wrap
 msgid "part (required) - Create Physical Partition"
-msgstr ""
+msgstr "part（必选）——创建物理分区"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
 msgid "Creates a partition on the system."
-msgstr ""
+msgstr "在操作系统中创建一个分区。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:843
@@ -2688,6 +2721,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ --device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ "
+"--device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]"
+"_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -2726,7 +2762,7 @@ msgstr "`swap--hibernation`\n"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:891
 #, no-wrap
 msgid "`raid._id_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`raid._id_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:892
@@ -2737,7 +2773,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:893
 #, no-wrap
 msgid "`pv._id_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pv._id_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:894
@@ -2750,7 +2786,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:895
 #, no-wrap
 msgid "`biosboot`"
-msgstr ""
+msgstr "`biosboot`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:896
@@ -2766,7 +2802,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:897
 #, no-wrap
 msgid "`/boot/efi`"
-msgstr ""
+msgstr "`/boot/efi`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:898
@@ -2838,7 +2874,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:923
 #, no-wrap
 msgid "[option]#--onpart=# or [option]#--usepart=#"
-msgstr ""
+msgstr "[option]#--onpart=# or [option]#--usepart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:924
@@ -2849,12 +2885,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:928
 #, no-wrap
 msgid "[command]#partition /home --onpart=hda1#\n"
-msgstr ""
+msgstr "[command]#partition /home --onpart=hda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:931
 msgid "The above puts `/home` on `/dev/hda1`."
-msgstr ""
+msgstr "上面的命令将`/home`放在了`/dev/hda1`上。"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:933
@@ -2866,7 +2902,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:937
 #, no-wrap
 msgid "[command]#partition pv.1 --onpart=hda2#\n"
-msgstr ""
+msgstr "[command]#partition pv.1 --onpart=hda2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:940
@@ -2879,7 +2915,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:941
 #, no-wrap
 msgid "[option]#--ondisk=# or [option]#--ondrive=#"
-msgstr ""
+msgstr "[option]#--ondisk=# or [option]#--ondrive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:942
@@ -3043,7 +3079,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1017
 #, no-wrap
 msgid "raid (optional) - Create Software RAID"
-msgstr ""
+msgstr "raid（可选）——创建软件RAID"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1020
@@ -3054,7 +3090,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1024
 #, no-wrap
 msgid "raid mntpoint --level=level --device=mddevice partitions*\n"
-msgstr ""
+msgstr "raid mntpoint --level=level --device=mddevice partitions*\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1028
@@ -3159,7 +3195,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1082
 #, no-wrap
 msgid "Creating a RAID array in Kickstart"
-msgstr ""
+msgstr "用Kickstart创建一个RAID矩阵"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1091
@@ -3200,7 +3236,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1108
 #, no-wrap
 msgid "reqpart (optional) - Create Required Partitions"
-msgstr ""
+msgstr "reqpart（可选）——创建必选的分区"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1111
@@ -3225,7 +3261,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1122
 #, no-wrap
 msgid "[command]#reqpart [--add-boot]#\n"
-msgstr ""
+msgstr "[command]#reqpart [--add-boot]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1124
@@ -3256,6 +3292,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#volgroup _name_ _partition_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#volgroup _name_ _partition_ "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1142
@@ -3325,7 +3363,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1169
 #, no-wrap
 msgid "zerombr (optional) - Reinitialize Partition Tables"
-msgstr ""
+msgstr "zerombr（可选）——重新初始化分区表"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1172
@@ -3382,6 +3420,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#zfcp --devnum=pass:attributes[{blank}]_devnum_ --wwpn=pass:attributes[{blank}]_wwpn_ --fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#zfcp --devnum=pass:attributes[{blank}]_devnum_ "
+"--wwpn=pass:attributes[{blank}]_wwpn_ "
+"--fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1194
@@ -3425,19 +3466,21 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1318
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1331
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1205
 #, no-wrap
 msgid "[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 --fcplun=0x5022000000000000#\n"
 msgstr ""
+"[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 "
+"--fcplun=0x5022000000000000#\n"
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1208
 #, no-wrap
 msgid "Network Configuration"
-msgstr ""
+msgstr "网络配置"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1211
@@ -3448,7 +3491,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1213
 #, no-wrap
 msgid "firewall (optional) - Configure Firewall"
-msgstr ""
+msgstr "firewall（可选）——配置防火墙"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1216
@@ -3465,7 +3508,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1222
 #, no-wrap
 msgid "[option]#--enabled# or [option]#--enable#"
-msgstr ""
+msgstr "[option]#--enabled# or [option]#--enable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1223
@@ -3480,12 +3523,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1224
 #, no-wrap
 msgid "[option]#--disabled# or [option]#--disable#"
-msgstr ""
+msgstr "[option]#--disabled# or [option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1225
 msgid "Disable the firewall."
-msgstr ""
+msgstr "禁用防火墙。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1226
@@ -3505,7 +3548,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1231
 #, no-wrap
 msgid "[command]#firewall --enable --trust=em1 --trust=em2#\n"
-msgstr ""
+msgstr "[command]#firewall --enable --trust=em1 --trust=em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1234
@@ -3584,7 +3627,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1252
 #, no-wrap
 msgid "network (optional) - Configure Network Interfaces"
-msgstr ""
+msgstr "network（可选）——配置网络接口"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1255
@@ -3654,7 +3697,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1269
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1272
@@ -3667,7 +3710,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1276
 #, no-wrap
 msgid "[command]#network --bootproto=bootp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=bootp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1279
@@ -3678,7 +3721,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1283
 #, no-wrap
 msgid "[command]#network --bootproto=ibft#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=ibft#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1286
@@ -3701,6 +3744,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 --gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1295
@@ -3778,7 +3823,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1322
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp --device=em1#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp --device=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1324
@@ -3814,6 +3859,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 msgstr ""
+"[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1338
@@ -3826,7 +3872,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1342
 #, no-wrap
 msgid "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
-msgstr ""
+msgstr "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1344
@@ -3839,7 +3885,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1348
 #, no-wrap
 msgid "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
-msgstr ""
+msgstr "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1351
@@ -3857,7 +3903,7 @@ msgstr "[option]#--ip=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1353
 msgid "IP address of the device."
-msgstr ""
+msgstr "设备的IP地址。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1354
@@ -3933,7 +3979,7 @@ msgstr "[option]#--nodns#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1370
 msgid "Do not configure any DNS server."
-msgstr ""
+msgstr "不允许配置任何DNS服务器。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1371
@@ -3944,7 +3990,7 @@ msgstr "[option]#--netmask=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1372
 msgid "Network mask for the installed system."
-msgstr ""
+msgstr "安装的操作系统的网络掩码。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1373
@@ -3985,7 +4031,7 @@ msgstr "[option]#--essid=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1378
 msgid "The network ID for wireless networks."
-msgstr ""
+msgstr "无线网络的网络ID。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1379
@@ -4029,7 +4075,7 @@ msgstr "[option]#--dhcpclass=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1386
 msgid "The DHCP class."
-msgstr ""
+msgstr "DHCP class。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1387
@@ -4040,7 +4086,7 @@ msgstr "[option]#--mtu=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1388
 msgid "The MTU of the device."
-msgstr ""
+msgstr "设备的MTU。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1389
@@ -4051,7 +4097,7 @@ msgstr "[option]#--noipv4#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1390
 msgid "Disable IPv4 on this device."
-msgstr ""
+msgstr "禁用设备的IPv4。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1391
@@ -4062,7 +4108,7 @@ msgstr "[option]#--noipv6#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1392
 msgid "Disable IPv6 on this device."
-msgstr ""
+msgstr "禁用设备的IPv6。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1393
@@ -4082,7 +4128,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1398
 #, no-wrap
 msgid "[command]#network --device=mynetwork --bondslaves=em1,em2#\n"
-msgstr ""
+msgstr "[command]#network --device=mynetwork --bondslaves=em1,em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1401
@@ -4113,6 +4159,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 msgstr ""
+"[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1410
@@ -4164,7 +4211,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1425
 #, no-wrap
 msgid "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
-msgstr ""
+msgstr "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1428
@@ -4216,11 +4263,13 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 msgstr ""
+"[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": "
+"true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1443
 msgid "See also the [option]#--teamconfig=# option."
-msgstr ""
+msgstr "详见[option]#--teamconfig=#选项。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1444
@@ -4262,7 +4311,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1458
 #, no-wrap
 msgid "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
-msgstr ""
+msgstr "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1460
@@ -4287,7 +4336,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1463
 #, no-wrap
 msgid "Console and Environment"
-msgstr ""
+msgstr "虚拟终端和环境"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1466
@@ -4301,7 +4350,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1468
 #, no-wrap
 msgid "keyboard (optional) - Configure Keyboard Layouts"
-msgstr ""
+msgstr "keyboard（可选）——配置键盘布局"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1471
@@ -4312,7 +4361,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1475
 #, no-wrap
 msgid "[command]#keyboard --vckeymap= | --xlayouts= [--switch=]#\n"
-msgstr ""
+msgstr "[command]#keyboard --vckeymap= | --xlayouts= [--switch=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1477
@@ -4384,7 +4433,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1491
 #, no-wrap
 msgid "keyboard --xlayouts=us,'cz (qwerty)' --switch=grp:alt_shift_toggle\n"
-msgstr ""
+msgstr "keyboard --xlayouts=us,'cz (qwerty)' --switch=grp:alt_shift_toggle\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1494
@@ -4403,7 +4452,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1501
 #, no-wrap
 msgid "[command]#lang _language_ [--addsupport=]#\n"
-msgstr ""
+msgstr "[command]#lang _language_ [--addsupport=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1504
@@ -4440,13 +4489,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1511
 #, no-wrap
 msgid "lang en_US --addsupport=cs_CZ,de_DE,en_UK\n"
-msgstr ""
+msgstr "lang en_US --addsupport=cs_CZ,de_DE,en_UK\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1514
 #, no-wrap
 msgid "services (optional) - Configure Services"
-msgstr ""
+msgstr "services（可选）——配置服务"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1517
@@ -4462,6 +4511,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#services [--disabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]] [--enabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#services "
+"[--disabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]] "
+"[--enabled=pass:attributes[{blank}]_list_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1524
@@ -4474,7 +4526,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1528
 #, no-wrap
 msgid "[command]#services --disabled=auditd, cups,smartd, nfslock#\n"
-msgstr ""
+msgstr "[command]#services --disabled=auditd, cups,smartd, nfslock#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1531
@@ -4487,7 +4539,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1535
 #, no-wrap
 msgid "[command]#services --disabled=auditd,cups,smartd,nfslock#\n"
-msgstr ""
+msgstr "[command]#services --disabled=auditd,cups,smartd,nfslock#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1537
@@ -4536,7 +4588,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1554
 #, no-wrap
 msgid "timezone (optional) - Configure Time Zone"
-msgstr ""
+msgstr "timezone（可选）——配置时区"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1557
@@ -4560,6 +4612,9 @@ msgstr ""
 #, no-wrap
 msgid "[command]#timezone [pass:attributes[{blank}]_timezone_pass:attributes[{blank}]] [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#timezone "
+"[pass:attributes[{blank}]_timezone_pass:attributes[{blank}]] "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1565
@@ -4583,7 +4638,7 @@ msgstr "[option]#--nontp#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1568
 msgid "Disable the NTP service automatic starting."
-msgstr ""
+msgstr "禁用NTP服务自启。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1569
@@ -4649,7 +4704,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1583
 #, no-wrap
 msgid "Users, Groups and Authentication"
-msgstr ""
+msgstr "用户、用户组和鉴权"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1586
@@ -4686,7 +4741,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1598
 #, no-wrap
 msgid "authselect (optional) - Configure Authentication"
-msgstr ""
+msgstr "authselect（可选）——配置鉴权"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1601
@@ -4701,7 +4756,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1604
 #, no-wrap
 msgid "group (optional) - Create User Group"
-msgstr ""
+msgstr "group（可选）——创建用户组"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1607
@@ -4716,11 +4771,13 @@ msgstr ""
 #, no-wrap
 msgid "[command]#group --name=pass:attributes[{blank}]_name_ [--gid=pass:attributes[{blank}]_gid_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#group --name=pass:attributes[{blank}]_name_ "
+"[--gid=pass:attributes[{blank}]_gid_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1614
 msgid "Provides the name of the group."
-msgstr ""
+msgstr "提供用户组的组名。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1615
@@ -4848,7 +4905,7 @@ msgstr "[option]#--emptyok#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1649
 msgid "Allow empty passwords. Enabled by default."
-msgstr ""
+msgstr "允许空密码。默认启用。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1650
@@ -4859,7 +4916,7 @@ msgstr "[option]#--notempty#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1651
 msgid "Do not allow empty passwords."
-msgstr ""
+msgstr "不允许空的密码。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1652
@@ -4919,6 +4976,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#realm join _domain_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#realm join _domain_ "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1677
@@ -4944,7 +5003,7 @@ msgstr "[option]#--no-password#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1680
 msgid "Join automatically without a password."
-msgstr ""
+msgstr "无需密码即可自动加入。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1681
@@ -5003,7 +5062,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1690
 #, no-wrap
 msgid "rootpw (required) - Set Root Password"
-msgstr ""
+msgstr "rootpw（必选）——设置root密码"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1693
@@ -5015,6 +5074,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#rootpw [--iscrypted|--plaintext] [--lock] _password_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#rootpw [--iscrypted|--plaintext] [--lock] "
+"_password_pass:attributes[{blank}]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1700
@@ -5077,7 +5138,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1713
 #, no-wrap
 msgid "selinux (optional) - Configure SELinux"
-msgstr ""
+msgstr "selinux（可选）——配置SELinux"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1716
@@ -5092,7 +5153,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1720
 #, no-wrap
 msgid "[command]#selinux [--disabled|--enforcing|--permissive]#\n"
-msgstr ""
+msgstr "[command]#selinux [--disabled|--enforcing|--permissive]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1722
@@ -5122,7 +5183,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1727
 msgid "Disables SELinux completely."
-msgstr ""
+msgstr "完全禁用SELinux。"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1729
@@ -5143,7 +5204,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1735
 #, no-wrap
 msgid "sshkey --username=user \"ssh_key\"\n"
-msgstr ""
+msgstr "sshkey --username=user \"ssh_key\"\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1738
@@ -5168,7 +5229,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1742
 #, no-wrap
 msgid "user (optional) - Create User Account"
-msgstr ""
+msgstr "user（可选）——创建用户账号"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1745
@@ -5180,6 +5241,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#user --name=pass:attributes[{blank}]_username_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#user --name=pass:attributes[{blank}]_username_ "
+"[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1752
@@ -5281,7 +5344,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1781
 #, no-wrap
 msgid "Installation Environment"
-msgstr ""
+msgstr "安装环境"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1784
@@ -5309,7 +5372,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1793
 #, no-wrap
 msgid "[command]#autostep [--autoscreenshot]#\n"
-msgstr ""
+msgstr "[command]#autostep [--autoscreenshot]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1795
@@ -5393,7 +5456,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1831
 #, no-wrap
 msgid "[command]#logging [--host= | --port= | --level=]#\n"
-msgstr ""
+msgstr "[command]#logging [--host= | --port= | --level=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1833
@@ -5429,7 +5492,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1840
 #, no-wrap
 msgid "rescue (optional) - Rescue Mode"
-msgstr ""
+msgstr "rescue（可选）——救援模式"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1843
@@ -5442,13 +5505,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1847
 #, no-wrap
 msgid "[command]#rescue [--nomount|--romount]#\n"
-msgstr ""
+msgstr "[command]#rescue [--nomount|--romount]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1849
 #, no-wrap
 msgid "[option]#--nomount# or [option]#--romount#"
-msgstr ""
+msgstr "[option]#--nomount# or [option]#--romount#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1850
@@ -5483,6 +5546,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#sshpw --username=pass:attributes[{blank}]_name_ _password_ [--iscrypted|--plaintext] [--lock]#\n"
 msgstr ""
+"[command]#sshpw --username=pass:attributes[{blank}]_name_ _password_ "
+"[--iscrypted|--plaintext] [--lock]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1865
@@ -5504,7 +5569,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1876
 #, no-wrap
 msgid "[command]#sshpw --username=root --lock#\n"
-msgstr ""
+msgstr "[command]#sshpw --username=root --lock#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1880
@@ -5550,7 +5615,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1913
 #, no-wrap
 msgid "vnc (optional) - Configure VNC Access"
-msgstr ""
+msgstr "vnc（可选）——配置VNC访问"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1916
@@ -5567,6 +5632,10 @@ msgstr ""
 #, no-wrap
 msgid "[command]#vnc [--host=pass:attributes[{blank}]_hostname_pass:attributes[{blank}]] [--port=pass:attributes[{blank}]_port_pass:attributes[{blank}]] [--password=pass:attributes[{blank}]_password_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#vnc "
+"[--host=pass:attributes[{blank}]_hostname_pass:attributes[{blank}]] "
+"[--port=pass:attributes[{blank}]_port_pass:attributes[{blank}]] "
+"[--password=pass:attributes[{blank}]_password_pass:attributes[{blank}]]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1923
@@ -5599,7 +5668,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1931
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "安装后"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1934
@@ -5612,7 +5681,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1936
 #, no-wrap
 msgid "%addon com_redhat_kdump (optional) - Configure kdump"
-msgstr ""
+msgstr "%addon com_redhat_kdump（可选）——配置kdump"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1939
@@ -5655,7 +5724,7 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1952
 msgid "Available options are:"
-msgstr ""
+msgstr "可用选项有："
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1953
@@ -5666,7 +5735,7 @@ msgstr "[option]#--enable#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1954
 msgid "Enable [application]*Kdump* on the installed system."
-msgstr ""
+msgstr "在安装好的操作系统中启用[application]*Kdump*。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1955
@@ -5699,6 +5768,8 @@ msgid ""
 "%addon com_redhat_kdump --enable --reserve-mb=128\n"
 "%end\n"
 msgstr ""
+"%addon com_redhat_kdump --enable --reserve-mb=128\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1965
@@ -5749,13 +5820,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1978
 #, no-wrap
 msgid "[command]#firstboot --enable|--disable [--reconfig]#\n"
-msgstr ""
+msgstr "[command]#firstboot --enable|--disable [--reconfig]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1980
 #, no-wrap
 msgid "[option]#--enable# or [option]#--enabled#"
-msgstr ""
+msgstr "[option]#--enable# or [option]#--enabled#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1981
@@ -5768,18 +5839,18 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1982
 #, no-wrap
 msgid "[option]#--disable# or [option]#--disabled#"
-msgstr ""
+msgstr "[option]#--disable# or [option]#--disabled#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1983
 msgid "[application]*Initial Setup* will be disabled."
-msgstr ""
+msgstr "[application]*初始设置*将被禁用。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1984
 #, no-wrap
 msgid "[option]#--reconfig#"
-msgstr ""
+msgstr "[option]#--reconfig#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1985
@@ -5848,7 +5919,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2008
 #, no-wrap
 msgid "reboot (optional) - Reboot After Installation"
-msgstr ""
+msgstr "reboot（可选）——安装后重启"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2011
@@ -5878,7 +5949,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2021
 #, no-wrap
 msgid "[option]#--eject#"
-msgstr ""
+msgstr "[option]#--eject#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2022
@@ -5891,7 +5962,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2023
 #, no-wrap
 msgid "[option]#--kexec#"
-msgstr ""
+msgstr "[option]#--kexec#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2024
@@ -5946,7 +6017,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2041
 #, no-wrap
 msgid "%addon com_redhat_kdump --enable --reserve-mb=128%end\n"
-msgstr ""
+msgstr "%addon com_redhat_kdump --enable --reserve-mb=128%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2045
@@ -5967,7 +6038,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2049
 #, no-wrap
 msgid "%anaconda (optional) - Additional Anaconda Configuration"
-msgstr ""
+msgstr "%anaconda（可选）——附加的 Anaconda 配置"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2052
@@ -6050,7 +6121,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2072
 #, no-wrap
 msgid "%packages (required) - Package Selection"
-msgstr ""
+msgstr "%packages（必选）——软件包选择"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2075
@@ -6115,13 +6186,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2096
 #, no-wrap
 msgid "Specifying Environments, Groups and Packages"
-msgstr ""
+msgstr "指定环境、包组和软件包"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2098
 #, no-wrap
 msgid "Specifying an Environment"
-msgstr ""
+msgstr "指定一个环境"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2099
@@ -6137,6 +6208,9 @@ msgid ""
 "@^Infrastructure Server\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"@^Infrastructure Server\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2109
@@ -6150,7 +6224,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2110
 #, no-wrap
 msgid "Specifying Groups"
-msgstr ""
+msgstr "指定分组"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2111
@@ -6190,7 +6264,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2127
 #, no-wrap
 msgid "Specifying Individual Packages"
-msgstr ""
+msgstr "指定个人软件包"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2128
@@ -6210,6 +6284,12 @@ msgid ""
 "docbook*\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"sqlite\n"
+"curl\n"
+"aspell\n"
+"docbook*\n"
+"%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2141
@@ -6223,7 +6303,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2142
 #, no-wrap
 msgid "Excluding Environments, Groups, or Packages"
-msgstr ""
+msgstr "排除环境、包组和软件包"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2143
@@ -6242,6 +6322,11 @@ msgid ""
 "-ipa*fonts\n"
 "%end\n"
 msgstr ""
+"%packages\n"
+"-@Graphical Internet\n"
+"-autofs\n"
+"-ipa*fonts\n"
+"%end\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2158
@@ -6262,7 +6347,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2163
 #, no-wrap
 msgid "Common Package Selection Options"
-msgstr ""
+msgstr "选择常用软件包的选项"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2166
@@ -6275,24 +6360,24 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2170
 #, no-wrap
 msgid "[command]#%packages --multilib --ignoremissing#\n"
-msgstr ""
+msgstr "[command]#%packages --multilib --ignoremissing#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2172
 #, no-wrap
 msgid "[option]#--nocore#"
-msgstr ""
+msgstr "[option]#--nocore#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2173
 msgid "Do not install the `@Core` group."
-msgstr ""
+msgstr "请勿安装`@Core`包组。"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2174
 #, no-wrap
 msgid "[option]#--ignoremissing#"
-msgstr ""
+msgstr "[option]#--ignoremissing#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2175
@@ -6306,7 +6391,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2176
 #, no-wrap
 msgid "[option]#--excludedocs#"
-msgstr ""
+msgstr "[option]#--excludedocs#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2177
@@ -6321,7 +6406,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2178
 #, no-wrap
 msgid "[option]#--multilib#"
-msgstr ""
+msgstr "[option]#--multilib#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2179
@@ -6354,7 +6439,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2184
 #, no-wrap
 msgid "Options for Specific Package Groups"
-msgstr ""
+msgstr "特定包组的选项"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2187
@@ -6372,12 +6457,15 @@ msgid ""
 "@Graphical Internet --optional\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%packages#\n"
+"@Graphical Internet --optional\n"
+"[command]#%end#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2197
 #, no-wrap
 msgid "[option]#--nodefaults#"
-msgstr ""
+msgstr "[option]#--nodefaults#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2198
@@ -6389,7 +6477,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2199
 #, no-wrap
 msgid "[option]#--optional#"
-msgstr ""
+msgstr "[option]#--optional#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2200
@@ -6411,7 +6499,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2204
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr ""
+msgstr "%pre（可选）——安装前脚本"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2207
@@ -6471,7 +6559,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2268
 #, no-wrap
 msgid "[option]#--interpreter=#"
-msgstr ""
+msgstr "[option]#--interpreter=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2231
@@ -6486,7 +6574,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2290
 #, no-wrap
 msgid "[option]#--erroronfail#"
-msgstr ""
+msgstr "[option]#--erroronfail#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2233
@@ -6501,7 +6589,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2292
 #, no-wrap
 msgid "[option]#--log=#"
-msgstr ""
+msgstr "[option]#--log=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2235
@@ -6512,7 +6600,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2239
 #, no-wrap
 msgid "[command]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
-msgstr ""
+msgstr "[command]#%pre --log=/mnt/sysimage/root/ks-pre.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2242
@@ -6525,7 +6613,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2244
 #, no-wrap
 msgid "%post (optional) - Post-installation Script"
-msgstr ""
+msgstr "%post（可选）——安装后脚本"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2247
@@ -6590,7 +6678,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2273
 #, no-wrap
 msgid "[command]#%post --interpreter=/usr/bin/python#\n"
-msgstr ""
+msgstr "[command]#%post --interpreter=/usr/bin/python#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2276
@@ -6603,7 +6691,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2277
 #, no-wrap
 msgid "[option]#--nochroot#"
-msgstr ""
+msgstr "[option]#--nochroot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2278
@@ -6627,6 +6715,9 @@ msgid ""
 "cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%post --nochroot#\n"
+"cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2293
@@ -6640,18 +6731,18 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2297
 #, no-wrap
 msgid "[command]#%post --log=/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --log=/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2300
 msgid "with [option]#--nochroot#:"
-msgstr ""
+msgstr "通过[option]#--nochroot#:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2304
 #, no-wrap
 msgid "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2307
@@ -6664,14 +6755,14 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2309
 #, no-wrap
 msgid "Example Kickstart Configurations"
-msgstr ""
+msgstr "Kickstart配置范例"
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2312
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2316
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "增强的分区范例"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2315
@@ -6779,7 +6870,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2370
 #, no-wrap
 msgid "Example Pre-installation Script"
-msgstr ""
+msgstr "安装前脚本范例"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2373
@@ -6790,7 +6881,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2375
 #, no-wrap
 msgid "Sample %pre Script"
-msgstr ""
+msgstr "%pre脚本范例"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2394
@@ -6850,7 +6941,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2422
 #, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
-msgstr ""
+msgstr "[command]#%include /tmp/part-include#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2425
@@ -6861,7 +6952,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2429
 #, no-wrap
 msgid "Example Post-installation Script"
-msgstr ""
+msgstr "安装后脚本范例"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2432
@@ -6872,7 +6963,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2434
 #, no-wrap
 msgid "Sample %post Script"
-msgstr ""
+msgstr "%post脚本范例"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2441
