@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-05-15 17:38+0000\n"
+"PO-Revision-Date: 2022-05-15 18:01+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -7528,13 +7528,13 @@ msgstr "[option]#--nocore#"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2086
 msgid "Do not install the `@Core` group."
-msgstr ""
+msgstr "`@Core` grubunu kurma."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2087
 #, no-wrap
 msgid "[option]#--ignoremissing#"
-msgstr ""
+msgstr "[option]#--ignoremissing#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2088
@@ -7543,12 +7543,15 @@ msgid ""
 "source, instead of halting the installation to ask if the installation "
 "should be aborted or continued."
 msgstr ""
+"Kurulumun sonlandırılıp sonlandırılmayacağını veya devam ettirilip "
+"ettirilmeyeceğini sormak için kurulumu durdurmak yerine kurulum kaynağında "
+"eksik olan paketleri, grupları ve ortamları yoksay."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2089
 #, no-wrap
 msgid "[option]#--excludedocs#"
-msgstr ""
+msgstr "[option]#--excludedocs#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2090
@@ -7558,6 +7561,9 @@ msgid ""
 "directory, but the specific files to be excluded depend on individual "
 "packages."
 msgstr ""
+"Paketlerde bulunan hiçbir belgelendirmeyi kurma. Çoğu durumda, bu, normalde "
+"`/usr/share/doc*` dizinine kurulan dosyaları hariç tutacaktır, ancak hariç "
+"tutulacak belirli dosyalar paketlerin kendisine bağlıdır."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2091
@@ -7923,7 +7929,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2190
 #, no-wrap
 msgid "[option]#--nochroot#"
-msgstr ""
+msgstr "[option]#--nochroot#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2191
@@ -7931,6 +7937,8 @@ msgid ""
 "Allows you to specify commands that you would like to run outside of the "
 "chroot environment."
 msgstr ""
+"chroot ortamının dışında çalıştırmak istediğiniz komutları belirtmenize "
+"olanak tanır."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2193
@@ -7938,6 +7946,8 @@ msgid ""
 "The following example copies the file `/etc/resolv.conf` to the file system "
 "that was just installed."
 msgstr ""
+"Aşağıdaki örnek, `/etc/resolv.conf` dosyasını yeni kurulan dosya sistemine "
+"kopyalar."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2200
@@ -7947,6 +7957,9 @@ msgid ""
 "cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
 "[command]#%end#\n"
 msgstr ""
+"[command]#%post --nochroot#\n"
+"cp /etc/resolv.conf /mnt/sysimage/etc/resolv.conf\n"
+"[command]#%end#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2206
@@ -7955,23 +7968,26 @@ msgid ""
 "the log file must take into account whether or not you use the "
 "[option]#--nochroot# option. For example, without [option]#--nochroot#:"
 msgstr ""
+"Betiğin çıktısını belirtilen günlük dosyasına kaydeder. Günlük dosyasının "
+"yolunun, [option]#--nochroot# seçeneğini kullanıp kullanmadığınızı dikkate "
+"alması gerektiğini unutmayın. Örneğin, [option]#--nochroot# seçeneği olmadan:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2210
 #, no-wrap
 msgid "[command]#%post --log=/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --log=/root/ks-post.log#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2213
 msgid "with [option]#--nochroot#:"
-msgstr ""
+msgstr "[option]#--nochroot# seçeneğiyle:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2217
 #, no-wrap
 msgid "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
-msgstr ""
+msgstr "[command]#%post --nochroot --log=/mnt/sysimage/root/ks-post.log#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2220
@@ -7979,19 +7995,21 @@ msgid ""
 "For an example of a post-installation script, see "
 "xref:sect-kickstart-example-post-script[Example Post-installation Script]."
 msgstr ""
+"Kurulum sonrası betiğinin bir örneği için xref:sect-kickstart-example-post-"
+"script[Örnek Kurulum Sonrası Betiği] bölümüne bakın."
 
 #. type: Title ==
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2222
 #, no-wrap
 msgid "Example Kickstart Configurations"
-msgstr ""
+msgstr "Örnek Kickstart Yapılandırmaları"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2225
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2229
 #, no-wrap
 msgid "Advanced Partitioning Example"
-msgstr ""
+msgstr "Gelişmiş Bölümlendirme Örneği"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2228
@@ -8000,6 +8018,9 @@ msgid ""
 "[command]#zerombr#, [command]#part#, [command]#raid#, [command]#volgroup#, "
 "and [command]#logvol# Kickstart options in action:"
 msgstr ""
+"[command]#clearpart#, [command]#zerombr#, [command]#part#, [command]#raid#, "
+"[command]#volgroup# ve [command]#logvol# Kickstart komutlarının uygulamalı "
+"bir örneği aşağıdadır:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2247
@@ -8019,6 +8040,19 @@ msgid ""
 "part raid.24 --size 8000              --ondrive=hdc\n"
 "part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 msgstr ""
+"clearpart  --drives=hda,hdc\n"
+"zerombr\n"
+"# Raid 1 IDE yapılandırması\n"
+"part raid.11 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.12 --size 1000  --asprimary --ondrive=hda\n"
+"part raid.13 --size 2000  --asprimary --ondrive=hda\n"
+"part raid.14 --size 8000              --ondrive=hda\n"
+"part raid.15 --size 16384 --grow      --ondrive=hda\n"
+"part raid.21 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.22 --size 1000  --asprimary --ondrive=hdc\n"
+"part raid.23 --size 2000  --asprimary --ondrive=hdc\n"
+"part raid.24 --size 8000              --ondrive=hdc\n"
+"part raid.25 --size 16384 --grow      --ondrive=hdc\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2254
@@ -8031,6 +8065,12 @@ msgid ""
 "raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
 "raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 msgstr ""
+"# --spares=x seçeneğini ekleyebilirsiniz\n"
+"raid /     --fstype xfs  --device root  --level=RAID1 raid.11 raid.21\n"
+"raid /safe --fstype xfs  --device safe  --level=RAID1 raid.12 raid.22\n"
+"raid swap  --fstype swap --device swap  --level=RAID1 raid.13 raid.23\n"
+"raid /usr  --fstype xfs  --device usr   --level=RAID1 raid.14 raid.24\n"
+"raid pv.01 --fstype xfs  --device pv.01 --level=RAID1 raid.15 raid.25\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2260
@@ -8042,6 +8082,12 @@ msgid ""
 "logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
 "logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 msgstr ""
+"# /var ve /usr/local bölümlerini daha sonra yeniden boyutlandırabilmemiz "
+"için LVM yapılandırması\n"
+"volgroup sysvg pv.01\n"
+"logvol /var           --vgname=sysvg --size=8000     --name=var\n"
+"logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
+"logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2266
@@ -8049,6 +8095,8 @@ msgid ""
 "This advanced example implements LVM over RAID, as well as the ability to "
 "resize various directories for future growth."
 msgstr ""
+"Bu gelişmiş örnekte, gelecekteki büyüme için çeşitli dizinleri yeniden "
+"boyutlandırma yeteneğinin yanı sıra RAID üzerinde LVM uygulanmaktadır."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2268
@@ -8057,6 +8105,9 @@ msgid ""
 "wipe them. The [command]#zerombr# command initializes unused partition "
 "tables."
 msgstr ""
+"İlk olarak, onları silmek için `hda` ve `hdc` disklerinde "
+"[command]#clearpart# komutu kullanılır. [command]#zerombr# komutu, "
+"kullanılmayan bölümlendirme tablolarını başlatır."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2270
@@ -8065,6 +8116,9 @@ msgid ""
 "configuration. Each drive is divided into five partitions, and each drive is "
 "partitioned into an identical layout."
 msgstr ""
+"Ardından iki disk, RAID yapılandırmasına hazırlanmaları için bölümlere "
+"ayrılır. Her disk beş bölüme ayrılır ve birbirinin aynısı düzende "
+"bölümlendirilir."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2272
@@ -8075,6 +8129,11 @@ msgid ""
 "partitions is named `pv.01` and will be used in the following part as a "
 "physical volume for LVM."
 msgstr ""
+"Sonraki kısım, RAID1 seviyesine (yansıtma) sahip bir yazılımsal RAID aygıtı "
+"oluşturmak için bu fiziksel bölüm çiftlerini kullanır. İlk dört RAID aygıtı "
+"`/` (kök), `/safe`, `swap` ve `/usr` için kullanılır. Beşinci, en büyük "
+"bölüm çifti `pv.01` olarak adlandırılır ve bir sonraki kısımda LVM için "
+"fiziksel bir birim olarak kullanılacaktır."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2274
@@ -8086,6 +8145,12 @@ msgid ""
 "GB, and the `/usr/local` volume uses the [option]#--grow# option to fill all "
 "remaining available space."
 msgstr ""
+"Son olarak, son komut kümesi ilk olarak `pv.01` fiziksel biriminde `sysvg` "
+"adlı bir birim grubu oluşturur. Ardından, üç mantıksal birim (`/var`, `/var/"
+"freespace` ve `/usr/local`) oluşturulur ve `sysvg` birim grubuna eklenir. "
+"`/var` ve `/var/freespace` birimlerinin 8 GB'lik bir ayarlanmış boyutu "
+"vardır ve `/usr/local` birimi, kalan tüm kullanılabilir alanı doldurmak için "
+"[option]#--grow# seçeneğini kullanır."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2279
@@ -8095,23 +8160,27 @@ msgid ""
 "UUIDs, to identify disk drives. See the note in introduction to this "
 "appendix."
 msgstr ""
+"Yukarıdaki örnek, disk sürücülerini tanımlamak için `hda` ve `hdc` "
+"tanımlayıcılarını kullanır. Disk sürücülerini tanımlamak için disk "
+"etiketleri veya UUID'ler gibi benzersiz tanımlayıcılar kullanmalısınız. Bu "
+"ekin giriş bölümündeki nota bakın."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2283
 #, no-wrap
 msgid "Example Pre-installation Script"
-msgstr ""
+msgstr "Örnek Kurulum Öncesi Betiği"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2286
 msgid "The following is an example [command]#%pre# section:"
-msgstr ""
+msgstr "[command]#%pre# bölümünün bir örneği aşağıdadır:"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2288
 #, no-wrap
 msgid "Sample %pre Script"
-msgstr ""
+msgstr "Örnek %pre Betiği"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2307
@@ -8132,6 +8201,20 @@ msgid ""
 "drive1=`echo $hds | cut -d' ' -f1`\n"
 "drive2=`echo $hds | cut -d' ' -f2`\n"
 msgstr ""
+"%pre\n"
+"#!/bin/sh\n"
+"hds=\"\"\n"
+"mymedia=\"\"\n"
+"for file in /proc/ide/h* do\n"
+"mymedia=`cat $file/media`\n"
+"if [ $mymedia == \"disk\" ] ; then\n"
+"hds=\"$hds `basename $file`\"\n"
+"fi\n"
+"done\n"
+"set $hds\n"
+"numhd=`echo $#`\n"
+"drive1=`echo $hds | cut -d' ' -f1`\n"
+"drive2=`echo $hds | cut -d' ' -f2`\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2327
@@ -8162,6 +8245,30 @@ msgid ""
 "fi\n"
 "%end\n"
 msgstr ""
+"#1 veya 2 sabit disk olup olmadığına göre bölümlendirme düzenini yaz\n"
+"if [ $numhd == \"2\" ] ; then\n"
+"#2 disk\n"
+"echo \"#%pre bölümünde 2 disk için oluşturulan bölümlendirme düzeni\" > /tmp/"
+"part-include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75 --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part / --fstype xfs --size 1 --grow --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part swap --recommended --ondisk $drive1\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 1 --grow --ondisk hdb\" >> /tmp/part-"
+"include\n"
+"else\n"
+"#1 disk\n"
+"echo \"#%pre bölümünde 1 disk için oluşturulan bölümlendirme düzeni\" > /tmp/"
+"part-include\n"
+"echo \"clearpart --all\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75\" >> /tmp/part-include\n"
+"echo \"part swap --recommended\" >> /tmp/part-include\n"
+"echo \"part / --fstype xfs --size 2048\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 2048 --grow\" >> /tmp/part-include\n"
+"fi\n"
+"%end\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2331
@@ -8171,34 +8278,38 @@ msgid ""
 "one or two drives. Instead of having a set of partitioning commands in the "
 "Kickstart file, include the following line:"
 msgstr ""
+"Bu betik, sistemdeki sabit disk sayısını belirler ve bir veya iki diske "
+"sahip olmasına bağlı olarak farklı bir bölümlendirme düzenine sahip bir "
+"metin dosyası yazar. Kickstart dosyasında bir dizi bölümlendirme komutunu "
+"bulundurmak yerine aşağıdaki satırı ekleyin:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2335
 #, no-wrap
 msgid "[command]#%include /tmp/part-include#\n"
-msgstr ""
+msgstr "[command]#%include /tmp/part-include#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2338
 msgid "The partitioning commands selected in the script will be used."
-msgstr ""
+msgstr "Betikte seçilen bölümlendirme komutları kullanılacaktır."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2342
 #, no-wrap
 msgid "Example Post-installation Script"
-msgstr ""
+msgstr "Örnek Kurulum Sonrası Betiği"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2345
 msgid "The following is an example [command]#%post# section:"
-msgstr ""
+msgstr "[command]#%post# bölümünün bir örneği aşağıdadır:"
 
 #. type: Block title
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2347
 #, no-wrap
 msgid "Sample %post Script"
-msgstr ""
+msgstr "Örnek %post Betiği"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2354
@@ -8207,6 +8318,8 @@ msgid ""
 "# Start of the %post section with logging into /root/ks-post.log\n"
 "%post --log=/root/ks-post.log\n"
 msgstr ""
+"# /root/ks-post.log dosyasına günlük kaydı yapan %post bölümünün başlangıcı\n"
+"%post --log=/root/ks-post.log\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2360
@@ -8218,6 +8331,11 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
+"# Bir NFS paylaşımını bağla\n"
+"mkdir /mnt/temp\n"
+"mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
+"openvt -s -w -- /mnt/temp/runme\n"
+"umount /mnt/temp\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:2363
@@ -8237,3 +8355,7 @@ msgid ""
 "*not* supported while in Kickstart mode, therefore the [option]#-o nolock# "
 "option is required."
 msgstr ""
+"Yukarıdaki örnekte bir NFS paylaşımı bağlanır ve paylaşımdaki `/usr/"
+"new-machines/` konumunda bulunan `runme` adlı bir betik çalıştırılır. "
+"Kickstart modundayken NFS dosya kilitlemesinin *desteklenmediğini* "
+"unutmayın, bu nedenle [option]#-o nolock# seçeneği gereklidir."
