@@ -2,21 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Bobby Rong <rjl931189261@126.com>, 2021.
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-11 21:03+0000\n"
-"PO-Revision-Date: 2021-04-11 16:02+0000\n"
-"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"PO-Revision-Date: 2022-05-15 17:37+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "rawhidepagesadvancedboot_options/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/advanced/Boot_Options.adoc:5
@@ -43,12 +44,12 @@ msgstr ""
 msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
-msgstr ""
+msgstr "你可以同时使用多种选项，如果这样的话则需要使用空格将选项隔开。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:26
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "本章描述了两种基础类型："
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:38
@@ -79,6 +80,8 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"除本章描述的选项之外，启动提示也接受[application]*dracut*内核选项。这些选项的"
+"列表详见`dracut.cmdline(7)` man页面。"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:55
@@ -93,7 +96,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:59
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "配置启动菜单中的安装系统"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:78
@@ -114,18 +117,18 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:80
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "可用启动选项"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:83
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "在{PRODUCT}中可用的选项如下所示："
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:85
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "指定安装源"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:87
@@ -150,7 +153,7 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:95
 msgid "The source must be either:"
-msgstr ""
+msgstr "源必须是下列之一："
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:97
@@ -163,7 +166,7 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:99
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "一个DVD（一个在系统DVD驱动器上的物理磁盘）"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:103
@@ -183,7 +186,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:108
 #, no-wrap
 msgid "Installation Sources"
-msgstr ""
+msgstr "安装源"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:121
@@ -203,23 +206,23 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:124
 msgid "Disk device names may be specified using the following formats:"
-msgstr ""
+msgstr "磁盘名可以用以下格式指定："
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:126
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "内核设备名，例如：`/dev/sda1`或者`sdb2`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:128
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
-msgstr ""
+msgstr "文件系统卷标，例如`LABEL=Flash`或者`LABEL=RHEL7`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:130
 msgid ""
 "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
-msgstr ""
+msgstr "文件系统UUID，例如：`UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 
 #.  Normally, I would use quotes substitution (https://docs.asciidoctor.org/asciidoc/latest/subs/quotes/), but it can't be used when quoting a single space. See: https://github.com/asciidoctor/asciidoctor/issues/4122
 #. type: Plain text
@@ -324,7 +327,7 @@ msgstr ""
 msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
-msgstr ""
+msgstr "阻止安装器尝试自动配置安装源。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:180
@@ -353,7 +356,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:184
 #, no-wrap
 msgid "Kickstart Boot Options"
-msgstr ""
+msgstr "Kickstart启动选项"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:186
@@ -398,7 +401,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:207
 #, no-wrap
 msgid "Default Kickstart File Location"
-msgstr ""
+msgstr "默认Kickstart文件位置"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:213
@@ -407,6 +410,9 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
+"|DHCP服务器地址|客户端地址|Kickstart文件位置\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
+"kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:215
@@ -427,32 +433,32 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:217
 #, no-wrap
 msgid "[option]#inst.ks.sendmac#"
-msgstr ""
+msgstr "[option]#inst.ks.sendmac#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:218
 msgid ""
 "Adds headers to outgoing `HTTP` requests with the MAC addresses of all "
 "network interfaces. For example:"
-msgstr ""
+msgstr "增加报文头到外发`HTTP`请求的网络接口的MAC地址。例如："
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:222
 #, no-wrap
 msgid "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
-msgstr ""
+msgstr "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:227
 msgid ""
 "This can be useful when using [option]#inst.ks=http# to provision systems."
-msgstr ""
+msgstr "使用[option]#inst.ks=http#来监视系统状态非常有用。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:228
 #, no-wrap
 msgid "[option]#inst.ks.sendsn#"
-msgstr ""
+msgstr "[option]#inst.ks.sendsn#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:229
@@ -466,19 +472,19 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:233
 #, no-wrap
 msgid "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
-msgstr ""
+msgstr "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:236
 #, no-wrap
 msgid "Console, Environment and Display Options"
-msgstr ""
+msgstr "控制台、环境和显示选项"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:238
 #, no-wrap
 msgid "[option]#console=#"
-msgstr ""
+msgstr "[option]#console=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:239
@@ -503,7 +509,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:242
 #, no-wrap
 msgid "[option]#noshell#"
-msgstr ""
+msgstr "[option]#noshell#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:243
@@ -518,7 +524,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:244
 #, no-wrap
 msgid "[option]#inst.lang=#"
-msgstr ""
+msgstr "[option]#inst.lang=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:245
@@ -544,7 +550,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:251
 #, no-wrap
 msgid "[option]#inst.singlelang#"
-msgstr ""
+msgstr "[option]#inst.singlelang#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:252
@@ -561,7 +567,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:253
 #, no-wrap
 msgid "[option]#inst.geoloc=#"
-msgstr ""
+msgstr "[option]#inst.geoloc=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:254
@@ -574,13 +580,13 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:256
 msgid "The _value_ parameter can be any of the following:"
-msgstr ""
+msgstr "_value_参数可以是下列参数中的任意一个参数："
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:258
 #, no-wrap
 msgid "Valid Values for the inst.geoloc Option"
-msgstr ""
+msgstr "inst.geoloc选项的有效值"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:264
@@ -590,19 +596,22 @@ msgid ""
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 msgstr ""
+"|禁用地理定位|[option]#inst.geoloc=0#\n"
+"|使用Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
+"|使用Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:267
 msgid ""
 "If this option is not specified, [application]*Anaconda* will use "
 "`provider_fedora_geoip`."
-msgstr ""
+msgstr "如果不指定此选项，那么[application]*Anaconda*将使用`provider_fedora_geoip`。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:268
 #, no-wrap
 msgid "[option]#inst.keymap=#"
-msgstr ""
+msgstr "[option]#inst.keymap=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:269
@@ -618,7 +627,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:270
 #, no-wrap
 msgid "[option]#inst.text#"
-msgstr ""
+msgstr "[option]#inst.text#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:276
@@ -636,7 +645,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:277
 #, no-wrap
 msgid "[option]#inst.cmdline#"
-msgstr ""
+msgstr "[option]#inst.cmdline#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:281
@@ -650,20 +659,20 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:282
 #, no-wrap
 msgid "[option]#inst.graphical#"
-msgstr ""
+msgstr "[option]#inst.graphical#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:283
 msgid ""
 "Forces the installation program to run in graphical mode. This mode is the "
 "default."
-msgstr ""
+msgstr "强制安装程序以图形模式运行。这是默认选项。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:284
 #, no-wrap
 msgid "[option]#inst.resolution=#"
-msgstr ""
+msgstr "[option]#inst.resolution=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:289
@@ -678,20 +687,20 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:289
 #, no-wrap
 msgid "[option]#inst.xdriver=#"
-msgstr ""
+msgstr "[option]#inst.xdriver=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:290
 msgid ""
 "Specifies the name of the `X` driver to be used both during the installation "
 "and on the installed system."
-msgstr ""
+msgstr "指定`X`驱动的驱动名用于安装过程中和安装后的操作系统中。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:291
 #, no-wrap
 msgid "[option]#inst.usefbx#"
-msgstr ""
+msgstr "[option]#inst.usefbx#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:292
@@ -718,7 +727,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:295
 #, no-wrap
 msgid "[option]#modprobe.blacklist=#"
-msgstr ""
+msgstr "[option]#modprobe.blacklist=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:296
@@ -733,19 +742,19 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:298
 msgid "Use a comma-separated list to disable multiple drivers. For example:"
-msgstr ""
+msgstr "使用逗号分隔列表来禁用多个驱动。例如："
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:301
 #, no-wrap
 msgid "modprobe.blacklist=ahci,firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=ahci,firewire_ohci\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:303
 #, no-wrap
 msgid "[option]#inst.sshd#"
-msgstr ""
+msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:310
@@ -784,7 +793,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:328
 #, no-wrap
 msgid "Network Boot Options"
-msgstr ""
+msgstr "网络启动选项"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:341
@@ -800,7 +809,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:342
 #, no-wrap
 msgid "[option]#ip=#"
-msgstr ""
+msgstr "[option]#ip=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:343
@@ -814,13 +823,13 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:345
 msgid "The following table lists valid values for this option:"
-msgstr ""
+msgstr "下列表格列出了可用参数："
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:347
 #, no-wrap
 msgid "Network Interface Configuration Formats"
-msgstr ""
+msgstr "网络接口配置格式"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:357
@@ -837,13 +846,13 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:360
 msgid "The [option]#method# parameter can be any the following:"
-msgstr ""
+msgstr "[option]#method#参数可以为下列参数中的任何一个："
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:362 pages/advanced/Boot_Options.adoc:596
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
-msgstr ""
+msgstr "自动化接口配置方式"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:371
@@ -855,6 +864,11 @@ msgid ""
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 msgstr ""
+"|自动配置方式|Value\n"
+"|DHCP|`dhcp`\n"
+"|IPv6 DHCP|`dhcp6`\n"
+"|IPv6 自动配置|`auto6`\n"
+"|iBFT (iSCSI 启动固件列表)|`ibft`\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:377
@@ -878,7 +892,7 @@ msgstr ""
 msgid ""
 "The _gateway_ parameter is the default gateway. IPv6 addresses are accepted "
 "here as well."
-msgstr ""
+msgstr "_gateway_参数是默认网关。也支持IPv6地址。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:389
@@ -892,39 +906,39 @@ msgstr ""
 msgid ""
 "The _hostname_ parameter is the host name of the client system. This "
 "parameter is optional."
-msgstr ""
+msgstr "_hostname_参数是客户端系统的主机名。此参数是可选的。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:392
 #, no-wrap
 msgid "[option]#nameserver=#"
-msgstr ""
+msgstr "[option]#nameserver=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:393
 msgid ""
 "Specifies the address of the name server. This option can be used multiple "
 "times."
-msgstr ""
+msgstr "指定域名服务器。此选项允许使用多次。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:394
 #, no-wrap
 msgid "[option]#bootdev=#"
-msgstr ""
+msgstr "[option]#bootdev=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:395
 msgid ""
 "Specifies the boot interface. This option is mandatory if you use more than "
 "one [option]#ip# option."
-msgstr ""
+msgstr "指定启动接口。如果用了[option]#ip#则此参数是可选的。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:396
 #, no-wrap
 msgid "[option]#ifname=#"
-msgstr ""
+msgstr "[option]#ifname=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:397
@@ -939,13 +953,13 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:401
 #, no-wrap
 msgid "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
-msgstr ""
+msgstr "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:403
 #, no-wrap
 msgid "[option]#inst.dhcpclass=#"
-msgstr ""
+msgstr "[option]#inst.dhcpclass=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:404
@@ -959,7 +973,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:405
 #, no-wrap
 msgid "[option]#vlan=#"
-msgstr ""
+msgstr "[option]#vlan=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:406
@@ -973,7 +987,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:410
 #, no-wrap
 msgid "[option]#vlan=vlan5:em1#\n"
-msgstr ""
+msgstr "[option]#vlan=vlan5:em1#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:414
@@ -986,7 +1000,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:416
 #, no-wrap
 msgid "VLAN Device Naming Conventions"
-msgstr ""
+msgstr "VLAN设备命名协议"
 
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:425
@@ -998,12 +1012,17 @@ msgid ""
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 msgstr ""
+"|Naming scheme|Example\n"
+"|VLAN_PLUS_VID|`vlan0005`\n"
+"|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
+"|DEV_PLUS_VID|`em1.0005`.\n"
+"|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:427
 #, no-wrap
 msgid "[option]#bond=#"
-msgstr ""
+msgstr "[option]#bond=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:428
@@ -1021,27 +1040,27 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:431
 #, no-wrap
 msgid "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
-msgstr ""
+msgstr "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:434
 msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
-msgstr ""
+msgstr "要获取可用选项，请执行[command]#modinfo bonding#命令。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:436
 msgid ""
 "Using this option without any parameters will assume [option]#bond=bond0:"
 "eth0,eth1:mode=balance-rr#."
-msgstr ""
+msgstr "不带参数用这个选项时，视为[option]#bond=bond0:eth0,eth1:mode=balance-rr#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:437
 #, no-wrap
 msgid "[option]#team=#"
-msgstr ""
+msgstr "[option]#team=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:438
@@ -1057,7 +1076,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:442
 #, no-wrap
 msgid "[option]#team=team0:em1,em2#\n"
-msgstr ""
+msgstr "[option]#team=team0:em1,em2#\n"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:445
@@ -1069,7 +1088,7 @@ msgstr "高级安装选项"
 #: pages/advanced/Boot_Options.adoc:447
 #, no-wrap
 msgid "[option]#inst.multilib#"
-msgstr ""
+msgstr "[option]#inst.multilib#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:448
@@ -1104,7 +1123,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:464
 #, no-wrap
 msgid "[option]#inst.gpt#"
-msgstr ""
+msgstr "[option]#inst.gpt#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:469
@@ -1139,7 +1158,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:480
 #, no-wrap
 msgid "[option]#inst.nosave=#"
-msgstr ""
+msgstr "[option]#inst.nosave=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:481
@@ -1155,43 +1174,43 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:483
 msgid "`input_ks` - disables saving of the input Kickstart file (if any)."
-msgstr ""
+msgstr "`input_ks`——禁用保存输入Kickstart文件（如果有的话）。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:485
 msgid ""
 "`output_ks` - disables saving of the output Kickstart file generated by "
 "Anaconda."
-msgstr ""
+msgstr "`output_ks`——禁用保存由Anaconda创建的输出Kickstart文件。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:487
 msgid "`all_ks` - disables saving of both input and output Kickstart files."
-msgstr ""
+msgstr "`all_ks`——禁用保存输入Kickstart文件和输出Kickstart文件。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:489
 msgid "`logs` - disables saving of all installation logs."
-msgstr ""
+msgstr "`logs`——禁用保存安装log。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:491
 msgid ""
 "`all` - disables saving of all Kickstart files and all installation logs."
-msgstr ""
+msgstr "`all`——禁用保存所有Kickstart文件和安装log。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:493
 msgid ""
 "Multiple values can be combined as a comma separated list, for example: "
 "`input_ks,logs`"
-msgstr ""
+msgstr "多个参数可以用逗号分隔列表进行组合，例如：`input_ks,logs`"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:494
 #, no-wrap
 msgid "[option]#inst.memcheck#"
-msgstr ""
+msgstr "[option]#inst.memcheck#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:495
@@ -1206,7 +1225,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:496
 #, no-wrap
 msgid "[option]#inst.nodnf#"
-msgstr ""
+msgstr "[option]#inst.nodnf#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:497
@@ -1221,7 +1240,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:498
 #, no-wrap
 msgid "[option]#inst.kdump_addon=#"
-msgstr ""
+msgstr "[option]#inst.kdump_addon=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:511
@@ -1241,7 +1260,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:513
 #, no-wrap
 msgid "Enabling Remote Access Using VNC"
-msgstr ""
+msgstr "通过VNC启用远程连接"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:516
@@ -1255,7 +1274,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:517
 #, no-wrap
 msgid "[option]#inst.vnc#"
-msgstr ""
+msgstr "[option]#inst.vnc#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:523
@@ -1272,13 +1291,13 @@ msgstr ""
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:528
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr ""
+msgstr "使用`VNC`安装的操作系统将默认以文本模式启动。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:531
 #, no-wrap
 msgid "[option]#inst.vncpassword=#"
-msgstr ""
+msgstr "[option]#inst.vncpassword=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:537
@@ -1310,13 +1329,13 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:552
 #, no-wrap
 msgid "Password:\n"
-msgstr ""
+msgstr "密码：\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:557
 #, no-wrap
 msgid "[option]#inst.vncconnect=#"
-msgstr ""
+msgstr "[option]#inst.vncconnect=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:558
@@ -1332,13 +1351,13 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:560
 #, no-wrap
 msgid "Debugging and Troubleshooting"
-msgstr ""
+msgstr "调试和故障排除"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:562
 #, no-wrap
 msgid "[option]#inst.updates=#"
-msgstr ""
+msgstr "[option]#inst.updates=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:563
@@ -1354,7 +1373,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:564
 #, no-wrap
 msgid "[option]#inst.loglevel=#"
-msgstr ""
+msgstr "[option]#inst.loglevel=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:565
@@ -1377,7 +1396,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:568
 #, no-wrap
 msgid "[option]#inst.syslog=#"
-msgstr ""
+msgstr "[option]#inst.syslog=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:569
@@ -1391,7 +1410,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:570
 #, no-wrap
 msgid "[option]#inst.virtiolog=#"
-msgstr ""
+msgstr "[option]#inst.virtiolog=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:571
@@ -1406,7 +1425,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:573
 #, no-wrap
 msgid "Deprecated Boot Options"
-msgstr ""
+msgstr "弃用的启动选项"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:576
@@ -1430,7 +1449,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:583
 #, no-wrap
 msgid "[option]#inst.headless#"
-msgstr ""
+msgstr "[option]#inst.headless#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:584
@@ -1444,20 +1463,22 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:585
 #, no-wrap
 msgid "[option]#method=#"
-msgstr ""
+msgstr "[option]#method=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:586
 msgid ""
 "Configured the installation method. Use the [option]#inst.repo=# option "
 "instead."
-msgstr ""
+msgstr "配置安装方式。请换用[option]#inst.repo=# option。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:587
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
 msgstr ""
+"[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank"
+"}]_path_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:588
@@ -1473,31 +1494,33 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:589
 #, no-wrap
 msgid "[option]#dns=#"
-msgstr ""
+msgstr "[option]#dns=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:590
 msgid ""
 "Configured the Domain Name Server (DNS). Use the [option]#nameserver=# "
 "option instead."
-msgstr ""
+msgstr "配置域名服务器（DNS）。请换用[option]#nameserver=#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:591
 #, no-wrap
 msgid "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
 msgstr ""
+"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
+"[option]#ipv6=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:592
 msgid "These options have been consolidated under the [option]#ip=# option."
-msgstr ""
+msgstr "这些选项已合并为[option]#ip=#选项。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:593
 #, no-wrap
 msgid "[option]#ksdevice=#"
-msgstr ""
+msgstr "[option]#ksdevice=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:594
@@ -1543,20 +1566,20 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:618
 #, no-wrap
 msgid "[option]#blacklist=#"
-msgstr ""
+msgstr "[option]#blacklist=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:619
 msgid ""
 "Used to disable specified drivers. This is now handled by the "
 "[option]#modprobe.blacklist=# option."
-msgstr ""
+msgstr "用于禁用特定驱动。请换用[option]#modprobe.blacklist=#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:620
 #, no-wrap
 msgid "[option]#nofirewire=#"
-msgstr ""
+msgstr "[option]#nofirewire=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:621
@@ -1570,13 +1593,13 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:624
 #, no-wrap
 msgid "modprobe.blacklist=firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=firewire_ohci\n"
 
 #. type: Title ==
 #: pages/advanced/Boot_Options.adoc:627
 #, no-wrap
 msgid "Removed Boot Options"
-msgstr ""
+msgstr "移除的启动选项"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:631
@@ -1589,7 +1612,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:632
 #, no-wrap
 msgid "[option]#asknetwork#"
-msgstr ""
+msgstr "[option]#asknetwork#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:635
@@ -1603,7 +1626,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:636
 #, no-wrap
 msgid "[option]#serial#"
-msgstr ""
+msgstr "[option]#serial#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:637
@@ -1611,25 +1634,27 @@ msgid ""
 "This option forced [application]*Anaconda* to use the `/dev/ttyS0` console "
 "as the output. Use the [option]#console=/dev/ttyS0# (or similar) instead."
 msgstr ""
+"此选项强制[application]*Anaconda*使用`/dev/"
+"ttyS0`终端作为输出。请换用[option]#console=/dev/ttyS0#或类似的终端。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:638
 #, no-wrap
 msgid "[option]#updates=#"
-msgstr ""
+msgstr "[option]#updates=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:639
 msgid ""
 "Specified the location of updates for the installation program. Use the "
 "[option]#inst.updates=# option instead."
-msgstr ""
+msgstr "指定安装程序的更新位置。请换用[option]#inst.updates=#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:639
 #, no-wrap
 msgid "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
-msgstr ""
+msgstr "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:640
@@ -1643,7 +1668,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:641
 #, no-wrap
 msgid "[option]#ethtool=#"
-msgstr ""
+msgstr "[option]#ethtool=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:642
@@ -1656,69 +1681,69 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:643
 #, no-wrap
 msgid "[option]#gdb#"
-msgstr ""
+msgstr "[option]#gdb#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:644
 msgid "Allowed you to debug the loader. Use [option]#rd.debug# instead."
-msgstr ""
+msgstr "允许你调试加载器。请换用[option]#rd.debug#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:645
 #, no-wrap
 msgid "[option]#mediacheck#"
-msgstr ""
+msgstr "[option]#mediacheck#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:646
 msgid ""
 "Verified the installation media before starting the installation. Replaced "
 "with the [option]#rd.live.check# option."
-msgstr ""
+msgstr "在启动前验证安装媒体。请换用[option]#rd.live.check#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:647
 #, no-wrap
 msgid "[option]#ks=floppy#"
-msgstr ""
+msgstr "[option]#ks=floppy#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:648
 msgid ""
 "Specified a floppy disk as the Kickstart file source. Floppy drives are not "
 "supported anymore."
-msgstr ""
+msgstr "指定一个软盘为Kickstart文件来源。目前已经不再支持软盘。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:649
 #, no-wrap
 msgid "[option]#display=#"
-msgstr ""
+msgstr "[option]#display=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:650
 msgid ""
 "Configured a remote display. Replaced with the [option]#inst.vnc# option."
-msgstr ""
+msgstr "配置一个远端显示器。请换用[option]#inst.vnc#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:651
 #, no-wrap
 msgid "[option]#utf8#"
-msgstr ""
+msgstr "[option]#utf8#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:652
 msgid ""
 "Added UTF8 support when installing in text mode. UTF8 support now works "
 "automatically."
-msgstr ""
+msgstr "以文本模式安装时添加UTF8支持。目前会自动添加UTF8支持。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:653
 #, no-wrap
 msgid "[option]#noipv6#"
-msgstr ""
+msgstr "[option]#noipv6#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:654
@@ -1732,7 +1757,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:655
 #, no-wrap
 msgid "[option]#upgradeany#"
-msgstr ""
+msgstr "[option]#upgradeany#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:656
@@ -1747,20 +1772,20 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:657
 #, no-wrap
 msgid "[option]#vlanid=#"
-msgstr ""
+msgstr "[option]#vlanid=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:658
 msgid ""
 "Used to configure Virtual LAN (802.1q tag) devices. Use the [option]#vlan=# "
 "option instead."
-msgstr ""
+msgstr "配置VLAN（802.1q标签）。请换用[option]#vlan=#。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:659
 #, no-wrap
 msgid "[option]#inst.dnf#"
-msgstr ""
+msgstr "[option]#inst.dnf#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:660
@@ -1775,13 +1800,13 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:662
 #, no-wrap
 msgid "Using the Maintenance Boot Modes"
-msgstr ""
+msgstr "使用维护启动模式"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:665
 #, no-wrap
 msgid "Loading the Memory (RAM) Testing Mode"
-msgstr ""
+msgstr "加载内存（RAM）测试模式"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:673
@@ -1819,26 +1844,26 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:684
 #, no-wrap
 msgid "Memory Check Using Memtest86+"
-msgstr ""
+msgstr "用Memtest86+进行内存检查"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/advanced/Boot_Options.adoc:686
 #, no-wrap
 msgid "Memtest86+ testing the system memory"
-msgstr ""
+msgstr "Memtest86+测试系统内存"
 
 #. type: Target for macro image
 #: pages/advanced/Boot_Options.adoc:686
 #, no-wrap
 msgid "boot/memtest86.png"
-msgstr ""
+msgstr "boot/memtest86.png"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:689
 msgid ""
 "The main screen displayed while testing is in progress is divided into three "
 "main areas:"
-msgstr ""
+msgstr "主屏幕在测试时分为三部分："
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:691
@@ -1874,7 +1899,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:699
 #, no-wrap
 msgid "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
-msgstr ""
+msgstr "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:702
@@ -1911,7 +1936,7 @@ msgstr ""
 msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
-msgstr ""
+msgstr "要中止测试并重启电脑，可以随时按下kbd:[Esc]按键。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:730
@@ -1926,7 +1951,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:732
 #, no-wrap
 msgid "Verifying Boot Media"
-msgstr ""
+msgstr "验证启动媒体"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:742
@@ -1951,7 +1976,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:746
 #, no-wrap
 msgid "Booting Your Computer in Rescue Mode"
-msgstr ""
+msgstr "在救援模式下启动你的电脑"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:752
@@ -1983,4 +2008,5 @@ msgstr ""
 msgid ""
 "By default, rescue mode attaches an existing operating system to the rescue "
 "system under the directory `/mnt/sysimage/`."
-msgstr ""
+msgstr "默认地：救援模式将一个现存的操作系统通过`/mnt/sysimage/"
+"`关联到救援模式系统上。"
