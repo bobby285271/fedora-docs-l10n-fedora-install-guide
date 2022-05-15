@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-05-14 18:02+0000\n"
+"PO-Revision-Date: 2022-05-15 03:23+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -197,6 +197,8 @@ msgid ""
 "end with [command]#%end#, otherwise the installation program will refuse the "
 "Kickstart file. The main command section has no special ending statement."
 msgstr ""
+"[command]#%packages#， [command]#%pre#和[command]#%post#章节必须以[command]#%"
+"end#结尾，否则安装程序将拒绝这个Kickstart文件。主命令章节没有特别的结束语句。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:56
@@ -208,12 +210,15 @@ msgid ""
 "you will not be able to see the prompt, and the installation will appear to "
 "have failed."
 msgstr ""
+"省略任何必需的内容将导致安装程序提示用户需要一个关联项目的答案，就像在典型安"
+"装过程中的用户提示一样。一旦用户给了答案，安装过程将继续。注意：如果你正在安"
+"装的系统没有显示器，那么你将不会看到提示，安装过程显然会失败。"
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr ""
+msgstr "验证Kickstart文件"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:61
@@ -224,37 +229,40 @@ msgid ""
 "used to do this. This tool is a part of the [package]*pykickstart* "
 "package. To install this package, execute the following command:"
 msgstr ""
+"当创建或者自定义你的Kickstart文件时，用这个文件进行安装之前进行验证就非常有用"
+"。{PRODUCT}包括了能用于检查过程的[application]*ksvalidator*命令行工具。这个工"
+"具是[package]*pykickstart*的一部分。要安装这个软件包，请执行下列命令："
 
 #. type: delimited block -
 #: ./pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
-msgstr ""
+msgstr "# dnf install pykickstart\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:68
 msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
-msgstr ""
+msgstr "在安装这个软件包后，你可以用以下命令来验证一个Kickstart文件："
 
 #. type: delimited block -
 #: ./pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
-msgstr ""
+msgstr "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:75
 msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
-msgstr ""
+msgstr "将_/path/to/kickstart.ks_替换为你想要验证的Kickstart文件路径。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:77
 msgid "For more information about this tool, see the `ksvalidator(1)` man page."
-msgstr ""
+msgstr "更多信息详见`ksvalidator(1)` man页面。"
 
 #. type: delimited block =
 #: ./pages/advanced/Kickstart_Installations.adoc:82
@@ -266,36 +274,40 @@ msgid ""
 "attempt to validate the [command]#%pre#, [command]#%post# and "
 "[command]#%packages# sections of the Kickstart file."
 msgstr ""
+"牢记验证工具也有自身限制。Kickstart文件可以是非常复杂的，[application]*ksvali"
+"dator*能保证语法正确，包括：Kickstart文件不含有移除的选项，但它不能保证安装过"
+"程可以成功。它也不会尝试验证Kickstart文件的[command]#%pre#、[command]#%post#"
+"和[command]#%packages#章节。"
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr ""
+msgstr "使Kickstart文件可用"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:89
 msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
-msgstr ""
+msgstr "一旦你创建了Kickstart文件，你就可以将其放在以下位置中的一个当中："
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:91
 msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
-msgstr ""
+msgstr "在*可移动媒介*上，例如连接到要安装的操作系统上的DVD或者USB闪存盘"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
-msgstr ""
+msgstr "在连接到你要安装的操作系统上的硬盘上"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
-msgstr ""
+msgstr "在连接到你要安装的操作系统上的、可到达的*网络共享*"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:97
@@ -307,6 +319,10 @@ msgid ""
 "is downloaded from a network share, and software packages specified in the "
 "file are downloaded from remote repositories."
 msgstr ""
+"正常而言，一个Kickstart文件要从可移动媒介或硬盘中复制而来，然而它还可以从网络"
+"中复制而来。在一个可到达的网络位置中也可以实现Kickstart安装，这样做需要网络基"
+"础条件满足：操作系统使用PXE服务器启动、Kickstart文件要从网络共享中下载、软件"
+"包需要指定为从远端软件源下载的某个版本。"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:99
@@ -320,7 +336,7 @@ msgstr ""
 #: ./pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr ""
+msgstr "开始Kickstart安装"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:103
