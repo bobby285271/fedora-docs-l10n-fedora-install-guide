@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-05-19 06:59+0000\n"
+"PO-Revision-Date: 2022-05-19 16:58+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -30,12 +30,14 @@ msgid ""
 "The following procedure explains how to add _Fibre Channel over Ethernet_ "
 "(FCoE) storage devices and make them available during the installation:"
 msgstr ""
+"다음 절차는 이더넷 저장소 장치를 통한 광 채널(FCoE)을 추가하는 방법을 "
+"설명하고 다음을 설치 할 때에 사용 가능하도록 만듭니다:"
 
 #. type: Block title
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:10
 #, no-wrap
 msgid "Add FCoE Target"
-msgstr ""
+msgstr "FCoE 대상 추가"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:12
@@ -44,6 +46,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
 "Destination - Specialized & Network Disks]. A new dialog window will open."
 msgstr ""
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[설치 대상 - 전용 및 네트워크 디스크]의 하단 우측 모서리 부분에서 "
+"`FCoE SAN 추가`를 눌러주세요. 새로운 대화상자 창이 열릴 것입니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:14
@@ -54,17 +59,21 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration[Network "
 "& Hostname]."
 msgstr ""
+"드롭-다운 메뉴에서 당신의 FCoE 스위치에 연결된 네트워크 연결장치(`NIC`)를 "
+"선택합니다. 이 네트워크 연결장치는 구성하고 연결되어야만 합니다 - xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[네트워크와 호스트 이름]를 참조하세요."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:16
 msgid "Below the `NIC` drop-down menu are two choices:"
-msgstr ""
+msgstr "`NIC` 드롭-다운 메뉴 아래에는 두 가지 선택이 있습니다:"
 
 #. type: Labeled list
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:17
 #, no-wrap
 msgid "`Use DCB`"
-msgstr ""
+msgstr "`Use DCB`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:18
@@ -76,12 +85,17 @@ msgid ""
 "interfaces that implement a hardware DCBX client should leave this check box "
 "empty."
 msgstr ""
+"_Data Center Bridging_ (DCB)은 저장소 네트워크와 클러스터에서 이더넷 연결의 "
+"효율을 높이기 위해 설계된 이더넷 통신규약에 향상된 기능의 집합입니다. 이 "
+"선택은 호스트-기반 DCBX 클라이언트가 필요한 네트워크 연결장치에 대해서만 "
+"활성화되어야합니다. 하드웨어 DCBX 클라이언트를 구현하는 연결장치의 구성은 이 "
+"확인란을 비워 두어야 합니다."
 
 #. type: Labeled list
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:19
 #, no-wrap
 msgid "`Use auto vlan`"
-msgstr ""
+msgstr "`Use auto vlan`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:20
@@ -93,6 +107,12 @@ msgid ""
 "any discovered FCoE VLANs will be automatically created and FCoE instances "
 "will be created on the VLAN interfaces. This option is enabled by default."
 msgstr ""
+"이 선택은 VLAN 발견을 수행되어야 하는지 여부를 표시합니다. 만약 이 확인란을 "
+"선택하면, 후에 연결 구성이 확인된 이후에 _FCoE 시작 통신규약_ (FIP) VLAN "
+"발견된 통신규약이 이더넷 연결장치에서 실행됩니다. 만약 아직 구성되지 않은 "
+"경우에는, 모두 발견된 FCoE VLAN을 위한 네트워크 연결장치가 자동으로 생성될 "
+"것이고, FCoE 경우에 VLAN 연결장치에 생성될 것입니다. 이 선택은 기본적으로 "
+"활성화됩니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddFCoE.adoc:21
@@ -103,3 +123,7 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
 "Destination - Specialized & Network Disks]."
 msgstr ""
+"사용 할 연결장치와 선택을 지정한 후에, 'FCoE 디스크 추가'를 눌러줍니다. "
+"발견된 FCoE 저장 장치는 xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-destination[설치 대상 - 특수 & 네트워크 디스크]"
+"에 있는 '기타 SAN 장치' 탭에서 표시될 것입니다."
