@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguz@ersen.moe>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-19 06:59+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pages_partialsinstallkdumpspoke/tr/>"
+"\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/KdumpSpoke.adoc:4
 #: ./pages/_partials/install/KdumpSpoke.adoc:15
 #, no-wrap
 msgid "Kdump"
-msgstr ""
+msgstr "Kdump"
 
 #. type: delimited block =
 #: ./pages/_partials/install/KdumpSpoke.adoc:10
@@ -32,6 +35,12 @@ msgid ""
 "xref:install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu] for "
 "instructions on using custom boot options."
 msgstr ""
+"Bu ekran öntanımlı olarak devre dışıdır. Kurulum sırasında etkinleştirmek "
+"için, önyükleme menüsünde [option]#inst.kdump_addon=on# seçeneğini "
+"kullanmanız gerekir. Ayrıntılar için xref:advanced/Boot_Options.adoc#sect-"
+"boot-options-advanced[Gelişmiş Kurulum Seçenekleri] bölümüne, özel önyükleme "
+"seçeneklerini kullanma talimatları için xref:install/Booting_the_Installation"
+".adoc#sect-boot-menu[Önyükleme Menüsü] bölümüne bakın."
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:14
@@ -40,18 +49,21 @@ msgid ""
 "activated on the installed system, and how much memory will be reserved for "
 "it if enabled."
 msgstr ""
+"Bu ekranı kurulu sistemde [application]*Kdump* etkinleştirilip "
+"etkinleştirilmeyeceğini ve etkinleştirilirse onun için ne kadar bellek "
+"ayrılacağını seçmek için kullanın."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/KdumpSpoke.adoc:17
 #, no-wrap
 msgid "The Kdump configuration screen"
-msgstr ""
+msgstr "Kdump yapılandırma ekranı"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/KdumpSpoke.adoc:17
 #, no-wrap
 msgid "anaconda/KdumpSpoke.png"
-msgstr ""
+msgstr "anaconda/KdumpSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:20
@@ -63,6 +75,12 @@ msgid ""
 "of the system's memory (RAM) reserved to itself. This reserved memory will "
 "not be accessible to the main kernel."
 msgstr ""
+"[application]*Kdump*, bir sistem çökmesi olması durumunda, hata anında "
+"sistem belleğinin içeriğini yakalayan bir çekirdek çökme döküm "
+"mekanizmasıdır. Yakalanan bu bellek daha sonra çökmenin nedenini bulmak için "
+"analiz edilebilir. [application]*Kdump* etkinleştirilirse, sistem belleğinin "
+"(RAM) küçük bir kısmının kendisine ayrılmış olması gerekir. Bu ayrılmış "
+"belleğe ana çekirdek tarafından erişilemeyecektir."
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:22
@@ -71,6 +89,9 @@ msgid ""
 "kdump`. Then, enter the amount of memory to be reserved in megabytes into "
 "the `Memory To Be Reserved` field."
 msgstr ""
+"Kurulu sistemde [application]*Kdump* etkinleştirmek için, `Kdump etkinleştir`"
+" seçeneğini işaretleyin. Ardından, megabayt cinsinden ayrılacak bellek "
+"miktarını `Ayrılacak Bellek` alanına girin."
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:24
@@ -86,6 +107,17 @@ msgid ""
 "[application]*Kdump* works, how to configure additional settings, and how to "
 "analyze a saved crash dump."
 msgstr ""
+"Ayırmanız gereken bellek miktarı, sisteminizin mimarisine (örneğin, AMD64 ve "
+"Intel{nbsp}64'ün IBM Power'dan farklı gereksinimleri olacaktır) ve toplam "
+"sistem belleği miktarına göre belirlenir. Çoğu durumda, otomatik ayırma "
+"yeterli olacaktır. Elle ayarlamakda ısrar ediyorsanız, yönergeler için "
+"link:++https://access.redhat.com/documentation/en-US/"
+"Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-"
+"configurations-and-targets.html#sect-kdump-memory-requirements++[Red{nbsp}"
+"Hat Enterprise{nbsp}Linux{nbsp}7 Çekirdek Çökme Dökümü Kılavuzuna] bakın. Bu "
+"belge ayrıca [application]*Kdump*'ın nasıl çalıştığı, ek ayarların nasıl "
+"yapılandırılacağı ve kaydedilen bir çökme dökümünün nasıl incelenebileceği "
+"hakkında daha ayrıntılı bilgiler içermektedir."
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:26
@@ -94,6 +126,9 @@ msgid ""
 "how much memory will be accessible to your main system once your selected "
 "amount of RAM is reserved."
 msgstr ""
+"Ayırma miktarı giriş alanının altındaki `Kullanılabilir Sistem Belleği` "
+"değeri, seçtiğiniz RAM miktarı ayrıldıktan sonra ana sisteminiz için "
+"erişilebilir olacak bellek miktarını gösterir."
 
 #. type: delimited block =
 #: ./pages/_partials/install/KdumpSpoke.adoc:31
@@ -103,6 +138,9 @@ msgid ""
 "`system-config-kdump` graphical interface, or manually in the "
 "`/etc/kdump.conf` configuration file."
 msgstr ""
+"Çekirdek çökme dökümlerinin kaydedileceği konum gibi ek ayarlar, yalnızca "
+"kurulumdan sonra `system-config-kdump` grafiksel arayüzü kullanılarak veya `/"
+"etc/kdump.conf` yapılandırma dosyasında elle yapılandırılabilir."
 
 #. type: Plain text
 #: ./pages/_partials/install/KdumpSpoke.adoc:34
@@ -112,3 +150,7 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"[application]*Kdump* ayarlarını yapılandırdıktan sonra, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary["
+"Kurulum Özeti] ekranına dönmek için sol üst köşedeki btn:[Bitti] düğmesine "
+"tıklayın."
