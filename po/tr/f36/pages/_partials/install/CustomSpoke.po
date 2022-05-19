@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Oğuz Ersen <oguz@ersen.moe>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-19 21:54+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pages_partialsinstallcustomspoke/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:5
 #: ./pages/_partials/install/CustomSpoke.adoc:20
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "Elle Bölümlendirme"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:8
@@ -29,6 +32,9 @@ msgid ""
 "configuration for your {PRODUCT} system manually, giving you a greater "
 "control over your system's storage."
 msgstr ""
+"`Elle Bölümlendirme` ekranı, {PRODUCT} sisteminiz için elle bir depolama "
+"yapılandırması oluşturmanıza olanak tanır ve sisteminizin depolama alanı "
+"üzerinde size daha fazla denetim imkanı verir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:10
@@ -40,6 +46,12 @@ msgid ""
 "top of logical volumes, and the last step is usually assigning a mount point "
 "to each volume as needed."
 msgstr ""
+"Hem Linux hem de diğer işletim sistemleri için diğer kurucuların çoğunda, "
+"disk bölümlendirme genellikle \"`aşağıdan yukarıya`\" bir yaklaşım benimser. "
+"Bu kurucularda, önce LVM fiziksel birimleri gibi altta yatan aygıtları "
+"oluşturursunuz, ardından bunların üzerine LVM gibi bir düzen oluşturursunuz, "
+"ardından mantıksal birimlerin üzerinde dosya sistemleri oluşturursunuz ve "
+"son adım genellikle her birim için bir bağlama noktası atamaktır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:12
@@ -50,6 +62,12 @@ msgid ""
 "where the volume group will reside) is performed automatically. You can then "
 "adjust the automatic settings as you require."
 msgstr ""
+"[application]*Anaconda* tam tersi bir yaklaşım kullanır. İlk olarak, "
+"ihtiyacınız olan tüm ayrı bağlama noktalarını oluşturursunuz ve bunları "
+"oluşturmak için gereken her şey (bir birim grubu, onun içindeki mantıksal "
+"birimler ve birim grubunun yer alacağı fiziksel birimlerin oluşturulması) "
+"otomatik olarak gerçekleştirilir. Daha sonra otomatik ayarları istediğiniz "
+"gibi düzenleyebilirsiniz."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:17
@@ -60,18 +78,23 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Gerçek bölümlendirme işlemi sırasında disklerinizde kalıcı değişiklikler "
+"yapılmayacaktır. Seçtiğiniz yapılandırma, yalnızca xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary["
+"Kurulum Özeti] ekranındaki `Kuruluma başla` düğmesine bastıktan sonra "
+"sisteminize yazılacaktır."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr ""
+msgstr "Elle Bölümlendirme ekranı. Bu noktada"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/CustomSpoke.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:25
@@ -84,6 +107,12 @@ msgid ""
 "partitions, then a message informing you that no mount points currently "
 "exist will appear."
 msgstr ""
+"`Elle Bölümlendirme` ekranını ilk açtığınızda sol taraftaki sütun, xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Kurulum Hedefi] bölümünde kurulum hedefleri olarak seçtiğiniz "
+"tüm disklerde önceden var olan tüm bölümleri görüntüleyecektir. Seçilen "
+"disklerin hiçbiri bir bölüm içermiyorsa, size şu anda hiçbir bağlama "
+"noktasının olmadığını bildiren bir mesaj görünecektir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:27
@@ -97,6 +126,14 @@ msgid ""
 "partition/volume sizes are determined automatically based on the total "
 "amount of available space."
 msgstr ""
+"Burada, `LVM` veya `BTRFS` gibi bir bölümlendirme şeması seçebilir ve "
+"kurucudan basit bir bölümlendirme düzeni oluşturmasını istemek için `"
+"Otomatik olarak oluşturmak için buraya tıklayın` seçeneğine "
+"tıklayabilirsiniz; bu düzen xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] bölümünde açıklanan yönergeleri izler. Oluşturulan "
+"düzen, bölüm/birim boyutlarının toplam kullanılabilir alan miktarına göre "
+"otomatik olarak belirlendiği basit bir düzendir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:29
@@ -111,6 +148,16 @@ msgid ""
 "be created as a logical volume, and a new volume group will be created for "
 "it unless one already exists."
 msgstr ""
+"Bir bağlama noktası eklemek için `+` düğmesine tıklayın. Açılan iletişim "
+"penceresinde, `/` veya `/home` gibi bir bağlama noktası ve bağlama noktası "
+"için istenen kapasiteyi (`10GB` veya `500MB` gibi) seçin. Bağlama noktasını "
+"belirtmenin zorunlu olduğunu, ancak bu noktada kapasiteyi belirtmenin "
+"gerekli olmadığını unutmayın; bu, o anda kullanılabilir alanın izin "
+"verdiğinden daha büyük olmasını istediğiniz bir bağlama noktası eklerken "
+"faydalıdır. Ardından, öntanımlı ayarları kullanarak (yani mantıksal birim "
+"olarak oluşturulacak ve zaten mevcut değilse yeni bir birim grubu "
+"oluşturulacaktır) listeye eklemek için `Bağlama noktası ekle` düğmesine "
+"tıklayın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:31
@@ -123,6 +170,13 @@ msgid ""
 "you can now create another mount point, or select a different existing one "
 "and adjust its settings as well."
 msgstr ""
+"Ardından, sol taraftaki listeden yeni oluşturulan bağlama noktasını seçin. "
+"Ekranın sağ tarafında bağlama noktasını, fiziksel olarak bulunacağı aygıtı, "
+"kapasitesini, dosya sistemini vb. değiştirmenize olanak tanıyan bir dizi "
+"denetim görüntülenecektir. Herhangi bir ayarı değiştirdiğinizde, `Ayarları "
+"Güncelle` düğmesine basın. sağ altta. Bu, değiştirilen yapılandırmayı "
+"kaydedecektir; ardından başka bir bağlama noktası oluşturabilir veya mevcut "
+"farklı bir noktayı seçip ayarlarını düzenleyebilirsiniz."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:36
@@ -131,6 +185,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types]."
 msgstr ""
+"Kullanılabilir aygıt ve dosya sistemi türlerinin açıklaması için xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne "
+"bakın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:40
@@ -138,6 +196,8 @@ msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
 msgstr ""
+"Bir bağlama noktasını kaldırmak için listeden seçin ve aşağıdaki `-` "
+"düğmesine basın."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:42
@@ -151,6 +211,15 @@ msgid ""
 "on Partitions] for a list of requirements and tips for partitioning your "
 "disks for {PRODUCT}."
 msgstr ""
+"Depolamanızı yapılandırmanın tam adımları, özel ihtiyaçlarınıza ve sistem "
+"yapılandırmanıza bağlıdır. Özel düzenler oluşturma adımları bu bölümün "
+"ilerisinde daha ayrıntılı olarak açıklanmaktadır. Başlamadan önce, "
+"disklerinizi {PRODUCT} için bölümlendirmeye yönelik gereksinimler ve "
+"ipuçlarının bir listesi için xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
+"Bölümlendirme Düzeni] ve xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-advice[Bölümlerle İlgili Tavsiyeler] "
+"bölümlerini de incelemelisiniz."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:44
@@ -159,6 +228,9 @@ msgid ""
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
+"Mevcut bağlama noktaları listesinin altında, depolama aygıtlarınızda ne "
+"kadar boş alan kaldığını ve toplam ne kadar alana sahip olduklarını gösteren "
+"iki alan vardır."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:46
@@ -171,6 +243,14 @@ msgid ""
 "Destination]. If you want to add or remove any storage devices from your "
 "configuration, return to that screen and change your selection."
 msgstr ""
+"Seçili olan depolama aygıtlarının bir özetini görüntülemek için "
+"`pass:attributes[{blank}]_X_ depolama aygıtı seçildi` seçeneğine tıklayın; "
+"bu, daha karmaşık depolama düzenlerinde yönlendirme konusunda size yardımcı "
+"olabilir. Burada görüntülenen aygıtlar, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
+"Kurulum Hedefi] bölümünde seçmiş olduğunuz aygıtlardır. Yapılandırmanıza "
+"herhangi bir depolama aygıtı eklemek veya çıkarmak isterseniz, o ekrana "
+"dönün ve seçiminizi değiştirin."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:48
@@ -183,6 +263,14 @@ msgid ""
 "discarding only the changes you have made recently, not all changes to the "
 "storage configuration since you booted the installer."
 msgstr ""
+"Depolama yapılandırmasını `Elle Bölümlendirme` ekranını en son açtığınız "
+"zamanki durumuna sıfırlamak için istediğiniz zaman sağ alt köşedeki `Tümünü "
+"Sıfırla` düğmesine basabilirsiniz. Bu, depolama yapılandırmasını "
+"değiştirirseniz, ekrandan ayrılırsanız ve ardından geri gelirseniz, Sıfırla "
+"düğmesinin yapılandırmayı zaten değiştirilmiş olan durumuna sıfırlayacağı ve "
+"yalnızca son zamanlarda yaptığınız değişiklikleri atacağı, kurucuyu "
+"önyükledikten sonra depolama yapılandırmasında yapılan tüm değişiklikleri "
+"atmayacağı anlamına gelir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:50
@@ -197,24 +285,34 @@ msgid ""
 "Destination]; all detected disks including any new ones will be displayed in "
 "the `Local Standard Disks` section."
 msgstr ""
+"Tüm değişiklikleri iptal etmek ve ayrıca kurucu başladığında algılanmayan "
+"yeni diskleri tespit etmek için (bu, genellikle başlattıktan sonra yeni bir "
+"disk taktığınızda olur), ekranın sol tarafında bağlama noktaları listesinin "
+"altındaki denetimler kümesinde dairesel bir okla işaretlenen düğmeye basın. "
+"Açılan iletişim penceresinde `Diskleri Yeniden Tara` düğmesine basın ve "
+"tarama işlemi tamamlanana kadar bekleyin. Ardından, xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
+"Kurulum Hedefi] bölümüne dönmek için `Tamam` düğmesine basın; yenileri de "
+"dahil olmak üzere algılanan tüm diskler `Yerel Standart Diskler` bölümünde "
+"görüntülenecektir."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke.adoc:51
 #, no-wrap
 msgid "Rescan Disks"
-msgstr ""
+msgstr "Diskleri Yeniden Tara"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr ""
+msgstr "Diskleri Yeniden Tara iletişim kutusu"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:56
@@ -228,6 +326,14 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Sistem depolama alanınızı yapılandırmayı bitirdikten sonra, yapılandırmayı "
+"kaydetmek ve `Kurulum Özeti` ekranına dönmek için sol üst köşedeki `Bitti` "
+"düğmesine basın. Bu noktada kurucu, depolama yapılandırmanızın geçerli olup "
+"olmadığını denetleyecektir. Bir hata tespit edilirse, ekranın altında bir "
+"mesaj görüntülenecektir. Ne tür bir hatanın tespit edildiğini açıklayan bir "
+"iletişim penceresi açmak için mesaja tıklayın (örneğin, `/ boot` dizinini "
+"bir Btrfs alt birimine koydunuz veya sisteminiz gerektirdiği halde bir BIOS "
+"Önyükleme bölümü oluşturmadınız)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:58
@@ -238,6 +344,11 @@ msgid ""
 "Summary` anyway, but a storage configuration error will prevent you from "
 "starting the actual installation process."
 msgstr ""
+"Böyle bir mesaj görüntülenirse, geri dönün ve kurucu tarafından bulunan "
+"sorunları düzeltin; aksi takdirde kuruluma devam edemezsiniz. Yine de `"
+"Kurulum Özeti` ekranına dönmek için tekrar `Bitti` düğmesine basabilirsiniz, "
+"ancak depolama yapılandırma hatası gerçek kurulum sürecini başlatmanızı "
+"engelleyecektir."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:60
@@ -250,3 +361,10 @@ msgid ""
 "Summary], or click `Cancel & Return to Custom Partitioning` if you want to "
 "make any more changes."
 msgstr ""
+"Herhangi bir hata mesajı görüntülenmezse ve bu ekranı son ziyaretinizden bu "
+"yana herhangi bir değişiklik yaptıysanız, yaptığınız değişikliklerin "
+"ayrıntılı bir listesini görüntüleyen bir özet iletişim kutusu görünecektir. "
+"Listeyi gözden geçirin ve xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[Kurulum Özeti] ekranına ilerlemek için "
+"`Değişiklikleri Kabul Et`, daha fazla değişiklik yapmak istiyorsanız `İptal "
+"Et ve Özel Bölümlendirmeye Dön` düğmesine tıklayın."
