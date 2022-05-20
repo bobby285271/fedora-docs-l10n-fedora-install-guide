@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2022-05-15 17:37+0000\n"
+"PO-Revision-Date: 2022-05-20 18:01+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f26pagesadvancedboot_options/"
@@ -131,6 +131,14 @@ msgid ""
 "xref:Network_based_Installations.adoc#chap-pxe-server-setup[Setting Up an "
 "Installation Server] if you are booting from a server."
 msgstr ""
+"指定自定义引导选项的精确方式因当前计算机的架构、固件和用于引导安装的方法而异"
+"。如果你使用本地媒体来启动，那么你可以在安装操作系统前就指定启动菜单里的选项"
+"；如果你使用PXE服务器来通过网络启动，"
+"那么你必须在操作系统前将启动菜单里的选项放入安装boot "
+"loader的配置文件中。使用本地媒体来启动的专门的说明详见xref:../install/"
+"Booting_the_Installation.adoc#sect-boot-menu[Boot菜单]，使用PXE服务器来通过网"
+"络启动的专门的说明详见xref:Network_based_Installations.adoc#chap-pxe-server-"
+"setup[设置安装服务器]。"
 
 #. type: Title ====
 #: ./pages/advanced/Boot_Options.adoc:33
@@ -153,7 +161,7 @@ msgstr "指定安装源"
 #: ./pages/advanced/Boot_Options.adoc:40
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:41
