@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-21 08:47+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pages_partialsinstallsummaryhub/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:5
 #: ./pages/_partials/install/SummaryHub.adoc:9
 #, no-wrap
 msgid "Installation Summary"
-msgstr ""
+msgstr "Asennuksen yhteenveto"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:8
@@ -29,18 +32,21 @@ msgid ""
 "installation. Most of the options which can be configured during the "
 "installation can be accessed from here."
 msgstr ""
+"\"Asennusyhteenveto\"-näyttö on keskeinen paikka asennuksen määrittämiselle. "
+"Useimmat vaihtoehdot, jotka voidaan määrittää asennuksen aikana, ovat "
+"käytettävissä täältä."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:11
 #, no-wrap
 msgid "The Installation Summary screen"
-msgstr ""
+msgstr "Asennuksen yhteenveto -näyttö"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:11
 #, no-wrap
 msgid "anaconda/SummaryHub.png"
-msgstr ""
+msgstr "anaconda/SummaryHub.png"
 
 #. type: delimited block =
 #: ./pages/_partials/install/SummaryHub.adoc:17
@@ -51,6 +57,10 @@ msgid ""
 "for you to set up a network connection prior to displaying the `Installation "
 "Summary` screen."
 msgstr ""
+"Jos käytit Kickstart-vaihtoehtoa tai käynnistysvaihtoehtoa määrittääksesi "
+"ohjelmistolähteen verkossa, mutta verkkoa ei ole käytettävissä asennuksen "
+"alussa, asennusohjelma näyttää \"Verkkoasetukset\"-näytön, jossa voit "
+"määrittää verkkoyhteyden ennen \"Asennusyhteenveto\"-näytön näyttämistä."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:21
@@ -59,6 +69,9 @@ msgid ""
 "into categories. These links can be in several different states, which are "
 "graphically indicated:"
 msgstr ""
+"Yhteenvetoruutu koostuu useista linkeistä muihin näyttöihin, jotka on jaettu "
+"luokkiin. Nämä linkit voivat olla useassa eri tilassa, jotka on esitetty "
+"graafisesti:"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:23
@@ -70,6 +83,11 @@ msgid ""
 "variant, you always have to at least confirm this selection, even if you do "
 "not want to make any changes."
 msgstr ""
+"*Varoitussymboli* (keltainen kolmio huutomerkillä) kuvakkeen vieressä "
+"tarkoittaa, että näyttö vaatii huomiota ennen asennuksen aloittamista. Tämä "
+"tapahtuu yleensä \"Asennuskohde\"-näytössä, koska vaikka oletusarvoinen "
+"automaattinen osiointiversio on olemassa, sinun on aina vähintään "
+"vahvistettava tämä valinta, vaikka et haluaisi tehdä muutoksia."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:25
@@ -80,6 +98,11 @@ msgid ""
 "installation source in the `Installation Source` screen and the installer is "
 "probing the new source location and gathering a list of available packages."
 msgstr ""
+"Jos linkki on *harmaa*, se tarkoittaa, että asennusohjelma määrittää "
+"parhaillaan tätä osaa, ja sinun on odotettava määrityksen valmistumista "
+"ennen kuin pääset kyseiseen näyttöön. Tämä tapahtuu yleensä, kun vaihdat "
+"asennuslähdettä \"Asennuslähde\"-näytössä ja asennusohjelma etsii uutta "
+"lähdesijaintia ja kerää luettelon saatavilla olevista paketeista."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:27
@@ -91,6 +114,12 @@ msgid ""
 "automatically, or set up on the previous screen where you select your "
 "language and locale."
 msgstr ""
+"Näytöt, joissa on *musta teksti ilman varoitussymbolia* tarkoittavat, että "
+"tämä näyttö ei vaadi huomiotasi. Voit silti muuttaa asetuksiasi näissä "
+"näytöissä, mutta sitä ei tarvitse tehdä asennuksen viimeistelemiseksi. Tämä "
+"tapahtuu yleensä lokalisointiasetuksissa, koska ne joko tunnistetaan "
+"automaattisesti tai ne määritetään edellisessä näytössä, jossa valitset "
+"kielen ja maa-alueen."
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:29
@@ -99,24 +128,27 @@ msgid ""
 "`Begin Installation` button is greyed out, as long as at least one item has "
 "not been configured yet."
 msgstr ""
+"Yhteenvetonäytön alareunassa näkyy varoitusviesti, ja Aloita asennus -"
+"painike näkyy harmaana, niin kauan kuin vähintään yhtä kohdetta ei ole vielä "
+"määritetty."
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:30
 #, no-wrap
 msgid "Icon States in Installation Summary"
-msgstr ""
+msgstr "Kuvakkeen tilat asennuksen yhteenvedossa"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:32
 #, no-wrap
 msgid "A screenshot of several icons in the Installation Summary screen"
-msgstr ""
+msgstr "Kuvakaappaus useista kuvakkeista Asennusyhteenveto-näytössä"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:32
 #, no-wrap
 msgid "anaconda/SummaryHub_States.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_States.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:35
@@ -126,12 +158,16 @@ msgid ""
 "case, move your mouse cursor over it and wait until a tooltip with the full "
 "text appears."
 msgstr ""
+"Jokaisen näytön otsikon alla on myös selittävä teksti, joka näyttää "
+"kyseiselle näytölle tällä hetkellä määritetyt asetukset. Tämä teksti voidaan "
+"ketjuttaa; siirrä siinä tapauksessa hiiren osoitin sen päälle ja odota, "
+"kunnes koko tekstin sisältävä työkaluvihje tulee näkyviin."
 
 #. type: Block title
 #: ./pages/_partials/install/SummaryHub.adoc:36
 #, no-wrap
 msgid "Tooltip in the Installation Summary"
-msgstr ""
+msgstr "Työkaluvinkki asennuksen yhteenvedossa"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SummaryHub.adoc:38
@@ -140,12 +176,14 @@ msgid ""
 "An entry in the Installation Summary shows a truncated description and a "
 "tooltip with full text."
 msgstr ""
+"Asennusyhteenvedon merkintä näyttää katkaistun kuvauksen ja työkaluvihjeen, "
+"jossa on koko teksti."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SummaryHub.adoc:38
 #, no-wrap
 msgid "anaconda/SummaryHub_Mouseover.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_Mouseover.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SummaryHub.adoc:40
@@ -159,3 +197,11 @@ msgid ""
 "can press `Quit` at any point; this will discard all changes you made in the "
 "installer so far and reboot the system."
 msgstr ""
+"Kun olet määrittänyt kaikki asennukseen tarvittavat asetukset, voit aloittaa "
+"{PRODUCT} asennuksen painamalla Aloita asennus -painiketta. Tämä vie sinut "
+"osoitteeseen xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-installation-progress[Kokoonpanon ja asennuksen edistyminen]. Huomaa, "
+"että kuten tämän painikkeen alla oleva teksti sanoo, mitään ei kirjoiteta "
+"kiintolevyllesi ennen kuin painat tätä painiketta. Voit painaa \"Lopeta\" "
+"milloin tahansa; tämä hylkää kaikki asennusohjelmassa tähän mennessä "
+"tekemäsi muutokset ja käynnistää järjestelmän uudelleen."
