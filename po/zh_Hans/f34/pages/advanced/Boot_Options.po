@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2022-05-20 18:01+0000\n"
+"PO-Revision-Date: 2022-05-22 21:00+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f34pagesadvancedboot_options/"
@@ -151,13 +151,13 @@ msgid ""
 "Specifies the installation source - that is, a location where the "
 "installation program can find the images and packages it requires. For "
 "example:"
-msgstr ""
+msgstr "指定安装源——即安装程序可以找到安装镜像和所需软件包的位置。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:44
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[option]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:47
@@ -170,7 +170,8 @@ msgid ""
 "an installable tree, which is a directory structure containing the "
 "installation program's images, packages and repodata as well as a valid "
 "`.treeinfo` file"
-msgstr ""
+msgstr "一个可安装的树是一个包含了安装程序的镜像、软件包和repodata（一个有效的`."
+"treeinfo`文件）的目录结构"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:51
@@ -182,14 +183,14 @@ msgstr "一个DVD（一个在系统DVD驱动器上的物理磁盘）"
 msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
-msgstr ""
+msgstr "一个{PRODUCT}的、完全的ISO镜像被放置在硬盘或安装系统的网络位置上"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:55
 msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats. The syntax is described in the table below."
-msgstr ""
+msgstr "此功能允许使用不同格式的不同安装方法的配置。下表是配置的语法。"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:57
@@ -220,6 +221,26 @@ msgid ""
 "[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
 "_options_.]\n"
 msgstr ""
+"|安装源|Option format\n"
+"|任意的CD/DVD光驱|[option]#inst.repo=cdrom#\n"
+"|指定的CD/DVD光驱|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
+"|硬盘|[option]#inst.repo=hd:pass:attributes[{blank}]_device_:/pass:attributes"
+"[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTP服务器|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:attr"
+"ibutes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTPS服务器|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:at"
+"tributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|FTP服务器|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:a"
+"ttributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}]"
+"_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes["
+"{blank}]#\n"
+"|NFS服务器|[option]#inst.repo=nfs:[pass:attributes[{blank}]_选项_:]pass:attri"
+"butes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}"
+"]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[此选项默认使用NFS协议第3版。要使用其他版本的"
+"协议，你需要增加[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes["
+"{blank}]#到_选项_当中。]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:73
@@ -249,12 +270,14 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
+"非字母数字的字符必须表示为`\\xpass:attributes[{blank}]_NN_pass:attributes[{bl"
+"ank}]`，这里的_NN_是字符的十六进制的表示。例如，`\\x20`代表空格符号（\"\"）。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:82
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:83
@@ -277,6 +300,9 @@ msgid ""
 "default label of the file system containing the runtime image, you must also "
 "edit this option to match the new label."
 msgstr ""
+"启动选项默认应用在安装媒体上，并且为安装媒体设置一个特定的标签（例如，[option"
+"]#inst.stage2=hd:LABEL=F21\\x20Server.x86_64#）。如果你修改了包含了运行时的镜"
+"像的文件系统的默认标签，那么你必须一并修改这个选项来匹配新的标签。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:91
@@ -297,7 +323,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:93
 #, no-wrap
 msgid "[option]#inst.dd=#"
-msgstr ""
+msgstr "[option]#inst.dd=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:94
