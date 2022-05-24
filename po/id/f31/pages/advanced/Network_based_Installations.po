@@ -2,23 +2,23 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020, 2021.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021, 2022.
 # Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:06+0000\n"
-"PO-Revision-Date: 2021-11-01 05:05+0000\n"
+"PO-Revision-Date: 2022-05-24 05:18+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"fedora-docs-l10n-fedora-install-guide/"
 "f31pagesadvancednetwork_based_installations/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/advanced/Network_based_Installations.adoc:5
@@ -153,12 +153,15 @@ msgid ""
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
 msgstr ""
+"Kernel adalah inti dari setiap sistem operasi Linux, dan initramfs "
+"menyediakan kernel dengan alat dan sumber daya yang diperlukan. Berkas-"
+"berkas ini juga disediakan oleh tftp."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:34
 #, no-wrap
 msgid "Package repository"
-msgstr ""
+msgstr "Repositori paket"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:36
@@ -170,6 +173,12 @@ msgid ""
 "see xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for details."
 msgstr ""
+"Repositori Fedora harus tersedia untuk instalasi. Contoh di bagian ini "
+"menggunakan cermin Fedora publik sebagai sumber repositori, tetapi Anda juga "
+"dapat menggunakan repo pada jaringan lokal yang disediakan oleh NFS, FTP, "
+"atau HTTP. Repositori dapat dikonfigurasi menggunakan opsi boot [option]#inst"
+".repo=#; lihat xref:advanced/Boot_Options.adoc#sect-boot-options-sources["
+"Menentukan Sumber Instalasi] untuk detailnya."
 
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ==
@@ -183,12 +192,12 @@ msgstr "Konfigurasi Server DHCP"
 #: pages/advanced/Network_based_Installations.adoc:44
 #, no-wrap
 msgid "Installing and configuring dhcpd"
-msgstr ""
+msgstr "Memasang dan mengonfigurasi dhcpd"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:46
 msgid "Install the dhcp server package."
-msgstr ""
+msgstr "Memasang paket server dhcp."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:50
@@ -200,7 +209,7 @@ msgstr "# dnf install dhcp\n"
 #: pages/advanced/Network_based_Installations.adoc:53
 msgid ""
 "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
-msgstr ""
+msgstr "Buat konfigurasi sederhana untuk server dhcp di `/etc/dhcp/dhcpd.conf`"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:61
@@ -237,7 +246,7 @@ msgstr "}\n"
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:69
 msgid "Test your configuration and address any problems you discover."
-msgstr ""
+msgstr "Uji konfigurasi Anda dan atasi masalah apa pun yang Anda temukan."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:75
@@ -289,7 +298,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:93
 #, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:96
@@ -297,6 +306,8 @@ msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
 msgstr ""
+"Mulai ulang layanan dhcp untuk memeriksa konfigurasi dan membuat perubahan "
+"sesuai kebutuhan."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:102
@@ -305,24 +316,26 @@ msgid ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl restart dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:106
 #: pages/advanced/Network_based_Installations.adoc:108
 #, no-wrap
 msgid "Installing the tftp server"
-msgstr ""
+msgstr "Memasang server tftp"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:110
 msgid "Install the tftp server package."
-msgstr ""
+msgstr "Memasang paket server tftp."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:113
 #, no-wrap
 msgid "# dnf install tftp-server\n"
-msgstr ""
+msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:116
@@ -330,6 +343,8 @@ msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
 msgstr ""
+"Mulai dan aktifkan `soket tftp`. `systemd` akan secara otomatis memulai "
+"layanan `tftpd` bila diperlukan."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:121
@@ -338,34 +353,36 @@ msgid ""
 "# [command]#systemctl start tftp.socket#\n"
 "# [command]#systemctl enable tftp.socket#\n"
 msgstr ""
+"# [command]#systemctl start tftp.socket#\n"
+"# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:124
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "Menyediakan dan mengonfigurasi bootloader untuk klien PXE"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:126
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "Mendapatkan berkas bootloader"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:128
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
-msgstr ""
+msgstr "Dapatkan bootloader [package]*syslinux* untuk klien BIOS."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:130
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "Instal paket [package]*syslinux*."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:133
 #, no-wrap
 msgid "# dnf install syslinux\n"
-msgstr ""
+msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:136
@@ -373,6 +390,7 @@ msgstr ""
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
+"Buat direktori untuk berkas bootloader, dan buat mereka tersedia di sana."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:141
@@ -385,7 +403,7 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:144
 msgid "Get the bootloader files for UEFI systems"
-msgstr ""
+msgstr "Mendapatkan berkas bootloader untuk sistem UEFI"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:146
@@ -414,7 +432,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:160
 #, no-wrap
 msgid "Configuring client bootloaders"
-msgstr ""
+msgstr "Mengonfigurasi bootloader klien"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:162
@@ -422,6 +440,7 @@ msgid ""
 "Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
 "default`."
 msgstr ""
+"Buat menu boot untuk klien BIOS di `/var/lib/tftpboot/pxelinux.cfg/default`."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:170
@@ -431,6 +450,9 @@ msgid ""
 "prompt 1\n"
 "timeout 600\n"
 msgstr ""
+"default vesamenu.c32\n"
+"prompt 1\n"
+"timeout 600\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:176
@@ -481,6 +503,13 @@ msgid ""
 "\tinsmod all_video\n"
 "}\n"
 msgstr ""
+"function load_video {\n"
+"\tinsmod efi_gop\n"
+"\tinsmod efi_uga\n"
+"\tinsmod video_bochs\n"
+"\tinsmod video_cirrus\n"
+"\tinsmod all_video\n"
+"}\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:203
@@ -490,6 +519,9 @@ msgid ""
 "set gfxpayload=keep\n"
 "insmod gzio\n"
 msgstr ""
+"load_video\n"
+"set gfxpayload=keep\n"
+"insmod gzio\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:208
@@ -510,57 +542,73 @@ msgid ""
 "\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/fedora-install-server.ks?h=f21\n"
 "}\n"
 msgstr ""
+"menuentry 'Install Fedora {PRODVER} Server'  --class fedora --class gnu-"
+"linux --class gnu --class os {\n"
+"\tkernel f{PRODVER}/vmlinuz\n"
+"\tappend initrd=f{PRODVER}/initrd.img inst.repo=https://download."
+"fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/ "
+"ip=dhcp ks=https://git.fedorahosted.org/cgit/spin-kickstarts.git/plain/"
+"fedora-install-server.ks?h=f21\n"
+"}\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:217
 #, no-wrap
 msgid "Getting the kernel and initrd"
-msgstr ""
+msgstr "Mendapatkan kernel dan initrd"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:219
 #, no-wrap
 msgid "Downloading the kernel and initrd"
-msgstr ""
+msgstr "Mengunduh kernel dan initrd"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:221
 msgid "Create a directory for the files."
-msgstr ""
+msgstr "Buat direktori untuk berkas."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:225
 #, no-wrap
 msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:228
 msgid "Download the kernel."
-msgstr ""
+msgstr "Unduh kernel."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:232
 #, no-wrap
 msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/f{PRODVER}/vmlinuz\n"
 msgstr ""
+"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/pxeboot/vmlinuz -O /var/lib/tftpboot/"
+"f{PRODVER}/vmlinuz\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:235
 msgid "Download the initrd"
-msgstr ""
+msgstr "Unduh initrd"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:239
 #, no-wrap
 msgid "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/f{PRODVER}/initrd.img\n"
 msgstr ""
+"# wget https://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/pxeboot/initrd.img -O /var/lib/tftpboot/"
+"f{PRODVER}/initrd.img\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:242
 #, no-wrap
 msgid "Providing repositories"
-msgstr ""
+msgstr "Menyediakan repositori"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:245
@@ -569,6 +617,10 @@ msgid ""
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
 msgstr ""
+"Contoh di bagian ini menggunakan cermin Fedora publik sebagai sumber paket. "
+"Untuk instalasi yang lebih cepat, menginstal ke banyak sistem, atau "
+"lingkungan yang lebih terisolasi, Anda mungkin ingin mengelola sebuah "
+"repositori lokal."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:247
@@ -584,7 +636,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:249
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
-msgstr ""
+msgstr "Instalasi jaringan tingkat lanjut dengan Cobbler"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:252
@@ -594,6 +646,10 @@ msgid ""
 "coordinating repositories, maintaining dns records, dhcp servers, and even "
 "puppet manifests are effectively automated by [package]*cobbler*."
 msgstr ""
+"Untuk lingkungan yang lebih kompleks, {PRODUCT} menawarkan server instalasi "
+"[package]*cobbler*. Tugas-tugas seperti mengelola konfigurasi kickstart, "
+"mengkoordinasikan repositori, memelihara catatan dns, server dhcp, dan "
+"bahkan manifes puppet secara efektif diotomatisasi oleh [package]*cobbler*."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:254
@@ -604,6 +660,11 @@ msgid ""
 "link:++https://cobbler.github.io/++[] to accompany the packages in the "
 "Fedora repository."
 msgstr ""
+"Meskipun semua fitur yang disediakan oleh cobbler bisa relatif sederhana, "
+"fungsionalitas penuh dari alat canggih ini terlalu luas untuk "
+"didokumentasikan dalam panduan ini. Komunitas cobbler menyediakan "
+"dokumentasi di link:++https://cobbler.github.io/++[] untuk menemani paket di "
+"repositori Fedora."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:255
@@ -612,3 +673,6 @@ msgid ""
 "official documentation as well as downloads on the project website at link:+"
 "+https://www.theforeman.org/++[]."
 msgstr ""
+"Atau, Anda mungkin juga tertarik pada **Foreman**. Anda dapat menemukan "
+"dokumentasi resmi serta unduhan di situs web proyek di link:++https://www."
+"theforeman.org/++[]."

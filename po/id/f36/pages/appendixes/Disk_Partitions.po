@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Andika Triwidada <andika@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-24 05:18+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pagesappendixesdisk_partitions/id/>"
+"\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: ./pages/appendixes/Disk_Partitions.adoc:6
 #, no-wrap
 msgid "An Introduction to Disk Partitions"
-msgstr ""
+msgstr "Pengenalan ke Partisi Disk"
 
 #. type: delimited block =
 #: ./pages/appendixes/Disk_Partitions.adoc:12
@@ -28,6 +31,9 @@ msgid ""
 "AMD64, Intel{nbsp}64, and Arm SystemReady. However, the general concepts "
 "mentioned here may apply."
 msgstr ""
+"Lampiran ini belum tentu berlaku ke arsitektur selain AMD64, Intel{nbsp}64, "
+"dan Arm SystemReady. Namun, konsep umum yang disinggung di sini mungkin "
+"berlaku."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:16
@@ -35,6 +41,9 @@ msgid ""
 "This section discusses basic disk concepts, disk repartitioning strategies, "
 "the partition naming scheme used by Linux systems, and related topics."
 msgstr ""
+"Bagian ini mendiskusikan konsep disk dasar, strategi partisi ulang disk, "
+"skema penamaan partisi yang dipakai oleh sistem Linux, dan topik-topik "
+"terkait."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:18
@@ -44,12 +53,16 @@ msgid ""
 "for more information on the process of freeing up disk space to prepare for "
 "a {PRODUCT} installation."
 msgstr ""
+"Bila Anda nyaman dengan pemartisian disk, Anda dapat melompat ke xref:sect-"
+"disk-partitions-making-room[Strategi untuk Pemartisian Ulang Disk] untuk "
+"informasi lebih lanjut tentang proses membebaskan ruang disk untuk "
+"mempersiapkan instalasi bagi {PRODUCT}."
 
 #. type: Title ==
 #: ./pages/appendixes/Disk_Partitions.adoc:20
 #, no-wrap
 msgid "Hard Disk Basic Concepts"
-msgstr ""
+msgstr "Konsep Dasar Hard Disk"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:23
@@ -57,6 +70,8 @@ msgid ""
 "Hard disks perform a very simple function - they store data and reliably "
 "retrieve it on command."
 msgstr ""
+"Hard disk melakukan suatu fungsi sangat sederhana - mereka menyimpan data "
+"dan secara handal mengambilnya saat diperintah."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:25
@@ -67,6 +82,11 @@ msgid ""
 "here. This appendix uses a set of simplified diagrams of a disk drive to "
 "help explain what is the process and theory behind partitions."
 msgstr ""
+"Saat membahas masalah seperti partisi disk, penting untuk memiliki pemahaman "
+"tentang perangkat keras yang mendasarinya; namun, karena teorinya sangat "
+"rumit dan ekspansif, hanya konsep dasarnya yang akan dijelaskan di sini. "
+"Lampiran ini menggunakan serangkaian diagram disk drive yang disederhanakan "
+"untuk membantu menjelaskan proses dan teori di balik partisi."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:27
@@ -74,30 +94,32 @@ msgid ""
 "xref:figu-partitions-unused-drive[An Unused Disk Drive], shows a brand-new, "
 "unused disk drive."
 msgstr ""
+"xref:figu-partitions-unused-drive[Sebuah Disk Drive yang Tak Terpakai], "
+"menampilkan sebuah disk drive baru yang belum dipakai."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:29
 #, no-wrap
 msgid "An Unused Disk Drive"
-msgstr ""
+msgstr "Sebuah Disk Drive yang Tak Terpakai"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "Image of an unused disk drive."
-msgstr ""
+msgstr "Citra dari sebuah disk drive yang tak terpakai."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "partitions/unused-drive.png"
-msgstr ""
+msgstr "partitions/unused-drive.png"
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:34
 #, no-wrap
 msgid "File Systems"
-msgstr ""
+msgstr "Sistem Berkas"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:37
@@ -107,24 +129,28 @@ msgid ""
 "system_pass:attributes[{blank}]`\") writes information to the drive, "
 "creating order out of the empty space in an unformatted drive."
 msgstr ""
+"Untuk menyimpan data pada disk drive, perlu _memformat_ disk drive tersebut "
+"terlebih dahulu. Pemformatan (biasanya dikenal sebagai \"`membuat sebuah "
+"_sistem berkas_pass:attributes[{blank}]`\") menulis informasi ke drive, "
+"membuat urutan dari ruang kosong di drive yang tidak diformat."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:39
 #, no-wrap
 msgid "Disk Drive with a File System"
-msgstr ""
+msgstr "Disk Drive dengan sebuah Sistem Berkas"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "Image of a formatted disk drive."
-msgstr ""
+msgstr "Citra dari sebuah disk drive yang terformat."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "partitions/formatted-drive.png"
-msgstr ""
+msgstr "partitions/formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:44
@@ -132,6 +158,9 @@ msgid ""
 "As xref:figu-partitions-formatted-drive[Disk Drive with a File System], "
 "implies, the order imposed by a file system involves some trade-offs:"
 msgstr ""
+"Seperti yang disiratkan oleh xref:figu-partitions-formatted-drive[Disk Drive "
+"dengan sebuah Sistem Berkas], urutan yang diberlakukan oleh sistem berkas "
+"melibatkan beberapa trade-off:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:46
@@ -139,6 +168,8 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"Sebagian kecil dari ruang driver yang tersedia digunakan untuk menyimpan "
+"data terkait sistem berkas dan dapat dianggap sebagai overhead."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:48
@@ -149,6 +180,11 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"Suatu sistem berkas memecah ruang tersisa ke segmen-segmen kecil yang "
+"berukuran konsisten. Untuk Linux, segmen-segmen ini dikenal sebagai _blok_ "
+"footnote:[Blok memang *benar* berukuran konsisten, tidak seperti ilustrasi "
+"kami. Perlu diingat juga, bahwa disk drive rata-rata memuat ribuan blok. "
+"Gambar adalah penyederhanaan untuk tujuan diskusi ini.]."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:50
@@ -163,24 +199,34 @@ msgid ""
 "systems such as Microsoft Windows), making data interchange between "
 "different file systems easy."
 msgstr ""
+"Perhatikan bahwa tidak ada sistem berkas universal yang tunggal. Seperti "
+"ditunjukkan oleh xref:figu-partitions-different-file-system[Disk Drive "
+"dengan Sistem Berkas yang Berbeda], sebuah disk drive mungkin memiliki satu "
+"dari banyak sistem berkas berbeda yang ditulis padanya. Sistem berkas yang "
+"berbeda cenderung tidak kompatibel; yaitu, suatu sistem operasi yang "
+"mendukung sebuah sistem berkas (atau beberapa tipe sistem berkas yang "
+"berhubungan) mungkin tidak mendukung yang lain. Namun, {PRODUCT} mendukung "
+"variasi luas dari sistem berkas (termasuk banyak yang biasanya dipakai oleh "
+"sistem operasi lain seperti Microsoft Windows), membuat pertukaran data "
+"antara sistem berkas mudah."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:52
 #, no-wrap
 msgid "Disk Drive with a Different File System"
-msgstr ""
+msgstr "Disk Drive dengan suatu Sistem Berkas yang Berbeda"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "Image of a disk drive with a different file system."
-msgstr ""
+msgstr "Citra dari suatu disk drive dengan sebuah sistem berkas yang berbeda."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "partitions/other-formatted-drive.png"
-msgstr ""
+msgstr "partitions/other-formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:57
@@ -189,24 +235,28 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"Menulis suatu sistem berkas ke disk hanyalah langkah pertama. Tujuan dari "
+"proses ini adalah untuk benar-benar *menyimpan* dan *mengambil* data. Gambar "
+"di bawah menunjukkan suatu disk drive setelah sebagian data telah ditulis ke "
+"sana:"
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:59
 #, no-wrap
 msgid "Disk Drive with Data Written to It"
-msgstr ""
+msgstr "Disk Drive dengan Data Telah Ditulis ke Sana"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "Image of a disk drive with data written to it."
-msgstr ""
+msgstr "Image dari suatu disk drive dengan data ditulis ke sana."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "partitions/used-formatted-drive.png"
-msgstr ""
+msgstr "partitions/used-formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:64
@@ -221,6 +271,16 @@ msgid ""
 "_fragmentation_. Fragmentation can play a part when attempting to resize an "
 "existing partition."
 msgstr ""
+"Seperti ditunjukkan xref:figu-partitions-drive-with-data[Disk Drive dengan "
+"Data Ditulis ke Sana], sebagian dari blok yang sebelumnya kosong kini "
+"menyimpan data. Namun, hanya dengan melihat gambar ini, kita tidak bisa "
+"menentukan secara eksak berapa banyak berkas yang berada pada drive ini. "
+"Mungkin hanya ada satu berkas atau banyak. karena semua berkas memakai "
+"paling tidak satu blok dan beberapa berkas memakai beberapa blok. Hal "
+"penting lain untuk dicatat adalah bahwa blok-blok yang dipakai tidak harus "
+"membentuk wilayah yang berkesinambungan; blok terpakai dan tidak terpakai "
+"bisa berselang-seling. Ini dikenal sebagai _fragmentasi_. Fragmentasi bisa "
+"mengambil peran saat mencoba mengubah ukuran partisi yang sudah ada."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:66
@@ -231,12 +291,18 @@ msgid ""
 "additional capacity drove a fundamental change in the way disk drives were "
 "used."
 msgstr ""
+"Seperti dengan kebanyakan teknolog terkait komputer, disk drive berubah "
+"dengan berjalannya waktu setelah diperkenalkan. Secara khusus, mereka "
+"menjadi semakin besar. Tidak lebih besar dalam ukuran fisik, tapi lebih "
+"besar dalam kapasitas mereka untuk menyimpan informasi. Dan kapasitas "
+"tambahan ini mendorong perubahan yang mendasar dalam carai disk drive "
+"dipakai."
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:68
 #, no-wrap
 msgid "Partitions: Turning One Drive Into Many"
-msgstr ""
+msgstr "Partisi: Membuat Satu Drive Menjadi Banyak"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:71
@@ -245,6 +311,9 @@ msgid ""
 "as if it was a separate disk. This is done through the addition of a "
 "_partition table_."
 msgstr ""
+"Disk drive dapat dibagi menjadi _partisi_. Setiap partisi dapat diakses "
+"seolah itu disk terpisah. Ini dilakukan melalui penambahan sebuah _tabel "
+"partisi_."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:73
@@ -252,21 +321,23 @@ msgid ""
 "There are several reasons for allocating disk space into separate disk "
 "partitions, for example:"
 msgstr ""
+"Ada beberapa alasan untuk mengalokasikan ruang disk ke dalam partisi-partisi "
+"disk yang terpisah, misalnya:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:75
 msgid "Logical separation of the operating system data from the user data"
-msgstr ""
+msgstr "Pemisahan logis data sistem operasi dari data pengguna"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:77
 msgid "Ability to use different file systems"
-msgstr ""
+msgstr "Kemampuan memakai sistem berkas yang berbeda"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:79
 msgid "Ability to run multiple operating systems on one machine"
-msgstr ""
+msgstr "Kemampuan menjalankan beberapa sistem operasi pada satu mesin"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:81
@@ -283,6 +354,16 @@ msgid ""
 "xref:sect-disk-partitioning-guid-partition-table[GUID Partition Table "
 "(GPT)]."
 msgstr ""
+"Saat ini ada dua standar tata letak pemartisian bagi hard disk fisik: Master "
+"Boot Record (*MBR*) dan GUID Partition Table (*GPT*). *MBR* adalah sebuah "
+"metoda yang lebih tua untuk pemartisian disk yang dipakai dengan komputer "
+"berbasis BIOS. *GPT* adalah tata letak pemartisian yang lebih baru yang "
+"merupakan bagian dari Unified Extensible Firmware Interface (*UEFI*). Bagian "
+"ini dan xref:sect-disk-partitions-extended[Partisi Di Dalam Partisi - "
+"Ringkasan dari Partisi Extended] utamanya menguraikan skema pemartisian disk "
+"_Master Boot Record_ (*MBR*). Untuk informasi tentang tata letak pemartisian "
+"_GUID Partition Table_ (*GPT*), lihat xref:sect-disk-partitioning-guid-"
+"partition-table[GUID Partition Table (GPT)]."
 
 #. type: delimited block =
 #: ./pages/appendixes/Disk_Partitions.adoc:86
@@ -293,24 +374,30 @@ msgid ""
 "any file system or user data. But for clarity, they are separate in our "
 "diagrams."
 msgstr ""
+"Sementara diagram dalam bab ini menunjukkan tabel partisi sebagai yang "
+"terpisah dari disk drive sebenarnya, ini tidak sepenuhnya akurat. Dalam "
+"realita, tabel partisi disimpan di bagian disk paling awal, sebelum sebarang "
+"sistem berkas atau data pengguna. Tapi untuk kejelasan, mereka terpisah "
+"dalam diagram kita."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:90
 #, no-wrap
 msgid "Disk Drive with Partition Table"
-msgstr ""
+msgstr "Disk Drive dengan Tabel Partisi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "Image of an unused disk drive with a partition table."
 msgstr ""
+"Citra dari suatu disk drive yang belum terpakai dengan sebuah tabel partisi."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:92
 #, no-wrap
 msgid "partitions/unused-partitioned-drive.png"
-msgstr ""
+msgstr "partitions/unused-partitioned-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:95
@@ -329,6 +416,7 @@ msgid ""
 "Each partition table entry contains several important characteristics of the "
 "partition:"
 msgstr ""
+"Setiap tabel partisi memuat beberapa karakteristik penting dari partisi:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:99
@@ -375,19 +463,19 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:111
 #, no-wrap
 msgid "Disk Drive With Single Partition"
-msgstr ""
+msgstr "Disk Drive Dengan Partisi Tunggal"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "Image of a disk drive with a single partition."
-msgstr ""
+msgstr "Citra dari suatu disk drive dengan partisi tunggal."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:113
 #, no-wrap
 msgid "partitions/dos-single-partition.png"
-msgstr ""
+msgstr "partitions/dos-single-partition.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:116
@@ -430,12 +518,33 @@ msgid ""
 "|GNU HURD|63|DOS secondary|f2\n"
 "|Novell Netware 286|64|BBT|ff\n"
 msgstr ""
+"|Tipe Partisi|Nilai|Tipe Partisi|Nilai\n"
+"|Kosong|00|Novell Netware 386|65\n"
+"|DOS 12-bit FAT|01|PIC/IX|75\n"
+"|XENIX root|02|MINIX lama|80\n"
+"|XENIX usr|03|Linux/MINUX|81\n"
+"|DOS 16-bit <=32M|04|Linux swap|82\n"
+"|Extended|05|Linux native|83\n"
+"|DOS 16-bit >=32|06|Linux extended|85\n"
+"|OS/2 HPFS|07|Amoeba|93\n"
+"|AIX|08|Amoeba BBT|94\n"
+"|AIX bootable|09|BSD/386|a5\n"
+"|OS/2 Boot Manager|0a|OpenBSD|a6\n"
+"|Win95 FAT32|0b|NEXTSTEP|a7\n"
+"|Win95 FAT32 (LBA)|0c|BSDI fs|b7\n"
+"|Win95 FAT16 (LBA)|0e|BSDI swap|b8\n"
+"|Win95 Extended (LBA)|0f|Syrinx|c7\n"
+"|Venix 80286|40|CP/M|db\n"
+"|Novell|51|DOS access|e1\n"
+"|PReP Boot|41|DOS R/O|e3\n"
+"|GNU HURD|63|DOS sekunder|f2\n"
+"|Novell Netware 286|64|BBT|ff\n"
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:146
 #, no-wrap
 msgid "Partitions Within Partitions - An Overview of Extended Partitions"
-msgstr ""
+msgstr "Partisi Dalam Partisi - Ringkasan dari Partisi Extended"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:149
@@ -1021,7 +1130,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:331
 #, no-wrap
 msgid "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_xx_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:332
@@ -1034,7 +1143,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:333
 #, no-wrap
 msgid "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_y_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:334
@@ -1047,7 +1156,7 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:335
 #, no-wrap
 msgid "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`pass:attributes[{blank}]_N_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:336
