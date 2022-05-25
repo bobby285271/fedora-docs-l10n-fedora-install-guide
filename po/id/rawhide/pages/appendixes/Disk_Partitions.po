@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Anonymous <noreply@weblate.org>, 2020.
-# Andika Triwidada <andika@gmail.com>, 2020, 2021.
+# Andika Triwidada <andika@gmail.com>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-01 21:04+0000\n"
-"PO-Revision-Date: 2021-11-01 05:05+0000\n"
+"PO-Revision-Date: 2022-05-25 07:18+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/rawhidepagesappendixesdisk_partitions/"
+"fedora-docs-l10n-fedora-install-guide/rawhidepagesappendixesdisk_partitions/"
 "id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: pages/appendixes/Disk_Partitions.adoc:6
@@ -409,6 +409,12 @@ msgid ""
 "information necessary to define a single partition, meaning that the "
 "partition table can define no more than four partitions."
 msgstr ""
+"Seperti yang ditunjukkan oleh xref:figu-partitions-partition-table[Disk "
+"Drive dengan Tabel Partisi], tabel partisi dibagi menjadi empat bagian atau "
+"empat partisi _primer_. Partisi primer adalah partisi pada hard drive yang "
+"hanya dapat berisi satu drive logis (atau bagian). Setiap bagian dapat "
+"menyimpan informasi yang diperlukan untuk menentukan satu partisi, yang "
+"berarti bahwa tabel partisi dapat menentukan tidak lebih dari empat partisi."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:97
@@ -421,17 +427,17 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:99
 msgid "The points on the disk where the partition starts and ends"
-msgstr ""
+msgstr "Titik-titik pada disk tempat partisi dimulai dan berakhir"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:101
 msgid "Whether the partition is \"`active`\""
-msgstr ""
+msgstr "Apakah partisi \"`aktif`\""
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:103
 msgid "The partition's type"
-msgstr ""
+msgstr "Tipe partisi"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:105
@@ -441,6 +447,9 @@ msgid ""
 "loaders. In other words, the operating system in the partition that is "
 "marked \"`active`\" is booted."
 msgstr ""
+"Titik awal dan akhir menentukan ukuran dan lokasi partisi pada disk. Bendera "
+"\"`aktif`\" digunakan oleh beberapa boot loader sistem operasi. Dengan kata "
+"lain, sistem operasi di partisi yang ditandai \"`aktif`\" di-boot."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:107
@@ -451,6 +460,11 @@ msgid ""
 "system, to indicate that the partition contains a bootable operating system, "
 "or some combination of the three."
 msgstr ""
+"Jenisnya adalah angka yang mengidentifikasi penggunaan yang diantisipasi "
+"partisi. Beberapa sistem operasi menggunakan jenis partisi untuk menunjukkan "
+"jenis sistem berkas tertentu, untuk menandai partisi sebagai terkait dengan "
+"sistem operasi tertentu, untuk menunjukkan bahwa partisi berisi sistem "
+"operasi yang dapat di-boot, atau beberapa kombinasi dari ketiganya."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:109
@@ -458,6 +472,8 @@ msgid ""
 "See xref:figu-partitions-single-part[Disk Drive With Single Partition] for "
 "an example of a disk drive with single partition."
 msgstr ""
+"Lihat xref:figu-partitions-single-part[Disk Drive Dengan Partisi Tunggal] "
+"untuk contoh disk drive dengan partisi tunggal."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:111
@@ -485,12 +501,16 @@ msgid ""
 "table below shows a list of some of the commonly used partition types and "
 "hexadecimal numbers used to represent them."
 msgstr ""
+"Partisi tunggal dalam contoh ini diberi label sebagai `DOS`. Label ini "
+"menunjukkan *jenis partisi*, dengan `DOS` menjadi salah satu yang paling "
+"umum. Tabel di bawah ini menunjukkan daftar beberapa jenis partisi yang umum "
+"digunakan dan angka heksadesimal yang digunakan untuk mewakilinya."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:118
 #, no-wrap
 msgid "Partition Types"
-msgstr ""
+msgstr "Tipe Partisi"
 
 #. type: Table
 #: pages/appendixes/Disk_Partitions.adoc:143
@@ -553,6 +573,9 @@ msgid ""
 "_extended partitions_ to create up additional partitions. You do this by "
 "setting the type of a partition to \"`Extended`\"."
 msgstr ""
+"Jika empat partisi tidak mencukupi untuk kebutuhan Anda, Anda dapat "
+"menggunakan _extended partitions_ untuk membuat partisi tambahan. Anda "
+"melakukan ini dengan mengatur jenis partisi ke \"`Extended`\"."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -565,24 +588,31 @@ msgid ""
 "partition and one extended partition containing two logical partitions "
 "(along with some unpartitioned free space)."
 msgstr ""
+"Partisi extended seperti disk drive dalam dirinya sendiri - ia memiliki "
+"tabel partisi sendiri yang menunjuk ke satu atau lebih partisi (sekarang "
+"disebut _partisi logis_, sebagai lawan dari empat _partisi primer_) yang "
+"terkandung sepenuhnya dalam partisi extended itu sendiri. xref:figu-"
+"partitions-extended[Disk Drive dengan Partisi Extended], menunjukkan disk "
+"drive dengan satu partisi primer dan satu partisi extended yang berisi dua "
+"partisi logis (bersama dengan beberapa ruang kosong yang tidak dipartisi)."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:153
 #, no-wrap
 msgid "Disk Drive With Extended Partition"
-msgstr ""
+msgstr "Disk Drive Dengan Partisi Extended"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "Image of a disk drive with an extended partition."
-msgstr ""
+msgstr "Gambar disk drive dengan partisi extended."
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:155
 #, no-wrap
 msgid "partitions/extended-partitions.png"
-msgstr ""
+msgstr "partitions/extended-partitions.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:158
@@ -593,12 +623,17 @@ msgid ""
 "to the way in which partitions are accessed in Linux, no more than 12 "
 "logical partitions should be defined on a single disk drive."
 msgstr ""
+"Seperti yang tersirat dalam gambar ini, ada perbedaan antara partisi primer "
+"dan logis - hanya ada empat partisi utama, tetapi tidak ada batasan tetap "
+"untuk jumlah partisi logis yang dapat ada. Namun, karena cara di mana "
+"partisi diakses di Linux, tidak lebih dari 12 partisi logis harus "
+"didefinisikan pada satu disk drive."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:160
 #, no-wrap
 msgid "GUID Partition Table (GPT)"
-msgstr ""
+msgstr "GUID Partition Table (GPT)"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:163
@@ -613,12 +648,24 @@ msgid ""
 "primary partitions. This number could be extended by allocating more space "
 "to the partition table."
 msgstr ""
+"Guid Partition Table (*GPT*) adalah skema partisi yang lebih baru "
+"berdasarkan penggunaan Globally Unique Identifiers (*GUID*). *GPT* "
+"dikembangkan untuk mengatasi keterbatasan tabel partisi *MBR*, terutama "
+"dengan terbatasnya ruang penyimpanan maksimum disk yang dapat dialamatkan. "
+"Tidak seperti *MBR*, yang tidak bisa mengalamati ruang penyimpanan lebih "
+"dari 2,2 terabyte, *GPT* dapat digunakan dengan hard disk yang lebih besar "
+"dari ini; ukuran disk maksimum yang dapat dialamatkan adalah 2,2 zettabyte. "
+"Selain itu, *GPT* secara baku mendukung pembuatan hingga 128 partisi utama. "
+"Cacah ini dapat diperluas dengan mengalokasikan lebih banyak ruang ke tabel "
+"partisi."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:165
 #, no-wrap
 msgid "*GPT* disks use logical block addressing (LBA) and the partition layout is as follows:\n"
 msgstr ""
+"Disk *GPT* menggunakan pengalamatan blok logis (LBA) dan tata letak partisi "
+"adalah sebagai berikut:\n"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:167
@@ -626,6 +673,8 @@ msgid ""
 "To preserve backward compatibility with MBR disks, the first sector (*LBA* "
 "0) of *GPT* is reserved for *MBR* data and it is called \"`protective MBR`\"."
 msgstr ""
+"Untuk menjaga kompatibilitas ke belakang dengan disk MBR, sektor pertama "
+"(*LBA* 0) *GPT* dicadangkan untuk data *MBR* dan disebut \"`MBR protektif`\"."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -636,6 +685,10 @@ msgid ""
 "checksums of itself and the primary partition table. It also specifies the "
 "number of partition entries of the table."
 msgstr ""
+"_Header *GPT* primer_ dimulai pada blok logis kedua (*LBA* 1) dari "
+"perangkat. Header berisi GUID disk, lokasi tabel partisi primer, lokasi "
+"header GPT sekunder, dan checksum CRC32 itu sendiri dan tabel partisi "
+"primer. Ini juga menentukan cacah entri partisi tabel."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:171
@@ -644,6 +697,8 @@ msgid ""
 "with an entry size 128 bytes, its partition type GUID and unique partition "
 "GUID."
 msgstr ""
+"_Tabel *GPT* primer_ mencakup, secara baku, 128 entri partisi, masing-masing "
+"dengan ukuran entri 128 byte, GUID jenis partisinya, dan GUID partisi unik."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:173
@@ -652,6 +707,9 @@ msgid ""
 "used mainly as a backup table for recovery in case the primary partition "
 "table is corrupted."
 msgstr ""
+"_Tabel *GPT* sekunder_ identik dengan tabel *GPT* primer. Ini digunakan "
+"terutama sebagai tabel cadangan untuk pemulihan jika tabel partisi primer "
+"rusak."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:175
@@ -663,6 +721,11 @@ msgid ""
 "itself and the secondary partition table, and the number of possible "
 "partition entries."
 msgstr ""
+"_Header *GPT* sekunder_ terletak di sektor logis terakhir dari disk dan "
+"dapat digunakan untuk memulihkan informasi *GPT* jika header primer rusak. "
+"Ini berisi GUID disk, lokasi tabel partisi sekunder dan header *GPT* primer, "
+"checksum CRC32 dari dirinya sendiri dan tabel partisi sekunder, dan cacah "
+"entri partisi yang mungkin."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:180
@@ -672,12 +735,16 @@ msgid ""
 "includes disks initialized by [application]*Anaconda*. If the disk already "
 "contains a BIOS boot partition, it can be reused."
 msgstr ""
+"Harus ada partisi boot BIOS agar boot loader berhasil dipasang ke disk yang "
+"berisi GPT (GUID Partition Table). Ini termasuk disk yang diinisialisasi "
+"oleh [application]*Anaconda*. Jika disk sudah berisi partisi boot BIOS, itu "
+"dapat digunakan kembali."
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:184
 #, no-wrap
 msgid "Strategies for Disk Repartitioning"
-msgstr ""
+msgstr "Strategi untuk Repartisi Disk"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:187
@@ -685,21 +752,23 @@ msgid ""
 "There are several different ways that a disk can be repartitioned. This "
 "section discusses the following possible approaches:"
 msgstr ""
+"Ada beberapa cara yang berbeda bahwa disk dapat dipartisi ulang. Bagian ini "
+"membahas kemungkinan pendekatan berikut:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:189
 msgid "Unpartitioned free space is available"
-msgstr ""
+msgstr "Tersedia ruang kosong yang tidak dipartisi"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:191
 msgid "An unused partition is available"
-msgstr ""
+msgstr "Tersedia partisi yang tidak digunakan"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:193
 msgid "Free space in an actively used partition is available"
-msgstr ""
+msgstr "Tersedia ruang kosong dalam partisi yang aktif digunakan"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:195
@@ -709,6 +778,10 @@ msgid ""
 "disk repartitioning step-by-step. Such detailed information are beyond the "
 "scope of this document."
 msgstr ""
+"Perhatikan bahwa bagian ini membahas konsep-konsep yang disebutkan di atas "
+"hanya secara teoritis dan tidak termasuk prosedur yang menunjukkan bagaimana "
+"melakukan partisi ulang disk langkah demi langkah. Informasi terperinci "
+"tersebut berada di luar cakupan dokumen ini."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:200
@@ -717,12 +790,15 @@ msgid ""
 "of clarity and do not reflect the exact partition layout that you encounter "
 "when actually installing {PRODUCT}."
 msgstr ""
+"Perlu diingat bahwa ilustrasi berikut disederhanakan untuk kepentingan "
+"kejelasan dan tidak mencerminkan tata letak partisi yang tepat yang Anda "
+"temui ketika benar-benar memasang {PRODUCT}."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:204
 #, no-wrap
 msgid "Using Unpartitioned Free Space"
-msgstr ""
+msgstr "Menggunakan Ruang Kosong Yang Tidak Dipartisi"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:207
@@ -732,24 +808,28 @@ msgid ""
 "partition. xref:figu-partitions-unused-space[Disk Drive with Unpartitioned "
 "Free Space], shows what this might look like."
 msgstr ""
+"Dalam situasi ini, partisi yang sudah ditentukan tidak menjangkau seluruh "
+"hard disk, meninggalkan ruang yang tidak terisi yang bukan bagian dari "
+"partisi yang ditentukan. xref:figu-partitions-unused-space[Disk Drive dengan "
+"Ruang Kosong Tak Terpartisi], menunjukkan seperti apa bentuknya."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:209
 #, no-wrap
 msgid "Disk Drive with Unpartitioned Free Space"
-msgstr ""
+msgstr "Disk Drive dengan Ruang Kosong Yang Tidak Dipartisi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "Image of a disk drive with unpartitioned free space"
-msgstr ""
+msgstr "Gambar disk drive dengan ruang kosong yang tidak dipartisi"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:211
 #, no-wrap
 msgid "partitions/unpart-space.png"
-msgstr ""
+msgstr "partitions/unpart-space.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:214
@@ -757,6 +837,9 @@ msgid ""
 "In the above example, `1` represents an undefined partition with unallocated "
 "space and `2` represents a defined partition with allocated space."
 msgstr ""
+"Dalam contoh di atas, `1` mewakili partisi yang tidak terdefinisi dengan "
+"ruang yang tidak teralokasikan dan `2` mewakili partisi yang ditentukan "
+"dengan ruang yang dialokasikan."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:216
@@ -764,6 +847,9 @@ msgid ""
 "An unused hard disk also falls into this category. The only difference is "
 "that *all* the space is not part of any defined partition."
 msgstr ""
+"Hard disk yang tidak terpakai juga termasuk dalam kategori ini. Satu-satunya "
+"perbedaan adalah bahwa *semua* ruang bukan bagian dari partisi yang "
+"ditentukan."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:218
@@ -775,12 +861,19 @@ msgid ""
 "a disk drive (see xref:sect-disk-partitions-active-partition[Using Free "
 "Space from an Active Partition])."
 msgstr ""
+"Bagaimanapun, Anda dapat membuat partisi yang diperlukan dari ruang yang "
+"tidak digunakan. Sayangnya, skenario ini, meskipun sangat sederhana, sangat "
+"tidak mungkin (kecuali jika Anda baru saja membeli disk baru hanya untuk "
+"{PRODUCT}). Sebagian besar sistem operasi ter-pra-instalasi dikonfigurasi "
+"untuk mengambil semua ruang yang tersedia pada disk drive (lihat xref:sect-"
+"disk-partitions-active-partition[Memakai Ruang Bebas dari sebuah Partisi "
+"Aktif])."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:220
 #, no-wrap
 msgid "Using Space from an Unused Partition"
-msgstr ""
+msgstr "Menggunakan Ruang dari Partisi yang Tidak Digunakan"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:223
@@ -789,24 +882,27 @@ msgid ""
 "longer. xref:figu-partitions-unused-partition[Disk Drive with an Unused "
 "Partition], illustrates such a situation."
 msgstr ""
+"Dalam hal ini, mungkin Anda memiliki satu atau lebih partisi yang tidak Anda "
+"gunakan lagi. xref:figu-partitions-unused-partition[Disk Drive sebuah "
+"Partisi Tak Terpakai], menggambarkan situasi seperti itu."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:225
 #, no-wrap
 msgid "Disk Drive with an Unused Partition"
-msgstr ""
+msgstr "Disk Drive dengan Partisi yang Tidak Digunakan"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "Image of a disk drive with an unused partition"
-msgstr ""
+msgstr "Gambar disk drive dengan partisi yang tidak digunakan"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:227
 #, no-wrap
 msgid "partitions/unused-partition.png"
-msgstr ""
+msgstr "partitions/unused-partition.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:230
@@ -814,6 +910,8 @@ msgid ""
 "In the above example, `1` represents an unused partition and `2` represents "
 "reallocating an unused partition for Linux."
 msgstr ""
+"Dalam contoh di atas, `1` mewakili partisi yang tidak digunakan dan `2` "
+"mewakili realokasi partisi yang tidak digunakan untuk Linux."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:232
@@ -823,12 +921,17 @@ msgid ""
 "partition(s) in its place. You can delete the unused partition and manually "
 "create new partitions during the installation process."
 msgstr ""
+"Dalam situasi ini, Anda dapat menggunakan ruang yang dialokasikan ke partisi "
+"yang tidak digunakan. Terlebih dahulu Anda harus menghapus partisi dan "
+"kemudian membuat partisi Linux yang sesuai menggantikannya. Anda dapat "
+"menghapus partisi yang tidak digunakan dan membuat partisi baru secara "
+"manual selama proses instalasi."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:234
 #, no-wrap
 msgid "Using Free Space from an Active Partition"
-msgstr ""
+msgstr "Menggunakan Ruang Kosong dari Partisi Aktif"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:237
@@ -839,18 +942,25 @@ msgid ""
 "a computer with pre-installed software, the hard disk most likely has one "
 "massive partition holding the operating system and data."
 msgstr ""
+"Ini adalah situasi yang paling umum. Sayangnya, ini juga yang paling sulit "
+"untuk ditangani. Masalah utamanya adalah, bahkan jika Anda memiliki cukup "
+"ruang kosong, saat ini dialokasikan ke partisi yang sudah digunakan. Jika "
+"Anda membeli komputer dengan perangkat lunak ter-pra-instalasi, hard disk "
+"kemungkinan besar memiliki satu partisi besar yang memegang sistem operasi "
+"dan data."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:239
 msgid ""
 "Aside from adding a new hard drive to your system, you have two choices:"
 msgstr ""
+"Selain menambahkan hard drive baru ke sistem Anda, Anda memiliki dua pilihan:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:240
 #, no-wrap
 msgid "*Destructive Repartitioning*"
-msgstr ""
+msgstr "*Repartisi Destruktif*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:241
@@ -862,6 +972,12 @@ msgid ""
 "backup software), and try to read data from the backup *before* deleting the "
 "partition."
 msgstr ""
+"Dalam hal ini, partisi besar tunggal dihapus dan beberapa yang lebih kecil "
+"dibuat sebagai gantinya. Setiap data yang disimpan di partisi asli "
+"dihancurkan. Ini berarti bahwa membuat cadangan lengkap diperlukan. Sangat "
+"disarankan untuk membuat dua cadangan, menggunakan verifikasi (jika tersedia "
+"di perangkat lunak cadangan Anda), dan mencoba membaca data dari cadangan "
+"*sebelum* menghapus partisi."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:246
@@ -873,6 +989,12 @@ msgid ""
 "check whether this applies to your system is *before* you destroy your "
 "original partition and its operating system installation."
 msgstr ""
+"Jika sistem operasi dipasang pada partisi itu, itu harus dipasang ulang jika "
+"Anda ingin menggunakan sistem itu juga. Ketahuilah bahwa beberapa komputer "
+"yang dijual dengan sistem operasi ter-pra-instalasi mungkin tidak "
+"menyertakan media instalasi untuk memasang ulang sistem operasi asli. Anda "
+"harus memeriksa apakah ini berlaku untuk sistem Anda *sebelum* Anda "
+"menghancurkan partisi asli Anda dan instalasi sistem operasinya."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:250
@@ -882,24 +1004,28 @@ msgid ""
 "figu-partitions-destructive-repartitioning[Disk Drive Being Destructively "
 "Repartitioned] shows this being done."
 msgstr ""
+"Setelah membuat partisi yang lebih kecil untuk sistem operasi yang ada, Anda "
+"dapat memasang ulang perangkat lunak, memulihkan data Anda, dan memulai "
+"instalasi. xref:figu-partitions-destructive-repartitioning[Disk Drive Sedang "
+"Dipartisi Ulang Secara Desktruktif] menunjukkan hal ini dilakukan."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:252
 #, no-wrap
 msgid "Disk Drive Being Destructively Repartitioned"
-msgstr ""
+msgstr "Disk Drive Sedang Dipartisi Ulang secara Destruktif"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "Image of a disk drive being destructively repartitioned"
-msgstr ""
+msgstr "Gambar disk drive yang sedang dipartisi ulang secara destruktif"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:254
 #, no-wrap
 msgid "partitions/dstrct-reprt.png"
-msgstr ""
+msgstr "partitions/dstrct-reprt.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:257
@@ -907,18 +1033,18 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:302
 #: pages/appendixes/Disk_Partitions.adoc:316
 msgid "In the above example, `1` represents before and `2` represents after."
-msgstr ""
+msgstr "Dalam contoh di atas, `1` mewakili sebelum dan `2` mewakili setelah."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:262
 msgid "Any data previously present in the original partition is lost."
-msgstr ""
+msgstr "Data apa pun yang sebelumnya ada di partisi asli hilang."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:265
 #, no-wrap
 msgid "*Non-Destructive Repartitioning*"
-msgstr ""
+msgstr "*Repartisi Non-Destruktif*"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:266
@@ -928,6 +1054,10 @@ msgid ""
 "This method is usually reliable, but can be very time-consuming on large "
 "drives."
 msgstr ""
+"Dengan repartisi non-destruktif Anda mengeksekusi program yang membuat "
+"partisi besar lebih kecil tanpa kehilangan salah satu berkas yang disimpan "
+"dalam partisi itu. Metode ini biasanya dapat diandalkan, tetapi bisa sangat "
+"memakan waktu pada drive besar."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:268
@@ -935,34 +1065,36 @@ msgid ""
 "While the process of non-destructive repartitioning is rather "
 "straightforward, there are three steps involved:"
 msgstr ""
+"Sementara proses repartisi non-destruktif agak mudah, ada tiga langkah yang "
+"terlibat:"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:270
 msgid "Compress and backup existing data"
-msgstr ""
+msgstr "Mengompres dan mencadangkan data yang ada"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:272
 msgid "Resize the existing partition"
-msgstr ""
+msgstr "Mengubah ukuran partisi yang ada"
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:274
 #: pages/appendixes/Disk_Partitions.adoc:306
 #, no-wrap
 msgid "Create new partition(s)"
-msgstr ""
+msgstr "Membuat partisi baru"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:276
 msgid "Each step is described further in more detail."
-msgstr ""
+msgstr "Setiap langkah dijelaskan lebih lanjut secara lebih rinci."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:278
 #, no-wrap
 msgid "Compress Existing Data"
-msgstr ""
+msgstr "Mengompresi Data yang Ada"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:281
@@ -972,24 +1104,28 @@ msgid ""
 "such that it maximizes the available free space at the \"`end`\" of the "
 "partition."
 msgstr ""
+"Seperti yang ditunjukkan gambar berikut, langkah pertama adalah mengompres "
+"data di partisi yang ada. Alasan melakukan ini adalah untuk mengatur ulang "
+"data sedemikian rupa sehingga memaksimalkan ruang kosong yang tersedia di \""
+"`akhir`\" partisi."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:283
 #, no-wrap
 msgid "Disk Drive Being Compressed"
-msgstr ""
+msgstr "Disk Drive Sedang Dikompresi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "Image of a disk drive being compressed"
-msgstr ""
+msgstr "Gambar disk drive yang sedang dikompresi"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:285
 #, no-wrap
 msgid "partitions/compression.png"
-msgstr ""
+msgstr "partitions/compression.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:290
@@ -1000,12 +1136,17 @@ msgid ""
 "severely restricts the size of your new partition(s)), you may be forced to "
 "destructively repartition your disk."
 msgstr ""
+"Langkah ini sangat penting. Tanpa itu, lokasi data dapat mencegah partisi "
+"diubah ukurannya sejauh yang diinginkan. Perhatikan juga bahwa, karena satu "
+"dan lain alasan, sebagian data tidak dapat dipindahkan. Jika ini masalahnya ("
+"dan sangat membatasi ukuran partisi baru Anda), Anda mungkin dipaksa untuk "
+"secara merusak repartisi disk Anda."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:292
 #, no-wrap
 msgid "Resize the Existing Partition"
-msgstr ""
+msgstr "Mengubah Ukuran Partisi yang Ada"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:295
@@ -1016,24 +1157,30 @@ msgid ""
 "freed space is used to create an unformatted partition of the same type as "
 "the original partition."
 msgstr ""
+"xref:figu-partitions-resize-existing[Disk Drive dengan Partisi yang Diubah "
+"Ukuran] menunjukkan proses pengubahan ukuran yang sebenarnya. Sementara "
+"hasil sebenarnya dari operasi pengubahan ukuran bervariasi tergantung pada "
+"perangkat lunak yang digunakan, dalam banyak kasus ruang yang baru "
+"dibebaskan dipakai untuk membuat partisi yang tidak diformat dengan jenis "
+"yang sama dengan partisi asli."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:297
 #, no-wrap
 msgid "Disk Drive with Partition Resized"
-msgstr ""
+msgstr "Disk Drive dengan Partisi Diubah Ukurannya"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "Image of a disk drive with a resized partition"
-msgstr ""
+msgstr "Gambar disk drive dengan partisi yang diubah ukurannya"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:299
 #, no-wrap
 msgid "partitions/part-resize.png"
-msgstr ""
+msgstr "partitions/part-resize.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:304
@@ -1043,6 +1190,11 @@ msgid ""
 "case illustrated here, it would be best to delete the new DOS partition and "
 "create the appropriate Linux partition(s)."
 msgstr ""
+"Penting untuk memahami apa yang dilakukan perangkat lunak pengubah ukuran "
+"yang Anda gunakan dengan ruang yang baru dibebaskan, sehingga Anda dapat "
+"mengambil langkah-langkah yang tepat. Dalam kasus yang diilustrasikan di "
+"sini, akan lebih baik untuk menghapus partisi DOS baru dan membuat partisi "
+"Linux yang sesuai."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:309
@@ -1053,30 +1205,36 @@ msgid ""
 "resizing process. xref:figu-partitions-final-configuration[Disk Drive with "
 "Final Partition Configuration], shows this being done."
 msgstr ""
+"Seperti tersirat dalam langkah sebelumnya, mungkin perlu atau tidak perlu "
+"untuk membuat partisi baru. Namun, kecuali perangkat lunak pengubah ukuran "
+"Anda sadar Linux, kemungkinan Anda harus menghapus partisi yang dibuat "
+"selama proses pengubahan ukuran. xref:figu-partitions-final-configuration["
+"Disk Drive dengan Konfirugasi Partisi Akhir], menunjukkan hal ini sedang "
+"dilakukan."
 
 #. type: Block title
 #: pages/appendixes/Disk_Partitions.adoc:311
 #, no-wrap
 msgid "Disk Drive with Final Partition Configuration"
-msgstr ""
+msgstr "Disk Drive dengan Konfigurasi Partisi Akhir"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "Image of a disk drive with final partition configuration"
-msgstr ""
+msgstr "Gambar disk drive dengan konfigurasi partisi akhir"
 
 #. type: Target for macro image
 #: pages/appendixes/Disk_Partitions.adoc:313
 #, no-wrap
 msgid "partitions/nondestruct-fin.png"
-msgstr ""
+msgstr "partitions/nondestruct-fin.png"
 
 #. type: Title ==
 #: pages/appendixes/Disk_Partitions.adoc:318
 #, no-wrap
 msgid "Partition Naming Schemes and Mount Points"
-msgstr ""
+msgstr "Skema Penamaan Partisi dan Titik Kait"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:321
@@ -1090,12 +1248,21 @@ msgid ""
 "This section describes the main principles of partition naming scheme and "
 "the way how partitions are accessed in {PRODUCT}."
 msgstr ""
+"Sumber kebingungan umum bagi pengguna yang tidak terbiasa dengan Linux "
+"adalah masalah bagaimana partisi digunakan dan diakses oleh sistem operasi "
+"Linux. Di DOS/Windows, ini relatif sederhana: Setiap partisi mendapat \"`"
+"huruf drive`\". Anda kemudian menggunakan huruf drive yang benar untuk "
+"merujuk ke berkas dan direktori pada partisi yang sesuai. Ini sama sekali "
+"berbeda dari bagaimana Linux berurusan dengan partisi dan, dalam hal ini, "
+"dengan penyimpanan disk secara umum. Bagian ini menjelaskan prinsip-prinsip "
+"utama skema penamaan partisi dan cara bagaimana partisi diakses dalam "
+"{PRODUCT}."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:323
 #, no-wrap
 msgid "Partition Naming Scheme"
-msgstr ""
+msgstr "Skema Penamaan Partisi"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:326
@@ -1103,17 +1270,19 @@ msgid ""
 "Linux uses a naming scheme that is file-based, with file names in the form "
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
+"Linux menggunakan skema penamaan yang berbasis berkas, dengan nama berkas "
+"dalam bentuk `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:328
 msgid "Device and partition names consist of the following:"
-msgstr ""
+msgstr "Nama perangkat dan partisi terdiri dari yang berikut:"
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:329
 #, no-wrap
 msgid "`/dev/`"
-msgstr ""
+msgstr "`/dev/`"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:330
@@ -1122,6 +1291,9 @@ msgid ""
 "partitions reside on hard disks, and hard disks are devices, the files "
 "representing all possible partitions reside in `/dev/`."
 msgstr ""
+"Ini adalah nama direktori di mana semua berkas perangkat berada. Karena "
+"partisi berada di hard disk, dan hard disk adalah perangkat, berkas yang "
+"mewakili semua partisi yang mungkin, berada di `/dev/`."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:331
@@ -1135,6 +1307,8 @@ msgid ""
 "The first two letters of the partition name indicate the type of device on "
 "which the partition resides, usually `sd`."
 msgstr ""
+"Dua huruf pertama dari nama partisi menunjukkan jenis perangkat di mana "
+"partisi berada, biasanya `sd`."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:333
@@ -1148,6 +1322,8 @@ msgid ""
 "This letter indicates which device the partition is on. For example, `/dev/"
 "sda` for the first hard disk, `/dev/sdb` for the second, and so on."
 msgstr ""
+"Huruf ini menunjukkan perangkat mana partisi berada. Misalnya, `/dev/sda` "
+"untuk hard disk pertama, `/dev/sdb` untuk yang kedua, dan seterusnya."
 
 #. type: Labeled list
 #: pages/appendixes/Disk_Partitions.adoc:335
@@ -1164,6 +1340,11 @@ msgid ""
 "the first hard disk, and `/dev/sdb6` is the second logical partition on the "
 "second hard disk."
 msgstr ""
+"Angka akhir menunjukkan partisi. Empat partisi pertama (primer atau extended)"
+" diberi nomor `1` hingga `4`. Partisi logis dimulai dari `5`. Jadi, "
+"misalnya, `/dev/sda3` adalah partisi primer atau extended ketiga pada hard "
+"disk pertama, dan `/dev/sdb6` adalah partisi logis kedua pada hard disk "
+"kedua."
 
 #. type: delimited block =
 #: pages/appendixes/Disk_Partitions.adoc:341
@@ -1174,12 +1355,17 @@ msgid ""
 "successfully access data on a partition dedicated to another operating "
 "system."
 msgstr ""
+"Bahkan jika sistem Anda dapat mengidentifikasi dan merujuk ke semua jenis "
+"partisi disk, itu mungkin tidak dapat *membaca* sistem berkas dan karenanya "
+"tidak bisa mengakses data yang tersimpan pada setiap jenis partisi. Namun, "
+"dalam banyak kasus, adalah mungkin untuk berhasil mengakses data pada "
+"partisi yang didedikasikan untuk sistem operasi lain."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:345
 #, no-wrap
 msgid "Disk Partitions and Mount Points"
-msgstr ""
+msgstr "Partisi Disk dan Titik Kait"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:348
@@ -1190,6 +1376,12 @@ msgid ""
 "makes its storage available starting at the specified directory (known as a "
 "_mount point_)."
 msgstr ""
+"Setiap partisi digunakan untuk membentuk bagian dari penyimpanan yang "
+"diperlukan untuk mendukung satu set berkas dan direktori. Ini dilakukan "
+"dengan mengaitkan partisi dengan direktori melalui proses yang dikenal "
+"sebagai _mounting_ (mengait). Mengait partisi membuat penyimpanannya "
+"tersedia mulai dari direktori yang ditentukan (dikenal sebagai _mount point_ "
+"atau titik kait)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:350
@@ -1199,6 +1391,10 @@ msgid ""
 "sda5`. So the file `/usr/share/doc/FAQ/txt/Linux-FAQ` would be stored on `/"
 "dev/sda5`, while the file `/etc/gdm/custom.conf` would not."
 msgstr ""
+"Misalnya, jika partisi `/dev/sda5` dikait pada `/usr/`, itu berarti bahwa "
+"semua berkas dan direktori di bawah `/usr/` secara fisik berada di `/dev/"
+"sda5`. Jadi berkas `/usr/share/doc/FAQ/txt/Linux-FAQ` akan disimpan di `/dev/"
+"sda5`, sedangkan berkas `/etc/gdm/custom.conf` tidak akan."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:352
@@ -1209,12 +1405,17 @@ msgid ""
 "`/usr/local/man/whatis` would then reside on `/dev/sda7` rather than `/dev/"
 "sda5`."
 msgstr ""
+"Melanjutkan contoh, mungkin juga bahwa satu atau lebih direktori di bawah `/"
+"usr/` akan menjadi titik kait untuk partisi lain. Misalnya, partisi ("
+"katakanlah, `/dev/sda7`) dapat dikait pada `/usr/local/`, yang berarti bahwa "
+"`/usr/local/man/whatis` kemudian akan berada di `/dev/sda7` bukan `/dev/"
+"sda5`."
 
 #. type: Title ===
 #: pages/appendixes/Disk_Partitions.adoc:354
 #, no-wrap
 msgid "How Many Partitions?"
-msgstr ""
+msgstr "Berapa Banyak Partisi?"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:357
@@ -1224,6 +1425,11 @@ msgid ""
 "by your new operating system. However, there is no one right answer to this "
 "question. It depends on your needs and requirements."
 msgstr ""
+"Pada titik ini dalam proses mempersiapkan untuk memasang {PRODUCT}, Anda "
+"harus memberikan beberapa pertimbangan untuk cacah dan ukuran partisi yang "
+"akan digunakan oleh sistem operasi baru Anda. Namun, tidak ada jawaban yang "
+"benar untuk pertanyaan ini. Itu tergantung pada kebutuhan dan persyaratan "
+"Anda."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:359
@@ -1236,6 +1442,12 @@ msgid ""
 "(GPT) label on the system disk, or a `PReP Boot` partition on IBM Power "
 "Systems servers."
 msgstr ""
+"Kecuali Anda memiliki alasan lain, Anda harus *setidaknya* membuat partisi "
+"`/boot` dan partisi `/` (root). Bergantung pada spesifikasi perangkat keras "
+"sistem Anda, partisi tambahan mungkin diperlukan, seperti `/boot/efi` untuk "
+"sistem AMD, Intel, dan Arm 64-bit dengan firmware UEFI, partisi `biosboot` "
+"untuk sistem AMD dan Intel dengan label GUID Partition Table (GPT) pada disk "
+"sistem, atau partisi `PReP Boot` pada server IBM Power Systems."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:360
@@ -1244,3 +1456,6 @@ msgid ""
 "partitioning-recommended[Recommended Partitioning Scheme] for more "
 "information about the recommended partitioning scheme."
 msgstr ""
+"Lihat xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-recommended[Skema Partisi yang Disarankan] untuk "
+"informasi lebih lanjut tentang skema partisi yang direkomendasikan."
