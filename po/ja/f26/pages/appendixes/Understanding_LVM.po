@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-26 13:18+0000\n"
+"Last-Translator: Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>\n"
+"Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f26pagesappendixesunderstanding_lvm/ja/"
+">\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title ===
 #: pages/appendixes/Understanding_LVM.adoc:5
@@ -31,6 +34,13 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"LVM (Logical Volume Management) パーティションには利点がいくつもあります。"
+"LVMパーティションは _physical volumes_ としてフォーマットされます。"
+"一つまたはそれ以上のボリュームが結合して _volume group_ を形成します。"
+"お互いにボリュームグループの合計ストレージが分割されて一つまたはそれ以上の "
+"_logical volumes_ "
+"になります。論理ボリュームはまるで標準パーティションのように動作します。"
+"そして `ext4` またはマウントポイントのようなファイルシステムを持ちます。"
 
 #. type: delimited block =
 #: pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +48,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"ブートローダはLVMボリュームを読めないです。なので標準、つまり non-LVM "
+"なパーティションが `/boot` パーティションのために必要です。"
 
 #. type: delimited block =
 #: pages/appendixes/Understanding_LVM.adoc:15
