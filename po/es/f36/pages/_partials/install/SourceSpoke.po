@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-05-21 18:50+0000\n"
+"PO-Revision-Date: 2022-05-29 17:18+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f36pages_partialsinstallsourcespoke/es/"
@@ -33,6 +33,11 @@ msgid ""
 "system. This screen will be configured automatically in most cases, but you "
 "can change your settings or add additional sources."
 msgstr ""
+"La pantalla `Fuente de la Instalación` le permite especificar una "
+"localización (local o en la red) desde la que serán descargados los paquetes "
+"e instalados en su sistema. Esta pantalla será configurada automáticamente "
+"en la mayoría de los casos, pero puede cambiar sus ajustes o añadir fuentes "
+"adicionales."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SourceSpoke.adoc:13
@@ -48,12 +53,23 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-sources[Specifying the "
 "Installation Source] for information about boot options."
 msgstr ""
+"Normalmente, cuando entra por primera vez en la pantalla `Fuente de la "
+"Instalación`, el instalador intentará configurar una fuente de instalación "
+"en base al tipo de medio que haya usado para arrancar. El DVD completo "
+"{PRODUCT} Server configurará la fuente como medio local, la imagen netinst "
+"ISO configurará el espejo de red más cercano, etc. Este proceso lleva algún "
+"tiempo, especialmente si la fuente predeterminada es un espejo en red. Si "
+"planea usar una fuente de instalación personalizada, use la opción de "
+"arranque [option]#inst.askmethod# para saltar la configuración inicial; esto "
+"permitirá entrar en esta pantalla inmediatamente. Vea en xref:advanced/"
+"Boot_Options.adoc#sect-boot-options-sources[Especificando la Fuente de "
+"Instalación] más información sobre las opciones de arranque."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SourceSpoke.adoc:18
 #, no-wrap
 msgid "The Installation Source screen"
-msgstr ""
+msgstr "La pantalla Fuente de la Instalación"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SourceSpoke.adoc:18
@@ -67,6 +83,8 @@ msgid ""
 "The following options are available. Note that not all of them may be "
 "displayed."
 msgstr ""
+"Están disponibles las siguientes opciones. Advierta que no todas ellas "
+"pueden ser mostradas."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:22
@@ -82,6 +100,10 @@ msgid ""
 "configuration is necessary. You can click the `Verify` button check the "
 "media integrity."
 msgstr ""
+"Esta es la opción seleccionada automáticamente si usted arranca el "
+"instalador desde un medio que contenga una fuente de instalación, como un "
+"DVD vivo. No es necesaria configuración adicional. Puede pulsar el botón "
+"`Verificar` para comprobar la integridad del medio."
 
 #. type: Labeled list
 #: ./pages/_partials/install/SourceSpoke.adoc:24
