@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-11 21:03+0000\n"
-"PO-Revision-Date: 2022-05-22 21:00+0000\n"
+"PO-Revision-Date: 2022-05-29 17:18+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -321,7 +321,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:150
 #, no-wrap
 msgid "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
-msgstr ""
+msgstr "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:153
@@ -329,7 +329,8 @@ msgid ""
 "Using this option without any parameters (only as [option]#inst.dd#) will "
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
-msgstr ""
+msgstr "此选项不带参数进行使用（只使用[option]#inst."
+"dd#形式）时将提示安装程序通过交互式菜单向你要一个驱动更新盘。"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:164
@@ -344,7 +345,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:167
 #, no-wrap
 msgid "[option]#inst.askmethod#"
-msgstr ""
+msgstr "[option]#inst.askmethod#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:168
@@ -375,6 +376,9 @@ msgid ""
 "the [option]#inst.repo=# option described above to configure a specific "
 "source directly in the boot menu."
 msgstr ""
+"此功能将以错误状态离开安装源配置——你必须在`Installation "
+"Source`屏幕手动指定一个安装源来继续安装。换而言之，你可以使用[option]#inst."
+"repo=#选项来在启动菜单中配置一个特定的安装源。"
 
 #. type: Title ===
 #: pages/advanced/Boot_Options.adoc:184
@@ -386,7 +390,7 @@ msgstr "Kickstart启动选项"
 #: pages/advanced/Boot_Options.adoc:186
 #, no-wrap
 msgid "[option]#inst.ks=#"
-msgstr ""
+msgstr "[option]#inst.ks=#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:192
@@ -411,6 +415,8 @@ msgstr ""
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 msgstr ""
+"[option]#inst.ks=nfs:pass:attributes[{blank}]_next-"
+"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:205
@@ -420,6 +426,10 @@ msgid ""
 "option, or `/kickstart/`. If the given file name ends with the `/` "
 "character, `pass:attributes[{blank}]_ip_-kickstart` is appended. For example:"
 msgstr ""
+"在上面的例子中，_next-server_是DHCP的`next-"
+"server`选项或者DHCP服务器自己的IP，并且_filename_是DHCP的 "
+"`filename`选项或者`/kickstart/`。如果提供的文件名以`/`符号结尾，那么将自动在"
+"后面加上`pass:attributes[{blank}]_ip_-kickstart`。例如："
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:207
@@ -491,6 +501,9 @@ msgid ""
 "system's serial number, read from `/sys/class/dmi/id/product_serial`. The "
 "header has the following syntax:"
 msgstr ""
+"向外发的`HTTP`消息中添加一个HTTP "
+"header。这个header将包含操作系统的序列号，序列号读自`/sys/class/dmi/id/"
+"product_serial`。Header拥有以下格式："
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:233
@@ -518,6 +531,8 @@ msgid ""
 "[option]#console=ttyS0#. This option should be used along with the "
 "[option]#inst.text# option."
 msgstr ""
+"这个内核选项指定了一个被用于主终端的设备。例如，要在第一个串口使用一个终端，"
+"就要用[option]#console=ttyS0#。此功能需要和[option]#inst.text#配合使用。"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:241
@@ -528,6 +543,9 @@ msgid ""
 "[option]#console=ttyS0 console=ttyS1#, the installation program will only "
 "use `ttyS1`."
 msgstr ""
+"你可以多次使用此功能。这样的话，启动信息将显示出所有指定的终端，但只有最后一"
+"个才被用于之后的安装程序。例如，如果你指定了[option]#console=ttyS0 "
+"console=ttyS1#，那么安装程序将使用`ttyS1`。"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:242
