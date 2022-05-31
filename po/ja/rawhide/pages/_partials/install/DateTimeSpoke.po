@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-31 04:18+0000\n"
+"Last-Translator: Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>\n"
+"Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"rawhidepages_partialsinstalldatetimespoke/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: pages/_partials/install/DateTimeSpoke.adoc:5
@@ -32,6 +35,11 @@ msgid ""
 "but you can change your date, time and location settings before you begin "
 "the installation."
 msgstr ""
+"`Date & Time` "
+"画面では、あなたのシステムにセッティングする設定を変更することも出来ます。"
+"この画面の内容は xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-welcome[Welcome Screen and Language Selection] 画面で自動的"
+"に設定されていますが、日付や時刻やロケールを変更することも可能です。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/DateTimeSpoke.adoc:11
@@ -54,6 +62,11 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"まず画面の左上コーナーにあるドロップダウン・メニューを使って `Region` "
+"を選択します。そのあと、 `City`を選択するか、"
+"またはあなたのロケールと同じタイムゾーンに最も近い city "
+"を選択します。選択して場所を指定することで、 {PRODUCT} "
+"はサマータイムも考慮して自動的に正確な時刻を設定します。"
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:16
@@ -62,6 +75,9 @@ msgid ""
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
 msgstr ""
+"お住まいのロケールではなくグリニッジ標準時 (GMT) "
+"を選択して地域に設定することもできます。そのためには、地域に `Etc` "
+"を選択します。"
 
 #. type: delimited block =
 #: pages/_partials/install/DateTimeSpoke.adoc:21
@@ -72,6 +88,12 @@ msgid ""
 "regions into this database. You can find more information at the link:+"
 "+https://www.iana.org//time-zones++[IANA official website]."
 msgstr ""
+"cities and regions のデータベースは the Time Zone Database "
+"([package]*tzdata*) パブリックドメインに由来しており、これは the Internet "
+"Assigned Numbers Authority (IANA) によってメインテインされています。 Fedora "
+"Project は cities or regions を追加できないです。"
+"さらなる情報を見つけたいなら link:++https://www.iana.org//time-zones++[IANA "
+"official website]."
 
 #. type: Plain text
 #: pages/_partials/install/DateTimeSpoke.adoc:25
