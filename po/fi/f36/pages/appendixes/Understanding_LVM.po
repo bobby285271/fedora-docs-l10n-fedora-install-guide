@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-01 18:18+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f36pagesappendixesunderstanding_lvm/fi/"
+">\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "LVM:n ymmärtäminen"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -31,6 +34,12 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"LVM (Logical Volume Management) -osiot tarjoavat useita etuja tavallisiin "
+"osioihin verrattuna. LVM-osiot on muotoiltu _fyysisiksi taltioiksi_. Yksi "
+"tai useampi fyysinen osa yhdistetään _volyymiryhmäksi_. Kunkin taltioryhmän "
+"kokonaistallennus jaetaan sitten yhteen tai useampaan _loogiseen taltioon_. "
+"Loogiset taltiot toimivat aivan kuten tavalliset osiot. Niillä on "
+"tiedostojärjestelmätyyppi, kuten ext4, ja liitoskohta."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +47,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"Käynnistyslatain ei voi lukea LVM-taltiota. Sinun on tehtävä standardi, ei-"
+"LVM-levyosio `/boot`-osiolle."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -48,6 +59,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"Oletuksena asennusprosessi luo aina `/`- ja `swap`-osiot LVM-taltioihin ja "
+"erillisen `/boot'-osion normaaliosioon. Lisätietoja on kohdassa xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"recommended[suositeltu osiointikaavio]."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -59,6 +74,12 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"Ymmärtääksesi LVM:ää paremmin, kuvittele fyysinen tilavuus _lohkojen_ "
+"kasana. Lohko on tallennusyksikkö, jota käytetään tietojen tallentamiseen. "
+"Useita lohkopinoja voidaan yhdistää paljon suuremmiksi pinoiksi, aivan kuten "
+"fyysiset tilavuudet yhdistetään tilavuusryhmäksi. Tuloksena oleva pino "
+"voidaan jakaa useisiin pienempiin, mielivaltaisen kokoisiin pinoihin, aivan "
+"kuten tilavuusryhmä on allokoitu useille loogisille tilavuuksille."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -68,6 +89,11 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"Järjestelmänvalvoja voi kasvattaa tai pienentää loogisia taltioita "
+"tuhoamatta tietoja, toisin kuin tavallisissa levyosioissa. Jos taltioryhmän "
+"fyysiset taltiot ovat erillisillä asemilla tai RAID-ryhmillä, "
+"järjestelmänvalvojat voivat myös jakaa loogisen taltion tallennuslaitteiden "
+"kesken."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -78,3 +104,8 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"Saatat menettää tietoja, jos pienennät loogisen taltion pienempään "
+"kapasiteettiin kuin taltion tiedot vaativat. Varmistaaksesi maksimaalisen "
+"joustavuuden, luo loogisia taltioita nykyisten tarpeittesi mukaan ja jätä "
+"ylimääräinen tallennuskapasiteetti varaamatta. Voit turvallisesti kasvattaa "
+"loogisia taltioita käyttääksesi jakamatonta tilaa tarpeittesi mukaan."
