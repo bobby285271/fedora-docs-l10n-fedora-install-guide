@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2022-05-29 17:18+0000\n"
+"PO-Revision-Date: 2022-06-03 11:18+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f28pagesadvancedboot_options/"
@@ -607,6 +607,9 @@ msgid ""
 "can watch the installation progress, but they cannot interfere with it by "
 "accessing the root shell by pressing kbd:[Ctrl + Alt + F2]."
 msgstr ""
+"在安装过程中禁用root shell访问。这个功能在自动化（Kickstart）安装的过程中很有"
+"用——如果你使用此功能，那么用户即可查看安装进度，但他们却不能通过root "
+"shell访问的方式，按下kbd:[Ctrl + Alt + F2]的方式来人工干涉。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:166
@@ -632,7 +635,8 @@ msgid ""
 "If you perform the installation interactively, the language you specified "
 "using this option will be selected by default, but you will still be able to "
 "change it at the beginning of the graphical installation."
-msgstr ""
+msgstr "如果你执行了交互安装，那么你知道的语言选项将被选为默认选项，但你仍然可以在图"
+"形安装开始时更改此选项。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:170
@@ -650,6 +654,10 @@ msgid ""
 "[application]*Anaconda* and the installed system will default to "
 "`en-US.UTF-8`."
 msgstr ""
+"允许你在一个单语言模式下运行安装程序——换而言之，此功能禁用安装器和安装后的操"
+"作系统的语言选择。如果你与此同时还用了[option]#inst.lang=#选项，那么将使用你"
+"指定的语言。如果你不设置此选项，那么[application]*Anaconda*将设置安装后的操作"
+"系统的语言为默认值`en-US.UTF-8`。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:172
@@ -664,6 +672,9 @@ msgid ""
 "used to pre-set the language and time zone, and uses the following syntax: "
 "[option]#inst.geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 msgstr ""
+"在安装后的操作系统中配置地理定位。地理定位被用于预设语言和时区，并且使用以下"
+"的语法：[option]#inst."
+"geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:175
@@ -727,6 +738,9 @@ msgid ""
 "as described in xref:Boot_Options.adoc#sect-boot-options-vnc[Enabling Remote "
 "Access Using VNC]."
 msgstr ""
+"强制安装程序运行在文本模式下，而不运行在图形模式下。文本界面是受限的，例如，"
+"文本界面不允许更改LVM分区。当使用图形能力受限的电脑安装操作系统时，推荐使用VN"
+"C，详见xref:Boot_Options.adoc#sect-boot-options-vnc[用VNC启用远程连接]。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:191
@@ -740,7 +754,8 @@ msgid ""
 "Forces the installation program to run in command line mode. This mode does "
 "not allow any interaction, all options must be specified in a Kickstart file "
 "or on the command line."
-msgstr ""
+msgstr "强制安装程序运行在命令行模式。该模式不允许交互操作，所有的功能必须在Kickstart"
+"文件中或命令行中被指定。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:193
@@ -769,6 +784,9 @@ msgid ""
 "screen width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
+"在图形模式下指定屏幕分辨率。格式为_N_pass:attributes[{blank}]xpass:attributes"
+"[{blank}]_M_，其中， "
+"_N_代表屏幕宽度，_M_代表屏幕高度（单位为像素）。支持的最低分辨率为`800x600`。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:197
@@ -795,7 +813,8 @@ msgid ""
 "Tells the installation program to use the frame buffer `X` driver instead of "
 "a hardware-specific driver. This option is equivalent to "
 "[option]#inst.xdriver=fbdev#."
-msgstr ""
+msgstr "告诉安装程序使用帧缓冲区的`X`驱动，而不使用硬件指定的驱动。此选项和[option]#i"
+"nst.xdriver=fbdev#等效。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:201
@@ -825,6 +844,9 @@ msgid ""
 "system will keep these settings. The blacklisted drivers can then be found "
 "in the `/etc/modprobe.d/` directory."
 msgstr ""
+"黑名单（完全禁用）一个或多个驱动。使用此选项禁用的驱动（补丁）将在安装开始时"
+"被阻止加载，并且在安装完成后，安装的操作系统将保留这些设置。黑名单的驱动之后"
+"可以在`/etc/modprobe.d/`中被找到。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:206
@@ -852,6 +874,9 @@ msgid ""
 "corresponding chapter in the [citetitle]_{PRODUCT} System Administrator's "
 "Guide_, available at link:++http://docs.fedoraproject.org/++[]."
 msgstr ""
+"在安装过程中启动`sshd`设备，允许你在安装时使用`SSH`来连接系统并监视安装进度。"
+"详见`ssh(1)` man手册页面和[citetitle]_{PRODUCT} 系统管理员指南_, available "
+"at link:++http://docs.fedoraproject.org/++[]中的相关章节。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:217
@@ -891,6 +916,10 @@ msgid ""
 "networking is also available in the [citetitle]_{PRODUCT} Networking Guide_, "
 "available at link:++http://docs.fedoraproject.org/++[]."
 msgstr ""
+"初始的网络安装被 [application]*dracut*控制。本节只列举一些更为常用的选项；要"
+"想了解完整的选项列表，详见`dracut.cmdline(7)` "
+"man手册页面。关于网络的附加信息详见[citetitle]_{PRODUCT} 网络指南_, "
+"available at link:++http://docs.fedoraproject.org/++[]。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:227
@@ -906,6 +935,9 @@ msgid ""
 "interfaces are configured, you must specify a primary boot interface using "
 "the [option]#bootdev# option described below."
 msgstr ""
+"配置一个或多个网络接口。要配置多个接口，请多次使用`ip`功能——每次配置一个接口"
+"。如果多个接口被配置，那么你必须使用[option]#bootdev#选项来指定一个主启动接口"
+"，描述如下。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:230
@@ -937,6 +969,25 @@ msgid ""
 "wish to override and automatically obtained values will be used for the "
 "others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
+"|Configuration Method|Option format\n"
+"|Automatic configuration of any interface|[option]#ip=pass:attributes[{blank}"
+"]_method_pass:attributes[{blank}]#\n"
+"|Automatic configuration of a specific interface|[option]#ip=pass:attributes["
+"{blank}]_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#"
+"\n"
+"|Static configuration|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribut"
+"es[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank"
+"}]_hostname_:pass:attributes[{blank}]_interface_:none#\n"
+"|Automatic configuration of a specific interface with an override\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the "
+"specified method of automatic configuration, such as `dhcp`, but overrides "
+"the automatically obtained IP address, gateway, netmask, hostname or other "
+"specified parameter. All parameters are optional; only specify the ones you "
+"wish to override and automatically obtained values will be used for the other"
+"s.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gatewa"
+"y_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:"
+"attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attribut"
+"es[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:245
@@ -974,6 +1025,9 @@ msgid ""
 "without specifying the [option]#ip# option, the installation program will "
 "use [option]#ip=dhcp#."
 msgstr ""
+"如果你使用一个需要网络访问的启动选项，例如[option]#inst.ks=http://pass:attrib"
+"utes[{blank}]_host_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
+"，那么安装程序在不指定[option]#ip#选项时将采用[option]#ip=dhcp#选项。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:266
@@ -981,7 +1035,8 @@ msgid ""
 "In the above tables, the _ip_ parameter specifies the client's IP "
 "address. `IPv6` addresses can be specified by putting them in square "
 "brackets, for example, `[2001:DB8::1]`."
-msgstr ""
+msgstr "在上方的表格中，_ip_参数指定了客户端的IP地址。`IPv6`地址可以用方括号括起来并"
+"指定，例如`[2001:DB8::1]`。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:268
@@ -995,7 +1050,8 @@ msgstr "_gateway_参数是默认网关。也支持IPv6地址。"
 msgid ""
 "The _netmask_ parameter is the netmask to be used. This can either be a full "
 "netmask (for example `255.255.255.0`) or a prefix (for example `64`)."
-msgstr ""
+msgstr "_netmask_参数是网络掩码要用到的参数。此参数可以是完整网络掩码（例如`255.255."
+"255.0`）或者网络掩码前缀（例如`64`）。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:272
@@ -1044,6 +1100,9 @@ msgid ""
 "[option]#ifname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#. "
 "For example:"
 msgstr ""
+"为一个已知MAC地址的网络设备指派一个给定的接口名。此选项可以使用多次。语法为："
+"[option]#ifname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_"
+"MAC_pass:attributes[{blank}]#。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:282
@@ -1064,6 +1123,8 @@ msgid ""
 "this value as `vendor-class-identifier`. The default value is "
 "`anaconda-$(uname -srm)`."
 msgstr ""
+"指定DHCP供应商类标识符。`dhcpd`服务可以使用`vendor-class-"
+"identifier`进行查看。默认值为`anaconda-$(uname -srm)`。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:286
@@ -1079,6 +1140,9 @@ msgid ""
 "[option]#vlan=pass:attributes[{blank}]_name_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. "
 "For example:"
 msgstr ""
+"在指定的、拥有名字的接口上设置一个虚拟LAN（VLAN）。语法为：[option]#vlan=pass"
+":attributes[{blank}]_name_:pass:attributes[{blank}]_interface_pass:attributes"
+"[{blank}]#。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:291
@@ -1091,7 +1155,8 @@ msgstr "[option]#vlan=vlan5:em1#\n"
 msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` "
 "interface. The _name_ can take the following forms:"
-msgstr ""
+msgstr "上面的代码将在`em1`接口上设置一个名为`vlan5`的VLAN设备。_name_可以采用以下格"
+"式："
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:296
@@ -1130,6 +1195,11 @@ msgid ""
 "list of physical (ethernet) interfaces, and _options_ with a comma-separated "
 "list of bonding options. For example:"
 msgstr ""
+"使用以下的语法来设置一个连接设备：[option]#bond=pass:attributes[{blank}]_name"
+"_pass:attributes[{blank}][:pass:attributes[{blank}]_slaves_pass:attributes[{b"
+"lank}]][:pass:attributes[{blank}]_options_pass:attributes[{blank}]]#。将_name"
+"_替换为连接设备名，_slaves_替换为物理（以太网）接口的逗号分隔列表，_options_"
+"替换为连接选项的逗号分隔列表。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:311
@@ -1166,6 +1236,9 @@ msgid ""
 "comma-separated list of physical (ethernet) devices to be used as slaves in "
 "the team device. For example:"
 msgstr ""
+"使用以下语法来设置一个组设备：[option]#team=pass:attributes[{blank}]_master_:"
+"pass:attributes[{blank}]_slaves_pass:attributes[{blank}]#。替换_master_为mast"
+"er组设备，_slaves_为物理（以太网）的、slaves组设备的逗号分隔列表。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:322
@@ -1191,7 +1264,8 @@ msgid ""
 "Configure the system for multilib packages (that is, to allow installing "
 "32-bit packages on a 64-bit x86 system) and install packages specified in "
 "this section as such."
-msgstr ""
+msgstr "配置操作系统用于安装multilib软件包（即，允许安装在64位操作系统上安装32位安装"
+"包）且安装本节中指定的软件包也像这样。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:330
@@ -1202,6 +1276,9 @@ msgid ""
 "32-bit AMD or Intel systems (marked as `i686`) will be automatically "
 "installed as well if available."
 msgstr ""
+"通常而言，在 AMD64或Intel{nbsp}64平台上，只有本架构（标为`x86_64`）的软件包和"
+"所有架构（标为`noarch`）的软件包会被安装。当使用本选项时，用于AMD或Intel的、3"
+"2位（标为`i686`）的软件包如果可用的话将被自动安装。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:332
@@ -1213,6 +1290,10 @@ msgid ""
 "will be installed in multiple variants, while the latter will only be "
 "installed in variants specifically required."
 msgstr ""
+"本选项只适用于`%packages`这一节中的指定的软件包。如果软件包只被安装为依赖软件"
+"包，那么只有被精确指定的软件包才会被安装。例如，如果你正在安装依赖于[package]"
+"*bar*的[package]*foo*软件包，那么在安装时可能会被安装出多种变化，而[package]*"
+"bar*只会在被精确指定时才会被安装。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:333
@@ -1228,6 +1309,8 @@ msgid ""
 "meaningless on UEFI-based systems, unless they are in BIOS compatibility "
 "mode."
 msgstr ""
+"强制安装程序使用GUID分区表（GPT）安装分区信息，而不使用主引导记录（MBR）。此"
+"选项在UEFI系统上没有意义，除非UEFI系统运行在BIOS兼容模式上。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:336
@@ -1238,6 +1321,9 @@ msgid ""
 "change this behavior, allowing a GPT to be written even to disks smaller "
 "than 2 TB."
 msgstr ""
+"通常而言，BIOS为基础的系统和在BIOS兼容模式下的UEFI为基础的系统将尝试使用MBR架"
+"构存储分区表信息，除非磁盘空间大于2TB。使用此选项时允许在2TB以下的场景下写入G"
+"PT。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:338
@@ -1266,6 +1352,10 @@ msgid ""
 "these resources might otherwise be mentioned in kickstart files and/or logs "
 "on the image. Possible values for this option are:"
 msgstr ""
+"此选项控制Kickstart和安装日志在安装后的操作系统中的的保存位置。此选项在禁用保"
+"存数据时，例如在OEM操作系统的安装时或从敏感来源创建安装镜像（例如内部软件源网"
+"址）时尤为有用，这是因为资源还可能会在Kickstart文件和/或日志中被提到。此选项"
+"可能的值为："
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:342
@@ -1316,6 +1406,9 @@ msgid ""
 "increase the amount of memory available, which makes the installation faster "
 "on systems with low memory."
 msgstr ""
+"此选项控制在安装时的_zRAM_交换分区的利用率。它在系统RAM中创建了一个压缩的块设"
+"备并用于交换空间，而不是在磁盘中。此选项允许安装器必要地扩大可用空间，并将使"
+"得在低内存的系统当中的安装速度更快。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:356
@@ -1326,6 +1419,11 @@ msgid ""
 "[option]#inst.zram=1# to enable it, and on systems with 2 GB or less memory, "
 "use [option]#inst.zram=0# to disable this feature."
 msgstr ""
+"默认地，zRAM中的交换分区在系统带有2GB或以下RAM时被启用，在带有2GB以上RAM时被"
+"禁用。你可以使用此选项修改这一行为——在带有2GB以上RAM时启用zRAM中的交换分区，"
+"语法为：[option]#inst."
+"zram=1#；在带有2GB或以下RAM时禁用zRAM中的交换分区，语法为：[option]#inst."
+"zram=0#。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:357
@@ -1341,6 +1439,8 @@ msgid ""
 "installation will stop with an error message. This option is enabled by "
 "default; use [option]#inst.memcheck=0# to disable it."
 msgstr ""
+"在安装开始时进行一次检查来决定是否有足够的RAM。如果检测不到足够的RAM，那么安"
+"装将报错并停止。此选项默认启用，使用[option]#inst.memcheck=0#来禁用此选项。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:359
@@ -1357,6 +1457,10 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for details about "
 "[application]*DNF*."
 msgstr ""
+"使用老的[application]*Yum*后端作为软件包的安装和依赖解决，而不使用[applicatio"
+"n]*DNF*。详见[citetitle]_{PRODUCT} 系统管理员指南_, available at "
+"link:++https://docs.fedoraproject.org/"
+"++[]获取关于[application]*DNF*的详细信息。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:361
@@ -1408,6 +1512,9 @@ msgid ""
 "installation program. `VNC` sharing is enabled, so multiple clients can "
 "connect to the system at the same time."
 msgstr ""
+"指定安装程序的图形界面应该被运行于一个`VNC`会话中。如果你指定了此选项，那么你"
+"将需要连接至一个使用`VNC`客户端应用的系统上才能和安装程序进行交互。`VNC`共享"
+"启用时，多个客户端可以同时连接到系统上。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:374
@@ -1430,6 +1537,10 @@ msgid ""
 "will set the password to `testpwd`. The password must be between 6 and 8 "
 "characters long."
 msgstr ""
+"`VNC`服务器被用于安装程序。尝试连接到系统上的任何`VNC`客户端将必须提供正确的"
+"密码才能获得访问权限。例如，[option]#inst.vncpassword=pass:attributes[{blank}"
+"]_testpwd_pass:attributes[{blank}]#将设置密码为`testpwd`。这个密码的长度必须"
+"在6~8位之间。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:383
@@ -1437,7 +1548,8 @@ msgid ""
 "If you specify an invalid password (one that is too short or too long), you "
 "will be prompted to specify a new one by a message from the installation "
 "program:"
-msgstr ""
+msgstr "如果你指定了一个无效的密码（太短或太长的密码），那么你会被一条来自安装程序的"
+"消息提示指定一个新的密码："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:389
@@ -1446,6 +1558,8 @@ msgid ""
 "VNC password must be six to eight characters long.\n"
 "Please enter a new one, or leave blank for no password.\n"
 msgstr ""
+"VNC密码的长度必须在6~8位之间。\n"
+"请输入一个新的密码，或留空以不设置密码。\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:391
@@ -1468,6 +1582,10 @@ msgid ""
 "The _port_ parameter is optional - if you do not specify one, the "
 "installation program will use `5900`."
 msgstr ""
+"一旦安装开始就连接到一个收听的、在特定的主机和端口上`VNC`客户端上。正确的语法"
+"是[option]#inst.vncconnect=pass:attributes[{blank}]_host_:pass:attributes[{bl"
+"ank}]_port_pass:attributes[{blank}]#。这里的_port_选项是可选的——如果你不指定"
+"此参数，那么安装程序将使用`5900`。"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:399
@@ -1492,6 +1610,10 @@ msgid ""
 "directory, the installation program will look for a file named "
 "`updates.img`."
 msgstr ""
+"指定`updates.img`文件的位置来用于安装程序运行时。语法和[option]#inst."
+"repo#相同——详见xref:Boot_Options.adoc#tabl-boot-options-sources[安装源]。在所"
+"有的格式上，如果你不指定一个文件名，而是指定一个文件夹，那么安装程序将在此文"
+"件夹下查找一个名为`updates.img`的文件。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:403
@@ -1505,7 +1627,8 @@ msgid ""
 "Specifies the minimum level for messages to be logged on a terminal. This "
 "only concerns real-time logging in a terminal; log files will always contain "
 "messages of all levels."
-msgstr ""
+msgstr "指定终端登录消息的最小数量。此选项只关心一个终端的、实时的登录情况；日志文件"
+"将一直包含所有级别的消息。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:406
@@ -1515,6 +1638,9 @@ msgid ""
 "`info`, which means that by default, the logging terminal will display "
 "messages ranging from `info` to `critical`, but not `debug`."
 msgstr ""
+"此选项的可能的值从低到高分别是：`debug`、`info`、`warning`、`error`和`critica"
+"l`，这意味着，记录日志的终端将从`info`到`critical`显示消息，但不会显示`debug`"
+"。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:407
@@ -1528,7 +1654,8 @@ msgid ""
 "Once the installation starts, this option sends log messages to the syslog "
 "process on the specified host. The remote syslog process must be configured "
 "to accept incoming connections."
-msgstr ""
+msgstr "一旦安装开始，此选项将发送日志消息到特定主机上的syslog进程。远程syslog进程必"
+"须配置为可以接受到来的连接。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:409
@@ -1545,6 +1672,10 @@ msgid ""
 "`org.fedoraproject.anaconda.log.0`pass:attributes[{blank}]; if this port is "
 "present, it will be used."
 msgstr ""
+"指定一个`virtio`端口（一个在`/dev/virtio-ports/pass:attributes[{blank}]_name_"
+"pass:attributes[{blank}]`的字符设备）来用于转发日志。此选项的默认值为`org."
+"fedoraproject.anaconda.log."
+"0`pass:attributes[{blank}]，此端口只要存在就会被使用。"
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:412
@@ -1560,6 +1691,8 @@ msgid ""
 "preferred. Using deprecated options is not recommended and they are expected "
 "to be removed in future releases."
 msgstr ""
+"列表中的选项是*废弃*的。它们仍然有效，但其他的某些选项可能会提供相同的功能，"
+"你应该换用那些选项。不推荐使用废弃的选项，它们可能会在未来的版本中被移除。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:420
@@ -1569,6 +1702,8 @@ msgid ""
 "[option]#vnc=# option is considered deprecated and replaced by the "
 "[option]#inst.vnc=# option. However, these changes are not listed here."
 msgstr ""
+"注意：本章中描述的选项选择都要增加`inst.`前缀。例如：[option]#vnc=#选项将被废"
+"弃并替换为[option]#inst.vnc=#选项。然而，这些改动不在这里列出。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:423
@@ -1582,7 +1717,7 @@ msgid ""
 "Used to specify that the machine being installed onto does not have any "
 "display hardware, and to prevent the installer from trying to detect a "
 "display."
-msgstr ""
+msgstr "被用于指定被安装的、没有显示用的硬件的电脑，且阻止安装器检测显示器的尝试。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:425
@@ -1613,6 +1748,9 @@ msgid ""
 "automatically, which means this option is the same as "
 "[option]#inst.repo=nfs:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#."
 msgstr ""
+"在NFS安装当中，指定目标位于NFS服务器上的ISO镜像，而不是可安装的tree。区别在于"
+"现在是自动检测的，这意味着此选项和[option]#inst.repo=nfs:pass:attributes[{bla"
+"nk}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#相同。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:429
@@ -1653,7 +1791,7 @@ msgstr "[option]#ksdevice=#"
 msgid ""
 "Select network device to be used at early stage of installation. Different "
 "values have been replaced with different options; see the table below."
-msgstr ""
+msgstr "选择用于早期安装的网络设备。不同的值需要被不同的选项所替换；详见下表。"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:447
@@ -1676,6 +1814,22 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced "
 "by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
+"|Value|Current behavior\n"
+"|Not present|All devices are attempted to be activated using `dhcp`, unless "
+"desired device and configuration is specified by [option]#ip=# option and/or "
+"the [option]#BOOTIF# option.\n"
+"|[option]#ksdevice=link#|Similar to the above, with the difference that "
+"network will always be activated in the initramfs, whether it is needed or "
+"not. The supported [option]#rd.neednet# option (provided by "
+"[application]*dracut*) should be used instead.\n"
+"|[option]#ksdevice=bootif#|Ignored (the BOOTID= option is used by default "
+"when specified)\n"
+"|[option]#ksdevice=ibft#|Replaced with the [option]#ip=ibft# option\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
+"Replaced with "
+"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|"
+"Replaced by specifying the device name using the [option]#ip=# option.\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:453
@@ -1689,6 +1843,10 @@ msgid ""
 "BZ#link:++https://bugzilla.redhat.com/show_bug.cgi?id=1085310++[1085310] for "
 "details."
 msgstr ""
+"当进行一次Kickstart安装、从本地媒体启动和在本地媒体上有Kickstart文件时，网络"
+"不会被初始化。这意味着任何其他的、需要网络连接的Kickstart选项，例如从网络中获"
+"取的安装前脚本和安装后脚本，将导致安装失败。这是一个已知的issue；详见BZ#link:"
+"++https://bugzilla.redhat.com/show_bug.cgi?id=1085310++[1085310]。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:455
@@ -1697,6 +1855,9 @@ msgid ""
 "option, or add the [option]#--device=link# option to the [command]#network# "
 "command in your Kickstart file."
 msgstr ""
+"关于这个issue的一个解决方案是：要么使用[option]#ksdevice=link#启动选项，要么"
+"在你的Kickstart文件中向[command]#network#命令中增加[option]#--device=link#选"
+"项。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:458
@@ -1724,6 +1885,8 @@ msgid ""
 "driver (`firewire_ohci`) by using the [option]#modprobe.blacklist=# option "
 "instead:"
 msgstr ""
+"禁用FireWire接口的支持。你可以换用[option]#modprobe."
+"blacklist=#选项来禁用FireWire驱动（`firewire_ohci`）："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:464
@@ -1742,7 +1905,8 @@ msgstr "移除的启动选项"
 msgid ""
 "The following options are removed. They were present in previous releases of "
 "{PRODUCT}, but they cannot be used anymore."
-msgstr ""
+msgstr "下面的选项被移除了。它们在之前的某些{PRODUCT}版本中曾经存在，但现在已经不再可"
+"用了。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:471
@@ -1756,7 +1920,8 @@ msgid ""
 "The installation program's `initramfs` is now completely non-interactive, "
 "which means that this option are not available anymore. Use [option]#ip=# to "
 "configure network settings."
-msgstr ""
+msgstr "安装程序的`initramfs`现在已经完全地不再支持交互，这意味着此选项不再可用。现在"
+"应该使用[option]#ip=#来配置网络设置。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:473
@@ -1798,7 +1963,8 @@ msgid ""
 "Configured wireless network access. Network configuration is now being "
 "handled by [application]*dracut*, which does not support wireless "
 "networking, rendering these options useless."
-msgstr ""
+msgstr "配置无线网络连接。网络配置现在被[application]*dracut*所控制，它不支持无线网络"
+"，所以配置无线网络是没有用的。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:479
@@ -1811,7 +1977,8 @@ msgstr "[option]#ethtool=#"
 msgid ""
 "Used in the past to configure additional low-level network settings. All "
 "network settings are now handled by the [option]#ip=# option."
-msgstr ""
+msgstr "之前被用于配置额外的低级网络设置。所有的网络设置现在都被[option]#ip=#选项所控"
+"制。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:481
@@ -1887,6 +2054,8 @@ msgid ""
 "into the kernel so the driver cannot be blacklisted; however, it is possible "
 "to disable IPv6 using the [option]#ipv6.disable# option."
 msgstr ""
+"之前被用于禁用安装程序中的IPv6支持。IPv6现在已经内置于内核当中，所以驱动现在"
+"已经不能被黑名单了。然而，现在可以使用[option]#ipv6.disable#选项来禁用IPv6。"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:493
@@ -1930,6 +2099,9 @@ msgid ""
 "default and this option has been replaced with [option]#inst.nodnf#, which "
 "reverts back to [application]*Yum*."
 msgstr ""
+"在{PRODUCT} 21中被用于启用[application]*DNF*来处理软件包安装和依赖关系解决。"
+"目前[application]*DNF*默认被使用，并且此选项已经被替换为了[option]#inst."
+"nodnf#，用于回退到[application]*Yum*。"
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:500
@@ -1952,6 +2124,9 @@ msgid ""
 "memory of a computer before you install {PRODUCT} for the first time, even "
 "if it has previously run other operating systems."
 msgstr ""
+"存储（RAM）出错可能导致你的操作系统不可预测地冻结或崩溃。在某些情况下，存储出"
+"错可能只引起特定组合的软件出错。因此，你应该在首次安装{PRODUCT}之前测试存储，"
+"即便它之前运行过其他操作系统。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:508
@@ -1965,6 +2140,11 @@ msgid ""
 "the bottom informing you of the current status, and another pass will start "
 "automatically."
 msgstr ""
+"{PRODUCT}包括了[application]*Memtest86+*存储测试应用。要启动存储测试模式，"
+"你需要在启动菜单中选择Troubleshooting > `Memory test`。默认地，[application]*"
+"Memtest86+*每次pass都会进行10次测试；在配置屏幕上按kbd:[c]键可以可以指定一个"
+"不同的配置。在测试通过后，一条消息会显示在当前状态的下面，而另一次pass将自动"
+"启动。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:513
@@ -2006,6 +2186,9 @@ msgid ""
 "throughputs and processor and chipset information. This information is "
 "detected when [application]*Memtest86+* starts."
 msgstr ""
+"左上角显示了关于你的操作系统的配置的信息——检测到的存储大小、处理器缓存和它们"
+"的吞吐率、处理器和芯片组的信息。这个信息会在[application]*Memtest86+*启动时被"
+"检测出来。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:525
@@ -2013,7 +2196,7 @@ msgid ""
 "The upper right corner displays information about the tests - progress of "
 "the current pass and the currently running test in that pass as well as a "
 "description of the test."
-msgstr ""
+msgstr "右上角显示测试的信息——当前pass的进度、当前运行的pass和测试的描述。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:527
@@ -2027,6 +2210,10 @@ msgid ""
 "each pass completes, a short summary will appear in this location. For "
 "example:"
 msgstr ""
+"屏幕中间的部分被用于显示从工具开始运行时的、关于整套测试的信息，例如全部时间"
+"、pass的数量、发现的错误和你的测试信息。在某些操作系统中也会显示出安装的存储"
+"（例如安装的内存条、它们的制造商、内存频率和延迟等）也将在这里显示。在每个pas"
+"s完成后都会在此区域显示一个简单的总结。例如："
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:531
@@ -2042,6 +2229,8 @@ msgid ""
 "such as which test detected a problem, the memory location which is failing, "
 "and others."
 msgstr ""
+"如果[application]*Memtest86+*检测到错误，那么它还会在此区域用红色显示出来。该"
+"信息将包含详细的信息，例如哪个测试检测出了问题、出错的内存的位置和其他信息。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:536
@@ -2053,6 +2242,10 @@ msgid ""
 "important system, leave the tests running overnight or even for a few days "
 "in order to complete multiple passes."
 msgstr ""
+"在大多数情况下，一个简单的、成功的pass（也就是运行的10个测试）足够校验你的RAM"
+"状态健康。在某些罕见的情况下，第一次pass没有检测出来的错误会出现在后续的pass"
+"当中。要对一个重要的操作系统进行彻底的测试，就需要一晚上甚至几天的测试来完成"
+"多次pass。"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:541
@@ -2063,6 +2256,9 @@ msgid ""
 "DDR2 memory at 667{nbsp}MHz, a single pass will take roughly 20{nbsp}minutes "
 "to complete."
 msgstr ""
+"一个[application]*Memtest86+*的、简单且完整的pass耗费的时间和你系统的配置（特"
+"别是RAM大小和速度）有关。例如，一个简单的pass在一个2{nbsp}GB DDR2 "
+"667{nbsp}MHz的系统上大概会耗费20{nbsp}分钟。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:545
@@ -2079,6 +2275,10 @@ msgid ""
 "located in `/usr/share/doc/memtest86+-_version_pass:attributes[{blank}]/` on "
 "{PRODUCT} systems with the [package]*memtest86+* package installed."
 msgstr ""
+"关于如何使用[application]*Memtest86+*的更多信息详见官方链接： "
+"link:++http://www.memtest.org/"
+"++[]。在安装了[package]*memtest86+*的{PRODUCT}系统中的`/usr/share/doc/"
+"memtest86+-_version_pass:attributes[{blank}]/`之下有`README`文件。"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:549
@@ -2095,6 +2295,9 @@ msgid ""
 "before you attempt an installation helps to avoid problems that are often "
 "encountered during installation."
 msgstr ""
+"在使用ISO安装系统之前，你可以测试一个以ISO安装源为基础的安装的完整性。这些ISO"
+"包括DVD和放在本地磁盘或NFS服务器上的ISO镜像。在尝试安装之前校验ISO镜像是否完"
+"整可以帮助避免在安装过程中遇到问题。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:554
@@ -2104,6 +2307,9 @@ msgid ""
 "you select the default installation option from the boot menu (`Test this "
 "media & install Fedora`)."
 msgstr ""
+"要测试ISO镜像的完整性，就需要在boot loader的命令行中追加[option]#rd.live."
+"check#。注意，此选项只在你选择了启动菜单的默认安装选项（`Test this media & "
+"install Fedora`）时才自动使用。"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:556
@@ -2119,6 +2325,8 @@ msgid ""
 "utilities and functions of a running Linux system to modify or repair "
 "already installed operating systems."
 msgstr ""
+"你可以从启动菜单中启动一个命令行的Linux系统，而不必真的在电脑上安装{PRODUCT}"
+"。此选项允许你使用用于Linux运行的工具和功能来修改或修复安装好的操作系统。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:561
@@ -2127,6 +2335,8 @@ msgid ""
 "`Rescue a {PRODUCT} system` from the Troubleshooting submenu in the boot "
 "menu, or use the [option]#inst.rescue# boot option."
 msgstr ""
+"要使用安装盘或USB驱动器来加载救援系统，你需要在Troubleshooting子菜单中选择`"
+"Rescue a {PRODUCT} system`，或使用[option]#inst.rescue#启动选项。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:563
@@ -2134,7 +2344,8 @@ msgid ""
 "Specify the language, keyboard layout and network settings for the rescue "
 "system with the screens that follow. The final setup screen configures "
 "access to the existing system on your computer."
-msgstr ""
+msgstr "指定下面屏幕所示的救援系统的语言、键盘布局和网络设置。最后的设置屏幕用于配置"
+"访问你电脑的已有操作系统。"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:564
