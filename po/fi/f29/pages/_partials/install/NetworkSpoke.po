@@ -2,21 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: 2021-07-02 11:04+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2022-06-05 05:18+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f29pages_partialsinstallnetworkspoke/fi/"
-">\n"
+"fedora-docs-l10n-fedora-install-guide/f29pages_partialsinstallnetworkspoke/"
+"fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: ./pages/_partials/install/NetworkSpoke.adoc:5
@@ -33,6 +34,10 @@ msgid ""
 "installation (if needed for tasks such as downloading packages from a remote "
 "location) and on the installed system."
 msgstr ""
+"Verkko ja isäntänimi -ruutua käytetään verkkoliitäntöjen määrittämiseen. "
+"Tässä valitut vaihtoehdot ovat käytettävissä sekä asennuksen aikana (jos "
+"niitä tarvitaan tehtäviin, kuten pakettien lataamiseen verkosta) että "
+"asennetussa järjestelmässä."
 
 #. type: delimited block =
 #: ./pages/_partials/install/NetworkSpoke.adoc:13
@@ -44,18 +49,24 @@ msgid ""
 "Networking{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Verkon määritys on laaja aihe, ja monet asennuksen aikana käytettävissä "
+"olevista vaihtoehdoista eivät kuulu tämän ohjeen piiriin. Tarkempia tietoja "
+"verkon määrityksistä, mukaan lukien sekä teoreettiset aiheet että erityiset "
+"ohjeet ja esimerkit, on [citetitle]_{PRODUCT} Networking{nbsp}Guide_ -"
+"oppaassa, joka on saatavana osoitteesta:++https://docs.fedoraproject.org/++[ "
+"]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
-msgstr ""
+msgstr "Verkko ja isäntänimi -näyttö. Vasemmassa ruudussa"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/NetworkSpoke.png"
-msgstr ""
+msgstr "anaconda/NetworkSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:21
@@ -66,6 +77,11 @@ msgid ""
 "display its current configuration (such as IP and DNS address); the details "
 "are displayed on the right side of the screen."
 msgstr ""
+"Asennusohjelma tunnistaa automaattisesti paikallisesti käytettävissä olevat "
+"rajapinnat, eikä niitä voi lisätä tai poistaa manuaalisesti. Kaikki havaitut "
+"liitännät näkyvät näytön vasemmassa reunassa. Napsauta liitäntää luettelossa "
+"nähdäksesi sen nykyiset asetukset (kuten IP- ja DNS-osoite); tiedot näkyvät "
+"näytön oikealla puolella."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:23
@@ -76,6 +92,12 @@ msgid ""
 "a Virtual Network Interface]. To remove a previously created virtual "
 "interface, select it in the list and click the `-` button."
 msgstr ""
+"Liitäntäluettelon alla on kaksi painiketta. Käytä +-painiketta lisätäksesi "
+"virtuaalisen verkkoliittymän (Team, Bond tai VLAN) kohdassa xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
+"virtual-interface[Virtuaaliverkkoliittymän lisääminen] kuvatulla tavalla. "
+"Jos haluat poistaa aiemmin luodun virtuaalisen käyttöliittymän, valitse se "
+"luettelosta ja napsauta `-` -painiketta."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:25
@@ -87,6 +109,13 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"Jos haluat muuttaa olemassa olevan liitännän (sekä virtuaalisen että "
+"fyysisen) asetuksia, kuten IP-osoitteita, DNS-palvelimia tai "
+"reititysmäärityksiä, valitse liitäntä vasemmasta ruudusta ja napsauta "
+"\"Määritä\" näytön oikeasta alakulmasta. Käytettävissä olevat asetukset on "
+"kuvattu kohdassa xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-network-configuration-advanced[Verkkoliittymän asetusten "
+"muokkaaminen]."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:27
@@ -94,6 +123,9 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
+"Käytä ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF`-kytkintä "
+"oikeassa yläkulmassa ottaaksesi valitun käyttöliittymän käyttöön tai pois "
+"käytöstä."
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:29
@@ -106,3 +138,10 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
+"Kirjoita yhteysluettelon alle tämän tietokoneen isäntänimi Isäntänimi-"
+"syöttökenttään. Isäntänimi voi olla joko _täydellinen toimialueen nimi_ "
+"(FQDN) muodossa _isäntänimi_._domainname_ tai lyhyt isäntänimi ilman "
+"toimialueen nimeä. Monissa verkoissa on _Dynamic Host Configuration "
+"Protocol_ (`DHCP`) -palvelu, joka toimittaa yhdistetyille järjestelmille "
+"automaattisesti verkkotunnuksen. jotta DHCP-palvelu voi määrittää "
+"toimialueen nimen tälle koneelle, määritä vain lyhyt isäntänimi."
