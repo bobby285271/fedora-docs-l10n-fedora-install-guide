@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2022-06-05 05:18+0000\n"
+"PO-Revision-Date: 2022-06-06 13:18+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f32pages_partialsinstalluserspoke/fi/>"
@@ -37,6 +37,13 @@ msgid ""
 "utility for managing user accounts (for example, the `Users` screen in the "
 "Settings menu in [application]*GNOME*)."
 msgstr ""
+"Luo käyttäjä -näyttöä voidaan käyttää yhden normaalin (ei-root-käyttäjätilin)"
+" luomiseen ja määrittämiseen asennuksen aikana. Vain yksi käyttäjätili "
+"voidaan määrittää tähän; Jos tarvitset lisää tilejä, odota, kunnes asennus "
+"on valmis, käynnistä järjestelmä uudelleen ja luo sitten muita tilejä "
+"käyttämällä joko [command]#useradd#-komentoa terminaalissa tai graafista "
+"apuohjelmaa käyttäjätilien hallintaan (esimerkiksi \"Käyttäjät\"). -näyttö "
+"Asetukset-valikossa kohdassa [sovellus]*GNOME*)."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:13
@@ -45,6 +52,9 @@ msgid ""
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
 msgstr ""
+"Asennuksen viimeistely ei edellytä normaalin käyttäjätilin luomista. se on "
+"kuitenkin erittäin suositeltavaa. Jos et luo sitä, sinun on kirjauduttava "
+"järjestelmään suoraan root-tunnuksella, mitä *ei* suositella."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/UserSpoke.adoc:18
@@ -58,7 +68,7 @@ msgstr ""
 #: ./pages/_partials/install/UserSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
-msgstr ""
+msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:21
@@ -68,6 +78,10 @@ msgid ""
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
+"Määritä käyttäjätili täyttämällä \"koko nimi\" (esimerkiksi \"Pekka Puupää\")"
+" ja \"käyttäjänimi\" (esimerkiksi \"ppuupaa\"). Käyttäjätunnusta käytetään "
+"kirjautumiseen komentoriviltä; jos asennat graafisen ympäristön, graafinen "
+"kirjautumisen hallinta käyttää \"koko nimeä\"."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:23
@@ -79,6 +93,12 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
+"Varmista, että Vaadi salasana tämän tilin käyttämiseen -valintaruutu on "
+"käytössä, kirjoita salasana, jota haluat käyttää tällä tilillä, \"Salasana\"-"
+"kenttään. Kirjoittamasi merkit näkyvät pisteinä turvallisuuden vuoksi. "
+"Toista sitten sama salasana alla olevaan Vahvista salasana -kenttään "
+"varmistaaksesi, että annoit sen oikein. Molempien syötettyjen salasanojen on "
+"oltava samat."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:25
@@ -119,6 +139,13 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
+"\"Tee tästä käyttäjästä järjestelmänvalvoja\" -valintaruutu antaa "
+"käyttäjälle, jonka luot, järjestelmänvalvojan oikeudet (lisäämällä tämän "
+"käyttäjän \"wheel\"-ryhmään), jolloin tämä käyttäjä voi käyttää "
+"[command]#sudo#-komentoa suorittaakseen tehtäviä, jotka ovat normaalisti "
+"käytettävissä vain \"root\" käyttämällä vain käyttäjän omaa salasanaa \"root"
+"\"-salasanan sijaan. Tämä voi olla kätevämpää, mutta voi myös aiheuttaa "
+"turvallisuusriskin."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:39
@@ -127,6 +154,10 @@ msgid ""
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
 msgstr ""
+"Jos annat käyttäjälle järjestelmänvalvojan oikeudet, varmista, että tili on "
+"suojattu vahvalla salasanalla. Älä koskaan anna käyttäjälle "
+"järjestelmänvalvojan oikeuksia ilman, että vaadit salasanaa käyttäjän "
+"tilille."
 
 #. type: delimited block =
 #: ./pages/_partials/install/UserSpoke.adoc:41
@@ -135,6 +166,10 @@ msgid ""
 "link:++https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
+"Katso [citetitle]_{PRODUCT} Security Guide_, joka on saatavilla "
+"link:++https://docs.fedoraproject.org/++[], saadaksesi yksityiskohtaisia "
+"tietoja salasanasuojauksesta, mukaan lukien ohjeet vahvojen salasanojen "
+"valitsemiseen."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:45
@@ -143,13 +178,16 @@ msgid ""
 "fields. A new dialog window titled `Advanced User Configuration` will "
 "open. This dialog is described in the following section."
 msgstr ""
+"Jos haluat lisäasetuksia, napsauta \"Lisäasetukset\" -painiketta salasanan "
+"syöttökenttien alla. Uusi valintaikkuna nimeltä \"Advanced User "
+"Configuration\" avautuu. Tämä valintaikkuna on kuvattu seuraavassa osiossa."
 
 #. type: Block title
 #: ./pages/_partials/install/UserSpoke.adoc:47
 #: ./pages/_partials/install/UserSpoke.adoc:51
 #, no-wrap
 msgid "Advanced User Configuration"
-msgstr ""
+msgstr "Käyttäjän lisäasetukset"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:50
@@ -157,18 +195,20 @@ msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr ""
+"\"Advanced User Configuration\" -valintaikkunassa voit muuttaa seuraavia "
+"uuden käyttäjätilin asetuksia."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "Advanced settings for the new user account."
-msgstr ""
+msgstr "Uuden käyttäjätilin lisäasetukset."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
-msgstr ""
+msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:56
@@ -177,6 +217,8 @@ msgid ""
 "(`/home/pass:attributes[{blank}]_username_pass:attributes[{blank}]` by "
 "default)."
 msgstr ""
+"Käyttäjän kotihakemisto (`/home/"
+"pass:attributes[{blank}]_username_pass:attributes[{blank}]` oletuksena)."
 
 #. type: Plain text
 #: ./pages/_partials/install/UserSpoke.adoc:58
@@ -204,3 +246,10 @@ msgid ""
 "them in parentheses. If you do not specify a custom GID for a new group, it "
 "will be assigned automatically."
 msgstr ""
+"Käyttäjän ryhmän jäsenyys. Luomallasi käyttäjätilillä on aina yksi "
+"oletusryhmäjäsenyys (käyttäjän oletusryhmä, jonka tunnus on asetettu "
+"\"Määritä ryhmätunnus manuaalisesti\" -kenttään). Ryhmän jäsenyys -kentässä "
+"voit määrittää lisäryhmiä pilkuilla eroteltuna luettelona. Ryhmät, joita ei "
+"vielä ole olemassa, luodaan. Voit määrittää niille mukautetut GID:t "
+"suluissa. Jos et määritä mukautettua GID:tä uudelle ryhmälle, se määritetään "
+"automaattisesti."
