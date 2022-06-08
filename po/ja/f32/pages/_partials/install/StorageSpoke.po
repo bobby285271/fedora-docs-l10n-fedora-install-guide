@@ -2,17 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-08 01:18+0000\n"
+"Last-Translator: Ooyama Yosiyuki <qqke6wd9k@apricot.ocn.ne.jp>\n"
+"Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f32pages_partialsinstallstoragespoke/"
+"ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. type: Block title
 #: pages/_partials/install/StorageSpoke.adoc:4
@@ -29,6 +34,10 @@ msgid ""
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
 msgstr ""
+"`Installation Destination` 画面ではストレージのオプションを構成できます - "
+"namely, which disks will be used as the installation target for your "
+"{PRODUCT} installation. インストールを続行するには、常に少なくとも1つのディス"
+"クを選択する必要があります。"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:9
@@ -49,6 +58,13 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"すでにデータが含まれているディスクを使用する場合（たとえば、既存の Microsoft "
+"Windows パーティションを縮小して {PRODUCT} "
+"を2番目のシステムとしてインストールする場合、または {PRODUCT} の以前のリリー"
+"スをアップグレードする場合）、必ず最初に重要なデータをバックアップしてくださ"
+"い。パーティションの操作には常にリスクが伴います。プロセスが中断されたり、何"
+"らかの理由（インストーラーエラー、ハードウェア障害、停電など）で失敗した場合"
+"、ディスク上に既にあるデータの回復が不可能なこともあります。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/StorageSpoke.adoc:19
@@ -71,6 +87,11 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"スクリーンの上側で、ローカルで利用可能なストレージデバイス (SATA, IDE and "
+"SCSI hard drives, USB flash drives, など.) のすべては、 `Local Standard "
+"Disks` セクションに表示されます。ローカルディスクはインストーラーが起動したと"
+"きに検知されます。インストールの開始後に接続されたストレージデバイスは表示さ"
+"れません。"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:24
@@ -219,6 +240,14 @@ msgid ""
 "configurations (for example, systems which require _chain loading_ from "
 "another boot loader) will require the boot drive to be specified manually."
 msgstr ""
+"選択したストレージデバイスのいずれかに _ブートローダー_ "
+"を含めるかどうかを制御するには、画面の左下コーナーにある `Full disk summary "
+"and bootloader` リンクをクリックし、xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-storage-partitioning-bootloader[Boot Loader "
+"Installation] の指示に従います。 大半のケースでは、ブートローダーを標準の場所"
+"のままにしておくだけで十分ですが、一部の構成（例えば、"
+"別のブートローダーからの _ チェーンロード_ が必要なシステム）ではブートドライ"
+"ブの指定は手動でする必要があることに注意してください。"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:60
@@ -228,6 +257,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"ストレージデバイスを選択したあとに、自動パーティショニングまたは手動パーティ"
+"ショニングのどちらかを選択し、暗号化とブートローダー位置の設定をして、"
+"画面の左上コーナーにある "
+"`Done`を押します。そのあとに、設定に応じて、次のことが発生します:"
 
 #. type: Plain text
 #: pages/_partials/install/StorageSpoke.adoc:62
