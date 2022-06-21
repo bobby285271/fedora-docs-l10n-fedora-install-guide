@@ -2,21 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2021-07-02 11:04+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2022-06-21 10:18+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f34pages_partialsinstallsoftwarespoke/"
+"fedora-docs-l10n-fedora-install-guide/f34pages_partialsinstallsoftwarespoke/"
 "fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: ./pages/_partials/install/SoftwareSpoke.adoc:5
@@ -32,6 +33,9 @@ msgid ""
 "and _Add-ons_. These options control which software packages will be "
 "installed on your system during the installation process."
 msgstr ""
+"Ohjelmiston valinta -näytöstä voit valita _Perusympäristön_ ja _Lisäosat_. "
+"Nämä valinnat ohjaavat, mitkä ohjelmistopaketit asennetaan järjestelmääsi "
+"asennuksen aikana."
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:10
@@ -41,6 +45,10 @@ msgid ""
 "Source] is properly configured and only after the installer has downloaded "
 "package metadata from the source."
 msgstr ""
+"Tämä näyttö on käytettävissä vain, jos xref:install/Installing_Using_Anaconda"
+".adoc#sect-installation-gui-installation-source[Asennuslähde] on määritetty "
+"oikein ja vasta sen jälkeen, kun asennusohjelma on ladannut paketin "
+"metatiedot ohjelmistolähteestä."
 
 #. type: delimited block =
 #: ./pages/_partials/install/SoftwareSpoke.adoc:15
@@ -54,6 +62,13 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"Ei ole mahdollista valita tiettyjä paketteja manuaalisen asennuksen aikana. "
+"Voit valita vain ennalta määritettyjä ympäristöjä ja lisäosia. Jos haluat "
+"hallita tarkalleen, mitkä paketit asennetaan, sinun on käytettävä Kickstart-"
+"tiedostoa ja määritettävä paketit [command]#%packages#-osiossa. Katso xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Asennuksen automatisointi Kickstartilla] saadaksesi tietoja Kickstart-"
+"asennuksista."
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:19
@@ -65,18 +80,24 @@ msgid ""
 "example, the Fedora{nbsp}Cloud image. You can change this by configuring a "
 "different installation source containing different environments."
 msgstr ""
+"Ympäristöjen ja lisäosien saatavuus riippuu asennuslähteestäsi. "
+"Oletusarvoisesti valinta riippuu asennusmediasta, jota käytit asennuksen "
+"aloittamiseen. Fedora{nbsp}Palvelimen asennuslevykuvassa on valittavissa "
+"erilaisia ympäristöjä ja lisäosia kuin esimerkiksi Fedora{nbsp}"
+"pilvilevykuvassa. Voit muuttaa tätä määrittämällä eri asennuslähteen, joka "
+"sisältää erilaisia ympäristöjä."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "The Software Selection screen. On the left side"
-msgstr ""
+msgstr "Ohjelmiston valintanäyttö. Vasemmalla puolella"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/SoftwareSpoke.adoc:22
 #, no-wrap
 msgid "anaconda/SoftwareSpoke.png"
-msgstr ""
+msgstr "anaconda/SoftwareSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:25
@@ -87,6 +108,10 @@ msgid ""
 "add-ons which you want to install by marking the check boxes next to each "
 "add-on."
 msgstr ""
+"Määritä ohjelmistovalintasi valitsemalla ensin ympäristö näytön vasemmasta "
+"reunasta. Vain yksi ympäristö voidaan valita, vaikka niitä olisi useampia. "
+"Valitse sitten näytön oikeasta reunasta yksi tai useampi lisäosa, jonka "
+"haluat asentaa, merkitsemällä kunkin lisäosan vieressä olevat valintaruudut."
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:27
@@ -97,6 +122,10 @@ msgid ""
 "add-ons displayed below the separator are not specific to your chosen "
 "environment."
 msgstr ""
+"Lisäosien luettelo on jaettu kahteen osaan vaakaviivalla. Tämän rivin "
+"yläpuolella olevat lisäosat määritellään osaksi valitsemaasi ympäristöä. jos "
+"valitset toisen ympäristön, täällä saatavilla olevat lisäosat muuttuvat. "
+"Erottimen alla näkyvät lisäosat eivät koske valitsemaasi ympäristöä."
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:29
@@ -109,6 +138,12 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
 "(required) - Package Selection]."
 msgstr ""
+"Ympäristöt ja lisäosat määritellään comps.xml-tiedoston avulla "
+"asennuslähteessäsi (esimerkiksi koko Fedora{nbsp}palvelimen asennus-DVD:n `"
+"repodata/`-hakemistossa). Tarkista tämä tiedosto nähdäksesi tarkalleen, "
+"mitkä paketit asennetaan osana tiettyä ympäristöä tai lisäosaa. Lisätietoja "
+"comps.xml-tiedostosta on kohdassa xref:appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-packages[%packages (pakollinen) - Paketin valinta]."
 
 #. type: Plain text
 #: ./pages/_partials/install/SoftwareSpoke.adoc:30
@@ -118,3 +153,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Kun olet määrittänyt ohjelmiston valinnan, napsauta \"Valmis\" vasemmassa "
+"yläkulmassa palataksesi kohtaan xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-installation-summary[Asennusyhteenveto]."
