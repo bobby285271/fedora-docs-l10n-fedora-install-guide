@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-24 05:19+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f36pagesadvancednetwork_based_installations/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/advanced/Network_based_Installations.adoc:5
 #, no-wrap
 msgid "Setting Up an Installation Server"
-msgstr ""
+msgstr "搭建安装服务器"
 
 #. type: delimited block =
 #: ./pages/advanced/Network_based_Installations.adoc:11
@@ -27,13 +30,14 @@ msgid ""
 "This appendix is intended for users with previous Linux experience. If you "
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
-msgstr ""
+msgstr "此附录为之前有过Linux经验的人而准备。如果你是一个新用户，那么你也许想要使用最"
+"小启动媒体或者发行版DVD，而不是这个来进行安装。"
 
 #. type: Title ==
 #: ./pages/advanced/Network_based_Installations.adoc:15
 #, no-wrap
 msgid "PXE Installation Overview"
-msgstr ""
+msgstr "PXE安装概览"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:18
@@ -45,12 +49,15 @@ msgid ""
 "simultaneously. The process involves a number of components and features "
 "working together to provide the resources required."
 msgstr ""
+"预先启动安装环境或PXE，是一种允许电脑直接从网络上的资源来启动的技术。通过网络"
+"安装Fedora意味着你不需要创建媒体，并且你可以同时将操作系统安装到多台电脑或虚"
+"拟机上。这个过程包含了大量的组件和特性共同提供需要的资源。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:19
 #, no-wrap
 msgid "PXE-capable computer"
-msgstr ""
+msgstr "PXE兼容的电脑"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:21
@@ -63,12 +70,16 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"大多数现代的电脑拥有网络启动的能力。典型的做法是在启动时按下一个功能键即可进"
+"入一个启动选择菜单。在非人工值守的环境中，系统通常被配置为首次尝试从网络启动"
+"，然后才从本地存储中启动，然后安装服务器就被配置为只在安装时才被需要。你的电"
+"脑的手册将提供在设置启动顺序上的、专业的信息。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:22
 #, no-wrap
 msgid "DHCP Server"
-msgstr ""
+msgstr "DHCP服务器"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:24
@@ -76,13 +87,14 @@ msgid ""
 "When a system requests an address during network booting, the DHCP server "
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
-msgstr ""
+msgstr "当一个操作系统在网络启动时需要一个地址时，DHCP服务器也将提供用于启动的文件的"
+"地址。一个网络需要有且仅有一个DHCP服务器。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:25
 #, no-wrap
 msgid "TFTP Server"
-msgstr ""
+msgstr "TFTP服务器"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:27
@@ -91,12 +103,14 @@ msgid ""
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"由于预启动环境非常简单，所以文件必须以一种非常简单的方式被提供。普通文件传输"
+"协议，或TFTP，将系统提供给要求继续安装过程的bootloader。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:28
 #, no-wrap
 msgid "Bootloader"
-msgstr ""
+msgstr "Bootloader"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:30
@@ -106,12 +120,15 @@ msgid ""
 "files. It also provides configuration information to the installer, and can "
 "offer a menu to select from different configurations."
 msgstr ""
+"由于启动一个操作系统的工作对于预启动环境而言太过于复杂，所以需要一个bootloade"
+"r来加载内核和相关的文件。它还为安装器提供配置信息，还能提供一个用于选择不同配"
+"置的菜单。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:31
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr ""
+msgstr "内核和Initramfs"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:33
@@ -119,13 +136,14 @@ msgid ""
 "The kernel is the core of any Linux operating system, and the initramfs "
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
-msgstr ""
+msgstr "内核是任意Linux操作系统的核心，然后initramfs为内核提供需要的工具和资源。这些"
+"文件也被TFTP所提供。"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:34
 #, no-wrap
 msgid "Package repository"
-msgstr ""
+msgstr "软件源"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:36
@@ -144,19 +162,19 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:40
 #, no-wrap
 msgid "DHCP Server Configuration"
-msgstr ""
+msgstr "DHCP服务器配置"
 
 #. Needs adminition about static IP, reference out to Networking Guide. Example assumes 192.168.1.2 for server.
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:44
 #, no-wrap
 msgid "Installing and configuring dhcpd"
-msgstr ""
+msgstr "安装并配置dhcpd"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:46
 msgid "Install the dhcp server package."
-msgstr ""
+msgstr "安装dhcp服务器软件包。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:50
@@ -167,7 +185,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:53
 msgid "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
-msgstr ""
+msgstr "为dhcp服务器在`/etc/dhcp/dhcpd.conf`创建一个简单地配置"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:61
@@ -179,6 +197,11 @@ msgid ""
 "max-lease-time 7200;\n"
 "ddns-update-style none;\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"authoritative;\n"
+"default-lease-time 600;\n"
+"max-lease-time 7200;\n"
+"ddns-update-style none;\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:64
@@ -187,17 +210,19 @@ msgid ""
 "option domain-name-servers 192.168.1.1;\n"
 "option routers 192.168.1.1;\n"
 msgstr ""
+"option domain-name-servers 192.168.1.1;\n"
+"option routers 192.168.1.1;\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:66
 #, no-wrap
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:69
 msgid "Test your configuration and address any problems you discover."
-msgstr ""
+msgstr "测试你的配置并且标出你发现的问题的位置。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:76
@@ -254,14 +279,14 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:289
 #, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:103
 msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
-msgstr ""
+msgstr "重启dhcp服务来检查配置，并且如果需要的话就更改配置。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:109
@@ -270,31 +295,33 @@ msgid ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl restart dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:113
 #: ./pages/advanced/Network_based_Installations.adoc:115
 #, no-wrap
 msgid "Installing the tftp server"
-msgstr ""
+msgstr "安装tftp服务器"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:117
 msgid "Install the tftp server package."
-msgstr ""
+msgstr "安装tftp服务器软件包。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:120
 #, no-wrap
 msgid "# dnf install tftp-server\n"
-msgstr ""
+msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:123
 msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
-msgstr ""
+msgstr "开始并启用`tftp socket`。当需要时，`systemd`将自动启动`tftpd`服务。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:128
@@ -303,40 +330,42 @@ msgid ""
 "# [command]#systemctl start tftp.socket#\n"
 "# [command]#systemctl enable tftp.socket#\n"
 msgstr ""
+"# [command]#systemctl start tftp.socket#\n"
+"# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ==
 #: ./pages/advanced/Network_based_Installations.adoc:131
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "提供并配置用于PXE服务器的bootloader"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:133
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "获取bootloader文件"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:135
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
-msgstr ""
+msgstr "为BIOS客户端获取[package]*syslinux* bootloader。"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:137
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "安装[package]*syslinux*软件包。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:140
 #, no-wrap
 msgid "# dnf install syslinux\n"
-msgstr ""
+msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:143
 #: ./pages/advanced/Network_based_Installations.adoc:160
 msgid "Create a directory for the bootloader files, and make them available there."
-msgstr ""
+msgstr "为bootloader 文件创建一个目录，并且令其中的文件可用。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:148
@@ -352,7 +381,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:151
 msgid "Get the bootloader files for UEFI systems"
-msgstr ""
+msgstr "获取UEFI系统的bootloader文件"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:153
@@ -384,14 +413,14 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:167
 #, no-wrap
 msgid "Configuring client bootloaders"
-msgstr ""
+msgstr "配置客户端bootloader"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:169
 msgid ""
 "Create a boot menu for BIOS clients at "
 "`/var/lib/tftpboot/pxelinux.cfg/default`."
-msgstr ""
+msgstr "在`/var/lib/tftpboot/pxelinux.cfg/default`之下创建一个为BIOS准备的启动菜单。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:177
@@ -401,6 +430,9 @@ msgid ""
 "prompt 1\n"
 "timeout 600\n"
 msgstr ""
+"default vesamenu.c32\n"
+"prompt 1\n"
+"timeout 600\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:182
@@ -453,6 +485,13 @@ msgid ""
 "\tinsmod all_video\n"
 "}\n"
 msgstr ""
+"function load_video {\n"
+"\tinsmod efi_gop\n"
+"\tinsmod efi_uga\n"
+"\tinsmod video_bochs\n"
+"\tinsmod video_cirrus\n"
+"\tinsmod all_video\n"
+"}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:209
@@ -462,6 +501,9 @@ msgid ""
 "set gfxpayload=keep\n"
 "insmod gzio\n"
 msgstr ""
+"load_video\n"
+"set gfxpayload=keep\n"
+"insmod gzio\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:213
@@ -502,18 +544,18 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:227
 #, no-wrap
 msgid "Getting the kernel and initrd"
-msgstr ""
+msgstr "获取内核和initrd"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:229
 #, no-wrap
 msgid "Downloading the kernel and initrd"
-msgstr ""
+msgstr "下载内核和initrd"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:231
 msgid "Create a directory for the files."
-msgstr ""
+msgstr "创建一个文件的目录。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:235
@@ -522,11 +564,13 @@ msgid ""
 "# [command]#mkdir -p "
 "`/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:238
 msgid "Download the kernel."
-msgstr ""
+msgstr "下载内核。"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:242
@@ -540,7 +584,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:245
 msgid "Download the initrd"
-msgstr ""
+msgstr "下载initrd"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:249
@@ -641,7 +685,7 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:292
 #, no-wrap
 msgid "Providing repositories"
-msgstr ""
+msgstr "提供软件源"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:295
@@ -649,7 +693,8 @@ msgid ""
 "The examples in this section use the public Fedora mirrors as the package "
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
-msgstr ""
+msgstr "本小节中的例子使用Fedora镜像作为软件源。为了更快的安装或安装大量系统，或更多"
+"的隔离环境，那么你也许想要维护一个本地软件源。"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:297
@@ -666,7 +711,7 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:299
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
-msgstr ""
+msgstr "使用Cobbler进行增强的网络安装"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:302
@@ -686,6 +731,9 @@ msgid ""
 "link:++https://cobbler.github.io/++[] to accompany the packages in the "
 "Fedora repository."
 msgstr ""
+"使用cobbler传送所有特性可以非常简单，此工具的全部的功能点太宽泛而不能在此文档"
+"中列出。Cobbler社区在link:++https://cobbler.github.io/"
+"++[]提供了文档，并伴随Fedora软件源分发。"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:305
@@ -694,3 +742,5 @@ msgid ""
 "official documentation as well as downloads on the project website at "
 "link:++https://www.theforeman.org/++[]."
 msgstr ""
+"另外，比也许对**Foreman**感兴趣。你可以在link:++https://www.theforeman.org/"
+"++[]项目网页上找到官方文档并下载。"
