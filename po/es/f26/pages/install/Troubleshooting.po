@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2022-06-24 14:51+0000\n"
+"PO-Revision-Date: 2022-07-02 15:18+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f26pagesinstalltroubleshooting/es/>\n"
@@ -869,7 +869,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:273
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "Problemas Con la Secuencia de Arranque Gráfico"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:276
@@ -882,12 +882,20 @@ msgid ""
 "sequence; to solve this issue, you must disable graphical boot. To do this, "
 "temporarily alter the setting at boot time before changing it permanently."
 msgstr ""
+"Después de que termine la instalación y reinicie el sistema por primera vez "
+"es posible que el sistema deje de responder durante la secuencia de arranque "
+"gráfico, requiriendo un reajuste. En este caso, el cargaor de arranque se "
+"visualizará bien pero al seleccioar cualquier entrada e intentar arrancar el "
+"sistema lleva a una parada. Esto normalmente significa que hay un problema "
+"con la secuencia de arranque gráfico; para resolver esta cuestión debe "
+"deshabilitar el arranque gráfico. Para hacer esto, altere temporalmente el "
+"ajuste en el momento del arranque antes de cambiarlo permanentemente."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:277
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "Deshabilitar el Arranque Gráfico Temporalmente"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:279
@@ -897,6 +905,9 @@ msgid ""
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
 "it."
 msgstr ""
+"Encienda su ordenaor y espere hasta que aparezca el menú del cargador de "
+"arranque. Si estableció el tiempo de salida del cargador de arranque a = "
+"pulse la tecla kbd:[Esc] para acceder."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:281
@@ -906,6 +917,9 @@ msgid ""
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
 "options."
 msgstr ""
+"Cuando aparezca el menú del cargador de arraque utilice sus teclas de cursor "
+"para resaltar la entrada en la que desea arrancar y pulse la tecla kbd:[e] "
+"para editar las opciones de esta entrada."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:283
@@ -915,6 +929,11 @@ msgid ""
 "this line, locate the `rhgb` option and delete it. The option may not be "
 "immediately visible; use the cursor keys to scroll up and down."
 msgstr ""
+"En la lista de opciones busque la línea kernel - esto es, la línea que "
+"empieza con la palabra clave `linux` (o, en algunos casos, `linux16` o "
+"`linuxefi`). En esta línea, localice la opción `rhgb` y borrela. La opción "
+"puede ser que no esté visible inmediatamente; use las teclas de cursor para "
+"ir arraba y abajo."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:285
@@ -923,6 +942,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
 msgstr ""
+"Presione kbd:[F10] o kbd:[Ctrl + X] para arrancar su sistema con las "
+"opciones editadas."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:287
@@ -932,23 +953,28 @@ msgid ""
 "perform the previous procedure every time the system boots. To permanently "
 "change boot options, do the following."
 msgstr ""
+"Si el sistema arranca con éxito ysted puede acceder normalmente. Entonces "
+"usted necesitará deshabilitar el arranque gráfico permanentemente - de otro "
+"modo tendrá que llevar a cabo el procedimiento anterios cada vez que "
+"arranque el sistema. Para cambiar las opciones de arranque permanentemente, "
+"haga lo siguiente."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:288
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "Deshabilitando el Arranque Gráfico Permanentemente"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:290
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "Acceda a la cuenta `root` usando el comando [command]#su -#:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:294
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:297
@@ -956,6 +982,8 @@ msgid ""
 "Open the `/etc/default/grub` configuration file using a plain text editor "
 "such as [application]*vim*."
 msgstr ""
+"Abra el archivo de configuración `/etc/default/grub` usando un editor de "
+"texto plano como [application]*vim*."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:299
@@ -963,6 +991,8 @@ msgid ""
 "Within the `grub` file, locate the line beginning with "
 "`GRUB_CMDLINE_LINUX`. The line should look similar to the following:"
 msgstr ""
+"Dentro del archivo `grub`, localice la línea que empieza con "
+"`GRUB_CMDLINE_LINUX`. La línea debería parecerse a lo siguiente:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:303
@@ -973,28 +1003,34 @@ msgid ""
 ":) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
 "quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:307
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "En este línea, borre la opción `rhgb`."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:309
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "Guarde el archivo de configuración editado."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:311
 msgid "Refresh the boot loader configuration by executing the following command:"
 msgstr ""
+"Refresque la configuración del cargador de arranque ejecutando el siguiente "
+"comando:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:315
 #: ./pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:318
@@ -1005,6 +1041,12 @@ msgid ""
 "`GRUB_CMDLINE_LINUX` line in the `/etc/default/grub` file and refresh the "
 "boot loader configuration again using the [command]#grub2-mkconfig# command."
 msgstr ""
+"Después de que termine este procedimiento puede reiniciar su ordenador. "
+"{PRODUCT} no usará nunca más la secuencia de arranque gráfico. Si desea "
+"habilitar el arranque gráfico, siga el mismo procedimiento añadiendo la "
+"opción `rhgb` a la línea `GRUB_CMDLINE_LINUX` en el archivo `/etc/default/"
+"grub` y refresque la configuración del cargador de arranque otra vez usando "
+"el comando [command]#grub2-mkconfig#."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:320
@@ -1019,7 +1061,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "Arrancar en un Entorno Gráfico"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:325
@@ -1030,6 +1072,12 @@ msgid ""
 "using the [command]#startx# command. Note, however, that this is just a "
 "one-time fix and does not change the log in process for future log ins."
 msgstr ""
+"Si usted tiene instalado [application]*X Window System* y un entorno de "
+"escritorio como [application]*GNOME*, pero no está viendo un entorno de "
+"escritorio gráfico una vez que ha accedido a su sistema, puede arráncarlo "
+"manualmente usando el comando [command]#startx#. Advierta, sin embargo, que "
+"esto lo corrige para una sola vez y no cambia el proceso de acceso para "
+"futuros accesos."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:327
@@ -1039,12 +1087,16 @@ msgid ""
 "`graphical.target`. When you are finished, reboot the computer. You will "
 "presented with a graphical login prompt after the system restarts."
 msgstr ""
+"Para configurar su sistema de modo que puede acceder en una pantalla de "
+"acceso gráfica, debe cambiar el objetivo de [application]*systemd* a "
+"`graphical.target`. Cuando haya terminado, reinicie el ordenador. Se le "
+"presentará una petiión de acceso gráfica después de que el sistema arranque."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "Configurar el Acceso Gráfico como Predeterminado"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:330
@@ -1052,6 +1104,8 @@ msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
 msgstr ""
+"Abra un terminal de shell. Si está en una cuenta de usuario, hágase root "
+"tecleando el comando [command]#su -#."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:332
@@ -1059,12 +1113,14 @@ msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
 msgstr ""
+"Cambie el objetivo predeterminado a `graphical.target`. Para hacer esto, "
+"ejecute el siguiente comando:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:336
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:339
@@ -1074,12 +1130,16 @@ msgid ""
 "change and keep using the text-based login prompt, execute the following "
 "command as `root`:"
 msgstr ""
+"El acceso gráfico está habilitado ahora de modo predeterminado - se le "
+"presentará un indicador de inicio de sesión gŕafico después del próximo "
+"reinicio. Si desea revertir este cambio usando un indicador de inicio de "
+"sesión basado en texto, ejecute el siguiente comando como `root`:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:343
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:346
@@ -1093,7 +1153,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:348
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "No Hay Interfaz Gráfica de Usuario Presente"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:351
@@ -1104,6 +1164,11 @@ msgid ""
 "installation, such as `Minimal install` or `Web Server`, do not include a "
 "graphical interface - it has to be installed manually."
 msgstr ""
+"Si tiene problemas obteniendo [application]*X* (el [application]*X Window "
+"System*) para arrancar, es posible que no haya sido instalado. Algunos de "
+"los entorno base preestablecidos que puede seleccionar durante la "
+"instalación como `Minimal install` o `Web Server`, no incluyen interfaz "
+"gráfica - tiene que ser instalada manualmente."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:353
@@ -1113,12 +1178,16 @@ msgid ""
 "to install [application]*GNOME*, use [command]#dnf install gnome-shell# as "
 "`root`."
 msgstr ""
+"Si desea [application]*X*, puede instalar los paquetes necesarios después de "
+"la instalación usando el administrador de paquetes [application]*DNF*. Por "
+"ejemplo, para instalar [application]*GNOME*, use como `root` [command]#dnf "
+"install gnome-shell# ."
 
 #. type: Title =====
 #: ./pages/install/Troubleshooting.adoc:354
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "El Servidor X Falla Después de que el Usuario Haya Iniciado Sesión"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:357
@@ -1128,12 +1197,16 @@ msgid ""
 "full). To verify that this is the problem you are experiencing, execute the "
 "following command:"
 msgstr ""
+"Si tiene problemas con el servidor [application]*X* que falla después que un "
+"usuario acceda, uno o más de sus sistemas de archivos pueden estar llenos (o "
+"cerca de estarlo). Para verificar que este el problema que está "
+"experimentando, ejecute el siguiente comando:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:361
 #, no-wrap
 msgid "$ [command]#df -h#\n"
-msgstr ""
+msgstr "$ [command]#df -h#\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:364
@@ -1142,6 +1215,9 @@ msgid ""
 "the problem will be on the `/home` partition. A sample output of the "
 "[command]#df# command may look similar to the following:"
 msgstr ""
+"La salida le ayudará a diagnosticar que partición está llena - en la mayoría "
+"de los casos el problema estará en la partición `/home`. Una salida de "
+"muestra del comando [command]#df# puede parecer similar a la siguiente:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:376
@@ -1159,6 +1235,17 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"Filesystem                                  Size  Used Avail Use% Mounted "
+"on\n"
+"/dev/mapper/vg_rhel-root                     20G  6.0G   13G  32% /\n"
+"devtmpfs                                    1.8G     0  1.8G   0% /dev\n"
+"tmpfs                                       1.8G  2.7M  1.8G   1% /dev/shm\n"
+"tmpfs                                       1.8G 1012K  1.8G   1% /run\n"
+"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/"
+"cgroup\n"
+"tmpfs                                       1.8G  2.6M  1.8G   1% /tmp\n"
+"/dev/sda1                                   976M  150M  760M  17% /boot\n"
+"/dev/dm-4                                    90G   90G     0 100% /home\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:380
@@ -1168,6 +1255,10 @@ msgid ""
 "unneeded files. After you free up some disk space, start [application]*X* "
 "using the [command]#startx# command."
 msgstr ""
+"En el ejemplo de anterior puede ver que la partición `/home` está llena, lo "
+"que provoca el problema. Puede hacer espacio en la partición borrando "
+"archivos innecesarios. Después de que libere algún espacio en el disco, "
+"inicie [application]*X* usando el comando [command]#startx#."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:382
@@ -1176,12 +1267,15 @@ msgid ""
 "options available (such as the [option]#-h# option used in this example), "
 "see the `df(1)` man page."
 msgstr ""
+"Para información adicional sobre [command]#df# y una explicación de las "
+"opciones disponbles (como la opción [option]#-h# usada en el ejemplo), vea "
+"la página man `df(1)`."
 
 #. type: Title =====
 #: ./pages/install/Troubleshooting.adoc:384
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "¿No Se Reconoce su RAM?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:387
@@ -1204,6 +1298,10 @@ msgid ""
 "3.5GB or 3.7GB, you have probably installed a 32-bit version of {PRODUCT} on "
 "a 64bit kernel. For modern systems, use the 64-bit (x86_64) version."
 msgstr ""
+"Si tiene 4GB o más de memoria instalada, pero {PRODUCT} solo muestra "
+"alrededor de 3.5GB o 3.7GB, usted tiene, probablemente, instalada la versión "
+"de 32-bit de {PRODUCT} sobre un kernel de 64bit. Para sistemas modernos, use "
+"la versión de 64-bit (x86_64)."
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:394
@@ -1214,6 +1312,12 @@ msgid ""
 "with 4{nbsp}GB of RAM and an integrated Intel graphics card will show only "
 "roughly 3.7{nbsp}GB of available memory, even with a 64-bit system."
 msgstr ""
+"Algunas configuraciones hardware tienen una parte de la RAM del sistema "
+"reservada y no disponibles para el sistema principal. Notablemente, los "
+"ordenadores portátiles con tarjetas gráficas integradas reservarán memoria "
+"para la GPU. Por ejemplo, un portátil con 4{nbsp}GB de RAM y una tarjeta "
+"gráfica Intel integrada mostrará aproximadamente solo 3.7{nbsp}GB de memoria "
+"disponible, incluso con un sistema de 64-bit."
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:396
@@ -1233,12 +1337,14 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"Si está seguro de que su memoria no tiene ningún problema, puede probar y "
+"configurar la memoria manualmente usando la opción del kernel [option]#mem=#."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:401
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "Configurar la Memoria Manualmente"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:407
@@ -1247,19 +1353,22 @@ msgid ""
 "with the keyword `linux` (or, in some cases, `linux16`). Append the "
 "following option to the end of this line:"
 msgstr ""
+"En la lista de opciones, bsque la línea kernel - esto es, la línea que "
+"empieza con la palabra clave `linux` (o, en algunos casos, `linux16`). Añada "
+"la siguiente opción al final de esta línea:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:411
 #: ./pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
-msgstr ""
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:414
 #: ./pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
-msgstr ""
+msgstr "Reemplace _xx_ con la cantidad de RAM que tiene en megabytes."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:418
@@ -1270,6 +1379,11 @@ msgid ""
 "the line beginning with `GRUB_CMDLINE_LINUX` in the `/etc/default/grub` file "
 "to make the change permanent:"
 msgstr ""
+"Espere a que el sistema arranque y acceda. Después, abra un terminal y "
+"ejecute otra vez el comando [command]#free -m#. Si la cantidad total de RAM "
+"mostrada coincide con sus expectativas, añada lo siguiente a la línea que "
+"empieza con `GRUB_CMDLINE_LINUX` en el archivo `/etc/default/grub` para "
+"hacer el cambio permanente:"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:427
@@ -1278,6 +1392,9 @@ msgid ""
 "configuration so that the change will take effect. Run the following command "
 "with root privileges:"
 msgstr ""
+"Despues actualice el archivo y guardelo, refresque la configuración del "
+"cargador de arranque para que el cambio tenga efecto. Ejecute el siguiente "
+"comando con privilegios de root:"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:434
@@ -1285,6 +1402,8 @@ msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
 msgstr ""
+"En `/etc/default/grub`, el ejemplo anterior deberia ser similar a lo "
+"siguiente:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:444
@@ -1301,3 +1420,12 @@ msgid ""
 "mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
+"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"
