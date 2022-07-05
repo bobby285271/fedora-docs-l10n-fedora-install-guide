@@ -2,28 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Bobby Rong <rjl931189261@126.com>, 2021.
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2021-05-06 21:56+0000\n"
-"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"PO-Revision-Date: 2022-07-05 10:18+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "f31pages_partialsinstallstoragespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.1\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4
 #: ./pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr "安装目标"
+msgstr "安装目标位置"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:7
@@ -54,9 +55,11 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
-"如果你需要使用一个已经包含一些数据的磁盘，例如你希望将 Microsoft Windows 的分区压缩并在剩余的空间上安装 {PRODUCT} ，"
-"或者你希望升级你的 {PRODUCT} "
-"，务必对所有重要的数据做好备份。手动分区是有风险的，如果手动分区进程被中断或是无法完成（例如安装出错、电源中断等等），磁盘上已有的数据可能将无法恢复。"
+"如果你需要使用一个已经包含一些数据的磁盘，例如你希望将 Microsoft Windows "
+"的分区压缩并在剩余的空间上安装 {PRODUCT} ，或者你希望升级你的 {PRODUCT} ，那"
+"么你必须对所有重要的数据做好备份。手动分区是有风险的：如果手动分区进程被中断"
+"或是无法完成（例如安装出错、电源中断等等），那么磁盘上已有的数据将可能无法恢"
+"复。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -64,7 +67,7 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr "安装目标页面。共有两个本地磁盘可用"
+msgstr "安装目标位置页面。共有两个本地磁盘可用"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -81,8 +84,9 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
-"在页面的顶部，所有在本地可用的储存设备都会被列出来（包括 SATA、IDE 和 SCSI 硬盘、USB "
-"驱动器等等）。在安装程序启动的时候本地储存设备就会被自动探测，在安装开始后才接入的设备不会被显示。"
+"所有在本地可用的储存设备都会在页面的顶部的`本地标准磁盘`区域被列出来（包括 "
+"SATA、IDE 和 SCSI 硬盘、USB 驱动器等等）。在安装程序启动的时候本地储存设备就"
+"会被自动探测，在安装开始后才连上的设备不会被显示。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
@@ -123,8 +127,9 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
-"我们使用一个黑色实心圆为底的白色对勾标记将被用于安装的储存设备。没有被标记的设备将不会用于安装，自动分区的时候也会忽略这些设备，手动分区的时候这些设备也将"
-"会是不可用状态。"
+"我们使用一个黑色实心圆为底的白色对勾标记将被用于安装{PRODUCT}的储存设备。没有"
+"被标记的设备将不会用于安装，自动分区的时候也会忽略这些设备，手动分区的时候这"
+"些设备也将会是不可用状态。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33

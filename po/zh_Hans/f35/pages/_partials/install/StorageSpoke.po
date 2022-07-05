@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Yu Hongbo <linuxbckp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-05 10:19+0000\n"
+"Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f35pages_partialsinstallstoragespoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:4
 #: ./pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "安装目标位置"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:7
@@ -29,7 +32,8 @@ msgid ""
 "options - namely, which disks will be used as the installation target for "
 "your {PRODUCT} installation. At least one disk must always be selected for "
 "the installation to proceed."
-msgstr ""
+msgstr "安装目标页面将允许你对储存设备进行配置，你可以选择将哪个设备用于 {PRODUCT} "
+"的安装。你需要至少选择一个设备以完成安装。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:9
@@ -39,6 +43,8 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"关于Linux 磁盘分区背后的理论知识详见xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning-recommended[推荐的安装方案]。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:14
@@ -51,6 +57,11 @@ msgid ""
 "for any reason (installer error, hardware failure, power outage, etc.), any "
 "data already on the disk may become impossible to recover."
 msgstr ""
+"如果你需要使用一个已经包含一些数据的磁盘，例如你希望将 Microsoft Windows "
+"的分区压缩并在剩余的空间上安装 {PRODUCT} ，或者你希望升级你的 {PRODUCT} ，那"
+"么你必须对所有重要的数据做好备份。手动分区是有风险的：如果手动分区进程被中断"
+"或是无法完成（例如安装出错、电源中断等等），那么磁盘上已有的数据将可能无法恢"
+"复。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -58,13 +69,13 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "安装目标位置页面。共有两个本地磁盘可用"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:22
@@ -75,6 +86,9 @@ msgid ""
 "starts - any storage devices connected after the installation has started "
 "will not be shown."
 msgstr ""
+"所有在本地可用的储存设备都会在页面的顶部的`本地标准磁盘`区域被列出来（包括 "
+"SATA、IDE 和 SCSI 硬盘、USB 驱动器等等）。在安装程序启动的时候本地储存设备就"
+"会被自动探测，在安装开始后才连上的设备不会被显示。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:24
@@ -84,6 +98,9 @@ msgid ""
 "opens. All detected disks, including any new ones, will be displayed in the "
 "`Local Standard Disks` section."
 msgstr ""
+"如果你需要添加额外的本地储存设备，那么你可以点击右下角的`刷新`按钮，然后你需"
+"要按照出现的对话框的说明来进行操作。所有被检测到的磁盘，包括新探测到的磁盘，"
+"都会在`本地标准磁盘`区域当中显示出来。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:26
@@ -98,6 +115,12 @@ msgid ""
 "configure will then show up in the `Specialized & Network Disks` the same "
 "way local disks are shown above."
 msgstr ""
+"`特殊磁盘和网络磁盘`区域显示着已经配置的网络储存设备（例如 iSCSI 和 FCoE 磁盘"
+"）。当你首次打开这个页面的时候，这个区域会是空的，网络设备也不会被自动探测。"
+"要搜索网络储存设备，点击添加磁盘按钮并按照 xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[安装目标 - 特殊磁盘与网络磁盘] "
+"章节进行操作。所有配置好的网络储存设备都会出现在`特殊磁盘和网络磁盘`区域中。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:28
@@ -108,6 +131,9 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"我们使用一个黑色实心圆为底的白色对勾标记将被用于安装{PRODUCT}的储存设备。没有"
+"被标记的设备将不会用于安装，自动分区的时候也会忽略这些设备，手动分区的时候这"
+"些设备也将会是不可用状态。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33
