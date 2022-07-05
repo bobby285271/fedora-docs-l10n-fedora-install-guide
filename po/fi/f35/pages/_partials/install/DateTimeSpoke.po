@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Jan Kuparinen <copper_fin@hotmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2021-11-08 19:30+0000\n"
+"PO-Revision-Date: 2022-07-05 10:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f35pages_partialsinstalldatetimespoke/"
+"fedora-docs-l10n-fedora-install-guide/f35pages_partialsinstalldatetimespoke/"
 "fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:5
@@ -35,18 +35,24 @@ msgid ""
 "Screen and Language Selection], but you can change your date, time and "
 "location settings before you begin the installation."
 msgstr ""
+"\"Päivämäärä ja aika\" -näytössä voit määrittää järjestelmäsi kellonajan ja "
+"päivämäärän asetukset. Tämä näyttö konfiguroidaan automaattisesti kohdassa "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-welcome["
+"Tervetulonäyttö ja kielen valinta] valitsemiesi asetusten perusteella, mutta "
+"voit muuttaa päivämäärä-, aika- ja sijaintiasetuksiasi ennen kuin aloitat "
+"asennus."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Date & Time screen"
-msgstr ""
+msgstr "Kuvakaappaus Päivämäärä ja aika -näytöstä"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/DateTimeSpoke.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:14
@@ -57,6 +63,11 @@ msgid ""
 "{PRODUCT} ensure that your time is always set correctly including automatic "
 "time changes for daylight savings time if applicable."
 msgstr ""
+"Valitse ensin alueesi näytön vasemmassa yläkulmassa olevasta avattavasta "
+"valikosta. Valitse sitten kaupunkisi tai sijaintiasi lähinnä oleva kaupunki "
+"samalla aikavyöhykkeellä. Tietyn sijainnin valitseminen auttaa {PRODUCT}a "
+"varmistamaan, että aikasi on aina asetettu oikein, mukaan lukien mahdolliset "
+"automaattiset kesäajan muutokset."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:16
@@ -65,6 +76,8 @@ msgid ""
 "without setting your location to a specific region. To do so, select `Etc` "
 "as your region."
 msgstr ""
+"Voit myös valita aikavyöhykkeen suhteessa Greenwichin aikaan (GMT) "
+"asettamatta sijaintiasi tietylle alueelle. Valitse alueeksi \"Etc\"."
 
 #. type: delimited block =
 #: ./pages/_partials/install/DateTimeSpoke.adoc:21
@@ -75,6 +88,11 @@ msgid ""
 "regions into this database. You can find more information at the "
 "link:++https://www.iana.org//time-zones++[IANA official website]."
 msgstr ""
+"Kaupunkien ja alueiden luettelo on peräisin Internet Assigned Numbers "
+"Authorityn (IANA) ylläpitämästä julkisesta aikavyöhyketietokannasta "
+"([paketti]*tzdata*). Fedora-projekti ei voi lisätä kaupunkeja tai alueita "
+"tähän tietokantaan. Löydät lisätietoja linkistä:++https://www.iana.org//time-"
+"zones++[IANA:n virallinen verkkosivusto]."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:25
@@ -86,12 +104,19 @@ msgid ""
 "are configured; you can add others and disable or remove the default ones by "
 "clicking the gear wheel button next to the switch."
 msgstr ""
+"Näytön oikeassa yläkulmassa olevaa \"Network Time\" -kytkimen avulla voidaan "
+"ottaa käyttöön tai poistaa käytöstä verkon ajan synkronointi Network Time "
+"Protocol (NTP) -protokollan avulla. Tämän vaihtoehdon ottaminen käyttöön "
+"pitää järjestelmäaikasi oikeana niin kauan kuin järjestelmä voi käyttää "
+"Internetiä. Oletuksena neljä NTP _pools_ on määritetty; Voit lisätä muita ja "
+"poistaa käytöstä tai poistaa oletusarvot napsauttamalla kytkimen vieressä "
+"olevaa hammaspyöräpainiketta."
 
 #. type: Block title
 #: ./pages/_partials/install/DateTimeSpoke.adoc:26
 #, no-wrap
 msgid "The Add and mark for usage NTP servers dialog"
-msgstr ""
+msgstr "Lisää ja merkitse käyttöön NTP-palvelimia -valintaikkuna"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
@@ -100,12 +125,14 @@ msgid ""
 "A dialog window allowing you to add or remove NTP pools from your system "
 "configuration"
 msgstr ""
+"Valintaikkuna, jossa voit lisätä tai poistaa NTP-varantoja "
+"järjestelmäkokoonpanostasi"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/DateTimeSpoke.adoc:28
 #, no-wrap
 msgid "anaconda/DateTimeSpoke_AddNTP.png"
-msgstr ""
+msgstr "anaconda/DateTimeSpoke_AddNTP.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:31
@@ -114,6 +141,9 @@ msgid ""
 "the screen will become active, and you will be able to set the current time "
 "and date manually."
 msgstr ""
+"Jos poistat verkon ajan synkronoinnin käytöstä, näytön alareunassa olevat "
+"säätimet aktivoituvat ja voit asettaa kellonajan ja päivämäärän "
+"manuaalisesti."
 
 #. type: Plain text
 #: ./pages/_partials/install/DateTimeSpoke.adoc:32
@@ -123,3 +153,7 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"Kun olet määrittänyt aika- ja päivämääräasetukset, paina vasemmassa "
+"yläkulmassa olevaa Valmis-painiketta palataksesi kohtaan xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Asennusyhteenveto]."

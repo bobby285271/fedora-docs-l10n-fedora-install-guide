@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-10-01 21:07+0000\n"
-"PO-Revision-Date: 2021-09-06 05:05+0000\n"
+"PO-Revision-Date: 2022-07-05 10:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/f33pages_partialsinstallkdumpspoke/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f33pages_partialsinstallkdumpspoke/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: pages/_partials/install/KdumpSpoke.adoc:4
@@ -35,6 +36,12 @@ msgid ""
 "adoc#sect-boot-menu[The Boot Menu] for instructions on using custom boot "
 "options."
 msgstr ""
+"Tämä näyttö on oletuksena pois käytöstä. Jos haluat ottaa sen käyttöön "
+"asennuksen aikana, sinun on käytettävä käynnistysvalikon [option]#inst."
+"kdump_addon=on#-vaihtoehtoa. Katso lisätietoja kohdasta xref:advanced/"
+"Boot_Options.adoc#sect-boot-options-advanced[Asennuksen lisäasetukset] ja "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[Käynnistysvalikko] "
+"saadaksesi ohjeet mukautettujen käynnistysasetusten käyttämiseen."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:14
@@ -43,12 +50,15 @@ msgid ""
 "activated on the installed system, and how much memory will be reserved for "
 "it if enabled."
 msgstr ""
+"Tämän näytön avulla voit valita, otetaanko [sovellus]*Kdump* käyttöön "
+"asennetussa järjestelmässä ja kuinka paljon muistia sille varataan, jos se "
+"on käytössä."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/KdumpSpoke.adoc:17
 #, no-wrap
 msgid "The Kdump configuration screen"
-msgstr ""
+msgstr "Kdump-asetusnäyttö"
 
 #. type: Target for macro image
 #: pages/_partials/install/KdumpSpoke.adoc:17
@@ -66,6 +76,12 @@ msgid ""
 "of the system's memory (RAM) reserved to itself. This reserved memory will "
 "not be accessible to the main kernel."
 msgstr ""
+"[sovellus]*Kdump* on ytimen kaatumisen poistomekanismi, joka järjestelmän "
+"kaatumisen sattuessa kaappaa järjestelmämuistin sisällön vian hetkellä. Tämä "
+"kaapattu muisti voidaan sitten analysoida kaatumisen syyn selvittämiseksi. "
+"Jos [sovellus]*Kdump* on käytössä, sillä on oltava pieni osa järjestelmän "
+"muistista (RAM) varattuna itselleen. Tämä varattu muisti ei ole pääytimen "
+"käytettävissä."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:22
@@ -74,6 +90,9 @@ msgid ""
 "kdump`. Then, enter the amount of memory to be reserved in megabytes into "
 "the `Memory To Be Reserved` field."
 msgstr ""
+"Ota [sovellus]*Kdump* käyttöön asennetussa järjestelmässä valitsemalla Ota "
+"kdump käyttöön. Kirjoita sitten varattavan muistin määrä megatavuina "
+"Varattava muisti -kenttään."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:24
@@ -90,6 +109,17 @@ msgid ""
 "about how [application]*Kdump* works, how to configure additional settings, "
 "and how to analyze a saved crash dump."
 msgstr ""
+"Varattavan muistin määrä määräytyy järjestelmäsi arkkitehtuurin (AMD64:llä "
+"ja Intel{nbsp}64:llä on erilaiset vaatimukset kuin esimerkiksi IBM Powerilla)"
+" sekä järjestelmämuistin kokonaismäärän perusteella. Useimmissa tapauksissa "
+"automaattinen varaus on tyydyttävä. Jos vaadit manuaalisia asetuksia, katso "
+"linkki:++https://access.redhat.com/documentation/en-US/"
+"Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-"
+"configurations-and-targets.html #sect-kdump-memory-requirements++[Red{nbsp}"
+"Hat Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump Guide] ohjeita varten. "
+"Tämä asiakirja sisältää myös tarkempaa tietoa siitä, kuinka [sovellus]*Kdump*"
+" toimii, miten lisäasetukset määritetään ja kuinka tallennettu kaatumisvedos "
+"analysoidaan."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:26
@@ -98,6 +128,9 @@ msgid ""
 "how much memory will be accessible to your main system once your selected "
 "amount of RAM is reserved."
 msgstr ""
+"Varauksen syöttökentän alla oleva \"Käytettävissä oleva järjestelmämuisti\" "
+"näyttää, kuinka paljon muistia pääjärjestelmälläsi on käytettävissä, kun "
+"valitsemasi määrä RAM-muistia on varattu."
 
 #. type: delimited block =
 #: pages/_partials/install/KdumpSpoke.adoc:31
@@ -107,6 +140,10 @@ msgid ""
 "`system-config-kdump` graphical interface, or manually in the `/etc/kdump."
 "conf` configuration file."
 msgstr ""
+"Lisäasetukset, kuten sijainti, johon ytimen kaatumisvedokset tallennetaan, "
+"voidaan määrittää vasta asennuksen jälkeen käyttämällä graafista "
+"käyttöliittymää \"system-config-kdump\" tai manuaalisesti "
+"määritystiedostossa \"/etc/kdump.conf\"."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:34
@@ -115,3 +152,7 @@ msgid ""
 "left corner to return to xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
+"Kun olet määrittänyt [application]*Kdump*-asetukset, napsauta vasemmasta "
+"yläkulmasta btn:[Valmis] palataksesi kohtaan xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Asennusyhteenveto]."
