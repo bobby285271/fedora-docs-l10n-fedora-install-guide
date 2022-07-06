@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2022-07-05 10:18+0000\n"
+"PO-Revision-Date: 2022-07-06 12:18+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -139,12 +139,16 @@ msgid ""
 "so. If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"外接硬盘和闪存盘等 USB 储存设备也会在本地标准磁盘栏目显示，它们跟内部硬盘一样"
+"可在安装时供选择。除非你真的想这样做，否则务必 *不要* "
+"将可卸载设备作为安装目标。如果你在可卸载设备上安装了 {PRODUCT} "
+"并移除了设备，那么你的系统可能就不可用了。"
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:36
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "未选择的和已选择的磁盘"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:38
@@ -152,20 +156,20 @@ msgstr ""
 msgid ""
 "Disk selection in the Installation Destination screen. Two disks are "
 "displayed; only the one on the right side will be used"
-msgstr ""
+msgstr "安装目标页的磁盘选择栏目。这里显示了两块硬盘，右边的硬盘将会被使用"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:38
 #, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:41
 msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "three options in the `Storage Configuration` section:"
-msgstr ""
+msgstr "在选择 {PRODUCT} 使用的硬盘后，从储存设定栏目中选择一项："
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:43
@@ -178,6 +182,11 @@ msgid ""
 "disks. A disk-based swap partition is not created, ZRAM-based swap is used "
 "instead."
 msgstr ""
+"自动 - 如果你选择了这一项，在点击页面左上角的完成按钮后，安装程序就会计算选择"
+"磁盘的可用空间，并创建合适的基于 Btrfs 的分区方案。具体的分区方案与你在使用 "
+"BIOS 模式还是使用 UEFI "
+"模式有关，也跟磁盘可用的空间相关。我们不会创建基于磁盘的交换分区，"
+"而是会创建基于 ZRAM 的交换分区。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:45
@@ -190,6 +199,10 @@ msgid ""
 "{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
 "is described later in this section."
 msgstr ""
+"在选择自动分区方案时，你可以选择下方的`我想令额外的空间可用`选项。选择这个选"
+"项后你就可以从已有的分区中回收空间。例如说如果你的磁盘已经包含了一个不同的操"
+"作系统，你就可以通过压缩这个操作系统的分区以为 {PRODUCT} "
+"留出更多储存空间。我们会在后面进一步说明回收空间功能。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:47
@@ -202,6 +215,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning]."
 msgstr ""
+"`自定义` - 如果你选择了这一项，那么你就可以在点击页面左上角的完成按钮后通过半"
+"手动配置的形式完成系统分区。这需要你了解磁盘分区背后的概念和理论知识，但是自"
+"定义分区将允许你以其他的方式安装系统。有关自定义分区的说明详见xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[手动分区]。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:49
@@ -211,6 +229,9 @@ msgid ""
 "completely manually. This requires advanced knowledge of the theory behind "
 "disk partitions and related concepts. There are no guardrails."
 msgstr ""
+"`高级自定义（Blivet图形界面）`——选择此选项后点击页面左上角的`完成`按钮来对系"
+"统进行真正意义上的手动分区。这需要熟悉磁盘分区背后的概念和理论知识，且操作不"
+"受限。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:51
@@ -222,6 +243,10 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"此外你还可以选择`加密我的数据`pass:attributes[{blank}]，此选项将使用 LUKS "
+"加密所有的分区（除了使用_Linux统一密钥设置_ (LUKS)的、用于系统引导的分区，如 "
+"`/boot`）。关于LUKS加密方式详见[citetitle]_{PRODUCT} 安全{nbsp}指南_, "
+"available at link:++https://docs.fedoraproject.org/++[]。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:56
@@ -235,6 +260,11 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"如果你丢失了 LUKS 密钥，那么加密的分区上的数据将彻底无法访问。一般而言无法恢"
+"复丢失的密钥，然而，如果你是通过 Kickstart "
+"进行的安装，你可以在安装的时候储存你的密钥并创建一个备用的密钥。"
+"Kickstart安装详见 xref:advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[使用 Kickstart 进行无人职守安装]。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:60
@@ -248,6 +278,11 @@ msgid ""
 "example, systems which require _chain loading_ from another boot loader) "
 "will require the boot drive to be specified manually."
 msgstr ""
+"要指定在哪些储存设备安装 _引导程序_ "
+"，就需要点击页面左下角的磁盘概览和引导器链接，并按照 xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-boo"
+"tloader[安装引导程序]小节的说明进行操作。请注意大部分时候只需要使用默认配置就"
+"可以了，但有些配置（例如需要链式引导启动的时候）还是需要手动指定引导的设备。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:62
@@ -256,7 +291,8 @@ msgid ""
 "partitioning, configure encryption and boot loader location, press `Done` in "
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
-msgstr ""
+msgstr "在选择储存设备、指定自动分区或手动分区、配置磁盘加密和bootloader的位置后，点"
+"击左上角的`完成`按钮。然后根据你的选择将发生以下事件："
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:64
@@ -269,6 +305,10 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"如果你选择加密你的磁盘，那么将会弹出一个`磁盘加密密钥`对话框提示你对密钥进行"
+"设置，你只需要在`密钥`和`确定`区域中输入一次密钥，然后再输入一次密钥以确认你"
+"的输入无误即可。在输入密钥时会检查密钥的强度，并在密码强度弱时给出如何加强密"
+"钥强度的建议。创建强密码详见[citetitle]_{PRODUCT}安全{nbsp}指南_。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:66
@@ -281,6 +321,10 @@ msgid ""
 "information about how much space the system needs for at least a minimal "
 "installation and how much space you have reclaimed."
 msgstr ""
+"如果你选择了自动分区和`我希望令希望额外空间可用`，或者你的磁盘已经没有足够的"
+"空间可供安装{PRODUCT}，那么`回收磁盘空间`对话框将会出现。对话框将列出你配置的"
+"磁盘和磁盘上的所有分区。对话框的右下角显示了目前系统的可用空间以及安装系统至"
+"少需要回收的空间。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:71
@@ -289,6 +333,8 @@ msgid ""
 "on that partition will be lost. If you want to preserve your data, use the "
 "`Shrink` option, not the `Delete` option."
 msgstr ""
+"如果你使用`回收磁盘空间`对话框来*删除*一个分区，那么这个分区上的所有数据都会"
+"丢失。如果你希望保留你的数据，请使用`压缩`选项，而不使用`删除`选项。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:75
@@ -303,13 +349,19 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"首先，对可用设备和分区列表进行检查。对于每一项我们都会显示你可以回收多少的空"
+"间。`可回收的空间`显示了每个入口可以被回收的空间。要对空间进行回收，选择一个"
+"磁盘或分区，你可以点击`删除`按钮删除分区（或磁盘上的所有分区），或者点击`压缩"
+"`按钮以在利用分区空闲空间的同时保留原有的数据。你也可以点击右下角的`全部删除`"
+"按钮，这将会删除所有磁盘的所有分区并将腾出来的空间全部用于 {PRODUCT} "
+"。但与此同时，所有磁盘上的数据都会被删除。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:77
 msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
-msgstr ""
+msgstr "在你为{PRODUCT}释放了足够的空间之后，你就可以点击`回收空间`按钮以完成。"
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:82
@@ -319,6 +371,10 @@ msgid ""
 "Summary]. The `Reclaim Space` dialog only *marks* partitions for resizing or "
 "deletion, but no such action is performed immediately."
 msgstr ""
+"在 xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-summary[安装概览] 页点击开始安装按钮之前，你在回收空间对话框所做"
+"的操作都不会被实际地执行。`回收空间`对话框只*标记*了用于调整大小或删除的分区"
+"，但这种操作不会被立刻执行。"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:86
@@ -328,3 +384,6 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning] for further instructions."
 msgstr ""
+"如果你选择的是`自定义`分区选项，那么在点击`完成`后就会进入`手动分区`页面。详"
+"见xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning[手动分区]。"
