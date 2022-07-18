@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Emilio Herrera <ehespinosa57@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-18 12:19+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f32pagesappendixesunderstanding_lvm/es/"
+">\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "Entendiendo LVM"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -31,6 +34,13 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"Las particiones LVM (Administración de Volumen Lógico) proporcinan diversas "
+"ventajas sobre las particiones estándar. Las particiones LVM están "
+"formateadas como _volúmenes físicos_. Unos o más de los volúmenes físicos se "
+"combinan en la forma de _grupo de volumen_. El almacenamiento total del "
+"grupo de volumen se divide después en uno o más _volúmenes logicos_. Los "
+"volúmenes lógicos funcionan muy parecido a las particones estándar. Hay un "
+"tipo de sistemas de archivo, como `ext4` y un punton de montaje."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +48,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"El cargador de arranque no puede leer volúmenes LVM. Usted debe hacer una "
+"partición de disco estándar, no LVM para su partición `/boot`."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -48,6 +60,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"De moo predeterminado el proceso de instalación crea siempre las particiones "
+"`/` y `swap` dentro de volúmenes LVM con una partición estándar `/boot` "
+"separada. Vea los detalles en xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Esquema de "
+"Particionamiento Recomendado]."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -59,6 +76,13 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"Para entender mejor LVM, imagine el volumen físico como una pila de "
+"_bloques_. Un bloque es una unidad de almacenamiento usada para almacenas "
+"datos. Varias pilas de bloques se pueden combinar para hacer una pila mucho "
+"más grande, igual que os volúmenes físicos se combinan para hacer un grupo "
+"de volumen. La pila resultante puede ser subdividida en diversas pilas más "
+"pequeñas de tamaño arbitrario, igual que un grupo de volúmenes se asigna a "
+"varios volúmenes lógicos."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -68,6 +92,11 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"Un administrador puede aumentar o disminuir los volúmenes lógicos sin "
+"destruir datos a diferencia de las particiones estándar. Si los volúmenes "
+"físicos en un grupo de volumen están en dispositivos separados o en "
+"conjuntos RAID los administradores pueden distribuir el volumen lógico a los "
+"largo de los dispositivos de almacenamiento."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
