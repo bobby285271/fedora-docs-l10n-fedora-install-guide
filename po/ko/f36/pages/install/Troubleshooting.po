@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-07-23 02:19+0000\n"
+"PO-Revision-Date: 2022-07-26 14:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f36pagesinstalltroubleshooting/ko/>\n"
@@ -814,7 +814,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:287
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "영구적인 그랙픽 부팅 비활성화"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:289
@@ -901,7 +901,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:321
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "그래픽 환경에서 부팅"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:324
@@ -1043,6 +1043,16 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"파일시스템                                  크기  사용 가용 사용률% 적재점\n"
+"/dev/mapper/vg_rhel-root                     20G  6.0G   13G  32% /\n"
+"devtmpfs                                    1.8G     0  1.8G   0% /dev\n"
+"tmpfs                                       1.8G  2.7M  1.8G   1% /dev/shm\n"
+"tmpfs                                       1.8G 1012K  1.8G   1% /run\n"
+"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/"
+"cgroup\n"
+"tmpfs                                       1.8G  2.6M  1.8G   1% /tmp\n"
+"/dev/sda1                                   976M  150M  760M  17% /boot\n"
+"/dev/dm-4                                    90G   90G     0 100% /home\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:379
@@ -1187,3 +1197,12 @@ msgid ""
 "mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
+"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"

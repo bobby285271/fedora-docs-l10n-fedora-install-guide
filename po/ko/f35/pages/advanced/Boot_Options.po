@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-07-23 02:19+0000\n"
+"PO-Revision-Date: 2022-07-26 14:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f35pagesadvancedboot_options/ko/>\n"
@@ -803,7 +803,7 @@ msgstr "modprobe.blacklist=ahci,firewire_ohci\n"
 #: ./pages/advanced/Boot_Options.adoc:211
 #, no-wrap
 msgid "[option]#inst.sshd#"
-msgstr ""
+msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:212
@@ -843,7 +843,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:223
 #, no-wrap
 msgid "Network Boot Options"
-msgstr ""
+msgstr "네트워크 부팅 선택"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:226
@@ -873,7 +873,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:230
 msgid "The following table lists valid values for this option:"
-msgstr ""
+msgstr "다음 표에는 이 선택에 유효한 값을 목록화 합니다:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:232
@@ -900,18 +900,37 @@ msgid ""
 "wish to override and automatically obtained values will be used for the "
 "others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
+"|구성 방식|옵션 형식\n"
+"|Automatic configuration of any interface|[option]#ip=pass:attributes[{blank}"
+"]_method_pass:attributes[{blank}]#\n"
+"|Automatic configuration of a specific interface|[option]#ip=pass:attributes["
+"{blank}]_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#"
+"\n"
+"|Static configuration|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribut"
+"es[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank"
+"}]_hostname_:pass:attributes[{blank}]_interface_:none#\n"
+"|Automatic configuration of a specific interface with an override\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the "
+"specified method of automatic configuration, such as `dhcp`, but overrides "
+"the automatically obtained IP address, gateway, netmask, hostname or other "
+"specified parameter. All parameters are optional; only specify the ones you "
+"wish to override and automatically obtained values will be used for the other"
+"s.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gatewa"
+"y_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:"
+"attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attribut"
+"es[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:245
 msgid "The [option]#method# parameter can be any the following:"
-msgstr ""
+msgstr "[option]#방법# 매개변수는 다음 중 하나 일 수 있습니다:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:247
 #: ./pages/advanced/Boot_Options.adoc:432
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
-msgstr ""
+msgstr "자동 연결장치 구성 방법"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:256
@@ -923,6 +942,11 @@ msgid ""
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 msgstr ""
+"|자동 구성 방식|값\n"
+"|DHCP|`dhcp`\n"
+"|IPv6 DHCP|`dhcp6`\n"
+"|IPv6 automatic configuration|`auto6`\n"
+"|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:262
@@ -946,7 +970,8 @@ msgstr ""
 msgid ""
 "The _gateway_ parameter is the default gateway. IPv6 addresses are accepted "
 "here as well."
-msgstr ""
+msgstr "게이트웨이 매개변수는 지정 게이트웨이입니다. IPV6 주소들은 여기에서 잘 "
+"허용됩니다."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:270
@@ -975,13 +1000,13 @@ msgstr "[option]#nameserver=#"
 msgid ""
 "Specifies the address of the name server. This option can be used multiple "
 "times."
-msgstr ""
+msgstr "네임서버의 주소를 지정합니다. 이 선택은 여러 번 사용 될 수 있습니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:275
 #, no-wrap
 msgid "[option]#bootdev=#"
-msgstr ""
+msgstr "[option]#bootdev=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:276
@@ -1009,13 +1034,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:282
 #, no-wrap
 msgid "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
-msgstr ""
+msgstr "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:284
 #, no-wrap
 msgid "[option]#inst.dhcpclass=#"
-msgstr ""
+msgstr "[option]#inst.dhcpclass=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:285
@@ -1044,7 +1069,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:291
 #, no-wrap
 msgid "[option]#vlan=vlan5:em1#\n"
-msgstr ""
+msgstr "[option]#vlan=vlan5:em1#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:294
@@ -1052,12 +1077,14 @@ msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` "
 "interface. The _name_ can take the following forms:"
 msgstr ""
+"위의 것은 `em1` 연결장치에서 `vlan5`라고 명명된 VLAN 장치를 설정 할 "
+"것입니다. 이름은 다음 형식을 가져 올 수 있습니다:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:296
 #, no-wrap
 msgid "VLAN Device Naming Conventions"
-msgstr ""
+msgstr "VLAN 장치이름 지정 규칙"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:305
@@ -1069,6 +1096,11 @@ msgid ""
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 msgstr ""
+"|이름 체계|예제\n"
+"|VLAN_PLUS_VID|`vlan0005`\n"
+"|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
+"|DEV_PLUS_VID|`em1.0005`.\n"
+"|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:307
@@ -1090,14 +1122,14 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:311
 #, no-wrap
 msgid "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
-msgstr ""
+msgstr "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:314
 msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
-msgstr ""
+msgstr "사용 가능한 선택 목록을 위하여, [command]#modinfo bonding# 명령을 실행하세요."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:316
@@ -1127,7 +1159,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:322
 #, no-wrap
 msgid "[option]#team=team0:em1,em2#\n"
-msgstr ""
+msgstr "[option]#team=team0:em1,em2#\n"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:325
@@ -1139,7 +1171,7 @@ msgstr "고급 설치 선택"
 #: ./pages/advanced/Boot_Options.adoc:327
 #, no-wrap
 msgid "[option]#inst.multilib#"
-msgstr ""
+msgstr "[option]#inst.multilib#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:328
@@ -1176,7 +1208,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:333
 #, no-wrap
 msgid "[option]#inst.gpt#"
-msgstr ""
+msgstr "[option]#inst.gpt#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:334
@@ -1212,7 +1244,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:339
 #, no-wrap
 msgid "[option]#inst.nosave=#"
-msgstr ""
+msgstr "[option]#inst.nosave=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:340
@@ -1263,7 +1295,7 @@ msgstr "여러 값은 쉽표로 구분된 목록처럼 결합 될 수 있습니�
 #: ./pages/advanced/Boot_Options.adoc:353
 #, no-wrap
 msgid "[option]#inst.memcheck#"
-msgstr ""
+msgstr "[option]#inst.memcheck#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:354
@@ -1278,7 +1310,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:355
 #, no-wrap
 msgid "[option]#inst.nodnf#"
-msgstr ""
+msgstr "[option]#inst.nodnf#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:356
@@ -1293,7 +1325,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:357
 #, no-wrap
 msgid "[option]#inst.kdump_addon=#"
-msgstr ""
+msgstr "[option]#inst.kdump_addon=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:358
@@ -1313,7 +1345,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:360
 #, no-wrap
 msgid "Enabling Remote Access Using VNC"
-msgstr ""
+msgstr "VNC를 사용하여 원격 접속을 활성화하기"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:363
@@ -1328,7 +1360,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:364
 #, no-wrap
 msgid "[option]#inst.vnc#"
-msgstr ""
+msgstr "[option]#inst.vnc#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:365
@@ -1343,13 +1375,13 @@ msgstr ""
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:370
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr ""
+msgstr "`VNC`를 사용하여 설치된 시스템은 기본적으로 텍스트 방식으로 시작 할 것입니다."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:373
 #, no-wrap
 msgid "[option]#inst.vncpassword=#"
-msgstr ""
+msgstr "[option]#inst.vncpassword=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:374
@@ -1390,7 +1422,7 @@ msgstr "비밀번호:\n"
 #: ./pages/advanced/Boot_Options.adoc:392
 #, no-wrap
 msgid "[option]#inst.vncconnect=#"
-msgstr ""
+msgstr "[option]#inst.vncconnect=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:393
@@ -1406,13 +1438,13 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:395
 #, no-wrap
 msgid "Debugging and Troubleshooting"
-msgstr ""
+msgstr "디버깅과 문제 해결"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:397
 #, no-wrap
 msgid "[option]#inst.updates=#"
-msgstr ""
+msgstr "[option]#inst.updates=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:398
