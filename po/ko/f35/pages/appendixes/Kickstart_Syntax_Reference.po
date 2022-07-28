@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-07-26 14:19+0000\n"
+"PO-Revision-Date: 2022-07-28 00:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -1356,18 +1356,18 @@ msgstr "[option]#--subvol#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:368
 msgid "Create a Btrfs subvolume instead of a volume."
-msgstr ""
+msgstr "볼륨 대신에 Btrfs 하위 볼륨을 생성합니다."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:370
 msgid "Set a name for a Btrfs subvolume."
-msgstr ""
+msgstr "Btrfs 하위 볼륨의 이름을 설정합니다."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:371
 #, no-wrap
 msgid "[option]#--noformat# or [option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--noformat# 또는 [option]#--useexisting#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:372
@@ -1384,7 +1384,7 @@ msgstr "기존 Btrfs 볼륨(또는 하위 볼륨)을 사용하고 파일 시스�
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:961
 #, no-wrap
 msgid "[option]#--mkfsoptions=#"
-msgstr ""
+msgstr "[option]#--mkfsoptions=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:374
@@ -1408,7 +1408,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:378
 #, no-wrap
 msgid "Creating Btrfs Volumes and Subvolumes"
-msgstr ""
+msgstr "Btrfs 볼륨과 하위 볼륨 생성하기"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:387
@@ -1418,6 +1418,9 @@ msgid ""
 "[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
 "[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part btrfs.01 --size=6000 --ondisk=sda#\n"
+"[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
+"[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:391
@@ -1427,6 +1430,10 @@ msgid ""
 "[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
 "[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 msgstr ""
+"[command]#btrfs none --data=0 --metadata=1 --label=f{PRODVER} btrfs.01 "
+"btrfs.02 btrfs.03#\n"
+"[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
+"[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:397
@@ -1465,7 +1472,7 @@ msgstr "[option]#--all#"
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:411
 msgid "Erases all partitions from the system."
-msgstr ""
+msgstr "시스템에서 모든 파티션을 제거합니다."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:416
@@ -1479,7 +1486,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:501
 #, no-wrap
 msgid "[option]#--drives=#"
-msgstr ""
+msgstr "[option]#--drives=#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:420
@@ -1493,7 +1500,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "[command]#clearpart --drives=hda,hdb --all#\n"
-msgstr ""
+msgstr "[command]#clearpart --drives=hda,hdb --all#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:427
@@ -1509,6 +1516,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:434
@@ -1526,6 +1535,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:444
@@ -1551,7 +1562,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:451
 #, no-wrap
 msgid "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:454
@@ -1580,18 +1591,18 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:460
 #, no-wrap
 msgid "[command]#clearpart --list=sda2,sda3,sdb1#\n"
-msgstr ""
+msgstr "[command]#clearpart --list=sda2,sda3,sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:462
 #, no-wrap
 msgid "[option]#--disklabel=#"
-msgstr ""
+msgstr "[option]#--disklabel=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:463
 msgid "Create a set disk label when relabeling a disk."
-msgstr ""
+msgstr "디스크 이름을 재지정 할 때에 디스크 이름표 설정을 생성합니다."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:464
@@ -1602,7 +1613,7 @@ msgstr "[option]#--linux#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:465
 msgid "Erases all Linux partitions."
-msgstr ""
+msgstr "모든 리눅스 파티션을 제거합니다."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:466
@@ -1645,17 +1656,18 @@ msgstr ""
 #, no-wrap
 msgid "[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 msgstr ""
+"[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:485
 #, no-wrap
 msgid "[option]#--nic=# (required)"
-msgstr ""
+msgstr "[option]#--nic=# (필수적인)"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:486
 msgid "Name of the device to be activated."
-msgstr ""
+msgstr "활성화 할 장치의 이름."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:487
