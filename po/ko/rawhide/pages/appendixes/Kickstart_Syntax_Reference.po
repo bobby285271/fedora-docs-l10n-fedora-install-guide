@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:03+0000\n"
-"PO-Revision-Date: 2022-07-31 06:19+0000\n"
+"PO-Revision-Date: 2022-08-02 05:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -4442,7 +4442,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1485
 #, no-wrap
 msgid "xconfig (optional) - Configure X Window System"
-msgstr "xconfig (선택) - X 윈도우 시스템을 구성합니다"
+msgstr "xconfig (선택적인) - X 윈도우 시스템을 구성합니다"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1488
@@ -4541,7 +4541,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1517
 #, no-wrap
 msgid "group (optional) - Create User Group"
-msgstr "그룹 (선택) - 사용자 그룹 생성"
+msgstr "그룹 (선택적인) - 사용자 그룹 생성"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1520
@@ -5212,7 +5212,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1725
 #, no-wrap
 msgid "graphical (optional) - Perform Installation in Graphical Mode"
-msgstr "그래픽 (선택) - 그래픽 방식에서 설치를 수행합니다"
+msgstr "그래픽 (선택적인) - 그래픽 방식에서 설치를 수행합니다"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1728
@@ -5615,7 +5615,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1895
 #, no-wrap
 msgid "[option]#--disable# or [option]#--disabled#"
-msgstr ""
+msgstr "[option]#--disabled# or [option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1896
@@ -5793,7 +5793,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1954
 #, no-wrap
 msgid "%addon com_redhat_kdump --enable --reserve-mb=128%end\n"
-msgstr ""
+msgstr "%addon com_redhat_kdump --enable --reserve-mb=128%end\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1958
@@ -6283,7 +6283,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2117
 #, no-wrap
 msgid "%pre (optional) - Pre-installation Script"
-msgstr "%pre (선택) - 사전-설치 스크립트"
+msgstr "%pre (선택적인) - 사전-설치 스크립트"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2120
@@ -6338,7 +6338,7 @@ msgid ""
 "[command]#%end#\n"
 msgstr ""
 "[command]#%pre --interpreter=/usr/bin/python#\n"
-"--- Python script omitted --\n"
+"--- 파이썬 스크립트가 생략됨 --\n"
 "[command]#%end#\n"
 
 #. type: Labeled list
@@ -6402,7 +6402,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2157
 #, no-wrap
 msgid "%post (optional) - Post-installation Script"
-msgstr "%post (선택) - 사전-설치 스크립트"
+msgstr "%post (선택적인) - 사전-설치 스크립트"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2160
@@ -6456,7 +6456,7 @@ msgid ""
 "[command]#%end#\n"
 msgstr ""
 "[command]#%post --interpreter=/usr/bin/python#\n"
-"--- Python script omitted --\n"
+"--- 파이썬 스크립트가 생략됨 --\n"
 "[command]#%end#\n"
 
 #. type: Plain text
@@ -6626,11 +6626,11 @@ msgid ""
 "logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
 "logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 msgstr ""
-"# LVM configuration so that we can resize /var and /usr/local later\n"
+"# 다음에 /var과 /usr/local의 크기를 조절 할 수 있도록 LVM 구성\n"
 "volgroup sysvg pv.01\n"
-"logvol /var --vgname=sysvg --size=8000 --name=var\n"
-"logvol /var/freespace --vgname=sysvg --size=8000 --name=freespacetouse\n"
-"logvol /usr/local --vgname=sysvg --size=1 --grow --name=usrlocal\n"
+"logvol /var           --vgname=sysvg --size=8000     --name=var\n"
+"logvol /var/freespace --vgname=sysvg --size=8000     --name=freespacetouse\n"
+"logvol /usr/local     --vgname=sysvg --size=1 --grow --name=usrlocal\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:2266
@@ -6759,18 +6759,23 @@ msgid ""
 "fi\n"
 "%end\n"
 msgstr ""
-"#Write out partition scheme based on whether there are 1 or 2 hard drives\n"
+"#1개 또는 2개의 하드 드라이브가 있는지에 기반한 파티션 구성표 작성\n"
 "if [ $numhd == \"2\" ] ; then\n"
-"#2 drives\n"
-"echo \"#partitioning scheme generated in %pre for 2 drives\" > /tmp/part-include\n"
+"#하드 드라이브 2개\n"
+"echo \"#partitioning scheme generated in %pre for 2 drives\" > /tmp/part-"
+"include\n"
 "echo \"clearpart --all\" >> /tmp/part-include\n"
-"echo \"part /boot --fstype xfs --size 75 --ondisk hda\" >> /tmp/part-include\n"
-"echo \"part / --fstype xfs --size 1 --grow --ondisk hda\" >> /tmp/part-include\n"
+"echo \"part /boot --fstype xfs --size 75 --ondisk hda\" >> /tmp/part-"
+"include\n"
+"echo \"part / --fstype xfs --size 1 --grow --ondisk hda\" >> /tmp/part-"
+"include\n"
 "echo \"part swap --recommended --ondisk $drive1\" >> /tmp/part-include\n"
-"echo \"part /home --fstype xfs --size 1 --grow --ondisk hdb\" >> /tmp/part-include\n"
+"echo \"part /home --fstype xfs --size 1 --grow --ondisk hdb\" >> /tmp/part-"
+"include\n"
 "else\n"
-"#1 drive\n"
-"echo \"#partitioning scheme generated in %pre for 1 drive\" > /tmp/part-include\n"
+"#하드 드라이브 1개\n"
+"echo \"#partitioning scheme generated in %pre for 1 drive\" > /tmp/part-"
+"include\n"
 "echo \"clearpart --all\" >> /tmp/part-include\n"
 "echo \"part /boot --fstype xfs --size 75\" >> /tmp/part-include\n"
 "echo \"part swap --recommended\" >> /tmp/part-include\n"
@@ -6836,7 +6841,7 @@ msgid ""
 "openvt -s -w -- /mnt/temp/runme\n"
 "umount /mnt/temp\n"
 msgstr ""
-"# Mount an NFS share\n"
+"# nfs 공유를 적재\n"
 "mkdir /mnt/temp\n"
 "mount -o nolock 10.10.0.2:/usr/new-machines /mnt/temp\n"
 "openvt -s -w -- /mnt/temp/runme\n"
