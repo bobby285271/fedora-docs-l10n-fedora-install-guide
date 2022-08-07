@@ -2,27 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-13 21:11+0000\n"
-"PO-Revision-Date: 2021-07-02 11:05+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2022-08-07 00:54+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"fedora-docs-l10n-fedora-install-guide/"
 "f27pagesadvancednetwork_based_installations/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title ===
 #: ./pages/advanced/Network_based_Installations.adoc:6
 #, no-wrap
 msgid "Setting Up an Installation Server"
-msgstr ""
+msgstr "Asennuspalvelimen määrittäminen"
 
 #. type: delimited block =
 #: ./pages/advanced/Network_based_Installations.adoc:12
@@ -31,12 +32,15 @@ msgid ""
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
 msgstr ""
+"Tämä liite on tarkoitettu käyttäjille, joilla on aikaisempaa Linux-"
+"kokemusta. Jos olet uusi käyttäjä, saatat haluta ennemmin asentaa "
+"käyttämällä minimaalikäynnistysmediaa tai jakelu-DVD:tä."
 
 #. type: Title ====
 #: ./pages/advanced/Network_based_Installations.adoc:16
 #, no-wrap
 msgid "PXE Installation Overview"
-msgstr ""
+msgstr "PXE-asennuksen yleiskatsaus"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:19
@@ -48,12 +52,18 @@ msgid ""
 "simultaneously. The process involves a number of components and features "
 "working together to provide the resources required."
 msgstr ""
+"Preboot Execution Environment tai PXE on tekniikka, jonka avulla tietokoneet "
+"voivat käynnistyä suoraan verkon kautta tarjotuista resursseista. Fedoran "
+"asentaminen verkon kautta tarkoittaa, että sinun ei tarvitse luoda mediaa, "
+"ja voit asentaa useisiin tietokoneisiin tai virtuaalikoneeseen "
+"samanaikaisesti. Prosessi sisältää useita komponentteja ja ominaisuuksia, "
+"jotka toimivat yhdessä tarvittavien resurssien tarjoamiseksi."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:20
 #, no-wrap
 msgid "PXE-capable computer"
-msgstr ""
+msgstr "PXE-yhteensopiva tietokone"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:22
@@ -66,12 +76,19 @@ msgid ""
 "installation when required. Your computer's manual will provide specific "
 "instructions on setting boot priorities."
 msgstr ""
+"Useimmissa nykyaikaisissa tietokoneissa on verkkokäynnistysmahdollisuus. "
+"Yleensä käynnistyksen aikana painettava toimintonäppäin tuo esiin "
+"käynnistysvalikon. Valvomattomaan hallintaan suunnitelluissa ympäristöissä "
+"järjestelmät määritetään usein yrittämään ensin käynnistystä verkosta ja "
+"sitten paikallisesta tallennustilasta, ja asennuspalvelin on määritetty "
+"tarjoamaan asennusta vain tarvittaessa. Tietokoneen käyttöoppaassa on tarkat "
+"ohjeet käynnistysprioriteettien asettamiseen."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:23
 #, no-wrap
 msgid "DHCP Server"
-msgstr ""
+msgstr "DHCP-palvelin"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:25
@@ -80,6 +97,9 @@ msgid ""
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
 msgstr ""
+"Kun järjestelmä pyytää osoitetta verkkokäynnistyksen aikana, DHCP-palvelin "
+"ilmoittaa myös käynnistettävien tiedostojen sijainnin. Verkossa tulisi olla "
+"vain yksi DHCP-palvelin."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:26
@@ -94,12 +114,16 @@ msgid ""
 "very simple way. Trivial File Transfer Protocol, or TFTP, provides the "
 "system with the bootloader required to continue the installation process."
 msgstr ""
+"Koska käynnistystä edeltävä ympäristö on hyvin yksinkertainen, tiedostot on "
+"annettava hyvin yksinkertaisella tavalla. Trivial File Transfer Protocol eli "
+"TFTP tarjoaa järjestelmälle käynnistyslataimen, joka tarvitaan asennuksen "
+"jatkamiseen."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:29
 #, no-wrap
 msgid "Bootloader"
-msgstr ""
+msgstr "Käynnistyksenlataaja"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:31
@@ -109,12 +133,16 @@ msgid ""
 "files. It also provides configuration information to the installer, and can "
 "offer a menu to select from different configurations."
 msgstr ""
+"Koska käyttöjärjestelmän käynnistäminen on liian monimutkaista käynnistystä "
+"edeltävään ympäristöön, ytimen ja siihen liittyvät tiedostot ladataan "
+"käynnistyslataimella. Se tarjoaa myös konfigurointitietoja asentajalle ja "
+"voi tarjota valikon, josta voit valita eri kokoonpanoista."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:32
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr ""
+msgstr "Kernel ja Initramfs"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:34
@@ -123,12 +151,15 @@ msgid ""
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
 msgstr ""
+"Kernel on minkä tahansa Linux-käyttöjärjestelmän ydin, ja initramfs tarjoaa "
+"kernelille tarvittavat työkalut ja resurssit. Nämä tiedostot tulee myös tftp-"
+"palvelimelta."
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:35
 #, no-wrap
 msgid "Package repository"
-msgstr ""
+msgstr "Paketin asennuslähde"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:37
@@ -146,19 +177,19 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:41
 #, no-wrap
 msgid "DHCP Server Configuration"
-msgstr ""
+msgstr "DHCP-palvelimen asetukset"
 
 #. Needs adminition about static IP, reference out to Networking Guide. Example assumes 192.168.1.2 for server.
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:45
 #, no-wrap
 msgid "Installing and configuring dhcpd"
-msgstr ""
+msgstr "dhcpd:n asennus ja konfigurointi"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:47
 msgid "Install the dhcp server package."
-msgstr ""
+msgstr "Asenna dhcp-palvelinpaketti."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:51
@@ -170,6 +201,8 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:54
 msgid "Create a simple configuration for the dhcp server at `/etc/dhcp/dhcpd.conf`"
 msgstr ""
+"Luo yksinkertainen konfiguraatio dhcp-palvelimelle tiedostoon `/etc/dhcp/"
+"dhcpd.conf`"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:62
@@ -181,6 +214,11 @@ msgid ""
 "max-lease-time 7200;\n"
 "ddns-update-style none;\n"
 msgstr ""
+"subnet 192.168.1.0 netmask 255.255.255.0 {\n"
+"authoritative;\n"
+"default-lease-time 600;\n"
+"max-lease-time 7200;\n"
+"ddns-update-style none;\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:65
@@ -189,17 +227,19 @@ msgid ""
 "option domain-name-servers 192.168.1.1;\n"
 "option routers 192.168.1.1;\n"
 msgstr ""
+"option domain-name-servers 192.168.1.1;\n"
+"option routers 192.168.1.1;\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:67
 #, no-wrap
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:70
 msgid "Test your configuration and address any problems you discover."
-msgstr ""
+msgstr "Testaa kokoonpanosi ja korjaa havaitsemasi ongelmat."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:76
@@ -249,7 +289,7 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:94
 #, no-wrap
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:97
@@ -257,6 +297,8 @@ msgid ""
 "Restart the dhcp service to check the configuration and make changes as "
 "needed."
 msgstr ""
+"Käynnistä dhcp-palvelu uudelleen tarkistaaksesi asetukset ja tehdäksesi "
+"tarvittavat muutokset."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:103
@@ -265,24 +307,26 @@ msgid ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
+"[command]#systemctl restart dhcpd#\n"
+"[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:107
 #: ./pages/advanced/Network_based_Installations.adoc:109
 #, no-wrap
 msgid "Installing the tftp server"
-msgstr ""
+msgstr "Tftp-palvelimen asennus"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:111
 msgid "Install the tftp server package."
-msgstr ""
+msgstr "Asenna tftp-palvelinpaketti."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:114
 #, no-wrap
 msgid "# dnf install tftp-server\n"
-msgstr ""
+msgstr "# dnf install tftp-server\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:117
@@ -290,6 +334,8 @@ msgid ""
 "Start and enable the `tftp socket`. `systemd` will automatically start the "
 "`tftpd` service when required."
 msgstr ""
+"Käynnistä ja ota käyttöön \"tftp socket\". \"systemd\" käynnistää "
+"automaattisesti \"tftpd\"-palvelun tarvittaessa."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:122
@@ -298,40 +344,43 @@ msgid ""
 "# [command]#systemctl start tftp.socket#\n"
 "# [command]#systemctl enable tftp.socket#\n"
 msgstr ""
+"# [command]#systemctl start tftp.socket#\n"
+"# [command]#systemctl enable tftp.socket#\n"
 
 #. type: Title ====
 #: ./pages/advanced/Network_based_Installations.adoc:125
 #, no-wrap
 msgid "Providing and configuring bootloaders for PXE clients"
-msgstr ""
+msgstr "Käynnistyslatainten tarjoaminen ja konfigurointi PXE-asiakkaille"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:127
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr ""
+msgstr "Käynnistyslataimen tiedostojen hakeminen"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:129
 msgid "Get the [package]*syslinux* bootloader for BIOS clients."
-msgstr ""
+msgstr "Hae [package]*syslinux* käynnistyslatain BIOS-asiakkaille."
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:131
 msgid "Install the [package]*syslinux* package."
-msgstr ""
+msgstr "Asenna [package]*syslinux*-paketti."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:134
 #, no-wrap
 msgid "# dnf install syslinux\n"
-msgstr ""
+msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:137
 #: ./pages/advanced/Network_based_Installations.adoc:154
 msgid "Create a directory for the bootloader files, and make them available there."
 msgstr ""
+"Luo hakemisto käynnistyslataustiedostoille ja aseta ne saataville sieltä."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:142
@@ -347,7 +396,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:145
 msgid "Get the bootloader files for UEFI systems"
-msgstr ""
+msgstr "Hae käynnistyslataustiedostot UEFI-järjestelmille"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:147
@@ -379,7 +428,7 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:161
 #, no-wrap
 msgid "Configuring client bootloaders"
-msgstr ""
+msgstr "Asiakkaan käynnistyslatainten konfigurointi"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:163
@@ -387,6 +436,8 @@ msgid ""
 "Create a boot menu for BIOS clients at "
 "`/var/lib/tftpboot/pxelinux.cfg/default`."
 msgstr ""
+"Luo käynnistysvalikko BIOS-asiakkaille tiedostoon `/var/lib/tftpboot/pxelinux"
+".cfg/default`."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:171
@@ -396,6 +447,9 @@ msgid ""
 "prompt 1\n"
 "timeout 600\n"
 msgstr ""
+"default vesamenu.c32\n"
+"prompt 1\n"
+"timeout 600\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:177
@@ -461,6 +515,13 @@ msgid ""
 "\tinsmod all_video\n"
 "}\n"
 msgstr ""
+"function load_video {\n"
+"\tinsmod efi_gop\n"
+"\tinsmod efi_uga\n"
+"\tinsmod video_bochs\n"
+"\tinsmod video_cirrus\n"
+"\tinsmod all_video\n"
+"}\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:209
@@ -470,6 +531,9 @@ msgid ""
 "set gfxpayload=keep\n"
 "insmod gzio\n"
 msgstr ""
+"load_video\n"
+"set gfxpayload=keep\n"
+"insmod gzio\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:214
@@ -514,18 +578,18 @@ msgstr ""
 #: ./pages/advanced/Network_based_Installations.adoc:227
 #, no-wrap
 msgid "Getting the kernel and initrd"
-msgstr ""
+msgstr "Kernelin ja initrd:n hakeminen"
 
 #. type: Block title
 #: ./pages/advanced/Network_based_Installations.adoc:229
 #, no-wrap
 msgid "Downloading the kernel and initrd"
-msgstr ""
+msgstr "Kernelin ja initrd:n lataaminen"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:231
 msgid "Create a directory for the files."
-msgstr ""
+msgstr "Luo tiedostoille hakemisto."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:235
@@ -534,11 +598,13 @@ msgid ""
 "# [command]#mkdir -p "
 "`/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 msgstr ""
+"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:238
 msgid "Download the kernel."
-msgstr ""
+msgstr "Lataa kernel."
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:242
@@ -552,7 +618,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Network_based_Installations.adoc:245
 msgid "Download the initrd"
-msgstr ""
+msgstr "Lataa initrd"
 
 #. type: delimited block -
 #: ./pages/advanced/Network_based_Installations.adoc:249

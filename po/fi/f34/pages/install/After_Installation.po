@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: 2022-06-21 10:18+0000\n"
+"PO-Revision-Date: 2022-08-06 18:01+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f34pagesinstallafter_installation/fi/>"
@@ -85,18 +85,21 @@ msgid ""
 "log in for the first time with any user account, as long as your first login "
 "is in the [application]*GNOME* desktop environment."
 msgstr ""
+"[Application]*GNOME Initial Setup* -apuohjelma tulee näkyviin, kun kirjaudut "
+"sisään ensimmäisen kerran millä tahansa käyttäjätilillä, kunhan ensimmäinen "
+"kirjautumisesi tapahtuu [application]*GNOME*-työpöytäympäristössä."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "GNOME Initial Setup with language selection displayed."
-msgstr ""
+msgstr "GNOME-alkuasetukset ja kielen valinta näytetään."
 
 #. type: Target for macro image
 #: ./pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "afterinstall/gnome-initial-setup.png"
-msgstr ""
+msgstr "afterinstall/gnome-initial-setup.png"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:26
@@ -107,6 +110,12 @@ msgid ""
 "screens. Some screens (`Configure online accounts` in particular) are "
 "optional and can be skipped using the `Skip` button in the top right corner."
 msgstr ""
+"Tämän apuohjelman avulla voit määrittää useita käyttäjäkohtaisia asetuksia, "
+"kuten järjestelmän kielen tai oletusnäppäimistöasettelun. Käytä \"Seuraava\"-"
+" ja \"Edellinen\"-painikkeita ikkunan yläosassa navigoidaksesi näytöstä "
+"toiseen. Jotkut näytöt (erityisesti \"Määritä online-tilit\") ovat "
+"valinnaisia, ja ne voidaan ohittaa käyttämällä \"Ohita\" -painiketta "
+"oikeassa yläkulmassa."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:28
@@ -116,12 +125,15 @@ msgid ""
 "displayed, and you can either browse the help content, or close it and start "
 "using your desktop."
 msgstr ""
+"Kun olet määrittänyt kaikki näytöt, sulje apuohjelma napsauttamalla \"Aloita "
+"Fedoran käyttö\". Tämän jälkeen GNOME-ohjeen Aloitussivu tulee näkyviin, ja "
+"voit joko selata ohjesisältöä tai sulkea sen ja aloittaa työpöydän käytön."
 
 #. type: Title ==
 #: ./pages/install/After_Installation.adoc:30
 #, no-wrap
 msgid "Common Post-installation Tasks"
-msgstr ""
+msgstr "Yleisiä asennuksen jälkeisiä tehtäviä"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:33
@@ -133,12 +145,19 @@ msgid ""
 "system. The list below describes some of the more common tasks usually "
 "performed immediately after a new installation."
 msgstr ""
+"Kun olet suorittanut asennuksen ja käynyt läpi jonkin yllä kuvatuista "
+"alkuasennuksen apuohjelmista, järjestelmäsi on valmis käytettäväksi. Muut "
+"hallinnolliset tehtävät, joita asennusohjelma tai alkuasennuksen apuohjelmat "
+"eivät kuitenkaan kata, voivat kuitenkin olla tarpeen, riippuen siitä, miten "
+"aiot käyttää järjestelmääsi. Alla olevassa luettelossa kuvataan joitain "
+"yleisimmistä tehtävistä, jotka yleensä suoritetaan välittömästi uuden "
+"asennuksen jälkeen."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:34
 #, no-wrap
 msgid "Recover a lost `root` password"
-msgstr ""
+msgstr "Palauta kadonnut \"root\"-salasana"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:35
@@ -151,12 +170,18 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-password[Resetting "
 "the Root Password]."
 msgstr ""
+"\"Root\"-salasana, joka määritetään asennuksen aikana, tarvitaan pääsyyn "
+"järjestelmään \"root\"-käyttäjänä. Ilman tätä salasanaa et voi määrittää "
+"järjestelmääsi tai asentaa lisäohjelmistoja. Jos kadotit tai unohdit \"root\""
+"-salasanasi, voit nollata sen noudattamalla ohjeita, jotka on kuvattu "
+"kohdassa xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-"
+"password[Root-salasanan nollaaminen]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:36
 #, no-wrap
 msgid "Configure the network"
-msgstr ""
+msgstr "Määritä verkko"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:37
@@ -170,12 +195,21 @@ msgid ""
 "the network after the installation, see the [citetitle]_{PRODUCT} Networking "
 "Guide_, available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Useimmissa tapauksissa verkkoyhteys määritetään asennuksen aikana joko "
+"[application]*Anaconda*-asennusohjelmassa (katso xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration["
+"Network & Hostname]) tai Kickstart-tiedostossa (katso xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-network[verkko "
+"(valinnainen) - Määritä verkkoliitännät]). Lisätietoja verkon "
+"määrittämisestä asennuksen jälkeen on [citetitle]_{PRODUCT} Networking "
+"Guide_ -oppaassa, joka on saatavilla link:++https://docs.fedoraproject.org/"
+"++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:38
 #, no-wrap
 msgid "Perform an initial system update"
-msgstr ""
+msgstr "Suorita ensimmäinen järjestelmäpäivitys"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:39
@@ -187,6 +221,13 @@ msgid ""
 "installed packages are updated to their latest available versions. Updates "
 "to packages provide security fixes, bug fixes and enhancements."
 msgstr ""
+"Jos asensit {PRODUCT} täydellisestä asennuksen ISO-levykuvasta (kuten "
+"Workstationin live-levykuva tai täydellinen palvelin-DVD), on suositeltavaa "
+"suorittaa ensimmäinen järjestelmäpäivitys, koska asennusmediasi sisälsi "
+"todennäköisesti ohjelmistopakettien vanhempia versioita. Ensimmäisen "
+"päivityksen aikana kaikki asennetut paketit päivitetään uusimpiin saatavilla "
+"oleviin versioihinsa. Pakettien päivitykset sisältävät tietoturvakorjauksia, "
+"virheenkorjauksia ja parannuksia."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:41
@@ -201,7 +242,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "Asenna ohjainpäivitykset"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:43
@@ -229,7 +270,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "Määritä lisää asennuslähteitä"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:47
@@ -242,6 +283,13 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"Uusi ohjelmisto asennetaan _asennuslähteestä_Asennuslähteet ovat "
+"järjestettyjä ohjelmisto- ja metatietojoukkoja, joita [sovellus]*DNF*-"
+"pakettien hallinta voi käyttää. Oletuksena useat {PRODUCT}:n tarjoamat "
+"asennuslähteet määritetään automaattisesti, ja voit asentaa päivityksiä ja "
+"lisäohjelmistoja niistä. Jos kuitenkin haluat määrittää lisää "
+"asennuslähteitä, esimerkiksi sellaisia, jotka sisältävät oman ohjelmistosi, "
+"tarvitaan joitain lisävaiheita."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:49
@@ -250,12 +298,15 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Lisätietoja muiden asennuslähteiden määrittämisestä on [citetitle]_{PRODUCT} "
+"System Administrator's Guide -oppaassa_, joka on saatavilla "
+"link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/install/After_Installation.adoc:50
 #, no-wrap
 msgid "Install additional packages"
-msgstr ""
+msgstr "Asenna lisäpaketteja"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:51
@@ -274,7 +325,7 @@ msgstr ""
 #: ./pages/install/After_Installation.adoc:52
 #, no-wrap
 msgid "Switch to a graphical login"
-msgstr ""
+msgstr "Vaihda graafiseen kirjautumiseen"
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:53
@@ -286,6 +337,12 @@ msgid ""
 "[application]*X Window System* and your preferred desktop environment "
 "(either [application]*GNOME* or [application]*KDE*)."
 msgstr ""
+"Riippuen asennuksen aikana valitsemistasi vaihtoehdoista, on mahdollista, "
+"että järjestelmässäsi ei ole graafista käyttöliittymää, vaan se tarjoaa vain "
+"tekstipohjaisen kehotteen. Jos näin on ja haluat ottaa graafisen työpöydän "
+"käyttöön asennuksen jälkeen, sinun on asennettava [sovellus]*X Window System*"
+" ja haluamasi työpöytäympäristö (joko [sovellus]*GNOME* tai [sovellus]*KDE*) "
+"."
 
 #. type: Plain text
 #: ./pages/install/After_Installation.adoc:54
