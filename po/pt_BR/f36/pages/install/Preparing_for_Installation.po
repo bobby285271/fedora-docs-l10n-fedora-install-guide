@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-09 16:05+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f36pagesinstallpreparing_for_installation/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Preparando para Instalação"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:8
@@ -32,12 +35,20 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Este capítulo descreve as etapas que você precisa executar antes de iniciar "
+"a instalação. Nem todas as etapas devem ser seguidas rigorosamente ­— por "
+"exemplo, se você planeja usar as configurações de instalação padrão, não "
+"precisa coletar informações do sistema, como rótulos/UUIDs de dispositivos "
+"de disco ou informações de rede, como o endereço IP do sistema. No entanto, "
+"você ainda deve ler este capítulo, pois também descreve os tipos disponíveis "
+"de mídia de instalação e como preparar a mídia de inicialização e as fontes "
+"de instalação."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:10
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Atualização ou Instalação?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:13
@@ -45,12 +56,14 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Se você já tem o Fedora instalado e deseja atualizar sua instalação para a "
+"versão atual, há duas formas básicas de fazê-lo:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:14
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr ""
+msgstr "Atualização automática usando [application]*dnf system upgrade*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:15
@@ -61,12 +74,17 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
+"A maneira preferida de atualizar seu sistema é uma atualização automática "
+"usando o utilitário [application]*dnf system upgrade*. Para obter "
+"informações sobre como realizar uma atualização automática, consulte o "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[dnf system "
+"upgrade no Fedora Wiki]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:16
 #, no-wrap
 msgid "Manual Reinstallation"
-msgstr ""
+msgstr "Reinstalação Manual"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:17
@@ -80,6 +98,15 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-reinstall[Manual "
 "System Upgrade or Reinstallation]."
 msgstr ""
+"Você pode atualizar para a versão mais recente do Fedora manualmente, em vez "
+"de confiar no [application]*dnf system upgrade*. Isso envolve inicializar o "
+"instalador como se você estivesse executando uma instalação limpa, "
+"permitindo detectar o sistema Fedora existente e substituindo a partição "
+"raiz, preservando dados em outras partições e volumes. O mesmo processo "
+"também pode ser usado para reinstalar o sistema, se necessário. Para obter "
+"informações detalhadas, consulte xref:advanced/Upgrading_Your_Current_System."
+"adoc#sect-upgradeing-fedora-manual-uninstall[Atualização ou Reinstalação "
+"Manual do Sistema]."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:21
@@ -87,12 +114,14 @@ msgid ""
 "Always back up your data before performing an upgrade or reinstalling your "
 "system, no matter which method you choose."
 msgstr ""
+"Sempre faça backup dos seus dados antes de executar uma atualização ou "
+"reinstalar o sistema, independentemente do método escolhido."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Preparando a Mídia de Inicialização"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -100,12 +129,15 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"As imagens do Fedora são `ISOs híbridas` e podem ser usadas para criar mídia "
+"de instalação com discos ópticos e USB, para inicializar nos sistemas BIOS e "
+"UEFI."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
 #, no-wrap
 msgid "Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writer"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:32
@@ -118,6 +150,13 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"O [application]*Fedora Media Writer* foi melhorado significativamente e é "
+"agora a maneira oficial, testada e suportada para fazer mídias "
+"inicializáveis. O [application]*Fedora Media Writer* suporta Linux, macOS e "
+"Windows. É uma maneira fácil de criar mídia USB inicializável para instalar "
+"o Fedora (ou outros sistemas operacionais). Usar o [application]*Fedora "
+"Media Writer* é fortemente recomendado, apesar de outro software de criação "
+"de mídia USB possa funcionar também."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:34
@@ -128,6 +167,11 @@ msgid ""
 "the button below _Custom image_. This offers a selection of various Fedora "
 "Spins, such as Xfce or Mate."
 msgstr ""
+"Algumas das novas adições ao [application]*Fedora Media Writer* são que o "
+"Fedora Workstation e Server são fácil e rapidamente acessíveis a partir da "
+"seleção na janela principal. Mais opções estão disponíveis se você "
+"selecionar as opções abaixo de _Selecionar a versão do Fedora_. Essa opção "
+"oferece uma seleção de vários Spins do Fedora, como o Xfce ou Mate."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:36
@@ -138,6 +182,12 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Historicamente, as ferramentas universais de criação de USB, como o "
+"[application]*Unetbootin*, são uma maneira popular de criar instaladores USB "
+"a partir de ISOs destinadas para mídia óptica. Elas normalmente criam um "
+"sistema de arquivos na unidade USB extraindo arquivos de uma imagem e "
+"gravando o carregador de inicialização [application]*syslinux* no "
+"dispositivo."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -147,6 +197,11 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Estes métodos contornam a configuração do carregador de inicialização "
+"embutida nas imagens do Fedora, que são pré-particionadas e projetadas para "
+"inicializar em sistemas UEFI com SecureBoot habilitado, bem como em sistemas "
+"BIOS, e, portanto, não produzem resultados consistentes com imagens do "
+"Fedora, especialmente em sistemas UEFI."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
@@ -154,6 +209,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"Os melhores resultados são produzidos por utilitários que usam um método de "
+"escrita direta e não modificam a imagem do Fedora."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -164,18 +221,23 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Sempre pense duas vezes antes de gavar uma imagem em um dispositivo. Os "
+"métodos de criação de mídia descritos nesse artigo são destrutivos. Todos os "
+"dados no pendrive USB são excluídos durante o processo, então tenha certeza "
+"que você tem um backup dos dados no dispositivo USB. Verifique duas vezes se "
+"você selecionou o dispositivo correto para gravar a imagem também!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Instalando e executando o Fedora Media Writer"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "No Fedora"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -183,28 +245,31 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"No Fedora 25 ou superior, o [application]*Fedora Media Writer* está "
+"disponível no repositório padrão. Você pode usar o `dnf` para instalar o "
+"pacote."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
 msgid "To install the [application]*Fedora Media Writer* using:"
-msgstr ""
+msgstr "Para instalar o [application]*Fedora Media Writer* use:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:59
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:62
 msgid "Run the [application]*Fedora Media Writer*:"
-msgstr ""
+msgstr "Execute o [application]*Fedora Media Writer*:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:66
 #, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:69
@@ -212,12 +277,14 @@ msgid ""
 "or in [application]*Gnome 3* select *Activities* and then click on "
 "[application]*Fedora Media Writer*."
 msgstr ""
+"ou no [application]*Gnome 3* selecione *Atividades* e então clique no "
+"[application]*Fedora Media Writer*."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:71
 #, no-wrap
 msgid "On other Linux distributions"
-msgstr ""
+msgstr "Em outras distribuições Linux"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:75
@@ -227,6 +294,10 @@ msgid ""
 "obtained from the official Flatpak repository "
 "https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 msgstr ""
+"A melhor maneira de instalar o [application]*Fedora Media Writer* em várias "
+"distribuições Linux é usar o pacote _Flatpak_ pré-construído. O pacote pode "
+"ser obtido a partir do repositório  Flatpak oficial https://flathub.org/apps/"
+"details/org.fedoraproject.MediaWriter[Flathub.org]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:77
@@ -234,23 +305,25 @@ msgid ""
 "To setup *Flatpak* on your Linux system, follow the guidelines on the "
 "https://flatpak.org/setup/[Flatpak documentation] page."
 msgstr ""
+"Para configurar o *Flatpak* no seu sistema Linux, siga as instruções na "
+"página https://flatpak.org/setup/[Documentação do Flatpak]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:79
 msgid "Run the application:"
-msgstr ""
+msgstr "Execute a aplicação:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:83
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:85
 #, no-wrap
 msgid "On Windows"
-msgstr ""
+msgstr "No Windows"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:88
@@ -260,6 +333,10 @@ msgid ""
 "detects the running system and offers you the correct installation file for "
 "your Windows version."
 msgstr ""
+"Baixe o último arquivo Instalador do Windows a partir do "
+"link:++https://getfedora.org++[GetFedora.org]. O servidor detecta "
+"automaticamente o sistema atual e oferece a você o arquivo de instalação "
+"correto para sua versão do Windows."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:90
@@ -268,11 +345,14 @@ msgid ""
 "through the set-up wizard. The Wizard lets you customize the software's "
 "installation if you choose to."
 msgstr ""
+"Execute a instalação clicando duas vezes no instalador, e continue pelo "
+"assistente de configuração. O Assistente permite que você personalize a "
+"instalação do software se você quiser."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:92
 msgid "Run the application by clicking on a launcher."
-msgstr ""
+msgstr "Execute a aplicação clicando em um atalho."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:94
@@ -281,12 +361,16 @@ msgid ""
 "placed in the _All apps_ menu under _F_. In Windows 10, you can just type "
 "[application]*Fedora Media Writer* in the search box on the task bar."
 msgstr ""
+"No Windows 8 e 10, o atalho do [application]*Fedora Media Writer* será "
+"colocado no menu _Todos os aplicativos_ em _F_. No Windows 10, você pode "
+"digitar [application]*Fedora Media Writer* na caixa de pesquisa na barra de "
+"tarefas."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:96
 #, no-wrap
 msgid "On macOS"
-msgstr ""
+msgstr "No macOS"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:99
@@ -296,6 +380,10 @@ msgid ""
 "automatically detects the running system and offers a correct package for "
 "your macOS."
 msgstr ""
+"Baixe a mais recente imagem de disco do Macintosh (o pacote terá uma "
+"extensão .dmg) no link:++https: //getfedora.org++[GetFedora.org]. O servidor "
+"detecta automaticamente o sistema em execução e oferece um pacote correto "
+"para o seu macOS."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:101
@@ -303,45 +391,49 @@ msgid ""
 "Open the `.dmg` file, and press and hold the kbd:[Ctrl] key while clicking "
 "on the [application]*Fedora Media Writer* application."
 msgstr ""
+"Abra o arquivo `.dmg`, pressione e segure a tecla kbd:[Ctrl] enquanto clica "
+"no aplicativo [application]*Fedora Media Writer*."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:103
 msgid "Press \"`Open`\" in the pop-up menu."
-msgstr ""
+msgstr "Pressione \"`Abrir`\" no menu que surgir."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:105
 msgid "Click the \"`Open`\" button in the confirmation dialog, if it appears."
-msgstr ""
+msgstr "Clique no botão \"`Abrir`\" no diálogo de confirmação, se aparecer."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:106
 #, no-wrap
 msgid "Writing the ISO image to the USB Media."
-msgstr ""
+msgstr "Gravando a imagem ISO em uma mídia USB."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:108
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
 msgstr ""
+"Selecione a Edição do Fedora para a qual você deseja criar uma unidade USB "
+"inicializável."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:110
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
-msgstr ""
+msgstr "Tela principal do Fedora Media Writer: Escolha sua Edição do Fedora"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:112
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
-msgstr ""
+msgstr "Imagem da tela principal do Fedora Media Writer"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:112
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
-msgstr ""
+msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:115
@@ -352,29 +444,34 @@ msgid ""
 "downloading the image and the USB creation. You can choose a different "
 "architecture, if you select _Other variants_."
 msgstr ""
+"A seleção principal permite que você escolha uma das edições padrão do "
+"Fedora, *Workstation* ou *Server*. [application]*Fedora Media Writer* exibe "
+"mais detalhes sobre a edição antes de você prosseguir com o download da "
+"imagem e a criação do USB. Você pode escolher uma arquitetura diferente, se "
+"selecionar _Outras variantes_."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:117
 msgid "Select \"`Create Live USB`\" to proceed."
-msgstr ""
+msgstr "Selecione \"`Criar USB Live`\" para continuar."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:119
 #, no-wrap
 msgid "Fedora Media Writer Distro Information"
-msgstr ""
+msgstr "Informações da Distro no Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:121
 #, no-wrap
 msgid "Image of Fedora Media Writer Distro Information Screen"
-msgstr ""
+msgstr "Imagem da tela de Informações da Distro do Fedora Media Writer"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:121
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
-msgstr ""
+msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:124
@@ -383,58 +480,64 @@ msgid ""
 "downloaded the ISO before and placed it in the _Downloads_ directory, it "
 "will be immediately available to use."
 msgstr ""
+"O Fedora Media Writer baixará automaticamente o ISO para você. Se você tiver "
+"baixado o ISO antes e colocado no diretório _Downloads_, ela estará "
+"imediatamente disponível para uso."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:126
 #, no-wrap
 msgid "Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Download Automático do Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:128
 #, no-wrap
 msgid "Image of Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Imagem do Download Automático do Fedora Media Writer"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:128
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
-msgstr ""
+msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:131
 msgid "Plug in a USB drive on which you want to create the bootable media."
 msgstr ""
+"Conecte uma unidade USB na qual você deseja criar uma mídia inicializável."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:133
 msgid "To write the image onto the media, click the red btn:[Write to disk] button."
 msgstr ""
+"Para gravar a imagem na mídia, clique no botão vermelho btn:[Write to disk]."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:135
 #, no-wrap
 msgid "Fedora Media Writer Write to USB Device"
-msgstr ""
+msgstr "Escrita do Fedora Media Writer para um Dispositivo USB"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:137
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
 msgstr ""
+"Imagem do botão vermelho de escrita para dispositivo do Fedora Media Writer"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:137
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:139
 #, no-wrap
 msgid "Other methods to create a live USB"
-msgstr ""
+msgstr "Outros métodos para criar um USB live"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:142
@@ -442,6 +545,9 @@ msgid ""
 "Using the *Fedora Media Writer* is highly recommended for everybody, because "
 "it offers a reliable way to create a live USB stick for Fedora installation."
 msgstr ""
+"O uso do *Fedora Media Writer* é altamente recomendado para todos, porque "
+"oferece uma maneira confiável de criar um dispositivo USB para instalação do "
+"Fedora."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:144
@@ -450,6 +556,9 @@ msgid ""
 "process manually. If you decide to do so, you have to download the "
 "installation images and use an application to write them onto the USB stick."
 msgstr ""
+"No entanto, alguns usuários experientes podem preferir passar pelo processo "
+"de criação manualmente. Se você decidir fazer isso, deverá baixar as imagens "
+"de instalação e usar um aplicativo para gravá-las no dispositivo USB."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:148
@@ -457,12 +566,14 @@ msgid ""
 "If you have downloaded and verified the installation images manually, you "
 "still can write them onto the USB stick using *Fedora Media Writer*."
 msgstr ""
+"Se você baixou e verificou as imagens de instalação manualmente, você ainda "
+"pode gravá-las no dispositivo USB usando o *Fedora Media Writer*."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:152
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr ""
+msgstr "Baixando Imagens de Inicialização e Instalação"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:155
@@ -476,6 +587,14 @@ msgid ""
 "type, or a direct installation booting method such as PXE; kickstarts are "
 "not supported with live images."
 msgstr ""
+"O Projeto Fedora oferece diferentes edições feitas sob medida para alguns "
+"casos de uso específicos. Escolha a melhor edição do Fedora para você. Você "
+"também pode construir sua própria personalizando o Fedora após estar "
+"instalado, ou usando um arquivo kickstart conforme descrito em xref:advanced/"
+"Kickstart_Installations.adoc#sect-kickstart-file-create[Criando um arquivo "
+"Kickstart] . A instalação Kickstart requer o tipo de mídia `netinstall` ou "
+"um método de inicialização de instalação direta, como PXE; kickstarts não "
+"são suportados com imagens live."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:157
@@ -484,6 +603,9 @@ msgid ""
 "available media types in "
 "xref:Downloading_Fedora.adoc#chap-downloading-fedora[Downloading Fedora]."
 msgstr ""
+"Leia mais sobre Fedora Workstation, Fedora Cloud, Fedora Server e os tipos "
+"de mídia disponíveis em xref:Downloading_Fedora.adoc#chap-downloading-fedora["
+"Baixando o Fedora]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:159
@@ -492,12 +614,15 @@ msgid ""
 "or tools for specialized tasks at "
 "link:++https://spins.fedoraproject.org++[]."
 msgstr ""
+"Você também pode escolher um Fedora _Spin_ apresentando desktops "
+"alternativos favoritos ou ferramentas para tarefas especializadas em "
+"link:++https://spins.fedoraproject.org++[]."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:161
 #, no-wrap
 msgid "Verifying the Downloaded Image"
-msgstr ""
+msgstr "Verificando a Imagem Baixada"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:164
@@ -509,6 +634,13 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
+"Como erros de transmissão ou outros problemas podem corromper a imagem do "
+"Fedora que você baixou, é importante verificar a integridade do arquivo. "
+"Depois que as imagens são criadas, uma operação é realizada no arquivo que "
+"produz um valor chamado `soma de verificação`, ou \"checksum\", usando um "
+"algoritmo matemático complexo. A operação é suficientemente complexa para "
+"que *qualquer alteração* no arquivo original produza uma soma de verificação "
+"diferente."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:166
@@ -519,12 +651,17 @@ msgid ""
 "link:++https://getfedora.org/security/++[], and are [command]#gpg# signed to "
 "demonstrate their integrity."
 msgstr ""
+"Calculando a `soma de verificação` da imagem em seu próprio computador e "
+"comparando-o com a `soma de verificação` original, você pode verificar se a "
+"imagem não foi adulterada ou corrompida. Os valores de soma de verificação "
+"originais são fornecidos em link:++https://getfedora.org/security/++[], e "
+"são assinados com [command]#gpg# para demonstrar sua integridade."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:168
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
-msgstr ""
+msgstr "Verificando checksums em sistemas Windows"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:171
@@ -533,16 +670,19 @@ msgid ""
 "link:++https://getfedora.org/++[] and the corresponding checksum file from "
 "link:++https://getfedora.org/security/++[]"
 msgstr ""
+"Baixe a imagem do Fedora de sua escolha no link:++https://fedoraproject.org/"
+"get-fedora++[] e o arquivo de soma de verificação correspondente em "
+"link:++https://getfedora.org/security/++[]"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:173
 msgid "Open a [command]#powershell# session."
-msgstr ""
+msgstr "Abra uma sessão do [command]#powershell#."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:175
 msgid "Change to the directory containing the downloaded files."
-msgstr ""
+msgstr "Mude para o diretório que contém os arquivos baixados."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:180
@@ -551,12 +691,14 @@ msgid ""
 "> cd $HOME\\Downloads\\\n"
 "> ls\n"
 msgstr ""
+"> cd $HOME\\Downloads\\\n"
+"> ls\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:182
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
-msgstr ""
+msgstr "Diretório: C:\\Usuários\\Pete\\Downloads\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:187
@@ -569,11 +711,17 @@ msgid ""
 "-a---        11/25/2014  12:39 PM     2047868928  "
 "Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
+"Modo                LastWriteTime         Tamanho  Nome\n"
+"----                -------------         ------  ----\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
+"CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
+".iso\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:191
 msgid "Load the resources required to calculate the checksum."
-msgstr ""
+msgstr "Carregue os recursos necessários para calcular a soma de verificação."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:197
@@ -586,11 +734,18 @@ msgid ""
 "> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
 "$image) -split \" \")[0].ToLower()\n"
 msgstr ""
+"> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
+"> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography."
+"sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
+"$image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:200
 msgid "Calculate the downloaded image's checksum. This will take a while!"
 msgstr ""
+"Calcule a soma de verificação da imagem baixada. Isso vai demorar um pouco!"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:203
@@ -600,11 +755,15 @@ msgid ""
 "[System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() "
 "-replace '-', ''\n"
 msgstr ""
+"> $download_checksum = [System.BitConverter]::ToString($sha256."
+"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
+"replace '-', ''\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:206
 msgid "Compare the calculated checksum to the expected checksum."
 msgstr ""
+"Compare a soma de verificação calculada com a soma de verificação esperada."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:216
@@ -618,12 +777,19 @@ msgid ""
 "echo \"Checksum test failed.\"\n"
 "}\n"
 msgstr ""
+"> echo \"Download Checksum: $download_checksum\"\n"
+"> echo \"Expected Checksum: $expected_checksum\"\n"
+"> if ( $download_checksum -eq \"$expected_checksum\" ) {\n"
+"echo \"Checksum test passed!\"\n"
+"} else {\n"
+"echo \"Checksum test failed.\"\n"
+"}\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:219
 #, no-wrap
 msgid "Verifying checksums on Linux and macOS systems"
-msgstr ""
+msgstr "Verificando somas de verificação em sistemas Linux e macOS"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:222
@@ -632,6 +798,9 @@ msgid ""
 "link:++https://fedoraproject.org/get-fedora++[] and the corresponding "
 "checksum file from link:++https://getfedora.org/security/++[]"
 msgstr ""
+"Baixe a imagem do Fedora de sua escolha no link:++https://fedoraproject.org/"
+"get-fedora++[] e o arquivo de soma de verificação correspondente em "
+"link:++https://getfedora.org/security/++[]"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:224
@@ -639,33 +808,36 @@ msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
 "files."
 msgstr ""
+"Abra uma janela de terminal e navegue até o diretório com os arquivos "
+"baixados."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:228
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
-msgstr ""
+msgstr "$ [command]#cd ~/Downloads#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:231
 msgid "Use the appropriate utility to verify the image checksum."
 msgstr ""
+"Use o utilitário apropriado para verificar a soma de verificação da imagem."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:233
 msgid "For Linux:"
-msgstr ""
+msgstr "Para Linux:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:237
 #, no-wrap
 msgid "$ sha256sum -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ sha256sum -c *CHECKSUM\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:240
 msgid "For macOS:"
-msgstr ""
+msgstr "Para macOS:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:244
@@ -674,18 +846,20 @@ msgid ""
 "$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \"  \" $2 }' | "
 "shasum -a 256 -c\n"
 msgstr ""
+"$ grep '^SHA256' *-CHECKSUM | awk -F '[()=]' '{ print $4 \" \" $2 }' | "
+"shasum -a 256 -c\n"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:246
 #, no-wrap
 msgid "Writing the images to USB media"
-msgstr ""
+msgstr "Gravando as imagens em mídia USB"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:248
 #, no-wrap
 msgid "Creating USB media with [application]*GNOME Disks*"
-msgstr ""
+msgstr "Criando mídia USB com o [application]*GNOME Discos*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:250
@@ -694,11 +868,13 @@ msgid ""
 "[package]*gnome-disk-utility* package installed, open `Disks` using the "
 "system menu."
 msgstr ""
+"Em um sistema com [application]*GNOME*, ou com o pacote [package]*gnome-disk-"
+"utility* instalado, abra `Discos` usando o menu do sistema."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:252
 msgid "Click your USB device in the left column."
-msgstr ""
+msgstr "Clique em seu dispositivo USB na coluna da esquerda."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:254
@@ -706,6 +882,8 @@ msgid ""
 "Click the menu icon in the upper right corner of the window, and choose the "
 "`Restore Disk Image` option."
 msgstr ""
+"Clique no ícone de menu no canto superior direito da janela e escolha a "
+"opção `Restaurar imagem de disco`."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:256
@@ -714,17 +892,20 @@ msgid ""
 "minutes, it will report the process is complete and your installation media "
 "will be ready to use."
 msgstr ""
+"Navegue até o arquivo de imagem e clique em `Iniciar restauração`. Após "
+"alguns minutos, ele relatará que o processo foi concluído e sua mídia de "
+"instalação estará pronta para uso."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:257
 #, no-wrap
 msgid "Creating USB Media on the Linux command line"
-msgstr ""
+msgstr "Criando uma mídia USB na linha de comando do Linux"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:259
 msgid "Open a terminal window and insert the usb drive."
-msgstr ""
+msgstr "Abra uma janela de terminal e insira a unidade USB."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:261
@@ -732,6 +913,8 @@ msgid ""
 "Find the `device node` assigned to the drive. In the example below, the "
 "drive is given `sdd`."
 msgstr ""
+"Encontre o `nó de dispositivo` atribuído à unidade. No exemplo abaixo, a "
+"unidade recebe `sdd`."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:275
@@ -751,17 +934,30 @@ msgid ""
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
+"$ [command]#dmesg|tail#\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
+"SerialNumber=2\n"
+"[288954.686559] usb 2-1.8: Product: USB Storage\n"
+"[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
+"[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
+"[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
+"[288954.712809] usbcore: registered new interface driver usb-storage\n"
+"[288954.716682] usbcore: registered new interface driver uas\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
+"9228 PQ: 0 ANSI: 0\n"
+"[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
+"[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:278
 msgid "Use the [command]#dd# utility to write the image."
-msgstr ""
+msgstr "Use o utilitário [command]#dd# para gravar a imagem."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:282
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
-msgstr ""
+msgstr "# dd if=/caminho/para/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:288
@@ -770,12 +966,15 @@ msgid ""
 "`dd` command destroys all data on the target device. If you made a mistake, "
 "you could lose important data."
 msgstr ""
+"Preste muita atenção aos dispositivos de origem (`if=`) e de destino (`of=`)"
+". O comando `dd` destrói todos os dados no dispositivo de destino. Se você "
+"cometer um erro, poderá perder dados importantes."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:290
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
-msgstr ""
+msgstr "Criando um CD ou DVD de Inicialização"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:292
@@ -785,6 +984,10 @@ msgid ""
 "approach may be necessary when installing {PRODUCT} on an older system which "
 "cannot boot from USB."
 msgstr ""
+"Além de criar uma unidade flash USB inicializável, você também pode usar as "
+"imagens ISO fornecidas para criar mídia ótica inicializável (um CD ou DVD). "
+"Esta abordagem pode ser necessária ao instalar {PRODUCT} em um sistema mais "
+"antigo que não pode inicializar a partir de USB."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:297
@@ -793,11 +996,15 @@ msgid ""
 "image will vary depending on what disc burning software you use. This "
 "procedure only offers a general overview."
 msgstr ""
+"As etapas exatas que você precisa seguir para gravar um CD ou DVD "
+"inicializável a partir de uma imagem ISO variam dependendo do software de "
+"gravação de disco que você usa. Este procedimento oferece apenas uma visão "
+"geral."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:301
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
-msgstr ""
+msgstr "Insira um CD ou DVD virgem no gravador de CD ou DVD do seu sistema."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:303
@@ -809,6 +1016,12 @@ msgid ""
 "[application]*Brasero*, this option is `Burn image` in the main menu on the "
 "left side of the window."
 msgstr ""
+"Abra o software de gravação do seu sistema - por exemplo, "
+"[application]*Brasero* em sistemas {PRODUCT} com ambiente gráfico "
+"[application]*GNOME*, ou [application]*Nero* em sistemas Windows. No menu "
+"principal do software, encontre uma opção que permite gravar uma imagem ISO "
+"em um disco. Por exemplo, no [application]*Brasero*, esta opção é `Gravar "
+"imagem` no menu principal do lado esquerdo da janela."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:305
@@ -816,8 +1029,11 @@ msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
+"Quando solicitado, selecione a imagem ISO do {PRODUCT} a ser gravada e o "
+"gravador de CD ou DVD com um disco vazio dentro (se você tiver mais de uma "
+"unidade)."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:306
 msgid "Confirm your selection, and wait for the disc to be burned."
-msgstr ""
+msgstr "Confirme sua seleção e espere até que o disco seja gravado."
