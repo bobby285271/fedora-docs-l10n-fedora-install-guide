@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-09 23:17+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f36pagesinstallinstalling_using_anaconda/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/install/Installing_Using_Anaconda.adoc:6
 #, no-wrap
 msgid "Installing Using Anaconda"
-msgstr ""
+msgstr "Instalando Usando Anaconda"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:9
@@ -31,11 +34,17 @@ msgid ""
 "limited in certain aspects (for example, custom partitioning is not possible "
 "in text mode)."
 msgstr ""
+"Este capítulo fornece instruções passo a passo para instalar o {PRODUCT} "
+"usando o instalador [application]*Anaconda*. A maior parte deste capítulo "
+"descreve a instalação usando a interface gráfica do usuário. Um modo de "
+"texto também está disponível para sistemas sem exibição gráfica, mas esse "
+"modo é limitado em certos aspectos (por exemplo, o particionamento "
+"personalizado não é possível no modo de texto)."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:11
 msgid "If your system does not have the ability to use the graphical mode, you can:"
-msgstr ""
+msgstr "Se o seu sistema não puder usar o modo gráfico, você pode:"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:13
@@ -44,6 +53,9 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart]"
 msgstr ""
+"Usa o Kickstart para automatizar a instalação conforme descrito em xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Automatizando a Instalação com Kickstart]"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:15
@@ -54,12 +66,16 @@ msgid ""
 "xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
 "VNC]"
 msgstr ""
+"Executar a instalação gráfica remotamente conectando-se ao sistema de "
+"instalação de outro computador com uma tela gráfica usando o protocolo _VNC_ "
+"(Virtual Network Computing) - consulte xref:advanced/VNC_Installations.adoc"
+"#chap-vnc-installations[Instalando Usando VNC]"
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:17
 #, no-wrap
 msgid "Introduction to Anaconda"
-msgstr ""
+msgstr "Introdução ao Anaconda"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:20
@@ -71,6 +87,12 @@ msgid ""
 "partitioning, etc. There is usually only one way to proceed at any given "
 "time."
 msgstr ""
+"O instalador do {PRODUCT}, [application]*Anaconda*, é diferente da maioria "
+"dos outros programas de instalação de sistema operacional devido à sua "
+"natureza paralela. A maioria dos instaladores segue um caminho fixo: você "
+"deve escolher primeiro seu idioma, depois configurar a rede, o tipo de "
+"instalação, o particionamento etc. Geralmente, há apenas uma maneira de "
+"proceder a qualquer momento."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:22
@@ -82,6 +104,12 @@ msgid ""
 "example, when installing from a network location, you must configure the "
 "network before you can select which packages to install."
 msgstr ""
+"No [application]*Anaconda*, você só precisa selecionar seu idioma e local "
+"primeiro e, em seguida, é apresentada uma tela central, onde pode configurar "
+"a maioria dos aspectos da instalação na ordem que desejar. No entanto, isso "
+"não se aplica a todas as partes do processo de instalação - por exemplo, ao "
+"instalar de um local de rede, você deve configurar a rede antes de "
+"selecionar quais pacotes instalar."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:24
@@ -94,6 +122,13 @@ msgid ""
 "the actual installation process before you finish configuring these "
 "settings."
 msgstr ""
+"Algumas telas serão configuradas automaticamente dependendo do seu hardware "
+"e do tipo de mídia que você usou para iniciar a instalação. Você ainda pode "
+"alterar as configurações detectadas em qualquer tela. As telas que não foram "
+"configuradas automaticamente e, portanto, requerem sua atenção antes de "
+"iniciar a instalação, são marcadas por um ponto de exclamação. Você não pode "
+"iniciar o processo de instalação real antes de terminar de definir essas "
+"configurações."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:26
@@ -102,12 +137,15 @@ msgid ""
 "partitioning process is very different from other Linux distributions. These "
 "differences are described in each screen's subsection."
 msgstr ""
+"Diferenças adicionais aparecem em certas telas; notavelmente, o processo de "
+"particionamento personalizado é muito diferente de outras distribuições "
+"Linux. Essas diferenças são descritas na subseção de cada tela."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:28
 #, no-wrap
 msgid "Consoles and Logging During the Installation"
-msgstr ""
+msgstr "Consoles e Registro de Logs Durante a Instalação"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:31
@@ -116,12 +154,15 @@ msgid ""
 "during the installation. This is useful when troubleshooting problems, but "
 "should not be necessary in most cases."
 msgstr ""
+"As seções a seguir descrevem como acessar os logs e um shell interativo "
+"durante a instalação. Isso é útil ao solucionar problemas, mas não deve ser "
+"necessário na maioria dos casos."
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:33
 #, no-wrap
 msgid "Accessing Consoles"
-msgstr ""
+msgstr "Acessando Consoles"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:36
@@ -134,6 +175,14 @@ msgid ""
 "prompt with `root` privileges, unless this prompt was specifically disabled "
 "using a boot option or a Kickstart command."
 msgstr ""
+"O instalador do {PRODUCT} usa o multiplexador de terminal [application]*tmux*"
+" para exibir e controlar várias janelas que você pode usar além da interface "
+"principal. Cada uma dessas janelas tem um propósito diferente - elas exibem "
+"vários logs diferentes, que podem ser usados para solucionar quaisquer "
+"problemas durante a instalação, e uma das janelas fornece um prompt de shell "
+"interativo com privilégios de `root`, a menos que este prompt tenha sido "
+"especificamente desabilitado usando uma opção de inicialização ou um comando "
+"Kickstart."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:41
@@ -141,6 +190,8 @@ msgid ""
 "In general, there is no reason to leave the default graphical installation "
 "environment unless you need to diagnose an installation problem."
 msgstr ""
+"Em geral, não há razão para deixar o ambiente de instalação gráfico padrão, "
+"a menos que você precise diagnosticar um problema de instalação."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:45
@@ -150,6 +201,10 @@ msgid ""
 "Alt + F1]. To go back to the main installation interface which runs in "
 "virtual console 6, press kbd:[Ctrl + Alt + F6]."
 msgstr ""
+"O multiplexador de terminal esta sendo executado no console virtual 1. Para "
+"mudar do ambiente de instalação real para [application]*tmux*, pressione "
+"kbd:[Ctrl + Alt + F1]. Para voltar para a interface principal da instalação, "
+"que é executada no console virtual 6, pressione kbd:[Ctrl + Alt + F6]."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:50
