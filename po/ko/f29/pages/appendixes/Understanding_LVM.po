@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-10 18:01+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f29pagesappendixesunderstanding_lvm/ko/"
+">\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/appendixes/Understanding_LVM.adoc:5
 #, no-wrap
 msgid "Understanding LVM"
-msgstr ""
+msgstr "LVM 이해"
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:8
@@ -31,6 +34,11 @@ msgid ""
 "_logical volumes_. The logical volumes function much like standard "
 "partitions. They have a file system type, such as `ext4`, and a mount point."
 msgstr ""
+"LVM (논리 볼륨 관리) 파티션은 표준 파티션에 비해 많은 이점을 제공합니다. LVM "
+"파티션은 물리적 볼륨으로 초기화됩니다. 하나 이상의 물리적 볼륨이 결합되어 "
+"볼륨그룹을 형성합니다. 각 볼륨 그룹의 총 저장장치는 하나 이상의 논리적 "
+"볼륨으로 나뉩니다. 논리 볼륨은 표준 파티션과 같이 유사하게 작동합니다. `ext4`"
+"와 적재지점과 같은 파일 시스템 유형을 가지고 있습니다."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:13
@@ -38,6 +46,8 @@ msgid ""
 "The boot loader cannot read LVM volumes. You must make a standard, non-LVM "
 "disk partition for your `/boot` partition."
 msgstr ""
+"부트 로더는 LVM 볼륨을 읽을 수 없습니다. 당신의 `/boot` 파티션에 비-LVM "
+"디스크 파티션을 표준으로 만들어야만 합니다."
 
 #. type: delimited block =
 #: ./pages/appendixes/Understanding_LVM.adoc:15
@@ -48,6 +58,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme] for details."
 msgstr ""
+"기본적으로, 설치 처리는 항상 LVM 볼륨에서 `/`와 `swap` 파티션, 표준 "
+"파티션에서 분리된 `/ boot`를 생성합니다. 자세한 내용은 xref : install/"
+"Installing_Using_Anaconda.adoc #sect-installation-gui-manual-partitioning-"
+"recommended [권장 파티션 구성표]를 참조하세요."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:19
@@ -59,6 +73,11 @@ msgid ""
 "into several smaller piles of arbitrary size, just as a volume group is "
 "allocated to several logical volumes."
 msgstr ""
+"LVM을 더 잘 이해하려면 물리 볼륨을 _blocks_ 더미로 생각해 보세요. 블록은 "
+"자료를 저장하는 데 사용되는 저장 단위입니다. 블록의 여러 더미는 물리 볼륨이 "
+"볼륨 그룹을 만들기에 결합되는 것처럼 보다 큰 더미를 만들기 위하여 결합 할 수 "
+"있습니다. 결과적으로 더미는 불륨 그룹이 여러 논리 볼륨을 할당 되는 것처럼 "
+"임의 크기의 여러 작은 더미로 세분화 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:21
@@ -68,6 +87,10 @@ msgid ""
 "are on separate drives or RAID arrays then administrators may also spread a "
 "logical volume across the storage devices."
 msgstr ""
+"관리자는 표준 디스크 파티션과 같지 않으며, 자료를 파괴하지 않고 논리 볼륨을 "
+"늘리거나 줄일 수 있습니다. 만약 볼륨 그룹에 있는 물리 볼륨이 별도의 드라이브 "
+"또는 레이드 배열이 있는 경우 관리자는 저장 장치를 통해 논리적 볼륨을 분산 "
+"시킬 수도 있습니다."
 
 #. type: Plain text
 #: ./pages/appendixes/Understanding_LVM.adoc:22
@@ -78,3 +101,8 @@ msgid ""
 "capacity unallocated. You may safely grow logical volumes to use unallocated "
 "space, as your needs dictate."
 msgstr ""
+"당신은 논리 볼륨을 볼륨에서 자료가 필요한 것보다 작은 용량으로 축소하면 "
+"자료가 손실 될 수 있습니다. 유연성을 극대화하려면, 현재 요구 사항을 충족하는 "
+"논리 볼륨을 만들고, 초과 저장장치 용량은 할당되지 않은 상태로 나둡니다. "
+"필요에 따라서, 할당되지 않은 공간을 사용하도록 논리 볼륨을 안전하게 늘릴 수 "
+"있습니다."
