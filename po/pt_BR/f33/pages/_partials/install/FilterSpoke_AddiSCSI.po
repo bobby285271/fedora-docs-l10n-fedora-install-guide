@@ -7,24 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:04+0000\n"
-"PO-Revision-Date: 2021-04-29 01:02+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2022-08-11 00:18+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "f33pages_partialsinstallfilterspoke_addiscsi/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:5
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:14
 #, no-wrap
 msgid "Add iSCSI Target"
-msgstr "Adicionar destino iSCSI"
+msgstr "Adicionar Destino iSCSI"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:8
@@ -51,9 +51,9 @@ msgid ""
 "authentication."
 msgstr ""
 "Você também pode configurar um destino iSCSI para autenticar o iniciador "
-"iSCSI no sistema ao qual o destino está conectado (_CHAP inverso_), tanto "
+"iSCSI no sistema ao qual o destino está conectado (_CHAP reverso_), tanto "
 "para descoberta quanto para sessão. Usados juntos, o CHAP e o CHAP reverso "
-"são chamados de _CAP mútuo_ ou _CAP_ de duas vias. O CHAP mútuo fornece o "
+"são chamados de _CHAP mútuo_ ou _CHAP de duas vias_. O CHAP mútuo fornece o "
 "maior nível de segurança para conexões iSCSI, especialmente se o nome de "
 "usuário e a senha forem diferentes para autenticação CHAP e autenticação "
 "CHAP reversa."
@@ -74,17 +74,18 @@ msgid ""
 "destination[Installation Destination - Specialized & Network Disks] screen. "
 "A new dialog window titled `Add iSCSI Storage Target` will open."
 msgstr ""
-"Clique no botão `Adicionar iSCSI Target` no canto inferior direito da tela "
+"Clique no botão `Adicionar Destino iSCSI` no canto inferior direito da tela "
 "xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-installation-"
-"destination[Destino da instalação - Discos especializados e de rede]. Uma "
-"nova janela de diálogo intitulada `Adicionar destino de armazenamento iSCSI` "
-"será aberta."
+"destination[Destino da Instalação - Discos Rede e Especiais]. Uma nova "
+"janela de diálogo intitulada `Adicionar Destino de Armazenamento iSCSI` será "
+"aberta."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
 msgid ""
 "Enter the IP address of the iSCSI target in the `Target IP Address` field."
-msgstr "Insira o endereço IP do destino iSCSI no campo `Endereço IP destino`."
+msgstr ""
+"Insira o endereço IP do destino iSCSI no campo `Endereço IP do Destino`."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
@@ -92,8 +93,8 @@ msgid ""
 "Provide a name in the `iSCSI Initiator Name` field for the iSCSI initiator "
 "in _iSCSI Qualified Name_ (IQN) format. A valid IQN entry contains:"
 msgstr ""
-"Forneça um nome no campo `Nome do iniciador iSCSI` para o iniciador iSCSI no "
-"formato _Nome qualificado iSCSI_ (IQN). Uma entrada IQN válida contém:"
+"Forneça um nome no campo `Nome do Iniciador iSCSI` para o iniciador iSCSI no "
+"formato _Nome Qualificado iSCSI_ (IQN). Uma entrada IQN válida contém:"
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
@@ -138,7 +139,7 @@ msgstr ""
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
 msgid "A complete IQN will therefore look as follows:"
-msgstr "Um IQN completo via, portanto, se parecer com:"
+msgstr "Um IQN completo irá, portanto, se parecer com:"
 
 #. type: delimited block -
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
@@ -182,9 +183,9 @@ msgid ""
 "authentication credentials; these should be provided by your organization."
 msgstr ""
 "Especifique o tipo de autenticação a ser usado para descoberta iSCSI usando "
-"o menu suspenso `Descobrir tipo de autenticação`. Dependendo do tipo de "
+"o menu suspenso `Descobrir Tipo de Autenticação`. Dependendo do tipo de "
 "autenticação que você selecionou, campos de entrada adicionais (como `Nome "
-"de usuário CHAP` e `Senha CHAP` podem então se tornar visíveis. Preencha "
+"de Usuário CHAP` e `Senha CHAP` podem então se tornar visíveis. Preencha "
 "suas credenciais de autenticação; elas devem ser fornecidas por sua "
 "organização."
 
@@ -197,7 +198,7 @@ msgid ""
 "the credentials you provided. This process may take some time (generally "
 "less than 30 seconds), depending on your network."
 msgstr ""
-"Clique no botão `Iniciar descoberta`. O instalador agora tentará descobrir "
+"Clique no botão `Iniciar Descoberta`. O instalador agora tentará descobrir "
 "um destino iSCSI com base nas informações fornecidas e, se o destino exigir "
 "CHAP ou autenticação CHAP reversa, ele tentará usar as credenciais "
 "fornecidas. Este processo pode demorar algum tempo (geralmente menos de 30 "
@@ -227,8 +228,8 @@ msgid ""
 "address you specified are already configured. During discovery, "
 "[application]*Anaconda* ignores nodes which have already been added."
 msgstr ""
-"A mensagem de erro `No nodes discovered` também pode significar que todos os "
-"nós no endereço que você especificou já estão configurados. Durante a "
+"A mensagem de erro `Nenhum nó descoberto` também pode significar que todos "
+"os nós no endereço que você especificou já estão configurados. Durante a "
 "descoberta, o [application]*Anaconda* ignora os nós que já foram adicionados."
 
 #. type: Plain text
@@ -270,10 +271,10 @@ msgstr ""
 "Depois de selecionar todos os nós que deseja usar, clique em `Login` para "
 "iniciar uma sessão iSCSI. O [application]*Anaconda* tentará fazer o login em "
 "todos os nós selecionados. Se o processo de login for bem-sucedido, a caixa "
-"de diálogo `Adicionar destino de armazenamento iSCSI` fechará e todos os nós "
+"de diálogo `Adicionar Destino de Armazenamento iSCSI` fechará e todos os nós "
 "que você configurou serão mostrados na lista de discos de rede em "
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
-"destination[Destino da instalação - Discos especializados e de rede]."
+"destination[Destino da Instalação - Discos de Rede e Especiais]."
 
 #. type: Plain text
 #: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
@@ -286,7 +287,7 @@ msgid ""
 msgstr ""
 "Você pode repetir este procedimento para descobrir destinos iSCSI adicionais "
 "ou para adicionar mais nós de um destino configurado anteriormente. No "
-"entanto, observe que depois de clicar no botão `Iniciar descoberta` pela "
-"primeira vez, você não poderá alterar o `Nome do iniciador iSCSI`. Se você "
+"entanto, observe que depois de clicar no botão `Iniciar Descoberta` pela "
+"primeira vez, você não poderá alterar o `Nome do Iniciador iSCSI`. Se você "
 "cometeu um erro ao configurar o nome do iniciador, deve reiniciar a "
 "instalação."
