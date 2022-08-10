@@ -1,26 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-11 00:18+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f35pages_partialsinstallfilterspoke_addiscsi/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:5
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:14
 #, no-wrap
 msgid "Add iSCSI Target"
-msgstr ""
+msgstr "Adicionar Destino iSCSI"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:8
@@ -30,6 +33,10 @@ msgid ""
 "of these steps may require a user name and password for _Challenge Handshake "
 "Authentication Protocol_ (CHAP) authentication."
 msgstr ""
+"Para usar dispositivos de armazenamento iSCSI, o instalador deve ser capaz "
+"de descobri-los como _destinos iSCSI_ e ser capaz de criar uma sessão iSCSI "
+"para acessá-los. Ambas as etapas podem exigir um nome de usuário e senha "
+"para autenticação _Challenge Handshake Authentication Protocol_ (CHAP)."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:10
@@ -42,11 +49,20 @@ msgid ""
 "password are different for CHAP authentication and reverse CHAP "
 "authentication."
 msgstr ""
+"Você também pode configurar um destino iSCSI para autenticar o iniciador "
+"iSCSI no sistema ao qual o destino está conectado (_CHAP reverso_), tanto "
+"para descoberta quanto para sessão. Usados juntos, o CHAP e o CHAP reverso "
+"são chamados de _CHAP mútuo_ ou _CHAP de duas vias_. O CHAP mútuo fornece o "
+"maior nível de segurança para conexões iSCSI, especialmente se o nome de "
+"usuário e a senha forem diferentes para autenticação CHAP e autenticação "
+"CHAP reversa."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:12
 msgid "Follow the procedure below to add an iSCSI storage target to your system."
 msgstr ""
+"Siga o procedimento abaixo para adicionar um destino de armazenamento iSCSI "
+"ao seu sistema."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:16
@@ -56,11 +72,17 @@ msgid ""
 "Destination - Specialized & Network Disks] screen. A new dialog window "
 "titled `Add iSCSI Storage Target` will open."
 msgstr ""
+"Clique no botão `Adicionar Destino iSCSI` no canto inferior direito da tela "
+"xref:Connecting_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Destino da Instalação - Discos Rede e Especiais]. Uma nova "
+"janela de diálogo intitulada `Adicionar Destino de Armazenamento iSCSI` será "
+"aberta."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
 msgid "Enter the IP address of the iSCSI target in the `Target IP Address` field."
 msgstr ""
+"Insira o endereço IP do destino iSCSI no campo `Endereço IP do Destino`."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
@@ -68,11 +90,13 @@ msgid ""
 "Provide a name in the `iSCSI Initiator Name` field for the iSCSI initiator "
 "in _iSCSI Qualified Name_ (IQN) format. A valid IQN entry contains:"
 msgstr ""
+"Forneça um nome no campo `Nome do Iniciador iSCSI` para o iniciador iSCSI no "
+"formato _Nome Qualificado iSCSI_ (IQN). Uma entrada IQN válida contém:"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
 msgid "The string `iqn.` (including the period)."
-msgstr ""
+msgstr "A string `iqn.` (incluindo o ponto)."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:24
@@ -82,6 +106,10 @@ msgid ""
 "for the year, a dash, and two digits for the month, followed by a "
 "period. For example, represent September 2010 as `2010-09.`"
 msgstr ""
+"Um código de data que especifica o ano e mês em que o domínio da Internet da "
+"sua organização ou nome de subdomínio foi registrado, representado como "
+"quatro dígitos para o ano, um travessão e dois dígitos para o mês, seguidos "
+"por um ponto. Por exemplo, represente setembro de 2010 como `2010-09.`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:26
@@ -90,6 +118,9 @@ msgid ""
 "*reverse* order (with the top-level domain first). For example, represent "
 "the subdomain storage.example.com as `com.example.storage`."
 msgstr ""
+"O domínio da Internet ou nome de subdomínio da sua organização, apresentado "
+"na ordem *inversa* (com o domínio de nível superior primeiro). Por exemplo, "
+"represente o subdomínio storage.example.com como `com.example.storage`."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:28
@@ -98,17 +129,20 @@ msgid ""
 "iSCSI initiator within your domain or subdomain. For example, "
 "`:diskarrays-sn-a8675309`"
 msgstr ""
+"Dois pontos (`:`) seguido por uma string que identifica exclusivamente este "
+"iniciador iSCSI particular dentro de seu domínio ou subdomínio. Por exemplo, "
+"`:diskarrays-sn-a8675309`"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
 msgid "A complete IQN will therefore look as follows:"
-msgstr ""
+msgstr "Um IQN completo irá, portanto, se parecer com:"
 
 #. type: delimited block -
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
 #, no-wrap
 msgid "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
-msgstr ""
+msgstr "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:37
@@ -116,6 +150,8 @@ msgid ""
 "An example using the correct format is also displayed below the input field "
 "for reference."
 msgstr ""
+"Um exemplo usando o formato correto também é exibido abaixo do campo de "
+"entrada para referência."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:39
@@ -127,6 +163,12 @@ msgid ""
 "Computer Systems Interface (iSCSI) Naming and Discovery_, available from "
 "link:++https://tools.ietf.org/html/rfc3721#section-1++[]."
 msgstr ""
+"Para mais informações sobre IQNs, veja [citetitle]_3.2.6. iSCSI Names in RFC "
+"3720 - Internet Small Computer Systems Interface (iSCSI)_, disponível em "
+"link:++https://tools.ietf.org/html/rfc3720#section-3.2.6++[] e [citetitle]"
+"_1. iSCSI Names and Addresses in RFC 3721 - Internet Small Computer Systems "
+"Interface (iSCSI) Naming and Discovery_, disponível em link:++https://tools."
+"ietf.org/html/rfc3721#section-1++[]."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:41
@@ -137,6 +179,12 @@ msgid ""
 "Username` and `CHAP Password` may then become visible. Fill in your "
 "authentication credentials; these should be provided by your organization."
 msgstr ""
+"Especifique o tipo de autenticação a ser usado para descoberta iSCSI usando "
+"o menu suspenso `Descobrir Tipo de Autenticação`. Dependendo do tipo de "
+"autenticação que você selecionou, campos de entrada adicionais (como `Nome "
+"de Usuário CHAP` e `Senha CHAP` podem então se tornar visíveis. Preencha "
+"suas credenciais de autenticação; elas devem ser fornecidas por sua "
+"organização."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:43
@@ -147,6 +195,11 @@ msgid ""
 "the credentials you provided. This process may take some time (generally "
 "less than 30 seconds), depending on your network."
 msgstr ""
+"Clique no botão `Iniciar Descoberta`. O instalador agora tentará descobrir "
+"um destino iSCSI com base nas informações fornecidas e, se o destino exigir "
+"CHAP ou autenticação CHAP reversa, ele tentará usar as credenciais "
+"fornecidas. Este processo pode demorar algum tempo (geralmente menos de 30 "
+"segundos), dependendo da sua rede."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:45
@@ -158,6 +211,12 @@ msgid ""
 "error, make sure you entered all CHAP and reverse CHAP credentials correctly "
 "and that you have access to the iSCSI target."
 msgstr ""
+"Se a descoberta *não* foi bem-sucedida, uma mensagem de erro será exibida na "
+"janela de diálogo. Esta mensagem irá variar com base em qual parte da "
+"descoberta falhou. Se o instalador não encontrou o destino que você "
+"especificou, você deve verificar o endereço IP; se o problema for um erro de "
+"autenticação, certifique-se de inserir todas as credenciais do CHAP e do "
+"CHAP reverso corretamente e de ter acesso ao destino iSCSI."
 
 #. type: delimited block =
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
@@ -166,6 +225,9 @@ msgid ""
 "address you specified are already configured. During discovery, "
 "[application]*Anaconda* ignores nodes which have already been added."
 msgstr ""
+"A mensagem de erro `Nenhum nó descoberto` também pode significar que todos "
+"os nós no endereço que você especificou já estão configurados. Durante a "
+"descoberta, o [application]*Anaconda* ignora os nós que já foram adicionados."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
@@ -173,6 +235,8 @@ msgid ""
 "If the discovery was successful, you will see a list of all discovered "
 "nodes."
 msgstr ""
+"Se a descoberta foi bem-sucedida, você verá uma lista de todos os nós "
+"descobertos."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:56
@@ -184,6 +248,12 @@ msgid ""
 "name and password you used to discover the target are also valid for logging "
 "in to it."
 msgstr ""
+"Selecione um ou mais nós nos quais deseja fazer login marcando ou "
+"desmarcando a caixa de seleção ao lado de cada nó descoberto no destino. "
+"Abaixo da lista, selecione novamente o tipo de autenticação que deseja usar; "
+"você também pode selecionar a opção `Usar as credenciais da descoberta` se o "
+"nome de usuário e senha CHAP/CHAP reverso que você usou para descobrir o "
+"destino também forem válidos para fazer login nele."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:58
@@ -196,6 +266,13 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
 "Destination - Specialized & Network Disks]."
 msgstr ""
+"Depois de selecionar todos os nós que deseja usar, clique em `Login` para "
+"iniciar uma sessão iSCSI. O [application]*Anaconda* tentará fazer o login em "
+"todos os nós selecionados. Se o processo de login for bem-sucedido, a caixa "
+"de diálogo `Adicionar Destino de Armazenamento iSCSI` fechará e todos os nós "
+"que você configurou serão mostrados na lista de discos de rede em "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Destino da Instalação - Discos de Rede e Especiais]."
 
 #. type: Plain text
 #: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
@@ -206,3 +283,9 @@ msgid ""
 "able to change the `iSCSI Initiator Name`. If you made an error when "
 "configuring the initiator name, you must restart the installation."
 msgstr ""
+"Você pode repetir este procedimento para descobrir destinos iSCSI adicionais "
+"ou para adicionar mais nós de um destino configurado anteriormente. No "
+"entanto, observe que depois de clicar no botão `Iniciar Descoberta` pela "
+"primeira vez, você não poderá alterar o `Nome do Iniciador iSCSI`. Se você "
+"cometeu um erro ao configurar o nome do iniciador, deve reiniciar a "
+"instalação."
