@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-04 21:03+0000\n"
-"PO-Revision-Date: 2022-08-07 00:54+0000\n"
+"PO-Revision-Date: 2022-08-11 00:18+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -706,12 +706,23 @@ msgid ""
 "HTTP source via firmware menus. Alternatively, a DHCP server may "
 "automatically provide the required HTTP path."
 msgstr ""
+"HTTP/HTTPS-käynnistys on tekniikka, jonka avulla tietokoneet voivat "
+"käynnistyä suoraan verkon kautta tarjotuista resursseista. Kun sitä "
+"käytetään yhdessä HTTPS:n kanssa, palvelimen aitous tarkistetaan, ja HTTP:n "
+"käyttö tarjoaa luotettavamman siirtomekanismin kuin PXE:n TFTP. Fedoran "
+"asentaminen tällä tavalla välttää asennusmedian luomisen ja sallii useiden "
+"tietokoneiden asennuksen samanaikaisesti. Monet nykyiset UEFI-toteutukset, "
+"mukaan lukien EDK2-pohjainen laiteohjelmisto fedoran "
+"virtualisointiratkaisujen kanssa, voivat käynnistyä suoraan HTTP-lähteistä. "
+"UEFI-käynnistysvalinta voidaan lisätä manuaalisesti, joka määrittää HTTP-"
+"lähteen laiteohjelmiston valikkojen kautta. Vaihtoehtoisesti DHCP-palvelin "
+"voi tarjota vaaditun HTTP-polun automaattisesti."
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:256
 #, no-wrap
 msgid "Enrolling Certificatesll"
-msgstr ""
+msgstr "Certificatesll:n käyttö"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:258
@@ -723,12 +734,18 @@ msgid ""
 "ca-certificates for public mirrors or the local HTTPS boot server's "
 "certificate."
 msgstr ""
+"Vaikka monet koneet pystyvät sekä HTTPS- että HTTP-käynnistykseen, niillä on "
+"usein oltava ensin rekisteröity varmentaja (CA). CA:ta käytetään HTTPS-"
+"palvelimen esittämien varmenteiden vahvistamiseen. Tämä voidaan saavuttaa "
+"rekisteröimällä asianmukaiset tiedostot fedoran toimittamista ca-"
+"varmenteista julkisille peileille tai paikallisen HTTPS-käynnistyspalvelimen "
+"varmenteeseen."
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:261
 #, no-wrap
 msgid "DHCP Server Configuration for HTTP"
-msgstr ""
+msgstr "DHCP-palvelimen konfigurointi HTTP:lle"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:263
@@ -737,12 +754,15 @@ msgid ""
 "identical to its configuration for <<pxe-dhcpd,PXE>> except that we need to "
 "amend the option arch conditions for HTTP clients"
 msgstr ""
+"DHCP-palvelimen asennus ja konfigurointi HTTP-käynnistystä varten on "
+"identtinen sen konfiguraation <<pxe-dhcpd,PXE>> kanssa paitsi, että meidän "
+"on muutettava HTTP-asiakkaiden arch-ehtoja"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:266
 #, no-wrap
 msgid "....\n"
-msgstr ""
+msgstr "....\n"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:287
@@ -769,12 +789,34 @@ msgid ""
 "next-server 192.168.1.2;\n"
 "}\n"
 msgstr ""
+"if option arch = 00:07 {\n"
+"# x64 UEFI\n"
+"filename \"uefi/shim64.efi\";\n"
+"next-server 192.168.1.2;\n"
+"} else if option arch = 00:0b {\n"
+"# aarch64 UEFI\n"
+"filename \"uefi/shimaa64.efi\";\n"
+"server-name \"192.168.1.2\";\n"
+"} else if option arch = 00:13 {\n"
+"# aarch64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/aarch64/os/images/boot.iso\";\n"
+"} else if option arch = 00:10 {\n"
+"# x64 UEFI HTTP\n"
+"option vendor-class-identifier \"HTTPClient\";\n"
+"filename \"http://download.fedoraproject.org/pub/fedora/linux/releases/"
+"{PRODVER}/Server/x86_64/os/images/boot.iso\";\n"
+"} else {\n"
+"filename \"pxelinux.0\";\n"
+"next-server 192.168.1.2;\n"
+"}\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:292
 #, no-wrap
 msgid "Providing repositories"
-msgstr ""
+msgstr "Asennuslähteiden tarjoaminen"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:295
@@ -783,6 +825,9 @@ msgid ""
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
 msgstr ""
+"Tämän osion esimerkit käyttävät julkisia Fedora-peilejä pakettilähteenä. "
+"Saadaksesi nopeampia asennuksia useiden laitteiden asentamisiin tai "
+"eristettyihin ympäristöihin voit ylläpitää paikallista asennuslähdettä."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:297
@@ -793,12 +838,17 @@ msgid ""
 "to the [citetitle]_xref:fedora:system-administrators-guide:index."
 "adoc[{PRODUCT} System Administrator's Guide]_ to configure `httpd`."
 msgstr ""
+"Fedora Infrastructure ylläpitää ohjeita paikallisen peilin määrittämiseen "
+"link:++https://fedoraproject.org/wiki/Infrastructure/Mirroring++[]. "
+"Suositeltu tapa tarjota asennuslähteet on HTTP:n kautta, ja voit katsoa "
+"[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
+"Järjestelmänvalvojan oppaasta]_ ohjeita määrittääksesi `httpd`."
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:299
 #, no-wrap
 msgid "Advanced network installations with Cobbler"
-msgstr ""
+msgstr "Edistyneet verkkoasennukset Cobblerilla"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:302
@@ -808,6 +858,11 @@ msgid ""
 "coordinating repositories, maintaining dns records, dhcp servers, and even "
 "puppet manifests are effectively automated by [package]*cobbler*."
 msgstr ""
+"Monimutkaisempia ympäristöjä varten {PRODUCT} tarjoaa [package]*cobbler*-"
+"asennuspalvelimen. Tehtävät, kuten aloituskokoonpanojen hallinta, "
+"asennuslähteiden koordinointi, dns-tietueiden, dhcp-palvelimien ja jopa "
+"puppet-luetteloiden ylläpito, automatisoidaan tehokkaasti käyttämällä "
+"[package]*cobbler*."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:304
@@ -818,6 +873,11 @@ msgid ""
 "link:++https://cobbler.github.io/++[] to accompany the packages in the "
 "Fedora repository."
 msgstr ""
+"Vaikka kaikkien cobblerin tarjoamien ominaisuuksien hyödyntäminen voi olla "
+"suhteellisen yksinkertaista, tämän tehokkaan työkalun kaikki toiminnot ovat "
+"liian laajat dokumentoitavaksi tässä oppaassa. Cobbler-yhteisö tarjoaa "
+"dokumentaatiota link:++https://cobbler.github.io/++[] Fedora-"
+"asennuslähteessä olevien pakettien lisäksi."
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:305
@@ -826,3 +886,6 @@ msgid ""
 "official documentation as well as downloads on the project website at link:+"
 "+https://www.theforeman.org/++[]."
 msgstr ""
+"Vaihtoehtoisesti saatat olla kiinnostunut myös **Foremanista**. Löydät "
+"viralliset asiakirjat sekä lataukset projektin verkkosivustolta "
+"link:++https://www.theforeman.org/++[]."
