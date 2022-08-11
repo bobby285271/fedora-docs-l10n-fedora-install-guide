@@ -1,50 +1,53 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-11 12:54+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f29pages_partialsinstallwelcomespoke/"
+"ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title ===
 #: ./pages/_partials/install/WelcomeSpoke.adoc:5
 #, no-wrap
 msgid "Welcome Screen and Language Selection"
-msgstr ""
+msgstr "시작 화면과 언어 선택"
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:8
 msgid ""
 "The first screen displayed immediately after the graphical installer starts "
 "is the Welcome screen."
-msgstr ""
+msgstr "그래픽 설치 프로그램이 시작한 직후에 표시되는 처음 화면은 시작 화면입니다."
 
 #. type: Block title
 #: ./pages/_partials/install/WelcomeSpoke.adoc:9
 #, no-wrap
 msgid "Welcome Screen"
-msgstr ""
+msgstr "시작 화면"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/WelcomeSpoke.adoc:11
 #, no-wrap
 msgid "Screenshot of the Welcome screen showing language selection options."
-msgstr ""
+msgstr "언어 선택 옵션을 보여주는 시작 화면 스크린샷."
 
 #. type: Target for macro image
 #: ./pages/_partials/install/WelcomeSpoke.adoc:11
 #, no-wrap
 msgid "anaconda/WelcomeSpoke.png"
-msgstr ""
+msgstr "anaconda/WelcomeSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:14
@@ -54,6 +57,9 @@ msgid ""
 "input field in the bottom left corner to search for your language instead of "
 "looking for it in the full list of more than 70 languages."
 msgstr ""
+"우선, 좌측 열에서 자신이 선호하는 언어를 선택하고, 우측 열에서 자신의 "
+"로케일을 선택합니다. 70개 이상의 전체 목록에서 해당 언어를 검색하는 대신에 "
+"하단 왼쪽 모서리에 있는 입력 부분을 사용 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:16
@@ -64,6 +70,10 @@ msgid ""
 "on this screen, you will not be able to go back and change the language used "
 "inside the installer itself."
 msgstr ""
+"화면에서 당신이 선택한 언어는 설치 할 때에 사용 될 것이며, 이는 기본으로 "
+"설치된 시스템에서 또한 사용 될 것입니다. 당신은 후에 설치된 시스템을 위해 "
+"언어를 변경 할 수 있으나, 화면에서 `계속 진행`을 한번 눌러준 후에는 "
+"설치프로그램 자체 내에서 사용된 언어로 되돌리거나 변경 할 수 없을 것입니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:18
@@ -76,6 +86,12 @@ msgid ""
 "boot command line or in your PXE server configuration, this language will be "
 "selected by default, but you will still be able to change it."
 msgstr ""
+"하나의 언어는 목록 상단에서 기본적으로 이미-지정되어 있습니다. 만약 네트웍 "
+"접근이 이 지점(예로, 만약 로컬 미디어 대신에 네트워크 서버에서 부팅)에서 "
+"구성되어 있으면, 미리-선택된 언어는 GeoIP 모듈을 사용하여 자동 위치 탐지에 "
+"기반하여 지정 될 것입니다. 또는, 만약 부팅 명령 줄이나 당신의 PXE 서버 "
+"구성에서 [option]#inst.lang=# 선택을 사용하고 있다면, 이 언어는 기본으로 "
+"선택 될 것이고, 그러나 여전히 이를 변경 할 수 있습니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/WelcomeSpoke.adoc:20
@@ -85,6 +101,9 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
 "Summary]."
 msgstr ""
+"당신의 언어와 로케일을 선택 한 후에, 당신의 선택을 확인하려면 `계속 진행`을 "
+"누르면 xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"installation-summary[설치 요약]에서 진행합니다."
 
 #. type: delimited block =
 #: ./pages/_partials/install/WelcomeSpoke.adoc:25
@@ -95,3 +114,7 @@ msgid ""
 "installation, or `Get me out of here` to quit the installation and reboot "
 "your system."
 msgstr ""
+"만약 {PRODUCT}의 사전 출시를 설치한다면, 알림글은 당신의 설치 미디어의 사전-"
+"출시 상태에 대한 경고로서 `계속 진행`을 누른 후에 보여질 것입니다. 설치를 "
+"계속하려면 `계속 진행합니다`를, 또는 설치를 종료하거나 시스템을 재시작하기 "
+"위하여 `종료합니다`를 눌러줍니다."
