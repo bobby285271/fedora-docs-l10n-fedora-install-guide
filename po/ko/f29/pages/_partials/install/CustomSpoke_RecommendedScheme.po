@@ -1,36 +1,39 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-13 07:21+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f29pages_partialsinstallcustomspoke_recommendedscheme/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:5
 #, no-wrap
 msgid "Recommended Partitioning Scheme"
-msgstr ""
+msgstr "추천된 파티션 구성표"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:8
 msgid "In most cases, at least the following mount points should always be created:"
-msgstr ""
+msgstr "대부분의 경우에, 적어도 다음 적재 지점은 항상 생성되어야 합니다:"
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:9
 #, no-wrap
 msgid "`/boot` - 500 MB"
-msgstr ""
+msgstr "`/boot` - 500 MB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:10
@@ -57,12 +60,14 @@ msgid ""
 "Also note that the `/boot` directory can not be placed on a LVM logical "
 "volume or a Btrfs subvolume. Use a standard partition."
 msgstr ""
+"또한 `/boot` 디렉토리는 LVM 논리 볼륨이나 Btrfs 하위 볼륨에서 위치 할 수 "
+"없는 것을 기록합니다. 표준 파티션을 사용하세요."
 
 #. type: Labeled list
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:20
 #, no-wrap
 msgid "`/` (root) - 10 GB"
-msgstr ""
+msgstr "`/` (root) - 10 GB"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:21
@@ -98,7 +103,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:31
 #, no-wrap
 msgid "`/home` - at least 10 GB"
-msgstr ""
+msgstr "`/home` - 10 GB 이상"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:32
@@ -124,7 +129,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:35
 #, no-wrap
 msgid "swap - based on your system parameters"
-msgstr ""
+msgstr "swap - 시스템 매개변수에 기초하여"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:36
@@ -169,7 +174,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:41
 #, no-wrap
 msgid "Recommended System Swap Space"
-msgstr ""
+msgstr "권장 시스템 스왑 공간"
 
 #. type: Table
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:50
@@ -182,6 +187,12 @@ msgid ""
 "|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
 "|more than 64 GB|workload dependent|hibernation not recommended\n"
 msgstr ""
+"|Amount of RAM in the system|Recommended swap space|Recommended swap space "
+"if allowing for hibernation\n"
+"|less than 2 GB|2 times the amount of RAM|3 times the amount of RAM\n"
+"|2 GB - 8 GB|Equal to the amount of RAM|2 times the amount of RAM\n"
+"|8 GB - 64 GB|0.5 times the amount of RAM|1.5 times the amount of RAM\n"
+"|more than 64 GB|workload dependent|hibernation not recommended\n"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:53
@@ -204,7 +215,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:56
 #, no-wrap
 msgid "BIOS Boot (1 MB) or EFI System Partition (200 MB)"
-msgstr ""
+msgstr "바이오스 부트(1MB) 또는 EFI 시스템 파티션 (200MB)"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:57
@@ -219,7 +230,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:58
 #, no-wrap
 msgid "Systems with BIOS firmware and UEFI systems in BIOS compatibility mode"
-msgstr ""
+msgstr "바이오스 호환 방식에서 바이오스 펌웨어와 UEFI 시스템을 갖는 시스템"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:59
@@ -228,16 +239,19 @@ msgid ""
 "the disk is not formatted, or you have erased all existing partitions from "
 "the disk, the installer will choose the following:"
 msgstr ""
+"만약 디스크가 이미 초기화 되었으면, 파티션 구성표는 유지됩니다. 만약 "
+"디스크가 초기화 되지 않거나, 디스크에서 모든 기존 파티션을 제거하면, "
+"설치자는 다음과 같이 선택 할 것입니다:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:61
 msgid "MBR if the size of the disk is less than 2 TB (terabytes)"
-msgstr ""
+msgstr "만약 디스크 크기가 2TB (테라바이트) 보다 적은 경우 MBR"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:63
 msgid "GPT if the size of the disk is more than 2 TB"
-msgstr ""
+msgstr "만약 디스크 크기가 2TB 보다 큰 경우 GPT"
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:68
@@ -262,7 +276,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:73
 #, no-wrap
 msgid "Systems with UEFI firmware"
-msgstr ""
+msgstr "UEFI 펌웨어를 갖는 시스템"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:74
@@ -271,6 +285,9 @@ msgid ""
 "with a MBR, it must be reformated and relabeled. All data currently on the "
 "disk will be lost."
 msgstr ""
+"GPT만 UEFI 시스템에서 허용됩니다. MBR로 초기화된 디스크에서 설치하려면, 다시 "
+"초기화 되어야 하고 다시 uefi로 재지정해야 합니다. 현재 디스크에 있는 모든 "
+"자료는 사라집니다."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_RecommendedScheme.adoc:76
