@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-11 12:54+0000\n"
+"PO-Revision-Date: 2022-08-13 07:21+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -23,7 +23,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:31
 #, no-wrap
 msgid "Creating Software RAID"
-msgstr ""
+msgstr "Criando RAID por Software"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:8
@@ -45,6 +45,13 @@ msgid ""
 "system has two hard drives, the installation program will not allow you to "
 "create a RAID10 device, which requires 4 separate partitions."
 msgstr ""
+"Um dispositivo RAID é criado em uma etapa e os discos são adicionados ou "
+"removidos conforme necessário. Uma partição RAID por disco físico é "
+"permitida para cada dispositivo, portanto, o número de discos disponíveis "
+"para o programa de instalação determina quais níveis de dispositivo RAID "
+"estão disponíveis para você. Por exemplo, se o seu sistema tiver dois discos "
+"rígidos, o programa de instalação não permitirá que você crie um dispositivo "
+"RAID10, que requer 4 partições separadas."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:15
@@ -63,7 +70,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:18
 #, no-wrap
 msgid "Create Software RAID"
-msgstr ""
+msgstr "Criando RAID por Software"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
@@ -75,7 +82,7 @@ msgstr "A tela Particionamento Manual"
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:20
 #, no-wrap
 msgid "anaconda/CustomSpoke_SoftwareRAID.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_SoftwareRAID.png"
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:26
@@ -87,11 +94,17 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types]."
 msgstr ""
+"As opções de configuração de RAID só são visíveis se você selecionou dois ou "
+"mais discos para instalação. São necessários pelo menos dois discos para "
+"criar um dispositivo RAID, e alguns layouts RAID exigirão mais. Requisitos "
+"para diferentes tipos de RAID são descritos em xref:Installing_Using_Anaconda"
+".adoc#sect-installation-gui-manual-partitioning-filesystems[Tipos de "
+"Dispositivos, Sistemas de Arquivos e RAID]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:30
 msgid "Follow the procedure below to create software RAID:"
-msgstr ""
+msgstr "Siga o procedimento abaixo para criar RAID por software:"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:33
@@ -111,6 +124,12 @@ msgid ""
 "example, `50GB`). Then, click `Add mount point` to add the mount point and "
 "return to the main partitioning screen."
 msgstr ""
+"Na nova janela de diálogo, especifique um ponto de montagem para o qual "
+"deseja criar uma partição RAID por software separada - por exemplo, `/`. "
+"Opcionalmente, especifique um tamanho para a nova partição usando unidades "
+"padrão como MB ou GB (por exemplo, `50GB`). Em seguida, clique em `Adicionar "
+"um ponto de montagem` para adicionar o ponto de montagem e retornar à tela "
+"principal de particionamento."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:40
@@ -118,6 +137,8 @@ msgid ""
 "When creating a mount point for swap on software RAID, specify the mount "
 "point as `swap`."
 msgstr ""
+"Ao criar um ponto de montagem para troca em RAID por software, especifique o "
+"ponto de montagem como `swap`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:44
@@ -127,6 +148,11 @@ msgid ""
 "point in the left pane to configure it further, and convert it to a software "
 "RAID partition by changing the `Device Type` option to `RAID`."
 msgstr ""
+"O ponto de montagem agora foi criado usando as configurações padrão, o que "
+"significa que foi criado como um volume lógico LVM. Selecione o ponto de "
+"montagem recém-criado no painel esquerdo para configurá-lo ainda mais e "
+"convertê-lo em uma partição RAID de software alterando a opção `Tipo de "
+"Dispositivo` para `RAID`."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:46
@@ -136,6 +162,10 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-filesystems[Device, "
 "File System and RAID Types]."
 msgstr ""
+"Escolha um tipo de RAID no menu suspenso `Nível de RAID`. Os tipos de RAID "
+"disponíveis e seus requisitos são descritos em xref:Installing_Using_Anaconda"
+".adoc#sect-installation-gui-manual-partitioning-filesystems[Tipos de "
+"Dispositivos, Sistemas de Arquivos e RAID]."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:48
@@ -144,6 +174,9 @@ msgid ""
 "the partition has been assigned to several physical disks. Click the "
 "`Modify` button to configure on which drives this partition will be created."
 msgstr ""
+"Na seção `Dispositivo(s)` no lado direito da tela, você pode ver que a "
+"partição foi atribuída a vários discos físicos. Clique no botão `Modificar` "
+"para configurar em quais drives esta partição será criada."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:50
@@ -155,6 +188,12 @@ msgid ""
 "partition is placed on a specific set of hard drives, select only those "
 "drives and unselect all others."
 msgstr ""
+"Na caixa de diálogo `Configurar ponto de montagem`, você pode especificar em "
+"quais dispositivos físicos (discos) esta partição *deve* residir. Você pode "
+"selecionar um ou mais discos que serão usados para manter esta partição "
+"pressionando kbd:[Ctrl] e clicando em cada disco na lista. Se você deseja "
+"ter certeza de que esta partição é colocada em um conjunto específico de "
+"discos rígidos, selecione apenas essas unidades e desmarque todas as outras."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_SoftwareRAID.adoc:52
@@ -182,3 +221,5 @@ msgid ""
 "Repeat this procedure for any additional standard partitions with software "
 "RAID you want to create."
 msgstr ""
+"Repita este procedimento para quaisquer partições padrão adicionais com RAID "
+"por software que deseja criar."
