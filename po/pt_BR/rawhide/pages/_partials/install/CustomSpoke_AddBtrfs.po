@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:02+0000\n"
-"PO-Revision-Date: 2022-08-11 12:53+0000\n"
+"PO-Revision-Date: 2022-08-13 13:35+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -25,7 +25,7 @@ msgstr ""
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:5
 #, no-wrap
 msgid "Creating a Btrfs Layout"
-msgstr "Criando um layout Btrfs"
+msgstr "Criando um Layout Btrfs"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:8
@@ -60,7 +60,7 @@ msgid ""
 msgstr ""
 "A criação de um layout Btrfs é um pouco semelhante ao LVM (descrito em "
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-lvm[Criando um layout de Gerenciamento de Volume Lógico (LVM)]) "
+"partitioning-lvm[Criando um Layout de Gerenciamento de Volume Lógico (LVM)]) "
 "com terminologia ligeiramente diferente. Um _volume_ Btrfs é o equivalente a "
 "um grupo de volume LVM e um _subvolume_ Btrfs é semelhante a um volume "
 "lógico LVM. Uma diferença importante a ser observada é como o "
@@ -80,14 +80,14 @@ msgstr ""
 "Alguns tipos de partição - notadamente as partições BIOS Boot e EFI - não "
 "podem ser colocados em subvolumes Btrfs. Use volumes físicos padrão para "
 "eles. Veja xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-recommended[Esquema de particionamento recomendado] para obter "
+"partitioning-recommended[Esquema de Particionamento Recomendado] para obter "
 "mais informações."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:18
 #, no-wrap
 msgid "Create Btrfs Subvolume"
-msgstr "Criar subvolume Btrfs"
+msgstr "Criar Subvolume Btrfs"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:20
@@ -110,7 +110,7 @@ msgstr "Siga o procedimento abaixo para criar volumes e subvolumes Btrfs:"
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:24
 #, no-wrap
 msgid "Creating Btrfs Subvolumes and Volumes"
-msgstr "Criando subvolumes e volumes Btrfs"
+msgstr "Criando Subvolumes e Volumes Btrfs"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:26
@@ -155,7 +155,7 @@ msgid ""
 msgstr ""
 "Assim que o ponto de montagem for criado, selecione o ponto de montagem "
 "recém-criado no painel esquerdo e configure-o posteriormente no painel "
-"direito. Quando terminar, clique em `Atualizar configurações` no canto "
+"direito. Quando terminar, clique em `Atualizar Configurações` no canto "
 "inferior direito da tela."
 
 #. type: Plain text
@@ -181,13 +181,14 @@ msgid ""
 "by holding down kbd:[Ctrl] and clicking each disk in the list."
 msgstr ""
 "Na caixa de diálogo `Configurar volume`, você pode alterar o nome do volume, "
-"se está criptografado, seu `Nível de RAID` (veja xref:"
-"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
-"filesystems[Tipos de dispositivos, sistemas de arquivos e RAID] para obter "
-"informações sobre os tipos de RAID disponíveis), e você também pode "
-"especificar em quais dispositivos físicos (discos) este volume deve residir. "
-"Você pode selecionar um ou mais discos que serão usados para manter este "
-"volume, mantendo pressionado kbd:[Ctrl] e clicando em cada disco na lista."
+"se está criptografado, seu `Nível de RAID` (veja "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Tipos de Dispositivos, Sistemas de Arquivos e RAID] "
+"para obter informações sobre os tipos de RAID disponíveis), e você também "
+"pode especificar em quais dispositivos físicos (discos) este volume deve "
+"residir. Você pode selecionar um ou mais discos que serão usados para manter "
+"este volume, mantendo pressionado kbd:[Ctrl] e clicando em cada disco na "
+"lista."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:46
@@ -199,9 +200,9 @@ msgid ""
 msgstr ""
 "O instalador oferece suporte à criptografia LUKS de volumes Btrfs inteiros. "
 "Para ativar, clique no botão Modificar em Volume. Em seguida, marque "
-"Criptografar. Veja o [citetitle]_{PRODUCT} Security Guide_ (guia de "
-"segurança), disponível em link:++https://docs.fedoraproject.org/++[], para "
-"obter informações sobre criptografia de disco LUKS."
+"Criptografar. Veja o [citetitle]_Guia de Segurança do {PRODUCT}_, disponível "
+"em link:++https://docs.fedoraproject.org/++[], para obter informações sobre "
+"criptografia de disco LUKS."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:50
@@ -221,7 +222,7 @@ msgid ""
 "return to the main `Manual Partitioning` screen."
 msgstr ""
 "Depois de definir as configurações de volume do Btrfs, clique em `Salvar` "
-"para retornar à tela principal` Particionamento manual`."
+"para retornar à tela principal` Particionamento Manual`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddBtrfs.adoc:54
@@ -251,8 +252,8 @@ msgid ""
 "`Device Type`, and `Name`. Press `Update Settings` to apply any changes to "
 "the configuration."
 msgstr ""
-"Configure outras configurações específicas para o subvolume – seu `Ponto de "
-"montagem`, `Tipo de dispositivo` e `Nome`. Pressione `Atualizar "
+"Defina outras configurações específicas para o subvolume – seu `Ponto de "
+"Montagem`, `Tipo de Dispositivo` e `Nome`. Pressione `Atualizar "
 "configurações` para aplicar quaisquer alterações à configuração."
 
 #. type: Plain text
