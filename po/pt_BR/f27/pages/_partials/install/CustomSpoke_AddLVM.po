@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2022-08-11 12:53+0000\n"
+"PO-Revision-Date: 2022-08-13 07:21+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -73,7 +73,7 @@ msgstr ""
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:18
 #, no-wrap
 msgid "Create LVM Logical Volume"
-msgstr "Criar um volume lógico LVM"
+msgstr "Criar Volume Lógico LVM"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:20
@@ -99,7 +99,7 @@ msgstr ""
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:24
 #, no-wrap
 msgid "Creating LVM Logical Volumes and Groups"
-msgstr "Criando volumes lógicos e grupos LVM"
+msgstr "Criando Volumes Lógicos e Grupos LVM"
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:26
@@ -147,8 +147,8 @@ msgstr ""
 "significa que foi criado como um volume lógico LVM e um grupo de volume foi "
 "criado para contê-lo. Selecione o ponto de montagem recém-criado no painel "
 "esquerdo para configurá-lo ainda mais. Se você deseja usar o provisionamento "
-"fino para este volume, altere a opção `Tipo de dispositivo` para`"
-"Provisionamento LVM fino`."
+"fino para este volume, altere a opção `Tipo de Dispositivo` para`"
+"Provisionamento LVM Fino`."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:39
@@ -158,7 +158,7 @@ msgid ""
 "variant you are installing (for example, `fedora-server`. Click the `Modify` "
 "button under the drop-down menu to access the volume group settings."
 msgstr ""
-"No menu `Grupo de volume`, você pode ver que o volume foi atribuído a um "
+"No menu `Grupo de Volume`, você pode ver que o volume foi atribuído a um "
 "grupo de volume criado automaticamente, que é nomeado após a variante do "
 "{PRODUCT} que você está instalando (por exemplo, `fedora-server`. Clique no "
 "botão `Modificar` no menu suspenso para acessar as configurações do grupo de "
@@ -175,10 +175,10 @@ msgid ""
 "You can select one or more disks which will be used to hold this volume "
 "group by holding down kbd:[Ctrl] and clicking each disk in the list."
 msgstr ""
-"Na caixa de diálogo `Configurar grupo de volume`, você pode alterar o nome "
+"Na caixa de diálogo `Configurar Grupo de Volume`, você pode alterar o nome "
 "do grupo de volume, seu `Nível de RAID` (veja xref:Installing_Using_Anaconda."
 "adoc#sect-installation-gui-manual-partitioning-filesystems[Tipos de "
-"dispositivos, sistemas de arquivos e RAID] para obter informações sobre os "
+"Dispositivos, Sistemas de Arquivos e RAID] para obter informações sobre os "
 "tipos de RAID disponíveis), e você também pode especificar em quais "
 "dispositivos físicos (discos) este grupo de volume deve residir. Você pode "
 "selecionar um ou mais discos que serão usados para manter este grupo de "
@@ -191,9 +191,9 @@ msgid ""
 "volume group will take up twice its actual size on your disks. A 5 GB volume "
 "group with RAID1 will take up 10 GB of space."
 msgstr ""
-"Se você selecionar um tipo de RAID redundante (como `RAID1 (Redundancy)`), o "
-"grupo de volume ocupará o dobro do tamanho real em seus discos. Um grupo de "
-"volume de 5 GB com RAID1 ocupará 10 GB de espaço."
+"Se você selecionar um tipo de RAID redundante (como `RAID1 (Redundância)`), "
+"o grupo de volume ocupará o dobro do tamanho real em seus discos. Um grupo "
+"de volume de 5 GB com RAID1 ocupará 10 GB de espaço."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:50
@@ -223,7 +223,7 @@ msgid ""
 "return to the main `Manual Partitioning` screen."
 msgstr ""
 "Depois de definir as configurações do grupo de volume, clique em `Salvar` "
-"para retornar à tela principal `Particionamento manual`."
+"para retornar à tela principal `Particionamento Manual`."
 
 #. type: delimited block =
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:59
@@ -257,12 +257,12 @@ msgid ""
 "them to a different volume group."
 msgstr ""
 "Se você precisar criar mais de um grupo de volume, abra o menu suspenso `"
-"Grupo de volume` e selecione a opção `Criar um novo grupo de volume`. Uma "
+"Grupo de Volume` e selecione a opção `Criar um novo grupo de volume`. Uma "
 "nova janela de diálogo será aberta, idêntica à descrita na etapa anterior. "
 "Novamente, selecione um nome, dispositivos de armazenamento, configurações "
 "de criptografia, nível de RAID e política de tamanho para o novo grupo e "
 "clique em `Salvar`. O novo grupo de volume ficará disponível no menu "
-"suspenso `Grupo de volume`; você pode então percorrer seus pontos de "
+"suspenso `Grupo de Volume`; você pode então percorrer seus pontos de "
 "montagem existentes e alterar esta configuração para atribuí-los a um grupo "
 "de volume diferente."
 
@@ -273,10 +273,9 @@ msgid ""
 "`Desired Capacity`, `File System`, and `Name`. Press `Update Settings` to "
 "apply any changes to the configuration."
 msgstr ""
-"Configure outras configurações específicas para o volume lógico – seu `Ponto "
-"de montagem`, `Capacidade desejada`, `Sistemas de arquivos` e `Nome`. "
-"Pressione `Atualizar configurações` para aplicar quaisquer alterações às "
-"configurações."
+"Defina outras configurações específicas para o volume lógico – seu `Ponto de "
+"Montagem`, `Capacidade Desejada`, `Sistemas de Arquivos` e `Nome`. Pressione "
+"`Atualizar Configurações` para aplicar quaisquer alterações às configurações."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke_AddLVM.adoc:67
