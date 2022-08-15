@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-15 22:03+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f29pagesadvancedkickstart_installations/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/advanced/Kickstart_Installations.adoc:6
@@ -78,6 +81,8 @@ msgid ""
 "Make the Kickstart file available on removable media, a hard drive, or a "
 "network location."
 msgstr ""
+"Aseta Kickstart-tiedosto käytettäväksi siirrettävällä tietovälineellä, "
+"kiintolevyllä tai verkkosijainnissa."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:26
@@ -85,11 +90,14 @@ msgid ""
 "Start the Kickstart installation by booting the installer and using a boot "
 "option to tell the installer where to find the Kickstart file."
 msgstr ""
+"Aloita Kickstart-asennus käynnistämällä asennusohjelma ja käyttämällä "
+"käynnistysvaihtoehtoa kertoaksesi asennusohjelmalle, mistä Kickstart-"
+"tiedosto löytyy."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:28
 msgid "This chapter explains these steps in detail."
-msgstr ""
+msgstr "Tässä luvussa selitetään nämä vaiheet yksityiskohtaisesti."
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:30
@@ -108,6 +116,13 @@ msgid ""
 "[application]*vim* on Linux systems or [application]*Notepad* on Windows "
 "systems) can be used to create and edit Kickstart files."
 msgstr ""
+"Itse Kickstart-tiedosto on pelkkä tekstitiedosto, joka sisältää avainsanoja, "
+"jotka on lueteltu kohdassa xref:appendixes/Kickstart_Syntax_Reference.adoc"
+"#appe-kickstart-syntax-reference[Kickstart Syntax Reference], ja toimivat "
+"asennuksen ohjeina. Mitä tahansa tekstieditoria, joka pystyy tallentamaan "
+"tiedostoja ASCII-tekstina (kuten [sovellus]*Gedit* tai [sovellus]*vim* Linux-"
+"järjestelmissä tai [sovellus]*Muistio* Windows-järjestelmissä), voidaan "
+"käyttää Kickstart-tiedostojen luomiseen ja muokkaamiseen."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:35
@@ -119,11 +134,17 @@ msgid ""
 "system. You can then copy this file, make any changes you need, and use the "
 "resulting configuration file in further installations."
 msgstr ""
+"Suositeltu tapa luoda Kickstart-tiedostoja on suorittaa manuaalinen asennus "
+"ensin yhteen järjestelmään. Kun asennus on valmis, kaikki asennuksen aikana "
+"tehdyt valinnat tallennetaan tiedostoon nimeltä `anaconda-ks.cfg`, joka "
+"sijaitsee asennetun järjestelmän `/root/`-hakemistossa. Voit sitten kopioida "
+"tämän tiedoston, tehdä tarvittavat muutokset ja käyttää tuloksena olevaa "
+"asetustiedostoa myöhemmissä asennuksissa."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:37
 msgid "When creating a Kickstart file, keep in mind the following:"
-msgstr ""
+msgstr "Kun luot Kickstart-tiedostoa, huomioi seuraavat asiat:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:39
@@ -131,6 +152,8 @@ msgid ""
 "Lines starting with a pound sign (`#`) are treated as comments and are "
 "ignored."
 msgstr ""
+"Risuaita-merkillä (`#`) alkavia rivejä käsitellään kommentteina, eikä niitä "
+"huomioida."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:41
@@ -139,6 +162,9 @@ msgid ""
 "to be in a specific order unless otherwise specified. The correct section "
 "order is:"
 msgstr ""
+"Osat on määritettävä *järjestyksessä*. Osioissa olevien tuotteiden ei "
+"tarvitse olla tietyssä järjestyksessä, ellei toisin mainita. Oikea osien "
+"järjestys on:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:43
@@ -149,6 +175,11 @@ msgid ""
 "Syntax Reference]. Note that some commands, such as [command]#install#, are "
 "mandatory, but most commands are optional."
 msgstr ""
+"Komento-osio, joka sisältää todelliset Kickstart-komennot ja asetukset, "
+"jotka on lueteltu kohdassa xref:appendixes/Kickstart_Syntax_Reference.adoc"
+"#appe-kickstart-syntax-reference[Kickstart-syntaksiviittaus]. Huomaa, että "
+"jotkin komennot, kuten [command]#install#, ovat pakollisia, mutta useimmat "
+"komennot ovat valinnaisia."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:45
@@ -158,6 +189,10 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
 "(required) - Package Selection] for details."
 msgstr ""
+"[command]#%packages# -osio, joka sisältää luettelon asennettavista "
+"paketeista ja pakettiryhmistä. Katso lisätietoja kohdasta xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-packages[%packages "
+"(pakollinen) - Paketin valinta]."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:47
@@ -170,6 +205,13 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall[%post "
 "(optional) - Post-installation Script] for details."
 msgstr ""
+"[command]#%pre# ja [command]#%post# osiot, jotka sisältävät asennusta "
+"edeltävät ja asennuksen jälkeiset komentosarjat. Nämä kaksi osaa voivat olla "
+"missä tahansa järjestyksessä, eivätkä ole pakollisia. Katso xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-preinstall[%pre (valinnainen) "
+"- Pre-installation Script] ja xref:appendixes/Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-postinstall[%post (valinnainen) - Post (valinnainen) Script] "
+"saadaksesi lisätietoja."
 
 #. type: delimited block =
 #: ./pages/advanced/Kickstart_Installations.adoc:52
@@ -178,6 +220,9 @@ msgid ""
 "end with [command]#%end#, otherwise the installation program will refuse the "
 "Kickstart file. The main command section has no special ending statement."
 msgstr ""
+"[command]#%packages#, [command]#%pre# ja [command]#%post# osioiden tulee "
+"päättyä [command]#%end#, muuten asennusohjelma hylkää Kickstart-tiedoston. "
+"Pääkomento-osassa ei ole erityistä loppulausetta."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:56
@@ -189,12 +234,17 @@ msgid ""
 "you will not be able to see the prompt, and the installation will appear to "
 "have failed."
 msgstr ""
+"Vaadittujen kohteiden poisjättäminen johtaa siihen, että asennusohjelma "
+"pyytää käyttäjää vastaamaan kyseiseen kohteeseen, aivan kuten käyttäjältä "
+"kysyttäisiin tyypillisen asennuksen aikana. Kun vastaus on annettu, asennus "
+"jatkuu. Huomaa, että jos asentamassasi järjestelmässä ei ole näyttöä, et näe "
+"kehotetta ja asennus näyttää epäonnistuneen."
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr ""
+msgstr "Kickstart-tiedoston tarkistaminen"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:61
@@ -205,12 +255,17 @@ msgid ""
 "used to do this. This tool is a part of the [package]*pykickstart* "
 "package. To install this package, execute the following command:"
 msgstr ""
+"Kun luot tai mukautat kickstart-tiedostoa, on hyödyllistä varmistaa, että se "
+"on kelvollinen, ennen kuin yrität käyttää sitä asennuksessa. {PRODUCT} "
+"sisältää [application]*ksvalidator*-komentoriviohjelman, jota voidaan "
+"käyttää tähän. Tämä työkalu on osa [package]*pykickstart*-pakettia. Asenna "
+"tämä paketti suorittamalla seuraava komento:"
 
 #. type: delimited block -
 #: ./pages/advanced/Kickstart_Installations.adoc:65
 #, no-wrap
 msgid "# dnf install pykickstart\n"
-msgstr ""
+msgstr "# dnf install pykickstart\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:68
@@ -218,12 +273,14 @@ msgid ""
 "After installing the package, you can validate a Kickstart file using the "
 "following command:"
 msgstr ""
+"Paketin asennuksen jälkeen voit tarkistaa Kickstart-tiedoston seuraavalla "
+"komennolla:"
 
 #. type: delimited block -
 #: ./pages/advanced/Kickstart_Installations.adoc:72
 #, no-wrap
 msgid "$ [command]#ksvalidator _/path/to/kickstart.ks_#\n"
-msgstr ""
+msgstr "$ [command]#ksvalidator _/polku/jossa/kickstart.ks_#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:75
@@ -231,11 +288,13 @@ msgid ""
 "Replace _/path/to/kickstart.ks_ with the path to the Kickstart file you want "
 "to verify."
 msgstr ""
+"Korvaa _/polku/jossa/kickstart.ks_ sen Kickstart-tiedoston polulla, jonka "
+"haluat tarkistaa."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:77
 msgid "For more information about this tool, see the `ksvalidator(1)` man page."
-msgstr ""
+msgstr "Lisätietoja tästä työkalusta on ksvalidator(1) -manuaalisivulla."
 
 #. type: delimited block =
 #: ./pages/advanced/Kickstart_Installations.adoc:82
