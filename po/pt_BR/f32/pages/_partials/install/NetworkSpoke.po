@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2021-03-06 22:01+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2022-08-16 05:17+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "f32pages_partialsinstallnetworkspoke/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Block title
 #: pages/_partials/install/NetworkSpoke.adoc:5
 #: pages/_partials/install/NetworkSpoke.adoc:16
 #, no-wrap
 msgid "Network & Hostname"
-msgstr "Rede e nome do host"
+msgstr "Rede e Nome do Host"
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:8
@@ -34,8 +35,8 @@ msgid ""
 "needed for tasks such as downloading packages from a remote location) and on "
 "the installed system."
 msgstr ""
-"A tela `Rede e nome do host` é usada para configurar interfaces de rede. As "
-"opções selecionadas aqui estarão disponíveis durante a instalação (se "
+"A tela `Rede e Nome do Host` é usada para configurar as interfaces de rede. "
+"As opções selecionadas aqui estarão disponíveis durante a instalação (se "
 "necessário para tarefas como baixar pacotes de um local remoto) e no sistema "
 "instalado."
 
@@ -52,14 +53,14 @@ msgstr ""
 "A configuração de rede é um tópico extenso e muitas das opções disponíveis "
 "durante a instalação estão além do escopo deste documento. Para obter "
 "informações detalhadas sobre redes, incluindo tópicos teóricos e instruções "
-"e exemplos específicos, consulte o [citetitle]_{PRODUCT} Networking{nbsp}"
-"Guide_, disponível em link:++https://docs.fedoraproject.org/++[]."
+"e exemplos específicos, consulte o [citetitle]_Guia{nbsp}de{nbsp}Rede{nbsp}"
+"do {PRODUCT}_, disponível no link:++https://docs.fedoraproject.org/++[ ]."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/NetworkSpoke.adoc:18
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
-msgstr "A tela Rede e nome do host. No painel esquerdo"
+msgstr "A tela Rede e Nome do Host. No painel esquerdo"
 
 #. type: Target for macro image
 #: pages/_partials/install/NetworkSpoke.adoc:18
@@ -92,11 +93,11 @@ msgid ""
 "previously created virtual interface, select it in the list and click the `-"
 "` button."
 msgstr ""
-"Abaixo da lista de interfaces, há dois botões. Use o botão `+` para "
-"adicionar uma interface de rede virtual (Team/Equipe, Bond ou VLAN) conforme "
+"Abaixo da lista de interfaces estão dois botões. Use o botão `+` para "
+"adicionar uma interface de rede virtual (Team, Bond ou VLAN) conforme "
 "descrito em xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
-"gui-network-configuration-virtual-interface[Adicionando uma interface de "
-"rede virtual] . Para remover uma interface virtual criada anteriormente, "
+"gui-network-configuration-virtual-interface[Adicionando uma Interface de "
+"Rede Virtual] . Para remover uma interface virtual criada anteriormente, "
 "selecione-a na lista e clique no botão `-`."
 
 #. type: Plain text
@@ -110,11 +111,11 @@ msgid ""
 "advanced[Editing Network Interface Configuration]."
 msgstr ""
 "Para alterar configurações como endereços IP, servidores DNS ou configuração "
-"de roteamento para uma interface existente (tanto virtual quanto física), "
-"selecione a interface no painel esquerdo e clique em `Configurar` no canto "
-"inferior direito da tela. As configurações disponíveis são descritas em xref:"
+"de roteamento para uma interface existente (virtual e física), selecione a "
+"interface no painel esquerdo e clique em \"Configurar\" no canto inferior "
+"direito da tela. As configurações disponíveis estão descritas em xref:"
 "install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
-"configuration-advanced[Editando a configuração da interface de rede]."
+"configuration-advanced[Editar Configuração da Interface de Rede]."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:27
@@ -122,9 +123,9 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
-"Use a chave `liga`pass:attributes[{blank}]/pass:attributes[{blank}]`desliga` "
-"no canto superior direito para habilitar ou desabilitar a interface "
-"atualmente selecionada."
+"Use a chave `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` no "
+"canto superior direito para habilitar ou desabilitar a interface selecionada "
+"no momento."
 
 #. type: Plain text
 #: pages/_partials/install/NetworkSpoke.adoc:29
@@ -137,11 +138,10 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
-"Abaixo da lista de conexões, insira um nome de host para este computador no "
-"campo de entrada `Nome do host`. O nome do host pode ser um _nome de domínio "
-"totalmente qualificado_ (FQDN) no formato _nome do host_._ nome do domínio_ "
-"ou um nome de host curto sem nome de domínio. Muitas redes têm um serviço "
-"_Dynamic Host Configuration Protocol_ (`DHCP`) que fornece automaticamente "
-"aos sistemas conectados um nome de domínio; para permitir que o serviço "
-"`DHCP` atribua o nome de domínio a esta máquina, especifique apenas o nome "
-"abreviado do host."
+"Abaixo da lista de conexões, digite um nome de host para este computador no "
+"campo de entrada `Nome do Host`. O nome do host pode ser um _nome de domínio "
+"totalmente qualificado_ (FQDN) no formato _hostname_._domainname_ ou um nome "
+"de host curto sem nome de domínio. Muitas redes têm um serviço _Dynamic Host "
+"Configuration Protocol_ (`DHCP`) que fornece automaticamente um nome de "
+"domínio aos sistemas conectados; para permitir que o serviço `DHCP` atribua "
+"o nome de domínio a esta máquina, especifique apenas o nome curto do host."
