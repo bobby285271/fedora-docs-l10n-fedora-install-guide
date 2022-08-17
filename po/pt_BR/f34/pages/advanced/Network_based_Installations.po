@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-06 21:06+0000\n"
-"PO-Revision-Date: 2021-10-07 09:05+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2022-08-17 23:12+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "f34pagesadvancednetwork_based_installations/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: pages/advanced/Network_based_Installations.adoc:5
 #, no-wrap
 msgid "Setting Up an Installation Server"
-msgstr "Configurando um servidor de instalação"
+msgstr "Configurando um Servidor de Instalação"
 
 #. type: delimited block =
 #: pages/advanced/Network_based_Installations.adoc:11
@@ -40,7 +41,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:15
 #, no-wrap
 msgid "PXE Installation Overview"
-msgstr "Visão geral da instalação PXE"
+msgstr "Visão Geral da Instalação PXE"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:18
@@ -144,7 +145,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:31
 #, no-wrap
 msgid "Kernel and Initramfs"
-msgstr "Kernel e initramfs"
+msgstr "Kernel e Initramfs"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:33
@@ -177,9 +178,9 @@ msgstr ""
 "nesta seção usa os espelhos públicos do Fedora como a fonte do repositório, "
 "mas você também pode usar um repositório na rede local fornecido por NFS, "
 "FTP ou HTTP. Os repositórios podem ser configurados usando a opção de "
-"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options."
-"adoc#sect-boot-options-sources[Especificando a fonte de instalação] para "
-"obter detalhes."
+"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options.adoc"
+"#sect-boot-options-sources[Especificando a Fonte de Instalação] para obter "
+"detalhes."
 
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ==
@@ -202,10 +203,9 @@ msgstr "Instale o pacote de servidor dhcp."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:50
-#, fuzzy, no-wrap
-#| msgid "# dnf install tftp-server\n"
+#, no-wrap
 msgid "# dnf install dhcp-server\n"
-msgstr "# dnf install tftp-server\n"
+msgstr "# dnf install dhcp-server\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:53
@@ -253,16 +253,14 @@ msgstr "Teste sua configuração e resolva quaisquer problemas que encontrar."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:76
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[command]#systemctl start dhcpd#\n"
-#| "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
+#, no-wrap
 msgid ""
 "[command]#systemctl start dhcpd#\n"
 "[command]#systemctl enable dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 msgstr ""
 "[command]#systemctl start dhcpd#\n"
+"[command]#systemctl enable dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
 #. type: Plain text
@@ -403,7 +401,7 @@ msgstr "Fornecimento e configuração de carregadores de inicialização para cl
 #: pages/advanced/Network_based_Installations.adoc:133
 #, no-wrap
 msgid "Getting the bootloader files"
-msgstr "Obtendo os arquivos de carregadores de inicialização"
+msgstr "Obtendo os arquivos do carregador de inicialização"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:135
@@ -673,7 +671,7 @@ msgstr "# wget https://download.fedoraproject.org/pub/fedora/linux/releases/{PRO
 #: pages/advanced/Network_based_Installations.adoc:252
 #, no-wrap
 msgid "HTTP Installation Overview"
-msgstr "Visão geral da instalação via HTTP"
+msgstr "Visão Geral da Instalação via HTTP"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:255
@@ -706,7 +704,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:256
 #, no-wrap
 msgid "Enrolling Certificatesll"
-msgstr "Registrando certificados"
+msgstr "Registrando Certificados"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:258
@@ -729,7 +727,7 @@ msgstr ""
 #: pages/advanced/Network_based_Installations.adoc:261
 #, no-wrap
 msgid "DHCP Server Configuration for HTTP"
-msgstr "Configuração do servidor DHCP para HTTP"
+msgstr "Configuração do Servidor DHCP para HTTP"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:263
@@ -841,7 +839,7 @@ msgid ""
 "coordinating repositories, maintaining dns records, dhcp servers, and even "
 "puppet manifests are effectively automated by [package]*cobbler*."
 msgstr ""
-"Para ambientes mais complexos, {PRODUCT} oferece o servidor de instalação "
+"Para ambientes mais complexos, o {PRODUCT} oferece o servidor de instalação "
 "[package]*cobbler*. Tarefas como gerenciar configurações de kickstart, "
 "coordenar repositórios, manter registros dns, servidores dhcp e até "
 "manifestos fantoches são efetivamente automatizados por [package]*cobbler*."
