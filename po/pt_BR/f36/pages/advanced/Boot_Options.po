@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-08-09 02:32+0000\n"
+"PO-Revision-Date: 2022-08-17 01:40+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f36pagesadvancedboot_options/"
@@ -22,7 +22,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:5
 #, no-wrap
 msgid "Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:20
@@ -38,6 +38,16 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server])."
 msgstr ""
+"O instalador [application]*Anaconda* inclui uma gama de opções de "
+"inicialização para administradores, que modificam o comportamento padrão do "
+"programa de instalação habilitando ou desabilitando certas funções. Para "
+"usar uma ou mais opções de inicialização, você deve inicializar a partir da "
+"mídia de instalação e anexar essas opções no menu de inicialização (consulte "
+"xref:install/Booting_the_Installation.adoc#sect-boot-menu[O Menu de "
+"Inicialização]) ou deve adicioná-los em seu arquivo de configuração do "
+"servidor PXE se você estiver inicializando de uma rede (consulte xref:"
+"advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Configurando "
+"um Servidor de Instalação])."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:24
@@ -45,11 +55,13 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Você pode usar várias opções ao mesmo tempo; nesse caso, separe-as por um "
+"único espaço."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:26
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "Existem dois tipos básicos de opções descritos neste capítulo:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:38
@@ -61,6 +73,12 @@ msgid ""
 "[option]#inst.vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#.  "
 "On its own, without a password specified, the option is invalid."
 msgstr ""
+"As opções apresentadas terminando com um sinal de \"`igual`\" (`=`) exigem "
+"que um valor seja especificado – elas não podem ser usadas por conta "
+"própria. Por exemplo, a opção [option]#inst.vncpassword=# também deve conter "
+"um valor (neste caso, uma senha). A forma correta é, portanto, [option]#inst."
+"vncpassword=pass:attributes[{blank}]_senha_pass:attributes[{blank}]#. Por si "
+"só, sem uma senha especificada, a opção é inválida."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:48
@@ -72,6 +90,12 @@ msgid ""
 "starting the installation; if this option is present, the check will be "
 "performed, and if it is not present, the check will be skipped."
 msgstr ""
+"As opções apresentadas sem o sinal \""
+"`pass:attributes[{blank}]`=`pass:attributes[{blank}]`\" não aceitam "
+"quaisquer valores ou parâmetros. Por exemplo, a opção [option]#rd.live.check#"
+" força o [application]*Anaconda* a verificar a mídia de instalação antes de "
+"iniciar a instalação; se esta opção estiver presente, a verificação será "
+"realizada e, se não estiver presente, a verificação será ignorada."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:50
@@ -80,6 +104,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Além das opções descritas neste capítulo, o prompt de inicialização também "
+"aceita as opções de kernel [application]*dracut*. Uma lista dessas opções "
+"está disponível na página man `dracut.cmdline(7)`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:55
@@ -89,12 +116,16 @@ msgid ""
 "with Fedora 34, the installer will ignore options that do not use it (for "
 "example, `stage2=` instead of `inst.stage2=`)."
 msgstr ""
+"As opções de inicialização específicas para o programa de instalação sempre "
+"começam com `inst.` neste guia. Este prefixo era opcional em lançamentos "
+"anteriores, mas a partir do Fedora 34, o instalador vai ignorar opções que "
+"não usam-na (por exemplo, `stage2=` em vez de `inst.stage2=`)."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:59
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Configurando o Sistema de Instalação no Menu de Inicialização"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:78
@@ -111,29 +142,41 @@ msgid ""
 "xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup[Setting "
 "Up an Installation Server] if you are booting from a server."
 msgstr ""
+"A maneira exata de especificar opções de inicialização personalizadas difere "
+"com base na arquitetura do seu sistema, firmware e o método que você usa "
+"para inicializar a instalação. Se estiver inicializando a partir da mídia "
+"local, você pode especificar opções no menu de inicialização, antes de "
+"iniciar a instalação; se estiver inicializando de uma rede usando um "
+"servidor PXE, você deve adicionar opções de inicialização ao arquivo de "
+"configuração do carregador de inicialização antes de inicializar o sistema "
+"de instalação. Para obter instruções específicas, consulte xref:install/"
+"Booting_the_Installation.adoc#sect-boot-menu[O Menu de Inicialização] se "
+"você estiver inicializando a partir da mídia local e xref:advanced/"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Configurando um "
+"Servidor de Instalação] se estiver inicializando a partir de um servidor."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:80
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização Disponíveis"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:83
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "As seguintes opções estão disponíveis no {PRODUCT}:"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:85
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Especificando a Fonte de Instalação"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:87
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:88
@@ -142,17 +185,19 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Especifica a fonte de instalação - ou seja, um local onde o programa de "
+"instalação pode localizar as imagens e os pacotes necessários. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:92
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[option]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:95
 msgid "The source must be either:"
-msgstr ""
+msgstr "A fonte deve ser:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:97
@@ -161,11 +206,14 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid "
 "`.treeinfo` file"
 msgstr ""
+"uma árvore instalável, que é uma estrutura de diretórios contendo as "
+"imagens, pacotes e repositórios do programa de instalação, bem como um "
+"arquivo `.treeinfo` válido"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:99
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "um DVD (um disco físico presente na unidade de DVD do sistema)"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:103
@@ -173,6 +221,9 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"uma imagem ISO do DVD de instalação completa do {PRODUCT}, colocado em um "
+"disco rígido ou em um local de rede acessível a partir do sistema de "
+"instalação"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:106
@@ -180,12 +231,14 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats.  The syntax is described in the table below."
 msgstr ""
+"Esta opção permite a configuração de diferentes métodos de instalação em "
+"diferentes formatos. A sintaxe é descrita na tabela abaixo."
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:108
 #, no-wrap
 msgid "Installation Sources"
-msgstr ""
+msgstr "Fontes de Instalação"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:121
@@ -210,26 +263,54 @@ msgid ""
 "[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
 "_options_.]\n"
 msgstr ""
+"|Fonte de instalação|Formato da opção\n"
+"|Qualquer unidade de CD/DVD|[option]#inst.repo=cdrom#\n"
+"|Unidade de CD/DVD específica|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_dispositivo_pass:attributes[{blank}]#\n"
+"|Disco Rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
+"ss:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:a"
+"ttributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
+"\n"
+"|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass"
+":attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}"
+"]#\n"
+"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_nomeusuário_:"
+"pass:attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blan"
+"k} ]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attr"
+"ibutes[{blank}]#\n"
+"|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:"
+"attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attribut"
+"es[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por "
+"padrão. Para usar uma versão diferente, adicione "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# a "
+"_opções_.]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:124
 msgid "Disk device names may be specified using the following formats:"
 msgstr ""
+"Os nomes dos dispositivos de disco podem ser especificados usando os "
+"seguintes formatos:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:126
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "Nome do dispositivo do kernel, por exemplo `/dev/sda1` ou `sdb2`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:128
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
 msgstr ""
+"Rótulo do sistema de arquivos, por exemplo, `LABEL=Flash` ou `LABEL=RHEL7`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:130
 msgid "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
+"UUID do sistema de arquivos, por exemplo `UUID=8176c7bf-04ff-"
+"403a-a832-9557f94e61db`"
 
 #.  Normally, I would use quotes substitution (https://docs.asciidoctor.org/asciidoc/latest/subs/quotes/), but it can't be used when quoting a single space. See: https://github.com/asciidoctor/asciidoctor/issues/4122
 #. type: Plain text
@@ -240,12 +321,16 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (“ ”)."
 msgstr ""
+"Caracteres não alfanuméricos devem ser representados como `\\xpass"
+":attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
+"representação hexadecimal do caractere. Por exemplo, `\\x20` é um espaço em "
+"branco (“ ”)."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:134
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:135
@@ -258,6 +343,13 @@ msgid ""
 "not available, [application]*Anaconda* will try to load the image from "
 "`LiveOS/squashfs.img`."
 msgstr ""
+"Especifica o local da imagem de tempo de execução do programa de instalação "
+"a ser carregada. A sintaxe é a mesma de refex:tabl-boot-options-sources["
+"Fontes de Instalação]. Esta opção espera um caminho para um diretório "
+"contendo um arquivo `.treeinfo` válido; o local da imagem de tempo de "
+"execução será lido a partir deste arquivo, se encontrado. Se um arquivo `."
+"treeinfo` não estiver disponível, [application]*Anaconda* tentará carregar a "
+"imagem de `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:140
@@ -268,12 +360,17 @@ msgid ""
 "default label of the file system containing the runtime image, you must also "
 "edit this option to match the new label."
 msgstr ""
+"Por padrão, essa opção de inicialização é usada na mídia de instalação e "
+"definida com um rótulo específico (por exemplo, [option]#inst."
+"stage2=hd:LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão "
+"do sistema de arquivos que contém a imagem de tempo de execução, também "
+"deverá editar essa opção para corresponder ao novo rótulo."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:143
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:144

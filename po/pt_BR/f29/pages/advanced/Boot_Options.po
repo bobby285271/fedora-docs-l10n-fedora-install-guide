@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-08-17 01:40+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/f29pagesadvancedboot_options/"
+"pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: ./pages/advanced/Boot_Options.adoc:6
 #, no-wrap
 msgid "Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:9
@@ -42,11 +45,13 @@ msgid ""
 "You can use multiple options at the same time; in that case, separate them "
 "by a single space."
 msgstr ""
+"Você pode usar várias opções ao mesmo tempo; nesse caso, separe-as por um "
+"único espaço."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:13
 msgid "There are two basic types of options described in this chapter:"
-msgstr ""
+msgstr "Existem dois tipos básicos de opções descritos neste capítulo:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:15
@@ -77,6 +82,9 @@ msgid ""
 "accepts [application]*dracut* kernel options. A list of these options is "
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
+"Além das opções descritas neste capítulo, o prompt de inicialização também "
+"aceita as opções de kernel [application]*dracut*. Uma lista dessas opções "
+"está disponível na página man `dracut.cmdline(7)`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:24
@@ -92,7 +100,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:28
 #, no-wrap
 msgid "Configuring the Installation System at the Boot Menu"
-msgstr ""
+msgstr "Configurando o Sistema de Instalação no Menu de Inicialização"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:31
@@ -114,24 +122,24 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:33
 #, no-wrap
 msgid "Available Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização Disponíveis"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:36
 msgid "The following options are available in {PRODUCT}:"
-msgstr ""
+msgstr "As seguintes opções estão disponíveis no {PRODUCT}:"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:38
 #, no-wrap
 msgid "Specifying the Installation Source"
-msgstr ""
+msgstr "Especificando a Fonte de Instalação"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:40
 #, no-wrap
 msgid "[option]#inst.repo=#"
-msgstr ""
+msgstr "[option]#inst.repo=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:41
@@ -140,17 +148,19 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
+"Especifica a fonte de instalação - ou seja, um local onde o programa de "
+"instalação pode localizar as imagens e os pacotes necessários. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:45
 #, no-wrap
 msgid "[option]#inst.repo=cdrom#\n"
-msgstr ""
+msgstr "[option]#inst.repo=cdrom#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:48
 msgid "The source must be either:"
-msgstr ""
+msgstr "A fonte deve ser:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:50
@@ -159,11 +169,14 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid "
 "`.treeinfo` file"
 msgstr ""
+"uma árvore instalável, que é uma estrutura de diretórios contendo as "
+"imagens, pacotes e repositórios do programa de instalação, bem como um "
+"arquivo `.treeinfo` válido"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:52
 msgid "a DVD (a physical disk present in the system's DVD drive)"
-msgstr ""
+msgstr "um DVD (um disco físico presente na unidade de DVD do sistema)"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:54
@@ -171,6 +184,9 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
+"uma imagem ISO do DVD de instalação completa do {PRODUCT}, colocado em um "
+"disco rígido ou em um local de rede acessível a partir do sistema de "
+"instalação"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:56
@@ -183,7 +199,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:58
 #, no-wrap
 msgid "Installation Sources"
-msgstr ""
+msgstr "Fontes de Instalação"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:71
@@ -208,26 +224,54 @@ msgid ""
 "[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
 "_options_.]\n"
 msgstr ""
+"|Fonte de instalação|Formato da opção\n"
+"|Qualquer unidade de CD/DVD|[option]#inst.repo=cdrom#\n"
+"|Unidade de CD/DVD específica|[option]#inst."
+"repo=cdrom:pass:attributes[{blank}]_dispositivo_pass:attributes[{blank}]#\n"
+"|Disco Rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
+"ss:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:a"
+"ttributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
+"\n"
+"|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass"
+":attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}"
+"]#\n"
+"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_nomeusuário_:"
+"pass:attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blan"
+"k} ]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attr"
+"ibutes[{blank}]#\n"
+"|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:"
+"attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attribut"
+"es[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por "
+"padrão. Para usar uma versão diferente, adicione "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# a "
+"_opções_.]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:74
 msgid "Disk device names may be specified using the following formats:"
 msgstr ""
+"Os nomes dos dispositivos de disco podem ser especificados usando os "
+"seguintes formatos:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:76
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr ""
+msgstr "Nome do dispositivo do kernel, por exemplo `/dev/sda1` ou `sdb2`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:78
 msgid "File system label, for example `LABEL=Flash` or `LABEL=RHEL7`"
 msgstr ""
+"Rótulo do sistema de arquivos, por exemplo, `LABEL=Flash` ou `LABEL=RHEL7`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:80
 msgid "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
+"UUID do sistema de arquivos, por exemplo `UUID=8176c7bf-04ff-"
+"403a-a832-9557f94e61db`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:82
@@ -242,7 +286,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:83
 #, no-wrap
 msgid "[option]#inst.stage2=#"
-msgstr ""
+msgstr "[option]#inst.stage2=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:84
@@ -265,12 +309,17 @@ msgid ""
 "default label of the file system containing the runtime image, you must also "
 "edit this option to match the new label."
 msgstr ""
+"Por padrão, essa opção de inicialização é usada na mídia de instalação e "
+"definida com um rótulo específico (por exemplo, [option]#inst."
+"stage2=hd:LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão "
+"do sistema de arquivos que contém a imagem de tempo de execução, também "
+"deverá editar essa opção para corresponder ao novo rótulo."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:92
 #, no-wrap
 msgid "[option]#inst.stage2.all=#"
-msgstr ""
+msgstr "[option]#inst.stage2.all=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:93
