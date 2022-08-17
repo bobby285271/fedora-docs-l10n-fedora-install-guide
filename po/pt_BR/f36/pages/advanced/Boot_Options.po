@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-08-17 09:04+0000\n"
+"PO-Revision-Date: 2022-08-17 15:44+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f36pagesadvancedboot_options/"
@@ -185,8 +185,8 @@ msgid ""
 "installation program can find the images and packages it requires. For "
 "example:"
 msgstr ""
-"Especifica a fonte de instalação - ou seja, um local onde o programa de "
-"instalação pode localizar as imagens e os pacotes necessários. Por exemplo:"
+"Especifica a fonte de instalação – ou seja, um local onde o programa de "
+"instalação pode encontrar as imagens e pacotes de que necessita. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:92
@@ -206,9 +206,9 @@ msgid ""
 "installation program's images, packages and repodata as well as a valid "
 "`.treeinfo` file"
 msgstr ""
-"uma árvore instalável, que é uma estrutura de diretórios contendo as "
-"imagens, pacotes e repositórios do programa de instalação, bem como um "
-"arquivo `.treeinfo` válido"
+"uma árvore instalável, que é uma estrutura de diretório contendo as imagens, "
+"pacotes e repodados do programa de instalação, bem como um arquivo `."
+"treeinfo` válido"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:99
@@ -221,9 +221,8 @@ msgid ""
 "an ISO image of the full {PRODUCT} installation DVD, placed on a hard drive "
 "or a network location accessible from the installation system"
 msgstr ""
-"uma imagem ISO do DVD de instalação completa do {PRODUCT}, colocado em um "
-"disco rígido ou em um local de rede acessível a partir do sistema de "
-"instalação"
+"uma imagem ISO do DVD de instalação completa do {PRODUCT}, colocada em um "
+"disco rígido ou um local de rede acessível a partir do sistema de instalação"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:106
@@ -231,14 +230,14 @@ msgid ""
 "This option allows for the configuration of different installation methods "
 "using different formats.  The syntax is described in the table below."
 msgstr ""
-"Esta opção permite a configuração de diferentes métodos de instalação em "
-"diferentes formatos. A sintaxe é descrita na tabela abaixo."
+"Esta opção permite a configuração de diferentes métodos de instalação usando "
+"diferentes formatos. A sintaxe é descrita na tabela a seguir."
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:108
 #, no-wrap
 msgid "Installation Sources"
-msgstr "Fontes de Instalação"
+msgstr "Fonte de Instalação"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:121
@@ -266,8 +265,8 @@ msgstr ""
 "|Fonte de instalação|Formato da opção\n"
 "|Qualquer unidade de CD/DVD|[option]#inst.repo=cdrom#\n"
 "|Unidade de CD/DVD específica|[option]#inst."
-"repo=cdrom:pass:attributes[{blank}]_dispositivo_pass:attributes[{blank}]#\n"
-"|Disco Rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
+"repo=cdrom:pass:attributes[{blank}]_dispositivo_:attributes[{blank}]#\n"
+"|Disco rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
 "ss:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
 "|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:a"
 "ttributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
@@ -275,16 +274,16 @@ msgstr ""
 "|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass"
 ":attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}"
 "]#\n"
-"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_nomeusuário_:"
-"pass:attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blan"
-"k} ]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attr"
-"ibutes[{blank}]#\n"
+"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_usuário_:pass"
+":attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blank}]_"
+"host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attribute"
+"s[{blank}]#\n"
 "|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:"
 "attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attribut"
 "es[{blank}]#\n"
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por "
 "padrão. Para usar uma versão diferente, adicione "
-"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# a "
+"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# Às "
 "_opções_.]\n"
 
 #. type: Plain text
@@ -297,7 +296,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:126
 msgid "Kernel device name, for example `/dev/sda1` or `sdb2`"
-msgstr "Nome do dispositivo do kernel, por exemplo `/dev/sda1` ou `sdb2`"
+msgstr "Nome do dispositivo de kernel, por exemplo, `/dev/sda1` ou `sdb2`"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:128
@@ -309,7 +308,7 @@ msgstr ""
 #: ./pages/advanced/Boot_Options.adoc:130
 msgid "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
-"UUID do sistema de arquivos, por exemplo `UUID=8176c7bf-04ff-"
+"UUID do sistema de arquivos, por exemplo, `UUID=8176c7bf-04ff-"
 "403a-a832-9557f94e61db`"
 
 #.  Normally, I would use quotes substitution (https://docs.asciidoctor.org/asciidoc/latest/subs/quotes/), but it can't be used when quoting a single space. See: https://github.com/asciidoctor/asciidoctor/issues/4122
@@ -321,7 +320,7 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (“ ”)."
 msgstr ""
-"Caracteres não alfanuméricos devem ser representados como `\\xpass"
+"Os caracteres não alfanuméricos devem ser representados como `\\xpass"
 ":attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
 "representação hexadecimal do caractere. Por exemplo, `\\x20` é um espaço em "
 "branco (“ ”)."
@@ -343,13 +342,13 @@ msgid ""
 "not available, [application]*Anaconda* will try to load the image from "
 "`LiveOS/squashfs.img`."
 msgstr ""
-"Especifica o local da imagem de tempo de execução do programa de instalação "
-"a ser carregada. A sintaxe é a mesma de refex:tabl-boot-options-sources["
-"Fontes de Instalação]. Esta opção espera um caminho para um diretório "
-"contendo um arquivo `.treeinfo` válido; o local da imagem de tempo de "
-"execução será lido a partir deste arquivo, se encontrado. Se um arquivo `."
-"treeinfo` não estiver disponível, [application]*Anaconda* tentará carregar a "
-"imagem de `LiveOS/squashfs.img`."
+"Especifica a localização da imagem de tempo de execução do programa de "
+"instalação a ser carregada. A sintaxe é a mesma de xref:tabl-boot-options-"
+"sources[Fontes de Instalação]. Esta opção espera um caminho para um "
+"diretório contendo um arquivo `.treeinfo` válido; a localização da imagem de "
+"tempo de execução será lida a partir deste arquivo, se encontrada. Se um "
+"arquivo `.treeinfo` não estiver disponível, o [application]*Anaconda* "
+"tentará carregar a imagem de `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:140
@@ -360,10 +359,10 @@ msgid ""
 "default label of the file system containing the runtime image, you must also "
 "edit this option to match the new label."
 msgstr ""
-"Por padrão, essa opção de inicialização é usada na mídia de instalação e "
-"definida com um rótulo específico (por exemplo, [option]#inst."
+"Por padrão, esta opção de inicialização é usada na mídia de instalação e "
+"definida para um rótulo específico (por exemplo, [option]#inst."
 "stage2=hd:LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão "
-"do sistema de arquivos que contém a imagem de tempo de execução, também "
+"do sistema de arquivos que contém a imagem do tempo de execução, também "
 "deverá editar essa opção para corresponder ao novo rótulo."
 
 #. type: Labeled list
@@ -402,11 +401,11 @@ msgid ""
 "specified. For example:"
 msgstr ""
 "Se você precisar realizar uma atualização de driver durante a instalação, "
-"use a opção [option]#inst.dd=#. Pode ser usado várias vezes. A localização "
-"de um pacote RPM de driver pode ser especificada usando qualquer um dos "
-"formatos descritos em xref:tabl-boot-options-sources[Fontes de Instalação]. "
-"Com exceção da opção [option]#inst.dd=cdrom#, o nome do dispositivo deve "
-"sempre ser especificado. Por exemplo:"
+"use a opção [option]#inst.dd=#. Ela pode ser usada várias vezes. A "
+"localização de um pacote RPM de driver pode ser especificada usando qualquer "
+"um dos formatos descritos em xref:tabl-boot-options-sources[Fontes de "
+"Instalação]. Com exceção da opção [option]#inst.dd=cdrom#, o nome do "
+"dispositivo deve sempre ser especificado. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:150
@@ -421,9 +420,9 @@ msgid ""
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
 msgstr ""
-"Usar esta opção sem nenhum parâmetro (somente como [option]#inst.dd#) fará "
-"com que o programa de instalação solicite um disco de atualização de driver "
-"com um menu interativo."
+"Usar esta opção sem nenhum parâmetro (apenas como [option]#inst.dd#) "
+"solicitará que o programa de instalação solicite um disco de atualização de "
+"driver com um menu interativo."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:164
@@ -434,10 +433,9 @@ msgid ""
 "installation should always be performed after the system is installed."
 msgstr ""
 "Você nunca deve tentar realizar uma atualização de driver durante a "
-"instalação, a menos que a falta de nosso driver defeituoso esteja impedindo "
-"você de concluir a instalação. A atualização de drivers que não são "
-"essenciais durante a instalação deve sempre ser realizada após a instalação "
-"do sistema."
+"instalação, a menos que a falta de um driver defeituoso o esteja impedindo "
+"de concluir a instalação. A atualização de drivers que não são essenciais "
+"durante a instalação deve sempre ser realizada após a instalação do sistema."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:167
@@ -451,7 +449,7 @@ msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
 msgstr ""
-"Evitar que o instalador tente configurar automaticamente uma fonte de "
+"Evita que o instalador tente configurar automaticamente uma fonte de "
 "instalação."
 
 #. type: Plain text
@@ -466,6 +464,14 @@ msgid ""
 "`Installation Source` screen immediately without having to wait for the "
 "initial configuration to finish."
 msgstr ""
+"Normalmente, quando você entra pela primeira vez na tela `Resumo da "
+"Instalação`, o instalador tentará configurar uma fonte de instalação com "
+"base no tipo de mídia que você usou para inicializar. O DVD completo do "
+"{PRODUCT} Server configurará a fonte como mídia local, a imagem ISO netinst "
+"configurará o espelho de rede mais próximo, etc. Este processo leva tempo; "
+"portanto, se você planeja usar uma fonte diferente da padrão, esta opção "
+"permitirá que você entre na tela `Fonte de instalação` imediatamente, sem "
+"ter que esperar que a configuração inicial termine."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:182
@@ -476,18 +482,23 @@ msgid ""
 "the [option]#inst.repo=# option described above to configure a specific "
 "source directly in the boot menu."
 msgstr ""
+"Usar esta opção deixará a configuração da fonte de instalação em um estado "
+"de erro – você deve especificar manualmente uma fonte na tela `Fonte de "
+"Instalação` para continuar com a instalação. Alternativamente, você pode "
+"usar a opção [option]#inst.repo=# descrita acima para configurar uma fonte "
+"específica diretamente no menu de inicialização."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:184
 #, no-wrap
 msgid "Kickstart Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização do Kickstart"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:186
 #, no-wrap
 msgid "[option]#inst.ks=#"
-msgstr ""
+msgstr "[option]#inst.ks=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:192
@@ -497,6 +508,10 @@ msgid ""
 "[option]#inst.repo=#.  See xref:tabl-boot-options-sources[Installation "
 "Sources] for valid formats."
 msgstr ""
+"Fornece a localização de um arquivo Kickstart a ser usado para automatizar a "
+"instalação. Os locais podem ser especificados usando qualquer um dos "
+"formatos válidos para [option]#inst.repo=#. Veja xref:tabl-boot-options-"
+"sources[Fontes de Instalação] para formatos válidos."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:198
@@ -506,12 +521,19 @@ msgid ""
 "use this option without specifying a device, the installation program will "
 "use the following:"
 msgstr ""
+"Se você especificar apenas um dispositivo e não um caminho, o programa de "
+"instalação irá procurar o arquivo Kickstart em `/ks.cfg` no dispositivo "
+"especificado. Se você usar esta opção sem especificar um dispositivo, o "
+"programa de instalação usará o seguinte:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:202
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 msgstr ""
+"[option]#inst.ks=nfs:pass:attributes[{blank}]_próximo-"
+"servidor_:/pass:attributes[{blank}]_nome-de-arquivo_pass:attributes[{blank}]#"
+"\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:205
@@ -522,12 +544,17 @@ msgid ""
 "character, `pass:attributes[{blank}]_ip_-kickstart` is appended. For "
 "example:"
 msgstr ""
+"No exemplo acima, _próximo-servidor_ é a opção `next-server` do DHCP ou o "
+"endereço IP do próprio servidor DHCP, e _arquivo_ é a opção `filename` do "
+"DHCP, ou `/kickstart/`. Se o nome do arquivo fornecido terminar com o "
+"caractere `/`, `pass:attributes[{blank}]_ip_-kickstart` é anexado. Por "
+"exemplo:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:207
 #, no-wrap
 msgid "Default Kickstart File Location"
-msgstr ""
+msgstr "Localização Padrão do Arquivo Kickstart"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:213
@@ -536,12 +563,16 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
+"|Endereço do servidor DHCP|Endereço do cliente|Localização do arquivo "
+"Kickstart\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
+"kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:215
 #, no-wrap
 msgid "[option]#inst.ks.all=#"
-msgstr ""
+msgstr "[option]#inst.ks.all=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:216
@@ -551,12 +582,16 @@ msgid ""
 "sequentially in the order they are specified, until the file is successfully "
 "fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, o arquivo Kickstart será obtido dos locais "
+"HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst.ks=# "
+"sequencialmente na ordem em que são especificados, até que o arquivo seja "
+"obtido com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:217
 #, no-wrap
 msgid "[option]#inst.ks.sendmac#"
-msgstr ""
+msgstr "[option]#inst.ks.sendmac#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:218
@@ -564,23 +599,26 @@ msgid ""
 "Adds headers to outgoing `HTTP` requests with the MAC addresses of all "
 "network interfaces. For example:"
 msgstr ""
+"Adiciona cabeçalhos às solicitações `HTTP` de saída com os endereços MAC de "
+"todas as interfaces de rede. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:222
 #, no-wrap
 msgid "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
-msgstr ""
+msgstr "`X-RHN-Provisioning-MAC-0: eth0 01:23:45:67:89:ab`\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:227
 msgid "This can be useful when using [option]#inst.ks=http# to provision systems."
 msgstr ""
+"Isso pode ser útil ao usar [option]#inst.ks=http# para provisionar sistemas."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:228
 #, no-wrap
 msgid "[option]#inst.ks.sendsn#"
-msgstr ""
+msgstr "[option]#inst.ks.sendsn#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:229
@@ -589,24 +627,27 @@ msgid ""
 "system's serial number, read from `/sys/class/dmi/id/product_serial`. The "
 "header has the following syntax:"
 msgstr ""
+"Adiciona um cabeçalho para solicitações `HTTP` de saída. Este cabeçalho "
+"conterá o número de série do sistema, lido em `/sys/class/dmi/id/"
+"product_serial`. O cabeçalho possui a seguinte sintaxe:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:233
 #, no-wrap
 msgid "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
-msgstr ""
+msgstr "`X-System-Serial-Number: _R8VA23D_pass:attributes[{blank}]`\n"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:236
 #, no-wrap
 msgid "Console, Environment and Display Options"
-msgstr ""
+msgstr "Opções de Console, Ambiente e Exibição"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:238
 #, no-wrap
 msgid "[option]#console=#"
-msgstr ""
+msgstr "[option]#console=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:239
@@ -616,6 +657,10 @@ msgid ""
 "[option]#console=ttyS0#. This option should be used along with the "
 "[option]#inst.text# option."
 msgstr ""
+"Esta opção de kernel especifica um dispositivo a ser usado como console "
+"principal. Por exemplo, para usar um console na primeira porta serial, use "
+"[option]#console=ttyS0#. Esta opção deve ser usada junto com a opção "
+"[option]#inst.text#."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:241
@@ -626,12 +671,17 @@ msgid ""
 "[option]#console=ttyS0 console=ttyS1#, the installation program will only "
 "use `ttyS1`."
 msgstr ""
+"Você pode usar esta opção várias vezes. Nesse caso, a mensagem de "
+"inicialização será exibida em todos os consoles especificados, mas apenas o "
+"último será usado pelo programa de instalação posteriormente. Por exemplo, "
+"se você especificar [option]#console=ttyS0 console=ttyS1#, o programa de "
+"instalação usará apenas `ttyS1`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:242
 #, no-wrap
 msgid "[option]#noshell#"
-msgstr ""
+msgstr "[option]#noshell#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:243
@@ -641,12 +691,16 @@ msgid ""
 "can watch the installation progress, but they cannot interfere with it by "
 "accessing the root shell by pressing kbd:[Ctrl + Alt + F2]."
 msgstr ""
+"Desabilita o acesso ao shell de root durante a instalação. Isso é útil com "
+"instalações automatizadas (Kickstart) – se você usar esta opção, um usuário "
+"pode observar o progresso da instalação, mas não pode interferir acessando o "
+"shell do root pressionando kbd:[Ctrl + Alt + F2]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:244
 #, no-wrap
 msgid "[option]#inst.lang=#"
-msgstr ""
+msgstr "[option]#inst.lang=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:245
@@ -659,6 +713,13 @@ msgid ""
 "[package]*system-config-language* package is installed, a list of valid "
 "values can also be find in `/usr/share/system-config-language/locale-list`."
 msgstr ""
+"Define o idioma a ser usado durante a instalação. Os códigos de idioma são "
+"iguais aos usados no comando [command]#lang# do Kickstart, conforme descrito "
+"em xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-comandos-"
+"lang[lang (opcional) - Configurar Idioma Durante a Instalação]. Em sistemas "
+"onde o pacote [package]*system-config-language* está instalado, uma lista de "
+"valores válidos também pode ser encontrada em `/usr/share/"
+"system-config-language/locale-list`."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:250
@@ -667,12 +728,15 @@ msgid ""
 "using this option will be selected by default, but you will still be able to "
 "change it at the beginning of the graphical installation."
 msgstr ""
+"Se você executar a instalação interativamente, o idioma que você especificou "
+"usando esta opção será selecionado por padrão, mas você ainda poderá alterá-"
+"lo no início da instalação gráfica."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:251
 #, no-wrap
 msgid "[option]#inst.singlelang#"
-msgstr ""
+msgstr "[option]#inst.singlelang#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:252
@@ -684,12 +748,18 @@ msgid ""
 "[application]*Anaconda* and the installed system will default to "
 "`en-US.UTF-8`."
 msgstr ""
+"Permite que você execute a instalação no modo de um único idioma – em outras "
+"palavras, esta opção desativa a seleção do idioma para o instalador e o "
+"sistema instalado. Se você também usar a opção [option]#inst.lang=# ao mesmo "
+"tempo, o idioma que você especificar será usado. Se você não definir o "
+"idioma, o [application]*Anaconda* e o sistema instalado usarão como padrão "
+"`en-US.UTF-8`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:253
 #, no-wrap
 msgid "[option]#inst.geoloc=#"
-msgstr ""
+msgstr "[option]#inst.geoloc=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:254
@@ -698,17 +768,21 @@ msgid ""
 "used to pre-set the language and time zone, and uses the following syntax: "
 "[option]#inst.geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
 msgstr ""
+"Configura o uso de geolocalização no programa de instalação. A "
+"geolocalização é usada para predefinir o idioma e o fuso horário e usa a "
+"seguinte sintaxe: [option]#inst."
+"geoloc=pass:attributes[{blank}]_valor_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:256
 msgid "The _value_ parameter can be any of the following:"
-msgstr ""
+msgstr "O parâmetro _valor_ pode ser qualquer um dos seguintes:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:258
 #, no-wrap
 msgid "Valid Values for the inst.geoloc Option"
-msgstr ""
+msgstr "Valores Válidos para a Opção inst.geoloc"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:264
@@ -718,6 +792,9 @@ msgid ""
 "|Use the Fedora GeoIP API|[option]#inst.geoloc=provider_fedora_geoip#\n"
 "|Use the Hostip.info GeoIP API|[option]#inst.geoloc=provider_hostip#\n"
 msgstr ""
+"|Desabilitar geolocalização|[option]#inst.geoloc=0#\n"
+"|Usar a API GeoIP do Fedora|[option]#inst.geoloc=provider_fedora_geoip#\n"
+"|Usar a API GeoIP de Hostip.info|[option]#inst.geoloc=provider_hostip#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:267
@@ -725,12 +802,14 @@ msgid ""
 "If this option is not specified, [application]*Anaconda* will use "
 "`provider_fedora_geoip`."
 msgstr ""
+"Se esta opção não for especificada, o [application]*Anaconda* vai usar "
+"`provider_fedora_geoip`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:268
 #, no-wrap
 msgid "[option]#inst.keymap=#"
-msgstr ""
+msgstr "[option]#inst.keymap=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:269
@@ -741,12 +820,17 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-keyboard[keyboard "
 "(optional) - Configure Keyboard Layouts]."
 msgstr ""
+"Especifica o layout do teclado a ser usado pelo programa de instalação. Os "
+"códigos de layout são iguais aos usados no comando [command]#keyboard# do "
+"Kickstart, conforme descrito em xref:appendixes/Kickstart_Syntax_Reference."
+"adoc#sect-kickstart-commands-keyboard[keyboard (opcional) - Configurar "
+"Layouts de Teclado]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:270
 #, no-wrap
 msgid "[option]#inst.text#"
-msgstr ""
+msgstr "[option]#inst.text#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:276
@@ -761,12 +845,19 @@ msgid ""
 " it is recommended to use VNC as described in\n"
 "xref:sect-boot-options-vnc[Enabling Remote Access Using VNC].\n"
 msgstr ""
+"Força o programa de instalação a ser executado no modo texto em vez do modo "
+"gráfico.\n"
+"A interface de usuário de texto é limitada, por exemplo,\n"
+"não permite que você modifique o layout da partição ou configure LVM.\n"
+"Ao instalar um sistema em uma máquina com recursos gráficos limitados,\n"
+"é recomendado usar o VNC conforme descrito em\n"
+"xref:sect-boot-options-vnc[Habilitando Acesso Remoto Usando VNC].\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:277
 #, no-wrap
 msgid "[option]#inst.cmdline#"
-msgstr ""
+msgstr "[option]#inst.cmdline#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:281
@@ -775,12 +866,15 @@ msgid ""
 "not allow any interaction, all options must be specified in a Kickstart file "
 "or on the command line."
 msgstr ""
+"Força o programa de instalação a ser executado no modo de linha de comando. "
+"Este modo não permite nenhuma interação, todas as opções devem ser "
+"especificadas em um arquivo Kickstart ou na linha de comando."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:282
 #, no-wrap
 msgid "[option]#inst.graphical#"
-msgstr ""
+msgstr "[option]#inst.graphical#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:283
@@ -788,12 +882,14 @@ msgid ""
 "Forces the installation program to run in graphical mode. This mode is the "
 "default."
 msgstr ""
+"Força o programa de instalação a ser executado no modo gráfico. Este modo é "
+"o padrão."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:284
 #, no-wrap
 msgid "[option]#inst.resolution=#"
-msgstr ""
+msgstr "[option]#inst.resolution=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:289
@@ -803,12 +899,16 @@ msgid ""
 "screen width and _M_ is the screen height (in pixels).  The lowest supported "
 "resolution is `800x600`."
 msgstr ""
+"Especifica a resolução da tela no modo gráfico. O formato é "
+"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, onde _N_ é a "
+"largura da tela e _M_ é a altura da tela (em pixels). A resolução mais baixa "
+"suportada é `800x600`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:289
 #, no-wrap
 msgid "[option]#inst.xdriver=#"
-msgstr ""
+msgstr "[option]#inst.xdriver=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:290
@@ -816,12 +916,14 @@ msgid ""
 "Specifies the name of the `X` driver to be used both during the installation "
 "and on the installed system."
 msgstr ""
+"Especifica o nome do driver `X` a ser usado durante a instalação e no "
+"sistema instalado."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:291
 #, no-wrap
 msgid "[option]#inst.usefbx#"
-msgstr ""
+msgstr "[option]#inst.usefbx#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:292
@@ -830,12 +932,15 @@ msgid ""
 "a hardware-specific driver. This option is equivalent to "
 "[option]#inst.xdriver=fbdev#."
 msgstr ""
+"Diz ao programa de instalação para usar o driver `X` do buffer de quadros em "
+"vez de um driver específico de hardware. Esta opção é equivalente a "
+"[option]#inst.xdriver=fbdev#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:293
 #, no-wrap
 msgid "[option]#inst.xtimeout=#"
-msgstr ""
+msgstr "[option]#inst.xtimeout=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:294
@@ -843,12 +948,14 @@ msgid ""
 "Specifies a timeout period (in seconds) the installer will wait before "
 "starting the [application]*X* server."
 msgstr ""
+"Especifica um período de tempo limite (em segundos) que o instalador "
+"aguardará antes de iniciar o servidor [application]*X*."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:295
 #, no-wrap
 msgid "[option]#modprobe.blacklist=#"
-msgstr ""
+msgstr "[option]#modprobe.blacklist=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:296
@@ -859,23 +966,30 @@ msgid ""
 "system will keep these settings. The blacklisted drivers can then be found "
 "in the `/etc/modprobe.d/` directory."
 msgstr ""
+"Coloca em uma lista negra (isto é, desativa completamente) um ou mais "
+"drivers. Os drivers (mods) desabilitados com esta opção serão impedidos de "
+"carregar quando a instalação começar e, após o término da instalação, o "
+"sistema instalado manterá essas configurações. Os drivers da lista negra "
+"podem ser encontrados no diretório `/etc/modprobe.d/`."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:298
 msgid "Use a comma-separated list to disable multiple drivers. For example:"
 msgstr ""
+"Use uma lista separada por vírgulas para desativar vários drivers. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:301
 #, no-wrap
 msgid "modprobe.blacklist=ahci,firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=ahci,firewire_ohci\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:303
 #, no-wrap
 msgid "[option]#inst.sshd#"
-msgstr ""
+msgstr "[option]#inst.sshd#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:310
@@ -887,6 +1001,11 @@ msgid ""
 "[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
 "System Administrator's Guide]_."
 msgstr ""
+"Inicia o serviço `sshd` durante a instalação, o que permite que você se "
+"conecte ao sistema durante a instalação usando `SSH` e monitore seu "
+"progresso. Para obter mais informações sobre o `SSH`, consulte a página man "
+"`ssh(1)` e o capítulo correspondente no [citetitle]_xref:fedora:system-"
+"administrators-guide:index.adoc[Guia do Administrador do Sistema {PRODUCT}_."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:322
@@ -897,12 +1016,17 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
 "(optional) - Restrict ssh Access During Installation]."
 msgstr ""
+"Durante a instalação, a conta `root` não tem senha por padrão. Você pode "
+"definir uma senha root a ser usada durante a instalação com o comando "
+"[command]#sshpw# do Kickstart, conforme descrito em xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw[sshpw "
+"(opcional) - Restringir o Acesso ssh Durante a Instalação]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:325
 #, no-wrap
 msgid "[option]#inst.decorated=#"
-msgstr ""
+msgstr "[option]#inst.decorated=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:326
@@ -910,12 +1034,14 @@ msgid ""
 "Starting with Fedora 27, the graphical installer window has no "
 "decorations. Use this option to enable window decorations again."
 msgstr ""
+"A partir do Fedora 27, a janela do instalador gráfico não tem decorações. "
+"Use esta opção para habilitar as decorações das janelas novamente."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:328
 #, no-wrap
 msgid "Network Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização de Rede"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:341
@@ -926,12 +1052,17 @@ msgid ""
 "networking is also available in the [citetitle]_{PRODUCT} Networking Guide_, "
 "available at link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"A inicialização inicial da rede é feita pelo [application]*dracut*. Esta "
+"seção lista apenas algumas das opções mais comumente usadas; para uma lista "
+"completa, consulte a página man `dracut.cmdline(7)`. Informações adicionais "
+"sobre rede também estão disponíveis no [citetitle]_Guia de Rede do {PRODUCT}"
+"_, disponível em link:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:342
 #, no-wrap
 msgid "[option]#ip=#"
-msgstr ""
+msgstr "[option]#ip=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:343
@@ -941,17 +1072,21 @@ msgid ""
 "interfaces are configured, you must specify a primary boot interface using "
 "the [option]#bootdev# option described below."
 msgstr ""
+"Configura uma ou mais interfaces de rede. Para configurar várias interfaces, "
+"use a opção `ip` várias vezes – uma para cada interface. Se várias "
+"interfaces forem configuradas, você deve especificar uma interface de "
+"inicialização primária usando a opção [option]#bootdev# descrita abaixo."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:345
 msgid "The following table lists valid values for this option:"
-msgstr ""
+msgstr "A tabela a seguir lista os valores válidos para esta opção:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:347
 #, no-wrap
 msgid "Network Interface Configuration Formats"
-msgstr ""
+msgstr "Formatos de Configuração de Interface de Rede"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:357
@@ -972,18 +1107,39 @@ msgid ""
 "wish to override and automatically obtained values will be used for the "
 "others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
+"|Método de configuração|Formato da opção\n"
+"|Configuração automática de alguma interface|[option]#ip=pass:attributes[{bla"
+"nk}]_método_pass:attributes[{blank}]#\n"
+"|Configuração automática de um interface específica|[option]#ip=pass:attribut"
+"es[{blank}]_interface_:pass:attributes[{blank}]_método_pass:attributes[{blank"
+"}]#\n"
+"|Configuração estática|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribu"
+"tes[{blank}]_gateway_:pass:attributes[{blank}]_máscara-de-"
+"rede_:pass:attributes[{blank}]_nome-do-"
+"host_:pass:attributes[{blank}]_interface_:none#\n"
+"|Configuração automática uma interface específica com uma substituição\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Abre a interface especificada usando o "
+"método especificado de configuração automática, como `dhcp`, mas substitui o "
+"endereço IP obtido automaticamente, gateway, máscara de rede, nome do host "
+"ou outro parâmetro especificado. Todos os parâmetros são opcionais; "
+"especifique apenas aqueles que deseja substituir e os valores obtidos "
+"automaticamente serão usados para os outros.]|[option]#ip=pass:attributes[{bl"
+"ank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_máscara"
+"-d-rede_:pass:attributes[{blank}]_nome-do-host_:pass:attributes[{blank}]_inte"
+"rface_:pass:attributes[{blank}]_método_:pass:attributes[{blank}]_mtu_pass:att"
+"ributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:360
 msgid "The [option]#method# parameter can be any the following:"
-msgstr ""
+msgstr "O parâmetro [option]#method# pode ser algum dos seguintes:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:362
 #: ./pages/advanced/Boot_Options.adoc:596
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
-msgstr ""
+msgstr "Métodos de Configuração Automática de Interface"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:371
@@ -995,6 +1151,11 @@ msgid ""
 "|IPv6 automatic configuration|`auto6`\n"
 "|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 msgstr ""
+"|Método de configuração automática|Valor\n"
+"|DHCP|`dhcp`\n"
+"|DHCP IPv6|`dhcp6`\n"
+"|Configuração automática IPv6|`auto6`\n"
+"|iBFT (iSCSI Boot Firmware Table)|`ibft`\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:377
@@ -1004,6 +1165,10 @@ msgid ""
 "without specifying the [option]#ip# option, the installation program will "
 "use [option]#ip=dhcp#."
 msgstr ""
+"Se você usar uma opção de inicialização que requer acesso à rede, como "
+"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:attributes[{blan"
+"k}]_caminho_pass:attributes[{blank}]#, sem especificar a opção [option]#ip#, "
+"o programa de instalação usará [option]#ip=dhcp#."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:385
@@ -1012,6 +1177,9 @@ msgid ""
 "`IPv6` addresses can be specified by putting them in square brackets, for "
 "example, `[2001:DB8::1]`."
 msgstr ""
+"Nas tabelas acima, o parâmetro _ip_ especifica o endereço IP do cliente. "
+"Endereços `IPv6` podem ser especificados colocando-os entre colchetes, por "
+"exemplo, `[2001:DB8::1]`."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:387
@@ -1019,6 +1187,8 @@ msgid ""
 "The _gateway_ parameter is the default gateway. IPv6 addresses are accepted "
 "here as well."
 msgstr ""
+"O parâmetro _gateway_ é o gateway padrão. Os endereços IPv6 também são "
+"aceitos aqui."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:389
@@ -1026,6 +1196,9 @@ msgid ""
 "The _netmask_ parameter is the netmask to be used. This can either be a full "
 "netmask (for example `255.255.255.0`) or a prefix (for example `64`)."
 msgstr ""
+"O parâmetro _máscara-de-rede_ é a máscara de rede a ser usada. Pode ser uma "
+"máscara de rede completa (por exemplo, `255.255.255.0`) ou um prefixo (por "
+"exemplo, `64`)."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:391
@@ -1033,12 +1206,14 @@ msgid ""
 "The _hostname_ parameter is the host name of the client system. This "
 "parameter is optional."
 msgstr ""
+"O parâmetro _nome-do-host_ é o nome do host do sistema cliente. Este "
+"parâmetro é opcional."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:392
 #, no-wrap
 msgid "[option]#nameserver=#"
-msgstr ""
+msgstr "[option]#nameserver=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:393
@@ -1046,12 +1221,14 @@ msgid ""
 "Specifies the address of the name server. This option can be used multiple "
 "times."
 msgstr ""
+"Especifica o endereço do servidor de nomes. Esta opção pode ser usada várias "
+"vezes."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:394
 #, no-wrap
 msgid "[option]#bootdev=#"
-msgstr ""
+msgstr "[option]#bootdev=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:395
@@ -1059,12 +1236,14 @@ msgid ""
 "Specifies the boot interface. This option is mandatory if you use more than "
 "one [option]#ip# option."
 msgstr ""
+"Especifica a interface de inicialização. Esta opção é obrigatória se você "
+"usar mais de uma opção [option]#ip#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:396
 #, no-wrap
 msgid "[option]#ifname=#"
-msgstr ""
+msgstr "[option]#ifname=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:397
@@ -1074,18 +1253,22 @@ msgid ""
 "[option]#ifname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#. "
 "For example:"
 msgstr ""
+"Atribui um determinado nome de interface a um dispositivo de rede com um "
+"determinado endereço MAC. Pode ser usado várias vezes. A sintaxe é [option]#i"
+"fname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:a"
+"ttributes[{blank}]#. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:401
 #, no-wrap
 msgid "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
-msgstr ""
+msgstr "[option]#ifname=eth0:01:23:45:67:89:ab#\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:403
 #, no-wrap
 msgid "[option]#inst.dhcpclass=#"
-msgstr ""
+msgstr "[option]#inst.dhcpclass=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:404
@@ -1094,12 +1277,15 @@ msgid ""
 "this value as `vendor-class-identifier`. The default value is "
 "`anaconda-$(uname -srm)`."
 msgstr ""
+"Especifica o identificador de classe do fornecedor DHCP. O serviço `dhcpd` "
+"verá este valor como `vendor-class-identifier`. O valor padrão é `anaconda-$("
+"uname -srm)`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:405
 #, no-wrap
 msgid "[option]#vlan=#"
-msgstr ""
+msgstr "[option]#vlan=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:406
@@ -1109,12 +1295,16 @@ msgid ""
 "[option]#vlan=pass:attributes[{blank}]_name_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. "
 "For example:"
 msgstr ""
+"Configura um dispositivo de LAN virtual (VLAN) em uma interface especificada "
+"com um determinado nome. A sintaxe é [option]#vlan=pass:attributes[{blank}]_n"
+"ome_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:410
 #, no-wrap
 msgid "[option]#vlan=vlan5:em1#\n"
-msgstr ""
+msgstr "[option]#vlan=vlan5:em1#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:414
@@ -1122,12 +1312,14 @@ msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` interface.  "
 "The _name_ can take the following forms:"
 msgstr ""
+"O acima irá configurar um dispositivo VLAN chamado `vlan5` na interface `em1`"
+". O _nome_ pode assumir as seguintes formas:"
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:416
 #, no-wrap
 msgid "VLAN Device Naming Conventions"
-msgstr ""
+msgstr "Convenções de Nomenclatura de Dispositivos VLAN"
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:425
@@ -1139,12 +1331,17 @@ msgid ""
 "|DEV_PLUS_VID|`em1.0005`.\n"
 "|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 msgstr ""
+"|Esquema de nomenclatura|Exemplo\n"
+"|VLAN_PLUS_VID|`vlan0005`\n"
+"|VLAN_PLUS_VID_NO_PAD|`vlan5`\n"
+"|DEV_PLUS_VID|`em1.0005`.\n"
+"|DEV_PLUS_VID_NO_PAD|`em1.5`.\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:427
 #, no-wrap
 msgid "[option]#bond=#"
-msgstr ""
+msgstr "[option]#bond=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:428
@@ -1155,12 +1352,19 @@ msgid ""
 "list of physical (ethernet) interfaces, and _options_ with a comma-separated "
 "list of bonding options. For example:"
 msgstr ""
+"Configura um dispositivo de ligação com a seguinte sintaxe: [option]#bond=pas"
+"s:attributes[{blank}]_nome_pass:attributes[{blank}][:pass:attributes[{blank}]"
+"_escravos_pass:attributes[{blank}]][:pass:attributes[{blank}]_opções_pass:att"
+"ributes[{blank}]]#. Substitua _nome_ pelo nome do dispositivo de bond, "
+"_escravos_ por uma lista separada por vírgulas de interfaces físicas "
+"(ethernet) e _opções_ por uma lista separada por vírgulas de opções de bond. "
+"Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:431
 #, no-wrap
 msgid "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
-msgstr ""
+msgstr "bond=bond0:em1,em2:mode=active-backup,tx_queues=32,downdelay=5000\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:434
@@ -1168,6 +1372,8 @@ msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
 msgstr ""
+"Para obter uma lista das opções disponíveis, execute o comando [command]#"
+"modinfo bonding#."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:436
@@ -1175,12 +1381,14 @@ msgid ""
 "Using this option without any parameters will assume "
 "[option]#bond=bond0:eth0,eth1:mode=balance-rr#."
 msgstr ""
+"Usar esta opção sem quaisquer parâmetros presumirá "
+"[option]#bond=bond0:eth0,eth1:mode=balance-rr#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:437
 #, no-wrap
 msgid "[option]#team=#"
-msgstr ""
+msgstr "[option]#team=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:438
@@ -1191,12 +1399,17 @@ msgid ""
 "comma-separated list of physical (ethernet) devices to be used as slaves in "
 "the team device. For example:"
 msgstr ""
+"Configura um dispositivo team com a seguinte sintaxe: [option]#team=pass:attr"
+"ibutes[{blank}]_mestre_:pass:attributes[{blank}]_escravos_pass:attributes[{bl"
+"ank}]#. Substitua _mestre_ pelo nome do dispositivo team mestre e _escravos_ "
+"por uma lista separada por vírgulas de dispositivos físicos (ethernet) a "
+"serem usados como escravos no dispositivo team. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:442
 #, no-wrap
 msgid "[option]#team=team0:em1,em2#\n"
-msgstr ""
+msgstr "[option]#team=team0:em1,em2#\n"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:445
@@ -1208,7 +1421,7 @@ msgstr "Opções Avançadas de Instalação"
 #: ./pages/advanced/Boot_Options.adoc:447
 #, no-wrap
 msgid "[option]#inst.multilib#"
-msgstr ""
+msgstr "[option]#inst.multilib#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:448
@@ -1217,6 +1430,9 @@ msgid ""
 "32-bit packages on a 64-bit x86 system) and install packages specified in "
 "this section as such."
 msgstr ""
+"Configura o sistema para pacotes multilib (ou seja, para permitir a "
+"instalação de pacotes de 32 bits em um sistema x86 de 64 bits) e instale os "
+"pacotes especificados nesta seção como tal."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:450
@@ -1227,6 +1443,11 @@ msgid ""
 "32-bit AMD or Intel systems (marked as `i686`) will be automatically "
 "installed as well if available."
 msgstr ""
+"Normalmente, em um sistema AMD64 ou Intel{nbsp}64, apenas pacotes para esta "
+"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas ("
+"marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
+"pacotes para sistemas 32-bits AMD ou Intel (marcados como `i686`) também "
+"serão instalados automaticamente, se disponíveis."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:463
@@ -1238,12 +1459,18 @@ msgid ""
 "will be installed in multiple variants, while the latter will only be "
 "installed in variants specifically required."
 msgstr ""
+"Isso se aplica apenas a pacotes especificados diretamente na seção "
+"`%packages`. Se um pacote for instalado apenas como uma dependência, apenas "
+"a dependência exata especificada será instalada. Por exemplo, se você "
+"estiver instalando o pacote [package]*foo* que depende do pacote "
+"[package]*bar*, o primeiro será instalado em múltiplas variantes, enquanto o "
+"último só será instalado em variantes especificamente necessárias."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:464
 #, no-wrap
 msgid "[option]#inst.gpt#"
-msgstr ""
+msgstr "[option]#inst.gpt#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:469
@@ -1253,6 +1480,10 @@ msgid ""
 "is meaningless on UEFI-based systems, unless they are in BIOS compatibility "
 "mode."
 msgstr ""
+"Força o programa de instalação a instalar informações de partição em uma "
+"Tabela de Partição GUID (GPT) em vez de um Master Boot Record (MBR). Esta "
+"opção não faz sentido em sistemas baseados em UEFI, a menos que estejam no "
+"modo de compatibilidade do BIOS."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:478
@@ -1263,6 +1494,11 @@ msgid ""
 "change this behavior, allowing a GPT to be written even to disks smaller "
 "than 2 TB."
 msgstr ""
+"Normalmente, os sistemas baseados em BIOS e sistemas baseados em UEFI no "
+"modo de compatibilidade do BIOS tentarão usar o esquema MBR para armazenar "
+"informações de particionamento, a menos que o disco seja maior que 2 TB. O "
+"uso desta opção mudará este comportamento, permitindo que um GPT seja "
+"gravado mesmo em discos menores que 2 TB."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:480
@@ -1274,12 +1510,18 @@ msgid ""
 "Partition Table (GPT)] for more general information about GPT, MBR and disk "
 "partitioning in general."
 msgstr ""
+"Consulte xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-recommended[Esquema de Particionamento Recomendado] para "
+"obter mais informações sobre GPT e MBR, e xref:appendixes/Disk_Partitions."
+"adoc#sect-disk-partitioning-guid-partition-table[Tabela de Partição GUID "
+"(GPT)] para mais informações gerais sobre GPT, MBR e particionamento de "
+"disco em geral."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:480
 #, no-wrap
 msgid "[option]#inst.nosave=#"
-msgstr ""
+msgstr "[option]#inst.nosave=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:481
@@ -1291,11 +1533,19 @@ msgid ""
 "these resources might otherwise be mentioned in kickstart files and/or logs "
 "on the image. Possible values for this option are:"
 msgstr ""
+"Esta opção controla quais arquivos Kickstart e logs de instalação são salvos "
+"no sistema instalado. Pode ser especialmente útil desabilitar o salvamento "
+"de tais dados ao realizar instalações de sistema operacional OEM ou ao gerar "
+"imagens usando recursos confidenciais (como URLs de repositório interno), já "
+"que esses recursos podem ser mencionados em arquivos de kickstart e/ou logs "
+"na imagem. Os valores possíveis para esta opção são:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:483
 msgid "`input_ks` - disables saving of the input Kickstart file (if any)."
 msgstr ""
+"`input_ks` - desabilita o salvamento do arquivo de Kickstart de entrada (se "
+"houver)."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:485
@@ -1303,21 +1553,26 @@ msgid ""
 "`output_ks` - disables saving of the output Kickstart file generated by "
 "Anaconda."
 msgstr ""
+"`output_ks` - desabilita o salvamento do arquivo Kickstart de saída gerado "
+"pelo Anaconda."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:487
 msgid "`all_ks` - disables saving of both input and output Kickstart files."
 msgstr ""
+"`all_ks` - desabilita o salvamento de arquivos Kickstart de entrada e saída."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:489
 msgid "`logs` - disables saving of all installation logs."
-msgstr ""
+msgstr "`logs` - desabilita o salvamento de todos os logs de instalação."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:491
 msgid "`all` - disables saving of all Kickstart files and all installation logs."
 msgstr ""
+"`all` - desabilita o salvamento de todos os arquivos Kickstart e todos os "
+"logs de instalação."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:493
@@ -1325,12 +1580,14 @@ msgid ""
 "Multiple values can be combined as a comma separated list, for example: "
 "`input_ks,logs`"
 msgstr ""
+"Vários valores podem ser combinados como uma lista separada por vírgulas, "
+"por exemplo: `input_ks,logs`"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:494
 #, no-wrap
 msgid "[option]#inst.memcheck#"
-msgstr ""
+msgstr "[option]#inst.memcheck#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:495
@@ -1340,12 +1597,16 @@ msgid ""
 "installation will stop with an error message. This option is enabled by "
 "default; use [option]#inst.memcheck=0# to disable it."
 msgstr ""
+"Faz uma verificação no início da instalação para determinar se há RAM "
+"suficiente disponível. Se não houver memória suficiente detectada, a "
+"instalação será interrompida com uma mensagem de erro. Essa opção é ativada "
+"por padrão; use [option]#inst.memcheck=0# para desabilitá-la."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:496
 #, no-wrap
 msgid "[option]#inst.nodnf#"
-msgstr ""
+msgstr "[option]#inst.nodnf#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:497
@@ -1355,12 +1616,17 @@ msgid ""
 "[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
 "System Administrator's Guide]_ for details about [application]*DNF*."
 msgstr ""
+"Usa o backend antigo do [application]*Yum* para instalação de pacotes e "
+"resolução de dependência em vez do [application]*DNF*. Veja o "
+"[citetitle]_xref:fedora:system-administrators-guide:index.adoc[Guia do "
+"Administrador do Sistema {PRODUCT}_, para detalhes sobre o "
+"[application]*DNF*."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:498
 #, no-wrap
 msgid "[option]#inst.kdump_addon=#"
-msgstr ""
+msgstr "[option]#inst.kdump_addon=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:511
@@ -1375,12 +1641,21 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-kdump[%addon "
 "com_redhat_kdump (optional) - Configure kdump] Kickstart command."
 msgstr ""
+"Liga ou desliga o complemento de instalador [application]*Kdump* (o "
+"complemento está desativado por padrão). Se você usar [option]#inst."
+"kdump_addon=on#, uma nova tela, que permite configurar o mecanismo "
+"[application]*Kdump* de despejo de falha do kernel, aparecerá no menu "
+"principal da interface gráfica ou de texto (veja xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-kdump[Kdump]). "
+"Habilitar este complemento também é necessário para usar o comando Kickstart "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"kdump[%addon com_redhat_kdump (opcional) - Configurar kdump]."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:513
 #, no-wrap
 msgid "Enabling Remote Access Using VNC"
-msgstr ""
+msgstr "Habilitando Acesso Remoto Usando VNC"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:516
@@ -1390,12 +1665,15 @@ msgid ""
 "xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
 "VNC] for more details."
 msgstr ""
+"As seguintes opções são necessárias para configurar o [application]*Anaconda*"
+" para instalação gráfica remota. Consulte xref:advanced/VNC_Installations."
+"adoc#chap-vnc-installations[Instalando Usando VNC] para obter mais detalhes."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:517
 #, no-wrap
 msgid "[option]#inst.vnc#"
-msgstr ""
+msgstr "[option]#inst.vnc#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:523
@@ -1409,17 +1687,24 @@ msgid ""
 "`VNC` sharing is enabled,\n"
 "so multiple clients can connect to the system at the same time.\n"
 msgstr ""
+"Especifica que a interface gráfica do programa de instalação deve ser "
+"executada em uma sessão `VNC`.\n"
+"Se você especificar esta opção,\n"
+"precisará se conectar ao sistema usando um aplicativo cliente `VNC`\n"
+" para poder interagir com o programa de instalação.\n"
+"O compartilhamento `VNC` está habilitado,\n"
+"então vários clientes podem se conectar ao sistema ao mesmo tempo.\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:528
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr ""
+msgstr "Um sistema instalado usando `VNC` irá iniciar em modo texto por padrão."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:531
 #, no-wrap
 msgid "[option]#inst.vncpassword=#"
-msgstr ""
+msgstr "[option]#inst.vncpassword=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:537
@@ -1431,6 +1716,11 @@ msgid ""
 "will set the password to `testpwd`.  The password must be between 6 and 8 "
 "characters long."
 msgstr ""
+"Servidor `VNC` usado pelo programa de instalação. Qualquer cliente `VNC` "
+"tentando se conectar ao sistema terá que fornecer a senha correta para obter "
+"acesso. Por exemplo, [option]#inst."
+"vncpassword=pass:attributes[{blank}]_senhateste_pass:attributes[{blank}]# "
+"definirá a senha para `senhateste`. A senha deve ter entre 6 e 8 caracteres."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:544
@@ -1439,6 +1729,9 @@ msgid ""
 "will be prompted to specify a new one by a message from the installation "
 "program:"
 msgstr ""
+"Se você especificar uma senha inválida (uma que seja muito curta ou muito "
+"longa), será solicitado que você especifique uma nova por uma mensagem do "
+"programa de instalação:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:550
@@ -1447,18 +1740,21 @@ msgid ""
 "VNC password must be six to eight characters long.\n"
 "Please enter a new one, or leave blank for no password.\n"
 msgstr ""
+"A senha VNC deve ter entre 6 e 8 caracteres.\n"
+"Por favor, digite uma nova senha. Deixe em branco no caso de não desejar uma "
+"senha.\n"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:552
 #, no-wrap
 msgid "Password:\n"
-msgstr ""
+msgstr "Senha:\n"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:557
 #, no-wrap
 msgid "[option]#inst.vncconnect=#"
-msgstr ""
+msgstr "[option]#inst.vncconnect=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:558
@@ -1469,18 +1765,23 @@ msgid ""
 "The _port_ parameter is optional - if you do not specify one, the "
 "installation program will use `5900`."
 msgstr ""
+"Conecte-se a um cliente `VNC` de escuta em um host e porta especificados "
+"assim que a instalação começar. A sintaxe correta é [option]#inst.vncconnect="
+"pass:attributes[{blank}]_host_:pass:attributes[{blank}]_porta_pass:attributes"
+"[{blank}]#. O parâmetro _porta_ é opcional – se você não especificar uma, o "
+"programa de instalação usará `5900`."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:560
 #, no-wrap
 msgid "Debugging and Troubleshooting"
-msgstr ""
+msgstr "Depuração e Solução de Problemas"
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:562
 #, no-wrap
 msgid "[option]#inst.updates=#"
-msgstr ""
+msgstr "[option]#inst.updates=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:563
@@ -1492,12 +1793,18 @@ msgid ""
 "only a directory, the installation program will look for a file named "
 "`updates.img`."
 msgstr ""
+"Especifica a localização do arquivo `updates.img` a ser aplicado ao tempo de "
+"execução do programa de instalação. A sintaxe é a mesma da [option]#inst."
+"repo# opção – consulte xref:tabl-boot-options-sources[Fontes de Instalação] "
+"para obter detalhes. Em todos os formatos, se você não especificar um nome "
+"de arquivo, mas apenas um diretório, o programa de instalação irá procurar "
+"por um arquivo chamado `updates.img`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:564
 #, no-wrap
 msgid "[option]#inst.loglevel=#"
-msgstr ""
+msgstr "[option]#inst.loglevel=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:565
@@ -1506,6 +1813,9 @@ msgid ""
 "only concerns real-time logging in a terminal; log files will always contain "
 "messages of all levels."
 msgstr ""
+"Especifica o nível mínimo para que as mensagens sejam registradas em um "
+"terminal. Isso só se refere ao registro em tempo real em um terminal; os "
+"arquivos de log sempre conterão mensagens de todos os níveis."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:567
@@ -1515,12 +1825,16 @@ msgid ""
 "`info`, which means that by default, the logging terminal will display "
 "messages ranging from `info` to `critical`, but not `debug`."
 msgstr ""
+"Os valores possíveis para esta opção do nível mais baixo ao mais alto são: "
+"`debug`, `info`, `warning`, `error` e `critical`. O valor padrão é `info`, o "
+"que significa que, por padrão, o terminal de registro exibirá mensagens que "
+"variam de `info` a `crítico`, mas não `debug`."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:568
 #, no-wrap
 msgid "[option]#inst.syslog=#"
-msgstr ""
+msgstr "[option]#inst.syslog=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:569
@@ -1529,12 +1843,15 @@ msgid ""
 "process on the specified host. The remote syslog process must be configured "
 "to accept incoming connections."
 msgstr ""
+"Assim que a instalação é iniciada, esta opção envia mensagens de log para o "
+"processo syslog no host especificado. O processo syslog remoto deve ser "
+"configurado para aceitar conexões de entrada."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:570
 #, no-wrap
 msgid "[option]#inst.virtiolog=#"
-msgstr ""
+msgstr "[option]#inst.virtiolog=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:571
@@ -1545,12 +1862,16 @@ msgid ""
 "`org.fedoraproject.anaconda.log.0`pass:attributes[{blank}]; if this port is "
 "present, it will be used."
 msgstr ""
+"Especifica uma porta `virtio` (um dispositivo de caractere em `/dev/"
+"virtio-ports/pass:attributes[{blank}]_nome_pass:attributes[{blank}]`) a ser "
+"usado para encaminhar logs. O valor padrão é `org.fedoraproject.anaconda.log."
+"0`pass:attributes[{blank}]; se esta porta estiver presente, ela será usada."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:573
 #, no-wrap
 msgid "Deprecated Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização Descontinuadas"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:576
@@ -1560,6 +1881,10 @@ msgid ""
 "preferred. Using deprecated options is not recommended and they are expected "
 "to be removed in future releases."
 msgstr ""
+"As opções nesta lista foram *descontinuadas*. Eles ainda funcionarão, mas "
+"existem outras opções que oferecem a mesma funcionalidade e devem ser "
+"preferidas. O uso de opções descontinuadas não é recomendado e espera-se que "
+"sejam removidas em versões futuras."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:580
@@ -1569,12 +1894,17 @@ msgid ""
 "[option]#vnc=# option is considered deprecated and replaced by the "
 "[option]#inst.vnc=# option. However, these changes are not listed here."
 msgstr ""
+"Observe que, conforme descrito na introdução deste capítulo, as opções "
+"específicas do programa de instalação agora usam o prefixo `inst`. Por "
+"exemplo, a opção [options]#vnc=# é considerada obsoleta e substituída pela "
+"opção [option]#inst.vnc=#. No entanto, essas mudanças não estão listadas "
+"aqui."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:583
 #, no-wrap
 msgid "[option]#inst.headless#"
-msgstr ""
+msgstr "[option]#inst.headless#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:584
@@ -1583,12 +1913,15 @@ msgid ""
 "display hardware, and to prevent the installer from trying to detect a "
 "display."
 msgstr ""
+"Usada para especificar que a máquina que está sendo instalada não possui "
+"nenhum hardware de exibição e para evitar que o instalador tente detectar "
+"uma tela."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:585
 #, no-wrap
 msgid "[option]#method=#"
-msgstr ""
+msgstr "[option]#method=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:586
@@ -1596,12 +1929,16 @@ msgid ""
 "Configured the installation method. Use the [option]#inst.repo=# option "
 "instead."
 msgstr ""
+"Configurava o método de instalação. Use a opção [option]#inst.repo=# em seu "
+"lugar."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:587
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
 msgstr ""
+"[option]#repo=nfsiso:pass:attributes[{blank}]_servidor_:/pass:attributes[{bla"
+"nk}]_caminho_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:588
@@ -1611,12 +1948,17 @@ msgid ""
 "automatically, which means this option is the same as "
 "[option]#inst.repo=nfs:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#."
 msgstr ""
+"Em instalações NFS, especifica-se que o destino é uma imagem ISO localizada "
+"em um servidor NFS em vez de uma árvore instalável. A diferença agora é "
+"detectada automaticamente, o que significa que esta opção é a mesma que "
+"[option]#inst.repo=nfs:pass:attributes[{blank}]_servidor_:/pass:attributes[{b"
+"lank}]_caminho_pass:attributes[{blank}]#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:589
 #, no-wrap
 msgid "[option]#dns=#"
-msgstr ""
+msgstr "[option]#dns=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:590
@@ -1624,6 +1966,8 @@ msgid ""
 "Configured the Domain Name Server (DNS). Use the [option]#nameserver=# "
 "option instead."
 msgstr ""
+"Configurava o Servidor de Nomes de Domínio (DNS). Em vez disso, use a opção "
+"[option]#nameserver=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:591
@@ -1632,17 +1976,19 @@ msgid ""
 "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
 "[option]#ipv6=#"
 msgstr ""
+"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
+"[option]#ipv6=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:592
 msgid "These options have been consolidated under the [option]#ip=# option."
-msgstr ""
+msgstr "Essas opções foram consolidadas sob a opção [option]#ip=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:593
 #, no-wrap
 msgid "[option]#ksdevice=#"
-msgstr ""
+msgstr "[option]#ksdevice=#"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:594
@@ -1650,6 +1996,9 @@ msgid ""
 "Select network device to be used at early stage of installation. Different "
 "values have been replaced with different options; see the table below."
 msgstr ""
+"Selecionava o dispositivo de rede a ser usado no estágio inicial da "
+"instalação. Valores diferentes foram substituídos por opções diferentes; "
+"veja a tabela abaixo."
 
 #. type: Table
 #: ./pages/advanced/Boot_Options.adoc:607
@@ -1672,6 +2021,23 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced "
 "by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
+"|Valor|Comportamento atual\n"
+"|Não presente|Tenta ativar todos os dispositivos usando `dhcp`, a menos que "
+"o dispositivo e a configuração desejados sejam especificados pela opção "
+"[option]#ip=# ou a opção [option]#BOOTIF#.\n"
+"|[option]#ksdevice=link#|Semelhante ao anterior, com a diferença de que a "
+"rede estará sempre ativada no initramfs, seja necessário ou não. A opção "
+"[option]#rd.neednet# suportada (fornecida pelo [application]*dracut*) deve "
+"ser usada em seu lugar.\n"
+"|[option]#ksdevice=bootif#|Ignorada (a opção BOOTID= é usada por padrão "
+"quando especificada)\n"
+"|[option]#ksdevice=ibft#|Substituída com a opção [option]#ip=ibft#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
+"Substituída com "
+"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_dispositivo_pass:attributes[{blan"
+"k}]#|Substituída com especificar o nome do dispositivo usando a opção "
+"[option]#ip=#.\n"
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:613
@@ -1685,6 +2051,13 @@ msgid ""
 "BZ#link:++https://bugzilla.redhat.com/show_bug.cgi?id=1085310++[1085310] for "
 "details."
 msgstr ""
+"Ao realizar uma instalação com Kickstart, inicializando a partir da mídia "
+"local e tendo o arquivo Kickstart na mídia local também, a rede não será "
+"inicializada. Isso significa que qualquer outra opção de Kickstart que "
+"requeira acesso à rede, como scripts de pré-instalação ou pós-instalação que "
+"acessam um local de rede, causará falha na instalação. Este é um problema "
+"conhecido; consulte o link BZ#link:++https://bugzilla.redhat.com/show_bug."
+"cgi?id=1085310++[1085310] para obter detalhes."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:615
@@ -1693,12 +2066,15 @@ msgid ""
 "option, or add the [option]#--device=link# option to the [command]#network# "
 "command in your Kickstart file."
 msgstr ""
+"Para contornar esse problema, use a opção de inicialização "
+"[option]#ksdevice=link# ou adicione a opção [option]#--device= link# ao "
+"comando [command]#network# em seu arquivo Kickstart."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:618
 #, no-wrap
 msgid "[option]#blacklist=#"
-msgstr ""
+msgstr "[option]#blacklist=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:619
@@ -1706,12 +2082,14 @@ msgid ""
 "Used to disable specified drivers. This is now handled by the "
 "[option]#modprobe.blacklist=# option."
 msgstr ""
+"Usada para desabilitar drivers especificados. Isso agora é tratado pela "
+"opção [option]#modprobe.blacklist=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:620
 #, no-wrap
 msgid "[option]#nofirewire=#"
-msgstr ""
+msgstr "[option]#nofirewire=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:621
@@ -1720,18 +2098,21 @@ msgid ""
 "driver (`firewire_ohci`) by using the [option]#modprobe.blacklist=# option "
 "instead:"
 msgstr ""
+"Desabilitava suporte para a interface FireWire. Você pode desabilitar o "
+"driver FireWire (`firewire_ohci`) usando a opção [option]#modprobe."
+"blacklist=# ao invés:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:624
 #, no-wrap
 msgid "modprobe.blacklist=firewire_ohci\n"
-msgstr ""
+msgstr "modprobe.blacklist=firewire_ohci\n"
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:627
 #, no-wrap
 msgid "Removed Boot Options"
-msgstr ""
+msgstr "Opções de Inicialização Removidas"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:631
@@ -1739,12 +2120,14 @@ msgid ""
 "The following options are removed.  They were present in previous releases "
 "of {PRODUCT}, but they cannot be used anymore."
 msgstr ""
+"As seguintes opções foram removidas. Eles estavam presentes em versões "
+"anteriores deo {PRODUCT}, mas não podem mais ser usadas."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:632
 #, no-wrap
 msgid "[option]#asknetwork#"
-msgstr ""
+msgstr "[option]#asknetwork#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:635
@@ -1753,12 +2136,15 @@ msgid ""
 "which means that this option are not available anymore.  Use [option]#ip=# "
 "to configure network settings."
 msgstr ""
+"O programa de instalação `initramfs` agora é completamente não interativo, o "
+"que significa que esta opção não está mais disponível. Use [option]#ip=# "
+"para definir as configurações de rede."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:636
 #, no-wrap
 msgid "[option]#serial#"
-msgstr ""
+msgstr "[option]#serial#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:637
@@ -1766,12 +2152,14 @@ msgid ""
 "This option forced [application]*Anaconda* to use the `/dev/ttyS0` console "
 "as the output. Use the [option]#console=/dev/ttyS0# (or similar) instead."
 msgstr ""
+"Esta opção forçava o [application]*Anaconda* a usar o console `/dev/ttyS0` "
+"como a saída. Use [option]#console=/dev/ttyS0# (ou semelhante)."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:638
 #, no-wrap
 msgid "[option]#updates=#"
-msgstr ""
+msgstr "[option]#updates=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:639
@@ -1779,12 +2167,14 @@ msgid ""
 "Specified the location of updates for the installation program. Use the "
 "[option]#inst.updates=# option instead."
 msgstr ""
+"Especificava o local das atualizações para o programa de instalação. Use a "
+"opção [option]#inst.updates=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:639
 #, no-wrap
 msgid "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
-msgstr ""
+msgstr "[option]#essid=#, [option]#wepkey=#, [option]#wpakey=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:640
@@ -1793,12 +2183,15 @@ msgid ""
 "handled by [application]*dracut*, which does not support wireless "
 "networking, rendering these options useless."
 msgstr ""
+"Acesso de rede sem fio configurado. A configuração da rede agora está sendo "
+"feita pelo [aplicativo]*dracut*, que não oferece suporte à rede sem fio, "
+"tornando essas opções inúteis."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:641
 #, no-wrap
 msgid "[option]#ethtool=#"
-msgstr ""
+msgstr "[option]#ethtool=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:642
@@ -1806,23 +2199,26 @@ msgid ""
 "Used in the past to configure additional low-level network settings. All "
 "network settings are now handled by the [option]#ip=# option."
 msgstr ""
+"Usada no passado para definir configurações adicionais de rede de baixo "
+"nível. Todas as configurações de rede agora são controladas pela opção "
+"[option]#ip=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:643
 #, no-wrap
 msgid "[option]#gdb#"
-msgstr ""
+msgstr "[option]#gdb#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:644
 msgid "Allowed you to debug the loader. Use [option]#rd.debug# instead."
-msgstr ""
+msgstr "Permitia que você depurasse o carregador. Use [option]#rd.debug#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:645
 #, no-wrap
 msgid "[option]#mediacheck#"
-msgstr ""
+msgstr "[option]#mediacheck#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:646
@@ -1830,12 +2226,14 @@ msgid ""
 "Verified the installation media before starting the installation. Replaced "
 "with the [option]#rd.live.check# option."
 msgstr ""
+"Verificava a mídia de instalação antes de iniciar a instalação. Substituída "
+"pela opção [option]#rd.live.check#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:647
 #, no-wrap
 msgid "[option]#ks=floppy#"
-msgstr ""
+msgstr "[option]#ks=floppy#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:648
@@ -1843,23 +2241,26 @@ msgid ""
 "Specified a floppy disk as the Kickstart file source. Floppy drives are not "
 "supported anymore."
 msgstr ""
+"Especificava um disquete como a fonte do arquivo Kickstart. As unidades de "
+"disquete não são mais suportadas."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:649
 #, no-wrap
 msgid "[option]#display=#"
-msgstr ""
+msgstr "[option]#display=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:650
 msgid "Configured a remote display. Replaced with the [option]#inst.vnc# option."
 msgstr ""
+"Configurava um display remoto. Substituída pela opção [option]#inst.vnc#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:651
 #, no-wrap
 msgid "[option]#utf8#"
-msgstr ""
+msgstr "[option]#utf8#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:652
@@ -1867,12 +2268,14 @@ msgid ""
 "Added UTF8 support when installing in text mode. UTF8 support now works "
 "automatically."
 msgstr ""
+"Adicionava suporte a UTF8 ao instalar em modo de texto. O suporte a UTF8 "
+"agora funciona automaticamente."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:653
 #, no-wrap
 msgid "[option]#noipv6#"
-msgstr ""
+msgstr "[option]#noipv6#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:654
@@ -1881,12 +2284,16 @@ msgid ""
 "into the kernel so the driver cannot be blacklisted; however, it is possible "
 "to disable IPv6 using the [option]#ipv6.disable# option."
 msgstr ""
+"Usada para desabilitar o suporte a IPv6 no programa de instalação. O IPv6 "
+"agora está embutido no kernel, portanto, o driver não pode ser colocado na "
+"lista negra; entretanto, é possível desabilitar o IPv6 usando a opção "
+"[option]#ipv6.disable#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:655
 #, no-wrap
 msgid "[option]#upgradeany#"
-msgstr ""
+msgstr "[option]#upgradeany#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:656
@@ -1896,12 +2303,16 @@ msgid ""
 "xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading[Upgrading "
 "Your Current System]."
 msgstr ""
+"As atualizações são feitas de maneira diferente nas versões atuais do "
+"{PRODUCT}. Para obter mais informações sobre como atualizar seu sistema, "
+"consulte xref:advanced/Upgrading_Your_Current_System.adoc#chap-upgrading["
+"Atualizando Seu Sistema Atual]."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:657
 #, no-wrap
 msgid "[option]#vlanid=#"
-msgstr ""
+msgstr "[option]#vlanid=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:658
@@ -1909,12 +2320,14 @@ msgid ""
 "Used to configure Virtual LAN (802.1q tag) devices. Use the [option]#vlan=# "
 "option instead."
 msgstr ""
+"Usada para configurar dispositivos de LAN Virtual (tag 802.1q). Use a opção "
+"[option]#vlan=#."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:659
 #, no-wrap
 msgid "[option]#inst.dnf#"
-msgstr ""
+msgstr "[option]#inst.dnf#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:660
@@ -1924,18 +2337,22 @@ msgid ""
 "default and this option has been replaced with [option]#inst.nodnf#, which "
 "reverts back to [application]*Yum*."
 msgstr ""
+"Usada para permitir que o [application]*DNF* lide com a instalação do pacote "
+"e resolução de dependências no {PRODUCT} 21. [application]*DNF* agora é "
+"usado por padrão e esta opção foi substituída por [option]#inst.nodnf#, que "
+"reverte para [application]*Yum*."
 
 #. type: Title ==
 #: ./pages/advanced/Boot_Options.adoc:662
 #, no-wrap
 msgid "Using the Maintenance Boot Modes"
-msgstr ""
+msgstr "Usando os Modos de Inicialização de Manutenção"
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:665
 #, no-wrap
 msgid "Loading the Memory (RAM) Testing Mode"
-msgstr ""
+msgstr "Carregando o Modo de Teste de Memória (RAM)"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:673
@@ -1950,6 +2367,14 @@ msgid ""
 "before you install {PRODUCT} for the first time,\n"
 " even if it has previously run other operating systems.\n"
 msgstr ""
+"Falhas nos módulos de memória (RAM) podem fazer com que o sistema congele ou "
+"trave de maneira imprevisível.\n"
+"Em alguns casos,\n"
+"as falhas de memória podem causar erros apenas com combinações específicas "
+"de software.\n"
+"Por esse motivo, você deve testar a memória de um computador\n"
+"antes de instalar o {PRODUCT} pela primeira vez,\n"
+" mesmo se ele já tiver executado outros sistemas operacionais.\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:675
@@ -1963,6 +2388,14 @@ msgid ""
 "the bottom informing you of the current status, and another pass will start "
 "automatically."
 msgstr ""
+"O {PRODUCT} inclui o aplicativo de teste de memória [application]*Memtest86+*"
+". Para iniciar o modo de teste de memória, escolha Troubleshooting > `Memory "
+"test` no menu de inicialização. O teste começará imediatamente. Por padrão, "
+"[application]*Memtest86+* realiza dez testes em cada passagem; uma "
+"configuração diferente pode ser especificada acessando a tela de "
+"configuração usando a tecla kbd:[c]. Após a conclusão da primeira passagem, "
+"uma mensagem aparecerá na parte inferior informando sobre o status atual e "
+"outra passagem será iniciada automaticamente."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:681
@@ -1970,24 +2403,26 @@ msgid ""
 "[application]*Memtest86+* only works on systems with BIOS firmware.  Support "
 "for UEFI systems is currently unavailable."
 msgstr ""
+"[application]*Memtest86+* só funciona em sistemas com firmware BIOS. O "
+"suporte para sistemas UEFI não está disponível no momento."
 
 #. type: Block title
 #: ./pages/advanced/Boot_Options.adoc:684
 #, no-wrap
 msgid "Memory Check Using Memtest86+"
-msgstr ""
+msgstr "Verificação de Memória Usando o Memtest86+"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/advanced/Boot_Options.adoc:686
 #, no-wrap
 msgid "Memtest86+ testing the system memory"
-msgstr ""
+msgstr "Memtest86+ testando a memória do sistema"
 
 #. type: Target for macro image
 #: ./pages/advanced/Boot_Options.adoc:686
 #, no-wrap
 msgid "boot/memtest86.png"
-msgstr ""
+msgstr "boot/memtest86.png"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:689
@@ -1995,6 +2430,7 @@ msgid ""
 "The main screen displayed while testing is in progress is divided into three "
 "main areas:"
 msgstr ""
+"A tela principal exibida durante o teste é dividida em três áreas principais:"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:691
@@ -2004,6 +2440,10 @@ msgid ""
 "throughputs and processor and chipset information. This information is "
 "detected when [application]*Memtest86+* starts."
 msgstr ""
+"O canto superior esquerdo mostra informações sobre a configuração de memória "
+"do sistema – a quantidade de memória detectada e cache do processador e suas "
+"taxas de transferência e informações de processador e chipset. Esta "
+"informação é detectada quando o [application]*Memtest86+* é iniciado."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:693
@@ -2012,6 +2452,9 @@ msgid ""
 "the current pass and the currently running test in that pass as well as a "
 "description of the test."
 msgstr ""
+"O canto superior direito exibe informações sobre os testes – progresso da "
+"aprovação atual e o teste em execução nessa passagem, bem como uma descrição "
+"do teste."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:695
@@ -2025,12 +2468,20 @@ msgid ""
 "each pass completes, a short summary will appear in this location. For "
 "example:"
 msgstr ""
+"A parte central da tela é usada para exibir informações sobre todo o "
+"conjunto de testes a partir do momento em que a ferramenta foi iniciada, "
+"como o tempo total, o número de passagens concluídas, o número de erros "
+"detectados e sua seleção de teste. Em alguns sistemas, informações "
+"detalhadas sobre a memória instalada (como o número de módulos instalados, "
+"seu fabricante, frequência e latência) também serão exibidas aqui. Após a "
+"conclusão de cada passagem, um breve resumo aparecerá neste local. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:699
 #, no-wrap
 msgid "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
-msgstr ""
+msgstr "pass:quotes[`** Pass complete, no errors, press Esc to exit **`]\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:702
@@ -2040,6 +2491,10 @@ msgid ""
 "such as which test detected a problem, the memory location which is failing, "
 "and others."
 msgstr ""
+"Se [application]*Memtest86+* detectar um erro, ele também será exibido nesta "
+"área e destacado em vermelho. A mensagem incluirá informações detalhadas, "
+"como qual teste detectou um problema, o local da memória que está falhando e "
+"outros."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:704
@@ -2051,6 +2506,13 @@ msgid ""
 "important system, leave the tests running overnight or even for a few days "
 "in order to complete multiple passes."
 msgstr ""
+"Na maioria dos casos, uma única passagem bem-sucedida (ou seja, uma única "
+"execução de todos os 10 testes) é suficiente para verificar se a RAM está em "
+"boas condições. Em algumas raras circunstâncias, no entanto, erros que não "
+"foram detectados na primeira passagem podem aparecer nas passagens "
+"subsequentes. Para realizar um teste completo em um sistema importante, "
+"deixe os testes em execução durante a noite ou mesmo por alguns dias para "
+"concluir várias passagens."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:717
@@ -2061,6 +2523,11 @@ msgid ""
 "of DDR2 memory at 667{nbsp}MHz, a single pass will take roughly "
 "20{nbsp}minutes to complete."
 msgstr ""
+"A quantidade de tempo que leva para completar uma única passagem completa do "
+"[application]*Memtest86+* varia dependendo da configuração do seu sistema ("
+"notavelmente o tamanho da RAM e a velocidade). Por exemplo, em um sistema "
+"com 2{nbsp}GB de memória DDR2 667{nbsp}MHz, uma única passagem levará "
+"aproximadamente 20{nbsp}minutos para ser concluída."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:721
@@ -2068,6 +2535,8 @@ msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
 msgstr ""
+"Para interromper os testes e reiniciar o computador, pressione a tecla "
+"kbd:[Esc] a qualquer momento."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:730
@@ -2077,12 +2546,17 @@ msgid ""
 "located in `/usr/share/doc/memtest86+-_version_pass:attributes[{blank}]/` on "
 "{PRODUCT} systems with the [package]*memtest86+* package installed."
 msgstr ""
+"Para mais informações sobre o uso do [application]*Memtest86+*, veja o site "
+"oficial em link:++https://www.memtest.org/++[]. Um arquivo`README` também "
+"está localizado em `/usr/share/doc/"
+"memtest86+-_versão_pass:attributes[{blank}]/` em sistemas {PRODUCT} com o "
+"pacote [package]*memtest86+* instalado."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:732
 #, no-wrap
 msgid "Verifying Boot Media"
-msgstr ""
+msgstr "Verificando a Mídia de Inicialização"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:742
@@ -2093,6 +2567,11 @@ msgid ""
 "intact before you attempt an installation helps to avoid problems that are "
 "often encountered during installation."
 msgstr ""
+"Você pode testar a integridade de uma fonte de instalação baseada em ISO "
+"antes de usá-la para instalar o {PRODUCT}. Essas fontes incluem DVDs e "
+"imagens ISO armazenadas em um disco rígido local ou servidor NFS. Verificar "
+"se as imagens ISO estão intactas antes de tentar uma instalação ajuda a "
+"evitar problemas que são frequentemente encontrados durante a instalação."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:744
@@ -2102,12 +2581,16 @@ msgid ""
 "you select the default installation option from the boot menu (`Test this "
 "media & install Fedora`)."
 msgstr ""
+"Para testar a integridade de uma imagem ISO, acrescente [option]#rd.live."
+"check# à linha de comando do carregador de inicialização. Observe que esta "
+"opção é usada automaticamente se você selecionar a opção de instalação "
+"padrão no menu de inicialização (`Test this media & install Fedora`)."
 
 #. type: Title ===
 #: ./pages/advanced/Boot_Options.adoc:746
 #, no-wrap
 msgid "Booting Your Computer in Rescue Mode"
-msgstr ""
+msgstr "Inicializando seu Computador em Modo de Recuperação"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:752
@@ -2117,6 +2600,10 @@ msgid ""
 "utilities and functions of a running Linux system to modify or repair "
 "already installed operating systems."
 msgstr ""
+"Você pode inicializar um sistema Linux de linha de comando a partir de um "
+"disco de instalação sem realmente instalar o {PRODUCT} no computador. Isso "
+"permite que você use os utilitários e funções de um sistema Linux em "
+"execução para modificar ou reparar sistemas operacionais já instalados."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:754
@@ -2125,6 +2612,9 @@ msgid ""
 "`Rescue a {PRODUCT} system` from the Troubleshooting submenu in the boot "
 "menu, or use the [option]#inst.rescue# boot option."
 msgstr ""
+"Para carregar o sistema de recuperação com o disco de instalação ou unidade "
+"USB, escolha `Rescue a {PRODUCT} system` no submenu Troubleshooting no menu "
+"de inicialização ou use a opção de inicialização [option]#inst.rescue#."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:756
@@ -2133,6 +2623,9 @@ msgid ""
 "system with the screens that follow. The final setup screen configures "
 "access to the existing system on your computer."
 msgstr ""
+"Especifique o idioma, o layout do teclado e as configurações de rede para o "
+"sistema de resgate com as telas a seguir. A tela de configuração final "
+"configura o acesso ao sistema existente em seu computador."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:757
@@ -2140,3 +2633,5 @@ msgid ""
 "By default, rescue mode attaches an existing operating system to the rescue "
 "system under the directory `/mnt/sysimage/`."
 msgstr ""
+"Por padrão, o modo de recuperação anexa um sistema operacional existente ao "
+"sistema de recuperação no diretório `/mnt/sysimage/`."
