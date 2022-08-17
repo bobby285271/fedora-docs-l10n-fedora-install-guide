@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-08-17 01:40+0000\n"
+"PO-Revision-Date: 2022-08-17 09:04+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/f36pagesadvancedboot_options/"
@@ -380,12 +380,16 @@ msgid ""
 "option sequentially in the order they are specified, until the image is "
 "successfully fetched. All other locations will be ignored."
 msgstr ""
+"Com esta opção de inicialização, a imagem do estágio 2 será buscada nos "
+"locais HTTP, HTTPS e FTP que são especificados usando a opção [option]#inst."
+"stage2=# sequencialmente na ordem em que são especificadas, até que a imagem "
+"seja buscada com sucesso. Todos os outros locais serão ignorados."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:145
 #, no-wrap
 msgid "[option]#inst.dd=#"
-msgstr ""
+msgstr "[option]#inst.dd=#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:146
@@ -397,12 +401,18 @@ msgid ""
 "the [option]#inst.dd=cdrom# option, the device name must always be "
 "specified. For example:"
 msgstr ""
+"Se você precisar realizar uma atualização de driver durante a instalação, "
+"use a opção [option]#inst.dd=#. Pode ser usado várias vezes. A localização "
+"de um pacote RPM de driver pode ser especificada usando qualquer um dos "
+"formatos descritos em xref:tabl-boot-options-sources[Fontes de Instalação]. "
+"Com exceção da opção [option]#inst.dd=cdrom#, o nome do dispositivo deve "
+"sempre ser especificado. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/advanced/Boot_Options.adoc:150
 #, no-wrap
 msgid "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
-msgstr ""
+msgstr "[option]#inst.dd=hd:/dev/sdb1:/driver.rpm#\n"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:153
@@ -411,6 +421,9 @@ msgid ""
 "prompt the installation program to ask you for a driver update disk with an "
 "interactive menu."
 msgstr ""
+"Usar esta opção sem nenhum parâmetro (somente como [option]#inst.dd#) fará "
+"com que o programa de instalação solicite um disco de atualização de driver "
+"com um menu interativo."
 
 #. type: delimited block =
 #: ./pages/advanced/Boot_Options.adoc:164
@@ -420,12 +433,17 @@ msgid ""
 "installation.  Updating drivers which are not essential during the "
 "installation should always be performed after the system is installed."
 msgstr ""
+"Você nunca deve tentar realizar uma atualização de driver durante a "
+"instalação, a menos que a falta de nosso driver defeituoso esteja impedindo "
+"você de concluir a instalação. A atualização de drivers que não são "
+"essenciais durante a instalação deve sempre ser realizada após a instalação "
+"do sistema."
 
 #. type: Labeled list
 #: ./pages/advanced/Boot_Options.adoc:167
 #, no-wrap
 msgid "[option]#inst.askmethod#"
-msgstr ""
+msgstr "[option]#inst.askmethod#"
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:168
@@ -433,6 +451,8 @@ msgid ""
 "Prevents the installer from trying to automatically configure an "
 "installation source."
 msgstr ""
+"Evitar que o instalador tente configurar automaticamente uma fonte de "
+"instalação."
 
 #. type: Plain text
 #: ./pages/advanced/Boot_Options.adoc:180
