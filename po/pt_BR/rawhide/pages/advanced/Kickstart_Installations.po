@@ -4,27 +4,28 @@
 # Weblate <noreply@weblate.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2021.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2021.
+# Gerardo Magela Machado da Silva <magelace@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-08-27 21:03+0000\n"
-"PO-Revision-Date: 2021-10-07 09:05+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2022-08-17 23:12+0000\n"
+"Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
-"projects/fedora-docs-l10nfedora-install-guide/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
 "rawhidepagesadvancedkickstart_installations/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #. type: Title =
 #: pages/advanced/Kickstart_Installations.adoc:6
 #, no-wrap
 msgid "Automating the Installation with Kickstart"
-msgstr "Automatizando a instalação com o Kickstart"
+msgstr "Automatizando a Instalação com o Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:9
@@ -46,8 +47,8 @@ msgstr ""
 "particionadas ou quais pacotes devem ser instalados. Fornecer um arquivo "
 "Kickstart preparado quando a instalação começa, portanto, permite que você "
 "execute a instalação automaticamente, sem a necessidade de qualquer "
-"intervenção do usuário. Isso é especialmente útil ao implantar {PRODUCT} em "
-"um grande número de sistemas ao mesmo tempo."
+"intervenção do usuário. Isso é especialmente útil ao implantar o {PRODUCT} "
+"em um grande número de sistemas ao mesmo tempo."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:11
@@ -63,7 +64,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:13
 #, no-wrap
 msgid "How to Perform a Kickstart Installation"
-msgstr "Como realizar uma instalação com Kickstart"
+msgstr "Como Realizar uma Instalação com Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:16
@@ -97,7 +98,7 @@ msgstr ""
 "rede (PXE) que será usado para iniciar a instalação. Observe que a mídia "
 "live não pode ser usada para instalações Kickstart — use a mídia de "
 "instalação que pode inicializar diretamente no instalador, como a imagem ISO "
-"padrão ou netinstall da edição do servidor."
+"padrão ou netinstall da edição Servidor."
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:24
@@ -127,7 +128,7 @@ msgstr "Este capítulo explica essas etapas em detalhes."
 #: pages/advanced/Kickstart_Installations.adoc:30
 #, no-wrap
 msgid "Creating a Kickstart File"
-msgstr "Criando um arquivo Kickstart"
+msgstr "Criando um Arquivo Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:33
@@ -142,7 +143,7 @@ msgid ""
 msgstr ""
 "O próprio arquivo Kickstart é um arquivo de texto simples, contendo palavras-"
 "chave listadas em xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
-"kickstart-syntax-reference[Referência da sintaxe do Kickstart], que servem "
+"kickstart-syntax-reference[Referência da Sintaxe do Kickstart], que servem "
 "como instruções para a instalação. Qualquer editor de texto capaz de salvar "
 "arquivos como texto ASCII (como [application]*Gedit* ou [application]*vim* "
 "em sistemas Linux ou [application]*Notepad* em sistemas Windows) pode ser "
@@ -201,7 +202,7 @@ msgid ""
 msgstr ""
 "A seção de comando que contém os comandos e opções reais do Kickstart, "
 "conforme listado em xref:appendixes/Kickstart_Syntax_Reference.adoc#appe-"
-"kickstart-syntax-reference[Referência da sintaxe do Kickstart]. Observe que "
+"kickstart-syntax-reference[Referência da Sintaxe do Kickstart]. Observe que "
 "alguns comandos, como [command]#install#, são obrigatórios, mas a maioria "
 "dos comandos são opcionais."
 
@@ -215,7 +216,7 @@ msgid ""
 msgstr ""
 "A seção [command]#%packages# que contém uma lista de pacotes e grupos de "
 "pacotes a serem instalados. Veja xref:appendixes/Kickstart_Syntax_Reference."
-"adoc#sect-kickstart-packages[%packages (obrigatório) - Seleção de pacotes] "
+"adoc#sect-kickstart-packages[%packages (obrigatório) - Seleção de Pacotes] "
 "para detalhes."
 
 #. type: Plain text
@@ -230,10 +231,10 @@ msgid ""
 msgstr ""
 "As seções [command]#%pre# e [command]#%post#, contendo scripts de pré-"
 "instalação e pós-instalação. Essas duas seções podem estar em qualquer ordem "
-"e não são obrigatórias. Veja xref:appendixes/Kickstart_Syntax_Reference."
-"adoc#sect-kickstart-preinstall[%pre (opcional) - Script de pré-instalação] e "
-"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-"
-"postinstall[%post (opcional) - Script de pós-instalação] para obter detalhes."
+"e não são obrigatórias. Veja xref:appendixes/Kickstart_Syntax_Reference.adoc"
+"#sect-kickstart-preinstall[%pre (opcional) - Script de Pré-instalação] e "
+"xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-postinstall["
+"%post (opcional) - Script de Pós-instalação] para obter detalhes."
 
 #. type: delimited block =
 #: pages/advanced/Kickstart_Installations.adoc:52
@@ -268,7 +269,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:58
 #, no-wrap
 msgid "Verifying the Kickstart File"
-msgstr "Verificando o arquivo Kickstart"
+msgstr "Verificando o Arquivo Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:61
@@ -280,7 +281,7 @@ msgid ""
 "To install this package, execute the following command:"
 msgstr ""
 "Ao criar ou personalizar seu arquivo Kickstart, é útil verificar se ele é "
-"válido antes de tentar usá-lo em uma instalação. {PRODUCT} inclui o "
+"válido antes de tentar usá-lo em uma instalação. O {PRODUCT} inclui o "
 "utilitário de linha de comando [application]*ksvalidator* que pode ser usado "
 "para fazer isso. Esta ferramenta faz parte do pacote [package]*pykickstart*. "
 "Para instalar este pacote, execute o seguinte comando:"
@@ -344,7 +345,7 @@ msgstr ""
 #: pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr "Disponibilizando o arquivo Kickstart"
+msgstr "Disponibilizando o Arquivo Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:89
@@ -399,15 +400,15 @@ msgid ""
 "Up an Installation Server] offers some additional information about "
 "preparing for a network-based installation."
 msgstr ""
-"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-"
-"setup[Configurando um servidor de instalação] oferece algumas informações "
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup["
+"Configurando um Servidor de Instalação] oferece algumas informações "
 "adicionais sobre a preparação para uma instalação baseada em rede."
 
 #. type: Title ===
 #: pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr "Iniciando a instalação com Kickstart"
+msgstr "Iniciando a Instalação com Kickstart"
 
 #. type: Plain text
 #: pages/advanced/Kickstart_Installations.adoc:103
@@ -427,7 +428,7 @@ msgstr ""
 "partir da mídia local) ou adicionar esta opção à configuração do servidor "
 "PXE. Para obter informações sobre as opções de inicialização usadas nas "
 "instalações do Kickstart, consulte xref:advanced/Boot_Options.adoc#sect-boot-"
-"options-kickstart[Opções de inicialização do Kickstart]."
+"options-kickstart[Opções de Inicialização do Kickstart]."
 
 #~ msgid ""
 #~ "Create boot media or configure a network boot (PXE) server which will be "
