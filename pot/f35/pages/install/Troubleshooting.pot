@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-04 21:05+0000\n"
+"POT-Creation-Date: 2022-08-18 21:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,6 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:62
-#: ./pages/install/Troubleshooting.adoc:118
 msgid ""
 "On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
 "shell prompt. You will be logged into a root account and you will have "
@@ -282,6 +281,14 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:115
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:118
+msgid ""
+"On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
+"shell prompt. You will be logged into a root account and you will have "
+"access to the installation program's temporary file system. "
 msgstr ""
 
 #. type: Plain text
@@ -546,9 +553,8 @@ msgstr ""
 msgid "Problems After Installation"
 msgstr ""
 
-#. type: Block title
+#. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:205
-#: ./pages/install/Troubleshooting.adoc:209
 #, no-wrap
 msgid "Resetting the Root Password"
 msgstr ""
@@ -558,6 +564,12 @@ msgstr ""
 msgid ""
 "If you lost the root password to the system and you have access to the boot "
 "loader, you can reset the password by editing the GRUB2 configuration."
+msgstr ""
+
+#. type: Block title
+#: ./pages/install/Troubleshooting.adoc:209
+#, no-wrap
+msgid "Resetting the Root Password "
 msgstr ""
 
 #. type: Plain text
@@ -724,7 +736,6 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:278
-#: ./pages/install/Troubleshooting.adoc:402
 msgid ""
 "Start your computer and wait until the boot loader menu appears. If you set "
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
@@ -733,7 +744,6 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:280
-#: ./pages/install/Troubleshooting.adoc:404
 msgid ""
 "When the boot loader menu appears, use your cursor keys to highlight the "
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
@@ -751,7 +761,6 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:284
-#: ./pages/install/Troubleshooting.adoc:415
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
@@ -824,7 +833,6 @@ msgstr ""
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:314
-#: ./pages/install/Troubleshooting.adoc:430
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 msgstr ""
@@ -841,7 +849,6 @@ msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:319
-#: ./pages/install/Troubleshooting.adoc:446
 msgid ""
 "See the "
 "[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
@@ -1075,6 +1082,22 @@ msgid "Configuring the Memory Manually"
 msgstr ""
 
 #. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:402
+msgid ""
+"Start your computer and wait until the boot loader menu appears. If you set "
+"your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
+"it. "
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:404
+msgid ""
+"When the boot loader menu appears, use your cursor keys to highlight the "
+"entry you want to boot and press the kbd:[e] key to edit this entry's "
+"options. "
+msgstr ""
+
+#. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:406
 msgid ""
 "In the list of options, find the kernel line - that is, the line beginning "
@@ -1084,15 +1107,20 @@ msgstr ""
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:410
-#: ./pages/install/Troubleshooting.adoc:421
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 msgstr ""
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:413
-#: ./pages/install/Troubleshooting.adoc:424
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:415
+msgid ""
+"Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
+"options. "
 msgstr ""
 
 #. type: Plain text
@@ -1105,12 +1133,33 @@ msgid ""
 "to make the change permanent:"
 msgstr ""
 
+#. type: delimited block -
+#: ./pages/install/Troubleshooting.adoc:421
+#, no-wrap
+msgid ""
+"mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+" "
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:424
+msgid "Replace _xx_ with the amount of RAM you have in megabytes. "
+msgstr ""
+
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:426
 msgid ""
 "After you updated the file and saved it, refresh the boot loader "
 "configuration so that the change will take effect. Run the following command "
 "with root privileges:"
+msgstr ""
+
+#. type: delimited block -
+#: ./pages/install/Troubleshooting.adoc:430
+#, no-wrap
+msgid ""
+"# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
+" "
 msgstr ""
 
 #. type: Plain text
@@ -1134,4 +1183,13 @@ msgid ""
 "/usr/sbin/rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet "
 "mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
+msgstr ""
+
+#. type: Plain text
+#: ./pages/install/Troubleshooting.adoc:446
+msgid ""
+"See the "
+"[citetitle]_xref:fedora:system-administrators-guide:index.adoc[{PRODUCT} "
+"System Administrator's Guide]_ for more information about working with the "
+"[application]*GRUB2* boot loader. "
 msgstr ""
