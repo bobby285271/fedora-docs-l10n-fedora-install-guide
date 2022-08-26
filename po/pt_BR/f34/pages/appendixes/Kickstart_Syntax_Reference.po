@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:06+0000\n"
-"PO-Revision-Date: 2022-08-26 21:41+0000\n"
+"PO-Revision-Date: 2022-08-26 21:47+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2080,18 +2080,20 @@ msgstr "[command]#ignoredisk --only-use=sda#\n"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:545
 msgid "To include a multipath device that does not use LVM:"
-msgstr "Para incluir um dispositivo multicaminho que não usa LVM:"
+msgstr "Para incluir um dispositivo multipath que não usa LVM:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:549
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
-msgstr "[command]#ignoredisk --only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
+msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 msgid "To include a multipath device that uses LVM:"
-msgstr "Para incluir um dispositivo multicaminho que usa LVM:"
+msgstr "Para incluir um dispositivo multipath que usa LVM:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:556
@@ -2115,7 +2117,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:561
 #, no-wrap
 msgid "iscsi (optional) - Configure iSCSI Devices"
-msgstr "iscsi (opcional) - Configura dispositivos iSCSI"
+msgstr "iscsi (opcional) - Configura Dispositivos iSCSI"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:564
@@ -2130,8 +2132,8 @@ msgstr ""
 "Especifica o armazenamento iSCSI adicional a ser conectado durante a "
 "instalação. Se você usar o comando [command]#iscsi#, também deve atribuir um "
 "nome ao nó iSCSI, usando o comando [command]#iscsiname# (veja xref:sect-"
-"kickstart-comandos-iscsiname[iscsiname (opcional) - Atribui nome do "
-"dispositivo iSCSI]. O comando [command]#iscsiname# deve aparecer antes do "
+"kickstart-comandos-iscsiname[iscsiname (opcional) - Atribui Nome do "
+"Dispositivo iSCSI]. O comando [command]#iscsiname# deve aparecer antes do "
 "comando [command]#iscsi# no arquivo Kickstart."
 
 #. type: Plain text

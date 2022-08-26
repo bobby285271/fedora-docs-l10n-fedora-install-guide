@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-08-26 21:41+0000\n"
+"PO-Revision-Date: 2022-08-26 21:47+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2135,7 +2135,7 @@ msgstr "[command]#ignoredisk --only-use=sda#\n"
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:545
 msgid "To include a multipath device that does not use LVM:"
-msgstr ""
+msgstr "Para incluir um dispositivo multipath que não usa LVM:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:549
@@ -2144,11 +2144,13 @@ msgid ""
 "[command]#ignoredisk "
 "--only-use=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:552
 msgid "To include a multipath device that uses LVM:"
-msgstr ""
+msgstr "Para incluir um dispositivo multipath que usa LVM:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:556
@@ -2157,23 +2159,25 @@ msgid ""
 "[command]#ignoredisk "
 "--only-use=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#ignoredisk --only-use=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:558
 #, no-wrap
 msgid "[option]#--interactive#"
-msgstr ""
+msgstr "[option]#--interactive#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:559
 msgid "Allows you to manually navigate the advanced storage screen."
-msgstr ""
+msgstr "Permite que você navegue manualmente na tela de armazenamento avançado."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:561
 #, no-wrap
 msgid "iscsi (optional) - Configure iSCSI Devices"
-msgstr ""
+msgstr "iscsi (opcional) - Configura Dispositivos iSCSI"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:564
@@ -2185,6 +2189,12 @@ msgid ""
 "iSCSI Device]. The [command]#iscsiname# command must appear before the "
 "[command]#iscsi# command in the Kickstart file."
 msgstr ""
+"Especifica o armazenamento iSCSI adicional a ser conectado durante a "
+"instalação. Se você usar o comando [command]#iscsi#, também deve atribuir um "
+"nome ao nó iSCSI, usando o comando [command]#iscsiname# (veja xref:sect-"
+"kickstart-comandos-iscsiname[iscsiname (opcional) - Atribui Nome do "
+"Dispositivo iSCSI]. O comando [command]#iscsiname# deve aparecer antes do "
+"comando [command]#iscsi# no arquivo Kickstart."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:566
@@ -2195,6 +2205,11 @@ msgid ""
 "configured in BIOS or firmware and no special configuration is necessary in "
 "the Kickstart file."
 msgstr ""
+"Você deve configurar o armazenamento iSCSI no BIOS ou firmware do sistema ("
+"iBFT para sistemas Intel) em vez de usar o comando [command]#iscsi# se "
+"possível. Se você fizer isso, o [application]*Anaconda* detecta e usa "
+"automaticamente os discos configurados no BIOS ou firmware e nenhuma "
+"configuração especial é necessária no arquivo Kickstart."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:568
@@ -2205,6 +2220,10 @@ msgid ""
 "iSCSI disks with commands such as [command]#clearpart# or "
 "[command]#ignoredisk#."
 msgstr ""
+"Se você deve usar o comando [command]#iscsi#, certifique-se de que a rede "
+"esteja ativada no início da instalação, e que o comando [command]#iscsi# "
+"apareça no arquivo Kickstart *antes* de você referir-se aos discos iSCSI com "
+"comandos como [command]#clearpart# ou [command]#ignoreisk#."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:572
