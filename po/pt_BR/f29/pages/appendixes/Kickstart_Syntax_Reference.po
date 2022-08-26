@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-26 21:34+0000\n"
+"PO-Revision-Date: 2022-08-26 21:41+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2231,12 +2231,18 @@ msgid ""
 "a SAN cluster the Kickstart would fail, as the installation program detects "
 "passive paths to the SAN that return no partition table."
 msgstr ""
+"Faz com que o programa de instalação ignore os discos especificados. Isso é "
+"útil se você usar a partição automática e quiser ter certeza de que alguns "
+"discos serão ignorados. Por exemplo, sem [command]#ignoredisk#, a tentativa "
+"de implantar em um cluster SAN, do Kickstart falhará, pois o programa de "
+"instalação detecta caminhos passivos para a SAN que não retornam nenhuma "
+"tabela de partição."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:586
 #, no-wrap
 msgid "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives= | --only-use= [--interactive]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:589
@@ -2244,12 +2250,14 @@ msgid ""
 "Specify one or more drives to ignore. Multiple drives can be specified as a "
 "comma-separated list. For example:"
 msgstr ""
+"Especifica uma ou mais unidades para ignorar. Várias unidades podem ser "
+"especificadas como uma lista separada por vírgulas. Por exemplo:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:593
 #, no-wrap
 msgid "[command]#ignoredisk --drives=sda,sdc#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --drives=sda,sdc#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:596
@@ -2260,6 +2268,11 @@ msgid ""
 "the _world-wide identifier_ for the device. For example, to ignore a disk "
 "with WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Para ignorar um dispositivo multipath que não usa _gerenciamento de volume "
+"lógico_ (LVM), use o formato `disk/by-id/dm-uuid-mpath-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para ignorar um "
+"disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:600
@@ -2268,6 +2281,8 @@ msgid ""
 "[command]#ignoredisk "
 "--drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#ignoredisk --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:603
@@ -2280,6 +2295,13 @@ msgid ""
 "_world-wide identifier_ for the device. For example, to ignore a disk with "
 "WWID `58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Os dispositivos multipath que usam LVM não são montados até que o "
+"[application]*Anaconda* tenha analisado o arquivo Kickstart. Portanto, você "
+"não pode especificar esses dispositivos no formato `dm-uuid-mpath`. Em vez "
+"disso, para ignorar um dispositivo multipath que usa LVM, use o formato `"
+"disk/by-id/scsi-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para "
+"ignorar um disco com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:607
@@ -2288,18 +2310,20 @@ msgid ""
 "[command]#ignoredisk "
 "--drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:620
 #, no-wrap
 msgid "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "ignoredisk --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:624
 #, no-wrap
 msgid "[option]#--only-use=#"
-msgstr ""
+msgstr "[option]#--only-use=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:625
@@ -2308,12 +2332,15 @@ msgid ""
 "disks are ignored. For example, to use disk `sda` during installation and "
 "ignore all other disks:"
 msgstr ""
+"Especifica uma lista de discos para uso do programa de instalação. Todos os "
+"outros discos são ignorados. Por exemplo, para usar o disco `sda` durante a "
+"instalação e ignorar todos os outros discos:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:629
 #, no-wrap
 msgid "[command]#ignoredisk --only-use=sda#\n"
-msgstr ""
+msgstr "[command]#ignoredisk --only-use=sda#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:632
