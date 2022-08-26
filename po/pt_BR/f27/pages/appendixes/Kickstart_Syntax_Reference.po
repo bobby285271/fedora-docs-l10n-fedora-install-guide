@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:17+0000\n"
-"PO-Revision-Date: 2022-08-26 21:53+0000\n"
+"PO-Revision-Date: 2022-08-26 21:59+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2370,7 +2370,9 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:659
 #, no-wrap
 msgid "[command]#logvol _mntpoint_ --vgname=  --name= [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
-msgstr "[command]#logvol _pontomontagem_ --vgname=  --name= [pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
+msgstr ""
+"[command]#logvol _pontomnt_ --vgname=  --name= "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:665
@@ -2383,7 +2385,7 @@ msgid ""
 "volume group named `volgrp-01` containing a logical volume named `logvol-01` "
 "will be listed as `/dev/mapper/volgrp--01-logvol--01`."
 msgstr ""
-"Não usa o caractere de traço (`-`) no volume lógico e nomes de grupo de "
+"Não use o caractere de traço (`-`) no volume lógico e nomes de grupo de "
 "volume ao instalar {PRODUCT} usando o Kickstart. Se este caractere for "
 "usado, a instalação terminará normalmente, mas o diretório `/dev/mapper/` "
 "irá listar esses volumes e grupos de volumes com cada traço dobrado. Por "
@@ -2416,7 +2418,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:973
 #, no-wrap
 msgid "_mntpoint_"
-msgstr "_pontomontagem_"
+msgstr "_pontomnt_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:673
@@ -2430,10 +2432,9 @@ msgstr ""
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:674
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:817
-#, fuzzy, no-wrap
-#| msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`:"
+#, no-wrap
 msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`"
-msgstr "`/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]`:"
+msgstr "`/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:675
@@ -2444,10 +2445,9 @@ msgstr "Um caminho para o ponto de montagem - por exemplo, `/` ou `/home`"
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:676
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:819
-#, fuzzy, no-wrap
-#| msgid "`swap`:"
+#, no-wrap
 msgid "`swap`"
-msgstr "`swap`:"
+msgstr "`swap`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:677

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-26 21:53+0000\n"
+"PO-Revision-Date: 2022-08-26 21:59+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2578,6 +2578,8 @@ msgid ""
 "[command]#logvol _mntpoint_ --vgname=  --name= "
 "[pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#logvol _pontomnt_ --vgname=  --name= "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:701
@@ -2590,6 +2592,12 @@ msgid ""
 "volume group named `volgrp-01` containing a logical volume named `logvol-01` "
 "will be listed as `/dev/mapper/volgrp--01-logvol--01`."
 msgstr ""
+"Não use o caractere de traço (`-`) no volume lógico e nomes de grupo de "
+"volume ao instalar {PRODUCT} usando o Kickstart. Se este caractere for "
+"usado, a instalação terminará normalmente, mas o diretório `/dev/mapper/` "
+"irá listar esses volumes e grupos de volumes com cada traço dobrado. Por "
+"exemplo, um grupo de volume denominado `volgrp-01` contendo um volume lógico "
+"denominado `logvol-01` será listado como `/dev/mapper/volgrp--01-logvol--01`."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:703
@@ -2598,6 +2606,10 @@ msgid ""
 "group names. If you are reusing existing ones using the [option]#--noformat# "
 "or [option]#--useexisting# option, their names will not be changed."
 msgstr ""
+"Essa limitação se aplica apenas a nomes de volume lógico e grupo de volume "
+"recém-criados. Se você estiver reutilizando os existentes usando a opção "
+"[option]#--noformat# ou [option]#--useexisting#, seus nomes não serão "
+"alterados."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:707
@@ -2613,7 +2625,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1037
 #, no-wrap
 msgid "_mntpoint_"
-msgstr ""
+msgstr "_pontomnt_"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:709
@@ -2621,32 +2633,34 @@ msgid ""
 "Replace with the volume's mount point. This name can take the following "
 "forms:"
 msgstr ""
+"Substitui com o ponto de montagem do volume. Este nome aceita as seguintes "
+"formas:"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:710
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:867
 #, no-wrap
 msgid "`/pass:attributes[{blank}]_path_pass:attributes[{blank}]`"
-msgstr ""
+msgstr "`/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:711
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:868
 msgid "A path to the mount point - for example, `/` or `/home`"
-msgstr ""
+msgstr "Um caminho para o ponto de montagem - por exemplo, `/` ou `/home`"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:712
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:869
 #, no-wrap
 msgid "`swap`"
-msgstr ""
+msgstr "`swap`"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:713
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:870
 msgid "The partition is used as swap space."
-msgstr ""
+msgstr "A partição é usada como espaço swap."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:715
@@ -2655,13 +2669,15 @@ msgid ""
 "To determine the size of the swap partition automatically, use the "
 "[option]#--recommended# option:"
 msgstr ""
+"Para determinar o tamanho da partição swap automaticamente, use a opção "
+"[option]#--recommended#:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:719
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:876
 #, no-wrap
 msgid "`swap --recommended`\n"
-msgstr ""
+msgstr "`swap --recommended`\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:722
@@ -2671,12 +2687,15 @@ msgid ""
 "extra space for your system to hibernate, use the [option]#--hibernation# "
 "option:"
 msgstr ""
+"Para determinar o tamanho da partição swap automaticamente, mas também "
+"permitir espaço extra para o seu sistema hibernar, use a opção "
+"[option]#--hibernation#:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:726
 #, no-wrap
 msgid "`swap --hibernation`\n"
-msgstr ""
+msgstr "`swap --hibernation`\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:729
@@ -2685,6 +2704,8 @@ msgid ""
 "The size assigned will be equivalent to the swap space assigned by "
 "[option]#--recommended# plus the amount of RAM on your system."
 msgstr ""
+"O tamanho atribuído será equivalente ao espaço de troca atribuído por "
+"[option]#--recommended# mais a quantidade de RAM em seu sistema."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:731
@@ -2695,12 +2716,16 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-recommended[Recommended "
 "Partitioning Scheme]."
 msgstr ""
+"Para os tamanhos de swap atribuídos por esses comandos, consulte a seção que "
+"descreve swap em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning-recommended[Esquema de Particionamento "
+"Recomendado]."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:732
 #, no-wrap
 msgid "`none`"
-msgstr ""
+msgstr "`none`"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:733
