@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-08-26 21:22+0000\n"
+"PO-Revision-Date: 2022-08-26 21:28+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1762,12 +1762,18 @@ msgid ""
 "device. For example, to clear a disk with WWID "
 "`58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Para limpar um dispositivo multipath, use o formato `disk/by-id/scsi-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para limpar um disco "
+"com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:431
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/scsi-"
+"58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:434
@@ -1779,12 +1785,20 @@ msgid ""
 "device. For example, to clear a disk with WWID "
 "`2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Este formato é preferível para todos os dispositivos multipath, mas se "
+"surgirem erros, os dispositivos multipath que não usam _gerenciamento de "
+"volume lógico_ (LVM) também podem ser limpos usando o formato `disk/by-id/dm-"
+"uuid-mpath-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para limpar "
+"um disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:438
 #, no-wrap
 msgid "[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#clearpart --drives=disk/by-id/dm-uuid-mpath-"
+"2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:444
@@ -1796,6 +1810,11 @@ msgid ""
 "mpatha` during installation might not be the one that you expect it to be. "
 "Therefore, the [command]#clearpart# command could target the wrong disk."
 msgstr ""
+"Nunca especifique dispositivos multipath por nomes de dispositivos como "
+"`mpatha`. Nomes de dispositivos como este não são específicos para um "
+"determinado disco. O disco denominado `/dev/mpatha` durante a instalação "
+"pode não ser o que você esperava. Portanto, o comando [command]#clearpart# "
+"pode ter como destino o disco errado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:448
@@ -1805,12 +1824,16 @@ msgid ""
 "targets in one command, using the pipe (\"`pass:attributes[{blank}]`|`pass:"
 "attributes[{blank}]`\") as a delimiter. For example:"
 msgstr ""
+"A partir do Fedora 25, você pode combinar várias maneiras de especificar "
+"destinos de armazenamento em um comando, usando o pipe (\""
+"`pass:attributes[{blank}]`|`pass:attributes[{blank}]\") como delimitador. "
+"Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:451
 #, no-wrap
 msgid "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
-msgstr ""
+msgstr "clearpart --drives=sd*|hd*|vda,/dev/vdc\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:454
@@ -1820,12 +1843,15 @@ msgid ""
 "Variants are processed from left to right, and at least one of them must "
 "match for the command to succeed."
 msgstr ""
+"O acima irá corresponder a qualquer um de `sd*`, `hd*`, *ou* `vda` *e* `/dev/"
+"vdc`. As variantes são processadas da esquerda para a direita e pelo menos "
+"uma delas deve corresponder para que o comando seja bem-sucedido."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:455
 #, no-wrap
 msgid "[option]#--list=#"
-msgstr ""
+msgstr "[option]#--list=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:456
@@ -1834,34 +1860,37 @@ msgid ""
 "all# and [option]#--linux# options if used. Can be used across different "
 "drives. For example:"
 msgstr ""
+"Especifica quais partições limpar. Esta opção sobrescreve as opções "
+"[option]#--all# e [option]#--linux#, se usadas. Pode ser usado em diferentes "
+"unidades. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:460
 #, no-wrap
 msgid "[command]#clearpart --list=sda2,sda3,sdb1#\n"
-msgstr ""
+msgstr "[command]#clearpart --list=sda2,sda3,sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:462
 #, no-wrap
 msgid "[option]#--disklabel=#"
-msgstr ""
+msgstr "[option]#--disklabel=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:463
 msgid "Create a set disk label when relabeling a disk."
-msgstr ""
+msgstr "Cria um conjunto de rótulo de disco ao renomear um disco."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:464
 #, no-wrap
 msgid "[option]#--linux#"
-msgstr ""
+msgstr "[option]#--linux#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:465
 msgid "Erases all Linux partitions."
-msgstr ""
+msgstr "Apaga todas as partições Linux."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:466
