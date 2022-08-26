@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-08-26 22:41+0000\n"
+"PO-Revision-Date: 2022-08-26 22:48+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -3198,7 +3198,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:854
 #, no-wrap
 msgid "[option]#--ondisk=# or [option]#--ondrive=#"
-msgstr ""
+msgstr "[option]#--ondisk=# ou [option]#--ondrive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -3207,6 +3207,8 @@ msgid ""
 "[option]#--ondisk=sdb# puts the partition on the second SCSI disk on the "
 "system."
 msgstr ""
+"Força a criação da partição em um disco específico. Por exemplo, "
+"[option]#--ondisk=sdb# coloca a partição no segundo disco SCSI do sistema."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:857
@@ -3217,12 +3219,19 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Para ignorar um dispositivo multipath que não usa _gerenciamento de volume "
+"lógico_ (LVM), use o formato `disk/by-id/dm-uuid-mpath-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para ignorar um "
+"disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:861
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:864
@@ -3235,18 +3244,27 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Os dispositivos nultipath que usam LVM não são montados até que o "
+"[application]*Anaconda* tenha analisado o arquivo Kickstart. Portanto, você "
+"não pode especificar esses dispositivos no formato `dm-uuid-mpath`. Em vez "
+"disso, para ignorar um dispositivo nultipath que usa LVM, use o formato `"
+"disk/by-id/scsi-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para "
+"ignorar um disco com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:868
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:877
 #, no-wrap
 msgid "[option]#--asprimary#"
-msgstr ""
+msgstr "[option]#--asprimary#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:878
@@ -3260,13 +3278,21 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "recommended[Recommended Partitioning Scheme]."
 msgstr ""
+"Força a partição a ser alocada como uma partição *primária*. Se a partição "
+"não puder ser alocada como primária (geralmente devido a muitas partições "
+"primárias já alocadas), o processo de particionamento falhará. Esta opção só "
+"faz sentido quando o disco usa um Master Boot Record (MBR); para discos "
+"rotulados como GUID Partition Table (GPT), essa opção não tem significado. "
+"Para obter informações sobre partições primárias (e estendidas), consulte "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-recommended[Esquema de Particionamento Recomendado]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:879
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:950
 #, no-wrap
 msgid "[option]#--fsprofile=#"
-msgstr ""
+msgstr "[option]#--fsprofile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:880
@@ -3279,6 +3305,13 @@ msgid ""
 "that lists valid types. For `ext2`, `ext3`, `ext4`, this configuration file "
 "is `/etc/mke2fs.conf`."
 msgstr ""
+"Especifica um _tipo de uso_ a ser passado para o programa que cria um "
+"sistema de arquivos nesta partição. Um tipo de uso define uma variedade de "
+"parâmetros de ajuste a serem usados ao criar um sistema de arquivos. Para "
+"que esta opção funcione, o sistema de arquivos deve suportar o conceito de "
+"tipos de uso e deve haver um arquivo de configuração que liste os tipos "
+"válidos. Para `ext2`, `ext3`, `ext4`, este arquivo de configuração é `/etc/"
+"mke2fs.conf`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:882
@@ -3290,6 +3323,11 @@ msgid ""
 "installation-gui-manual-partitioning-filesystems[Device, File System and "
 "RAID Types]."
 msgstr ""
+"Define o tipo de sistema de arquivos para a partição. Os valores válidos são "
+"`xfs`, `ext2`, `ext3`, `ext4`, `swap`, `vfat`, `efi` e `biosboot`. Para "
+"obter informações sobre os sistemas de arquivos suportados, consulte xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Tipos de Dispositivo, Sistema de Arquivos e RAID]."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:891
@@ -3301,11 +3339,17 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume lógico. Nenhum processamento é feito na "
+"lista de argumentos, então eles devem ser fornecidos em um formato que pode "
+"ser passado diretamente para o programa mkfs. Isso significa que várias "
+"opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:893
 msgid "Assign a label to an individual partition."
-msgstr ""
+msgstr "Atribui um rótulo a uma partição individual."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:895
