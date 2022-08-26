@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:08+0000\n"
-"PO-Revision-Date: 2022-08-26 22:48+0000\n"
+"PO-Revision-Date: 2022-08-26 22:55+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -3614,12 +3614,16 @@ msgid ""
 "installation-gui-manual-partitioning-recommended[Recommended Partitioning "
 "Scheme]."
 msgstr ""
+"Determina o tamanho da partição automaticamente. Para obter detalhes sobre o "
+"esquema recomendado, consulte xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-manual-partitioning-recommended[Esquema de "
+"Particionamento Recomendado]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:990
 #, no-wrap
 msgid "[option]#--onbiosdisk#"
-msgstr ""
+msgstr "[option]#--onbiosdisk#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:991
@@ -3627,6 +3631,8 @@ msgid ""
 "Forces the partition to be created on a particular disk as discovered by the "
 "BIOS."
 msgstr ""
+"Força a criação da partição em um disco específico conforme descoberto pelo "
+"BIOS."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:993
@@ -3637,6 +3643,12 @@ msgid ""
 "set with the [command]#autopart --passphrase# command, or stops the "
 "installation and prompts you to provide a passphrase if no default is set."
 msgstr ""
+"Especifica que esta partição deve ser criptografada, usando a senha "
+"fornecida na opção [option]#--passphrase#. Se você não especificar uma "
+"senha, o [application]*Anaconda* usa a senha padrão de todo o sistema "
+"definida com o comando [command]#autopart --passphrase# ou interrompe a "
+"instalação e solicita que você forneça uma senha se não houver padrão está "
+"definido."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:995
@@ -3646,6 +3658,9 @@ msgid ""
 "this option together with the [option]#--encrypted# option; by itself it has "
 "no effect."
 msgstr ""
+"Especifica a frase secreta a ser usada ao criptografar este volume lógico. "
+"Você deve usar esta opção junto com a opção [option]#--encrypted#. Esta "
+"opção não tem efeito por si só."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1001
@@ -3656,6 +3671,10 @@ msgid ""
 "certificate specified with [option]#--escrowcert#. This option is only "
 "meaningful if [option]#--escrowcert# is specified."
 msgstr ""
+"Adiciona uma senha gerada aleatoriamente a cada volume criptografado. "
+"Armazena essas senhas em arquivos separados em `/root`, criptografados "
+"usando o certificado X.509 especificado com [option]#--escrowcert#. Esta "
+"opção só é significativa se [option]#--escrowcert# for especificado."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1017
