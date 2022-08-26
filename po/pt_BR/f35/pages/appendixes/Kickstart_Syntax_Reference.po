@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-08-26 21:47+0000\n"
+"PO-Revision-Date: 2022-08-26 21:53+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2194,17 +2194,19 @@ msgstr ""
 #, no-wrap
 msgid "[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | --password= | --reverse-user= | --reverse-password=]#\n"
 msgstr ""
+"[command]#iscsi --ipaddr=  --port=  [--target= | --iface= | --user= | --"
+"password= | --reverse-user= | --reverse-password=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:574
 #, no-wrap
 msgid "[option]#--ipaddr=#"
-msgstr ""
+msgstr "[option]#--ipaddr=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:575
 msgid "The IP address of the target to connect to."
-msgstr ""
+msgstr "O endereço IP do alvo para conectar."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:576
@@ -2213,29 +2215,29 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1839
 #, no-wrap
 msgid "[option]#--port=#"
-msgstr ""
+msgstr "[option]#--port=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:577
 msgid "The port number (typically `3260`)."
-msgstr ""
+msgstr "O número de porta (geralmente `3260`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:578
 #, no-wrap
 msgid "[option]#--target=#"
-msgstr ""
+msgstr "[option]#--target=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:579
 msgid "Target _IQN_ (iSCSI Qualified Name)."
-msgstr ""
+msgstr "_IQN_ (Nome Qualificado iSCSI) alvo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:580
 #, no-wrap
 msgid "[option]#--iface=#"
-msgstr ""
+msgstr "[option]#--iface=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:581
@@ -2245,28 +2247,32 @@ msgid ""
 "in all instances of the [command]#iscsi# command in the entire Kickstart "
 "file."
 msgstr ""
+"Vincula a conexão a uma interface de rede específica em vez de usar a "
+"interface padrão determinada pela camada de rede. Uma vez usado, ele deve "
+"ser especificado em todas as instâncias do comando [command]#iscsi# em todo "
+"o arquivo Kickstart."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:582
 #, no-wrap
 msgid "[option]#--user=#"
-msgstr ""
+msgstr "[option]#--user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:583
 msgid "User name required to authenticate with the target."
-msgstr ""
+msgstr "Nome de usuário necessário para autenticar com o alvo."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:585
 msgid "Password that corresponds with the user name specified for the target."
-msgstr ""
+msgstr "Senha que corresponde ao nome de usuário especificado para o alvo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:586
 #, no-wrap
 msgid "[option]#--reverse-user=#"
-msgstr ""
+msgstr "[option]#--reverse-user=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:587
@@ -2274,24 +2280,26 @@ msgid ""
 "User name required to authenticate with the initiator from a target using "
 "reverse CHAP authentication."
 msgstr ""
+"Nome de usuário necessário para autenticar com o iniciador de um destino "
+"usando autenticação CHAP reversa."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:588
 #, no-wrap
 msgid "[option]#--reverse-password=#"
-msgstr ""
+msgstr "[option]#--reverse-password=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:589
 msgid ""
 "Password that corresponds with the user name specified for the initiator."
-msgstr ""
+msgstr "Senha que corresponde ao nome de usuário especificado para o iniciador."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:591
 #, no-wrap
 msgid "iscsiname (optional) - Assign Name to iSCSI Device"
-msgstr ""
+msgstr "iscsiname (opcional) - Atribui Nome do Dispositivo iSCSI"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:594
@@ -2301,24 +2309,30 @@ msgid ""
 "Devices]). This command is mandatory if you use the [command]#iscsi# "
 "command, and it must be specified *before* you use [command]#iscsi#."
 msgstr ""
+"Atribui um nome a um nó iSCSI especificado pelo comando [command]#iscsi# "
+"(xref:sect-kickstart-comandos-iscsi[iscsi (opcional) - Configura "
+"Dispositivos iSCSI]). Este comando é obrigatório se você usar o comando "
+"[command]#iscsi# e deve ser especificado *antes* de usar [command]#iscsi#."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:598
 #, no-wrap
 msgid "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
-msgstr ""
+msgstr "[command]#iscsiname _iqn_pass:attributes[{blank}]#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:601
 #, no-wrap
 msgid "logvol (optional) - Create LVM Logical Volume"
-msgstr ""
+msgstr "logvol (opcional) - Cria Volume Lógico LVM"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:604
 msgid ""
 "Create a logical volume for Logical Volume Management (LVM) with the syntax:"
 msgstr ""
+"Cria um volume lógico para Gerenciamento de Volume Lógico (LVM) com a "
+"sintaxe:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:608
