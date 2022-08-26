@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-08-26 14:10+0000\n"
+"PO-Revision-Date: 2022-08-26 20:55+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1081,12 +1081,12 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:244
 #, no-wrap
 msgid "bootloader (required) - Configure Boot Loader"
-msgstr ""
+msgstr "bootloader (obrigatório) - Configura o Carregador de Inicialização"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:247
 msgid "Specifies how the boot loader should be installed."
-msgstr ""
+msgstr "Especifica como o carregador de inicialização deve ser instalado."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:252
@@ -1095,6 +1095,10 @@ msgid ""
 "boot loader can allow a potential attacker to modify the system's boot "
 "options and gain unauthorized access to the system."
 msgstr ""
+"Você deve sempre usar uma senha para proteger seu carregador de "
+"inicialização. Um carregador de inicialização desprotegido pode permitir que "
+"um invasor em potencial modifique as opções de inicialização do sistema e "
+"obtenha acesso não autorizado ao sistema."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:259
@@ -1106,12 +1110,19 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning-"
 "bootloader[Boot Loader Installation]."
 msgstr ""
+"Alguns sistemas requerem uma partição especial para instalar o carregador de "
+"inicialização. O tipo e tamanho desta partição depende se o disco no qual "
+"você está instalando o carregador de incialização usa o _Master Boot Record_ "
+"(MBR) ou um esquema de _Tabela de Partição GUID_ (GPT). Para obter mais "
+"informações, consulte xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-storage-partitioning-bootloader[Instalação do Carregador de "
+"Inicialização]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:262
 #, no-wrap
 msgid "[option]#--append=#"
-msgstr ""
+msgstr "[option]#--append=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:263
@@ -1119,12 +1130,15 @@ msgid ""
 "Specifies additional kernel parameters. To specify multiple parameters, "
 "separate them with spaces. For example:"
 msgstr ""
+"Especifica parâmetros de kernel adicionais. Para especificar vários "
+"parâmetros, separe-os com espaços. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:267
 #, no-wrap
 msgid "[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 msgstr ""
+"[command]#bootloader --location=mbr --append=\"hdd=ide-scsi ide=nodma\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:270
@@ -1133,12 +1147,14 @@ msgid ""
 "you do not specify them here or do not use the [option]#--append=# command "
 "at all."
 msgstr ""
+"Os parâmetros [option]#rhgb# e [option]#quiet# são sempre usados, mesmo se "
+"você não os especificar aqui ou não usar o comando [option]#--append=#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:271
 #, no-wrap
 msgid "[option]#--boot-drive=#"
-msgstr ""
+msgstr "[option]#--boot-drive=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:272
@@ -1147,6 +1163,10 @@ msgid ""
 "which drive the computer will boot from. If you use a multipath device as "
 "the boot drive, specify only one member of the device."
 msgstr ""
+"Especifica em qual unidade o carregador de inicialização deve ser gravado e, "
+"portanto, de qual unidade o computador será inicializado. Se você usar um "
+"dispositivo multipath como unidade de inicialização, especifique apenas um "
+"membro do dispositivo."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -1156,12 +1176,16 @@ msgid ""
 "boot loader. When [application]*zipl* is installed, it determines the boot "
 "drive on its own."
 msgstr ""
+"A opção [option]#--boot-drive=# está atualmente sendo ignorada em "
+"instalações do {PRODUCT} em sistemas IBM System{nbsp}z usando o carregador "
+"de inicialização [application]*zipl*. Quando [application]*zipl* está "
+"instalado, ele determina a unidade de inicialização por sua própria conta."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:281
 #, no-wrap
 msgid "*Not* specifying this option will result in the following behavior:\n"
-msgstr ""
+msgstr "*Não* especificar esta opção resultará no seguinte comportamento:\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:283
@@ -1170,12 +1194,16 @@ msgid ""
 "install the boot loader on the first valid device specified in the drive "
 "order."
 msgstr ""
+"Se a opção [option]#--driveorder=# foi usada, [application]*Anaconda* "
+"instalará o carregador de inicialização no primeiro dispositivo válido "
+"especificado na ordem do drive."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:285
 msgid ""
 "The first present and valid disk containing a `/boot` partition will be used."
 msgstr ""
+"O primeiro disco presente e válido contendo uma partição `/boot` será usado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:287
@@ -1183,6 +1211,9 @@ msgid ""
 "If none of the above applies, then the first valid storage device from the "
 "list of all detected devices will be used to install the boot loader."
 msgstr ""
+"Se nenhuma das opções acima se aplicar, o primeiro dispositivo de "
+"armazenamento válido da lista de todos os dispositivos detectados será usado "
+"para instalar o carregador de inicialização."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:288
