@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-26 21:02+0000\n"
+"PO-Revision-Date: 2022-08-26 21:09+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1696,17 +1696,19 @@ msgid ""
 "Install the boot loader configuration and support files, but do not modify "
 "the MBR."
 msgstr ""
+"Instala a configuração do carregador de inicialização e os arquivos de "
+"suporte, mas não modifica o MBR."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "btrfs (optional) - Create Btrfs Volume or Subvolume"
-msgstr ""
+msgstr "btrfs (opcional) - Cria Volume ou Subvolume Btrfs"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:427
 msgid "Create a Btrfs volume or subvolume. For a volume, the syntax is:"
-msgstr ""
+msgstr "Cria um volume ou subvolume Btrfs. Para um volume, a sintaxe é:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:432
@@ -1716,6 +1718,9 @@ msgid ""
 "--metadata=pass:attributes[{blank}]_level_ [--label=] "
 "_partitions_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _pontomnt_ --data=pass:attributes[{blank}]_level_ "
+"--metadata=pass:attributes[{blank}]_level_ [--label=] "
+"_partições_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:436
@@ -1730,7 +1735,7 @@ msgstr ""
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:438
 msgid "For a subvolume, the syntax is:"
-msgstr ""
+msgstr "Para um subvolume, a sintaxe é:"
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:443
@@ -1739,6 +1744,8 @@ msgid ""
 "[command]#btrfs _mntpoint_ --subvol --name=pass:attributes[{blank}]_name_ "
 "_parent_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#btrfs _pontomnt_ --subvol --name=pass:attributes[{blank}]_nome_ "
+"_pai_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:447
@@ -1747,12 +1754,15 @@ msgid ""
 "with a name for the subvolume, and _mntpoint_ is the location where the file "
 "system is mounted."
 msgstr ""
+"_pai_ deve ser o identificador do volume pai do subvolume, _nome_ com um "
+"nome para o subvolume e _ponto mnt_ é o local onde o sistema de arquivos é "
+"montado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:448
 #, no-wrap
 msgid "[option]#--data=#"
-msgstr ""
+msgstr "[option]#--data=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:449
