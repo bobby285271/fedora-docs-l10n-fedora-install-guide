@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:11+0000\n"
-"PO-Revision-Date: 2022-08-26 21:59+0000\n"
+"PO-Revision-Date: 2022-08-26 22:34+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -2722,15 +2722,14 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:732
-#, fuzzy, no-wrap
-#| msgid "`none`:"
+#, no-wrap
 msgid "`none`"
-msgstr "`none`:"
+msgstr "`none`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:733
 msgid "Used only when creating a thin pool volume."
-msgstr "Usada apenas ao criar um volume thin-pool."
+msgstr "Usada apenas ao criar um volume thin pool."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:734
@@ -2771,7 +2770,7 @@ msgstr ""
 "Define o tipo de sistema de arquivos para o volume lógico. Os valores "
 "válidos são `xfs`, `ext2`, `ext3`, `ext4`, `swap` e `vfat`. Veja xref:"
 "install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-filesystems[Tipos de dispositivos, sistemas de arquivos e RAID] "
+"partitioning-filesystems[Tipos de Dispositivos, Sistemas de Arquivos e RAID] "
 "para informações sobre os sistemas de arquivos disponíveis."
 
 #. type: Labeled list
@@ -2925,7 +2924,7 @@ msgstr ""
 "deste volume automaticamente, baseado no hardware do seu sistema. Para obter "
 "detalhes sobre o esquema recomendado, consulte xref:install/"
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
-"recommended[Esquema de particionamento recomendado]."
+"recommended[Esquema de Particionamento Recomendado]."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:772
@@ -2995,7 +2994,7 @@ msgstr ""
 "criptografados como arquivos em `/root`, criptografados usando o certificado "
 "X.509 da URL especificada com _URL_do_certificado_X.509_. As chaves são "
 "armazenadas como um arquivo separado para cada volume criptografado. Esta "
-"opção só é significativa se [option]#--encrypted# for especificado."
+"opção só é significativa se [option]#--encrypted# for especificada."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:786
@@ -3020,7 +3019,7 @@ msgstr "[option]#--thinpool#"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:788
 msgid "Creates a thin pool logical volume. (Use a mount point of `none`)"
 msgstr ""
-"Cria um volume lógico de thin-pool. (Use um ponto de montagem de `none`)"
+"Cria um volume lógico de thin pool. (Use um ponto de montagem de `none`)"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:789
@@ -3054,7 +3053,7 @@ msgstr "[option]#--thin#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:794
 msgid "Create a thin logical volume. (Requires use of [option]#--poolname#)"
-msgstr "Cria um volume lógico thing. (Requer o uso de [option]#--poolname#)"
+msgstr "Cria um volume lógico thin. (Requer o uso de [option]#--poolname#)"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:795
@@ -3172,7 +3171,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:838
 #, no-wrap
 msgid "part (required) - Create Physical Partition"
-msgstr "part (obrigatório) - Cria partição física"
+msgstr "part (obrigatório) - Criar Partição Física"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:841
@@ -3191,7 +3190,11 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:848
 #, no-wrap
 msgid "[command]#part|partition _mntpoint_ --name=pass:attributes[{blank}]_name_ --device=pass:attributes[{blank}]_device_ --rule=pass:attributes[{blank}]_rule_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
-msgstr "[command]#part|partition _pontomontagem_ --name=pass:attributes[{blank}]_nome_ --device=pass:attributes[{blank}]_dispositivo_ --rule=pass:attributes[{blank}]_regra_ [pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
+msgstr ""
+"[command]#part|partition _pontomnt_ --name=pass:attributes[{blank}]_nome_ "
+"--device=pass:attributes[{blank}]_dispositivo_ "
+"--rule=pass:attributes[{blank}]_regra_ "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:855
@@ -3235,10 +3238,9 @@ msgstr "`swap--hibernation`\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:891
-#, fuzzy, no-wrap
-#| msgid "`raid._id_pass:attributes[{blank}]`:"
+#, no-wrap
 msgid "`raid._id_pass:attributes[{blank}]`"
-msgstr "`raid._id_pass:attributes[{blank}]`:"
+msgstr "`raid._id_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:892
@@ -3247,10 +3249,9 @@ msgstr "A partição é usada para RAID por software (veja [command]#raid#)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:893
-#, fuzzy, no-wrap
-#| msgid "`pv._id_pass:attributes[{blank}]`:"
+#, no-wrap
 msgid "`pv._id_pass:attributes[{blank}]`"
-msgstr "`pv._id_pass:attributes[{blank}]`:"
+msgstr "`pv._id_pass:attributes[{blank}]`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:894
@@ -3261,10 +3262,9 @@ msgstr ""
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:895
-#, fuzzy, no-wrap
-#| msgid "`biosboot`:"
+#, no-wrap
 msgid "`biosboot`"
-msgstr "`biosboot`:"
+msgstr "`biosboot`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:896
