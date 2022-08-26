@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:13+0000\n"
-"PO-Revision-Date: 2022-08-16 18:21+0000\n"
+"PO-Revision-Date: 2022-08-26 14:10+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -27,7 +27,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr "Referência da sintaxe do Kickstart"
+msgstr "Referência de Sintaxe do Kickstart"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -40,7 +40,7 @@ msgstr ""
 "Este apêndice descreve comandos e opções disponíveis em instalações "
 "Kickstart. Para informações gerais sobre o Kickstart, veja xref:advanced/"
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automatizando a "
-"instalação com o Kickstart]."
+"Instalação com o Kickstart]."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:16
@@ -52,8 +52,8 @@ msgid ""
 msgstr ""
 "Não há garantia de que os nomes dos dispositivos sejam consistentes nas "
 "reinicializações, o que pode complicar o uso dos scripts do Kickstart. "
-"Quando uma opção do Kickstart chama um nome de nó de dispositivo (como "
-"`sda`), você pode usar qualquer item de `/dev/disk`. Por exemplo, em vez de:"
+"Quando uma opção do Kickstart chama um nome de nó de dispositivo (como `sda`)"
+", você pode usar qualquer item de`/dev/disk`. Por exemplo, em vez de:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:20
@@ -99,11 +99,11 @@ msgid ""
 msgstr ""
 "Embora os princípios gerais das instalações do Kickstart tendam a permanecer "
 "os mesmos, os comandos e opções podem mudar entre as versões principais. "
-"Você pode usar o comando [command]#ksverdiff# para exibir as diferenças "
+"Você pode usar o comando [command] # ksverdiff # para exibir as diferenças "
 "entre as duas versões da sintaxe do Kickstart. Isso é útil ao atualizar um "
 "arquivo Kickstart existente para ser usado com uma nova versão. Para exibir "
-"uma lista de alterações na sintaxe entre o Fedora{nbsp}{PREVVER} e "
-"{PRODVER}, use o seguinte comando:"
+"uma lista de alterações na sintaxe entre o Fedora{nbsp}{PREVVER} e {PRODVER}"
+", use o seguinte comando:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:40
@@ -135,9 +135,9 @@ msgid ""
 "Notes_, available at link:++https://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
-"Além disso, você pode revisar as [citetitle]_Notas de Lançamento do "
-"Fedora{nbsp}{PRODVER }_, disponíveis no link:++https://docs.fedoraproject."
-"org/++[], para obter uma lista de mudanças."
+"Além disso, você pode revisar as notas de lançamento do [citetitle] "
+"_Fedora{nbsp}{PRODVER }_, disponíveis no link: ++ http: //docs.fedoraproject."
+"org/++ [], para obter uma lista de mudanças."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:50
@@ -154,7 +154,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:54
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr "Métodos e fontes de instalação"
+msgstr "Métodos e Fontes de Instalação"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:57
@@ -165,7 +165,7 @@ msgstr "Os comandos a seguir controlam a maneira como o Fedora será instalado."
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:59
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr "device (opcional) - Instala drivers de dispositivos extras"
+msgstr "device (opcional) - Instalar drivers de dispositivos extras"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:62
@@ -179,8 +179,8 @@ msgstr ""
 "Na maioria dos sistemas PCI, o programa de instalação detecta "
 "automaticamente as placas Ethernet e SCSI. No entanto, em sistemas mais "
 "antigos e alguns sistemas PCI, o Kickstart requer uma dica para encontrar os "
-"dispositivos adequados. O comando [command]#device#, que informa ao programa "
-"de instalação para instalar módulos extras, usa o seguinte formato:"
+"dispositivos adequados. O comando [command] #device#, que informa ao "
+"programa de instalação para instalar módulos extras, usa o seguinte formato:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:66
@@ -201,7 +201,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:179
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr "[option]#--opts=#"
+msgstr "[option]#--opts=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:71
@@ -218,7 +218,7 @@ msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:77
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr "driverdisk (opcional) - Usa um disco de driver"
+msgstr "driverdisk (opcional) - Use um disco de driver"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:80
@@ -232,9 +232,9 @@ msgstr ""
 "Os discos de driver podem ser usados durante as instalações do Kickstart "
 "para fornecer drivers adicionais não incluídos por padrão. Você deve copiar "
 "o conteúdo dos discos de driver para o diretório raiz de uma partição no "
-"disco rígido do sistema. Em seguida, você deve usar o comando "
-"[command]#driverdisk# para especificar que o programa de instalação deve "
-"procurar um disco de driver e sua localização."
+"disco rígido do sistema. Em seguida, você deve usar o comando [command] "
+"#driverdisk# para especificar que o programa de instalação deve procurar um "
+"disco de driver e sua localização."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
@@ -255,8 +255,8 @@ msgid ""
 "with the name of the partition containing the driver disk. Note that the "
 "partition must be specified as a full path. For example:"
 msgstr ""
-"Procura a imagem do disco de driver em uma partição local. Substitua "
-"_partição_ pelo nome da partição que contém o disco de driver. Observe que a "
+"Procure a imagem do disco de driver em uma partição local. Substitua "
+"_partição_ pelo nome da partição que contém o disco do driver. Observe que a "
 "partição deve ser especificada como um caminho completo. Por exemplo:"
 
 #. type: delimited block -
@@ -277,7 +277,7 @@ msgid ""
 "Search for the driver disk in a network location instead of a local "
 "partition. For example:"
 msgstr ""
-"Procura o disco de driver em um local de rede em vez de uma partição local. "
+"Procure o disco de driver em um local de rede em vez de uma partição local. "
 "Por exemplo:"
 
 #. type: delimited block -
@@ -303,7 +303,7 @@ msgstr "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_nome-do-host_
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:141
 #, no-wrap
 msgid "[option]#--biospart=#"
-msgstr "[option]#--biospart=#"
+msgstr "[option]#--biospart=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:111
@@ -462,7 +462,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:267
 #, no-wrap
 msgid "[option]#--url=#"
-msgstr "[option]#--url=#"
+msgstr "[option]#--url=#:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:158
@@ -620,7 +620,7 @@ msgstr "A URL do espelho a partir da qual instalar."
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:200
 #, no-wrap
 msgid "mediacheck (optional) - Verify Installation Media Integrity"
-msgstr "mediacheck (opcional) - Verifica a integridade da mídia de instalação"
+msgstr "mediacheck (opcional) - Verifica a Integridade da Mídia de instalação"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:203
@@ -634,7 +634,7 @@ msgstr ""
 "Este comando forçará o programa de instalação a executar uma verificação de "
 "mídia antes de iniciar a instalação, de forma semelhante à [option]#rd.live."
 "check# opção de inicialização (consulte xref:advanced/Boot_Options.adoc#sect-"
-"boot-options-mediacheck[Verificando a mídia de inicialização]. Este comando "
+"boot-options-mediacheck[Verificando a Mídia de Inicialização]. Este comando "
 "requer que as instalações sejam atendidas, por isso está desabilitado por "
 "padrão."
 
@@ -975,7 +975,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:274
 #, no-wrap
 msgid "Storage and Partitioning"
-msgstr "Armazenamento e particionalmente"
+msgstr "Armazenamento e Particionamento"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -990,7 +990,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:279
 #, no-wrap
 msgid "autopart (optional) - Automatic Partitioning"
-msgstr "autopart (opcional) - Particionamento automático"
+msgstr "autopart (opcional) - Particionamento Automático"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:282
@@ -1034,22 +1034,22 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:293
 msgid "`lvm`: The LVM partitioning scheme."
-msgstr "`lvm`: O esquema de particionamento LVM."
+msgstr "`lvm` : O esquema de particionamento LVM."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:295
 msgid "`btrfs`: The Btrfs partitioning scheme."
-msgstr "`btrfs`: O esquema de particionamento Btrfs."
+msgstr "`btrfs` : O esquema de particionamento Btrfs."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:297
 msgid "`plain`: Regular partitions with no LVM or Btrfs."
-msgstr "`plain`: Particionamentos regulares sem LVM ou Btrfs."
+msgstr "`plain` : Particionamentos regulares sem LVM ou Btrfs."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:299
 msgid "`thinp`: The LVM Thin Provisioning partitioning scheme."
-msgstr "`thinp`: O esquema de particionamento de provisionamento LVM fino."
+msgstr "`thinp` : O esquema de particionamento de provisionamento LVM Fino."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:301
@@ -1060,7 +1060,7 @@ msgid ""
 msgstr ""
 "O esquema de particionamento criado seguirá o esquema recomendado descrito "
 "em xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-recommended[Esquema de particionamento recomendado]."
+"partitioning-recommended[Esquema de Particionamento Recomendado]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:302
@@ -1138,7 +1138,9 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1070
 #, no-wrap
 msgid "[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X.509_certificate_pass:attributes[{blank}]#"
-msgstr "[option]#--escrowcert=pass:attributes[{blank}]_URL_do_certificado_X.509_pass:attributes[{blank}]#"
+msgstr ""
+"[option]#--escrowcert=pass:attributes[{blank}]_URL_of_X."
+"509_certificate_pass:attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:311
@@ -1205,10 +1207,9 @@ msgstr ""
 "Especifica qual tipo de criptografia será usado se `aes-xts-plain64`, padrão "
 "do [application]*Anaconda*, não for satisfatório. Você deve usar esta opção "
 "junto com a opção [option]#--encrypted#; por si só não tem efeito. Os tipos "
-"de criptografia disponíveis estão listados no [citetitle]_Fedora Security "
-"Guide_ (guia de segurança), disponível no link:++https://docs.fedoraproject."
-"org/++[]. Usar `aes-xts-plain64` ou `aes-cbc-essiv: sha256` é fortemente "
-"recomendado."
+"de criptografia disponíveis estão listados no [citetitle]_Guia de Segurança "
+"do Fedora_ , disponível no link:++https://docs.fedoraproject.org/++[]. Usar "
+"`aes-xts-plain64` ou `aes-cbc-essiv: sha256` é fortemente recomendado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:316
