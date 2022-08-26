@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-27 21:03+0000\n"
+"POT-Creation-Date: 2022-08-18 21:03+0000\n"
 "PO-Revision-Date: 2022-08-16 11:46+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -20,9 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.13\n"
 
-#. type: Block title
+#. type: Title ===
 #: pages/_partials/install/UserSpoke.adoc:4
-#: pages/_partials/install/UserSpoke.adoc:15
 #, no-wrap
 msgid "Create User"
 msgstr "Criar Usuário"
@@ -57,6 +56,13 @@ msgstr ""
 "instalação; no entanto, é altamente recomendado. Se você não criar uma, você "
 "terá que fazer login no sistema como `root` diretamente, o que *não* é "
 "recomendado."
+
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:15
+#, fuzzy, no-wrap
+#| msgid "Create User"
+msgid "Create User "
+msgstr "Criar Usuário"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:17
@@ -163,10 +169,9 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
-"Consulte o [citetitle]_Guia de Segurança do {PRODUCT}_, disponível no "
-"link:++https://docs.fedoraproject.org/++[], para informações detalhadas "
-"sobre segurança de senhas, incluindo diretrizes para selecionar senhas "
-"fortes."
+"Consulte o [citetitle]_Guia de Segurança do {PRODUCT}_, disponível no link:+"
+"+https://docs.fedoraproject.org/++[], para informações detalhadas sobre "
+"segurança de senhas, incluindo diretrizes para selecionar senhas fortes."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:44
@@ -180,9 +185,8 @@ msgstr ""
 "Avançada do Usuário` será aberta. Essa caixa de diálogo é descrita na seção "
 "a seguir."
 
-#. type: Block title
+#. type: Title ====
 #: pages/_partials/install/UserSpoke.adoc:46
-#: pages/_partials/install/UserSpoke.adoc:50
 #, no-wrap
 msgid "Advanced User Configuration"
 msgstr "Configuração Avançada do Usuário"
@@ -195,6 +199,13 @@ msgid ""
 msgstr ""
 "A caixa de diálogo `Configuração Avançada do Usuário` permite que você "
 "altere as seguintes configurações para a nova conta de usuário."
+
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:50
+#, fuzzy, no-wrap
+#| msgid "Advanced User Configuration"
+msgid "Advanced User Configuration "
+msgstr "Configuração Avançada do Usuário"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/UserSpoke.adoc:52
@@ -214,8 +225,8 @@ msgid ""
 "The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
 "attributes[{blank}]` by default)."
 msgstr ""
-"O `Diretório inicial` do usuário (`/home/"
-"pass:attributes[{blank}]_nomeusuário_pass:attributes[{blank}]` por padrão)."
+"O `Diretório inicial` do usuário (`/home/pass:"
+"attributes[{blank}]_nomeusuário_pass:attributes[{blank}]` por padrão)."
 
 #. type: Plain text
 #: pages/_partials/install/UserSpoke.adoc:57
@@ -250,9 +261,9 @@ msgid ""
 msgstr ""
 "A associação ao grupo do usuário. A conta de usuário que você está criando "
 "sempre terá uma associação de grupo padrão (o grupo padrão do usuário com um "
-"ID definido no campo \"Especificar um ID de grupo manualmente\"). No campo `"
-"Associação ao Grupo`, você pode especificar grupos adicionais como uma lista "
-"separada por vírgulas. Grupos que ainda não existem serão criados; você pode "
-"especificar GIDs personalizados para eles entre parênteses. Se você não "
-"especificar um GID personalizado para um novo grupo, ele será atribuído "
-"automaticamente."
+"ID definido no campo \"Especificar um ID de grupo manualmente\"). No campo "
+"`Associação ao Grupo`, você pode especificar grupos adicionais como uma "
+"lista separada por vírgulas. Grupos que ainda não existem serão criados; "
+"você pode especificar GIDs personalizados para eles entre parênteses. Se "
+"você não especificar um GID personalizado para um novo grupo, ele será "
+"atribuído automaticamente."

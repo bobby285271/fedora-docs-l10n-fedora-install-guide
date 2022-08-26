@@ -6,12 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:04+0000\n"
+"POT-Creation-Date: 2022-08-18 21:11+0000\n"
 "PO-Revision-Date: 2021-05-27 16:03+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f32pages_partialsinstallcustomspoke/tr/>"
-"\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/f32pages_partialsinstallcustomspoke/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,9 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.6.2\n"
 
-#. type: Block title
+#. type: Title ===
 #: pages/_partials/install/CustomSpoke.adoc:5
-#: pages/_partials/install/CustomSpoke.adoc:20
 #, no-wrap
 msgid "Manual Partitioning"
 msgstr "Elle Bölümlendirme"
@@ -80,10 +78,17 @@ msgid ""
 "summary[Installation Summary]."
 msgstr ""
 "Gerçek bölümlendirme işlemi sırasında disklerinizde kalıcı değişiklikler "
-"yapılmayacaktır. Seçtiğiniz yapılandırma, yalnızca "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"yapılmayacaktır. Seçtiğiniz yapılandırma, yalnızca xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
 "summary[Kurulum Özeti] ekranındaki `Kuruluma başla` düğmesine bastıktan "
 "sonra sisteminize yazılacaktır."
+
+#. type: Block title
+#: pages/_partials/install/CustomSpoke.adoc:20
+#, fuzzy, no-wrap
+#| msgid "Manual Partitioning"
+msgid "Manual Partitioning "
+msgstr "Elle Bölümlendirme"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/CustomSpoke.adoc:22
@@ -126,8 +131,8 @@ msgid ""
 "automatically based on the total amount of available space."
 msgstr ""
 "Burada, `LVM` veya `BTRFS` gibi bir bölümlendirme şeması seçebilir ve "
-"kurucudan basit bir bölümlendirme düzeni oluşturmasını istemek için `"
-"Otomatik olarak oluşturmak için buraya tıklayın` seçeneğine "
+"kurucudan basit bir bölümlendirme düzeni oluşturmasını istemek için "
+"`Otomatik olarak oluşturmak için buraya tıklayın` seçeneğine "
 "tıklayabilirsiniz; bu düzen xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-manual-partitioning-recommended[Tavsiye Edilen "
 "Bölümlendirme Düzeni] bölümünde açıklanan yönergeleri izler. Oluşturulan "
@@ -184,10 +189,9 @@ msgid ""
 "Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
 "filesystems[Device, File System and RAID Types]."
 msgstr ""
-"Kullanılabilir aygıt ve dosya sistemi türlerinin açıklaması için "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
-"partitioning-filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne "
-"bakın."
+"Kullanılabilir aygıt ve dosya sistemi türlerinin açıklaması için xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-"
+"filesystems[Aygıt, Dosya Sistemi ve RAID Türleri] bölümüne bakın."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:40
@@ -242,14 +246,14 @@ msgid ""
 "If you want to add or remove any storage devices from your configuration, "
 "return to that screen and change your selection."
 msgstr ""
-"Seçili olan depolama aygıtlarının bir özetini görüntülemek için "
-"`pass:attributes[{blank}]_X_ depolama aygıtı seçildi` seçeneğine tıklayın; "
-"bu, daha karmaşık depolama düzenlerinde yönlendirme konusunda size yardımcı "
+"Seçili olan depolama aygıtlarının bir özetini görüntülemek için `pass:"
+"attributes[{blank}]_X_ depolama aygıtı seçildi` seçeneğine tıklayın; bu, "
+"daha karmaşık depolama düzenlerinde yönlendirme konusunda size yardımcı "
 "olabilir. Burada görüntülenen aygıtlar, xref:install/"
-"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
-"Kurulum Hedefi] bölümünde seçmiş olduğunuz aygıtlardır. Yapılandırmanıza "
-"herhangi bir depolama aygıtı eklemek veya çıkarmak isterseniz, o ekrana "
-"dönün ve seçiminizi değiştirin."
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Kurulum Hedefi] bölümünde seçmiş olduğunuz aygıtlardır. "
+"Yapılandırmanıza herhangi bir depolama aygıtı eklemek veya çıkarmak "
+"isterseniz, o ekrana dönün ve seçiminizi değiştirin."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:48
@@ -290,10 +294,10 @@ msgstr ""
 "altındaki denetimler kümesinde dairesel bir okla işaretlenen düğmeye basın. "
 "Açılan iletişim penceresinde `Diskleri Yeniden Tara` düğmesine basın ve "
 "tarama işlemi tamamlanana kadar bekleyin. Ardından, xref:install/"
-"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-partitioning["
-"Kurulum Hedefi] bölümüne dönmek için `Tamam` düğmesine basın; yenileri de "
-"dahil olmak üzere algılanan tüm diskler `Yerel Standart Diskler` bölümünde "
-"görüntülenecektir."
+"Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Kurulum Hedefi] bölümüne dönmek için `Tamam` düğmesine basın; "
+"yenileri de dahil olmak üzere algılanan tüm diskler `Yerel Standart Diskler` "
+"bölümünde görüntülenecektir."
 
 #. type: Block title
 #: pages/_partials/install/CustomSpoke.adoc:51
@@ -344,10 +348,10 @@ msgid ""
 "actual installation process."
 msgstr ""
 "Böyle bir mesaj görüntülenirse, geri dönün ve kurucu tarafından bulunan "
-"sorunları düzeltin; aksi takdirde kuruluma devam edemezsiniz. Yine de `"
-"Kurulum Özeti` ekranına dönmek için tekrar `Bitti` düğmesine basabilirsiniz, "
-"ancak depolama yapılandırma hatası gerçek kurulum sürecini başlatmanızı "
-"engelleyecektir."
+"sorunları düzeltin; aksi takdirde kuruluma devam edemezsiniz. Yine de "
+"`Kurulum Özeti` ekranına dönmek için tekrar `Bitti` düğmesine "
+"basabilirsiniz, ancak depolama yapılandırma hatası gerçek kurulum sürecini "
+"başlatmanızı engelleyecektir."
 
 #. type: Plain text
 #: pages/_partials/install/CustomSpoke.adoc:60

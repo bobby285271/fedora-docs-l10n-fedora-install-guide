@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:09+0000\n"
+"POT-Creation-Date: 2022-08-18 21:20+0000\n"
 "PO-Revision-Date: 2022-05-18 16:04+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -75,8 +75,8 @@ msgid ""
 msgstr ""
 "Opsi yang ditampilkan sebagai akhir dengan tanda \"sama dengan\" (`=`) "
 "memerlukan nilai untuk ditentukan - opsi tersebut tidak dapat digunakan "
-"sendiri. Misalnya, opsi [option]#inst.vncpassword=# juga harus berisi nilai ("
-"dalam hal ini, kata sandi). Format yang benar adalah [option]#inst."
+"sendiri. Misalnya, opsi [option]#inst.vncpassword=# juga harus berisi nilai "
+"(dalam hal ini, kata sandi). Format yang benar adalah [option]#inst."
 "vncpassword=pass:attributes[{blank}]_password_pass:attributes[{blank}]#. "
 "Opsi ini dengan sendirinya tidak valid tanpa kata sandi yang ditentukan."
 
@@ -104,8 +104,8 @@ msgid ""
 "available as the `dracut.cmdline(7)` man page."
 msgstr ""
 "Selain opsi yang dijelaskan dalam bab ini, prompt boot juga menerima opsi "
-"kernel [aplikasi] * dracut *. Daftar opsi ini tersedia pada manual `"
-"dracut.cmdline (7)`."
+"kernel [aplikasi] * dracut *. Daftar opsi ini tersedia pada manual `dracut."
+"cmdline (7)`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:24
@@ -150,9 +150,9 @@ msgstr ""
 "menambahkan opsi boot ke file konfigurasi boot loader sebelum Anda melakukan "
 "boot sistem instalasi. Untuk petunjuk khusus, lihat xref: ../ install / "
 "Booting_the_Installation.adoc # sect-boot-menu [Menu Boot] jika Anda "
-"melakukan booting dari media lokal, dan xref: "
-"Network_based_Installations.adoc # chap-pxe-server-setup [Setting Up Server "
-"Instalasi] jika Anda melakukan booting dari server."
+"melakukan booting dari media lokal, dan xref: Network_based_Installations."
+"adoc # chap-pxe-server-setup [Setting Up Server Instalasi] jika Anda "
+"melakukan booting dari server."
 
 #. type: Title ====
 #: pages/advanced/Boot_Options.adoc:33
@@ -253,25 +253,13 @@ msgid ""
 msgstr ""
 "|Sumber instalasi|Format opsi\n"
 "|Drive CD/DVD apa saja|[option]#inst.repo=cdrom#\n"
-"|Drive CD/DVD tertentu|[option]#inst."
-"repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
-"|Hard Drive|[option]#inst.repo=hd:pass:attributes[{blank}]_device_:/pass:attr"
-"ibutes[{blank}]_path_pass:attributes[{blank}]#\n"
-"|HTTP Server|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:att"
-"ributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
-"|HTTPS Server|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:a"
-"ttributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
-"|FTP Server|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:"
-"attributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}"
-"]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes"
-"[{blank}]#\n"
-"|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:a"
-"ttributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{bl"
-"ank}]#\n"
-"\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by "
-"default. To use a different version, add "
-"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to "
-"_options_.]\n"
+"|Drive CD/DVD tertentu|[option]#inst.repo=cdrom:pass:attributes[{blank}]_device_pass:attributes[{blank}]#\n"
+"|Hard Drive|[option]#inst.repo=hd:pass:attributes[{blank}]_device_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTP Server|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|HTTPS Server|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|FTP Server|[option]#inst.repo=ftp://pass:attributes[{blank}]_username_:pass:attributes[{blank}]_password_pass:attributes[{blank}]@pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"|NFS Server|[option]#inst.repo=nfs:[pass:attributes[{blank}]_options_:]pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[This option uses NFS protocol version 3 by default. To use a different version, add [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# to _options_.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:74
@@ -303,8 +291,8 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
-"Karakter non-alfanumerik harus direpresentasikan sebagai `\\xpass"
-":attributes[{blank}]_NN_pass:attributes[{blank}]`, di mana _NN_ adalah "
+"Karakter non-alfanumerik harus direpresentasikan sebagai `\\xpass:"
+"attributes[{blank}]_NN_pass:attributes[{blank}]`, di mana _NN_ adalah "
 "representasi heksadesimal dari karakter tersebut. Misalnya, `\\x20` adalah "
 "spasi putih (\"\")."
 
@@ -326,11 +314,11 @@ msgid ""
 "squashfs.img`."
 msgstr ""
 "Tentukan lokasi image runtime program instalasi yang akan dimuat. Sintaksnya "
-"sama seperti di  xref:Boot_Options.adoc#tabl-boot-options-sources["
-"Installation Sources]. Opsi ini mencari jalur menuju direktori yang berisi "
-"file `.treeinfo` yang valid; lokasi image runtime akan dibaca dari file ini "
-"jika ditemukan. Jika file `.treeinfo` tidak tersedia, [application]*Anaconda*"
-" akan mencoba memuat image dari `LiveOS/squashfs.img`."
+"sama seperti di  xref:Boot_Options.adoc#tabl-boot-options-"
+"sources[Installation Sources]. Opsi ini mencari jalur menuju direktori yang "
+"berisi file `.treeinfo` yang valid; lokasi image runtime akan dibaca dari "
+"file ini jika ditemukan. Jika file `.treeinfo` tidak tersedia, "
+"[application]*Anaconda* akan mencoba memuat image dari `LiveOS/squashfs.img`."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:89
@@ -471,8 +459,8 @@ msgid ""
 msgstr ""
 "Memberikan lokasi file Kickstart yang akan digunakan untuk melakukan "
 "instalasi otomatis. Lokasi file dapat ditentukan dengan menggunakan salah "
-"satu format yang valid untuk [option]#inst.repo=#. See xref:Boot_Options.adoc"
-"#tabl-boot-options-sources[Installation Sources] untuk format yang valid."
+"satu format yang valid untuk [option]#inst.repo=#. See xref:Boot_Options."
+"adoc#tabl-boot-options-sources[Installation Sources] untuk format yang valid."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:120
@@ -491,9 +479,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:124
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
-msgstr ""
-"[opsi]#inst.ks=nfs:pass:attributes[{blank}]_next-"
-"server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
+msgstr "[opsi]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:127
@@ -506,8 +492,8 @@ msgstr ""
 "Pada contoh di atas, _next-server_ adalah opsi DHCP `next-server` atau "
 "alamat IP dari DHCP server itu sendiri, dan _filename_ adalah opsi DHCP "
 "`filename`, atau `/kickstart/`. Jika nama file yang diberikan diakhiri "
-"dengan karakter `/`, maka akan ditambahkan "
-"`pass:attributes[{blank}]_ip_-kickstart` . Sebagai contoh:"
+"dengan karakter `/`, maka akan ditambahkan `pass:attributes[{blank}]_ip_-"
+"kickstart` . Sebagai contoh:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:129
@@ -523,8 +509,7 @@ msgid ""
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
 "|Alamat server DHCP|Alamat client|Lokasi file Kickstart\n"
-"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
-"kickstart/192.168.122.100-kickstart`\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:137
@@ -659,8 +644,8 @@ msgstr ""
 "dijelaskan dalam xref:../appendixes/Kickstart_Syntax_Reference.adoc#sect-"
 "kickstart-commands-lang[bahasa (opsional) - Konfigurasi Bahasa Selama "
 "Instalasi ]. Pada sistem di mana paket [package]*system-config-language* "
-"diinstal, daftar nilai yang valid juga dapat ditemukan di `/usr/share/"
-"system-config-language/locale-list`."
+"diinstal, daftar nilai yang valid juga dapat ditemukan di `/usr/share/system-"
+"config-language/locale-list`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:165
@@ -711,8 +696,8 @@ msgid ""
 msgstr ""
 "Lakukan konfigutasi penggunaan geolokasi dalam program instalasi. Geolokasi "
 "digunakan untuk mengatur bahasa dan zona waktu sebelumnya, dan menggunakan "
-"sintaks berikut: [option]#inst."
-"geoloc=pass:attributes[{blank}]_value_pass:attributes[{blank}]#"
+"sintaks berikut: [option]#inst.geoloc=pass:attributes[{blank}]_value_pass:"
+"attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:171
@@ -763,10 +748,10 @@ msgid ""
 "adoc#appe-kickstart-syntax-reference[Kickstart Syntax Reference]."
 msgstr ""
 "Tentukan tata letak keyboard yang akan digunakan oleh program instalasi. "
-"Kode tata letak sama dengan yang digunakan dalam perintah [command]#keyboard#"
-" Kickstart seperti yang dijelaskan dalam xref:../appendixes/"
-"Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-reference[Referensi "
-"Sintaks Kickstart]."
+"Kode tata letak sama dengan yang digunakan dalam perintah "
+"[command]#keyboard# Kickstart seperti yang dijelaskan dalam xref:../"
+"appendixes/Kickstart_Syntax_Reference.adoc#appe-kickstart-syntax-"
+"reference[Referensi Sintaks Kickstart]."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:185
@@ -837,10 +822,10 @@ msgid ""
 "width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
-"Tentukan resolusi layar dalam mode grafis. Formatnya adalah "
-"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, dengan _N_ adalah "
-"lebar layar dan _M_ adalah tinggi layar (dalam piksel). Resolusi terendah "
-"yang didukung adalah `800x600`."
+"Tentukan resolusi layar dalam mode grafis. Formatnya adalah _N_pass:"
+"attributes[{blank}]xpass:attributes[{blank}]_M_, dengan _N_ adalah lebar "
+"layar dan _M_ adalah tinggi layar (dalam piksel). Resolusi terendah yang "
+"didukung adalah `800x600`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:193
@@ -871,8 +856,8 @@ msgid ""
 "xdriver=fbdev#."
 msgstr ""
 "Arahkan program instalasi untuk menggunakan frame buffer `X` driver daripada "
-"menggunakan driver khusus perangkat keras. Opsi ini setara dengan [opsi]#inst"
-".xdriver=fbdev#."
+"menggunakan driver khusus perangkat keras. Opsi ini setara dengan "
+"[opsi]#inst.xdriver=fbdev#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:197
@@ -941,8 +926,8 @@ msgstr ""
 "Selama instalasi, akun `root` tidak memiliki kata sandi secara default. Anda "
 "dapat mengatur kata sandi root untuk digunakan selama instalasi dengan "
 "perintah [command]#sshpw# Kickstart seperti yang dijelaskan dalam xref:../"
-"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-sshpw["
-"sshpw (opsional) - Batasi Akses ssh Selama Instalasi]."
+"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-"
+"sshpw[sshpw (opsional) - Batasi Akses ssh Selama Instalasi]."
 
 #. type: Title =====
 #: pages/advanced/Boot_Options.adoc:215
@@ -1003,25 +988,11 @@ msgid ""
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the specified method of automatic configuration, such as `dhcp`, but overrides the automatically obtained IP address, gateway, netmask, hostname or other specified parameter. All parameters are optional; only specify the ones you wish to override and automatically obtained values will be used for the others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
 "|Metode Konfigurasi|Format opsi\n"
-"|Konfigurasi otomatis antarmuka "
-"apapun|[option]#ip=pass:attributes[{blank}]_method_pass:attributes[{blank}]#"
-"\n"
-"|Konfigurasi otomatis antarmuka tertentu|[option]#ip=pass:attributes[{blank}]"
-"_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#\n"
-"|Konfigurasi statis|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes"
-"[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]"
-"_hostname_ :pass:attributes[{blank}]_interface_:none#\n"
+"|Konfigurasi otomatis antarmuka apapun|[option]#ip=pass:attributes[{blank}]_method_pass:attributes[{blank}]#\n"
+"|Konfigurasi otomatis antarmuka tertentu|[option]#ip=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_pass:attributes[{blank}]#\n"
+"|Konfigurasi statis|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_ :pass:attributes[{blank}]_interface_:none#\n"
 "|Konfigurasi otomatis antarmuka tertentu dengan penggantian\n"
-"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Menampilkan antarmuka yang ditentukan "
-"menggunakan metode konfigurasi otomatis yang ditentukan, seperti `dhcp`, "
-"tetapi mengesampingkan alamat IP, gateway, netmask, nama host, atau "
-"parameter tertentu lainnya yang diperoleh secara otomatis. Semua parameter "
-"bersifat opsional; hanya tentukan yang ingin Anda timpa dan nilai yang "
-"diperoleh secara otomatis akan digunakan untuk yang lain.]|[option]#ip=pass:a"
-"ttributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass: attributes[{b"
-"lank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_i"
-"nterface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:"
-"attributes[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Menampilkan antarmuka yang ditentukan menggunakan metode konfigurasi otomatis yang ditentukan, seperti `dhcp`, tetapi mengesampingkan alamat IP, gateway, netmask, nama host, atau parameter tertentu lainnya yang diperoleh secara otomatis. Semua parameter bersifat opsional; hanya tentukan yang ingin Anda timpa dan nilai yang diperoleh secara otomatis akan digunakan untuk yang lain.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass: attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:237
@@ -1029,7 +1000,7 @@ msgid "The [option]#method# parameter can be any the following:"
 msgstr "Parameter [option]#method# dapat berupa apa saja sebagai berikut:"
 
 #. type: Block title
-#: pages/advanced/Boot_Options.adoc:239 pages/advanced/Boot_Options.adoc:428
+#: pages/advanced/Boot_Options.adoc:239
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
 msgstr "Metode Konfigurasi Antarmuka Otomatis"
@@ -1059,9 +1030,9 @@ msgid ""
 "[option]#ip# option, the installation program will use [option]#ip=dhcp#."
 msgstr ""
 "Jika Anda menggunakan opsi boot yang memerlukan akses jaringan, seperti "
-"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:attributes[{blan"
-"k}]_path_pass:attributes[{blank}]#, tanpa menentukan opsi [option]#ip#, "
-"program instalasi akan menggunakan [option]#ip=dhcp#."
+"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:"
+"attributes[{blank}]_path_pass:attributes[{blank}]#, tanpa menentukan opsi "
+"[option]#ip#, program instalasi akan menggunakan [option]#ip=dhcp#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:258
@@ -1070,9 +1041,9 @@ msgid ""
 "`IPv6` addresses can be specified by putting them in square brackets, for "
 "example, `[2001:DB8::1]`."
 msgstr ""
-"Dalam tabel di atas, parameter _ip_ menentukan alamat IP klien. Alamat `IPv6`"
-" dapat ditentukan dengan menempatkannya dalam tanda kurung siku, misalnya, "
-"`[2001:DB8::1]`."
+"Dalam tabel di atas, parameter _ip_ menentukan alamat IP klien. Alamat "
+"`IPv6` dapat ditentukan dengan menempatkannya dalam tanda kurung siku, "
+"misalnya, `[2001:DB8::1]`."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:260
@@ -1144,9 +1115,9 @@ msgid ""
 "attributes[{blank}]#. For example:"
 msgstr ""
 "Tetapkan nama antarmuka yang diberikan ke perangkat jaringan dengan alamat "
-"MAC yang diberikan. Dapat digunakan berkali-kali. Sintaksnya adalah [option]#"
-"ifname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:"
-"attributes[{blank}]#. Sebagai contoh:"
+"MAC yang diberikan. Dapat digunakan berkali-kali. Sintaksnya adalah "
+"[option]#ifname=pass:attributes[{blank}]_interface_:pass:"
+"attributes[{blank}]_MAC_pass:attributes[{blank}]#. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:274
@@ -1185,9 +1156,9 @@ msgid ""
 "attributes[{blank}]_interface_pass:attributes[{blank}]#. For example:"
 msgstr ""
 "Mengatur perangkat Virtual LAN (VLAN) pada antarmuka tertentu dengan nama "
-"yang diberikan. Sintaksnya adalah [option]#vlan=pass:attributes[{blank}]_name"
-"_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. Sebagai "
-"contoh:"
+"yang diberikan. Sintaksnya adalah [option]#vlan=pass:"
+"attributes[{blank}]_name_:pass:attributes[{blank}]_interface_pass:"
+"attributes[{blank}]#. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:283
@@ -1243,12 +1214,13 @@ msgid ""
 "(ethernet) interfaces, and _options_ with a comma-separated list of bonding "
 "options. For example:"
 msgstr ""
-"Siapkan perangkat ikatan dengan sintaks berikut: [option]#bond=pass:attribute"
-"s[{blank}]_name_pass:attributes[{blank}][:pass:attributes[{blank}]_slaves_pas"
-"s:attributes[{blank}]][:pass:attributes[{blank}]_options_pass:attributes[{bla"
-"nk}]]#. Ganti _name_ dengan nama perangkat bonding, _slaves_ dengan daftar "
-"antarmuka fisik (ethernet) yang dipisahkan koma, dan _options_ dengan daftar "
-"opsi bonding yang dipisahkan koma. Sebagai contoh:"
+"Siapkan perangkat ikatan dengan sintaks berikut: [option]#bond=pass:"
+"attributes[{blank}]_name_pass:attributes[{blank}][:pass:"
+"attributes[{blank}]_slaves_pass:attributes[{blank}]][:pass:"
+"attributes[{blank}]_options_pass:attributes[{blank}]]#. Ganti _name_ dengan "
+"nama perangkat bonding, _slaves_ dengan daftar antarmuka fisik (ethernet) "
+"yang dipisahkan koma, dan _options_ dengan daftar opsi bonding yang "
+"dipisahkan koma. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:303
@@ -1289,11 +1261,11 @@ msgid ""
 "device and _slaves_ with a comma-separated list of physical (ethernet) "
 "devices to be used as slaves in the team device. For example:"
 msgstr ""
-"Siapkan team device dengan sintaks berikut: [option]#team=pass:attributes[{bl"
-"ank}]_master_:pass:attributes[{blank}]_slaves_pass:attributes[{blank}]#. "
-"Ganti _master_ dengan nama master team device dan _slaves_ dengan daftar "
-"perangkat fisik (ethernet) yang dipisahkan koma untuk digunakan sebagai "
-"slave di team device. Sebagai contoh:"
+"Siapkan team device dengan sintaks berikut: [option]#team=pass:"
+"attributes[{blank}]_master_:pass:attributes[{blank}]_slaves_pass:"
+"attributes[{blank}]#. Ganti _master_ dengan nama master team device dan "
+"_slaves_ dengan daftar perangkat fisik (ethernet) yang dipisahkan koma untuk "
+"digunakan sebagai slave di team device. Sebagai contoh:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:314
@@ -1344,8 +1316,8 @@ msgid ""
 "installed in multiple variants, while the latter will only be installed in "
 "variants specifically required."
 msgstr ""
-"Ini hanya berlaku untuk paket yang ditentukan secara langsung di bagian "
-"`%packages`. Jika sebuah paket hanya diinstal sebagai dependensi, hanya "
+"Ini hanya berlaku untuk paket yang ditentukan secara langsung di bagian `"
+"%packages`. Jika sebuah paket hanya diinstal sebagai dependensi, hanya "
 "dependensi yang ditentukan persis yang akan diinstal. Misalnya, jika Anda "
 "menginstal paket [package]*foo* yang bergantung pada paket [package]*bar*, "
 "yang pertama akan diinstal dalam beberapa varian, sedangkan yang terakhir "
@@ -1421,7 +1393,8 @@ msgstr ""
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:334
 msgid "`input_ks` - disables saving of the input Kickstart file (if any)."
-msgstr "`input_ks` - menonaktifkan penyimpanan file Kickstart input (jika ada)."
+msgstr ""
+"`input_ks` - menonaktifkan penyimpanan file Kickstart input (jika ada)."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:336
@@ -1456,8 +1429,8 @@ msgid ""
 "Multiple values can be combined as a comma separated list, for example: "
 "`input_ks,logs`"
 msgstr ""
-"Beberapa nilai dapat digabungkan dengan dipisahkan koma, misalnya: "
-"`input_ks,logs`"
+"Beberapa nilai dapat digabungkan dengan dipisahkan koma, misalnya: `input_ks,"
+"logs`"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:345
@@ -1519,9 +1492,10 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for details about [application]*DNF*."
 msgstr ""
 "Gunakan backend [aplikasi]*Yum* yang lebih lama untuk instalasi paket dan "
-"resolusi ketergantungan daripada [aplikasi]*DNF*. Lihat [citetitle]_{PRODUCT}"
-" System Administrator's Guide_, tersedia di link:++https://docs.fedoraproject"
-".org/++[], untuk detail tentang [application]*DNF*."
+"resolusi ketergantungan daripada [aplikasi]*DNF*. Lihat "
+"[citetitle]_{PRODUCT} System Administrator's Guide_, tersedia di link:+"
+"+https://docs.fedoraproject.org/++[], untuk detail tentang "
+"[application]*DNF*."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:353
@@ -1602,10 +1576,9 @@ msgid ""
 msgstr ""
 "Server `VNC` yang dipakai oleh program instalasi. Sebarang klien `VNC` yang "
 "mencoba menyambung ke sistem mesti menyediakan kata sandi yang benar untuk "
-"memperoleh akses. Sebagai contoh, [option]#inst."
-"vncpassword=pass:attributes[{blank}]_testpwd_pass:attributes[{blank}]# akan "
-"mengatur kata sandi menjadi `testpwd`. Panjang kata sandi mesti antara 6 dan "
-"8 karakter."
+"memperoleh akses. Sebagai contoh, [option]#inst.vncpassword=pass:"
+"attributes[{blank}]_testpwd_pass:attributes[{blank}]# akan mengatur kata "
+"sandi menjadi `testpwd`. Panjang kata sandi mesti antara 6 dan 8 karakter."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:375
@@ -1650,10 +1623,10 @@ msgid ""
 "specify one, the installation program will use `5900`."
 msgstr ""
 "Hubungkan ke klien `VNC` yang mendengarkan di host dan port tertentu setelah "
-"instalasi dimulai. Sintaks yang benar adalah [option]#inst.vncconnect=pass:at"
-"tributes[{blank}]_host_:pass:attributes[{blank}]_port_pass:attributes[{blank}"
-"]#. Parameter _port_ bersifat opsional - jika Anda tidak menentukannya, "
-"program instalasi akan menggunakan `5900`."
+"instalasi dimulai. Sintaks yang benar adalah [option]#inst.vncconnect=pass:"
+"attributes[{blank}]_host_:pass:attributes[{blank}]_port_pass:"
+"attributes[{blank}]#. Parameter _port_ bersifat opsional - jika Anda tidak "
+"menentukannya, program instalasi akan menggunakan `5900`."
 
 #. type: Title =====
 #: pages/advanced/Boot_Options.adoc:391
@@ -1740,10 +1713,10 @@ msgid ""
 "forwarding logs. The default value is `org.fedoraproject.anaconda.log.0`pass:"
 "attributes[{blank}]; if this port is present, it will be used."
 msgstr ""
-"Tentukan port `virtio` (perangkat karakter di `/dev/virtio-ports/"
-"pass:attributes[{blank}]_name_pass:attributes[{blank}]`) yang akan digunakan "
-"untuk meneruskan log. Nilai defaultnya adalah `org.fedoraproject.anaconda.log"
-".0`pass:attributes[{blank}]; jika port ini ada, itu akan digunakan."
+"Tentukan port `virtio` (perangkat karakter di `/dev/virtio-ports/pass:"
+"attributes[{blank}]_name_pass:attributes[{blank}]`) yang akan digunakan "
+"untuk meneruskan log. Nilai defaultnya adalah `org.fedoraproject.anaconda."
+"log.0`pass:attributes[{blank}]; jika port ini ada, itu akan digunakan."
 
 #. type: Title ====
 #: pages/advanced/Boot_Options.adoc:404
@@ -1813,9 +1786,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:419
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
-msgstr ""
-"[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank"
-"}]_path_pass:attributes[{blank}]#"
+msgstr "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:420
@@ -1829,8 +1800,8 @@ msgstr ""
 "Dalam instalasi NFS, menyatakan bahwa target adalah sebuah image ISO yang "
 "terletak pada suatu server NFS alih-alih suatu pohon yang dapat diinstal. "
 "Perbedaan kini dideteksi secara otomatis, yang berarti bahwa opsi ini sama "
-"dengan [option]#inst.repo=nfs:pass:attributes[{blank}]_server_:/pass:attribut"
-"es[{blank}]_path_pass:attributes[{blank}]#."
+"dengan [option]#inst.repo=nfs:pass:attributes[{blank}]_server_:/pass:"
+"attributes[{blank}]_path_pass:attributes[{blank}]#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:421
@@ -1850,9 +1821,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:423
 #, no-wrap
 msgid "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
-msgstr ""
-"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
-"[option]#ipv6=#"
+msgstr "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:424
@@ -1875,6 +1844,13 @@ msgstr ""
 "Nilai yang berbeda telah diganti dengan opsi yang berbeda; Lihat tabel di "
 "bawah ini."
 
+#. type: Block title
+#: pages/advanced/Boot_Options.adoc:428
+#, fuzzy, no-wrap
+#| msgid "Automatic Interface Configuration Methods"
+msgid "Automatic Interface Configuration Methods "
+msgstr "Metode Konfigurasi Antarmuka Otomatis"
+
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:439
 #, no-wrap
@@ -1888,21 +1864,12 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
 "|Nilai|Perilaku saat ini\n"
-"|Tidak ada|Semua perangkat dicoba untuk diaktifkan menggunakan `dhcp`, "
-"kecuali perangkat dan konfigurasi yang diinginkan ditentukan oleh opsi "
-"[option]#ip=# dan/atau opsi [option]#BOOTIF#.\n"
-"|[option]#ksdevice=link#|Mirip dengan yang di atas, dengan perbedaan bahwa "
-"jaringan akan selalu diaktifkan dalam initramfs, apakah itu diperlukan atau "
-"tidak. Opsi [option]#rd.neednet# yang didukung (disediakan oleh "
-"[application]*dracut*) harus digunakan sebagai gantinya.\n"
-"|[option]#ksdevice=bootif#|Diabaikan (opsi BOOTID= digunakan secara baku "
-"saat ditentukan)\n"
+"|Tidak ada|Semua perangkat dicoba untuk diaktifkan menggunakan `dhcp`, kecuali perangkat dan konfigurasi yang diinginkan ditentukan oleh opsi [option]#ip=# dan/atau opsi [option]#BOOTIF#.\n"
+"|[option]#ksdevice=link#|Mirip dengan yang di atas, dengan perbedaan bahwa jaringan akan selalu diaktifkan dalam initramfs, apakah itu diperlukan atau tidak. Opsi [option]#rd.neednet# yang didukung (disediakan oleh [application]*dracut*) harus digunakan sebagai gantinya.\n"
+"|[option]#ksdevice=bootif#|Diabaikan (opsi BOOTID= digunakan secara baku saat ditentukan)\n"
 "|[option]#ksdevice=ibft#|Diganti dengan opsi [option]#ip=ibft#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
-"Diganti dengan "
-"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|"
-"Diganti dengan menentukan nama perangkat menggunakan opsi [option]#ip=#.\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|Diganti dengan [option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Diganti dengan menentukan nama perangkat menggunakan opsi [option]#ip=#.\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:445
@@ -1920,8 +1887,8 @@ msgstr ""
 "Ini berarti bahwa opsi Kickstart lainnya yang memerlukan akses jaringan, "
 "seperti skrip pra-instalasi atau pasca-instalasi yang mengakses lokasi "
 "jaringan, akan menyebabkan instalasi gagal. Ini adalah masalah yang "
-"diketahui; lihat BZ#link:++https://bugzilla.redhat.com/show_bug."
-"cgi?id=1085310++[1085310] untuk detailnya."
+"diketahui; lihat BZ#link:++https://bugzilla.redhat.com/show_bug.cgi?"
+"id=1085310++[1085310] untuk detailnya."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:447
@@ -2203,8 +2170,8 @@ msgid ""
 msgstr ""
 "Digunakan untuk mengaktifkan [application]*DNF* untuk menangani instalasi "
 "paket dan resolusi dependensi di {PRODUCT} 21. [application]*DNF* sekarang "
-"digunakan secara baku dan opsi ini telah diganti dengan [option]#inst.nodnf#"
-", yang mengembalikan ke [application]*Yum*."
+"digunakan secara baku dan opsi ini telah diganti dengan [option]#inst."
+"nodnf#, yang mengembalikan ke [application]*Yum*."
 
 #. type: Title ====
 #: pages/advanced/Boot_Options.adoc:492
@@ -2378,8 +2345,8 @@ msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
 msgstr ""
-"Untuk menghentikan pengujian dan me-reboot komputer Anda, tekan tombol "
-"kbd:[Esc] kapan saja."
+"Untuk menghentikan pengujian dan me-reboot komputer Anda, tekan tombol kbd:"
+"[Esc] kapan saja."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:539

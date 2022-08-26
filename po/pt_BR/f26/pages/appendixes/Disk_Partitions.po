@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:09+0000\n"
+"POT-Creation-Date: 2022-08-18 21:20+0000\n"
 "PO-Revision-Date: 2022-08-14 11:15+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -457,8 +457,8 @@ msgid ""
 "table below shows a list of some of the commonly used partition types and "
 "hexadecimal numbers used to represent them."
 msgstr ""
-"A partição única neste exemplo é rotulada como `DOS`. Este rótulo mostra o *"
-"tipo de partição*, sendo `DOS` um dos mais comuns. A tabela abaixo mostra "
+"A partição única neste exemplo é rotulada como `DOS`. Este rótulo mostra o "
+"*tipo de partição*, sendo `DOS` um dos mais comuns. A tabela abaixo mostra "
 "uma lista de alguns dos tipos de partição comumente usados e números "
 "hexadecimais usados para representá-los."
 
@@ -520,8 +520,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:148
 #, no-wrap
 msgid "Partitions Within Partitions - An Overview of Extended Partitions"
-msgstr ""
-"Partições dentro de partições - uma visão geral das partições estendidas"
+msgstr "Partições dentro de partições - uma visão geral das partições estendidas"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:151
@@ -613,9 +612,7 @@ msgstr ""
 #: pages/appendixes/Disk_Partitions.adoc:167
 #, no-wrap
 msgid "*GPT* disks use logical block addressing (LBA) and the partition layout is as follows:\n"
-msgstr ""
-"Os discos *GPT* usam endereçamento de bloco lógico (LBA) e o layout da "
-"partição é o seguinte:\n"
+msgstr "Os discos *GPT* usam endereçamento de bloco lógico (LBA) e o layout da partição é o seguinte:\n"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:169
@@ -624,8 +621,8 @@ msgid ""
 "0) of *GPT* is reserved for *MBR* data and it is called \"protective MBR\"."
 msgstr ""
 "Para preservar a compatibilidade reversa com discos MBR, o primeiro setor "
-"(*LBA* 0) de *GPT* é reservado para dados *MBR* e é chamado de \"MBR "
-"protetor\" (ou \"protective MBR\", em inglês)."
+"(*LBA* 0) de *GPT* é reservado para dados *MBR* e é chamado de \"MBR protetor"
+"\" (ou \"protective MBR\", em inglês)."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:171
@@ -691,9 +688,9 @@ msgid ""
 msgstr ""
 "Deve haver uma partição de inicialização do BIOS para que o carregador de "
 "inicialização seja instalado com êxito em um disco que contém GPT (Tabela de "
-"Partição GUID). Isso inclui discos inicializados pelo [application]*Anaconda*"
-". Se o disco já contém uma partição de inicialização do BIOS, ele pode ser "
-"reutilizado."
+"Partição GUID). Isso inclui discos inicializados pelo "
+"[application]*Anaconda*. Se o disco já contém uma partição de inicialização "
+"do BIOS, ele pode ser reutilizado."
 
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:186
@@ -963,9 +960,6 @@ msgstr "partitions/dstrct-reprt.png"
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:259
-#: pages/appendixes/Disk_Partitions.adoc:290
-#: pages/appendixes/Disk_Partitions.adoc:304
-#: pages/appendixes/Disk_Partitions.adoc:318
 msgid "In the above example, `1` represents before and `2` represents after."
 msgstr "No exemplo acima, `1` representa antes e `2` representa depois."
 
@@ -1059,6 +1053,14 @@ msgid "partitions/compression.png"
 msgstr "partitions/compression.png"
 
 #. type: Plain text
+#: pages/appendixes/Disk_Partitions.adoc:290
+#, fuzzy
+#| msgid ""
+#| "In the above example, `1` represents before and `2` represents after."
+msgid "In the above example, `1` represents before and `2` represents after. "
+msgstr "No exemplo acima, `1` representa antes e `2` representa depois."
+
+#. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:292
 msgid ""
 "This step is crucial. Without it, the location of the data could prevent the "
@@ -1070,8 +1072,9 @@ msgstr ""
 "Esta etapa é crucial. Sem ela, a localização dos dados pode impedir que a "
 "partição seja redimensionada para a extensão desejada. Observe também que, "
 "por um motivo ou outro, alguns dados não podem ser movidos. Se for este o "
-"caso (e isso restringe severamente o tamanho de sua(s) nova(s) partição(ões))"
-", você pode ser forçado a reparticionar seu disco de forma destrutiva."
+"caso (e isso restringe severamente o tamanho de sua(s) nova(s) "
+"partição(ões)), você pode ser forçado a reparticionar seu disco de forma "
+"destrutiva."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:295
@@ -1105,6 +1108,14 @@ msgstr "Imagem de uma unidade de disco com uma partição redimensionada"
 #, no-wrap
 msgid "partitions/part-resize.png"
 msgstr "partitions/part-resize.png"
+
+#. type: Plain text
+#: pages/appendixes/Disk_Partitions.adoc:304
+#, fuzzy
+#| msgid ""
+#| "In the above example, `1` represents before and `2` represents after."
+msgid "In the above example, `1` represents before and `2` represents after.  "
+msgstr "No exemplo acima, `1` representa antes e `2` representa depois."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:306
@@ -1153,6 +1164,15 @@ msgstr "Imagem de uma unidade de disco com configuração de partição final"
 msgid "partitions/nondestruct-fin.png"
 msgstr "partitions/nondestruct-fin.png"
 
+#. type: Plain text
+#: pages/appendixes/Disk_Partitions.adoc:318
+#, fuzzy
+#| msgid ""
+#| "In the above example, `1` represents before and `2` represents after."
+msgid ""
+"In the above example, `1` represents before and `2` represents after.   "
+msgstr "No exemplo acima, `1` representa antes e `2` representa depois."
+
 #. type: Title ====
 #: pages/appendixes/Disk_Partitions.adoc:320
 #, no-wrap
@@ -1194,8 +1214,8 @@ msgid ""
 "of `/dev/pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
 msgstr ""
 "O Linux usa um esquema de nomenclatura baseado em arquivo, com nomes de "
-"arquivo na forma de `/dev/"
-"pass:attributes[{blank}]_xxyN_pass:attributes[{blank}]`."
+"arquivo na forma de `/dev/pass:attributes[{blank}]_xxyN_pass:"
+"attributes[{blank}]`."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:330
@@ -1371,8 +1391,8 @@ msgstr ""
 "especificações de hardware do seu sistema, partições adicionais podem ser "
 "necessárias, como `/boot/efi` para sistemas AMD e Intel de 64 bits com "
 "firmware UEFI, uma partição `biosboot` para sistemas AMD e Intel com uma "
-"Tabela de Partição GUID (GPT ) etiqueta no disco do sistema ou uma partição `"
-"PReP Boot` nos servidores IBM Power Systems."
+"Tabela de Partição GUID (GPT ) etiqueta no disco do sistema ou uma partição "
+"`PReP Boot` nos servidores IBM Power Systems."
 
 #. type: Plain text
 #: pages/appendixes/Disk_Partitions.adoc:362

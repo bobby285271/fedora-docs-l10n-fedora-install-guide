@@ -5,12 +5,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-04 21:05+0000\n"
+"POT-Creation-Date: 2022-08-18 21:06+0000\n"
 "PO-Revision-Date: 2021-11-07 16:17+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
-"f35pages_partialsinstallfilterspoke_addiscsi/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10nfedora-install-guide/f35pages_partialsinstallfilterspoke_addiscsi/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,15 +18,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.8\n"
 
-#. type: Block title
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:5
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:14
+#. type: Title ====
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:5
 #, no-wrap
 msgid "Add iSCSI Target"
 msgstr "iSCSI Hedefi Ekle"
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:8
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:8
 msgid ""
 "To use iSCSI storage devices, the installer must be able to discover them as "
 "_iSCSI targets_ and be able to create an iSCSI session to access them. Both "
@@ -40,7 +39,7 @@ msgstr ""
 "kimlik doğrulaması için bir kullanıcı adı ve parola gerektirebilir."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:10
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:10
 msgid ""
 "You can also configure an iSCSI target to authenticate the iSCSI initiator "
 "on the system to which the target is attached (_reverse CHAP_), both for "
@@ -59,19 +58,27 @@ msgstr ""
 "güvenlik düzeyini sağlar."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:12
-msgid "Follow the procedure below to add an iSCSI storage target to your system."
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:12
+msgid ""
+"Follow the procedure below to add an iSCSI storage target to your system."
 msgstr ""
 "Sisteminize bir iSCSI depolama hedefi eklemek için aşağıdaki adımları "
 "izleyin."
 
+#. type: Block title
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:14
+#, fuzzy, no-wrap
+#| msgid "Add iSCSI Target"
+msgid "Add iSCSI Target "
+msgstr "iSCSI Hedefi Ekle"
+
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:16
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:16
 msgid ""
-"Click the `Add iSCSI Target` button in the bottom right corner of the "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
-"Destination - Specialized & Network Disks] screen. A new dialog window "
-"titled `Add iSCSI Storage Target` will open."
+"Click the `Add iSCSI Target` button in the bottom right corner of the xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"destination[Installation Destination - Specialized & Network Disks] screen. "
+"A new dialog window titled `Add iSCSI Storage Target` will open."
 msgstr ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
 "destination[Kurulum Hedefi - Özelleşmiş Diskler ve Ağ Diskleri] ekranının "
@@ -79,32 +86,33 @@ msgstr ""
 "Hedefi Ekle` başlıklı yeni bir iletişim penceresi açılacaktır."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
-msgid "Enter the IP address of the iSCSI target in the `Target IP Address` field."
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:18
+msgid ""
+"Enter the IP address of the iSCSI target in the `Target IP Address` field."
 msgstr "iSCSI hedefinin IP adresini `Hedef IP Adresi` alanına girin."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:20
 msgid ""
 "Provide a name in the `iSCSI Initiator Name` field for the iSCSI initiator "
 "in _iSCSI Qualified Name_ (IQN) format. A valid IQN entry contains:"
 msgstr ""
-"iSCSI başlatıcı için `iSCSI Başlatıcı Adı` alanına _iSCSI Nitelikli Adı_ ("
-"iSCSI Qualified Name - IQN) biçiminde bir ad girin. Geçerli bir IQN girdisi "
+"iSCSI başlatıcı için `iSCSI Başlatıcı Adı` alanına _iSCSI Nitelikli Adı_ "
+"(iSCSI Qualified Name - IQN) biçiminde bir ad girin. Geçerli bir IQN girdisi "
 "şunları içerir:"
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:22
 msgid "The string `iqn.` (including the period)."
 msgstr "`iqn.` dizgesi (nokta dahil)."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:24
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:24
 msgid ""
 "A date code specifying the year and month in which your organization's "
 "Internet domain or subdomain name was registered, represented as four digits "
-"for the year, a dash, and two digits for the month, followed by a "
-"period. For example, represent September 2010 as `2010-09.`"
+"for the year, a dash, and two digits for the month, followed by a period. "
+"For example, represent September 2010 as `2010-09.`"
 msgstr ""
 "Organizasyonunuzun internet etki alanı veya alt etki alanı adının "
 "kaydedildiği yılı ve ayı belirten, yıl için dört basamak, bir kısa çizgi ve "
@@ -112,7 +120,7 @@ msgstr ""
 "kodu. Örneğin, Eylül 2010'u `2010-09.` olarak temsil edin."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:26
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:26
 msgid ""
 "Your organization's Internet domain or subdomain name, presented in "
 "*reverse* order (with the top-level domain first). For example, represent "
@@ -123,29 +131,29 @@ msgstr ""
 "alt etki alanını `com.example.storage` olarak temsil edin."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:28
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:28
 msgid ""
 "A colon (`:`) followed by a string which uniquely identifies this particular "
-"iSCSI initiator within your domain or subdomain. For example, "
-"`:diskarrays-sn-a8675309`"
+"iSCSI initiator within your domain or subdomain. For example, `:diskarrays-"
+"sn-a8675309`"
 msgstr ""
 "İki nokta üst üste (`:`), ardından etki alanınızda veya alt etki alanınızda "
 "bu belirli iSCSI başlatıcıyı benzersiz şekilde tanımlayan bir dizge. "
 "Örneğin, `:diskarrays-sn-a8675309`"
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:30
 msgid "A complete IQN will therefore look as follows:"
 msgstr "Yani tam bir IQN aşağıdaki gibi görünecektir:"
 
 #. type: delimited block -
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:34
 #, no-wrap
 msgid "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
 msgstr "`iqn.2010-09.com.example.storage:diskarrays-sn-a8675309`\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:37
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:37
 msgid ""
 "An example using the correct format is also displayed below the input field "
 "for reference."
@@ -154,7 +162,7 @@ msgstr ""
 "altında görüntülenir."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:39
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:39
 msgid ""
 "For more information about IQNs, see [citetitle]_3.2.6. iSCSI Names in RFC "
 "3720 - Internet Small Computer Systems Interface (iSCSI)_, available from "
@@ -165,13 +173,13 @@ msgid ""
 msgstr ""
 "IQN'ler hakkında daha fazla bilgi için link:++https://tools.ietf.org/html/"
 "rfc3720#section-3.2.6++[] adresinde bulunan [citetitle]_3.2.6. iSCSI Names "
-"in RFC 3720 - Internet Small Computer Systems Interface (iSCSI)_ ve "
-"link:++https://tools.ietf.org/html/rfc3721#section-1++[] adresinde bulunan "
+"in RFC 3720 - Internet Small Computer Systems Interface (iSCSI)_ ve link:+"
+"+https://tools.ietf.org/html/rfc3721#section-1++[] adresinde bulunan "
 "[citetitle]_1. iSCSI Names and Addresses in RFC 3721 - Internet Small "
 "Computer Systems Interface (iSCSI) Naming and Discovery_ sayfalarına bakın."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:41
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:41
 msgid ""
 "Specify the type of authentication to use for iSCSI discovery using the "
 "`Discovery Authentication Type` drop-down menu. Depending on which type of "
@@ -186,7 +194,7 @@ msgstr ""
 "bilgilerinizi doldurun; bunlar organizasyonunuz tarafından sağlanmalıdır."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:43
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:43
 msgid ""
 "Click the `Start Discovery` button. The installer will now attempt to "
 "discover an iSCSI target based on the information you provided, and if the "
@@ -201,7 +209,7 @@ msgstr ""
 "saniyeden az) alabilir."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:45
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:45
 msgid ""
 "If the discovery was *not* successful, an error message will be displayed in "
 "the dialog window. This message will vary based on which part of the "
@@ -218,7 +226,7 @@ msgstr ""
 "erişiminiz olduğundan emin olun."
 
 #. type: delimited block =
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:50
 msgid ""
 "The `No nodes discovered` error message may also mean that all nodes on the "
 "address you specified are already configured. During discovery, "
@@ -229,15 +237,14 @@ msgstr ""
 "[application]*Anaconda* zaten eklenmiş olan düğümleri yok sayar."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:54
 msgid ""
-"If the discovery was successful, you will see a list of all discovered "
-"nodes."
+"If the discovery was successful, you will see a list of all discovered nodes."
 msgstr ""
 "Keşif başarılı olduysa, keşfedilen tüm düğümlerin bir listesini göreceksiniz."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:56
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:56
 msgid ""
 "Select one or more nodes you want to log in to by marking or unmarking the "
 "check box next to each node discovered on the target. Below the list, select "
@@ -254,26 +261,27 @@ msgstr ""
 "bilgilerini kullan` seçeneğini de seçebilirsiniz."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:58
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:58
 msgid ""
 "After selecting all nodes you want to use, click `Log In` to initiate an "
 "iSCSI session. [application]*Anaconda* will attempt to log in to all "
 "selected nodes. If the login process is successful, the `Add iSCSI Storage "
 "Target` dialog will close, and all nodes you have configured will now be "
-"shown in the list of network disks in "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-destination[Installation "
-"Destination - Specialized & Network Disks]."
+"shown in the list of network disks in xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-destination[Installation Destination "
+"- Specialized & Network Disks]."
 msgstr ""
 "Kullanmak istediğiniz tüm düğümleri seçtikten sonra, bir iSCSI oturumu "
 "başlatmak için `Giriş Yap` düğmesine tıklayın. [application]*Anaconda*, "
 "seçilen tüm düğümlere giriş yapmaya çalışacaktır. Giriş yapma işlemi "
 "başarılı olursa, `iSCSI Depolama Hedefi Ekle` iletişim kutusu kapanacak ve "
-"yapılandırdığınız tüm düğümler artık xref:Installing_Using_Anaconda.adoc"
-"#sect-installation-gui-installation-destination[Kurulum Hedefi - Özelleşmiş "
-"Diskler ve Ağ Diskleri] bölümündeki ağ diskleri listesinde gösterilecektir."
+"yapılandırdığınız tüm düğümler artık xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-installation-destination[Kurulum Hedefi - "
+"Özelleşmiş Diskler ve Ağ Diskleri] bölümündeki ağ diskleri listesinde "
+"gösterilecektir."
 
 #. type: Plain text
-#: ./pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
+#: pages/_partials/install/FilterSpoke_AddiSCSI.adoc:59
 msgid ""
 "You can repeat this procedure to discover additional iSCSI targets, or to "
 "add more nodes from a previously configured target. However, note that once "

@@ -5,12 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:05+0000\n"
+"POT-Creation-Date: 2022-08-18 21:13+0000\n"
 "PO-Revision-Date: 2022-07-05 10:18+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-install-guide/f31pages_partialsinstallkdumpspoke/fi/>"
-"\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10n-fedora-install-guide/f31pages_partialsinstallkdumpspoke/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,22 +17,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13\n"
 
-#. type: Block title
-#: ./pages/_partials/install/KdumpSpoke.adoc:5
-#: ./pages/_partials/install/KdumpSpoke.adoc:16
+#. type: Title ===
+#: pages/_partials/install/KdumpSpoke.adoc:5
 #, no-wrap
 msgid "Kdump"
 msgstr "kdump"
 
 #. type: delimited block =
-#: ./pages/_partials/install/KdumpSpoke.adoc:11
+#: pages/_partials/install/KdumpSpoke.adoc:11
 msgid ""
 "This screen is disabled by default. To enable it during the installation, "
 "you must use the [option]#inst.kdump_addon=on# option at the boot menu. See "
 "xref:advanced/Boot_Options.adoc#sect-boot-options-advanced[Advanced "
-"Installation Options] for details, and "
-"xref:install/Booting_the_Installation.adoc#sect-boot-menu[The Boot Menu] for "
-"instructions on using custom boot options."
+"Installation Options] for details, and xref:install/Booting_the_Installation."
+"adoc#sect-boot-menu[The Boot Menu] for instructions on using custom boot "
+"options."
 msgstr ""
 "Tämä näyttö on oletuksena pois käytöstä. Jos haluat ottaa sen käyttöön "
 "asennuksen aikana, sinun on käytettävä käynnistysvalikon [option]#inst."
@@ -43,7 +41,7 @@ msgstr ""
 "saadaksesi ohjeet mukautettujen käynnistysasetusten käyttämiseen."
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:15
+#: pages/_partials/install/KdumpSpoke.adoc:15
 msgid ""
 "Use this screen to select whether or not [application]*Kdump* will be "
 "activated on the installed system, and how much memory will be reserved for "
@@ -53,20 +51,27 @@ msgstr ""
 "asennetussa järjestelmässä ja kuinka paljon muistia sille varataan, jos se "
 "on käytössä."
 
+#. type: Block title
+#: pages/_partials/install/KdumpSpoke.adoc:16
+#, fuzzy, no-wrap
+#| msgid "Kdump"
+msgid "Kdump "
+msgstr "kdump"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/KdumpSpoke.adoc:18
+#: pages/_partials/install/KdumpSpoke.adoc:18
 #, no-wrap
 msgid "The Kdump configuration screen"
 msgstr "Kdump-asetusnäyttö"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/KdumpSpoke.adoc:18
+#: pages/_partials/install/KdumpSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/KdumpSpoke.png"
 msgstr "anaconda/KdumpSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:21
+#: pages/_partials/install/KdumpSpoke.adoc:21
 msgid ""
 "[application]*Kdump* is a kernel crash dumping mechanism which, in the event "
 "of a system crash, captures the contents of the system memory at the moment "
@@ -83,42 +88,43 @@ msgstr ""
 "käytettävissä."
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:23
+#: pages/_partials/install/KdumpSpoke.adoc:23
 msgid ""
-"To enable [application]*Kdump* on the installed system, check "
-"`Enabled`. Then, select either `Automatic` or `Manual` memory reservation "
-"settings, and if you selected `Manual`, enter the amount of memory to be "
-"reserved in megabytes into the `Memory to be reserved` field."
+"To enable [application]*Kdump* on the installed system, check `Enabled`. "
+"Then, select either `Automatic` or `Manual` memory reservation settings, and "
+"if you selected `Manual`, enter the amount of memory to be reserved in "
+"megabytes into the `Memory to be reserved` field."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:25
+#: pages/_partials/install/KdumpSpoke.adoc:25
 msgid ""
 "The amount of memory which you should reserve is determined based on your "
 "system's architecture (AMD64 and Intel{nbsp}64 will have different "
 "requirements than IBM Power, for example) as well as the total amount of "
 "system memory. In most cases, automatic reservation will be satisfactory. If "
-"you insist on manual settings, see the "
-"link:++https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-configurations-and-targets.html#sect-kdump-memory-requirements++[Red{nbsp}Hat "
-"Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump Guide] for guidelines. This "
-"document also contains more in-depth information about how "
-"[application]*Kdump* works, how to configure additional settings, and how to "
-"analyze a saved crash dump."
+"you insist on manual settings, see the link:++https://access.redhat.com/"
+"documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/"
+"appe-supported-kdump-configurations-and-targets.html#sect-kdump-memory-"
+"requirements++[Red{nbsp}Hat Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump "
+"Guide] for guidelines. This document also contains more in-depth information "
+"about how [application]*Kdump* works, how to configure additional settings, "
+"and how to analyze a saved crash dump."
 msgstr ""
 "Varattavan muistin määrä määräytyy järjestelmäsi arkkitehtuurin (AMD64:llä "
-"ja Intel{nbsp}64:llä on erilaiset vaatimukset kuin esimerkiksi IBM Powerilla)"
-" sekä järjestelmämuistin kokonaismäärän perusteella. Useimmissa tapauksissa "
-"automaattinen varaus on tyydyttävä. Jos vaadit manuaalisia asetuksia, katso "
-"linkki:++https://access.redhat.com/documentation/en-US/"
+"ja Intel{nbsp}64:llä on erilaiset vaatimukset kuin esimerkiksi IBM "
+"Powerilla) sekä järjestelmämuistin kokonaismäärän perusteella. Useimmissa "
+"tapauksissa automaattinen varaus on tyydyttävä. Jos vaadit manuaalisia "
+"asetuksia, katso linkki:++https://access.redhat.com/documentation/en-US/"
 "Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-"
 "configurations-and-targets.html #sect-kdump-memory-requirements++[Red{nbsp}"
 "Hat Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump Guide] ohjeita varten. "
-"Tämä asiakirja sisältää myös tarkempaa tietoa siitä, kuinka [sovellus]*Kdump*"
-" toimii, miten lisäasetukset määritetään ja kuinka tallennettu kaatumisvedos "
-"analysoidaan."
+"Tämä asiakirja sisältää myös tarkempaa tietoa siitä, kuinka "
+"[sovellus]*Kdump* toimii, miten lisäasetukset määritetään ja kuinka "
+"tallennettu kaatumisvedos analysoidaan."
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:27
+#: pages/_partials/install/KdumpSpoke.adoc:27
 msgid ""
 "The `Usable System Memory` readout below the reservation input field shows "
 "how much memory will be accessible to your main system once your selected "
@@ -129,12 +135,12 @@ msgstr ""
 "valitsemasi määrä RAM-muistia on varattu."
 
 #. type: delimited block =
-#: ./pages/_partials/install/KdumpSpoke.adoc:32
+#: pages/_partials/install/KdumpSpoke.adoc:32
 msgid ""
 "Additional settings, such as the location where kernel crash dumps will be "
 "saved, can only be configured after the installation using either the "
-"`system-config-kdump` graphical interface, or manually in the "
-"`/etc/kdump.conf` configuration file."
+"`system-config-kdump` graphical interface, or manually in the `/etc/kdump."
+"conf` configuration file."
 msgstr ""
 "Lisäasetukset, kuten sijainti, johon ytimen kaatumisvedokset tallennetaan, "
 "voidaan määrittää vasta asennuksen jälkeen käyttämällä graafista "
@@ -142,10 +148,9 @@ msgstr ""
 "määritystiedostossa \"/etc/kdump.conf\"."
 
 #. type: Plain text
-#: ./pages/_partials/install/KdumpSpoke.adoc:35
+#: pages/_partials/install/KdumpSpoke.adoc:35
 msgid ""
 "After configuring [application]*Kdump* settings, click btn:[Done] in the top "
-"left corner to return to "
-"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-installation-summary[Installation "
-"Summary]."
+"left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-installation-summary[Installation Summary]."
 msgstr ""

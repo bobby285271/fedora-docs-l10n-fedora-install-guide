@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:05+0000\n"
+"POT-Creation-Date: 2022-08-18 21:13+0000\n"
 "PO-Revision-Date: 2022-08-16 05:17+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -20,9 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.13\n"
 
-#. type: Block title
+#. type: Title ===
 #: pages/_partials/install/KdumpSpoke.adoc:5
-#: pages/_partials/install/KdumpSpoke.adoc:16
 #, no-wrap
 msgid "Kdump"
 msgstr "Kdump"
@@ -53,6 +52,13 @@ msgid ""
 msgstr ""
 "Use esta tela para selecionar se o [application]*Kdump* será ativado ou não "
 "no sistema instalado e quanta memória será reservada para ele, se ativado."
+
+#. type: Block title
+#: pages/_partials/install/KdumpSpoke.adoc:16
+#, fuzzy, no-wrap
+#| msgid "Kdump"
+msgid "Kdump "
+msgstr "Kdump"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/KdumpSpoke.adoc:18
@@ -91,10 +97,10 @@ msgid ""
 "if you selected `Manual`, enter the amount of memory to be reserved in "
 "megabytes into the `Memory to be reserved` field."
 msgstr ""
-"Para habilitar o [application]*Kdump* no sistema instalado, marque `Enabled`"
-". Em seguida, selecione as configurações de reserva de memória `Automatic` "
-"ou `Manual` e, se você selecionou `Manual`, insira a quantidade de memória a "
-"ser reservada em megabytes no campo `Memória a ser reservada`."
+"Para habilitar o [application]*Kdump* no sistema instalado, marque "
+"`Enabled`. Em seguida, selecione as configurações de reserva de memória "
+"`Automatic` ou `Manual` e, se você selecionou `Manual`, insira a quantidade "
+"de memória a ser reservada em megabytes no campo `Memória a ser reservada`."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:25
@@ -115,14 +121,14 @@ msgstr ""
 "arquitetura do seu sistema (AMD64 e Intel{nbsp}64 terão requisitos "
 "diferentes do IBM Power, por exemplo), bem como a quantidade total de "
 "memória do sistema. Na maioria dos casos, a reserva automática será "
-"satisfatória. Se você insiste nas configurações manuais, consulte o "
-"link:++https://access.redhat.com/documentation/en-US/"
-"Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/appe-supported-kdump-"
-"configurations-and-targets.html#sect-kdump-memory-requirements++[Red{nbsp}"
-"Hat Enterprise{nbsp}Linux{nbsp}7 Kernel Crash Dump Guide] (guia de despejo "
-"da falha de kernel) para orientações. Este documento também contém "
-"informações mais detalhadas sobre como o [application]*Kdump* funciona, como "
-"definir configurações adicionais e como analisar um despejo de memória salvo."
+"satisfatória. Se você insiste nas configurações manuais, consulte o link:+"
+"+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/"
+"html/Kernel_Crash_Dump_Guide/appe-supported-kdump-configurations-and-targets."
+"html#sect-kdump-memory-requirements++[Red{nbsp}Hat Enterprise{nbsp}"
+"Linux{nbsp}7 Kernel Crash Dump Guide] (guia de despejo da falha de kernel) "
+"para orientações. Este documento também contém informações mais detalhadas "
+"sobre como o [application]*Kdump* funciona, como definir configurações "
+"adicionais e como analisar um despejo de memória salvo."
 
 #. type: Plain text
 #: pages/_partials/install/KdumpSpoke.adoc:27
@@ -155,6 +161,7 @@ msgid ""
 "left corner to return to xref:Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-installation-summary[Installation Summary]."
 msgstr ""
-"Após ajustar as configurações do [application]*Kdump*, clique em btn:[Pronto]"
-" no canto superior esquerdo para retornar ao xref:Installing_Using_Anaconda."
-"adoc#sect-installation-gui-installation-summary[Resumo da Instalação]."
+"Após ajustar as configurações do [application]*Kdump*, clique em btn:"
+"[Pronto] no canto superior esquerdo para retornar ao xref:"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-installation-"
+"summary[Resumo da Instalação]."

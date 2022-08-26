@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-04 21:03+0000\n"
+"POT-Creation-Date: 2022-08-18 21:03+0000\n"
 "PO-Revision-Date: 2021-07-05 21:04+0000\n"
 "Last-Translator: CoconutNut <patrick.vollandt@mein-gym.de>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/fedora-"
@@ -310,7 +310,6 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:100
-#: pages/advanced/Network_based_Installations.adoc:289
 #, fuzzy, no-wrap
 msgid "...\n"
 msgstr "...\n"
@@ -334,11 +333,17 @@ msgstr ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
-#. type: Block title
+#. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:113
-#: pages/advanced/Network_based_Installations.adoc:115
 #, no-wrap
 msgid "Installing the tftp server"
+msgstr "Installation des tftp-Servers"
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:115
+#, fuzzy, no-wrap
+#| msgid "Installing the tftp server"
+msgid "Installing the tftp server "
 msgstr "Installation des tftp-Servers"
 
 #. type: Plain text
@@ -402,7 +407,6 @@ msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:143
-#: pages/advanced/Network_based_Installations.adoc:160
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
@@ -436,6 +440,18 @@ msgstr ""
 #, no-wrap
 msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr ""
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:160
+#, fuzzy
+#| msgid ""
+#| "Create a directory for the bootloader files, and make them available "
+#| "there."
+msgid ""
+"Create a directory for the bootloader files, and make them available there. "
+msgstr ""
+"Erstellen Sie ein Verzeichnis für die Bootloader-Dateien und stellen Sie sie "
+"dort zur Verfügung."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:165
@@ -684,6 +700,14 @@ msgid ""
 "next-server 192.168.1.2;\n"
 "}\n"
 msgstr ""
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:289
+#, fuzzy, no-wrap
+msgid ""
+"...\n"
+" "
+msgstr "...\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:292

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:09+0000\n"
+"POT-Creation-Date: 2022-08-18 21:20+0000\n"
 "PO-Revision-Date: 2022-08-17 15:43+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -49,8 +49,8 @@ msgstr ""
 "mídia de instalação e anexar essas opções no menu de inicialização (consulte "
 "xref:../install / Booting_the_Installation.adoc#sect-boot-menu[O menu de "
 "inicialização]), ou você deve adicioná-los ao arquivo de configuração do "
-"servidor PXE se estiver inicializando a partir de uma rede (consulte "
-"xref:Network_based_Installations.adoc#chap-pxe-server-setup[Configurando um "
+"servidor PXE se estiver inicializando a partir de uma rede (consulte xref:"
+"Network_based_Installations.adoc#chap-pxe-server-setup[Configurando um "
 "servidor de instalação])."
 
 #. type: Plain text
@@ -94,12 +94,12 @@ msgid ""
 "option is present, the check will be performed, and if it is not present, "
 "the check will be skipped."
 msgstr ""
-"As opções apresentadas sem o sinal \"pass"
-":attributes[{blank}]`=`pass:attributes[{blank}]\" não aceitam quaisquer "
-"valores ou parâmetros. Por exemplo, a opção [option]#rd.live.check# força o "
-"[application]*Anaconda* a verificar a mídia de instalação antes de iniciar a "
-"instalação; se esta opção estiver presente, a verificação será realizada e, "
-"se não estiver presente, a verificação será ignorada."
+"As opções apresentadas sem o sinal \"pass:attributes[{blank}]`=`pass:"
+"attributes[{blank}]\" não aceitam quaisquer valores ou parâmetros. Por "
+"exemplo, a opção [option]#rd.live.check# força o [application]*Anaconda* a "
+"verificar a mídia de instalação antes de iniciar a instalação; se esta opção "
+"estiver presente, a verificação será realizada e, se não estiver presente, a "
+"verificação será ignorada."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:19
@@ -248,27 +248,13 @@ msgid ""
 msgstr ""
 "|Fonte de instalação|Formato da opção\n"
 "|Qualquer unidade de CD/DVD|[option]#inst.repo=cdrom#\n"
-"|Unidade de CD/DVD específica|[option]#inst."
-"repo=cdrom:pass:attributes[{blank}]_dispositivo_:attributes[{blank}]#\n"
-"|Disco rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pa"
-"ss:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
-"|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:a"
-"ttributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
-"\n"
-"|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass"
-":attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}"
-"]#\n"
-"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_usuário_:pass"
-":attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blank}]_"
-"host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attribute"
-"s[{blank}]#\n"
-"|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:"
-"attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attribut"
-"es[{blank}]#\n"
-"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por "
-"padrão. Para usar uma versão diferente, adicione "
-"[option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# Às "
-"_opções_.]\n"
+"|Unidade de CD/DVD específica|[option]#inst.repo=cdrom:pass:attributes[{blank}]_dispositivo_:attributes[{blank}]#\n"
+"|Disco rígido|[option]#inst.repo=hd:pass:attributes[{blank}]_dispositivo_:/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor HTTP|[option]#inst.repo=http://pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor HTTPS|[option]#inst.repo=https://pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor FTP|[option]#inst.repo=ftp://pass:attributes[{blank}]_usuário_:pass:attributes[{blank}]_senha_pass:attributes[{blank}]@pass:attributes[{blank}]_host_pass:attributes[{blank}]/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"|Servidor NFS|[option]#inst.repo=nfs:[pass:attributes[{blank}]_opções_:]pass:attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Esta opção usa o protocolo NFS versão 3 por padrão. Para usar uma versão diferente, adicione [option]#+nfsvers=pass:attributes[{blank}]_X_pass:attributes[{blank}]# Às _opções_.]\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:74
@@ -293,8 +279,8 @@ msgstr ""
 msgid ""
 "File system UUID, for example `UUID=8176c7bf-04ff-403a-a832-9557f94e61db`"
 msgstr ""
-"UUID do sistema de arquivos, por exemplo, `UUID=8176c7bf-04ff-"
-"403a-a832-9557f94e61db`"
+"UUID do sistema de arquivos, por exemplo, `UUID=8176c7bf-04ff-403a-"
+"a832-9557f94e61db`"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:82
@@ -304,8 +290,8 @@ msgid ""
 "hexadecimal representation of the character. For example, `\\x20` is a white "
 "space (\"\")."
 msgstr ""
-"Os caracteres não alfanuméricos devem ser representados como `\\xpass"
-":attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
+"Os caracteres não alfanuméricos devem ser representados como `\\xpass:"
+"attributes[{blank}]_NN_pass:attributes[{blank}]`, onde _NN_ é a "
 "representação hexadecimal do caractere. Por exemplo, `\\x20` é um espaço em "
 "branco (\" \")."
 
@@ -327,8 +313,8 @@ msgid ""
 "squashfs.img`."
 msgstr ""
 "Especifica a localização da imagem de tempo de execução do programa de "
-"instalação a ser carregada. A sintaxe é a mesma de xref:Boot_Options.adoc"
-"#tabl-boot-options-sources[Fontes de instalação]. Esta opção espera um "
+"instalação a ser carregada. A sintaxe é a mesma de xref:Boot_Options."
+"adoc#tabl-boot-options-sources[Fontes de instalação]. Esta opção espera um "
 "caminho para um diretório contendo um arquivo `.treeinfo` válido; a "
 "localização da imagem runtime será lida a partir deste arquivo, se "
 "encontrada. Se um arquivo `.treeinfo` não estiver disponível, o "
@@ -343,10 +329,10 @@ msgid ""
 "runtime image, you must also edit this option to match the new label."
 msgstr ""
 "Por padrão, esta opção de inicialização é usada na mídia de instalação e "
-"definida para um rótulo específico (por exemplo, [option]#inst."
-"stage2=hd:LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão "
-"do sistema de arquivos que contém a imagem do tempo de execução, também "
-"deverá editar essa opção para corresponder ao novo rótulo."
+"definida para um rótulo específico (por exemplo, [option]#inst.stage2=hd:"
+"LABEL=F21\\x20Server.x86_64#). Se você modificar o rótulo padrão do sistema "
+"de arquivos que contém a imagem do tempo de execução, também deverá editar "
+"essa opção para corresponder ao novo rótulo."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:92
@@ -484,10 +470,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:124
 #, no-wrap
 msgid "[option]#inst.ks=nfs:pass:attributes[{blank}]_next-server_:/pass:attributes[{blank}]_filename_pass:attributes[{blank}]#\n"
-msgstr ""
-"[option]#inst.ks=nfs:pass:attributes[{blank}]_próximo-"
-"servidor_:/pass:attributes[{blank}]_nome-de-arquivo_pass:attributes[{blank}]#"
-"\n"
+msgstr "[option]#inst.ks=nfs:pass:attributes[{blank}]_próximo-servidor_:/pass:attributes[{blank}]_nome-de-arquivo_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:127
@@ -516,10 +499,8 @@ msgid ""
 "|DHCP server address|Client address|Kickstart file location\n"
 "|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 msgstr ""
-"|Endereço do servidor DHCP|Endereço do cliente|Localização do arquivo "
-"Kickstart\n"
-"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/"
-"kickstart/192.168.122.100-kickstart`\n"
+"|Endereço do servidor DHCP|Endereço do cliente|Localização do arquivo Kickstart\n"
+"|`192.168.122.1`|`192.168.122.100`|`192.168.122.1`:pass:attributes[{blank}]`/kickstart/192.168.122.100-kickstart`\n"
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:137
@@ -698,8 +679,8 @@ msgid ""
 msgstr ""
 "Configura o uso de geolocalização no programa de instalação. A "
 "geolocalização é usada para predefinir o idioma e o fuso horário e usa a "
-"seguinte sintaxe: [option]#inst."
-"geoloc=pass:attributes[{blank}]_valor_pass:attributes[{blank}]#"
+"seguinte sintaxe: [option]#inst.geoloc=pass:attributes[{blank}]_valor_pass:"
+"attributes[{blank}]#"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:171
@@ -811,10 +792,10 @@ msgid ""
 "width and _M_ is the screen height (in pixels). The lowest supported "
 "resolution is `800x600`."
 msgstr ""
-"Especifica a resolução da tela no modo gráfico. O formato é "
-"_N_pass:attributes[{blank}]xpass:attributes[{blank}]_M_, onde _N_ é a "
-"largura da tela e _M_ é a altura da tela (em pixels). A resolução mais baixa "
-"suportada é `800x600`."
+"Especifica a resolução da tela no modo gráfico. O formato é _N_pass:"
+"attributes[{blank}]xpass:attributes[{blank}]_M_, onde _N_ é a largura da "
+"tela e _M_ é a altura da tela (em pixels). A resolução mais baixa suportada "
+"é `800x600`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:193
@@ -966,26 +947,11 @@ msgid ""
 "\t\t\t\t\t\t\t\t\t\t\tfootnote:[Brings up the specified interface using the specified method of automatic configuration, such as `dhcp`, but overrides the automatically obtained IP address, gateway, netmask, hostname or other specified parameter. All parameters are optional; only specify the ones you wish to override and automatically obtained values will be used for the others.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_netmask_:pass:attributes[{blank}]_hostname_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_method_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 msgstr ""
 "|Método de configuração|Formato da opção\n"
-"|Configuração automática de alguma interface|[option]#ip=pass:attributes[{bla"
-"nk}]_método_pass:attributes[{blank}]#\n"
-"|Configuração automática de um interface específica|[option]#ip=pass:attribut"
-"es[{blank}]_interface_:pass:attributes[{blank}]_método_pass:attributes[{blank"
-"}]#\n"
-"|Configuração estática|[option]#ip=pass:attributes[{blank}]_ip_::pass:attribu"
-"tes[{blank}]_gateway_:pass:attributes[{blank}]_máscara-de-"
-"rede_:pass:attributes[{blank}]_nome-do-"
-"host_:pass:attributes[{blank}]_interface_:none#\n"
+"|Configuração automática de alguma interface|[option]#ip=pass:attributes[{blank}]_método_pass:attributes[{blank}]#\n"
+"|Configuração automática de um interface específica|[option]#ip=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_método_pass:attributes[{blank}]#\n"
+"|Configuração estática|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_máscara-de-rede_:pass:attributes[{blank}]_nome-do-host_:pass:attributes[{blank}]_interface_:none#\n"
 "|Configuração automática uma interface específica com uma substituição\n"
-"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Abre a interface especificada usando o "
-"método especificado de configuração automática, como `dhcp`, mas substitui o "
-"endereço IP obtido automaticamente, gateway, máscara de rede, nome do host "
-"ou outro parâmetro especificado. Todos os parâmetros são opcionais; "
-"especifique apenas aqueles que deseja substituir e os valores obtidos "
-"automaticamente serão usados para os outros.]|[option]#ip=pass:attributes[{bl"
-"ank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_máscara"
-"-d-rede_:pass:attributes[{blank}]_nome-do-host_:pass:attributes[{blank}]_inte"
-"rface_:pass:attributes[{blank}]_método_:pass:attributes[{blank}]_mtu_pass:att"
-"ributes[{blank}]#\n"
+"\t\t\t\t\t\t\t\t\t\t\tfootnote:[Abre a interface especificada usando o método especificado de configuração automática, como `dhcp`, mas substitui o endereço IP obtido automaticamente, gateway, máscara de rede, nome do host ou outro parâmetro especificado. Todos os parâmetros são opcionais; especifique apenas aqueles que deseja substituir e os valores obtidos automaticamente serão usados para os outros.]|[option]#ip=pass:attributes[{blank}]_ip_::pass:attributes[{blank}]_gateway_:pass:attributes[{blank}]_máscara-d-rede_:pass:attributes[{blank}]_nome-do-host_:pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_método_:pass:attributes[{blank}]_mtu_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:237
@@ -993,7 +959,7 @@ msgid "The [option]#method# parameter can be any the following:"
 msgstr "O parâmetro [option]#method# pode ser algum dos seguintes:"
 
 #. type: Block title
-#: pages/advanced/Boot_Options.adoc:239 pages/advanced/Boot_Options.adoc:428
+#: pages/advanced/Boot_Options.adoc:239
 #, no-wrap
 msgid "Automatic Interface Configuration Methods"
 msgstr "Métodos de Configuração Automática de Interface"
@@ -1023,9 +989,9 @@ msgid ""
 "[option]#ip# option, the installation program will use [option]#ip=dhcp#."
 msgstr ""
 "Se você usar uma opção de inicialização que requer acesso à rede, como "
-"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:attributes[{blan"
-"k}]_caminho_pass:attributes[{blank}]#, sem especificar a opção [option]#ip#, "
-"o programa de instalação usará [option]#ip=dhcp#."
+"[option]#inst.ks=http://pass:attributes[{blank}]_host_:/pass:"
+"attributes[{blank}]_caminho_pass:attributes[{blank}]#, sem especificar a "
+"opção [option]#ip#, o programa de instalação usará [option]#ip=dhcp#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:258
@@ -1111,9 +1077,9 @@ msgid ""
 "attributes[{blank}]#. For example:"
 msgstr ""
 "Atribui um determinado nome de interface a um dispositivo de rede com um "
-"determinado endereço MAC. Pode ser usado várias vezes. A sintaxe é [option]#i"
-"fname=pass:attributes[{blank}]_interface_:pass:attributes[{blank}]_MAC_pass:a"
-"ttributes[{blank}]#. Por exemplo:"
+"determinado endereço MAC. Pode ser usado várias vezes. A sintaxe é "
+"[option]#ifname=pass:attributes[{blank}]_interface_:pass:"
+"attributes[{blank}]_MAC_pass:attributes[{blank}]#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:274
@@ -1135,8 +1101,8 @@ msgid ""
 "$(uname -srm)`."
 msgstr ""
 "Especifica o identificador de classe do fornecedor DHCP. O serviço `dhcpd` "
-"verá este valor como `vendor-class-identifier`. O valor padrão é `anaconda-$("
-"uname -srm)`."
+"verá este valor como `vendor-class-identifier`. O valor padrão é `anaconda-"
+"$(uname -srm)`."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:278
@@ -1152,9 +1118,9 @@ msgid ""
 "attributes[{blank}]_interface_pass:attributes[{blank}]#. For example:"
 msgstr ""
 "Configura um dispositivo de LAN virtual (VLAN) em uma interface especificada "
-"com um determinado nome. A sintaxe é [option]#vlan=pass:attributes[{blank}]_n"
-"ome_:pass:attributes[{blank}]_interface_pass:attributes[{blank}]#. Por "
-"exemplo:"
+"com um determinado nome. A sintaxe é [option]#vlan=pass:"
+"attributes[{blank}]_nome_:pass:attributes[{blank}]_interface_pass:"
+"attributes[{blank}]#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:283
@@ -1168,8 +1134,8 @@ msgid ""
 "The above will set up a VLAN device named `vlan5` on the `em1` interface. "
 "The _name_ can take the following forms:"
 msgstr ""
-"O acima irá configurar um dispositivo VLAN chamado `vlan5` na interface `em1`"
-". O _nome_ pode assumir as seguintes formas:"
+"O acima irá configurar um dispositivo VLAN chamado `vlan5` na interface "
+"`em1`. O _nome_ pode assumir as seguintes formas:"
 
 #. type: Block title
 #: pages/advanced/Boot_Options.adoc:288
@@ -1210,13 +1176,13 @@ msgid ""
 "(ethernet) interfaces, and _options_ with a comma-separated list of bonding "
 "options. For example:"
 msgstr ""
-"Configura um dispositivo de ligação com a seguinte sintaxe: [option]#bond=pas"
-"s:attributes[{blank}]_nome_pass:attributes[{blank}][:pass:attributes[{blank}]"
-"_escravos_pass:attributes[{blank}]][:pass:attributes[{blank}]_opções_pass:att"
-"ributes[{blank}]]#. Substitua _nome_ pelo nome do dispositivo de bond, "
-"_escravos_ por uma lista separada por vírgulas de interfaces físicas "
-"(ethernet) e _opções_ por uma lista separada por vírgulas de opções de bond. "
-"Por exemplo:"
+"Configura um dispositivo de ligação com a seguinte sintaxe: "
+"[option]#bond=pass:attributes[{blank}]_nome_pass:attributes[{blank}][:pass:"
+"attributes[{blank}]_escravos_pass:attributes[{blank}]][:pass:"
+"attributes[{blank}]_opções_pass:attributes[{blank}]]#. Substitua _nome_ pelo "
+"nome do dispositivo de bond, _escravos_ por uma lista separada por vírgulas "
+"de interfaces físicas (ethernet) e _opções_ por uma lista separada por "
+"vírgulas de opções de bond. Por exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:303
@@ -1230,8 +1196,8 @@ msgid ""
 "For a list of available options, execute the [command]#modinfo bonding# "
 "command."
 msgstr ""
-"Para obter uma lista das opções disponíveis, execute o comando [command]#"
-"modinfo bonding#."
+"Para obter uma lista das opções disponíveis, execute o comando "
+"[command]#modinfo bonding#."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:308
@@ -1239,8 +1205,8 @@ msgid ""
 "Using this option without any parameters will assume [option]#bond=bond0:"
 "eth0,eth1:mode=balance-rr#."
 msgstr ""
-"Usar esta opção sem quaisquer parâmetros presumirá "
-"[option]#bond=bond0:eth0,eth1:mode=balance-rr#."
+"Usar esta opção sem quaisquer parâmetros presumirá [option]#bond=bond0:eth0,"
+"eth1:mode=balance-rr#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:309
@@ -1257,11 +1223,12 @@ msgid ""
 "device and _slaves_ with a comma-separated list of physical (ethernet) "
 "devices to be used as slaves in the team device. For example:"
 msgstr ""
-"Configura um dispositivo team com a seguinte sintaxe: [option]#team=pass:attr"
-"ibutes[{blank}]_mestre_:pass:attributes[{blank}]_escravos_pass:attributes[{bl"
-"ank}]#. Substitua _mestre_ pelo nome do dispositivo team mestre e _escravos_ "
-"por uma lista separada por vírgulas de dispositivos físicos (ethernet) a "
-"serem usados como escravos no dispositivo team. Por exemplo:"
+"Configura um dispositivo team com a seguinte sintaxe: [option]#team=pass:"
+"attributes[{blank}]_mestre_:pass:attributes[{blank}]_escravos_pass:"
+"attributes[{blank}]#. Substitua _mestre_ pelo nome do dispositivo team "
+"mestre e _escravos_ por uma lista separada por vírgulas de dispositivos "
+"físicos (ethernet) a serem usados como escravos no dispositivo team. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:314
@@ -1302,8 +1269,8 @@ msgid ""
 "as well if available."
 msgstr ""
 "Normalmente, em um sistema AMD64 ou Intel{nbsp}64, apenas pacotes para esta "
-"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas ("
-"marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
+"arquitetura (marcados como `x86_64`) e pacotes para todas as arquiteturas "
+"(marcados como `noarch`) seriam instalados. Quando você usa esta opção, "
 "pacotes para sistemas 32-bits AMD ou Intel (marcados como `i686`) também "
 "serão instalados automaticamente, se disponíveis."
 
@@ -1317,12 +1284,12 @@ msgid ""
 "installed in multiple variants, while the latter will only be installed in "
 "variants specifically required."
 msgstr ""
-"Isso se aplica apenas a pacotes especificados diretamente na seção "
-"`%packages`. Se um pacote for instalado apenas como uma dependência, apenas "
-"a dependência exata especificada será instalada. Por exemplo, se você "
-"estiver instalando o pacote [package]*foo* que depende do pacote "
-"[package]*bar*, o primeiro será instalado em múltiplas variantes, enquanto o "
-"último só será instalado em variantes especificamente necessárias."
+"Isso se aplica apenas a pacotes especificados diretamente na seção `"
+"%packages`. Se um pacote for instalado apenas como uma dependência, apenas a "
+"dependência exata especificada será instalada. Por exemplo, se você estiver "
+"instalando o pacote [package]*foo* que depende do pacote [package]*bar*, o "
+"primeiro será instalado em múltiplas variantes, enquanto o último só será "
+"instalado em variantes especificamente necessárias."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:325
@@ -1558,7 +1525,8 @@ msgstr ""
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:366
 msgid "A system installed using `VNC` will start in text mode by default."
-msgstr "Um sistema instalado usando `VNC` irá iniciar em modo texto por padrão."
+msgstr ""
+"Um sistema instalado usando `VNC` irá iniciar em modo texto por padrão."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:369
@@ -1577,9 +1545,9 @@ msgid ""
 msgstr ""
 "Servidor `VNC` usado pelo programa de instalação. Qualquer cliente `VNC` "
 "tentando se conectar ao sistema terá que fornecer a senha correta para obter "
-"acesso. Por exemplo, [option]#inst."
-"vncpassword=pass:attributes[{blank}]_senhateste_pass:attributes[{blank}]# "
-"definirá a senha para `senhateste`. A senha deve ter entre 6 e 8 caracteres."
+"acesso. Por exemplo, [option]#inst.vncpassword=pass:"
+"attributes[{blank}]_senhateste_pass:attributes[{blank}]# definirá a senha "
+"para `senhateste`. A senha deve ter entre 6 e 8 caracteres."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:375
@@ -1600,8 +1568,7 @@ msgid ""
 "Please enter a new one, or leave blank for no password.\n"
 msgstr ""
 "A senha VNC deve ter entre 6 e 8 caracteres.\n"
-"Por favor, digite uma nova senha. Deixe em branco no caso de não desejar uma "
-"senha.\n"
+"Por favor, digite uma nova senha. Deixe em branco no caso de não desejar uma senha.\n"
 
 #. type: delimited block -
 #: pages/advanced/Boot_Options.adoc:383
@@ -1625,10 +1592,11 @@ msgid ""
 "specify one, the installation program will use `5900`."
 msgstr ""
 "Conecte-se a um cliente `VNC` de escuta em um host e porta especificados "
-"assim que a instalação começar. A sintaxe correta é [option]#inst.vncconnect="
-"pass:attributes[{blank}]_host_:pass:attributes[{blank}]_porta_pass:attributes"
-"[{blank}]#. O parâmetro _porta_ é opcional – se você não especificar uma, o "
-"programa de instalação usará `5900`."
+"assim que a instalação começar. A sintaxe correta é [option]#inst."
+"vncconnect=pass:attributes[{blank}]_host_:pass:"
+"attributes[{blank}]_porta_pass:attributes[{blank}]#. O parâmetro _porta_ é "
+"opcional – se você não especificar uma, o programa de instalação usará "
+"`5900`."
 
 #. type: Title =====
 #: pages/advanced/Boot_Options.adoc:391
@@ -1714,10 +1682,11 @@ msgid ""
 "forwarding logs. The default value is `org.fedoraproject.anaconda.log.0`pass:"
 "attributes[{blank}]; if this port is present, it will be used."
 msgstr ""
-"Especifica uma porta `virtio` (um dispositivo de caractere em `/dev/"
-"virtio-ports/pass:attributes[{blank}]_nome_pass:attributes[{blank}]`) a ser "
-"usado para encaminhar logs. O valor padrão é `org.fedoraproject.anaconda.log."
-"0`pass:attributes[{blank}]; se esta porta estiver presente, ela será usada."
+"Especifica uma porta `virtio` (um dispositivo de caractere em `/dev/virtio-"
+"ports/pass:attributes[{blank}]_nome_pass:attributes[{blank}]`) a ser usado "
+"para encaminhar logs. O valor padrão é `org.fedoraproject.anaconda."
+"log.0`pass:attributes[{blank}]; se esta porta estiver presente, ela será "
+"usada."
 
 #. type: Title ====
 #: pages/advanced/Boot_Options.adoc:404
@@ -1788,9 +1757,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:419
 #, no-wrap
 msgid "[option]#repo=nfsiso:pass:attributes[{blank}]_server_:/pass:attributes[{blank}]_path_pass:attributes[{blank}]#"
-msgstr ""
-"[option]#repo=nfsiso:pass:attributes[{blank}]_servidor_:/pass:attributes[{bla"
-"nk}]_caminho_pass:attributes[{blank}]#"
+msgstr "[option]#repo=nfsiso:pass:attributes[{blank}]_servidor_:/pass:attributes[{blank}]_caminho_pass:attributes[{blank}]#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:420
@@ -1804,8 +1771,8 @@ msgstr ""
 "Em instalações NFS, especifica-se que o destino é uma imagem ISO localizada "
 "em um servidor NFS em vez de uma árvore instalável. A diferença agora é "
 "detectada automaticamente, o que significa que esta opção é a mesma que "
-"[option]#inst.repo=nfs:pass:attributes[{blank}]_servidor_:/pass:attributes[{b"
-"lank}]_caminho_pass:attributes[{blank}]#."
+"[option]#inst.repo=nfs:pass:attributes[{blank}]_servidor_:/pass:"
+"attributes[{blank}]_caminho_pass:attributes[{blank}]#."
 
 #. type: Labeled list
 #: pages/advanced/Boot_Options.adoc:421
@@ -1826,9 +1793,7 @@ msgstr ""
 #: pages/advanced/Boot_Options.adoc:423
 #, no-wrap
 msgid "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
-msgstr ""
-"[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, "
-"[option]#ipv6=#"
+msgstr "[option]#netmask=#, [option]#gateway=#, [option]#hostname=#, [option]#ip=#, [option]#ipv6=#"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:424
@@ -1851,6 +1816,13 @@ msgstr ""
 "instalação. Valores diferentes foram substituídos por opções diferentes; "
 "veja a tabela abaixo."
 
+#. type: Block title
+#: pages/advanced/Boot_Options.adoc:428
+#, fuzzy, no-wrap
+#| msgid "Automatic Interface Configuration Methods"
+msgid "Automatic Interface Configuration Methods "
+msgstr "Métodos de Configuração Automática de Interface"
+
 #. type: Table
 #: pages/advanced/Boot_Options.adoc:439
 #, no-wrap
@@ -1864,22 +1836,12 @@ msgid ""
 "|[option]#ksdevice=pass:attributes[{blank}]_device_pass:attributes[{blank}]#|Replaced by specifying the device name using the [option]#ip=# option.\n"
 msgstr ""
 "|Valor|Comportamento atual\n"
-"|Não presente|Tenta ativar todos os dispositivos usando `dhcp`, a menos que "
-"o dispositivo e a configuração desejados sejam especificados pela opção "
-"[option]#ip=# ou a opção [option]#BOOTIF#.\n"
-"|[option]#ksdevice=link#|Semelhante ao anterior, com a diferença de que a "
-"rede estará sempre ativada no initramfs, seja necessário ou não. A opção "
-"[option]#rd.neednet# suportada (fornecida pelo [application]*dracut*) deve "
-"ser usada em seu lugar.\n"
-"|[option]#ksdevice=bootif#|Ignorada (a opção BOOTID= é usada por padrão "
-"quando especificada)\n"
+"|Não presente|Tenta ativar todos os dispositivos usando `dhcp`, a menos que o dispositivo e a configuração desejados sejam especificados pela opção [option]#ip=# ou a opção [option]#BOOTIF#.\n"
+"|[option]#ksdevice=link#|Semelhante ao anterior, com a diferença de que a rede estará sempre ativada no initramfs, seja necessário ou não. A opção [option]#rd.neednet# suportada (fornecida pelo [application]*dracut*) deve ser usada em seu lugar.\n"
+"|[option]#ksdevice=bootif#|Ignorada (a opção BOOTID= é usada por padrão quando especificada)\n"
 "|[option]#ksdevice=ibft#|Substituída com a opção [option]#ip=ibft#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|"
-"Substituída com "
-"[option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
-"|[option]#ksdevice=pass:attributes[{blank}]_dispositivo_pass:attributes[{blan"
-"k}]#|Substituída com especificar o nome do dispositivo usando a opção "
-"[option]#ip=#.\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#|Substituída com [option]#BOOTIF=pass:attributes[{blank}]_MAC_pass:attributes[{blank}]#\n"
+"|[option]#ksdevice=pass:attributes[{blank}]_dispositivo_pass:attributes[{blank}]#|Substituída com especificar o nome do dispositivo usando a opção [option]#ip=#.\n"
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:445
@@ -2220,14 +2182,14 @@ msgid ""
 "the bottom informing you of the current status, and another pass will start "
 "automatically."
 msgstr ""
-"O {PRODUCT} inclui o aplicativo de teste de memória [application]*Memtest86+*"
-". Para iniciar o modo de teste de memória, escolha Troubleshooting > `Memory "
-"test` no menu de inicialização. O teste começará imediatamente. Por padrão, "
-"[application]*Memtest86+* realiza dez testes em cada passagem; uma "
-"configuração diferente pode ser especificada acessando a tela de "
-"configuração usando a tecla kbd:[c]. Após a conclusão da primeira passagem, "
-"uma mensagem aparecerá na parte inferior informando sobre o status atual e "
-"outra passagem será iniciada automaticamente."
+"O {PRODUCT} inclui o aplicativo de teste de memória "
+"[application]*Memtest86+*. Para iniciar o modo de teste de memória, escolha "
+"Troubleshooting > `Memory test` no menu de inicialização. O teste começará "
+"imediatamente. Por padrão, [application]*Memtest86+* realiza dez testes em "
+"cada passagem; uma configuração diferente pode ser especificada acessando a "
+"tela de configuração usando a tecla kbd:[c]. Após a conclusão da primeira "
+"passagem, uma mensagem aparecerá na parte inferior informando sobre o status "
+"atual e outra passagem será iniciada automaticamente."
 
 #. type: delimited block =
 #: pages/advanced/Boot_Options.adoc:505
@@ -2356,8 +2318,8 @@ msgid ""
 "to complete."
 msgstr ""
 "A quantidade de tempo que leva para completar uma única passagem completa do "
-"[application]*Memtest86+* varia dependendo da configuração do seu sistema ("
-"notavelmente o tamanho da RAM e a velocidade). Por exemplo, em um sistema "
+"[application]*Memtest86+* varia dependendo da configuração do seu sistema "
+"(notavelmente o tamanho da RAM e a velocidade). Por exemplo, em um sistema "
 "com 2{nbsp}GB de memória DDR2 667{nbsp}MHz, uma única passagem levará "
 "aproximadamente 20{nbsp}minutos para ser concluída."
 
@@ -2367,8 +2329,8 @@ msgid ""
 "To halt the tests and reboot your computer, press the kbd:[Esc] key at any "
 "time."
 msgstr ""
-"Para interromper os testes e reiniciar o computador, pressione a tecla "
-"kbd:[Esc] a qualquer momento."
+"Para interromper os testes e reiniciar o computador, pressione a tecla kbd:"
+"[Esc] a qualquer momento."
 
 #. type: Plain text
 #: pages/advanced/Boot_Options.adoc:539

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:07+0000\n"
+"POT-Creation-Date: 2022-08-18 21:17+0000\n"
 "PO-Revision-Date: 2022-05-12 02:18+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -19,48 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12.1\n"
 
-#. type: Block title
-#: ./pages/_partials/install/NetworkSpoke.adoc:6
-#: ./pages/_partials/install/NetworkSpoke.adoc:17
+#. type: Title ===
+#: pages/_partials/install/NetworkSpoke.adoc:6
 #, no-wrap
 msgid "Network & Hostname"
 msgstr "网络和主机名"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:9
+#: pages/_partials/install/NetworkSpoke.adoc:9
 msgid ""
-"The `Network & Hostname` screen is used to configure network "
-"interfaces. Options selected here will be available both during the "
-"installation (if needed for tasks such as downloading packages from a remote "
-"location) and on the installed system."
-msgstr "“网络和主机名”屏幕被用于配置网络接口。在此选择的选项将不仅可用于安装过程当中"
+"The `Network & Hostname` screen is used to configure network interfaces. "
+"Options selected here will be available both during the installation (if "
+"needed for tasks such as downloading packages from a remote location) and on "
+"the installed system."
+msgstr ""
+"“网络和主机名”屏幕被用于配置网络接口。在此选择的选项将不仅可用于安装过程当中"
 "（例如在安装过程当中下载远端的软件包），还可用于安装好的系统上。"
 
 #. type: delimited block =
-#: ./pages/_partials/install/NetworkSpoke.adoc:14
+#: pages/_partials/install/NetworkSpoke.adoc:14
 msgid ""
 "Network configuration is an expansive topic and many of the options "
 "available during the installation are beyond the scope of this document. For "
 "detailed information about networking, including both theoretical topics and "
 "specific instructions and examples, see the [citetitle]_{PRODUCT} "
-"Networking{nbsp}Guide_, available at "
-"link:++http://docs.fedoraproject.org/++[]."
+"Networking{nbsp}Guide_, available at link:++http://docs.fedoraproject.org/+"
+"+[]."
 msgstr ""
 
+#. type: Block title
+#: pages/_partials/install/NetworkSpoke.adoc:17
+#, fuzzy, no-wrap
+#| msgid "Network & Hostname"
+msgid "Network & Hostname "
+msgstr "网络和主机名"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/NetworkSpoke.adoc:19
+#: pages/_partials/install/NetworkSpoke.adoc:19
 #, no-wrap
 msgid "The Network & Hostname screen. In the left pane"
 msgstr "网络和主机名屏幕在左侧面板"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/NetworkSpoke.adoc:19
+#: pages/_partials/install/NetworkSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/NetworkSpoke.png"
 msgstr "anaconda/NetworkSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:22
+#: pages/_partials/install/NetworkSpoke.adoc:22
 msgid ""
 "Locally accessible interfaces are automatically detected by the installation "
 "program and cannot be manually added or deleted. All detected interfaces are "
@@ -73,29 +80,30 @@ msgstr ""
 "和DNS地址），此时接口的详细信息会在屏幕右侧被显示出来。"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:24
+#: pages/_partials/install/NetworkSpoke.adoc:24
 msgid ""
 "Below the list of interfaces are two buttons. Use the `+` button to add a "
-"virtual network interface (Team, Bond or VLAN) as described in "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-virtual-interface[Adding "
-"a Virtual Network Interface]. To remove a previously created virtual "
-"interface, select it in the list and click the `-` button."
+"virtual network interface (Team, Bond or VLAN) as described in xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
+"virtual-interface[Adding a Virtual Network Interface]. To remove a "
+"previously created virtual interface, select it in the list and click the `-"
+"` button."
 msgstr ""
-"在接口列表的下方有两个按钮。点击“+”按钮可以添加一个虚拟网络接口（例如Team、Bo"
-"nd或者VLAN），这类接口的信息详见xref:install/Installing_Using_Anaconda.adoc"
-"#sect-installation-gui-network-configuration-virtual-interface[添加一个虚拟网"
-"络接口]。要删除之前已有的虚拟网络接口，你需要在列表中选中此接口，然后点击“-”"
-"按钮。"
+"在接口列表的下方有两个按钮。点击“+”按钮可以添加一个虚拟网络接口（例如Team、"
+"Bond或者VLAN），这类接口的信息详见xref:install/Installing_Using_Anaconda."
+"adoc#sect-installation-gui-network-configuration-virtual-interface[添加一个虚"
+"拟网络接口]。要删除之前已有的虚拟网络接口，你需要在列表中选中此接口，然后点"
+"击“-”按钮。"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:26
+#: pages/_partials/install/NetworkSpoke.adoc:26
 msgid ""
 "To change settings such as IP addresses, DNS servers, or routing "
 "configuration for an existing interface (both virtual and physical), select "
 "the interface in the left pane and click `Configure` in the bottom right "
-"corner of the screen. Available settings are described in "
-"xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
-"Network Interface Configuration]."
+"corner of the screen. Available settings are described in xref:install/"
+"Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-"
+"advanced[Editing Network Interface Configuration]."
 msgstr ""
 "要修改已有虚拟接口或者物理接口的设置（例如IP地址、DNS服务器或者路由配置），你"
 "需要在左侧面板选择要修改的接口，然后点击屏幕右下角的“配置”按钮。可用的设置详"
@@ -103,7 +111,7 @@ msgstr ""
 "configuration-advanced[编辑网络接口配置]。"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:28
+#: pages/_partials/install/NetworkSpoke.adoc:28
 msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
@@ -112,7 +120,7 @@ msgstr ""
 "钮可以启用或禁用当前选择的接口。"
 
 #. type: Plain text
-#: ./pages/_partials/install/NetworkSpoke.adoc:30
+#: pages/_partials/install/NetworkSpoke.adoc:30
 msgid ""
 "Below the list of connections, enter a host name for this computer in the "
 "`Hostname` input field. The host name can be either a _fully-qualified "
@@ -122,8 +130,8 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
-"在连接列表下方，你可以在“主机名”输入框内输入这台电脑的主机名。"
-"主机名既可以是一个格式为_hostname_._domainname_的_完全限定域名_ "
-"（FQDN），也可以是一个短格式的、不带域名的主机名。"
-"很多网络都有一个_动态主机配置协议_ （`DHCP`）服务，用于自动分配连接的操作系统"
-"的域名。要想允许DHCP服务为本机分配域名，则必须指定短格式主机名。"
+"在连接列表下方，你可以在“主机名”输入框内输入这台电脑的主机名。主机名既可以是"
+"一个格式为_hostname_._domainname_的_完全限定域名_ （FQDN），也可以是一个短格"
+"式的、不带域名的主机名。很多网络都有一个_动态主机配置协议_ （`DHCP`）服务，用"
+"于自动分配连接的操作系统的域名。要想允许DHCP服务为本机分配域名，则必须指定短"
+"格式主机名。"

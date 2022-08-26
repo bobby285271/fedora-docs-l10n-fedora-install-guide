@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:05+0000\n"
+"POT-Creation-Date: 2022-08-18 21:13+0000\n"
 "PO-Revision-Date: 2021-04-16 15:02+0000\n"
 "Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -18,51 +18,58 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.5.3\n"
 
-#. type: Block title
-#: ./pages/_partials/install/UserSpoke.adoc:5
-#: ./pages/_partials/install/UserSpoke.adoc:16
+#. type: Title ===
+#: pages/_partials/install/UserSpoke.adoc:5
 #, no-wrap
 msgid "Create User"
 msgstr "创建用户"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:8
+#: pages/_partials/install/UserSpoke.adoc:8
 msgid ""
-"The `Create User` screen can be used to create and configure one normal "
-"(non-`root`) user account during the installation. Only one user account can "
-"be configured here; if you require more accounts, wait until the "
-"installation completes, reboot your system and then create other accounts "
-"using either the [command]#useradd# command in a terminal, or a graphical "
-"utility for managing user accounts (for example, the `Users` screen in the "
-"Settings menu in [application]*GNOME*)."
+"The `Create User` screen can be used to create and configure one normal (non-"
+"`root`) user account during the installation. Only one user account can be "
+"configured here; if you require more accounts, wait until the installation "
+"completes, reboot your system and then create other accounts using either "
+"the [command]#useradd# command in a terminal, or a graphical utility for "
+"managing user accounts (for example, the `Users` screen in the Settings menu "
+"in [application]*GNOME*)."
 msgstr ""
-"在安装的过程中你可以使用创建用户页面创建和配置一个（除了 root 之外的）用户。如果你需要多个账户，你可以在安装完成重启后通过命令行 "
-"[command]#useradd# 或者 GNOME 设置等方式继续创建。"
+"在安装的过程中你可以使用创建用户页面创建和配置一个（除了 root 之外的）用户。"
+"如果你需要多个账户，你可以在安装完成重启后通过命令行 [command]#useradd# 或者 "
+"GNOME 设置等方式继续创建。"
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:13
+#: pages/_partials/install/UserSpoke.adoc:13
 msgid ""
 "Creating a normal user account is not required to finish the installation; "
 "however, it is highly recommended. If you do not create one, you will have "
 "to log in to the system as `root` directly, which is *not* recommended."
-msgstr "尽管不是必须的，我们依然强烈建议你在安装时创建一个普通用户。否则你就得必须直接使用 `root` 进行登录，这是我们非常不建议的。"
+msgstr ""
+"尽管不是必须的，我们依然强烈建议你在安装时创建一个普通用户。否则你就得必须直"
+"接使用 `root` 进行登录，这是我们非常不建议的。"
+
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:16
+#, fuzzy, no-wrap
+#| msgid "Create User"
+msgid "Create User "
+msgstr "创建用户"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/UserSpoke.adoc:18
+#: pages/_partials/install/UserSpoke.adoc:18
 #, no-wrap
-msgid ""
-"The Create screen. Use the text input fields to create a user account and "
-"configure its settings."
+msgid "The Create screen. Use the text input fields to create a user account and configure its settings."
 msgstr "用户创建页面。填写表单创建和配置用户。"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/UserSpoke.adoc:18
+#: pages/_partials/install/UserSpoke.adoc:18
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
 msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:21
+#: pages/_partials/install/UserSpoke.adoc:21
 msgid ""
 "To configure a user account, fill out the `Full name` (for example, `John "
 "Smith`) and `Username` (for example, `jsmith`). The `username` will used to "
@@ -70,10 +77,11 @@ msgid ""
 "your graphical login manager will use `Full name`."
 msgstr ""
 "要配置一个用户帐户，你需要添加用户名称（例如 `John Smith`）和帐号（例如 "
-"`jsmith`）。帐号将被用于在控制台登录你的系统。如果你使用图形界面，你的登录管理器将会显示你的用户名称。"
+"`jsmith`）。帐号将被用于在控制台登录你的系统。如果你使用图形界面，你的登录管"
+"理器将会显示你的用户名称。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:23
+#: pages/_partials/install/UserSpoke.adoc:23
 msgid ""
 "Make sure that the `Require a password to use this account` check box is "
 "enabled, enter a password you want to use for this account into the "
@@ -82,36 +90,36 @@ msgid ""
 "below to ensure you entered it properly. Both entered passwords must be the "
 "same."
 msgstr ""
-"请务必勾选启用帐户密码，并在密码栏填写一个密码。为了安全起见无论你敲的字符是什么我们都只会显示实心圆点。接下来你还需要再输入一次密码以确认你刚才输入的密码"
-"准确无误。注意两次输入的密码要一致才行。"
+"请务必勾选启用帐户密码，并在密码栏填写一个密码。为了安全起见无论你敲的字符是"
+"什么我们都只会显示实心圆点。接下来你还需要再输入一次密码以确认你刚才输入的密"
+"码准确无误。注意两次输入的密码要一致才行。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:25
+#: pages/_partials/install/UserSpoke.adoc:25
 msgid ""
 "As you enter the password, it will be evaluated and the installer will "
 "determine the password's strength. If the installer considers your password "
 "weak, a message will appear at the bottom of the screen, explaining which "
 "aspect of your chosen password is considered insuficient. For example:"
 msgstr ""
-"在你输入密码的时候，安装程序会评估密码的强度。如果安装程序认为你的密码非常弱，屏幕顶部会弹出相关的信息，告知你输入的密码在哪一方面有所欠缺，例如："
+"在你输入密码的时候，安装程序会评估密码的强度。如果安装程序认为你的密码非常"
+"弱，屏幕顶部会弹出相关的信息，告知你输入的密码在哪一方面有所欠缺，例如："
 
 #. type: delimited block -
-#: ./pages/_partials/install/UserSpoke.adoc:29
+#: pages/_partials/install/UserSpoke.adoc:29
 #, no-wrap
-msgid ""
-"`The password you have provided is weak:` `The password is shorter than 5 "
-"characters.`\n"
+msgid "`The password you have provided is weak:` `The password is shorter than 5 characters.`\n"
 msgstr "你提供的密码非常弱：密码的长度小于 5 个字符。\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:32
+#: pages/_partials/install/UserSpoke.adoc:32
 msgid ""
 "If a message similar to the above appears, it is highly recommended to "
 "choose a different, stronger password."
 msgstr "如果有这样的信息出现，我们建议你选择一个不同的且安全性更佳的密码。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:34
+#: pages/_partials/install/UserSpoke.adoc:34
 msgid ""
 "The `Make this user administrator` check box gives the user you are creatng "
 "administrative rights (by adding this user into the `wheel` group), allowing "
@@ -119,90 +127,102 @@ msgid ""
 "available to `root` using only the user password, instead of the `root` "
 "password. This may be more convenient, but can also pose a security risk."
 msgstr ""
-"你可以选择将用户添加到管理员组（也就是 `wheel` 组），这样子用户就可以通过 [command]#sudo# "
-"命令而从只需要自己的密码就能执行特权任务。这可以使得许多工作变得简单，但也有可能带来安全隐患。"
+"你可以选择将用户添加到管理员组（也就是 `wheel` 组），这样子用户就可以通过 "
+"[command]#sudo# 命令而从只需要自己的密码就能执行特权任务。这可以使得许多工作"
+"变得简单，但也有可能带来安全隐患。"
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:39
+#: pages/_partials/install/UserSpoke.adoc:39
 msgid ""
 "If you give administrator privileges to an user, make sure that the account "
 "is protected by a strong password. Never give an user administrator "
 "privileges without requiring any password for the account."
-msgstr "如果你要将一名用户添加到管理员组，请确认他的密码安全性足够高。千万不要给一个无密码的普通用户赋予管理身份。"
+msgstr ""
+"如果你要将一名用户添加到管理员组，请确认他的密码安全性足够高。千万不要给一个"
+"无密码的普通用户赋予管理身份。"
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:41
+#: pages/_partials/install/UserSpoke.adoc:41
 msgid ""
-"See the [citetitle]_{PRODUCT} Security Guide_, available at the "
-"link:++https://docs.fedoraproject.org/++[], for detailed information about "
+"See the [citetitle]_{PRODUCT} Security Guide_, available at the link:+"
+"+https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
-"如需了解有关密码安全性相关的更多信息，请阅读 link:++https://docs.fedoraproject.org/++[] 上的 "
-"[citetitle]_{PRODUCT} Security Guide_ 页面。"
+"如需了解有关密码安全性相关的更多信息，请阅读 link:++https://docs."
+"fedoraproject.org/++[] 上的 [citetitle]_{PRODUCT} Security Guide_ 页面。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:45
+#: pages/_partials/install/UserSpoke.adoc:45
 msgid ""
 "To additional settings, click the `Advanced` button below the password input "
-"fields. A new dialog window titled `Advanced User Configuration` will "
-"open. This dialog is described in the following section."
-msgstr "如果你希望对用户做进一步的设置，你可以点击位于表单下方的高级选项按钮。此时一个对话框会弹出，我们会在下面介绍这个对话框。"
+"fields. A new dialog window titled `Advanced User Configuration` will open. "
+"This dialog is described in the following section."
+msgstr ""
+"如果你希望对用户做进一步的设置，你可以点击位于表单下方的高级选项按钮。此时一"
+"个对话框会弹出，我们会在下面介绍这个对话框。"
 
-#. type: Block title
-#: ./pages/_partials/install/UserSpoke.adoc:47
-#: ./pages/_partials/install/UserSpoke.adoc:51
+#. type: Title ====
+#: pages/_partials/install/UserSpoke.adoc:47
 #, no-wrap
 msgid "Advanced User Configuration"
 msgstr "用户高级选项"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:50
+#: pages/_partials/install/UserSpoke.adoc:50
 msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
 msgstr "用户高级选项对话框允许你对新用户做以下的设定。"
 
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:51
+#, fuzzy, no-wrap
+#| msgid "Advanced User Configuration"
+msgid "Advanced User Configuration "
+msgstr "用户高级选项"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/UserSpoke.adoc:53
+#: pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "Advanced settings for the new user account."
 msgstr "新用户高级设定。"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/UserSpoke.adoc:53
+#: pages/_partials/install/UserSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
 msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:56
+#: pages/_partials/install/UserSpoke.adoc:56
 msgid ""
-"The user's `Home directory` "
-"(`/home/pass:attributes[{blank}]_username_pass:attributes[{blank}]` by "
-"default)."
+"The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
+"attributes[{blank}]` by default)."
 msgstr ""
-"用户的家目录（默认是 /home/pass:attributes[{blank}]_username_pass:attributes[{blank}]` "
-"）。"
+"用户的家目录（默认是 /home/pass:attributes[{blank}]_username_pass:"
+"attributes[{blank}]` ）。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:58
+#: pages/_partials/install/UserSpoke.adoc:58
 msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they can not be assigned to an user."
-msgstr "用户的 ID（UID），默认值是 1000。0-999 是系统保留的 ID 号，你不能将这些 ID 号分配给用户。"
+msgstr ""
+"用户的 ID（UID），默认值是 1000。0-999 是系统保留的 ID 号，你不能将这些 ID 号"
+"分配给用户。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:60
+#: pages/_partials/install/UserSpoke.adoc:60
 msgid ""
 "The the group ID (GID) of the user's default group. The default group name "
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
 "are reserved by the system so they can not be assigned to an user's group."
 msgstr ""
-"用户默认组的 ID 号（GID）。默认的组名跟用户名相同，默认的 GID 是 1000。同样 0-999 是系统保留的 ID 号，你不能将这些 ID "
-"号分配给用户组。"
+"用户默认组的 ID 号（GID）。默认的组名跟用户名相同，默认的 GID 是 1000。同样 "
+"0-999 是系统保留的 ID 号，你不能将这些 ID 号分配给用户组。"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:61
+#: pages/_partials/install/UserSpoke.adoc:61
 msgid ""
 "The user's group membership. The user account you are creating will always "
 "have one default group membership (the user's default group with an ID set "
@@ -212,5 +232,7 @@ msgid ""
 "them in parentheses. If you do not specify a custom GID for a new group, it "
 "will be assigned automatically."
 msgstr ""
-"用户的其它组信息。所有的用户帐号都会有一个默认组信息（默认组有专门的选项进行设置），而在其它组信息设置这里你可以填写额外组别的信息，组别名称之间用逗号间隔"
-"。还没创建的组会被自动创建，你可以在圆括号内指定 GID 信息。如果你不为组别指定 GID，我们将为你的小组自动分配 GID。"
+"用户的其它组信息。所有的用户帐号都会有一个默认组信息（默认组有专门的选项进行"
+"设置），而在其它组信息设置这里你可以填写额外组别的信息，组别名称之间用逗号间"
+"隔。还没创建的组会被自动创建，你可以在圆括号内指定 GID 信息。如果你不为组别指"
+"定 GID，我们将为你的小组自动分配 GID。"

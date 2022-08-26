@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:06+0000\n"
+"POT-Creation-Date: 2022-08-18 21:14+0000\n"
 "PO-Revision-Date: 2022-08-17 23:12+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -39,8 +39,8 @@ msgstr ""
 "A interface de instalação gráfica é o método recomendado de instalação do "
 "{PRODUCT}. Porém, em alguns casos, acessar a interface gráfica diretamente é "
 "difícil ou impossível. Alguns sistemas não tem a capacidade de conectar uma "
-"tela e um teclado, fazendo do VNC uma necessidade para instalações manuais ("
-"não Kickstart)."
+"tela e um teclado, fazendo do VNC uma necessidade para instalações manuais "
+"(não Kickstart)."
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:11
@@ -110,8 +110,8 @@ msgid ""
 "[application]*Vinagre* - A viewer for the [application]*GNOME* desktop "
 "environment. Installed as the [package]*vinagre* package."
 msgstr ""
-"[application]*Vinagre* - Um visualizador para o ambiente [application]*GNOME*"
-". Instalado como o pacote [package]*vinagre*."
+"[application]*Vinagre* - Um visualizador para o ambiente "
+"[application]*GNOME*. Instalado como o pacote [package]*vinagre*."
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:26
@@ -362,10 +362,10 @@ msgid ""
 "between 6 and 8 characters long."
 msgstr ""
 "Opcionalmente, se você deseja restringir o acesso VNC ao sistema de "
-"instalação, adicione a opção de inicializaçãooption]#inst."
-"vncpassword=pass:attributes[{blank}]_SENHA_pass:attributes[{blank}]# também. "
-"Substitua _SENHA_ pela senha que deseja usar para a instalação. A senha do "
-"VNC deve ter entre 6 e 8 caracteres."
+"instalação, adicione a opção de inicializaçãooption]#inst.vncpassword=pass:"
+"attributes[{blank}]_SENHA_pass:attributes[{blank}]# também. Substitua "
+"_SENHA_ pela senha que deseja usar para a instalação. A senha do VNC deve "
+"ter entre 6 e 8 caracteres."
 
 #. type: delimited block =
 #: pages/advanced/VNC_Installations.adoc:87
@@ -409,9 +409,7 @@ msgstr ""
 #: pages/advanced/VNC_Installations.adoc:100
 #, no-wrap
 msgid "`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to begin the install.`\n"
-msgstr ""
-"`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to "
-"begin the install.`\n"
+msgstr "`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to begin the install.`\n"
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:103
@@ -419,8 +417,8 @@ msgid ""
 "Note the IP address and port number (in the above example, "
 "`192.168.100.131:5901`)."
 msgstr ""
-"Note o endereço IP e número da porta (no exemplo acima, `192.168.100."
-"131:5901`)."
+"Note o endereço IP e número da porta (no exemplo acima, "
+"`192.168.100.131:5901`)."
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:105
@@ -440,7 +438,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:107
-#: pages/advanced/VNC_Installations.adoc:159
 msgid ""
 "When the connection is successfully established, a new window will open on "
 "the system running the VNC viewer, displaying the installation menu. This "
@@ -454,13 +451,12 @@ msgstr ""
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:109
-#: pages/advanced/VNC_Installations.adoc:161
 msgid ""
 "You can then proceed with xref:install/Installing_Using_Anaconda.adoc#chap-"
 "installing-using-anaconda[Installing Using Anaconda]."
 msgstr ""
-"Você pode, então, continuar com xref:install/Installing_Using_Anaconda.adoc"
-"#chap-installing-using-anaconda[Instando usando Anaconda]."
+"Você pode, então, continuar com xref:install/Installing_Using_Anaconda."
+"adoc#chap-installing-using-anaconda[Instando usando Anaconda]."
 
 #. type: Title ===
 #: pages/advanced/VNC_Installations.adoc:111
@@ -577,9 +573,7 @@ msgstr ""
 #: pages/advanced/VNC_Installations.adoc:152
 #, no-wrap
 msgid "[option]#inst.vnc inst.vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORT_#\n"
-msgstr ""
-"[option]#inst.vnc inst."
-"vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORTA_#\n"
+msgstr "[option]#inst.vnc inst.vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORTA_#\n"
 
 #. type: Plain text
 #: pages/advanced/VNC_Installations.adoc:155
@@ -603,6 +597,38 @@ msgstr ""
 "iniciará os serviços necessários. Assim que a inicialização for concluída, o "
 "[application]*Anaconda* tentará se conectar ao endereço IP e à porta que "
 "você forneceu na etapa anterior."
+
+#. type: Plain text
+#: pages/advanced/VNC_Installations.adoc:159
+#, fuzzy
+#| msgid ""
+#| "When the connection is successfully established, a new window will open "
+#| "on the system running the VNC viewer, displaying the installation menu. "
+#| "This window will provide full remote access to the installer until the "
+#| "installation finishes and the system reboots for the first time."
+msgid ""
+"When the connection is successfully established, a new window will open on "
+"the system running the VNC viewer, displaying the installation menu. This "
+"window will provide full remote access to the installer until the "
+"installation finishes and the system reboots for the first time. "
+msgstr ""
+"Quando a conexão for estabelecida com sucesso, uma nova janela será aberta "
+"no sistema executando o visualizador VNC, exibindo o menu de instalação. "
+"Esta janela fornecerá acesso remoto completo ao instalador até que a "
+"instalação seja concluída e o sistema seja reinicializado pela primeira vez."
+
+#. type: Plain text
+#: pages/advanced/VNC_Installations.adoc:161
+#, fuzzy
+#| msgid ""
+#| "You can then proceed with xref:install/Installing_Using_Anaconda."
+#| "adoc#chap-installing-using-anaconda[Installing Using Anaconda]."
+msgid ""
+"You can then proceed with xref:install/Installing_Using_Anaconda.adoc#chap-"
+"installing-using-anaconda[Installing Using Anaconda]. "
+msgstr ""
+"Você pode, então, continuar com xref:install/Installing_Using_Anaconda."
+"adoc#chap-installing-using-anaconda[Instando usando Anaconda]."
 
 #. type: Title ==
 #: pages/advanced/VNC_Installations.adoc:163

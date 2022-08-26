@@ -6,12 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-04-26 21:04+0000\n"
+"POT-Creation-Date: 2022-08-18 21:09+0000\n"
 "PO-Revision-Date: 2022-06-06 13:18+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-install-guide/f33pages_partialsinstalluserspoke/fi/>"
-"\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10n-fedora-install-guide/f33pages_partialsinstalluserspoke/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,34 +18,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.12.2\n"
 
-#. type: Block title
-#: ./pages/_partials/install/UserSpoke.adoc:4
-#: ./pages/_partials/install/UserSpoke.adoc:15
+#. type: Title ===
+#: pages/_partials/install/UserSpoke.adoc:4
 #, no-wrap
 msgid "Create User"
 msgstr "Luo käyttäjä"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:7
+#: pages/_partials/install/UserSpoke.adoc:7
 msgid ""
-"The `Create User` screen can be used to create and configure one normal "
-"(non-`root`) user account during the installation. Only one user account can "
-"be configured here; if you require more accounts, wait until the "
-"installation completes, reboot your system and then create other accounts "
-"using either the [command]#useradd# command in a terminal, or a graphical "
-"utility for managing user accounts (for example, the `Users` screen in the "
-"Settings menu in [application]*GNOME*)."
+"The `Create User` screen can be used to create and configure one normal (non-"
+"`root`) user account during the installation. Only one user account can be "
+"configured here; if you require more accounts, wait until the installation "
+"completes, reboot your system and then create other accounts using either "
+"the [command]#useradd# command in a terminal, or a graphical utility for "
+"managing user accounts (for example, the `Users` screen in the Settings menu "
+"in [application]*GNOME*)."
 msgstr ""
-"Luo käyttäjä -näyttöä voidaan käyttää yhden normaalin (ei-root-käyttäjätilin)"
-" luomiseen ja määrittämiseen asennuksen aikana. Vain yksi käyttäjätili "
-"voidaan määrittää tähän; Jos tarvitset lisää tilejä, odota, kunnes asennus "
-"on valmis, käynnistä järjestelmä uudelleen ja luo sitten muita tilejä "
-"käyttämällä joko [command]#useradd#-komentoa terminaalissa tai graafista "
-"apuohjelmaa käyttäjätilien hallintaan (esimerkiksi \"Käyttäjät\"). -näyttö "
-"Asetukset-valikossa kohdassa [sovellus]*GNOME*)."
+"Luo käyttäjä -näyttöä voidaan käyttää yhden normaalin (ei-root-"
+"käyttäjätilin) luomiseen ja määrittämiseen asennuksen aikana. Vain yksi "
+"käyttäjätili voidaan määrittää tähän; Jos tarvitset lisää tilejä, odota, "
+"kunnes asennus on valmis, käynnistä järjestelmä uudelleen ja luo sitten "
+"muita tilejä käyttämällä joko [command]#useradd#-komentoa terminaalissa tai "
+"graafista apuohjelmaa käyttäjätilien hallintaan (esimerkiksi \"Käyttäjät\"). "
+"-näyttö Asetukset-valikossa kohdassa [sovellus]*GNOME*)."
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:12
+#: pages/_partials/install/UserSpoke.adoc:12
 msgid ""
 "Creating a normal user account is not required to finish the installation; "
 "however, it is highly recommended. If you do not create one, you will have "
@@ -56,37 +54,40 @@ msgstr ""
 "kuitenkin erittäin suositeltavaa. Jos et luo sitä, sinun on kirjauduttava "
 "järjestelmään suoraan root-tunnuksella, mitä *ei* suositella."
 
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:15
+#, fuzzy, no-wrap
+#| msgid "Create User"
+msgid "Create User "
+msgstr "Luo käyttäjä"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/UserSpoke.adoc:17
+#: pages/_partials/install/UserSpoke.adoc:17
 #, no-wrap
-msgid ""
-"The Create User screen. Use the text input fields to create a user account "
-"and configure its settings."
-msgstr ""
-"Luo käyttäjä -näyttö. Käytä tekstinsyöttökenttiä käyttäjätilin luomiseen ja "
-"sen asetusten määrittämiseen."
+msgid "The Create User screen. Use the text input fields to create a user account and configure its settings."
+msgstr "Luo käyttäjä -näyttö. Käytä tekstinsyöttökenttiä käyttäjätilin luomiseen ja sen asetusten määrittämiseen."
 
 #. type: Target for macro image
-#: ./pages/_partials/install/UserSpoke.adoc:17
+#: pages/_partials/install/UserSpoke.adoc:17
 #, no-wrap
 msgid "anaconda/UserSpoke.png"
 msgstr "anaconda/UserSpoke.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:20
+#: pages/_partials/install/UserSpoke.adoc:20
 msgid ""
 "To configure a user account, fill out the `Full name` (for example, `John "
 "Smith`) and `Username` (for example, `jsmith`). The `username` will used to "
 "log in from a command line; if you install a graphical environment, then "
 "your graphical login manager will use `Full name`."
 msgstr ""
-"Määritä käyttäjätili täyttämällä \"koko nimi\" (esimerkiksi \"Pekka Puupää\")"
-" ja \"käyttäjänimi\" (esimerkiksi \"ppuupaa\"). Käyttäjätunnusta käytetään "
-"kirjautumiseen komentoriviltä; jos asennat graafisen ympäristön, graafinen "
-"kirjautumisen hallinta käyttää \"koko nimeä\"."
+"Määritä käyttäjätili täyttämällä \"koko nimi\" (esimerkiksi \"Pekka Puupää"
+"\") ja \"käyttäjänimi\" (esimerkiksi \"ppuupaa\"). Käyttäjätunnusta "
+"käytetään kirjautumiseen komentoriviltä; jos asennat graafisen ympäristön, "
+"graafinen kirjautumisen hallinta käyttää \"koko nimeä\"."
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:22
+#: pages/_partials/install/UserSpoke.adoc:22
 msgid ""
 "Make sure that the `Require a password to use this account` check box is "
 "enabled, enter a password you want to use for this account into the "
@@ -103,7 +104,7 @@ msgstr ""
 "oltava samat."
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:24
+#: pages/_partials/install/UserSpoke.adoc:24
 msgid ""
 "As you enter the password, it will be evaluated and the installer will "
 "determine the password's strength. If the installer considers your password "
@@ -116,15 +117,13 @@ msgstr ""
 "riittämättömäksi. Esimerkiksi:"
 
 #. type: delimited block -
-#: ./pages/_partials/install/UserSpoke.adoc:28
+#: pages/_partials/install/UserSpoke.adoc:28
 #, no-wrap
-msgid ""
-"`The password you have provided is weak:` `The password is shorter than 5 "
-"characters.`\n"
+msgid "`The password you have provided is weak:` `The password is shorter than 5 characters.`\n"
 msgstr "`Antamasi salasana on heikko:` `Salasana on lyhyempi kuin 5 merkkiä.`\n"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:31
+#: pages/_partials/install/UserSpoke.adoc:31
 msgid ""
 "If a message similar to the above appears, it is highly recommended to "
 "choose a different, stronger password."
@@ -133,7 +132,7 @@ msgstr ""
 "luoda toinen, vahvempi salasana."
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:33
+#: pages/_partials/install/UserSpoke.adoc:33
 msgid ""
 "The `Make this user administrator` check box gives the user you are creatng "
 "administrative rights (by adding this user into the `wheel` group), allowing "
@@ -150,7 +149,7 @@ msgstr ""
 "turvallisuusriskin."
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:38
+#: pages/_partials/install/UserSpoke.adoc:38
 msgid ""
 "If you give administrator privileges to an user, make sure that the account "
 "is protected by a strong password. Never give an user administrator "
@@ -162,37 +161,36 @@ msgstr ""
 "tilille."
 
 #. type: delimited block =
-#: ./pages/_partials/install/UserSpoke.adoc:40
+#: pages/_partials/install/UserSpoke.adoc:40
 msgid ""
-"See the [citetitle]_{PRODUCT} Security Guide_, available at the "
-"link:++https://docs.fedoraproject.org/++[], for detailed information about "
+"See the [citetitle]_{PRODUCT} Security Guide_, available at the link:+"
+"+https://docs.fedoraproject.org/++[], for detailed information about "
 "password security including guidelines for selecting strong passwords."
 msgstr ""
-"Katso [citetitle]_{PRODUCT} Security Guide_, joka on saatavilla "
-"link:++https://docs.fedoraproject.org/++[], saadaksesi yksityiskohtaisia "
-"tietoja salasanasuojauksesta, mukaan lukien ohjeet vahvojen salasanojen "
+"Katso [citetitle]_{PRODUCT} Security Guide_, joka on saatavilla link:+"
+"+https://docs.fedoraproject.org/++[], saadaksesi yksityiskohtaisia tietoja "
+"salasanasuojauksesta, mukaan lukien ohjeet vahvojen salasanojen "
 "valitsemiseen."
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:44
+#: pages/_partials/install/UserSpoke.adoc:44
 msgid ""
 "To additional settings, click the `Advanced` button below the password input "
-"fields. A new dialog window titled `Advanced User Configuration` will "
-"open. This dialog is described in the following section."
+"fields. A new dialog window titled `Advanced User Configuration` will open. "
+"This dialog is described in the following section."
 msgstr ""
 "Jos haluat lisäasetuksia, napsauta \"Lisäasetukset\" -painiketta salasanan "
-"syöttökenttien alla. Uusi valintaikkuna nimeltä \"Advanced User "
-"Configuration\" avautuu. Tämä valintaikkuna on kuvattu seuraavassa osiossa."
+"syöttökenttien alla. Uusi valintaikkuna nimeltä \"Advanced User Configuration"
+"\" avautuu. Tämä valintaikkuna on kuvattu seuraavassa osiossa."
 
-#. type: Block title
-#: ./pages/_partials/install/UserSpoke.adoc:46
-#: ./pages/_partials/install/UserSpoke.adoc:50
+#. type: Title ====
+#: pages/_partials/install/UserSpoke.adoc:46
 #, no-wrap
 msgid "Advanced User Configuration"
 msgstr "Käyttäjän lisäasetukset"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:49
+#: pages/_partials/install/UserSpoke.adoc:49
 msgid ""
 "The `Advanced User Configuration` dialog allows you to change the following "
 "settings for the new user account."
@@ -200,37 +198,43 @@ msgstr ""
 "\"Advanced User Configuration\" -valintaikkunassa voit muuttaa seuraavia "
 "uuden käyttäjätilin asetuksia."
 
+#. type: Block title
+#: pages/_partials/install/UserSpoke.adoc:50
+#, fuzzy, no-wrap
+#| msgid "Advanced User Configuration"
+msgid "Advanced User Configuration "
+msgstr "Käyttäjän lisäasetukset"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/UserSpoke.adoc:52
+#: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "Advanced settings for the new user account."
 msgstr "Uuden käyttäjätilin lisäasetukset."
 
 #. type: Target for macro image
-#: ./pages/_partials/install/UserSpoke.adoc:52
+#: pages/_partials/install/UserSpoke.adoc:52
 #, no-wrap
 msgid "anaconda/UserSpoke_Advanced.png"
 msgstr "anaconda/UserSpoke_Advanced.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:55
+#: pages/_partials/install/UserSpoke.adoc:55
 msgid ""
-"The user's `Home directory` "
-"(`/home/pass:attributes[{blank}]_username_pass:attributes[{blank}]` by "
-"default)."
+"The user's `Home directory` (`/home/pass:attributes[{blank}]_username_pass:"
+"attributes[{blank}]` by default)."
 msgstr ""
-"Käyttäjän kotihakemisto (`/home/"
-"pass:attributes[{blank}]_username_pass:attributes[{blank}]` oletuksena)."
+"Käyttäjän kotihakemisto (`/home/pass:attributes[{blank}]_username_pass:"
+"attributes[{blank}]` oletuksena)."
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:57
+#: pages/_partials/install/UserSpoke.adoc:57
 msgid ""
 "The user's ID (UID). The default value is 1000. UIDs 0-999 are reserved by "
 "the system so they can not be assigned to an user."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:59
+#: pages/_partials/install/UserSpoke.adoc:59
 msgid ""
 "The the group ID (GID) of the user's default group. The default group name "
 "will be the same as the user name, and its default GID is 1000. GIDs 0-999 "
@@ -238,7 +242,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/UserSpoke.adoc:60
+#: pages/_partials/install/UserSpoke.adoc:60
 msgid ""
 "The user's group membership. The user account you are creating will always "
 "have one default group membership (the user's default group with an ID set "

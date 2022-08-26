@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-04 21:03+0000\n"
+"POT-Creation-Date: 2022-08-18 21:03+0000\n"
 "PO-Revision-Date: 2022-06-24 05:19+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -30,7 +30,8 @@ msgid ""
 "This appendix is intended for users with previous Linux experience. If you "
 "are a new user, you may want to install using minimal boot media or the "
 "distribution DVD instead."
-msgstr "此附录为之前有过Linux经验的人而准备。如果你是一个新用户，那么你也许想要使用最"
+msgstr ""
+"此附录为之前有过Linux经验的人而准备。如果你是一个新用户，那么你也许想要使用最"
 "小启动媒体或者发行版DVD，而不是这个来进行安装。"
 
 #. type: Title ==
@@ -71,9 +72,9 @@ msgid ""
 "instructions on setting boot priorities."
 msgstr ""
 "大多数现代的电脑拥有网络启动的能力。典型的做法是在启动时按下一个功能键即可进"
-"入一个启动选择菜单。在非人工值守的环境中，系统通常被配置为首次尝试从网络启动"
-"，然后才从本地存储中启动，然后安装服务器就被配置为只在安装时才被需要。你的电"
-"脑的手册将提供在设置启动顺序上的、专业的信息。"
+"入一个启动选择菜单。在非人工值守的环境中，系统通常被配置为首次尝试从网络启"
+"动，然后才从本地存储中启动，然后安装服务器就被配置为只在安装时才被需要。你的"
+"电脑的手册将提供在设置启动顺序上的、专业的信息。"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:22
@@ -87,7 +88,8 @@ msgid ""
 "When a system requests an address during network booting, the DHCP server "
 "also provides the location of files to boot. A network should have only one "
 "DHCP server."
-msgstr "当一个操作系统在网络启动时需要一个地址时，DHCP服务器也将提供用于启动的文件的"
+msgstr ""
+"当一个操作系统在网络启动时需要一个地址时，DHCP服务器也将提供用于启动的文件的"
 "地址。一个网络需要有且仅有一个DHCP服务器。"
 
 #. type: Block title
@@ -120,9 +122,9 @@ msgid ""
 "It also provides configuration information to the installer, and can offer a "
 "menu to select from different configurations."
 msgstr ""
-"由于启动一个操作系统的工作对于预启动环境而言太过于复杂，所以需要一个bootloade"
-"r来加载内核和相关的文件。它还为安装器提供配置信息，还能提供一个用于选择不同配"
-"置的菜单。"
+"由于启动一个操作系统的工作对于预启动环境而言太过于复杂，所以需要一个"
+"bootloader来加载内核和相关的文件。它还为安装器提供配置信息，还能提供一个用于"
+"选择不同配置的菜单。"
 
 #. type: Block title
 #: pages/advanced/Network_based_Installations.adoc:31
@@ -136,7 +138,8 @@ msgid ""
 "The kernel is the core of any Linux operating system, and the initramfs "
 "provides the kernel with required tools and resources. These files are also "
 "provided by tftp."
-msgstr "内核是任意Linux操作系统的核心，然后initramfs为内核提供需要的工具和资源。这些"
+msgstr ""
+"内核是任意Linux操作系统的核心，然后initramfs为内核提供需要的工具和资源。这些"
 "文件也被TFTP所提供。"
 
 #. type: Block title
@@ -275,7 +278,6 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:100
-#: pages/advanced/Network_based_Installations.adoc:289
 #, no-wrap
 msgid "...\n"
 msgstr "...\n"
@@ -297,11 +299,17 @@ msgstr ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
-#. type: Block title
+#. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:113
-#: pages/advanced/Network_based_Installations.adoc:115
 #, no-wrap
 msgid "Installing the tftp server"
+msgstr "安装tftp服务器"
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:115
+#, fuzzy, no-wrap
+#| msgid "Installing the tftp server"
+msgid "Installing the tftp server "
 msgstr "安装tftp服务器"
 
 #. type: Plain text
@@ -362,7 +370,6 @@ msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:143
-#: pages/advanced/Network_based_Installations.adoc:160
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr "为bootloader 文件创建一个目录，并且令其中的文件可用。"
@@ -395,6 +402,16 @@ msgstr ""
 msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr ""
 
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:160
+#, fuzzy
+#| msgid ""
+#| "Create a directory for the bootloader files, and make them available "
+#| "there."
+msgid ""
+"Create a directory for the bootloader files, and make them available there. "
+msgstr "为bootloader 文件创建一个目录，并且令其中的文件可用。"
+
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:165
 #, no-wrap
@@ -414,7 +431,8 @@ msgstr "配置客户端bootloader"
 msgid ""
 "Create a boot menu for BIOS clients at `/var/lib/tftpboot/pxelinux.cfg/"
 "default`."
-msgstr "在`/var/lib/tftpboot/pxelinux.cfg/default`之下创建一个为BIOS准备的启动菜单。"
+msgstr ""
+"在`/var/lib/tftpboot/pxelinux.cfg/default`之下创建一个为BIOS准备的启动菜单。"
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:177
@@ -546,9 +564,7 @@ msgstr "创建一个文件的目录。"
 #: pages/advanced/Network_based_Installations.adoc:235
 #, no-wrap
 msgid "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
-msgstr ""
-"# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#"
-"\n"
+msgstr "# [command]#mkdir -p `/var/lib/tftpboot/f{PRODVER}`pass:attributes[{blank}]#\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:238
@@ -656,6 +672,15 @@ msgid ""
 "}\n"
 msgstr ""
 
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:289
+#, fuzzy, no-wrap
+#| msgid "...\n"
+msgid ""
+"...\n"
+" "
+msgstr "...\n"
+
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:292
 #, no-wrap
@@ -668,7 +693,8 @@ msgid ""
 "The examples in this section use the public Fedora mirrors as the package "
 "source. For faster installations, installing to many systems, or more "
 "isolated environments, you may wish to maintain a local repository."
-msgstr "本小节中的例子使用Fedora镜像作为软件源。为了更快的安装或安装大量系统，或更多"
+msgstr ""
+"本小节中的例子使用Fedora镜像作为软件源。为了更快的安装或安装大量系统，或更多"
 "的隔离环境，那么你也许想要维护一个本地软件源。"
 
 #. type: Plain text
@@ -706,8 +732,8 @@ msgid ""
 "Fedora repository."
 msgstr ""
 "使用cobbler传送所有特性可以非常简单，此工具的全部的功能点太宽泛而不能在此文档"
-"中列出。Cobbler社区在link:++https://cobbler.github.io/"
-"++[]提供了文档，并伴随Fedora软件源分发。"
+"中列出。Cobbler社区在link:++https://cobbler.github.io/++[]提供了文档，并伴随"
+"Fedora软件源分发。"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:305
@@ -716,5 +742,5 @@ msgid ""
 "official documentation as well as downloads on the project website at link:+"
 "+https://www.theforeman.org/++[]."
 msgstr ""
-"另外，比也许对**Foreman**感兴趣。你可以在link:++https://www.theforeman.org/"
-"++[]项目网页上找到官方文档并下载。"
+"另外，比也许对**Foreman**感兴趣。你可以在link:++https://www.theforeman.org/+"
+"+[]项目网页上找到官方文档并下载。"

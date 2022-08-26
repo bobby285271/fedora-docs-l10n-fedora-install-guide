@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:07+0000\n"
+"POT-Creation-Date: 2022-08-18 21:17+0000\n"
 "PO-Revision-Date: 2022-08-16 18:21+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -104,8 +104,8 @@ msgid ""
 msgstr ""
 "A lista acima não está completa - você também pode encontrar ajuda em muitos "
 "outros lugares. Informações adicionais sobre os recursos disponíveis, como "
-"canais IRC e listas de discussão, estão disponíveis no "
-"link:++https://fedoraproject.org/wiki/Communicating_and_getting_help++[]."
+"canais IRC e listas de discussão, estão disponíveis no link:++https://"
+"fedoraproject.org/wiki/Communicating_and_getting_help++[]."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:31
@@ -175,11 +175,9 @@ msgid ""
 msgstr ""
 "|Arquivo de log|Conteúdo\n"
 "|`/tmp/anaconda.log`|mensagens gerais do [application]*Anaconda*\n"
-"|`/tmp/program.log`|todos so programas externos executados durante a "
-"instalação\n"
+"|`/tmp/program.log`|todos so programas externos executados durante a instalação\n"
 "|`/tmp/storage.log`|informações extensas do módulo de armazenamento\n"
-"|`/tmp/packaging.log`|mensagens de instalação de pacotes do "
-"[application]*dnf* e do [application]*rpm*\n"
+"|`/tmp/packaging.log`|mensagens de instalação de pacotes do [application]*dnf* e do [application]*rpm*\n"
 "|`/tmp/syslog`|mensagens do sistema relacionadas a hardware\n"
 
 #. type: Plain text
@@ -232,7 +230,7 @@ msgid "Transferring Log Files Onto a USB Drive"
 msgstr "Transferindo Arquivos de Log Para uma Unidade USB"
 
 #. type: Plain text
-#: pages/install/Troubleshooting.adoc:63 pages/install/Troubleshooting.adoc:119
+#: pages/install/Troubleshooting.adoc:63
 msgid ""
 "On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
 "shell prompt. You will be logged into a root account and you will have "
@@ -251,11 +249,11 @@ msgid ""
 "you just connected. It will look like a set of lines similar to the "
 "following:"
 msgstr ""
-"Conecte uma unidade flash USB ao sistema e execute o comando [command]#dmesg#"
-". Um log detalhando todos os eventos recentes será exibido. Na parte "
-"inferior deste log, você verá um conjunto de mensagens causadas pela unidade "
-"flash USB que você acabou de conectar. Ele se parecerá com um conjunto de "
-"linhas semelhante ao seguinte:"
+"Conecte uma unidade flash USB ao sistema e execute o comando "
+"[command]#dmesg#. Um log detalhando todos os eventos recentes será exibido. "
+"Na parte inferior deste log, você verá um conjunto de mensagens causadas "
+"pela unidade flash USB que você acabou de conectar. Ele se parecerá com um "
+"conjunto de linhas semelhante ao seguinte:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:69
@@ -370,9 +368,26 @@ msgid "Transferring Log Files Over the Network"
 msgstr "Transferindo Arquivos de Log Pela Rede"
 
 #. type: Plain text
+#: pages/install/Troubleshooting.adoc:119
+#, fuzzy
+#| msgid ""
+#| "On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
+#| "shell prompt. You will be logged into a root account and you will have "
+#| "access to the installation program's temporary file system."
+msgid ""
+"On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
+"shell prompt. You will be logged into a root account and you will have "
+"access to the installation program's temporary file system. "
+msgstr ""
+"No sistema que você está instalando, pressione kbd:[Ctrl + Alt + F2] para "
+"acessar um prompt de shell. Você será conectado a uma conta root e terá "
+"acesso ao sistema de arquivos temporários do programa de instalação."
+
+#. type: Plain text
 #: pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr "Mude para o diretório `/tmp` onde os arquivos de log estão localizados:"
+msgstr ""
+"Mude para o diretório `/tmp` onde os arquivos de log estão localizados:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:125
@@ -435,8 +450,7 @@ msgid ""
 "`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
-"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
-"established.`\n"
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be established.`\n"
 "`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 
@@ -534,9 +548,9 @@ msgid ""
 msgstr ""
 "Se o programa de instalação falhar em detectar a resolução da tela, você "
 "pode ignorar a detecção automática e especificá-la manualmente. Para fazer "
-"isso, acrescente a opção [option]#inst."
-"resolution=pass:attributes[{blank}]_x_pass:attributes[{blank}]# no menu de "
-"inicialização, onde _x_ é a resolução de sua tela (por exemplo, `1024x768`)."
+"isso, acrescente a opção [option]#inst.resolution=pass:"
+"attributes[{blank}]_x_pass:attributes[{blank}]# no menu de inicialização, "
+"onde _x_ é a resolução de sua tela (por exemplo, `1024x768`)."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:169
@@ -555,9 +569,9 @@ msgid ""
 msgstr ""
 "Você também pode tentar especificar um driver de vídeo personalizado, "
 "substituindo a detecção automática do programa de instalação. Para "
-"especificar um driver, use a opção [option]#inst."
-"xdriver=pass:attributes[{blank}]_x_pass:attributes[{blank}]#, onde _x_ é o "
-"driver de dispositivo que você deseja usar (por exemplo, `nouveau`)."
+"especificar um driver, use a opção [option]#inst.xdriver=pass:"
+"attributes[{blank}]_x_pass:attributes[{blank}]#, onde _x_ é o driver de "
+"dispositivo que você deseja usar (por exemplo, `nouveau`)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:175
@@ -609,9 +623,9 @@ msgid ""
 msgstr ""
 "Em alguns casos, tentar instalar em modo de texto usando um console serial "
 "resultará em nenhuma saída no console. Isso acontece em sistemas que possuem "
-"uma placa gráfica, mas nenhum monitor conectado. Se o [application]*Anaconda*"
-" detectar uma placa gráfica, ele tentará usá-la para um monitor, mesmo se "
-"nenhum monitor estiver conectado."
+"uma placa gráfica, mas nenhum monitor conectado. Se o "
+"[application]*Anaconda* detectar uma placa gráfica, ele tentará usá-la para "
+"um monitor, mesmo se nenhum monitor estiver conectado."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:185
@@ -682,8 +696,8 @@ msgid ""
 "Adapter_)."
 msgstr ""
 "Se você estiver instalando em um ou mais dispositivos iSCSI e não houver "
-"armazenamento local presente no sistema, certifique-se de que todos os LUNs ("
-"_Logical Unit Numbers_) necessários estão sendo apresentados ao HBA (_Host "
+"armazenamento local presente no sistema, certifique-se de que todos os LUNs "
+"(_Logical Unit Numbers_) necessários estão sendo apresentados ao HBA (_Host "
 "Bus Adapter_) apropriado."
 
 #. type: Plain text
@@ -708,9 +722,8 @@ msgstr ""
 msgid "Problems After Installation"
 msgstr "Problemas Após a Instalação"
 
-#. type: Block title
+#. type: Title ===
 #: pages/install/Troubleshooting.adoc:206
-#: pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
 msgstr "Redefinindo a Senha Root"
@@ -724,6 +737,13 @@ msgstr ""
 "Se você perdeu a senha do usuário root para o sistema e tem acesso ao "
 "carregador de inicialização, pode redefinir a senha editando a configuração "
 "do GRUB2."
+
+#. type: Block title
+#: pages/install/Troubleshooting.adoc:210
+#, fuzzy, no-wrap
+#| msgid "Resetting the Root Password"
+msgid "Resetting the Root Password "
+msgstr "Redefinindo a Senha Root"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:212
@@ -876,8 +896,8 @@ msgstr ""
 "tela baseada em texto mostrando o prompt do carregador de inicialização (por "
 "exemplo, `grub>`) e um cursor piscando pode ser tudo o que aparece. Se este "
 "for o caso, você deve reparticionar seu sistema e mover sua partição `/boot` "
-"e o carregador de inicialização para fora do arranjo RAID. A partição `/boot`"
-" e o carregador de inicialização devem estar no mesmo drive."
+"e o carregador de inicialização para fora do arranjo RAID. A partição `/"
+"boot` e o carregador de inicialização devem estar no mesmo drive."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:271
@@ -927,7 +947,6 @@ msgstr "Desabilitando Temporariamente a Inicialização Gráfica"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:279
-#: pages/install/Troubleshooting.adoc:403
 msgid ""
 "Start your computer and wait until the boot loader menu appears. If you set "
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
@@ -939,7 +958,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:281
-#: pages/install/Troubleshooting.adoc:405
 msgid ""
 "When the boot loader menu appears, use your cursor keys to highlight the "
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
@@ -965,7 +983,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:285
-#: pages/install/Troubleshooting.adoc:416
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
@@ -1026,11 +1043,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:303
 #, no-wrap
 msgid "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
-msgstr ""
-"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
-"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
-" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
-"quiet\"\n"
+msgstr "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:307
@@ -1052,7 +1065,6 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:315
-#: pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
@@ -1075,7 +1087,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:320
-#: pages/install/Troubleshooting.adoc:447
 msgid ""
 "See the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++http://docs.fedoraproject.org/++[], for more information about "
@@ -1222,10 +1233,10 @@ msgid ""
 "To verify that this is the problem you are experiencing, execute the "
 "following command:"
 msgstr ""
-"Se você estiver tendo problemas com o travamento do servidor [application]*X*"
-" quando um usuário efetuar login, um ou mais de seus sistemas de arquivos "
-"podem estar cheios (ou quase cheios). Para verificar se este é o problema "
-"que você está enfrentando, execute o seguinte comando:"
+"Se você estiver tendo problemas com o travamento do servidor "
+"[application]*X* quando um usuário efetuar login, um ou mais de seus "
+"sistemas de arquivos podem estar cheios (ou quase cheios). Para verificar se "
+"este é o problema que você está enfrentando, execute o seguinte comando:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:361
@@ -1258,14 +1269,12 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
-"Sist. Arq.                                  Tam  Usado Disp. Uso% Montando "
-"em\n"
+"Sist. Arq.                                  Tam  Usado Disp. Uso% Montando em\n"
 "/dev/mapper/vg_rhel-root                     20G  6.0G   13G  32% /\n"
 "devtmpfs                                    1.8G     0  1.8G   0% /dev\n"
 "tmpfs                                       1.8G  2.7M  1.8G   1% /dev/shm\n"
 "tmpfs                                       1.8G 1012K  1.8G   1% /run\n"
-"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/"
-"cgroup\n"
+"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/cgroup\n"
 "tmpfs                                       1.8G  2.6M  1.8G   1% /tmp\n"
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
@@ -1379,6 +1388,38 @@ msgid "Configuring the Memory Manually"
 msgstr "Configurando a Memória Manualmente"
 
 #. type: Plain text
+#: pages/install/Troubleshooting.adoc:403
+#, fuzzy
+#| msgid ""
+#| "Start your computer and wait until the boot loader menu appears. If you "
+#| "set your boot loader timeout period to 0, hold down the kbd:[Esc] key to "
+#| "access it."
+msgid ""
+"Start your computer and wait until the boot loader menu appears. If you set "
+"your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
+"it. "
+msgstr ""
+"Inicie o computador e espere até que o menu do carregador de inicialização "
+"apareça. Se você definir o tempo limite do carregador de inicialização para "
+"0, mantenha pressionada a tecla kbd:[Esc] para acessá-lo."
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:405
+#, fuzzy
+#| msgid ""
+#| "When the boot loader menu appears, use your cursor keys to highlight the "
+#| "entry you want to boot and press the kbd:[e] key to edit this entry's "
+#| "options."
+msgid ""
+"When the boot loader menu appears, use your cursor keys to highlight the "
+"entry you want to boot and press the kbd:[e] key to edit this entry's "
+"options. "
+msgstr ""
+"Quando o menu do carregador de inicialização aparecer, use as teclas do "
+"cursor para destacar a entrada que deseja inicializar e pressione a tecla "
+"kbd:[e] para editar as opções dessa entrada."
+
+#. type: Plain text
 #: pages/install/Troubleshooting.adoc:407
 msgid ""
 "In the list of options, find the kernel line - that is, the line beginning "
@@ -1391,16 +1432,27 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:411
-#: pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:414
-#: pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
 msgstr "Substitua _xx_ pela quantidade de RAM que você tem em megabytes."
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:416
+#, fuzzy
+#| msgid ""
+#| "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
+#| "options."
+msgid ""
+"Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
+"options. "
+msgstr ""
+"Pressione kbd:[F10] ou kbd:[Ctrl + X] para inicializar seu sistema com as "
+"opções editadas."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:418
@@ -1417,6 +1469,22 @@ msgstr ""
 "expectativas, anexe o seguinte à linha que começa com `GRUB_CMDLINE_LINUX` "
 "no arquivo `/etc/default/grub` para tornar a mudança permanente:"
 
+#. type: delimited block -
+#: pages/install/Troubleshooting.adoc:422
+#, fuzzy, no-wrap
+#| msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+msgid ""
+"mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+" "
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:425
+#, fuzzy
+#| msgid "Replace _xx_ with the amount of RAM you have in megabytes."
+msgid "Replace _xx_ with the amount of RAM you have in megabytes. "
+msgstr "Substitua _xx_ pela quantidade de RAM que você tem em megabytes."
+
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:427
 msgid ""
@@ -1427,6 +1495,15 @@ msgstr ""
 "Depois de atualizar o arquivo e salvá-lo, atualize a configuração do "
 "carregador de inicialização para que a alteração tenha efeito. Execute o "
 "seguinte comando com privilégios de root:"
+
+#. type: delimited block -
+#: pages/install/Troubleshooting.adoc:431
+#, fuzzy, no-wrap
+#| msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
+msgid ""
+"# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
+" "
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:434
@@ -1452,7 +1529,13 @@ msgstr ""
 "GRUB_DEFAULT=saved\n"
 "GRUB_DISABLE_SUBMENU=true\n"
 "GRUB_TERMINAL_OUTPUT=\"console\"\n"
-"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
-"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
-"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd.lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:447
+msgid ""
+"See the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
+"link:++http://docs.fedoraproject.org/++[], for more information about "
+"working with the [application]*GRUB2* boot loader. "
+msgstr ""

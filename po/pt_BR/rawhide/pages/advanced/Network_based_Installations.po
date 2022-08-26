@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-04 21:03+0000\n"
+"POT-Creation-Date: 2022-08-18 21:03+0000\n"
 "PO-Revision-Date: 2022-08-17 23:12+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -179,9 +179,9 @@ msgstr ""
 "nesta seção usa os espelhos públicos do Fedora como a fonte do repositório, "
 "mas você também pode usar um repositório na rede local fornecido por NFS, "
 "FTP ou HTTP. Os repositórios podem ser configurados usando a opção de "
-"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options.adoc"
-"#sect-boot-options-sources[Especificando a Fonte de Instalação] para obter "
-"detalhes."
+"inicialização [option]#inst.repo=#; consulte xref:advanced/Boot_Options."
+"adoc#sect-boot-options-sources[Especificando a Fonte de Instalação] para "
+"obter detalhes."
 
 #. A link to mirrormanager and some instructions to other guides too.  All the elaboration on installation methods might be going to far, but we can ref. --Pete
 #. type: Title ==
@@ -331,7 +331,6 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:100
-#: pages/advanced/Network_based_Installations.adoc:289
 #, no-wrap
 msgid "...\n"
 msgstr "...\n"
@@ -355,11 +354,17 @@ msgstr ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
-#. type: Block title
+#. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:113
-#: pages/advanced/Network_based_Installations.adoc:115
 #, no-wrap
 msgid "Installing the tftp server"
+msgstr "Instalando o servidor tftp"
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:115
+#, fuzzy, no-wrap
+#| msgid "Installing the tftp server"
+msgid "Installing the tftp server "
 msgstr "Instalando o servidor tftp"
 
 #. type: Plain text
@@ -423,7 +428,6 @@ msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:143
-#: pages/advanced/Network_based_Installations.adoc:160
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
@@ -463,6 +467,18 @@ msgstr ""
 #, no-wrap
 msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:160
+#, fuzzy
+#| msgid ""
+#| "Create a directory for the bootloader files, and make them available "
+#| "there."
+msgid ""
+"Create a directory for the bootloader files, and make them available there. "
+msgstr ""
+"Crie um diretório para os arquivos do carregador de inicialização e torne-os "
+"disponíveis lá."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:165
@@ -792,6 +808,15 @@ msgstr ""
 "filename \"pxelinux.0\";\n"
 "next-server 192.168.1.2;\n"
 "}\n"
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:289
+#, fuzzy, no-wrap
+#| msgid "...\n"
+msgid ""
+"...\n"
+" "
+msgstr "...\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:292

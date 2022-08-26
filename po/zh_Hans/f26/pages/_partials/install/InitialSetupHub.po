@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:09+0000\n"
+"POT-Creation-Date: 2022-08-18 21:20+0000\n"
 "PO-Revision-Date: 2022-05-10 22:06+0000\n"
 "Last-Translator: Yu Hongbo <linuxbckp@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -18,69 +18,75 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12.1\n"
 
-#. type: Block title
-#: ./pages/_partials/install/InitialSetupHub.adoc:5
-#: ./pages/_partials/install/InitialSetupHub.adoc:17
+#. type: Title ====
+#: pages/_partials/install/InitialSetupHub.adoc:5
 #, no-wrap
 msgid "Initial Setup"
 msgstr "初始设置"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:8
+#: pages/_partials/install/InitialSetupHub.adoc:8
 msgid ""
 "The `Initial Setup` screen is shown after the installation finishes and the "
 "installed system boots for the first time, before the first login, assuming "
 "the following conditions have been met:"
-msgstr "“初始设置”屏幕会在系统安装完成后的第一次启动时显示。在首次登录之前，假设我们"
+msgstr ""
+"“初始设置”屏幕会在系统安装完成后的第一次启动时显示。在首次登录之前，假设我们"
 "可能遇到以下情况："
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:10
+#: pages/_partials/install/InitialSetupHub.adoc:10
 msgid ""
 "Your software selection contained a graphical environment (for example, you "
 "installed the system using a {PRODUCT} Workstation live image)."
-msgstr "你的软件集包含了一个图形环境（举个例子，你安装了一个使用{PRODUCT} "
+msgstr ""
+"你的软件集包含了一个图形环境（举个例子，你安装了一个使用{PRODUCT} "
 "Workstation live镜像的操作系统）。"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:12
+#: pages/_partials/install/InitialSetupHub.adoc:12
 msgid ""
 "The graphical environment you have installed is *not* [application]*GNOME "
 "Desktop Environment* (it provides its own initial setup utility which is "
 "described in xref:After_Installation.adoc#sect-gnome-initial-setup[GNOME "
 "Initial Setup])."
 msgstr ""
-"你安装的图形环境*不是*[application]*GNOME Desktop Environment* "
-"（它提供的是它自身的初始设置工具，在xref:After_Installation.adoc#sect-gnome-"
-"initial-setup[GNOME Initial Setup]被描述） 。"
+"你安装的图形环境*不是*[application]*GNOME Desktop Environment* （它提供的是它"
+"自身的初始设置工具，在xref:After_Installation.adoc#sect-gnome-initial-"
+"setup[GNOME Initial Setup]被描述） 。"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:14
+#: pages/_partials/install/InitialSetupHub.adoc:14
 msgid "The [package]*initial-setup* package has been installed."
 msgstr "软件包[package]*initial-setup*已经被安装好了。"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:16
-msgid "You have not configured every screen available in the graphical installer."
+#: pages/_partials/install/InitialSetupHub.adoc:16
+msgid ""
+"You have not configured every screen available in the graphical installer."
 msgstr "你还没配置完图形安装器里面的每个屏幕。"
 
+#. type: Block title
+#: pages/_partials/install/InitialSetupHub.adoc:17
+#, fuzzy, no-wrap
+#| msgid "Initial Setup"
+msgid "Initial Setup "
+msgstr "初始设置"
+
 #. type: Positional ($1) AttributeList argument for macro 'image'
-#: ./pages/_partials/install/InitialSetupHub.adoc:19
+#: pages/_partials/install/InitialSetupHub.adoc:19
 #, no-wrap
-msgid ""
-"The main Initial Setup screen. This example shows all options; not all of "
-"them may be shown"
-msgstr "初始设置里面的第一个屏幕。这个例子展示了所有功能；但有些功能可能不会显示在这"
-"里"
+msgid "The main Initial Setup screen. This example shows all options; not all of them may be shown"
+msgstr "初始设置里面的第一个屏幕。这个例子展示了所有功能；但有些功能可能不会显示在这里"
 
 #. type: Target for macro image
-#: ./pages/_partials/install/InitialSetupHub.adoc:19
+#: pages/_partials/install/InitialSetupHub.adoc:19
 #, no-wrap
 msgid "anaconda/InitialSetupHub.png"
 msgstr "anaconda文件夹下的InitialSetupHub.png"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:22
+#: pages/_partials/install/InitialSetupHub.adoc:22
 msgid ""
 "[application]*Initial Setup* allows you to configure several system "
 "settings. All of these can also be configured during the installation, but "
@@ -95,11 +101,11 @@ msgstr ""
 "安装操作系统时进行配置，但不要求一次配完。只有那些在安装操作系统的过程中*没有"
 "*配置过的选项才会在这里显示出来。举个例子：如果你在安装操作系统时没创建一个非"
 "root用户，那么[application]*Initial Setup*就会在安装完成重启后启动，然后你就"
-"可以创建一个非root用户了。如果你已经在安装操作系统时配置了所有的选项，那么[ap"
-"plication]*Initial Setup*根本不会显示。"
+"可以创建一个非root用户了。如果你已经在安装操作系统时配置了所有的选项，那么"
+"[application]*Initial Setup*根本不会显示。"
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:24
+#: pages/_partials/install/InitialSetupHub.adoc:24
 msgid ""
 "To configure any aspect of the system available in the utility, click any of "
 "the links available in the main window (for example, `Create User`). Each "
@@ -110,7 +116,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:26
+#: pages/_partials/install/InitialSetupHub.adoc:26
 msgid ""
 "After you finish configuring any screen, press the `Done` button in the top "
 "left corner to return to the main [application]*Initial Setup* menu. After "
@@ -120,7 +126,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: ./pages/_partials/install/InitialSetupHub.adoc:31
+#: pages/_partials/install/InitialSetupHub.adoc:31
 msgid ""
 "It is possible to configure [application]*Initial Setup* to display all "
 "available options, even if they have been already configured during the "
@@ -129,23 +135,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/_partials/install/InitialSetupHub.adoc:35
+#: pages/_partials/install/InitialSetupHub.adoc:35
 #, no-wrap
 msgid "# [command]firstboot --enable --reconfig#\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:38
+#: pages/_partials/install/InitialSetupHub.adoc:38
 msgid ""
 "The [option]#--reconfig# option specifies that all options should be "
-"displayed. See "
-"xref:../advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
-"the Installation with Kickstart] for information about Kickstart "
-"installations."
+"displayed. See xref:../advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[Automating the Installation with Kickstart] for information "
+"about Kickstart installations."
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:45
+#: pages/_partials/install/InitialSetupHub.adoc:45
 msgid ""
 "Normally, it is not possible to return to [application]*Initial Setup* after "
 "you close it and log in to the system. You can make it display again (after "
@@ -154,12 +159,12 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: ./pages/_partials/install/InitialSetupHub.adoc:49
+#: pages/_partials/install/InitialSetupHub.adoc:49
 #, no-wrap
 msgid "# systemctl enable initial-setup-graphical.service\n"
 msgstr ""
 
 #. type: Plain text
-#: ./pages/_partials/install/InitialSetupHub.adoc:52
+#: pages/_partials/install/InitialSetupHub.adoc:52
 msgid "Then, reboot your system."
 msgstr ""

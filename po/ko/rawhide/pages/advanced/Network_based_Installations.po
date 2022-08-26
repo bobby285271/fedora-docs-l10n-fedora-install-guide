@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-04 21:03+0000\n"
+"POT-Creation-Date: 2022-08-18 21:03+0000\n"
 "PO-Revision-Date: 2022-07-29 10:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10n-fedora-install-guide/"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/fedora-"
+"docs-l10n-fedora-install-guide/"
 "rawhidepagesadvancednetwork_based_installations/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -316,7 +316,6 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:100
-#: pages/advanced/Network_based_Installations.adoc:289
 #, no-wrap
 msgid "...\n"
 msgstr "...\n"
@@ -339,11 +338,17 @@ msgstr ""
 "[command]#systemctl restart dhcpd#\n"
 "[command]#journalctl --unit dhcpd --since -2m --follow#\n"
 
-#. type: Block title
+#. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:113
-#: pages/advanced/Network_based_Installations.adoc:115
 #, no-wrap
 msgid "Installing the tftp server"
+msgstr "tftp 서버 설치하기"
+
+#. type: Block title
+#: pages/advanced/Network_based_Installations.adoc:115
+#, fuzzy, no-wrap
+#| msgid "Installing the tftp server"
+msgid "Installing the tftp server "
 msgstr "tftp 서버 설치하기"
 
 #. type: Plain text
@@ -406,7 +411,6 @@ msgstr "# dnf install syslinux\n"
 
 #. type: Plain text
 #: pages/advanced/Network_based_Installations.adoc:143
-#: pages/advanced/Network_based_Installations.adoc:160
 msgid ""
 "Create a directory for the bootloader files, and make them available there."
 msgstr ""
@@ -446,6 +450,18 @@ msgstr ""
 #, no-wrap
 msgid "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
 msgstr "# dnf install shim-x64 grub2-efi-x64 --installroot=/tmp/fedora --releasever {PRODVER}\n"
+
+#. type: Plain text
+#: pages/advanced/Network_based_Installations.adoc:160
+#, fuzzy
+#| msgid ""
+#| "Create a directory for the bootloader files, and make them available "
+#| "there."
+msgid ""
+"Create a directory for the bootloader files, and make them available there. "
+msgstr ""
+"부트로더 파일을 위해 디렉토리를 생성하고, 그 곳에 이를 사용 할 수 있도록 합니"
+"다."
 
 #. type: delimited block -
 #: pages/advanced/Network_based_Installations.adoc:165
@@ -770,6 +786,15 @@ msgstr ""
 "filename \"pxelinux.0\";\n"
 "next-server 192.168.1.2;\n"
 "}\n"
+
+#. type: delimited block -
+#: pages/advanced/Network_based_Installations.adoc:289
+#, fuzzy, no-wrap
+#| msgid "...\n"
+msgid ""
+"...\n"
+" "
+msgstr "...\n"
 
 #. type: Title ==
 #: pages/advanced/Network_based_Installations.adoc:292

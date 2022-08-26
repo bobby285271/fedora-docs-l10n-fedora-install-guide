@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-15 22:07+0000\n"
+"POT-Creation-Date: 2022-08-18 21:17+0000\n"
 "PO-Revision-Date: 2021-07-07 16:04+0000\n"
 "Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -222,7 +222,7 @@ msgid "Transferring Log Files Onto a USB Drive"
 msgstr "Mentransfer Berkas Log Ke Drive USB"
 
 #. type: Plain text
-#: pages/install/Troubleshooting.adoc:63 pages/install/Troubleshooting.adoc:119
+#: pages/install/Troubleshooting.adoc:63
 msgid ""
 "On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
 "shell prompt. You will be logged into a root account and you will have "
@@ -360,6 +360,22 @@ msgstr "Berkas log dari instalasi sekarang disimpan pada USB flash drive."
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
 msgstr "Mentransfer Berkas Log Melalui Jaringan"
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:119
+#, fuzzy
+#| msgid ""
+#| "On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
+#| "shell prompt. You will be logged into a root account and you will have "
+#| "access to the installation program's temporary file system."
+msgid ""
+"On the system you are installing, press kbd:[Ctrl + Alt + F2] to access a "
+"shell prompt. You will be logged into a root account and you will have "
+"access to the installation program's temporary file system. "
+msgstr ""
+"Pada sistem yang sedang Anda instal, tekan kbd:[Ctrl + Alt + F2] untuk "
+"mengakses prompt shell. Anda akan login ke akun root dan Anda akan memiliki "
+"akses ke sistem berkas sementara miliki program instalasi."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:121
@@ -699,9 +715,8 @@ msgstr ""
 msgid "Problems After Installation"
 msgstr "Masalah Setelah Instalasi"
 
-#. type: Block title
+#. type: Title ===
 #: pages/install/Troubleshooting.adoc:206
-#: pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
 msgstr "Mereset Kata Sandi Root"
@@ -715,6 +730,13 @@ msgstr ""
 "Jika Anda kehilangan kata sandi root untuk sistem dan Anda memiliki akses ke "
 "boot loader, Anda dapat me-reset kata sandi dengan menyunting konfigurasi "
 "GRUB2."
+
+#. type: Block title
+#: pages/install/Troubleshooting.adoc:210
+#, fuzzy, no-wrap
+#| msgid "Resetting the Root Password"
+msgid "Resetting the Root Password "
+msgstr "Mereset Kata Sandi Root"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:212
@@ -915,7 +937,6 @@ msgstr "Menonaktifkan Boot Grafis Untuk Sementara"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:279
-#: pages/install/Troubleshooting.adoc:403
 msgid ""
 "Start your computer and wait until the boot loader menu appears. If you set "
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
@@ -927,7 +948,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:281
-#: pages/install/Troubleshooting.adoc:405
 msgid ""
 "When the boot loader menu appears, use your cursor keys to highlight the "
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
@@ -953,7 +973,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:285
-#: pages/install/Troubleshooting.adoc:416
 msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
@@ -1033,7 +1052,6 @@ msgstr "Segarkan konfigurasi boot loader dengan mengeksekusi perintah berikut:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:315
-#: pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
@@ -1055,7 +1073,6 @@ msgstr ""
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:320
-#: pages/install/Troubleshooting.adoc:447
 msgid ""
 "See the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
 "link:++http://docs.fedoraproject.org/++[], for more information about "
@@ -1358,6 +1375,38 @@ msgid "Configuring the Memory Manually"
 msgstr "Mengonfigurasi Memori Secara Manual"
 
 #. type: Plain text
+#: pages/install/Troubleshooting.adoc:403
+#, fuzzy
+#| msgid ""
+#| "Start your computer and wait until the boot loader menu appears. If you "
+#| "set your boot loader timeout period to 0, hold down the kbd:[Esc] key to "
+#| "access it."
+msgid ""
+"Start your computer and wait until the boot loader menu appears. If you set "
+"your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
+"it. "
+msgstr ""
+"Mulai komputer Anda dan tunggu hingga menu boot loader muncul. Jika Anda "
+"menetapkan periode waktu habis boot loader Anda ke 0, tahan tombol kbd:[Esc] "
+"untuk mengaksesnya."
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:405
+#, fuzzy
+#| msgid ""
+#| "When the boot loader menu appears, use your cursor keys to highlight the "
+#| "entry you want to boot and press the kbd:[e] key to edit this entry's "
+#| "options."
+msgid ""
+"When the boot loader menu appears, use your cursor keys to highlight the "
+"entry you want to boot and press the kbd:[e] key to edit this entry's "
+"options. "
+msgstr ""
+"Ketika menu boot loader muncul, gunakan tombol kursor Anda untuk menyorot "
+"entri yang ingin Anda boot dan tekan tombol kbd:[e] untuk menyunting opsi "
+"entri ini."
+
+#. type: Plain text
 #: pages/install/Troubleshooting.adoc:407
 msgid ""
 "In the list of options, find the kernel line - that is, the line beginning "
@@ -1370,16 +1419,27 @@ msgstr ""
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:411
-#: pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:414
-#: pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
 msgstr "Ganti _xx_ dengan jumlah RAM yang Anda miliki dalam megabyte."
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:416
+#, fuzzy
+#| msgid ""
+#| "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
+#| "options."
+msgid ""
+"Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
+"options. "
+msgstr ""
+"Tekan kbd:[F10] atau kbd:[Ctrl + X] untuk mem-boot sistem Anda dengan opsi "
+"yang disunting."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:418
@@ -1396,6 +1456,22 @@ msgstr ""
 "ke baris yang diawali dengan `GRUB_CMDLINE_LINUX` dalam berkas `/etc/default/"
 "grub` untuk membuat perubahan permanen:"
 
+#. type: delimited block -
+#: pages/install/Troubleshooting.adoc:422
+#, fuzzy, no-wrap
+#| msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+msgid ""
+"mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+" "
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:425
+#, fuzzy
+#| msgid "Replace _xx_ with the amount of RAM you have in megabytes."
+msgid "Replace _xx_ with the amount of RAM you have in megabytes. "
+msgstr "Ganti _xx_ dengan jumlah RAM yang Anda miliki dalam megabyte."
+
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:427
 msgid ""
@@ -1406,6 +1482,15 @@ msgstr ""
 "Setelah Anda memperbarui berkas dan menyimpannya, segarkan konfigurasi boot "
 "loader sehingga perubahan akan berlaku. Jalankan perintah berikut dengan hak "
 "akses root:"
+
+#. type: delimited block -
+#: pages/install/Troubleshooting.adoc:431
+#, fuzzy, no-wrap
+#| msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
+msgid ""
+"# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
+" "
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:434
@@ -1434,3 +1519,11 @@ msgstr ""
 "GRUB_TERMINAL_OUTPUT=\"console\"\n"
 "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd.lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
+
+#. type: Plain text
+#: pages/install/Troubleshooting.adoc:447
+msgid ""
+"See the [citetitle]_{PRODUCT} System Administrator's Guide_, available at "
+"link:++http://docs.fedoraproject.org/++[], for more information about "
+"working with the [application]*GRUB2* boot loader. "
+msgstr ""
