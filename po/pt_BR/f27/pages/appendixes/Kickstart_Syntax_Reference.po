@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:17+0000\n"
-"PO-Revision-Date: 2022-08-26 22:41+0000\n"
+"PO-Revision-Date: 2022-08-26 22:48+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -3216,12 +3216,19 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`2416CD96995134CA5D787F00A5AA11017`, use:"
 msgstr ""
+"Para ignorar um dispositivo multipath que não usa _gerenciamento de volume "
+"lógico_ (LVM), use o formato `disk/by-id/dm-uuid-mpath-"
+"_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide identifier_ ("
+"identificador mundial) para o dispositivo. Por exemplo, para ignorar um "
+"disco com WWID `2416CD96995134CA5D787F00A5AA11017`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:898
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/dm-uuid-mpath-2416CD96995134CA5D787F00A5AA11017#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:901
@@ -3234,12 +3241,21 @@ msgid ""
 "device. For example, to specify a disk with WWID "
 "`58095BEC5510947BE8C0360F604351918`, use:"
 msgstr ""
+"Os dispositivos nultipath que usam LVM não são montados até que o "
+"[application]*Anaconda* tenha analisado o arquivo Kickstart. Portanto, você "
+"não pode especificar esses dispositivos no formato `dm-uuid-mpath`. Em vez "
+"disso, para ignorar um dispositivo nultipath que usa LVM, use o formato `"
+"disk/by-id/scsi-_WWID_pass:attributes[{blank}]`, onde _WWID_ é o _world-wide "
+"identifier_ (identificador mundial) do dispositivo. Por exemplo, para "
+"ignorar um disco com WWID `58095BEC5510947BE8C0360F604351918`, use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:905
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 msgstr ""
+"[command]#part / --fstype=xfs --grow --asprimary --size=8192 --ondisk=disk/"
+"by-id/scsi-58095BEC5510947BE8C0360F604351918#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:918
@@ -3251,7 +3267,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:922
 #, no-wrap
 msgid "[option]#--asprimary#"
-msgstr ""
+msgstr "[option]#--asprimary#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:923
@@ -3271,7 +3287,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:981
 #, no-wrap
 msgid "[option]#--fsprofile=#"
-msgstr ""
+msgstr "[option]#--fsprofile=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:925
@@ -3284,6 +3300,13 @@ msgid ""
 "that lists valid types. For `ext2`, `ext3`, `ext4`, this configuration file "
 "is `/etc/mke2fs.conf`."
 msgstr ""
+"Especifica um _tipo de uso_ a ser passado para o programa que cria um "
+"sistema de arquivos nesta partição. Um tipo de uso define uma variedade de "
+"parâmetros de ajuste a serem usados ao criar um sistema de arquivos. Para "
+"que esta opção funcione, o sistema de arquivos deve suportar o conceito de "
+"tipos de uso e deve haver um arquivo de configuração que liste os tipos "
+"válidos. Para `ext2`, `ext3`, `ext4`, este arquivo de configuração é `/etc/"
+"mke2fs.conf`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:927
@@ -3306,11 +3329,17 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume lógico. Nenhum processamento é feito na "
+"lista de argumentos, então eles devem ser fornecidos em um formato que pode "
+"ser passado diretamente para o programa mkfs. Isso significa que várias "
+"opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:938
 msgid "Assign a label to an individual partition."
-msgstr ""
+msgstr "Atribui um rótulo a uma partição individual."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:940
