@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-08-09 16:05+0000\n"
+"PO-Revision-Date: 2022-08-26 14:10+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -22,7 +22,7 @@ msgstr ""
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:6
 #, no-wrap
 msgid "Upgrading Your Current System"
-msgstr ""
+msgstr "Atualizando seu Sistema"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:9
@@ -30,6 +30,8 @@ msgid ""
 "This chapter explains how to upgrade your existing {PRODUCT} installation to "
 "the current release. There are two basic ways to do so:"
 msgstr ""
+"Este capítulo explica como atualizar sua instalação do {PRODUCT} atual para "
+"o lançamento mais recente. Existem duas maneiras básicas de se fazer isso:"
 
 #. type: Labeled list
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:10
@@ -46,6 +48,11 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki DNF "
 "system upgrade]."
 msgstr ""
+"A maneira preferida de atualizar seu sistema é uma atualização automática "
+"usando o utilitário [application]*dnf system upgrade*. Para obter "
+"informações sobre como realizar uma atualização automática, consulte o "
+"link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[DNF system "
+"upgrade no Wiki do Fedora]."
 
 #. type: Labeled list
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:12
@@ -65,6 +72,14 @@ msgid ""
 "xref:sect-upgrading-fedora-manual-reinstall[Manual System Upgrade or "
 "Reinstallation]."
 msgstr ""
+"Você pode atualizar para a versão mais recente do Fedora manualmente, em vez "
+"de confiar no [application]*dnf system upgrade*. Isso envolve inicializar o "
+"instalador como se você estivesse executando uma instalação limpa, "
+"permitindo detectar o sistema Fedora existente e substituindo a partição "
+"raiz, preservando dados em outras partições e volumes. O mesmo processo "
+"também pode ser usado para reinstalar o sistema, se necessário. Para obter "
+"informações detalhadas, consulte xref:sect-upgrading-fedora-manual-reinstall["
+"Atualização ou Reinstalação Manual do Sistema]."
 
 #. type: delimited block =
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:18
@@ -79,7 +94,7 @@ msgstr ""
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:22
 #, no-wrap
 msgid "Manual System Upgrade or Reinstallation"
-msgstr ""
+msgstr "Atualização ou Reinstalação Manual do Sistema"
 
 #. type: Plain text
 #: ./pages/advanced/Upgrading_Your_Current_System.adoc:24
@@ -93,3 +108,11 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning] should in most cases be easy to adapt for this."
 msgstr ""
+"Infelizmente, nós não escrevemos esse capítulo ainda, e não há documentação "
+"dedicada sobre uma reinstalação manual na Wiki também. No meio tempo até que "
+"corrijamos isso, você pode tentar iniciar a instalação normalmente (a partir "
+"de um CD/DVD/USB inicializável), selecionar o particionamento manual no seu "
+"instalador, e reusar partições existentes em vez de destruí-las e criar "
+"novas. As instruções em xref:install/Installing_Using_Anaconda.adoc#sect-"
+"installation-gui-manual-partitioning[Particionamento Manual] devem ser, na "
+"maioria dos casos, fáceis de adaptar para isso."
