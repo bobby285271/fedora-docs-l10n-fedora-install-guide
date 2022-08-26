@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-26 21:09+0000\n"
+"PO-Revision-Date: 2022-08-26 21:16+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1718,8 +1718,8 @@ msgid ""
 "--metadata=pass:attributes[{blank}]_level_ [--label=] "
 "_partitions_pass:attributes[{blank}]#\n"
 msgstr ""
-"[command]#btrfs _pontomnt_ --data=pass:attributes[{blank}]_level_ "
-"--metadata=pass:attributes[{blank}]_level_ [--label=] "
+"[command]#btrfs _mntpoint_ --data=pass:attributes[{blank}]_nível_ "
+"--metadata=pass:attributes[{blank}]_nível_ [--label=] "
 "_partições_pass:attributes[{blank}]#\n"
 
 #. type: Plain text
@@ -1771,12 +1771,15 @@ msgid ""
 "parameter is optional, has no meaning for subvolumes, and requires more than "
 "one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para *dados* do sistema de arquivos (como `0`, `1` "
+"ou `10`). Este parâmetro é opcional, não tem significado para subvolumes e "
+"requer mais de um disco físico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:450
 #, no-wrap
 msgid "[option]#--metadata=#"
-msgstr ""
+msgstr "[option]#--metadata=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:451
@@ -1785,6 +1788,9 @@ msgid ""
 "`10`). This parameter is optional, has no meaning for subvolumes, and "
 "requires more than one physical disk."
 msgstr ""
+"Nível de RAID a ser usado para sistema de arquivos/volume de *metadados* ("
+"como `0`, `1` ou `10`). Este parâmetro é opcional, não tem significado para "
+"subvolumes e requer mais de um disco físico."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:452
@@ -1793,7 +1799,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1058
 #, no-wrap
 msgid "[option]#--label=#"
-msgstr ""
+msgstr "[option]#--label=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:453
@@ -1802,28 +1808,31 @@ msgid ""
 "use by another file system, a new label will be created. This option has no "
 "meaning for subvolumes."
 msgstr ""
+"Especifica um rótulo para o sistema de arquivos Btrfs. Se o rótulo fornecido "
+"já estiver em uso por outro sistema de arquivos, um novo rótulo será criado. "
+"Esta opção não tem significado para subvolumes."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:454
 #, no-wrap
 msgid "[option]#--subvol#"
-msgstr ""
+msgstr "[option]#--subvol#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:455
 msgid "Create a Btrfs subvolume instead of a volume."
-msgstr ""
+msgstr "Cria um subvolume Btrfs em vez de um volume."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:457
 msgid "Set a name for a Btrfs subvolume."
-msgstr ""
+msgstr "Define um nome para um subvolume Btrfs."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:458
 #, no-wrap
 msgid "[option]#--noformat# or [option]#--useexisting#"
-msgstr ""
+msgstr "[option]#--noformat# ou [option]#--useexisting#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:459
@@ -1831,6 +1840,8 @@ msgid ""
 "Use an existing Btrfs volume (or subvolume) and do not reformat the file "
 "system."
 msgstr ""
+"Usa um volume Btrfs existente (ou subvolume) e não reformata o sistema de "
+"arquivos."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:460
@@ -1839,7 +1850,7 @@ msgstr ""
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:1056
 #, no-wrap
 msgid "[option]#--mkfsoptions=#"
-msgstr ""
+msgstr "[option]#--mkfsoptions=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:461
@@ -1850,6 +1861,12 @@ msgid ""
 "to the mkfs program. This means multiple options should be comma-separated "
 "or surrounded by double quotes, depending on the filesystem."
 msgstr ""
+"Especifica parâmetros adicionais a serem passados para o programa que cria "
+"um sistema de arquivos neste volume ou subvolume. Nenhum processamento é "
+"feito na lista de argumentos, então eles devem ser fornecidos em um formato "
+"que pode ser passado diretamente para o programa mkfs. Isso significa que "
+"várias opções devem ser separadas por vírgulas ou entre aspas, dependendo do "
+"sistema de arquivos."
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:463
