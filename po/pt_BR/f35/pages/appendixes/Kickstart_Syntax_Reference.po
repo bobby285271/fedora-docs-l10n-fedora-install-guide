@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:04+0000\n"
-"PO-Revision-Date: 2022-08-26 21:16+0000\n"
+"PO-Revision-Date: 2022-08-26 21:22+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1639,12 +1639,15 @@ msgid ""
 "partitions on three disks with subvolumes for `/` and `/home`. The main "
 "volume is not mounted or used directly in this example."
 msgstr ""
+"O exemplo a seguir mostra como criar um volume Btrfs a partir de partições "
+"membros em três discos com subvolumes para `/` e `/home`. O volume principal "
+"não é montado ou usado diretamente neste exemplo."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:378
 #, no-wrap
 msgid "Creating Btrfs Volumes and Subvolumes"
-msgstr ""
+msgstr "Criando Volumes e Subvolumes Btrfs"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:387
@@ -1654,6 +1657,9 @@ msgid ""
 "[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
 "[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part btrfs.01 --size=6000 --ondisk=sda#\n"
+"[command]#part btrfs.02 --size=6000 --ondisk=sdb#\n"
+"[command]#part btrfs.03 --size=6000 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:391
@@ -1663,12 +1669,16 @@ msgid ""
 "[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
 "[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 msgstr ""
+"[command]#btrfs none --data=0 --metadata=1 --label=f{PRODVER} btrfs.01 "
+"btrfs.02 btrfs.03#\n"
+"[command]#btrfs / --subvol --name=root LABEL=f{PRODVER}#\n"
+"[command]#btrfs /home --subvol --name=home f{PRODVER}#\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:397
 #, no-wrap
 msgid "clearpart (optional) - Remove All Existing Partitions"
-msgstr ""
+msgstr "clearpart (opcional) - Remove Todas as Partições Existentes"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:400
@@ -1676,6 +1686,8 @@ msgid ""
 "Removes partitions from the system, prior to creation of new partitions. By "
 "default, no partitions are removed."
 msgstr ""
+"Remove partições do sistema, antes da criação de novas partições. Por "
+"padrão, nenhuma partição é removida."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:405
@@ -1683,6 +1695,8 @@ msgid ""
 "If the [command]#clearpart# command is used, then the [command]#part --"
 "onpart# command cannot be used on a logical partition."
 msgstr ""
+"Se o comando [command]#clearpart# for usado, o comando [command]#part "
+"--onpart# não poderá ser usado em uma partição lógica."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:409
@@ -1691,17 +1705,20 @@ msgid ""
 "command, see xref:sect-kickstart-example-advanced-partitioning[Advanced "
 "Partitioning Example]."
 msgstr ""
+"Para obter um exemplo detalhado de particionamento, incluindo o comando "
+"[command]#clearpart#, consulte xref:sect-kickstart-example-advanced-"
+"partitioning[Exemplo Avançado de Particionamento]."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:410
 #, no-wrap
 msgid "[option]#--all#"
-msgstr ""
+msgstr "[option]#--all#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:411
 msgid "Erases all partitions from the system."
-msgstr ""
+msgstr "Apaga todas as partições do sistema."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:416
@@ -1709,13 +1726,16 @@ msgid ""
 "This option will erase all disks which can be reached by the installer, "
 "including any attached network storage. Use this option with caution."
 msgstr ""
+"Esta opção apagará todos os discos que podem ser acessados pelo instalador, "
+"incluindo qualquer armazenamento de rede conectado. Use esta opção com "
+"cuidado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:419
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:501
 #, no-wrap
 msgid "[option]#--drives=#"
-msgstr ""
+msgstr "[option]#--drives=#"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:420
@@ -1724,12 +1744,15 @@ msgid ""
 "clears all the partitions on the first two drives on the primary IDE "
 "controller:"
 msgstr ""
+"Especifica de quais unidades limpar as partições. Por exemplo, o seguinte "
+"limpa todas as partições nas primeiras duas unidades no controlador IDE "
+"primário:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:424
 #, no-wrap
 msgid "[command]#clearpart --drives=hda,hdb --all#\n"
-msgstr ""
+msgstr "[command]#clearpart --drives=hda,hdb --all#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:427
