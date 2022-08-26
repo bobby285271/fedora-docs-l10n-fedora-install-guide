@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: 2022-08-26 21:28+0000\n"
+"PO-Revision-Date: 2022-08-26 21:34+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -1932,6 +1932,8 @@ msgid ""
 "Do not remove any partitions. This is the default behavior - using this "
 "option is the same as not using the [command]#clearpart# command at all."
 msgstr ""
+"Não remove nenhuma partição. Este é o comportamento padrão - usar esta opção "
+"é o mesmo que não usar o comando [command]#clearpart#."
 
 #. type: delimited block =
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:472
@@ -1942,12 +1944,18 @@ msgid ""
 "need to perform the installation automatically with no interaction, add the "
 "[command]#zerombr# command to your Kickstart file."
 msgstr ""
+"Usar o comando [command]#clearpart --all# em um arquivo Kickstart para "
+"remover todas as partições existentes durante a instalação fará com que o "
+"[application]*Anaconda* pause e solicite uma confirmação. Se você precisar "
+"executar a instalação automaticamente sem interação, adicione o comando "
+"[command]#zerombr# ao seu arquivo Kickstart."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:476
 #, no-wrap
 msgid "fcoe (optional) - Configure Fibre Channel Over Ethernet Devices"
 msgstr ""
+"fcoe (opcional) - Configura Dispositivos de Fibre Channel Sobre Ethernet"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:479
@@ -1955,51 +1963,54 @@ msgid ""
 "Specify which FCoE devices should be activated automatically in addition to "
 "those discovered by _Enhanced Disk Drive Services_ (EDD)."
 msgstr ""
+"Especifica quais dispositivos FCoE devem ser ativados automaticamente, além "
+"daqueles descobertos por _Enhanced Disk Drive Services_ (EDD)."
 
 #. type: delimited block -
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:483
 #, no-wrap
 msgid "[command]#fcoe --nic=pass:attributes[{blank}]_name_ [--dcp= | --autovlan]#\n"
 msgstr ""
+"[command]#fcoe --nic=pass:attributes[{blank}]_nome_ [--dcp= | --autovlan]#\n"
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:485
 #, no-wrap
 msgid "[option]#--nic=# (required)"
-msgstr ""
+msgstr "[option]#--nic=# (obrigatório)"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:486
 msgid "Name of the device to be activated."
-msgstr ""
+msgstr "Nome do dispositivo a ser ativado."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:487
 #, no-wrap
 msgid "[option]#--dcb=#"
-msgstr ""
+msgstr "[option]#--dcb=#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:488
 msgid "Establish _Data Center Bridging_ (DCB) settings."
-msgstr ""
+msgstr "Estabelece configurações de _Data Center Bridging_ (DCB)."
 
 #. type: Labeled list
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:489
 #, no-wrap
 msgid "[option]#--autovlan#"
-msgstr ""
+msgstr "[option]#--autovlan#"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:490
 msgid "Discover VLANs automatically."
-msgstr ""
+msgstr "Descobre VLANs automaticamente."
 
 #. type: Title ===
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:492
 #, no-wrap
 msgid "ignoredisk (optional) - Ignore Specified Disks"
-msgstr ""
+msgstr "ignoredisk (opcional) - Ignora Discos Específicos"
 
 #. type: Plain text
 #: ./pages/appendixes/Kickstart_Syntax_Reference.adoc:495
