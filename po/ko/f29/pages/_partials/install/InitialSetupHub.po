@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:16+0000\n"
-"PO-Revision-Date: 2022-08-27 02:54+0000\n"
+"PO-Revision-Date: 2022-08-27 03:01+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -145,12 +145,16 @@ msgid ""
 "installation. To do so, you must use a Kickstart file at the start of the "
 "installation, and this file must contain the following command:"
 msgstr ""
+"심지어 설치 중에 이미 구성되어져 있어도, 모든 사용 가능한 선택이 표시되며 "
+"[application]*초기 설정*을 구성 할 수 있습니다. 이렇게 하려면, 설치 시작 "
+"부분에서 킥스타트 파일을 사용해야만 하고, 이 파일은 다음 명령을 포함하여야만 "
+"합니다:"
 
 #. type: delimited block -
 #: pages/_partials/install/InitialSetupHub.adoc:35
 #, no-wrap
 msgid "firstboot --enable --reconfig\n"
-msgstr ""
+msgstr "firstboot --enable --reconfig\n"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:38
@@ -160,6 +164,9 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"[option]#--reconfig# 옵션은 모든 선택이 표시되는 것처럼 상세화합니다. "
+"킥스타트 설치에 대한 정보는 xref:advanced/Kickstart_Installations.adoc#chap-"
+"kickstart-installations[킥스타트를 통한 자동화된 설치]를 참고하세요."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:45
@@ -169,14 +176,17 @@ msgid ""
 "the next reboot, before a login prompt is displayed), by executing the "
 "following command as `root`:"
 msgstr ""
+"일반적으로, 종료 한 후에 [application]*초기 설정*으로 되돌아 갈 수 없으며 "
+"시스템에 로그인합니다. `root`로 다음 명령을 실행에 의하여(다음 재시작 후에, "
+"로그인 입력기가 표시되기 전에) 다시 표시 할 수 있도록 만들 수 있습니다:"
 
 #. type: delimited block -
 #: pages/_partials/install/InitialSetupHub.adoc:49
 #, no-wrap
 msgid "# systemctl enable initial-setup-graphical.service\n"
-msgstr ""
+msgstr "# systemctl enable initial-setup-graphical.service\n"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:52
 msgid "Then, reboot your system."
-msgstr ""
+msgstr "그런 후에, 자신의 시스템을 재시작하세요."
