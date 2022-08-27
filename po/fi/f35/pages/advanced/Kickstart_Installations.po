@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-08-15 22:03+0000\n"
+"PO-Revision-Date: 2022-08-27 18:56+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: ./pages/advanced/Kickstart_Installations.adoc:6
@@ -325,12 +325,18 @@ msgid ""
 "attempt to validate the [command]#%pre#, [command]#%post# and "
 "[command]#%packages# sections of the Kickstart file."
 msgstr ""
+"Muista, että validointityökalulla on rajoituksensa. Kickstart-tiedosto voi "
+"olla hyvin monimutkainen; [application]*ksvalidator* voi varmistaa, että "
+"syntaksi on oikea ja että tiedosto ei sisällä poistettuja valintoja, mutta "
+"se ei voi taata asennuksen onnistumista. Se ei myöskään yritä vahvistaa "
+"Kickstart-tiedoston [command]#%pre#-, [command]#%post#- ja "
+"[command]#%packages#-osiota."
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:86
 #, no-wrap
 msgid "Making the Kickstart File Available"
-msgstr ""
+msgstr "Kickstart-tiedoston asettaminen saataville"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:89
@@ -338,6 +344,8 @@ msgid ""
 "Once you create a Kickstart file, you can place it in one of the following "
 "locations:"
 msgstr ""
+"Kun olet luonut Kickstart-tiedoston, voit sijoittaa sen johonkin seuraavista "
+"paikoista:"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:91
@@ -345,16 +353,18 @@ msgid ""
 "On *removable media*, such as a DVD or USB flash drive connected to the "
 "installation system"
 msgstr ""
+"*siirrettävälle tietovälineelle*, kuten asennusjärjestelmään kytketylle DVD- "
+"tai USB-muistitikulle"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:93
 msgid "On a *hard drive* connected to the installation system"
-msgstr ""
+msgstr "*kiintolevylle*, joka on kytketty asennusjärjestelmään"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:95
 msgid "On a *network share* reachable from the installation system"
-msgstr ""
+msgstr "*verkkojakoon*, joka on tavoitettavissa asennusjärjestelmästä"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:97
