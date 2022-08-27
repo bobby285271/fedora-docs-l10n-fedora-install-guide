@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: 2022-08-27 18:56+0000\n"
+"PO-Revision-Date: 2022-08-27 19:02+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -357,6 +357,12 @@ msgid ""
 "is downloaded from a network share, and software packages specified in the "
 "file are downloaded from remote repositories."
 msgstr ""
+"Normaalisti Kickstart-tiedosto kopioidaan siirrettävälle tietovälineelle tai "
+"kiintolevylle tai asetetaan saataville verkosta. Tiedoston sijoittaminen "
+"verkkosijaintiin täydentää Kickstart-asennuksissa tavallista "
+"lähestymistapaa, joka on myös verkkopohjainen: järjestelmä käynnistetään PXE-"
+"palvelimen avulla, Kickstart-tiedosto ladataan verkkojaosta ja tiedostossa "
+"määritellyt ohjelmistopaketit ladataan etäasennuslähteistä."
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:99
@@ -365,12 +371,15 @@ msgid ""
 "Up an Installation Server] offers some additional information about "
 "preparing for a network-based installation."
 msgstr ""
+"xref:advanced/Network_based_Installations.adoc#chap-pxe-server-setup["
+"Asennuspalvelimen määrittäminen] tarjoaa lisätietoja verkkopohjaisen "
+"asennuksen valmistelusta."
 
 #. type: Title ===
 #: ./pages/advanced/Kickstart_Installations.adoc:101
 #, no-wrap
 msgid "Starting the Kickstart Installation"
-msgstr ""
+msgstr "Kickstart-asennuksen aloittaminen"
 
 #. type: Plain text
 #: ./pages/advanced/Kickstart_Installations.adoc:103
@@ -384,3 +393,11 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-kickstart[Kickstart Boot "
 "Options]."
 msgstr ""
+"Kun sinulla on kaikki valmiina - olet luonut kelvollisen Kickstart-tiedoston "
+"ja sinulla on käytettävissä joko paikallinen käynnistysmedia tai PXE-"
+"palvelin, voit aloittaa Kickstart-asennuksen. Sinun on käytettävä "
+"[option]#inst.ks=# käynnistysvaihtoehtoa joko käynnistysvalikossa (kun "
+"käynnistetään paikalliselta medialta) tai lisättävä tämä vaihtoehto PXE-"
+"palvelimesi kokoonpanoon. Lisätietoja Kickstart-asennuksissa käytetyistä "
+"käynnistysasetuksista on kohdassa xref:advanced/Boot_Options.adoc#sect-boot-"
+"options-kickstart[Kickstart Boot Options]."
