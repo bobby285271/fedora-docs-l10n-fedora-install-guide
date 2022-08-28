@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:19+0000\n"
-"PO-Revision-Date: 2022-08-28 00:21+0000\n"
+"PO-Revision-Date: 2022-08-28 00:27+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -3422,7 +3422,7 @@ msgstr "Monta um dispositivo RAID de software. Este comando tem a forma:"
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:968
 #, no-wrap
 msgid "raid mntpoint --level=level --device=mddevice partitions*\n"
-msgstr "raid pontomnt --level=nível --device=mddispositivo partições*\n"
+msgstr "raid pontomnt --level=nível --device=dispositivomd partições*\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:972
@@ -3491,7 +3491,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:979
 #, no-wrap
 msgid "[option]#--spares=#"
-msgstr ""
+msgstr "[option]#--spares=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:980
@@ -3499,6 +3499,9 @@ msgid ""
 "Specifies the number of spare drives allocated for the RAID array. Spare "
 "drives are used to rebuild the array in case of drive failure."
 msgstr ""
+"Especifica o número de unidades sobressalentes alocadas para a matriz RAID. "
+"Unidades sobressalentes são usadas para reconstruir a matriz em caso de "
+"falha da unidade."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:995
@@ -3506,16 +3509,19 @@ msgid ""
 "Specify the label to give to the filesystem to be made. If the given label "
 "is already in use by another filesystem, a new label will be created."
 msgstr ""
+"Especifica o rótulo a ser dado ao sistema de arquivos a ser criado. Se o "
+"rótulo fornecido já estiver em uso por outro sistema de arquivos, um novo "
+"rótulo será criado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:997
 msgid "Use an existing RAID device and do not format it."
-msgstr ""
+msgstr "Usa um dispositivo RAID existente e não o formata."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:999
 msgid "Use an existing RAID device and reformat it."
-msgstr ""
+msgstr "Usa um dispositivo RAID existente e o reformata."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1001
@@ -3526,6 +3532,11 @@ msgid ""
 "the [command]#autopart --passphrase# command, or stops the installation and "
 "prompts you to provide a passphrase if no default is set."
 msgstr ""
+"Especifica que esta matriz deve ser criptografada, usando a senha fornecida "
+"na opção [option]#--passphrase#. Se você não especificar uma senha, o "
+"[application]*Anaconda* usa a senha padrão de todo o sistema definida com o "
+"comando [command]#autopart --passphrase# ou interrompe a instalação e "
+"solicita que você forneça uma senha se não houver padrão definida."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1011
@@ -3534,12 +3545,15 @@ msgid ""
 "and a RAID level 5 for `/home`, assuming there are three SCSI disks on the "
 "system. It also creates three swap partitions, one on each drive."
 msgstr ""
+"O exemplo a seguir mostra como criar uma partição RAID nível 1 para `/` e "
+"uma partição RAID nível 5 para `/home`, supondo que haja três discos SCSI no "
+"sistema. Ele também cria três partições de troca, uma em cada unidade."
 
 #. type: Block title
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1012
 #, no-wrap
 msgid "Creating a RAID array in Kickstart"
-msgstr ""
+msgstr "Criando um array RAID no Kickstart"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1021
@@ -3561,6 +3575,9 @@ msgid ""
 "[command]#part swap --size=512 --ondisk=sdb#\n"
 "[command]#part swap --size=512 --ondisk=sdc#\n"
 msgstr ""
+"[command]#part swap --size=512 --ondisk=sda#\n"
+"[command]#part swap --size=512 --ondisk=sdb#\n"
+"[command]#part swap --size=512 --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1029
@@ -3570,6 +3587,9 @@ msgid ""
 "[command]#part raid.12 --size=1 --grow --ondisk=sdb#\n"
 "[command]#part raid.13 --size=1 --grow --ondisk=sdc#\n"
 msgstr ""
+"[command]#part raid.11 --size=1 --grow --ondisk=sda#\n"
+"[command]#part raid.12 --size=1 --grow --ondisk=sdb#\n"
+"[command]#part raid.13 --size=1 --grow --ondisk=sdc#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1032
