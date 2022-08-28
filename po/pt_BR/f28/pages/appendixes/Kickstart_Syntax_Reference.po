@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:16+0000\n"
-"PO-Revision-Date: 2022-08-26 22:55+0000\n"
+"PO-Revision-Date: 2022-08-28 00:21+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
@@ -3521,18 +3521,18 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:981
 #, no-wrap
 msgid "raid (optional) - Create Software RAID"
-msgstr ""
+msgstr "raid (opcional) - Criar RAID de Software"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:984
 msgid "Assembles a software RAID device. This command is of the form:"
-msgstr ""
+msgstr "Monta um dispositivo RAID de software. Este comando tem a forma:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:988
 #, no-wrap
 msgid "raid mntpoint --level=level --device=mddevice partitions*\n"
-msgstr ""
+msgstr "raid pontomnt --level=nível --device=mddispositivo partições*\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:992
@@ -3552,6 +3552,12 @@ msgid ""
 "denotes that multiple partitions can be listed) lists the RAID identifiers "
 "to add to the RAID array."
 msgstr ""
+"Local onde o sistema de arquivos RAID está montado. Se for `/`, o nível de "
+"RAID deve ser 1, a menos que uma partição de inicialização (`/boot`) esteja "
+"presente. Se uma partição de inicialização estiver presente, a partição "
+"`/boot` deve ser de nível 1 e a partição raiz (`/`) pode ser qualquer um dos "
+"tipos disponíveis. O _partições*_ (que indica que várias partições podem ser "
+"listadas) lista os identificadores RAID a serem adicionados à matriz RAID."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:995
@@ -3568,13 +3574,17 @@ msgid ""
 "filesystems[Device, File System and RAID Types] for information about "
 "various RAID types and their requirements."
 msgstr ""
+"Nível de RAID a ser usado (`0`, `1`, `4`, `5`, `6` ou `10`). Consulte xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-filesystems[Dispositivo, Sistema de Arquivos e Tipos de RAID] "
+"para obter informações sobre vários tipos de RAID e seus requisitos."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:997
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1251
 #, no-wrap
 msgid "[option]#--device=#"
-msgstr ""
+msgstr "[option]#--device=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:998
@@ -3585,6 +3595,11 @@ msgid ""
 "by a filesystem label or UUID (for example, [option]#--device=rhel7-root --"
 "label=rhel7-root#)."
 msgstr ""
+"Nome do dispositivo RAID a ser usado. A partir do {PRODUCT}{nbsp}{PRODVER}, "
+"os dispositivos RAID não são mais referidos por nomes como `md0`. Se você "
+"tiver uma matriz antiga (metadados v0.90) à qual não pode atribuir um nome, "
+"poderá especificar a matriz por um rótulo do sistema de arquivos ou UUID ("
+"por exemplo, [opção]#--device=rhel7-root --label= rhel7-root#)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:999
