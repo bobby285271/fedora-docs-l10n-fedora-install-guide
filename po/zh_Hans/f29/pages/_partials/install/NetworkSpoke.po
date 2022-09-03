@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Bobby Rong <rjl931189261@126.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-03 13:19+0000\n"
+"Last-Translator: Bobby Rong <rjl931189261@126.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/fedora-docs-l10n-fedora-install-guide/"
+"f29pages_partialsinstallnetworkspoke/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title ===
 #: ./pages/_partials/install/NetworkSpoke.adoc:5
@@ -45,7 +48,7 @@ msgstr ""
 #: ./pages/_partials/install/NetworkSpoke.adoc:16
 #, no-wrap
 msgid "Network & Hostname "
-msgstr ""
+msgstr "网络和主机名 "
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/NetworkSpoke.adoc:18
@@ -78,6 +81,11 @@ msgid ""
 "a Virtual Network Interface]. To remove a previously created virtual "
 "interface, select it in the list and click the `-` button."
 msgstr ""
+"在接口列表的下方有两个按钮。点击“+”按钮可以添加一个虚拟网络接口（例如Team、Bo"
+"nd或者VLAN），这类接口的信息详见xref:install/Installing_Using_Anaconda.adoc"
+"#sect-installation-gui-network-configuration-virtual-interface[添加一个虚拟网"
+"络接口]。要删除之前已有的虚拟网络接口，你需要在列表中选中此接口，然后点击“-”"
+"按钮。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:25
@@ -89,6 +97,10 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-configuration-advanced[Editing "
 "Network Interface Configuration]."
 msgstr ""
+"要修改已有虚拟接口或者物理接口的设置（例如IP地址、DNS服务器或者路由配置），你"
+"需要在左侧面板选择要修改的接口，然后点击屏幕右下角的“配置”按钮。可用的设置详"
+"见xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration-advanced[编辑网络接口配置]。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:27
@@ -96,6 +108,8 @@ msgid ""
 "Use the `ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF` switch in "
 "the top right corner to enable or disable the currently selected interface."
 msgstr ""
+"点击屏幕右上角的`ON`pass:attributes[{blank}]/pass:attributes[{blank}]`OFF`按"
+"钮可以启用或禁用当前选择的接口。"
 
 #. type: Plain text
 #: ./pages/_partials/install/NetworkSpoke.adoc:29
@@ -108,3 +122,8 @@ msgid ""
 "with a domain name; to allow the `DHCP` service to assign the domain name to "
 "this machine, only specify the short host name."
 msgstr ""
+"在连接列表下方，你可以在“主机名”输入框内输入这台电脑的主机名。"
+"主机名既可以是一个格式为_hostname_._domainname_的_完全限定域名_ "
+"（FQDN），也可以是一个短格式的、不带域名的主机名。"
+"很多网络都有一个_动态主机配置协议_ （`DHCP`）服务，用于自动分配连接的操作系统"
+"的域名。要想允许DHCP服务为本机分配域名，则必须指定短格式主机名。"
