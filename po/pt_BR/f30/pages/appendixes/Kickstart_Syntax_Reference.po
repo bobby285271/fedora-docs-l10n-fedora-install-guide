@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:13+0000\n"
-"PO-Revision-Date: 2022-08-28 00:33+0000\n"
+"PO-Revision-Date: 2022-09-07 19:19+0000\n"
 "Last-Translator: Gerardo Magela Machado da Silva <magelace@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/fedora-docs-l10n-fedora-install-guide/"
@@ -3854,7 +3854,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1116
 #, no-wrap
 msgid "reqpart (optional) - Create Required Partitions"
-msgstr ""
+msgstr "reqpart (opcional) - Criar Partições Necessárias"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1119
@@ -3864,6 +3864,10 @@ msgid ""
 "`biosboot` for x86_64 systems with BIOS firmware and GPT (GUID Partition "
 "Table), and `PRePBoot` for IBM Power Systems."
 msgstr ""
+"Crie automaticamente as partições exigidas pela sua plataforma de hardware. "
+"Isso inclui um `/boot/efi` para sistemas x86_64 e Aarch64 com firmware UEFI, "
+"`biosboot` para sistemas x86_64 com firmware BIOS e GPT (GUID Partition "
+"Table) e `PRePBoot` para IBM Power Systems."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1124
@@ -3879,13 +3883,13 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1130
 #, no-wrap
 msgid "[command]#reqpart [--add-boot]#\n"
-msgstr ""
+msgstr "[command]#reqpart [--add-boot]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1132
 #, no-wrap
 msgid "[option]#--add-boot#"
-msgstr ""
+msgstr "[option]#--add-boot#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1133
@@ -3893,23 +3897,27 @@ msgid ""
 "Create a separate `/boot` partition in addition to the platform-specific "
 "partition created by the base command."
 msgstr ""
+"Crie uma partição `/boot` separada além da partição específica da plataforma "
+"criada pelo comando base."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1135
 #, no-wrap
 msgid "volgroup (optional) - Create LVM Volume Group"
-msgstr "volgroup (opcional) - Cria grupo de volume lógico LVM"
+msgstr "volgroup (opcional) - Criar Grupo de Volume LVM"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1138
 msgid "Creates a Logical Volume Management (LVM) volume group."
-msgstr ""
+msgstr "Cria um grupo de volumes Logical Volume Management (LVM)."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1142
 #, no-wrap
 msgid "[command]#volgroup _name_ _partition_ [pass:attributes[{blank}]_options_pass:attributes[{blank}]]#\n"
 msgstr ""
+"[command]#volgroup _nome_ _partição_ "
+"[pass:attributes[{blank}]_opções_pass:attributes[{blank}]]#\n"
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1150
@@ -3918,6 +3926,10 @@ msgid ""
 "group names. If you are reusing existing ones using the [option]#--noformat# "
 "or [option]#--noformat# option, their names will not be changed."
 msgstr ""
+"Essa limitação se aplica apenas a nomes de volumes lógicos e grupos de "
+"volumes recém-criados. Se você estiver reutilizando os existentes usando a "
+"opção [option]#--noformat# ou [option]#--noformat#, seus nomes não serão "
+"alterados."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1154
@@ -3930,18 +3942,18 @@ msgstr ""
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1156
 msgid "Use an existing volume group and do not format it."
-msgstr ""
+msgstr "Use um grupo de volumes existente e não o formate."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1158
 msgid "Use an existing volume group and reformat it."
-msgstr ""
+msgstr "Use um grupo de volumes existente e reformate-o."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1159
 #, no-wrap
 msgid "[option]#--pesize=#"
-msgstr ""
+msgstr "[option]#--pesize=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1160
@@ -3949,12 +3961,14 @@ msgid ""
 "Set the size of the physical extents. The default size for Kickstart "
 "installations is 4 MiB."
 msgstr ""
+"Defina o tamanho das extensões físicas. O tamanho padrão para instalações "
+"Kickstart é 4 MiB."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1161
 #, no-wrap
 msgid "[option]#--reserved-space=#"
-msgstr ""
+msgstr "[option]#--reserved-space=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1162
@@ -3962,12 +3976,14 @@ msgid ""
 "Specify an amount of space to leave unused in a volume group in megabytes. "
 "Applicable only to newly created volume groups."
 msgstr ""
+"Especifique uma quantidade de espaço a ser deixada sem uso em um grupo de "
+"volumes em megabytes. Aplicável apenas a grupos de volumes recém-criados."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1163
 #, no-wrap
 msgid "[option]#--reserved-percent=#"
-msgstr ""
+msgstr "[option]#--reserved-percent=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1164
@@ -3975,12 +3991,14 @@ msgid ""
 "Specify a percentage of total volume group space to leave unused. Applicable "
 "only to newly created volume groups."
 msgstr ""
+"Especifique uma porcentagem do espaço total do grupo de volumes para deixar "
+"sem uso. Aplicável apenas a grupos de volumes recém-criados."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1177
 #, no-wrap
 msgid "zerombr (optional) - Reinitialize Partition Tables"
-msgstr ""
+msgstr "zerombr (opcional) - Reinicializar Tabelas de Partição"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1180
@@ -3990,6 +4008,11 @@ msgid ""
 "invalid partition tables. This command is required when performing an "
 "unattended installation on a system with previously initialized disks."
 msgstr ""
+"Se [command]#zerombr# for especificado, todas as tabelas de partição "
+"inválidas encontradas nos discos serão inicializadas. Isso destrói todo o "
+"conteúdo dos discos com tabelas de partição inválidas. Este comando é "
+"necessário ao realizar uma instalação autônoma em um sistema com discos "
+"inicializados anteriormente."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1185
@@ -4000,6 +4023,11 @@ msgid ""
 "[application]*dasdfmt*. The command also prevents user choice during "
 "interactive installations."
 msgstr ""
+"No IBM System{nbsp}z, se [command]#zerombr# for especificado, qualquer "
+"_Direct Access Storage Device_ (DASD) visível para o programa de instalação "
+"que ainda não esteja formatado em baixo nível será automaticamente formatado "
+"em baixo nível com [application]* dasdfmt*. O comando também impede a "
+"escolha do usuário durante instalações interativas."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1187
@@ -4008,6 +4036,9 @@ msgid ""
 "DASD visible to the installation program, a non-interactive Kickstart "
 "installation will exit unsuccessfully."
 msgstr ""
+"Se [command]#zerombr# não for especificado e houver pelo menos um DASD não "
+"formatado visível para o programa de instalação, uma instalação não "
+"interativa do Kickstart será encerrada sem sucesso."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1189
@@ -4018,12 +4049,18 @@ msgid ""
 "circumvent this, only activate those DASDs that you will use during "
 "installation. You can always add more DASDs after installation is complete."
 msgstr ""
+"Se [command]#zerombr# não for especificado e houver pelo menos um DASD não "
+"formatado visível para o programa de instalação, uma instalação interativa "
+"será encerrada se o usuário não concordar em formatar todos os DASDs "
+"visíveis e não formatados. Para contornar isso, ative apenas os DASDs que "
+"você usará durante a instalação. Você sempre pode adicionar mais DASDs após "
+"a conclusão da instalação."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1193
 #, no-wrap
 msgid "zfcp (optional) - Configure Fibre Channel Device"
-msgstr ""
+msgstr "zfcp (opcional) - Configurar Dispositivo Fibre Channel"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1196
@@ -4031,29 +4068,35 @@ msgid ""
 "Define a Fibre channel device. This option only applies on IBM System{nbsp}"
 "z. All of the options described below must be specified."
 msgstr ""
+"Defina um dispositivo Fibre Channel. Esta opção se aplica apenas ao IBM "
+"System{nbsp}z. Todas as opções descritas abaixo devem ser especificadas."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1200
 #, no-wrap
 msgid "[command]#zfcp --devnum=pass:attributes[{blank}]_devnum_ --wwpn=pass:attributes[{blank}]_wwpn_ --fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#zfcp --devnum=pass:attributes[{blank}]_numdisp_ "
+"--wwpn=pass:attributes[{blank}]_wwpn_ "
+"--fcplun=pass:attributes[{blank}]_lun_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1202
 #, no-wrap
 msgid "[option]#--devnum#"
-msgstr ""
+msgstr "[option]#--devnum#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1203
 msgid "The device number (zFCP adaptor device bus ID)."
 msgstr ""
+"O número do dispositivo (ID de barramento do dispositivo do adaptador zFCP)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1204
 #, no-wrap
 msgid "[option]#--wwpn#"
-msgstr ""
+msgstr "[option]#--wwpn#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1205
@@ -4061,12 +4104,14 @@ msgid ""
 "The device's World Wide Port Name (WWPN). Takes the form of a 16-digit "
 "number, preceded by `0x`."
 msgstr ""
+"O Nome da Porta Mundial do dispositivo (WWPN). Assume a forma de um número "
+"de 16 dígitos, precedido por `0x`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1206
 #, no-wrap
 msgid "[option]#--fcplun#"
-msgstr ""
+msgstr "[option]#--fcplun#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1207
@@ -4074,53 +4119,59 @@ msgid ""
 "The device's Logical Unit Number (LUN). Takes the form of a 16-digit number, "
 "preceded by `0x`."
 msgstr ""
+"O Número da Unidade Lógica (LUN) do dispositivo. Assume a forma de um número "
+"de 16 dígitos, precedido por `0x`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1209
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1326
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1339
 msgid "For example:"
-msgstr ""
+msgstr "Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1213
 #, no-wrap
 msgid "[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 --fcplun=0x5022000000000000#\n"
 msgstr ""
+"[command]#zfcp --devnum=0.0.4000 --wwpn=0x5005076300C213e9 "
+"--fcplun=0x5022000000000000#\n"
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1216
 #, no-wrap
 msgid "Network Configuration"
-msgstr "Configuração de rede"
+msgstr "Configuração de Rede"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1219
 msgid "Commands in this chapter are used for network configuration."
-msgstr ""
+msgstr "Os comandos neste capítulo são usados para configuração de rede."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1221
 #, no-wrap
 msgid "firewall (optional) - Configure Firewall"
-msgstr ""
+msgstr "firewall (opcional) - Configurar Firewall"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1224
 msgid "Specify the firewall configuration for the installed system."
-msgstr ""
+msgstr "Especifique a configuração do firewall para o sistema instalado."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1228
 #, no-wrap
 msgid "[command]#firewall --enabled | --disabled _device_ [--trust= | --ssh | --smtp | --http | --ftp | --port= | --service=]#\n"
 msgstr ""
+"[command]#firewall --enabled | --disabled _dispositivo_ [--trust= | --ssh | "
+"--smtp | --http | --ftp | --port= | --service=]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1230
 #, no-wrap
 msgid "[option]#--enabled# or [option]#--enable#"
-msgstr ""
+msgstr "[option]#--enabled# ou [option]#--enable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1231
@@ -4130,23 +4181,27 @@ msgid ""
 "machine is needed, you can choose to allow specific services through the "
 "firewall."
 msgstr ""
+"Rejeite as conexões de entrada que não respondem a solicitações de saída, "
+"como respostas DNS ou solicitações DHCP. Se for necessário acessar os "
+"serviços executados nesta máquina, você pode optar por permitir serviços "
+"específicos por meio do firewall."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1232
 #, no-wrap
 msgid "[option]#--disabled# or [option]#--disable#"
-msgstr ""
+msgstr "[option]#--disabled# ou [option]#--disable#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1233
 msgid "Disable the firewall."
-msgstr "Desabilitar o firewall."
+msgstr "Desative o firewall."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1234
 #, no-wrap
 msgid "[option]#--trust=#"
-msgstr ""
+msgstr "[option]#--trust=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1235
@@ -4155,23 +4210,27 @@ msgid ""
 "that device to go through the firewall. To list more than one device, use "
 "this option again - for example:"
 msgstr ""
+"Listar um dispositivo aqui, como `em1`, permite que todo o tráfego que entra "
+"e sai desse dispositivo passe pelo firewall. Para listar mais de um "
+"dispositivo, use esta opção novamente - por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1239
 #, no-wrap
 msgid "[command]#firewall --enable --trust=em1 --trust=em2#\n"
-msgstr ""
+msgstr "[command]#firewall --enable --trust=em1 --trust=em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1242
 msgid "Do not use a comma-separated format such as [option]#--trust em1, em2#."
 msgstr ""
+"Não use um formato separado por vírgulas, como [option]#--trust em1, em2#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1243
 #, no-wrap
 msgid "_incoming_"
-msgstr ""
+msgstr "_entrada_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1244
@@ -4179,26 +4238,28 @@ msgid ""
 "Replace with one or more of the following to allow the specified services "
 "through the firewall:"
 msgstr ""
+"Substitua por um ou mais dos seguintes para permitir que os serviços "
+"especificados passem pelo firewall:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1246
 msgid "[option]#--ssh#"
-msgstr ""
+msgstr "[option]#--ssh#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1248
 msgid "[option]#--smtp#"
-msgstr ""
+msgstr "[option]#--smtp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1250
 msgid "[option]#--http#"
-msgstr ""
+msgstr "[option]#--http#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1252
 msgid "[option]#--ftp#"
-msgstr ""
+msgstr "[option]#--ftp#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1254
@@ -4209,12 +4270,18 @@ msgid ""
 "example, to allow UDP packets on port 1234 through, specify `1234:udp`. To "
 "specify multiple ports, separate them by commas."
 msgstr ""
+"Você pode especificar que as portas sejam permitidas pelo firewall usando o "
+"formato porta:protocolo. Por exemplo, para permitir o acesso IMAP através de "
+"seu firewall, especifique `imap:tcp`. As portas numéricas também podem ser "
+"especificadas explicitamente; por exemplo, para permitir pacotes UDP na "
+"porta 1234, especifique `1234:udp`. Para especificar várias portas, separe-"
+"as por vírgulas."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1255
 #, no-wrap
 msgid "[option]#--service=#"
-msgstr ""
+msgstr "[option]#--service=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1256
@@ -4225,6 +4292,12 @@ msgid ""
 "You can specify each individual port with the [option]#--port# option, or "
 "specify [command]#--service=# and open them all at once."
 msgstr ""
+"Essa opção fornece uma maneira de nível superior para permitir serviços por "
+"meio do firewall. Alguns serviços (como `cups`, `avahi`, etc.) exigem que "
+"várias portas sejam abertas ou outra configuração especial para que o "
+"serviço funcione. Você pode especificar cada porta individual com a opção "
+"[option]#--port# ou especificar [command]#--service=# e abri-las todas de "
+"uma vez."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1258
@@ -4234,12 +4307,16 @@ msgid ""
 "[command]#firewall-cmd --get-services# will provide a list of known service "
 "names."
 msgstr ""
+"As opções válidas são qualquer coisa reconhecida pelo programa [application"
+"]*firewall-offline-cmd* no pacote [package]*firewalld*. Se o `firewalld` "
+"estiver em execução, [command]#firewall-cmd --get-services# fornecerá uma "
+"lista de nomes de serviços conhecidos."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1260
 #, no-wrap
 msgid "network (optional) - Configure Network Interfaces"
-msgstr ""
+msgstr "network (opcional) - Configurar Interfaces de Rede"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1263
@@ -4249,12 +4326,17 @@ msgid ""
 "[command]#network# command is activated automatically. Activation of the "
 "device can be also explicitly required by the [option]#--activate# option."
 msgstr ""
+"Configura as informações de rede para o sistema de destino e ativa os "
+"dispositivos de rede no ambiente de instalação. O dispositivo especificado "
+"no primeiro comando [command]#network# é ativado automaticamente. A ativação "
+"do dispositivo também pode ser explicitamente exigida pela opção "
+"[option]#--activate#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1264
 #, no-wrap
 msgid "[option]#--activate#"
-msgstr ""
+msgstr "[option]#--activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1265
@@ -4264,6 +4346,11 @@ msgid ""
 "that the system could retrieve the Kickstart file) the device is reactivated "
 "to use the details specified in the Kickstart file."
 msgstr ""
+"Se você usar a opção [option]#--activate# em um dispositivo que já foi "
+"ativado (por exemplo, uma interface que você configurou com opções de "
+"inicialização para que o sistema possa recuperar o arquivo Kickstart), o "
+"dispositivo é reativado para usar os detalhes especificado no arquivo "
+"Kickstart."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1267
@@ -4271,23 +4358,27 @@ msgid ""
 "Use the [option]#--nodefroute# option to prevent the device from using the "
 "default route."
 msgstr ""
+"Use a opção [option]#--nodefroute# para impedir que o dispositivo use a rota "
+"padrão."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1268
 #, no-wrap
 msgid "[option]#--no-activate#"
-msgstr ""
+msgstr "[option]#--no-activate#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1269
 msgid "Prevents the configured device from automatically activating on boot."
 msgstr ""
+"Impede que o dispositivo configurado seja ativado automaticamente na "
+"inicialização."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1270
 #, no-wrap
 msgid "[option]#--bootproto=#"
-msgstr ""
+msgstr "[option]#--bootproto=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1271
@@ -4296,6 +4387,9 @@ msgid ""
 "`dhcp`pass:attributes[{blank}]; the `dhcp` and `bootp` options are treated "
 "the same."
 msgstr ""
+"Um de `dhcp`, `bootp`, `ibft` ou `static`. A opção padrão é "
+"`dhcp`pass:attributes[{blank}]; as opções `dhcp` e `bootp` são tratadas da "
+"mesma forma."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1273
@@ -4304,12 +4398,15 @@ msgid ""
 "configuration. The BOOTP method is similar, requiring a BOOTP server to "
 "supply the networking configuration. To direct a system to use DHCP:"
 msgstr ""
+"O método DHCP usa um sistema de servidor DHCP para obter sua configuração de "
+"rede. O método BOOTP é semelhante, exigindo um servidor BOOTP para fornecer "
+"a configuração de rede. Para direcionar um sistema para usar DHCP:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1277
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1280
@@ -4317,23 +4414,27 @@ msgid ""
 "To direct a machine to use BOOTP to obtain its networking configuration, use "
 "the following line in the Kickstart file:"
 msgstr ""
+"Para direcionar uma máquina para usar o BOOTP para obter sua configuração de "
+"rede, use a seguinte linha no arquivo Kickstart:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1284
 #, no-wrap
 msgid "[command]#network --bootproto=bootp#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=bootp#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1287
 msgid "To direct a machine to use the configuration specified in iBFT, use:"
 msgstr ""
+"Para direcionar uma máquina para usar a configuração especificada no iBFT, "
+"use:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1291
 #, no-wrap
 msgid "[command]#network --bootproto=ibft#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=ibft#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1294
@@ -4342,6 +4443,9 @@ msgid ""
 "gateway, and nameserver in the Kickstart file. This information is static "
 "and is used during and after the installation."
 msgstr ""
+"O método `static` requer que você especifique o endereço IP, máscara de "
+"rede, gateway e servidor de nomes no arquivo Kickstart. Essas informações "
+"são estáticas e são usadas durante e após a instalação."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1296
@@ -4350,12 +4454,17 @@ msgid ""
 "line; you cannot wrap lines using a backslash (`\\`) as you can on a command "
 "line."
 msgstr ""
+"Todas as informações de configuração de rede estática devem ser "
+"especificadas em *uma* linha; você não pode quebrar linhas usando uma barra "
+"invertida (`\\`) como você pode fazer em uma linha de comando."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1300
 #, no-wrap
 msgid "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 --gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=10.0.2.1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1303
@@ -4364,6 +4473,9 @@ msgid ""
 "the [option]#--nameserver=# options once for each name server you want to "
 "configure:"
 msgstr ""
+"Você também pode configurar vários servidores de nomes ao mesmo tempo. Para "
+"fazer isso, use as opções [option]#--nameserver=# uma vez para cada servidor "
+"de nomes que deseja configurar:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1307
@@ -4371,6 +4483,8 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 --gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 msgstr ""
+"[command]#network --bootproto=static --ip=10.0.2.15 --netmask=255.255.255.0 "
+"--gateway=10.0.2.254 --nameserver=192.168.2.1 --nameserver=192.168.3.1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1310
@@ -4378,6 +4492,8 @@ msgid ""
 "Specifies the device to be configured (and eventually activated in "
 "[application]*Anaconda*) with the [command]#network# command."
 msgstr ""
+"Especifica o dispositivo a ser configurado (e eventualmente ativado no "
+"[aplicativo]*Anaconda*) com o comando [command]#network#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1312
@@ -4388,6 +4504,12 @@ msgid ""
 "considered deprecated behavior; in most cases, you should always specify a "
 "[option]#--device=# for every [command]#network# command."
 msgstr ""
+"Se a opção [option]#--device=# estiver ausente no *primeiro* uso do comando "
+"[command]#network#, o valor da opção de inicialização [option]#ksdevice=# "
+"[application]*Anaconda* será usada, se disponível. Observe que isso é "
+"considerado um comportamento obsoleto; na maioria dos casos, você deve "
+"sempre especificar uma [opção]#--device=# para cada comando "
+"[command]#network#."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1314
@@ -4397,21 +4519,27 @@ msgid ""
 "Make sure you specify this option for any [command]#network# command beyond "
 "the first."
 msgstr ""
+"O comportamento de qualquer comando [command]#network# subsequente no mesmo "
+"arquivo Kickstart não é especificado se sua opção [option]#--device=# "
+"estiver ausente. Certifique-se de especificar esta opção para qualquer "
+"comando [command]#network# além do primeiro."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1316
 msgid "You can specify a device to be activated in any of the following ways:"
 msgstr ""
+"Você pode especificar um dispositivo a ser ativado de qualquer uma das "
+"seguintes maneiras:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1318
 msgid "the device name of the interface, for example, `em1`"
-msgstr ""
+msgstr "o nome do dispositivo da interface, por exemplo, `em1`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1320
 msgid "the MAC address of the interface, for example, `01:23:45:67:89:ab`"
-msgstr ""
+msgstr "o endereço MAC da interface, por exemplo, `01:23:45:67:89:ab`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1322
@@ -4419,6 +4547,8 @@ msgid ""
 "the keyword `link`, which specifies the first interface with its link in the "
 "`up` state"
 msgstr ""
+"a palavra-chave `link`, que especifica a primeira interface com seu link no "
+"estado `up`"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1324
@@ -4428,18 +4558,21 @@ msgid ""
 "your `pxelinux.cfg` file to have [application]*pxelinux* set the `BOOTIF` "
 "variable."
 msgstr ""
+"a palavra-chave `bootif`, que usa o endereço MAC que [application]*pxelinux* "
+"definiu na variável `BOOTIF`. Defina `IPAPPEND 2` em seu arquivo `pxelinux."
+"cfg` para que [application]*pxelinux* defina a variável `BOOTIF`."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1330
 #, no-wrap
 msgid "[command]#network --bootproto=dhcp --device=em1#\n"
-msgstr ""
+msgstr "[command]#network --bootproto=dhcp --device=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1332
 #, no-wrap
 msgid "[option]#--bindto=#"
-msgstr ""
+msgstr "[option]#--bindto=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1333
@@ -4450,12 +4583,18 @@ msgid ""
 "team, bridge) it configures binding of slaves. Not applicable to vlan "
 "devices."
 msgstr ""
+"Opcional. Permite especificar como a configuração de conexão criada para o "
+"dispositivo deve ser vinculada. Se a opção não for usada, a conexão será "
+"vinculada ao nome da interface (valor `DEVICE` no arquivo ifcfg). Para "
+"dispositivos virtuais (bond, team, bridge) configura vinculação de escravos. "
+"Não aplicável a dispositivos vlan."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1335
 msgid ""
 "Note that this option is independent of how the `--device` is specified."
 msgstr ""
+"Observe que esta opção é independente de como o `--device` é especificado."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1337
@@ -4469,6 +4608,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 msgstr ""
+"[command]#network --device=01:23:45:67:89:ab --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1346
@@ -4476,12 +4616,14 @@ msgid ""
 "The above will bind the configuration of the device specified by MAC address "
 "`01:23:45:67:89:ab` to its MAC address."
 msgstr ""
+"O acima irá vincular a configuração do dispositivo especificado pelo "
+"endereço MAC `01:23:45:67:89:ab` ao seu endereço MAC."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1350
 #, no-wrap
 msgid "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
-msgstr ""
+msgstr "network --device=01:23:45:67:89:ab --bootproto=dhcp\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1352
@@ -4489,12 +4631,15 @@ msgid ""
 "The above will bind the configuration of the device specified by MAC address "
 "`01:23:45:67:89:ab` to its interface name (e.g. `ens3`)."
 msgstr ""
+"O acima irá vincular a configuração do dispositivo especificado pelo "
+"endereço MAC `01:23:45:67:89:ab` ao seu nome de interface (por exemplo, "
+"`ens3`)."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1356
 #, no-wrap
 msgid "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
-msgstr ""
+msgstr "[command]#network --device=ens3 --bootproto=dhcp --bindto=mac#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1359
@@ -4502,6 +4647,8 @@ msgid ""
 "The above will bind the configuration of the device specified by interface "
 "name `ens3` to its MAC address."
 msgstr ""
+"O acima irá vincular a configuração do dispositivo especificado pelo nome da "
+"interface `ens3` ao seu endereço MAC."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1360
@@ -4512,13 +4659,13 @@ msgstr "[option]#--ip=#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1361
 msgid "IP address of the device."
-msgstr ""
+msgstr "Endereço IP do dispositivo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1362
 #, no-wrap
 msgid "[option]#--ipv6=#"
-msgstr ""
+msgstr "[option]#--ipv6=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1363
@@ -4529,34 +4676,40 @@ msgid ""
 "You can also use `auto` for automatic configuration, or `dhcp` for DHCPv6-"
 "only configuration (no router advertisements)."
 msgstr ""
+"Endereço IPv6 do dispositivo, na forma de "
+"_address_pass:attributes[{blank}][/pass:attributes[{blank}]_prefixo_ "
+"_tamanho_pass:attributes[{blank}]] - por exemplo, `3ffe:ffff:0:1 ::1/128` . "
+"Se _prefixo_ for omitido, `64` será usado. Você também pode usar `auto` para "
+"configuração automática, ou `dhcp` para configuração somente DHCPv6 (sem "
+"anúncios de roteador)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1364
 #, no-wrap
 msgid "[option]#--gateway=#"
-msgstr ""
+msgstr "[option]#--gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1365
 msgid "Default gateway as a single IPv4 address."
-msgstr ""
+msgstr "Gateway padrão como um único endereço IPv4."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1366
 #, no-wrap
 msgid "[option]#--ipv6gateway=#"
-msgstr ""
+msgstr "[option]#--ipv6gateway=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1367
 msgid "Default gateway as a single IPv6 address."
-msgstr ""
+msgstr "Gateway padrão como um único endereço IPv6."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1368
 #, no-wrap
 msgid "[option]#--nodefroute#"
-msgstr ""
+msgstr "[option]#--nodefroute#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1369
@@ -4565,12 +4718,15 @@ msgid ""
 "you activate additional devices with the [option]#--activate=# option, for "
 "example, a NIC on a separate subnet for an iSCSI target."
 msgstr ""
+"Impede que a interface seja definida como a rota padrão. Use essa opção ao "
+"ativar dispositivos adicionais com a opção [option]#--activate=#, por "
+"exemplo, uma NIC em uma sub-rede separada para um destino iSCSI."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1370
 #, no-wrap
 msgid "[option]#--nameserver=#"
-msgstr ""
+msgstr "[option]#--nameserver=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1371
@@ -4578,6 +4734,8 @@ msgid ""
 "DNS name server, as an IP address. To specify more than one name server, use "
 "this parameter multiple times. For example:"
 msgstr ""
+"Servidor de nomes DNS, como um endereço IP. Para especificar mais de um "
+"servidor de nomes, use esse parâmetro várias vezes. Por exemplo:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1377
@@ -4588,18 +4746,18 @@ msgstr "[option]#--nodns#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1378
 msgid "Do not configure any DNS server."
-msgstr ""
+msgstr "Não configure nenhum servidor DNS."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1379
 #, no-wrap
 msgid "[option]#--netmask=#"
-msgstr ""
+msgstr "[option]#--netmask=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1380
 msgid "Network mask for the installed system."
-msgstr ""
+msgstr "Máscara de rede para o sistema instalado."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1381
@@ -4617,12 +4775,19 @@ msgid ""
 "connected systems with a domain name; to allow the `DHCP` service to assign "
 "the domain name to this machine, only specify the short host name."
 msgstr ""
+"Nome do host para o sistema instalado. O nome do host pode ser um _nome de "
+"domínio totalmente qualificado_ (FQDN) no formato _nomehost_._nomedomínio_ "
+"ou um nome de host curto sem nome de domínio. Muitas redes têm um serviço "
+"_Dynamic Host Configuration Protocol_ (`DHCP`) que fornece automaticamente "
+"um nome de domínio aos sistemas conectados; para permitir que o serviço "
+"`DHCP` atribua o nome de domínio a esta máquina, especifique apenas o nome "
+"curto do host."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1383
 #, no-wrap
 msgid "[option]#--ethtool=#"
-msgstr ""
+msgstr "[option]#--ethtool=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1384
@@ -4630,72 +4795,74 @@ msgid ""
 "Specifies additional low-level settings for the network device which will be "
 "passed to the [application]*ethtool* program."
 msgstr ""
+"Especifica configurações adicionais de baixo nível para o dispositivo de "
+"rede que serão passadas para o programa [application]*ethtool*."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1385
 #, no-wrap
 msgid "[option]#--essid=#"
-msgstr ""
+msgstr "[option]#--essid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1386
 msgid "The network ID for wireless networks."
-msgstr ""
+msgstr "A ID de rede para redes sem fio."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1387
 #, no-wrap
 msgid "[option]#--wepkey=#"
-msgstr ""
+msgstr "[option]#--wepkey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1388
 msgid "The WEP encryption key for wireless networks."
-msgstr ""
+msgstr "A chave de criptografia WEP para redes sem fio."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1389
 #, no-wrap
 msgid "[option]#--wpakey=#"
-msgstr ""
+msgstr "[option]#--wpakey=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1390
 msgid "The WPA encryption key for wireless networks."
-msgstr ""
+msgstr "A chave de criptografia WPA para redes sem fio."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1391
 #, no-wrap
 msgid "[option]#--onboot=#"
-msgstr ""
+msgstr "[option]#--onboot=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1392
 msgid "Whether or not to enable the device at boot time."
-msgstr ""
+msgstr "Se deve ou não habilitar o dispositivo no momento da inicialização."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1393
 #, no-wrap
 msgid "[option]#--dhcpclass=#"
-msgstr ""
+msgstr "[option]#--dhcpclass=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1394
 msgid "The DHCP class."
-msgstr ""
+msgstr "A classe DHCP."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1395
 #, no-wrap
 msgid "[option]#--mtu=#"
-msgstr ""
+msgstr "[option]#--mtu=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1396
 msgid "The MTU of the device."
-msgstr ""
+msgstr "A MTU do dispositivo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1397
@@ -4706,7 +4873,7 @@ msgstr "[option]#--noipv4#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1398
 msgid "Disable IPv4 on this device."
-msgstr ""
+msgstr "Desative o IPv4 neste dispositivo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1399
@@ -4717,13 +4884,13 @@ msgstr "[option]#--noipv6#"
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1400
 msgid "Disable IPv6 on this device."
-msgstr ""
+msgstr "Desative o IPv6 neste dispositivo."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1401
 #, no-wrap
 msgid "[option]#--bondslaves=#"
-msgstr ""
+msgstr "[option]#--bondslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1402
@@ -4732,12 +4899,15 @@ msgid ""
 "device=# option will be created using slaves defined in the [option]#--"
 "bondslaves=# option. For example:"
 msgstr ""
+"Quando esta opção for utilizada, o dispositivo de rede especificado na opção "
+"[option]#--device=# será criado usando os escravos definidos na opção "
+"[option]#--bondslaves=#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1406
 #, no-wrap
 msgid "[command]#network --device=mynetwork --bondslaves=em1,em2#\n"
-msgstr ""
+msgstr "[command]#network --device=minharede --bondslaves=em1,em2#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1409
@@ -4745,12 +4915,14 @@ msgid ""
 "The above command will create a bond device named `mynetwork` using the "
 "`em1` and `em2` interfaces as its slaves."
 msgstr ""
+"O comando acima criará um dispositivo de ligação chamado `minharede` usando "
+"as interfaces `em1` e `em2` como seus escravos."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1410
 #, no-wrap
 msgid "[command]#--bondopts=#"
-msgstr ""
+msgstr "[command]#--bondopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1411
@@ -4768,6 +4940,7 @@ msgstr ""
 #, no-wrap
 msgid "[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 msgstr ""
+"[command]#network --bondopts=mode=active-backup,balance-rr;primary=eth1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1418
@@ -4784,12 +4957,15 @@ msgid ""
 "as `balance-rr` or `broadcast`, not their numerical representations such as "
 "`0` or `3`."
 msgstr ""
+"O parâmetro [option]#--bondopts=mode=# suporta apenas nomes de modo completo "
+"como `balance-rr` ou `broadcast`, não suas representações numéricas como `0` "
+"ou `3`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1426
 #, no-wrap
 msgid "[option]#--vlanid=#"
-msgstr ""
+msgstr "[option]#--vlanid=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1427
@@ -4799,12 +4975,16 @@ msgid ""
 "[command]#network --device=em1 --vlanid=171# will create a virtual LAN "
 "device `em1.171`."
 msgstr ""
+"Especifica o número de ID da LAN virtual (VLAN) (tag 802.1q) para o "
+"dispositivo criado usando o dispositivo especificado em [option]#--device=# "
+"como pai. Por exemplo, [command]#network --device=em1 --vlanid=171# criará "
+"um dispositivo de LAN virtual `em1.171`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1428
 #, no-wrap
 msgid "[option]#--interfacename=#"
-msgstr ""
+msgstr "[option]#--interfacename=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1429
@@ -4814,12 +4994,16 @@ msgid ""
 "not desirable. This option must be used along with [option]#--vlanid=#. For "
 "example:"
 msgstr ""
+"Especifique um nome de interface personalizado para um dispositivo de LAN "
+"virtual. Esta opção deve ser usada quando o nome padrão gerado pela opção "
+"[option]#--vlanid=# não for desejável. Esta opção deve ser usada junto com "
+"[option]#--vlanid=#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1433
 #, no-wrap
 msgid "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
-msgstr ""
+msgstr "[command]#network --device=em1 --vlanid=171 --interfacename=vlan171#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1436
@@ -4827,6 +5011,8 @@ msgid ""
 "The above command will create a virtual LAN interface named `vlan171` on the "
 "`em1` device with an ID of `171`."
 msgstr ""
+"O comando acima criará uma interface de LAN virtual chamada `vlan171` no "
+"dispositivo `em1` com um ID de `171`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1438
@@ -4834,6 +5020,8 @@ msgid ""
 "The interface name can be arbitrary (for example, `my-vlan`), but in "
 "specific cases, the following conventions must be followed:"
 msgstr ""
+"O nome da interface pode ser arbitrário (por exemplo, `minha-vlan`), mas em "
+"casos específicos, as seguintes convenções devem ser seguidas:"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1440
@@ -4843,6 +5031,10 @@ msgid ""
 "arbitrary, but the _ID_ must be the VLAN ID. For example: `em1.171` or `my-"
 "vlan.171`."
 msgstr ""
+"Se o nome contiver um ponto (`.`), deve ter a forma de "
+"`pass:attributes[{blank}]_NOME_._ID_pass:attributes[{blank}]`. O _NOME_ é "
+"arbitrário, mas o _ID_ deve ser o ID da VLAN. Por exemplo: `em1.171` ou "
+"`minha-vlan.171`."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1442
@@ -4850,12 +5042,15 @@ msgid ""
 "Names starting with `vlan` must take the form of `vlanpass:"
 "attributes[{blank}]_ID_pass:attributes[{blank}]` - for example, `vlan171`."
 msgstr ""
+"Nomes que começam com `vlan` devem ter a forma de "
+"`vlanpass:attributes[{blank}]_ID_pass:attributes[{blank}]` - por exemplo, "
+"`vlan171`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1443
 #, no-wrap
 msgid "[option]#--teamslaves=#"
-msgstr ""
+msgstr "[option]#--teamslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1444
@@ -4865,23 +5060,30 @@ msgid ""
 "slave can be followed by its configuration, which is a single-quoted JSON "
 "string with double quotes escaped by the `\\` character. For example:"
 msgstr ""
+"O dispositivo team especificado pela opção [option]#--device=# será criado "
+"usando escravos especificados nesta opção. Os escravos são separados por "
+"vírgulas. Um escravo pode ser seguido por sua configuração, que é uma string "
+"JSON entre aspas simples com aspas duplas escapadas pelo caractere `\\`. Por "
+"exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1448
 #, no-wrap
 msgid "[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 msgstr ""
+"[command]#network --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": "
+"true}',p3p2'{\\\"prio\\\": 100}'\"#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1451
 msgid "See also the [option]#--teamconfig=# option."
-msgstr ""
+msgstr "Veja também a opção [option]#--teamconfig=#."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1452
 #, no-wrap
 msgid "[option]#--teamconfig=#"
-msgstr ""
+msgstr "[option]#--teamconfig=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1453
@@ -4891,18 +5093,27 @@ msgid ""
 "specified by [option]#--device=# option and its slaves and their "
 "configuration by [option]#--teamslaves=# option. For example:"
 msgstr ""
+"Configuração de dispositivo team com aspas duplas, que é uma string JSON "
+"entre aspas simples com aspas duplas escapadas pelo caractere `\\`. O nome "
+"do dispositivo é especificado pela opção [option]#--device=# e seus escravos "
+"e sua configuração pela opção [option]#--teamslaves=#. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1458
 #, no-wrap
 msgid "[command]#network --device team0 --activate --bootproto static --ip=10.34.102.222 --netmask=255.255.255.0 --gateway=10.34.102.254 --nameserver=10.34.39.2 --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\": true}',p3p2'{\\\"prio\\\": 100}'\" --teamconfig=\"{\\\"runner\\\": {\\\"name\\\": \\\"activebackup\\\"}}\"#\n"
 msgstr ""
+"[command]#network --device team0 --activate --bootproto static --"
+"ip=10.34.102.222 --netmask=255.255.255.0 --gateway=10.34.102.254 --"
+"nameserver=10.34.39.2 --teamslaves=\"p3p1'{\\\"prio\\\": -10, \\\"sticky\\\":"
+" true}',p3p2'{\\\"prio\\\": 100}'\" --teamconfig=\"{\\\"runner\\\": {\\\"name"
+"\\\": \\\"activebackup\\\"}}\"#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1461
 #, no-wrap
 msgid "[option]#--bridgeslaves=#"
-msgstr ""
+msgstr "[option]#--bridgeslaves=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1462
@@ -4912,18 +5123,22 @@ msgid ""
 "the [option]#--bridgeslaves=# option will be added to the bridge. For "
 "example:"
 msgstr ""
+"Quando esta opção é usada, a ponte de rede com o nome do dispositivo "
+"especificado usando a opção [option]#--device=# será criada e os "
+"dispositivos definidos na opção [option]#--bridgeslaves=# serão adicionados "
+"à ponte. Por exemplo:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1466
 #, no-wrap
 msgid "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
-msgstr ""
+msgstr "[command]#network --device=bridge0 --bridgeslaves=em1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1468
 #, no-wrap
 msgid "[option]#--bridgeopts=#"
-msgstr ""
+msgstr "[option]#--bridgeopts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1469
@@ -4937,6 +5152,14 @@ msgid ""
 "+https://docs.fedoraproject.org/++[], for general information about network "
 "bridging."
 msgstr ""
+"Uma lista opcional de parâmetros separados por vírgula para a interface em "
+"ponte. Os valores disponíveis são `stp`, `priority`, `forward-delay`, `hello-"
+"time`, `max-age` e `ageing-time`. Para obter informações sobre esses "
+"parâmetros, consulte a tabela [citetitle]_bridge setting_ na página man `nm-"
+"settings(5)` ou no link:++https://developer.gnome.org/NetworkManager/0.9/ref-"
+"settings. html++[]. Veja também o [citetitle]_Guia de Rede do {PRODUCT}_, "
+"disponível no link:++https://docs.fedoraproject.org/++[], para informações "
+"gerais sobre ponte de rede."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1471
