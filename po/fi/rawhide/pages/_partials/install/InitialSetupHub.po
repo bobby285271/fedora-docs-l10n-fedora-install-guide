@@ -2,21 +2,22 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:03+0000\n"
-"PO-Revision-Date: 2021-07-02 11:04+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/fedora-"
-"docs-l10nfedora-install-guide/rawhidepages_partialsinstallinitialsetuphub/fi/"
-">\n"
+"PO-Revision-Date: 2022-09-07 19:19+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"rawhidepages_partialsinstallinitialsetuphub/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.14\n"
 
 #. type: Title ==
 #: pages/_partials/install/InitialSetupHub.adoc:5
@@ -31,6 +32,9 @@ msgid ""
 "installed system boots for the first time, before the first login, assuming "
 "the following conditions have been met:"
 msgstr ""
+"Alkuasetusnäyttö tulee näkyviin, kun asennus on valmis ja asennettu "
+"järjestelmä käynnistyy ensimmäisen kerran, ennen ensimmäistä kirjautumista, "
+"mikäli seuraavat ehdot täyttyvät:"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:10
@@ -38,6 +42,8 @@ msgid ""
 "Your software selection contained a graphical environment (for example, you "
 "installed the system using a {PRODUCT} Workstation live image)."
 msgstr ""
+"Ohjelmistovalintasi sisälsi graafisen ympäristön (esimerkiksi asensit "
+"järjestelmän käyttämällä {PRODUCT} Workstationin live-levykuvaa)."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:12
@@ -47,36 +53,42 @@ msgid ""
 "described in xref:install/After_Installation.adoc#sect-gnome-initial-"
 "setup[GNOME Initial Setup])."
 msgstr ""
+"Asentamasi graafinen ympäristö ei ole [sovellus]*GNOME-työpöytäympäristö* ("
+"se tarjoaa oman alkuasetusapuohjelman, joka on kuvattu kohdassa xref:install/"
+"After_Installation.adoc#sect-gnome-initial-setup[GNOME-alkuasennus] )."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:14
 msgid "The [package]*initial-setup* package has been installed."
-msgstr ""
+msgstr "[Package]*initial-setup*-paketti on asennettu."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:16
 msgid ""
 "You have not configured every screen available in the graphical installer."
 msgstr ""
+"Et ole määrittänyt kaikkia graafisessa asennusohjelmassa käytettävissä "
+"olevia näyttöjä."
 
 #. type: Block title
 #: pages/_partials/install/InitialSetupHub.adoc:17
-#, fuzzy, no-wrap
-#| msgid "Initial Setup"
+#, no-wrap
 msgid "Initial Setup "
-msgstr "Alkumääritys"
+msgstr "Alkumääritys "
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/_partials/install/InitialSetupHub.adoc:19
 #, no-wrap
 msgid "The main Initial Setup screen. This example shows all options; not all of them may be shown"
 msgstr ""
+"Alkuasetusnäyttö. Tämä esimerkki näyttää kaikki vaihtoehdot; kaikkia niitä "
+"ei välttämättä näytetä"
 
 #. type: Target for macro image
 #: pages/_partials/install/InitialSetupHub.adoc:19
 #, no-wrap
 msgid "anaconda/InitialSetupHub.png"
-msgstr ""
+msgstr "anaconda/InitialSetupHub.png"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:22
@@ -90,6 +102,15 @@ msgid ""
 "be able to configure one. If you configured all available options during the "
 "instalaltion, [application]*Initial Setup* will not be displayed at all."
 msgstr ""
+"[sovellus]*Alkuasennuksen* avulla voit määrittää useita "
+"järjestelmäasetuksia. Kaikki nämä voidaan myös konfiguroida asennuksen "
+"aikana, mutta niitä ei vaadita asennuksen loppuun saattamiseksi. Vain "
+"asetukset, joita *ei* ole määritetty asennuksen aikana, näytetään; Jos "
+"esimerkiksi et luonut ei-root-käyttäjätiliä asennuksen aikana, "
+"[sovellus]*Alkuasetukset* käynnistyy ensimmäisen uudelleenkäynnistyksen "
+"jälkeen, ja voit määrittää sellaisen. Jos määritit kaikki käytettävissä "
+"olevat asetukset asennuksen aikana, [sovellus]*Alkuasetukset* ei näy "
+"ollenkaan."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:24
@@ -101,6 +122,12 @@ msgid ""
 "need help, press `Help` in the top left corner to open a new window "
 "containing directions for that screen."
 msgstr ""
+"Jos haluat määrittää jotain apuohjelmassa saatavilla olevaa järjestelmän "
+"osaa, napsauta sen pääikkunassa olevaa linkkiä (esimerkiksi \"Luo käyttäjä\")"
+". Jokainen linkki johtaa erilliseen näyttöön erillisillä vaihtoehdoilla; "
+"nämä näytöt ovat samat, jotka olivat käytettävissä graafisen asennuksen "
+"aikana. Jos tarvitset apua, paina vasemmassa yläkulmassa \"Ohje\" avataksesi "
+"uuden ikkunan, joka sisältää ohjeita kyseiselle näytölle."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:26
@@ -111,6 +138,11 @@ msgid ""
 "bottom right corner to save all configured settings. The configuration "
 "utility will close and you will be able to log in to the system."
 msgstr ""
+"Kun olet määrittänyt jonkun näytön, palaa [sovellus]*Alkuasetukset*-"
+"päävalikkoon painamalla vasemmassa yläkulmassa olevaa Valmis-painiketta. Kun "
+"olet määrittänyt kaikki asetukset, napsauta \"Lopeta määritys\" oikeassa "
+"alakulmassa tallentaaksesi kaikki määritetyt asetukset. Määritysapuohjelma "
+"sulkeutuu ja voit kirjautua järjestelmään."
 
 #. type: delimited block =
 #: pages/_partials/install/InitialSetupHub.adoc:31
@@ -120,12 +152,16 @@ msgid ""
 "installation. To do so, you must use a Kickstart file at the start of the "
 "installation, and this file must contain the following command:"
 msgstr ""
+"On mahdollista määrittää [sovellus]*Alkuasetukset* näyttämään kaikki "
+"käytettävissä olevat vaihtoehdot, vaikka ne olisi määritetty jo asennuksen "
+"aikana. Tätä varten sinun on käytettävä Kickstart-tiedostoa asennuksen "
+"alussa, ja tämän tiedoston on sisällettävä seuraava komento:"
 
 #. type: delimited block -
 #: pages/_partials/install/InitialSetupHub.adoc:35
 #, no-wrap
 msgid "firstboot --enable --reconfig\n"
-msgstr ""
+msgstr "firstboot --enable --reconfig\n"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:38
@@ -135,6 +171,10 @@ msgid ""
 "installations[Automating the Installation with Kickstart] for information "
 "about Kickstart installations."
 msgstr ""
+"[optio]#--reconfig#-vaihtoehto määrittää, että kaikki vaihtoehdot tulee "
+"näyttää. Katso xref:advanced/Kickstart_Installations.adoc#chap-kickstart-"
+"installations[Asennuksen automatisointi Kickstartilla] saadaksesi tietoja "
+"Kickstart-asennuksista."
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:45
@@ -144,14 +184,18 @@ msgid ""
 "the next reboot, before a login prompt is displayed), by executing the "
 "following command as `root`:"
 msgstr ""
+"Normaalisti [sovellus]*Alkuasennukseen* ei voi palata sen jälkeen, kun olet "
+"sulkenut sen ja kirjautunut järjestelmään. Voit saada sen näkyviin uudelleen "
+"(seuraavan uudelleenkäynnistyksen jälkeen, ennen kuin kirjautumiskehote "
+"tulee näkyviin) suorittamalla seuraavan komennon käyttäjänä \"root\":"
 
 #. type: delimited block -
 #: pages/_partials/install/InitialSetupHub.adoc:49
 #, no-wrap
 msgid "# systemctl enable initial-setup-graphical.service\n"
-msgstr ""
+msgstr "# systemctl enable initial-setup-graphical.service\n"
 
 #. type: Plain text
 #: pages/_partials/install/InitialSetupHub.adoc:52
 msgid "Then, reboot your system."
-msgstr ""
+msgstr "Käynnistä sitten järjestelmäsi uudelleen."
