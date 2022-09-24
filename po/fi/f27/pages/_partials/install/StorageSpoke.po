@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2022-09-18 18:19+0000\n"
+"PO-Revision-Date: 2022-09-24 19:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f27pages_partialsinstallstoragespoke/"
@@ -72,13 +72,13 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "Asennuskohde-näyttö. Saatavilla on kaksi paikallista standardilevyä"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:20
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:23
@@ -134,6 +134,11 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"Kaikissa tallennuslaitteissa, joille {PRODUCT} asennetaan, on musta "
+"ympyräkuvake, jossa on valkoinen valintamerkki. Levyjä, joita ei ole "
+"merkitty tällä kuvakkeella, ei käytetä asennuksen aikana - ne jätetään "
+"huomioimatta, jos valitset automaattisen osioinnin, eivätkä ne ole "
+"käytettävissä manuaalisessa osituksessa."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:34
@@ -145,12 +150,18 @@ msgid ""
 "so. If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"USB-tallennuslaitteet, kuten flash-asemat ja ulkoiset levyt, näkyvät myös "
+"\"Paikallisissa normaalilevykkeissä\", ja ne ovat valittavissa samalla "
+"tavalla kuin sisäiset kiintolevyt. Varmista, että *et* valitse irrotettavaa "
+"tallennustilaa asennuskohteeksi, ellet todella halua tehdä niin. Jos käytät "
+"vahingossa irrotettavaa asemaa {PRODUCT}:n asentamiseen ja irrotat sen "
+"sitten, järjestelmästäsi tulee todennäköisesti käyttökelvoton."
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:37
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Valitsematon ja valittu levy"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:39
@@ -159,12 +170,14 @@ msgid ""
 "Disk selection in the Installation Destination screen. Two disks are "
 "displayed; only the one on the right side will be used"
 msgstr ""
+"Levyn valinta Asennuskohde-näytössä. Kaksi levyä näytetään; vain oikealla "
+"puolella olevaa käytetään"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:39
 #, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:42
@@ -196,6 +209,13 @@ msgid ""
 "{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
 "is described later in this section."
 msgstr ""
+"Automaattista osiointia käytettäessä voit myös valita alta vaihtoehdon "
+"\"Haluan vapauttaa lisätilaa\". Käytä tätä vaihtoehtoa, jos haluat ottaa "
+"takaisin tilaa olemassa olevasta osiointiasetelmasta – esimerkiksi jos levy, "
+"jota haluat käyttää, sisältää jo toisen käyttöjärjestelmän ja haluat "
+"pienentää tämän järjestelmän osiot, jotta {PRODUCT} -tuotteelle jää enemmän "
+"tilaa. Jos tämä vaihtoehto valitaan, avautuva `Reclaim space` -valintaikkuna "
+"kuvataan myöhemmin tässä osiossa."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:48

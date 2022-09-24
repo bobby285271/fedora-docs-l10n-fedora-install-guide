@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-09-18 18:19+0000\n"
+"PO-Revision-Date: 2022-09-24 19:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f35pages_partialsinstallstoragespoke/"
@@ -74,13 +74,13 @@ msgstr ""
 msgid ""
 "The Installation Destination screen. There are two local standard disks "
 "available"
-msgstr ""
+msgstr "Asennuskohde-näyttö. Saatavilla on kaksi paikallista standardilevyä"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:19
 #, no-wrap
 msgid "anaconda/StorageSpoke.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:22
@@ -105,6 +105,10 @@ msgid ""
 "opens. All detected disks, including any new ones, will be displayed in the "
 "`Local Standard Disks` section."
 msgstr ""
+"Jos sinun on määritettävä muita paikallisia tallennuslaitteita, valitse "
+"oikeasta alakulmasta Päivitä. Noudata avautuvan valintaikkunan ohjeita. "
+"Kaikki havaitut levyt, mukaan lukien kaikki uudet, näytetään Paikalliset "
+"normaalilevyt -osiossa."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:26
@@ -119,6 +123,16 @@ msgid ""
 "configure will then show up in the `Specialized & Network Disks` the same "
 "way local disks are shown above."
 msgstr ""
+"Alla olevassa \"Specialized & Network Disks\" -osiossa näkyvät edistyneemmät "
+"verkkotallennustilat (kuten iSCSI- ja FCoE-levyt), jotka on määritetty tällä "
+"hetkellä. Kun avaat tämän näytön ensimmäisen kerran, tällaisia laitteita ei "
+"näytetä, koska niitä ei voida tunnistaa automaattisesti. Etsi "
+"verkkotallennuslaitteita painamalla Lisää levy -painiketta ja jatka "
+"seuraavasti: xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-installation-destination[Asennuskohde - Specialized & Network Disks]. "
+"Kaikki määrittämäsi verkkotallennustilat näkyvät sitten \"Specialized & "
+"Network Disks\" -kohdassa samalla tavalla kuin paikalliset levyt on esitetty "
+"yllä."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:28
@@ -129,6 +143,11 @@ msgid ""
 "choose automatic partitioning, and they will not be available in manual "
 "partitioning."
 msgstr ""
+"Kaikissa tallennuslaitteissa, joille {PRODUCT} asennetaan, on musta "
+"ympyräkuvake, jossa on valkoinen valintamerkki. Levyjä, joita ei ole "
+"merkitty tällä kuvakkeella, ei käytetä asennuksen aikana - ne jätetään "
+"huomioimatta, jos valitset automaattisen osioinnin, eivätkä ne ole "
+"käytettävissä manuaalisessa osituksessa."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:33
@@ -140,12 +159,18 @@ msgid ""
 "so. If you accidentally use a removable drive to install {PRODUCT} and then "
 "unplug it, your system will likely become unusable."
 msgstr ""
+"USB-tallennuslaitteet, kuten flash-asemat ja ulkoiset levyt, näkyvät myös "
+"\"Paikallisissa normaalilevykkeissä\", ja ne ovat valittavissa samalla "
+"tavalla kuin sisäiset kiintolevyt. Varmista, että *et* valitse irrotettavaa "
+"tallennustilaa asennuskohteeksi, ellet todella halua tehdä niin. Jos käytät "
+"vahingossa irrotettavaa asemaa {PRODUCT}:n asentamiseen ja irrotat sen "
+"sitten, järjestelmästäsi tulee todennäköisesti käyttökelvoton."
 
 #. type: Block title
 #: ./pages/_partials/install/StorageSpoke.adoc:36
 #, no-wrap
 msgid "Unselected and Selected Disk"
-msgstr ""
+msgstr "Valitsematon ja valittu levy"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:38
@@ -154,12 +179,14 @@ msgid ""
 "Disk selection in the Installation Destination screen. Two disks are "
 "displayed; only the one on the right side will be used"
 msgstr ""
+"Levyn valinta Asennuskohde-näytössä. Kaksi levyä näytetään; vain oikealla "
+"puolella olevaa käytetään"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/StorageSpoke.adoc:38
 #, no-wrap
 msgid "anaconda/StorageSpoke_Selected.png"
-msgstr ""
+msgstr "anaconda/StorageSpoke_Selected.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:41
@@ -167,6 +194,8 @@ msgid ""
 "After you select all disks you want to install {PRODUCT}, select one of the "
 "three options in the `Storage Configuration` section:"
 msgstr ""
+"Kun olet valinnut kaikki levyt, joille haluat asentaa {PRODUCT}, valitse "
+"yksi kolmesta vaihtoehdosta Tallennusasetukset-osiossa:"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:43
@@ -179,6 +208,13 @@ msgid ""
 "disks. A disk-based swap partition is not created, ZRAM-based swap is used "
 "instead."
 msgstr ""
+"`Automaattinen` - Jos tämä vaihtoehto on valittuna, paina `Valmis` näytön "
+"vasemmassa yläkulmassa, asennusohjelma määrittää kaikkien valittujen levyjen "
+"tilan kokonaismäärän ja luo sinulle sopivan Btrfs-asettelun järjestelmääsi. "
+"Tämän asettelun yksityiskohdat riippuvat siitä, käyttääkö järjestelmäsi BIOS-"
+" vai UEFI-laiteohjelmistoa, ja levyjesi vapaan tilan kokonaismäärästä. "
+"Levypohjaista swap-osiota ei luoda, sen sijaan käytetään ZRAM-pohjaista swap-"
+"osiota."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:45
@@ -191,6 +227,13 @@ msgid ""
 "{PRODUCT}. The `Reclaim space` dialog which opens if this option is selected "
 "is described later in this section."
 msgstr ""
+"Automaattista osiointia käytettäessä voit myös valita alta vaihtoehdon "
+"\"Haluan vapauttaa lisätilaa\". Käytä tätä vaihtoehtoa, jos haluat ottaa "
+"takaisin tilaa olemassa olevasta osiointiasetelmasta – esimerkiksi jos levy, "
+"jota haluat käyttää, sisältää jo toisen käyttöjärjestelmän ja haluat "
+"pienentää tämän järjestelmän osiot, jotta {PRODUCT} -tuotteelle jää enemmän "
+"tilaa. Jos tämä vaihtoehto valitaan, avautuva `Reclaim space` -valintaikkuna "
+"kuvataan myöhemmin tässä osiossa."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:47
@@ -203,6 +246,13 @@ msgid ""
 "xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning[Manual "
 "Partitioning]."
 msgstr ""
+"\"Mukautettu\" - Valitse tämä vaihtoehto ja paina \"Valmis\" näytön "
+"vasemmassa yläkulmassa määrittääksesi järjestelmän osiointiasettelun "
+"osittain manuaalisesti. Tämä vaatii jonkin verran tietoa levyosioiden "
+"taustalla olevasta teoriasta ja siihen liittyvistä käsitteistä, mutta antaa "
+"suosituksia järjestelmän asennustavasta. Ohjeita mukautettuun osiointiin on "
+"kohdassa xref:install/Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning[Manuaalinen osiointi]."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:49
@@ -212,6 +262,10 @@ msgid ""
 "completely manually. This requires advanced knowledge of the theory behind "
 "disk partitions and related concepts. There are no guardrails."
 msgstr ""
+"\"Advanced-Custom (Blivet-GUI)\" - Valitse tämä vaihtoehto ja paina \"Done\" "
+"näytön vasemmassa yläkulmassa määrittääksesi järjestelmän osioinnin kokonaan "
+"manuaalisesti. Tämä edellyttää kehittynyttä tietoa levyosioiden takana "
+"olevasta teoriasta ja siihen liittyvistä käsitteistä. Suojakaiteita ei ole."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:51
@@ -223,6 +277,12 @@ msgid ""
 "the [citetitle]_{PRODUCT} Security{nbsp}Guide_, available at "
 "link:++https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Lisäksi voit valita `Salaa tietoni`pass:attributes[{blank}]; tämä salaa "
+"kaikki osiot paitsi ne, jotka tarvitaan järjestelmän käynnistämiseen (kuten "
+"`/boot`) käyttämällä _Linux Unified Key Setup_ (LUKS) -toimintoa. "
+"Kiintolevyn salaamista suositellaan. Lisätietoja LUKS-salauksesta on "
+"[citetitle]_{PRODUCT} Security{nbsp}Guide_ -oppaassa, joka on saatavilla "
+"link:++https://docs.fedoraproject.org/++[]."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:56
