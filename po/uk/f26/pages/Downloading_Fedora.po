@@ -2,29 +2,34 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Kyrylo Husarov <husarovkyrylo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-28 09:19+0000\n"
+"Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f26pagesdownloading_fedora/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title ==
 #: pages/Downloading_Fedora.adoc:6
 #, no-wrap
 msgid "Downloading Fedora"
-msgstr ""
+msgstr "Завантаження Fedora"
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:8
 #, no-wrap
 msgid "Fedora Editions"
-msgstr ""
+msgstr "Редакції Fedora"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:10
@@ -34,6 +39,11 @@ msgid ""
 "infrastructure, Fedora Server for organizational infrastructure, and Fedora "
 "Workstation for the developer and desktop user."
 msgstr ""
+"Fedora пропонує три основні випуски, призначені для певних випадків "
+"використання. link:++https://getfedora.org++[] пропонує Fedora Cloud для "
+"масштабованої інфраструктури, Fedora Server для організаційної "
+"інфраструктури та Fedora Workstation для розробників і користувачів "
+"персональних комп'ютерів."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:12
@@ -41,6 +51,9 @@ msgid ""
 "For alternative desktop environments or media built for more niche purposes, "
 "check out link:++https://spins.fedoraproject.org++[Fedora Spins]."
 msgstr ""
+"Щоб отримати альтернативні робочі середовища чи варіанти, створені для більш "
+"нішевих цілей, перегляньте посилання:++https://spins.fedoraproject.org++["
+"Fedora Spins]."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:14
@@ -50,12 +63,17 @@ msgid ""
 "for your needs. The installation process is the same for all spins and "
 "Editions, so you can use this guide for any choice you make."
 msgstr ""
+"Кожне з цих завантажень надає різний набір стандартних пакетів, але ви "
+"можете додати будь-які пакети до своєї системи після початкової інсталяції, "
+"щоб налаштувати її відповідно до своїх потреб. Процес інсталяції однаковий "
+"для всіх випусків, тому ви можете використовувати цю інструкцію для всіх "
+"варіантів."
 
 #. type: Block title
 #: pages/Downloading_Fedora.adoc:15
 #, no-wrap
 msgid "Which Architecture Is My Computer?"
-msgstr ""
+msgstr "Яка архітектура мого комп'ютера?"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:17
@@ -64,6 +82,8 @@ msgid ""
 "manufactured after 2007, or you aren't sure, you probably have a `x86_64` "
 "system."
 msgstr ""
+"Більшість сучасних систем мають 64{nbsp}бітну архітектуру x86. Якщо ваш комп’"
+"ютер було виготовлено після 2007 року, то у вас, ймовірно, система `x86_64`."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:19
@@ -80,7 +100,7 @@ msgstr ""
 #: pages/Downloading_Fedora.adoc:21
 #, no-wrap
 msgid "Processor and architecture types"
-msgstr ""
+msgstr "Типи процесорів та архітектур"
 
 #. type: Table
 #: pages/Downloading_Fedora.adoc:29
@@ -96,7 +116,7 @@ msgstr ""
 #: pages/Downloading_Fedora.adoc:31
 #, no-wrap
 msgid "Media Types"
-msgstr ""
+msgstr "Тип носія"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:33
@@ -104,12 +124,14 @@ msgid ""
 "Several media types are available. Choose the one that best suits your "
 "requirements."
 msgstr ""
+"Доступні декілька типів носіїв. Виберіть той, який найкраще відповідає вашим "
+"вимогам."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:34
 #, no-wrap
 msgid "Live Image"
-msgstr ""
+msgstr "Live-образ"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:35
@@ -119,6 +141,10 @@ msgid ""
 "you'll get after installation. Fedora Workstation and Fedora Spins are live "
 "images."
 msgstr ""
+"Live-образи дозволяють попередньо переглянути Fedora перед її встановленням. "
+"Замість того, щоб завантажуватися безпосередньо в програму встановлення, "
+"живий образ завантажує те саме середовище, яке ви отримаєте після "
+"встановлення. Fedora Workstation і Fedora Spins є live-образами."
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:37
@@ -126,12 +152,15 @@ msgid ""
 "Use a live image to install your favorite system, test Fedora on new "
 "hardware, troubleshoot, or share with friends."
 msgstr ""
+"Використовуйте live-образ, щоб встановити свою улюблену систему, "
+"протестувати Fedora на новому обладнанні, усунути несправності або "
+"поділитися з друзями."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:38
 #, no-wrap
 msgid "DVD Image"
-msgstr ""
+msgstr "DVD-образ"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:39
@@ -147,12 +176,14 @@ msgid ""
 "Use the Fedora Server DVD image when you want customized Fedora Server "
 "installations using an offline installation source."
 msgstr ""
+"Використовуйте DVD-образ Fedora Server, якщо ви бажаєте налаштувати Fedora "
+"Server за допомогою офлайн джерела встановлення."
 
 #. type: Labeled list
 #: pages/Downloading_Fedora.adoc:42
 #, no-wrap
 msgid "netinstall Image"
-msgstr ""
+msgstr "Образ мережевого встановлення"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:43
@@ -174,7 +205,7 @@ msgstr ""
 #: pages/Downloading_Fedora.adoc:46
 #, no-wrap
 msgid "ARM images"
-msgstr ""
+msgstr "Образи для ARM"
 
 #. type: Plain text
 #: pages/Downloading_Fedora.adoc:47
