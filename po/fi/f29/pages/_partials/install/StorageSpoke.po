@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:16+0000\n"
-"PO-Revision-Date: 2022-09-24 19:19+0000\n"
+"PO-Revision-Date: 2022-09-29 12:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f29pages_partialsinstallstoragespoke/"
@@ -22,7 +22,7 @@ msgstr ""
 #: ./pages/_partials/install/StorageSpoke.adoc:4
 #, no-wrap
 msgid "Installation Destination"
-msgstr ""
+msgstr "Asennuskohde"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:7
@@ -68,7 +68,7 @@ msgstr ""
 #: ./pages/_partials/install/StorageSpoke.adoc:17
 #, no-wrap
 msgid "Installation Destination "
-msgstr ""
+msgstr "Asennuskohde "
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/_partials/install/StorageSpoke.adoc:19
@@ -262,6 +262,13 @@ msgid ""
 "the Installation with Kickstart] for information about Kickstart "
 "installations."
 msgstr ""
+"Jos kadotat LUKS-salalauseen, kaikki salatut osiot ja niillä olevat tiedot "
+"ovat täysin käyttökelvottomia. Kadonnutta tunnuslausetta ei voi palauttaa. "
+"Jos kuitenkin suoritat Kickstart-asennuksen, voit tallentaa salauksen "
+"salalauseita ja luoda varmuuskopion salauslauseista asennuksen aikana. Katso "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Asennuksen automatisointi Kickstartilla] saadaksesi tietoja Kickstart-"
+"asennuksista."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:58
@@ -275,6 +282,15 @@ msgid ""
 "example, systems which require _chain loading_ from another boot loader) "
 "will require the boot drive to be specified manually."
 msgstr ""
+"Voit hallita, mikä valitsemistasi tallennuslaitteista sisältää "
+"_käynnistyslataimen_, napsauttamalla näytön vasemmassa alakulmassa olevaa "
+"Koko levyn yhteenveto ja käynnistyslatain -linkkiä ja noudattamalla kohdan "
+"xref:install/Installing_Using_Anaconda.adoc#sect-installation ohjeita. -gui-"
+"storage-partitioning-bootloader[Käynnistyslataimen asennus]. Huomaa, että "
+"vaikka useimmissa tapauksissa riittää, että käynnistyslatain jätetään "
+"oletussijaintiin, jotkin kokoonpanot (esimerkiksi järjestelmät, jotka "
+"vaativat _ketjulatauksen_ toisesta käynnistyslataimesta) edellyttävät "
+"käynnistysaseman määrittämistä manuaalisesti."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:60
@@ -284,6 +300,10 @@ msgid ""
 "the top left corner of the screen. Then, depending on your settings, the "
 "following will happen:"
 msgstr ""
+"Kun olet valinnut tallennuslaitteet, valitse automaattisen ja manuaalisen "
+"osioinnin välillä, määritä salaus ja käynnistyslataimen sijainti, paina "
+"`Valmis` näytön vasemmassa yläkulmassa. Asetuksistasi riippuen tapahtuu "
+"sitten seuraavaa:"
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:62
@@ -296,6 +316,13 @@ msgid ""
 "information about creating strong passwords, see [citetitle]_{PRODUCT} "
 "Security{nbsp}Guide_."
 msgstr ""
+"Jos valitsit kiintolevyn salauksen, Levyn salauksen tunnuslause -"
+"valintaikkuna tulee näkyviin. Kirjoita valitsemasi tunnuslause \"Salalause\"-"
+" ja \"Vahvista\"-kenttiin. Kun teet niin, tunnuslause arvioidaan "
+"automaattisesti ja sen vahvuus näytetään sekä ehdotuksia sen "
+"vahvistamiseksi, jos asentaja on määrittänyt sen heikoksi. Lisätietoja "
+"vahvojen salasanojen luomisesta on [citetitle]_{PRODUCT} Security{nbsp}"
+"Guide_ -oppaassa."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:64
@@ -330,6 +357,16 @@ msgid ""
 "space available to {PRODUCT}, but all existing data on all disks will be "
 "lost."
 msgstr ""
+"Tarkista ensin käytettävissä olevien tallennuslaitteiden luettelo. "
+"\"Reclaimable Space\" -sarake näyttää, kuinka paljon tilaa voidaan ottaa "
+"takaisin kustakin merkinnästä. Voit vapauttaa tilaa valitsemalla levyn tai "
+"osion ja painamalla joko Poista-painiketta poistaaksesi kyseisen osion (tai "
+"kaikki valitun levyn osiot) tai 'Pienennä' käyttääksesi vapaata tilaa "
+"osiossa säilyttäen samalla olemassa olevat tiedot. Vaihtoehtoisesti voit "
+"painaa \"Poista kaikki\" oikeassa alakulmassa. tämä poistaa kaikki olemassa "
+"olevat osiot kaikilta levyiltä ja antaa tämän tilan {PRODUCT}:n "
+"käytettäväksi, mutta kaikki olemassa olevat tiedot kaikilla levyillä "
+"menetetään."
 
 #. type: Plain text
 #: ./pages/_partials/install/StorageSpoke.adoc:75
@@ -337,6 +374,8 @@ msgid ""
 "After you free enough space for your {PRODUCT} installation, press `Reclaim "
 "space` to finish."
 msgstr ""
+"Kun olet vapauttanut tarpeeksi tilaa {PRODUCT} -asennusta varten, lopeta "
+"painamalla `Vapauta tilaa'."
 
 #. type: delimited block =
 #: ./pages/_partials/install/StorageSpoke.adoc:80
