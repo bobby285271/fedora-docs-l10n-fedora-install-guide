@@ -1,25 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Kyrylo Husarov <husarovkyrylo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-05-10 21:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-29 12:19+0000\n"
+"Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f36pagesinstallbooting_the_installation/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/install/Booting_the_Installation.adoc:6
 #, no-wrap
 msgid "Booting the Installation"
-msgstr ""
+msgstr "Завантаження програми встановлення"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:9
@@ -28,12 +32,15 @@ msgid ""
 "network server as well as how to navigate the boot menu and use custom "
 "options."
 msgstr ""
+"У цьому розділі пояснюється, як завантажити програму встановлення з "
+"локального носія або мережевого сервера, а також як переміщатися в меню "
+"завантаження та використовувати спеціальні параметри."
 
 #. type: Title ==
 #: ./pages/install/Booting_the_Installation.adoc:11
 #, no-wrap
 msgid "Preparing to Boot"
-msgstr ""
+msgstr "Підготовка до завантаження"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:14
@@ -45,6 +52,12 @@ msgid ""
 "described below are generic and the exact steps will vary somewhat depending "
 "on your system - particularly on your motherboard manufacturer."
 msgstr ""
+"Після того, як ви створили завантажувальний флеш-накопичувач USB, компакт-"
+"диск чи DVD, використовуючи кроки, описані в xref:install/"
+"Preparing_for_Installation.adoc#sect-preparing-boot-media[Підготовка "
+"завантажувального носія], ви готові до завантаження інсталяції. Зауважте, що "
+"кроки, описані нижче, є загальними, і точні кроки дещо відрізнятимуться "
+"залежно від вашої системи, зокрема від виробника материнської плати."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:19
@@ -56,6 +69,13 @@ msgid ""
 "on an UEFI system in UEFI mode, and then switch it to BIOS compatibility "
 "mode, {PRODUCT} will no longer boot and will require a reinstallation."
 msgstr ""
+"Для систем BIOS і UEFI немає окремих носіїв; усі вони можуть завантажуватися "
+"з одного образу ISO. Однак після встановлення {PRODUCT} ви не зможете "
+"переключатися між UEFI та BIOS. Система повинна працювати на тій самій "
+"мікропрограмі, на якій була встановлена; якщо ви, наприклад, виконуєте "
+"інсталяцію в системі UEFI в режимі UEFI, а потім перемикаєте її в режим "
+"сумісності з BIOS, {PRODUCT} більше не завантажуватиметься й потребуватиме "
+"повторної інсталяції."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:26
@@ -63,6 +83,8 @@ msgid ""
 "{PRODUCT} does not support UEFI booting for 32-bit x86 systems. Only BIOS "
 "boot is supported on these systems."
 msgstr ""
+"{PRODUCT} не підтримує завантаження UEFI для 32-розрядних систем x86. У цих "
+"системах підтримується лише завантаження BIOS."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:28
@@ -73,17 +95,22 @@ msgid ""
 "specifications will not be available. The UEFI specifications are available "
 "from link:++https://www.uefi.org/specs/agreement/++[]."
 msgstr ""
+"Також зауважте, що {PRODUCT} повністю підтримує лише версію 2.2 специфікації "
+"UEFI. Обладнання, яке підтримує версію 2.3 або новішу, завантажиться та "
+"працюватиме нормально, але додаткові функції, визначені цими пізнішими "
+"специфікаціями, будуть недоступні. Специфікації UEFI доступні за "
+"посиланням:++https://www.uefi.org/specs/agreement/++[]."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:32
 msgid "To boot the {PRODUCT} installer, follow these steps:"
-msgstr ""
+msgstr "Щоб завантажити інсталятор {PRODUCT}, виконайте такі дії:"
 
 #. type: Block title
 #: ./pages/install/Booting_the_Installation.adoc:33
 #, no-wrap
 msgid "Booting the {PRODUCT} Installer"
-msgstr ""
+msgstr "Завантаження програми встановлення {PRODUCT}"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:35
@@ -92,6 +119,10 @@ msgid ""
 "computer's optical disc drive. Alternatively, if you plan on booting from a "
 "network boot (PXE) server, make sure that the network cable is plugged in."
 msgstr ""
+"Підключіть завантажувальний USB-накопичувач або вставте завантажувальний "
+"компакт-диск або DVD-диск у оптичний дисковод комп’ютера. Крім того, якщо ви "
+"плануєте завантажуватися з сервера мережевого завантаження (PXE), "
+"переконайтеся, що мережевий кабель підключено."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:37
@@ -99,12 +130,17 @@ msgid ""
 "Restart the system. Once it starts rebooting, it should display a prompt "
 "similar to the following (usually at the bottom of the screen):"
 msgstr ""
+"Перезапустіть систему. Коли вона почне перезавантажуватися, вона має "
+"відобразити підказку, подібну до наведеної нижче (зазвичай у нижній частині "
+"екрана):"
 
 #. type: delimited block -
 #: ./pages/install/Booting_the_Installation.adoc:41
 #, no-wrap
 msgid "Press F12 to select boot device, or Del to enter SETUP\n"
 msgstr ""
+"Натисніть F12, щоб вибрати завантажувальний пристрій, або Del, щоб увійти в "
+"НАЛАШТУВАННЯ\n"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:44
@@ -116,6 +152,13 @@ msgid ""
 "there is usually a very short time window provided to access the menu; once "
 "it passes, you need to restart the system and try again."
 msgstr ""
+"Дотримуйтеся вказівок на екрані, щоб отримати доступ до меню завантаження. "
+"Якщо вказівки не відображаються (деякі системи відображають лише графічний "
+"логотип під час ранніх етапів завантаження), спробуйте кілька разів "
+"натиснути kbd:[F12], kbd:[F11], kbd:[F10] або kbd:[Del]; це клавіші, які "
+"найчастіше використовуються. Зверніть увагу, що для доступу до меню зазвичай "
+"надається дуже короткий час; як тільки він пройде, потрібно перезавантажити "
+"систему та повторити спробу."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:49
@@ -125,6 +168,11 @@ msgid ""
 "order so that your boot media (CD, DVD, USB or network) has higher priority "
 "than internal hard drives."
 msgstr ""
+"Деякі старі системи можуть не підтримувати вибір завантажувального пристрою "
+"під час запуску. У такому випадку увійдіть у налаштування системи (BIOS) і "
+"змініть порядок завантаження за замовчуванням, щоб ваш завантажувальний "
+"носій (CD, DVD, USB або мережа) мав вищий пріоритет, ніж внутрішні жорсткі "
+"диски."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:51
@@ -132,6 +180,8 @@ msgid ""
 "On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
 "selection menu."
 msgstr ""
+"На обладнанні Mac утримуйте клавішу kbd:[Option], щоб увійти в меню вибору "
+"завантажувального носія."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:55
@@ -141,6 +191,10 @@ msgid ""
 "optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
 "from a network location."
 msgstr ""
+"Коли відкриється меню завантаження вашої системи, виберіть такий запис, як «"
+"Завантажити з USB», якщо ви створили завантажувальний USB-диск, «Завантажити "
+"з CD/DVD», якщо ви використовуєте оптичний диск для встановлення {PRODUCT}, "
+"або «Завантажити з PXE», якщо ви хочете завантажитися з мережі."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:57
@@ -148,12 +202,14 @@ msgid ""
 "Wait until the boot menu is displayed. The boot menu is described further in "
 "this chapter."
 msgstr ""
+"Зачекайте, поки не відобразиться меню завантаження. Меню завантаження "
+"описано далі в цьому розділі."
 
 #. type: Title ==
 #: ./pages/install/Booting_the_Installation.adoc:59
 #, no-wrap
 msgid "The Boot Menu"
-msgstr ""
+msgstr "Меню завантаження"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:62
@@ -163,6 +219,11 @@ msgid ""
 "this menu, you can either start the actual installation, or you can use the "
 "boot media to rescue an existing system."
 msgstr ""
+"У більшості випадків, коли ви завантажуєте програму встановлення {PRODUCT} "
+"із підготовленого завантажувального носія або сервера, першим, що з’"
+"являється, буде меню завантаження. У цьому меню ви можете розпочати фактичне "
+"встановлення або використати завантажувальний носій для відновлення існуючої "
+"системи."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:64
@@ -172,6 +233,11 @@ msgid ""
 "loader, and UEFI systems use [application]*GRUB2*. However, both of the "
 "menus described below function very similarly from a user's point of view."
 msgstr ""
+"Вигляд і функціонування меню завантаження дещо відрізнятиметься залежно від "
+"мікропрограми вашої системи – системи BIOS використовують завантажувач "
+"[application]*SYSLINUX*, а системи UEFI використовують [application]*GRUB2*. "
+"Однак обидва описані нижче меню функціонують дуже подібно з точки зору "
+"користувача."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:66
@@ -182,6 +248,10 @@ msgid ""
 "second one will verify the integrity of the boot media before starting the "
 "installation."
 msgstr ""
+"Використовуйте клавіші зі стрілками, щоб вибрати запис у меню, і kbd:[Enter]"
+", щоб підтвердити свій вибір. Перші два записи у списку продовжать "
+"встановлення; перший запустить інсталятор безпосередньо, а другий перевірить "
+"цілісність завантажувального носія перед початком встановлення."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:68
@@ -196,6 +266,16 @@ msgid ""
 "menu and boot normally from your system's hard drive via the `Boot from "
 "local drive` option."
 msgstr ""
+"Останнім записом у списку є `Вирішення проблем`pass:attributes[{blank}]; це "
+"підменю. Якщо вибрати цей запис і натиснути kbd:[Enter], відобразиться новий "
+"набір вибраних параметрів, у якому ви зможете вибрати встановлення в "
+"базовому графічному режимі (корисно, якщо ви хочете виконати графічне "
+"встановлення вручну, але ваша система має проблеми з графічним інсталятором "
+"за замовчуванням) , відновлення існуючої системи або перевірка модулів пам’"
+"яті вашої системи на наявність помилок (лише в системах BIOS). Меню усунення "
+"несправностей також дає змогу вийти з меню завантаження та нормально "
+"завантажитися з жорсткого диска системи за допомогою параметра «Завантажити "
+"з локального диска»."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:70
@@ -206,6 +286,11 @@ msgid ""
 "systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
 "bottom of the screen."
 msgstr ""
+"Кожен пункт меню у списку є попередньо визначеним набором параметрів "
+"завантаження, і ці параметри можна налаштувати, щоб змінити деякі аспекти "
+"поведінки інсталятора. Щоб змінити стандартний набір параметрів "
+"завантаження, натисніть kbd:[Tab] у системах BIOS або kbd:[e] у системах "
+"UEFI. Ключ для використання також відображається внизу екрана."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:75
@@ -215,6 +300,11 @@ msgid ""
 "configured on the line which starts with the `linux` (or `linux16` or "
 "`linuxefi`) keyword. Do not modify any other lines in the configuration."
 msgstr ""
+"Редагування параметрів завантаження в [програмі]*GRUB2* (у системах UEFI) "
+"відобразить повну конфігурацію для вибраного запису. Фактичні параметри "
+"завантаження налаштовуються в рядку, який починається з ключового слова "
+"`linux` (або `linux16` або `linuxefi`). Не змінюйте жодних інших рядків у "
+"конфігурації."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:77
@@ -222,6 +312,8 @@ msgid ""
 "On systems with BIOS firmware, only the actual boot options are displayed "
 "when you press kbd:[Tab]."
 msgstr ""
+"У системах із мікропрограмою BIOS лише фактичні параметри завантаження "
+"відображаються, коли ви натискаєте kbd:[Tab]."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:81
@@ -231,37 +323,41 @@ msgid ""
 "or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
 "options."
 msgstr ""
+"Під час редагування стандартного набору параметрів ви можете змінити наявні, "
+"а також додати додаткові. Завершивши, натисніть kbd: [Enter] у BIOS або kbd: "
+"[Ctrl + X] в UEFI, щоб завантажити інсталятор із використанням налаштованих "
+"параметрів."
 
 #. type: Block title
 #: ./pages/install/Booting_the_Installation.adoc:82
 #, no-wrap
 msgid "Editing boot options on a system with BIOS firmware"
-msgstr ""
+msgstr "Редагування параметрів завантаження в системі з мікропрограмою BIOS"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Booting_the_Installation.adoc:84
 #: ./pages/install/Booting_the_Installation.adoc:88
 #, no-wrap
 msgid "The boot menu."
-msgstr ""
+msgstr "Меню завантаження."
 
 #. type: Target for macro image
 #: ./pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "boot/boot-menu-BIOS.png"
-msgstr ""
+msgstr "boot/boot-menu-BIOS.png"
 
 #. type: Block title
 #: ./pages/install/Booting_the_Installation.adoc:86
 #, no-wrap
 msgid "Editing boot options on a system with UEFI firmware"
-msgstr ""
+msgstr "Редагування параметрів завантаження в системі з мікропрограмою UEFI"
 
 #. type: Target for macro image
 #: ./pages/install/Booting_the_Installation.adoc:88
 #, no-wrap
 msgid "boot/boot-menu-UEFI.png"
-msgstr ""
+msgstr "boot/boot-menu-UEFI.png"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:90
@@ -270,3 +366,6 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-available[Available Boot "
 "Options]."
 msgstr ""
+"Усі доступні параметри завантаження [application]*Anaconda* описано в xref:"
+"advanced/Boot_Options.adoc#sect-boot-options-available[Доступні параметри "
+"завантаження]."

@@ -2,23 +2,29 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Kyrylo Husarov <husarovkyrylo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-29 12:19+0000\n"
+"Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f30pagesinstallafter_installation/uk/>"
+"\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: pages/install/After_Installation.adoc:6
 #, no-wrap
 msgid "After the Installation"
-msgstr ""
+msgstr "Після встановлення"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:9
@@ -26,6 +32,9 @@ msgid ""
 "This chapter describes the initial setup tools which open after you finish "
 "the installation, reboot the system, and log in for the first time."
 msgstr ""
+"У цьому розділі описуються інструменти початкового налаштування, які "
+"відкриваються після завершення встановлення, перезавантаження системи та "
+"першого входу до системи."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:11
@@ -37,6 +46,12 @@ msgid ""
 "graphical environments, the [application]*Initial Setup* tool serves the "
 "same purpose."
 msgstr ""
+"Два окремі інструменти налаштування є частиною {PRODUCT}. Якщо ви встановили "
+"робоче середовище [application]*GNOME* (середовище {PRODUCT} за "
+"замовчуванням, встановлене, наприклад, як частина {PRODUCT} Workstation "
+"Edition), відкриється утиліта [application]*GNOME Initial Setup*; для всіх "
+"інших графічних середовищ інструмент [application]*Initial Setup* служить "
+"тій самій меті."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:13
@@ -50,13 +65,21 @@ msgid ""
 "installation finished, you will not be prompted to do so again after the "
 "installation completes."
 msgstr ""
+"Обидва ці інструменти дозволять вам налаштувати параметри користувача, які "
+"не були налаштовані під час інсталяції. Деякі параметри доступні як у "
+"графічному інсталяторі (або як команди Kickstart), так і в утилітах "
+"початкового налаштування; у цьому випадку вони відображатимуться лише після "
+"першого перезавантаження, якщо ви пропустили їх під час встановлення. Це "
+"означає, що, наприклад, якщо ви налаштували обліковий запис користувача до "
+"завершення інсталяції, вам не буде запропоновано зробити це знову після "
+"завершення інсталяції."
 
 #. type: Block title
 #: pages/install/After_Installation.adoc:17
 #: pages/install/After_Installation.adoc:21
 #, no-wrap
 msgid "GNOME Initial Setup"
-msgstr ""
+msgstr "Початкове налаштування GNOME"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:20
@@ -65,18 +88,21 @@ msgid ""
 "log in for the first time with any user account, as long as your first login "
 "is in the [application]*GNOME* desktop environment."
 msgstr ""
+"Утиліта [application]*GNOME Initial Setup* відобразиться після того, як ви "
+"вперше ввійдете в будь-який обліковий запис користувача, за умови, що ваш "
+"перший вхід буде виконано в середовищі робочого столу [application]*GNOME*."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "GNOME Initial Setup with language selection displayed."
-msgstr ""
+msgstr "Початкове налаштування GNOME з вибором мови."
 
 #. type: Target for macro image
 #: pages/install/After_Installation.adoc:23
 #, no-wrap
 msgid "afterinstall/gnome-initial-setup.png"
-msgstr ""
+msgstr "afterinstall/gnome-initial-setup.png"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:26
@@ -87,6 +113,12 @@ msgid ""
 "Some screens (`Configure online accounts` in particular) are optional and "
 "can be skipped using the `Skip` button in the top right corner."
 msgstr ""
+"Ця утиліта дозволяє налаштувати кілька індивідуальних параметрів, наприклад "
+"мову системи або розкладку клавіатури за замовчуванням. Для переходу між "
+"екранами використовуйте кнопки «Далі» та «Назад» у верхній частині вікна. "
+"Деякі екрани (зокрема «Налаштувати облікові записи онлайн») є необов’"
+"язковими, і їх можна пропустити, натиснувши кнопку «Пропустити» у верхньому "
+"правому куті."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:28
@@ -96,12 +128,16 @@ msgid ""
 "displayed, and you can either browse the help content, or close it and start "
 "using your desktop."
 msgstr ""
+"Після завершення налаштування всіх екранів натисніть `Почати використання "
+"Fedora`, щоб вийти з утиліти. Після цього відобразиться сторінка `Початок "
+"роботи` з довідки GNOME, і ви зможете або переглянути вміст довідки, або "
+"закрити її та почати використовувати свою систему."
 
 #. type: Title ==
 #: pages/install/After_Installation.adoc:30
 #, no-wrap
 msgid "Common Post-installation Tasks"
-msgstr ""
+msgstr "Типові завдання після інсталяції"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:33
@@ -113,12 +149,19 @@ msgid ""
 "system. The list below describes some of the more common tasks usually "
 "performed immediately after a new installation."
 msgstr ""
+"Після завершення інсталяції та виконання однієї з утиліт початкового "
+"налаштування, описаних вище, ваша система готова до використання. Однак, "
+"залежно від того, як ви плануєте використовувати свою систему, можуть "
+"знадобитися інші адміністративні завдання, які не охоплюються інсталятором "
+"або утилітами початкового налаштування. У наведеному нижче списку описано "
+"деякі з найпоширеніших завдань, які зазвичай виконуються одразу після нової "
+"інсталяції."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:34
 #, no-wrap
 msgid "Recover a lost `root` password"
-msgstr ""
+msgstr "Відновлення втраченого `root` пароля"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:35
@@ -130,12 +173,18 @@ msgid ""
 "following the steps described in xref:install/Troubleshooting.adoc#sect-"
 "trouble-after-reset-root-password[Resetting the Root Password]."
 msgstr ""
+"Пароль `root`, який налаштовується під час інсталяції, потрібен для доступу "
+"до системи від імені користувача `root`. Без цього пароля ви не зможете "
+"налаштувати систему або встановити додаткове програмне забезпечення. Якщо ви "
+"втратили або забули пароль root, ви можете скинути його, виконавши кроки, "
+"описані в xref:install/Troubleshooting.adoc#sect-trouble-after-reset-root-"
+"password[Скидання пароля root]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:36
 #, no-wrap
 msgid "Configure the network"
-msgstr ""
+msgstr "Налаштування мережі"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:37
@@ -150,12 +199,21 @@ msgid ""
 "[citetitle]_{PRODUCT} Networking Guide_, available at link:++https://docs."
 "fedoraproject.org/++[]."
 msgstr ""
+"У більшості випадків мережевий доступ налаштовується під час процесу "
+"встановлення або в програмі встановлення [application]*Anaconda* (див. xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-network-"
+"configuration[Мережа та ім'я хосту]) або у файлі Kickstart (див. xref:"
+"appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-network["
+"мережа (необов’язково) — налаштування мережевих інтерфейсів]). Щоб отримати "
+"інформацію щодо налаштування мережі після інсталяції, перегляньте "
+"[citetitle]_{PRODUCT} Networking Guide_, доступний за "
+"посиланням:++https://docs.fedoraproject.org/++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:38
 #, no-wrap
 msgid "Perform an initial system update"
-msgstr ""
+msgstr "Виконайте початкове оновлення системи"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:39
@@ -167,6 +225,13 @@ msgid ""
 "installed packages are updated to their latest available versions. Updates "
 "to packages provide security fixes, bug fixes and enhancements."
 msgstr ""
+"Якщо ви встановили {PRODUCT} із повного інсталяційного образу ISO ("
+"наприклад, live-образу Workstation або повного DVD-диска сервера), "
+"рекомендується виконати початкове оновлення системи, оскільки ваш "
+"інсталяційний носій, імовірно, містив старіші версії програмних пакетів. Під "
+"час початкового оновлення всі встановлені пакети оновлюються до останніх "
+"доступних версій. Оновлення пакетів містять виправлення безпеки, виправлення "
+"помилок і вдосконалення."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:41
@@ -181,7 +246,7 @@ msgstr ""
 #: pages/install/After_Installation.adoc:42
 #, no-wrap
 msgid "Install driver updates"
-msgstr ""
+msgstr "Встановіть оновлення драйверів"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:43
@@ -209,7 +274,7 @@ msgstr ""
 #: pages/install/After_Installation.adoc:46
 #, no-wrap
 msgid "Configure additional repositories"
-msgstr ""
+msgstr "Налаштуйте додаткові репозиторії"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:47
@@ -222,6 +287,14 @@ msgid ""
 "additional repositories, for example ones containing your own software, some "
 "extra steps are needed."
 msgstr ""
+"Нове програмне забезпечення встановлюється з _репозиторіїв пакетів_. "
+"Репозиторії пакетів — це організовані набори програмного забезпечення та "
+"метаданих, до яких може отримати доступ менеджер пакетів [application]*DNF*. "
+"За замовчуванням кілька сховищ, наданих {PRODUCT}, налаштовуються "
+"автоматично, і ви можете інсталювати оновлення та додаткове програмне "
+"забезпечення з них. Однак, якщо ви хочете налаштувати додаткові сховища, "
+"наприклад ті, що містять ваше власне програмне забезпечення, потрібні деякі "
+"додаткові дії."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:49
@@ -230,12 +303,16 @@ msgid ""
 "[citetitle]_{PRODUCT} System Administrator's Guide_, available at link:+"
 "+https://docs.fedoraproject.org/++[]."
 msgstr ""
+"Щоб отримати інформацію про налаштування додаткових сховищ програмного "
+"забезпечення, перегляньте [citetitle]_{PRODUCT} Посібник системного "
+"адміністратора_, доступний за посиланням:++https://docs.fedoraproject.org/"
+"++[]."
 
 #. type: Labeled list
 #: pages/install/After_Installation.adoc:50
 #, no-wrap
 msgid "Install additional packages"
-msgstr ""
+msgstr "Встановлення додаткових пакетів"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:51
@@ -255,7 +332,7 @@ msgstr ""
 #: pages/install/After_Installation.adoc:52
 #, no-wrap
 msgid "Switch to a graphical login"
-msgstr ""
+msgstr "Перехід на графічний вхід"
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:53
@@ -267,6 +344,11 @@ msgid ""
 "[application]*X Window System* and your preferred desktop environment "
 "(either [application]*GNOME* or [application]*KDE*)."
 msgstr ""
+"Залежно від параметрів, які ви вибрали під час процесу встановлення, "
+"можливо, ваша система не має графічного інтерфейсу, натомість пропонує лише "
+"текстову підказку. Якщо це так, і ви бажаєте ввімкнути графічний робочий "
+"стіл після інсталяції, вам потрібно встановити [application]*X Window System*"
+" і бажане робоче середовище ([application]*GNOME* або [application]*KDE*) ."
 
 #. type: Plain text
 #: pages/install/After_Installation.adoc:54
