@@ -2,23 +2,28 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Weblate <noreply@weblate.org>, 2020.
+# Kyrylo Husarov <husarovkyrylo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-03 12:19+0000\n"
+"Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f27pagesinstalltroubleshooting/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:6
 #, no-wrap
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Вирішення проблем"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:9
@@ -27,12 +32,15 @@ msgid ""
 "wrong. It also discusses some common installation problems and their "
 "solutions."
 msgstr ""
+"У цьому розділі наведено кілька вказівок щодо того, як отримати допомогу, "
+"коли щось піде не так. Тут також розглядаються деякі поширені проблеми "
+"встановлення та їх вирішення."
 
 #. type: Title ====
 #: pages/install/Troubleshooting.adoc:11
 #, no-wrap
 msgid "Getting Help"
-msgstr ""
+msgstr "Отримання допомоги"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:14
@@ -41,6 +49,9 @@ msgid ""
 "a problem not described in this chapter: discussion boards, blogs, IRC, and "
 "more. Some of the more popular places where you can find help include:"
 msgstr ""
+"В Інтернеті є багато місць, які можуть допомогти вам, коли ви зіткнетеся з "
+"проблемою, не описаною в цьому розділі: дошки обговорень, блоги, IRC тощо. "
+"Деякі з найбільш популярних місць, де ви можете отримати допомогу, включають:"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:16
@@ -48,6 +59,8 @@ msgid ""
 "link:++https://ask.fedoraproject.org/en/questions/++[Ask Fedora] - Fedora's "
 "knowledge base, available in multiple languages"
 msgstr ""
+"link:++https://ask.fedoraproject.org/en/questions/++[Запитайте Fedora] – "
+"база знань Fedora, доступна кількома мовами"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:18
@@ -62,6 +75,8 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/++[Fedora Project Wiki] - the official "
 "wiki for Fedora Project"
 msgstr ""
+"link:++https://fedoraproject.org/wiki/++[Wiki проекту Fedora] – офіційна "
+"вікі для проекту Fedora"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:22
@@ -78,6 +93,10 @@ msgid ""
 "channels and mailing lists is available at link:++https://fedoraproject.org/"
 "wiki/Communicating_and_getting_help++[]."
 msgstr ""
+"Наведений вище список далеко не повний - ви також можете знайти допомогу в "
+"багатьох інших місцях. Додаткова інформація про доступні ресурси, такі як "
+"канали IRC і списки розсилки, доступна за посиланням:++https://fedoraproject."
+"org/wiki/Communicating_and_getting_help++[]."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:31
@@ -90,6 +109,13 @@ msgid ""
 "answered many times before, is not likely to result in a friendly, "
 "constructive response."
 msgstr ""
+"Перш ніж розпочати нове обговорення або попросити будь-кого про допомогу в "
+"IRC, ви завжди повинні провести певне дослідження самостійно. Якщо ви "
+"зіткнулися з проблемою, зазвичай існує хороший шанс, що хтось інший "
+"зіткнувся з такою ж проблемою раніше вас і десь опублікував рішення. Початок "
+"дискусії про те, що вже було пояснено в іншому місці, або постановка "
+"типового запитання, на яке вже багато разів відповідали, навряд чи призведе "
+"до доброзичливої, конструктивної відповіді."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:33
@@ -99,12 +125,16 @@ msgid ""
 "sections below explain which files are generated, what their contents are, "
 "and how to transfer them from the installation system."
 msgstr ""
+"Коли ви запитуєте допомогу щодо усунення проблем, пов’язаних із "
+"встановленням, вас можуть попросити надати файли журналу, створені програмою "
+"встановлення. У розділах нижче пояснюється, які файли генеруються, який "
+"їхній вміст і як їх перенести із системи встановлення."
 
 #. type: Title =====
 #: pages/install/Troubleshooting.adoc:35
 #, no-wrap
 msgid "Log Files Generated During the Installation"
-msgstr ""
+msgstr "Файли журналів, створені під час встановлення"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:38
@@ -113,12 +143,14 @@ msgid ""
 "into files in the `/tmp` directory. These files are listed in the following "
 "table."
 msgstr ""
+"З метою налагодження [application]*Anaconda* записує дії встановлення у "
+"файли в каталозі `/tmp`. Ці файли перераховані в наступній таблиці."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:40
 #, no-wrap
 msgid "Log Files and Their Contents"
-msgstr ""
+msgstr "Файли журналів та їх вміст"
 
 #. type: Table
 #: pages/install/Troubleshooting.adoc:50
@@ -131,6 +163,14 @@ msgid ""
 "|`/tmp/packaging.log`|[application]*dnf* and [application]*rpm* package installation messages\n"
 "|`/tmp/syslog`|hardware-related system messages\n"
 msgstr ""
+"|Log file|Перелік\n"
+"|`/tmp/anaconda.log`|загальні [application]*Anaconda* повідомлення\n"
+"|`/tmp/program.log`|всі додаткові програми що запускаються під час "
+"інсталяції\n"
+"|`/tmp/storage.log`|розширена інформація про модуль зберігання\n"
+"|`/tmp/packaging.log`|[application]*dnf* і [application]*rpm* повідомлення "
+"пакетів інсталяції\n"
+"|`/tmp/syslog`|системні повідомлення, пов'язані з обладнанням\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:53
@@ -139,12 +179,15 @@ msgid ""
 "into `/tmp/anaconda-tb-_identifier_pass:attributes[{blank}]`, where "
 "_identifier_ is a random string."
 msgstr ""
+"Якщо встановлення не вдається, повідомлення з цих файлів об’єднуються в `/"
+"tmp/anaconda-tb-_identifier_pass:attributes[{blank}]`, де _identifier_ — "
+"випадковий рядок."
 
 #. type: Title =====
 #: pages/install/Troubleshooting.adoc:55
 #, no-wrap
 msgid "Transferring Log Files from the Installation System"
-msgstr ""
+msgstr "Передача файлів журналу із системи встановлення"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:58
@@ -173,6 +216,9 @@ msgid ""
 "shell prompt. You will be logged into a root account and you will have "
 "access to the installation program's temporary file system."
 msgstr ""
+"У системі, яку ви встановлюєте, натисніть kbd:[Ctrl + Alt + F2], щоб "
+"отримати доступ до підказки оболонки. Ви увійдете в обліковий запис root і "
+"матимете доступ до тимчасової файлової системи програми встановлення."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:65
@@ -183,18 +229,24 @@ msgid ""
 "you just connected. It will look like a set of lines similar to the "
 "following:"
 msgstr ""
+"Підключіть флешку до системи та виконайте команду [command]#dmesg#. Буде "
+"відображено журнал із детальним описом усіх останніх подій. Унизу цього "
+"журналу ви побачите набір повідомлень, викликаних щойно підключеним флеш-"
+"накопичувачем USB. Це буде виглядати як набір рядків, подібних до наступного:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:69
 #, no-wrap
 msgid "`[  170.171135] sd 5:0:0:0: [sdb] Attached SCSI removable disk`\n"
-msgstr ""
+msgstr "`[  170.171135] sd 5:0:0:0: [sdb] Attached SCSI removable disk`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:72
 msgid ""
 "Note the name of the connected device - in the above example, it is `sdb`."
 msgstr ""
+"Зверніть увагу на назву підключеного пристрою - у наведеному вище прикладі "
+"це `sdb`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:74
@@ -203,12 +255,15 @@ msgid ""
 "serve as the mount target for the USB drive. The name of the directory does "
 "not matter; this example uses the name `usb`."
 msgstr ""
+"Перейдіть до каталогу `/mnt` і опинившись у ньому, створіть новий каталог, "
+"який слугуватиме ціллю монтування для USB-накопичувача. Назва каталогу не "
+"має значення; у цьому прикладі використовується назва `usb`."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:78
 #, no-wrap
 msgid "# mkdir usb\n"
-msgstr ""
+msgstr "# mkdir usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:81

@@ -1,25 +1,29 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Kyrylo Husarov <husarovkyrylo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-05-19 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-03 12:19+0000\n"
+"Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f34pagesinstallinstalling_using_anaconda/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/install/Installing_Using_Anaconda.adoc:6
 #, no-wrap
 msgid "Installing Using Anaconda"
-msgstr ""
+msgstr "Встановлення за допомогою Anaconda"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:9
@@ -31,11 +35,19 @@ msgid ""
 "limited in certain aspects (for example, custom partitioning is not possible "
 "in text mode)."
 msgstr ""
+"У цьому розділі наведено покрокові інструкції щодо встановлення {PRODUCT} за "
+"допомогою інсталятора [application]*Anaconda*. Основна частина цього розділу "
+"описує встановлення за допомогою графічного інтерфейсу користувача. "
+"Текстовий режим також доступний для систем без графічного дисплея, але цей "
+"режим обмежений певними аспектами (наприклад, ручне розділення диска "
+"неможливе у текстовому режимі)."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:11
 msgid "If your system does not have the ability to use the graphical mode, you can:"
 msgstr ""
+"Якщо у вашій системі немає можливості використовувати графічний режим, ви "
+"можете:"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:13
@@ -44,6 +56,9 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart]"
 msgstr ""
+"Використовуйте Kickstart для автоматизації встановлення, як описано в xref:"
+"advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Автоматизація встановлення за допомогою Kickstart]"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:15
@@ -54,12 +69,16 @@ msgid ""
 "xref:advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using "
 "VNC]"
 msgstr ""
+"Виконайте графічне встановлення віддалено, підключившись до системи "
+"встановлення з іншого комп’ютера з графічним дисплеєм за допомогою протоколу "
+"_VNC_ (Virtual Network Computing) — див. xref:advanced/VNC_Installations.adoc"
+"#chap-vnc-installations[Встановлення за допомогою VNC]"
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:17
 #, no-wrap
 msgid "Introduction to Anaconda"
-msgstr ""
+msgstr "Знайомство з Anaconda"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:20
@@ -71,6 +90,12 @@ msgid ""
 "partitioning, etc. There is usually only one way to proceed at any given "
 "time."
 msgstr ""
+"Програма встановлення {PRODUCT}, [програма]*Anaconda*, відрізняється від "
+"більшості інших програм встановлення операційної системи завдяки своїй "
+"паралельній природі. Більшість інсталяторів дотримуються фіксованого шляху: "
+"спочатку потрібно вибрати мову, потім налаштувати мережу, потім тип "
+"інсталяції, потім розділення тощо. Зазвичай існує лише один спосіб "
+"продовжити в будь-який момент часу."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:22
@@ -82,6 +107,12 @@ msgid ""
 "example, when installing from a network location, you must configure the "
 "network before you can select which packages to install."
 msgstr ""
+"У [application]*Anaconda* вам потрібно лише спочатку вибрати мову та локаль, "
+"а потім ви опинитесь на центральному екрані, де ви можете налаштувати "
+"більшість аспектів встановлення в будь-якому порядку. Однак це не стосується "
+"всіх частин процесу інсталяції - наприклад, під час інсталяції з мережевого "
+"розташування ви повинні налаштувати мережу, перш ніж ви зможете вибрати, які "
+"пакети інсталювати."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:24
@@ -102,12 +133,15 @@ msgid ""
 "partitioning process is very different from other Linux distributions. These "
 "differences are described in each screen's subsection."
 msgstr ""
+"В певних пунктах з’являються додаткові відмінності; зокрема, власний процес "
+"розділення дуже відрізняється від інших дистрибутивів Linux. Ці відмінності "
+"описано в підрозділах кожного пункту."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:28
 #, no-wrap
 msgid "Consoles and Logging During the Installation"
-msgstr ""
+msgstr "Консолі та журналювання під час інсталяції"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:31
@@ -116,12 +150,15 @@ msgid ""
 "during the installation. This is useful when troubleshooting problems, but "
 "should not be necessary in most cases."
 msgstr ""
+"У наступних розділах описано, як отримати доступ до журналів та "
+"інтерактивної оболонки під час встановлення. Це корисно під час усунення "
+"несправностей, але в більшості випадків це не обов’язково."
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:33
 #, no-wrap
 msgid "Accessing Consoles"
-msgstr ""
+msgstr "Доступ до консолей"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:36
@@ -134,6 +171,14 @@ msgid ""
 "prompt with `root` privileges, unless this prompt was specifically disabled "
 "using a boot option or a Kickstart command."
 msgstr ""
+"Програма встановлення {PRODUCT} використовує термінальний мультиплексор "
+"[application]*tmux* для відображення та керування кількома вікнами, які "
+"можна використовувати на додаток до основного інтерфейсу. Кожне з цих вікон "
+"має різну мету – вони відображають кілька різних журналів, які можна "
+"використовувати для усунення будь-яких проблем під час інсталяції, а одне з "
+"вікон надає інтерактивну оболонки з привілеями `root`, якщо ця оболонка не "
+"була спеціально вимкнена за допомогою параметрів завантаження або команди "
+"Kickstart."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:41
@@ -141,6 +186,8 @@ msgid ""
 "In general, there is no reason to leave the default graphical installation "
 "environment unless you need to diagnose an installation problem."
 msgstr ""
+"Загалом, немає причин залишати стандартне графічне середовище встановлення, "
+"якщо вам не потрібно діагностувати проблему зі встановленням."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:45
@@ -150,6 +197,10 @@ msgid ""
 "Alt + F1]. To go back to the main installation interface which runs in "
 "virtual console 6, press kbd:[Ctrl + Alt + F6]."
 msgstr ""
+"Мультиплексор терміналу працює у віртуальній консолі 1. Щоб переключитися з "
+"фактичного середовища встановлення на [application]*tmux*, натисніть kbd:["
+"Ctrl + Alt + F1]. Щоб повернутися до основного інтерфейсу встановлення, який "
+"працює у віртуальній консолі 6, натисніть kbd:[Ctrl + Alt + F6]."
 
 #. type: delimited block =
 #: ./pages/install/Installing_Using_Anaconda.adoc:50
@@ -158,6 +209,9 @@ msgid ""
 "([application]*tmux*), and switching to console 6 will open a shell prompt "
 "instead of a graphical interface."
 msgstr ""
+"Якщо ви виберете інсталяцію в текстовому режимі, ви почнете з віртуальної "
+"консолі 1 ([application]*tmux*), а перехід на консоль 6 відкриє інтерактивну "
+"оболонку замість графічного інтерфейсу."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:54
@@ -168,6 +222,12 @@ msgid ""
 "press kbd:[Ctrl + b], then release both keys, and press the number key for "
 "the window you want to use."
 msgstr ""
+"Консоль, на якій запущено [application]*tmux*, має 5 доступних вікон; їхній "
+"вміст описано в таблиці нижче разом із сполученнями клавіш, які "
+"використовуються для доступу до них. Зауважте, що комбінації клавіш "
+"складаються з двох частин: спочатку натисніть kbd:[Ctrl + b], потім "
+"відпустіть обидві клавіші та натисніть цифрову клавішу для вікна, яке ви "
+"хочете використати."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:56
@@ -175,12 +235,15 @@ msgid ""
 "You can also use kbd:[Ctrl + b] kbd:[n] and kbd:[Ctrl + b] kbd:[p] to switch "
 "to the next or previous [application]*tmux* window, respectively."
 msgstr ""
+"Ви також можете використовувати kbd:[Ctrl + b] kbd:[n] і kbd:[Ctrl + b] "
+"kbd:[p], щоб перейти до наступного або попереднього вікна [application]*tmux*"
+" відповідно."
 
 #. type: Block title
 #: ./pages/install/Installing_Using_Anaconda.adoc:58
 #, no-wrap
 msgid "Available tmux Windows"
-msgstr ""
+msgstr "Доступні вікна tmux"
 
 #. type: Table
 #: ./pages/install/Installing_Using_Anaconda.adoc:68
@@ -198,6 +261,19 @@ msgid ""
 "|kbd:[Ctrl + b] kbd:[5]|Program log; displays messages from other system "
 "utilities, stored in `/tmp/program.log`.\n"
 msgstr ""
+"|Shortcut|Перелік\n"
+"|kbd:[Ctrl + b] kbd:[1]|Головне вікно інсталяційної програми. Містить "
+"текстові підказки (під час встановлення текстового режиму або якщо ви "
+"використовуєте прямий режим VNC), а також деяку інформацію про налагодження."
+"\n"
+"|kbd:[Ctrl + b] kbd:[2]|Інтерактивна оболонка з привілеями `root`.\n"
+"|kbd:[Ctrl + b] kbd:[3]|Журнал встановлення; відображає повідомлення, що "
+"зберігаються в `/tmp/anaconda.log`.\n"
+"|kbd:[Ctrl + b] kbd:[4]|Журнал зберігання; відображає повідомлення, пов’"
+"язані з пристроями зберігання даних від ядра та системних служб, які "
+"зберігаються в `/tmp/storage.log`.\n"
+"|kbd:[Ctrl + b] kbd:[5]|Журнал програми; відображає повідомлення від інших "
+"системних утиліт, які зберігаються в `/tmp/program.log`.\n"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:71
@@ -211,12 +287,19 @@ msgid ""
 "xref:install/Troubleshooting.adoc#sect-troubleshooting-transferring-logs[Transferring "
 "Log Files from the Installation System]."
 msgstr ""
+"Окрім відображення діагностичної інформації у вікнах [application]*tmux*, "
+"[application]*Anaconda* також генерує декілька файлів журналу, які можна "
+"передати із системи встановлення. Ці файли журналу описані в xref:install/"
+"Troubleshooting.adoc#sect-troubleshooting-log-files[файли журналу, створені "
+"під час інсталяції], а вказівки щодо їх передачі із системи встановлення "
+"доступні в xref:install/Troubleshooting.adoc#sect-troubleshooting-"
+"transferring-logs[Передача файлів журналу із системи встановлення]."
 
 #. type: Title ===
 #: ./pages/install/Installing_Using_Anaconda.adoc:73
 #, no-wrap
 msgid "Saving Screenshots"
-msgstr ""
+msgstr "Збереження скріншотів"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:76
@@ -225,6 +308,9 @@ msgid ""
 "installation to capture the current screen. These screenshots are saved to "
 "`/tmp/anaconda-screenshots`."
 msgstr ""
+"Ви можете натиснути kbd:[Shift + Print Screen] у будь-який час під час "
+"графічної інсталяції, щоб захопити поточний екран. Ці знімки екрана "
+"зберігаються в `/tmp/anaconda-screenshots`."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:78
@@ -235,12 +321,17 @@ msgid ""
 "xref:appendixes/Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep "
 "(optional) - Go Through Every Screen] for details."
 msgstr ""
+"Крім того, ви можете використовувати команду [command]#autostep "
+"--autoscreenshot# у файлі Kickstart для автоматичного запису та збереження "
+"кожного кроку встановлення. Додаткову інформацію див. xref:appendixes/"
+"Kickstart_Syntax_Reference.adoc#sect-kickstart-commands-autostep[autostep "
+"(optional) - Go Through Every Screen]."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:80
 #, no-wrap
 msgid "Installing in Text Mode"
-msgstr ""
+msgstr "Встановлення в текстовому режимі"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:83
@@ -251,6 +342,11 @@ msgid ""
 "before starting a text-based installation. Text mode is limited in the "
 "amount of choices you can make during the installation."
 msgstr ""
+"Встановлення в текстовому режимі пропонує інтерактивний неграфічний "
+"інтерфейс для встановлення {PRODUCT}. Це може бути корисним у системах без "
+"графічних можливостей; однак, ви завжди повинні розглядати доступні "
+"альтернативи перед початком текстової інсталяції. Текстовий режим обмежений "
+"у кількості варіантів, які ви можете вибрати під час інсталяції."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:85
@@ -261,6 +357,12 @@ msgid ""
 "xref:install/Booting_the_Installation.adoc#chap-booting-the-installation[Booting "
 "the Installation] for information about booting and using boot options."
 msgstr ""
+"Щоб розпочати інсталяцію в текстовому режимі, завантажте інсталяцію за "
+"допомогою параметра [option]#inst.text#, який використовується або в "
+"командному рядку завантаження в меню завантаження, або в конфігурації "
+"сервера PXE. Див. xref:install/Booting_the_Installation.adoc#chap-booting-"
+"the-installation[Завантаження інсталяції], щоб отримати інформацію про "
+"завантаження та використання параметрів завантаження."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:87
@@ -275,24 +377,32 @@ msgid ""
 "xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations[Automating "
 "the Installation with Kickstart])."
 msgstr ""
+"Є дві альтернативи текстовому режиму, які можна використовувати, навіть якщо "
+"система встановлення не має графічного дисплея. Ви можете підключитися до "
+"системи інсталяції за допомогою VNC і виконати інтерактивну графічну "
+"інсталяцію віддалено (див. xref:advanced/VNC_Installations.adoc#chap-vnc-"
+"installations[Встановлення за допомогою VNC]), або ви можете створити файл "
+"Kickstart для виконання інсталяції автоматично (див. xref:advanced/"
+"Kickstart_Installations.adoc#chap-kickstart-installations[Автоматизація "
+"встановлення за допомогою Kickstart])."
 
 #. type: Block title
 #: ./pages/install/Installing_Using_Anaconda.adoc:88
 #, no-wrap
 msgid "Text Mode Installation"
-msgstr ""
+msgstr "Інсталяція в текстовому режимі"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Installing_Using_Anaconda.adoc:90
 #, no-wrap
 msgid "The main menu in during a text-based installation."
-msgstr ""
+msgstr "Головне меню під час текстового встановлення."
 
 #. type: Target for macro image
 #: ./pages/install/Installing_Using_Anaconda.adoc:90
 #, no-wrap
 msgid "anaconda/SummaryHub_TextMode.png"
-msgstr ""
+msgstr "anaconda/SummaryHub_TextMode.png"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:93
@@ -305,11 +415,18 @@ msgid ""
 "begin are marked with `[!]`. Available commands are displayed below the list "
 "of available options."
 msgstr ""
+"Інсталяція в текстовому режимі відбувається за схемою, подібною до графічної "
+"інсталяції: немає єдиної фіксованої послідовності; ви можете налаштувати "
+"багато параметрів у будь-якому порядку за допомогою головного екрана "
+"налаштувань. Параметри, які вже налаштовано автоматично або вами, "
+"позначаються як `[x]`, а параметри, які потребують вашої уваги перед "
+"початком встановлення, позначаються `[!]`. Доступні команди відображаються "
+"під списком доступних параметрів."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:95
 msgid "Limits of interactive text mode installation include:"
-msgstr ""
+msgstr "Обмеження інсталяції в інтерактивному текстовому режимі включають:"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:97
@@ -319,6 +436,10 @@ msgid ""
 "these settings will only apply to the installed system, not to the "
 "installation."
 msgstr ""
+"Інсталятор завжди використовуватиме англійську мову та американську "
+"англійську розкладку клавіатури. Ви можете налаштувати мову та параметри "
+"клавіатури, але ці параметри застосовуватимуться лише до встановленої "
+"системи, а не до встановлення."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:99
@@ -334,12 +455,15 @@ msgid ""
 "automatic partitioning settings. You also cannot configure where the boot "
 "loader will be installed."
 msgstr ""
+"Неможливо налаштувати розділення диску по своєму; ви повинні використовувати "
+"один із параметрів автоматичного розділення. Ви також не можете налаштувати "
+"місце встановлення завантажувача."
 
 #. type: Title ==
 #: ./pages/install/Installing_Using_Anaconda.adoc:103
 #, no-wrap
 msgid "Installing in the Graphical User Interface"
-msgstr ""
+msgstr "Встановлення в графічному інтерфейсі"
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:106
@@ -352,6 +476,12 @@ msgid ""
 "mode is used by default when you boot the system from local media (a CD, DVD "
 "or a USB flash drive)."
 msgstr ""
+"Графічний інтерфейс інсталяції є кращим способом інсталяції {PRODUCT} "
+"вручну. Він дає вам повний контроль над усіма доступними параметрами, "
+"включаючи розділення диску та розширену конфігурацію сховища, а також "
+"локалізацію для багатьох мов, окрім англійської, що дозволяє виконувати всю "
+"установку іншою мовою. Графічний режим використовується за замовчуванням, "
+"коли ви завантажуєте систему з локального носія (CD, DVD або флеш-диск)."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:108
@@ -361,6 +491,10 @@ msgid ""
 "screens do not have to be completed in the order in which they are described "
 "here."
 msgstr ""
+"У розділах нижче розглядається всі параметри, доступні у процесі "
+"встановлення. Зауважте, що через паралельну природу інсталятора більшість "
+"параметрів не потрібно налаштовувати в тому порядку, у якому вони тут "
+"описані."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:110
@@ -369,6 +503,9 @@ msgid ""
 "opens the [application]*Yelp* help browser displaying the section of the "
 "_{PRODUCT} Installation Guide_ relevant to the current screen."
 msgstr ""
+"Кожен екран у графічному інтерфейсі містить кнопку «Довідка». Ця кнопка "
+"відкриває довідковий браузер [application]*Yelp*, де відображається розділ "
+"посібника з встановлення _{PRODUCT}_, що стосується поточного екрана."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:112
@@ -381,6 +518,14 @@ msgid ""
 "be used to select or remove a highlighted item from selection and to expand "
 "and collapse drop-down menus."
 msgstr ""
+"Ви також можете керувати графічним інсталятором за допомогою клавіатури. "
+"Використовуйте kbd:[Tab] і kbd:[Shift + Tab] для циклічного переходу між "
+"активними елементами керування (кнопками, прапорцями тощо) на поточному "
+"екрані, клавіші зі стрілками kbd:[Вгору] і kbd:[Вниз] для прокручування "
+"списків та kbd:[Left] і kbd:[Right] для прокручування горизонтальних панелей "
+"інструментів або записів таблиці. kbd:[Пробіл] або kbd:[Enter] можна "
+"використовувати для вибору або видалення виділеного елемента, а також для "
+"розгортання та згортання спадних меню."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:114
@@ -390,6 +535,10 @@ msgid ""
 "the kbd:[Alt] key; to toggle that element, press kbd:[Alt + "
 "_X_pass:attributes[{blank}]], where _X_ is the highlighted letter."
 msgstr ""
+"Крім того, елементи на кожному екрані можна перемикати за допомогою "
+"відповідних ярликів. Ці ярлики виділяються (підкреслюються), коли ви "
+"утримуєте клавішу kbd:[Alt]; щоб перемкнути цей елемент, натисніть kbd:[Alt +"
+" _X_pass:attributes[{blank}]], де _X_ — це виділена літера."
 
 #. type: Plain text
 #: ./pages/install/Installing_Using_Anaconda.adoc:116
@@ -400,3 +549,8 @@ msgid ""
 "(xref:sect-installation-gui-keyboard-layout[Keyboard Layout]), you can "
 "switch between them by clicking the layout indicator."
 msgstr ""
+"Ваша поточна розкладка клавіатури відображається у верхньому правому куті. "
+"За замовчуванням налаштовано лише один варіант; якщо на екрані `Розкладка "
+"клавіатури` (xref:sect-installation-gui-keyboard-layout[Розкладка "
+"клавіатури]) ви налаштовуєте більше ніж одну розкладку, ви можете "
+"переключатися між ними, клацаючи індикатор розкладки."
