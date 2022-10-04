@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:05+0000\n"
-"PO-Revision-Date: 2022-10-03 12:19+0000\n"
+"PO-Revision-Date: 2022-10-04 16:19+0000\n"
 "Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f31pagesinstalltroubleshooting/uk/>\n"
@@ -276,12 +276,16 @@ msgid ""
 "Therefore, do not use the name `sdb` - use the name of the partition you "
 "want to write the log files to. In this example, the name `sdb1` is used."
 msgstr ""
+"Змонтуйте флеш-накопичувач USB у створений каталог. Зауважте, що в більшості "
+"випадків ви хочете монтувати не весь диск, а його розділ. Тому не "
+"використовуйте ім'я `sdb` - використовуйте ім'я розділу, в який потрібно "
+"записувати файли журналів. У цьому прикладі використовується ім'я `sdb1`."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:85
 #, no-wrap
 msgid "# mount /dev/sdb1 /mnt/usb\n"
-msgstr ""
+msgstr "# mount /dev/sdb1 /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:88
@@ -290,29 +294,32 @@ msgid ""
 "accessing it and listing its contents - the list should match what you "
 "expect to be on the drive."
 msgstr ""
+"Тепер ви можете переконатися, що ви підключили правильний пристрій і розділ, "
+"отримавши доступ до нього та перевірити його вміст - список має відповідати "
+"тому, що ви очікуєте побачити на диску."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:92
 #, no-wrap
 msgid "# cd /mnt/usb\n"
-msgstr ""
+msgstr "# cd /mnt/usb\n"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:97
 #, no-wrap
 msgid "# ls\n"
-msgstr ""
+msgstr "# ls\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:100
 msgid "Copy the log files to the mounted device."
-msgstr ""
+msgstr "Скопіюйте файли журналу на змонтований пристрій."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:104
 #, no-wrap
 msgid "# cp /tmp/*log /mnt/usb\n"
-msgstr ""
+msgstr "# cp /tmp/*log /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:107
@@ -321,35 +328,38 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"Відмонтуйте USB-диск. Якщо ви отримуєте повідомлення про помилку про те, що "
+"цільовий пристрій зайнятий, змініть свій робочий каталог на такий, що "
+"знаходиться поза монтуванням (наприклад, `/`)."
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:111
 #, no-wrap
 msgid "# umount /mnt/usb\n"
-msgstr ""
+msgstr "# umount /mnt/usb\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:114
 msgid ""
 "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "Файли журналу встановлення тепер збережені на USB-диску."
 
 #. type: Title ====
 #: pages/install/Troubleshooting.adoc:116
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "Передача файлів журналу через мережу"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "Перейдіть до каталогу `/tmp`, де знаходяться файли журналу:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:125
 #, no-wrap
 msgid "# cd /tmp\n"
-msgstr ""
+msgstr "# cd /tmp\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:128
@@ -357,12 +367,14 @@ msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
 msgstr ""
+"Скопіюйте файли журналу в іншу систему в мережі за допомогою команди "
+"[command]#scp#:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:132
 #, no-wrap
 msgid "# scp *log user@address:path\n"
-msgstr ""
+msgstr "# scp *log user@address:path\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:135
@@ -374,12 +386,17 @@ msgid ""
 "the log files into the `/home/john/logs/` directory on that system, the "
 "command will have the following form:"
 msgstr ""
+"Замініть _user_ на дійсне ім’я користувача в цільовій системі, _address_ на "
+"адресу цільової системи або ім’я хоста, а _path_ на шлях до каталогу, у "
+"якому ви хочете зберегти файли журналу. Наприклад, якщо ви хочете увійти як "
+"`john` в систему з IP-адресою `192.168.0.122` і розмістити файли журналу в "
+"каталозі `/home/john/logs/` цієї системи, команда буде мати такий вигляд:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:139
 #, no-wrap
 msgid "# scp *log john@192.168.0.122:/home/john/logs/\n"
-msgstr ""
+msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:142
@@ -387,6 +404,8 @@ msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
 msgstr ""
+"Під час першого підключення до цільової системи ви можете натрапити на таке "
+"повідомлення:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:149
@@ -396,6 +415,10 @@ msgid ""
 "`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`Не вдається встановити автентичність хосту '192.168.0.122 (192.168.0.122).`"
+"\n"
+"`Відбиток ключа ECDSA — a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Ви впевнені, що хочете продовжити підключення (так/ні)?`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:153
@@ -404,6 +427,9 @@ msgid ""
 "when prompted. The files will start transferring to the specified directory "
 "on the target system."
 msgstr ""
+"Введіть `yes` і натисніть kbd:[Enter], щоб продовжити. Після цього введіть "
+"дійсний пароль, коли буде запропоновано. Почнеться передача файлів у "
+"вказаний каталог цільової системи."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:155
@@ -411,18 +437,20 @@ msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
 msgstr ""
+"Файли журналу інсталяції тепер постійно зберігаються в цільовій системі та "
+"доступні для перегляду."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:157
 #, no-wrap
 msgid "Trouble Beginning the Installation"
-msgstr ""
+msgstr "Проблеми з початком встановлення"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:159
 #, no-wrap
 msgid "Problems with Booting into the Graphical Installation"
-msgstr ""
+msgstr "Проблеми із завантаженням у графічне встановлення"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:162
@@ -432,6 +460,11 @@ msgid ""
 "default settings, it attempts to run in a lower resolution mode. If that "
 "still fails, the installation program attempts to run in text mode."
 msgstr ""
+"Системи з деякими відеокартами мають проблеми із завантаженням графічної "
+"програми встановлення. Якщо програма інсталяції не запускається з "
+"налаштуваннями за замовчуванням, вона намагається запуститися в режимі "
+"нижчої роздільної здатності. Якщо це все одно не вдається, програма "
+"встановлення спробує запуститися в текстовому режимі."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:164
@@ -441,12 +474,16 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-installer[Configuring the "
 "Installation System at the Boot Menu]."
 msgstr ""
+"Існує кілька можливих рішень для проблем з відображенням, більшість із яких "
+"передбачає вказівку власних параметрів завантаження. Щоб отримати додаткові "
+"відомості, перегляньте xref:advanced/Boot_Options.adoc#sect-boot-options-"
+"installer[Налаштування системи встановлення в меню завантаження]."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:165
 #, no-wrap
 msgid "Use the basic graphics mode"
-msgstr ""
+msgstr "Використання базового графічного режиму"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:166
@@ -455,12 +492,15 @@ msgid ""
 "To do this, edit the installation program's boot options and append "
 "[option]#inst.xdriver=vesa# at the end of the command line."
 msgstr ""
+"Ви можете спробувати виконати інсталяцію за допомогою базового графічного "
+"драйвера. Для цього відредагуйте параметри завантаження програми "
+"встановлення та додайте [option]#inst.xdriver=vesa# у кінці командного рядка."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:167
 #, no-wrap
 msgid "Specify the display resolution manually"
-msgstr ""
+msgstr "Вручну вкажіть роздільну здатність екрану"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:168
@@ -471,12 +511,18 @@ msgid ""
 "attributes[{blank}]# option at the boot menu, where _x_ is your display's "
 "resolution (for example, `1024x768`)."
 msgstr ""
+"Якщо програмі встановлення не вдається визначити роздільну здатність екрана, "
+"ви можете скасувати автоматичне визначення та вказати його вручну. Для цього "
+"додайте параметр [option]#inst."
+"resolution=pass:attributes[{blank}]_x_pass:attributes[{blank}]# у меню "
+"завантаження, де _x_ — це роздільна здатність вашого дисплея (наприклад, "
+"`1024x768`)."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:169
 #, no-wrap
 msgid "Use an alternate video driver"
-msgstr ""
+msgstr "Використовуйте альтернативний відеодрайвер"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:170
@@ -487,6 +533,11 @@ msgid ""
 "option, where _x_ is the device driver you want to use (for example, "
 "`nouveau`)."
 msgstr ""
+"Ви також можете спробувати вказати відеодрайвер, ігноруючи автоматичне "
+"визначення програми установки. Щоб вказати драйвер, використовуйте "
+"[option]#inst.xdriver=pass:attributes[{blank}]_x_pass:attributes[{blank}]#, "
+"де _x_ — драйвер пристрою, який ви хочете використовувати (наприклад, "
+"`nouveau`)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:175
@@ -496,12 +547,17 @@ msgid ""
 "component. [application]*Anaconda* should be able to detect your hardware "
 "automatically and use the appropriate driver without your intervention."
 msgstr ""
+"Якщо вибір користувацького відеодрайвера вирішує вашу проблему, ви повинні "
+"повідомити про це як про помилку за посиланням:++https://bugzilla.redhat."
+"com++[] в компоненті anaconda. [application]*Anaconda* повинна автоматично "
+"визначати ваше обладнання та використовувати відповідний драйвер без вашого "
+"втручання."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:178
 #, no-wrap
 msgid "Perform the installation using VNC"
-msgstr ""
+msgstr "Встановлення за допомогою VNC"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:179
@@ -511,12 +567,17 @@ msgid ""
 "Computing_ (VNC) protocol. For details on installing using VNC, see xref:"
 "advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
+"Якщо наведені вище варіанти не спрацюють, ви можете використовувати окрему "
+"систему для доступу до графічної інсталяції через мережу за допомогою "
+"протоколу _Virtual Network Computing_ (VNC). Докладніше про встановлення за "
+"допомогою VNC див. xref:advanced/VNC_Installations.adoc#chap-vnc-"
+"installations[Встановлення за допомогою VNC]."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:180
 #, no-wrap
 msgid "Serial Console Not Detected"
-msgstr ""
+msgstr "Послідовна консоль не виявлена"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:183
@@ -527,6 +588,11 @@ msgid ""
 "detects a graphics card, it will attempt to use it for a display, even if no "
 "display is connected."
 msgstr ""
+"У деяких випадках спроба встановлення текстового режиму за допомогою "
+"послідовної консолі не призведе до виведення на консоль. Це відбувається в "
+"системах із відеокартою, але без підключеного монітора. Якщо "
+"[application]*Anaconda* виявить відеокарту, вона спробує використовувати її "
+"для дисплея, навіть якщо дисплей не підключений."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:185
@@ -536,18 +602,22 @@ msgid ""
 "advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot Options] for more "
 "details."
 msgstr ""
+"Якщо ви хочете виконати текстову інсталяцію на послідовній консолі, "
+"використовуйте параметри завантаження [option]#inst.text# і "
+"[option]#console=#. Див. xref:advanced/Boot_Options.adoc#chap-anaconda-boot-"
+"options[Параметри завантаження] для отримання додаткової інформації."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:187
 #, no-wrap
 msgid "Trouble During the Installation"
-msgstr ""
+msgstr "Проблеми під час встановлення"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:190
 #, no-wrap
 msgid "No Disks Detected"
-msgstr ""
+msgstr "Диски не виявлені"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:193
@@ -556,6 +626,9 @@ msgid ""
 "appear at the bottom: `No disks detected. Please shut down the computer, "
 "connect at least one disk, and restart to complete installation`."
 msgstr ""
+"На екрані `Місце встановлення` може з’явитися таке повідомлення про помилку: "
+"`Дисків не виявлено. Будь ласка, вимкніть комп’ютер, підключіть принаймні "
+"один диск і перезапустіть, щоб завершити інсталяцію`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:195
@@ -564,6 +637,9 @@ msgid ""
 "storage devices to install to. In that case, first make sure that your "
 "system does have at least one storage device attached."
 msgstr ""
+"Повідомлення вказує на те, що [application]*Anaconda* не знайшла жодних "
+"накопичувачів для встановлення. У такому випадку спершу переконайтеся, що до "
+"вашої системи під’єднано принаймні один запам’ятовуючий пристрій."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:197
@@ -572,6 +648,9 @@ msgid ""
 "is properly configured and working. See your controller's documentation for "
 "instructions."
 msgstr ""
+"Якщо ваша система використовує апаратний контролер RAID, переконайтеся, що "
+"контролер правильно налаштований і працює. Інструкції дивіться у "
+"документації контролера."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:199
@@ -581,6 +660,9 @@ msgid ""
 "Unit Numbers_) are being presented to the appropriate HBA (_Host Bus "
 "Adapter_)."
 msgstr ""
+"Якщо ви встановлюєте на один або кілька пристроїв iSCSI, а в системі немає "
+"локального сховища, переконайтеся, що всі необхідні LUN (_Номери логічних "
+"пристроїв_) надаються відповідному HBA (_Адаптеру шини хоста_)."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:201
@@ -591,19 +673,25 @@ msgid ""
 "the storage. In most cases this message appears when you attempt to install "
 "on an SCSI device which has not been recognized by the installation program."
 msgstr ""
+"Якщо ви переконалися, що пристрій під’єднано та правильно налаштовано, а "
+"повідомлення все ще з’являється після того, як ви перезавантажили систему та "
+"почали інсталяцію знову, це означає, що програмі встановлення не вдалося "
+"виявити сховище. У більшості випадків це повідомлення з’являється під час "
+"спроби інсталяції на пристрої SCSI, які не було розпізнано програмою "
+"встановлення."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:203
 #, no-wrap
 msgid "Problems After Installation"
-msgstr ""
+msgstr "Проблеми після встановлення"
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:206
 #: pages/install/Troubleshooting.adoc:210
 #, no-wrap
 msgid "Resetting the Root Password"
-msgstr ""
+msgstr "Перевстановлення пароля Root"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:209
@@ -611,17 +699,21 @@ msgid ""
 "If you lost the root password to the system and you have access to the boot "
 "loader, you can reset the password by editing the GRUB2 configuration."
 msgstr ""
+"Якщо ви втратили пароль адміністратора системи та маєте доступ до "
+"завантажувача, ви можете скинути пароль, відредагувавши конфігурацію GRUB2."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:212
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "Завантажте вашу систему та дочекайтеся появи меню GRUB2."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:214
 msgid ""
 "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
 msgstr ""
+"У меню завантажувача виділіть будь-який запис і натисніть kbd:[e], щоб "
+"відредагувати його."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:216
@@ -629,12 +721,14 @@ msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
 msgstr ""
+"Знайдіть рядок, що починається з `linux`. У кінці цього рядка додайте "
+"наступне:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:220
 #, no-wrap
 msgid "`init=/bin/sh`\n"
-msgstr ""
+msgstr "`init=/bin/sh`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:223
@@ -642,6 +736,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
 msgstr ""
+"Натисніть kbd:[F10] або kbd:[Ctrl + X], щоб завантажити систему за допомогою "
+"параметрів, які ви щойно відредагували."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:225
@@ -649,45 +745,47 @@ msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
 msgstr ""
+"Після завантаження системи ви побачите оболонку без необхідності вводити ім’"
+"я користувача чи пароль:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:229
 #, no-wrap
 msgid "pass:quotes[`sh-4.2#`]\n"
-msgstr ""
+msgstr "pass:quotes[`sh-4.2#`]\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:232
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "Завантажте встановлену політику SELinux:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:236
 #, no-wrap
 msgid "sh-4.2# /usr/sbin/load_policy -i\n"
-msgstr ""
+msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:239
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "Виконайте таку команду, щоб перемонтувати кореневий розділ:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:243
 #, no-wrap
 msgid "sh4.2# mount -o remount,rw /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,rw /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:246
 msgid "Reset the root password:"
-msgstr ""
+msgstr "Перевстановіть пароль користувача root:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:250
 #, no-wrap
 msgid "sh4.2# passwd root\n"
-msgstr ""
+msgstr "sh4.2# passwd root\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:253
@@ -698,17 +796,22 @@ msgid ""
 "match, a message informing you of a successful root password change will "
 "appear."
 msgstr ""
+"Коли буде запропоновано, введіть свій новий пароль root і підтвердьте, "
+"натиснувши клавішу kbd:[Enter]. Введіть пароль вдруге, щоб переконатися, що "
+"ви ввели його правильно, і знову підтвердьте, натиснувши kbd:[Enter]. Якщо "
+"обидва паролі збігаються, з’явиться повідомлення про успішну зміну пароля "
+"root."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:255
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "Перемонтуйте кореневий розділ ще раз, цього разу лише для читання:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:259
 #, no-wrap
 msgid "sh4.2# mount -o remount,ro /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,ro /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:262
@@ -716,12 +819,14 @@ msgid ""
 "Reboot the system. From now on, you will be able to log in as the root user "
 "using the new password set up during this procedure."
 msgstr ""
+"Перезавантажте систему. Відтепер ви зможете входити як користувач root, "
+"використовуючи новий пароль, встановлений під час цієї процедури."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:264
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "Ви не можете завантажитися за допомогою карти RAID?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:267
@@ -729,6 +834,9 @@ msgid ""
 "If you have performed an installation and cannot boot your system properly, "
 "you may need to reinstall and partition your system's storage differently."
 msgstr ""
+"Якщо ви виконали інсталяцію та не можете належним чином завантажити систему, "
+"можливо, вам доведеться перевстановити та розділити системне сховище "
+"по-іншому."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:269
@@ -740,6 +848,12 @@ msgid ""
 "system and move your `/boot` partition and the boot loader outside the RAID "
 "array. The `/boot` partition and the boot loader must be on the same drive."
 msgstr ""
+"Деякі типи BIOS не підтримують завантаження з карт RAID. Після завершення "
+"інсталяції та першого перезавантаження системи може з’явитися лише текстовий "
+"екран із підказкою завантажувача (наприклад, `grub>`) і миготливий курсор. "
+"Якщо це так, ви повинні повторно розділити свою систему та перемістити "
+"розділ `/boot` і завантажувач за межі масиву RAID. Розділ `/boot` і "
+"завантажувач мають бути на одному диску."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:271
@@ -749,12 +863,16 @@ msgid ""
 "partitioning, see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
+"Після внесення цих змін ви зможете завершити встановлення та належним чином "
+"завантажити систему. Щоб отримати додаткові відомості про розділення, "
+"перегляньте xref:install/Installing_Using_Anaconda.adoc#sect-installation-"
+"gui-storage-partitioning[Місце встановлення]."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:273
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "Проблема з послідовністю графічного завантаження"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:276
@@ -767,12 +885,20 @@ msgid ""
 "sequence; to solve this issue, you must disable graphical boot. To do this, "
 "temporarily alter the setting at boot time before changing it permanently."
 msgstr ""
+"Після завершення інсталяції та першого перезавантаження системи можливо, що "
+"система перестане відповідати під час послідовності графічного завантаження, "
+"що потребує скидання. У цьому випадку завантажувач відображається успішно, "
+"але вибір будь-якого запису та спроба завантаження системи призводить до "
+"зупинки. Зазвичай це означає проблему з послідовністю графічного "
+"завантаження; щоб вирішити цю проблему, необхідно вимкнути графічне "
+"завантаження. Для цього тимчасово змініть параметр під час завантаження, "
+"перш ніж змінити його остаточно."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:277
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "Тимчасове вимкнення графічного завантаження"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:279
@@ -782,6 +908,9 @@ msgid ""
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
 "it."
 msgstr ""
+"Запустіть комп'ютер і дочекайтеся появи меню завантажувача. Якщо ви "
+"встановили час очікування завантажувача на 0, утримуйте клавішу kbd:[Esc], "
+"щоб отримати доступ до нього."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:281
@@ -791,6 +920,9 @@ msgid ""
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
 "options."
 msgstr ""
+"Коли з’явиться меню завантажувача, за допомогою клавіш керування курсором "
+"виділіть запис, який потрібно завантажити, і натисніть клавішу kbd:[e], щоб "
+"змінити параметри цього запису."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:283
@@ -800,6 +932,11 @@ msgid ""
 "this line, locate the `rhgb` option and delete it. The option may not be "
 "immediately visible; use the cursor keys to scroll up and down."
 msgstr ""
+"У списку параметрів знайдіть рядок ядра, тобто рядок, що починається з "
+"ключового слова `linux` (або, в деяких випадках, `linux16` чи `linuxefi`). У "
+"цьому рядку знайдіть опцію `rhgb` і видаліть її. Опція може бути не відразу "
+"видимою; використовуйте клавіші керування курсором для прокручування вгору "
+"та вниз."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:285
@@ -808,6 +945,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
 msgstr ""
+"Натисніть kbd:[F10] або kbd:[Ctrl + X], щоб завантажити систему з "
+"відредагованими параметрами."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:287
@@ -817,23 +956,28 @@ msgid ""
 "perform the previous procedure every time the system boots. To permanently "
 "change boot options, do the following."
 msgstr ""
+"Якщо система запущена успішно, ви можете увійти в систему звичайним чином. "
+"Тоді вам потрібно буде назавжди вимкнути графічне завантаження - інакше вам "
+"доведеться виконувати попередню процедуру кожного разу, коли система "
+"завантажується. Щоб остаточно змінити параметри завантаження, виконайте такі "
+"дії."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:288
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "Вимкнення графічного завантаження назавжди"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:290
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "Увійдіть в обліковий запис `root` за допомогою команди [command]#su -#:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:294
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:297
@@ -841,6 +985,8 @@ msgid ""
 "Open the `/etc/default/grub` configuration file using a plain text editor "
 "such as [application]*vim*."
 msgstr ""
+"Відкрийте файл конфігурації `/etc/default/grub` за допомогою текстового "
+"редактора, наприклад [application]*vim*."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:299
@@ -848,35 +994,41 @@ msgid ""
 "Within the `grub` file, locate the line beginning with `GRUB_CMDLINE_LINUX`. "
 "The line should look similar to the following:"
 msgstr ""
+"У файлі `grub` знайдіть рядок, що починається з `GRUB_CMDLINE_LINUX`. Рядок "
+"має виглядати приблизно так:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:303
 #, no-wrap
 msgid "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:307
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "У цьому рядку видаліть опцію `rhgb`."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:309
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "Збережіть відредагований файл конфігурації."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:311
 msgid ""
 "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "Оновіть конфігурацію завантажувача, виконавши таку команду:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:315
 #: pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:318
@@ -887,6 +1039,12 @@ msgid ""
 "`GRUB_CMDLINE_LINUX` line in the `/etc/default/grub` file and refresh the "
 "boot loader configuration again using the [command]#grub2-mkconfig# command."
 msgstr ""
+"Після завершення цієї процедури можна перезавантажити комп’ютер. {PRODUCT} "
+"більше не використовуватиме графічну послідовність завантаження. Якщо ви "
+"бажаєте ввімкнути графічне завантаження, виконайте ту саму процедуру, "
+"додайте параметр `rhgb` до рядка `GRUB_CMDLINE_LINUX` у файлі `/etc/default/"
+"grub` і знову оновіть конфігурацію завантажувача за допомогою команди "
+"[command]#grub2 -mkconfig# ."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:320
@@ -901,7 +1059,7 @@ msgstr ""
 #: pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "Завантаження в графічне середовище"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:325
@@ -912,6 +1070,11 @@ msgid ""
 "using the [command]#startx# command. Note, however, that this is just a one-"
 "time fix and does not change the log in process for future log ins."
 msgstr ""
+"Якщо ви встановили [application]*X Window System* і середовище робочого "
+"столу, наприклад [application]*GNOME*, але не бачите середовища графічного "
+"робочого столу після входу в систему, ви можете запустити його вручну за "
+"допомогою [command]#startx# . Однак зауважте, що це лише одноразове "
+"виправлення й воно не змінює процес входу в систему загалом."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:327
@@ -921,12 +1084,17 @@ msgid ""
 "target`. When you are finished, reboot the computer. You will presented with "
 "a graphical login prompt after the system restarts."
 msgstr ""
+"Щоб налаштувати вашу систему таким чином, щоб ви могли входити в систему на "
+"графічному екрані входу, ви повинні змінити ціль [application]*systemd* за "
+"умовчанням на `graphical.target`. Коли ви закінчите, перезавантажте комп’"
+"ютер. Після перезапуску системи вам буде запропоновано графічне середовище "
+"для входу."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "Встановлення графічного входу за замовчуванням"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:330
@@ -934,6 +1102,8 @@ msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
 msgstr ""
+"Відкрийте оболонку. Якщо ви перебуваєте у своєму обліковому записі "
+"користувача, станьте root, ввівши команду [command]#su -#."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:332
@@ -941,12 +1111,14 @@ msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
 msgstr ""
+"Змініть ціль за замовчуванням на `graphical.target`. Для цього виконайте "
+"таку команду:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:336
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:339
@@ -956,12 +1128,16 @@ msgid ""
 "change and keep using the text-based login prompt, execute the following "
 "command as `root`:"
 msgstr ""
+"Графічний вхід тепер увімкнено за замовчуванням – після наступного "
+"перезавантаження вам буде запропоновано графічне середовище для входу. Якщо "
+"ви хочете скасувати цю зміну та продовжувати використовувати текстовий вхід, "
+"виконайте таку команду з правами `root`:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:343
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:346
