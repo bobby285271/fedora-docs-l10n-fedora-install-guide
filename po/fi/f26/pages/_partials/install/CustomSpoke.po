@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2022-09-29 12:19+0000\n"
+"PO-Revision-Date: 2022-10-09 19:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f26pages_partialsinstallcustomspoke/fi/"
@@ -57,6 +57,11 @@ msgid ""
 "where the volume group will reside) is performed automatically. You can then "
 "adjust the automatic settings as you require."
 msgstr ""
+"[sovellus]*Anaconda* käyttää päinvastaista lähestymistapaa. Ensin luot "
+"kaikki tarvitsemasi erilliset liitoskohdat, ja kaikki niiden luomiseen "
+"tarvittava (taltioryhmän luominen, sen sisällä olevat loogiset taltiot ja "
+"fyysiset taltiot, joissa taltioryhmä sijaitsee) suoritetaan automaattisesti. "
+"Tämän jälkeen voit säätää automaattisia asetuksia tarpeen mukaan."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:17
@@ -72,7 +77,7 @@ msgstr ""
 #: ./pages/_partials/install/CustomSpoke.adoc:22
 #, no-wrap
 msgid "The Manual Partitioning screen. At this point"
-msgstr ""
+msgstr "Manuaalinen osiointi -näyttö. Tässä tilanteessa"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:22
@@ -118,6 +123,15 @@ msgid ""
 "be created as a logical volume, and a new volume group will be created for "
 "it unless one already exists."
 msgstr ""
+"Lisää liitoskohta napsauttamalla +-painiketta. Valitse avautuvasta "
+"valintaikkunasta liitoskohta, kuten `/` tai `/home`, ja haluttu "
+"liitäntäpisteen kapasiteetti (kuten `10 Gt` tai `500 Mt`). Huomaa, että "
+"liitoskohdan määrittäminen on pakollista, mutta sinun ei tarvitse määrittää "
+"kapasiteettia tässä vaiheessa. Tämä on hyödyllistä lisättäessä liitoskohtaa, "
+"jonka haluat tehdä suuremmiksi kuin käytettävissä oleva tila sallii. "
+"Napsauta sitten Lisää liitoskohta lisätäksesi sen luetteloon oletusasetuksia "
+"käyttäen, mikä tarkoittaa, että se luodaan loogisena taltiona ja sille "
+"luodaan uusi taltioryhmä, ellei sellaista ole jo olemassa."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:31
@@ -130,6 +144,13 @@ msgid ""
 "you can now create another mount point, or select a different existing one "
 "and adjust its settings as well."
 msgstr ""
+"Valitse sitten äskettäin luotu kiinnityspiste vasemmalla olevasta "
+"luettelosta. Näytön oikealla puolella näkyy joukko säätimiä, joiden avulla "
+"voit muuttaa sen liitoskohtaa, laitetta, jossa se fyysisesti sijaitsee, sen "
+"kapasiteettia, tiedostojärjestelmää jne. Kun muutat asetuksia, paina "
+"\"Päivitä asetukset\" oikeassa alakulmassa. Tämä tallentaa säädetyt "
+"asetukset; voit nyt luoda toisen kiinnityspisteen tai valita jo olemassa "
+"olevan ja säätää myös sen asetuksia."
 
 #. type: delimited block =
 #: ./pages/_partials/install/CustomSpoke.adoc:36
@@ -145,6 +166,8 @@ msgid ""
 "To remove a mount point, select it in the list and press the `-` button "
 "below."
 msgstr ""
+"Voit poistaa liitoskohdan valitsemalla sen luettelosta ja painamalla alla "
+"olevaa `-` -painiketta."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:42
@@ -166,6 +189,9 @@ msgid ""
 "free space is left on your storage devices and how much total space they "
 "have."
 msgstr ""
+"Olemassa olevien liitoskohtien luettelon alla on kaksi kenttää, jotka "
+"näyttävät kuinka paljon vapaata tilaa tallennuslaitteissasi on jäljellä ja "
+"kuinka suuria laitteet ovat on."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:46
@@ -190,6 +216,13 @@ msgid ""
 "discarding only the changes you have made recently, not all changes to the "
 "storage configuration since you booted the installer."
 msgstr ""
+"Voit painaa Nollaa kaikki -painiketta oikeassa alakulmassa milloin tahansa "
+"palauttaaksesi tallennusasetukset tilaan, jossa ne olivat, kun viimeksi "
+"avasit Manuaalinen osiointi -näytön. Tämä tarkoittaa, että jos muutat "
+"tallennuskokoonpanoa, poistut näytöltä ja palaat sitten takaisin, Reset-"
+"painike palauttaa kokoonpanon takaisin jo muutettuun tilaan ja hylkää vain "
+"äskettäin tekemäsi muutokset, ei kaikkia tallennuskokoonpanoon tehtyjä "
+"muutoksia asennusohjelman käynnistyksen jälkeen."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:50
@@ -215,13 +248,13 @@ msgstr "Skannaa levyt uudelleen"
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "The Rescan Disks dialog"
-msgstr ""
+msgstr "Tarkista levyt uudelleen -valintaikkuna"
 
 #. type: Target for macro image
 #: ./pages/_partials/install/CustomSpoke.adoc:53
 #, no-wrap
 msgid "anaconda/CustomSpoke_RescanDisks.png"
-msgstr ""
+msgstr "anaconda/CustomSpoke_RescanDisks.png"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:56
@@ -235,6 +268,13 @@ msgid ""
 "`/boot` on a Btrfs subvolume, or you did not create a BIOS Boot partition "
 "when your system requires one)."
 msgstr ""
+"Kun olet määrittänyt järjestelmätallennustilan, paina `Valmis` vasemmassa "
+"yläkulmassa tallentaaksesi asetukset ja palataksesi Asennusyhteenveto-"
+"näyttöön. Tässä vaiheessa asennusohjelma tarkistaa, onko "
+"tallennuskokoonpanosi kelvollinen. Jos havaitaan virhe, näytön alareunaan "
+"tulee viesti. Napsauta viestiä avataksesi valintaikkunan, jossa kerrotaan, "
+"millainen virhe on havaittu (esimerkiksi laitoit `/boot` Btrfs-alilevylle "
+"tai et luonut BIOS-käynnistysosiota, kun järjestelmäsi sitä vaatii)."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:58
@@ -245,6 +285,10 @@ msgid ""
 "Summary` anyway, but a storage configuration error will prevent you from "
 "starting the actual installation process."
 msgstr ""
+"Jos tällainen viesti tulee näkyviin, palaa takaisin ja korjaa "
+"asennusohjelman löytämät ongelmat. Et voi muuten jatkaa asennusta. Voit myös "
+"painaa 'Valmis' uudelleen palataksesi 'Asennusyhteenvetoon', mutta "
+"tallennustilan määritysvirhe estää sinua aloittamasta varsinaista asennusta."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke.adoc:60
