@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-21 21:13+0000\n"
-"PO-Revision-Date: 2022-09-29 12:19+0000\n"
+"PO-Revision-Date: 2022-10-11 15:19+0000\n"
 "Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -24,7 +24,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:6
 #, no-wrap
 msgid "Kickstart Syntax Reference"
-msgstr ""
+msgstr "Довідник із синтаксису Kickstart"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:9
@@ -34,6 +34,10 @@ msgid ""
 "Kickstart_Installations.adoc#chap-kickstart-installations[Automating the "
 "Installation with Kickstart]."
 msgstr ""
+"У цьому додатку описано команди та параметри, доступні під час встановлення "
+"з Kickstart. Щоб отримати загальну інформацію про Kickstart, перегляньте "
+"xref:advanced/Kickstart_Installations.adoc#chap-kickstart-installations["
+"Автоматизація встановлення за допомогою Kickstart]."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:16
@@ -43,17 +47,21 @@ msgid ""
 "device node name (such as `sda`), you can instead use any item from `/dev/"
 "disk`. For example, instead of:"
 msgstr ""
+"Назви пристроїв не гарантовано будуть узгодженими під час перезавантаження, "
+"що може ускладнити використання сценаріїв Kickstart. Коли параметр Kickstart "
+"вимагає імені вузла пристрою (наприклад, `sda`), замість цього можна "
+"використовувати будь-який елемент із `/dev/disk`. Наприклад, замість:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:20
 #, no-wrap
 msgid "[command]#part / --fstype=xfs --onpart=sda1#\n"
-msgstr ""
+msgstr "[command]#part / --fstype=xfs --onpart=sda1#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:23
 msgid "You could use an entry similar to one of the following:"
-msgstr ""
+msgstr "Ви можете використовувати строку, подібну до однієї з таких:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:28
@@ -62,6 +70,9 @@ msgid ""
 "part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-part1\n"
 "part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 msgstr ""
+"part / --fstype=xfs --onpart=/dev/disk/by-path/pci-0000:00:05.0-scsi-0:0:0:0-"
+"part1\n"
+"part / --fstype=xfs --onpart=/dev/disk/by-id/ata-ST3160815AS_6RA0C882-part1\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:32
@@ -69,6 +80,8 @@ msgid ""
 "This provides a consistent way to refer to disks that is more meaningful "
 "than just `sda`. This is especially useful in large storage environments."
 msgstr ""
+"Це забезпечує послідовний спосіб посилання на диски, який є більш значущим, "
+"ніж просто `sda`. Це особливо корисно при великих сховищах."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:36
@@ -81,12 +94,19 @@ msgid ""
 "in syntax between Fedora{nbsp}{PREVVER} and {PRODVER}, use the following "
 "command:"
 msgstr ""
+"Хоча загальні принципи інсталяції Kickstart, як правило, залишаються "
+"незмінними, команди та параметри можуть змінюватися між основними випусками. "
+"Ви можете використовувати команду [command]#ksverdiff#, щоб відобразити "
+"відмінності між двома версіями синтаксису Kickstart. Це корисно під час "
+"оновлення наявного файлу Kickstart для використання з новим випуском. Щоб "
+"відобразити список змін у синтаксисі між Fedora{nbsp}{PREVVER} і {PRODVER}, "
+"скористайтеся такою командою:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:40
 #, no-wrap
 msgid "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
-msgstr ""
+msgstr "$ [command]#ksverdiff -f F{PREVVER} -t F{PRODVER}#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:43
@@ -106,6 +126,9 @@ msgid ""
 "Notes_, available at link:++https://docs.fedoraproject.org/++[], for a list "
 "of changes."
 msgstr ""
+"Крім того, ви можете переглянути [citetitle]_Fedora{nbsp}{PRODVER} Примітки "
+"до випуску_, доступні за посиланням:++https://docs.fedoraproject.org/++[], "
+"щоб переглянути список змін."
 
 #. type: delimited block =
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:50
@@ -114,23 +137,26 @@ msgid ""
 "a value must be specified after it. In the example commands, options in "
 "square brackets (`[ ]`) are optional arguments for the command."
 msgstr ""
+"У наступних розділах, якщо після параметра стоїть знак рівності (`=`), після "
+"нього потрібно вказати значення. У прикладі команд параметри в квадратних "
+"дужках (`[ ]`) є необов’язковими аргументами для команди."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:54
 #, no-wrap
 msgid "Installation Methods and Sources"
-msgstr ""
+msgstr "Методи встановлення та джерела"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:57
 msgid "The following commands control the way Fedora will be installed."
-msgstr ""
+msgstr "Наступні команди керують способом встановлення Fedora."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:59
 #, no-wrap
 msgid "device (optional) - Install Extra Device Drivers"
-msgstr ""
+msgstr "пристрій (необов’язково) — Інсталюйте додаткові драйвери пристроїв"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:62
@@ -141,43 +167,48 @@ msgid ""
 "command, which tells the installation program to install extra modules, uses "
 "the following format:"
 msgstr ""
+"У більшості систем PCI програма встановлення автоматично виявляє карти "
+"Ethernet і SCSI. Однак у старих системах і деяких системах PCI Kickstart "
+"вимагає підказки, щоб знайти відповідні пристрої. Команда [command]#device#, "
+"яка вказує програмі інсталяції встановити додаткові модулі, використовує "
+"такий формат:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:66
 #, no-wrap
 msgid "[command]#device _moduleName_ [--opts=]#\n"
-msgstr ""
+msgstr "[command]#device _moduleName_ [--opts=]#\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:69
 msgid ""
 "Replace _moduleName_ with the name of the kernel module which should be "
 "installed."
-msgstr ""
+msgstr "Замініть _moduleName_ на назву модуля ядра, який потрібно встановити."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:70
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:179
 #, no-wrap
 msgid "[option]#--opts=#"
-msgstr ""
+msgstr "[option]#--opts=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:71
 msgid "Options to pass to the installed kernel module. For example:"
-msgstr ""
+msgstr "Параметри для переходу до встановленого модуля ядра. Наприклад:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:74
 #, no-wrap
 msgid "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
-msgstr ""
+msgstr "device i2c_piix4 --opts=\"aic152x=0x340 io=11\"\n"
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:77
 #, no-wrap
 msgid "driverdisk (optional) - Use a Driver Disk"
-msgstr ""
+msgstr "driverdisk (необов'язково) - Використовуйте диск драйверів"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:80
@@ -188,18 +219,24 @@ msgid ""
 "Then, you must use the [command]#driverdisk# command to specify that the "
 "installation program should look for a driver disk and its location."
 msgstr ""
+"Диски з драйверами можна використовувати під час встановлення Kickstart, щоб "
+"надати додаткові драйвери, які не включені за замовчуванням. Необхідно "
+"скопіювати вміст дисків драйверів у кореневий каталог розділу на жорсткому "
+"диску системи. Потім потрібно використати команду [command]#driverdisk#, щоб "
+"вказати, що програма встановлення повинна шукати диск з драйверами та його "
+"розташування."
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:84
 #, no-wrap
 msgid "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
-msgstr ""
+msgstr "[command]#driverdisk _partition_ | --source= | --biospart=#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:86
 #, no-wrap
 msgid "_partition_"
-msgstr ""
+msgstr "_partition_"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:87
@@ -208,18 +245,21 @@ msgid ""
 "with the name of the partition containing the driver disk. Note that the "
 "partition must be specified as a full path. For example:"
 msgstr ""
+"Знайдіть образ диска з драйверами на локальному розділі. Замініть "
+"_partition_ на назву розділу, що містить диск з драйверами. Зауважте, що "
+"розділ має бути вказаний як повний шлях. Наприклад:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:91
 #, no-wrap
 msgid "[command]#driverdisk /dev/sdb1#\n"
-msgstr ""
+msgstr "[command]#driverdisk /dev/sdb1#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:93
 #, no-wrap
 msgid "[option]#--source=#"
-msgstr ""
+msgstr "[option]#--source=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:94
@@ -227,36 +267,45 @@ msgid ""
 "Search for the driver disk in a network location instead of a local "
 "partition. For example:"
 msgstr ""
+"Шукайте диск з драйверами в мережевому розташуванні, а не в локальному "
+"розділі. Наприклад:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:98
 #, no-wrap
 msgid "[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=ftp://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:103
 #, no-wrap
 msgid "[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk --source=http://pass:attributes[{blank}]_path/to/dd."
+"img_pass:attributes[{blank}]#\n"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:108
 #, no-wrap
 msgid "[command]#driverdisk --source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]_path/to/dd.img_pass:attributes[{blank}]#\n"
 msgstr ""
+"[command]#driverdisk "
+"--source=nfs:pass:attributes[{blank}]_hostname_:/pass:attributes[{blank}]"
+"_path/to/dd.img_pass:attributes[{blank}]#\n"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:110
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:141
 #, no-wrap
 msgid "[option]#--biospart=#"
-msgstr ""
+msgstr "[option]#--biospart=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:111
 msgid "BIOS partition containing the driver disk (for example, `82p2`)."
-msgstr ""
+msgstr "Розділ BIOS, що містить диск з драйверами (наприклад, `82p2`)."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:113
@@ -387,7 +436,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:267
 #, no-wrap
 msgid "[option]#--url=#"
-msgstr ""
+msgstr "[option]#--url=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:158
@@ -403,7 +452,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:258
 #, no-wrap
 msgid "[option]#--proxy=#"
-msgstr ""
+msgstr "[option]#--proxy=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:160
@@ -435,14 +484,14 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:265
 #, no-wrap
 msgid "[option]#--noverifyssl#"
-msgstr ""
+msgstr "[option]#--noverifyssl#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:164
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:198
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:252
 msgid "Disable SSL verification when connecting to an `HTTPS` server."
-msgstr ""
+msgstr "Вимкніть перевірку SSL під час підключення до сервера `HTTPS`."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:165
@@ -514,7 +563,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:269
 #, no-wrap
 msgid "[option]#--mirrorlist=#"
-msgstr ""
+msgstr "[option]#--mirrorlist=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:194
@@ -525,7 +574,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:200
 #, no-wrap
 msgid "mediacheck (optional) - Verify Installation Media Integrity"
-msgstr ""
+msgstr "mediacheck (необов'язково) - Перевірка цілісності інсталяційного носія"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:203
@@ -536,12 +585,17 @@ msgid ""
 "mediacheck[Verifying Boot Media]. This command requires that installations "
 "be attended, so it is disabled by default."
 msgstr ""
+"Ця команда змусить програму інсталяції виконати перевірку носія перед "
+"початком інсталяції, подібно до параметра завантаження [option]#rd.live."
+"check# (див. xref:advanced/Boot_Options.adoc#sect-boot-options-mediacheck[ "
+"Перевірка завантажувального носія]. Ця команда вимагає, щоб інсталяції були "
+"присутні, тому її вимкнено за замовчуванням."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:205
 #, no-wrap
 msgid "ostreesetup (optional) - Install from an OSTree"
-msgstr ""
+msgstr "ostreesetup (необов’язково) – Встановлення з OSTree"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:208
@@ -549,61 +603,64 @@ msgid ""
 "Used for OSTree installations. See link:++https://wiki.gnome.org/action/show/"
 "Projects/OSTree++[] for more information about OSTree. Available options are:"
 msgstr ""
+"Використовується для інсталяцій OSTree. Перегляньте посилання:++https://wiki."
+"gnome.org/action/show/Projects/OSTree++[] для отримання додаткової "
+"інформації про OSTree. Доступні опції:"
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:209
 #, no-wrap
 msgid "[option]#--osname=#"
-msgstr ""
+msgstr "[option]#--osname=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:210
 msgid "Management root for OS installation (required)."
-msgstr ""
+msgstr "Управління root для встановлення ОС (обов’язково)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:211
 #, no-wrap
 msgid "[option]#--remote=#"
-msgstr ""
+msgstr "[option]#--remote=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:212
 msgid "Management root for OS installation (optional)."
-msgstr ""
+msgstr "Управління root для встановлення ОС (необов’язково)."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:214
 msgid "Repository URL (required)."
-msgstr ""
+msgstr "URL-адреса репозиторія (обов’язково)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:215
 #, no-wrap
 msgid "[option]#--ref=#"
-msgstr ""
+msgstr "[option]#--ref=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:216
 msgid "Name of branch inside the repository (required)."
-msgstr ""
+msgstr "Назва гілки в репозиторії (обов'язково)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:217
 #, no-wrap
 msgid "[option]#--nogpg#"
-msgstr ""
+msgstr "[option]#--nogpg#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:218
 msgid "Disable GPG key verification (optional)."
-msgstr ""
+msgstr "Вимкнути перевірку ключа GPG (необов’язково)."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:220
 #, no-wrap
 msgid "repo (optional) - Configure Additional Repositories"
-msgstr ""
+msgstr "repo (необов'язково) - Налаштування додаткових репозиторіїв"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:223
@@ -612,6 +669,9 @@ msgid ""
 "sources for package installation. This command can be used multiple times in "
 "a single Kickstart file."
 msgstr ""
+"Налаштовує додаткові репозиторії [application]*DNF*, які можна "
+"використовувати як джерела для встановлення пакетів. Цю команду можна "
+"використовувати кілька разів в одному файлі Kickstart."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:225
@@ -627,6 +687,9 @@ msgid ""
 "Repositories used for installation must be stable. The installation may fail "
 "if a repository is modified before the installation concludes."
 msgstr ""
+"Репозиторії, які використовуються для встановлення, мають бути стабільними. "
+"Встановлення може завершитися помилкою, якщо репозиторії буде змінено до "
+"завершення встановлення."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:233
@@ -635,7 +698,7 @@ msgstr ""
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:1759
 #, no-wrap
 msgid "[option]#--name=#"
-msgstr ""
+msgstr "[option]#--name=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:234
@@ -646,12 +709,17 @@ msgid ""
 "this means that you cannot add repositories with the same names as the "
 "preconfigured ones."
 msgstr ""
+"Ідентифікатор репозиторія. Ця опція обов’язкова. Якщо ім’я сховища "
+"конфліктує з іншим раніше доданим сховищем, воно ігноруватиметься. Оскільки "
+"програма інсталяції використовує список попередньо налаштованих сховищ, це "
+"означає, що ви не можете додавати сховища з тими самими назвами, що й "
+"попередньо налаштовані."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:235
 #, no-wrap
 msgid "[option]#--baseurl=#"
-msgstr ""
+msgstr "[option]#--baseurl=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:236
@@ -660,6 +728,10 @@ msgid ""
 "repo configuration files are *not* supported. You may use one of either this "
 "option or [option]#--mirrorlist#, not both."
 msgstr ""
+"URL-адреса репозиторія. Змінні, які можна використовувати у файлах "
+"конфігурації репо [application]*DNF*, *не* підтримуються. Ви можете "
+"використовувати один із цих параметрів або [параметр]#--mirrorlist#, а не "
+"обидва."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:238
@@ -668,12 +740,16 @@ msgid ""
 "may normally be used in dnf repository configuration files are not supported "
 "here. You may use one of either this option or --baseurl, not both."
 msgstr ""
+"URL-адреса, що вказує на список дзеркал для репозиторія. Змінні, які "
+"зазвичай можна використовувати у файлах конфігурації сховища dnf, тут не "
+"підтримуються. Ви можете використовувати один із цих параметрів або --"
+"baseurl, а не обидва."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:239
 #, no-wrap
 msgid "[option]#--install#"
-msgstr ""
+msgstr "[option]#--install#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:240
@@ -682,12 +758,15 @@ msgid ""
 "after the installation as well. Creates a configuration file for the "
 "repository in `/etc/yum.repos.d/` on the installed system."
 msgstr ""
+"Зробіть репозиторій, налаштований у файлі Kickstart, доступним у системі "
+"після інсталяції. Створює файл конфігурації для репозиторію в `/etc/yum.repos"
+".d/` у встановленій системі."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:241
 #, no-wrap
 msgid "[option]#--cost=#"
-msgstr ""
+msgstr "[option]#--cost=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:242
@@ -697,12 +776,16 @@ msgid ""
 "prioritize which repository will be used before another. Repositories with a "
 "lower cost take priority over repositories with higher cost."
 msgstr ""
+"Ціле значення для призначення вартості цього сховища. Якщо кілька "
+"репозиторіїв надають однакові пакунки, цей номер використовуватиметься для "
+"встановлення пріоритету, який репозиторій використовуватиметься перед іншим. "
+"Репозиторії з нижчою вартістю мають пріоритет над сховищами з вищою вартістю."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:243
 #, no-wrap
 msgid "[option]#--excludepkgs=#"
-msgstr ""
+msgstr "[option]#--excludepkgs=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:244
@@ -713,12 +796,17 @@ msgid ""
 "package names (such as `publican`) and globs (such as `gnome-*`) are "
 "accepted."
 msgstr ""
+"Розділений комами список імен пакетів, які *не можна* отримувати з цього "
+"репозиторію. Це корисно, якщо кілька репозиторіїв надають той самий пакет, і "
+"ви хочете переконатися, що він надходить із певного репозиторію. Приймаються "
+"як повні назви пакетів (наприклад, `publican`), так і глобальні (наприклад, "
+"`gnome-*`)."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:245
 #, no-wrap
 msgid "[option]#--includepkgs=#"
-msgstr ""
+msgstr "[option]#--includepkgs=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:246
@@ -727,6 +815,9 @@ msgid ""
 "this repository. This is useful if multiple repositories provide the same "
 "package and you want to make sure it comes from this repository."
 msgstr ""
+"Розділений комами список імен пакетів, які потрібно отримати з цього "
+"сховища. Це корисно, якщо кілька репозиторіїв надають той самий пакет, і ви "
+"хочете переконатися, що він походить із цього репозиторію."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:248
@@ -735,12 +826,15 @@ msgid ""
 "repository. This setting does not affect any other repositories or "
 "installation sources."
 msgstr ""
+"Укажіть проксі-сервер `HTTP`, `HTTPS` або `FTP` для використання під час "
+"доступу до цього сховища. Цей параметр не впливає на інші сховища чи джерела "
+"встановлення."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:249
 #, no-wrap
 msgid "[option]#--ignoregroups=true#"
-msgstr ""
+msgstr "[option]#--ignoregroups=true#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:250
@@ -750,17 +844,24 @@ msgid ""
 "the package group information when mirroring trees so as to avoid mirroring "
 "large amounts of unnecessary data."
 msgstr ""
+"Цей параметр використовується під час створення дерев встановлення та не "
+"впливає на сам процес встановлення. Він повідомляє інструментам створення не "
+"переглядати інформацію про групу пакетів під час дзеркального відображення "
+"дерев, щоб уникнути віддзеркалення великої кількості непотрібних даних."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:254
 #, no-wrap
 msgid "url (optional) - Install from an installation tree on a remote server via FTP or HTTP."
 msgstr ""
+"url (необов’язково) – Встановлення з дерева встановлення на віддаленому "
+"сервері через FTP або HTTP."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:257
 msgid "Install from an installation tree on a remote server via FTP or HTTP."
 msgstr ""
+"Встановлення з дерева встановлення на віддаленому сервері через FTP або HTTP."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:259
@@ -768,12 +869,14 @@ msgid ""
 "Specify an HTTP/HTTPS/FTP proxy to use while performing the install. The "
 "various parts of the argument act like you would expect. The syntax is:"
 msgstr ""
+"Укажіть HTTP/HTTPS/FTP-проксі для використання під час встановлення. Різні "
+"частини аргументу діють так, як ви очікували. Синтаксис:"
 
 #. type: delimited block -
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:263
 #, no-wrap
 msgid "[protocol://][username[:password]@]host[:port]\n"
-msgstr ""
+msgstr "[protocol://][username[:password]@]host[:port]\n"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:266
@@ -782,6 +885,9 @@ msgid ""
 "well-known CA validate and do not check the server’s host name matches the "
 "certificate’s domain name."
 msgstr ""
+"Для дерева на сервері HTTPS не перевіряйте сертифікат сервера якщо його "
+"підтверджує добре відомий центр сертифікації, і не перевіряйте, щоб ім’я "
+"хоста сервера відповідало імені домену сертифіката."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:268
@@ -789,6 +895,8 @@ msgid ""
 "The URL to install from. Variable substitution is done for `$releasever` and "
 "`$basearch` in the URL."
 msgstr ""
+"URL-адреса для встановлення. Заміна змінної виконується для `$releasever` і "
+"`$basearch` в URL-адресі."
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:270
@@ -796,12 +904,14 @@ msgid ""
 "The mirror URL to install from. Variable substitution is done for `"
 "$releasever` and `$basearch` in the URL."
 msgstr ""
+"URL-адреса дзеркала для встановлення. Заміна змінної виконується для "
+"`$releasever` і `$basearch` в URL-адресі."
 
 #. type: Labeled list
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:271
 #, no-wrap
 msgid "[option]#--metalink=#"
-msgstr ""
+msgstr "[option]#--metalink=#"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:272
@@ -809,12 +919,14 @@ msgid ""
 "The metalink URL to install from. Variable substitution is done for `"
 "$releasever` and `$basearch` in the URL."
 msgstr ""
+"URL-адреса metalink для встановлення. Заміна змінної виконується для "
+"`$releasever` і `$basearch` в URL-адресі."
 
 #. type: Title ==
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:274
 #, no-wrap
 msgid "Storage and Partitioning"
-msgstr ""
+msgstr "Сховище та розбиття на розділи"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:277
@@ -822,12 +934,14 @@ msgid ""
 "Commands in this section are used to determine your system's storage options "
 "and partitioning."
 msgstr ""
+"Команди в цьому розділі використовуються для визначення параметрів "
+"зберігання та розділення розділів вашої системи."
 
 #. type: Title ===
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:279
 #, no-wrap
 msgid "autopart (optional) - Automatic Partitioning"
-msgstr ""
+msgstr "autopart (необов'язково) - Автоматичне розділення на розділи"
 
 #. type: Plain text
 #: pages/appendixes/Kickstart_Syntax_Reference.adoc:282
