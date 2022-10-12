@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-11-04 21:05+0000\n"
-"PO-Revision-Date: 2022-06-05 05:18+0000\n"
+"PO-Revision-Date: 2022-10-12 17:28+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/install/Preparing_for_Installation.adoc:5
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Asennuksen valmistelu"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:8
@@ -35,12 +35,20 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Tässä luvussa kuvataan vaiheet, jotka sinun on suoritettava ennen asennuksen "
+"aloittamista. Jokaista vaihetta ei tarvitse noudattaa tarkasti - jos "
+"esimerkiksi aiot käyttää oletusasennuksen asetuksia, sinun ei tarvitse "
+"kerätä järjestelmätietoja, kuten levylaitteiden tunnisteita/UUID-tunnuksia "
+"tai verkkotietoja, kuten järjestelmän IP-osoitetta. Sinun tulee kuitenkin "
+"käydä tämä luku läpi, koska siinä kuvataan myös käytettävissä olevat "
+"asennusmediatyypit sekä käynnistystietovälineiden ja asennuslähteiden "
+"valmistelu."
 
 #. type: Title ==
 #: ./pages/install/Preparing_for_Installation.adoc:10
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Päivitys vai asennus?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:13
@@ -48,12 +56,14 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Jos sinulla on jo Fedora asennettuna ja haluat päivittää asennuksesi "
+"nykyiseen versioon, voit tehdä sen kahdella tavalla:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:14
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr "Automaattinen päivitys käyttämällä [sovellusta]*dnf system upgrade*"
+msgstr "Automaattinen päivitys käyttämällä [application]*dnf system upgrade*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:15
@@ -64,10 +74,10 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
-"Suositeltu tapa päivittää järjestelmä on automaattinen päivitys [sovellus]*"
-"dnf system upgrade* -apuohjelman avulla. Lisätietoja automaattisen "
-"päivityksen suorittamisesta on linkissä:++https://fedoraproject.org/wiki/"
-"DNF_system_upgrade++[Fedora Wiki DNF -järjestelmän päivitys]."
+"Suositeltu tapa päivittää järjestelmä on automaattinen päivitys "
+"[application]*dnf system upgrade* -apuohjelman avulla. Lisätietoja "
+"automaattisen päivityksen suorittamisesta on link:++https://fedoraproject."
+"org/wiki/DNF_system_upgrade++[Fedora Wiki DNF -järjestelmän päivitys]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:16
@@ -88,9 +98,9 @@ msgid ""
 "System Upgrade or Reinstallation]."
 msgstr ""
 "Voit päivittää Fedoran uusimpaan versioon manuaalisesti sen sijaan, että "
-"luottaisit [sovellus]*dnf system upgrade* komentoon. Tämä edellyttää "
-"asentimen käynnistämistä ikään kuin suorittaisit puhtaan asennuksen, annat "
-"sen havaita olemassa olevan Fedora-järjestelmäsi ja ylikirjoitetaan root-"
+"luottaisit [application]*dnf system upgrade* komentoon. Tämä edellyttää "
+"asennusohjelman käynnistämistä ikään kuin suorittaisit puhtaan asennuksen, "
+"annat sen havaita olemassa olevan Fedora-järjestelmäsi ja ylikirjoittaa root-"
 "osio samalla kun säilytetään tiedot muissa osioissa ja taltioissa. Samaa "
 "prosessia voidaan käyttää myös järjestelmän uudelleenasentamiseen "
 "tarvittaessa. Lisätietoja on kohdassa xref:sect-upgrading-fedora-manual-"
@@ -109,7 +119,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:24
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Käynnistysmedian valmistelu"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:27
@@ -117,6 +127,9 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora-levykuvat ovat \"hybridi-ISO:ita\", ja niitä voidaan käyttää "
+"asennusmedian luomiseen sekä optisilla että USB-levyillä sekä BIOS- että "
+"UEFI-järjestelmien käynnistystä varten."
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:28
@@ -135,6 +148,12 @@ msgid ""
 "strongly encouraged, although other USB media creation software can work as "
 "well."
 msgstr ""
+"[application]*Fedora Media Writer*ia on parannettu merkittävästi, ja se on "
+"nyt virallinen, testattu ja tuettu tapa tehdä käynnistysmedia. [application]*"
+"Fedora Media Writer* tukee Linuxia, macOS:ää ja Windowsia. Se on helppo tapa "
+"tehdä käynnistettävä USB-media Fedoran (tai muiden käyttöjärjestelmien) "
+"asentamista varten. [application]*Fedora Media Writer*in käyttö on erittäin "
+"suositeltavaa, vaikka myös muut USB-median luontiohjelmistot voivat toimia."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:34
@@ -145,6 +164,11 @@ msgid ""
 "the button below _Custom image_. This offers a selection of various Fedora "
 "Spins, such as Xfce or Mate."
 msgstr ""
+"Jotkut [application]*Fedora Media Writerin* uusista lisäyksistä ovat, että "
+"Fedora Workstation ja Server ovat helposti ja nopeasti käytettävissä "
+"päänäytön valinnasta. Lisää vaihtoehtoja on saatavilla, jos valitset "
+"_Muokattu kuva_ -kohdan alta. Tämä tarjoaa valikoiman erilaisia Fedora-"
+"muunnoksia, kuten Xfce tai Mate."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:36
@@ -155,6 +179,11 @@ msgid ""
 "USB drive by extracting files from the image, and writing "
 "[application]*syslinux* bootloader to the device."
 msgstr ""
+"Historiallisesti yleiset USB-luontityökalut, kuten [application]*Unetbootin*"
+", ovat suosittu tapa luoda USB-asennusohjelmia optisille tietovälineille "
+"tarkoitetuista ISO:ista. Yleensä ne luovat tiedostojärjestelmän USB-asemalle "
+"purkamalla tiedostot levykuvasta ja kirjoittamalla [application]*syslinux* "
+"käynnistyksenlataajan laitteeseen."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:38
@@ -164,6 +193,11 @@ msgid ""
 "SecureBoot enabled as well as BIOS systems, and thus they do not produce "
 "consistent results with Fedora images, especially on UEFI systems."
 msgstr ""
+"Nämä menetelmät kiertävät Fedora-levykuviin sisäänrakennetun "
+"käynnistyslataimen kokoonpanon, joka on valmiiksi osioitu ja suunniteltu "
+"käynnistymään UEFI-järjestelmissä, joissa SecureBoot on käytössä, sekä BIOS-"
+"järjestelmissä, eivätkä ne näin ollen tuota johdonmukaisia tuloksia Fedora-"
+"levykuvien kanssa, etenkään UEFI-järjestelmissä. ."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:40
@@ -171,6 +205,8 @@ msgid ""
 "The best results are produced by utilities that use a direct write method "
 "and do not modify the Fedora image."
 msgstr ""
+"Parhaan tuloksen saat käyttämällä apuohjelmia, jotka käyttävät suoraa "
+"kirjoitusmenetelmää eivätkä muuta Fedora-levykuvaa."
 
 #. type: delimited block =
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -181,18 +217,23 @@ msgid ""
 "data on the USB stick. Double check that you have selected correct device to "
 "write the image to!"
 msgstr ""
+"Mieti aina kahdesti ennen kuin kirjoitat levykuvan laitteeseen. Tässä "
+"artikkelissa kuvatut median luomismenetelmät ovat tuhoisia. Kaikki USB-"
+"tikulla olevat tiedot poistetaan prosessin aikana, joten varmista, että "
+"sinulla on varmuuskopio USB-tikulla olevista tiedoista. Tarkista vielä, että "
+"olet valinnut oikean laitteen levykuvan kirjoittamiseen!"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:47
 #, no-wrap
 msgid "Installing and running Fedora Media Writer"
-msgstr ""
+msgstr "Fedora Media Writerin asentaminen ja käyttäminen"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:49
 #, no-wrap
 msgid "On Fedora"
-msgstr ""
+msgstr "Fedorassa"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:53
@@ -200,28 +241,31 @@ msgid ""
 "On Fedora 25 or later, [application]*Fedora Media Writer* is available in "
 "the default repository. You can use `dnf` to install the package."
 msgstr ""
+"Fedora 25:ssä tai uudemmassa [application]*Fedora Media Writer* on "
+"saatavilla oletusasennuslähteestä. Voit asentaa paketin käyttämällä komentoa "
+"\"dnf\"."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:55
 msgid "To install the [application]*Fedora Media Writer* using:"
-msgstr ""
+msgstr "Asenna [application]*Fedora Media Writer* käyttämällä:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:59
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:62
 msgid "Run the [application]*Fedora Media Writer*:"
-msgstr ""
+msgstr "Käynnistä [application]*Fedora Media Writer*:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:66
 #, no-wrap
 msgid "$ [command]#mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:69
@@ -229,12 +273,14 @@ msgid ""
 "or in [application]*Gnome 3* select *Activities* and then click on "
 "[application]*Fedora Media Writer*."
 msgstr ""
+"tai valitse [application]*Gnome 3*:ssa *Activities* ja napsauta sitten "
+"[application]*Fedora Media Writer*."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:71
 #, no-wrap
 msgid "On other Linux distributions"
-msgstr ""
+msgstr "Muissa Linux-jakeluissa"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:75
@@ -244,6 +290,10 @@ msgid ""
 "obtained from the official Flatpak repository "
 "https://flathub.org/apps/details/org.fedoraproject.MediaWriter[Flathub.org]."
 msgstr ""
+"Paras tapa asentaa [application]*Fedora Media Writer* erilaisiin Linux-"
+"jakeluihin on käyttää valmiiksi rakennettua _Flatpak_-pakettia. Paketin voi "
+"ladata virallisesta Flatpak-asennuslähteestä https://flathub.org/apps/"
+"details/org.fedoraproject.MediaWriter[Flathub.org]."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:77
@@ -251,23 +301,25 @@ msgid ""
 "To setup *Flatpak* on your Linux system, follow the guidelines on the "
 "https://flatpak.org/setup/[Flatpak documentation] page."
 msgstr ""
+"Asenna *Flatpak* Linux-järjestelmässäsi noudattamalla https://flatpak.org/"
+"setup/[Flatpak-dokumentaatio] -sivun ohjeita."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:79
 msgid "Run the application:"
-msgstr ""
+msgstr "Käynnistä sovellus:"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:83
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:85
 #, no-wrap
 msgid "On Windows"
-msgstr ""
+msgstr "Windowsissa"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:88
@@ -277,6 +329,9 @@ msgid ""
 "detects the running system and offers you the correct installation file for "
 "your Windows version."
 msgstr ""
+"Lataa uusin Windows Installer -tiedosto link:++https://getfedora."
+"org++[GetFedora.org]. Palvelin tunnistaa automaattisesti käynnissä olevan "
+"järjestelmän ja tarjoaa oikean asennustiedoston Windows-versiollesi."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:90
@@ -285,11 +340,14 @@ msgid ""
 "through the set-up wizard. The Wizard lets you customize the software's "
 "installation if you choose to."
 msgstr ""
+"Käynnistä asennus kaksoisnapsauttamalla asennusohjelmaa ja jatka sitten "
+"ohjatun asennustoiminnon kautta. Ohjatun toiminnon avulla voit halutessasi "
+"mukauttaa ohjelmiston asennusta."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:92
 msgid "Run the application by clicking on a launcher."
-msgstr ""
+msgstr "Suorita sovellus napsauttamalla käynnistysohjelmaa."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:94
@@ -298,12 +356,16 @@ msgid ""
 "placed in the _All apps_ menu under _F_. In Windows 10, you can just type "
 "[application]*Fedora Media Writer* in the search box on the task bar."
 msgstr ""
+"Windows 8:ssa ja 10:ssä [application]*Fedora Media Writer* -"
+"käynnistysohjelma sijoitetaan _Kaikki sovellukset_ -valikkoon kohdassa _F_. "
+"Windows 10:ssä voit kirjoittaa [application]*Fedora Media Writer* "
+"tehtäväpalkin hakukenttään."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:96
 #, no-wrap
 msgid "On macOS"
-msgstr ""
+msgstr "macOS:ssä"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:99
@@ -313,6 +375,10 @@ msgid ""
 "automatically detects the running system and offers a correct package for "
 "your macOS."
 msgstr ""
+"Lataa uusin Macintosh-levykuva (paketissa on .dmg-pääte) "
+"link:++https://getfedora.org++[GetFedora.org]. Palvelin tunnistaa "
+"automaattisesti käynnissä olevan järjestelmän ja tarjoaa oikean paketin "
+"macOS:llesi."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:101
@@ -320,6 +386,8 @@ msgid ""
 "Open the `.dmg` file, and press and hold the kbd:[Ctrl] key while clicking "
 "on the [application]*Fedora Media Writer* application."
 msgstr ""
+"Avaa `.dmg`-tiedosto ja pidä kbd:[Ctrl]-näppäintä painettuna samalla, kun "
+"napsautat [application]*Fedora Media Writer* -sovellusta."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:103

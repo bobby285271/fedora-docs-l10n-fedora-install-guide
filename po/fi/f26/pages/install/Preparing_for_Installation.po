@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: 2022-06-01 18:18+0000\n"
+"PO-Revision-Date: 2022-10-12 17:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title ===
 #: ./pages/install/Preparing_for_Installation.adoc:6
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Asennuksen valmistelu"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:9
@@ -35,12 +35,20 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"Tässä luvussa kuvataan vaiheet, jotka sinun on suoritettava ennen asennuksen "
+"aloittamista. Jokaista vaihetta ei tarvitse noudattaa tarkasti - jos "
+"esimerkiksi aiot käyttää oletusasennuksen asetuksia, sinun ei tarvitse "
+"kerätä järjestelmätietoja, kuten levylaitteiden tunnisteita/UUID-tunnuksia "
+"tai verkkotietoja, kuten järjestelmän IP-osoitetta. Sinun tulee kuitenkin "
+"käydä tämä luku läpi, koska siinä kuvataan myös käytettävissä olevat "
+"asennusmediatyypit sekä käynnistystietovälineiden ja asennuslähteiden "
+"valmistelu."
 
 #. type: Title ====
 #: ./pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Päivitys vai asennus?"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:14
@@ -48,12 +56,14 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Jos sinulla on jo Fedora asennettuna ja haluat päivittää asennuksesi "
+"nykyiseen versioon, voit tehdä sen kahdella tavalla:"
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:15
 #, no-wrap
 msgid "Automatic upgrade using [application]*dnf system upgrade*"
-msgstr "Automaattinen päivitys käyttämällä [sovellusta]*dnf system upgrade*"
+msgstr "Automaattinen päivitys käyttämällä [application]*dnf system upgrade*"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:16
@@ -64,10 +74,10 @@ msgid ""
 "link:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki dnf "
 "system upgrade]."
 msgstr ""
-"Suositeltu tapa päivittää järjestelmä on automaattinen päivitys [sovellus]*"
-"dnf system upgrade* -apuohjelman avulla. Lisätietoja automaattisen "
-"päivityksen suorittamisesta on linkissä:++https://fedoraproject.org/wiki/"
-"DNF_system_upgrade++[Fedora Wiki DNF -järjestelmän päivitys]."
+"Suositeltu tapa päivittää järjestelmä on automaattinen päivitys "
+"[application]*dnf system upgrade* -apuohjelman avulla. Lisätietoja "
+"automaattisen päivityksen suorittamisesta on link:++https://fedoraproject."
+"org/wiki/DNF_system_upgrade++[Fedora Wiki DNF -järjestelmän päivitys]."
 
 #. type: Labeled list
 #: ./pages/install/Preparing_for_Installation.adoc:17
@@ -318,7 +328,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Käynnistysmedian valmistelu"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:125
@@ -326,6 +336,9 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Fedora-levykuvat ovat \"hybridi-ISO:ita\", ja niitä voidaan käyttää "
+"asennusmedian luomiseen sekä optisilla että USB-levyillä sekä BIOS- että "
+"UEFI-järjestelmien käynnistystä varten."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:126
@@ -581,7 +594,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:195
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:198
@@ -592,7 +605,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:202
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:205

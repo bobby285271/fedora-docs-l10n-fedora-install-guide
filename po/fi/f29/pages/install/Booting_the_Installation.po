@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-05 21:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-12 17:19+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/"
+"f29pagesinstallbooting_the_installation/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/install/Booting_the_Installation.adoc:6
 #, no-wrap
 msgid "Booting the Installation"
-msgstr ""
+msgstr "Asennuksen käynnistäminen"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:9
@@ -28,12 +31,15 @@ msgid ""
 "network server as well as how to navigate the boot menu and use custom "
 "options."
 msgstr ""
+"Tässä luvussa selitetään kuinka asennin käynnistetään paikalliselta medialta "
+"tai verkkopalvelimelta sekä kuinka navigoidaan käynnistysvalikossa ja "
+"käytetään mukautettuja vaihtoehtoja."
 
 #. type: Title ==
 #: ./pages/install/Booting_the_Installation.adoc:11
 #, no-wrap
 msgid "Preparing to Boot"
-msgstr ""
+msgstr "Valmistelee käynnistystä"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:14
@@ -45,6 +51,12 @@ msgid ""
 "described below are generic and the exact steps will vary somewhat depending "
 "on your system - particularly on your motherboard manufacturer."
 msgstr ""
+"Kun olet tehnyt käynnistettävän USB-muistitikun tai CD- tai DVD-levyn "
+"kohdassa xref:install/Preparing_for_Installation.adoc#sect-preparing-boot-"
+"media[Käynnistyslevyn valmistelu] kuvattujen vaiheiden avulla, olet valmis "
+"käynnistämään asennuksen. Huomaa, että alla kuvatut vaiheet ovat yleisiä ja "
+"tarkat vaiheet vaihtelevat jonkin verran järjestelmästäsi - erityisesti "
+"emolevyn valmistajasta riippuen."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:19
@@ -63,6 +75,8 @@ msgid ""
 "{PRODUCT} does not support UEFI booting for 32-bit x86 systems. Only BIOS "
 "boot is supported on these systems."
 msgstr ""
+"{PRODUCT} ei tue UEFI-käynnistystä 32-bittisille x86-järjestelmille. Näissä "
+"järjestelmissä tuetaan vain BIOS-käynnistystä."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:28
@@ -73,17 +87,22 @@ msgid ""
 "specifications will not be available. The UEFI specifications are available "
 "from link:++https://www.uefi.org/specs/agreement/++[]."
 msgstr ""
+"Huomaa myös, että {PRODUCT} tukee täysin vain UEFI-määrityksen versiota 2.2. "
+"Laitteisto, joka tukee versiota 2.3 tai uudempaa, käynnistyy ja toimii "
+"normaalisti, mutta näiden myöhempien teknisten tietojen määrittelemät "
+"lisätoiminnot eivät ole käytettävissä. UEFI-spesifikaatiot ovat saatavilla "
+"sivulta link:++https://www.uefi.org/specs/agreement/++[]."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:32
 msgid "To boot the {PRODUCT} installer, follow these steps:"
-msgstr ""
+msgstr "Käynnistä {PRODUCT} asennusohjelma seuraavasti:"
 
 #. type: Block title
 #: ./pages/install/Booting_the_Installation.adoc:33
 #, no-wrap
 msgid "Booting the {PRODUCT} Installer"
-msgstr ""
+msgstr "Käynnistetään {PRODUCT} -asennusohjelmaa"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:35
@@ -92,6 +111,9 @@ msgid ""
 "computer's optical disc drive. Alternatively, if you plan on booting from a "
 "network boot (PXE) server, make sure that the network cable is plugged in."
 msgstr ""
+"Liitä käynnistys-USB-muistitikku tai aseta käynnistys-CD- tai DVD-levy "
+"tietokoneesi optiseen levyasemaan. Vaihtoehtoisesti, jos aiot käynnistää "
+"verkkokäynnistyspalvelimelta (PXE), varmista, että verkkokaapeli on kytketty."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:37
@@ -99,12 +121,15 @@ msgid ""
 "Restart the system. Once it starts rebooting, it should display a prompt "
 "similar to the following (usually at the bottom of the screen):"
 msgstr ""
+"Käynnistä järjestelmä uudelleen. Kun se käynnistyy uudelleen, sen pitäisi "
+"näyttää seuraavanlainen kehote (yleensä näytön alareunassa):"
 
 #. type: delimited block -
 #: ./pages/install/Booting_the_Installation.adoc:41
 #, no-wrap
 msgid "Press F12 to select boot device, or Del to enter SETUP\n"
 msgstr ""
+"Paina F12 valitaksesi käynnistyslaitteen tai Del siirtyäksesi ASETUKSIIN\n"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:44
@@ -116,6 +141,12 @@ msgid ""
 "there is usually a very short time window provided to access the menu; once "
 "it passes, you need to restart the system and try again."
 msgstr ""
+"Noudata näytön ohjeita päästäksesi käynnistysvalikkoon. Jos ohjeita ei "
+"näytetä (jotkut järjestelmät näyttävät vain graafisen logon käynnistyksen "
+"alkuvaiheessa), yritä painaa useita kertoja kbd:[F12], kbd:[F11], kbd:[F10] "
+"tai kbd:[Del]. Nämä ovat yleisimmin käytettyjä avaimia. Huomaa, että "
+"valikkoon pääsemiseen on yleensä hyvin lyhyt aika; kun se menee ohi, sinun "
+"on käynnistettävä järjestelmä uudelleen ja yritettävä uudelleen."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:49
@@ -125,6 +156,11 @@ msgid ""
 "order so that your boot media (CD, DVD, USB or network) has higher priority "
 "than internal hard drives."
 msgstr ""
+"Jotkut vanhemmat järjestelmät eivät ehkä tue käynnistyslaitteen valintaa "
+"käynnistyksen yhteydessä. Siirry siinä tapauksessa järjestelmän ASETUKSIIN "
+"(BIOS) ja muuta oletuskäynnistysjärjestystä niin, että käynnistysmedialla ("
+"CD, DVD, USB tai verkko) on korkeampi prioriteetti kuin sisäisillä "
+"kiintolevyillä."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:51
@@ -132,6 +168,8 @@ msgid ""
 "On Mac hardware, hold down the kbd:[Option] key to enter the boot media "
 "selection menu."
 msgstr ""
+"Mac-laitteistossa paina kbd:[Option]-näppäintä päästäksesi käynnistysmedian "
+"valintavalikkoon."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:55
@@ -141,6 +179,10 @@ msgid ""
 "optical disc to install {PRODUCT}, or `Boot from PXE` if you want to boot "
 "from a network location."
 msgstr ""
+"Kun järjestelmän käynnistysvalikko avautuu, valitse merkintä, kuten \"Boot "
+"from USB\", jos loit käynnistettävän USB-aseman, \"Boot from CD/DVD\", jos "
+"käytät optista levyä {PRODUCT} -asennukseen, tai \"Boot from PXE\". ` jos "
+"haluat käynnistää verkkosijainnista."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:57
@@ -148,12 +190,14 @@ msgid ""
 "Wait until the boot menu is displayed. The boot menu is described further in "
 "this chapter."
 msgstr ""
+"Odota, kunnes käynnistysvalikko tulee näkyviin. Käynnistysvalikkoa kuvataan "
+"tarkemmin tässä luvussa."
 
 #. type: Title ==
 #: ./pages/install/Booting_the_Installation.adoc:59
 #, no-wrap
 msgid "The Boot Menu"
-msgstr ""
+msgstr "Käynnistysvalikko"
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:62
@@ -163,6 +207,10 @@ msgid ""
 "this menu, you can either start the actual installation, or you can use the "
 "boot media to rescue an existing system."
 msgstr ""
+"Useimmissa tapauksissa, kun käynnistät {PRODUCT} -asennusohjelman valmiilta "
+"käynnistysmedialta tai palvelimelta, käynnistysvalikko tulee ensimmäisenä "
+"näkyviin. Tästä valikosta voit joko aloittaa varsinaisen asennuksen tai voit "
+"korjata olemassa olevan järjestelmän käynnistysmedian avulla."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:64
@@ -172,6 +220,11 @@ msgid ""
 "loader, and UEFI systems use [application]*GRUB2*. However, both of the "
 "menus described below function very similarly from a user's point of view."
 msgstr ""
+"Käynnistysvalikon ulkoasu ja toiminta vaihtelee jonkin verran järjestelmän "
+"laiteohjelmiston mukaan - BIOS-järjestelmät käyttävät [sovellus]*SYSLINUX* "
+"käynnistyslatainta ja UEFI-järjestelmät [sovellus]*GRUB2*:ta. Molemmat alla "
+"kuvatut valikot toimivat kuitenkin hyvin samalla tavalla käyttäjän "
+"näkökulmasta."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:66
@@ -196,6 +249,15 @@ msgid ""
 "menu and boot normally from your system's hard drive via the `Boot from "
 "local drive` option."
 msgstr ""
+"Viimeinen merkintä luettelossa on `Vianetsintä`pass:attributes[{blank}]; "
+"tämä on alivalikko. Tämän merkinnän valitseminen ja kbd:[Enter]-näppäimen "
+"painaminen näyttää uudet valinnat, joissa voit asentaa perusgrafiikkatilassa "
+"(hyödyllinen, jos haluat tehdä manuaalisen graafisen asennuksen, mutta "
+"järjestelmässäsi on ongelmia graafisen oletusasennusohjelman kanssa) , "
+"korjata olemassa olevaa järjestelmä tai etsiä järjestelmän muistimoduuleiden "
+"virheitä (vain BIOS-järjestelmissä). Vianmääritysvalikon avulla voit myös "
+"poistua käynnistysvalikosta ja käynnistää normaalisti järjestelmän "
+"kiintolevyltä \"Boot from local drive\" -vaihtoehdon kautta."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:70
@@ -206,6 +268,11 @@ msgid ""
 "systems, or kbd:[e] on UEFI systems. The key to use is also displayed at the "
 "bottom of the screen."
 msgstr ""
+"Jokainen luettelon valikkokohta on ennalta määritetty sarja "
+"käynnistysasetuksia, ja näitä asetuksia voidaan mukauttaa muuttamaan joitain "
+"asennusohjelman toiminnan näkökohtia. Voit muokata oletusarvoisia "
+"käynnistysasetuksia painamalla kbd:[Tab] BIOS-järjestelmissä tai kbd:[e] "
+"UEFI-järjestelmissä. Käytettävä avain näkyy myös näytön alareunassa."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:75
@@ -215,6 +282,10 @@ msgid ""
 "configured on the line which starts with the `linux` (or `linux16` or "
 "`linuxefi`) keyword. Do not modify any other lines in the configuration."
 msgstr ""
+"Käynnistysasetusten muokkaaminen kohdassa [application]*GRUB2* (UEFI-"
+"järjestelmissä) näyttää valitun merkinnän koko kokoonpanon. Todelliset "
+"käynnistysasetukset määritetään riville, joka alkaa avainsanalla \"linux\" ("
+"tai \"linux16\" tai \"linuxefi\"). Älä muuta kokoonpanon muita rivejä."
 
 #. type: delimited block =
 #: ./pages/install/Booting_the_Installation.adoc:77
@@ -222,6 +293,8 @@ msgid ""
 "On systems with BIOS firmware, only the actual boot options are displayed "
 "when you press kbd:[Tab]."
 msgstr ""
+"Järjestelmässä, jossa on BIOS-laiteohjelmisto, vain mahdolliset "
+"käynnistysvaihtoehdot näytetään, kun painat kbd:[Tab]."
 
 #. type: Plain text
 #: ./pages/install/Booting_the_Installation.adoc:81
@@ -231,18 +304,23 @@ msgid ""
 "or kbd:[Ctrl + X] on UEFI to boot the installer using your customized "
 "options."
 msgstr ""
+"Kun muokkaat oletusasetusjoukkoa, voit muuttaa olemassa olevia vaihtoehtoja "
+"sekä lisätä uusia. Kun olet valmis, paina kbd:[Enter] BIOSissa tai kbd:[Ctrl "
+"+ X] UEFI:ssä käynnistääksesi asennusohjelman mukautetuilla asetuksillasi."
 
 #. type: Block title
 #: ./pages/install/Booting_the_Installation.adoc:82
 #, no-wrap
 msgid "Editing boot options on a system with BIOS firmware"
 msgstr ""
+"Käynnistysasetusten muokkaaminen järjestelmässä, jossa on BIOS-"
+"laiteohjelmisto"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Booting_the_Installation.adoc:84
 #, no-wrap
 msgid "The boot menu."
-msgstr ""
+msgstr "Käynnistysvalikko."
 
 #. type: Target for macro image
 #: ./pages/install/Booting_the_Installation.adoc:84
@@ -257,3 +335,6 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-available[Available Boot "
 "Options]."
 msgstr ""
+"Kaikki käytettävissä olevat [sovellus]*Anaconda* käynnistysasetukset on "
+"kuvattu julkaisussa xref:advanced/Boot_Options.adoc#sect-boot-options-"
+"available[Käynnistysasetukset]."

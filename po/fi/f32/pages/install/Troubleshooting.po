@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:04+0000\n"
-"PO-Revision-Date: 2022-09-19 19:19+0000\n"
+"PO-Revision-Date: 2022-10-12 17:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f32pagesinstalltroubleshooting/fi/>\n"
@@ -336,34 +336,36 @@ msgid ""
 "target is busy, change your working directory to outside the mount (for "
 "example, `/`)."
 msgstr ""
+"Irrota USB-muistitikku. Jos saat virheilmoituksen, jonka mukaan kohde on "
+"varattu, vaihda työhakemistosi liitoskohdan ulkopuolelle (esimerkiksi `/`)."
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:111
 #, no-wrap
 msgid "# umount /mnt/usb\n"
-msgstr ""
+msgstr "# umount /mnt/usb\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:114
 msgid "The log files from the installation are now saved on the USB flash drive."
-msgstr ""
+msgstr "Asennuksen lokitiedostot on nyt tallennettu USB-muistitikulle."
 
 #. type: Title ====
 #: ./pages/install/Troubleshooting.adoc:116
 #, no-wrap
 msgid "Transferring Log Files Over the Network"
-msgstr ""
+msgstr "Lokitiedostojen siirtäminen verkon kautta"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:121
 msgid "Switch to the `/tmp` directory where the log files are located:"
-msgstr ""
+msgstr "Vaihda hakemistoon \"/tmp\", jossa lokitiedostot sijaitsevat:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:125
 #, no-wrap
 msgid "# cd /tmp\n"
-msgstr ""
+msgstr "# cd /tmp\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:128
@@ -371,12 +373,13 @@ msgid ""
 "Copy the log files onto another system on the network using the "
 "[command]#scp# command:"
 msgstr ""
+"Kopioi lokitiedostot toiseen koneeseen verkossa komennolla [command]#scp#:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:132
 #, no-wrap
 msgid "# scp *log user@address:path\n"
-msgstr ""
+msgstr "# scp *log user@address:path\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:135
@@ -388,12 +391,18 @@ msgid ""
 "the log files into the `/home/john/logs/` directory on that system, the "
 "command will have the following form:"
 msgstr ""
+"Korvaa _user_ kohdejärjestelmän kelvollisella käyttäjänimellä, _osoite_ "
+"kohdejärjestelmän osoitteella tai isäntänimellä ja _polku_ polulla "
+"hakemistoon, johon haluat tallentaa lokitiedostot. Jos esimerkiksi haluat "
+"kirjautua sisään käyttäjänä \"john\" järjestelmään, jonka IP-osoite on \"192."
+"168.0.122\", ja sijoittaa lokitiedostot kyseisen koneen hakemistoon \"/home/"
+"john/logs/\", komento on:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:139
 #, no-wrap
 msgid "# scp *log john@192.168.0.122:/home/john/logs/\n"
-msgstr ""
+msgstr "# scp *log john@192.168.0.122:/home/john/logs/\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:142
@@ -401,6 +410,8 @@ msgid ""
 "When connecting to the target system for the first time, you may encounter a "
 "message similar to the following:"
 msgstr ""
+"Kun muodostat yhteyden kohdekoneeseen ensimmäistä kertaa, saatat nähdä "
+"seuraavankaltaisen viestin:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:149
@@ -412,6 +423,10 @@ msgid ""
 "a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
 "`Are you sure you want to continue connecting (yes/no)?`\n"
 msgstr ""
+"`The authenticity of host '192.168.0.122 (192.168.0.122)' can't be "
+"established.`\n"
+"`ECDSA key fingerprint is a4:60:76:eb:b2:d0:aa:23:af:3d:59:5c:de:bb:c4:42.`\n"
+"`Are you sure you want to continue connecting (yes/no)?`\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:153
@@ -420,6 +435,9 @@ msgid ""
 "when prompted. The files will start transferring to the specified directory "
 "on the target system."
 msgstr ""
+"Kirjoita \"yes\" ja paina kbd:[Enter] jatkaaksesi. Anna sitten kelvollinen "
+"salasana pyydettäessä. Tiedostot alkavat siirtyä määritettyyn hakemistoon "
+"kohdejärjestelmässä."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:155
@@ -427,12 +445,14 @@ msgid ""
 "The log files from the installation are now permanently saved on the target "
 "system and available for review."
 msgstr ""
+"Asennuksen lokitiedostot tallennetaan nyt pysyvästi kohdejärjestelmään ja "
+"ovat luettavissa."
 
 #. type: Title ==
 #: ./pages/install/Troubleshooting.adoc:157
 #, no-wrap
 msgid "Trouble Beginning the Installation"
-msgstr ""
+msgstr "Ongelma asennuksen aloittamisessa"
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:159
