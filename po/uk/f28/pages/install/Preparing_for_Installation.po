@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:07+0000\n"
-"PO-Revision-Date: 2022-10-03 12:19+0000\n"
+"PO-Revision-Date: 2022-10-12 17:19+0000\n"
 "Last-Translator: Kyrylo Husarov <husarovkyrylo@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -24,7 +24,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:6
 #, no-wrap
 msgid "Preparing for Installation"
-msgstr ""
+msgstr "Підготовка до встановлення"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:9
@@ -37,12 +37,20 @@ msgid ""
 "chapter, as it also describes the available types of installation media and "
 "how to prepare boot media and installation sources."
 msgstr ""
+"У цьому розділі описано кроки, які необхідно виконати перед початком "
+"встановлення. Не потрібно суворо дотримуватися кожного кроку – наприклад, "
+"якщо ви плануєте використовувати параметри інсталяції за замовчуванням, вам "
+"не потрібно збирати системну інформацію, таку як мітки дискових пристроїв/"
+"UUID, або інформацію про мережу, таку як IP-адреса системи. Однак вам все "
+"одно слід ознайомитися з цією главою, оскільки в ній також описуються "
+"доступні типи інсталяційних носіїв і те, як підготувати завантажувальний "
+"носій і джерела інсталяції."
 
 #. type: Title ==
 #: pages/install/Preparing_for_Installation.adoc:11
 #, no-wrap
 msgid "Upgrade or Install?"
-msgstr ""
+msgstr "Оновлення чи Встановлення?"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:14
@@ -50,6 +58,8 @@ msgid ""
 "If you already have Fedora installed and want to upgrade your installation "
 "to the current version, there are two basic ways to do so:"
 msgstr ""
+"Якщо у вас уже встановлено Fedora і ви хочете оновити інсталяцію до поточної "
+"версії, є два основні способи зробити це:"
 
 #. type: Labeled list
 #: pages/install/Preparing_for_Installation.adoc:15
@@ -65,6 +75,11 @@ msgid ""
 "automatic upgrade, see link:++https://fedoraproject.org/wiki/"
 "DNF_system_upgrade++[Fedora Wiki dnf system upgrade]."
 msgstr ""
+"Найкращим способом оновлення системи є автоматичне оновлення за допомогою "
+"утиліти [application]*dnf system upgrade*. Щоб отримати інформацію щодо "
+"виконання автоматичного оновлення, перегляньте "
+"посилання:++https://fedoraproject.org/wiki/DNF_system_upgrade++[Fedora Wiki "
+"Оновлення системи за допомогою dnf]."
 
 #. type: Labeled list
 #: pages/install/Preparing_for_Installation.adoc:17
@@ -84,6 +99,14 @@ msgid ""
 "Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-manual-"
 "reinstall[Manual System Upgrade or Reinstallation]."
 msgstr ""
+"Ви можете оновити Fedora до останньої версії вручну замість того, щоб "
+"покладатися на [application]*dnf system upgrade*. Це передбачає завантаження "
+"інсталятора так, ніби ви виконуєте чисте встановлення, дозволяючи йому "
+"виявити наявну систему Fedora та перезаписуючи кореневий розділ, зберігаючи "
+"дані на інших розділах і томах. Цей же процес також можна використати для "
+"перевстановлення системи, якщо потрібно. Для додаткової інформації дивіться "
+"xref:advanced/Upgrading_Your_Current_System.adoc#sect-upgrading-fedora-"
+"manual-reinstall[Оновлення або перевстановлення системи вручну]."
 
 #. type: delimited block =
 #: pages/install/Preparing_for_Installation.adoc:22
@@ -98,7 +121,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr ""
+msgstr "Завантаження завантажувальних і інсталяційних образів"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:28
@@ -119,6 +142,9 @@ msgid ""
 "available media types in xref:Downloading_Fedora.adoc#chap-downloading-"
 "fedora[Downloading Fedora]."
 msgstr ""
+"Дізнайтеся більше про робочу станцію Fedora Workstation, Fedora Cloud, "
+"Fedora Server та доступні типи носіїв у xref:Downloading_Fedora.adoc#chap-"
+"downloading-fedora[Завантаження Fedora]."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:32
@@ -131,7 +157,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:34
 #, no-wrap
 msgid "Verifying the Downloaded Image"
-msgstr ""
+msgstr "Перевірка завантаженого образу"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:37
@@ -143,6 +169,12 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
+"Оскільки помилки передавання чи інші проблеми можуть пошкодити завантажений "
+"образ Fedora, важливо перевірити цілісність файлу. Після створення образу "
+"над файлом виконується операція, яка створює значення, яке називається «"
+"контрольною сумою» за допомогою складного математичного алгоритму. Операція "
+"є достатньо складною, тому *будь-яка зміна* вихідного файлу спричинить іншу "
+"контрольну суму."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:39
@@ -159,7 +191,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:43
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
-msgstr ""
+msgstr "Перевірка контрольних сум у системах Windows"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:45
@@ -173,12 +205,12 @@ msgstr ""
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:47
 msgid "Open a [command]#powershell# session."
-msgstr ""
+msgstr "Відкрийте сеанс [command]#powershell#."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:49
 msgid "Change to the directory containing the downloaded files."
-msgstr ""
+msgstr "Перейдіть до каталогу, що містить завантажені файли."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:54
@@ -187,12 +219,14 @@ msgid ""
 "> cd $HOME\\Downloads\\\n"
 "> ls\n"
 msgstr ""
+"> cd $HOME\\Downloads\\\n"
+"> ls\n"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:56
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
-msgstr ""
+msgstr "Директорія: C:\\Users\\Pete\\Downloads\n"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:61
@@ -203,11 +237,17 @@ msgid ""
 "-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-CHECKSUM\n"
 "-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
+"Mode                LastWriteTime         Length  Name\n"
+"----                -------------         ------  ----\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
+"CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
+".iso\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:65
 msgid "Load the resources required to calculate the checksum."
-msgstr ""
+msgstr "Завантажте ресурси, необхідні для обчислення контрольної суми."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:71
@@ -218,22 +258,31 @@ msgid ""
 "> $sha256 = New-Object -TypeName System.Security.Cryptography.sha256CryptoServiceProvider\n"
 "> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern $image) -split \" \")[0].ToLower()\n"
 msgstr ""
+"> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
+"> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography."
+"sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
+"$image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:74
 msgid "Calculate the downloaded image's checksum. This will take a while!"
-msgstr ""
+msgstr "Обчисліть контрольну суму завантаженого образу. Це займе деякий час!"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:77
 #, no-wrap
 msgid "> $download_checksum = [System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -replace '-', ''\n"
 msgstr ""
+"> $download_checksum = [System.BitConverter]::ToString($sha256."
+"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
+"replace '-', ''\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:80
 msgid "Compare the calculated checksum to the expected checksum."
-msgstr ""
+msgstr "Порівняйте розраховану контрольну суму з очікуваною контрольною сумою."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:90
@@ -247,6 +296,13 @@ msgid ""
 "echo \"Checksum test failed.\"\n"
 "}\n"
 msgstr ""
+"> echo \"Download Checksum: $download_checksum\"\n"
+"> echo \"Expected Checksum: $expected_checksum\"\n"
+"> if ( $download_checksum -eq \"$expected_checksum\" ) {\n"
+"echo \"Checksum test passed!\"\n"
+"} else {\n"
+"echo \"Checksum test failed.\"\n"
+"}\n"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:93
@@ -261,28 +317,30 @@ msgid ""
 "Open a terminal window, and navigate to the directory with the downloaded "
 "files."
 msgstr ""
+"Відкрийте вікно терміналу та перейдіть до каталогу із завантаженими файлами."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:103
 #, no-wrap
 msgid "$ [command]#cd ~/Downloads#\n"
-msgstr ""
+msgstr "$ [command]#cd ~/Downloads#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:106
 msgid "Use the appropriate utility to verify the image checksum."
 msgstr ""
+"Використовуйте відповідну утиліту для перевірки контрольної суми образу."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:108
 msgid "For Linux:"
-msgstr ""
+msgstr "Для Linux:"
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:112
 #, no-wrap
 msgid "$ sha256sum -c *CHECKSUM\n"
-msgstr ""
+msgstr "$ sha256sum -c *CHECKSUM\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:115
@@ -299,7 +357,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:122
 #, no-wrap
 msgid "Preparing Boot Media"
-msgstr ""
+msgstr "Підготовка завантажувального носія"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:125
@@ -307,6 +365,9 @@ msgid ""
 "Fedora images are `Hybrid ISOs` and can be used to create installation media "
 "with both optical and USB disks, for booting on both BIOS and UEFI systems."
 msgstr ""
+"Образи Fedora є «гібридними ISO», і їх можна використовувати для створення "
+"інсталяційних носіїв як з оптичними, так і з USB-дисками, для завантаження "
+"систем як з BIOS, так і з UEFI."
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:126
@@ -410,6 +471,8 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:245
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
 msgstr ""
+"Виберіть випуск Fedora, для якого ви хочете створити завантажувальний "
+"USB-накопичувач."
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:161
@@ -417,7 +480,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:247
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
-msgstr ""
+msgstr "Головний екран Fedora Media Writer: виберіть свою версію Fedora"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Preparing_for_Installation.adoc:163
@@ -425,7 +488,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
-msgstr ""
+msgstr "Зображення головного екрана Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:163
@@ -433,7 +496,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
-msgstr ""
+msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:166
@@ -454,7 +517,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:254
 #, no-wrap
 msgid "Fedora Media Writer Distro Information"
-msgstr ""
+msgstr "Інформація про дистрибутив у Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Preparing_for_Installation.adoc:170
@@ -462,7 +525,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:256
 #, no-wrap
 msgid "Image of Fedora Media Writer Distro Information Screen"
-msgstr ""
+msgstr "Зображення екрана інформації про дистрибутив у Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:170
@@ -470,7 +533,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:256
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
-msgstr ""
+msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:173
@@ -488,7 +551,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:261
 #, no-wrap
 msgid "Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Автоматичне завантаження у Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Preparing_for_Installation.adoc:177
@@ -496,7 +559,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:263
 #, no-wrap
 msgid "Image of Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Зображення автоматичного завантаження у Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:177
@@ -504,7 +567,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:263
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
-msgstr ""
+msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:180
@@ -528,7 +591,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:270
 #, no-wrap
 msgid "Fedora Media Writer Write to USB Device"
-msgstr ""
+msgstr "Запис на пристрій USB у Fedora Media Writer"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: pages/install/Preparing_for_Installation.adoc:186
@@ -536,7 +599,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:272
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
-msgstr ""
+msgstr "Зображення червоної кнопки запису на пристрій у Fedora Media Writer"
 
 #. type: Target for macro image
 #: pages/install/Preparing_for_Installation.adoc:186
@@ -544,7 +607,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:272
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:188
@@ -562,7 +625,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:194
 #, no-wrap
 msgid "$ [command]#sudo dnf install mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo dnf install mediawriter#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:197
@@ -573,7 +636,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:201
 #, no-wrap
 msgid "$ [command]#sudo mediawriter#\n"
-msgstr ""
+msgstr "$ [command]#sudo mediawriter#\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:204
@@ -621,7 +684,7 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:274
 #, no-wrap
 msgid "Creating USB media with [application]*GNOME Disks*"
-msgstr ""
+msgstr "Створення USB-носія за допомогою [application]*GNOME Disks*"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:276
@@ -629,11 +692,13 @@ msgid ""
 "On a system with [application]*GNOME*, or with the [package]*gnome-disk-"
 "utility* package installed, open `Disks` using the system menu."
 msgstr ""
+"У системі з [application]*GNOME* або з встановленим пакетом [package]*gnome-"
+"disk-utility* відкрийте «Диски» за допомогою системного меню."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:278
 msgid "Click your USB device in the left column."
-msgstr ""
+msgstr "Натисніть на свій USB-пристрій у лівій колонці."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:280
@@ -641,6 +706,8 @@ msgid ""
 "Click the menu icon in the upper right corner of the window, and choose the "
 "`Restore Disk Image` option."
 msgstr ""
+"Натисніть піктограму меню у верхньому правому куті вікна та виберіть опцію «"
+"Відновити образ диска»."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:282
@@ -649,17 +716,20 @@ msgid ""
 "minutes, it will report the process is complete and your installation media "
 "will be ready to use."
 msgstr ""
+"Перейдіть до файлу образу та натисніть «Почати відновлення». Через кілька "
+"хвилин він повідомить, що процес завершено, і інсталяційний носій буде "
+"готовий до використання."
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:283
 #, no-wrap
 msgid "Creating USB Media on the Linux command line"
-msgstr ""
+msgstr "Створення USB-носія в командному рядку Linux"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:285
 msgid "Open a terminal window and insert the usb drive."
-msgstr ""
+msgstr "Відкрийте вікно терміналу та вставте USB-накопичувач."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:287
@@ -667,6 +737,8 @@ msgid ""
 "Find the `device node` assigned to the drive. In the example below, the "
 "drive is given `sdd`."
 msgstr ""
+"Знайдіть «вузол пристрою», призначений диску. У наведеному нижче прикладі "
+"диску присвоєно `sdd`."
 
 #. type: delimited block -
 #: pages/install/Preparing_for_Installation.adoc:301
@@ -684,6 +756,19 @@ msgid ""
 "[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
 "[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 msgstr ""
+"$ [command]#dmesg|tail#\n"
+"[288954.686557] usb 2-1.8: New USB device strings: Mfr=0, Product=1, "
+"SerialNumber=2\n"
+"[288954.686559] usb 2-1.8: Product: USB Storage\n"
+"[288954.686562] usb 2-1.8: SerialNumber: 000000009225\n"
+"[288954.712590] usb-storage 2-1.8:1.0: USB Mass Storage device detected\n"
+"[288954.712687] scsi host6: usb-storage 2-1.8:1.0\n"
+"[288954.712809] usbcore: registered new interface driver usb-storage\n"
+"[288954.716682] usbcore: registered new interface driver uas\n"
+"[288955.717140] scsi 6:0:0:0: Direct-Access     Generic  STORAGE DEVICE   "
+"9228 PQ: 0 ANSI: 0\n"
+"[288955.717745] sd 6:0:0:0: Attached scsi generic sg4 type 0\n"
+"[288961.876382] sd 6:0:0:0: *sdd* Attached SCSI removable disk\n"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:304
@@ -696,13 +781,13 @@ msgstr ""
 #: pages/install/Preparing_for_Installation.adoc:308
 #, no-wrap
 msgid "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
-msgstr ""
+msgstr "# dd if=/path/to/Fedora-Live-Security-x86_64-21.iso of=/dev/sdd\n"
 
 #. type: Block title
 #: pages/install/Preparing_for_Installation.adoc:310
 #, no-wrap
 msgid "Creating a Boot CD or DVD"
-msgstr ""
+msgstr "Створення завантажувального CD або DVD"
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:312
@@ -720,11 +805,17 @@ msgid ""
 "image will vary depending on what disc burning software you use. This "
 "procedure only offers a general overview."
 msgstr ""
+"Точні кроки, які потрібно виконати, щоб записати завантажувальний компакт-"
+"диск або DVD-диск із образу ISO, відрізнятимуться залежно від програмного "
+"забезпечення для запису дисків, яке ви використовуєте. Ця процедура пропонує "
+"лише загальний огляд."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:321
 msgid "Insert a blank CD or DVD into your system's CD or DVD burner."
 msgstr ""
+"Вставте чистий компакт-диск або DVD-диск у системний пристрій для запису "
+"компакт- чи DVD-дисків."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:323
@@ -736,6 +827,12 @@ msgid ""
 "[application]*Brasero*, this option is `Burn image` in the main menu on the "
 "left side of the window."
 msgstr ""
+"Відкрийте програмне забезпечення для запису вашої системи, наприклад, "
+"[application]*Brasero* в системах {PRODUCT} із робочим середовищем "
+"[application]*GNOME* або [application]*Nero* у системах Windows. У головному "
+"меню програми знайдіть опцію, яка дозволяє записати образ ISO на диск. "
+"Наприклад, у [application]*Brasero* ця опція — «Записати образ» в головному "
+"меню в лівій частині вікна."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:325
@@ -743,8 +840,11 @@ msgid ""
 "When prompted, select the ISO image of {PRODUCT} to be burned, and the CD or "
 "DVD burner with a blank disc inside (if you have more than one drive)."
 msgstr ""
+"Коли з’явиться відповідний запит, виберіть ISO-образ {PRODUCT}, який "
+"потрібно записати, і пристрій для запису компакт- чи DVD-дисків із порожнім "
+"диском усередині (якщо у вас більше ніж один дисковод)."
 
 #. type: Plain text
 #: pages/install/Preparing_for_Installation.adoc:326
 msgid "Confirm your selection, and wait for the disc to be burned."
-msgstr ""
+msgstr "Підтвердьте свій вибір і зачекайте, поки диск буде записаний."
