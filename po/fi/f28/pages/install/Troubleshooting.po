@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:17+0000\n"
-"PO-Revision-Date: 2022-10-12 17:19+0000\n"
+"PO-Revision-Date: 2022-10-15 19:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f28pagesinstalltroubleshooting/fi/>\n"
@@ -456,7 +456,7 @@ msgstr "Ongelma asennuksen aloittamisessa"
 #: pages/install/Troubleshooting.adoc:159
 #, no-wrap
 msgid "Problems with Booting into the Graphical Installation"
-msgstr ""
+msgstr "Ongelmia graafisen asennuksen käynnistämisessä"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:162
@@ -466,6 +466,10 @@ msgid ""
 "default settings, it attempts to run in a lower resolution mode. If that "
 "still fails, the installation program attempts to run in text mode."
 msgstr ""
+"Joillakin näytönohjaimilla varustetuissa järjestelmissä on ongelmia "
+"graafisen asennusohjelman käynnistämisessä. Jos asennusohjelma ei toimi "
+"oletusasetuksilla, se yrittää käynnistyä alhaisemman resoluution tilassa. "
+"Jos sekin epäonnistuu, asennusohjelma yrittää käynnistyä tekstitilassa."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:164
@@ -475,12 +479,16 @@ msgid ""
 "advanced/Boot_Options.adoc#sect-boot-options-installer[Configuring the "
 "Installation System at the Boot Menu]."
 msgstr ""
+"Näyttöongelmiin on useita mahdollisia ratkaisuja, joista useimpiin liittyy "
+"mukautettujen käynnistysasetusten määrittäminen. Lisätietoja on kohdassa "
+"xref:advanced/Boot_Options.adoc#sect-boot-options-installer["
+"Asennusjärjestelmän määrittäminen käynnistysvalikossa]."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:165
 #, no-wrap
 msgid "Use the basic graphics mode"
-msgstr ""
+msgstr "Käytä perusgrafiikkatilaa"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:166
@@ -489,12 +497,15 @@ msgid ""
 "To do this, edit the installation program's boot options and append "
 "[option]#inst.xdriver=vesa# at the end of the command line."
 msgstr ""
+"Voit yrittää suorittaa asennuksen perusnäytönohjaimen avulla. Voit tehdä "
+"tämän muokkaamalla asennusohjelman käynnistysasetuksia ja liittämällä "
+"[option]#inst.xdriver=vesa# komentorivin loppuun."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:167
 #, no-wrap
 msgid "Specify the display resolution manually"
-msgstr ""
+msgstr "Määritä näytön tarkkuus manuaalisesti"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:168
@@ -505,12 +516,17 @@ msgid ""
 "attributes[{blank}]# option at the boot menu, where _x_ is your display's "
 "resolution (for example, `1024x768`)."
 msgstr ""
+"Jos asennusohjelma ei tunnista näytön tarkkuutta, voit ohittaa automaattisen "
+"tunnistuksen ja määrittää sen manuaalisesti. Voit tehdä tämän lisäämällä "
+"käynnistysvalikon [option]#inst."
+"resolution=pass:attributes[{blank}]_x_pass:attributes[{blank}]#-vaihtoehdon, "
+"jossa _x_ on näytön resoluutio (esimerkiksi `1024x768` )."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:169
 #, no-wrap
 msgid "Use an alternate video driver"
-msgstr ""
+msgstr "Käytä vaihtoehtoista videoohjainta"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:170
@@ -521,6 +537,11 @@ msgid ""
 "option, where _x_ is the device driver you want to use (for example, "
 "`nouveau`)."
 msgstr ""
+"Voit myös yrittää määrittää mukautetun videoohjaimen ohittaen "
+"asennusohjelman automaattisen tunnistuksen. Määritä ohjain käyttämällä "
+"[option]#inst.xdriver=pass:attributes[{blank}]_x_pass:attributes[{blank}]# "
+"vaihtoehtoa, jossa _x_ on laiteohjain, jota haluat käyttää (esimerkiksi `"
+"nouveau `)."
 
 #. type: delimited block =
 #: pages/install/Troubleshooting.adoc:175
@@ -530,12 +551,17 @@ msgid ""
 "component. [application]*Anaconda* should be able to detect your hardware "
 "automatically and use the appropriate driver without your intervention."
 msgstr ""
+"Jos mukautetun videoohjaimen määrittäminen ratkaisee ongelmasi, sinun tulee "
+"ilmoittaa siitä virheenä osoitteessa link:++https://bugzilla.redhat.com++[] "
+"Anaconda-komponentin alla. [application]*Anacondan* pitäisi pystyä "
+"tunnistamaan laitteistosi automaattisesti ja käyttämään asianmukaista "
+"ohjainta ilman sinun apuasi."
 
 #. type: Labeled list
 #: pages/install/Troubleshooting.adoc:178
 #, no-wrap
 msgid "Perform the installation using VNC"
-msgstr ""
+msgstr "Suorita asennus VNC:llä"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:179
@@ -545,12 +571,17 @@ msgid ""
 "Computing_ (VNC) protocol. For details on installing using VNC, see xref:"
 "advanced/VNC_Installations.adoc#chap-vnc-installations[Installing Using VNC]."
 msgstr ""
+"Jos yllä olevat vaihtoehdot epäonnistuvat, voit käyttää erillistä "
+"järjestelmää päästäksesi graafiseen asennukseen verkon kautta käyttämällä "
+"_Virtual Network Computing_ (VNC) -protokollaa. Katso lisätietoja VNC-"
+"asennuksesta kohdasta xref:advanced/VNC_Installations.adoc#chap-vnc-"
+"installations[Asennus VNC:llä]."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:180
 #, no-wrap
 msgid "Serial Console Not Detected"
-msgstr ""
+msgstr "Sarjakonsolia ei havaittu"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:183
@@ -561,6 +592,11 @@ msgid ""
 "detects a graphics card, it will attempt to use it for a display, even if no "
 "display is connected."
 msgstr ""
+"Joissakin tapauksissa asennuksen yrittäminen tekstitilassa sarjakonsolin "
+"avulla johtaa siihen, että konsoli ei näytä tulosta. Tämä tapahtuu "
+"järjestelmissä, joissa on näytönohjain, mutta näyttö ei ole kytkettynä. Jos "
+"[application]*Anaconda* havaitsee näytönohjaimen, se yrittää käyttää sitä "
+"näyttämään tulosta, vaikka näyttöä ei olisi liitetty siihen."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:185
@@ -570,12 +606,16 @@ msgid ""
 "advanced/Boot_Options.adoc#chap-anaconda-boot-options[Boot Options] for more "
 "details."
 msgstr ""
+"Jos haluat suorittaa tekstipohjaisen asennuksen sarjakonsolilla, käytä "
+"[option]#inst.text# ja [option]#console=# käynnistysasetuksia. Katso "
+"lisätietoja kohdasta xref:advanced/Boot_Options.adoc#chap-anaconda-boot-"
+"options[Käynnistysasetukset]."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:187
 #, no-wrap
 msgid "Trouble During the Installation"
-msgstr ""
+msgstr "Ongelma asennuksen aikana"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:190
@@ -590,6 +630,9 @@ msgid ""
 "appear at the bottom: `No disks detected. Please shut down the computer, "
 "connect at least one disk, and restart to complete installation`."
 msgstr ""
+"\"Asennuskohde\" -näytön alareunaan saattaa ilmestyä seuraava virhesanoma: "
+"\"Ei levyjä havaittu. Sammuta tietokone, kytke vähintään yksi levy ja "
+"käynnistä uudestaan suorittaaksesi asennus loppuun\"."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:195
@@ -598,6 +641,9 @@ msgid ""
 "storage devices to install to. In that case, first make sure that your "
 "system does have at least one storage device attached."
 msgstr ""
+"Viesti kertoo, että [application]*Anaconda* ei löytänyt kirjoitettavaa "
+"tallennuslaitetta, johon voisi asentaa. Varmista siinä tapauksessa ensin, "
+"että järjestelmässäsi on vähintään yksi tallennuslaite."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:197
@@ -606,6 +652,8 @@ msgid ""
 "is properly configured and working. See your controller's documentation for "
 "instructions."
 msgstr ""
+"Jos järjestelmäsi käyttää laitteisto-RAID-ohjainta, varmista, että ohjain on "
+"määritetty oikein ja että se toimii. Katso ohjeet ohjaimesi dokumentaatiosta."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:199
@@ -615,6 +663,10 @@ msgid ""
 "Unit Numbers_) are being presented to the appropriate HBA (_Host Bus "
 "Adapter_)."
 msgstr ""
+"Jos asennat yhteen tai useampaan iSCSI-laitteeseen eikä järjestelmässä ole "
+"paikallista tallennustilaa, varmista, että kaikki tarvittavat LUN-tunnukset ("
+"_Loogiset yksikkönumerot_) esitetään asianmukaiselle HBA:lle (_Host Bus "
+"Adapter_)."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:201
@@ -625,18 +677,23 @@ msgid ""
 "the storage. In most cases this message appears when you attempt to install "
 "on an SCSI device which has not been recognized by the installation program."
 msgstr ""
+"Jos varmistit, että sinulla on liitetty ja oikein määritetty tallennuslaite "
+"ja viesti näkyy edelleen, kun käynnistät järjestelmän uudelleen ja aloitat "
+"asennuksen uudelleen, se tarkoittaa, että asennusohjelma ei tunnistanut "
+"tallennustilaa. Useimmissa tapauksissa tämä viesti tulee näkyviin, kun "
+"yrität asentaa SCSI-laitteeseen, jota asennusohjelma ei tunnista."
 
 #. type: Title ==
 #: pages/install/Troubleshooting.adoc:203
 #, no-wrap
 msgid "Problems After Installation"
-msgstr ""
+msgstr "Ongelmat asennuksen jälkeen"
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:206
 #, no-wrap
 msgid "Resetting the Root Password"
-msgstr ""
+msgstr "Pääkäyttäjän salasanan nollaaminen"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:209

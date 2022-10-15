@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:08+0000\n"
-"PO-Revision-Date: 2022-10-12 17:19+0000\n"
+"PO-Revision-Date: 2022-10-15 19:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/"
@@ -119,7 +119,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:25
 #, no-wrap
 msgid "Downloading Boot and Installation Images"
-msgstr ""
+msgstr "Käynnistys- ja asennuslevykuvien lataaminen"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:28
@@ -165,6 +165,12 @@ msgid ""
 "operation is sufficiently complex that *any change* to the original file "
 "will produce a different checksum."
 msgstr ""
+"Koska lähetysvirheet tai muut ongelmat voivat vahingoittaa lataamaasi Fedora-"
+"levykuvaa, on tärkeää varmistaa tiedoston eheys. Kun levykuvat on luotu, "
+"tiedostolle suoritetaan toiminto, joka tuottaa arvon, jota kutsutaan "
+"\"tarkistussummaksi\" käyttämällä monimutkaista matemaattista algoritmia. "
+"Toiminto on riittävän monimutkainen, jotta *mikä tahansa muutos* "
+"alkuperäiseen tiedostoon tuottaa erilaisen tarkistussumman."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:39
@@ -181,7 +187,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:43
 #, no-wrap
 msgid "Verifying checksums on Windows systems"
-msgstr ""
+msgstr "Tarkistussummien tarkistaminen Windows-järjestelmissä"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:45
@@ -195,12 +201,12 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:47
 msgid "Open a [command]#powershell# session."
-msgstr ""
+msgstr "Käynnistä [command]#powershell#-istunto."
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:49
 msgid "Change to the directory containing the downloaded files."
-msgstr ""
+msgstr "Siirry ladatut tiedostot sisältävään hakemistoon."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:54
@@ -209,12 +215,14 @@ msgid ""
 "> cd $HOME\\Downloads\\\n"
 "> ls\n"
 msgstr ""
+"> cd $HOME\\Downloads\\\n"
+"> ls\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:56
 #, no-wrap
 msgid "Directory: C:\\Users\\Pete\\Downloads\n"
-msgstr ""
+msgstr "Directory: C:\\Users\\Petteri\\Downloads\n"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:61
@@ -227,11 +235,17 @@ msgid ""
 "-a---        11/25/2014  12:39 PM     2047868928  "
 "Fedora-Server-DVD-x86_64-21.iso\n"
 msgstr ""
+"Mode                LastWriteTime         Length  Name\n"
+"----                -------------         ------  ----\n"
+"-a---        11/25/2014  12:39 PM            272  Fedora-Server-21-x86_64-"
+"CHECKSUM\n"
+"-a---        11/25/2014  12:39 PM     2047868928  Fedora-Server-DVD-x86_64-21"
+".iso\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:65
 msgid "Load the resources required to calculate the checksum."
-msgstr ""
+msgstr "Lataa tarkistussumman laskemiseen tarvittavat resurssit."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:71
@@ -244,11 +258,17 @@ msgid ""
 "> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
 "$image) -split \" \")[0].ToLower()\n"
 msgstr ""
+"> $image = \"Fedora-Server-DVD-x86_64-21.iso\"\n"
+"> $checksum_file = \"Fedora-Server-21-x86_64-CHECKSUM\"\n"
+"> $sha256 = New-Object -TypeName System.Security.Cryptography."
+"sha256CryptoServiceProvider\n"
+"> $expected_checksum = ((Get-Content $checksum_file | Select-String -Pattern "
+"$image) -split \" \")[0].ToLower()\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:74
 msgid "Calculate the downloaded image's checksum. This will take a while!"
-msgstr ""
+msgstr "Laske ladatun levykuvan tarkistussumma. Tämä kestää hetken!"
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:77
@@ -258,11 +278,14 @@ msgid ""
 "[System.BitConverter]::ToString($sha256.ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() "
 "-replace '-', ''\n"
 msgstr ""
+"> $download_checksum = [System.BitConverter]::ToString($sha256."
+"ComputeHash([System.IO.File]::ReadAllBytes(\"$PWD\\$image\"))).ToLower() -"
+"replace '-', ''\n"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:80
 msgid "Compare the calculated checksum to the expected checksum."
-msgstr ""
+msgstr "Vertaa laskettua tarkistussummaa odotettuun tarkistussummaan."
 
 #. type: delimited block -
 #: ./pages/install/Preparing_for_Installation.adoc:90
@@ -276,6 +299,13 @@ msgid ""
 "echo \"Checksum test failed.\"\n"
 "}\n"
 msgstr ""
+"> echo \"Ladattu tarkistussumma: $download_checksum\"\n"
+"> echo \"Oletettu tarkistussumma: $expected_checksum\"\n"
+"> if ( $download_checksum -eq \"$expected_checksum\" ) {\n"
+"echo \"Tarkistussummat täsmäävät!\"\n"
+"} else {\n"
+"echo \"Tarkistussummat eivät täsmää.\"\n"
+"}\n"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:93
@@ -440,7 +470,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:207
 #: ./pages/install/Preparing_for_Installation.adoc:247
 msgid "Select the Fedora Edition you wish to make a bootable USB drive for."
-msgstr ""
+msgstr "Valitse Fedora Edition, jolle haluat tehdä käynnistettävän USB-aseman."
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:161
@@ -448,7 +478,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:249
 #, no-wrap
 msgid "Fedora Media Writer Main Screen: Choose your Edition of Fedora"
-msgstr ""
+msgstr "Fedora Media Writer -päänäyttö: Valitse Fedora-versiosi"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:163
@@ -456,7 +486,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "Image of Fedora Media Writer Main Screen"
-msgstr ""
+msgstr "Kuva Fedora Media Writerin päänäytöstä"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:163
@@ -464,7 +494,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:251
 #, no-wrap
 msgid "fedora_media_writer/main_screen.png"
-msgstr ""
+msgstr "fedora_media_writer/main_screen.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:167
@@ -485,7 +515,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:257
 #, no-wrap
 msgid "Fedora Media Writer Distro Information"
-msgstr ""
+msgstr "Fedora Media Writer Distro tiedot"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:171
@@ -493,7 +523,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:259
 #, no-wrap
 msgid "Image of Fedora Media Writer Distro Information Screen"
-msgstr ""
+msgstr "Kuva Fedora Media Writer Distron tietonäytöstä"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:171
@@ -501,7 +531,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:259
 #, no-wrap
 msgid "fedora_media_writer/distro_information.png"
-msgstr ""
+msgstr "fedora_media_writer/distro_information.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:174
@@ -519,7 +549,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:264
 #, no-wrap
 msgid "Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Fedora Media Writer automaattinen lataus"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:178
@@ -527,7 +557,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:266
 #, no-wrap
 msgid "Image of Fedora Media Writer Automatic Download"
-msgstr ""
+msgstr "Kuva Fedora Media Writer automaattisesta latauksesta"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:178
@@ -535,7 +565,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:266
 #, no-wrap
 msgid "fedora_media_writer/automatic_download.png"
-msgstr ""
+msgstr "fedora_media_writer/automatic_download.png"
 
 #. type: Plain text
 #: ./pages/install/Preparing_for_Installation.adoc:181
@@ -559,7 +589,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:273
 #, no-wrap
 msgid "Fedora Media Writer Write to USB Device"
-msgstr ""
+msgstr "Fedora Media Writer Kirjoita USB-laitteeseen"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/install/Preparing_for_Installation.adoc:187
@@ -567,7 +597,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:275
 #, no-wrap
 msgid "Image of Fedora Media Writer write to device red button"
-msgstr ""
+msgstr "Kuva Fedora Media Writer kirjoita laitteeseen punaisesta painikkeesta"
 
 #. type: Target for macro image
 #: ./pages/install/Preparing_for_Installation.adoc:187
@@ -575,7 +605,7 @@ msgstr ""
 #: ./pages/install/Preparing_for_Installation.adoc:275
 #, no-wrap
 msgid "fedora_media_writer/write_to_device.png"
-msgstr ""
+msgstr "fedora_media_writer/write_to_device.png"
 
 #. type: Block title
 #: ./pages/install/Preparing_for_Installation.adoc:189

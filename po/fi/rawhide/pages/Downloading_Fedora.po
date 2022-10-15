@@ -6,25 +6,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-22 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-15 19:19+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/rawhidepagesdownloading_fedora/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/Downloading_Fedora.adoc:5
 #, no-wrap
 msgid "Downloading Fedora"
-msgstr ""
+msgstr "Ladataan Fedoraa"
 
 #. type: Block title
 #: ./pages/Downloading_Fedora.adoc:7
 #, no-wrap
 msgid "Fedora Editions"
-msgstr ""
+msgstr "Fedora-versiot"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:9
@@ -34,6 +37,11 @@ msgid ""
 "infrastructure, Fedora Server for organizational infrastructure, and Fedora "
 "Workstation for the developer and desktop user."
 msgstr ""
+"Fedora tarjoaa kolme ensisijaista versiota, jotka on räätälöity erilaisiin "
+"käyttötapauksiin. linkki:++https://getfedora.org++[] tarjoaa Fedora Cloudin "
+"skaalautuvaan infrastruktuuriin, Fedora Serverin "
+"organisaatioinfrastruktuuriin ja Fedora Workstationin kehittäjille ja "
+"työpöytäkäyttäjille."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:11
@@ -41,6 +49,9 @@ msgid ""
 "For alternative desktop environments or media built for more niche purposes, "
 "check out link:++https://spins.fedoraproject.org++[Fedora Spins]."
 msgstr ""
+"Vaihtoehtoisia työpöytäympäristöjä tai harvinaisempiin käyttötarkoituksiin "
+"rakennettuja mediaoita löytyy linkistä:++https://spins.fedoraproject.org++["
+"Fedora Spins]."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:13
@@ -50,12 +61,16 @@ msgid ""
 "for your needs. The installation process is the same for all spins and "
 "Editions, so you can use this guide for any choice you make."
 msgstr ""
+"Jokainen näistä latauksista sisältää erilaiset oletuspaketit, mutta voit "
+"lisätä paketteja järjestelmääsi ensimmäisen asennuksen jälkeen "
+"mukauttaaksesi sen tarpeisiisi. Asennusprosessi on sama kaikille versioille, "
+"joten voit käyttää tätä opasta mihin tahansa niistä."
 
 #. type: Block title
 #: ./pages/Downloading_Fedora.adoc:14
 #, no-wrap
 msgid "Which Architecture Is My Computer?"
-msgstr ""
+msgstr "Mikä on tietokoneeni arkkitehtuuri?"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:16
@@ -64,6 +79,9 @@ msgid ""
 "manufactured after 2007, or you aren't sure, you probably have a `x86_64` "
 "system."
 msgstr ""
+"Useimmat nykyaikaisista järjestelmistä käyttävät 64{nbsp}bittistä x86-"
+"arkkitehtuuria. Jos tietokoneesi on valmistettu vuoden 2007 jälkeen tai et "
+"tiedä mikä sinulla on, on se luultavasti x86_64-järjestelmä."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:18
@@ -75,12 +93,17 @@ msgid ""
 "link:++https://ark.intel.com/++[] or link:++https://products.amd.com/++[], "
 "if necessary."
 msgstr ""
+"Fedora-asennuksen vaihtamista arkkitehtuurista toiseen ei tueta. Käytä "
+"seuraavaa taulukkoa määrittääksesi tietokoneesi arkkitehtuuri "
+"prosessorityypin mukaan. Katso tarpeen vaatiessa lisätietoja prosessoristasi "
+"valmistajan dokumentaatiosta tai resursseista, kuten linkistä:++https://ark."
+"intel.com/++[] tai linkistä:++https://products.amd.com/++[ ]."
 
 #. type: Block title
 #: ./pages/Downloading_Fedora.adoc:20
 #, no-wrap
 msgid "Processor and architecture types"
-msgstr ""
+msgstr "Prosessori- ja arkkitehtuurityyppejä"
 
 #. type: Table
 #: ./pages/Downloading_Fedora.adoc:29
@@ -94,12 +117,19 @@ msgid ""
 "|Some newer Arm SBCs, SBSA and SystemReady Arm based machines|`aarch64`\n"
 "|Some older 32-bit Arm SBCs|`armhfp`\n"
 msgstr ""
+"|Prosessorin valmistaja ja malli|Arkkitehtuurityyppi Fedoralle\n"
+"|jotkut Intel Atom, Core 2 -sarja, Core i -sarja ja Xeon;\n"
+"AMD: Athlon 64, Athlon II, Sempron64, Phenom-sarja, Fusion-sarja, Bulldozer-"
+"sarja ja Opteron; Apple MacBook, MacBook Pro ja MacBook Air|`x86_64`\n"
+"|Jotkut uudemmat Arm SBC-, SBSA- ja SystemReady Arm -pohjaiset "
+"koneet|`aarch64`\n"
+"|Jotkut vanhemmat 32-bittiset Arm SBC:t|`armhfp`\n"
 
 #. type: Block title
 #: ./pages/Downloading_Fedora.adoc:31
 #, no-wrap
 msgid "Media Types"
-msgstr ""
+msgstr "Mediatyyppi"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:33
@@ -107,12 +137,13 @@ msgid ""
 "Several media types are available. Choose the one that best suits your "
 "requirements."
 msgstr ""
+"Saatavilla on useita mediatyyppejä. Valitse tarpeitasi parhaiten vastaava."
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:34
 #, no-wrap
 msgid "Live Image"
-msgstr ""
+msgstr "Live-levykuva"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:35
@@ -122,6 +153,10 @@ msgid ""
 "you'll get after installation. Fedora Workstation and Fedora Spins are live "
 "images."
 msgstr ""
+"Live-levykuvien avulla voit esikatsella Fedoraa ennen sen asentamista. Sen "
+"sijaan, että se käynnistettäisiin suoraan asentimeen, live-levykuva lataa "
+"saman ympäristön, jonka saat asennuksen jälkeen. Fedora Workstation ja "
+"Fedora Spins ovat live-levykuvia."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:37
@@ -129,12 +164,14 @@ msgid ""
 "Use a live image to install your favorite system, test Fedora on new "
 "hardware, troubleshoot, or share with friends."
 msgstr ""
+"Asenna suosikkijärjestelmäsi live-levykuvan avulla, testaa Fedoraa uudella "
+"laitteistolla, tee vianmääritys tai jaa se ystävien kanssa."
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:38
 #, no-wrap
 msgid "DVD Image"
-msgstr ""
+msgstr "DVD levykuva"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:39
@@ -143,6 +180,9 @@ msgid ""
 "choose from a variety of packages that are provided with it. In Fedora 21, "
 "the DVD option is only available in the *Fedora Server* Edition."
 msgstr ""
+"DVD-levykuvat käynnistyvät suoraan asennusympäristöön, ja voit valita "
+"useista sen mukana toimitetuista paketeista. Fedora 21:ssä DVD-vaihtoehto on "
+"saatavilla vain *Fedora Server* versiossa."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:41
@@ -150,12 +190,14 @@ msgid ""
 "Use the Fedora Server DVD image when you want customized Fedora Server "
 "installations using an offline installation source."
 msgstr ""
+"Käytä Fedora Serverin DVD-levykuvaa, kun haluat mukautettuja Fedora Server -"
+"asennuksia offline-asennuslähteen avulla."
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:42
 #, no-wrap
 msgid "netinstall Image"
-msgstr ""
+msgstr "netinstall levykuva"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:43
@@ -165,6 +207,10 @@ msgid ""
 "a netinstall image, you can install any Fedora Edition or select a wide "
 "variety of packages to create a customized installation of Fedora."
 msgstr ""
+"Netinstall-levykuva käynnistyy suoraan asennusympäristöön ja käyttää online-"
+"Fedora-pakettivarastoja asennuslähteenä. Netinstall-levykuvan avulla voit "
+"asentaa minkä tahansa Fedora version tai valita laajan valikoiman "
+"asennuspaketteja luodaksesi mukautetun Fedoran asennuksen."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:45
@@ -172,6 +218,8 @@ msgid ""
 "Compared to Fedora Workstation DVD image with Fedora Workstation "
 "installation: the netinstall images do not hide the GRUB2 menu."
 msgstr ""
+"Verrattuna Fedora työaseman DVD-levykuvaan, jossa on Fedora Workstation "
+"-asennus: netinstall-otokset eivät piilota GRUB2-valikkoa."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:47
@@ -179,26 +227,28 @@ msgid ""
 "The link:++https://alt.fedoraproject.org++[netinstall images] have different "
 "default settings:"
 msgstr ""
+"link:++https://alt.fedoraproject.org++[netinstall levykuvat] on erilaiset "
+"oletusasetukset:"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:49
 msgid "Fedora Server:"
-msgstr ""
+msgstr "Fedora-palvelin:"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:50
 msgid "presets Fedora Server Edition"
-msgstr ""
+msgstr "esiasetukset Fedora Server Edition"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:51
 msgid "LVM with XFS file system configuration"
-msgstr ""
+msgstr "LVM XFS-tiedostojärjestelmän kokoonpanolla"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:52
 msgid "server firewall configuration"
-msgstr ""
+msgstr "palvelimen palomuuriasetukset"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:53
@@ -206,37 +256,39 @@ msgid ""
 "15 GiB hard disk space assigned to /; remaining free space left as "
 "unpartitioned LVM space"
 msgstr ""
+"15 Gt kiintolevytilaa varattu osiolle /; jäljellä oleva vapaa tila jätetty "
+"osioimattomaksi LVM-tilaksi"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:54
 msgid "Everything:"
-msgstr ""
+msgstr "Kaikki:"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:55
 msgid "presets Fedora Custom Operating System"
-msgstr ""
+msgstr "esiasetukset muokatulle Fedora-käyttöjärjestelmälle"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:56
 msgid "BTRFS file system configuration"
-msgstr ""
+msgstr "BTRFS-tiedostojärjestelmän kokoonpano"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:57
 msgid "client firewall configuration"
-msgstr ""
+msgstr "asiakkaan palomuuriasetukset"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:58
 msgid "hard disk space assignment does not leave unpartitioned free space"
-msgstr ""
+msgstr "kiintolevytilan määrittäminen ei jätä osioimatonta vapaata tilaa"
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:59
 #, no-wrap
 msgid "ARM images"
-msgstr ""
+msgstr "ARM-levykuvat"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:60
@@ -245,6 +297,9 @@ msgid ""
 "the image to removable media and boot directly into a Fedora installation "
 "that's ready to use."
 msgstr ""
+"Monille ARM-järjestelmille Fedora tarjoaa esimääritetyt tiedostojärjestelmän "
+"levykuvat. Kirjoita levykuva siirrettävälle tietovälineelle ja käynnistä se "
+"suoraan käyttövalmiiseen Fedora-asennukseen."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:62
@@ -253,12 +308,15 @@ msgid ""
 "this guide. Start learning about Fedora ARM at "
 "link:++https://fedoraproject.org/wiki/Architectures/ARM++[]"
 msgstr ""
+"ARM-laitteet vaativat usein erityisiä asennustoimenpiteitä, joita ei "
+"käsitellä tässä oppaassa. Aloita Fedora ARM:n opiskelu osoitteessa "
+"link:++https://fedoraproject.org/wiki/Architectures/ARM++[]"
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:63
 #, no-wrap
 msgid "Cloud Images"
-msgstr ""
+msgstr "Cloud levykuvat"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:64
@@ -268,6 +326,10 @@ msgid ""
 "with cloud platforms, and are not intended to be used outside of cloud "
 "environments."
 msgstr ""
+"Fedora Cloud -levykuvat ovat valmiiksi määritettyjä tiedostojärjestelmän "
+"levykuvia, joihin on oletuksena asennettu vain vähän paketteja. Ne "
+"sisältävät erikoistyökaluja vuorovaikutukseen pilvialustojen kanssa, eikä "
+"niitä ole tarkoitettu käytettäväksi pilviympäristöjen ulkopuolella."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:66
@@ -278,6 +340,11 @@ msgid ""
 "link:++https://www.projectatomic.io/++[Project Atomic] technology for "
 "updates. A Docker base image for Fedora is also available."
 msgstr ""
+"Fedora Cloudia on saativilla useita erilaisia. Fedora Cloud Base -levykuva "
+"on minimaalinen perusta pilvikäyttöön. Fedora Cloud Atomic -levykuva on "
+"Docker-konttien isäntä, joka käyttää päivityksiin link:++https://www."
+"projectatomic.io/++[Project Atomic] -tekniikkaa. Löytyy myös Docker perus-"
+"levykuva Fedoralle."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:68
@@ -286,12 +353,15 @@ msgid ""
 "in this guide. Get started using Fedora Cloud at "
 "link:++https://fedoraproject.org/wiki/Cloud++[]"
 msgstr ""
+"Pilvikuvat on määritetty valmiiksi, eivätkä ne vaadi asennusta tässä "
+"oppaassa kuvatulla tavalla. Aloita Fedora Cloudin käyttö osoitteessa "
+"link:++https://fedoraproject.org/wiki/Cloud++[]"
 
 #. type: Labeled list
 #: ./pages/Downloading_Fedora.adoc:69
 #, no-wrap
 msgid "Boot Images"
-msgstr ""
+msgstr "Boot levykuvat"
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:70
@@ -301,8 +371,14 @@ msgid ""
 "media from Fedora's servers and directly loads an installation environment, "
 "like the netinstall ISO."
 msgstr ""
+"Erittäin pienet levykuvat link:++https://boot.fedoraproject.org/++[] on "
+"kirjoitettu CD-levyille, USB-asemille tai jopa levykkeille. BFO-levykuva "
+"lataa asennusmedian Fedoran palvelimilta ja lataa suoraan asennusympäristön, "
+"kuten netinstall ISO:n."
 
 #. type: Plain text
 #: ./pages/Downloading_Fedora.adoc:71
 msgid "BFO images work like PXE deployments, without having to set up a server."
 msgstr ""
+"BFO-levykuvat toimivat samalla tavalla kuin PXE-asennukset, eikä vaadi "
+"palvelimen asennusta."
