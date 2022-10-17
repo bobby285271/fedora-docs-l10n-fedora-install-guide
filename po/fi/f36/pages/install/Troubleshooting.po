@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-08-18 21:05+0000\n"
-"PO-Revision-Date: 2022-10-15 19:19+0000\n"
+"PO-Revision-Date: 2022-10-17 10:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f36pagesinstalltroubleshooting/fi/>\n"
@@ -713,23 +713,27 @@ msgid ""
 "If you lost the root password to the system and you have access to the boot "
 "loader, you can reset the password by editing the GRUB2 configuration."
 msgstr ""
+"Jos kadotit järjestelmän pääkäyttäjän salasanan ja sinulla on pääsy "
+"käynnistyslataajaan, voit nollata salasanan muokkaamalla GRUB2-kokoonpanoa."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:209
 #, no-wrap
 msgid "Resetting the Root Password "
-msgstr ""
+msgstr "Pääkäyttäjän salasanan nollaaminen "
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:211
 msgid "Boot your system and wait until the GRUB2 menu appears."
-msgstr ""
+msgstr "Käynnistä järjestelmä ja odota, kunnes GRUB2-valikko tulee näkyviin."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:213
 msgid ""
 "In the boot loader menu, highlight any entry and press kbd:[e] to edit it."
 msgstr ""
+"Korosta käynnistyslataimen valikossa mikä tahansa merkintä ja muokkaa sitä "
+"painamalla kbd:[e]."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:215
@@ -737,12 +741,13 @@ msgid ""
 "Find the line beginning with `linux`. At the end of this line, append the "
 "following:"
 msgstr ""
+"Etsi rivi, joka alkaa sanalla \"linux\". Liitä tämän rivin loppuun seuraava:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:219
 #, no-wrap
 msgid "`init=/bin/sh`\n"
-msgstr ""
+msgstr "`init=/bin/sh`\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:222
@@ -750,6 +755,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot the system using the options you "
 "just edited."
 msgstr ""
+"Paina kbd:[F10] tai kbd:[Ctrl + X] käynnistääksesi järjestelmän juuri "
+"muokkaamillasi asetuksilla."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:224
@@ -757,45 +764,47 @@ msgid ""
 "Once the system boots, you will be presented with a shell prompt without "
 "having to enter any user name or password:"
 msgstr ""
+"Kun järjestelmä käynnistyy, sinulle esitetään komentotulkkikehote ilman "
+"käyttäjänimeä tai salasanaa:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:228
 #, no-wrap
 msgid "pass:quotes[`sh-4.2#`]\n"
-msgstr ""
+msgstr "pass:quotes[`sh-4.2#`]\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:231
 msgid "Load the installed SELinux policy:"
-msgstr ""
+msgstr "Lataa asennettu SELinux-käytäntö:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:235
 #, no-wrap
 msgid "sh-4.2# /usr/sbin/load_policy -i\n"
-msgstr ""
+msgstr "sh-4.2# /usr/sbin/load_policy -i\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:238
 msgid "Execute the following command to remount your root partition:"
-msgstr ""
+msgstr "Suorita seuraava komento asentaaksesi juuriosio uudelleen:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:242
 #, no-wrap
 msgid "sh4.2# mount -o remount,rw /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,rw /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:245
 msgid "Reset the root password:"
-msgstr ""
+msgstr "Nollaa pääkäyttäjän salasana:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:249
 #, no-wrap
 msgid "sh4.2# passwd root\n"
-msgstr ""
+msgstr "sh4.2# passwd root\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:252
@@ -806,17 +815,22 @@ msgid ""
 "match, a message informing you of a successful root password change will "
 "appear."
 msgstr ""
+"Anna uusi pääkäyttäjän salasana pyydettäessä ja vahvista painamalla "
+"kbd:[Enter]-näppäintä. Anna salasana toisen kerran varmistaaksesi, että "
+"kirjoitit sen oikein ja vahvista painamalla kbd:[Enter] uudelleen. Jos "
+"molemmat salasanat täsmäävät, näyttöön tulee viesti, joka ilmoittaa "
+"onnistuneesta pääkäyttäjän salasanan vaihdosta."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:254
 msgid "Remount the root partition again, this time as read-only:"
-msgstr ""
+msgstr "Liitä juuriosio uudelleen, tällä kertaa vain luku -tilassa:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:258
 #, no-wrap
 msgid "sh4.2# mount -o remount,ro /\n"
-msgstr ""
+msgstr "sh4.2# mount -o remount,ro /\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:261
@@ -824,12 +838,15 @@ msgid ""
 "Reboot the system. From now on, you will be able to log in as the root user "
 "using the new password set up during this procedure."
 msgstr ""
+"Käynnistä järjestelmä uudelleen. Tästä lähtien voit kirjautua sisään root-"
+"käyttäjänä käyttämällä uutta salasanaa, joka määritettiin tämän toimenpiteen "
+"aikana."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:263
 #, no-wrap
 msgid "Are You Unable to Boot With Your RAID Card?"
-msgstr ""
+msgstr "Etkö voi käynnistää RAID-kortiltasi?"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:266
@@ -837,6 +854,9 @@ msgid ""
 "If you have performed an installation and cannot boot your system properly, "
 "you may need to reinstall and partition your system's storage differently."
 msgstr ""
+"Jos olet suorittanut asennuksen etkä voi käynnistää järjestelmää kunnolla, "
+"sinun on ehkä asennettava se uudelleen ja osioitava järjestelmän "
+"tallennustila eri tavalla."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:268
@@ -848,6 +868,13 @@ msgid ""
 "system and move your `/boot` partition and the boot loader outside the RAID "
 "array. The `/boot` partition and the boot loader must be on the same drive."
 msgstr ""
+"Jotkut BIOS-tyypit eivät tue käynnistystä RAID-korteilta. Kun olet "
+"lopettanut asennuksen ja käynnistänyt järjestelmän uudelleen ensimmäisen "
+"kerran, näkyviin saattaa tulla tekstipohjainen näyttö, jossa näkyy "
+"käynnistyslataimen kehote (esimerkiksi \"grub>\") ja vilkkuva kohdistin. Jos "
+"näin on, sinun on osioitava järjestelmä uudelleen ja siirrettävä `/boot'-"
+"osio ja käynnistyslatain RAID-ryhmän ulkopuolelle. `/boot`-osion ja "
+"käynnistyslataimen on oltava samassa asemassa."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:270
@@ -857,12 +884,16 @@ msgid ""
 "partitioning, see xref:install/Installing_Using_Anaconda.adoc#sect-"
 "installation-gui-storage-partitioning[Installation Destination]."
 msgstr ""
+"Kun nämä muutokset on tehty, sinun pitäisi pystyä viimeistelemään asennus ja "
+"käynnistämään järjestelmä oikein. Lisätietoja osioista on kohdassa xref:"
+"install/Installing_Using_Anaconda.adoc#sect-installation-gui-storage-"
+"partitioning[Asennuskohde]."
 
 #. type: Title ===
 #: pages/install/Troubleshooting.adoc:272
 #, no-wrap
 msgid "Trouble With the Graphical Boot Sequence"
-msgstr ""
+msgstr "Ongelmia graafisen käynnistysjärjestyksen kanssa"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:275
@@ -875,12 +906,21 @@ msgid ""
 "sequence; to solve this issue, you must disable graphical boot. To do this, "
 "temporarily alter the setting at boot time before changing it permanently."
 msgstr ""
+"Kun olet lopettanut asennuksen ja käynnistänyt järjestelmän uudelleen "
+"ensimmäisen kerran, on mahdollista, että järjestelmä lakkaa vastaamasta "
+"graafisen käynnistysjakson aikana ja vaatii nollauksen. Tässä tapauksessa "
+"käynnistyslatain näytetään onnistuneesti, mutta minkä tahansa merkinnän "
+"valitseminen ja järjestelmän käynnistysyritys pysäyttää sen. Tämä tarkoittaa "
+"yleensä ongelmaa graafisessa käynnistysjärjestyksessä; Voit ratkaista tämän "
+"ongelman poistamalla graafisen käynnistyksen käytöstä. Voit tehdä tämän "
+"muuttamalla asetusta väliaikaisesti käynnistyksen yhteydessä ennen kuin "
+"muutat sen pysyvästi."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:276
 #, no-wrap
 msgid "Disabling Graphical Boot Temporarily"
-msgstr ""
+msgstr "Graafisen käynnistyksen poistaminen käytöstä väliaikaisesti"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:278
@@ -889,6 +929,9 @@ msgid ""
 "your boot loader timeout period to 0, hold down the kbd:[Esc] key to access "
 "it."
 msgstr ""
+"Käynnistä tietokone ja odota, kunnes käynnistyslataimen valikko tulee "
+"näkyviin. Jos asetat käynnistyslataimen aikakatkaisujakson arvoksi 0, pääset "
+"sinne pitämällä kbd:[Esc]-näppäintä alaspainettuna."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:280
@@ -897,6 +940,9 @@ msgid ""
 "entry you want to boot and press the kbd:[e] key to edit this entry's "
 "options."
 msgstr ""
+"Kun käynnistyslataimen valikko tulee näkyviin, korosta kohdistinnäppäimillä "
+"merkintä, jonka haluat käynnistää, ja paina kbd:[e]-näppäintä muokataksesi "
+"tämän merkinnän asetuksia."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:282
@@ -906,6 +952,10 @@ msgid ""
 "this line, locate the `rhgb` option and delete it. The option may not be "
 "immediately visible; use the cursor keys to scroll up and down."
 msgstr ""
+"Etsi asetusluettelosta ytimen rivi - eli rivi, joka alkaa avainsanalla "
+"\"linux\" (tai joissain tapauksissa \"linux16\" tai \"linuxefi\"). Etsi "
+"tältä riviltä rhgb-vaihtoehto ja poista se. Vaihtoehto ei välttämättä ole "
+"heti näkyvissä; käytä kohdistinnäppäimiä selataksesi ylös ja alas."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:284
@@ -913,6 +963,8 @@ msgid ""
 "Press kbd:[F10] or kbd:[Ctrl + X] to boot your system with the edited "
 "options."
 msgstr ""
+"Paina kbd:[F10] tai kbd:[Ctrl + X] käynnistääksesi järjestelmäsi muokatuilla "
+"asetuksilla."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:286
@@ -922,23 +974,27 @@ msgid ""
 "perform the previous procedure every time the system boots. To permanently "
 "change boot options, do the following."
 msgstr ""
+"Jos järjestelmä käynnistyi onnistuneesti, voit kirjautua sisään normaalisti. "
+"Sitten sinun on poistettava graafinen käynnistys pysyvästi käytöstä - muuten "
+"sinun on suoritettava edellinen toimenpide joka kerta, kun järjestelmä "
+"käynnistyy. Voit muuttaa käynnistysasetuksia pysyvästi seuraavasti."
 
 #. type: Block title
 #: pages/install/Troubleshooting.adoc:287
 #, no-wrap
 msgid "Disabling Graphical Boot Permanently"
-msgstr ""
+msgstr "Graafisen käynnistyksen poistaminen käytöstä pysyvästi"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:289
 msgid "Log in to the `root` account using the [command]#su -# command:"
-msgstr ""
+msgstr "Kirjaudu sisään root-tilille komennolla [command]#su -#:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:293
 #, no-wrap
 msgid "$ [command]#su -#\n"
-msgstr ""
+msgstr "$ [command]#su -#\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:296
@@ -946,6 +1002,8 @@ msgid ""
 "Open the `/etc/default/grub` configuration file using a plain text editor "
 "such as [application]*vim*."
 msgstr ""
+"Avaa `/etc/default/grub` -määritystiedosto pelkällä tekstieditorilla, kuten "
+"[application]*vim*."
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:298
@@ -953,12 +1011,18 @@ msgid ""
 "Within the `grub` file, locate the line beginning with `GRUB_CMDLINE_LINUX`. "
 "The line should look similar to the following:"
 msgstr ""
+"Etsi grub-tiedostosta rivi, joka alkaa sanoilla GRUB_CMDLINE_LINUX. Rivin "
+"pitäisi näyttää seuraavanlaiselta:"
 
 #. type: delimited block -
 #: pages/install/Troubleshooting.adoc:302
 #, no-wrap
 msgid "GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb quiet\"\n"
 msgstr ""
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root rd.md=0 rd.dm=0 vconsole.keymap=us "
+"$([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :)"
+" rd.luks=0 vconsole.font=latarcyrheb-sun16 rd.lvm.lv=vg_rhel/swap rhgb "
+"quiet\"\n"
 
 #. type: Plain text
 #: pages/install/Troubleshooting.adoc:306
