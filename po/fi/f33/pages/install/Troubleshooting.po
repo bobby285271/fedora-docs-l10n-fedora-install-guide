@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2022-10-17 10:19+0000\n"
+"PO-Revision-Date: 2022-10-20 16:19+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "fedora-docs-l10n-fedora-install-guide/f33pagesinstalltroubleshooting/fi/>\n"
@@ -1021,24 +1021,24 @@ msgstr ""
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:307
 msgid "On this line, delete the `rhgb` option."
-msgstr ""
+msgstr "Poista rhgb-vaihtoehto tältä riviltä."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:309
 msgid "Save the edited configuration file."
-msgstr ""
+msgstr "Tallenna muokattu asetustiedosto."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:311
 msgid "Refresh the boot loader configuration by executing the following command:"
-msgstr ""
+msgstr "Päivitä käynnistyslataimen kokoonpano suorittamalla seuraava komento:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:315
 #: ./pages/install/Troubleshooting.adoc:431
 #, no-wrap
 msgid "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
-msgstr ""
+msgstr "# grub2-mkconfig --output=/boot/grub2/grub.cfg\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:318
@@ -1049,6 +1049,12 @@ msgid ""
 "`GRUB_CMDLINE_LINUX` line in the `/etc/default/grub` file and refresh the "
 "boot loader configuration again using the [command]#grub2-mkconfig# command."
 msgstr ""
+"Kun olet suorittanut tämän toimenpiteen, voit käynnistää tietokoneen "
+"uudelleen. {PRODUCT} ei enää käytä graafista käynnistysjärjestystä. Jos "
+"haluat ottaa graafisen käynnistyksen käyttöön, noudata samaa menettelyä, "
+"lisää `rhgb`-vaihtoehto `GRUB_CMDLINE_LINUX`-riville `/etc/default/grub`-"
+"tiedostoon ja päivitä käynnistyslataimen asetukset uudelleen komennolla "
+"[command]#grub2. -mkconfig#."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:320
@@ -1063,7 +1069,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:322
 #, no-wrap
 msgid "Booting into a Graphical Environment"
-msgstr ""
+msgstr "Käynnistäminen graafiseen ympäristöön"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:325
@@ -1074,6 +1080,12 @@ msgid ""
 "using the [command]#startx# command. Note, however, that this is just a "
 "one-time fix and does not change the log in process for future log ins."
 msgstr ""
+"Jos olet asentanut [application]*X Window Systemin* ja työpöytäympäristön, "
+"kuten [application]*GNOME*, mutta et näe graafista työpöytäympäristöä, kun "
+"kirjaudut sisään järjestelmään, voit käynnistää sen manuaalisesti "
+"käyttämällä [command]#startx# komentoa. Huomaa kuitenkin, että tämä on vain "
+"kertaluonteinen korjaus, eikä se muuta kirjautumisprosessia tulevia "
+"kirjautumisia varten."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:327
@@ -1083,12 +1095,17 @@ msgid ""
 "`graphical.target`. When you are finished, reboot the computer. You will "
 "presented with a graphical login prompt after the system restarts."
 msgstr ""
+"Jos haluat määrittää järjestelmäsi siten, että voit kirjautua sisään "
+"graafisessa kirjautumisnäytössä, sinun on muutettava oletusarvo "
+"[application]*systemd* kohteeksi `graphical.target`. Kun olet valmis, "
+"käynnistä tietokone uudelleen. Saat graafisen kirjautumiskehotteen "
+"järjestelmän uudelleenkäynnistyksen jälkeen."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:328
 #, no-wrap
 msgid "Setting Graphical Login as Default"
-msgstr ""
+msgstr "Graafisen kirjautumisen asettaminen oletukseksi"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:330
@@ -1096,6 +1113,8 @@ msgid ""
 "Open a shell prompt. If you are in your user account, become root by typing "
 "the [command]#su -# command."
 msgstr ""
+"Avaa komentotulkkikehote. Jos olet käyttäjätililläsi, vaihda pääkäyttäjäksi "
+"kirjoittamalla [command]#su -# -komento."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:332
@@ -1103,12 +1122,14 @@ msgid ""
 "Change the default target to `graphical.target`. To do this, execute the "
 "following command:"
 msgstr ""
+"Muuta oletuskohteeksi \"graphical.target\". Voit tehdä tämän suorittamalla "
+"seuraavan komennon:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:336
 #, no-wrap
 msgid "# systemctl set-default graphical.target\n"
-msgstr ""
+msgstr "# systemctl set-default graphical.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:339
@@ -1118,12 +1139,16 @@ msgid ""
 "change and keep using the text-based login prompt, execute the following "
 "command as `root`:"
 msgstr ""
+"Graafinen kirjautuminen on nyt oletusarvoisesti käytössä - sinulle esitetään "
+"graafinen kirjautumiskehote seuraavan uudelleenkäynnistyksen jälkeen. Jos "
+"haluat kumota tämän muutoksen ja jatkaa tekstipohjaisen kirjautumiskehotteen "
+"käyttöä, suorita seuraava komento \"root\"-käyttäjänä:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:343
 #, no-wrap
 msgid "# systemctl set-default multi-user.target\n"
-msgstr ""
+msgstr "# systemctl set-default multi-user.target\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:346
@@ -1137,7 +1162,7 @@ msgstr ""
 #: ./pages/install/Troubleshooting.adoc:348
 #, no-wrap
 msgid "No Graphical User Interface Present"
-msgstr ""
+msgstr "Graafista käyttöliittymää ei ole"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:351
@@ -1148,6 +1173,11 @@ msgid ""
 "installation, such as `Minimal install` or `Web Server`, do not include a "
 "graphical interface - it has to be installed manually."
 msgstr ""
+"Jos sinulla on vaikeuksia saada [application]*X* ([application]*X Window "
+"System*) käynnistymään, on mahdollista, että sitä ei ole asennettu. Jotkut "
+"esiasetetuista perusympäristöistä, jotka voit valita asennuksen aikana, "
+"kuten \"Minimal install\" tai \"Web Server\", eivät sisällä graafista "
+"käyttöliittymää - se on asennettava manuaalisesti."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:353
@@ -1157,12 +1187,16 @@ msgid ""
 "to install [application]*GNOME*, use [command]#dnf install gnome-shell# as "
 "`root`."
 msgstr ""
+"Jos haluat [application]*X:n*, voit asentaa tarvittavat paketit asennuksen "
+"jälkeen [application]*DNF*-paketinhallinnan avulla. Jos haluat esimerkiksi "
+"asentaa [application]*GNOME*, käytä komentoa [command]#dnf install gnome-"
+"shell# root-käyttäjänä."
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:354
 #, no-wrap
 msgid "X Server Crashing After User Logs In"
-msgstr ""
+msgstr "X-palvelin kaatuu käyttäjän kirjautumisen jälkeen"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:357
@@ -1172,12 +1206,16 @@ msgid ""
 "full). To verify that this is the problem you are experiencing, execute the "
 "following command:"
 msgstr ""
+"Jos sinulla on ongelmia [application]*X*-palvelimen kaatuessa käyttäjän "
+"kirjautuessa sisään, yksi tai useampi tiedostojärjestelmäsi voi olla täynnä ("
+"tai lähes täynnä). Varmista, että tämä on kohtaamasi ongelma, suorittamalla "
+"seuraava komento:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:361
 #, no-wrap
 msgid "$ [command]#df -h#\n"
-msgstr ""
+msgstr "$ [command]#df -h#\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:364
@@ -1186,6 +1224,9 @@ msgid ""
 "the problem will be on the `/home` partition. A sample output of the "
 "[command]#df# command may look similar to the following:"
 msgstr ""
+"Tulos auttaa sinua diagnosoimaan, mikä osio on täynnä - useimmissa "
+"tapauksissa ongelma on `/home`-osiossa. [command]#df#-komennon "
+"esimerkkituloste voi näyttää seuraavanlaiselta:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:376
@@ -1203,6 +1244,17 @@ msgid ""
 "/dev/sda1                                   976M  150M  760M  17% /boot\n"
 "/dev/dm-4                                    90G   90G     0 100% /home\n"
 msgstr ""
+"Filesystem                                  Size  Used Avail Use% Mounted "
+"on\n"
+"/dev/mapper/vg_rhel-root                     20G  6.0G   13G  32% /\n"
+"devtmpfs                                    1.8G     0  1.8G   0% /dev\n"
+"tmpfs                                       1.8G  2.7M  1.8G   1% /dev/shm\n"
+"tmpfs                                       1.8G 1012K  1.8G   1% /run\n"
+"tmpfs                                       1.8G     0  1.8G   0% /sys/fs/"
+"cgroup\n"
+"tmpfs                                       1.8G  2.6M  1.8G   1% /tmp\n"
+"/dev/sda1                                   976M  150M  760M  17% /boot\n"
+"/dev/dm-4                                    90G   90G     0 100% /home\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:380
@@ -1212,6 +1264,10 @@ msgid ""
 "unneeded files. After you free up some disk space, start [application]*X* "
 "using the [command]#startx# command."
 msgstr ""
+"Yllä olevassa esimerkissä voit nähdä, että /home-osio on täynnä, mikä "
+"aiheuttaa kaatumisen. Voit tehdä tilaa osiolle poistamalla tarpeettomat "
+"tiedostot. Kun olet vapauttanut levytilaa, käynnistä [application]*X* "
+"komennolla [command]#startx#."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:382
@@ -1220,12 +1276,15 @@ msgid ""
 "options available (such as the [option]#-h# option used in this example), "
 "see the `df(1)` man page."
 msgstr ""
+"Lisätietoja komennosta [command]#df# ja selitys käytettävissä olevista "
+"vaihtoehdoista (kuten tässä esimerkissä käytetty [option]#-h#) on "
+"`df(1)-manuaalisivulla."
 
 #. type: Title ===
 #: ./pages/install/Troubleshooting.adoc:384
 #, no-wrap
 msgid "Is Your RAM Not Being Recognized?"
-msgstr ""
+msgstr "Eikö RAM-muistiasi tunnisteta?"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:387
@@ -1240,6 +1299,14 @@ msgid ""
 "xref:advanced/Boot_Options.adoc#sect-boot-options-memtest[Loading the Memory "
 "(RAM) Testing Mode] for details."
 msgstr ""
+"Joissakin tapauksissa kerneli ei tunnista kaikkea muistiasi (RAM), mikä saa "
+"järjestelmän käyttämään vähemmän muistia kuin on asennettu. Voit selvittää, "
+"kuinka paljon RAM-muistia käytetään komennolla [command]#free -m#. Jos "
+"näytettävä muistin kokonaismäärä ei vastaa odotuksiasi, on todennäköistä, "
+"että ainakin yksi muistimoduuleistasi on viallinen. BIOS-pohjaisissa "
+"järjestelmissä voit testata järjestelmän muistia [application]*Memtest86+*-"
+"apuohjelmalla – katso lisätietoja xref:advanced/Boot_Options.adoc#sect-boot-"
+"options-memtest[Muistin (RAM) testaustilan lataaminen]."
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:392
@@ -1248,6 +1315,10 @@ msgid ""
 "3.5GB or 3.7GB, you have probably installed a 32-bit version of {PRODUCT} on "
 "a 64bit kernel. For modern systems, use the 64-bit (x86_64) version."
 msgstr ""
+"Jos sinulla on asennettuna vähintään 4 Gt muistia, mutta {PRODUCT} näyttää "
+"vain noin 3,5 Gt tai 3,7 Gt, olet luultavasti asentanut 32-bittisen {PRODUCT}"
+" -version 64-bittiseen ytimeen. Käytä nykyaikaisissa järjestelmissä 64-"
+"bittistä (x86_64) versiota."
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:394
@@ -1258,6 +1329,12 @@ msgid ""
 "with 4{nbsp}GB of RAM and an integrated Intel graphics card will show only "
 "roughly 3.7{nbsp}GB of available memory, even with a 64-bit system."
 msgstr ""
+"Joissakin laitteistokokoonpanoissa osa järjestelmän RAM-muistista on "
+"varattu, eikä se ole pääjärjestelmän käytettävissä. Erityisesti kannettavat "
+"tietokoneet, joissa on integroitu näytönohjain, varaavat jonkin verran "
+"muistia GPU:lle. Esimerkiksi kannettava tietokone, jossa on 4{nbsp}Gt RAM-"
+"muistia ja integroitu Intel-näytönohjain, näyttää vain noin 3,7{nbsp}Gt "
+"vapaata muistia jopa 64-bittisellä järjestelmällä."
 
 #. type: delimited block =
 #: ./pages/install/Troubleshooting.adoc:396
@@ -1277,12 +1354,14 @@ msgid ""
 "If you made sure that your memory does not have any issues, you can try and "
 "set the amount of memory manually using the [option]#mem=# kernel option."
 msgstr ""
+"Jos varmistit, että muistissasi ei ole ongelmia, voit yrittää asettaa "
+"muistin määrän manuaalisesti käyttämällä [option]#mem=# kerneliasetusta."
 
 #. type: Block title
 #: ./pages/install/Troubleshooting.adoc:401
 #, no-wrap
 msgid "Configuring the Memory Manually"
-msgstr ""
+msgstr "Muistin määrittäminen manuaalisesti"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:407
@@ -1291,19 +1370,22 @@ msgid ""
 "with the keyword `linux` (or, in some cases, `linux16`). Append the "
 "following option to the end of this line:"
 msgstr ""
+"Etsi asetusluettelosta kernelin rivi - eli rivi, joka alkaa avainsanalla "
+"\"linux\" (tai joissakin tapauksissa \"linux16\"). Liitä seuraava vaihtoehto "
+"tämän rivin loppuun:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:411
 #: ./pages/install/Troubleshooting.adoc:422
 #, no-wrap
 msgid "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
-msgstr ""
+msgstr "mem=pass:attributes[{blank}]_xx_pass:attributes[{blank}]M\n"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:414
 #: ./pages/install/Troubleshooting.adoc:425
 msgid "Replace _xx_ with the amount of RAM you have in megabytes."
-msgstr ""
+msgstr "Korvaa _xx_ sillä RAM-muistin määrällä, joka sinulla on megatavuina."
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:418
@@ -1314,6 +1396,11 @@ msgid ""
 "the line beginning with `GRUB_CMDLINE_LINUX` in the `/etc/default/grub` file "
 "to make the change permanent:"
 msgstr ""
+"Odota, että järjestelmä käynnistyy ja kirjaudu sisään. Avaa sitten "
+"komentorivi ja suorita [command]#free -m# -komento uudelleen. Jos komennon "
+"näyttämä RAM-muistin kokonaismäärä vastaa odotuksiasi, lisää seuraava `/etc/"
+"default/grub`-tiedoston riville, joka alkaa `GRUB_CMDLINE_LINUX`, tehdäksesi "
+"muutoksen pysyväksi:"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:427
@@ -1322,6 +1409,9 @@ msgid ""
 "configuration so that the change will take effect. Run the following command "
 "with root privileges:"
 msgstr ""
+"Kun olet päivittänyt tiedoston ja tallentanut sen, päivitä "
+"käynnistyslataimen asetukset, jotta muutos tulee voimaan. Suorita seuraava "
+"komento pääkäyttäjän oikeuksilla:"
 
 #. type: Plain text
 #: ./pages/install/Troubleshooting.adoc:434
@@ -1329,6 +1419,8 @@ msgid ""
 "In `/etc/default/grub`, the above example would look similar to the "
 "following:"
 msgstr ""
+"Tiedostossa \"/etc/default/grub\" yllä oleva esimerkki näyttäisi "
+"seuraavanlaiselta:"
 
 #. type: delimited block -
 #: ./pages/install/Troubleshooting.adoc:444
@@ -1345,3 +1437,12 @@ msgid ""
 "mem=1024M\"\n"
 "GRUB_DISABLE_RECOVERY=\"true\"\n"
 msgstr ""
+"GRUB_TIMEOUT=5\n"
+"GRUB_DISTRIBUTOR=\"$(sed 's, release.*$,,g' /etc/system-release)\"\n"
+"GRUB_DEFAULT=saved\n"
+"GRUB_DISABLE_SUBMENU=true\n"
+"GRUB_TERMINAL_OUTPUT=\"console\"\n"
+"GRUB_CMDLINE_LINUX=\"rd.lvm.lv=rhel/root vconsole.font=latarcyrheb-sun16 rd."
+"lvm.lv=rhel/swap $([ -x /usr/sbin/rhcrashkernel.param ] && /usr/sbin/"
+"rhcrashkernel-param || :) vconsole.keymap=us rhgb quiet mem=1024M\"\n"
+"GRUB_DISABLE_RECOVERY=\"true\"\n"

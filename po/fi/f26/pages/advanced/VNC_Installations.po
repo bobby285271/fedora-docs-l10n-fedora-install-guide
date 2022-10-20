@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Jan Kuparinen <copper_fin@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-20 16:19+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"fedora-docs-l10n-fedora-install-guide/f26pagesadvancedvnc_installations/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title ===
 #: ./pages/advanced/VNC_Installations.adoc:6
 #, no-wrap
 msgid "Installing Using VNC"
-msgstr ""
+msgstr "Asennus VNC:llä"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:9
@@ -30,6 +33,11 @@ msgid ""
 "connect a display and a keyboard, making VNC a necessity for manual "
 "(non-Kickstart) installations."
 msgstr ""
+"Graafinen asennusliittymä on suositeltu tapa asentaa {PRODUCT}. Kuitenkin "
+"joissakin tapauksissa pääsy suoraan graafiseen käyttöliittymään on vaikeaa "
+"tai mahdotonta. Joistakin järjestelmistä puuttuu kyky yhdistää näyttöä ja "
+"näppäimistöä, mikä tekee VNC:stä välttämättömyyden manuaalisissa (ei-"
+"Kickstart) -asennuksissa."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:11
@@ -41,6 +49,12 @@ msgid ""
 "display on another system connected to the network. The VNC installation "
 "provides you with the full range of installation options."
 msgstr ""
+"Manuaalisen asennuksen sallimiseksi _headless-järjestelmissä_ (järjestelmät, "
+"joissa ei ole suoraan kytkettyä näyttöä, näppäimistöä ja hiirtä), "
+"[application]*Anaconda*-asennusohjelma sisältää _Virtual Network Computing_ "
+"(VNC) -tilan, jonka avulla asennusohjelman graafinen tila voidaan suorittaa "
+"paikallisesti, mutta näyttää toisessa verkkoon yhdistetyssä järjestelmässä. "
+"VNC-asennus tarjoaa täyden valikoiman asennusvaihtoehtoja."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:13
@@ -48,12 +62,14 @@ msgid ""
 "This chapter provides instructions on activating VNC mode on the "
 "installation system and connecting to it using a VNC viewer."
 msgstr ""
+"Tämä luku sisältää ohjeet VNC-tilan aktivointiin asennusjärjestelmässä ja "
+"siihen liittymisen VNC-katseluohjelmalla."
 
 #. type: Title ====
 #: ./pages/advanced/VNC_Installations.adoc:15
 #, no-wrap
 msgid "Installing a VNC Viewer"
-msgstr ""
+msgstr "VNC Viewerin asentaminen"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:18
@@ -64,11 +80,17 @@ msgid ""
 "available for other operating systems such as Windows. On Linux systems, use "
 "your package manager to search for a viewer for your distribution."
 msgstr ""
+"VNC-asennuksen suorittaminen vaatii VNC-katseluohjelman, joka on käynnissä "
+"työasemassasi tai toisessa päätetietokoneessa. VNC-katseluohjelmat ovat "
+"saatavilla useimpien Linux-jakelujen asennuslähteistä; ilmaisia VNC-"
+"katseluohjelmia on saatavana myös muille käyttöjärjestelmille, kuten "
+"Windowsille. Linux-järjestelmissä etsi paketinhallinnan avulla jakelullesi "
+"katseluohjelma."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:20
 msgid "The following VNC viewers are available in {PRODUCT}:"
-msgstr ""
+msgstr "Seuraavat VNC-katseluohjelmat ovat saatavilla {PRODUCT} -tuotteessa:"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:22
@@ -76,6 +98,8 @@ msgid ""
 "[application]*TigerVNC* - A basic viewer independent of your desktop "
 "environment. Installed as the [package]*tigervnc* package."
 msgstr ""
+"[application]*TigerVNC* – Peruskatseluohjelma, joka on riippumaton "
+"työpöytäympäristöstäsi. Asennettu pakettina [package]*tigervnc*."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:24
@@ -83,6 +107,8 @@ msgid ""
 "[application]*Vinagre* - A viewer for the [application]*GNOME* desktop "
 "environment. Installed as the [package]*vinagre* package."
 msgstr ""
+"[application]*Vinagre* – katseluohjelma [application]*GNOME*-"
+"työpöytäympäristöön. Asennettu pakettina [package]*vinagre*."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:26
@@ -90,6 +116,8 @@ msgid ""
 "[application]*KRDC* - A viewer integrated with the [application]*KDE* "
 "desktop environment. Installed as the [package]*kdenetwork-krdc* package."
 msgstr ""
+"[application]*KRDC* – [application]*KDE*-työpöytäympäristöön integroitu "
+"katseluohjelma. Asennettu pakettina [package]*kdenetwork-krdc*."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:28
@@ -97,12 +125,14 @@ msgid ""
 "To install any of the viewers listed above, execute the following command as "
 "`root`:"
 msgstr ""
+"Asenna jokin yllä luetelluista katseluohjelmista suorittamalla seuraava "
+"komento \"root\"-käyttäjänä:"
 
 #. type: delimited block -
 #: ./pages/advanced/VNC_Installations.adoc:32
 #, no-wrap
 msgid "# dnf install package\n"
-msgstr ""
+msgstr "# dnf install paketti\n"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:35
@@ -110,6 +140,8 @@ msgid ""
 "Replace _package_ with the package name of the viewer you want to use (for "
 "example, [package]*tigervnc*)."
 msgstr ""
+"Korvaa _paketti_ sen katseluohjelman paketin nimellä, jota haluat käyttää ("
+"esimerkiksi [package]*tigervnc*)."
 
 #. type: delimited block =
 #: ./pages/advanced/VNC_Installations.adoc:40
@@ -118,12 +150,15 @@ msgid ""
 "your VNC viewer. Specific instructions for other viewers may differ, but the "
 "general principles still apply."
 msgstr ""
+"Tämän luvun toimenpiteissä oletetaan, että käytät [application]*TigerVNC:tä* "
+"VNC-katseluohjelmana. Erityiset ohjeet muille katsojille voivat vaihdella, "
+"mutta yleiset periaatteet ovat silti samat."
 
 #. type: Title ====
 #: ./pages/advanced/VNC_Installations.adoc:44
 #, no-wrap
 msgid "Performing a VNC Installation"
-msgstr ""
+msgstr "VNC-asennuksen suorittaminen"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:47
@@ -134,12 +169,16 @@ msgid ""
 "successfully connect, the installation will progress the same way regardless "
 "of the mode you used."
 msgstr ""
+"[application]*Anaconda*-asennusohjelma tarjoaa kaksi tilaa VNC-asennukseen: "
+"_Direct mode_ ja _Connect mode_. Tilat eroavat tavasta, jolla palvelimen ja "
+"katseluohjelman välinen yhteys muodostetaan. Kun yhdistät onnistuneesti, "
+"asennus etenee samalla tavalla käyttämästäsi tilasta riippumatta."
 
 #. type: Labeled list
 #: ./pages/advanced/VNC_Installations.adoc:48
 #, no-wrap
 msgid "Direct Mode"
-msgstr ""
+msgstr "Suora tila"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:49
@@ -153,12 +192,19 @@ msgid ""
 "around this limitation if you know the default VNC port and the system's IP "
 "address."
 msgstr ""
+"Tässä tilassa [application]*Anaconda* on määritetty aloittamaan asennus ja "
+"odottamaan tulevaa yhteyttä VNC-katseluohjelmasta ennen edistymistä. "
+"Odottaessa saapuvaa yhteyttä järjestelmän IP-osoite ja portti, johon "
+"asentaja odottaa yhteyttä, näkyvät näytössä tai konsolissa, jos sellainen on "
+"saatavilla. Tämä tarkoittaa, että tarvitset vähintään sarjakonsolin "
+"muodostaaksesi yhteyden tässä tilassa, mutta voit kiertää tämän rajoituksen, "
+"jos tiedät oletusarvoisen VNC-portin ja järjestelmän IP-osoitteen."
 
 #. type: Labeled list
 #: ./pages/advanced/VNC_Installations.adoc:50
 #, no-wrap
 msgid "Connect Mode"
-msgstr ""
+msgstr "Yhteystila"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:51
@@ -175,17 +221,28 @@ msgid ""
 "incoming connections on the specified port, which usually requires changing "
 "firewall settings."
 msgstr ""
+"Tässä tilassa VNC-katseluohjelma käynnistetään etäjärjestelmässä "
+"_kuuntelutilassa_. VNC-katseluohjelma odottaa saapuvaa yhteyttä määritetyssä "
+"portissa. Sitten [application]*Anaconda* käynnistetään ja katselijan isäntä"
+"nimi/IP-osoite ja porttinumero annetaan käynnistysvaihtoehdolla tai "
+"Kickstart-komennolla. Kun asennus alkaa, asennusohjelma muodostaa yhteyden "
+"kuuntelevaan VNC-katseluohjelmaan käyttämällä määritettyä isäntänimeä/IP-"
+"osoitetta ja porttinumeroa. Yhteystilaa on siksi helpompi käyttää "
+"järjestelmissä, joissa ei ole paikallista näyttöä tai konsolia, mutta se voi "
+"myös vaatia lisävalmisteluja, koska katselujärjestelmän on kyettävä "
+"vastaanottamaan saapuvat yhteydet määritettyyn porttiin, mikä vaatii yleensä "
+"palomuuriasetusten muuttamista."
 
 #. type: Title =====
 #: ./pages/advanced/VNC_Installations.adoc:53
 #, no-wrap
 msgid "Choosing a VNC Installation Mode"
-msgstr ""
+msgstr "VNC-asennustilan valitseminen"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:56
 msgid "Visual and Interactive access to the system"
-msgstr ""
+msgstr "Visuaalinen ja interaktiivinen pääsy järjestelmään"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:58
@@ -193,11 +250,13 @@ msgid ""
 "If visual and interactive access to the system being installed is not "
 "available, then you should use Connect Mode."
 msgstr ""
+"Jos visuaalinen ja interaktiivinen pääsy asennettavaan järjestelmään ei ole "
+"käytettävissä, sinun tulee käyttää Yhteystilaa."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:60
 msgid "Network Connection Rules and Firewalls"
-msgstr ""
+msgstr "Verkkoyhteyssäännöt ja palomuurit"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:62
@@ -206,6 +265,9 @@ msgid ""
 "firewall, then you must use Connect Mode or disable the firewall. Disabling "
 "a firewall may have security implications."
 msgstr ""
+"Jos palomuuri ei salli asennettavia yhteyksiä, sinun on käytettävä "
+"yhteystilaa tai poistettava palomuuri käytöstä. Palomuurin poistamisella voi "
+"olla turvallisuusvaikutuksia."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:64
@@ -214,12 +276,15 @@ msgid ""
 "connections by a firewall, then you must use Direct Mode, or disable the "
 "firewall. Disabling a firewall may have security implications."
 msgstr ""
+"Jos palomuuri ei salli VNC-katseluohjelmaa käyttävää etäjärjestelmää, sinun "
+"on käytettävä suoraa tilaa tai poistettava palomuuri käytöstä. Palomuurin "
+"poistamisella voi olla turvallisuusvaikutuksia."
 
 #. type: Title =====
 #: ./pages/advanced/VNC_Installations.adoc:66
 #, no-wrap
 msgid "Installing in VNC Direct Mode"
-msgstr ""
+msgstr "Asennus VNC Direct -tilassa"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:69
@@ -228,12 +293,15 @@ msgid ""
 "being installed. [application]*Anaconda* will tell you when to initiate this "
 "connection."
 msgstr ""
+"VNC-suoratilassa VNC-katseluohjelma muodostaa yhteyden asennettavaan "
+"järjestelmään. [application]*Anaconda* kertoo, milloin tämä yhteys on "
+"muodostettava."
 
 #. type: Block title
 #: ./pages/advanced/VNC_Installations.adoc:71
 #, no-wrap
 msgid "Starting VNC in Direct Mode"
-msgstr ""
+msgstr "VNC:n käynnistäminen suorassa tilassa"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:73
@@ -250,19 +318,19 @@ msgstr ""
 #: ./pages/advanced/VNC_Installations.adoc:75
 #, no-wrap
 msgid "TigerVNC Connection Details"
-msgstr ""
+msgstr "TigerVNC-yhteyden tiedot"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/advanced/VNC_Installations.adoc:77
 #, no-wrap
 msgid "TigerVNC after startup"
-msgstr ""
+msgstr "TigerVNC käynnistyksen jälkeen"
 
 #. type: Target for macro image
 #: ./pages/advanced/VNC_Installations.adoc:77
 #, no-wrap
 msgid "vnc/connection-details.png"
-msgstr ""
+msgstr "vnc/connection-details.png"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:80
@@ -283,6 +351,11 @@ msgid ""
 "for the installation. The VNC password must be between 6 and 8 characters "
 "long."
 msgstr ""
+"Vaihtoehtoisesti, jos haluat rajoittaa VNC-käyttöä asennusjärjestelmään, "
+"lisää myös [option]#inst."
+"vncpassword=pass:attributes[{blank}]_PASSWORD_pass:attributes[{blank}]# "
+"käynnistysvaihtoehto. Korvaa _PASSWORD_ salasanalla, jota haluat käyttää "
+"asennuksessa. VNC-salasanan on oltava 6–8 merkkiä pitkä."
 
 #. type: delimited block =
 #: ./pages/advanced/VNC_Installations.adoc:87
@@ -290,24 +363,26 @@ msgid ""
 "Use a temporary password for the [option]#inst.vncpassword=# option. It "
 "should not be a real or root password you use on any system."
 msgstr ""
+"Käytä väliaikaista salasanaa [option]#inst.vncpassword=#-vaihtoehdolle. Se "
+"ei saa olla oikea- tai root-salasana, jota käytät missään järjestelmässä."
 
 #. type: Block title
 #: ./pages/advanced/VNC_Installations.adoc:91
 #, no-wrap
 msgid "Adding VNC Boot Options"
-msgstr ""
+msgstr "VNC-käynnistysasetusten lisääminen"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/advanced/VNC_Installations.adoc:93
 #, no-wrap
 msgid "Editing boot options to activate VNC"
-msgstr ""
+msgstr "Käynnistysasetusten muokkaaminen VNC:n aktivoimiseksi"
 
 #. type: Target for macro image
 #: ./pages/advanced/VNC_Installations.adoc:93
 #, no-wrap
 msgid "boot/vnc-options.png"
-msgstr ""
+msgstr "boot/vnc-options.png"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:96
@@ -316,6 +391,9 @@ msgid ""
 "the installation program and start the necessary services. When the system "
 "is ready, you will see a message on the screen similar to the following:"
 msgstr ""
+"Aloita asennus muokatuilla vaihtoehdoilla. Järjestelmä alustaa "
+"asennusohjelman ja käynnistää tarvittavat palvelut. Kun järjestelmä on "
+"valmis, näet näytöllä seuraavankaltaisen viestin:"
 
 #. type: delimited block -
 #: ./pages/advanced/VNC_Installations.adoc:100
@@ -324,6 +402,8 @@ msgid ""
 "`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to "
 "begin the install.`\n"
 msgstr ""
+"`13:14:47 Please manually connect your VNC viewer to 192.168.100.131:5901 to "
+"begin the install.`\n"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:103
@@ -331,6 +411,8 @@ msgid ""
 "Note the IP address and port number (in the above example, "
 "`192.168.100.131:5901`)."
 msgstr ""
+"Ota ylös IP-osoite ja portin numero (edellä olevassa esimerkissä `192.168.100"
+".131:5901`)."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:105
@@ -341,6 +423,11 @@ msgid ""
 "`Connect`. The VNC viewer will now connect to the installation system. If "
 "you set up a VNC password, enter it when prompted and press `OK`."
 msgstr ""
+"Syötä VNC Vieweria käyttävässä järjestelmässä edellisessä vaiheessa saatu IP-"
+"osoite ja portin numero Yhteystiedot-valintaikkunaan samassa muodossa kuin "
+"asennusohjelma näytti sen näytöllä. Napsauta sitten \"Yhdistä\". VNC-"
+"katseluohjelma muodostaa nyt yhteyden asennusjärjestelmään. Jos määritit VNC-"
+"salasanan, kirjoita se pyydettäessä ja paina `OK`."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:107
@@ -351,6 +438,10 @@ msgid ""
 "window will provide full remote access to the installer until the "
 "installation finishes and the system reboots for the first time."
 msgstr ""
+"Kun yhteys on muodostettu onnistuneesti, VNC-katseluohjelmaa käyttävässä "
+"järjestelmässä avautuu uusi ikkuna, jossa näkyy asennusvalikko. Tämä ikkuna "
+"tarjoaa täyden etäkäytön asennusohjelmaan, kunnes asennus on valmis ja "
+"järjestelmä käynnistyy uudelleen ensimmäisen kerran."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:109
@@ -365,7 +456,7 @@ msgstr ""
 #: ./pages/advanced/VNC_Installations.adoc:111
 #, no-wrap
 msgid "Installing in VNC Connect Mode"
-msgstr ""
+msgstr "Asennus VNC-liitäntätilassa"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:114
@@ -384,7 +475,7 @@ msgstr ""
 #: ./pages/advanced/VNC_Installations.adoc:116
 #, no-wrap
 msgid "Starting VNC in Connect Mode"
-msgstr ""
+msgstr "VNC:n käynnistäminen yhteystilassa"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:118
@@ -392,28 +483,31 @@ msgid ""
 "Start the VNC viewer on the client system in listening mode. For example, on "
 "{PRODUCT} using [application]*TigerVNC*, execute the following command:"
 msgstr ""
+"Käynnistä VNC-katseluohjelma asiakasjärjestelmässä kuuntelutilassa. Suorita "
+"esimerkiksi seuraava komento tuotteessa {PRODUCT} käyttämällä "
+"[application]*TigerVNC*:tä:"
 
 #. type: delimited block -
 #: ./pages/advanced/VNC_Installations.adoc:122
 #, no-wrap
 msgid "$ [command]#vncviewer -listen _PORT_#\n"
-msgstr ""
+msgstr "$ [command]#vncviewer -listen _PORTTI_#\n"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:125
 msgid "Replace _PORT_ with the port number you want to use for the connection."
-msgstr ""
+msgstr "Korvaa _PORTTI_ portin numerolla, jota haluat käyttää yhteyteen."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:127
 msgid "The terminal will display a message similar to the following example:"
-msgstr ""
+msgstr "Pääte näyttää seuraavan esimerkin kaltaisen viestin:"
 
 #. type: Block title
 #: ./pages/advanced/VNC_Installations.adoc:129
 #, no-wrap
 msgid "TigerVNC Viewer Listening"
-msgstr ""
+msgstr "TigerVNC-katseluohjelman kuuntelu"
 
 #. type: delimited block -
 #: ./pages/advanced/VNC_Installations.adoc:138
@@ -432,6 +526,8 @@ msgid ""
 "Thu Feb 20 15:23:54 2014\n"
 "main:        Listening on port 5901\n"
 msgstr ""
+"Thu Feb 20 15:24:54 2014\n"
+"main:        Listening on port 5901\n"
 
 #. type: delimited block =
 #: ./pages/advanced/VNC_Installations.adoc:146
@@ -439,6 +535,8 @@ msgid ""
 "When this message is displayed, the VNC viewer is ready and waiting for an "
 "incoming connection from the installation system."
 msgstr ""
+"Kun tämä viesti tulee näkyviin, VNC-katseluohjelma on valmis ja odottaa "
+"tulevaa yhteyttä asennusjärjestelmästä."
 
 #. type: delimited block =
 #: ./pages/advanced/VNC_Installations.adoc:148
@@ -456,6 +554,8 @@ msgid ""
 "[option]#inst.vnc "
 "inst.vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORT_#\n"
 msgstr ""
+"[option]#inst.vnc inst."
+"vncconnect=pass:attributes[{blank}]_HOST_:pass:attributes[{blank}]_PORTTI_#\n"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:155
@@ -463,6 +563,8 @@ msgid ""
 "Replace _HOST_ with the IP address of the system running the listening VNC "
 "viewer, and _PORT_ with the port number that the VNC viewer is listening on."
 msgstr ""
+"Korvaa _HOST_ sen järjestelmän IP-osoitteella, jossa VNC-katseluohjelma on "
+"käynnissä, ja _PORTTI_ portin numerolla, jota VNC-katseluohjelma kuuntelee."
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:157
@@ -472,12 +574,16 @@ msgid ""
 "[application]*Anaconda* will attempt to connect to the IP address and port "
 "you provided in the previous step."
 msgstr ""
+"Aloita asennus. Järjestelmä alustaa asennusohjelman ja käynnistää "
+"tarvittavat palvelut. Kun alustus on valmis, [application]*Anaconda* yrittää "
+"muodostaa yhteyden edellisessä vaiheessa antamaasi IP-osoitteeseen ja "
+"porttiin."
 
 #. type: Title ====
 #: ./pages/advanced/VNC_Installations.adoc:163
 #, no-wrap
 msgid "Kickstart Considerations"
-msgstr ""
+msgstr "Kickstart näkökohdat"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:166
@@ -495,7 +601,7 @@ msgstr ""
 #: ./pages/advanced/VNC_Installations.adoc:168
 #, no-wrap
 msgid "Considerations for Headless Systems"
-msgstr ""
+msgstr "Huomioita headless-järjestelmistä"
 
 #. type: Plain text
 #: ./pages/advanced/VNC_Installations.adoc:171
