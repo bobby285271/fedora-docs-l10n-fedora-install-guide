@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-12-15 22:03+0000\n"
-"PO-Revision-Date: 2021-11-11 06:13+0000\n"
+"PO-Revision-Date: 2022-10-21 18:01+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/f33pagesappendixesdisk_partitions/fi/>\n"
+"fedora-docs-l10n-fedora-install-guide/f33pagesappendixesdisk_partitions/fi/>"
+"\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title =
 #: ./pages/appendixes/Disk_Partitions.adoc:6
@@ -50,12 +51,16 @@ msgid ""
 "for more information on the process of freeing up disk space to prepare for "
 "a {PRODUCT} installation."
 msgstr ""
+"Jos olet tyytyväinen levyosioihin, voit siirtyä kohtaan xref:sect-disk-"
+"partitions-making-room[Strategies for Disk Repartitioning] saadaksesi "
+"lisätietoja levytilan vapauttamisesta {PRODUCT} -asennuksen valmistelua "
+"varten."
 
 #. type: Title ==
 #: ./pages/appendixes/Disk_Partitions.adoc:20
 #, no-wrap
 msgid "Hard Disk Basic Concepts"
-msgstr ""
+msgstr "Kovalevyn peruskäsitteet"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:23
@@ -63,6 +68,8 @@ msgid ""
 "Hard disks perform a very simple function - they store data and reliably "
 "retrieve it on command."
 msgstr ""
+"Kovalevyt suorittavat hyvin yksinkertaisen toiminnon - ne tallentavat tiedot "
+"ja hakevat ne luotettavasti käskystä."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:25
@@ -73,6 +80,11 @@ msgid ""
 "here. This appendix uses a set of simplified diagrams of a disk drive to "
 "help explain what is the process and theory behind partitions."
 msgstr ""
+"Kun keskustellaan asioista, kuten levyn osiointi, on tärkeää ymmärtää "
+"taustalla oleva laitteisto. Koska teoria on kuitenkin hyvin monimutkainen ja "
+"laaja, tässä selitetään vain peruskäsitteet. Tämä liite käyttää "
+"yksinkertaistettuja kaavioita levyasemasta selittääkseen, mikä on osioiden "
+"takana oleva prosessi ja teoria."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:27
@@ -80,24 +92,26 @@ msgid ""
 "xref:figu-partitions-unused-drive[An Unused Disk Drive], shows a brand-new, "
 "unused disk drive."
 msgstr ""
+"xref:figu-partitions-unused-drive[An Unused Disk Drive], näyttää aivan "
+"uuden, käyttämättömän levyaseman."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:29
 #, no-wrap
 msgid "An Unused Disk Drive"
-msgstr ""
+msgstr "Käyttämätön levyasema"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "Image of an unused disk drive."
-msgstr ""
+msgstr "Kuva käyttämättömästä levyasemasta."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:31
 #, no-wrap
 msgid "partitions/unused-drive.png"
-msgstr ""
+msgstr "partitions/unused-drive.png"
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:34
@@ -118,19 +132,19 @@ msgstr ""
 #: ./pages/appendixes/Disk_Partitions.adoc:39
 #, no-wrap
 msgid "Disk Drive with a File System"
-msgstr ""
+msgstr "Levyasema tiedostojärjestelmällä"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "Image of a formatted disk drive."
-msgstr ""
+msgstr "Kuva alustetusta levyasemasta."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:41
 #, no-wrap
 msgid "partitions/formatted-drive.png"
-msgstr ""
+msgstr "partitions/formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:44
@@ -138,6 +152,9 @@ msgid ""
 "As xref:figu-partitions-formatted-drive[Disk Drive with a File System], "
 "implies, the order imposed by a file system involves some trade-offs:"
 msgstr ""
+"Kuten xref:figu-partitions-formatted-drive[Tiedostojärjestelmällä varustettu "
+"levyasema] viittaa, tiedostojärjestelmän määräämään järjestykseen liittyy "
+"joitain kompromisseja:"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:46
@@ -145,6 +162,9 @@ msgid ""
 "A small percentage of the driver's available space is used to store file "
 "system-related data and can be considered as overhead."
 msgstr ""
+"Pieni osa ohjaimen käytettävissä olevasta tilasta käytetään "
+"tiedostojärjestelmään liittyvien tietojen tallentamiseen, ja sitä voidaan "
+"pitää varattuna."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:48
@@ -155,6 +175,11 @@ msgid ""
 "also, that an average disk drive contains thousands of blocks. The picture "
 "is simplified for the purposes of this discussion.]."
 msgstr ""
+"Tiedostojärjestelmä jakaa jäljellä olevan tilan pieniin, tasakokoisiin "
+"osiin. Linuxissa nämä segmentit tunnetaan nimellä _blocks_ alaviite: [Lohkot "
+"todella *ovat* tasaisen kokoisia, toisin kuin kuvissamme. Muista myös, että "
+"keskimääräinen levyasema sisältää tuhansia lohkoja. Kuva on "
+"yksinkertaistettu tätä keskustelua varten.]."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:50
@@ -169,24 +194,35 @@ msgid ""
 "systems such as Microsoft Windows), making data interchange between "
 "different file systems easy."
 msgstr ""
+"Huomaa, että ei ole olemassa yhtä yleistä tiedostojärjestelmää. Kuten xref"
+":figu-partitions-different-file-system[Levyasema eri tiedostojärjestelmällä] "
+"osoittaa, levyasemaan voi olla kirjoitettu yksi monista eri "
+"tiedostojärjestelmistä. Eri tiedostojärjestelmät eivät yleensä ole "
+"yhteensopivia; toisin sanoen käyttöjärjestelmä, joka tukee yhtä "
+"tiedostojärjestelmää (tai kourallinen siihen liittyviä "
+"tiedostojärjestelmätyyppejä), ei välttämättä tue toista. {PRODUCT} tukee "
+"kuitenkin monenlaisia tiedostojärjestelmiä (mukaan lukien monet muiden "
+"käyttöjärjestelmien, kuten Microsoft Windowsin, yleisesti käyttämät "
+"tiedostot), mikä tekee tiedonsiirrosta eri tiedostojärjestelmien välillä "
+"helppoa."
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:52
 #, no-wrap
 msgid "Disk Drive with a Different File System"
-msgstr ""
+msgstr "Levyasema eri tiedostojärjestelmällä"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "Image of a disk drive with a different file system."
-msgstr ""
+msgstr "Kuva levyasemasta, jossa on eri tiedostojärjestelmä."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:54
 #, no-wrap
 msgid "partitions/other-formatted-drive.png"
-msgstr ""
+msgstr "partitions/other-formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:57
@@ -195,24 +231,28 @@ msgid ""
 "process is to actually *store* and *retrieve* data. The figure below shows a "
 "drive disk after some data have been written to it:"
 msgstr ""
+"Tiedostojärjestelmän kirjoittaminen levylle on vasta ensimmäinen askel. "
+"Tämän prosessin tavoitteena on itse asiassa tiedon *tallennus* ja *haku*. "
+"Alla oleva kuva näyttää levyaseman sen jälkeen, kun sille on kirjoitettu "
+"tietoja:"
 
 #. type: Block title
 #: ./pages/appendixes/Disk_Partitions.adoc:59
 #, no-wrap
 msgid "Disk Drive with Data Written to It"
-msgstr ""
+msgstr "Levyasema, johon on kirjoitettu tietoja"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: ./pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "Image of a disk drive with data written to it."
-msgstr ""
+msgstr "Kuva levyasemasta, johon on kirjoitettu tietoja."
 
 #. type: Target for macro image
 #: ./pages/appendixes/Disk_Partitions.adoc:61
 #, no-wrap
 msgid "partitions/used-formatted-drive.png"
-msgstr ""
+msgstr "partitions/used-formatted-drive.png"
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:64
@@ -227,6 +267,16 @@ msgid ""
 "_fragmentation_. Fragmentation can play a part when attempting to resize an "
 "existing partition."
 msgstr ""
+"Kuten xref:figu-partitions-drive-with-data[Levyasema, johon on kirjoitettu "
+"data] osoittaa, jotkut aiemmin tyhjistä lohkoista sisältävät nyt tietoja. "
+"Pelkästään tätä kuvaa katsomalla emme kuitenkaan voi määrittää tarkalleen, "
+"kuinka monta tiedostoa tällä asemalla on. Tiedostoja voi olla vain yksi tai "
+"useita, koska kaikki tiedostot käyttävät vähintään yhtä lohkoa ja jotkut "
+"tiedostot käyttävät useita lohkoja. Toinen tärkeä huomioitava seikka on, "
+"että käytettyjen lohkojen ei tarvitse muodostaa yhtenäistä aluetta; "
+"Käytettyjä ja käyttämättömiä lohkoja voi olla välissä. Tämä tunnetaan "
+"nimellä _fragmentation_. Sirpaloituminen voi vaikuttaa, kun yritetään "
+"muuttaa olemassa olevan osion kokoa."
 
 #. type: Plain text
 #: ./pages/appendixes/Disk_Partitions.adoc:66
@@ -237,6 +287,10 @@ msgid ""
 "additional capacity drove a fundamental change in the way disk drives were "
 "used."
 msgstr ""
+"Kuten useimmat tietokoneisiin liittyvät tekniikat, levyasemat muuttuivat "
+"ajan myötä niiden käyttöönoton jälkeen. Erityisesti ne kasvoivat. Ei "
+"suurempia fyysisesti, mutta suurempia niiden talletuskapasiteetissa. Ja tämä "
+"lisäkapasiteetti muutti perustavanlaatuisesti levyasemien käyttöä."
 
 #. type: Title ===
 #: ./pages/appendixes/Disk_Partitions.adoc:68

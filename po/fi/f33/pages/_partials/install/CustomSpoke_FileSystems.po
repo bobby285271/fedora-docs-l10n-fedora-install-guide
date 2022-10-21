@@ -7,23 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-04-26 21:04+0000\n"
-"PO-Revision-Date: 2021-07-02 11:04+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2022-10-21 18:01+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"fedora-docs-l10nfedora-install-guide/"
+"fedora-docs-l10n-fedora-install-guide/"
 "f33pages_partialsinstallcustomspoke_filesystems/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: Title ====
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:5
 #, no-wrap
 msgid "Device, File System and RAID Types"
-msgstr ""
+msgstr "Laite-, tiedostojärjestelmä- ja RAID-tyypit"
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:8
@@ -32,6 +32,9 @@ msgid ""
 "below offer a short description of each available device, file system and "
 "RAID type and notes on their usage."
 msgstr ""
+"{PRODUCT} tukee useita laitteita ja tiedostojärjestelmiä. Alla olevissa "
+"luetteloissa on lyhyt kuvaus jokaisesta saatavilla olevasta laitteesta, "
+"tiedostojärjestelmästä ja RAID-tyypistä sekä huomautuksia niiden käytöstä."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:10
@@ -44,6 +47,12 @@ msgid ""
 "`Update Settings` and repeat this process for all mount points you want to "
 "modify."
 msgstr ""
+"Jos haluat valita osion tai loogisen taltion laitetyypin tai "
+"tiedostojärjestelmän, valitse se luettelosta xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning[Manuaalinen osiointi] ja "
+"valitse Laitetyyppi ja \"Tiedostojärjestelmä\" vastaavista avattavista "
+"valikoista näytön oikealla puolella. Napsauta sitten \"Päivitä asetukset\" "
+"ja toista tämä prosessi kaikille liitoskohdille, joita haluat muokata."
 
 #. type: Plain text
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:12
@@ -61,6 +70,17 @@ msgid ""
 "xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-partitioning-swraid[Creating "
 "Software RAID] as needed."
 msgstr ""
+"Ohjelmisto-RAID:n määrittämistä varten varmista, että asennuskohteiksi on "
+"valittu riittävästi fyysisiä kiintolevyjä (kutakin RAID-tyyppiä varten "
+"tarvittavien erillisten asemien määrä on mainittu sen kuvauksessa). Valitse "
+"sitten RAID-taso, kun luot tai muokkaat Btrfs-taltiota tai LVM-taltioryhmää, "
+"tai valitse laitetyypiksi \"Software RAID\", jos haluat luoda ohjelmisto-"
+"RAIDin vakioosioilla. Tarkemmat ohjeet ovat kohdassa "
+"xref:Installing_Using_Anaconda.adoc#sect-installation-gui-manual-"
+"partitioning-btrfs[Creating a Btrfs Layout], xref:Installing_Using_Anaconda."
+"adoc#sect-installation-gui-manual-partitioning- alvmcal Volume Management "
+"(LVM) Layout] ja xref:Installing_Using_Anaconda.adoc#sect-installation-gui-"
+"manual-partitioning-swraid[Creating Software RAID] tarvittaessa."
 
 #. type: Block title
 #: ./pages/_partials/install/CustomSpoke_FileSystems.adoc:13
